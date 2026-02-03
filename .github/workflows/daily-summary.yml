@@ -2,8 +2,8 @@ name: HN Daily Summary
 
 on:
   schedule:
-    # Run at 08:00 UTC daily (16:00 Beijing Time)
-    - cron: "0 8 * * *"
+    # Run at 00:00 UTC daily (08:00 Beijing Time UTC+8)
+    - cron: "0 0 * * *"
 
   # Allow manual trigger
   workflow_dispatch:
