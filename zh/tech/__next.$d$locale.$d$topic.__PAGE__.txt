@@ -1,0 +1,217 @@
+1:"$Sreact.fragment"
+2:I[33453,["/_next/static/chunks/f74a6859e1c4d5e3.js","/_next/static/chunks/25c5b00973e9e951.js"],"Header"]
+3:I[37119,["/_next/static/chunks/f74a6859e1c4d5e3.js","/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
+4:I[67477,["/_next/static/chunks/f74a6859e1c4d5e3.js","/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
+b:I[82166,["/_next/static/chunks/f74a6859e1c4d5e3.js","/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
+e:I[51858,["/_next/static/chunks/f74a6859e1c4d5e3.js","/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+5:T3e00,好的，作为一名技术新闻分析师，我已对今日“Technology”主题下的30篇热门文章进行了综合分析。这些内容主要围绕**人工智能/机器学习、软件开发与工具、系统与安全、行业动态与法律、以及社区与招聘**等几个核心子主题展开。
+
+以下是详细的分组总结、文章列表以及今日最值得阅读的推荐。
+
+---
+
+### **分析与总结**
+
+今日的技术新闻呈现出几个鲜明的焦点：
+1.  **AI的实践与反思**：既有OpenAI Codex App这样的重磅产品发布，也有对AI编码助手局限性的讨论，以及对AI模型安全性和社会影响的深度分析。
+2.  **开发工具与语言的演进**：Zig语言发布libc、Rust进入NetBSD内核、Linux From Scratch放弃SysVinit等新闻，反映了底层开发栈的持续创新和现代化进程。
+3.  **安全与隐私的持续关注**：从40年前的硬件破解到今天的云数据库泄露，再到关于加密的法律讨论，安全始终是技术社区的核心议题。
+4.  **行业生态与社区动态**：GitHub服务波动、软件股下跌、Anki易主等新闻，揭示了技术产品、市场和开源项目所面临的现实挑战与变化。
+
+---
+
+### **文章分组总结**
+
+#### **1. 人工智能与机器学习**
+此组文章涵盖了AI的最新应用、安全风险以及对未来发展的思考。
+
+*   **The Codex App**
+    *   **说明**：OpenAI正式发布Codex App，这是一个集成了GPT-4o和高级代码生成功能的AI编程助手，标志着AI辅助编程进入新阶段，引发了关于其将如何改变开发者工作流的广泛讨论。
+    *   **原文链接**：https://openai.com/index/introducing-the-codex-app/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46859054
+
+*   **Coding assistants are solving the wrong problem**
+    *   **说明**：一篇观点文章认为，当前的AI编码助手主要关注代码生成，但开发者真正的痛点在于系统设计、架构理解和上下文切换。文章介绍了其“双脑”（Bicameral）AI方法，旨在解决更高层次的问题。
+    *   **原文链接**：https://www.bicameral-ai.com/blog/introducing-bicameral
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46866481
+
+*   **How does misalignment scale with model intelligence and task complexity?**
+    *   **说明**：来自Anthropic AI Alignment团队的研究文章，探讨了AI模型的能力（智能）与任务复杂性如何影响其行为与人类意图的“错位”（misalignment）。这是关于AI安全性的前沿思考。
+    *   **原文链接**：https://alignment.anthropic.com/2026/hot-mess-of-ai/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46864498
+
+*   **Agent Skills**
+    *   **说明**：一个专注于AI Agent技能（如使用工具、执行复杂任务）的社区和资源网站，反映了AI应用正从单纯的对话向具备行动能力的智能体方向发展。
+    *   **原文链接**：https://agentskills.io/home
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46871173
+
+*   **Hacking Moltbook / Hacking Moltbook: AI Social Network Reveals 1.5M API Keys**
+    *   **说明**：安全公司Wiz披露，一个名为Moltbook的AI社交网络平台因数据库配置错误，暴露了数百万条API密钥等敏感数据。此事凸显了AI应用快速增长背后的安全风险。
+    *   **原文链接**：https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys
+    *   **讨论链接 (HN)**：https://news.ycombinator.com/item?id=46857615
+    *   **讨论链接 (Lobsters)**：https://lobste.rs/s/xyrr0q/hacking_moltbook_ai_social_network
+
+#### **2. 软件开发、语言与工具**
+此组关注编程语言的新特性、开发工具的比较以及有趣的编程项目。
+
+*   **Zig Libc / zig libc**
+    *   **说明**：Zig编程语言项目发布了其自研的libc实现。这是一个重要的里程碑，意味着Zig在构建不依赖系统C库的独立、可移植应用方面迈出了关键一步。
+    *   **原文链接**：https://ziglang.org/devlog/2026/#2026-01-31
+    *   **讨论链接 (HN)**：https://news.ycombinator.com/item?id=46858622
+    *   **讨论链接 (Lobsters)**：https://lobste.rs/s/pfhei9/zig_libc
+
+*   **Rust in the NetBSD Kernel, and other odd decisions**
+    *   **说明**：一篇博客文章探讨了在NetBSD内核中引入Rust语言的利弊，以及其他一些不同寻常的技术决策。反映了系统编程领域向内存安全语言迁移的趋势和挑战。
+    *   **原文链接**：https://bentsukun.ch/posts/netbsd-rust-kernel/
+    *   **讨论链接**：https://lobste.rs/s/4wlhhv/rust_netbsd_kernel_other_odd_decisions
+
+*   **4x faster network file sync with rclone (vs rsync) (2025)**
+    *   **说明**：一篇性能对比博客，展示了在特定网络条件下（高延迟、大带宽），`rclone`通过多线程等优化，其文件同步速度可以显著超越传统的`rsync`。对需要处理大量数据迁移的开发者有参考价值。
+    *   **原文链接**：https://www.jeffgeerling.com/blog/2025/4x-faster-network-file-sync-rclone-vs-rsync/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46820142
+
+*   **My fast zero-allocation webserver using OxCaml**
+    *   **说明**：作者使用OxCaml（OCaml的一个分支）实现了一个零内存分配（zero-allocation）的HTTP/1.1网络服务器，展示了函数式语言在编写高性能系统软件方面的潜力。
+    *   **原文链接**：https://anil.recoil.org/notes/oxcaml-httpz
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46854534
+
+*   **What's up with all those equals signs anyway?**
+    *   **说明**：一篇轻松的技术考据文章，探讨了编程语言中赋值操作符（`=`， `:=`， `==`， `===` 等）的历史渊源和设计差异，充满趣味性。
+    *   **原文链接**：https://lars.ingebrigtsen.no/2026/02/02/whats-up-with-all-those-equals-signs-anyway/
+    *   **讨论链接 (HN)**：https://news.ycombinator.com/item?id=46868759
+    *   **讨论链接 (Lobsters)**：https://lobste.rs/s/xcg4j6/what_s_up_with_all_those_equals_signs
+
+*   **Floppinux – An Embedded Linux on a Single Floppy, 2025 Edition**
+    *   **说明**：一个极客项目，展示了如何将一套功能完整的嵌入式Linux系统塞进一张1.44MB软盘。是嵌入式开发和系统精简技术的炫技之作。
+    *   **原文链接**：https://krzysztofjankowski.com/floppinux/floppinux-2025.html
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46866544
+
+*   **Julia**
+    *   **说明**：一篇以编程语言“Julia”为名的短篇科幻小说，将技术概念融入叙事，展现了技术社区的创意和文化。
+    *   **原文链接**：https://borretti.me/fiction/julia
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46863357
+
+*   **Library of Juggling**
+    *   **说明**：一个关于杂耍技巧的网站，包含大量动画教程。虽然不直接相关编程，但其清晰的分解教学和动画演示，对制作技术教程有启发意义，因此在技术社区受到欢迎。
+    *   **原文链接**：https://libraryofjuggling.com/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46853552
+
+#### **3. 系统、运维与安全**
+此组涉及操作系统更新、基础设施状态和安全实践。
+
+*   **Linux From Scratch ends SysVinit support**
+    *   **说明**：著名的Linux学习项目“Linux From Scratch”宣布终止对传统SysVinit初始化系统的支持，全面转向systemd或其他现代init系统。这是Linux生态系统演进的一个标志性事件。
+    *   **原文链接**：https://lists.linuxfromscratch.org/sympa/arc/lfs-announce/2026-02/msg00000.html
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46858829
+
+*   **GitHub experience various partial-outages/degradations**
+    *   **说明**：GitHub状态页面显示其服务出现了部分中断和性能下降。作为全球最重要的代码托管平台，其稳定性直接影响全球开发者的工作，因此备受关注。
+    *   **原文链接**：https://www.githubstatus.com?todayis=2026-02-02
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46861842
+
+*   **Defeating a 40-year-old copy protection dongle**
+    *   **说明**：一篇精彩的逆向工程文章，作者详细描述了如何破解一个40年前的软件加密狗。不仅是一项技术挑战的胜利，也是一次计算历史的考古。
+    *   **原文链接**：https://dmitrybrant.com/2026/02/01/defeating-a-40-year-old-copy-protection-dongle
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46849567
+
+*   **WhatsApp Encryption, a Lawsuit, and a Lot of Noise**
+    *   **说明**：密码学专家对近期围绕WhatsApp加密的法律诉讼和公众讨论进行分析，澄清技术事实，指出其中存在的误解和噪音。关乎端到端加密的公众认知和法律挑战。
+    *   **原文链接**：https://blog.cryptographyengineering.com/2026/02/02/whatsapp-encryption-a-lawsuit-and-a-lot-of-noise/
+    *   **讨论链接**：https://lobste.rs/s/nccupe/whatsapp_encryption_lawsuit_lot_noise
+
+*   **Carnegie Mellon Unversity Computer Club FTP Server**
+    *   **说明**：卡内基梅隆大学计算机俱乐部一个历史悠久的公共FTP服务器被分享出来，里面存放着许多古老的软件、文档和数字遗产，像是一个互联网历史博物馆。
+    *   **原文链接**：http://128.237.157.9/pub/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46806346
+
+#### **4. 行业动态、法律与商业**
+此组涵盖技术政策、市场趋势和开源法律问题。
+
+*   **The TSA's New $45 Fee to Fly Without ID Is Illegal**
+    *   **说明**：一篇评论文章指出，美国运输安全管理局（TSA）对无身份证件乘机收取45美元费用的新规涉嫌违法。引发了关于政府服务收费、身份验证与公民权利的讨论。
+    *   **原文链接**：https://www.frommers.com/tips/airfare/the-tsa-new-45-fee-to-fly-without-id-is-illegal-says-regulatory-expert/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46863162
+
+*   **Why software stocks are getting pummelled**
+    *   **说明**：《经济学人》文章分析了近期软件类股票普遍下跌的原因，涉及市场估值调整、宏观经济压力、AI对传统软件商业模式的影响等。
+    *   **原文链接**：https://www.economist.com/business/2026/02/01/why-software-stocks-are-getting-pummelled
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46852535
+
+*   **Court orders restart of all US offshore wind power construction**
+    *   **说明**：法院命令重启美国所有海上风电项目建设。这项裁决对清洁能源行业和美国的基础设施建设有重大影响，技术社区也关心其中的工程和政策挑战。
+    *   **原文链接**：https://arstechnica.com/science/2026/02/court-orders-restart-of-all-us-offshore-wind-construction/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46863112
+
+*   **LICENSE: _may be_ licensed to use source code; incorrect license grant**
+    *   **说明**：开源项目Mattermost的一个GitHub Issue，指出其许可证文件中存在模糊和有问题的措辞（“可能被授权”），这可能导致用户权利不明确。是开源软件法律实践中的一个具体案例。
+    *   **原文链接**：https://github.com/mattermost/mattermost/issues/8886
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46861331
+
+*   **Anki ownership transferred to AnkiHub**
+    *   **说明**：知名间隔记忆软件Anki的所有权已转移给AnkiHub社区。这意味着这款深受学生和研究者喜爱的工具的未来发展将更依赖于社区驱动，引发了用户对其可持续性的关注。
+    *   **原文链接**：https://forums.ankiweb.net/t/ankis-growing-up/68610
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46861313
+
+#### **5. 社区、招聘与杂项**
+此组包括定期社区活动和跨领域的有趣内容。
+
+*   **Ask HN: Who is hiring? (February 2026)**
+    *   **说明**：Hacker News每月一次的招聘主题帖，是寻找技术职位（尤其是硅谷风格公司及远程职位）的重要渠道。
+    *   **原文链接**：无
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46857488
+
+*   **Ask HN: Who wants to be hired? (February 2026)**
+    *   **说明**：与“Who is hiring?”对应的求职主题帖，求职者可以在此展示自己的技能和需求。
+    *   **原文链接**：无
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46857487
+
+*   **Pretty soon, heat pumps will be able to store and distribute heat as needed**
+    *   **说明**：一篇关于热泵技术进展的报道，新型热泵将具备储热和按需分配热量的能力。这是能源技术与智能家居/建筑交叉领域的前沿。
+    *   **原文链接**：https://www.sintef.no/en/latest-news/2026/pretty-soon-heat-pumps-will-be-able-to-store-and-distribute-heat-as-needed/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46848060
+
+*   **Geologists may have solved mystery of Green River's 'uphill' route**
+    *   **说明**：地质学家可能解开了格林河“逆流而上”之谜。虽然属于地球科学，但其涉及的地形演化、数据分析和问题解决过程对技术爱好者有吸引力。
+    *   **原文链接**：https://phys.org/news/2026-01-geologists-mystery-green-river-uphill.html
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46855803
+
+---
+
+### **今日最值得阅读文章推荐**
+
+1.  **The Codex App**
+    *   **推荐理由**：来自AI领域领头羊OpenAI的正式产品发布，代表了当前AI辅助编程的最高水平和未来方向。无论你是想立即体验最强大的编程助手，还是关心AI对软件开发行业的长期影响，这篇文章都是必读的起点。
+    *   **链接**：https://openai.com/index/introducing-the-codex-app/
+
+2.  **Defeating a 40-year-old copy protection dongle**
+    *   **推荐理由**：将逆向工程写成了一部引人入胜的侦探小说。它不仅展示了高超的技术能力，更充满了对旧时代硬件的热爱和探索精神。阅读它能让你感受到纯粹的技术乐趣和黑客文化。
+    *   **链接**：https://dmitrybrant.com/2026/02/01/defeating-a-40-year-old-copy-protection-dongle
+
+3.  **How does misalignment scale with model intelligence and task complexity?**
+    *   **推荐理由**：在AI能力飞速发展的今天，安全问题日益严峻。这篇来自顶级AI安全团队的文章，没有停留在泛泛而谈，而是深入探讨了“错位”现象与模型能力、任务复杂度的量化关系。对于想超越产品层面，理解AI技术深层挑战的读者来说，价值极高。
+    *   **链接**：https://alignment.anthropic.com/2026/hot-mess-of-ai/
+
+4.  **Zig Libc**
+    *   **推荐理由**：Zig是一门旨在挑战C语言地位的系统编程语言，其自研libc的发布是项目走向成熟和独立的关键一步。对于关心编程语言设计、系统软件生态以及C/Rust之外可能性的开发者，这是不容错过的技术动态。
+    *   **链接**：https://ziglang.org/devlog/2026/#2026-01-31
+
+5.  **Hacking Moltbook: AI Social Network Reveals 1.5M API Keys**
+    *   **推荐理由**：这是一个发生在当下的、教科书级别的云安全失败案例。它清晰地提醒我们，无论技术多么前沿（AI社交网络），基础的安全配置错误（数据库暴露）都可能造成灾难性后果。所有开发者、运维和产品经理都应引以为戒。
+    *   **链接0:{"buildId":"x_gFZYw08ohALRvro2b3q","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-02-03","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":13},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-02-03"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+c:T76e,Please state the location and include REMOTE for remote work, REMOTE (US)
+or similar if the country is restricted, and ONSITE when remote work is <i>not</i> an option.<p>Please only post if you personally are part of the hiring company—no
+recruiting firms or job boards. One post per company. If it isn&#x27;t a household name,
+explain what your company does.<p>Please only post if you are actively filling a position and are committed
+to replying to applicants.<p>Commenters: please don&#x27;t reply to job posts to complain about
+something. It&#x27;s off topic here.<p>Readers: please only email if you are personally interested in the job.<p>Searchers: try <a href="https:&#x2F;&#x2F;dheerajck.github.io&#x2F;hnwhoishiring&#x2F;" rel="nofollow">https:&#x2F;&#x2F;dheerajck.github.io&#x2F;hnwhoishiring&#x2F;</a>,
+<a href="http:&#x2F;&#x2F;nchelluri.github.io&#x2F;hnjobs&#x2F;" rel="nofollow">http:&#x2F;&#x2F;nchelluri.github.io&#x2F;hnjobs&#x2F;</a>, <a href="https:&#x2F;&#x2F;hnresumetojobs.com" rel="nofollow">https:&#x2F;&#x2F;hnresumetojobs.com</a>,
+<a href="https:&#x2F;&#x2F;hnhired.fly.dev" rel="nofollow">https:&#x2F;&#x2F;hnhired.fly.dev</a>, <a href="https:&#x2F;&#x2F;kennytilton.github.io&#x2F;whoishiring&#x2F;" rel="nofollow">https:&#x2F;&#x2F;kennytilton.github.io&#x2F;whoishiring&#x2F;</a>,
+<a href="https:&#x2F;&#x2F;hnjobs.emilburzo.com" rel="nofollow">https:&#x2F;&#x2F;hnjobs.emilburzo.com</a>, or this (unofficial) Chrome extension:
+<a href="https:&#x2F;&#x2F;chromewebstore.google.com&#x2F;detail&#x2F;hn-hiring-pro&#x2F;mpfaljjblphnlloddaplgicpkinikjlp" rel="nofollow">https:&#x2F;&#x2F;chromewebstore.google.com&#x2F;detail&#x2F;hn-hiring-pro&#x2F;mpfal...</a>.<p>Don&#x27;t miss this other fine thread: <i>Who wants to be hired?</i> <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=46857487">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=46857487</a>6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-46849567","title":"Defeating a 40-year-old copy protection dongle","url":"https://dmitrybrant.com/2026/02/01/defeating-a-40-year-old-copy-protection-dongle","source":"Hacker News","score":837,"comments_count":282,"comments_url":"https://news.ycombinator.com/item?id=46849567","published_at":"2026-02-01T21:30:51","author":"zdw","text":null,"summary":"文章详细介绍了如何破解一个已有40年历史的软件加密狗，展示了逆向工程和硬件安全的历史演变，对理解早期数字版权管理和安全技术发展有重要价值。"},{"id":"hn-46859054","title":"The Codex App","url":"https://openai.com/index/introducing-the-codex-app/","source":"Hacker News","score":745,"comments_count":560,"comments_url":"https://news.ycombinator.com/item?id=46859054","published_at":"2026-02-02T18:02:48","author":"meetpateltech","text":null,"summary":"OpenAI推出了Codex应用，这是一个基于AI的代码生成工具，旨在帮助开发者提高编程效率，值得关注因为它代表了AI在软件开发领域的实际应用进展。"},{"id":"hn-46863162","title":"The TSA's New $45 Fee to Fly Without ID Is Illegal","url":"https://www.frommers.com/tips/airfare/the-tsa-new-45-fee-to-fly-without-id-is-illegal-says-regulatory-expert/","source":"Hacker News","score":539,"comments_count":613,"comments_url":"https://news.ycombinator.com/item?id=46863162","published_at":"2026-02-02T22:48:10","author":"donohoe","text":null,"summary":"文章指出美国运输安全管理局（TSA）新推出的45美元无身份证飞行费用可能违法，涉及监管争议，对旅客权利和政府政策有直接影响。"},{"id":"hn-46861313","title":"Anki ownership transferred to AnkiHub","url":"https://forums.ankiweb.net/t/ankis-growing-up/68610","source":"Hacker News","score":492,"comments_count":196,"comments_url":"https://news.ycombinator.com/item?id=46861313","published_at":"2026-02-02T20:48:55","author":"trms","text":null,"summary":"Anki的所有权已转移给AnkiHub，这是一个流行的记忆辅助软件，此次转移可能影响其未来发展路线和用户社区，值得用户和开发者关注。"},{"id":"hn-46863112","title":"Court orders restart of all US offshore wind power construction","url":"https://arstechnica.com/science/2026/02/court-orders-restart-of-all-us-offshore-wind-construction/","source":"Hacker News","score":449,"comments_count":320,"comments_url":"https://news.ycombinator.com/item?id=46863112","published_at":"2026-02-02T22:45:04","author":"ck2","text":null,"summary":"法院命令重启所有美国海上风电建设项目，这涉及可再生能源政策与法律纠纷，对清洁能源发展和环境议题有重大意义。"},{"id":"hn-46857615","title":"Hacking Moltbook","url":"https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys","source":"Hacker News","score":366,"comments_count":226,"comments_url":"https://news.ycombinator.com/item?id=46857615","published_at":"2026-02-02T16:08:36","author":"galnagli","text":"<a href=\"https:&#x2F;&#x2F;www.reuters.com&#x2F;legal&#x2F;litigation&#x2F;moltbook-social-media-site-ai-agents-had-big-security-hole-cyber-firm-wiz-says-2026-02-02&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.reuters.com&#x2F;legal&#x2F;litigation&#x2F;moltbook-social-med...</a>","summary":"文章披露Moltbook数据库暴露了数百万API密钥的安全漏洞，凸显了社交媒体和AI代理平台的数据风险，对网络安全和隐私保护有警示作用。"},{"id":"hn-46868759","title":"What's up with all those equals signs anyway?","url":"https://lars.ingebrigtsen.no/2026/02/02/whats-up-with-all-those-equals-signs-anyway/","source":"Hacker News","score":354,"comments_count":103,"comments_url":"https://news.ycombinator.com/item?id=46868759","published_at":"2026-02-03T09:37:40","author":"todsacerdoti","text":null,"summary":"文章探讨了编程中大量使用等号的原因和背景，从技术角度解析符号的演变，对理解编程语言设计和编码实践有启发。"},{"id":"hn-46820142","title":"4x faster network file sync with rclone (vs rsync) (2025)","url":"https://www.jeffgeerling.com/blog/2025/4x-faster-network-file-sync-rclone-vs-rsync/","source":"Hacker News","score":349,"comments_count":151,"comments_url":"https://news.ycombinator.com/item?id=46820142","published_at":"2026-01-30T03:17:32","author":"indigodaddy","text":null,"summary":"文章比较了rclone与rsync在网络文件同步中的性能，显示rclone速度提升4倍，为系统管理员和开发者提供了高效数据管理的新选择。"},{"id":"hn-46858622","title":"Zig Libc","url":"https://ziglang.org/devlog/2026/#2026-01-31","source":"Hacker News","score":323,"comments_count":135,"comments_url":"https://news.ycombinator.com/item?id=46858622","published_at":"2026-02-02T17:28:19","author":"ingve","text":null,"summary":"Zig编程语言发布了Libc相关更新，展示了其在系统编程和库开发方面的进展，对关注新兴编程语言和底层技术的开发者有参考价值。"},{"id":"hn-46857488","title":"Ask HN: Who is hiring? (February 2026)","url":null,"source":"Hacker News","score":294,"comments_count":371,"comments_url":"https://news.ycombinator.com/item?id=46857488","published_at":"2026-02-02T16:01:30","author":"whoishiring","text":"$c","summary":"这是Hacker News上2026年2月的招聘主题帖，汇集了科技公司的招聘信息，为求职者和雇主提供了直接交流平台，反映了当前就业市场趋势。"},{"id":"hn-46848060","title":"Pretty soon, heat pumps will be able to store and distribute heat as needed","url":"https://www.sintef.no/en/latest-news/2026/pretty-soon-heat-pumps-will-be-able-to-store-and-distribute-heat-as-needed/","source":"Hacker News","score":246,"comments_count":205,"comments_url":"https://news.ycombinator.com/item?id=46848060","published_at":"2026-02-01T18:15:40","author":"PaulHoule","text":null,"summary":"热泵技术即将实现按需储存和分配热能，这标志着能源管理效率的潜在飞跃，对可持续发展和智能电网建设具有重要意义。"},{"id":"hn-46861842","title":"GitHub experience various partial-outages/degradations","url":"https://www.githubstatus.com?todayis=2026-02-02","source":"Hacker News","score":243,"comments_count":93,"comments_url":"https://news.ycombinator.com/item?id=46861842","published_at":"2026-02-02T21:28:16","author":"bhouston","text":null,"summary":"GitHub遭遇部分服务中断和性能下降，作为全球最大的代码托管平台，其稳定性直接影响开发者的日常工作，值得关注。"},{"id":"hn-46864498","title":"How does misalignment scale with model intelligence and task complexity?","url":"https://alignment.anthropic.com/2026/hot-mess-of-ai/","source":"Hacker News","score":219,"comments_count":70,"comments_url":"https://news.ycombinator.com/item?id=46864498","published_at":"2026-02-03T00:28:06","author":"salkahfi","text":null,"summary":"文章探讨了人工智能模型智能水平与任务复杂度如何影响其行为失准问题，这对于理解AI安全性和可靠性至关重要。"},{"id":"hn-46858829","title":"Linux From Scratch ends SysVinit support","url":"https://lists.linuxfromscratch.org/sympa/arc/lfs-announce/2026-02/msg00000.html","source":"Hacker News","score":204,"comments_count":293,"comments_url":"https://news.ycombinator.com/item?id=46858829","published_at":"2026-02-02T17:45:27","author":"cf100clunk","text":null,"summary":"Linux From Scratch项目终止对SysVinit的支持，反映了Linux系统初始化向systemd等现代方案的持续演进，对系统管理员有影响。"},{"id":"hn-46866544","title":"Floppinux – An Embedded Linux on a Single Floppy, 2025 Edition","url":"https://krzysztofjankowski.com/floppinux/floppinux-2025.html","source":"Hacker News","score":202,"comments_count":125,"comments_url":"https://news.ycombinator.com/item?id=46866544","published_at":"2026-02-03T04:33:25","author":"GalaxySnail","text":null,"summary":"Floppinux项目展示了将嵌入式Linux系统压缩到单张软盘上的最新成果，是极简主义和复古计算爱好者的技术趣闻。"},{"id":"hn-46852535","title":"Why software stocks are getting pummelled","url":"https://www.economist.com/business/2026/02/01/why-software-stocks-are-getting-pummelled","source":"Hacker News","score":170,"comments_count":248,"comments_url":"https://news.ycombinator.com/item?id=46852535","published_at":"2026-02-02T04:50:06","author":"petethomas","text":null,"summary":"文章分析了软件股近期遭受重挫的原因，涉及宏观经济和行业特定因素，对科技投资者和市场观察者具有参考价值。"},{"id":"hn-46861331","title":"LICENSE: _may be_ licensed to use source code; incorrect license grant","url":"https://github.com/mattermost/mattermost/issues/8886","source":"Hacker News","score":164,"comments_count":148,"comments_url":"https://news.ycombinator.com/item?id=46861331","published_at":"2026-02-02T20:50:28","author":"MallocVoidstar","text":null,"summary":"Mattermost项目中的一个许可证问题引发了关于开源软件许可条款明确性的讨论，对开发者理解法律风险很重要。"},{"id":"hn-46855803","title":"Geologists may have solved mystery of Green River's 'uphill' route","url":"https://phys.org/news/2026-01-geologists-mystery-green-river-uphill.html","source":"Hacker News","score":158,"comments_count":43,"comments_url":"https://news.ycombinator.com/item?id=46855803","published_at":"2026-02-02T13:29:13","author":"defrost","text":null,"summary":"地质学家可能解开了格林河‘逆流而上’路线的成因之谜，这一发现有助于理解复杂的地质演变过程。"},{"id":"hn-46866481","title":"Coding assistants are solving the wrong problem","url":"https://www.bicameral-ai.com/blog/introducing-bicameral","source":"Hacker News","score":153,"comments_count":120,"comments_url":"https://news.ycombinator.com/item?id=46866481","published_at":"2026-02-03T04:25:35","author":"jinhkuan","text":null,"summary":"文章认为当前编码助手解决的是错误的问题，并介绍了Bicameral AI的新方法，这引发了关于AI辅助编程未来方向的思考。"},{"id":"hn-46863357","title":"Julia","url":"https://borretti.me/fiction/julia","source":"Hacker News","score":151,"comments_count":26,"comments_url":"https://news.ycombinator.com/item?id=46863357","published_at":"2026-02-02T22:57:59","author":"ashergill","text":null,"summary":"这是一篇标题为‘Julia’的虚构故事，其出现在技术新闻聚合平台上，内容可能与编程语言Julia无关，体现了社区内容的多样性。"},{"id":"hn-46854534","title":"My fast zero-allocation webserver using OxCaml","url":"https://anil.recoil.org/notes/oxcaml-httpz","source":"Hacker News","score":145,"comments_count":49,"comments_url":"https://news.ycombinator.com/item?id=46854534","published_at":"2026-02-02T10:45:44","author":"noelwelsh","text":null,"summary":"文章介绍了使用OxCaml构建的零分配快速Web服务器，展示了函数式语言在系统编程和高性能网络服务中的潜力，值得关注其性能优化方法。"},{"id":"hn-46853552","title":"Library of Juggling","url":"https://libraryofjuggling.com/","source":"Hacker News","score":133,"comments_count":28,"comments_url":"https://news.ycombinator.com/item?id=46853552","published_at":"2026-02-02T07:58:49","author":"tontony","text":null,"summary":"这是一个关于杂耍技巧的在线图书馆，虽然非传统技术主题，但展示了如何用技术构建特定兴趣领域的知识库，体现了互联网的多样性。"},{"id":"hn-46857487","title":"Ask HN: Who wants to be hired? (February 2026)","url":null,"source":"Hacker News","score":124,"comments_count":331,"comments_url":"https://news.ycombinator.com/item?id=46857487","published_at":"2026-02-02T16:01:30","author":"whoishiring","text":"Share your information if you are looking for work. Please use this format:<p><pre><code>  Location:\n  Remote:\n  Willing to relocate:\n  Technologies:\n  Résumé&#x2F;CV:\n  Email:\n</code></pre>\nPlease only post if you are personally looking for work. Agencies, recruiters, job boards,\nand so on, are off topic here.<p>Readers: please only email these addresses to discuss work opportunities.<p>There&#x27;s a site for searching these posts at <a href=\"https:&#x2F;&#x2F;www.wantstobehired.com\" rel=\"nofollow\">https:&#x2F;&#x2F;www.wantstobehired.com</a>.","summary":"这是Hacker News每月一次的求职帖子，让技术人员直接发布求职信息，反映了技术就业市场的实时动态和社区互助文化。"},{"id":"hn-46871173","title":"Agent Skills","url":"https://agentskills.io/home","source":"Hacker News","score":113,"comments_count":92,"comments_url":"https://news.ycombinator.com/item?id=46871173","published_at":"2026-02-03T14:09:54","author":"mooreds","text":null,"summary":"Agent Skills平台专注于AI代理技能开发，随着AI代理技术兴起，该资源对开发者构建智能应用具有重要参考价值。"},{"id":"hn-46806346","title":"Carnegie Mellon Unversity Computer Club FTP Server","url":"http://128.237.157.9/pub/","source":"Hacker News","score":113,"comments_count":23,"comments_url":"https://news.ycombinator.com/item?id=46806346","published_at":"2026-01-29T05:59:23","author":"1vuio0pswjnm7","text":null,"summary":"卡内基梅隆大学计算机俱乐部的FTP服务器公开访问，展示了学术机构的历史技术遗产，对研究早期互联网文化有历史意义。"}],"locale":"zh"}],"$Ld"]}]]}]
+7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
+9:["$","script","script-1",{"src":"/_next/static/chunks/25c5b00973e9e951.js","async":true}]
+a:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-26e55e5d4809","title":"zig libc","url":"https://ziglang.org/devlog/2026/#2026-01-31","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-02T21:34:25","author":"ziglang.org via kwas","text":"<p><a href=\"https://lobste.rs/s/pfhei9/zig_libc\">Comments</a></p>","summary":"Zig编程语言发布了libc相关开发日志，显示了这门新兴系统语言在标准库建设上的进展，对关注替代系统编程语言的开发者很重要。"},{"id":"rss-afc4da320937","title":"Rust in the NetBSD Kernel, and other odd decisions","url":"https://bentsukun.ch/posts/netbsd-rust-kernel/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-03T03:22:25","author":"bentsukun.ch via jaypatelani","text":"<p><a href=\"https://lobste.rs/s/4wlhhv/rust_netbsd_kernel_other_odd_decisions\">Comments</a></p>","summary":"文章探讨了NetBSD内核引入Rust的决策及其它非常规技术选择，反映了传统Unix系统现代化过程中面临的技术权衡和挑战。"},{"id":"rss-514df07f4689","title":"What’s up with all those equals signs anyway?","url":"https://lars.ingebrigtsen.no/2026/02/02/whats-up-with-all-those-equals-signs-anyway/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-03T08:49:51","author":"lars.ingebrigtsen.no via ehamberg","text":"<p><a href=\"https://lobste.rs/s/xcg4j6/what_s_up_with_all_those_equals_signs\">Comments</a></p>","summary":"文章深入探讨了编程语言中等号使用的各种语义差异，这个看似简单的话题揭示了编程语言设计中的深层哲学和实际问题。"},{"id":"rss-b16b7b7739e0","title":"WhatsApp Encryption, a Lawsuit, and a Lot of Noise","url":"https://blog.cryptographyengineering.com/2026/02/02/whatsapp-encryption-a-lawsuit-and-a-lot-of-noise/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-03T09:03:57","author":"blog.cryptographyengineering.com via sjamaan","text":"<p><a href=\"https://lobste.rs/s/nccupe/whatsapp_encryption_lawsuit_lot_noise\">Comments</a></p>","summary":"分析了WhatsApp加密技术面临的法律诉讼及相关争议，涉及加密技术、法律和隐私保护的交叉领域，对理解现实世界加密应用很重要。"},{"id":"rss-0d385e1b3906","title":"Hacking Moltbook: AI Social Network Reveals 1.5M API Keys","url":"https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-03T09:26:48","author":"wiz.io via switchblade","text":"<p><a href=\"https://lobste.rs/s/xyrr0q/hacking_moltbook_ai_social_network\">Comments</a></p>","summary":"报道了AI社交网络Moltbook数据泄露事件，暴露了150万API密钥，凸显了AI应用快速增长中的安全风险和云配置错误问题。"}],"locale":"zh"}]
+10:null
