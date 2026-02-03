@@ -4,3 +4,4 @@ export { ArticleCard } from './ArticleCard';
 export { ArticleList } from './ArticleList';
 export { SummarySection } from './SummarySection';
 export { LanguageSwitcher } from './LanguageSwitcher';
+export { SourceCard } from './SourceCard';

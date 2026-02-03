@@ -13,6 +13,7 @@ interface ArticleCardProps {
     comments_url: string | null;
     published_at: string;
     author: string;
+    summary?: string;
   };
   index: number;
   locale?: Locale;
@@ -62,6 +63,13 @@ export function ArticleCard({
           {article.url && (
             <p className="text-sm text-gray-500 dark:text-gray-400 truncate">
               {new URL(article.url).hostname.replace("www.", "")}
+            </p>
+          )}
+
+          {/* Summary (if available) */}
+          {article.summary && (
+            <p className="mt-2 text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+              {article.summary}
             </p>
           )}
 

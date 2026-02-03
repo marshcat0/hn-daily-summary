@@ -6,9 +6,10 @@ Multi-topic tech news aggregation platform powered by AI. Crawls articles from H
 
 - 🔥 **Multi-source crawling**: Hacker News, Reddit, RSS feeds
 - 📂 **Topic organization**: Tech, AI/ML, Design (configurable)
-- 🤖 **AI summaries**: DeepSeek-powered analysis for each topic
+- 🤖 **AI summaries**: Topic-level analysis + per-article summaries
 - 🔗 **Rich links**: Article URLs + discussion links
-- 🌐 **Static website**: Next.js site deployed to GitHub Pages
+- 🌐 **Static website**: Next.js site with responsive design
+- 📱 **Mobile-friendly**: Adaptive layout for phone and desktop
 - 📧 **Email digest**: Optional daily email (classic mode)
 - ⏰ **Automated**: GitHub Actions runs daily at 8 AM Beijing time
 
@@ -76,7 +77,8 @@ topics:
     name: "Technology"
     sources:
       - type: hackernews
-        count: 20
+        count: 25
+        exclude: "AI|GPT|LLM|..."  # Avoid overlap with AI topic
       - type: reddit
         subreddit: programming
         count: 10
@@ -84,9 +86,16 @@ topics:
     name: "AI & ML"
     sources:
       - type: hackernews
-        filter: "AI|ML|GPT|LLM"
-        count: 15
+        filter: "AI|ML|GPT|LLM"    # Include only AI articles
+        count: 20
+      - type: reddit
+        subreddit: LocalLLaMA
+        count: 10
 ```
+
+Source options:
+- `filter`: Regex to include articles (by title)
+- `exclude`: Regex to exclude articles (avoid topic overlap)
 
 ### Environment Variables
 
@@ -120,14 +129,27 @@ The site will be available at `https://username.github.io/hn-daily-summary/`
 hn-daily-summary/
 ├── src/
 │   ├── crawlers/        # HN, Reddit, RSS crawlers
-│   ├── summarizer.py    # DeepSeek AI
+│   ├── summarizer.py    # DeepSeek AI (topic + article summaries)
 │   └── topic_crawler.py # Topic aggregation
 ├── config/
-│   └── topics.yaml      # Topic definitions
-├── data/                # Generated JSON
+│   └── topics.yaml      # Topic & source definitions
+├── data/                # Generated JSON (by date)
 ├── web/                 # Next.js static site
+│   └── src/components/  # SourceCard, ArticleCard, etc.
 ├── main.py              # CLI entry point
 └── requirements.txt
+```
+
+## UI Preview
+
+```
+Topic: AI & Machine Learning
+├── 🤖 AI Summary (collapsible)
+└── 📰 Articles by Source
+    ├── [Hacker News]     [r/LocalLLaMA]
+    │   • Article 1         • Article 1
+    │     [summary]           [summary]
+    └── [r/MachineLearning]
 ```
 
 ## Documentation

@@ -88,19 +88,33 @@ class BaseCrawler(ABC):
         """
         pass
     
-    def filter_articles(self, articles: List[Article], pattern: Optional[str]) -> List[Article]:
+    def filter_articles(
+        self, 
+        articles: List[Article], 
+        pattern: Optional[str] = None,
+        exclude: Optional[str] = None
+    ) -> List[Article]:
         """
-        Filter articles by title using regex pattern.
+        Filter articles by title using regex patterns.
         
         Args:
             articles: List of articles to filter
-            pattern: Regex pattern (case-insensitive), or None to skip filtering
+            pattern: Regex pattern to INCLUDE (case-insensitive), or None to skip
+            exclude: Regex pattern to EXCLUDE (case-insensitive), or None to skip
         
         Returns:
             Filtered list of articles
         """
-        if not pattern:
-            return articles
+        result = articles
         
-        regex = re.compile(pattern, re.IGNORECASE)
-        return [a for a in articles if regex.search(a.title)]
+        # Include filter: keep only matching articles
+        if pattern:
+            regex = re.compile(pattern, re.IGNORECASE)
+            result = [a for a in result if regex.search(a.title)]
+        
+        # Exclude filter: remove matching articles
+        if exclude:
+            exclude_regex = re.compile(exclude, re.IGNORECASE)
+            result = [a for a in result if not exclude_regex.search(a.title)]
+        
+        return result

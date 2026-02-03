@@ -1,13 +1,20 @@
 # Topic Configuration
 # Each topic aggregates articles from multiple sources
+#
+# Source types:
+#   - hackernews: filter/exclude use regex on title
+#   - reddit: subreddit name (without r/)
+#   - rss: any RSS feed URL
 
 topics:
   tech:
     name: "Technology"
-    description: "General technology news and programming"
+    description: "General technology news, programming, and software engineering"
     sources:
       - type: hackernews
-        count: 20
+        count: 25
+        # Exclude AI-related articles to avoid overlap with 'ai' topic
+        exclude: "AI|GPT|LLM|Claude|Anthropic|OpenAI|DeepSeek|Gemini|Llama|Mistral|Qwen|ChatGPT|neural|transformer|diffusion|machine learning"
       - type: reddit
         subreddit: programming
         count: 10
@@ -18,17 +25,17 @@ topics:
 
   ai:
     name: "AI & Machine Learning"
-    description: "Artificial intelligence, machine learning, and LLMs"
+    description: "Artificial intelligence, machine learning, LLMs, and generative AI"
     sources:
       - type: hackernews
-        filter: "AI|ML|GPT|LLM|Claude|Anthropic|OpenAI|DeepSeek|neural|transformer"
-        count: 15
+        filter: "AI|GPT|LLM|Claude|Anthropic|OpenAI|DeepSeek|Gemini|Llama|Mistral|Qwen|ChatGPT|neural|transformer|diffusion|machine learning|AGI|reasoning|agent"
+        count: 20
       - type: reddit
         subreddit: MachineLearning
         count: 10
       - type: reddit
         subreddit: LocalLLaMA
-        count: 5
+        count: 10
 
   design:
     name: "Design"

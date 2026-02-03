@@ -65,6 +65,116 @@ def format_articles_for_prompt(articles: List[Union[Article, Dict[str, Any]]]) -
     return "\n".join(lines)
 
 
+def summarize_articles_batch(
+    articles: List[Union[Article, Dict[str, Any]]],
+    topic_name: str,
+    language: str = "zh",
+    batch_size: int = 10
+) -> Dict[str, str]:
+    """
+    Generate individual summaries for multiple articles in batches.
+    
+    Uses batch processing to minimize API calls while generating
+    a 1-2 sentence summary for each article.
+    
+    Args:
+        articles: List of Article objects or dicts
+        topic_name: Topic name for context
+        language: Output language ('zh' for Chinese, 'en' for English)
+        batch_size: Number of articles per API call (default 10)
+    
+    Returns:
+        Dict mapping article ID to its summary
+    """
+    client = create_deepseek_client()
+    summaries = {}
+    
+    lang_instruction = "请用中文回复" if language == "zh" else "Please respond in English"
+    
+    # Process articles in batches
+    for i in range(0, len(articles), batch_size):
+        batch = articles[i:i + batch_size]
+        
+        # Build prompt for this batch
+        articles_text = []
+        article_ids = []
+        for idx, article in enumerate(batch, 1):
+            if isinstance(article, dict):
+                article_id = article.get('id', f'article-{i+idx}')
+                title = article.get('title', '')
+                url = article.get('url', 'N/A')
+                source = article.get('source', '')
+                text = article.get('text', '')
+            else:
+                article_id = article.id
+                title = article.title
+                url = article.url or 'N/A'
+                source = article.source
+                text = article.text or ''
+            
+            article_ids.append(article_id)
+            
+            # Truncate text if too long
+            if text and len(text) > 300:
+                text = text[:300] + "..."
+            
+            article_info = f"{idx}. [ID: {article_id}]\n   Title: {title}\n   Source: {source}\n   URL: {url}"
+            if text:
+                article_info += f"\n   Content: {text}"
+            articles_text.append(article_info)
+        
+        prompt = f"""你是一个技术新闻分析师。以下是 "{topic_name}" 主题的文章列表。
+
+请为每篇文章生成一个简短的摘要（1-2句话），说明这篇文章的主要内容和为什么值得关注。{lang_instruction}。
+
+请严格按照以下JSON格式输出，不要添加任何其他内容：
+{{
+  "article_id_1": "摘要内容1",
+  "article_id_2": "摘要内容2"
+}}
+
+文章列表：
+
+{chr(10).join(articles_text)}
+"""
+        
+        try:
+            response = client.chat.completions.create(
+                model="deepseek-chat",
+                messages=[
+                    {"role": "system", "content": "你是一个专业的技术新闻分析师。请严格按照JSON格式输出文章摘要，不要添加任何markdown标记或额外文字。"},
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0.5,
+                max_tokens=2000,
+            )
+            
+            response_text = response.choices[0].message.content.strip()
+            
+            # Parse JSON response - handle potential markdown code blocks
+            if response_text.startswith("```"):
+                # Remove markdown code block markers
+                lines = response_text.split("\n")
+                response_text = "\n".join(lines[1:-1] if lines[-1] == "```" else lines[1:])
+            
+            batch_summaries = json.loads(response_text)
+            summaries.update(batch_summaries)
+            
+            print(f"  - Batch {i//batch_size + 1}: Generated {len(batch_summaries)} article summaries")
+            
+        except json.JSONDecodeError as e:
+            print(f"  - Batch {i//batch_size + 1}: JSON parse error: {e}")
+            # Fallback: assign empty summaries for this batch
+            for article_id in article_ids:
+                summaries[article_id] = ""
+        except Exception as e:
+            print(f"  - Batch {i//batch_size + 1}: Error generating summaries: {e}")
+            for article_id in article_ids:
+                summaries[article_id] = ""
+    
+    return summaries
+
+
 def summarize_topic(
     topic_name: str,
     topic_description: str,
@@ -122,21 +232,50 @@ def summarize_topic(
     return response.choices[0].message.content
 
 
-def summarize_topic_data(topic_data: Dict[str, Any], language: str = "zh") -> Dict[str, Any]:
+def summarize_topic_data(
+    topic_data: Dict[str, Any], 
+    language: str = "zh",
+    include_article_summaries: bool = True
+) -> Dict[str, Any]:
     """
-    Add AI summary to topic data dict.
+    Add AI summary to topic data dict, including per-article summaries.
     
     Args:
         topic_data: Topic data dict from TopicCrawler.crawl_topic()
         language: Output language
+        include_article_summaries: Whether to generate individual article summaries
     
     Returns:
-        Updated topic_data with 'summary' field populated
+        Updated topic_data with 'summary' field populated and each article
+        having its own 'summary' field
     """
+    topic_name = topic_data['topic_name']
+    articles = topic_data['articles']
+    
+    # Generate per-article summaries first (if enabled)
+    if include_article_summaries and articles:
+        print(f"  - Generating per-article summaries...")
+        article_summaries = summarize_articles_batch(
+            articles=articles,
+            topic_name=topic_name,
+            language=language
+        )
+        
+        # Add summary to each article
+        for article in articles:
+            article_id = article.get('id') if isinstance(article, dict) else article.id
+            if article_id in article_summaries:
+                if isinstance(article, dict):
+                    article['summary'] = article_summaries[article_id]
+                else:
+                    article.summary = article_summaries[article_id]
+    
+    # Generate topic-level summary
+    print(f"  - Generating topic summary...")
     summary = summarize_topic(
-        topic_name=topic_data['topic_name'],
+        topic_name=topic_name,
         topic_description=topic_data.get('description', ''),
-        articles=topic_data['articles'],
+        articles=articles,
         language=language
     )
     

@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { Header, TopicNav, SummarySection, ArticleList } from "@/components";
+import { Header, TopicNav, SummarySection, SourceCard } from "@/components";
 import {
   getLatestDate,
   getTopicData,
@@ -7,6 +7,28 @@ import {
   getAllTopicIds,
 } from "@/lib/data";
 import { getTranslations, isValidLocale, locales, Locale } from "@/lib/i18n";
+
+// Helper function to group articles by source
+function groupArticlesBySource(articles: any[]) {
+  const groups: Record<string, any[]> = {};
+  
+  for (const article of articles) {
+    const source = article.source || "Other";
+    if (!groups[source]) {
+      groups[source] = [];
+    }
+    groups[source].push(article);
+  }
+  
+  // Sort groups by total score (sum of article scores in each group)
+  const sortedEntries = Object.entries(groups).sort(([, a], [, b]) => {
+    const scoreA = a.reduce((sum, article) => sum + (article.score || 0), 0);
+    const scoreB = b.reduce((sum, article) => sum + (article.score || 0), 0);
+    return scoreB - scoreA;
+  });
+  
+  return sortedEntries;
+}
 
 interface TopicPageProps {
   params: Promise<{
@@ -76,17 +98,35 @@ export default async function TopicPage({ params }: TopicPageProps) {
         </div>
 
         <div className="space-y-8">
+          {/* Topic-level AI Summary */}
           <SummarySection
             summary={topicData.summary}
             topicName={topicData.topic_name}
             locale={locale as Locale}
           />
 
-          <ArticleList
-            articles={topicData.articles}
-            title={t.allArticles}
-            locale={locale as Locale}
-          />
+          {/* Articles grouped by source - responsive grid */}
+          <section>
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+              <span>📰</span>
+              {t.allArticles}
+              <span className="text-sm font-normal text-gray-500">
+                ({topicData.article_count})
+              </span>
+            </h2>
+            
+            {/* Responsive grid: 1 column on mobile, 2 columns on desktop */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {groupArticlesBySource(topicData.articles).map(([sourceName, articles]) => (
+                <SourceCard
+                  key={sourceName}
+                  sourceName={sourceName}
+                  articles={articles}
+                  locale={locale as Locale}
+                />
+              ))}
+            </div>
+          </section>
         </div>
       </main>
 

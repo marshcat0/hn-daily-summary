@@ -64,12 +64,15 @@ topics:
     description: "What this topic covers"
     sources:
       - type: hackernews
-        filter: "keyword1|keyword2"
+        filter: "keyword1|keyword2"   # Include only matching
+        exclude: "keyword3|keyword4"  # Exclude matching (avoid overlap)
         count: 15
       - type: reddit
         subreddit: subreddit_name
         count: 10
 ```
+
+**Important:** Use `exclude` to avoid topic overlap. For example, the `tech` topic excludes AI-related keywords to prevent duplicates with the `ai` topic.
 
 ### Add a New Source Type
 
@@ -96,18 +99,27 @@ class NewSourceCrawler(BaseCrawler):
 
 Edit `src/summarizer.py`:
 
-- Modify `summarize_topic()` prompt
+- `summarize_topic()` - Topic-level summary prompt
+- `summarize_articles_batch()` - Per-article summary prompt (batched for efficiency)
 - Adjust `temperature` or `max_tokens`
 - Change categorization instructions
+
+**Two summary levels:**
+1. **Topic summary**: Full analysis with themes and recommendations
+2. **Article summary**: 1-2 sentence summary per article (generated in batches of 10)
 
 ### Modify Website UI
 
 Edit files in `web/src/`:
 
-- `components/*.tsx` - UI components
+- `components/SourceCard.tsx` - Groups articles by source (HN, Reddit, etc.)
+- `components/ArticleCard.tsx` - Individual article with summary
+- `components/SummarySection.tsx` - Collapsible topic AI summary
 - `app/globals.css` - Global styles
-- `app/page.tsx` - Home page
-- `app/[topic]/page.tsx` - Topic pages
+- `app/[locale]/page.tsx` - Home page
+- `app/[locale]/[topic]/page.tsx` - Topic pages
+
+**Layout:** Articles are grouped by source in a responsive 2-column grid (1 column on mobile).
 
 ### Debug Locally
 

@@ -21,7 +21,8 @@ class HackerNewsCrawler(BaseCrawler):
     
     Config options:
         - count: Number of stories to fetch (default: 30)
-        - filter: Regex pattern to filter titles (optional)
+        - filter: Regex pattern to INCLUDE titles (optional)
+        - exclude: Regex pattern to EXCLUDE titles (optional)
         - endpoint: API endpoint - "top", "new", "best" (default: "top")
     """
     
@@ -34,9 +35,11 @@ class HackerNewsCrawler(BaseCrawler):
         count = config.get('count', 30)
         endpoint = config.get('endpoint', 'top')
         filter_pattern = config.get('filter')
+        exclude_pattern = config.get('exclude')
         
         # Fetch more if filtering, to ensure we get enough results
-        fetch_count = count * 3 if filter_pattern else count
+        has_filter = filter_pattern or exclude_pattern
+        fetch_count = count * 3 if has_filter else count
         
         # Get story IDs
         story_ids = self._fetch_story_ids(endpoint, fetch_count)
@@ -44,9 +47,9 @@ class HackerNewsCrawler(BaseCrawler):
         # Fetch stories concurrently
         articles = self._fetch_stories_concurrent(story_ids)
         
-        # Apply filter if specified
-        if filter_pattern:
-            articles = self.filter_articles(articles, filter_pattern)
+        # Apply filters if specified
+        if has_filter:
+            articles = self.filter_articles(articles, filter_pattern, exclude_pattern)
         
         # Sort by score and limit
         articles.sort(key=lambda a: a.score, reverse=True)

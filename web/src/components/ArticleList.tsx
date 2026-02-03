@@ -11,6 +11,7 @@ interface Article {
   comments_url: string | null;
   published_at: string;
   author: string;
+  summary?: string;
 }
 
 interface ArticleListProps {

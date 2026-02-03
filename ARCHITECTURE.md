@@ -124,7 +124,12 @@ class Article:
     published_at: datetime
     author: str
     text: str | None
+    summary: str | None  # AI-generated per-article summary
 ```
+
+Crawlers support filtering:
+- `filter`: Regex pattern to INCLUDE articles (by title)
+- `exclude`: Regex pattern to EXCLUDE articles (by title)
 
 ### Topic Configuration (`config/topics.yaml`)
 
@@ -134,11 +139,26 @@ topics:
     name: "Technology"
     sources:
       - type: hackernews
-        count: 20
+        count: 25
+        exclude: "AI|GPT|LLM|..."  # Avoid overlap with 'ai' topic
       - type: reddit
         subreddit: programming
         count: 10
+  ai:
+    name: "AI & Machine Learning"
+    sources:
+      - type: hackernews
+        filter: "AI|GPT|LLM|..."   # Include only AI articles
+        count: 20
 ```
+
+Source options:
+- `type`: hackernews | reddit | rss
+- `count`: Number of articles to fetch
+- `filter`: Regex to INCLUDE (HN only)
+- `exclude`: Regex to EXCLUDE (HN only)
+- `subreddit`: Subreddit name (Reddit only)
+- `url`, `name`: Feed URL and display name (RSS only)
 
 ### Data Output (`data/{date}/{topic}.json`)
 
@@ -147,18 +167,54 @@ topics:
   "topic_id": "tech",
   "topic_name": "Technology",
   "date": "2026-02-03",
-  "articles": [...],
-  "summary": "AI-generated summary..."
+  "articles": [
+    {
+      "id": "hn-12345",
+      "title": "Article Title",
+      "url": "https://...",
+      "source": "Hacker News",
+      "summary": "Per-article AI summary (1-2 sentences)"
+    }
+  ],
+  "summary": "Topic-level AI summary (full analysis)"
 }
 ```
+
+Two levels of AI summaries:
+- **Topic summary**: Comprehensive analysis of all articles, grouped by themes
+- **Article summary**: Brief 1-2 sentence summary for each individual article
 
 ### Web Pages
 
 | Route                 | Description                 |
 | --------------------- | --------------------------- |
 | `/`                   | Home - all topics for today |
-| `/tech`               | Single topic view           |
-| `/archive/2026-02-03` | Historical data             |
+| `/zh/tech`            | Single topic view (Chinese) |
+| `/en/tech`            | Single topic view (English) |
+| `/zh/archive/2026-02-03` | Historical data          |
+
+### UI Components (`web/src/components/`)
+
+| Component         | Purpose                                      |
+| ----------------- | -------------------------------------------- |
+| `Header`          | Site header with date and language switcher  |
+| `TopicNav`        | Topic navigation tabs                        |
+| `SummarySection`  | Collapsible topic-level AI summary           |
+| `SourceCard`      | Groups articles by source (HN, Reddit, etc.) |
+| `ArticleCard`     | Individual article with summary              |
+
+Topic page layout:
+```
+Topic Name
+├── 🤖 AI Summary (topic-level, collapsible)
+└── 📰 All Articles
+    ├── [Hacker News]     [r/LocalLLaMA]    <- 2 columns on desktop
+    │   • Article 1         • Article 1     <- 1 column on mobile
+    │     [summary]           [summary]
+    └── [r/MachineLearning]
+        • Article 1
+          [summary]
+```
 
 ## Configuration
 
