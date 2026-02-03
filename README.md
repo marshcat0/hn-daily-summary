@@ -1,130 +1,139 @@
-# HN Daily Summary 📰
+# Daily Tech Summary 📰
 
-每天自动爬取 Hacker News Top 30 热门文章，使用 DeepSeek AI 生成中文摘要，并通过邮件发送。
+Multi-topic tech news aggregation platform powered by AI. Crawls articles from Hacker News, Reddit, RSS feeds, generates summaries using DeepSeek, and publishes a beautiful static website.
 
-## 功能特性
+## Features
 
-- 🔥 获取 HN 每日 Top 30 热门文章
-- 🤖 使用 DeepSeek AI 智能分类和总结
-- 🔗 包含原文链接和 HN 讨论链接，方便阅读
-- 📧 自动发送邮件（支持 HTML 格式，多收件人）
-- ⏰ GitHub Actions 定时任务（每天北京时间 16:00）
-- 📁 支持本地文件输出（用于测试或存档）
+- 🔥 **Multi-source crawling**: Hacker News, Reddit, RSS feeds
+- 📂 **Topic organization**: Tech, AI/ML, Design (configurable)
+- 🤖 **AI summaries**: DeepSeek-powered analysis for each topic
+- 🔗 **Rich links**: Article URLs + discussion links
+- 🌐 **Static website**: Next.js site deployed to GitHub Pages
+- 📧 **Email digest**: Optional daily email (classic mode)
+- ⏰ **Automated**: GitHub Actions runs daily at 8 AM Beijing time
 
-## 快速开始
+## Quick Start
 
-### 本地运行
+### Prerequisites
 
-1. **安装依赖**
+- Python 3.9+
+- Node.js 18+ (for website)
+- DeepSeek API key
+
+### Installation
 
 ```bash
-cd /Users/lion/Projects/hn-daily-summary
+git clone https://github.com/marshcat0/hn-daily-summary.git
+cd hn-daily-summary
+
+# Python setup
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-```
 
-2. **配置环境变量**
+# Web setup
+cd web
+npm install
+cd ..
 
-```bash
+# Configure
 cp .env.example .env
-# 编辑 .env 文件，填入你的配置
+# Edit .env with your API keys
 ```
 
-3. **运行**
+### Run Locally
 
 ```bash
-# 完整运行（发送邮件）
-python3 main.py
+# Multi-topic mode (crawl + summarize)
+python main.py --mode multi
 
-# 仅保存文件（测试用）
-OUTPUT_MODE=file python3 main.py
+# Classic mode (HN only + email)
+python main.py --mode classic
+
+# Just crawl (skip AI summary)
+python main.py --mode multi --crawl-only
+
+# Preview website
+cd web && npm run dev
 ```
 
-4. **国内网络代理**（如果 Gmail 被墙）
+### With Proxy (China)
 
 ```bash
-export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
-python3 main.py
+export https_proxy=http://127.0.0.1:7890
+export http_proxy=http://127.0.0.1:7890
+export all_proxy=socks5://127.0.0.1:7890
+python main.py --mode multi
 ```
 
-### GitHub Actions 自动运行
+## Configuration
 
-1. **创建 GitHub 仓库**
+### Topics (`config/topics.yaml`)
 
-```bash
-cd /Users/lion/Projects/hn-daily-summary
-git init
-git add .
-git commit -m "feat: HN daily summary with DeepSeek AI"
-
-# 在 GitHub 上创建仓库后
-git remote add origin https://github.com/YOUR_USERNAME/hn-daily-summary.git
-git push -u origin main
+```yaml
+topics:
+  tech:
+    name: "Technology"
+    sources:
+      - type: hackernews
+        count: 20
+      - type: reddit
+        subreddit: programming
+        count: 10
+  ai:
+    name: "AI & ML"
+    sources:
+      - type: hackernews
+        filter: "AI|ML|GPT|LLM"
+        count: 15
 ```
 
-2. **添加 Secrets**
+### Environment Variables
 
-在 GitHub 仓库 Settings → Secrets and variables → Actions 中添加：
+| Variable           | Required  | Description      |
+| ------------------ | --------- | ---------------- |
+| `DEEPSEEK_API_KEY` | Yes       | DeepSeek API key |
+| `SMTP_SERVER`      | For email | SMTP server      |
+| `SMTP_PORT`        | For email | SMTP port (587)  |
+| `SMTP_USERNAME`    | For email | Sender email     |
+| `SMTP_PASSWORD`    | For email | App password     |
+| `EMAIL_TO`         | For email | Recipients       |
 
-| Secret Name        | Description                       |
-| ------------------ | --------------------------------- |
-| `DEEPSEEK_API_KEY` | DeepSeek API Key                  |
-| `SMTP_SERVER`      | SMTP 服务器 (如 `smtp.gmail.com`) |
-| `SMTP_PORT`        | SMTP 端口 (如 `587`)              |
-| `SMTP_USERNAME`    | 发件邮箱地址                      |
-| `SMTP_PASSWORD`    | 邮箱密码或应用专用密码            |
-| `EMAIL_TO`         | 收件邮箱地址（多个用逗号分隔）    |
+## GitHub Actions Deployment
 
-3. **手动触发测试**
+1. **Create repository** and push code
 
-仓库 Actions 页面 → HN Daily Summary → Run workflow
+2. **Add Secrets** (Settings → Secrets → Actions):
 
-## 邮件配置说明
+   - `DEEPSEEK_API_KEY`
+   - `SMTP_SERVER`, `SMTP_PORT`, `SMTP_USERNAME`, `SMTP_PASSWORD`, `EMAIL_TO` (for email)
 
-### Gmail
+3. **Enable GitHub Pages** (Settings → Pages → Source: gh-pages)
 
-1. 开启两步验证
-2. 生成应用专用密码：Google Account → Security → App passwords
-3. 使用应用专用密码作为 `SMTP_PASSWORD`
+4. **Run workflow** (Actions → HN Daily Summary → Run workflow)
 
-### QQ 邮箱
+The site will be available at `https://username.github.io/hn-daily-summary/`
 
-- SMTP_SERVER: `smtp.qq.com`
-- SMTP_PORT: `587`
-- SMTP_PASSWORD: 需要开启 SMTP 服务并获取授权码
-
-### 163 邮箱
-
-- SMTP_SERVER: `smtp.163.com`
-- SMTP_PORT: `25` 或 `465`
-- SMTP_PASSWORD: 需要开启 SMTP 服务并获取授权码
-
-## 配置选项
-
-| 环境变量           | 默认值  | 说明                                |
-| ------------------ | ------- | ----------------------------------- |
-| `STORIES_COUNT`    | `30`    | 获取的文章数量                      |
-| `SUMMARY_LANGUAGE` | `zh`    | 总结语言 (`zh` 中文, `en` 英文)     |
-| `OUTPUT_MODE`      | `email` | 输出模式：`email` / `file` / `both` |
-
-## 项目结构
+## Project Structure
 
 ```
 hn-daily-summary/
 ├── src/
-│   ├── hn_fetcher.py    # HN API 爬取
-│   ├── summarizer.py    # DeepSeek AI 总结
-│   └── emailer.py       # 邮件发送
-├── main.py              # 主入口
-├── ARCHITECTURE.md      # 技术架构文档
-└── AGENTS.md            # AI 助手指南
+│   ├── crawlers/        # HN, Reddit, RSS crawlers
+│   ├── summarizer.py    # DeepSeek AI
+│   └── topic_crawler.py # Topic aggregation
+├── config/
+│   └── topics.yaml      # Topic definitions
+├── data/                # Generated JSON
+├── web/                 # Next.js static site
+├── main.py              # CLI entry point
+└── requirements.txt
 ```
 
-## 文档
+## Documentation
 
-- [ARCHITECTURE.md](./ARCHITECTURE.md) - 技术架构和实现细节
-- [AGENTS.md](./AGENTS.md) - AI 助手维护指南
+- [ARCHITECTURE.md](./ARCHITECTURE.md) - Technical architecture
+- [AGENTS.md](./AGENTS.md) - AI assistant guide
 
 ## License
 

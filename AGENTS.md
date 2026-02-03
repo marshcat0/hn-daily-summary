@@ -5,147 +5,196 @@
 ## Project Context
 
 **What is this?**
-An automated Hacker News daily digest system that:
+A multi-topic tech news aggregation platform that:
 
-1. Fetches top 30 stories from HN API
-2. Summarizes them using DeepSeek AI
-3. Sends the digest via email
-4. Runs daily via GitHub Actions
+1. Crawls articles from HN, Reddit, RSS feeds (configurable)
+2. Aggregates by topic (tech, AI, design, etc.)
+3. Generates AI summaries using DeepSeek
+4. Builds a static website with Next.js
+5. Deploys to GitHub Pages daily
 
 **Created:** February 2026
 **Author:** Built collaboratively with Claude AI in Cursor IDE
 
-## Key Files to Understand
+## Project Structure
 
-| File                                  | Purpose                   | When to Modify                 |
-| ------------------------------------- | ------------------------- | ------------------------------ |
-| `src/hn_fetcher.py`                   | HN API client             | Changing data source or fields |
-| `src/summarizer.py`                   | AI prompt & DeepSeek call | Improving summary quality      |
-| `src/emailer.py`                      | SMTP email sending        | Adding recipients or format    |
-| `main.py`                             | Pipeline orchestration    | Adding new features            |
-| `.github/workflows/daily-summary.yml` | Cron schedule             | Changing run time              |
+```
+hn-daily-summary/
+├── src/
+│   ├── crawlers/           # Multi-source crawlers
+│   │   ├── base.py         # Article + BaseCrawler
+│   │   ├── hn_crawler.py   # Hacker News
+│   │   ├── reddit_crawler.py
+│   │   └── rss_crawler.py
+│   ├── config_loader.py    # YAML config
+│   ├── topic_crawler.py    # Topic aggregation
+│   ├── summarizer.py       # DeepSeek AI
+│   └── emailer.py          # SMTP email
+├── config/
+│   └── topics.yaml         # Topic definitions
+├── data/                   # Generated JSON
+├── web/                    # Next.js site
+│   ├── src/app/            # Pages
+│   └── src/components/     # React components
+├── main.py                 # Entry point
+└── requirements.txt
+```
+
+## Key Files
+
+| File                       | Purpose               | Modify When           |
+| -------------------------- | --------------------- | --------------------- |
+| `config/topics.yaml`       | Topic & source config | Adding topics/sources |
+| `src/crawlers/*.py`        | Data fetchers         | Adding new sources    |
+| `src/summarizer.py`        | AI prompts            | Improving summaries   |
+| `web/src/components/*.tsx` | UI components         | Changing design       |
+| `web/src/lib/data.ts`      | Data loading          | Changing data format  |
+| `.github/workflows/*.yml`  | Automation            | Changing schedule     |
 
 ## Common Tasks
 
-### Improve Summary Quality
+### Add a New Topic
+
+Edit `config/topics.yaml`:
+
+```yaml
+topics:
+  newtopic:
+    name: "New Topic Name"
+    description: "What this topic covers"
+    sources:
+      - type: hackernews
+        filter: "keyword1|keyword2"
+        count: 15
+      - type: reddit
+        subreddit: subreddit_name
+        count: 10
+```
+
+### Add a New Source Type
+
+1. Create `src/crawlers/newsource_crawler.py`:
+
+```python
+from .base import BaseCrawler, Article
+
+class NewSourceCrawler(BaseCrawler):
+    @property
+    def source_name(self) -> str:
+        return "New Source"
+
+    def fetch(self, config: dict) -> list[Article]:
+        # Implement fetching logic
+        pass
+```
+
+2. Register in `src/crawlers/__init__.py`
+3. Add to CRAWLER_MAP in `src/topic_crawler.py`
+4. **Update this AGENTS.md** with new source info
+
+### Improve AI Summary Quality
 
 Edit `src/summarizer.py`:
 
-```python
-# Modify the prompt in summarize_stories()
-prompt = f"""..."""
+- Modify `summarize_topic()` prompt
+- Adjust `temperature` or `max_tokens`
+- Change categorization instructions
 
-# Adjust model parameters
-response = client.chat.completions.create(
-    model="deepseek-chat",
-    temperature=0.7,      # Lower = more focused
-    max_tokens=4000,      # Increase for longer output
-)
-```
+### Modify Website UI
 
-### Add New Output Channel
+Edit files in `web/src/`:
 
-1. Create `src/new_channel.py` with `send()` function
-2. Import in `main.py`
-3. Add to `OUTPUT_MODE` handling
-4. Update `.env.example`
-5. **Update this AGENTS.md** with new file info
-
-### Change Schedule
-
-Edit `.github/workflows/daily-summary.yml`:
-
-```yaml
-on:
-  schedule:
-    - cron: "0 8 * * *" # UTC time: minute hour day month weekday
-```
+- `components/*.tsx` - UI components
+- `app/globals.css` - Global styles
+- `app/page.tsx` - Home page
+- `app/[topic]/page.tsx` - Topic pages
 
 ### Debug Locally
 
 ```bash
 cd /Users/lion/Projects/hn-daily-summary
+
+# Set up Python
 source venv/bin/activate
+pip install -r requirements.txt
 
-# With proxy (if in China)
-export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
+# With proxy (if needed)
+export https_proxy=http://127.0.0.1:7890
+export http_proxy=http://127.0.0.1:7890
+export all_proxy=socks5://127.0.0.1:7890
 
-# Test with file output (skip email)
-OUTPUT_MODE=file python3 main.py
+# Test crawling
+python main.py --mode multi --crawl-only
 
-# Full test with email
-python3 main.py
+# Test summarizing (requires DEEPSEEK_API_KEY in .env)
+python main.py --mode multi --summarize-only
+
+# Test website
+cd web
+npm install
+npm run dev
+# Visit http://localhost:3000
+```
+
+### Run Classic Mode (HN + Email)
+
+```bash
+# Set OUTPUT_MODE=file to skip email
+OUTPUT_MODE=file python main.py --mode classic
 ```
 
 ## Code Conventions
 
-- **Python version:** 3.9+ (avoid `str | None` syntax, use `Optional[str]`)
-- **Type hints:** Use `typing` module for compatibility
-- **Error handling:** Print errors clearly, exit with code 1 on failure
-- **Config:** All config via environment variables, with sensible defaults
+- **Python**: 3.9+ compatible (use `Optional[str]`, not `str | None`)
+- **TypeScript**: Strict mode, proper typing
+- **Components**: Functional React with hooks
+- **Styling**: Tailwind CSS
 
 ## Documentation Maintenance
 
 **IMPORTANT for AI assistants:**
 
-When you make changes to this project, please:
+When you make changes, update relevant docs:
 
-1. **Update ARCHITECTURE.md** if you:
+1. **ARCHITECTURE.md** - Technical changes:
 
-   - Add new files or modules
-   - Change the data flow
-   - Add new configuration options
-   - Modify the project structure
+   - New files or modules
+   - Data flow changes
+   - New configuration options
 
-2. **Update this AGENTS.md** if you:
+2. **AGENTS.md** (this file) - AI context:
 
-   - Add new common tasks
-   - Change how to debug/test
-   - Discover new gotchas or troubleshooting tips
+   - New common tasks
+   - Changed file purposes
+   - New debugging steps
 
-3. **Update README.md** if you:
+3. **README.md** - User-facing changes:
 
-   - Change user-facing behavior
-   - Add new features users need to know
-   - Change setup instructions
+   - New features
+   - Changed setup steps
+   - New environment variables
 
-4. **Keep comments in code** explaining:
-   - Why a particular approach was chosen
-   - Any non-obvious behavior
-   - Links to relevant documentation
+4. **Code comments** - Implementation details
 
-## Known Issues & Solutions
+## Known Issues
 
 ### Python 3.9 Compatibility
 
-- Don't use `str | None`, use `Optional[str]` from `typing`
-- Don't use `match` statements, use `if/elif`
+Use `Optional[str]` instead of `str | None`
 
-### Gmail SMTP in China
+### Gmail in China
 
-- Requires proxy (see Debug Locally section)
-- Or use QQ/163 Mail as alternative
-- GitHub Actions runs from US, no proxy needed there
+Requires proxy. GitHub Actions works without proxy.
 
-### DeepSeek API
+### RSS Feed Variations
 
-- Base URL: `https://api.deepseek.com`
-- Model: `deepseek-chat`
-- OpenAI SDK compatible
+Some feeds may need custom parsing. Check `rss_crawler.py`.
 
 ## File Locations
 
 ```
-Project root: /Users/lion/Projects/hn-daily-summary
-Virtual env:  /Users/lion/Projects/hn-daily-summary/venv
-Output files: /Users/lion/Projects/hn-daily-summary/output/
+Project:    /Users/lion/Projects/hn-daily-summary
+Python env: /Users/lion/Projects/hn-daily-summary/venv
+Data:       /Users/lion/Projects/hn-daily-summary/data/
+Web output: /Users/lion/Projects/hn-daily-summary/web/out/
 ```
-
-## Questions?
-
-If unclear about any aspect:
-
-1. Read ARCHITECTURE.md for technical details
-2. Check existing code comments
-3. Look at git history for context on past changes
-4. Ask the user for clarification

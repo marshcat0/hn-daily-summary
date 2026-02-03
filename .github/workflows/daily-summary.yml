@@ -7,9 +7,20 @@ on:
 
   # Allow manual trigger
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "Run mode"
+        required: true
+        default: "multi"
+        type: choice
+        options:
+          - classic
+          - multi
 
 jobs:
-  summarize:
+  # Classic mode: HN only + email
+  classic:
+    if: github.event.inputs.mode == 'classic' || (github.event_name == 'schedule' && false)
     runs-on: ubuntu-latest
 
     steps:
@@ -25,7 +36,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run HN Summary
+      - name: Run HN Summary (classic)
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
@@ -35,4 +46,69 @@ jobs:
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           STORIES_COUNT: "30"
           SUMMARY_LANGUAGE: "zh"
-        run: python main.py
+        run: python main.py --mode classic
+
+  # Multi-topic mode: crawl + summarize + build website + deploy
+  multi-topic:
+    if: github.event.inputs.mode == 'multi' || github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install Node dependencies
+        working-directory: web
+        run: npm ci || npm install
+
+      - name: Crawl all topics
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: python main.py --mode multi --crawl-only
+
+      - name: Generate summaries
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: python main.py --mode multi --summarize-only
+
+      - name: Build website
+        working-directory: web
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./web/out
+          cname: "" # Add custom domain here if needed
+
+      # Also send email notification
+      - name: Send email notification
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          STORIES_COUNT: "30"
+          SUMMARY_LANGUAGE: "zh"
+          OUTPUT_MODE: "email"
+        run: python main.py --mode classic
+        continue-on-error: true # Don't fail if email fails

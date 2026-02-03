@@ -1,0 +1,54 @@
+# Topic Configuration
+# Each topic aggregates articles from multiple sources
+
+topics:
+  tech:
+    name: "Technology"
+    description: "General technology news and programming"
+    sources:
+      - type: hackernews
+        count: 20
+      - type: reddit
+        subreddit: programming
+        count: 10
+      - type: rss
+        url: https://lobste.rs/rss
+        name: "Lobsters"
+        count: 10
+
+  ai:
+    name: "AI & Machine Learning"
+    description: "Artificial intelligence, machine learning, and LLMs"
+    sources:
+      - type: hackernews
+        filter: "AI|ML|GPT|LLM|Claude|Anthropic|OpenAI|DeepSeek|neural|transformer"
+        count: 15
+      - type: reddit
+        subreddit: MachineLearning
+        count: 10
+      - type: reddit
+        subreddit: LocalLLaMA
+        count: 5
+
+  design:
+    name: "Design"
+    description: "UI/UX design, product design, and visual design"
+    sources:
+      - type: rss
+        url: https://feeds.feedburner.com/SidebarFeed
+        name: "Sidebar.io"
+        count: 15
+      - type: reddit
+        subreddit: web_design
+        count: 10
+
+# Settings for all topics
+settings:
+  # Maximum articles per topic after aggregation
+  max_articles_per_topic: 30
+
+  # Language for AI summaries
+  summary_language: zh
+
+  # Date format for data files
+  date_format: "%Y-%m-%d"
