@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Enable static export for GitHub Pages
+  // Enable static export
   output: 'export',
 
   // Disable image optimization for static export
@@ -8,11 +8,9 @@ const nextConfig = {
     unoptimized: true,
   },
 
-  // Base path for GitHub Pages (deploying to username.github.io/repo-name)
-  basePath: '/hn-daily-summary',
-
-  // Asset prefix for static files (must match basePath for subdirectory deployment)
-  assetPrefix: '/hn-daily-summary',
+  // Base path for GitHub Pages (set via env var, empty for Vercel)
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || '',
 
   // Trailing slashes for better static hosting compatibility
   trailingSlash: true,

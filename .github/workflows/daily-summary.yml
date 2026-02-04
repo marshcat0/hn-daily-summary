@@ -48,12 +48,12 @@ jobs:
           SUMMARY_LANGUAGE: "zh"
         run: python main.py --mode classic
 
-  # Multi-topic mode: crawl + summarize + build website + deploy
+  # Multi-topic mode: crawl + summarize + deploy to Vercel + GitHub Pages
   multi-topic:
     if: github.event.inputs.mode == 'multi' || github.event_name == 'schedule'
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Required to push to gh-pages branch
+      contents: write  # Required for GitHub Pages
 
     steps:
       - name: Checkout repository
@@ -89,18 +89,37 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python main.py --mode multi --summarize-only
 
-      - name: Build website
+      # Deploy to Vercel (no basePath)
+      - name: Deploy to Vercel
         working-directory: web
-        run: npm run build
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: |
+          npm install -g vercel
+          vercel pull --yes --environment=production --token=$VERCEL_TOKEN
+          vercel build --prod --token=$VERCEL_TOKEN
+          vercel deploy --prebuilt --prod --token=$VERCEL_TOKEN
+        continue-on-error: true  # Don't fail if Vercel not configured
+
+      # Deploy to GitHub Pages (with basePath)
+      - name: Build for GitHub Pages
+        working-directory: web
+        env:
+          NEXT_PUBLIC_BASE_PATH: /hn-daily-summary
+        run: |
+          rm -rf out .next
+          npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./web/out
-          cname: "" # Add custom domain here if needed
+        continue-on-error: true  # Don't fail if repo is private
 
-      # Also send email notification
+      # Send email notification (optional)
       - name: Send email notification
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
@@ -113,4 +132,4 @@ jobs:
           SUMMARY_LANGUAGE: "zh"
           OUTPUT_MODE: "email"
         run: python main.py --mode classic
-        continue-on-error: true # Don't fail if email fails
+        continue-on-error: true  # Don't fail if email fails
