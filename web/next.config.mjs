@@ -8,8 +8,11 @@ const nextConfig = {
     unoptimized: true,
   },
 
-  // Base path for GitHub Pages (uncomment if deploying to username.github.io/repo-name)
-  // basePath: '/hn-daily-summary',
+  // Base path for GitHub Pages (deploying to username.github.io/repo-name)
+  basePath: '/hn-daily-summary',
+
+  // Asset prefix for static files (must match basePath for subdirectory deployment)
+  assetPrefix: '/hn-daily-summary',
 
   // Trailing slashes for better static hosting compatibility
   trailingSlash: true,
