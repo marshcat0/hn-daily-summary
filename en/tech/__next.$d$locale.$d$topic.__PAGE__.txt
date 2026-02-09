@@ -3,204 +3,229 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-f:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-10:"$Sreact.suspense"
-5:T3cc7,好的，作为一名技术新闻分析师，我已对今日“Technology”主题下的30篇热门文章进行了综合分析。这些内容涵盖了从AI与编程范式、开源项目、平台与工具、到行业反思与怀旧等多个维度。
+e:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+5:T3d03,好的，作为一名技术新闻分析师，我已对今日“Technology”主题下的30篇热门文章进行了综合分析。这些内容主要来自Hacker News和Lobsters社区，涵盖了从人工智能、软件开发到硬件、网络和行业文化等多个子领域。
 
-以下是我的分析总结，按核心主题分组呈现，并附上今日最值得阅读的文章推荐。
+以下是我的分析总结，按核心主题进行了分组。
 
-### 今日技术新闻综合分析
+### **今日技术热点分析总结**
 
-今日的技术社区讨论呈现出几个鲜明的焦点：**AI编程代理的深远影响**引发了关于软件工程本质的激烈辩论；**开源与复古计算项目**持续吸引着开发者的热情；同时，对**平台治理、广告生态和工具臃肿**的批判性反思也占据重要位置。
+今日的技术社区讨论呈现出几个鲜明的焦点：**人工智能（特别是AI代理和自动驾驶）的进展与反思**、**对软件开发本质与文化的深度探讨**、**令人惊叹的底层技术与性能优化**，以及**开源项目和实用工具的发布**。同时，社区也在缅怀一位互联网先驱。
 
-#### 主题一：AI与编程范式的演进
-这一组文章集中讨论了AI，特别是编码代理（Coding Agents）如何改变软件开发流程、工具链乃至工程师的角色，是今日最具前瞻性和争议性的话题。
+---
 
-1.  **标题**：Coding agents have replaced every framework I used
-    **说明**：作者宣称AI编码代理已经取代了他过去使用的所有开发框架，引发了关于软件工程是否回归本质（专注于问题而非工具）的大讨论。文章和评论区（近500条评论）是观察当前开发者对AI态度的一扇窗。
-    - 文章链接：https://blog.alaindichiappari.dev/p/software-engineering-is-back
-    - 讨论链接：https://news.ycombinator.com/item?id=46923543
+### **一、人工智能：前沿、反思与工具**
 
-2.  **标题**：Software factories and the agentic moment
-    **说明**：探讨了“软件工厂”的概念，即由AI代理驱动的自动化软件开发流水线。这标志着软件开发可能进入一个全新的“代理主导”阶段，引发了关于效率、质量控制与工程师价值的思考。
-    - 文章链接：https://factory.strongdm.ai/
-    - 讨论链接：https://news.ycombinator.com/item?id=46924426
+这是今日最热门的主题，涉及自动驾驶、AI代理工作流以及对其负面影响的担忧。
 
-3.  **标题**：Beyond agentic coding
-    **说明**：从另一个角度审视AI编程，认为当前基于指令的“代理式编码”只是过渡，未来将是AI与人类更深度融合的“共生编程”。提供了对AI编程演进方向的深度思考。
-    - 文章链接：https://haskellforall.com/2026/02/beyond-agentic-coding
-    - 讨论链接：https://lobste.rs/s/gvlmu1/beyond_agentic_coding
+1.  **Waymo世界模型**
+    *   **说明**：Waymo发布其用于自动驾驶仿真的“世界模型”，这是一个能够预测复杂交通场景中所有参与者未来行为的AI模型。它代表了自动驾驶模拟技术的一个新前沿，对于提升AI驾驶的安全性和可靠性至关重要。
+    *   **文章链接**：https://waymo.com/blog/2026/02/the-waymo-world-model-a-new-frontier-for-autonomous-driving-simulation
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46914785
 
-4.  **标题**：Learning from context is harder than we thought
-    **说明**：腾讯的研究指出，让AI模型从上下文（如长提示词或文档）中有效学习比想象中更困难。这对依赖大上下文窗口的AI编码工具和智能体的能力边界提出了重要警示。
-    - 文章链接：https://hy.tencent.com/research/100025?langVersion=en
-    - 讨论链接：https://news.ycombinator.com/item?id=46870514
+2.  **GitHub Agentic Workflows**
+    *   **说明**：GitHub官方发布了“Agentic Workflows”的文档和工具。这标志着AI代理从简单的代码补全向能够执行复杂、多步骤工作流的自动化助手演进，可能深刻改变软件开发流程。
+    *   **文章链接**：https://github.github.io/gh-aw/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46934107
 
-#### 主题二：开源项目与复古计算
-经典游戏开源重制、极简/复古风格的工具和系统，展现了技术社区对创意、可控性和怀旧的热爱。
+3.  **软件工厂与代理时刻**
+    *   **说明**：一篇探讨“软件工厂”概念的文章，认为AI代理的成熟将把软件开发带入一个全新的“代理时刻”，引发关于未来工程师角色的广泛讨论。
+    *   **文章链接**：https://factory.strongdm.ai/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46924426
 
-5.  **标题**：OpenCiv3: Open-source, cross-platform reimagining of Civilization III
-    **说明**：经典游戏《文明III》的开源、跨平台重制版。这类项目不仅具有情怀价值，也是学习大型软件项目架构和游戏开发的绝佳案例。
-    - 文章链接：https://openciv3.org/
-    - 讨论链接：https://news.ycombinator.com/item?id=46918612
+4.  **超越代理式编码**
+    *   **说明**：文章认为当前基于提示的“代理式编码”效率低下，提出了一种更结构化、可预测的“声明式”AI编程方法，旨在提高AI辅助编程的可靠性和可控性。
+    *   **文章链接**：https://haskellforall.com/2026/02/beyond-agentic-coding
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46930565
 
-6.  **标题**：France's homegrown open source online office suite
-    **说明**：法国政府支持开发的开源在线办公套件，旨在提供可替代Google Workspace或Microsoft 365的国产化方案。体现了国家层面对数字主权和开源软件的重视。
-    - 文章链接：https://github.com/suitenumerique
-    - 讨论链接：https://news.ycombinator.com/item?id=46923736
+5.  **“Slop”让我恐惧**
+    *   **说明**：一篇对当前AI生成内容（作者称之为“Slop”）泛滥现象的批判性文章，表达了对互联网信息质量下降、人类创造力被稀释的深切担忧，引发了强烈共鸣。
+    *   **文章链接**：https://ezhik.jp/ai-slop-terrifies-me/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46933067
 
-7.  **标题**：Show HN: Look Ma, No Linux: Shell, App Installer, Vi, Cc on ESP32-S3 / BreezyBox
-    **说明**：在ESP32-S3微控制器上实现了一个不依赖Linux的轻量级Unix-like环境。项目极具极客精神，让人回想起DOS时代的编程体验，展示了在资源极端受限环境下的系统设计。
-    - 文章链接：https://github.com/valdanylchuk/breezydemo
-    - 讨论链接：https://news.ycombinator.com/item?id=46918429
+---
 
-8.  **标题**：SectorC: A C Compiler in 512 bytes
-    **说明**：一个仅512字节的C语言编译器，是“大小即挑战”的极致体现。这类项目在演示编译器原理和代码高尔夫艺术方面令人惊叹。
-    - 文章链接：https://xorvoid.com/sectorc.html
-    - 讨论链接：https://news.ycombinator.com/item?id=46925741
+### **二、软件开发：文化、实践与怀旧**
 
-9.  **标题**：I write games in C (yes, C) (2016)
-    **说明**：一篇关于在现代环境下依然使用C语言编写游戏的辩护和经验分享。引发了关于编程语言选择、性能与控制权的经典讨论。
-    - 文章链接：https://jonathanwhiting.com/writing/blog/games_in_c/
-    - 讨论链接：https://news.ycombinator.com/item?id=46925808
+社区对软件开发的本质、工程师文化以及经典技术重现展现了浓厚兴趣。
 
-10. **标题**：Hoot: Scheme on WebAssembly
-    **说明**：将Scheme语言（Lisp方言）编译为WebAssembly的项目。为函数式编程在Web平台和高性能计算场景提供了新的可能，吸引了编程语言爱好者。
-    - 文章链接：https://www.spritely.institute/hoot/
-    - 讨论链接：https://news.ycombinator.com/item?id=46923254
+6.  **我们哀悼我们的技艺**
+    *   **说明**：一篇引发巨大共鸣的博文，作者感慨现代软件开发中“工匠精神”的消逝，工具和流程的复杂化让开发者远离了创造的本质。评论数极高，反映了行业的普遍焦虑。
+    *   **文章链接**：https://nolanlawson.com/2026/02/07/we-mourn-our-craft/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46926245
 
-11. **标题**：Maple Mono: Open source monospace font
-    **说明**：一款新的开源等宽字体。字体选择是开发者个性化工作环境的重要部分，新字体总能引起一定关注。
-    - 文章链接：https://font.subf.dev/en/
-    - 讨论链接：https://lobste.rs/s/ahca9t/maple_mono_open_source_monospace_font
+7.  **我用C语言写游戏（是的，就是C）**
+    *   **说明**：一篇2016年的经典文章被重新提起，作者分享了如何仅用C语言和少量库来开发游戏。在当今复杂的游戏引擎时代，这种极简主义方法令人耳目一新，并引发了关于控制力与效率的讨论。
+    *   **文章链接**：https://jonathanwhiting.com/writing/blog/games_in_c/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46925808
 
-#### 主题三：平台、工具与开发实践
-涉及云平台更新、新工具发布、性能优化技巧以及职业发展路径，贴近开发者日常工作。
+8.  **让我们像1997年那样编译《雷神之锤》**
+    *   **说明**：著名开发者Fabien Sanglard带我们重温历史，展示如何在当年的硬件和软件环境下编译传奇游戏《雷神之锤》。这是一次精彩的软件考古和怀旧之旅。
+    *   **文章链接**：https://fabiensanglard.net/compile_like_1997/index.html
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46936274
 
-12. **标题**：An Update on Heroku
-    **说明**：老牌PaaS平台Heroku发布更新。尽管影响力不如从前，但Heroku的动向仍能勾起许多开发者的回忆，并反映云平台市场的竞争态势。
-    - 文章链接：https://www.heroku.com/blog/an-update-on-heroku/
-    - 讨论链接：https://news.ycombinator.com/item?id=46913903
+9.  **测试其实可以很有趣**
+    *   **说明**：一篇来自Lobsters的文章，旨在改变人们对测试的刻板印象，通过实用的方法和心态调整，论证编写测试可以是一个富有创造性和满足感的过程。
+    *   **文章链接**：https://giacomocavalieri.me/writing/testing-can-be-fun-actually
+    *   **讨论链接**：https://lobste.rs/s/k2kwv0/testing_can_be_fun_actually
 
-13. **标题**：Show HN: I spent 4 years building a UI design tool with only the features I use
-    **说明**：一位开发者因不满现有设计工具臃肿，花费四年打造了一款只包含自己所需功能的UI设计工具。是“挠自己的痒处”和对抗软件膨胀的典型案例。
-    - 文章链接：https://vecti.com
-    - 讨论链接：https://news.ycombinator.com/item?id=46917033
+10. **我花了4年卖掉我的初创公司，并为此写了一本书**
+    *   **说明**：一位创业者分享其公司被收购的完整历程，并将经验写成电子书免费提供。对于创业者或对科技商业感兴趣的人来说是宝贵的一手资料。
+    *   **文章链接**：https://derekyan.com/ma-book/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46888258
 
-14. **标题**：Microsoft open-sources LiteBox, a security-focused library OS
-    **说明**：微软开源了一个专注于安全的库操作系统（Library OS）。这表明微软在将核心安全技术开源化方面持续投入，可能影响未来安全敏感应用的开发方式。
-    - 文章链接：https://github.com/microsoft/litebox
-    - 讨论链接：https://news.ycombinator.com/item?id=46913793
+---
 
-15. **标题**：Making geo joins faster with H3 indexes
-    **说明**：介绍如何利用Uber开源的H3地理空间索引将地理连接查询速度提升400%。是数据库性能优化和地理信息处理领域的实用技术分享。
-    - 文章链接：https://floedb.ai/blog/how-we-made-geo-joins-400-faster-with-h3-indexes
-    - 讨论链接：https://news.ycombinator.com/item?id=46898473
+### **三、开源项目与实用工具**
 
-16. **标题**：Start all of your commands with a comma (2009)
-    **说明**：一篇2009年的老文章被重新顶起，建议在自定义命令前加逗号以避免与系统命令冲突。简单却实用的Shell技巧，历久弥新。
-    - 文章链接：https://rhodesmill.org/brandon/2009/commands-with-comma/
-    - 讨论链接：https://news.ycombinator.com/item?id=46890814
+今日有多个高质量的开源项目和工具发布，涉及安全、隐私和开发效率。
 
-17. **标题**：I spent 5 years in DevOps – Solutions engineering gave me what I was missing
-    **说明**：一篇关于从DevOps转向解决方案工程师的职业经历分享。反映了技术角色细分背景下，开发者对工作意义、人际互动和职业满足感的思考。
-    - 文章链接：https://infisical.com/blog/devops-to-solutions-engineering
-    - 讨论链接：https://news.ycombinator.com/item?id=46915102
+11. **Vouch**
+    *   **说明**：HashiCorp联合创始人Mitchell Hashimoto发布的新工具，用于安全地存储和访问敏感数据（如API密钥、令牌）。因其作者背景和解决的实际问题而受到高度关注。
+    *   **文章链接**：https://github.com/mitchellh/vouch
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46930961
 
-18. **标题**：Stay Away from My Trash
-    **说明**：tldraw团队分享的一个关于软件设计的有趣故事：如何防止用户误删重要内容（“垃圾”）。以小见大，体现了优秀产品对用户行为的深刻理解和巧妙设计。
-    - 文章链接：https://tldraw.dev/blog/stay-away-from-my-trash
-    - 讨论链接：https://news.ycombinator.com/item?id=46867446
+12. **DoNotNotify现已开源**
+    *   **说明**：一款用于控制Android系统通知的应用，在社区呼吁下由闭源转为开源。这个故事本身是关于开发者与社区互动、建立信任的典型案例。
+    *   **文章链接**：https://donotnotify.com/opensource.html
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46932192
 
-#### 主题四：行业反思、怀旧与文化
-对软件行业现状的批判、对经典技术的怀念，以及跨领域的有趣内容。
+13. **OpenCiv3**
+    *   **说明**：经典游戏《文明III》的开源、跨平台重制项目。对于怀旧游戏玩家和开源游戏开发者来说是一个激动人心的消息，拥有极高的社区热度。
+    *   **文章链接**：https://openciv3.org/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46918612
 
-19. **标题**：We mourn our craft
-    **说明**：一篇引发强烈共鸣的文章，哀悼软件工程“手艺”的流失——过度依赖抽象、快速迭代导致的对系统底层理解的缺失。评论区（超500条）成为了开发者抒发焦虑和反思的场所。
-    - 文章链接：https://nolanlawson.com/2026/02/07/we-mourn-our-craft/
-    - 讨论链接：https://news.ycombinator.com/item?id=46926245
+14. **通过Git提交信息进行代码注入**
+    *   **说明**：一篇来自Lobsters的安全研究，揭示了一种通过精心构造的Git提交信息在某些特定工具链中触发代码执行的安全隐患。提醒开发者注意供应链安全。
+    *   **文章链接**：https://mas.to/@zekjur/116022397626943871
+    *   **讨论链接**：https://lobste.rs/s/fgeokt/code_injections_through_git_commit
 
-20. **标题**：I now assume that all ads on Apple news are scams
-    **说明**：作者指出Apple News平台上的广告充斥着诈骗内容，并质疑苹果的审核责任。触及了大型平台在广告治理与用户体验之间的核心矛盾，引发了广泛讨论。
-    - 文章链接：https://kirkville.com/i-now-assume-that-all-ads-on-apple-news-are-scams/
-    - 讨论链接：https://news.ycombinator.com/item?id=46911901
+15. **Bun v1.3.9**
+    *   **说明**：快速发展的JavaScript运行时/工具包Bun发布了新版本。作为Node.js的竞争者，其每次更新都备受关注。
+    *   **文章链接**：https://bun.com/blog/bun-v1.3.9
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46936595
 
-21. **标题**：Stories from 25 Years of Software Development
-    **说明**：开发者分享25年编程生涯中的轶事与感悟。这类个人历史叙事总是充满智慧与趣味，能引起不同时代程序员的共鸣。
-    - 文章链接：https://susam.net/twenty-five-years-of-computing.html
-    - 讨论链接：https://news.ycombinator.com/item?id=46924264
+---
 
-22. **标题**：(Bsky thread) "This turns the maintainer into an unwitting vibe coder"
-    **说明**：一个Bluesky线程的转载，批评了某些开源项目通过模糊的“氛围”而非明确规范来管理贡献，导致维护者成为被动的“氛围编码者”。尖锐地指出了开源协作中的一种沟通困境。
-    - 文章链接：https://bsky.app/profile/fullmoon.id/post/3meadfaulhk2s
-    - 讨论链接：https://lobste.rs/s/nhbnjf/bsky_thread_this_turns_maintainer_into
+### **四、底层技术、性能与硬件**
 
-23. **标题**：Hackers (1995) Animated Experience
-    **说明**：为1995年经典电影《黑客》创建的互动式动画网站。是技术文化与流行文化结合的趣味项目，充满了对赛博朋克美学的致敬。
-    - 文章链接：https://hackers-1995.vercel.app/
-    - 讨论链接：https://news.ycombinator.com/item?id=46912800
+社区一如既往地欣赏极致的性能优化、底层系统编程和硬件创新。
 
-24. **标题**：Unseen Footage of Atari Battlezone Arcade Cabinet Production
-    **说明**：一段未曾公开的雅达利《战争地带》街机 cabinet 生产线录像。是电子游戏考古和硬件历史的珍贵资料，满足了对早期科技制造业的好奇心。
-    - 文章链接：https://arcadeblogger.com/2026/02/02/unseen-footage-of-atari-battlezone-cabinet-production/
-    - 讨论链接：https://news.ycombinator.com/item?id=46868343
+16. **SectorC：一个512字节的C编译器**
+    *   **说明**：一个令人惊叹的极简主义项目，展示了在极端限制下（仅512字节）实现一个可用C编译器的艺术。是理解编译原理和代码精简的绝佳教材。
+    *   **文章链接**：https://xorvoid.com/sectorc.html
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46925741
 
-25. **标题**：Sheldon Brown's Bicycle Technical Info
-    **说明**：一个关于自行车技术的经典网站（非严格技术领域，但因社区喜爱而上榜）。它代表了互联网早期那种由个人热情驱动、内容极度详尽专业的网站典范，常被开发者誉为“文档写作的榜样”。
-    - 文章链接：https://www.sheldonbrown.com/
-    - 讨论链接：https://news.ycombinator.com/item?id=46914159
+17. **我在Game Boy Color上实现了实时3D着色器**
+    *   **说明**：一项不可思议的硬件“黑客”成就，在性能极其有限的Game Boy Color掌机上运行了实时3D图形。展示了开发者对旧硬件的深刻理解和创造力。
+    *   **文章链接**：https://blog.otterstack.com/posts/202512-gbshader/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46935791
 
-#### 主题五：前沿科技与跨学科
-自动驾驶、生物科技等前沿领域的突破性进展。
+18. **为什么E核让Apple Silicon如此快**
+    *   **说明**：一篇深入分析Apple M系列芯片能效核（E-core）设计哲学的文章，解释了其如何通过异构计算架构在性能和功耗之间取得卓越平衡。
+    *   **文章链接**：https://eclecticlight.co/2026/02/08/last-week-on-my-mac-why-e-cores-make-apple-silicon-fast/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46933365
 
-26. **标题**：The Waymo World Model
-    **说明**：Waymo（谷歌旗下自动驾驶公司）发布其“世界模型”，用于高保真自动驾驶仿真。这是自动驾驶核心技术演进的重要里程碑，展示了AI在复杂物理场景建模中的前沿应用。
-    - 文章链接：https://waymo.com/blog/2026/02/the-waymo-world-model-a-new-frontier-for-autonomous-driving-simulation
-    - 讨论链接：https://news.ycombinator.com/item?id=46914785
+19. **使用H3索引让地理连接快400%**
+    *   **说明**：一篇关于地理空间数据性能优化的实战文章，详细介绍了如何使用Uber开源的H3地理空间索引系统来大幅提升数据库查询效率。
+    *   **文章链接**：https://floedb.ai/blog/how-we-made-geo-joins-400-faster-with-h3-indexes
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46898473
 
-27. **标题**：Invention of DNA "page numbers" opens up possibilities for the bioeconomy
-    **说明**：加州理工学院发明了DNA“页码”技术，能更高效地定位和编辑DNA长链。这是合成生物学和生物工程领域的一项基础性突破，具有巨大的应用潜力。
-    - 文章链接：https://www.caltech.edu/about/news/invention-dna-page-numbers-synthesis-kaihang-wang
-    - 讨论链接：https://news.ycombinator.com/item?id=46911170
+20. **第一辆钠离子电池电动车是冬季续航怪兽**
+    *   **说明**：报道了全球首款搭载钠离子电池的电动汽车，并重点强调了其在低温环境下的优异表现。这标志着一种可能更便宜、更耐寒的电池技术开始商业化，对电动汽车行业有潜在影响。
+    *   **文章链接**：https://insideevs.com/news/786509/catl-changan-worlds-first-sodium-ion-battery-ev/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46936315
 
-28. **标题**：Vocal Guide – belt sing without killing yourself
-    **说明**：一个通过实时音频分析指导用户安全进行“怒音”（Belt Singing）歌唱的交互式网站。是技术（Web Audio API）与艺术（声乐教学）结合的创新应用。
-    - 文章链接：https://jesperordrup.github.io/vocal-guide/
-    - 讨论链接：https://news.ycombinator.com/item?id=46922049
+---
 
-29. **标题**：A Horrible Conclusion
-    **说明**：一篇研究文章，内容不详（标题具有悬念）。来自Lobsters社区，可能涉及某个令人不安的技术发现或伦理结论。
-    - 文章链接：https://addisoncrump.info/research/a-horrible-conclusion/
-    - 讨论链接：https://lobste.rs/s/w3wixc/horrible_conclusion
+### **五、网络与系统**
 
-### 今日最值得阅读文章推荐
+关于自建网络、路由协议等硬核主题的深度教程。
 
-基于话题热度、讨论深度、行业影响力和创新性，我推荐以下五篇文章：
+21. **运行你自己的AS：在FreeBSD上使用FRR、GRE隧道和策略路由运行BGP**
+    *   **说明**：一篇非常硬核且详细的教程，指导读者如何从零开始搭建自己的自治系统（AS）并运行BGP协议。是网络工程师和爱好者的高级实践指南。（此内容在Hacker News和Lobsters上均有出现）
+    *   **文章链接**：https://blog.hofstede.it/running-your-own-as-bgp-on-freebsd-with-frr-gre-tunnels-and-policy-routing/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46934266 或 https://lobste.rs/s/oy8aqi/running_your_own_as_bgp_on_freebsd_with_frr
 
-1.  **We mourn our craft**
-    **理由**：这篇文章精准地戳中了当下许多资深开发者的集体焦虑，引发了关于软件工程本质、教育缺失和技术演进的深刻讨论。其评论区是观察行业情绪和思想的绝佳样本。
-    **链接**：https://nolanlawson.com/2026/02/07/we-mourn-our-craft/
+22. **用VLAN和10Gbps重建我的家庭网络**
+    *   **说明**：一篇来自Lobsters的实践分享，详细记录了作者升级家庭网络，引入VLAN进行网络隔离并部署万兆（10Gbps）设备的全过程，对家庭实验室爱好者很有参考价值。
+    *   **文章链接**：https://clintonboys.com/projects/homelab/03-network/
+    *   **讨论链接**：https://lobste.rs/s/bic9qr/rebuilding_my_home_network_with_vlans
 
-2.  **Coding agents have replaced every framework I used**
-    **理由**：作为“AI编程”话题的引爆点，本文以极端个人化的视角提出了一个可能代表未来的趋势。其引发的近500条激烈辩论，是理解AI如何重塑开发者工作流的必读战场。
-    **链接**：https://blog.alaindichiappari.dev/p/software-engineering-is-back
+---
 
-3.  **The Waymo World Model**
-    **理由**：代表了AI在现实世界复杂系统（自动驾驶）中应用的最前沿。Waymo的“世界模型”不仅是技术突破，也预示着仿真测试在未来AI系统开发中的核心地位。对于关注AI应用和机器人学的人至关重要。
-    **链接**：https://waymo.com/blog/2026/02/the-waymo-world-model-a-new-frontier-for-autonomous-driving-simulation
+### **六、其他值得关注的内容**
 
-4.  **OpenCiv3: Open-source, cross-platform reimagining of Civilization III**
-    **理由**：开源重制经典商业游戏是一个庞大而迷人的工程。该项目不仅具有高度的娱乐性和情怀价值，其代码和开发过程也是学习软件架构、项目管理和游戏设计的宝贵资源。
-    **链接**：https://openciv3.org/
+23. **OpenClaw正在改变我的生活**
+    *   **说明**：作者热情洋溢地介绍了一款名为OpenClaw的硬件工具（似乎是一种可编程的快捷键控制器），并分享了它如何极大地提升其工作效率和数字生活体验。
+    *   **文章链接**：https://reorx.com/blog/openclaw-is-changing-my-life/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46931805
 
-5.  **I now assume that all ads on Apple news are scams**
-    **理由**：超越纯技术讨论，直指科技巨头（苹果）在平台治理和商业道德上面临的严峻挑战。这个话题关乎每一位用户的日常体验，并揭示了平台经济中一个普遍但被忽视的阴暗面。
-    **链接**：https://kirkville.com/i-now-assume-that-all-ads-on-apple-news-are-scams/0:{"buildId":"n0H2eqJKD5IF8Sth2fCI1","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-02-08","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":13},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-02-08"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-c:T55d,Hello everyone!<p>I&#x27;m a solo developer who&#x27;s been doing UI&#x2F;UX work since 2007. Over the years, I watched design tools evolve from lightweight products into bloated feature-heavy platforms. I kept finding myself using a small amount of the features while the rest just mostly got in the way.<p>So a few years ago I set out to build a design tool just like I wanted. So I built Vecti with what I actually need: pixel-perfect grid snapping, a performant canvas renderer, shared asset libraries, and export&#x2F;presentation features. No collaborative whiteboarding. No plugin ecosystem. No enterprise features. Just the design loop.<p>Four years later, I can proudly show it off. Built and hosted in the EU with European privacy regulations. Free tier available (no credit card, one editor forever).<p>On privacy: I use some basic analytics (page views, referrers) but zero tracking inside the app itself. No session recordings, no behavior analytics, no third-party scripts beyond the essentials.<p>If you&#x27;re a solo designer or small team who wants a tool that stays out of your way, I&#x27;d genuinely appreciate your feedback:
-<a href="https:&#x2F;&#x2F;vecti.com" rel="nofollow">https:&#x2F;&#x2F;vecti.com</a><p>Happy to answer questions about the tech stack, architecture decisions, why certain features didn&#x27;t make the cut, or what&#x27;s next.d:T708,Example repo: <a href="https:&#x2F;&#x2F;github.com&#x2F;valdanylchuk&#x2F;breezydemo" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;valdanylchuk&#x2F;breezydemo</a><p>The underlying ESP-IDF component: <a href="https:&#x2F;&#x2F;github.com&#x2F;valdanylchuk&#x2F;breezybox" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;valdanylchuk&#x2F;breezybox</a><p>It is something like Raspberry Pi, but without the overhead of a full server-grade OS.<p>It captures a lot of the old school DOS era coding experience. I created a custom fast text mode driver, plan to add VGA-like graphics next. ANSI text demos run smooth, as you can see in the demo video featured in the Readme.<p>App installs also work smoothly. The first time it installed 6 apps from my git repo with one command, felt like, &quot;OMG, I got homebrew to run on a toaster!&quot; And best of all, it can install from any repo, no approvals or waiting, you just publish a compatible ELF file in your release.<p>Coverage:<p>Hackaday: <a href="https:&#x2F;&#x2F;hackaday.com&#x2F;2026&#x2F;02&#x2F;06&#x2F;breezybox-a-busybox-like-shell-and-virtual-terminal-for-esp32&#x2F;" rel="nofollow">https:&#x2F;&#x2F;hackaday.com&#x2F;2026&#x2F;02&#x2F;06&#x2F;breezybox-a-busybox-like-she...</a><p>Hackster.io: <a href="https:&#x2F;&#x2F;www.hackster.io&#x2F;news&#x2F;valentyn-danylchuk-s-breezybox-turns-an-espressif-esp32-s3-into-a-tiny-instant-on-pc-3d3135050df1" rel="nofollow">https:&#x2F;&#x2F;www.hackster.io&#x2F;news&#x2F;valentyn-danylchuk-s-breezybox-...</a><p>Reddit: <a href="https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;esp32&#x2F;comments&#x2F;1qq503c&#x2F;i_made_an_instanton_tiny_pc_based_on_esp32s3_with&#x2F;" rel="nofollow">https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;esp32&#x2F;comments&#x2F;1qq503c&#x2F;i_made_an_in...</a>6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-46911901","title":"I now assume that all ads on Apple news are scams","url":"https://kirkville.com/i-now-assume-that-all-ads-on-apple-news-are-scams/","source":"Hacker News","score":1146,"comments_count":517,"comments_url":"https://news.ycombinator.com/item?id=46911901","published_at":"2026-02-06T12:16:43","author":"cdrnsf","text":null,"summary":"文章指出苹果新闻中的广告普遍存在欺诈现象，引发对平台广告审核机制的担忧，值得关注是因为它揭示了主流新闻聚合平台可能存在的安全隐患。"},{"id":"hn-46914785","title":"The Waymo World Model","url":"https://waymo.com/blog/2026/02/the-waymo-world-model-a-new-frontier-for-autonomous-driving-simulation","source":"Hacker News","score":1113,"comments_count":622,"comments_url":"https://news.ycombinator.com/item?id=46914785","published_at":"2026-02-06T16:20:42","author":"xnx","text":null,"summary":"Waymo发布了其世界模型技术，旨在通过高级模拟提升自动驾驶系统的安全性和效率，这代表了自动驾驶仿真领域的重要进展。"},{"id":"hn-46918612","title":"OpenCiv3: Open-source, cross-platform reimagining of Civilization III","url":"https://openciv3.org/","source":"Hacker News","score":886,"comments_count":270,"comments_url":"https://news.ycombinator.com/item?id=46918612","published_at":"2026-02-06T21:51:23","author":"klaussilveira","text":null,"summary":"OpenCiv3是一个开源、跨平台的重制版《文明III》游戏，为经典游戏爱好者提供了现代化的可访问版本，体现了开源社区对复古游戏的复兴努力。"},{"id":"hn-46923736","title":"France's homegrown open source online office suite","url":"https://github.com/suitenumerique","source":"Hacker News","score":690,"comments_count":294,"comments_url":"https://news.ycombinator.com/item?id=46923736","published_at":"2026-02-07T13:34:34","author":"nar001","text":null,"summary":"法国推出了本土开发的开源在线办公套件，展示了国家层面在数字主权和开源软件推广上的积极举措，可能影响全球办公软件市场格局。"},{"id":"hn-46912800","title":"Hackers (1995) Animated Experience","url":"https://hackers-1995.vercel.app/","source":"Hacker News","score":575,"comments_count":279,"comments_url":"https://news.ycombinator.com/item?id=46912800","published_at":"2026-02-06T13:49:55","author":"todsacerdoti","text":null,"summary":"这是一个基于1995年电影《黑客》的互动动画体验网站，通过创意技术重现了电影的视觉风格，吸引了影迷和技术爱好者的兴趣。"},{"id":"hn-46890814","title":"Start all of your commands with a comma (2009)","url":"https://rhodesmill.org/brandon/2009/commands-with-comma/","source":"Hacker News","score":552,"comments_count":205,"comments_url":"https://news.ycombinator.com/item?id=46890814","published_at":"2026-02-04T19:59:12","author":"theblazehen","text":null,"summary":"这篇2009年的文章建议在命令行命令前加逗号以避免与常见命令冲突，虽然年代较久，但其关于命令行效率的技巧仍对开发者有实用价值。"},{"id":"hn-46913903","title":"An Update on Heroku","url":"https://www.heroku.com/blog/an-update-on-heroku/","source":"Hacker News","score":488,"comments_count":329,"comments_url":"https://news.ycombinator.com/item?id=46913903","published_at":"2026-02-06T15:20:23","author":"lstoll","text":null,"summary":"Heroku发布了平台更新公告，涉及服务调整或新功能，对于依赖该云平台的开发者来说至关重要，可能影响其应用部署策略。"},{"id":"hn-46914159","title":"Sheldon Brown's Bicycle Technical Info","url":"https://www.sheldonbrown.com/","source":"Hacker News","score":440,"comments_count":114,"comments_url":"https://news.ycombinator.com/item?id=46914159","published_at":"2026-02-06T15:40:42","author":"ostacke","text":null,"summary":"Sheldon Brown的自行车技术信息网站是一个全面的自行车维修和知识资源，因其详细、权威的内容而成为自行车爱好者和技师的必备参考。"},{"id":"hn-46926245","title":"We mourn our craft","url":"https://nolanlawson.com/2026/02/07/we-mourn-our-craft/","source":"Hacker News","score":390,"comments_count":522,"comments_url":"https://news.ycombinator.com/item?id=46926245","published_at":"2026-02-07T18:32:27","author":"ColinWright","text":null,"summary":"文章反思了软件开发行业面临的挑战，如工具复杂性和质量下降，引发了开发者对行业现状和未来方向的共鸣与讨论。"},{"id":"hn-46913793","title":"Microsoft open-sources LiteBox, a security-focused library OS","url":"https://github.com/microsoft/litebox","source":"Hacker News","score":381,"comments_count":210,"comments_url":"https://news.ycombinator.com/item?id=46913793","published_at":"2026-02-06T15:13:04","author":"aktau","text":null,"summary":"微软开源了LiteBox，这是一个专注于安全的库操作系统，旨在提升应用隔离性，对云计算和系统安全领域有潜在影响。"},{"id":"hn-46917033","title":"Show HN: I spent 4 years building a UI design tool with only the features I use","url":"https://vecti.com","source":"Hacker News","score":374,"comments_count":172,"comments_url":"https://news.ycombinator.com/item?id=46917033","published_at":"2026-02-06T19:27:37","author":"vecti","text":"$c","summary":"一位资深UI/UX开发者耗时四年打造了一款仅包含核心功能的轻量级UI设计工具，旨在解决现有工具功能臃肿的问题，值得关注因为它代表了回归简洁、高效的设计工具趋势。"},{"id":"hn-46923543","title":"Coding agents have replaced every framework I used","url":"https://blog.alaindichiappari.dev/p/software-engineering-is-back","source":"Hacker News","score":309,"comments_count":499,"comments_url":"https://news.ycombinator.com/item?id=46923543","published_at":"2026-02-07T13:07:09","author":"alainrk","text":null,"summary":"文章探讨了编码智能体如何取代传统开发框架，重塑软件工程实践，值得关注因为它揭示了AI驱动开发工具对行业工作流的潜在颠覆性影响。"},{"id":"hn-46918429","title":"Show HN: Look Ma, No Linux: Shell, App Installer, Vi, Cc on ESP32-S3 / BreezyBox","url":"https://github.com/valdanylchuk/breezydemo","source":"Hacker News","score":295,"comments_count":39,"comments_url":"https://news.ycombinator.com/item?id=46918429","published_at":"2026-02-06T21:33:11","author":"isitcontent","text":"$d","summary":"在ESP32-S3微控制器上实现了类Unix的Shell、应用安装器、Vi编辑器和C编译器，无需Linux内核，值得关注因为它展示了在资源受限的嵌入式设备上运行丰富开发环境的可能性。"},{"id":"hn-46922049","title":"Vocal Guide – belt sing without killing yourself","url":"https://jesperordrup.github.io/vocal-guide/","source":"Hacker News","score":272,"comments_count":86,"comments_url":"https://news.ycombinator.com/item?id=46922049","published_at":"2026-02-07T07:37:03","author":"jesperordrup","text":null,"summary":"提供了一个指导用户如何安全地进行‘belt singing’（一种高强度的歌唱技巧）而不损伤声带的工具，值得关注因为它将技术应用于艺术健康领域，解决了声乐训练中的具体痛点。"},{"id":"hn-46870514","title":"Learning from context is harder than we thought","url":"https://hy.tencent.com/research/100025?langVersion=en","source":"Hacker News","score":220,"comments_count":123,"comments_url":"https://news.ycombinator.com/item?id=46870514","published_at":"2026-02-03T13:07:37","author":"limoce","text":null,"summary":"腾讯研究指出，机器学习模型从上下文中学习的能力比预想的更困难，挑战了当前AI的某些假设，值得关注因为它对理解大语言模型的局限性及未来改进方向有重要意义。"},{"id":"hn-46925741","title":"SectorC: A C Compiler in 512 bytes","url":"https://xorvoid.com/sectorc.html","source":"Hacker News","score":204,"comments_count":38,"comments_url":"https://news.ycombinator.com/item?id=46925741","published_at":"2026-02-07T17:39:53","author":"valyala","text":null,"summary":"介绍了一个仅用512字节实现的C语言编译器，展示了极致的代码精简艺术，值得关注因为它体现了底层编程的巧妙性和对计算资源极限的挑战。"},{"id":"hn-46867446","title":"Stay Away from My Trash","url":"https://tldraw.dev/blog/stay-away-from-my-trash","source":"Hacker News","score":186,"comments_count":77,"comments_url":"https://news.ycombinator.com/item?id=46867446","published_at":"2026-02-03T06:53:23","author":"EvgeniyZh","text":null,"summary":"tldraw团队分享了对产品‘垃圾’（如临时文件、缓存）管理的思考与实践，值得关注因为它从工程角度探讨了如何构建更健壮、可维护的应用程序。"},{"id":"hn-46915102","title":"I spent 5 years in DevOps – Solutions engineering gave me what I was missing","url":"https://infisical.com/blog/devops-to-solutions-engineering","source":"Hacker News","score":178,"comments_count":96,"comments_url":"https://news.ycombinator.com/item?id=46915102","published_at":"2026-02-06T16:45:47","author":"vmatsiiako","text":null,"summary":"一位拥有五年DevOps经验的工程师分享了转向解决方案工程师后的收获，阐述了该角色如何弥补了纯技术工作的缺失，值得关注因为它反映了技术职业路径的多样性和价值重塑。"},{"id":"hn-46925808","title":"I write games in C (yes, C) (2016)","url":"https://jonathanwhiting.com/writing/blog/games_in_c/","source":"Hacker News","score":175,"comments_count":164,"comments_url":"https://news.ycombinator.com/item?id=46925808","published_at":"2026-02-07T17:45:25","author":"valyala","text":null,"summary":"作者阐述了在2016年仍使用C语言编写游戏的理由与实践，值得关注因为它是对经典编程语言在现代应用开发中生命力和独特优势的坚持与探讨。"},{"id":"hn-46923254","title":"Hoot: Scheme on WebAssembly","url":"https://www.spritely.institute/hoot/","source":"Hacker News","score":168,"comments_count":29,"comments_url":"https://news.ycombinator.com/item?id=46923254","published_at":"2026-02-07T12:18:20","author":"AlexeyBrin","text":null,"summary":"介绍了Hoot项目，这是一个将Scheme语言编译到WebAssembly的实现，值得关注因为它为函数式编程语言在Web平台的高性能运行开辟了新途径，并源自Spritely研究院。"},{"id":"hn-46898473","title":"Making geo joins faster with H3 indexes","url":"https://floedb.ai/blog/how-we-made-geo-joins-400-faster-with-h3-indexes","source":"Hacker News","score":159,"comments_count":56,"comments_url":"https://news.ycombinator.com/item?id=46898473","published_at":"2026-02-05T11:19:40","author":"matheusalmeida","text":null,"summary":"文章介绍了如何利用H3索引将地理空间连接操作的速度提升400倍，这对于处理大规模地理空间数据的应用来说是一项重要的性能优化。"},{"id":"hn-46911170","title":"Invention of DNA \"page numbers\" opens up possibilities for the bioeconomy","url":"https://www.caltech.edu/about/news/invention-dna-page-numbers-synthesis-kaihang-wang","source":"Hacker News","score":147,"comments_count":90,"comments_url":"https://news.ycombinator.com/item?id=46911170","published_at":"2026-02-06T10:26:16","author":"dagurp","text":null,"summary":"加州理工学院的研究人员发明了DNA'页码'技术，为生物经济开辟了新可能性，这项突破有望推动合成生物学和基因工程领域的创新。"},{"id":"hn-46924426","title":"Software factories and the agentic moment","url":"https://factory.strongdm.ai/","source":"Hacker News","score":140,"comments_count":302,"comments_url":"https://news.ycombinator.com/item?id=46924426","published_at":"2026-02-07T15:05:56","author":"mellosouls","text":"See also <a href=\"https:&#x2F;&#x2F;simonwillison.net&#x2F;2026&#x2F;Feb&#x2F;7&#x2F;software-factory&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;simonwillison.net&#x2F;2026&#x2F;Feb&#x2F;7&#x2F;software-factory&#x2F;</a>","summary":"探讨了软件工厂概念和代理时刻在软件开发中的兴起，反映了AI驱动自动化如何改变软件生产流程，值得关注其对未来开发模式的影响。"},{"id":"hn-46868343","title":"Unseen Footage of Atari Battlezone Arcade Cabinet Production","url":"https://arcadeblogger.com/2026/02/02/unseen-footage-of-atari-battlezone-cabinet-production/","source":"Hacker News","score":138,"comments_count":46,"comments_url":"https://news.ycombinator.com/item?id=46868343","published_at":"2026-02-03T08:49:40","author":"videotopia","text":null,"summary":"展示了Atari Battlezone街机柜生产的未公开影像，为游戏历史爱好者和复古计算社区提供了珍贵的档案资料。"},{"id":"hn-46924264","title":"Stories from 25 Years of Software Development","url":"https://susam.net/twenty-five-years-of-computing.html","source":"Hacker News","score":136,"comments_count":16,"comments_url":"https://news.ycombinator.com/item?id=46924264","published_at":"2026-02-07T14:42:16","author":"vinhnx","text":null,"summary":"分享了作者25年软件开发生涯中的故事和见解，为从业者提供了宝贵的经验教训和行业视角。"}],"locale":"en"}],"$Le"]}]]}]
+24. **Dave Farber逝世**
+    *   **说明**：互联网先驱、“有趣人物邮件列表”创始人Dave Farber去世的讣告。他是早期互联网社区建设的关键人物，技术社区以此缅怀他。
+    *   **文章链接**：https://lists.nanog.org/archives/list/nanog@lists.nanog.org/thread/TSNPJVFH4DKLINIKSMRIIVNHDG5XKJCM/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46933401
+
+25. **计费漏洞：通过代理定义中的子代理组合可绕过计费**
+    *   **说明**：一个关于VS Code中AI功能计费可能被绕过的GitHub Issue。反映了在将复杂AI功能产品化时面临的新兴安全与商业模式挑战。
+    *   **文章链接**：https://github.com/microsoft/vscode/issues/292452
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46936105
+
+26. **展示HN：我基于金·斯坦利·罗宾逊的火星小说创建了一款火星殖民RPG**
+    *   **说明**：一位独立开发者根据经典科幻小说《火星三部曲》制作了一款火星殖民地生存游戏。展示了开发者将文学灵感转化为互动作品的热情。
+    *   **文章链接**：https://underhillgame.com/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46936237
+
+27. **策划一场关于我难以言喻的母亲——厄休拉·K·勒古恩的展览**
+    *   **说明**：虽然主题偏人文，但因勒古恩在科幻文学和文化领域的巨大影响力，以及其作品对科技社会的深刻思考，在Hacker News上引发了技术人群的共鸣和讨论。
+    *   **文章链接**：https://hyperallergic.com/curating-a-show-on-my-ineffable-mother-ursula-k-le-guin/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46932985
+
+28. **Omega-3与早发性痴呆风险呈负相关**
+    *   **说明**：一篇医学研究，因其与长期从事脑力劳动的技术人群健康高度相关而受到关注。社区讨论了其科学性和对生活方式的启示。
+    *   **文章链接**：https://pubmed.ncbi.nlm.nih.gov/41506004/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46935991
+
+29. **不要分心 (2017)**
+    *   **说明**：一篇关于提高专注力和生产力的经典短文，在Lobsters上被重新分享。其建议在今天这个信息过载的时代依然有效。
+    *   **文章链接**：https://calebhearth.com/dont-get-distracted
+    *   **讨论链接**：https://lobste.rs/s/n4ddir/don_t_get_distracted_2017
+
+---
+
+### **今日最值得阅读文章推荐**
+
+基于话题重要性、技术深度、社区反响和启发性，我推荐以下5篇文章：
+
+1.  **The Waymo World Model**
+    *   **理由**：代表了自动驾驶和AI仿真领域的最前沿进展。理解“世界模型”对于把握下一代AI系统的能力至关重要。其高热度也证明了行业对此方向的认可。
+    *   **链接**：https://waymo.com/blog/2026/02/the-waymo-world-model-a-new-frontier-for-autonomous-driving-simulation
+
+2.  **We mourn our craft**
+    *   **理由**：这不仅仅是一篇技术文章，更是一篇引发整个开发者社区情感共鸣和文化反思的散文。阅读它和其海量的评论，可以帮助你理解当前软件开发行业普遍的喜悦与焦虑。
+    *   **链接**：https://nolanlawson.com/2026/02/07/we-mourn-our-craft/
+
+3.  **SectorC: A C Compiler in 512 bytes**
+    *   **理由**：极致的工程艺术。在最小的空间内完成最复杂的工作，这种极简主义美学和深厚的技术功力令人叹为观止，能极大地激发对计算机系统本质的思考。
+    *   **链接**：https://xorvoid.com/sectorc.html
+
+4.  **Running Your Own AS: BGP on FreeBSD with FRR, GRE Tunnels, and Policy Routing**
+    *   **理由**：如果你想深入理解互联网是如何在底层连接起来的，这是一份不可多得的实战手册。它将看似神秘的BGP和自治系统拉下神坛，适合任何想挑战自我的网络爱好者。
+    *   **链接**：https://blog.hofstede.it/running-your-own-as-bgp-on-freebsd-with-frr-gre-tunnels-and-policy-routing/
+
+5.  **Slop Terrifies Me**
+    *   **理由**：在AI热潮中提供了一种至关重要的批判性视角。它尖锐地指出了AI生成内容对互联网生态和人类创造力的潜在威胁，是进行平衡思考的必读材料。
+    *   **链接**：https://ezhik.jp/ai-slop-terrifies-me/
+
+以上就是对今日Technology领域热门内容的全面分析和总结。0:{"buildId":"3dcvWa7IR9eYpfa8y3qQi","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-02-09","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":12},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-02-09"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+c:T67b,A month ago, I submitted my app &quot;DoNotNotify&quot; to control Android notifications on Show HN [0], and it trended on the front page for a day. I was happy, but the most upvoted comments on the thread were asking for the app to be open sourced, since it dealt with system-wide notifications. My promises weren&#x27;t good enough, and the community wanted more!<p>Why didn&#x27;t I open source it in the first place? Linux has been by primary driver for more than a decade. I genuinely believe in the philosophy, and have always wanted to give back to the community. The primary reason, probably, was because I was ashamed that I had 90% vibe-coded the app. More than 2 decades of writing software, and my first contribution to FOSS would be AI-generated code? Would it  withstand even the most minimal of scrutiny? Would by (unknown) name forever be tarnished? I exaggerate, but only slightly :)<p>So, yesterday, after a fair bit of trepidation, I changed the github repo visibility to public and put up a announcement on the app&#x27;s website [1]. I have also submitted the app to F-Droid [2]. As before, I welcome the community&#x27;s feedback and suggestions!<p>[0] <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=46499646">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=46499646</a>
+[1] <a href="https:&#x2F;&#x2F;donotnotify.com&#x2F;opensource.html" rel="nofollow">https:&#x2F;&#x2F;donotnotify.com&#x2F;opensource.html</a>
+[2] <a href="https:&#x2F;&#x2F;gitlab.com&#x2F;fdroid&#x2F;rfp&#x2F;-&#x2F;issues&#x2F;3569" rel="nofollow">https:&#x2F;&#x2F;gitlab.com&#x2F;fdroid&#x2F;rfp&#x2F;-&#x2F;issues&#x2F;3569</a><p>--
+Anuj Jain6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-46914785","title":"The Waymo World Model","url":"https://waymo.com/blog/2026/02/the-waymo-world-model-a-new-frontier-for-autonomous-driving-simulation","source":"Hacker News","score":1138,"comments_count":646,"comments_url":"https://news.ycombinator.com/item?id=46914785","published_at":"2026-02-06T16:20:42","author":"xnx","text":null,"summary":"Waymo发布世界模型，旨在通过更先进的模拟技术提升自动驾驶系统的训练效率和安全性，这代表了自动驾驶仿真领域的重要突破。"},{"id":"hn-46918612","title":"OpenCiv3: Open-source, cross-platform reimagining of Civilization III","url":"https://openciv3.org/","source":"Hacker News","score":965,"comments_count":297,"comments_url":"https://news.ycombinator.com/item?id=46918612","published_at":"2026-02-06T21:51:23","author":"klaussilveira","text":null,"summary":"OpenCiv3是一个开源的跨平台《文明III》重制项目，允许玩家在现代系统上重温经典游戏，并支持社区修改和扩展。"},{"id":"hn-46926245","title":"We mourn our craft","url":"https://nolanlawson.com/2026/02/07/we-mourn-our-craft/","source":"Hacker News","score":674,"comments_count":766,"comments_url":"https://news.ycombinator.com/item?id=46926245","published_at":"2026-02-07T18:32:27","author":"ColinWright","text":null,"summary":"这篇文章反思了软件开发中工艺精神的流失，探讨了现代工具和流程对代码质量与开发者满足感的影响，值得从业者深思。"},{"id":"hn-46930961","title":"Vouch","url":"https://github.com/mitchellh/vouch","source":"Hacker News","score":602,"comments_count":265,"comments_url":"https://news.ycombinator.com/item?id=46930961","published_at":"2026-02-08T03:09:28","author":"chwtutha","text":"<a href=\"https:&#x2F;&#x2F;x.com&#x2F;mitchellh&#x2F;status&#x2F;2020252149117313349\" rel=\"nofollow\">https:&#x2F;&#x2F;x.com&#x2F;mitchellh&#x2F;status&#x2F;2020252149117313349</a><p><a href=\"https:&#x2F;&#x2F;nitter.net&#x2F;mitchellh&#x2F;status&#x2F;2020252149117313349\" rel=\"nofollow\">https:&#x2F;&#x2F;nitter.net&#x2F;mitchellh&#x2F;status&#x2F;2020252149117313349</a><p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;ghostty-org&#x2F;ghostty&#x2F;pull&#x2F;10559\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;ghostty-org&#x2F;ghostty&#x2F;pull&#x2F;10559</a>","summary":"Vouch是一个开源工具，用于简化软件项目的依赖管理和验证流程，提高了开发效率与安全性，由知名开发者mitchellh发布。"},{"id":"hn-46925741","title":"SectorC: A C Compiler in 512 bytes (2023)","url":"https://xorvoid.com/sectorc.html","source":"Hacker News","score":371,"comments_count":79,"comments_url":"https://news.ycombinator.com/item?id=46925741","published_at":"2026-02-07T17:39:53","author":"valyala","text":null,"summary":"SectorC是一个仅用512字节编写的C编译器，展示了极简编程的艺术和底层计算机科学的魅力，是技术爱好者的灵感来源。"},{"id":"hn-46932192","title":"DoNotNotify is now Open Source","url":"https://donotnotify.com/opensource.html","source":"Hacker News","score":367,"comments_count":47,"comments_url":"https://news.ycombinator.com/item?id=46932192","published_at":"2026-02-08T07:39:49","author":"awaaz","text":"$c","summary":"DoNotNotify应用现已开源，这款工具能帮助用户控制Android系统通知，开源后增强了透明度和社区信任，促进了隐私保护。"},{"id":"hn-46933067","title":"Slop Terrifies Me","url":"https://ezhik.jp/ai-slop-terrifies-me/","source":"Hacker News","score":327,"comments_count":293,"comments_url":"https://news.ycombinator.com/item?id=46933067","published_at":"2026-02-08T10:31:35","author":"Ezhik","text":null,"summary":"文章探讨了AI生成内容（\"Slop\"）的泛滥如何威胁信息质量和人类创造力，引发了对技术伦理和未来数字生态的担忧。"},{"id":"hn-46924426","title":"Software factories and the agentic moment","url":"https://factory.strongdm.ai/","source":"Hacker News","score":277,"comments_count":437,"comments_url":"https://news.ycombinator.com/item?id=46924426","published_at":"2026-02-07T15:05:56","author":"mellosouls","text":"See also <a href=\"https:&#x2F;&#x2F;simonwillison.net&#x2F;2026&#x2F;Feb&#x2F;7&#x2F;software-factory&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;simonwillison.net&#x2F;2026&#x2F;Feb&#x2F;7&#x2F;software-factory&#x2F;</a>","summary":"软件工厂概念正推动开发流程向自动化代理转变，这篇文章分析了这一趋势如何重塑软件开发行业，值得关注其潜在影响。"},{"id":"hn-46925808","title":"I write games in C (yes, C) (2016)","url":"https://jonathanwhiting.com/writing/blog/games_in_c/","source":"Hacker News","score":253,"comments_count":265,"comments_url":"https://news.ycombinator.com/item?id=46925808","published_at":"2026-02-07T17:45:25","author":"valyala","text":null,"summary":"作者分享使用C语言编写游戏的经验，展示了C在游戏开发中的可行性和性能优势，为传统编程语言爱好者提供了实用见解。"},{"id":"hn-46935791","title":"I put a real-time 3D shader on the Game Boy Color","url":"https://blog.otterstack.com/posts/202512-gbshader/","source":"Hacker News","score":248,"comments_count":35,"comments_url":"https://news.ycombinator.com/item?id=46935791","published_at":"2026-02-08T16:28:51","author":"adunk","text":null,"summary":"在Game Boy Color上实现实时3D着色器是一项技术壮举，突破了硬件限制，展示了复古硬件编程的创意和可能性。"},{"id":"hn-46930565","title":"Beyond agentic coding","url":"https://haskellforall.com/2026/02/beyond-agentic-coding","source":"Hacker News","score":242,"comments_count":86,"comments_url":"https://news.ycombinator.com/item?id=46930565","published_at":"2026-02-08T01:55:09","author":"RebelPotato","text":null,"summary":"这篇文章探讨了超越代理式编码的软件开发范式，值得关注因为它可能预示着AI辅助编程的下一个发展方向。"},{"id":"hn-46935991","title":"Omega-3 is inversely related to risk of early-onset dementia","url":"https://pubmed.ncbi.nlm.nih.gov/41506004/","source":"Hacker News","score":236,"comments_count":139,"comments_url":"https://news.ycombinator.com/item?id=46935991","published_at":"2026-02-08T16:47:08","author":"brandonb","text":null,"summary":"研究发现Omega-3脂肪酸与早发性痴呆风险呈负相关，值得关注因为这项医学发现可能对预防认知衰退有重要意义。"},{"id":"hn-46931805","title":"OpenClaw is changing my life","url":"https://reorx.com/blog/openclaw-is-changing-my-life/","source":"Hacker News","score":233,"comments_count":389,"comments_url":"https://news.ycombinator.com/item?id=46931805","published_at":"2026-02-08T06:21:27","author":"novoreorx","text":null,"summary":"作者分享了OpenClaw工具如何显著改善其工作流程，值得关注因为它展示了一个开源工具的实际应用价值。"},{"id":"hn-46933365","title":"Why E cores make Apple silicon fast","url":"https://eclecticlight.co/2026/02/08/last-week-on-my-mac-why-e-cores-make-apple-silicon-fast/","source":"Hacker News","score":233,"comments_count":221,"comments_url":"https://news.ycombinator.com/item?id=46933365","published_at":"2026-02-08T11:31:49","author":"ingve","text":null,"summary":"文章解释了能效核心（E核心）如何提升Apple Silicon芯片的性能，值得关注因为它揭示了现代处理器设计的优化策略。"},{"id":"hn-46933401","title":"Dave Farber has died","url":"https://lists.nanog.org/archives/list/nanog@lists.nanog.org/thread/TSNPJVFH4DKLINIKSMRIIVNHDG5XKJCM/","source":"Hacker News","score":205,"comments_count":34,"comments_url":"https://news.ycombinator.com/item?id=46933401","published_at":"2026-02-08T11:38:57","author":"vitplister","text":null,"summary":"报道了互联网先驱Dave Farber去世的消息，值得关注因为他是网络技术发展史上的重要人物。"},{"id":"hn-46934107","title":"GitHub Agentic Workflows","url":"https://github.github.io/gh-aw/","source":"Hacker News","score":204,"comments_count":111,"comments_url":"https://news.ycombinator.com/item?id=46934107","published_at":"2026-02-08T13:40:56","author":"mooreds","text":null,"summary":"介绍了GitHub的代理式工作流功能，值得关注因为它代表了代码仓库平台向自动化工作流的新演进。"},{"id":"hn-46888258","title":"Show HN: It took 4 years to sell my startup. I wrote a book about it","url":"https://derekyan.com/ma-book/","source":"Hacker News","score":190,"comments_count":58,"comments_url":"https://news.ycombinator.com/item?id=46888258","published_at":"2026-02-04T16:56:11","author":"zhyan7109","text":null,"summary":"作者分享了花费四年时间出售初创公司的经历并出版了相关书籍，值得关注因为它提供了创业退出的第一手经验。"},{"id":"hn-46936105","title":"Billing can be bypassed using a combo of subagents with an agent definition","url":"https://github.com/microsoft/vscode/issues/292452","source":"Hacker News","score":188,"comments_count":98,"comments_url":"https://news.ycombinator.com/item?id=46936105","published_at":"2026-02-08T16:56:08","author":"napolux","text":null,"summary":"披露了VS Code中通过子代理组合绕过计费的安全漏洞，值得关注因为它涉及广泛使用的开发工具的安全性问题。"},{"id":"hn-46898473","title":"Making geo joins faster with H3 indexes","url":"https://floedb.ai/blog/how-we-made-geo-joins-400-faster-with-h3-indexes","source":"Hacker News","score":168,"comments_count":62,"comments_url":"https://news.ycombinator.com/item?id=46898473","published_at":"2026-02-05T11:19:40","author":"matheusalmeida","text":null,"summary":"展示了如何利用H3索引将地理空间连接操作速度提升400%，值得关注因为它提供了处理地理数据的高效技术方案。"},{"id":"hn-46932985","title":"Curating a Show on My Ineffable Mother, Ursula K. Le Guin","url":"https://hyperallergic.com/curating-a-show-on-my-ineffable-mother-ursula-k-le-guin/","source":"Hacker News","score":161,"comments_count":54,"comments_url":"https://news.ycombinator.com/item?id=46932985","published_at":"2026-02-08T10:13:00","author":"bryanrasmussen","text":null,"summary":"记录了为著名科幻作家厄休拉·勒古恩策划展览的过程，值得关注因为它连接了科技社区与文学艺术领域。"},{"id":"hn-46936274","title":"Let's compile Quake like it's 1997","url":"https://fabiensanglard.net/compile_like_1997/index.html","source":"Hacker News","score":143,"comments_count":54,"comments_url":"https://news.ycombinator.com/item?id=46936274","published_at":"2026-02-08T17:11:42","author":"birdculture","text":null,"summary":"这篇文章回顾了1997年编译《雷神之锤》游戏的过程，值得关注因为它展示了早期游戏开发的编译技术和历史背景。"},{"id":"hn-46936595","title":"Bun v1.3.9","url":"https://bun.com/blog/bun-v1.3.9","source":"Hacker News","score":142,"comments_count":35,"comments_url":"https://news.ycombinator.com/item?id=46936595","published_at":"2026-02-08T17:39:00","author":"tosh","text":null,"summary":"这篇文章介绍了Bun v1.3.9的发布，值得关注因为Bun是一个快速增长的JavaScript运行时，新版本可能带来性能改进或新功能。"},{"id":"hn-46934266","title":"Running Your Own As: BGP on FreeBSD with FRR, GRE Tunnels, and Policy Routing","url":"https://blog.hofstede.it/running-your-own-as-bgp-on-freebsd-with-frr-gre-tunnels-and-policy-routing/","source":"Hacker News","score":139,"comments_count":53,"comments_url":"https://news.ycombinator.com/item?id=46934266","published_at":"2026-02-08T14:02:58","author":"todsacerdoti","text":null,"summary":"这篇文章详细讲解了如何在FreeBSD上使用FRR、GRE隧道和策略路由运行自己的BGP自治系统，值得关注因为它为网络爱好者提供了实用的高级网络配置指南。"},{"id":"hn-46936237","title":"Show HN: I created a Mars colony RPG based on Kim Stanley Robinson's Mars books","url":"https://underhillgame.com/","source":"Hacker News","score":138,"comments_count":53,"comments_url":"https://news.ycombinator.com/item?id=46936237","published_at":"2026-02-08T17:08:30","author":"ariaalam","text":"I built a desktop Mars colony survival game called Underhill, in homage to Kim Stanley Robinson&#x27;s Mars trilogy. Land on Mars, build solar panels and greenhouses, and try not to pass out during dust storms. Eventually your colonists split into factions: Greens who want to terraform and Reds who want to preserve Mars.<p>There’s Chill Mode for players that just want to build &amp; hang, and Conflict Mode that introduces the Red v. Green factions. Reds sabotage, the terrain slowly turns green as the world gets more terraformed.<p>Feedback welcome, especially on performance and gameplay!","summary":"这篇文章介绍了一款基于金·斯坦利·罗宾逊火星三部曲的火星殖民地RPG游戏，值得关注因为它结合了科幻文学和游戏开发，提供独特的生存模拟体验。"},{"id":"hn-46936315","title":"The first sodium-ion battery EV is a winter range monster","url":"https://insideevs.com/news/786509/catl-changan-worlds-first-sodium-ion-battery-ev/","source":"Hacker News","score":130,"comments_count":165,"comments_url":"https://news.ycombinator.com/item?id=46936315","published_at":"2026-02-08T17:15:17","author":"andrewjneumann","text":null,"summary":"这篇文章报道了首款钠离子电池电动汽车在冬季续航方面的出色表现，值得关注因为钠离子电池技术可能成为未来电动汽车的替代能源方案。"}],"locale":"en"}],"$Ld"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["Generated by"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","Powered by DeepSeek"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
-e:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-3d715116d9dc","title":"Stories From 25 Years of Software Development","url":"https://susam.net/twenty-five-years-of-computing.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-07T12:27:25","author":"susam.net by susam","text":"<p><a href=\"https://lobste.rs/s/lrnqdz/stories_from_25_years_software\">Comments</a></p>","summary":"与hn-46924264相同，分享了25年软件开发的经验故事，为开发者提供了实践智慧和历史背景。"},{"id":"rss-f6799eb013b6","title":"(Bsky thread) \"This turns the maintainer into an unwitting vibe coder\"","url":"https://bsky.app/profile/fullmoon.id/post/3meadfaulhk2s","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-07T17:01:24","author":"bsky.app via isuffix","text":"<p>(Lmk if there's a better way to mark/post a Bluesky thread like this or if I just shouldn't put it on Lobsters)</p>\n<p><a href=\"https://lobste.rs/s/nhbnjf/bsky_thread_this_turns_maintainer_into\">Comments</a></p>","summary":"通过Bluesky线程讨论了维护者无意中成为'氛围编码者'的现象，触及了开源社区管理和软件维护中的文化问题。"},{"id":"rss-d7184f99276b","title":"Maple Mono: Open source monospace font","url":"https://font.subf.dev/en/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-06T21:40:16","author":"font.subf.dev via yonkeltron","text":"<p><a href=\"https://lobste.rs/s/ahca9t/maple_mono_open_source_monospace_font\">Comments</a></p>","summary":"介绍了Maple Mono这款开源等宽字体，为开发者提供了新的代码编辑和排版选择，关注字体设计对编程体验的影响。"},{"id":"rss-6e786990616f","title":"A Horrible Conclusion","url":"https://addisoncrump.info/research/a-horrible-conclusion/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-07T13:20:25","author":"addisoncrump.info via freddyb","text":"<p><a href=\"https://lobste.rs/s/w3wixc/horrible_conclusion\">Comments</a></p>","summary":"文章得出了一个'可怕的结论'，可能涉及技术研究或社会影响，标题引人深思，暗示了某种令人不安的发现或观点。"},{"id":"rss-24a9ba793254","title":"Beyond agentic coding","url":"https://haskellforall.com/2026/02/beyond-agentic-coding","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-07T17:27:49","author":"haskellforall.com by Gabriella439","text":"<p><a href=\"https://lobste.rs/s/gvlmu1/beyond_agentic_coding\">Comments</a></p>","summary":"探讨了超越代理编码的更高层次概念，可能涉及AI辅助编程的未来发展方向，对软件开发自动化的演进具有前瞻性。"}],"locale":"en"}]
-11:null
+a:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-83e5c75be028","title":"Don't Get Distracted (2017)","url":"https://calebhearth.com/dont-get-distracted","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-08T20:12:27","author":"calebhearth.com via seafoamteal","text":"<p><a href=\"https://lobste.rs/s/n4ddir/don_t_get_distracted_2017\">Comments</a></p>","summary":"这篇文章讨论了如何避免分心（2017年），值得关注因为它提供了提高专注力和生产力的实用建议，对开发者和技术人员有参考价值。"},{"id":"rss-08ac3ca3569d","title":"Running Your Own AS: BGP on FreeBSD with FRR, GRE Tunnels, and Policy Routing","url":"https://blog.hofstede.it/running-your-own-as-bgp-on-freebsd-with-frr-gre-tunnels-and-policy-routing/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-08T13:59:54","author":"blog.hofstede.it via tomhukins","text":"<p><a href=\"https://lobste.rs/s/oy8aqi/running_your_own_as_bgp_on_freebsd_with_frr\">Comments</a></p>","summary":"这篇文章详细讲解了如何在FreeBSD上使用FRR、GRE隧道和策略路由运行自己的BGP自治系统，值得关注因为它为网络爱好者提供了实用的高级网络配置指南。"},{"id":"rss-2a7089695178","title":"Code injections through Git commit messages","url":"https://mas.to/@zekjur/116022397626943871","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-08T17:15:52","author":"mas.to via cve","text":"<p><a href=\"https://lobste.rs/s/fgeokt/code_injections_through_git_commit\">Comments</a></p>","summary":"这篇文章探讨了通过Git提交消息进行代码注入的安全风险，值得关注因为它揭示了Git使用中可能被忽视的安全漏洞。"},{"id":"rss-f92db4ad7d62","title":"Rebuilding my home network with VLANs and 10Gbps","url":"https://clintonboys.com/projects/homelab/03-network/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-08T18:07:42","author":"clintonboys.com by mtsolitary","text":"<p><a href=\"https://lobste.rs/s/bic9qr/rebuilding_my_home_network_with_vlans\">Comments</a></p>","summary":"这篇文章分享了作者使用VLAN和10Gbps技术重建家庭网络的经历，值得关注因为它展示了高性能家庭网络的搭建方法和实际应用。"},{"id":"rss-bd8a8a0757c8","title":"Testing can be fun, actually","url":"https://giacomocavalieri.me/writing/testing-can-be-fun-actually","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-08T14:26:20","author":"giacomocavalieri.me via bugsmith","text":"<p><a href=\"https://lobste.rs/s/k2kwv0/testing_can_be_fun_actually\">Comments</a></p>","summary":"这篇文章讨论了测试可以变得有趣的观点，值得关注因为它鼓励开发者以更积极的态度对待软件测试，提升开发体验。"}],"locale":"en"}]
+10:null
