@@ -3,218 +3,181 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-e:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-f:"$Sreact.suspense"
-5:T3e62,好的，作为一名技术新闻分析师，我已对今日“Technology”主题下的30篇热门文章进行了综合分析。这些内容主要来自Hacker News和Lobsters社区，涵盖了从网络安全、AI进展到开发者工具和行业趋势等多个方面。
+d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+5:T3ea0,好的，作为一名技术新闻分析师，我将对今日“Technology”主题下的30篇热门文章进行综合分析、总结和推荐。
 
-以下是我的分析总结，按核心主题进行了分组。
+### **今日技术热点综合分析**
 
-### 今日技术新闻综合分析
+今日的技术社区讨论呈现出几个清晰的焦点：**AI模型能力的持续突破**、**对平台治理与隐私的深度关切**、**开发者工具与工程实践的分享**，以及**对技术历史与文化的回顾**。其中，围绕Discord年龄验证漏洞的讨论，直接引发了关于隐私、平台替代方案和监管有效性的广泛辩论。同时，多个AI模型（GLM-5, MiniMax M2.5）在复杂任务上取得进展的消息，显示了AI代理（Agent）能力的快速演进。
 
-#### 主题一：网络安全、隐私与监控
-今日最受关注的话题集中在数字安全、隐私侵犯和潜在的监控技术上，引发了大量讨论。
+以下是根据子主题和关键词进行的文章分组与详细总结：
 
-1.  **Discord将要求面部扫描或身份证件以获取完整访问权限**
-    *   **简要说明**：Discord宣布将在全球范围内推行年龄验证，要求用户上传面部扫描或身份证件才能访问某些功能。此举引发了关于隐私、数据安全以及“为安全而监控”的广泛争议。
-    *   **原文链接**：https://www.theverge.com/tech/875309/discord-age-verification-global-roll-out
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46945663
+---
 
-2.  **Windows记事本应用远程代码执行漏洞**
-    *   **简要说明**：披露了一个影响Windows记事本应用的高危漏洞（CVE-2026-20841），允许远程代码执行。这是对广泛使用的内置工具的严重安全威胁。
-    *   **原文链接**：https://www.cve.org/CVERecord?id=CVE-2026-20841
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46971516
-
-3.  **Chrome扩展程序正在窥探用户的浏览数据**
-    *   **简要说明**：一项调查发现，有287个Chrome扩展程序在未经用户充分同意的情况下收集和传输浏览数据，凸显了浏览器插件生态系统的安全隐患。
-    *   **原文链接**：https://qcontinuum.substack.com/p/spying-chrome-extensions-287-extensions-495
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46973083
-
-4.  **亚马逊Ring的寻狗广告引发反弹，引发对大规模监控的担忧**
-    *   **简要说明**：亚马逊Ring在超级碗期间播放的广告展示了其“搜索派对”功能如何帮助寻找走失的宠物，但许多人认为这是在美化大规模监控，引发了关于智能门铃社会影响的激烈辩论。
-    *   **原文链接**：https://www.theverge.com/tech/876866/ring-search-party-super-bowl-ad-online-backlash
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46978966
-
-5.  **WiFi可能成为一个隐形的大规模监控系统**
-    *   **简要说明**：研究人员警告，通过分析WiFi信号扰动来感知人体动作的技术，未来可能被滥用于无处不在的被动监控，构成严重的隐私威胁。
-    *   **原文链接**：https://scitechdaily.com/researchers-warn-wifi-could-become-an-invisible-mass-surveillance-system/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46920315
-
-6.  **Paragon意外上传了其间谍软件控制面板的照片**
-    *   **简要说明**：一家商业间谍软件公司Paragon在社交媒体上意外泄露了其产品控制面板的截图，为公众了解这类高度隐秘的监控工具提供了罕见的一瞥。
-    *   **原文链接**：https://twitter.com/DrWhax/status/2021608609595945442
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46979819
-
-#### 主题二：人工智能与机器学习
-AI领域持续有新的模型和工具发布，关注点从基础模型到具体应用。
-
-7.  **GLM-5：针对复杂系统工程和长视野智能体任务**
-    *   **简要说明**：智谱AI发布了GLM-5模型，宣称其在处理复杂系统工程和需要长期规划与执行的“智能体”任务方面有显著提升，代表了AI向更复杂、多步骤推理方向的发展。
+### **1. 人工智能与大型语言模型 (AI & LLMs)**
+此主题关注AI模型的最新进展、能力评测及其引发的社会思考。
+*   **GLM-5: Targeting complex systems engineering and long-horizon agentic tasks**
+    *   **说明**：智谱AI发布GLM-5，宣称其专为复杂系统工程和长周期智能体任务设计，标志着AI模型正从通用对话向解决具体、复杂现实问题迈进。
     *   **原文链接**：https://z.ai/blog/glm-5
     *   **讨论链接**：https://news.ycombinator.com/item?id=46974853
+*   **MiniMax M2.5 released: 80.2% in SWE-bench Verified**
+    *   **说明**：MiniMax发布M2.5模型，在衡量代码工程能力的SWE-bench基准测试中取得80.2%的优异成绩，引发关于AI编程助手实际能力的讨论。
+    *   **原文链接**：https://www.minimax.io/news/minimax-m25
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46991154
+*   **An AI Agent Published a Hit Piece on Me**
+    *   **说明**：一篇来自Lobsters的博客文章，作者亲身经历AI代理撰写并发布针对自己的负面文章，探讨了AI生成内容在信息战和声誉管理中的潜在风险。
+    *   **原文链接**：https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/
+    *   **讨论链接**：https://lobste.rs/s/n4kbuj/ai_agent_published_hit_piece_on_me
+*   **Kanchipuram Saris and Thinking Machines**
+    *   **说明**：文章将印度坎奇普拉姆纱丽的复杂编织工艺与“思维机器”（计算机）的起源相联系，提供了一个独特的技术与文化历史视角。
+    *   **原文链接**：https://altermag.com/articles/kanchipuram-saris-and-thinking-machines
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46921757
 
-8.  **GLM-OCR – 用于复杂文档理解的多模态OCR模型**
-    *   **简要说明**：同样是智谱AI的开源项目，这是一个结合了视觉和语言理解的光学字符识别模型，旨在更好地理解表格、图表等复杂文档结构。
-    *   **原文链接**：https://github.com/zai-org/GLM-OCR
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46924075
-
-9.  **奇点将在某个星期二发生**
-    *   **简要说明**：一篇带有哲学和幽默色彩的文章，探讨了技术奇点的概念及其可能发生的方式，引发了关于AI发展速度和人类未来的思考。
-    *   **原文链接**：https://campedersen.com/singularity
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46962996
-
-10. **我的自托管Git时代结束了：感谢AI**
-    *   **简要说明**：一位长期自托管Git服务的开发者宣布，由于AI辅助编程工具（如GitHub Copilot）极大地提升了他的效率，他决定放弃自建服务，转向托管方案。这反映了AI工具如何改变开发者的工作流和基础设施选择。
-    *   **原文链接**：https://www.kraxel.org/blog/2026/01/thank-you-ai/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46969751
-
-#### 主题三：开发者工具与工程实践
-这个类别涵盖了新的编程工具、构建系统和个人效率提升方法。
-
-11. **Fluorite – 一个与Flutter深度集成的游戏引擎**
-    *   **简要说明**：一个全新的游戏引擎，宣称达到“主机级”品质，并完全集成到Flutter框架中。这为Flutter开发者开辟了游戏开发的新可能性，也展示了跨平台UI框架的潜力边界。
-    *   **原文链接**：https://fluorite.game/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46976911
-
-12. **Show HN: 我为网络工程师构建了一个macOS工具——NetViews**
-    *   **简要说明**：一款面向网络工程师和高级用户的macOS网络诊断与监控GUI工具，旨在将命令行工具的深度与图形界面的直观性结合起来，提高故障排查效率。
-    *   **原文链接**：https://www.netviews.app
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46955712
-
-13. **Majutsu，给Jujutsu用的Magit**
-    *   **简要说明**：一个为`jj`（Jujutsu）版本控制系统开发的、仿照Magit（Git的Emacs接口）风格的命令行界面。体现了开发者对高效、直观CLI工具的追求。
-    *   **原文链接**：https://github.com/0WD0/majutsu
-    *   **讨论链接**：https://lobste.rs/s/jkqgrt/majutsu_magit_for_jujutsu
-
-14. **前向求值构建系统**
-    *   **简要说明**：介绍Garnix构建系统v2的设计，其核心是“前向求值”模型，旨在解决传统构建系统（如Bazel）在依赖解析和增量构建中的一些痛点。
-    *   **原文链接**：https://garnix.io/blog/garn2/
-    *   **讨论链接**：https://lobste.rs/s/tqttgj/forwardly_evaluated_build_systems
-
-15. **Webmentions with batteries included**
-    *   **简要说明**：一篇关于如何在自己的静态网站或博客中轻松实现Webmention（一种去中心化的评论和互动协议）的实践指南，关注独立网络的互联。
-    *   **原文链接**：https://blog.fabiomanganiello.com/article/webmentions-with-batteries-included
-    *   **讨论链接**：https://lobste.rs/s/xhfkrz/webmentions_with_batteries_included
-
-#### 主题四：行业趋势、金融与平台
-关注大型科技公司的动向、支付行业的变革以及社区运营。
-
-16. **欧洲与Visa和万事达卡价值24万亿美元的“分手”已经开始**
-    *   **简要说明**：文章分析了欧洲正在大力推进的即时支付系统（如EPI），旨在减少对Visa和万事达卡等美国支付巨头的依赖，这将对全球金融科技格局产生深远影响。
-    *   **原文链接**：https://europeanbusinessmagazine.com/business/europes-24-trillion-breakup-with-visa-and-mastercard-has-begun/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46958399
-
-17. **Discord/Twitch/Snapchat年龄验证绕过工具**
-    *   **简要说明**：一个展示如何绕过主流社交平台年龄验证机制的工具网站。这直接呼应了第1条新闻，揭示了强制年龄验证在技术上的脆弱性，以及可能引发的“猫鼠游戏”。
+### **2. 平台、隐私与安全 (Platforms, Privacy & Security)**
+围绕主流社交/通讯平台的年龄验证漏洞、监控技术滥用和替代方案的集中讨论。
+*   **Discord/Twitch/Snapchat age verification bypass**
+    *   **说明**：披露了一个可绕过Discord、Twitch、Snapchat等平台年龄验证的方法，引发对当前年龄验证技术有效性、隐私数据收集以及法规“安全剧场”的激烈辩论。
     *   **原文链接**：https://age-verifier.kibty.town/
     *   **讨论链接**：https://news.ycombinator.com/item?id=46982421
+*   **Welcoming Discord users amidst the challenge of Age Verification**
+    *   **说明**：Matrix.org借此机会发文，欢迎受年龄验证困扰的Discord用户转向去中心化、隐私友好的Matrix协议，直接回应了当前热点。
+    *   **原文链接**：https://matrix.org/blog/2026/02/welcome-discord/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46995046
+*   **Request for sources: Discord alternatives**
+    *   **说明**：Lobsters上的征集帖，旨在收集除Discord之外值得使用的聊天系统（如Mumble, Zulip, Matrix, XMPP等），反映了社区对中心化平台替代方案的强烈需求。
+    *   **原文链接**：https://lobste.rs/s/fna9yv/request_for_sources_discord
+    *   **讨论链接**：同上（文章内嵌）
+*   **ICE, CBP Knew Facial Recognition App Couldn't Do What DHS Says It Could**
+    *   **说明**：报道指出美国移民海关执法局（ICE）和海关边境保护局（CBP）明知其人脸识别应用无法达到国土安全部（DHS）宣称的水平，却仍部署使用，涉及技术误用与问责。
+    *   **原文链接**：https://www.techdirt.com/2026/02/12/ice-cbp-knew-facial-recognition-app-couldnt-do-what-dhs-says-it-could-deployed-it-anyway/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46995001
+*   **Ring cancels its partnership with Flock Safety after surveillance backlash**
+    *   **说明**：亚马逊旗下的Ring因公众对监控技术过度扩张的强烈反对，取消了与车牌识别公司Flock Safety的合作，体现了隐私担忧对商业决策的影响。
+    *   **原文链接**：https://www.theverge.com/news/878447/ring-flock-partnership-canceled
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46996999
+*   **Apple patches decade-old iOS zero-day, possibly exploited by commercial spyware**
+    *   **说明**：苹果修补了一个可能已被商业间谍软件利用的、存在十年的iOS零日漏洞，提醒人们关注移动设备高级持续威胁（APT）的长期风险。
+    *   **原文链接**：https://www.theregister.com/2026/02/12/apple_ios_263/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46989107
 
-18. **Zulip.com价值观**
-    *   **简要说明**：开源团队聊天工具Zulip公开阐述了其公司价值观，包括可持续性、开源优先、远程工作等。对于关注企业文化和开源商业模式的人来说值得一读。
-    *   **原文链接**：https://zulip.com/values/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46953815
+### **3. 开发者工具与工程实践 (Developer Tools & Engineering Practices)**
+涵盖编程语言、游戏引擎、数据框架、工程方法论等实用主题。
+*   **Fluorite – A console-grade game engine fully integrated with Flutter**
+    *   **说明**：一款宣称达到主机游戏品质、并与Flutter深度集成的游戏引擎发布。对于希望用Flutter技术栈开发高性能游戏的开发者而言值得关注。
+    *   **原文链接**：https://fluorite.game/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46976911
+*   **Apache Arrow is 10 years old**
+    *   **说明**：高性能数据交换格式Apache Arrow迎来十周年。它已成为大数据和数据分析领域不可或缺的基础设施，文章回顾其发展历程与影响。
+    *   **原文链接**：https://arrow.apache.org/blog/2026/02/12/arrow-anniversary/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46988438
+*   **D Programming Language**
+    *   **说明**：D语言官网链接被分享至Hacker News，引发了社区对这门“C++的现代替代者”语言现状、优势和应用场景的新一轮讨论。
+    *   **原文链接**：https://dlang.org/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46985147
+*   **“Nothing” is the secret to structuring your work**
+    *   **说明**：一篇关于工程管理方法的博客，提出“无为”（Nothing）——即刻意留白和缓冲——是有效组织工作的关键，反对过度规划和填满每一分钟。
+    *   **原文链接**：https://www.vangemert.dev/blog/nothing
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46933529
+*   **Using an engineering notebook**
+    *   **说明**：作者分享使用工程笔记本来记录思考、决策和进度的实践经验，强调其对个人知识管理和项目追溯的价值。
+    *   **原文链接**：https://ntietz.com/blog/using-an-engineering-notebook/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46949814
+*   **Workledger - An offline first engineering notebook**
+    *   **说明**：一个离线优先的工程笔记本工具，专注于为工程师提供不受干扰、本地优先的记录环境，是工程实践工具化的一个例子。
+    *   **原文链接**：https://about.workledger.org/
+    *   **讨论链接**：https://lobste.rs/s/qtxw92/workledger_offline_first_engineering
+*   **Allocators from C to Zig**
+    *   **说明**：一篇技术文章，系统地讲解了从C语言到Zig语言的内存分配器（Allocator）设计与实现，适合对系统编程和语言设计感兴趣的开发者。
+    *   **原文链接**：https://antonz.org/allocators/
+    *   **讨论链接**：https://lobste.rs/s/lel7zt/allocators_from_c_zig
+*   **CSS Clicker**
+    *   **说明**：一个仅用CSS实现的“点击器”游戏，展示了CSS语言的图灵完备性和创造性用法，是一个有趣的前端技术实验。
+    *   **原文链接**：https://lyra.horse/css-clicker/
+    *   **讨论链接**：https://lobste.rs/s/jagwef/css_clicker
+*   **Run Pebble OS in Browser via WASM**
+    *   **说明**：通过WebAssembly在浏览器中运行已停产的Pebble智能手表操作系统，展示了WASM在模拟和历史软件保存方面的能力。
+    *   **原文链接**：https://ericmigi.github.io/pebble-qemu-wasm/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46988462
 
-19. **社区是不可替代的**
-    *   **简要说明**：一篇关于在线社区建设的文章，指出真正的社区具有独特的文化和关系，无法像商品一样被简单复制或迁移，对运营社交媒体和产品社区有启发。
-    *   **原文链接**：https://www.joanwestenberg.com/communities-are-not-fungible/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46972056
+### **4. 基础设施、网络与怀旧 (Infrastructure, Networking & Nostalgia)**
+涉及底层网络协议、历史技术以及基础设施的持久性。
+*   **Reports of Telnet's death have been greatly exaggerated**
+    *   **说明**：文章指出Telnet协议在网络设备（尤其是路由器和交换机）的带外管理（Out-of-Band）中依然广泛存在，远未消亡。
+    *   **原文链接**：https://www.terracenetworks.com/blog/2026-02-11-telnet-routing
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46980355
+*   **A brief history of barbed wire fence telephone networks (2024)**
+    *   **说明**：回顾了利用农场铁丝网作为导体搭建临时电话网络的历史，是一段关于民间工程智慧和早期分布式通信的趣闻。
+    *   **原文链接**：https://loriemerson.net/2024/08/31/a-brief-history-of-barbed-wire-fence-telephone-networks/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46989605
+*   **HeyWhatsThat**
+    *   **说明**：一个经典的地理可视化工具网站，可以计算并显示从地球上任意一点望去的视野全景图，是技术与地理结合的优秀案例。
+    *   **原文链接**：https://www.heywhatsthat.com/faq.html
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46945907
 
-20. **我作为自力更生创业者的第八年**
-    *   **简要说明**：一位创业者分享了他八年来自主创业（不依赖外部风投）的经验、挑战和心得，为独立开发者和创业者提供了真实的参考。
-    *   **原文链接**：https://mtlynch.io/bootstrapped-founder-year-8/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46933444
+### **5. 自动驾驶与硬件 (Autonomous Vehicles & Hardware)**
+关注自动驾驶技术的最新部署进展。
+*   **Beginning fully autonomous operations with the 6th-generation Waymo driver**
+    *   **说明**：Waymo宣布开始使用其第六代自动驾驶系统进行完全无人化运营，标志着自动驾驶商业化落地进入新阶段。
+    *   **原文链接**：https://waymo.com/blog/2026/02/ro-on-6th-gen-waymo-driver
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46990578
 
-#### 主题五：经典资源、怀旧与趣味
-包括历久弥新的学习资料、老软件的里程碑以及轻松的技术趣闻。
+### **6. 社会、文化与思想 (Society, Culture & Thinking)**
+探讨技术与社会、艺术、批判性思维的交叉领域。
+*   **Ireland rolls out basic income scheme for artists**
+    *   **说明**：爱尔兰为艺术家推出基本收入计划。此政策虽非纯技术新闻，但在技术社区引发了关于UBI（全民基本收入）、创意产业与经济模式的深度讨论。
+    *   **原文链接**：https://www.reuters.com/world/ireland-rolls-out-pioneering-basic-income-scheme-artists-2026-02-10/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46977175
+*   **How to make a living as an artist**
+    *   **说明**：一位艺术家分享在数字时代谋生的经验，内容涉及技术平台、个人品牌和商业模式，对创意工作者有参考价值。
+    *   **原文链接**：https://essays.fnnch.com/make-a-living
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46984735
+*   **Polis: Open-source platform for large-scale civic deliberation**
+    *   **说明**：介绍Polis——一个用于大规模公民审议的开源平台，它利用算法帮助大规模群体发现共识，是技术用于改善民主进程的实践。
+    *   **原文链接**：https://pol.is/home2
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46992815
+*   **Carl Sagan's Baloney Detection Kit: Tools for Thinking Critically (2025)**
+    *   **说明**：重温卡尔·萨根的“胡扯检测工具包”，在AI生成内容泛滥和信息过载的时代，这套批判性思维工具显得尤为重要。
+    *   **原文链接**：https://www.openculture.com/2025/09/the-carl-sagan-baloney-detection-kit.html
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46985609
+*   **Culture Is the Mass-Synchronization of Framings**
+    *   **说明**：一篇哲学性文章，将文化定义为“框架的大规模同步”，为理解技术如何塑造和传播文化提供了一个理论视角。
+    *   **原文链接**：https://aethermug.com/posts/culture-is-the-mass-synchronization-of-framings
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46989124
+*   **Byte magazine artist Robert Tinney, who illustrated the birth of PCs, dies at 78**
+    *   **说明**：讣告纪念为《Byte》杂志创作了经典封面、描绘了PC诞生时代的艺术家Robert Tinney，是对技术史中艺术贡献的缅怀。
+    *   **原文链接**：https://arstechnica.com/gadgets/2026/02/byte-magazine-artist-robert-tinney-who-illustrated-the-birth-of-pcs-dies-at-78/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46987425
+*   **So many trees planted in Taklamakan Desert that it's turned into a carbon sink**
+    *   **说明**：报道中国在塔克拉玛干沙漠植树造林使其转变为碳汇。这在技术社区引发了关于大规模环境工程、数据监测和气候技术的讨论。
+    *   **原文链接**：https://www.livescience.com/planet-earth/plants/china-has-planted-so-many-trees-around-the-taklamakan-desert-that-its-turned-this-biological-void-into-a-carbon-sink
+    *   **讨论链接**：https://news.ycombinator.com/item?id=46990855
 
-21. **费曼物理学讲义（1961-1964）**
-    *   **简要说明**：经典物理学教材的官方网站。始终是学习物理和领略大师教学艺术的宝贵免费资源，定期被社区重新发现和推荐。
-    *   **原文链接**：https://www.feynmanlectures.caltech.edu/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46958345
+---
 
-22. **Telnet消亡之日**
-    *   **简要说明**：一篇来自安全公司的博文，通过数据分析指出古老的Telnet协议在互联网上的活跃度已降至极低水平，标志着一个旧时代的终结。
-    *   **原文链接**：https://www.labs.greynoise.io/grimoire/2026-02-10-telnet-falls-silent/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46967772
+### **今日最值得阅读文章推荐**
 
-23. **NetNewsWire迎来23岁生日**
-    *   **简要说明**：著名的开源RSS阅读器NetNewsWire庆祝其诞生23周年。它是macOS生态中长寿、高质量独立软件的典范，也是RSS协议生命力的象征。
-    *   **原文链接**：https://netnewswire.blog/2026/02/11/netnewswire-turns.html
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46978490
+基于话题热度、技术重要性和讨论深度，我推荐以下五篇文章：
 
-24. **弹珠机之趣**
-    *   **简要说明**：一个展示小型弹珠机（Pinball）制作和创意的网站。体现了硬件黑客和复古游戏爱好者的极客精神。
-    *   **原文链接**：https://www.funwithpinball.com/exhibits/small-boards
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46969088
+1.  **Discord/Twitch/Snapchat age verification bypass**
+    *   **推荐理由**：这是今日引爆社区的技术与社会热点。它不仅揭示了一个具体的技术漏洞，更是一把钥匙，打开了关于**在线隐私、监管有效性、年龄验证技术路径**以及**中心化平台权力**的宏大辩论。阅读原文和其下数百条评论，可以快速把握当前技术社区对这一紧迫问题的核心关切。
+    *   **链接**：https://news.ycombinator.com/item?id=46982421 (建议通过讨论链接进入，结合原文和评论阅读)
 
-25. **吸血鬼为何永生**
-    *   **简要说明**：一篇从细胞生物学、进化和文学角度探讨吸血鬼传说中“永生”设定的趣味文章，是科学与人文的跨界思考。
-    *   **原文链接**：https://machielreyneke.com/blog/vampires-longevity/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46976443
-
-#### 主题六：数学、气候与社区互动
-涵盖学术讨论、环境议题和社区交流。
-
-26. **数学家对复数的本质结构存在分歧（2024）**
-    *   **简要说明**：一篇深入探讨复数数学基础哲学问题的文章，讨论了数学家之间关于如何最“本质”地理解和定义复数的一些不同观点。
-    *   **原文链接**：https://www.infinitelymore.xyz/p/complex-numbers-essential-structure
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46962402
-
-27. **温室地球轨迹的风险**
-    *   **简要说明**：一篇发表在《One Earth》期刊上的科学研究，讨论气候变化可能将地球推入不可逆的“温室地球”状态的风险，是重要的环境科学议题。
-    *   **原文链接**：https://www.cell.com/one-earth/fulltext/S2590-3322%2825%2900391-4
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46979562
-
-28. **Ask HN: 你正在做什么？（2026年2月）**
-    *   **简要说明**：Hacker News每月一次的经典帖子，开发者们在此分享自己正在进行的项目、创业想法或学习计划。是了解技术社区最新动态和兴趣点的绝佳窗口。
-    *   **原文链接**：无
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46937696
-
-29. **我如何将我对谷歌搜索的依赖减少一半**
-    *   **简要说明**：一篇个人实践文章，作者分享了通过使用替代搜索引擎、优化书签、利用本地AI工具等方法，减少对Google搜索依赖的经验和技巧。
-    *   **原文链接**：https://hister.org/posts/how-i-cut-my-google-search-dependence-in-half/
-    *   **讨论链接**：https://lobste.rs/s/ogr30w/how_i_cut_my_google_search_dependence_half
-
-*注：第26条（Lobsters上的Windows记事本漏洞）与第4条内容重复，已在上述分析中合并覆盖。*
-
-### 今日最值得阅读文章推荐
-
-基于话题的重要性、争议性、对开发者的实用价值以及思想的启发性，我推荐以下五篇文章：
-
-1.  **Discord将要求面部扫描或身份证件以获取完整访问权限**
-    *   **推荐理由**：这是今日最具争议性和广泛社会影响的科技新闻。它触及了隐私、安全、平台责任和数字身份等核心议题。阅读原文和近2000条的高质量Hacker News讨论，可以全面了解技术社区对此事的多元、深刻看法，是理解当前“年龄验证”趋势利弊的绝佳案例。
-    *   **链接**：https://news.ycombinator.com/item?id=46945663 （建议通过讨论链接进入，阅读文章并参与讨论）
-
-2.  **欧洲与Visa和万事达卡价值24万亿美元的“分手”已经开始**
-    *   **推荐理由**：超越日常编程话题，提供了一个宏大的行业变革视角。欧洲支付系统倡议（EPI）如果成功，可能重塑全球金融科技权力结构。对于关注金融科技、地缘科技竞争和基础设施建设的读者来说，这是一篇必读的分析。
-    *   **链接**：https://europeanbusinessmagazine.com/business/europes-24-trillion-breakup-with-visa-and-mastercard-has-begun/
-
-3.  **GLM-5：针对复杂系统工程和长视野智能体任务**
-    *   **推荐理由**：AI领域的最新进展。GLM-5的定位（复杂系统、长视野任务）直指当前大模型应用的难点和前沿方向。通过阅读官方博客，可以了解顶级AI团队对未来AI能力发展的思考和规划，对于把握技术趋势至关重要。
+2.  **GLM-5: Targeting complex systems engineering and long-horizon agentic tasks**
+    *   **推荐理由**：AI模型竞赛的下一个前沿已清晰可见：**解决复杂、长周期的现实世界任务**。GLM-5的发布明确了这一方向，其技术报告和社区讨论有助于我们理解顶尖AI实验室如何定义和攻克“智能体”（Agent）的难题，对于关注AI应用未来走向的人至关重要。
     *   **链接**：https://z.ai/blog/glm-5
 
-4.  **Fluorite – 一个与Flutter深度集成的游戏引擎**
-    *   **推荐理由**：展示了技术栈融合的有趣创新。将成熟的UI框架Flutter用于游戏开发是一个大胆的尝试，可能为大量Flutter开发者打开新的大门，也可能引发关于专用工具与通用框架优劣的讨论。对于游戏开发者和跨平台开发者都很有启发。
-    *   **链接**：https://fluorite.game/
+3.  **“Nothing” is the secret to structuring your work**
+    *   **推荐理由**：在效率工具和方法论泛滥的今天，这篇短文提出了一个反直觉却极具智慧的洞见。它针对的是**每一位被会议、任务和通知淹没的现代知识工作者**。文章短小精悍，但提出的“战略性留白”理念，对改善个人和团队的工作节奏与产出质量有直接的启发。
+    *   **链接**：https://www.vangemert.dev/blog/nothing
 
-5.  **Ask HN: 你正在做什么？（2026年2月）**
-    *   **推荐理由**：这是Hacker News社区的脉搏。超过1000条回复中充满了来自全球开发者、创业者和技术爱好者的真实项目、疯狂想法和实用工具。浏览这个帖子，是获取灵感、发现新工具、感受技术社区活力的最直接方式。它本身就是一份动态的、众包的技术趋势报告。
-    *   **链接**：https://news.ycombinator.com/item?id=469376960:{"buildId":"HL057ZI6hi7ZcEs2MT3ph","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-02-12","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":16},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-02-12"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-c:Tae6,Hi HN — I’m the developer of NetViews, a macOS utility I built because I wanted better visibility into what was actually happening on my wired and wireless networks.<p>I live in the CLI, but for discovery and ongoing monitoring, I kept bouncing between tools, terminals, and mental context switches. I wanted something faster and more visual, without losing technical depth — so I built a GUI that brings my favorite diagnostics together in one place.<p>About three months ago, I shared an early version here and got a ton of great feedback. I listened: a new name (it was PingStalker), a longer trial, and a lot of new features. Today I’m excited to share NetViews 2.3.<p>NetViews started because I wanted to know if something on the network was scanning my machine. Once I had that, I wanted quick access to core details—external IP, Wi-Fi data, and local topology. Then I wanted more: fast, reliable scans using ARP tables and ICMP.<p>As a Wi-Fi engineer, I couldn’t stop there. I kept adding ways to surface what’s actually going on behind the scenes.<p>Discovery &amp; Scanning:
-* ARP, ICMP, mDNS, and DNS discovery to enumerate every device on your subnet (IP, MAC, vendor, open ports).
-* Fast scans using ARP tables first, then ICMP, to avoid the usual “nmap wait”.<p>Wireless Visibility:
-* Detailed Wi-Fi connection performance and signal data.
-* Visual and audible tools to quickly locate the access point you’re associated with.<p>Monitoring &amp; Timelines:
-* Connection and ping timelines over 1, 2, 4, or 8 hours.
-* Continuous “live ping” monitoring to visualize latency spikes, packet loss, and reconnects.<p>Low-level Traffic (but only what matters):
-* Live capture of DHCP, ARP, 802.1X, LLDP&#x2F;CDP, ICMP, and off-subnet chatter.
-* mDNS decoded into human-readable output (this took months of deep dives).<p>Under the hood, it’s written in Swift. It uses low-level BSD sockets for ICMP and ARP, Apple’s Network framework for interface enumeration, and selectively wraps existing command-line tools where they’re still the best option. The focus has been on speed and low overhead.<p>I’d love feedback from anyone who builds or uses network diagnostic tools:
-- Does this fill a gap you’ve personally hit on macOS?
-- Are there better approaches to scan speed or event visualization that you’ve used?
-- What diagnostics do you still find yourself dropping to the CLI for?<p>Details and screenshots: <a href="https:&#x2F;&#x2F;netviews.app" rel="nofollow">https:&#x2F;&#x2F;netviews.app</a>
-There’s a free trial and paid licenses; I’m funding development directly rather than ads or subscriptions. Licenses include free upgrades.<p>Happy to answer any technical questions about the implementation, Swift APIs, or macOS permission model.6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-46945663","title":"Discord will require a face scan or ID for full access next month","url":"https://www.theverge.com/tech/875309/discord-age-verification-global-roll-out","source":"Hacker News","score":2027,"comments_count":1999,"comments_url":"https://news.ycombinator.com/item?id=46945663","published_at":"2026-02-09T14:37:38","author":"x01","text":"<a href=\"https:&#x2F;&#x2F;discord.com&#x2F;press-releases&#x2F;discord-launches-teen-by-default-settings-globally\" rel=\"nofollow\">https:&#x2F;&#x2F;discord.com&#x2F;press-releases&#x2F;discord-launches-teen-by-...</a><p><a href=\"https:&#x2F;&#x2F;discord.com&#x2F;safety&#x2F;how-discord-is-building-safer-experiences-for-teens\" rel=\"nofollow\">https:&#x2F;&#x2F;discord.com&#x2F;safety&#x2F;how-discord-is-building-safer-exp...</a>","summary":"Discord将于下月起要求用户进行面部扫描或身份验证才能获得完整访问权限，这引发了关于隐私、年龄验证和平台治理的重要讨论。"},{"id":"hn-46962996","title":"The Singularity will occur on a Tuesday","url":"https://campedersen.com/singularity","source":"Hacker News","score":1323,"comments_count":726,"comments_url":"https://news.ycombinator.com/item?id=46962996","published_at":"2026-02-10T17:04:31","author":"ecto","text":null,"summary":"文章以幽默的方式探讨了技术奇点（Singularity）可能发生的时间，引发了对人工智能发展速度和未来预测的思考。"},{"id":"hn-46958399","title":"Europe's $24T Breakup with Visa and Mastercard Has Begun","url":"https://europeanbusinessmagazine.com/business/europes-24-trillion-breakup-with-visa-and-mastercard-has-begun/","source":"Hacker News","score":1087,"comments_count":967,"comments_url":"https://news.ycombinator.com/item?id=46958399","published_at":"2026-02-10T11:42:14","author":"NewCzech","text":null,"summary":"欧洲正启动一项价值24万亿美元的计划，旨在减少对Visa和万事达的依赖，这标志着全球支付格局可能发生重大变革。"},{"id":"hn-46971516","title":"Windows Notepad App Remote Code Execution Vulnerability","url":"https://www.cve.org/CVERecord?id=CVE-2026-20841","source":"Hacker News","score":753,"comments_count":468,"comments_url":"https://news.ycombinator.com/item?id=46971516","published_at":"2026-02-11T06:15:33","author":"riffraff","text":null,"summary":"Windows记事本应用被发现存在远程代码执行漏洞（CVE-2026-20841），突显了广泛使用的基础软件中潜在的安全风险。"},{"id":"hn-46967772","title":"The Day the Telnet Died","url":"https://www.labs.greynoise.io/grimoire/2026-02-10-telnet-falls-silent/","source":"Hacker News","score":484,"comments_count":364,"comments_url":"https://news.ycombinator.com/item?id=46967772","published_at":"2026-02-10T22:20:40","author":"pjf","text":null,"summary":"文章记录了Telnet协议使用量急剧下降甚至“消亡”的现象，反映了互联网基础协议和网络安全实践的演进。"},{"id":"hn-46958345","title":"The Feynman Lectures on Physics (1961-1964)","url":"https://www.feynmanlectures.caltech.edu/","source":"Hacker News","score":470,"comments_count":126,"comments_url":"https://news.ycombinator.com/item?id=46958345","published_at":"2026-02-10T11:36:14","author":"rramadass","text":null,"summary":"介绍了理查德·费曼在1960年代发表的经典物理学讲座，这些内容至今仍是科学教育和思想传播的宝贵资源。"},{"id":"hn-46973083","title":"Chrome extensions spying on users' browsing data","url":"https://qcontinuum.substack.com/p/spying-chrome-extensions-287-extensions-495","source":"Hacker News","score":435,"comments_count":187,"comments_url":"https://news.ycombinator.com/item?id=46973083","published_at":"2026-02-11T10:00:56","author":"qcontinuum1","text":null,"summary":"报告指出有大量Chrome扩展程序正在秘密收集用户的浏览数据，这敲响了关于浏览器扩展生态系统安全和隐私的警钟。"},{"id":"hn-46978966","title":"Amazon Ring's lost dog ad sparks backlash amid fears of mass surveillance","url":"https://www.theverge.com/tech/876866/ring-search-party-super-bowl-ad-online-backlash","source":"Hacker News","score":416,"comments_count":232,"comments_url":"https://news.ycombinator.com/item?id=46978966","published_at":"2026-02-11T18:43:01","author":"jedberg","text":null,"summary":"亚马逊Ring的一则寻找走失狗的超级碗广告引发了强烈反对，公众担忧这可能会助长大规模监控并模糊公私监控的界限。"},{"id":"hn-46976911","title":"Fluorite – A console-grade game engine fully integrated with Flutter","url":"https://fluorite.game/","source":"Hacker News","score":393,"comments_count":230,"comments_url":"https://news.ycombinator.com/item?id=46976911","published_at":"2026-02-11T16:21:10","author":"bsimpson","text":"<a href=\"https:&#x2F;&#x2F;fosdem.org&#x2F;2026&#x2F;schedule&#x2F;event&#x2F;7ZJJWW-fluorite-game-engine-flutter&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;fosdem.org&#x2F;2026&#x2F;schedule&#x2F;event&#x2F;7ZJJWW-fluorite-game-...</a>","summary":"Fluorite是一个与Flutter深度集成的游戏引擎，旨在实现控制台级游戏品质，展示了跨平台开发工具的新可能性。"},{"id":"hn-46937696","title":"Ask HN: What are you working on? (February 2026)","url":null,"source":"Hacker News","score":318,"comments_count":1094,"comments_url":"https://news.ycombinator.com/item?id=46937696","published_at":"2026-02-08T19:35:55","author":"david927","text":"What are you working on?  Any new ideas that you&#x27;re thinking about?","summary":"这是Hacker News社区每月一次的“你在做什么”讨论帖，是了解开发者当前项目、新兴技术和创业想法的独特窗口。"},{"id":"hn-46976443","title":"Why vampires live forever","url":"https://machielreyneke.com/blog/vampires-longevity/","source":"Hacker News","score":315,"comments_count":152,"comments_url":"https://news.ycombinator.com/item?id=46976443","published_at":"2026-02-11T15:50:04","author":"machielrey","text":null,"summary":"这篇文章探讨了吸血鬼传说与长寿概念的联系，可能隐喻了技术或生物领域的长期可持续性，值得关注因为它以独特视角引发对持久性系统的思考。"},{"id":"hn-46953815","title":"Zulip.com Values","url":"https://zulip.com/values/","source":"Hacker News","score":304,"comments_count":69,"comments_url":"https://news.ycombinator.com/item?id=46953815","published_at":"2026-02-10T00:46:14","author":"nothrowaways","text":null,"summary":"本文介绍了Zulip.com的价值观，强调了开源协作和社区驱动的发展理念，值得关注因为它展示了企业如何通过文化塑造技术产品的成功。"},{"id":"hn-46933444","title":"My eighth year as a bootstrapped founder","url":"https://mtlynch.io/bootstrapped-founder-year-8/","source":"Hacker News","score":300,"comments_count":95,"comments_url":"https://news.ycombinator.com/item?id=46933444","published_at":"2026-02-08T11:47:02","author":"mtlynch","text":null,"summary":"作者分享了作为自举创始人的第八年经验，聚焦于创业挑战和成长历程，值得关注因为它提供了真实、实用的创业见解和激励故事。"},{"id":"hn-46979562","title":"The risk of a hothouse Earth trajectory","url":"https://www.cell.com/one-earth/fulltext/S2590-3322%2825%2900391-4","source":"Hacker News","score":299,"comments_count":337,"comments_url":"https://news.ycombinator.com/item?id=46979562","published_at":"2026-02-11T19:25:18","author":"Archelaos","text":null,"summary":"文章讨论了地球可能走向温室轨迹的风险，涉及气候变化和科学预警，值得关注因为它强调了环境危机的紧迫性和全球影响。"},{"id":"hn-46920315","title":"WiFi Could Become an Invisible Mass Surveillance System","url":"https://scitechdaily.com/researchers-warn-wifi-could-become-an-invisible-mass-surveillance-system/","source":"Hacker News","score":297,"comments_count":146,"comments_url":"https://news.ycombinator.com/item?id=46920315","published_at":"2026-02-07T01:16:42","author":"mgh2","text":null,"summary":"研究人员警告WiFi可能成为隐形的大规模监控系统，探讨了隐私和安全问题，值得关注因为它揭示了日常技术中潜在的监控风险。"},{"id":"hn-46982421","title":"Discord/Twitch/Snapchat age verification bypass","url":"https://age-verifier.kibty.town/","source":"Hacker News","score":286,"comments_count":149,"comments_url":"https://news.ycombinator.com/item?id=46982421","published_at":"2026-02-11T22:56:41","author":"JustSkyfall","text":null,"summary":"本文介绍了一种绕过Discord、Twitch和Snapchat年龄验证的方法，涉及网络安全和伦理挑战，值得关注因为它突显了在线平台安全漏洞的严重性。"},{"id":"hn-46969751","title":"End of an era for me: no more self-hosted git","url":"https://www.kraxel.org/blog/2026/01/thank-you-ai/","source":"Hacker News","score":254,"comments_count":166,"comments_url":"https://news.ycombinator.com/item?id=46969751","published_at":"2026-02-11T01:50:44","author":"dzulp0d","text":null,"summary":"作者宣布结束自托管Git的时代，反思了AI技术对个人工作流程的影响，值得关注因为它反映了技术演进如何改变开发者的工具选择。"},{"id":"hn-46974853","title":"GLM-5: Targeting complex systems engineering and long-horizon agentic tasks","url":"https://z.ai/blog/glm-5","source":"Hacker News","score":246,"comments_count":397,"comments_url":"https://news.ycombinator.com/item?id=46974853","published_at":"2026-02-11T13:42:16","author":"CuriouslyC","text":null,"summary":"GLM-5模型旨在针对复杂系统工程和长期代理任务，展示了AI在高级应用中的进展，值得关注因为它代表了人工智能向更复杂、自主化方向的发展。"},{"id":"hn-46955712","title":"Show HN: I built a macOS tool for network engineers – it's called NetViews","url":"https://www.netviews.app","source":"Hacker News","score":234,"comments_count":60,"comments_url":"https://news.ycombinator.com/item?id=46955712","published_at":"2026-02-10T05:20:32","author":"n1sni","text":"$c","summary":"开发者介绍了NetViews，一款为网络工程师打造的macOS工具，旨在提供更好的网络可视化管理，值得关注因为它解决了实际工作痛点并提升了效率。"},{"id":"hn-46962402","title":"Mathematicians disagree on the essential structure of the complex numbers (2024)","url":"https://www.infinitelymore.xyz/p/complex-numbers-essential-structure","source":"Hacker News","score":232,"comments_count":336,"comments_url":"https://news.ycombinator.com/item?id=46962402","published_at":"2026-02-10T16:36:30","author":"FillMaths","text":null,"summary":"文章探讨了数学家对复数基本结构的分歧，涉及数学理论和哲学思考，值得关注因为它揭示了基础科学中持续存在的争议和深度。"},{"id":"hn-46924075","title":"GLM-OCR – A multimodal OCR model for complex document understanding","url":"https://github.com/zai-org/GLM-OCR","source":"Hacker News","score":217,"comments_count":67,"comments_url":"https://news.ycombinator.com/item?id=46924075","published_at":"2026-02-07T14:15:36","author":"ms7892","text":null,"summary":"GLM-OCR是一个用于复杂文档理解的多模态OCR模型，值得关注因为它结合了视觉和语言处理能力，有望提升对表格、图表等非结构化文档的识别精度。"},{"id":"hn-46972056","title":"Communities are not fungible","url":"https://www.joanwestenberg.com/communities-are-not-fungible/","source":"Hacker News","score":210,"comments_count":97,"comments_url":"https://news.ycombinator.com/item?id=46972056","published_at":"2026-02-11T07:42:57","author":"tardibear","text":null,"summary":"这篇文章探讨了社区的非可替代性，强调每个社区都有其独特的文化和价值，值得关注因为它对当前技术社区的同质化趋势提出了批判性思考。"},{"id":"hn-46978490","title":"NetNewsWire Turns 23","url":"https://netnewswire.blog/2026/02/11/netnewswire-turns.html","source":"Hacker News","score":203,"comments_count":47,"comments_url":"https://news.ycombinator.com/item?id=46978490","published_at":"2026-02-11T18:06:11","author":"robin_reala","text":null,"summary":"NetNewsWire作为一款开源RSS阅读器迎来了23周年，值得关注因为它展示了长期维护的开源项目在信息聚合领域的持久影响力。"},{"id":"hn-46979819","title":"Paragon accidentally uploaded a photo of its spyware control panel","url":"https://twitter.com/DrWhax/status/2021608609595945442","source":"Hacker News","score":151,"comments_count":44,"comments_url":"https://news.ycombinator.com/item?id=46979819","published_at":"2026-02-11T19:42:28","author":"CGMthrowaway","text":null,"summary":"Paragon公司意外上传了其间谍软件控制面板的照片，值得关注因为这可能暴露了监控技术的内部运作细节，引发隐私和安全担忧。"},{"id":"hn-46969088","title":"Fun With Pinball","url":"https://www.funwithpinball.com/exhibits/small-boards","source":"Hacker News","score":150,"comments_count":11,"comments_url":"https://news.ycombinator.com/item?id=46969088","published_at":"2026-02-11T00:21:55","author":"jackwilsdon","text":null,"summary":"这篇文章介绍了小型弹球板的趣味展览，值得关注因为它将复古游戏与现代技术结合，展示了硬件爱好者的创新实践。"}],"locale":"en"}],"$Ld"]}]]}]
+4.  **ICE, CBP Knew Facial Recognition App Couldn't Do What DHS Says It Could**
+    *   **推荐理由**：这是一篇重要的**调查报道**，直指政府机构在明知技术存在严重缺陷的情况下仍部署使用。它超越了单纯的技术讨论，触及**技术问责、行政透明度以及生物识别监控技术滥用**的核心伦理与法律问题。对于关心技术政策、公民权利和AI伦理的读者是必读内容。
+    *   **链接**：https://www.techdirt.com/2026/02/12/ice-cbp-knew-facial-recognition0:{"buildId":"HXzZWNlwA9cdOYJRmSMMt","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-02-13","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":15},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-02-13"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-46982421","title":"Discord/Twitch/Snapchat age verification bypass","url":"https://age-verifier.kibty.town/","source":"Hacker News","score":926,"comments_count":438,"comments_url":"https://news.ycombinator.com/item?id=46982421","published_at":"2026-02-11T22:56:41","author":"JustSkyfall","text":null,"summary":"文章披露了Discord、Twitch和Snapchat等平台年龄验证机制存在可被绕过的漏洞，这引发了对于未成年人网络保护措施有效性的严重担忧。"},{"id":"hn-46976911","title":"Fluorite – A console-grade game engine fully integrated with Flutter","url":"https://fluorite.game/","source":"Hacker News","score":522,"comments_count":300,"comments_url":"https://news.ycombinator.com/item?id=46976911","published_at":"2026-02-11T16:21:10","author":"bsimpson","text":"<a href=\"https:&#x2F;&#x2F;fosdem.org&#x2F;2026&#x2F;schedule&#x2F;event&#x2F;7ZJJWW-fluorite-game-engine-flutter&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;fosdem.org&#x2F;2026&#x2F;schedule&#x2F;event&#x2F;7ZJJWW-fluorite-game-...</a>","summary":"Fluorite是一个与Flutter深度集成的游戏引擎，旨在实现主机级游戏品质，其发布预示着跨平台游戏开发可能迎来新的技术范式。"},{"id":"hn-46977175","title":"Ireland rolls out basic income scheme for artists","url":"https://www.reuters.com/world/ireland-rolls-out-pioneering-basic-income-scheme-artists-2026-02-10/","source":"Hacker News","score":473,"comments_count":633,"comments_url":"https://news.ycombinator.com/item?id=46977175","published_at":"2026-02-11T16:39:11","author":"abe94","text":null,"summary":"爱尔兰推出了针对艺术家的开创性基本收入计划，这一政策实验对于探索创意产业的经济支持模式具有重要的社会和经济意义。"},{"id":"hn-46974853","title":"GLM-5: Targeting complex systems engineering and long-horizon agentic tasks","url":"https://z.ai/blog/glm-5","source":"Hacker News","score":459,"comments_count":510,"comments_url":"https://news.ycombinator.com/item?id=46974853","published_at":"2026-02-11T13:42:16","author":"CuriouslyC","text":null,"summary":"GLM-5模型专注于解决复杂系统工程和长周期智能体任务，其发布标志着AI在应对现实世界复杂挑战方面迈出了重要一步。"},{"id":"hn-46933529","title":"“Nothing” is the secret to structuring your work","url":"https://www.vangemert.dev/blog/nothing","source":"Hacker News","score":422,"comments_count":175,"comments_url":"https://news.ycombinator.com/item?id=46933529","published_at":"2026-02-08T12:01:50","author":"spmvg","text":null,"summary":"文章提出“无为”是构建高效工作结构的秘诀，这一反直觉的观点为现代知识工作者提供了新颖的生产力提升视角。"},{"id":"hn-46949814","title":"Using an engineering notebook","url":"https://ntietz.com/blog/using-an-engineering-notebook/","source":"Hacker News","score":313,"comments_count":143,"comments_url":"https://news.ycombinator.com/item?id=46949814","published_at":"2026-02-09T19:29:53","author":"evakhoury","text":null,"summary":"本文探讨了工程师如何有效使用工程笔记本来记录工作、追踪问题和促进思考，这是一种被低估但能显著提升专业实践的工具。"},{"id":"hn-46989107","title":"Apple patches decade-old iOS zero-day, possibly exploited by commercial spyware","url":"https://www.theregister.com/2026/02/12/apple_ios_263/","source":"Hacker News","score":247,"comments_count":195,"comments_url":"https://news.ycombinator.com/item?id=46989107","published_at":"2026-02-12T14:16:10","author":"beardyw","text":null,"summary":"苹果修补了一个可能已被商业间谍软件利用的、存在长达十年的iOS零日漏洞，此事凸显了移动生态系统面临的长尾安全风险。"},{"id":"hn-46984735","title":"How to make a living as an artist","url":"https://essays.fnnch.com/make-a-living","source":"Hacker News","score":241,"comments_count":120,"comments_url":"https://news.ycombinator.com/item?id=46984735","published_at":"2026-02-12T03:56:26","author":"gwintrob","text":null,"summary":"文章为艺术家提供了关于如何谋生的实用建议和思考，触及了创意工作者在数字经济时代面临的核心生存挑战。"},{"id":"hn-46995046","title":"Welcoming Discord users amidst the challenge of Age Verification","url":"https://matrix.org/blog/2026/02/welcome-discord/","source":"Hacker News","score":220,"comments_count":109,"comments_url":"https://news.ycombinator.com/item?id=46995046","published_at":"2026-02-12T20:57:33","author":"foresto","text":null,"summary":"Matrix平台发文欢迎因年龄验证挑战而可能离开Discord的用户，这反映了在平台监管政策变化下，去中心化通信协议的竞争机遇。"},{"id":"hn-46921757","title":"Kanchipuram Saris and Thinking Machines","url":"https://altermag.com/articles/kanchipuram-saris-and-thinking-machines","source":"Hacker News","score":206,"comments_count":43,"comments_url":"https://news.ycombinator.com/item?id=46921757","published_at":"2026-02-07T06:19:05","author":"trojanalert","text":null,"summary":"文章将印度坎奇普兰姆纱丽的传统编织工艺与思维机器的概念相联系，探讨了手工艺、复杂系统和人工智能之间深刻的哲学与技术共鸣。"},{"id":"hn-46988438","title":"Apache Arrow is 10 years old","url":"https://arrow.apache.org/blog/2026/02/12/arrow-anniversary/","source":"Hacker News","score":184,"comments_count":47,"comments_url":"https://news.ycombinator.com/item?id=46988438","published_at":"2026-02-12T13:13:30","author":"tosh","text":null,"summary":"Apache Arrow庆祝成立十周年，这是一个高性能数据交换格式，因其在加速大数据和AI工作负载中的关键作用而值得关注。"},{"id":"hn-46985609","title":"Carl Sagan's Baloney Detection Kit: Tools for Thinking Critically (2025)","url":"https://www.openculture.com/2025/09/the-carl-sagan-baloney-detection-kit.html","source":"Hacker News","score":180,"comments_count":100,"comments_url":"https://news.ycombinator.com/item?id=46985609","published_at":"2026-02-12T06:54:39","author":"nobody9999","text":null,"summary":"文章介绍了卡尔·萨根的'废话检测工具包'，提供批判性思维工具，在当前信息过载时代对技术从业者尤为重要。"},{"id":"hn-46985147","title":"D Programming Language","url":"https://dlang.org/","source":"Hacker News","score":179,"comments_count":206,"comments_url":"https://news.ycombinator.com/item?id=46985147","published_at":"2026-02-12T05:18:09","author":"arcadia_leak","text":null,"summary":"D编程语言结合了C++的性能和现代语言特性，作为系统编程的潜在替代方案值得关注。"},{"id":"hn-46992815","title":"Polis: Open-source platform for large-scale civic deliberation","url":"https://pol.is/home2","source":"Hacker News","score":173,"comments_count":68,"comments_url":"https://news.ycombinator.com/item?id=46992815","published_at":"2026-02-12T18:23:20","author":"mefengl","text":null,"summary":"Polis是一个开源的大规模公民审议平台，通过促进建设性对话来改善民主决策过程，对技术与社会治理的交集有重要意义。"},{"id":"hn-46991154","title":"MiniMax M2.5 released: 80.2% in SWE-bench Verified","url":"https://www.minimax.io/news/minimax-m25","source":"Hacker News","score":167,"comments_count":46,"comments_url":"https://news.ycombinator.com/item?id=46991154","published_at":"2026-02-12T16:51:37","author":"denysvitali","text":null,"summary":"MiniMax M2.5模型在SWE-bench Verified基准测试中达到80.2%的准确率，展示了AI在软件工程任务上的快速进步。"},{"id":"hn-46980355","title":"Reports of Telnet's death have been greatly exaggerated","url":"https://www.terracenetworks.com/blog/2026-02-11-telnet-routing","source":"Hacker News","score":154,"comments_count":64,"comments_url":"https://news.ycombinator.com/item?id=46980355","published_at":"2026-02-11T20:20:48","author":"ericpauley","text":null,"summary":"文章指出Telnet协议在特定网络路由场景中仍被使用，挑战了其已过时的普遍看法，对网络历史和遗留系统有启示。"},{"id":"hn-46990855","title":"So many trees planted in Taklamakan Desert that it's turned into a carbon sink","url":"https://www.livescience.com/planet-earth/plants/china-has-planted-so-many-trees-around-the-taklamakan-desert-that-its-turned-this-biological-void-into-a-carbon-sink","source":"Hacker News","score":152,"comments_count":67,"comments_url":"https://news.ycombinator.com/item?id=46990855","published_at":"2026-02-12T16:32:55","author":"Brajeshwar","text":null,"summary":"中国在塔克拉玛干沙漠植树造林使其转变为碳汇，这是一个大规模环境工程的成功案例，对全球气候变化应对有参考价值。"},{"id":"hn-46990578","title":"Beginning fully autonomous operations with the 6th-generation Waymo driver","url":"https://waymo.com/blog/2026/02/ro-on-6th-gen-waymo-driver","source":"Hacker News","score":151,"comments_count":149,"comments_url":"https://news.ycombinator.com/item?id=46990578","published_at":"2026-02-12T16:10:29","author":"ra7","text":null,"summary":"Waymo宣布开始第六代自动驾驶系统的完全自主运营，标志着无人驾驶技术商业化的重要里程碑。"},{"id":"hn-46995001","title":"ICE, CBP Knew Facial Recognition App Couldn't Do What DHS Says It Could","url":"https://www.techdirt.com/2026/02/12/ice-cbp-knew-facial-recognition-app-couldnt-do-what-dhs-says-it-could-deployed-it-anyway/","source":"Hacker News","score":149,"comments_count":39,"comments_url":"https://news.ycombinator.com/item?id=46995001","published_at":"2026-02-12T20:53:30","author":"cdrnsf","text":null,"summary":"报道揭露ICE和CBP明知面部识别应用无法达到DHS声称的能力仍部署使用，引发对政府技术使用透明度和问责制的担忧。"},{"id":"hn-46996999","title":"Ring cancels its partnership with Flock Safety after surveillance backlash","url":"https://www.theverge.com/news/878447/ring-flock-partnership-canceled","source":"Hacker News","score":146,"comments_count":55,"comments_url":"https://news.ycombinator.com/item?id=46996999","published_at":"2026-02-12T23:51:16","author":"c420","text":null,"summary":"Ring因监控争议取消了与Flock Safety的合作，反映了公众对隐私和执法技术集成的日益关注。"},{"id":"hn-46945907","title":"HeyWhatsThat","url":"https://www.heywhatsthat.com/faq.html","source":"Hacker News","score":134,"comments_count":26,"comments_url":"https://news.ycombinator.com/item?id=46945907","published_at":"2026-02-09T14:57:25","author":"1970-01-01","text":null,"summary":"HeyWhatsThat是一个交互式网站，允许用户计算和可视化地球上任意地点的地平线轮廓和可见性分析。值得关注是因为它为户外爱好者、天文学家和无线网络规划者提供了独特的地理空间分析工具。"},{"id":"hn-46988462","title":"Run Pebble OS in Browser via WASM","url":"https://ericmigi.github.io/pebble-qemu-wasm/","source":"Hacker News","score":131,"comments_count":23,"comments_url":"https://news.ycombinator.com/item?id=46988462","published_at":"2026-02-12T13:16:11","author":"goranmoomin","text":null,"summary":"该项目通过WebAssembly在浏览器中模拟运行已停产的Pebble智能手表操作系统。值得关注是因为它展示了WASM在保存和重现历史计算平台方面的潜力，为复古计算爱好者提供了有趣的体验。"},{"id":"hn-46989605","title":"A brief history of barbed wire fence telephone networks (2024)","url":"https://loriemerson.net/2024/08/31/a-brief-history-of-barbed-wire-fence-telephone-networks/","source":"Hacker News","score":129,"comments_count":36,"comments_url":"https://news.ycombinator.com/item?id=46989605","published_at":"2026-02-12T14:56:18","author":"keepamovin","text":null,"summary":"文章探讨了20世纪初美国农民如何利用已有的带刺铁丝网作为导体，建立非正式的乡村电话网络的历史。值得关注是因为它揭示了在基础设施缺乏时期，人们如何创造性地利用现有资源解决通信问题。"},{"id":"hn-46989124","title":"Culture Is the Mass-Synchronization of Framings","url":"https://aethermug.com/posts/culture-is-the-mass-synchronization-of-framings","source":"Hacker News","score":126,"comments_count":76,"comments_url":"https://news.ycombinator.com/item?id=46989124","published_at":"2026-02-12T14:17:37","author":"mrcgnc","text":null,"summary":"文章提出文化是“框架”的大规模同步现象，探讨了社会如何通过共享认知框架形成集体认同。值得关注是因为它为理解文化传播和群体行为提供了一个新颖的技术哲学视角。"},{"id":"hn-46987425","title":"Byte magazine artist Robert Tinney, who illustrated the birth of PCs, dies at 78","url":"https://arstechnica.com/gadgets/2026/02/byte-magazine-artist-robert-tinney-who-illustrated-the-birth-of-pcs-dies-at-78/","source":"Hacker News","score":125,"comments_count":21,"comments_url":"https://news.ycombinator.com/item?id=46987425","published_at":"2026-02-12T11:26:15","author":"rbanffy","text":null,"summary":"报道了《Byte》杂志标志性封面艺术家Robert Tinney逝世的消息，他的作品定义了早期个人计算机时代的视觉美学。值得关注是因为Tinney的艺术记录了计算机革命的关键时期，是科技文化史的重要组成部分。"}],"locale":"en"}],"$Lc"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["Generated by"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","Powered by DeepSeek"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
-d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-d40be2fca5bc","title":"Windows Notepad App Remote Code Execution Vulnerability","url":"https://www.cve.org/CVERecord?id=CVE-2026-20841","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-11T12:09:23","author":"cve.org via cfenollosa","text":"<p><a href=\"https://lobste.rs/s/kp7jlq/windows_notepad_app_remote_code\">Comments</a></p>","summary":"Windows记事本应用被发现存在远程代码执行漏洞（CVE-2026-20841），值得关注因为它影响广泛使用的系统工具，可能被攻击者利用进行恶意活动。"},{"id":"rss-c734a71fe38c","title":"Majutsu, Magit for jujutsu","url":"https://github.com/0WD0/majutsu","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-11T18:42:38","author":"github.com via weaksauce","text":"<p><a href=\"https://lobste.rs/s/jkqgrt/majutsu_magit_for_jujutsu\">Comments</a></p>","summary":"Majutsu是为jujutsu版本控制系统开发的Magit风格界面，值得关注因为它为新兴的版本控制工具提供了高效的图形化操作体验。"},{"id":"rss-75ad8c5518a0","title":"Webmentions with batteries included","url":"https://blog.fabiomanganiello.com/article/webmentions-with-batteries-included","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-11T12:43:26","author":"blog.fabiomanganiello.com by blacklight","text":"<p><a href=\"https://lobste.rs/s/xhfkrz/webmentions_with_batteries_included\">Comments</a></p>","summary":"这篇文章介绍了“自带电池”的Webmentions实现方案，值得关注因为它简化了网站间互动的集成过程，有助于推动去中心化网络的发展。"},{"id":"rss-42f8143e385d","title":"Forwardly-evaluated build systems","url":"https://garnix.io/blog/garn2/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-11T11:57:10","author":"garnix.io by jkarni","text":"<p><a href=\"https://lobste.rs/s/tqttgj/forwardly_evaluated_build_systems\">Comments</a></p>","summary":"文章探讨了前向评估构建系统的原理，值得关注因为它可能提升构建效率，通过预先计算依赖关系来优化软件开发流程。"},{"id":"rss-3f3384106d4a","title":"How I Cut My Google Search Dependence in Half","url":"https://hister.org/posts/how-i-cut-my-google-search-dependence-in-half/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-10T15:09:47","author":"hister.org by asciimoo","text":"<p><a href=\"https://lobste.rs/s/ogr30w/how_i_cut_my_google_search_dependence_half\">Comments</a></p>","summary":"作者分享了如何将谷歌搜索依赖减少一半的经验，值得关注因为它提供了实用的替代搜索策略，反映了用户对数据隐私和工具多样化的需求。"}],"locale":"en"}]
-10:null
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-a51ac85caf7d","title":"An AI Agent Published a Hit Piece on Me","url":"https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-12T17:14:31","author":"theshamblog.com via ngoldbaum","text":"<p><a href=\"https://lobste.rs/s/n4kbuj/ai_agent_published_hit_piece_on_me\">Comments</a></p>","summary":"作者讲述了自己被AI代理自动生成并发布的负面文章所攻击的个人经历。值得关注是因为它凸显了AI内容生成技术在缺乏监督时可能被用于恶意目的的现实风险。"},{"id":"rss-da51664151b1","title":"Workledger - An offline first  engineering notebook","url":"https://about.workledger.org/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-12T18:18:40","author":"about.workledger.org by gruberb","text":"<p><a href=\"https://lobste.rs/s/qtxw92/workledger_offline_first_engineering\">Comments</a></p>","summary":"Workledger是一款离线优先的工程笔记应用，专为工程师和研究人员设计，支持本地数据存储和同步。值得关注是因为它在云服务主导的时代，提供了注重隐私和数据自主性的替代方案。"},{"id":"rss-3a5ec8cb82b4","title":"Allocators from C to Zig","url":"https://antonz.org/allocators/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-12T18:52:26","author":"antonz.org via asb","text":"<p><a href=\"https://lobste.rs/s/lel7zt/allocators_from_c_zig\">Comments</a></p>","summary":"文章系统性地比较了C语言和Zig编程语言中的内存分配器实现与设计哲学。值得关注是因为它深入探讨了系统编程中内存管理这一核心主题，并展示了现代语言如何改进传统方法。"},{"id":"rss-07c058a03a5f","title":"CSS Clicker","url":"https://lyra.horse/css-clicker/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-12T14:43:25","author":"lyra.horse via confusedalex","text":"<p><a href=\"https://lobste.rs/s/jagwef/css_clicker\">Comments</a></p>","summary":"CSS Clicker是一个仅使用HTML和CSS（无JavaScript）实现的点击器游戏，展示了CSS的图灵完备性。值得关注是因为它是一个有趣的技术演示，挑战了人们对CSS功能边界的传统认知。"},{"id":"rss-ffe3bdd173a9","title":"Request for sources: Discord alternatives","url":"https://lobste.rs/s/fna9yv/request_for_sources_discord","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-12T16:12:39","author":"by icefox","text":"<p>I'm writing up a survey post on \"chat systems you might actually want to use besides Discord\", and it seems like every time I talk about this someone chirps up and asks about something new I've never heard of before.  So, I want to try to head this off at the pass and collect as much as I can right off the bat.  So, anyone have anything they want me to cover?</p>\n<p>Things on the list so far:</p>\n<ul>\n<li>Mumble</li>\n<li>Zulip</li>\n<li>Stoat</li>\n<li>Signal</li>\n<li>Matrix</li>\n<li>XMPP servers -- Prosody, Snikket</li>\n<li>XMPP clients -- Dino, conversations.im, snikket, mov.im</li>\n<li>IRCv3</li>\n<li>Root</li>\n<li>Polyproto</li>\n<li>Spacebar</li>\n<li>Rocket.chat</li>\n<li>Mattermost</li>\n<li>Tailchat</li>\n</ul>","summary":"这是一个公开征集Discord替代方案的请求，旨在汇编一份当前可用的社区聊天平台综合列表。值得关注是因为它反映了技术社区对中心化平台依赖的担忧，以及对去中心化、隐私友好型工具的持续需求。"}],"locale":"en"}]
+f:null
