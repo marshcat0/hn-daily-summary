@@ -3,232 +3,225 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-e:"$Sreact.suspense"
-5:T3eed,好的，作为一名技术新闻分析师，我将对今日“Technology”主题下的30篇热门文章进行综合分析、总结和推荐。
+11:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+5:T3cea,好的，作为一名技术新闻分析师，我已对今日“Technology”主题下的30篇热门文章进行了综合分析。这些内容主要来自Hacker News和Lobsters社区，涵盖了开源软件、编程实践、硬件/嵌入式系统、行业观察与评论、安全与隐私、以及一些有趣的独立项目。
 
-### **今日技术新闻综合分析报告**
-
-今日的热门文章主要来自Hacker News和Lobsters社区，涵盖了从编程实践、系统架构、隐私安全到行业动态等多个子主题。整体来看，社区讨论热点集中在**现代Web开发实践、系统工具与协议、人工智能/代理的反思、以及隐私与数据治理**等方面。一个有趣的趋势是，关于“过度工程化”和“回归本质”的讨论（如CSS、JavaScript、服务设计）与对前沿技术（如AI代理、WebMCP）的探索并存，反映了技术社区在追求效率与创新之间的持续平衡。
-
-以下是根据关键词和子主题进行的分类总结：
+以下是按子主题分组的详细总结：
 
 ---
 
-### **一、Web开发与前端工程**
+### **一、 开源软件与生态系统**
 
-这个主题下的文章关注现代Web开发的工具、实践和性能考量。
+此类别关注开源项目的发布、迁移、工具链更新以及社区动态。
 
-1.  **现代CSS代码片段：别再像2015年那样写CSS了**
-    *   **说明**：这篇文章倡导使用现代CSS特性（如容器查询、层叠层、逻辑属性等）来编写更简洁、更强大、更易维护的样式，是前端开发者更新知识库的实用指南。
-    *   **原文链接**：https://modern-css.com
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47025851
+1.  **Gentoo on Codeberg**
+    *   **说明**：老牌Linux发行版Gentoo宣布将其主要代码仓库从GitHub迁移至开源平台Codeberg。这反映了部分开源社区对平台独立性、所有权和价值观的重视。
+    *   **原文链接**：https://www.gentoo.org/news/2026/02/16/codeberg.html
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47050067 (HN), https://lobste.rs/s/2y5l47/gentoo_on_codeberg (Lobsters)
 
-2.  **重度JavaScript方法与长期性能目标不兼容**
-    *   **说明**：文章批判了过度依赖客户端JavaScript渲染（如SPA）对网站长期可访问性、性能和维护性带来的负面影响，引发了关于Web开发根本目标的深刻讨论。
-    *   **原文链接**：https://sgom.es/posts/2026-02-13-js-heavy-approaches-are-not-compatible-with-long-term-performance-goals/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47029339
+2.  **Plasma 6.6 released**
+    *   **说明**：KDE Plasma桌面环境发布了6.6版本，带来了性能改进、新功能和bug修复。对于Linux桌面用户和爱好者而言是重要更新。
+    *   **原文链接**：https://kde.org/announcements/plasma/6/6.6.0/
+    *   **讨论链接**：https://lobste.rs/s/vudtax/plasma_6_6_released
 
-3.  **MessageFormat：用于可本地化消息字符串的Unicode标准**
-    *   **说明**：介绍了Unicode组织正在制定的MessageFormat标准，旨在为应用程序的国际化（i18n）提供更强大、更灵活的语法，对构建全球化的Web应用至关重要。
-    *   **原文链接**：https://github.com/unicode-org/message-format-wg
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47033328
-    *   *注：此文章在Lobsters上也有提交。*
+3.  **Vinyl Cache has left github**
+    *   **说明**：另一个项目（Vinyl Cache）宣布离开GitHub。虽然未提供具体原因，但结合Gentoo的迁移，这构成了一个值得关注的趋势。
+    *   **原文链接**：https://vinyl-cache.org/organization/moving.html
+    *   **讨论链接**：https://lobste.rs/s/tt6ieg/vinyl_cache_has_left_github
 
-4.  **WebMCP提案**
-    *   **说明**：Web机器学习工作组的一项提案，旨在为浏览器引入一个“模型计算协议”，可能为Web客户端的机器学习任务标准化和优化开辟道路。
-    *   **原文链接**：https://webmachinelearning.github.io/webmcp/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47037501
+4.  **Babashka 1.12.215: Revenge of the TUIs**
+    *   **说明**：Babashka是一个快速启动的Clojure解释器，常用于脚本编写。此版本更新聚焦于终端用户界面（TUI）库的增强，对Clojure生态的开发者有实用价值。
+    *   **原文链接**：https://blog.michielborkent.nl/babashka-1.12.215.html
+    *   **讨论链接**：https://lobste.rs/s/vpbnek/babashka_1_12_215_revenge_tuis
 
----
+5.  **Using go fix to modernize Go code**
+    *   **说明**：来自Go官方团队的博客，详细介绍了如何使用`go fix`工具自动更新旧版Go代码，以适配新的语言特性和标准库变化。是Go开发者维护项目的实用指南。
+    *   **原文链接**：https://go.dev/blog/gofix
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47049479
 
-### **二、系统、工具与协议**
+6.  **BarraCUDA Open-source CUDA compiler targeting AMD GPUs**
+    *   **说明**：一个开源项目，旨在将CUDA代码编译到AMD GPU上运行。如果成熟，可能对打破NVIDIA在GPU计算生态的垄断有重要意义，吸引了高性能计算社区的关注。
+    *   **原文链接**：https://github.com/Zaneham/BarraCUDA
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47052941
 
-关注底层系统、开发工具、通信协议和运维实践。
+### **二、 编程、历史与工程实践**
 
-5.  **Ghidra by NSA**
-    *   **说明**：美国国家安全局（NSA）开源的软件逆向工程框架再次受到关注。它是一个功能强大的反汇编和调试工具，对于安全研究人员和底层软件开发者极具价值。
-    *   **原文链接**：https://github.com/NationalSecurityAgency/ghidra
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47011548
+涉及编程语言历史、代码现代化、工程管理以及有趣的编程探索。
 
-6.  **使用协议，而非服务**
-    *   **说明**：文章主张在分布式系统设计中，应优先定义和实现开放的、可互操作的协议，而不是构建封闭的、绑定的服务，以促进长期的自由度和创新。
-    *   **原文链接**：https://notnotp.com/notes/use-protocols-not-services/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47038588
+7.  **Show HN: I wrote a technical history book on Lisp**
+    *   **说明**：一位开发者撰写了一本Lisp语言的技术史书籍，特点是包含了大量实际的代码示例。对于编程语言爱好者、历史研究者以及Lisp程序员来说，是一份独特的资料。
+    *   **原文链接**：https://berksoft.ca/gol/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47048733
 
-7.  **运行我自己的XMPP服务器**
-    *   **说明**：一篇详细的实践指南，分享了作者自建XMPP（一种开源即时通讯协议）服务器，并配置TURN/STUN服务以解决NAT穿透问题的经验，体现了对去中心化通信的追求。
-    *   **原文链接**：https://blog.dmcc.io/journal/xmpp-turn-stun-coturn-prosody/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47034801
+8.  **A Programmer's Loss of Identity**
+    *   **说明**：一篇个人博客文章，探讨了当技术栈快速变化时，程序员对自身技能和职业身份的焦虑感。引发了关于技术学习、职业发展和“技术栈焦虑”的广泛共鸣与讨论。
+    *   **原文链接**：https://ratfactor.com/tech-nope2
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47015342
 
-8.  **Picol：一个500行代码的Tcl解释器**
-    *   **说明**：由知名开发者antirez创建的一个极简Tcl语言解释器。它展示了语言解释器核心的简洁实现，对学习编译原理和语言设计很有启发。
-    *   **原文链接**：https://github.com/antirez/picol
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47032235
+9.  **Poor Deming never stood a chance**
+    *   **说明**：文章借质量管理大师戴明（Deming）的理念，批判现代软件开发中普遍存在的“救火”文化和短期目标导向，认为这损害了长期质量和效率。
+    *   **原文链接**：https://surfingcomplexity.blog/2026/02/16/poor-deming-never-stood-a-chance/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47042895
 
-9.  **Vim-pencil：重新思考Vim作为写作工具**
-    *   **说明**：一个Vim插件，旨在优化Vim用于散文写作（而非编码）的体验，例如改进的换行、拼写检查集成等，展示了经典工具在新场景下的适应性。
-    *   **原文链接**：https://github.com/preservim/vim-pencil
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46997356
+10. **Four Column ASCII (2017)**
+    *   **说明**：一篇回顾文章，解释了早期计算机为何使用4列ASCII码（80列穿孔卡片），是计算机历史和编码知识的一个有趣片段。
+    *   **原文链接**：https://garbagecollected.org/2017/01/31/four-column-ascii/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47022270
 
-10. **Pocketblue – 用于移动设备的Fedora Atomic**
-    *   **说明**：一个旨在将Fedora Atomic（不可变操作系统）的理念带到移动设备（如手机）上的项目，探索了在移动端实现类似桌面端可靠性和可复现性的可能性。
-    *   **原文链接**：https://github.com/pocketblue/pocketblue
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47025085
+11. **Chess engines do weird stuff**
+    *   **说明**：探讨了现代象棋引擎（AI）在特定局面下会做出人类看来怪异但实际有效的决策，揭示了机器学习模型与人类直觉思维的差异。
+    *   **原文链接**：https://girl.surgery/chess
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47049845
 
-11. **TIL: Docker日志轮转**
-    *   **说明**：一篇简短的“今日所学”文章，介绍了如何配置Docker守护进程的日志轮转策略，防止容器日志占满磁盘空间，是实用的运维小技巧。
-    *   **原文链接**：https://ntietz.com/blog/til-docker-log-rotation/
-    *   **讨论链接**：https://lobste.rs/s/pqn3u0/til_docker_log_rotation
+### **三、 硬件、嵌入式与逆向工程**
 
-12. **让我们练习吧！(bsd.rd)**
-    *   **说明**：一个交互式学习OpenBSD安装程序`bsd.rd`的网站，通过实际操作帮助用户熟悉这个强大但可能令人生畏的工具，体现了开源社区的教育精神。
-    *   **原文链接**：https://openbsdjumpstart.org/bsd.rd/
-    *   **讨论链接**：https://lobste.rs/s/rjcaly/let_s_practice_bsd_rd
+涵盖智能手表操作系统、游戏模拟器、硬件破解和文件格式分析。
 
-13. **按意义浏览代码**
-    *   **说明**：提出了一种超越简单文本搜索的代码浏览方法，倡导通过类型签名、文档和语义关系来理解和导航代码库，尤其适用于Haskell等强类型语言。
-    *   **原文链接**：https://haskellforall.com/2026/02/browse-code-by-meaning
-    *   **讨论链接**：https://lobste.rs/s/rybouo/browse_code_by_meaning
+12. **Show HN: AsteroidOS 2.0 – Nobody asked, we shipped anyway**
+    *   **说明**：一款为智能手表设计的开源Linux操作系统发布了2.0稳定版。项目旨在延长旧智能手表硬件的寿命，体现了一种“修复而非废弃”的极客精神。
+    *   **原文链接**：https://asteroidos.org/news/2-0-release/index.html
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47051852
 
----
+13. **Rise of the Triforce**
+    *   **说明**：知名任天堂GameCube/Wii模拟器Dolphin宣布成功模拟了街机平台“Triforce”（基于GameCube）。这是模拟器技术的一项重大突破，对复古游戏保存社区意义非凡。
+    *   **原文链接**：https://dolphin-emu.org/blog/2026/02/16/rise-of-the-triforce/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47040524
 
-### **三、人工智能与机器学习**
+14. **HackMyClaw**
+    *   **说明**：一个专注于破解和改装“Claw”设备（推测是某种游戏掌机或硬件）的社区网站。展示了硬件修改和自制固件社区的活力。
+    *   **原文链接**：https://hackmyclaw.com/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47049573
 
-涵盖了对AI代理的反思、实用ML应用以及社区对AI影响的情绪讨论。
+15. **A deep dive into Apple‘s .car file format**
+    *   **说明**：对苹果用于存储UI资源（如图片、颜色）的`.car`文件格式进行技术逆向工程分析。对于macOS/iOS开发者和逆向工程师有参考价值。
+    *   **原文链接**：https://dbg.re/posts/car-file-format/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47014002
 
-14. **研究：自生成的智能体技能是无用的**
-    *   **说明**：一篇arXiv论文指出，当前让AI智能体通过试错自我生成并复用“技能”的方法，在复杂任务中效果不佳。这对当前火热的AI智能体研究方向提出了重要质疑。
-    *   **原文链接**：https://arxiv.org/abs/2602.12670
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47040430
+### **四、 安全、隐私与加密**
 
-15. **用40行代码自建无服务器OCR**
-    *   **说明**：一篇实践教程，展示了如何利用Modal等云服务和DeepSeek-V2等开源模型，快速搭建一个功能性的OCR（光学字符识别）服务，体现了现代云原生和AI服务的易用性。
-    *   **原文链接**：https://christopherkrapu.com/blog/2026/ocr-textbooks-modal-deepseek/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=46988538
+聚焦移动操作系统安全、加密库漏洞和年龄验证引发的争议。
 
-16. **PyTorch可视化入门**
-    *   **说明**：一篇通过丰富图表和可视化来讲解PyTorch核心概念（张量、自动微分、模型训练）的教程，降低了机器学习框架的学习门槛。
-    *   **原文链接**：https://0byte.io/articles/pytorch_introduction.html
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47002231
+16. **GrapheneOS – Break Free from Google and Apple**
+    *   **说明**：一篇介绍和倡导使用GrapheneOS的文章。GrapheneOS是一个注重安全和隐私的Android开源分支，去除了谷歌服务，提供了更强的安全强化功能。在当前数据隐私备受关注的背景下，此话题热度极高。
+    *   **原文链接**：https://blog.tomaszdunia.pl/grapheneos-eng/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47045612
 
-17. **Show HN: Wispr Flow, Superwhisper 和 Monologue 的免费替代品**
-    *   **说明**：一个开源项目，旨在提供流行AI语音/转录工具的免费替代方案，反映了社区对构建开放、可控AI工具的渴望。
-    *   **原文链接**：https://github.com/zachlatta/freeflow
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47040375
+17. **Cryptographic Issues in Matrix’s Rust Library Vodozemac**
+    *   **说明**：安全研究员披露了Matrix去中心化通信协议使用的Rust加密库`vodozemac`中存在的一些密码学问题。这关系到使用Matrix的即时通讯应用（如Element）的安全性，引发了严肃的技术讨论。
+    *   **原文链接**：https://soatok.blog/2026/02/17/cryptographic-issues-in-matrixs-rust-library-vodozemac/
+    *   **讨论链接**：https://lobste.rs/s/oukhsl/cryptographic_issues_matrix_s_rust
 
-18. **请考虑将关于“氛围编码”的悲伤或 hype 帖子标记为“咆哮”**
-    *   **说明**：Lobsters社区的一篇元讨论，反映了部分成员对社区内容被大量关于AI的焦虑、兴奋或悲观情绪帖子淹没的担忧，呼吁保持对传统计算话题的关注。
-    *   **原文链接**：https://lobste.rs/s/jdoe4x/please_consider_tagging_vibecoding
-    *   **讨论链接**：*文章本身即包含讨论内容。*
+18. **Discord Rival Gets Overwhelmed by Exodus of Players Fleeing Age-Verification**
+    *   **说明**：报道了Discord的竞争对手TeamSpeak因实施年龄验证导致大量用户涌向其他平台的事件。引发了关于在线平台责任、隐私与用户体验之间平衡的讨论。
+    *   **原文链接**：https://kotaku.com/discord-alternative-teamspeak-age-verification-check-rivals-2000669693
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47050376
 
----
+### **五、 行业观察、AI与自动驾驶**
 
-### **四、隐私、安全与数据治理**
+讨论AI产品模式、自动驾驶安全性和社区文化。
 
-涉及技术隐私漏洞、数据收集实验和公共数据访问权。
-
-19. **你的蓝牙设备泄露了什么**
-    *   **说明**：一篇技术博客，深入分析了蓝牙协议（特别是低功耗蓝牙）中存在的隐私风险，设备如何被唯一标识和追踪，对于物联网和移动开发者是重要的安全提醒。
-    *   **原文链接**：https://blog.dmcc.io/journal/2026-bluetooth-privacy-bluehood/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47035560
-
-20. **英国司法部下令删除英国最大的法庭报告数据库**
-    *   **说明**：一则具有重大影响的新闻。英国政府决定删除一个重要的公共法律记录数据库，引发了关于司法透明性、历史研究和公共知情权的激烈争论。
-    *   **原文链接**：https://www.legalcheek.com/2026/02/ministry-of-justice-orders-deletion-of-the-uks-largest-court-reporting-database/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47034713
-
-21. **英国Discord用户曾是Peter Thiel关联数据收集实验的一部分**
-    *   **说明**：报道揭示了一项有争议的大规模数据收集实验，该实验通过Discord平台进行，并与知名投资人Peter Thiel关联的公司有关，再次引发对用户数据被未经明确同意用于研究的伦理讨论。
-    *   **原文链接**：https://www.rockpapershotgun.com/good-news-uk-discord-users-were-part-of-a-peter-thiel-linked-data-collection-experiment
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47035679
-
----
-
-### **五、行业动态与商业**
-
-关注半导体行业竞争和科技文化现象。
-
-22. **Arm想要在芯片业务中分得更大一杯羹**
-    *   **说明**：来自《经济学人》的报道，分析了Arm公司在其架构主导移动和嵌入式市场后，如何通过调整商业模式和提升产品性能，试图在PC和服务器市场获得更高份额和利润。
-    *   **原文链接**：https://www.economist.com/business/2026/02/12/arm-wants-a-bigger-slice-of-the-chip-business
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47030271
-
-23. **“代币焦虑”，不过是换了个名字的老虎机**
-    *   **说明**：文章批判了当前一些AI产品（如AI写作助手）采用的“按Token付费”或“信用点”模式，认为这种设计本质上与赌博机制类似，制造焦虑并鼓励过度消费。
+19. **“Token anxiety”, a slot machine by any other name**
+    *   **说明**：文章批判了当前许多AI产品（如AI写作助手）采用的“按Token付费”模式，将其比作老虎机，认为这种模式制造了用户的焦虑感并可能阻碍创造性使用。
     *   **原文链接**：https://jkap.io/token-anxiety-or-a-slot-machine-by-any-other-name/
     *   **讨论链接**：https://news.ycombinator.com/item?id=47038318
 
-24. **The Sideprocalypse**
-    *   **说明**：“Sideprocalypse”是作者自创的词，描述了当前独立开发者生态中，为了在众多Side Project（业余项目）中脱颖而出而被迫进行过度营销和“表演性工作”的现象，是对科技文化的一种反思。
-    *   **原文链接**：https://johan.hal.se/wrote/2026/02/03/the-sideprocalypse/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47035371
+20. **Tesla ‘Robotaxi’ adds 5 more crashes in Austin in a month – 4x worse than humans**
+    *   **说明**：一篇关于特斯拉自动驾驶出租车（Robotaxi）在奥斯汀发生多起事故的报道，其事故率据称是人类驾驶员的4倍。这是对自动驾驶技术现实安全挑战的即时新闻，争议性大。
+    *   **原文链接**：https://electrek.co/2026/02/17/tesla-robotaxi-adds-5-more-crashes-austin-month-4x-worse-than-humans/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47051546
 
----
+21. **Is Show HN dead? No, but it‘s drowning**
+    *   **说明**：分析了Hacker News上“Show HN”板块的现状，认为虽然未死，但已被大量帖子淹没，导致高质量项目难以获得关注。引发了关于社区内容质量和发现机制的反思。
+    *   **原文链接**：https://www.arthurcnops.blog/death-of-show-hn/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47045804
 
-### **六、其他值得关注的内容**
+22. **Thank HN: You helped save 33k lives**
+    *   **说明**：非营利组织Watsi（通过众筹为发展中国家患者提供医疗资金）的创始人在HN上发文，感谢社区13年来的支持，并宣布已帮助拯救了33,000条生命。这是一个温暖人心、展示技术社区正面影响力的故事。
+    *   **原文链接**：无（内容在讨论帖中）
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47049824
 
-这些文章虽然不完全属于传统技术范畴，但在技术社区引发了广泛共鸣和讨论。
+### **六、 独立项目、可视化与创意工具**
 
-25. **我想洗车。洗车店在50米外。我应该走路还是开车？**
-    *   **说明**：一篇带有哲学和幽默色彩的短文，以洗车为例，探讨了人类在微小决策中的非理性、惯性以及自动化/便利性对我们行为模式的塑造。在HN上引发了极为热烈的讨论。
-    *   **原文链接**：https://mastodon.world/@knowmadd/116072773118828295
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47031580
+展示了开发者个人或小团队的创意和技术实现。
 
-26. **特权是糟糕的语法**
-    *   **说明**：一篇将社会学术语“特权”类比为编程中“糟糕的语法”的文章，认为它模糊了真正的因果关系，阻碍了有效的沟通和问题解决。引发了关于语言、叙事和社会问题的跨领域讨论。
-    *   **原文链接**：https://tadaima.bearblog.dev/privilege-is-bad-grammar/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47038125
+23. **Show HN: Glitchy camera – a circuit-bent camera simulator in the browser**
+    *   **说明**：一个在浏览器中模拟“电路弯曲”相机效果的趣味项目。用户可以通过虚拟“重新接线”来产生各种故障艺术风格的图像。创意十足，交互有趣。
+    *   **原文链接**：https://glitchycam.com
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47033954
 
-27. **14岁少年吴迈尔斯折叠出可承受自身重量10000倍的折纸结构**
-    *   **说明**：一则鼓舞人心的科技新闻，讲述了一位青少年利用折纸数学原理设计出坚固、可快速部署的应急庇护所。展示了跨学科创新（艺术、数学、工程）的巨大潜力。
+24. **I converted 2D conventional flight tracking into 3D**
+    *   **说明**：一个将传统的2D航班追踪数据可视化为3D地图的网站，提供了观察空中交通的新颖视角。技术实现简洁而有效。
+    *   **原文链接**：https://aeris.edbn.me/?city=SFO
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47048004
+
+25. **Xbox UI Portfolio Site**
+    *   **说明**：一位设计师/开发者模仿Xbox主机用户界面风格制作的个人作品集网站。展示了前端UI/UX设计与游戏主机美学的结合。
+    *   **原文链接**：https://gabrielcabrera.co/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47044179
+
+26. **Rendering the Visible Spectrum**
+    *   **说明**：一个技术文档，详细解释了如何在计算机图形中精确渲染可见光谱，涉及色彩科学和渲染技术。
+    *   **原文链接**：https://brandonli.net/spectra/doc/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47012895
+
+27. **14-year-old Miles Wu folded origami pattern that holds 10k times its own weight**
+    *   **说明**：报道了一位14岁少年利用折纸原理设计出超强承重结构，并应用于应急庇护所的故事。是跨学科创新（艺术+工程）的杰出案例，鼓舞人心。
     *   **原文链接**：https://www.smithsonianmag.com/innovation/this-14-year-old-is-using-origami-to-design-emergency-shelters-that-are-sturdy-cost-efficient-and-easy-to-deploy-180988179/
     *   **讨论链接**：https://news.ycombinator.com/item?id=47038546
 
-28. **如何用透明胶带拍照（无透镜成像）[视频]**
-    *   **说明**：一个有趣的科学实验视频，演示了如何利用透明胶带产生的衍射效应实现简单的成像，是光学原理的生动展示，激发了观众的好奇心。
-    *   **原文链接**：https://www.youtube.com/watch?v=97f0nfU5Px0
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47037313
+28. **So you want to build a tunnel**
+    *   **说明**：来自知名工程科普博客“Practical Engineering”，用通俗易懂的方式讲解了隧道建设的基本原理和工程挑战。是优秀的STEM科普内容。
+    *   **原文链接**：https://practical.engineering/blog/2026/2/17/so-you-want-to-build-a-tunnel
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47049718
 
-29. **罗伯特·杜瓦尔去世**
-    *   **说明**：知名演员去世的讣告。虽然非技术内容，但因其文化影响力而在HN上被分享和讨论，体现了社区成员兴趣的多样性。
-    *   **原文链接**：https://www.nytimes.com/2026/02/16/movies/robert-duvall-dead.html?unlocked_article_code=1.MlA.5LIC.JbSiEGzihyVU&smid=url-share
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47038706
+29. **Running NanoClaw in a Docker Shell Sandbox**
+    *   **说明**：Docker官方博客文章，介绍如何使用Docker Shell沙箱运行NanoClaw（可能是一个轻量级工具或环境）。展示了Docker在提供安全、隔离的临时环境方面的应用。
+    *   **原文链接**：https://www.docker.com/blog/run-nanoclaw-in-docker-shell-sandboxes/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47041456
 
-*注：第28条“MessageFormat”已在第一部分提及。*
+30. **HackMyClaw** (已在第三组列出，此处不重复)
 
 ---
 
 ### **今日最值得阅读文章推荐**
 
-基于话题的普适性、讨论深度、实践价值或思想启发性，我推荐以下五篇文章：
+基于话题重要性、技术深度、社区反响和启发性，我推荐以下5篇文章：
 
-1.  **《重度JavaScript方法与长期性能目标不兼容》**
-    *   **推荐理由**：在当前前端框架极度繁荣的背景下，这篇文章提供了一个至关重要的反向思考。它超越了具体的技术争论，直指Web的长期健康、可访问性和可持续性。无论你是全栈开发者、前端专家还是产品负责人，这篇文章都能促使你重新审视技术选型的根本原则。
-    *   **链接**：https://sgom.es/posts/2026-02-13-js-heavy-approaches-are-not-compatible-with-long-term-performance-goals/
-    *   **讨论**：https://news.ycombinator.com/item?id=47029339
+1.  **GrapheneOS – Break Free from Google and Apple**
+    *   **理由**：**安全与隐私的焦点议题**。在科技巨头主导的移动生态中，GrapheneOS代表了追求数字主权和安全强化的最前沿实践。其高热度讨论（760条评论）涵盖了技术可行性、用户体验、商业模型和哲学思考，是理解当前移动安全格局的绝佳入口。
+    *   **链接**：https://blog.tomaszdunia.pl/grapheneos-eng/ | [讨论](https://news.ycombinator.com/item?id=47045612)
 
-2.  **《研究：自生成的智能体技能是无用的》**
-    *   **推荐理由**：AI智能体是当前最火热的研究和投资领域之一。这篇论文及其讨论像一盆冷水，指出了该方向一个基础方法论可能存在的根本缺陷。阅读它可以帮助你穿透行业宣传的迷雾，更冷静地评估AI技术的现状与未来，避免陷入技术 hype。
-    *   **链接**：https://arxiv.org/abs/2602.12670
-    *   **讨论**：https://news.ycombinator.com/item?id=47040430
+2.  **Cryptographic Issues in Matrix’s Rust Library Vodozemac**
+    *   **理由**：**严肃的安全技术分析**。由知名密码学研究员撰写，详细剖析了一个重要开源加密库的实际漏洞。对于关注安全、密码学实践或Rust语言的开发者来说，这是一次难得的学习机会，可以了解现实世界中的加密实现陷阱。
+    *   **链接**：https://soatok.blog/2026/02/17/cryptographic-issues-in-matrixs-rust-library-vodozemac/ | [讨论](https://lobste.rs/s/oukhsl/cryptographic_issues_matrix_s_rust)
 
-3.  **《英国司法部下令删除英国最大的法庭报告数据库》**
-    *   **推荐理由**：技术社区不仅关心代码，也关心代码运行其中的社会。这则新闻是技术、法律、政治和伦理的交叉点。它关乎公共数据的命运、历史的保存和权力的透明度。理解这类事件，对于思考技术人应承担的社会责任至关重要。
-    *   **链接**：https://www.legalcheek.com/2026/02/ministry-of-justice-orders-deletion-of-the-uks-largest-court-reporting-database/
-    *   **讨论**：https://news.y0:{"buildId":"bG1edthpqhBjUgDTZjTy5","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-02-17","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":17},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-02-17"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47031580","title":"I want to wash my car. The car wash is 50 meters away. Should I walk or drive?","url":"https://mastodon.world/@knowmadd/116072773118828295","source":"Hacker News","score":1395,"comments_count":874,"comments_url":"https://news.ycombinator.com/item?id=47031580","published_at":"2026-02-16T06:31:48","author":"novemp","text":null,"summary":"这篇文章探讨了一个看似简单但涉及效率与环保权衡的日常决策：洗车时是步行还是开车前往50米外的洗车店。值得关注是因为它用技术思维分析日常行为，引发对可持续生活方式的思考。"},{"id":"hn-47025851","title":"Modern CSS Code Snippets: Stop writing CSS like it's 2015","url":"https://modern-css.com","source":"Hacker News","score":665,"comments_count":280,"comments_url":"https://news.ycombinator.com/item?id=47025851","published_at":"2026-02-15T18:04:10","author":"eustoria","text":null,"summary":"这篇文章介绍了现代CSS代码片段，旨在帮助开发者摆脱过时的编码习惯，提升前端开发效率。值得关注是因为它提供了实用的技术更新，反映了Web开发的最新趋势。"},{"id":"hn-47034713","title":"Ministry of Justice orders deletion of the UK's largest court reporting database","url":"https://www.legalcheek.com/2026/02/ministry-of-justice-orders-deletion-of-the-uks-largest-court-reporting-database/","source":"Hacker News","score":483,"comments_count":331,"comments_url":"https://news.ycombinator.com/item?id=47034713","published_at":"2026-02-16T13:30:07","author":"harel","text":null,"summary":"英国司法部下令删除该国最大的法庭报道数据库，这可能影响法律透明度和公众知情权。值得关注是因为它涉及数据治理、法律与技术的交叉议题，对新闻自由有潜在影响。"},{"id":"hn-47038546","title":"14-year-old Miles Wu folded origami pattern that holds 10k times its own weight","url":"https://www.smithsonianmag.com/innovation/this-14-year-old-is-using-origami-to-design-emergency-shelters-that-are-sturdy-cost-efficient-and-easy-to-deploy-180988179/","source":"Hacker News","score":394,"comments_count":78,"comments_url":"https://news.ycombinator.com/item?id=47038546","published_at":"2026-02-16T18:41:50","author":"bookofjoe","text":null,"summary":"14岁的Miles Wu设计了一种折纸结构，能承受自身重量10,000倍的压力，可用于紧急庇护所。值得关注是因为它展示了青少年创新如何将传统艺术应用于解决现实世界问题。"},{"id":"hn-47035679","title":"UK Discord users were part of a Peter Thiel-linked data collection experiment","url":"https://www.rockpapershotgun.com/good-news-uk-discord-users-were-part-of-a-peter-thiel-linked-data-collection-experiment","source":"Hacker News","score":322,"comments_count":104,"comments_url":"https://news.ycombinator.com/item?id=47035679","published_at":"2026-02-16T14:48:25","author":"righthand","text":null,"summary":"英国Discord用户被发现参与了一项与Peter Thiel相关的数据收集实验，引发隐私担忧。值得关注是因为它揭示了科技巨头如何通过社交平台进行隐蔽的数据操作。"},{"id":"hn-47011548","title":"Ghidra by NSA","url":"https://github.com/NationalSecurityAgency/ghidra","source":"Hacker News","score":304,"comments_count":174,"comments_url":"https://news.ycombinator.com/item?id=47011548","published_at":"2026-02-14T04:24:18","author":"handfuloflight","text":null,"summary":"美国国家安全局（NSA）开源了逆向工程工具Ghidra，为安全研究人员提供了强大的分析平台。值得关注是因为它是政府机构罕见地公开核心工具，推动了网络安全社区的发展。"},{"id":"hn-47035560","title":"What your Bluetooth devices reveal","url":"https://blog.dmcc.io/journal/2026-bluetooth-privacy-bluehood/","source":"Hacker News","score":298,"comments_count":117,"comments_url":"https://news.ycombinator.com/item?id=47035560","published_at":"2026-02-16T14:39:32","author":"ssgodderidge","text":null,"summary":"这篇文章分析了蓝牙设备如何泄露用户隐私数据，例如位置和行为模式。值得关注是因为它提醒人们注意日常物联网设备的安全风险，并提供了防护建议。"},{"id":"hn-47038588","title":"Use protocols, not services","url":"https://notnotp.com/notes/use-protocols-not-services/","source":"Hacker News","score":260,"comments_count":96,"comments_url":"https://news.ycombinator.com/item?id=47038588","published_at":"2026-02-16T18:44:58","author":"enz","text":null,"summary":"文章主张在系统设计中优先使用协议而非服务，以提升灵活性和可维护性。值得关注是因为它提出了软件架构的重要原则，对分布式系统开发有指导意义。"},{"id":"hn-47040430","title":"Study: Self-generated Agent Skills are useless","url":"https://arxiv.org/abs/2602.12670","source":"Hacker News","score":233,"comments_count":105,"comments_url":"https://news.ycombinator.com/item?id=47040430","published_at":"2026-02-16T21:15:56","author":"mustaphah","text":null,"summary":"研究指出，当前AI代理自我生成的技能往往无效，揭示了自动化智能体的局限性。值得关注是因为它挑战了AI领域的热门方向，促使重新思考代理学习的方法。"},{"id":"hn-47038125","title":"Privilege is bad grammar","url":"https://tadaima.bearblog.dev/privilege-is-bad-grammar/","source":"Hacker News","score":211,"comments_count":217,"comments_url":"https://news.ycombinator.com/item?id=47038125","published_at":"2026-02-16T18:05:32","author":"surprisetalk","text":null,"summary":"文章将特权比喻为糟糕的语法，探讨了社会不平等在语言和结构中的体现。值得关注是因为它用技术隐喻分析社会议题，引发了跨领域的批判性思考。"},{"id":"hn-47034801","title":"Running My Own XMPP Server","url":"https://blog.dmcc.io/journal/xmpp-turn-stun-coturn-prosody/","source":"Hacker News","score":207,"comments_count":128,"comments_url":"https://news.ycombinator.com/item?id=47034801","published_at":"2026-02-16T13:39:45","author":"speckx","text":null,"summary":"文章分享了作者自建XMPP服务器的经验，重点介绍了使用Prosody和Coturn配置TURN/STUN服务器的过程。值得关注是因为它提供了去中心化即时通讯的实践指南，对注重隐私和自主控制的开发者有参考价值。"},{"id":"hn-47029339","title":"JavaScript-heavy approaches are not compatible with long-term performance goals","url":"https://sgom.es/posts/2026-02-13-js-heavy-approaches-are-not-compatible-with-long-term-performance-goals/","source":"Hacker News","score":161,"comments_count":206,"comments_url":"https://news.ycombinator.com/item?id=47029339","published_at":"2026-02-16T00:26:23","author":"luu","text":null,"summary":"文章分析了JavaScript密集型开发方法对长期性能目标的负面影响，并提出了更可持续的替代方案。值得关注是因为它触及了现代Web开发的核心矛盾，为追求高性能和可维护性的团队提供了重要见解。"},{"id":"hn-47035371","title":"The Sideprocalypse","url":"https://johan.hal.se/wrote/2026/02/03/the-sideprocalypse/","source":"Hacker News","score":151,"comments_count":124,"comments_url":"https://news.ycombinator.com/item?id=47035371","published_at":"2026-02-16T14:26:39","author":"headalgorithm","text":null,"summary":"文章探讨了\"副项目末日\"现象，即个人副项目过多导致无法完成任何项目的困境。值得关注是因为它反映了当前开发者普遍面临的时间管理和项目优先级问题，具有现实指导意义。"},{"id":"hn-47033328","title":"MessageFormat: Unicode standard for localizable message strings","url":"https://github.com/unicode-org/message-format-wg","source":"Hacker News","score":147,"comments_count":60,"comments_url":"https://news.ycombinator.com/item?id=47033328","published_at":"2026-02-16T10:26:22","author":"todsacerdoti","text":null,"summary":"介绍了Unicode组织推出的MessageFormat标准，这是一个用于本地化消息字符串的国际化框架。值得关注是因为它为多语言应用开发提供了标准化解决方案，能显著简化国际化工作流程。"},{"id":"hn-47030271","title":"Arm wants a bigger slice of the chip business","url":"https://www.economist.com/business/2026/02/12/arm-wants-a-bigger-slice-of-the-chip-business","source":"Hacker News","score":145,"comments_count":92,"comments_url":"https://news.ycombinator.com/item?id=47030271","published_at":"2026-02-16T02:36:14","author":"andsoitis","text":null,"summary":"报道了Arm公司计划扩大其在芯片市场的份额，分析了其战略调整和行业影响。值得关注是因为Arm架构在移动和服务器领域日益重要，其动向将影响整个半导体产业格局。"},{"id":"hn-46997356","title":"Vim-pencil: Rethinking Vim as a tool for writing","url":"https://github.com/preservim/vim-pencil","source":"Hacker News","score":140,"comments_count":46,"comments_url":"https://news.ycombinator.com/item?id=46997356","published_at":"2026-02-13T00:35:23","author":"gurjeet","text":null,"summary":"介绍了vim-pencil插件，该插件重新思考了Vim作为写作工具的可能性，专注于改善书写体验。值得关注是因为它将代码编辑器的强大功能与文字处理需求相结合，为技术写作者提供了新选择。"},{"id":"hn-47025085","title":"Pocketblue – Fedora Atomic for mobile devices","url":"https://github.com/pocketblue/pocketblue","source":"Hacker News","score":140,"comments_count":50,"comments_url":"https://news.ycombinator.com/item?id=47025085","published_at":"2026-02-15T16:40:13","author":"nikodunk","text":null,"summary":"展示了Pocketblue项目，这是一个基于Fedora Atomic的移动设备操作系统。值得关注是因为它尝试将桌面级Linux体验带到移动平台，可能为开源移动生态带来新机遇。"},{"id":"hn-47037501","title":"WebMCP Proposal","url":"https://webmachinelearning.github.io/webmcp/","source":"Hacker News","score":131,"comments_count":68,"comments_url":"https://news.ycombinator.com/item?id=47037501","published_at":"2026-02-16T17:08:20","author":"Alifatisk","text":null,"summary":"提出了WebMCP标准草案，旨在为Web平台定义机器学习模型计算协议。值得关注是因为它可能推动浏览器原生机器学习能力的发展，影响未来Web应用开发范式。"},{"id":"hn-47038706","title":"Robert Duvall has died","url":"https://www.nytimes.com/2026/02/16/movies/robert-duvall-dead.html?unlocked_article_code=1.MlA.5LIC.JbSiEGzihyVU&smid=url-share","source":"Hacker News","score":131,"comments_count":64,"comments_url":"https://news.ycombinator.com/item?id=47038706","published_at":"2026-02-16T18:52:50","author":"glimshe","text":null,"summary":"报道了著名演员罗伯特·杜瓦尔的逝世消息，回顾了他的演艺生涯和代表作。值得关注是因为杜瓦尔是好莱坞黄金时代的标志性人物，他的离世是电影界的重大损失。"},{"id":"hn-47032235","title":"Picol: A Tcl interpreter in 500 lines of code","url":"https://github.com/antirez/picol","source":"Hacker News","score":120,"comments_count":64,"comments_url":"https://news.ycombinator.com/item?id=47032235","published_at":"2026-02-16T08:04:11","author":"tosh","text":null,"summary":"介绍了Picol项目，这是一个仅用500行代码实现的Tcl解释器。值得关注是因为它展示了极简主义编程的艺术，对理解解释器设计和语言实现有教育价值。"},{"id":"hn-47002231","title":"Visual Introduction to PyTorch","url":"https://0byte.io/articles/pytorch_introduction.html","source":"Hacker News","score":119,"comments_count":12,"comments_url":"https://news.ycombinator.com/item?id=47002231","published_at":"2026-02-13T12:59:33","author":"0bytematt","text":null,"summary":"这篇文章通过可视化方式介绍PyTorch深度学习框架，值得关注因为它为初学者提供了直观的学习路径，降低了机器学习入门的门槛。"},{"id":"hn-46988538","title":"Rolling your own serverless OCR in 40 lines of code","url":"https://christopherkrapu.com/blog/2026/ocr-textbooks-modal-deepseek/","source":"Hacker News","score":108,"comments_count":52,"comments_url":"https://news.ycombinator.com/item?id=46988538","published_at":"2026-02-12T13:23:22","author":"mpcsb","text":null,"summary":"文章展示了仅用40行代码构建自定义无服务器OCR系统的过程，值得关注因为它演示了如何利用现代云服务简化复杂AI功能的实现。"},{"id":"hn-47037313","title":"How to take a photo with scotch tape (lensless imaging) [video]","url":"https://www.youtube.com/watch?v=97f0nfU5Px0","source":"Hacker News","score":97,"comments_count":4,"comments_url":"https://news.ycombinator.com/item?id=47037313","published_at":"2026-02-16T16:55:02","author":"surprisetalk","text":null,"summary":"视频演示了如何使用透明胶带进行无镜头成像，值得关注因为它展示了低成本、创新的摄影技术突破。"},{"id":"hn-47040375","title":"Show HN: Free Alternative to Wispr Flow, Superwhisper, and Monologue","url":"https://github.com/zachlatta/freeflow","source":"Hacker News","score":85,"comments_count":42,"comments_url":"https://news.ycombinator.com/item?id=47040375","published_at":"2026-02-16T21:10:44","author":"zachlatta","text":null,"summary":"这是一个免费替代Wispr Flow等语音转录工具的开源项目，值得关注因为它提供了商业化AI服务的开源替代方案。"},{"id":"hn-47038318","title":"\"Token anxiety\", a slot machine by any other name","url":"https://jkap.io/token-anxiety-or-a-slot-machine-by-any-other-name/","source":"Hacker News","score":81,"comments_count":66,"comments_url":"https://news.ycombinator.com/item?id=47038318","published_at":"2026-02-16T18:23:36","author":"presbyterian","text":null,"summary":"文章探讨了AI生成中的'令牌焦虑'现象，将其比作老虎机机制，值得关注因为它批判性地分析了当前AI交互模式的心理影响。"}],"locale":"zh"}],"$Lc"]}]]}]
+3.  **Thank HN: You helped save 33k lives**
+    *   **理由**：**技术与人文的温暖结合**。在充斥着技术争论和行业新闻的列表中，这个故事提醒我们技术社区所能产生的巨大积极影响。它讲述了开源精神、社区支持和初创力量如何切实改变世界，充满正能量。
+    *   **链接**：[讨论帖内容](https://news.ycombinator.com/item?id=47049824)
+
+4.  **Rise of the Triforce**
+    *   **理由**：**工程技艺的巅峰展示**。模拟器开发是软件逆向工程和系统编程的复杂结晶。Dolphin团队成功模拟Triforce平台，不仅是复古游戏界的盛事，也代表了极高水准的软件工程成就，其技术博客本身可读性很强。
+    *   **链接**：https://dolphin-emu.org/blog/2026/02/16/rise-of-the-triforce/ | [讨论](https://news.ycombinator.com/item?id=47040524)
+
+5.  **“Token anxiety”, a slot machine by any other name**
+    *   **理由**：**深刻的行业批判与反思**。本文超越了具体技术，尖锐地指出了当前AI商业化浪潮中一种0:{"buildId":"lYaLaGmxJH-pgqfcbP_0m","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-02-18","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":10},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-02-18"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+c:T8ea,13 years ago, we launched Watsi.org with a Show HN [1].<p>For nearly a year, this community drove so much traffic that we couldn’t list patients fast enough. Then pg saw us on HN, wrote us our first big check, and accepted us as the first YC nonprofit (W13). The next few years were a whirlwind.<p>I was a young, naive founder with just enough experience to know I wanted Watsi to be more efficient, transparent, and innovative than most nonprofits. We spent 24&#x2F;7 talking to users and coding. We did things that don’t scale. We tried our best to be walking, talking pg essays.<p>Over the years we learned that product&#x2F;market fit is different for nonprofits. Not many people wake up and think, &quot;I&#x27;d love to donate to a nonprofit today&quot; with the same oomph that they think, &quot;I&#x27;d love a coffee&quot; or &quot;I&#x27;d like to make more money.&quot;<p>No matter how much effort we put into fundraising, donations grew linearly, while requests for care grew exponentially. I felt caught in the middle. After investing everything I had, I eventually burned out and transitioned to the board.<p>I made a classic founder mistake and intertwined my self-worth with Watsi&#x27;s success. I believed that if I could somehow help every patient, I was a good person, but if I let down some patients, which became inevitable, I was a bad person.<p>This was exacerbated by seeing our for-profit YC batch mates raise massive rounds. I felt like a failure for not scaling Watsi faster, but eventually we accepted reality and set Watsi on more of a slow, steady, and sustainable trajectory.<p>Now that I have perspective, I&#x27;m incredibly proud of what the org has accomplished and grateful to everyone who has done a tour of duty to support us. Watsi donors have donated over $20M to fund 33,241 surgeries, and we have a good shot of helping patients for a long time to come.<p>In a world of fast growth and fast crashes, here&#x27;s a huge thank you to the HN users who have stuck by Watsi, or any other important cause, even when it&#x27;s not on the front page. I believe it embodies the best of humanity. Thanks HN!<p>[1] <a href="http:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=4424081">http:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=4424081</a>d:T911,Hi HN,
+After roughly 8 years of silently rolling 1.1 nightlies, we finally tagged a proper stable 2.0 release.
+We built this because wrist-sized Linux is genuinely fun to hack on, and because a handful of us think it&#x27;s worth keeping capable hardware alive long after manufacturers move on. Smartwatches don&#x27;t really get old — the silicon is basically the same as it was a decade ago. We just keep making it useful for us.<p>No usage stats, no tracking, no illusions of mass adoption. The only real signal we get is the occasional person who appears in our Matrix chat going &quot;hey, it booted on my watch from 2014 and now it&#x27;s usable again&quot; — and that&#x27;s plenty.<p>Privacy is non-negotiable: zero telemetry, no cloud, full local control. Longevity is the other half: we refuse to let good hardware become e-waste just because support ended.
+On the learning side, it&#x27;s been one of the best playgrounds: instant feedback on your wrist makes QML&#x2F;Qt, JavaScript watchfaces and embedded Linux feel tangible. The community is small and kind — perfect for people who want to learn open-source dev without gatekeeping.<p>Technically we&#x27;re still pragmatic: libhybris + older kernels on most devices since it just works, but we&#x27;ve already mainlined rinato (Samsung Gear 2) and sparrow (ASUS ZenWatch 2) — rinato even boots with a usable UI. That&#x27;s the direction we&#x27;re pushing toward.<p>Repo: <a href="https:&#x2F;&#x2F;github.com&#x2F;AsteroidOS" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;AsteroidOS</a> 
+Install images &amp; docs: <a href="https:&#x2F;&#x2F;asteroidos.org" rel="nofollow">https:&#x2F;&#x2F;asteroidos.org</a> 
+2.0 demo video : <a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=U6FiQz0yACc" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=U6FiQz0yACc</a> 
+Announcement post: <a href="https:&#x2F;&#x2F;asteroidos.org&#x2F;news&#x2F;2-0-release&#x2F;" rel="nofollow">https:&#x2F;&#x2F;asteroidos.org&#x2F;news&#x2F;2-0-release&#x2F;</a><p>Questions, port requests, mentoring offers, criticism, weird ideas — all welcome. We do this because shaping a tiny, open wearable UX and infrastructure is oddly satisfying, and because Linux on the wrist still feels like a playground worth playing in.<p>Cheers, the AsteroidOS Teame:T63f,Fun little side project I built after learning about circuit bending in cameras for intentional glitch effect. It is browser based camera toy where you &quot;rewire&quot; CCD pin pairs, turn knobs to get different glitch artefacts in real time to capture as photos. I had fun learning to simulate different pin modes - channel split, hue&#x2F;phase shifts, horizontal clock delays, colour kill etc.<p>Here are some photos taken: <a href="https:&#x2F;&#x2F;glitchycam.com&#x2F;gallery" rel="nofollow">https:&#x2F;&#x2F;glitchycam.com&#x2F;gallery</a><p>I intentionally leaned towards skeuomorphic design for nostalgia. I miss the days where I&#x27;d spend hours making a button to look like a physical button. Here I chose to make it look like a &quot;good enough&quot; Teenage Engineering device UI.<p>I tested&#x2F;used GPT-5.3-Codex to build this from scratch, since there was a lot of hype around it on X. Maybe I wasn’t using it right, but I found it needed a lot of code cleanup at every step and a lot of hand holding along the way. It missed details&#x2F;nuances and didn&#x27;t land the skeuomorphic buttons or the interaction polish. It mostly helped with boilerplate where there wasn&#x27;t much thinking&#x2F;detailing. It did give a basic starting point for the effect calculations, but didn&#x27;t really move the needle on the details.<p>Please give it a go and let me know what you think - your photos and video never leave your browser (you can download them if you choose to). Everything is processed locally in your browser (works offline), nothing is uploaded or seen by anyone.f:T440,The book page links to a blog post that explains how I got about it (and 
+has a link to sample content), but the TL&amp;DR is that I could not find 
+a lot of books that were on &quot;our&quot; history _and_ were larded with technical 
+details. So I set about writing one, and some five years later I&#x27;m happy 
+to share the result. I think it&#x27;s one of the few &quot;computer history&quot; books that has tons of code, but correct me if I&#x27;m wrong (I wrote this both to tell a story and to learn :-)).<p>My favorite languages are Smalltalk and Lisp, but as an Emacs user, I&#x27;ve been 
+using the latter for much longer and for my current projects, Common Lisp is a better fit, so I call myself &quot;a Lisp-er&quot; these days. If people like what I did, 
+I do have plans to write some more (but probably only after I retire, writing next to a full-time job is heard). Maybe on Smalltalk, maybe on computer networks - two topics close to my heart.<p>And a shout-out to Dick Gabriel, he contributed some great personal memories about the man who started it all, John McCarthy.6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47045612","title":"GrapheneOS – Break Free from Google and Apple","url":"https://blog.tomaszdunia.pl/grapheneos-eng/","source":"Hacker News","score":1070,"comments_count":760,"comments_url":"https://news.ycombinator.com/item?id=47045612","published_at":"2026-02-17T10:02:36","author":"to3k","text":null,"summary":"GrapheneOS是一款旨在帮助用户摆脱谷歌和苹果生态束缚的移动操作系统，强调隐私和安全，值得关注因为它代表了开源社区对主流科技巨头垄断的挑战。"},{"id":"hn-47038546","title":"14-year-old Miles Wu folded origami pattern that holds 10k times its own weight","url":"https://www.smithsonianmag.com/innovation/this-14-year-old-is-using-origami-to-design-emergency-shelters-that-are-sturdy-cost-efficient-and-easy-to-deploy-180988179/","source":"Hacker News","score":893,"comments_count":194,"comments_url":"https://news.ycombinator.com/item?id=47038546","published_at":"2026-02-16T18:41:50","author":"bookofjoe","text":null,"summary":"14岁的Miles Wu通过折纸设计出能承受自身重量10,000倍的结构，用于建造坚固、经济且易于部署的紧急避难所，这项创新展示了青少年在工程和可持续设计领域的潜力。"},{"id":"hn-47040524","title":"Rise of the Triforce","url":"https://dolphin-emu.org/blog/2026/02/16/rise-of-the-triforce/","source":"Hacker News","score":418,"comments_count":74,"comments_url":"https://news.ycombinator.com/item?id=47040524","published_at":"2026-02-16T21:24:04","author":"max-m","text":null,"summary":"Dolphin模拟器团队发布了《塞尔达传说：时之笛》的多人游戏模组“Triforce的崛起”，允许玩家在线合作，这为经典游戏注入了新的社交和娱乐价值。"},{"id":"hn-47049824","title":"Thank HN: You helped save 33k lives","url":null,"source":"Hacker News","score":407,"comments_count":52,"comments_url":"https://news.ycombinator.com/item?id=47049824","published_at":"2026-02-17T17:06:18","author":"chaseadam17","text":"$c","summary":"Watsi.org通过Hacker News社区的支持，在13年间帮助拯救了33,000条生命，这个故事凸显了开源社区和初创企业如何通过协作产生深远的社会影响。"},{"id":"hn-47045804","title":"Is Show HN dead? No, but it's drowning","url":"https://www.arthurcnops.blog/death-of-show-hn/","source":"Hacker News","score":396,"comments_count":338,"comments_url":"https://news.ycombinator.com/item?id=47045804","published_at":"2026-02-17T10:29:14","author":"acnops","text":null,"summary":"文章探讨了Hacker News上“Show HN”板块的现状，指出其虽然未死但被大量内容淹没，这反映了社区内容策展和开发者曝光面临的挑战。"},{"id":"hn-47051546","title":"Tesla 'Robotaxi' adds 5 more crashes in Austin in a month – 4x worse than humans","url":"https://electrek.co/2026/02/17/tesla-robotaxi-adds-5-more-crashes-austin-month-4x-worse-than-humans/","source":"Hacker News","score":387,"comments_count":220,"comments_url":"https://news.ycombinator.com/item?id=47051546","published_at":"2026-02-17T19:02:44","author":"Bender","text":null,"summary":"特斯拉Robotaxi在奥斯汀一个月内新增5起事故，事故率是人类的4倍，这引发了公众对自动驾驶技术安全性和监管的进一步担忧。"},{"id":"hn-47022270","title":"Four Column ASCII (2017)","url":"https://garbagecollected.org/2017/01/31/four-column-ascii/","source":"Hacker News","score":328,"comments_count":76,"comments_url":"https://news.ycombinator.com/item?id=47022270","published_at":"2026-02-15T09:15:16","author":"tempodox","text":null,"summary":"这篇2017年的文章回顾了四列ASCII码的历史和设计，对于理解早期计算机字符编码和复古计算文化具有技术怀旧价值。"},{"id":"hn-47049479","title":"Using go fix to modernize Go code","url":"https://go.dev/blog/gofix","source":"Hacker News","score":278,"comments_count":63,"comments_url":"https://news.ycombinator.com/item?id=47049479","published_at":"2026-02-17T16:42:35","author":"todsacerdoti","text":null,"summary":"Go语言团队介绍了如何使用go fix工具自动更新旧代码以适配新语言特性，这有助于开发者高效维护和现代化Go项目。"},{"id":"hn-47051852","title":"Show HN: AsteroidOS 2.0 – Nobody asked, we shipped anyway","url":"https://asteroidos.org/news/2-0-release/index.html","source":"Hacker News","score":269,"comments_count":33,"comments_url":"https://news.ycombinator.com/item?id=47051852","published_at":"2026-02-17T19:24:55","author":"moWerk","text":"$d","summary":"AsteroidOS 2.0是一个为智能手表设计的开源Linux发行版，旨在延长硬件寿命并提供可定制性，体现了社区对可持续技术和黑客精神的坚持。"},{"id":"hn-47049573","title":"HackMyClaw","url":"https://hackmyclaw.com/","source":"Hacker News","score":252,"comments_count":131,"comments_url":"https://news.ycombinator.com/item?id=47049573","published_at":"2026-02-17T16:48:43","author":"hentrep","text":null,"summary":"HackMyClaw是一个专注于Claw设备（可能指特定硬件）的破解和自定义项目网站，它吸引了硬件爱好者和DIY开发者探索设备潜能的兴趣。"},{"id":"hn-47050067","title":"Gentoo on Codeberg","url":"https://www.gentoo.org/news/2026/02/16/codeberg.html","source":"Hacker News","score":251,"comments_count":79,"comments_url":"https://news.ycombinator.com/item?id=47050067","published_at":"2026-02-17T17:21:04","author":"todsacerdoti","text":null,"summary":"Gentoo Linux宣布将其基础设施迁移到Codeberg平台，这标志着开源项目对去中心化代码托管平台的采用趋势，值得关注其对开源生态的影响。"},{"id":"hn-47038318","title":"\"Token anxiety\", a slot machine by any other name","url":"https://jkap.io/token-anxiety-or-a-slot-machine-by-any-other-name/","source":"Hacker News","score":248,"comments_count":224,"comments_url":"https://news.ycombinator.com/item?id=47038318","published_at":"2026-02-16T18:23:36","author":"presbyterian","text":null,"summary":"文章批判性地分析了加密货币和NFT中的'代币焦虑'现象，将其比作数字赌场，揭示了技术产品设计中可能存在的成瘾性机制。"},{"id":"hn-47015342","title":"A Programmer's Loss of Identity","url":"https://ratfactor.com/tech-nope2","source":"Hacker News","score":226,"comments_count":148,"comments_url":"https://news.ycombinator.com/item?id=47015342","published_at":"2026-02-14T15:41:59","author":"zdw","text":null,"summary":"探讨程序员在技术快速变化中面临的身份认同危机，反映了AI时代技术从业者的职业焦虑和适应挑战。"},{"id":"hn-47048004","title":"I converted 2D conventional flight tracking into 3D","url":"https://aeris.edbn.me/?city=SFO","source":"Hacker News","score":209,"comments_count":42,"comments_url":"https://news.ycombinator.com/item?id=47048004","published_at":"2026-02-17T14:43:14","author":"kewonit","text":null,"summary":"开发者将传统的2D航班追踪数据可视化升级为交互式3D模型，展示了数据可视化技术的创新应用，提升了航空数据的直观性。"},{"id":"hn-47050376","title":"Discord Rival Gets Overwhelmed by Exodus of Players Fleeing Age-Verification","url":"https://kotaku.com/discord-alternative-teamspeak-age-verification-check-rivals-2000669693","source":"Hacker News","score":202,"comments_count":106,"comments_url":"https://news.ycombinator.com/item?id=47050376","published_at":"2026-02-17T17:40:50","author":"thunderbong","text":null,"summary":"Discord的竞争对手因实施年龄验证导致用户大规模流失，凸显了隐私政策与用户体验之间的平衡难题，对社交平台具有警示意义。"},{"id":"hn-47042895","title":"Poor Deming never stood a chance","url":"https://surfingcomplexity.blog/2026/02/16/poor-deming-never-stood-a-chance/","source":"Hacker News","score":188,"comments_count":124,"comments_url":"https://news.ycombinator.com/item?id=47042895","published_at":"2026-02-17T02:13:37","author":"todsacerdoti","text":null,"summary":"通过戴明质量管理理论的现代困境，反思当前科技行业对系统化质量管理的忽视，对软件开发流程有重要启示。"},{"id":"hn-47049718","title":"So you want to build a tunnel","url":"https://practical.engineering/blog/2026/2/17/so-you-want-to-build-a-tunnel","source":"Hacker News","score":163,"comments_count":70,"comments_url":"https://news.ycombinator.com/item?id=47049718","published_at":"2026-02-17T16:59:34","author":"crescit_eundo","text":null,"summary":"工程博客详细解析隧道建设的技术原理和实际挑战，为对基础设施工程感兴趣的读者提供了专业而通俗的技术解读。"},{"id":"hn-47041456","title":"Running NanoClaw in a Docker Shell Sandbox","url":"https://www.docker.com/blog/run-nanoclaw-in-docker-shell-sandboxes/","source":"Hacker News","score":162,"comments_count":76,"comments_url":"https://news.ycombinator.com/item?id=47041456","published_at":"2026-02-16T22:53:02","author":"four_fifths","text":null,"summary":"Docker官方演示如何在Shell沙箱中运行NanoClaw，展示了容器安全隔离技术的新应用，对云原生安全实践有参考价值。"},{"id":"hn-47033954","title":"Show HN: Glitchy camera – a circuit-bent camera simulator in the browser","url":"https://glitchycam.com","source":"Hacker News","score":160,"comments_count":21,"comments_url":"https://news.ycombinator.com/item?id=47033954","published_at":"2026-02-16T11:57:01","author":"elayabharath","text":"$e","summary":"浏览器端的电路弯曲相机模拟器，让用户通过虚拟'重新接线'创造实时故障艺术效果，展示了创意编程与数字艺术的结合。"},{"id":"hn-47048733","title":"Show HN: I wrote a technical history book on Lisp","url":"https://berksoft.ca/gol/","source":"Hacker News","score":157,"comments_count":51,"comments_url":"https://news.ycombinator.com/item?id=47048733","published_at":"2026-02-17T15:43:39","author":"cdegroot","text":"$f","summary":"作者历时五年撰写的Lisp技术史著作，填补了编程语言历史文献中技术细节的空白，对计算机历史研究有重要价值。"},{"id":"hn-47044179","title":"Xbox UI Portfolio Site","url":"https://gabrielcabrera.co/","source":"Hacker News","score":152,"comments_count":43,"comments_url":"https://news.ycombinator.com/item?id=47044179","published_at":"2026-02-17T05:53:31","author":"valgaze","text":null,"summary":"这篇文章介绍了一个展示Xbox用户界面设计作品的个人作品集网站，值得关注是因为它提供了对Xbox UI设计理念和视觉风格的直接洞察，对UI/UX设计师和游戏开发者有参考价值。"},{"id":"hn-47014002","title":"A deep dive into Apple's .car file format","url":"https://dbg.re/posts/car-file-format/","source":"Hacker News","score":151,"comments_count":57,"comments_url":"https://news.ycombinator.com/item?id=47014002","published_at":"2026-02-14T12:18:04","author":"MrFinch","text":null,"summary":"文章深入探讨了苹果公司专有的.car文件格式，该格式用于存储应用程序的资产目录，值得关注是因为它揭示了苹果生态系统内部一个不常被公开的技术细节，对逆向工程师和macOS/iOS开发者有启发。"},{"id":"hn-47052941","title":"BarraCUDA Open-source CUDA compiler targeting AMD GPUs","url":"https://github.com/Zaneham/BarraCUDA","source":"Hacker News","score":146,"comments_count":50,"comments_url":"https://news.ycombinator.com/item?id=47052941","published_at":"2026-02-17T20:35:18","author":"rurban","text":null,"summary":"文章介绍了BarraCUDA，一个旨在将CUDA代码编译以在AMD GPU上运行的开源编译器，值得关注是因为它试图打破NVIDIA CUDA生态的硬件锁定，可能对高性能计算和跨平台GPU编程产生重要影响。"},{"id":"hn-47012895","title":"Rendering the Visible Spectrum","url":"https://brandonli.net/spectra/doc/","source":"Hacker News","score":142,"comments_count":26,"comments_url":"https://news.ycombinator.com/item?id=47012895","published_at":"2026-02-14T08:56:46","author":"signa11","text":null,"summary":"文章探讨了如何渲染可见光谱，即人眼可见的光的颜色范围，值得关注是因为它涉及色彩科学、计算机图形学和视觉呈现的交叉领域，对图形程序员和视觉艺术家有技术参考价值。"},{"id":"hn-47049845","title":"Chess engines do weird stuff","url":"https://girl.surgery/chess","source":"Hacker News","score":141,"comments_count":73,"comments_url":"https://news.ycombinator.com/item?id=47049845","published_at":"2026-02-17T17:07:59","author":"admiringly","text":"Related: <a href=\"https:&#x2F;&#x2F;cosmo.tardis.ac&#x2F;files&#x2F;2026-02-12-az-rl-and-spsa.html\" rel=\"nofollow\">https:&#x2F;&#x2F;cosmo.tardis.ac&#x2F;files&#x2F;2026-02-12-az-rl-and-spsa.html</a>","summary":"文章讨论了国际象棋引擎有时会做出看似奇怪或非直觉的走法，值得关注是因为它揭示了人工智能决策过程的复杂性和与人类思维的差异，对AI研究者和棋类爱好者都有吸引力。"}],"locale":"zh"}],"$L10"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
-10:T43f,<p>Many of us going through <a href="https://en.wikipedia.org/wiki/Five_stages_of_grief" rel="ugc">the five stages of grief</a> about AI.</p>
-<p>But processing our collective trauma is neither <code>practices</code> nor <code>programming</code>.</p>
-<p>And people have left because we're not talking about computing! (<a href="https://mastodon.social/@tef/116023657636125934" rel="ugc">e.g.</a>)</p>
-<blockquote>
-<p>Some rules of thumb for great stories to submit: Will this improve the reader's next program? Will it deepen their understanding of their last program? Will it be more interesting in five or ten years?</p>
-</blockquote>
-<p>Glancing at the front-page and /top/1w … are "munching away my passion", "to not vibe code", a "loss of identity", or "the thing I loved has changed" great stories?</p>
-<p>I do not want to shut down the conversation. Rather, let's continue it in the right space: <a href="https://lobste.rs/t/rant" rel="ugc">the <code>rant</code> tag</a>!</p>
-<p>(And pro-AI posts should be tagged <code>rant</code> too; it is for "rants <em>and raves</em>")</p>c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-686b4c9e8b0b","title":"TIL: Docker log rotation","url":"https://ntietz.com/blog/til-docker-log-rotation/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-16T15:58:15","author":"ntietz.com via polywolf","text":"<p><a href=\"https://lobste.rs/s/pqn3u0/til_docker_log_rotation\">Comments</a></p>","summary":"文章分享了Docker日志轮转的实用技巧，值得关注因为它解决了容器化环境中常见的日志管理问题。"},{"id":"rss-64d571172000","title":"Please consider tagging a vibecoding griefpost or hypepost as a rant","url":"https://lobste.rs/s/jdoe4x/please_consider_tagging_vibecoding","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-16T13:44:50","author":"by quad","text":"$10","summary":"文章建议将关于AI的悲叹或狂热帖子标记为'rant'，值得关注因为它反映了技术社区对AI变革的复杂情感反应。"},{"id":"rss-17fc0638a2f6","title":"MessageFormat: Unicode standard for localizable message strings","url":"https://github.com/unicode-org/message-format-wg","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-16T10:23:17","author":"github.com via fanf","text":"<p><a href=\"https://lobste.rs/s/hzljsi/messageformat_unicode_standard_for\">Comments</a></p>","summary":"介绍了Unicode的消息格式化标准，值得关注因为它为国际化软件的消息本地化提供了标准化解决方案。"},{"id":"rss-f13ae37021e1","title":"Let's practice! (bsd.rd)","url":"https://openbsdjumpstart.org/bsd.rd/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-16T20:21:02","author":"openbsdjumpstart.org by bsdj","text":"<p><a href=\"https://lobste.rs/s/rjcaly/let_s_practice_bsd_rd\">Comments</a></p>","summary":"提供了OpenBSD安装程序bsd.rd的实践指南，值得关注因为它帮助用户更好地理解和操作这个安全导向的操作系统。"},{"id":"rss-812e719d0572","title":"Browse code by meaning","url":"https://haskellforall.com/2026/02/browse-code-by-meaning","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-16T15:58:51","author":"haskellforall.com by Gabriella439","text":"<p><a href=\"https://lobste.rs/s/rybouo/browse_code_by_meaning\">Comments</a></p>","summary":"探讨了通过语义浏览代码的方法，值得关注因为它提出了提升代码理解和维护效率的新思路。"}],"locale":"zh"}]
-f:null
+a:["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]
+10:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-0a9fb36a22f4","title":"Plasma 6.6 released","url":"https://kde.org/announcements/plasma/6/6.6.0/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-17T17:10:44","author":"kde.org via achill","text":"<p><a href=\"https://lobste.rs/s/vudtax/plasma_6_6_released\">Comments</a></p>","summary":"文章宣布了KDE Plasma桌面环境6.6版本的发布，值得关注是因为Plasma是Linux上一个流行且功能强大的桌面环境，此更新可能包含新特性、性能改进和bug修复，影响大量Linux用户。"},{"id":"rss-58dc80c25764","title":"Vinyl Cache has left github","url":"https://vinyl-cache.org/organization/moving.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-17T14:04:09","author":"vinyl-cache.org via fanf","text":"<p><a href=\"https://lobste.rs/s/tt6ieg/vinyl_cache_has_left_github\">Comments</a></p>","summary":"文章提到Vinyl Cache项目已经离开了GitHub平台，值得关注是因为这反映了开源项目对代码托管平台的选择和迁移趋势，可能涉及平台政策、社区或技术考量。"},{"id":"rss-b237fd514f73","title":"Gentoo on Codeberg","url":"https://www.gentoo.org/news/2026/02/16/codeberg.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-17T17:09:18","author":"gentoo.org via achill","text":"<p><a href=\"https://lobste.rs/s/2y5l47/gentoo_on_codeberg\">Comments</a></p>","summary":"文章宣布Gentoo Linux项目将其部分或全部基础设施迁移到了Codeberg平台，值得关注是因为这标志着一个主要Linux发行版对去中心化或替代性代码托管方案的采用，对开源社区生态有象征意义。"},{"id":"rss-2fe54b9e3444","title":"Babashka 1.12.215: Revenge of the TUIs","url":"https://blog.michielborkent.nl/babashka-1.12.215.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-17T14:59:45","author":"blog.michielborkent.nl by borkdude","text":"<p><a href=\"https://lobste.rs/s/vpbnek/babashka_1_12_215_revenge_tuis\">Comments</a></p>","summary":"文章介绍了Babashka（一个快速的Clojure脚本解释器）1.12.215版本的发布，重点在于对文本用户界面（TUI）的增强，值得关注是因为它展示了Babashka在简化命令行工具开发方面的持续演进。"},{"id":"rss-e26e53520715","title":"Cryptographic Issues in Matrix’s Rust Library Vodozemac","url":"https://soatok.blog/2026/02/17/cryptographic-issues-in-matrixs-rust-library-vodozemac/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-18T00:11:18","author":"soatok.blog via dzwdz","text":"<p><a href=\"https://lobste.rs/s/oukhsl/cryptographic_issues_matrix_s_rust\">Comments</a></p>","summary":"文章分析了Matrix即时通讯协议的Rust库Vodozemac中存在的密码学问题，值得关注是因为它涉及一个广泛使用的通信协议的安全实现，对密码学专家、安全研究者和Rust开发者都具有重要的安全警示意义。"}],"locale":"zh"}]
+13:null
