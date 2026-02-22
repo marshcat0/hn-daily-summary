@@ -1,0 +1,559 @@
+1:"$Sreact.fragment"
+2:I[33453,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"Header"]
+3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
+4:I[4561,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],""]
+5:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
+e:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
+13:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+14:"$Sreact.suspense"
+6:T2ea9,好的，作为一名技术新闻分析师，我将对今日“AI & Machine Learning”领域的16篇热门文章进行综合分析、总结和推荐。
+
+### **今日AI/ML热点综合分析**
+
+今日的热门内容清晰地反映了AI领域的几个核心趋势：**开源与本地化AI的整合**、**AI代理（Agents）的架构演进与实际应用**、**硬件与效率的极限挑战**，以及**AI对社会和工程实践产生的现实影响**。讨论热度表明，社区不仅关注前沿技术突破，也高度关心技术的落地方式、伦理责任和产业生态变化。
+
+以下是对文章的分组总结：
+
+---
+
+### **1. 开源生态与本地AI的整合**
+这一组文章关注开源工具、模型的整合与本地化运行，是当前AI民主化进程的核心。
+
+*   **文章 1: Ggml.ai joins Hugging Face to ensure the long-term progress of Local AI**
+    *   **简要说明**：这是今日最热门的新闻。知名本地AI推理库 `llama.cpp` 背后的组织 ggml.ai 宣布加入 Hugging Face。此举旨在结合 Hugging Face 的模型平台优势和 ggml 的本地高效推理能力，确保本地AI的长期发展，对开源和隐私敏感型应用意义重大。
+    *   **原文链接**：https://github.com/ggml-org/llama.cpp/discussions/19759
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47088037
+
+*   **文章 10: Show HN: Llama 3.1 70B on a single RTX 3090 via NVMe-to-GPU bypassing the CPU**
+    *   **简要说明**：一个极具极客精神的工程实验。作者展示了如何通过让GPU直接访问NVMe硬盘（绕过CPU/RAM），在单张消费级RTX 3090显卡上运行庞大的Llama 3.1 70B模型。这挑战了传统数据加载范式，为在有限硬件上运行大模型提供了新思路。
+    *   **原文链接**：https://github.com/xaskasdf/ntransformer
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47104667
+
+*   **文章 12: zclaw: personal AI assistant in under 888 KB, running on an ESP32**
+    *   **简要说明**：展示了AI微型化的另一极端。zclaw是一个能在ESP32（一款低成本、低功耗的微控制器）上运行的个人AI助手，体积小于888KB。这证明了超轻量级AI在边缘设备上的可行性，与大型模型形成鲜明对比。
+    *   **原文链接**：https://github.com/tnm/zclaw
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47100232
+
+### **2. AI代理（Agents）的架构、应用与风险**
+AI代理是当前最活跃的研究和应用方向，本组文章涵盖了其新架构、实用技巧和潜在风险。
+
+*   **文章 4: Claws are now a new layer on top of LLM agents**
+    *   **简要说明**：AI领域知名人物Andrej Karpathy提出“Claws”概念，将其描述为LLM代理之上的一层，用于处理更复杂、多步骤的任务规划和协调。这引发了社区对代理系统架构演进的广泛讨论。
+    *   **原文链接**：https://twitter.com/karpathy/status/2024987174077432126
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47096253
+
+*   **文章 6: Cord: Coordinating Trees of AI Agents**
+    *   **简要说明**：一篇深度技术博客，详细阐述了“Cord”这一用于协调树状结构AI代理的框架。它解决了多代理协作中的复杂任务分解与结果整合问题，是理解前沿代理系统设计的好材料。
+    *   **原文链接**：https://www.june.kim/cord
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47096466
+
+*   **文章 13: How I use Claude Code: Separation of planning and execution**
+    *   **简要说明**：一篇实用的经验分享文章。作者介绍了如何通过“规划与执行分离”的方法来更有效地使用Claude Code（或类似AI编程助手），以提高代码生成的质量和可控性，对开发者有直接参考价值。
+    *   **原文链接**：https://boristane.com/blog/how-i-use-claude-code/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47106686
+
+*   **文章 14: Who's liable when your AI agent burns down production?**
+    *   **简要说明**：提出了一个至关重要的现实问题：当自动执行的AI代理在生产环境中造成严重事故（如删除数据库）时，责任应由谁承担？文章探讨了法律、伦理和工程实践层面的挑战。
+    *   **原文链接**：https://reading.sh/whos-liable-when-your-ai-agent-burns-down-production-039193d82746?sk=4921ed2dbc46f0c618835ac458cf5051
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47106406
+
+*   **文章 16: Apple researchers develop on-device AI agent that interacts with apps for you**
+    *   **简要说明**：苹果公司研究团队开发了一款可在设备端运行的AI代理，能够学习并自动操作手机应用。这指向了未来更智能、更私密的个人手机助手方向，也体现了端侧AI的重要性。
+    *   **原文链接**：https://9to5mac.com/2026/02/20/apple-researchers-develop-on-device-ai-agent-that-interacts-with-apps-for-you/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47106866
+
+### **3. 产业、硬件与底层技术**
+关注影响AI发展的硬件、供应链和基础技术突破。
+
+*   **文章 5: CXMT has been offering DDR4 chips at about half the prevailing market rate**
+    *   **简要说明**：中国芯片制造商长鑫存储（CXMT）以市场价约一半的价格提供DDR4芯片。这可能会降低AI服务器和数据中心的硬件成本，影响全球内存市场格局和AI算力基础设施的经济性。
+    *   **原文链接**：https://www.koreaherald.com/article/10679206
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47101171
+
+*   **文章 7: Lean 4: How the theorem prover works and why it's the new competitive edge in AI**
+    *   **简要说明**：文章探讨了形式化证明工具Lean 4的工作原理，并认为它将为AI（特别是可靠性和推理能力）带来新的竞争优势。这关联到AI安全、可验证AI以及将数学严谨性引入机器学习的前沿方向。
+    *   **原文链接**：https://venturebeat.com/ai/lean4-how-the-theorem-prover-works-and-why-its-the-new-competitive-edge-in
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47047027
+
+### **4. AI的社会影响与用户体验**
+讨论AI如何改变信息环境、开发体验及用户产品选择。
+
+*   **文章 2: Why is Claude an Electron app?**
+    *   **简要说明**：一篇引发大量技术争论的文章，探讨了为何Anthropic选择使用Electron框架来构建Claude桌面应用。讨论涉及跨平台开发效率、性能权衡、用户体验与商业决策，是观察AI公司工程实践的窗口。
+    *   **原文链接**：https://www.dbreunig.com/2026/02/21/why-is-claude-an-electron-app.html
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47104973
+
+*   **文章 3: AI uBlock Blacklist**
+    *   **简要说明**：一个实用的开源项目，提供了用于uBlock Origin等广告拦截器的规则列表，专门用于屏蔽网站上的AI生成内容。反映了部分用户对低质量AI内容的抵触，以及社区自发采取的应对措施。
+    *   **原文链接**：https://github.com/alvi-se/ai-ublock-blacklist
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47098582
+
+*   **文章 8: Uncovering insiders and alpha on Polymarket with AI**
+    *   **简要说明**：一个有趣的案例研究，展示如何使用AI分析预测市场Polymarket上的数据，以发现潜在的“内幕信息”或交易优势。体现了AI在非传统金融数据分析中的应用。
+    *   **原文链接**：https://twitter.com/peterjliu/status/2024901585806225723
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47091557
+
+*   **文章 9: I Don't Like Magic**
+    *   **简要说明**：一篇观点文章，作者表达了对现代开发工具中“魔法”（过度抽象、隐藏复杂性）的厌恶，强调理解底层原理的重要性。在AI工具日益“魔法化”的背景下，此文引发了关于开发者应如何与AI共事的思考。
+    *   **原文链接**：https://adactio.com/journal/22399
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47059147
+
+*   **文章 11: Toyota Mirai hydrogen car depreciation: 65% value loss in a year**
+    *   **简要说明**：虽然主题是氢燃料电池汽车，但在Hacker News的AI板块引发热议，是因为讨论延伸到了技术路线选择（如氢能 vs 纯电动 vs 合成燃料）与AI未来发展的类比——什么样的技术路径能最终胜出并保持价值？
+    *   **原文链接**：https://carbuzz.com/toyota-mirai-massive-depreciation-one-year/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47103136
+
+*   **文章 15: I'm #1 on Google thanks to AI bullshit [video]**
+    *   **简要说明**：一个视频内容， likely 以讽刺或实证的方式展示了如何利用AI生成的垃圾内容（AI bullshit）在Google搜索中获得高排名。直指当前搜索引擎和网络信息质量面临的严峻挑战。
+    *   **原文链接**：https://www.youtube.com/watch?v=6uKZ84zwJI0
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47106829
+
+---
+
+### **今日最值得阅读文章推荐**
+
+基于新闻的重要性、技术深度、讨论热度和实用价值，我推荐以下三篇文章：
+
+1.  **推荐一：Ggml.ai joins Hugging Face to ensure the long-term progress of Local AI**
+    *   **理由**：这是今日最具行业影响力的新闻，标志着本地AI开源生态的一次重大整合。它关系到未来AI技术是更集中于云端还是更普惠于本地设备，对开发者、隐私倡导者和整个开源社区都至关重要。其高热度也证明了这一点。
+    *   **链接**：https://github.com/ggml-org/llama.cpp/discussions/19759
+
+2.  **推荐二：Claws are now a new layer on top of LLM agents**
+    *   **理由**：来自AI领域思想领袖的前沿观点，提出了AI代理系统可能的新架构方向。虽然概念初步，但引发的**629条评论**的深度讨论极具价值，是了解AI代理技术未来演进的绝佳窗口。
+    *   **链接**：https://news.ycombinator.com/item?id=47096253 （**建议直接阅读讨论区**，因为原文是一条推文，而讨论包含了丰富的延伸阅读和观点交锋）
+
+3.  **推荐三：Show HN: Llama 3.1 70B on a single RTX 3090 via NVMe-to-GPU bypassing the CPU**
+    *   **理由**：代表了工程师挑战极限的硬核精神。在大家都在追逐更大模型和更多GPU时，这篇文章反其道而行之，通过精巧的系统层优化，在消费级硬件上实现看似不可能的任务。它启发我们重新思考数据流和硬件利用率，对资源受限的研究者和爱好者有实际参考意义。
+    *   **链接**：https://github.com/xaskasdf/ntransformer
+
+4.  **推荐四：Who's liable when your AI agent burns down production?**
+    *   **理由**：在AI代理即将大规模应用于自动化任务的当下，这篇文章提出了一个无法回避的“灵魂拷问”。它超越了纯技术讨论，触及法律、伦理和工程管理核心，是所有考虑部署AI代理的团队必须提前思考的问题。阅读它能帮助建立更负责任的技术观。
+    *   **链接**：https://reading.sh/whos-liable-when-your-ai-agent-burns-down-production-039193d82746?sk=4921ed2dbc46f0c618835ac458cf5051
+
+5.  **推荐五：How I use Claude Code: Separation of planning and execution**
+    *   **理由**：非常务实、可立即应用的经验分享。在AI编程助手日益普及的今天，如何有效使用它们而非被其误导，是每个开发者面临的挑战。文章中的“规划与执行分离”方法论提供了清晰的最佳实践，能直接提升工作效率和代码质量。
+    *   **链接**：https://boristane.com/blog/how-i-use-claude-code/0:{"buildId":"R3g2droze7-xcccSBDarq","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-02-22","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":16},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg","children":[["$","h2",null,{"className":"text-sm font-medium text-gray-500 dark:text-gray-400 mb-2","children":"历史存档"}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L4","2026-02-22",{"href":"/zh/archive/2026-02-22","className":"px-3 py-1 rounded text-sm bg-hn-orange text-white","children":"2026-02-22"}],["$","$L4","2026-02-03",{"href":"/zh/archive/2026-02-03","className":"px-3 py-1 rounded text-sm bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600","children":"2026-02-03"}]]}]]}],["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":["历史存档",": ","2026-02-22"]}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"历史技术摘要"}]]}],["$","div",null,{"className":"space-y-12","children":[["$","section","ai",{"id":"ai","children":[["$","div",null,{"className":"flex items-center gap-3 mb-6","children":[["$","h2",null,{"className":"text-2xl font-bold text-gray-900 dark:text-white","children":"AI & Machine Learning"}],["$","span",null,{"className":"text-sm text-gray-500 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded","children":[16," ","篇文章"]}]]}],["$","div",null,{"className":"space-y-6","children":[["$","$L5",null,{"summary":"$6","topicName":"AI & Machine Learning","locale":"zh"}],"$L7"]}]]}],"$L8","$L9"]}]]}],"$La"]}],["$Lb","$Lc"],"$Ld"]}],"loading":null,"isPartial":false}
+7:["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Le","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47088037","title":"Ggml.ai joins Hugging Face to ensure the long-term progress of Local AI","url":"https://github.com/ggml-org/llama.cpp/discussions/19759","source":"Hacker News","score":810,"comments_count":216,"comments_url":"https://news.ycombinator.com/item?id=47088037","published_at":"2026-02-20T13:51:04","author":"lairv","text":null,"summary":"Ggml.ai加入Hugging Face，旨在确保本地AI的长期发展，这标志着开源AI基础设施整合的重要一步，可能推动更易访问的本地AI模型部署。"},{"id":"hn-47104973","title":"Why is Claude an Electron app?","url":"https://www.dbreunig.com/2026/02/21/why-is-claude-an-electron-app.html","source":"Hacker News","score":329,"comments_count":288,"comments_url":"https://news.ycombinator.com/item?id=47104973","published_at":"2026-02-21T21:28:13","author":"dbreunig","text":null,"summary":"文章探讨了Claude为何选择Electron作为应用框架，分析了其技术权衡，这对于理解AI工具在桌面端的实现策略和性能考量具有参考价值。"},{"id":"hn-47098582","title":"AI uBlock Blacklist","url":"https://github.com/alvi-se/ai-ublock-blacklist","source":"Hacker News","score":221,"comments_count":96,"comments_url":"https://news.ycombinator.com/item?id=47098582","published_at":"2026-02-21T08:10:49","author":"rdmuser","text":null,"summary":"AI uBlock Blacklist是一个用于屏蔽AI内容的新项目，反映了对AI生成内容泛滥的应对需求，值得关注其如何影响网络内容过滤和用户体验。"},{"id":"hn-47096253","title":"Claws are now a new layer on top of LLM agents","url":"https://twitter.com/karpathy/status/2024987174077432126","source":"Hacker News","score":191,"comments_count":629,"comments_url":"https://news.ycombinator.com/item?id=47096253","published_at":"2026-02-21T00:56:29","author":"Cyphase","text":"<a href=\"https:&#x2F;&#x2F;xcancel.com&#x2F;karpathy&#x2F;status&#x2F;2024987174077432126\" rel=\"nofollow\">https:&#x2F;&#x2F;xcancel.com&#x2F;karpathy&#x2F;status&#x2F;2024987174077432126</a><p>Related: <a href=\"https:&#x2F;&#x2F;simonwillison.net&#x2F;2026&#x2F;Feb&#x2F;21&#x2F;claws&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;simonwillison.net&#x2F;2026&#x2F;Feb&#x2F;21&#x2F;claws&#x2F;</a>","summary":"Claws作为LLM智能体之上的新层被提出，由知名AI研究员Karpathy分享，这可能代表智能体架构的新方向，对AI系统设计有启发意义。"},{"id":"hn-47101171","title":"CXMT has been offering DDR4 chips at about half the prevailing market rate","url":"https://www.koreaherald.com/article/10679206","source":"Hacker News","score":153,"comments_count":126,"comments_url":"https://news.ycombinator.com/item?id=47101171","published_at":"2026-02-21T14:32:16","author":"phront","text":null,"summary":"CXMT以市场半价提供DDR4芯片，这直接影响AI硬件成本，对于依赖大量内存的机器学习应用和全球半导体供应链具有重要经济意义。"},{"id":"hn-47096466","title":"Cord: Coordinating Trees of AI Agents","url":"https://www.june.kim/cord","source":"Hacker News","score":147,"comments_count":75,"comments_url":"https://news.ycombinator.com/item?id=47096466","published_at":"2026-02-21T01:27:35","author":"gfortaine","text":null,"summary":"Cord是一个协调AI智能体树状结构的框架，旨在提升复杂任务的执行效率，对于多智能体系统的研究和应用开发是值得关注的技术进展。"},{"id":"hn-47047027","title":"Lean 4: How the theorem prover works and why it's the new competitive edge in AI","url":"https://venturebeat.com/ai/lean4-how-the-theorem-prover-works-and-why-its-the-new-competitive-edge-in","source":"Hacker News","score":128,"comments_count":59,"comments_url":"https://news.ycombinator.com/item?id=47047027","published_at":"2026-02-17T12:58:37","author":"tesserato","text":null,"summary":"文章解析了Lean 4定理证明器的工作原理，并探讨它为何成为AI的新竞争优势，这关联到形式化验证在确保AI系统安全性和可靠性中的前沿作用。"},{"id":"hn-47091557","title":"Uncovering insiders and alpha on Polymarket with AI","url":"https://twitter.com/peterjliu/status/2024901585806225723","source":"Hacker News","score":127,"comments_count":120,"comments_url":"https://news.ycombinator.com/item?id=47091557","published_at":"2026-02-20T18:11:02","author":"somerandomness","text":null,"summary":"项目展示如何利用AI在Polymarket预测市场上识别内部信息和阿尔法机会，体现了AI在金融分析和去中心化市场中的创新应用。"},{"id":"hn-47059147","title":"I Don't Like Magic","url":"https://adactio.com/journal/22399","source":"Hacker News","score":109,"comments_count":91,"comments_url":"https://news.ycombinator.com/item?id=47059147","published_at":"2026-02-18T09:42:40","author":"edent","text":null,"summary":"作者表达了对‘魔法般’不透明AI技术的不喜，倡导更可解释和可控的设计，这篇评论文章触及了AI伦理和用户体验的核心讨论。"},{"id":"hn-47104667","title":"Show HN: Llama 3.1 70B on a single RTX 3090 via NVMe-to-GPU bypassing the CPU","url":"https://github.com/xaskasdf/ntransformer","source":"Hacker News","score":95,"comments_count":25,"comments_url":"https://news.ycombinator.com/item?id=47104667","published_at":"2026-02-21T20:57:30","author":"xaskasdf","text":"Hi everyone, I&#x27;m kinda involved in some retrogaming and with some experiments I ran into the following question: &quot;It would be possible to run transformer models bypassing the cpu&#x2F;ram, connecting the gpu to the nvme?&quot;<p>This is the result of that question itself and some weekend vibecoding (it has the linked library repository in the readme as well), it seems to work, even on consumer gpus, it should work better on professional ones tho","summary":"该项目实现了在单张RTX 3090上通过NVMe直连GPU运行Llama 3.1 70B模型，绕过了CPU，这是一个硬件优化方面的突破，能显著降低大模型部署的门槛和成本。"},{"id":"hn-47103136","title":"Toyota Mirai hydrogen car depreciation: 65% value loss in a year","url":"https://carbuzz.com/toyota-mirai-massive-depreciation-one-year/","source":"Hacker News","score":94,"comments_count":224,"comments_url":"https://news.ycombinator.com/item?id=47103136","published_at":"2026-02-21T18:09:24","author":"iancmceachern","text":null,"summary":"文章讨论了丰田Mirai氢燃料电池车在一年内贬值65%的现象，值得关注因为它揭示了氢能源汽车市场面临的挑战和消费者接受度问题。"},{"id":"hn-47100232","title":"zclaw: personal AI assistant in under 888 KB, running on an ESP32","url":"https://github.com/tnm/zclaw","source":"Hacker News","score":93,"comments_count":51,"comments_url":"https://news.ycombinator.com/item?id=47100232","published_at":"2026-02-21T12:37:52","author":"tosh","text":null,"summary":"介绍了一个名为zclaw的个人AI助手，其体积小于888KB并能在ESP32上运行，值得关注因为它展示了在资源受限设备上实现高效AI应用的潜力。"},{"id":"hn-47106686","title":"How I use Claude Code: Separation of planning and execution","url":"https://boristane.com/blog/how-i-use-claude-code/","source":"Hacker News","score":64,"comments_count":23,"comments_url":"https://news.ycombinator.com/item?id=47106686","published_at":"2026-02-22T00:29:05","author":"vinhnx","text":null,"summary":"作者分享了使用Claude Code时如何分离规划和执行以提高效率，值得关注因为它为AI辅助编程提供了实用的工作流程优化策略。"},{"id":"hn-47106406","title":"Who's liable when your AI agent burns down production?","url":"https://reading.sh/whos-liable-when-your-ai-agent-burns-down-production-039193d82746?sk=4921ed2dbc46f0c618835ac458cf5051","source":"Hacker News","score":12,"comments_count":1,"comments_url":"https://news.ycombinator.com/item?id=47106406","published_at":"2026-02-21T23:52:00","author":"zenoware","text":null,"summary":"探讨了当AI代理在生产环境中造成损害时的责任归属问题，值得关注因为它涉及AI伦理、法律风险和实际部署中的关键挑战。"},{"id":"hn-47106829","title":"I'm #1 on Google thanks to AI bullshit [video]","url":"https://www.youtube.com/watch?v=6uKZ84zwJI0","source":"Hacker News","score":4,"comments_count":0,"comments_url":"https://news.ycombinator.com/item?id=47106829","published_at":"2026-02-22T00:46:51","author":"basilikum","text":null,"summary":"视频内容揭示了如何通过AI生成的内容在Google搜索中排名第一，值得关注因为它批判性地分析了AI对搜索引擎优化和网络信息质量的影响。"},{"id":"hn-47106866","title":"Apple researchers develop on-device AI agent that interacts with apps for you","url":"https://9to5mac.com/2026/02/20/apple-researchers-develop-on-device-ai-agent-that-interacts-with-apps-for-you/","source":"Hacker News","score":4,"comments_count":0,"comments_url":"https://news.ycombinator.com/item?id=47106866","published_at":"2026-02-22T00:51:23","author":"brandonb","text":null,"summary":"报道了苹果研究人员开发的一款能在设备上运行并与应用交互的AI代理，值得关注因为它预示着苹果在本地化AI和隐私保护方面的技术进展。"}],"locale":"zh"}]]}]
+f:T22bb,好的，作为一名技术新闻分析师，我对今日“Design”主题下的15篇热门文章进行了综合分析。这些文章均来自Sidebar.io，虽然来源单一，但内容覆盖了UI/UX设计、产品设计、视觉设计以及行业宏观趋势等多个方面。
+
+### 分析与总结
+
+今日的文章可以清晰地分为几个核心主题，反映了当前设计和技术领域最受关注的议题：
+
+1.  **AI对设计与开发的影响与反思**：这是今日最突出的主题，多篇文章从不同角度探讨了AI带来的变革、挑战和伦理问题。
+2.  **设计工具与资源**：提供了实用的设计工具、插件和图标库，体现了设计社区对提升工作效率和创造力的持续追求。
+3.  **设计系统与软件质量**：深入探讨了设计系统的双刃剑效应，以及软件工业化的宏观趋势。
+4.  **行业身份与未来**：关注从业者在技术变革中的身份认同危机，以及对更美好数字未来的倡导。
+5.  **创意实验与品牌案例**：展示了有趣的创意项目和专业的品牌设计案例。
+
+以下是按子主题分组的详细文章列表：
+
+---
+
+### 一、 AI对设计与开发的影响与反思
+
+这个主题下的文章数量最多，讨论也最为深入，涵盖了从代码生成、UI交互到知识产权和认知负担的方方面面。
+
+1.  **标题**：为什么我们讨厌AI
+    **简要说明**：这篇文章尖锐地指出了当前生成式AI模型背后大规模的知识产权侵权问题，并探讨了法律在权力面前的滞后性。对于任何关心AI伦理和创意产业未来的设计师和开发者都至关重要。
+    **原文链接**：https://blog.fallible.net/why-we-hate-ai/
+
+2.  **标题**：工作转移了：关于AI编码争论的实际共识
+    **简要说明**：文章通过数据（AI生成PR数量增加98%，但审核时间延长91%）揭示了一个关键洞察：AI没有消灭工作，而是改变了工作的性质和分布。这对于管理者和团队理解AI工具的实际影响非常有价值。
+    **原文链接**：https://leadership.garden/ai-the-work-moved/
+
+3.  **标题**：AI的文本陷阱
+    **简要说明**：这是一篇来自UX设计社区的重要文章。它批判了当前AI助手局限于文本对话的交互模式，并前瞻性地提出，未来的AI应该通过更丰富的界面和交互方式进行沟通，为UI/UX设计师指明了新的设计方向。
+    **原文链接**：https://uxdesign.cc/ais-text-trap-moving-towards-a-more-interactive-future-7035bbc4aaa5
+
+4.  **标题**：论认知债务
+    **简要说明**：文章提出了“认知债务”这一概念，警告过度依赖AI生成代码可能导致代码库陷入无人真正理解的境地，从而带来巨大的维护风险。这是对“AI提高生产力”狂热的一剂必要清醒剂。
+    **原文链接**：https://www.natemeyvis.com/on-cognitive-debt/
+
+5.  **标题**：程序员的身份丧失
+    **简要说明**：从个人感受出发，探讨了在AI代码生成工具普及的背景下，传统“程序员”身份认同所面临的危机。它触及了技术变革中的人文层面，容易引发广泛共鸣。
+    **原文链接**：https://ratfactor.com/tech-nope2
+
+### 二、 设计工具与资源
+
+这类文章提供了可直接使用的资源，是设计师日常工作的“弹药补给”。
+
+6.  **标题**：Remix Icon
+    **简要说明**：一套精心制作的开源中性风格系统图标库，对于需要高质量、风格统一图标的设计师和开发者来说是极佳的免费资源。
+    **原文链接**：https://remixicon.com/
+
+7.  **标题**：Keyviz
+    **简要说明**：一款免费开源的工具，可以可视化你的键盘敲击和鼠标动作。非常适合用于制作演示、教程视频，或者单纯满足极客的展示欲。
+    **原文链接**：https://keyviz.org/
+
+8.  **标题**：Figma插件：CMYK Halftone
+    **简要说明**：一款实用的Figma插件，可以模拟传统的CMYK半色调印刷效果，为数字设计增添复古、印刷品的质感，是视觉设计师的利器。
+    **原文链接**：https://www.figma.com/community/plugin/1584204863720680047/cmyk-halftone
+
+### 三、 设计系统与软件质量
+
+这两篇文章从宏观和微观层面反思了软件设计与开发的方法论。
+
+9.  **标题**：软件工业革命
+    **简要说明**：将当前的软件开发现状类比为工业革命，预言其将以深刻且意想不到的方式改变世界。这是一篇引发对行业未来宏观思考的散文。
+    **原文链接**：https://cannoneyed.com/essays/software-industrial-revolution
+
+10. **标题**：设计系统是今天良药，也是明天烂软件的病因
+    **简要说明**：对设计系统进行了深刻的辩证分析。文章指出，设计系统在短期内提升了软件质量的一致性，但长期可能因僵化和复杂性导致系统崩溃。所有正在构建或使用设计系统的团队都应阅读此文以保持警惕。
+    **原文链接**：https://pjonori.blog/posts/design-systems-tomorrows-cause-for-shitty-software/
+
+### 四、 行业身份与未来
+
+关注更广泛的社会和技术运动。
+
+11. **标题**：人民 vs. 大型科技公司
+    **简要说明**：介绍了一个旨在对抗大型科技公司权力、争取更好数字未来的全球性运动。反映了行业内外对当前科技垄断和伦理失范的不满与行动。
+    **原文链接**：https://peoplevsbig.tech/
+
+12. **标题**：发布三次
+    **简要说明**：来自知名博主Anil Dash的观点，鼓励产品团队不要指望一次发布就成功，而应将其视为一个持续迭代和再发布的过程。这是对产品设计和发布策略的经典建议。
+    **原文链接**：https://www.anildash.com/2026/02/13/launch-it-three-times/
+
+### 五、 创意实验与品牌案例
+
+展示了设计的趣味性和专业性。
+
+13. **标题**：gradient.horse
+    **简要说明**：一个极简、有趣的创意网站，用户画一匹马，看它奔跑。体现了设计中的趣味性和交互实验精神。
+    **原文链接**：https://gradient.horse/
+
+14. **标题**：案例研究：弗兰克·劳埃德·赖特建筑保护协会
+    **简要说明**：一个专业的品牌设计案例研究，展示了如何为传奇建筑大师的保护组织设计一套既能承载历史遗产，又能连接社区并体现工作紧迫性的视觉形象。
+    **原文链接**：https://order.design/project/frank-lloyd-wright-building-conservancy
+
+15. **标题**：互联网时间胶囊
+    **简要说明**：一个充满诗意的网络艺术项目，创建了一个将在Wi-Fi到达月球时开启的“时间胶囊”。是创意、技术和浪漫主义的结合。
+    **原文链接**：https://oooooooooooo.xyz/
+
+---
+
+### 今日最值得阅读文章推荐
+
+基于话题的时效性、对行业的启发深度以及实用性，我推荐以下三篇文章：
+
+1.  **AI的文本陷阱**
+    **推荐理由**：在所有讨论AI的文章中，这一篇最具**前瞻性和建设性**。它没有停留在批判或担忧，而是为UI/UX设计师指出了一个明确的未来方向：设计超越文本对话的AI交互界面。这是将挑战转化为机遇的必读思考。
+    **链接**：https://uxdesign.cc/ais-text-trap-moving-towards-a-more-interactive-future-7035bbc4aaa5
+
+2.  **设计系统是今天良药，也是明天烂软件的病因**
+    **推荐理由**：对**设计系统**这一行业标配进行了难得的深度反思。任何正在实施或维护设计系统的团队都需要这种“居安思危”的视角，以避免陷入工具主义陷阱，确保系统长期健康。
+    **链接**：https://pjonori.blog/posts/design-systems-tomorrows-cause-for-shitty-software/
+
+3.  **为什么我们讨厌AI**
+    **推荐理由**：直指当前AI热潮中最核心、最敏感的**伦理与法律问题**——知识产权。对于依靠原创性生存的设计师和创作者而言，理解这场争论的底层逻辑至关重要，它决定了未来创意生态的形态。
+    **链接**：https://blog.fallible.net/why-we-hate-ai/
+
+4.  **工作转移了：关于AI编码争论的实际共识**
+    **推荐理由**：用**具体数据**揭示了AI工具引入工作流程后的真实变化，打破了“AI取代人力”的简单叙事。对于技术团队领导者和项目经理来说，这份洞察能帮助更务实地规划团队结构和工作流程。
+    **链接**：https://leadership.garden/ai-the-work-moved/
+
+**总结**：今日的设计热点紧密围绕**AI的影响**展开，社区在积极拥抱新工具（如图标库、Figma插件）的同时，也在深刻反思其带来的伦理、质量和职业身份挑战。对设计系统的批判性思考和对未来AI交互的前瞻，标志着行业正在走向更成熟的阶段。8:["$","section","design",{"id":"design","children":[["$","div",null,{"className":"flex items-center gap-3 mb-6","children":[["$","h2",null,{"className":"text-2xl font-bold text-gray-900 dark:text-white","children":"Design"}],["$","span",null,{"className":"text-sm text-gray-500 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded","children":[15," ","篇文章"]}]]}],["$","div",null,{"className":"space-y-6","children":[["$","$L5",null,{"summary":"$f","topicName":"Design","locale":"zh"}],"$L10"]}]]}]
+11:T3e53,好的，作为一名技术新闻分析师，我将对今日（2026年2月20日）的“Technology”主题热门文章进行综合分析、总结和推荐。
+
+### **今日技术新闻综合分析报告**
+
+今日的热门文章主要围绕**平台与生态系统的争议、隐私与安全、开发工具与实践、以及怀旧与历史**等几个核心主题展开。Hacker News 的讨论热度极高，尤其是在涉及大型科技公司政策、开源生态和网络自由等议题上。Lobste.rs 的文章则更偏向于具体的技术实践和社区访谈。
+
+以下是按子主题分组的详细分析：
+
+---
+
+### **1. 平台争议与生态系统**
+这一组文章聚焦于大型科技平台的政策变动、竞争行为及其引发的广泛讨论，是今日最热门的议题。
+
+*   **Keep Android Open**
+    *   **简要说明**：一篇来自 F-Droid 的宣言式文章，呼吁保持 Android 生态系统的开放性，反对谷歌日益收紧的控制。这篇文章引发了关于开源、垄断和用户自主权的激烈辩论。
+    *   **原文链接**：https://f-droid.org/2026/02/20/twif.html
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47091419
+
+*   **Facebook is cooked**
+    *   **简要说明**：一篇分析文章，探讨 Facebook（Meta）当前面临的多重困境，包括用户流失、商业模式挑战和创新能力下降。标题极具煽动性，吸引了大量关注和评论。
+    *   **原文链接**：https://pilk.website/3/facebook-is-absolutely-cooked
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47091748
+
+*   **Be wary of Bluesky**
+    *   **简要说明**：作者分享了对去中心化社交网络 Bluesky 的担忧，包括其治理结构、潜在的中心化风险以及对开发者的态度。在 Twitter 替代品层出不穷的背景下，这类批判性分析很有价值。
+    *   **原文链接**：https://kevinak.se/blog/be-wary-of-bluesky
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47095597
+
+*   **Wikipedia deprecates Archive.today, starts removing archive links**
+    *   **简要说明**：Ars Technica 报道，因 Archive.today 涉嫌发动 DDoS 攻击并篡改网页存档，维基百科决定封禁该服务并开始移除大量相关存档链接。这关系到网络信息的长期保存和存档服务的可信度。
+    *   **原文链接**：https://arstechnica.com/tech-policy/2026/02/wikipedia-bans-archive-today-after-site-executed-ddos-and-altered-web-captures/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47092006
+    *   **注**：Lobste.rs 上也有相同主题文章（#30）。
+
+---
+
+### **2. 隐私、监控与安全**
+从身份验证到公共监控，再到漏洞披露的法律风险，隐私和安全是技术社区持续关注的焦点。
+
+*   **I verified my LinkedIn identity. Here‘s what I handed over**
+    *   **简要说明**：一篇深度分析，详细记录了作者在 LinkedIn 进行身份验证时提交的个人信息，并探讨了其中的隐私风险和数据使用政策。对于任何使用职业社交网络的用户都极具警示意义。
+    *   **原文链接**：https://thelocalstack.eu/posts/linkedin-identity-verification-privacy/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47098245
+
+*   **I found a vulnerability. they found a lawyer**
+    *   **简要说明**：一名安全研究员分享了他发现漏洞后，非但没有得到感谢或奖励，反而收到对方律师函的糟糕经历。这揭示了负责任的漏洞披露（Responsible Disclosure）在实践中面临的挑战和风险。
+    *   **原文链接**：https://dixken.de/blog/i-found-a-vulnerability-they-found-a-lawyer
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47092578
+
+*   **Across the US, people are dismantling and destroying Flock surveillance cameras**
+    *   **简要说明**：报道了美国各地出现的针对 Flock 等自动车牌识别（ALPR）监控摄像头的破坏行为，引发了关于公共监控、隐私权与公民反抗的讨论。
+    *   **原文链接**：https://www.bloodinthemachine.com/p/across-the-us-people-are-dismantling
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47095134
+
+*   **What not to write on your security clearance form (1988)**
+    *   **简要说明**：一篇来自 1988 年的幽默（或真实）文章，列举了在申请美国安全许可时“不该写”的内容。虽然年代久远，但其中关于官僚主义和诚实边界的讨论至今仍有共鸣。
+    *   **原文链接**：https://milk.com/wall-o-shame/security_clearance.html
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47102576
+
+*   **Personal Statement of a CIA Analyst**
+    *   **简要说明**：一份前 CIA 分析师关于测谎仪（polygraph）的个人陈述，揭示了该机构内部安全审查程序的一面。内容敏感，引发了关于情报工作伦理和技术的讨论。
+    *   **原文链接**：https://antipolygraph.org/statements/statement-038.shtml
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47102975
+
+---
+
+### **3. 开发工具、实践与架构**
+这部分内容涵盖了从具体的 Git 技巧、依赖管理到数据库选型、编程范式等开发者日常关心的话题。
+
+*   **Turn Dependabot off**
+    *   **简要说明**：Filippo Valsorda 撰文，认为 GitHub 的 Dependabot 自动化依赖更新在某些场景下弊大于利，并建议开发者考虑关闭它，采用更手动、更谨慎的更新策略。观点鲜明，挑战了主流实践。
+    *   **原文链接**：https://words.filippo.io/dependabot/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47094192
+
+*   **lobste.rs migrates from MariaDB to SQLite**
+    *   **简要说明**：知名技术社区 Lobste.rs 将其数据库从 MariaDB 迁移到了 SQLite。这个反向操作（通常是从 SQLite 迁移到更“强大”的数据库）非常引人注目，体现了 SQLite 在特定负载下的卓越能力和简洁性优势。
+    *   **原文链接**：https://lobste.rs/s/oz7ebk/lobste_rs_migrates_from_mariadb_sqlite
+    *   **讨论链接**：参见原文内链接。
+
+*   **Don‘t create .gitkeep files, use .gitignore instead (2023)**
+    *   **简要说明**：一篇关于 Git 最佳实践的文章，建议使用 `.gitignore` 文件中的特殊语法来跟踪空目录，而不是传统的创建 `.gitkeep` 空文件的方法。这是一个实用的小技巧。
+    *   **原文链接**：https://adamj.eu/tech/2023/09/18/git-dont-create-gitkeep/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47094877
+
+*   **Parse, Don‘t Validate and Type-Driven Design in Rust**
+    *   **简要说明**：将函数式编程中“解析，而非验证”的理念与类型驱动设计结合，在 Rust 语言中实践，旨在构建更安全、更健壮的程序。适合中高级 Rust 开发者阅读。
+    *   **原文链接**：https://www.harudagondi.space/blog/parse-dont-validate-and-type-driven-design-in-rust/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47103931
+
+*   **Index, Count, Offset, Size**
+    *   **简要说明**：来自高性能会计数据库 TigerBeetle 的博客，深入探讨了在编程中处理索引、计数、偏移和大小这些基础概念时的常见陷阱和正确实践。内容扎实，具有普适性。
+    *   **原文链接**：https://tigerbeetle.com/blog/2026-02-16-index-count-offset-size/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47058584
+
+*   **Coccinelle: The Linux kernel‘s source-to-source transformation tool**
+    *   **简要说明**：介绍了 Linux 内核社区使用的一个强大工具 Coccinelle，它用于进行大规模、模式匹配的代码转换和重构，对于理解大型开源项目的维护工作很有帮助。
+    *   **原文链接**：https://github.com/coccinelle/coccinelle
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47098669
+
+*   **I Don‘t Like Magic**
+    *   **简要说明**：作者表达了对现代 Web 开发中各种“魔法”（如复杂的框架抽象、零配置工具）的厌恶，倡导更透明、更可控的开发方式。引发了关于开发体验和复杂性的讨论。
+    *   **原文链接**：https://adactio.com/journal/22399
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47059147
+
+*   **Lobsters Interview with steveklabnik**
+    *   **简要说明**：对 Rust 核心贡献者 Steve Klabnik 的采访，涵盖了 Rust、编译器、版本控制（Jujutsu）、社区建设等广泛话题。是了解这位知名开发者思想的窗口。
+    *   **原文链接**：https://alexalejandre.com/programming/steve-klabnik-interview/
+    *   **讨论链接**：参见原文内链接。
+
+---
+
+### **4. 软件发布、工具与怀旧**
+包括新发布的应用程序、小众工具、复古计算和游戏。
+
+*   **Show HN: A native macOS client for Hacker News, built with SwiftUI**
+    *   **简要说明**：一位开发者开源了用 SwiftUI 编写的原生 macOS 版 Hacker News 客户端。展示了现代 macOS 开发生态，并为 HN 用户提供了一个新的阅读选择。
+    *   **原文链接**：https://github.com/IronsideXXVI/Hacker-News
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47088166
+
+*   **CERN rebuilt the original browser from 1989 (2019)**
+    *   **简要说明**：CERN 重建了 1989 年由蒂姆·伯纳斯-李编写的世界首个网页浏览器。这是一个可交互的模拟器，让人能亲身体验 Web 的起源，极具历史和教育意义。
+    *   **原文链接**：https://worldwideweb.cern.ch
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47095429
+
+*   **Acme Weather**
+    *   **简要说明**：一款新发布的天气应用，主打简洁、快速和无广告。其发布引发了关于“小而美”的工具类应用在当今市场的生存空间的讨论。
+    *   **原文链接**：https://acmeweather.com/blog/introducing-acme-weather
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47098296
+
+*   **macOS‘s Little-Known Command-Line Sandboxing Tool (2025)**
+    *   **简要说明**：介绍 macOS 系统自带但鲜为人知的命令行沙盒工具 `sandbox-exec`，可用于限制进程的权限，对于安全研究和高级用户很有用。
+    *   **原文链接**：https://igorstechnoclub.com/sandbox-exec/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47101200
+
+*   **EDuke32 – Duke Nukem 3D (Open-Source)**
+    *   **简要说明**：经典游戏《毁灭公爵 3D》的开源移植版 EDuke32 项目主页。让玩家和开发者可以在现代系统上运行并修改这款标志性游戏。
+    *   **原文链接**：https://www.eduke32.com/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47104185
+
+*   **joinirc.at: Link to your IRC server on any client to onboard new users**
+    *   **简要说明**：一个旨在降低 IRC 使用门槛的工具，通过生成一个链接，让新用户可以直接在浏览器或客户端中连接到指定的 IRC 频道。反映了传统协议在易用性上的创新尝试。
+    *   **原文链接**：https://joinirc.at
+    *   **讨论链接**：参见原文内链接。
+
+---
+
+### **5. 其他值得注意的文章**
+这些文章涉及广泛的主题，从政治经济到语言文化。
+
+*   **Trump‘s global tariffs struck down by US Supreme Court**
+    *   **简要说明**：BBC 报道美国最高法院否决了特朗普时期的全球关税政策。虽然本质是政治经济新闻，但在 HN 上引发了关于全球化、贸易和科技产业关系的超高热度讨论。
+    *   **原文链接**：https://www.bbc.com/news/live/c0l9r67drg7t
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47089213
+
+*   **Cloudflare outage on February 20, 2026**
+    *   **简要说明**：Cloudflare 官方发布的关于今日服务中断的事后分析报告。对于依赖其服务的开发者和公司至关重要，也是学习大型系统故障处理的典型案例。
+    *   **原文链接**：https://blog.cloudflare.com/cloudflare-outage-february-20-2026/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47103649
+
+*   **How far back in time can you understand English?**
+    *   **简要说明**：一个有趣的语言学互动测试，让用户尝试理解不同历史时期的英语文本，以直观感受语言的演变。
+    *   **原文链接**：https://www.deadlanguagesociety.com/p/how-far-back-in-time-understand-english
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47061614
+
+*   **What Is OAuth?**
+    *   **简要说明**：一篇关于 OAuth 2.0 授权框架的科普文章。作为现代 Web 和移动应用的基石，其原理值得所有开发者了解。
+    *   **原文链接**：https://leaflet.pub/p/did:plc:3vdrgzr2zybocs45yfhcr6ur/3mfd2oxx5v22b
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47096520
+
+*   **Permacomputing**
+    *   **简要说明**：介绍“永久计算”理念，倡导在计算中追求持久性、低能耗和可维护性，反对 Planned Obsolescence（计划性淘汰）。是一种反主流的、可持续的技术哲学。
+    *   **原文链接**：https://wiki.xxiivv.com/site/permacomputing.html
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47046858
+
+*   **The Fastest Way to Board an Airplane**
+    *   **简要说明**：一篇带有调侃性质的文章，用“航空公司讨厌这个技巧”的标题吸引眼球，内容是关于登机效率的优化。轻松有趣。
+    *   **原文链接**：https://navendu.me/posts/airlines-hate-this-trick/
+    *   **讨论链接**：参见原文内链接。
+
+---
+
+### **今日最值得阅读文章推荐**
+
+1.  **Keep Android Open**
+    *   **推荐理由**：这是今日的绝对焦点，不仅因为其高热度，更因为它触及了开源精神、商业垄断和移动生态未来等根本性问题。无论你是开发者、用户还是观察者，这篇文章引发的讨论都值得深入了解。
+    *   **链接**：https://f-droid.org/2026/02/20/twif.html （及讨论：https://news.ycombinator.com/item?id=47091419）
+
+2.  **I verified my LinkedIn identity. Here‘s what I handed over**
+    *   **推荐理由**：在数字身份验证日益普遍的今天，这篇文章提供了一个极其详细和透明的案例研究，揭示了我们在点击“同意”时可能交出了什么。对于关注数据隐私的每个人来说，都是一次重要的风险教育。
+    *   **链接**：https://thelocalstack.eu/posts/linkedin-identity-verification-privacy/
+
+3.  **lobste.rs migrates from MariaDB to SQLite**
+    *   **推荐理由**：这是一个反直觉且大胆的技术决策。在“大数据”和分布式数据库盛行的时代，一个活跃的社区网站反向选择 SQLite，其背后的技术权衡、性能考量和对“简单性”的追求，对全栈和架构师开发者极具启发意义。
+    *   **链接**：https://lobste.rs/s/oz7ebk/lobste_rs_migrates_from_mariadb_sqlite
+
+4.  **Turn Dependabot off**
+    *   **推荐理由**：Filippo Valsorda 作为安全领域的权威，其观点往往一针见血。这篇文章挑战了“自动化依赖更新绝对有益”的普遍认知，提出了一个需要开发者认真思考的维护哲学问题：自动化与可控性之间如何平衡？
+    *   **链接**：https://words.filippo.io/dependabot/
+
+5.  **Cloudflare outage on February 20, 2026**
+    *   **推荐理由**：对于工程团队和系统可靠性工程师（SRE）而言，顶级云服务商的事后分析报告是最佳学习材料。通过阅读官方对故障原因、影响和补救措施的详细说明，可以积累宝贵的分布式系统运维经验。
+    *   **链接**：https://blog.cloudflare.com/cloudflare-out9:["$","section","tech",{"id":"tech","children":[["$","div",null,{"className":"flex items-center gap-3 mb-6","children":[["$","h2",null,{"className":"text-2xl font-bold text-gray-900 dark:text-white","children":"Technology"}],["$","span",null,{"className":"text-sm text-gray-500 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded","children":[30," ","篇文章"]}]]}],["$","div",null,{"className":"space-y-6","children":[["$","$L5",null,{"summary":"$11","topicName":"Technology","locale":"zh"}],"$L12"]}]]}]
+a:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
+b:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
+c:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
+d:["$","$L13",null,{"children":["$","$14",null,{"name":"Next.MetadataOutlet","children":"$@15"}]}]
+10:["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Le","Sidebar.io",{"sourceName":"Sidebar.io","articles":[{"id":"rss-30fd37d5fda1","title":"The software industrial revolution","url":"https://cannoneyed.com/essays/software-industrial-revolution","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-20T12:26:24","author":"unknown","text":"<p>Just like the first Industrial Revolution, this will change the world in profound and unexpected ways.</p>\n<br /><br />","summary":"文章将软件革命比作第一次工业革命，认为它将以前所未有的方式深刻改变世界，值得关注其对社会和行业的深远影响。"},{"id":"rss-f2f027913c8d","title":"Remix Icon","url":"https://remixicon.com/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-20T12:25:16","author":"unknown","text":"<p>A set of open source neutral style system symbols elaborately crafted for designers and developers.</p>\n<br /><br />","summary":"介绍了一套为设计师和开发者精心打造的开源中性风格系统图标集，值得关注其作为开源设计资源的实用性和美学价值。"},{"id":"rss-7f345085369c","title":"Keyviz","url":"https://keyviz.org/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-20T12:24:45","author":"unknown","text":"<p>A free and open-source tool to visualize your keystrokes and mouse actions.</p>\n<br /><br />","summary":"介绍了一款免费开源的可视化键盘敲击和鼠标操作的工具，值得关注其在演示、教学或提升操作透明度方面的应用潜力。"},{"id":"rss-92643ad67056","title":"Case study: Frank Lloyd Wright Building Conservancy","url":"https://order.design/project/frank-lloyd-wright-building-conservancy","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-20T12:24:13","author":"unknown","text":"<p>An identity that captures the legacy of Wright’s designs, the community built through the organization, and the immediate necessity of their work.</p>\n<br /><br />","summary":"这是一个关于弗兰克·劳埃德·赖特建筑保护协会的品牌标识设计案例研究，值得关注其如何通过设计捕捉建筑遗产、社区精神和组织使命。"},{"id":"rss-2899aad9155d","title":"Why we hate AI","url":"https://blog.fallible.net/why-we-hate-ai/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-20T12:23:11","author":"unknown","text":"<p>Intellectual property theft on an obscene scale; but law is something that is carved and grown as needed by forces of power.</p>\n<br /><br />","summary":"文章探讨了人们对AI的憎恶，核心论点涉及大规模知识产权盗窃，并指出法律常被权力塑造，值得关注其对AI伦理与法律现状的尖锐批判。"},{"id":"rss-58c163941eac","title":"Design systems are today’s cure and tomorrow’s cause of shitty software","url":"https://pjonori.blog/posts/design-systems-tomorrows-cause-for-shitty-software/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-19T12:20:48","author":"unknown","text":"<p>Design systems have been propping up quality from collapsing. And in doing so, risk making the collapse even more spectacular.</p>\n<br /><br />","summary":"文章指出设计系统在当下支撑软件质量的同时，也可能成为未来软件质量崩溃的诱因，值得关注其对设计系统长期风险与依赖性的辩证思考。"},{"id":"rss-cd967bfe4baa","title":"gradient.horse","url":"https://gradient.horse/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-19T12:20:23","author":"unknown","text":"<p>Draw a horse, watch it run.</p>\n<br /><br />","summary":"介绍了一个名为gradient.horse的趣味互动网站，用户画一匹马即可观看其奔跑，值得关注其将创意、简单交互与视觉艺术结合的轻松体验。"},{"id":"rss-a64701e132d6","title":"The work moved: what the AI coding debate actually agrees on","url":"https://leadership.garden/ai-the-work-moved/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-19T12:20:00","author":"unknown","text":"<p>AI agents generate 98% more PRs but reviews take 91% longer. The work didn’t disappear — it moved.</p>\n<br /><br />","summary":"文章基于数据指出AI编码工具虽大幅增加PR数量，但显著拉长了代码审查时间，强调工作发生了转移而非消失，值得关注其对开发工作流变化的深刻洞察。"},{"id":"rss-6eaf34064305","title":"Figma plugin: CMYK Halftone","url":"https://www.figma.com/community/plugin/1584204863720680047/cmyk-halftone","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-19T12:19:17","author":"unknown","text":"<p>Simulate traditional CMYK halftone printing by generating and overlaying separate cyan, magenta, yellow, and black halftone dot screens.</p>\n<br /><br />","summary":"介绍了一款Figma插件，用于模拟传统的CMYK半色调印刷效果，值得关注其为数字设计师提供的复古印刷风格实现工具。"},{"id":"rss-b8551ab4374c","title":"A programmer’s loss of identity","url":"https://ratfactor.com/tech-nope2","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-19T12:18:36","author":"unknown","text":"<p>That lost identity was \"computer programmer\" and it was arguably one of the biggest.</p>\n<br /><br />","summary":"文章探讨了程序员群体正在经历的身份认同危机，认为“计算机程序员”这一重要身份正在丧失，值得关注其对技术行业人文层面的反思。"},{"id":"rss-46b5131c8f83","title":"AI’s text-trap","url":"https://uxdesign.cc/ais-text-trap-moving-towards-a-more-interactive-future-7035bbc4aaa5","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-18T12:46:50","author":"unknown","text":"<p>AI assistants don’t have to communicate in paragraphs. They can communicate through interfaces.</p>\n<br /><br />","summary":"文章探讨了AI助手不应局限于文本交互，而应通过界面进行沟通，这代表了人机交互设计的重要演进方向，值得关注。"},{"id":"rss-99b40995a3ad","title":"Internet time capsule","url":"https://oooooooooooo.xyz/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-18T12:46:00","author":"unknown","text":"<p>An internet time capsule that will arrive once wifi reaches the moon.</p>\n<br /><br />","summary":"介绍了一个将在Wi-Fi信号到达月球时开启的互联网时间胶囊项目，这是一个结合了技术、艺术与未来愿景的独特概念设计。"},{"id":"rss-5f85eb0fe1c0","title":"People vs. Big Tech","url":"https://peoplevsbig.tech/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-18T12:45:17","author":"unknown","text":"<p>A growing, global movement fighting for a better digital future.</p>\n<br /><br />","summary":"介绍了一个全球性的运动，旨在对抗大型科技公司并争取一个更好的数字未来，反映了当前社会对科技伦理和用户权利的日益关注。"},{"id":"rss-ba6bfc24fa37","title":"On cognitive debt","url":"https://www.natemeyvis.com/on-cognitive-debt/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-18T12:44:54","author":"unknown","text":"<p>AI-generated codebases are at risk of falling into a state where nobody knows how they work.</p>\n<br /><br />","summary":"文章提出了“认知债务”的概念，警告AI生成的代码库可能导致无人理解其工作原理的风险，这对软件开发和维护具有重要警示意义。"},{"id":"rss-63727e69dc26","title":"Launch it 3 times","url":"https://www.anildash.com/2026/02/13/launch-it-three-times/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-18T12:44:24","author":"unknown","text":"<p>Why your first launch might not be enough.</p>\n<br /><br />","summary":"文章主张产品可能需要多次发布才能成功，挑战了“一次发布定成败”的传统观念，为产品设计和市场策略提供了新视角。"}],"locale":"zh"}]]}]
+16:T10cb,Hey HN! I built a native macOS desktop client for Hacker News and I&#x27;m open-sourcing it under the MIT license.<p>GitHub: <a href="https:&#x2F;&#x2F;github.com&#x2F;IronsideXXVI&#x2F;Hacker-News" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;IronsideXXVI&#x2F;Hacker-News</a><p>Download (signed &amp; notarized DMG, macOS 14.0+): <a href="https:&#x2F;&#x2F;github.com&#x2F;IronsideXXVI&#x2F;Hacker-News&#x2F;releases" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;IronsideXXVI&#x2F;Hacker-News&#x2F;releases</a><p>Screenshots: <a href="https:&#x2F;&#x2F;github.com&#x2F;IronsideXXVI&#x2F;Hacker-News#screenshots" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;IronsideXXVI&#x2F;Hacker-News#screenshots</a><p>I spend a lot of time reading HN — I wanted something that felt like a proper Mac app: a sidebar for browsing stories, an integrated reader for articles, and comment threading — all in one window. Essentially, I wanted HN to feel like a first-class citizen on macOS, not a website I visit.<p>What it does:<p>- Split-view layout — stories in a sidebar on the left, articles and comments on the right, using the standard macOS NavigationSplitView pattern.<p>- Built-in ad blocking — a precompiled WKContentRuleList blocks 14 major ad networks (DoubleClick, Google Syndication, Criteo, Taboola, Outbrain, Amazon ads, etc.) right in the WebKit layer. No extensions needed. Toggleable in settings.<p>- Pop-up blocking — kills window.open() calls. Also toggleable.<p>- HN account login — full authentication flow (login, account creation, password reset). Session is stored in the macOS Keychain, and cookies are injected into the WebView so you can upvote, comment, and submit stories while staying logged in.<p>- Bookmarks — save stories locally for offline access. Persisted with Codable serialization, searchable and filterable independently.<p>- Search and filtering — powered by the Algolia HN API. Filter by content type (All, Ask, Show, Jobs, Comments), date range (Today, Past Week, Past Month, All Time), and sort by hot or recent.<p>- Scroll progress indicator — a small orange bar at the top tracks your reading progress via JavaScript-to-native messaging.<p>- Auto-updates via Sparkle with EdDSA-signed updates served from GitHub Pages.<p>- Dark mode — respects system appearance with CSS and meta tag injection.<p>Tech details for the curious:<p>The whole app is ~2,050 lines of Swift across 16 files. It uses the modern @Observable macro (not the old ObservableObject&#x2F;Published pattern), structured concurrency with async&#x2F;await and withThrowingTaskGroup for concurrent batch fetching, and SwiftUI throughout — no UIKit&#x2F;AppKit bridges except for the WKWebView wrapper via NSViewRepresentable.<p>Two APIs power the data: the official HN Firebase API for individual item&#x2F;user fetches, and the Algolia Search API for feeds, filtering, and search. The Algolia API is surprisingly powerful for this — it lets you do date-range filtering, pagination, and full-text search that the Firebase API doesn&#x27;t support.<p>CI&#x2F;CD:<p>The release pipeline is a single GitHub Actions workflow (467 lines) that handles the full macOS distribution story: build and archive, code sign with Developer ID, notarize with Apple (with a 5-retry staple loop for ticket propagation delays), create a custom DMG with AppleScript-driven icon positioning, sign and notarize the DMG, generate an EdDSA Sparkle signature, create a GitHub Release, and deploy an updated appcast.xml to GitHub Pages.<p>Getting macOS code signing and notarization working in CI was honestly the hardest part of this project. If anyone is distributing a macOS app outside the App Store via GitHub Actions, I&#x27;m happy to answer questions — the workflow is fully open source.<p>The entire project is MIT licensed. PRs and issues welcome: <a href="https:&#x2F;&#x2F;github.com&#x2F;IronsideXXVI&#x2F;Hacker-News" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;IronsideXXVI&#x2F;Hacker-News</a><p>I&#x27;d love feedback — especially on features you&#x27;d want to see. Some ideas I&#x27;m considering: keyboard-driven navigation (j&#x2F;k to move between stories), a reader mode that strips articles down to text, and notification support for replies to your comments.12:["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Le","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47091419","title":"Keep Android Open","url":"https://f-droid.org/2026/02/20/twif.html","source":"Hacker News","score":1987,"comments_count":690,"comments_url":"https://news.ycombinator.com/item?id=47091419","published_at":"2026-02-20T17:58:51","author":"LorenDB","text":null,"summary":"文章呼吁保持Android系统的开放性，这对于维护移动生态系统的自由竞争和用户选择权至关重要。"},{"id":"hn-47089213","title":"Trump's global tariffs struck down by US Supreme Court","url":"https://www.bbc.com/news/live/c0l9r67drg7t","source":"Hacker News","score":1486,"comments_count":1246,"comments_url":"https://news.ycombinator.com/item?id=47089213","published_at":"2026-02-20T15:27:38","author":"blackguardx","text":null,"summary":"美国最高法院否决了特朗普的全球关税政策，这一裁决可能对全球贸易和技术供应链产生深远影响。"},{"id":"hn-47091748","title":"Facebook is cooked","url":"https://pilk.website/3/facebook-is-absolutely-cooked","source":"Hacker News","score":1434,"comments_count":799,"comments_url":"https://news.ycombinator.com/item?id=47091748","published_at":"2026-02-20T18:25:07","author":"npilk","text":null,"summary":"文章分析了Facebook面临的严峻挑战，包括用户流失和商业模式问题，值得关注其未来走向。"},{"id":"hn-47098245","title":"I verified my LinkedIn identity. Here's what I handed over","url":"https://thelocalstack.eu/posts/linkedin-identity-verification-privacy/","source":"Hacker News","score":1174,"comments_count":408,"comments_url":"https://news.ycombinator.com/item?id=47098245","published_at":"2026-02-21T07:06:18","author":"ColinWright","text":null,"summary":"作者分享了LinkedIn身份验证过程中提交的个人信息，揭示了隐私风险，提醒用户注意数据安全。"},{"id":"hn-47092578","title":"I found a vulnerability. they found a lawyer","url":"https://dixken.de/blog/i-found-a-vulnerability-they-found-a-lawyer","source":"Hacker News","score":850,"comments_count":399,"comments_url":"https://news.ycombinator.com/item?id=47092578","published_at":"2026-02-20T19:19:58","author":"toomuchtodo","text":null,"summary":"安全研究员发现漏洞后却面临法律威胁，这凸显了漏洞披露过程中的法律和伦理困境。"},{"id":"hn-47094192","title":"Turn Dependabot off","url":"https://words.filippo.io/dependabot/","source":"Hacker News","score":616,"comments_count":179,"comments_url":"https://news.ycombinator.com/item?id=47094192","published_at":"2026-02-20T21:25:41","author":"todsacerdoti","text":null,"summary":"文章建议关闭Dependabot，讨论了其在依赖管理中的潜在问题，对开发者有实际参考价值。"},{"id":"hn-47092006","title":"Wikipedia deprecates Archive.today, starts removing archive links","url":"https://arstechnica.com/tech-policy/2026/02/wikipedia-bans-archive-today-after-site-executed-ddos-and-altered-web-captures/","source":"Hacker News","score":574,"comments_count":348,"comments_url":"https://news.ycombinator.com/item?id=47092006","published_at":"2026-02-20T18:42:21","author":"nobody9999","text":"Related:<p><i>Archive.today is directing a DDoS attack against my blog</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=46843805\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=46843805</a> - Feb 2026 (168 comments)<p><i>Ask HN: Weird archive.today behavior?</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=46624740\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=46624740</a> - Jan 2026 (69 comments)","summary":"Wikipedia因Archive.today发起DDoS攻击并篡改网页内容而弃用该服务，这关系到网络存档的可靠性和安全性。"},{"id":"hn-47095134","title":"Across the US, people are dismantling and destroying Flock surveillance cameras","url":"https://www.bloodinthemachine.com/p/across-the-us-people-are-dismantling","source":"Hacker News","score":420,"comments_count":248,"comments_url":"https://news.ycombinator.com/item?id=47095134","published_at":"2026-02-20T22:50:35","author":"latexr","text":null,"summary":"美国各地出现拆除Flock监控摄像头的行动，反映了公众对隐私和监控技术的日益关注。"},{"id":"hn-47102576","title":"What not to write on your security clearance form (1988)","url":"https://milk.com/wall-o-shame/security_clearance.html","source":"Hacker News","score":378,"comments_count":161,"comments_url":"https://news.ycombinator.com/item?id=47102576","published_at":"2026-02-21T17:08:12","author":"wizardforhire","text":null,"summary":"文章以幽默方式列举了1988年安全审查表中不应填写的内容，提供了历史视角下的安全文化洞察。"},{"id":"hn-47061614","title":"How far back in time can you understand English?","url":"https://www.deadlanguagesociety.com/p/how-far-back-in-time-understand-english","source":"Hacker News","score":354,"comments_count":204,"comments_url":"https://news.ycombinator.com/item?id=47061614","published_at":"2026-02-18T14:56:58","author":"spzb","text":null,"summary":"探讨了现代英语使用者能理解多早的英语文本，这对语言演变和跨时代沟通研究有启发意义。"},{"id":"hn-47088166","title":"Show HN: A native macOS client for Hacker News, built with SwiftUI","url":"https://github.com/IronsideXXVI/Hacker-News","source":"Hacker News","score":245,"comments_count":172,"comments_url":"https://news.ycombinator.com/item?id=47088166","published_at":"2026-02-20T14:02:05","author":"IronsideXXVI","text":"$16","summary":"开发者使用SwiftUI构建了一款原生macOS平台的Hacker News客户端并开源，值得关注是因为它为macOS用户提供了更优化的本地浏览体验，并展示了SwiftUI的现代开发能力。"},{"id":"hn-47095429","title":"CERN rebuilt the original browser from 1989 (2019)","url":"https://worldwideweb.cern.ch","source":"Hacker News","score":244,"comments_count":89,"comments_url":"https://news.ycombinator.com/item?id=47095429","published_at":"2026-02-20T23:19:12","author":"tylerdane","text":null,"summary":"CERN重建了1989年的原始网络浏览器，值得关注是因为它重现了Web历史的里程碑，让人们能亲身体验互联网的起源形态。"},{"id":"hn-47095597","title":"Be wary of Bluesky","url":"https://kevinak.se/blog/be-wary-of-bluesky","source":"Hacker News","score":242,"comments_count":172,"comments_url":"https://news.ycombinator.com/item?id=47095597","published_at":"2026-02-20T23:35:33","author":"kevinak","text":null,"summary":"文章对去中心化社交平台Bluesky提出谨慎观点，值得关注是因为它探讨了新兴社交媒体的潜在风险与治理问题。"},{"id":"hn-47096520","title":"What Is OAuth?","url":"https://leaflet.pub/p/did:plc:3vdrgzr2zybocs45yfhcr6ur/3mfd2oxx5v22b","source":"Hacker News","score":205,"comments_count":77,"comments_url":"https://news.ycombinator.com/item?id=47096520","published_at":"2026-02-21T01:33:40","author":"cratermoon","text":null,"summary":"文章解释了OAuth授权协议的基本原理，值得关注是因为OAuth是现代应用安全与用户数据访问控制的核心技术。"},{"id":"hn-47101200","title":"macOS's Little-Known Command-Line Sandboxing Tool (2025)","url":"https://igorstechnoclub.com/sandbox-exec/","source":"Hacker News","score":190,"comments_count":80,"comments_url":"https://news.ycombinator.com/item?id=47101200","published_at":"2026-02-21T14:34:45","author":"Igor_Wiwi","text":null,"summary":"介绍了macOS一个鲜为人知的命令行沙盒工具sandbox-exec，值得关注是因为它揭示了系统级安全隔离的底层能力，对开发者增强应用安全性有实用价值。"},{"id":"hn-47098296","title":"Acme Weather","url":"https://acmeweather.com/blog/introducing-acme-weather","source":"Hacker News","score":188,"comments_count":122,"comments_url":"https://news.ycombinator.com/item?id=47098296","published_at":"2026-02-21T07:13:38","author":"cryptoz","text":null,"summary":"推出了新的天气服务Acme Weather，值得关注是因为它可能提供了更精准或独特的天气数据呈现方式，为气象工具市场带来新选择。"},{"id":"hn-47102975","title":"Personal Statement of a CIA Analyst","url":"https://antipolygraph.org/statements/statement-038.shtml","source":"Hacker News","score":156,"comments_count":87,"comments_url":"https://news.ycombinator.com/item?id=47102975","published_at":"2026-02-21T17:49:02","author":"grubbs","text":null,"summary":"发布了一份前CIA分析师的个人声明，值得关注是因为它可能揭示了情报工作的内部视角或涉及敏感的职业经历反思。"},{"id":"hn-47103649","title":"Cloudflare outage on February 20, 2026","url":"https://blog.cloudflare.com/cloudflare-outage-february-20-2026/","source":"Hacker News","score":156,"comments_count":105,"comments_url":"https://news.ycombinator.com/item?id=47103649","published_at":"2026-02-21T19:05:31","author":"nomaxx117","text":null,"summary":"Cloudflare报告了2026年2月20日的服务中断事件，值得关注是因为作为核心网络基础设施提供商，其故障分析对理解互联网韧性至关重要。"},{"id":"hn-47058584","title":"Index, Count, Offset, Size","url":"https://tigerbeetle.com/blog/2026-02-16-index-count-offset-size/","source":"Hacker News","score":153,"comments_count":77,"comments_url":"https://news.ycombinator.com/item?id=47058584","published_at":"2026-02-18T08:20:17","author":"ingve","text":null,"summary":"探讨了索引、计数、偏移和大小等基础编程概念，值得关注是因为它深入解析了这些底层数据操作的原理与最佳实践。"},{"id":"hn-47104185","title":"EDuke32 – Duke Nukem 3D (Open-Source)","url":"https://www.eduke32.com/","source":"Hacker News","score":146,"comments_count":55,"comments_url":"https://news.ycombinator.com/item?id=47104185","published_at":"2026-02-21T20:10:13","author":"reconnecting","text":null,"summary":"介绍了开源项目EDuke32——经典游戏《毁灭公爵3D》的现代移植版本，值得关注是因为它展示了如何通过开源社区让老游戏焕发新生并跨平台运行。"},{"id":"hn-47094877","title":"Don't create .gitkeep files, use .gitignore instead (2023)","url":"https://adamj.eu/tech/2023/09/18/git-dont-create-gitkeep/","source":"Hacker News","score":126,"comments_count":77,"comments_url":"https://news.ycombinator.com/item?id=47094877","published_at":"2026-02-20T22:27:56","author":"frou_dh","text":null,"summary":"这篇文章解释了为什么应该使用.gitignore文件而非.gitkeep文件来管理Git仓库中的空目录，因为它更符合Git的设计哲学。对于开发者来说，了解这个最佳实践有助于保持仓库的整洁和标准化。"},{"id":"hn-47103931","title":"Parse, Don't Validate and Type-Driven Design in Rust","url":"https://www.harudagondi.space/blog/parse-dont-validate-and-type-driven-design-in-rust/","source":"Hacker News","score":123,"comments_count":37,"comments_url":"https://news.ycombinator.com/item?id=47103931","published_at":"2026-02-21T19:40:06","author":"todsacerdoti","text":null,"summary":"文章探讨了Rust语言中“解析而非验证”的设计理念和类型驱动开发，展示了如何利用类型系统提升代码的健壮性。这对于Rust开发者来说是一个重要的高级设计模式，值得深入学习。"},{"id":"hn-47059147","title":"I Don't Like Magic","url":"https://adactio.com/journal/22399","source":"Hacker News","score":109,"comments_count":91,"comments_url":"https://news.ycombinator.com/item?id=47059147","published_at":"2026-02-18T09:42:40","author":"edent","text":null,"summary":"作者表达了对编程中“魔法”（指隐晦、难以理解的抽象）的厌恶，倡导代码的清晰性和可预测性。这篇文章引发了关于代码可维护性和开发者体验的思考，对任何程序员都有启发。"},{"id":"hn-47046858","title":"Permacomputing","url":"https://wiki.xxiivv.com/site/permacomputing.html","source":"Hacker News","score":96,"comments_count":23,"comments_url":"https://news.ycombinator.com/item?id=47046858","published_at":"2026-02-17T12:40:37","author":"tosh","text":null,"summary":"介绍了“永久计算”的概念，倡导在技术设计中追求可持续性、低能耗和长寿命，是对当前高耗能、快速淘汰计算文化的反思。这个话题在环境问题日益突出的背景下显得尤为重要。"},{"id":"hn-47098669","title":"Coccinelle: The Linux kernel's source-to-source transformation tool","url":"https://github.com/coccinelle/coccinelle","source":"Hacker News","score":80,"comments_count":25,"comments_url":"https://news.ycombinator.com/item?id=47098669","published_at":"2026-02-21T08:26:36","author":"anon111332142","text":null,"summary":"介绍了Coccinelle，这是一个用于Linux内核源代码转换的强大工具，能够自动进行模式匹配和代码重构。对于内核开发者和大型C项目维护者来说，这是一个能极大提升效率的工具。"}],"locale":"zh"}],"$L17"]}]
+15:null
+18:T8e22,<p>The following interview covers Rust and compilers, source control and monorepos, community engagement and vibe coding.</p>
+<p><a href="https://lobste.rs/~steveklabnik" rel="ugc">@steveklabnik</a> and I had the pleasure of speaking a few times over a few months. He wrote the Rust Book, a lovely <a href="https://steveklabnik.github.io/jujutsu-tutorial/" rel="ugc">Jujutsu tutorial</a>, worked at Oxide and gave many <a href="https://www.youtube.com/watch?v=79PSagCD_AY" rel="ugc">interesting talks</a>.  I thank <a href="https://lobste.rs/~smlckz" rel="ugc">@smlckz</a> and <a href="https://lobste.rs/~hoistbypetard" rel="ugc">@hoistbypetard</a> for their assistance proofreading.</p>
+<hr />
+<p><strong>How did you discover programming?</strong></p>
+<p>I grew up on a beef farm. My dad, his dad and his dad were all butchers. My uncle was a programmer in the 70s and 80s and brought a computer over to show what he did. I was 7 when I saw it and knew I wouldn't go outside anymore. Sorry dad. My little sister became the farm boy, she's a veterinarian now.</p>
+<p>I learned BASIC, then C, C++, Java. I don't remember not being able to program. I grew up reading slash dot (had a 5 digit id) and absorbed the culture around open source and free software. So I just ended up contributing to open source and joining a startup after college. People know me for Rust now, but I was involved in Ruby for years before that. Back then, in Rubyland, there was a guy named <a href="https://en.wikipedia.org/wiki/Why_the_lucky_stiff" rel="ugc">Why the Lucky Stiff</a>, a deliberately constructed identity doing important work. When he disappeared, I wanted to keep it going. He disappeared because people revealed his private persona to the world, which he wanted to keep separate. I made the choice there.</p>
+<p><strong>Many quite dislike their work and only want to talk about personal projects, but as a public personality does your professional and personal lives and interests totally merge together?</strong></p>
+<p>It's definitely a bit weird. I've been dating someone for about a year now and had to explain this <em>my being an online person</em> thing which clarified a lot of stuff.</p>
+<p>What matters most to me is impact, I'm trying to improve the world, make things better. For me, the best way is being a relatively public person; a public persona helps push things forward. I have a joke about a secret gamer identity; my Discord is my gamer name first which I change to Steve Klabnik in technical/programming Discords. That's most to keep from leaking my literal name into video game spaces, but if I had to maintain a public Steve and a private Steve, that'd be a little harder. So I got used to being a public person. It's easier to get things done when your goal's also your job, so I don't try to maximize personal income but find things I want to do. These days I don't have time to do a second job after my first job, whereas I used to have the time to work 80 hours around the clock. Hitting 40, I've been thinking about getting older...</p>
+<p>On the other hand, if I'm checking Lobsters, HN, Bluesky at night... Since I've often been in developer relations, like PR, if there were a crisis in the Rust community at Friday night... I'm always a bit on.</p>
+<p><strong>How did you avoid a you-shaped hole when you left Ruby or Oxide? How do you help keep something going without you?</strong></p>
+<p>I had the habit of picking up and maintaining other existing projects no one was working on. If someone else wanted to take over, great! But there wasn't so much of a crisis to leave things as I left them before. Some of those projects already had replacements like <a href="https://github.com/resque/resque" rel="ugc">Resque</a> and <a href="https://github.com/sidekiq/sidekiq" rel="ugc">Sidekiq</a> too. I also felt increasingly weird maintaining Why's stuff after he deliberately destroyed it. Worse, his projects were deeply tied into Ruby internals and deprecating APIs, making it difficult and time-consuming to maintain. This maintenance burden also informed his departure, which I came to learn first hand.</p>
+<p>I started going to Ruby conferences where people asked me to talk about things I cared about. But well, I cared about Rust and talked about it, connecting those communities together. So there was no clean break. Unless you commit info suicide on your persona like Why, which I couldn't do. I still like the Ruby community but did deliberately decide to focus my attention away; I haven't written Ruby in a long time.</p>
+<p>For Oxide, I said I was quitting and asked to discuss a transition plan. I started pair programming every day to onboard someone to the project I was working on by myself. It took about 6 weeks to hand everything over.</p>
+<p><strong>Matklad has an <a href="https://matklad.github.io/2024/03/22/basic-things.html" rel="ugc">article</a> about what open source projects need. You also have a few <a href="https://steveklabnik.com/writing/how-to-be-an-open-source-gardener/" rel="ugc">along these lines</a>. What advice do you have for a newer community which wants to build these things up and stay maintained long term?</strong></p>
+<p>A big thing I did in Rust and want <a href="https://github.com/jj-vcs/jj" rel="ugc">JJ</a> to follow is open source is an act of creation. You want something to exist, so you build it. That need for creation's often born out of unhappiness with how things exist today. I used to teach programming as a job and tell people if the program existed bug-free, you wouldn't be programming. It's the act of moving things from a state you don't like to one you do. When writing code, you're creating features which don't exist or fixing problems which do. It's easy and tempting for projects to fixate on the criticism they create by existing, but this is unhealthy. As an example, Rails was focused on Java sucking, but when you fixate on someone else sucking, you're not focused on improving your own stuff and rot. And what happens if you win? You lack a positive narrative to keep growing and eat yourself alive if you can't find another enemy. Well, it turns out JavaScript's not actually that bad and Rails missed the boat on JavaScript-heavy applications. Rails didn't fail into irrelevance, but did lose cultural dominance.</p>
+<p>So the Rust world focused on not saying Rust is great because C++ is terrible. There is criticism, but the project can't be about that. It's bad on a personal and a strategic level. Hating on others makes you a bad person. Instead, you have to focus on excited people building and creating. In the jj community, we should be "git is fine, we just like jj better" not "git sucks, jj is good". This is important and healthier for a community long term.</p>
+<p>I haven't been involved in Rust for about 3 years, but before there was a clear perspective that we were building a community, which meant we needed to bring people into the community. There's a funnel from all the people who hear the name "Rust", then who click on Rustlings, then who make a contribution...</p>
+<p><strong>How do you manage projects and communities in open source?</strong></p>
+<p>With open source, you can't compel people to do certain things. Well, programmers are prima donnas in a few ways, so even as employees you can't force them to do anything or they'll push back. So you need the soft skills to sell the vision and convince people to help. Building consensus is always a nice thing. People will follow good examples, but also bad ones. If leadership encourages a brash, off-the-cuff communication style, they will attract and retain similar people. If leadership is more measured, they'll accumulate a community of measured people.</p>
+<p>If I find words or styles of communication which resonates, I'll see community members replicate those same arguments. There's a classic book "High Output Management" by the Intel guy from the 90s, whose whole thing was that a CEO's job is purely cultural transmission to others because that's the only way you can affect change at scale. A CEO can't just stand on the assembly line and do everyone else's job better at the same time, after all. When managing, you reproduce the culture you want to see and it either works or it doesn't! It's a second order way of working, not doing it yourself but creating the environment where the work is done.</p>
+<p>Especially the higher you go, e.g. what distro is integrating what systems is all intraproject management and intracommunity coordination, 100% soft skills, because you're not even in the project you're managing. As an example, Ubuntu is currently integrating the Rust based <a href="https://github.com/uutils/coreutils" rel="ugc">uutil</a>, but can't force them to do anything. Ubuntu's communication must be like "hey, we want this in order to make that happen, are you interested in it?" Then the uutil people hopefully say "yes, we will take your advice and do this, because this is a shared goal."</p>
+<p><strong>How do you approach course design, textbook writing?</strong></p>
+<p>The <a href="https://doc.rust-lang.org/book/foreword.html" rel="ugc">Rust Book</a> was me making a 50 pg. tutorial called Rust for Rubyists in 2013, which I then rewrote into 175ish pages. Later I got Carol in as my coauthor and we wrote what's now on the site. The <a href="https://steveklabnik.github.io/jujutsu-tutorial/introduction/introduction.html" rel="ugc">jj tutorial</a> is 100% me besides the Gerrit chapter.</p>
+<p>For all of these, I write down what I'm learning in the order I learn because writing helps me understand. There's no better way to know what a new person needs than by being new yourself. The problem's that not everyone is you, so you have to go beyond. The trick with the Rust Book's that it has extra constraints from being official e.g. not using many external packages lest it bias the ecosystem. Normally writing Rust involves many third party libraries, which you don't do in the course at all. I also felt the need to include all language features because it was going to be the primary way for people to learn.</p>
+<p>For the final version, I wrote down a ton of concepts I knew and went through the reference writing down more features to cover. I wrote them on note cards and started arranging them into a concept map. You need to know x before you learn y. The difficulty's all the dependencies especially early on. Guy Steele showed how to <a href="https://www.youtube.com/watch?v=lw6TaiXzHAE" rel="ugc">grow a language</a>. To learn Rust, you have to build the smallest possible "kernel" to bootstrap your understanding on, growing the language one piece at a time. This meant putting ownership and borrowing as soon as reasonable, because it was the newest thing really impacting people. After functions, variables, loops and borrowing, readers have a base to understand the rest.</p>
+<p>In the 2nd version of the jj tutorial, I'm focusing more heavily on workflows. People want to know what they can actually do with something more than what it is. Especially experienced programmers are willing to hand-wave things although they claim to want the details. They just want to get things done, at first.</p>
+<p>Those are the two major design philosophies for a book-length tutorial, start building from small parts or just run with it, explaining as you go. With jj, most people just want to get things done; there aren't many version control fanatics.</p>
+<p><strong>How do you yourself learn?</strong></p>
+<p>I read existing documentation then try to do stuff, mess around. When learning a programming language, I try to implement a text adventure game going back to the first thing I ever did on a computer at my grandma's house playing the <a href="https://rickadams.org/adventure/advent/" rel="ugc">Collosal Cave Adventure</a>. I've always loved text adventures. You get a little bit of I/O, data management, loops and stuff, enough to get a feel for writing something real. The one I wrote in Rust just had nine rooms, but that's enough to really get going. But you can't write a game in jj. I just had to use it, run into problems and ask for help.</p>
+<p><strong>How do you think about languages, APIs and design?</strong></p>
+<p>Simon Peyton Jones' "avoid success at any cost" motto for Haskell is really interesting, with multiple interpretations. The most important thing is build the thing you want to build. You have deliberately decide your priorities and what you care about. Oxide's really big on values. Figure out what's most important then put them in an order. Rust cares about safety, performance, correctness in that order. On a different axis, Rust always wanted to be used by many people, so choices leading to broad industry adoption were important to us.</p>
+<p>I have an article about the <a href="https://steveklabnik.com/writing/the-language-strangeness-budget/" rel="ugc">language strangeness budget</a> where you can only be weird about so many things before no one uses your thing anymore. You have to be deliberate and careful about where you innovate. Now, this advice only matters if aiming for broad adoption, but the key is making that deliberate choice. If you just want something fun for yourself, great! But you're making the compromise of it only being for yourself. Designing is inherently about making tough choices. Be aware and deliberate. Design requires taste and taste requires broad exposure and experience. If you don't realize there's a choice because you don't have enough context to know what your options are, you will do things accidentally, not deliberately.</p>
+<p><strong>If you could reinvent/change any aspect of Rust, what would you do alternatively?</strong></p>
+<p>A lot happened because we wanted to ship a useful thing with only so much time in the day, so some things were less deliberate than others. There's an alternate version of Rust with significantly faster compiler times, because while we cared about compile times when designing we always prioritized other values more. We never asked ourselves how this feature or implementation impacted compiler analysis time and there are several spots where something slightly different would have much faster compiler times, which people do care about. But had we spent time on that, we would have neglected other things and not been any more successful. I think whatever language eventually succeeds Rust will be much faster to compile and borrow checking will never be the big time sink when compiling.</p>
+<p><strong><a href="https://github.com/steveklabnik/rue" rel="ugc">Rue</a>'s readme says it's mostly a way of working on different compiler optimizations. Which of those have been most interesting?</strong></p>
+<p>Honestly, Rue's only public because GitHub charges for actions when your repo is private and I'm addicted to CI. Now, I love compilers and organized my college classes to get to compilers first but never worked on the Rust compiler, that just wasn't the best way to utilize my skills. So I wanted to mess around with compilers.</p>
+<p>Conceptually, I understood single static assignment with block params vs. fine nodes from reading papers, but never actually seriously looked at implementation code. Partly, I just want some code I can look at and mess around with without responsibilities. There's a big difference between intellectually understanding something and actually writing code for it. I knew about React's architecture for like years before I wrote a line of React - my understanding only grew when I actually coded and experimented with it.</p>
+<p>I've only been working on it for a few months, but I have a small effectively useless language (without strings). My goal is building out a full production compiler pipeline for this tiny, useless language because most people make languages useful then try to refactor the compiler; I'm doing the opposite. What if I grew the compiler wide and the language very short? While I don't have strings, I have 7 different layers of IR and will probably reach full incremental compilation before adding strings. That's just what I care about building.</p>
+<p>It took Rust like 2 years to implement <a href="https://rustc-dev-guide.rust-lang.org/mir/index.html" rel="ugc">MIR</a> because there was a whole production programming language, but it took me a few hours because no one uses it and there are no features. Implementing compiler internals is easier without surface features! I do have some language design features, but I'll only work on that when the compiler's ready. I only want to add features required to improve the compiler.</p>
+<hr />
+<p><strong>Hey, a few months have passed since we last spoke!</strong></p>
+<p>It's interesting how some of my thoughts have changed! I recently spent more time with Rue and came to appreciate Zig more, for example.</p>
+<p>A lot of Rust's complexity comes from wanting to be as low level and fast as C. In Rue, what if we don't make decisions based on those values? I assume Rue will have a runtime etc. Higher than Rust but lower than Go. It builds on some of Swift and Hylo's mutable value semantics. If you don't have references as a language construct, you can get rid of lifetimes! If you don't put references in structs nor return references, you don't need lifetimes and the borrow checker goes away! You lose a little efficiency, but oh well.</p>
+<p>Rust has affine types, but I think linear types are also neat. Linear types and borrowing's also weird...</p>
+<p>There's an issue of expressed and acted values too. The Rust team cares about compiler performance, has people working on it etc. We did care about this, but no enough to require RFCs to analyze compiler impacts and reject things for compiler overhead. I don't mean to criticize - I was there and involved too. (I still think the compiler will get faster, and maybe it'd be better from scratch but some features put a ceiling on it.)</p>
+<p>With Rue, how close can I get to Rust while caring about compiler performance? Recently, I've come to appreciate Zig a lot more for its decisions. Concretely, macros can introduce new items, so you have to expand all macros before type checking a Rust program. At least one of the Rust analyzer devs said they'd remove the ability of macros introducing items. Heavily relying on <a href="https://en.wikipedia.org/wiki/Monomorphization" rel="ugc">monomorphization</a> impacts compile time significantly, because you generate a lot of similar code then expect LLVM to filter it out. In Rust, conditional compilation is based on attribution. Zig made me uncomfortable in the past; dead code elimination finds things that aren't used and eliminates them, making the binary smaller. But you can also view that as a failure; any code generated but thrown away means you did work producing it before dumping it. Rust programs often generate a lot of code which it eventually dumps later. Zig just doesn't compile or process things if you know it won't occur! This had made me uncomfortable if e.g. had errors in some other branch e.g. compiling for Linux while the Windows config is fundamentally broken.</p>
+<p><strong>How did you approach building a system of values and getting buy-in for people?</strong></p>
+<p>I am kind of old school. A lot of it flows top-down; you can't have an outsider show up and impose values on a community. They have to come from some legitimate source in the community itself. Expressing values requires action too. People will notice if you say one thing and do another. On some level, <em>what leadership does</em> creates the actual values. It's tricky in general, because even rational adults find it hard to always act in accordance with their values.</p>
+<p><strong>How'd you decide which your values would be then?</strong></p>
+<p>I joked that my parents' biggest mistake was telling me to do what I thought was right, which caused a lot of friction when we disagreed! I have changed a lot as a person over the course of my life. I'd like to think that things happened which I took under consideration and made changes after. It often happens in software development communities that you find yourself among people you don't want to be like. You have to ask whether you're the kind of person you want to be, and make changes to align yourself. Earlier in my career, I loved talking shit on languages, tools and communities I thought were bad - but then I realized who I was becoming and made serious changes.</p>
+<p><strong>How do you approach programming? What's unusual about your methods?</strong></p>
+<p>My weirdest thing is not customizing my software. I don't set color schemes. I don't have a dot-files repo. A long time ago, teaching programming as a job, I helped people with their setups and wanted to understand the default user experience; I didn't want to recommend a program I only liked because I had 45 extensions... I didn't want to get out of touch. I don't use an ad-blocker.</p>
+<p>A hater once wrote that my Rust code seemed simpler and more straight forward, which I thought was a very nice thing for a hater to say! I tend not to write macros at all. I also avoid fancy advanced type system tricks. Although Rust has the reputation of a complicated, big language, you don't have to use it that way. I'm actually pretty tolerant of boilerplate these days.</p>
+<p>Handing off a project at Oxide, I mentioned some packages would reduce duplicates and boilerplate, but seeing the struct fields copied from one struct to another is more straightforward than some macro automatically doing it besides this one exception where....</p>
+<p><strong>I can't get over no ad-block.</strong></p>
+<p>A lot of pages have terrible intrusive ads, which guide my behavior to stay away from them.</p>
+<p>My relationship with privacy has also changed. I used to think tracking me was offensive and upsetting, but now I live such a public life with hundreds of hours of talks on youtube, where ads are the least of my worries.</p>
+<p><strong>Oxide rewrites basically everything. How'd you make sure you were actually writing better fitting replacements?</strong></p>
+<p>In other organizations, there's constantly a low-key conflict between programmers and management about what we spend time on. People often slip refactoring in before shipping the ticket, because they'll never get permission to refactor after closing the ticket.</p>
+<p>Oxide looks at what exits, what it needs and figures out whether they should build it or use something. Culturally, a lot of programmers read <a href="https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/" rel="ugc">Joel Spolsky</a> 25 years ago. Oxide is like if that article had never been written and people would rewrite when useful.</p>
+<p>It comes down to what's fit for purpose. Software's often an 80% fit. Do you just live with that other 20%? Perhaps some people can live with a bigger misfit than others. This does slow down when we ship, but quality emerges from really working on this ourselves. That's an intangible but important benefit. We had more willingness to experiment and try than other places, which paid off.</p>
+<p>Oxide's leadership really cares about knowing your tools well. So if a tool doesn't yet exist, it's fine to make that tool for future productivity benefits. We wrote our own debugger for our own embedded real time operating system, which paid off when we had to debug firmware issues. Brian et al. had seen this approach work out in the past, so the whole organization buys in too. Oxide's the only company to rewrite AMD's CPU firmware. They didn't believe us until it happened.</p>
+<p><strong>How deeply did you dive into less popular programming paradigms?</strong></p>
+<p>I used to joke that I didn't do LSD in college but did Haskell instead; not sure which is more harmful! I used to experiment a lot. Earlier in my career, I cared a lot about programming for its own sake and now I care more about what I can do with programs. High level languages seem to have an inherent low end of where they can go. (I know this isn't directly true, you can write an OS in Lisp.) I care less about "everything is a..." type languages. "Everything is an object" is like a Beatles cover band, it's not a novel thing because we already explored that space but the interesting developments aren't there. The vitalization of lower level languages is some cyclical effect after spending a lot of energy on higher level languages.</p>
+<p>I do find <a href="https://www.unison-lang.org/" rel="ugc">Unison</a> cool. There's definitely room for alternative paradigms, but I want to see them prove themselves before investing a lot of time in it. Time's precious. I think I experienced enough with most of that stuff. There are some unexplored avenues like effect systems though.</p>
+<p><strong>How do you manage and prioritize your time?</strong></p>
+<p>It's hard and changed a lot for me this past year. I'm now in a serious relationship with someone who has kids, adding constraints I didn't previously have. A year ago, I could do whatever whenever, but now I care about people and have obligations to them.</p>
+<p>But when I feel I want to do the thing, I just do the thing as hard as possible. For example, I started working on Rue in August, got busy in September and set it down until the end of December when I spent a few frantic weeks on it. Claude and I shipped 100 commits on Christmas day! I wait for inspiration to spark then push on it as hard as I can.</p>
+<p>I have time blocks, spend time with work, spend time with my girlfriend, spend time on me, and within those I just do whatever I feel.</p>
+<p><strong>How do you structure commits?</strong></p>
+<p>I'm a big believer in CI and use it on PRs, even on personal projects. I don't push to main myself, either. Well, I use trunk. I care more about whether CI passes than perfectly crafting the exact commit I want. Committing to use PRs for everything, looking over the diff for 10k lines sucks on GitHub. So I tend towards very small changes. Ideally under 1000-line diffs. I once had a client where the CEO would disappear for a few months, then appear and commit something to master, so the rest of the company would frantically try to rebase all their work on top of everything. The original principles of CI matter a lot. I prefer high velocity of a small number of commits, rather than big perfect ones. Sometimes this means shipping duplication to master, then cleaning it up in a later PR, because keeping things factored while adding a new feature might suck. I trust my tests, keep my cycles quick and keep things small. Sometimes that even means feature flags; I'll ship broken features behind flags which won't get shown in production, and remove the flag when the feature's done, rather than work on a branch for a long time and eventually ship it in the end. At least, these processes work better for me.</p>
+<p>I'd rather have more small things than fewer larger things.</p>
+<p><strong>What about version control inspired you enough to leave Oxide?</strong></p>
+<p>I always loved git. I was early on it. I really hated how <a href="https://en.wikipedia.org/wiki/Concurrent_Versions_System" rel="ugc">CVS</a> worked (i.e. the above story.) Distributed version control just seemed straight up better to me. Code matters, but this is the software we entrust all our work output to. If git deleted all our repos tomorrow, it'd be a problem but not so bad because distributed, because backups, while your CVS repo going down would ruin you.</p>
+<p>You're the sum of all the people you spend time with. That's true of tools, too. We spend hours and hours with version control, if that tool can get better, it'll help a lot of people. I got involved with Rails, because I realized I could help every single webapp at once. I got involved with Ruby to help an even bigger set of people. I got involved with Rust, because making the OS better helps everyone! Moving down the stack gives you higher leverage to help more people and DVCS is quite low; there are few things you can do to make JavaScript, C and Rust developer's lives better at the same time.</p>
+<p>I like doing high leverage things. Working on version control is interesting to me because it can help a lot of people. I also really just like jj.</p>
+<p>But another thing: I never worked at a FAANG, but they've all converged on some things different from the rest of our industry, like monorepos. At some scale, they just move to monorepos for rational reasons (which aren't important right now.) This implies a lot of other things: path dependence and unexpected technology choices and unique systems. They have their own version control systems, often based on Mercurial for interesting historical reasons.</p>
+<p>In the past, rich people had access to things other people didn't. But today, there's no better Coca-Cola than Coca-Cola. Elon and me drink the same cola! Software's largely like this too. But FAANG companies have these entire stacks not available to the rest of us. If I wanted to use a monorepo and use Piper, that's just not an option; it's internal to Google, tied to their individual infrastructure... So I think there's some sort of Prometheus play around stealing the fire from the gods.</p>
+<p>I've been toying with my own personal monorepo for all projects. You know what sucks? Setting up integrations, IDEs etc. every time I start a new project! I'm very monorepo brained. I'm interested in tools like jj which show that world to the rest of us.</p>
+<p><strong>What are the benefits of a monorepo?</strong></p>
+<p>If I want CI to pass, my commits are limited. If it takes an hour for my CI to run, I get 24 commits a day and that's it. To scale up, you need to start to think about whether literally every test should run on every commit: No. How do you determine which tests to run? How do I share dependencies across projects? How do I integrate build systems with all the projects? There are a lot of big topics. But then it's quick to start a new project. It removes coordination costs. At Oxide, every team can use any tools they want. So some teams run on Gerrit, others on GitHub etc. which is cool but moving teams means relearning a new stack. On the flip side, a monorepo's homogeneity means you don't have to learn something new to work on another part of the code base. But now the monorepo's huge. Making everyone download the whole repo kind of sucks. Trade offs. At scale, different trade offs make more sense. These tools also assume scale. Cargo doesn't scale up to a Google sized monorepo. Buck, Blaze or Bazel are built for monorepos, annoying to use on small scales. I feel like there's a smoother transition somewhere with more powerful tools.</p>
+<p><strong>How did you become "AI-pilled?"</strong></p>
+<p>A year ago, I would have said these tools were BS and didn't matter. I try to be an informed hater though and realized I hadn't tried them in a while. I never liked autocomplete, so the first generation of "spicy autocomplete" did nothing for me. But agents are a fundamentally different way of working. Claude and ChatGPT also started writing ok Rust code.</p>
+<p>I had a rough 2024. In 2025, I did a lot of soul searching and considered the implications of these new tools, what my actual opinions about software development were etc. And I don't know man, I barely wrote any code last year. I don't know if I'm going to write any code this year personally, by hand, like at all. I started programming at 7. This might be the first year I don't code since then. It's <a href="https://ratfactor.com/tech-nope2" rel="ugc">uncomfortable and strange</a>.</p>
+<p>I hate the whole "if you don't learn this stuff, you'll fall behind" rhetoric from AI people. When Rails came out, everyone loved and flocked to it. But you know what? Not everyone actually did, only a small vocal minority. The people who didn't learn Rails weren't left behind. They didn't lose their career for not jumping on the hottest trend. It's reasonable and rational to not care. But I enjoy them. They are tools which require skill. People are willing to acknowledge that vim is useful, even if they use Emacs. I see AI tooling like vim. You have to approach it like a scientist or an engineer. You can't just say "build me a Google clone". Using them in an engineering-science-y way to produce good results takes different kinds of skills than directly writing code yourself. I used to care a lot about being one with the code; some of my best memories are spending a weekend solving a bug in college. But these days that just means I spent my whole weekend being frustrated and didn't get anything done!</p>
+<p>I've been meaning to write about <a href="https://steveklabnik.com/writing/getting-started-with-claude-for-software-development/" rel="ugc">how to approach this</a>, but it takes so much heat from people online... Some of my friends are vehement anti-AI people which has made our friendship awkward, which sucks, because I like my friends. I also talk about this less on e.g. Lobsters than I normally would. I just do it in private channels to avoid the shit. But I should be more open about it, it can help people.</p>
+<p><strong>People have been complaining about AI-driven PR spam.</strong></p>
+<p>My work in open source predisposed me to be ok with AI here. There have always been crap PRs by people who don't know what they're doing. That's the normal state of things for open source! You just get a bunch of junk from people you don't know. Some might be great, don't get me wrong. You need to have processes in place to make sure a PR is good before merging and that's true no matter who authors the code.</p>
+<p><strong>How do you use it?</strong></p>
+<p>I'll briefly go into how these tools work. I'll assume you're using Claude here. You send a request to the model. What's in the request? The tool author's system prompt, the prompt you typed in, then a bag of context (e.g. the conversation history). You can tweak all these parameters. Sometimes the correct approach is throwing the system prompt away and writing your own (using an API). People were obsessed with prompt engineering for a while - thinking prompts were the primary lever. But the context window is the biggest percentage of input. So recently people have been talking about context engineering. When the context window fills up, LLM performance goes down. You can make worse prompts if you do a better job context engineering.</p>
+<p>We used to argue about horizontal vs. vertical slicing for apps, DB, framework, application, view layers vs. feature folders. From a context perspective, a folder per feature is easier for an agent or a person to figure out what's needed (assuming you separated your feature out). How do you ensure the context window only has what's relevant to the goal?</p>
+<p>In Rue, I have these architecture decision records (ADR) describing a design and its rationale. I'll tell Claude to read ADR 1 and 5 and then mention I want to modify the type system. It's like tickets, you want a ticket with a minimum reproduction. I don't think these are new things, rather we've been collectively paying these practices lip service, and those who actually follow them will do better with these tools. A well-structured codebase means both a human and an agent will have a better time; it's just easier to notice an agent flailing around than realize a developer taking 3 weeks to ship a fix is the same symptom.</p>
+<p>LLMs are like an average user, which is a nice feedback mechanism too. In the first iteration of Rue, Claude was trying to dump the assembly for a program it was debugging. It kept passing <code>-S</code> which wasn't implemented instead of <code>--emit-asm-</code> which I thought was nicer. But it turns out <code>-S</code> is a standard flag across compilers, assuming it exists is a good assumption. So I implemented that as an LLM to stop it from flailing around. There's value in watching what an LLM assumes. It will give reasonable attempts or answers, because it's seen everything. If you can make something easy enough for Claude to understand, it might be a good model.</p>
+<p><a href="https://lobste.rs/s/w1bsle/lobsters_interview_with_steveklabnik">Comments</a></p>17:["$","$Le","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-0c76a908a3ef","title":"lobste.rs migrates from MariaDB to SQLite","url":"https://lobste.rs/s/oz7ebk/lobste_rs_migrates_from_mariadb_sqlite","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-21T21:30:11","author":"by mort","text":"<p>lobste.rs entered read-only mode earlier today to migrate from MariaDB to SQLite. I found that interesting and found this GitHub issue with discussion, first around moving to PostgreSQL, then about moving to SQLite: <a href=\"https://github.com/lobsters/lobsters/issues/539\" rel=\"ugc\">https://github.com/lobsters/lobsters/issues/539</a></p>\n<p>This is exactly the kind of interesting technical change that I'd like to see a lobste.rs discussion around, and I found the GitHub issue interesting to read, so I'm linking it here :) Obviously don't brigade the issue tracker, but since this isn't about something controversial or drama, I think it should be fine to link?</p>\n<p>If this thread steps on the toes of some official announcement, or if it still breaks the anti-brigading rules, feel free to delete this thread.</p>","summary":"技术社区网站lobste.rs将其数据库从MariaDB迁移到了SQLite，这一反向操作在通常向更复杂数据库迁移的潮流中显得与众不同。它引发了关于SQLite在特定Web应用场景下适用性的讨论，对架构选型有参考价值。"},{"id":"rss-e4c0df88e47d","title":"The Fastest Way to Board an Airplane","url":"https://navendu.me/posts/airlines-hate-this-trick/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-21T12:55:54","author":"navendu.me via abhin4v","text":"<p><a href=\"https://lobste.rs/s/l0gv3h/fastest_way_board_airplane\">Comments</a></p>","summary":"文章通过分析和模拟，探讨了理论上最快的登机方法，并指出航空公司可能因为商业原因而不采用。这个将数学模型应用于日常生活的有趣案例，展示了优化思维的魅力。"},{"id":"rss-1dd33ad967ce","title":"Lobsters Interview with steveklabnik","url":"https://alexalejandre.com/programming/steve-klabnik-interview/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-20T19:18:35","author":"alexalejandre.com by veqq","text":"$18","summary":"这是对Rust语言核心贡献者Steve Klabnik的采访，内容涵盖了Rust、编译器、版本控制和社区建设等多个技术话题。对于想了解Rust语言背后思想和社区动态的人来说，这是一次难得的洞察。"},{"id":"rss-06903a129190","title":"joinirc.at: Link to your IRC server on any client to onboard new users","url":"https://joinirc.at","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-21T00:35:31","author":"joinirc.at by reesericci","text":"<p><a href=\"https://lobste.rs/s/slfm4t/joinirc_at_link_your_irc_server_on_any\">Comments</a></p>","summary":"介绍了一个名为joinirc.at的服务，它旨在通过生成链接来简化新用户连接IRC服务器的过程，以降低IRC的使用门槛。这个工具对于仍在活跃使用IRC的开源和技术社区来说是一个实用的改进。"},{"id":"rss-fbaa4599981e","title":"Wikipedia blacklists Archive.today, starts removing 695,000 archive links","url":"https://arstechnica.com/tech-policy/2026/02/wikipedia-bans-archive-today-after-site-executed-ddos-and-altered-web-captures/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-02-21T11:18:57","author":"arstechnica.com via videah","text":"<p><a href=\"https://lobste.rs/s/haqwn0/wikipedia_blacklists_archive_today\">Comments</a></p>","summary":"维基百科因Archive.today涉嫌发动DDoS攻击和篡改网页存档而将其列入黑名单，并开始移除大量相关链接。这一事件关系到网络信息的长期保存、存档服务的可信度以及网络治理等重大问题。"}],"locale":"zh"}]
