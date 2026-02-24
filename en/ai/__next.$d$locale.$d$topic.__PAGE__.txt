@@ -5,99 +5,84 @@
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
 c:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
 d:"$Sreact.suspense"
-5:T1f38,好的，作为一名技术新闻分析师，我已对今日“AI & Machine Learning”领域的13篇热门文章进行了综合分析。以下是按子主题分组的总结报告。
+5:T1ed2,### **今日 AI & Machine Learning 热门内容分析总结**
 
-### 今日 AI & Machine Learning 新闻分析总结
+今日的热门文章列表呈现出一种有趣的“发散”状态。虽然主题是“AI & Machine Learning”，但Hacker News社区的热门榜单中，只有约一半的文章直接与核心AI技术相关。其余文章涉及环保科技、操作系统、历史揭秘、地缘政治和人物讣告，这反映了技术社区兴趣的广泛性，以及AI话题如何与其他领域（如伦理、经济、工具应用）产生交叉。
 
-今日的热门内容主要围绕以下几个核心主题展开：**AI硬件与性能优化**、**AI安全与伦理**、**AI工具与开发**以及**AI对商业与社会的影响**。
-
----
-
-#### 1. AI硬件与性能优化
-这个主题关注如何通过软硬件创新，更高效、更低成本地运行大型AI模型。
-
-*   **文章 1: How Taalas “prints” LLM onto a chip?**
-    *   **说明**：这篇文章深入探讨了Taalas公司如何将整个大型语言模型（LLM）“打印”到专用芯片上，旨在实现极致的推理速度和能效。这代表了AI硬件领域一个极具野心的前沿方向，可能颠覆现有的模型部署方式。
-    *   **原文链接**: https://www.anuragk.com/blog/posts/Taalas.html
-    *   **讨论链接**: https://news.ycombinator.com/item?id=47103661
-
-*   **文章 2: Show HN: Llama 3.1 70B on a single RTX 3090 via NVMe-to-GPU bypassing the CPU**
-    *   **说明**：这是一个非常酷的技术展示。开发者通过让GPU直接从NVMe硬盘读取模型数据，绕过了CPU和系统内存的瓶颈，从而在单张消费级显卡（RTX 3090）上成功运行了700亿参数的Llama 3.1模型。这为个人开发者和研究者低成本运行大模型提供了新思路。
-    *   **原文链接**: https://github.com/xaskasdf/ntransformer
-    *   **讨论链接**: https://news.ycombinator.com/item?id=47104667
-
-#### 2. AI安全与伦理
-涉及AI在安全领域的应用、潜在滥用风险以及平台管控措施。
-
-*   **文章 3: Google restricting Google AI Pro/Ultra subscribers for using OpenClaw**
-    *   **说明**：Google开始限制通过第三方工具（如OpenClaw）使用其高级AI服务（Gemini Pro/Ultra）的账户。这引发了关于API使用政策、平台控制权与开发者生态之间矛盾的广泛讨论。
-    *   **原文链接**: https://discuss.ai.google.dev/t/account-restricted-without-warning-google-ai-ultra-oauth-via-openclaw/122778
-    *   **讨论链接**: https://news.ycombinator.com/item?id=47115805
-
-*   **文章 4: We hid backdoors in ~40MB binaries and asked AI + Ghidra to find them**
-    *   **说明**：一项有趣的实验，研究团队在二进制文件中隐藏后门，并测试AI辅助工具（如Cursor、Claude Code）结合逆向工程软件Ghidra发现它们的能力。这直接评估了AI在网络安全和代码审计领域的实用性和局限性。
-    *   **原文链接**: https://quesma.com/blog/introducing-binaryaudit/
-    *   **讨论链接**: https://news.ycombinator.com/item?id=47111440
-
-*   **文章 5: Man accidentally gains control of 7k robot vacuums**
-    *   **说明**：一个戏剧性但令人警醒的事件。一名安全研究人员意外地通过一个不安全的云平台控制了全球数千台扫地机器人。这凸显了物联网设备大规模部署后的安全漏洞和潜在风险，与AIoT（人工智能物联网）的安全议题紧密相关。
-    *   **原文链接**: https://www.popsci.com/technology/robot-vacuum-army/
-    *   **讨论链接**: https://news.ycombinator.com/item?id=47111400
-
-#### 3. AI工具与开发
-聚焦于帮助开发者构建和集成AI功能的新工具、框架和技巧。
-
-*   **文章 12: Show HN: TLA+ Workbench skill for coding agents (compat. with Vercel skills CLI)**
-    *   **说明**：一个为AI智能体（Agent）开发的技能插件，使其能够使用TLA+形式化验证语言和工作台。这旨在让AI智能体参与到高可靠性的系统设计和验证中，是一个将AI与严谨工程方法结合的有趣尝试。
-    *   **原文链接**: https://github.com/younes-io/agent-skills/tree/main/skills/tlaplus-workbench
-    *   **讨论链接**: https://news.ycombinator.com/item?id=47110946
-
-*   **文章 13: Building a (Bad) Local AI Coding Agent Harness from Scratch**
-    *   **说明**：一篇“从零开始”构建本地AI编程助手的实践记录。标题中的“Bad”体现了其自嘲和探索性质，对于想了解AI编程助手底层工作原理和挑战的开发者来说，是一篇非常接地气的教程。
-    *   **原文链接**: https://www.appsoftware.com/blog/building-a-bad-local-ai-coding-agent-harness-from-scratch
-    *   **讨论链接**: https://news.ycombinator.com/item?id=47113708
-
-#### 4. AI对商业与社会的影响
-探讨AI技术发展带来的宏观经济、企业策略和社会层面的连锁反应。
-
-*   **文章 10: 'Peanut butter' pay raises could cost companies their top performers**
-    *   **说明**：文章讨论了“花生酱式”平均加薪策略在AI时代可能带来的风险。当AI能极大提升顶尖人才的生产力时，用平均主义来回报他们可能导致人才流失。这与科技公司如何利用和留住AI人才密切相关。
-    *   **原文链接**: https://www.cnbc.com/2026/02/22/peanut-butter-pay-raises-could-cost-companies-their-top-performers-according-to-experts-its-such-a-shortsighted-strategy.html
-    *   **讨论链接**: https://news.ycombinator.com/item?id=47114043
-
-*   **文章 11: Amazon, Meta, Alphabet report plunging tax bills thanks to AI and tax changes**
-    *   **说明**：报道指出，亚马逊、Meta和Alphabet等科技巨头利用AI投资相关的税收减免政策，大幅降低了税单。这反映了各国政府如何通过税收工具激励AI研发，以及AI投资对企业财务产生的实质性影响。
-    *   **原文链接**: https://finance.yahoo.com/news/amazon-meta-and-alphabet-report-plunging-tax-bills-thanks-to-ai-investment-and-new-rules-in-washington-161229652.html
-    *   **讨论链接**: https://news.ycombinator.com/item?id=47112431
-
-#### 5. 其他相关技术动态
-虽然不直接属于AI核心，但因其技术背景或与开发者社区高度相关而被收录。
-
-*   **文章 6, 7, 8, 9** 涉及Git技巧、网络访问事件、容器技术迁移和FreeBSD的Linux兼容层，反映了Hacker News社区更广泛的技术兴趣点，其中一些工具（如Docker）是AI开发和部署的基础设施。
+综合分析后，可将文章分为以下几个子主题：
 
 ---
 
-### 今日最值得阅读文章推荐
+#### **1. AI 的伦理、影响与反思**
+这一组的文章关注AI在具体领域（如宗教）的应用边界，以及其对宏观经济的实际影响，引发了关于AI价值本质的讨论。
 
-基于技术前沿性、实践价值和讨论热度，我推荐以下3篇文章：
+*   **文章 1: Pope tells priests to use their brains, not AI, to write homilies**
+    *   **简要说明**：教皇利奥十四世（注：此为虚构的未来教皇，原文有误，应为方济各教皇相关新闻的变体或误传）告诫神父在撰写布道词时应运用自己的智慧与心灵，而非依赖AI。这引发了关于AI在创造性、精神性及权威性工作中角色的深刻伦理讨论，触及了技术替代人类独特价值的边界问题。
+    *   **原文链接**: https://www.ewtnnews.com/vatican/pope-leo-xiv-tells-priests-to-use-their-brains-not-ai-to-write-homilies
+    *   **讨论链接**: https://news.ycombinator.com/item?id=47119210
 
-1.  **How Taalas “prints” LLM onto a chip?**
-    *   **推荐理由**：这是最具前瞻性的硬核技术文章。它探讨了AI计算的终极形态之一——将模型固化到专用芯片。理解这一方向，有助于把握未来AI推理的演进路径和潜在的行业变革。
-    *   **链接**: https://www.anuragk.com/blog/posts/Taalas.html
+*   **文章 4: AI Added ‘Basically Zero’ to US Economic Growth Last Year, Goldman Sachs Says**
+    *   **简要说明**：高盛报告指出，AI去年对美国经济增长的贡献“几乎为零”。这一观点与当前AI投资热潮形成鲜明对比，促使人们冷静思考AI技术从实验室潜力转化为可测量生产力提升所需的周期和条件。
+    *   **原文链接**: https://gizmodo.com/ai-added-basically-zero-to-us-economic-growth-last-year-goldman-sachs-says-2000725380
+    *   **讨论链接**: https://news.ycombinator.com/item?id=47130208
 
-2.  **Show HN: Llama 3.1 70B on a single RTX 3090 via NVMe-to-GPU bypassing the CPU**
-    *   **推荐理由**：极佳的工程实践范例。它用相对简单巧妙的方法解决了资源有限环境下运行超大模型的难题，具有很高的实用价值和启发性。对于任何想在本地折腾大模型的开发者或研究者都值得一看。
-    *   **链接**: https://github.com/xaskasdf/ntransformer
+#### **2. AI 开发工具与实践**
+这组文章展示了AI在具体技术问题解决中的实际应用案例，以及为开发者提供的资源和工具。
 
-3.  **We hid backdoors in ~40MB binaries and asked AI + Ghidra to find them**
-    *   **推荐理由**：以严谨的实验方法评估了当前AI在安全领域的实际能力。它超越了泛泛而谈，提供了具体的测试案例和结果，对于安全从业者、AI开发者以及关心AI能力边界的人来说，都是一份宝贵的参考资料。
-    *   **链接**: https://quesma.com/blog/introducing-binaryaudit/
+*   **文章 3: FreeBSD doesn‘t have Wi-Fi driver for my old MacBook. AI build one for me**
+    *   **简要说明**：一位开发者利用AI辅助工具（推测为Claude Code或类似工具），成功为旧款MacBook上的FreeBSD系统编写了一个可用的Wi-Fi驱动。这是一个AI赋能解决具体、小众技术问题的精彩实例，展示了其作为高级编程助手的潜力。
+    *   **原文链接**: https://vladimir.varank.in/notes/2026/02/freebsd-brcmfmac/
+    *   **讨论链接**: https://news.ycombinator.com/item?id=47129361
 
-**备选推荐**：
-*   **Google restricting Google AI Pro/Ultra subscribers for using OpenClaw**
-    *   **推荐理由**：如果你关注AI平台的生态政策、API经济以及开发者与巨头之间的博弈，这篇由真实事件引发的讨论是不可错过的现实案例。
-    *   **链接**: https://discuss.ai.google.dev/t/account-restricted-without-warning-google-ai-ultra-oauth-via-openclaw/1227780:{"buildId":"ZPmA0NIJZJZDbjLJ833cG","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-02-23","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":13},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"ai","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"AI & Machine Learning"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"Artificial intelligence, machine learning, LLMs, and generative AI"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[13," ","articles"," • ","2026-02-23"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"AI & Machine Learning","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",13,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47103661","title":"How Taalas “prints” LLM onto a chip?","url":"https://www.anuragk.com/blog/posts/Taalas.html","source":"Hacker News","score":391,"comments_count":243,"comments_url":"https://news.ycombinator.com/item?id=47103661","published_at":"2026-02-21T19:07:20","author":"beAroundHere","text":null,"summary":"Taalas公司通过将大型语言模型（LLM）直接'打印'到芯片上，实现了硬件级别的AI加速，这有望显著提升推理效率并降低成本，是AI硬件领域的重要创新。"},{"id":"hn-47104667","title":"Show HN: Llama 3.1 70B on a single RTX 3090 via NVMe-to-GPU bypassing the CPU","url":"https://github.com/xaskasdf/ntransformer","source":"Hacker News","score":369,"comments_count":93,"comments_url":"https://news.ycombinator.com/item?id=47104667","published_at":"2026-02-21T20:57:30","author":"xaskasdf","text":"Hi everyone, I&#x27;m kinda involved in some retrogaming and with some experiments I ran into the following question: &quot;It would be possible to run transformer models bypassing the cpu&#x2F;ram, connecting the gpu to the nvme?&quot;<p>This is the result of that question itself and some weekend vibecoding (it has the linked library repository in the readme as well), it seems to work, even on consumer gpus, it should work better on professional ones tho","summary":"该项目展示了如何在单张RTX 3090显卡上，通过NVMe直连GPU绕过CPU运行Llama 3.1 70B模型，为资源受限环境部署大模型提供了新颖且高效的技术方案。"},{"id":"hn-47115805","title":"Google restricting Google AI Pro/Ultra subscribers for using OpenClaw","url":"https://discuss.ai.google.dev/t/account-restricted-without-warning-google-ai-ultra-oauth-via-openclaw/122778","source":"Hacker News","score":207,"comments_count":157,"comments_url":"https://news.ycombinator.com/item?id=47115805","published_at":"2026-02-22T23:07:55","author":"srigi","text":null,"summary":"谷歌限制使用OpenClaw工具的Google AI Pro/Ultra订阅者账户，这引发了关于AI服务使用条款、第三方工具合规性以及开发者权限管理的讨论。"},{"id":"hn-47111440","title":"We hid backdoors in ~40MB binaries and asked AI + Ghidra to find them","url":"https://quesma.com/blog/introducing-binaryaudit/","source":"Hacker News","score":206,"comments_count":92,"comments_url":"https://news.ycombinator.com/item?id=47111440","published_at":"2026-02-22T14:50:44","author":"jakozaur","text":null,"summary":"研究者在约40MB的二进制文件中隐藏后门，并测试AI工具与Ghidra的检测能力，这项工作对评估自动化安全审计工具的实际效果和局限性具有重要意义。"},{"id":"hn-47111400","title":"Man accidentally gains control of 7k robot vacuums","url":"https://www.popsci.com/technology/robot-vacuum-army/","source":"Hacker News","score":194,"comments_count":119,"comments_url":"https://news.ycombinator.com/item?id=47111400","published_at":"2026-02-22T14:44:42","author":"Brajeshwar","text":null,"summary":"一名男子意外控制了约7000台机器人吸尘器，这一事件凸显了物联网设备普遍存在的安全漏洞，以及大规模设备被恶意利用的潜在风险。"},{"id":"hn-47111218","title":"Git's Magic Files","url":"https://nesbitt.io/2026/02/05/git-magic-files.html","source":"Hacker News","score":113,"comments_count":31,"comments_url":"https://news.ycombinator.com/item?id=47111218","published_at":"2026-02-22T14:21:35","author":"chmaynard","text":null,"summary":"文章深入探讨了Git系统中一些不为人知但功能强大的'魔法文件'，对于希望深入理解和高效利用Git版本控制系统的开发者来说极具价值。"},{"id":"hn-47114235","title":"Spain has blocked access to freedom.gov","url":"https://twitter.com/Pirat_Nation/status/2025643188321714642","source":"Hacker News","score":110,"comments_count":102,"comments_url":"https://news.ycombinator.com/item?id=47114235","published_at":"2026-02-22T20:17:12","author":"akyuu","text":null,"summary":"西班牙政府封锁了对freedom.gov网站的访问，这一行动涉及网络审查、信息自由以及地缘政治，引发了关于互联网治理与言论自由的关注。"},{"id":"hn-47113731","title":"NanoClaw moved from Apple Containers to Docker","url":"https://twitter.com/Gavriel_Cohen/status/2025603982769410356","source":"Hacker News","score":105,"comments_count":76,"comments_url":"https://news.ycombinator.com/item?id=47113731","published_at":"2026-02-22T19:12:50","author":"simplesort","text":null,"summary":"NanoClaw项目从Apple Containers迁移至Docker平台，这一转变反映了容器化技术生态的演变以及开发者对跨平台部署便利性的追求。"},{"id":"hn-47113527","title":"Linuxulator on FreeBSD Feels Like Magic","url":"https://hayzam.com/blog/02-linuxulator-is-awesome/","source":"Hacker News","score":76,"comments_count":25,"comments_url":"https://news.ycombinator.com/item?id=47113527","published_at":"2026-02-22T18:45:56","author":"vermaden","text":null,"summary":"文章盛赞FreeBSD上的Linuxulator兼容层，它能够近乎无缝地运行Linux程序，展现了系统级兼容性技术的卓越成就和实用价值。"},{"id":"hn-47114043","title":"'Peanut butter' pay raises could cost companies their top performers","url":"https://www.cnbc.com/2026/02/22/peanut-butter-pay-raises-could-cost-companies-their-top-performers-according-to-experts-its-such-a-shortsighted-strategy.html","source":"Hacker News","score":38,"comments_count":38,"comments_url":"https://news.ycombinator.com/item?id=47114043","published_at":"2026-02-22T19:52:52","author":"cebert","text":null,"summary":"报道指出，'花生酱'式（即平均主义）的加薪策略可能导致公司失去顶尖人才，这为企业的薪酬管理和人才保留策略敲响了警钟。"},{"id":"hn-47112431","title":"Amazon, Meta, Alphabet report plunging tax bills thanks to AI and tax changes","url":"https://finance.yahoo.com/news/amazon-meta-and-alphabet-report-plunging-tax-bills-thanks-to-ai-investment-and-new-rules-in-washington-161229652.html","source":"Hacker News","score":38,"comments_count":29,"comments_url":"https://news.ycombinator.com/item?id=47112431","published_at":"2026-02-22T16:38:42","author":"epistasis","text":null,"summary":"亚马逊、Meta和Alphabet因AI投资及华盛顿新规导致税收大幅下降，这揭示了科技巨头如何利用AI政策优化税务策略，对理解AI产业的经济影响至关重要。"},{"id":"hn-47110946","title":"Show HN: TLA+ Workbench skill for coding agents (compat. with Vercel skills CLI)","url":"https://github.com/younes-io/agent-skills/tree/main/skills/tlaplus-workbench","source":"Hacker News","score":33,"comments_count":2,"comments_url":"https://news.ycombinator.com/item?id=47110946","published_at":"2026-02-22T13:44:27","author":"youio","text":null,"summary":"TLA+ Workbench技能为编码代理提供兼容Vercel技能CLI的工具，专注于形式化验证，值得关注因为它能提升AI代理的代码可靠性和开发效率。"},{"id":"hn-47113708","title":"Building a (Bad) Local AI Coding Agent Harness from Scratch","url":"https://www.appsoftware.com/blog/building-a-bad-local-ai-coding-agent-harness-from-scratch","source":"Hacker News","score":9,"comments_count":1,"comments_url":"https://news.ycombinator.com/item?id=47113708","published_at":"2026-02-22T19:09:31","author":"appsoftware","text":null,"summary":"文章探讨了从零构建一个本地AI编码代理框架的挑战和局限性，尽管效果不佳，但为开发者提供了宝贵的实践经验，有助于理解AI代理开发的底层技术。"}],"locale":"en"}]]}]]}]
+*   **文章 5: Show HN: AI Timeline – 171 LLMs from Transformer (2017) to GPT-5.3 (2026)**
+    *   **简要说明**：一个交互式的大语言模型发展时间线网站，收录了从2017年Transformer论文到2026年（未来预测）的171个主要模型。可按开源/闭源筛选，支持搜索，跟踪了54家机构。对于研究者和爱好者而言，这是一个极佳的可视化学习与参考工具。
+    *   **原文链接**: https://llm-timeline.com/
+    *   **讨论链接**: https://news.ycombinator.com/item?id=47119871
+
+*   **文章 6: How to train your program verifier**
+    *   **简要说明**：一篇技术博客，深入探讨了如何训练程序验证器。这属于AI在形式化方法、代码正确性保障等前沿领域的应用，专业性较强，但对关注AI与软件工程结合的研究者和开发者有很高价值。
+    *   **原文链接**: https://risemsr.github.io/blog/2026-02-16-halleyyoung-a3/
+    *   **讨论链接**: https://news.ycombinator.com/item?id=47066446
+
+*   **文章 7: Making Wolfram Tech Available as a Foundation Tool for LLM Systems**
+    *   **简要说明**：Stephen Wolfram宣布将Wolfram技术（强大的计算知识引擎）作为基础工具提供给LLM系统。这旨在增强LLM在数学、科学计算和结构化知识查询方面的精确性和可靠性，是LLM与专业计算系统结合的重要一步。
+    *   **原文链接**: https://writings.stephenwolfram.com/2026/02/making-wolfram-tech-available-as-a-foundation-tool-for-llm-systems/
+    *   **讨论链接**: https://news.ycombinator.com/item?id=47129727
+
+#### **3. 非核心AI但受技术社区关注的热点**
+这些文章虽不直接关于AI技术本身，但因其科技背景、社会意义或历史价值而进入了技术新闻社区的视野。
+
+*   **文章 2: Magical Mushroom – Europe‘s first industrial-scale mycelium packaging producer**
+    *   **简要说明**：介绍欧洲首家工业化规模生产菌丝体包装材料的公司。这属于环保科技和材料创新领域，反映了技术社区对可持续性解决方案的浓厚兴趣。
+    *   **原文链接**: https://magicalmushroom.com/index
+    *   **讨论链接**: https://news.ycombinator.com/item?id=47119274
+
+*   **文章 8/9/10**: 分别为关于名画背后的历史悲剧、乌克兰黑客揭露俄罗斯无人机行动、以及桌面出版先驱保罗·布雷纳德的讣告。这些是广义上的科技、历史、政治和人物类内容，在Hacker News上也有其受众。
+
+---
+
+### **今日最值得阅读文章推荐**
+
+1.  **FreeBSD doesn‘t have Wi-Fi driver for my old MacBook. AI build one for me**
+    *   **推荐理由**：**最具实操性和启发性**。它没有空谈AI的宏大未来，而是展示了一个开发者如何利用现有AI工具解决一个非常具体、棘手的硬件驱动问题。文章充满了技术细节和过程描述，是AI作为“副驾驶”提升开发者能力的完美案例，对任何程序员都有参考价值。
+    *   **链接**: https://vladimir.varank.in/notes/2026/02/freebsd-brcmfmac/
+
+2.  **Pope tells priests to use their brains, not AI, to write homilies**
+    *   **推荐理由**：**引发最广泛伦理思考**。这篇文章将AI的讨论带入了精神与人文领域。其下的Hacker News讨论异常热烈（416条评论），涵盖了创造力、 authenticity（真实性）、职业替代、技术依赖等深层话题，是观察社会如何思考AI边界的一个绝佳窗口。
+    *   **链接**: https://news.ycombinator.com/item?id=47119210 (推荐直接阅读讨论)
+
+3.  **AI Timeline – 171 LLMs from Transformer (2017) to GPT-5.3 (2026)**
+    *   **推荐理由**：**最佳学习与参考资料**。这个项目以优雅的交互方式梳理了LLM的爆炸式发展史。无论是想回顾历史、了解现状，还是窥探未来预测，这个时间线都提供了直观的视角。对于希望快速建立LLM领域认知框架的人来说，效率极高。
+    *   **链接**: https://llm-timeline.com/
+
+4.  **AI Added ‘Basically Zero’ to US Economic Growth Last Year, Goldman Sachs Says**
+    *   **推荐理由**：**提供关键冷静视角**。在AI炒作满天飞的当下，这份来自顶级投行的经济数据评估是一剂重要的清醒剂。它促使我们思考技术突破与宏观经济指标之间的滞后关系，以及投资与实效的区别，适合所有关注AI商业化和实际影响力的人阅读。
+    *   **链接**: https://gizmodo.com/ai-added-basically-zero-to-us-economic-growth-last-year-goldman-sachs-says-2000725380
+
+5.  **Making Wolfram Tech Available as a Foundation Tool for LLM Systems**
+    *   **推荐理由**：**预示重要技术融合方向**。Stephen Wolfram亲自撰文，探讨如何将其强大的符号计算系统与概率性的LLM结合。这代表了提升AI系统在推理、计算和知识准确性方面的一条重要技术路径，对于关注AI未来架构和能力的读者至关重要。
+    *   **链接**: https://writings.stephenwolfram.com/2026/02/making-wolfram-tech-available-as-a-foundation-tool-for-llm-systems/0:{"buildId":"B-MQO11IHT1TO_LJ9DQJH","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-02-24","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":10},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"ai","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"AI & Machine Learning"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"Artificial intelligence, machine learning, LLMs, and generative AI"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[10," ","articles"," • ","2026-02-24"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"AI & Machine Learning","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",10,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47119210","title":"Pope tells priests to use their brains, not AI, to write homilies","url":"https://www.ewtnnews.com/vatican/pope-leo-xiv-tells-priests-to-use-their-brains-not-ai-to-write-homilies","source":"Hacker News","score":526,"comments_count":416,"comments_url":"https://news.ycombinator.com/item?id=47119210","published_at":"2026-02-23T07:33:57","author":"josephcsible","text":null,"summary":"教皇告诫神父们要用自己的大脑而非AI来撰写布道词，这凸显了在精神领域人类智慧与AI生成内容之间的伦理界限。"},{"id":"hn-47119274","title":"Magical Mushroom – Europe's first industrial-scale mycelium packaging producer","url":"https://magicalmushroom.com/index","source":"Hacker News","score":355,"comments_count":120,"comments_url":"https://news.ycombinator.com/item?id=47119274","published_at":"2026-02-23T07:43:47","author":"microflash","text":null,"summary":"Magical Mushroom成为欧洲首个工业规模菌丝体包装生产商，展示了生物基材料在可持续包装领域的创新应用前景。"},{"id":"hn-47129361","title":"FreeBSD doesn't have Wi-Fi driver for my old MacBook. AI build one for me","url":"https://vladimir.varank.in/notes/2026/02/freebsd-brcmfmac/","source":"Hacker News","score":229,"comments_count":183,"comments_url":"https://news.ycombinator.com/item?id=47129361","published_at":"2026-02-23T21:44:28","author":"varankinv","text":null,"summary":"作者利用AI为旧款MacBook在FreeBSD系统上构建了Wi-Fi驱动程序，体现了AI在解决特定技术兼容性问题上的实用潜力。"},{"id":"hn-47130208","title":"AI Added 'Basically Zero' to US Economic Growth Last Year, Goldman Sachs Says","url":"https://gizmodo.com/ai-added-basically-zero-to-us-economic-growth-last-year-goldman-sachs-says-2000725380","source":"Hacker News","score":144,"comments_count":109,"comments_url":"https://news.ycombinator.com/item?id=47130208","published_at":"2026-02-23T22:55:08","author":"cdrnsf","text":null,"summary":"高盛报告指出AI去年对美国经济增长贡献‘几乎为零’，这引发了关于AI技术当前实际经济影响力的重要讨论。"},{"id":"hn-47119871","title":"Show HN: AI Timeline – 171 LLMs from Transformer (2017) to GPT-5.3 (2026)","url":"https://llm-timeline.com/","source":"Hacker News","score":135,"comments_count":49,"comments_url":"https://news.ycombinator.com/item?id=47119871","published_at":"2026-02-23T09:07:44","author":"ai_bot","text":"Interactive timeline of every major Large Language Model. Filterable by open&#x2F;closed source, searchable, 54 organizations tracked.","summary":"AI Timeline项目以交互式时间线展示了从2017年Transformer到2026年GPT-5.3的171个主要大语言模型，为追踪LLM发展史提供了宝贵资源。"},{"id":"hn-47066446","title":"How to train your program verifier","url":"https://risemsr.github.io/blog/2026-02-16-halleyyoung-a3/","source":"Hacker News","score":77,"comments_count":16,"comments_url":"https://news.ycombinator.com/item?id=47066446","published_at":"2026-02-18T21:10:09","author":"matt_d","text":null,"summary":"文章探讨了如何训练程序验证器，这对于提高软件可靠性和形式化方法在AI辅助编程中的应用具有重要意义。"},{"id":"hn-47129727","title":"Making Wolfram Tech Available as a Foundation Tool for LLM Systems","url":"https://writings.stephenwolfram.com/2026/02/making-wolfram-tech-available-as-a-foundation-tool-for-llm-systems/","source":"Hacker News","score":37,"comments_count":22,"comments_url":"https://news.ycombinator.com/item?id=47129727","published_at":"2026-02-23T22:11:34","author":"surprisetalk","text":null,"summary":"Stephen Wolfram宣布将Wolfram技术作为基础工具提供给LLM系统，这可能极大增强LLM在计算、知识和数据访问方面的能力。"},{"id":"hn-47085790","title":"I discovered a hidden tragedy tied to Russia's most famous painting","url":"https://www.theguardian.com/artanddesign/2026/feb/20/an-unknown-woman-how-i-discovered-a-hidden-tragedy-tied-to-russias-most-famous-painting","source":"Hacker News","score":16,"comments_count":0,"comments_url":"https://news.ycombinator.com/item?id=47085790","published_at":"2026-02-20T09:46:22","author":"n1b0m","text":null,"summary":"文章揭示了一幅俄罗斯最著名画作背后不为人知的悲剧故事，展示了历史研究与艺术解读的深度结合。"},{"id":"hn-47129683","title":"Ukrainian hackers uncover how Russian drone operators are using Belarus","url":"https://informnapalm.org/en/russian-drone-operators-use-belarus/","source":"Hacker News","score":15,"comments_count":0,"comments_url":"https://news.ycombinator.com/item?id=47129683","published_at":"2026-02-23T22:08:24","author":"doener","text":null,"summary":"乌克兰黑客揭露了俄罗斯无人机操作员如何利用白俄罗斯进行活动，提供了关于现代地缘冲突中网络与信息战的重要情报。"},{"id":"hn-47131380","title":"Paul Brainerd, conservationist who pioneered desktop publishing, dies at 78","url":"https://www.seattletimes.com/business/local-business/paul-brainerd-conservationist-who-pioneered-desktop-publishing-dies-at-78/","source":"Hacker News","score":4,"comments_count":2,"comments_url":"https://news.ycombinator.com/item?id=47131380","published_at":"2026-02-24T00:53:51","author":"dangle1","text":null,"summary":"桌面出版先驱、环保主义者Paul Brainerd去世，他的职业生涯横跨技术创新与自然保护，留下了双重遗产。"}],"locale":"en"}]]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["Generated by"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","Powered by DeepSeek"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
