@@ -3,98 +3,154 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-c:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-d:"$Sreact.suspense"
-5:T1edb,好的，作为一名技术新闻分析师，我将对今日“AI & Machine Learning”领域的8篇热门文章进行综合分析、总结和推荐。
+f:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+5:T2d39,好的，作为一名技术新闻分析师，我已对今日AI/ML领域的18篇热门文章进行了综合分析。今日的主题呈现出明显的分化：一方面是AI模型能力的深度探讨与哲学思辨，另一方面是AI代理（Agent）技术的工程化落地与治理挑战，同时穿插着对AI社会影响的关注。
 
-### **今日AI/ML热点综合分析**
-
-今日的热门文章主要围绕以下几个核心主题展开：**AI模型与开源生态的进展**、**AI代理工程模式的探讨**、**行业内的重大争议**，以及**前沿的、实验性的研究方向**。其中，中国开源模型Qwen的系列动态和AI代理的工程化实践是今日最受技术社区关注的两大焦点。
+以下是按子主题分组的详细总结：
 
 ---
 
-### **文章分组分析与总结**
+### 一、大语言模型（LLM）的深度探讨与反思
+这部分文章热度极高，涉及对LLM本质、新模型发布及潜在风险的思考。
 
-#### **主题一：开源模型与微调实践 (Qwen & 相关生态)**
+1.  **标题：** Claude's Cycles [pdf]
+    *   **说明：** 计算机科学泰斗高德纳（Donald Knuth）撰写的论文，探讨了Claude模型在生成文本时可能存在的“循环”或“重复”模式。这代表学术界顶尖人物对现代AI模型内部工作机制的严肃审视，极具启发性。
+    *   **原文链接：** https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf
+    *   **讨论链接：** https://news.ycombinator.com/item?id=47230710
 
-这一组文章集中反映了当前开源大模型社区的活跃度，特别是围绕阿里通义千问（Qwen）模型的讨论。
+2.  **标题：** GPT-5.4
+    *   **说明：** OpenAI官方发布了GPT-5.4模型及其“思维系统卡”。这是行业领头羊的最新进展，标志着模型能力的又一次迭代，并附带了关于其“思考”过程的透明度文档，是了解最前沿模型动态的必读内容。
+    *   **原文链接：** https://openai.com/index/introducing-gpt-5-4/
+    *   **讨论链接：** https://news.ycombinator.com/item?id=47265045
 
-1.  **标题**：Something is afoot in the land of Qwen
-    *   **简要说明**：知名开发者Simon Willison敏锐地捕捉到Qwen社区的一系列不寻常动态，包括模型权重发布、社区讨论激增以及相关工具（如Unsloth）的快速跟进。这篇文章是理解当前开源模型领域“暗流涌动”的绝佳入口，揭示了Qwen可能正在成为挑战Llama地位的重要力量。
-    *   **原文链接**：https://simonwillison.net/2026/Mar/4/qwen/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47249343
+3.  **标题：** The L in "LLM" Stands for Lying
+    *   **说明：** 一篇深度博客文章，犀利地探讨了LLM“幻觉”的本质，认为其核心并非“错误”而是系统性“说谎”。文章引发了关于AI可信度、知识表示和人类认知对比的激烈讨论。
+    *   **原文链接：** https://acko.net/blog/the-l-in-llm-stands-for-lying/
+    *   **讨论链接：** https://news.ycombinator.com/item?id=47257394
 
-2.  **标题**：Qwen3.5 Fine-Tuning Guide – Unsloth Documentation
-    *   **简要说明**：这是一份来自高效微调框架Unsloth的官方实践指南。它之所以重要，是因为它直接回应了上篇文章中提到的社区需求，提供了将Qwen3.5模型进行实际微调、部署的“操作手册”，标志着该模型的工具链生态正在快速成熟。
-    *   **原文链接**：https://unsloth.ai/docs/models/qwen3.5/fine-tune
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47246296
+### 二、AI代理（Agent）框架与工具
+这是今日最活跃的工程实践领域，展示了AI从对话走向行动的趋势。
 
-#### **主题二：AI代理工程与模式探索**
+4.  **标题：** Show HN: Jido 2.0, Elixir Agent Framework
+    *   **说明：** 基于Elixir/BEAM虚拟机构建的生产级AI代理框架发布2.0版本。BEAM以其并发和容错能力著称，此框架为构建可靠、分布式的多智能体系统提供了新选择，值得后端开发者关注。
+    *   **原文链接：** https://jido.run/blog/jido-2-0-is-here
+    *   **讨论链接：** https://news.ycombinator.com/item?id=47263036
 
-随着基础模型能力提升，如何构建可靠、高效的AI代理系统成为新的工程挑战。
+5.  **标题：** Show HN: PageAgent, A GUI agent that lives inside your web app
+    *   **说明：** 阿里巴巴开源的库，旨在将AI代理直接嵌入前端Web应用。这代表了一种新范式：AI不再是外部调用服务，而是成为应用界面本身的智能组成部分，可能改变人机交互方式。
+    *   **原文链接：** https://alibaba.github.io/page-agent/
+    *   **讨论链接：** https://news.ycombinator.com/item?id=47264138
 
-3.  **标题**：Agentic Engineering Patterns
-    *   **简要说明**：同样来自Simon Willison，这是一份关于“代理工程模式”的指南。它系统性地总结了构建AI代理时常用的模式（如规划与执行、工具使用、自我反思等），为开发者提供了宝贵的架构设计参考，是当前从“调用模型”转向“构建智能体”的关键读物。
-    *   **原文链接**：https://simonwillison.net/guides/agentic-engineering-patterns/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47243272
+6.  **标题：** Launch HN: Vela (YC W26) – AI for complex scheduling
+    *   **说明：** YC孵化项目，使用AI代理处理复杂的多参与方、多渠道的日程安排问题。这是一个将AI应用于解决实际、繁琐商业流程的典型案例，展示了Agent在垂直领域的应用潜力。
+    *   **原文链接：** https://tryvela.ai
+    *   **讨论链接：** https://news.ycombinator.com/item?id=47264741
 
-#### **主题三：行业动态与伦理争议**
+7.  **标题：** Show HN: Kybernis – Prevent AI agents from executing the same action twice
+    *   **说明：** 一个专门解决AI代理在生产环境中“重复执行动作”这一关键可靠性问题的工具。当AI开始操作真实系统（如支付、数据库）时，这类确保“幂等性”的中间件至关重要。
+    *   **原文链接：** https://kybernis.io
+    *   **讨论链接：** https://news.ycombinator.com/item?id=47267024
 
-AI巨头之间的竞争与合作关系，以及技术应用的边界，始终是热门话题。
+### 三、AI的社会、法律与伦理影响
+关注AI技术落地后引发的现实世界问题。
 
-4.  **标题**：Dario Amodei calls OpenAI’s messaging around military deal ‘straight up lies’
-    *   **简要说明**：Anthropic CEO公开指责OpenAI在军事合作问题上的表述是“彻头彻尾的谎言”。这则新闻凸显了AI头部公司在商业化、政府合作与安全伦理承诺之间的巨大张力，以及行业内部日益公开化的分歧。
-    *   **原文链接**：https://techcrunch.com/2026/03/04/anthropic-ceo-dario-amodei-calls-openais-messaging-around-military-deal-straight-up-lies-report-says/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47255662
+8.  **标题：** Relicensing with AI-Assisted Rewrite
+    *   **说明：** 一篇个人博客，详细记录了作者使用AI辅助重写代码以变更许可证的实践。这触及了AI生成代码的版权归属、许可证合规性等法律灰色地带，对开发者有实际指导意义。
+    *   **原文链接：** https://tuananh.net/2026/03/05/relicensing-with-ai-assisted-rewrite/
+    *   **讨论链接：** https://news.ycombinator.com/item?id=47257803
 
-5.  **标题**：Emails to Outlook.com rejected due to a fault or overzealous blocking rules
-    *   **简要说明**：虽然主题不完全属于AI核心，但文章提到邮件被拒可能与“过度热心的AI驱动垃圾邮件过滤规则”有关。这反映了AI技术（如内容过滤模型）大规模部署到关键基础设施（如电子邮件系统）时可能引发的现实问题，是AI工程可靠性的一个侧面。
-    *   **原文链接**：https://www.theregister.com/2026/03/04/users_fume_at_outlookcom_email/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47246044
+9.  **标题：** Labor market impacts of AI: A new measure and early evidence
+    *   **说明：** Anthropic发布的研究报告，试图量化AI对劳动力市场的早期影响。来自领先AI公司的实证研究，为理解AI如何重塑就业提供了数据支撑，具有宏观参考价值。
+    *   **原文链接：** https://www.anthropic.com/research/labor-market-impacts
+    *   **讨论链接：** https://news.ycombinator.com/item?id=47268391
 
-#### **主题四：前沿研究与思想实验**
+10. **标题：** A standard protocol to handle and discard low-effort, AI-Generated pull requests
+    *   **说明：** 提出了一个用于拒绝低质量AI生成Pull Request的“标准协议”（带幽默性质）。反映了开源社区维护者面对海量AI生成代码涌入的无奈与应对策略，是一个社区文化的缩影。
+    *   **原文链接：** https://406.fail/
+    *   **讨论链接：** https://news.ycombinator.com/item?id=47267947
 
-这部分内容更具学术性和探索性，展现了AI研究的多样边界。
+11. **标题：** The FCC Wants Your Next Customer Service Agent to Be in the U.S.
+    *   **说明：** 《华尔街日报》报道，美国联邦通信委员会（FCC）可能出台政策，要求客户服务AI代理的运营实体位于美国境内。这预示着AI技术将面临更严格的地缘政治和数据主权监管。
+    *   **原文链接：** https://www.wsj.com/business/telecom/the-fcc-wants-your-next-customer-service-agent-to-be-in-the-u-s-3c44e14e
+    *   **讨论链接：** https://news.ycombinator.com/item?id=47269256
 
-6.  **标题**：Claude's Cycles [pdf]
-    *   **简要说明**：计算机科学泰斗高德纳（Donald Knuth）撰写的一篇思想性论文。他探讨了与Claude（Anthropic的AI助手）进行多轮深度对话后，对“人机协作循环”的哲学与认知思考。这篇文章的价值在于其超越技术细节，从开创性学者的视角审视人机交互的本质。
-    *   **原文链接**：https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47230710
+### 四、AI与其他前沿技术的交叉
+AI在特定科学和工程领域的应用。
 
-7.  **标题**：NanoGPT Slowrun: Language Modeling with Limited Data, Infinite Compute
-    *   **简要说明**：一个有趣的反向思维实验：如果计算资源近乎无限，但训练数据极其有限（仅1MB文本），语言模型的表现会如何？该项目通过极端条件下的训练，挑战了“数据规模决定一切”的普遍认知，促使人们重新思考数据效率与模型能力的关系。
-    *   **原文链接**：https://qlabs.sh/slowrun
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47251259
+12. **标题：** Datasets for Reconstructing Visual Perception from Brain Data
+    *   **说明：** 一个用于从脑数据（如fMRI）重建视觉感知的数据集索引。这属于“脑机接口”和“AI读心术”的前沿交叉领域，展示了AI在神经科学中的应用，极具未来感。
+    *   **原文链接：** https://github.com/seelikat/neuro-visual-reconstruction-dataset-index
+    *   **讨论链接：** https://news.ycombinator.com/item?id=47263661
 
-8.  **标题**：Computer run on human brain cells learned to play 'Doom'
-    *   **简要说明**：一项高度实验性的生物-计算机混合研究。科学家利用培养的人类脑细胞（类脑器官）构建了一个能运行经典游戏《Doom》的系统。这代表了神经形态计算和生物计算的一个奇特前沿，虽然离实用甚远，但打开了关于智能本质和计算载体的想象空间。
-    *   **原文链接**：https://www.popsci.com/technology/human-brain-cell-computer-plays-doom/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47255822
+### 五、非核心AI但受技术社区关注的相关话题
+这些文章本身不直接关于AI，但因涉及隐私、安全等开发者普遍关心的话题而出现在榜单。
+
+13. **标题：** Proton Mail Helped FBI Unmask Anonymous 'Stop Cop City' Protester
+    *   **说明：** 关于知名加密邮件服务Proton Mail应执法部门要求提供用户信息的报道。在AI时代数据隐私备受关注的背景下，此事引发了关于“端到端加密”承诺与法律遵从之间矛盾的激烈辩论。
+    *   **原文链接：** https://www.404media.co/proton-mail-helped-fbi-unmask-anonymous-stop-cop-city-protestor/
+    *   **讨论链接：** https://news.ycombinator.com/item?id=47267628
+
+14. **标题：** World-first gigabit laser link between aircraft and geostationary satellite
+    *   **说明：** 欧洲航天局实现飞机与静止轨道卫星间的千兆激光链路。高速太空通信是未来全球实时数据交换的基础，而数据是AI的燃料，此技术进展具有长远意义。
+    *   **原文链接：** https://www.esa.int/Applications/Connectivity_and_Secure_Communications/World-first_gigabit-per-second_laser_link_between_aircraft_and_geostationary_satellite
+    *   **讨论链接：** https://news.ycombinator.com/item?id=47208341
+
+15. **标题：** Hardware hotplug events on Linux, the gory details
+    *   **说明：** 深度技术文章，详解Linux内核中的硬件热插拔事件处理机制。对于构建需要与物理世界交互（如机器人、物联网）的AI系统，这类底层系统知识非常重要。
+    *   **原文链接：** https://arcanenibble.github.io/hardware-hotplug-events-on-linux-the-gory-details.html
+    *   **讨论链接：** https://news.ycombinator.com/item?id=47215602
+
+16. **标题：** A man who broke into jail
+    *   **说明：** 《纽约客》的人物特写，讲述一位改革者深入监狱系统的故事。虽然不直接关于AI，但其中涉及的系统性问题和改革思路，与如何治理和规范AI系统存在隐喻式的关联。
+    *   **原文链接：** https://www.newyorker.com/magazine/2026/03/09/alexander-friedmann-profile-prison-reform
+    *   **讨论链接：** https://news.ycombinator.com/item?id=47240424
+
+17. **标题：** Jails for NetBSD – Kernel Enforced Isolation and Native Resource Control
+    *   **说明：** NetBSD操作系统上的容器化（Jails）技术。安全隔离是运行不受信任的AI模型或代理的关键需求，因此系统级隔离技术始终相关。
+    *   **原文链接：** https://netbsd-jails.petermann-digital.de/
+    *   **讨论链接：** https://news.ycombinator.com/item?id=47258641
+
+18. **标题：** The next generations of Bubble Tea, Lip Gloss, and Bubbles are available now
+    *   **说明：** Charm公司终端UI工具库的重大更新。构建AI驱动的命令行工具或管理界面时，优秀的终端框架能极大提升体验，因此受开发者关注。
+    *   **原文链接：** https://charm.land/blog/v2/
+    *   **讨论链接：** https://news.ycombinator.com/item?id=47268662
 
 ---
 
-### **今日最值得阅读文章推荐**
+### 今日最值得阅读文章推荐
 
-基于话题重要性、实践指导性和思想启发性，我推荐以下三篇文章：
+基于话题重要性、启发性和时效性，我推荐以下五篇文章：
 
-1.  **Agentic Engineering Patterns**
-    *   **推荐理由**：AI代理是当前技术演进的明确方向，但如何系统性地构建它们仍缺乏共识。这篇文章首次尝试总结和命名常见的代理工程模式，为开发者提供了急需的“设计模式”参考，具有很高的**实践指导价值**。无论你是正在构建代理，还是想理解其内部机制，这都是必读材料。
-    *   **链接**：https://simonwillison.net/guides/agentic-engineering-patterns/
+1.  **GPT-5.4**
+    *   **理由：** 了解行业标杆的最新进展是把握风向的基础。OpenAI的官方发布和随附的“系统卡”是观察其技术路径和治理思路的第一手材料。
+    *   **链接：** https://openai.com/index/introducing-gpt-5-4/
 
-2.  **Something is afoot in the land of Qwen**
-    *   **推荐理由**：优秀的行业观察文章。作者Simon Willison以其独特的洞察力，将散落在各处的线索（GitHub动态、社区讨论、工具更新）编织成一个连贯的叙事，清晰地指出了**开源模型生态中正在发生的重要转变**。对于希望把握开源AI脉搏的从业者来说，这是一篇不可多得的趋势分析。
-    *   **链接**：https://simonwillison.net/2026/Mar/4/qwen/
+2.  **The L in "LLM" Stands for Lying**
+    *   **理由：** 超越技术表面，深入哲学和认知层面反思AI的本质。这篇文章观点尖锐，能极大地激发你对LLM可靠性、知识乃至“智能”定义的重新思考。其引发的讨论同样精彩。
+    *   **链接：** https://acko.net/blog/the-l-in-llm-stands-for-lying/
 
 3.  **Claude's Cycles [pdf]**
-    *   **推荐理由**：来自传奇人物高德纳的沉思录。在充斥着技术细节和商业新闻的日常中，这篇文章提供了一个难得的**哲学与人文视角**。它不教你如何写代码，但能启发你思考人机协作的深层意义、知识的本质以及智能的未来形态。对于想超越工具层面理解AI的读者，这是今日最具思想深度的选择。
-    *   **链接**：https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf
+    *   **理由：** 传奇计算机科学家对现代AI模型的审视。这不仅是一篇技术观察，更象征着传统计算理论与新兴AI范式的一次对话。阅读它能获得独特的、高屋建瓴的视角。
+    *   **链接：** https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf
 
-**备选推荐**：
-*   **Dario Amodei calls OpenAI’s messaging around military deal ‘straight up lies’**：如果你更关注**行业竞争、商业伦理与治理**，这篇关于AI巨头公开冲突的报道是了解当前行业紧张局势的最佳窗口。
-*   **链接**：https://techcrunch.com/2026/03/04/anthropic-ceo-dario-amodei-calls-openais-messaging-around-military-deal-straight-up-lies-report-says/0:{"buildId":"wmfOi0fIc1DZo5BtUw0oE","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-03-05","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":8},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"ai","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"AI & Machine Learning"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"Artificial intelligence, machine learning, LLMs, and generative AI"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[8," ","篇文章"," • ","2026-03-05"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"AI & Machine Learning","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",8,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47230710","title":"Claude's Cycles [pdf]","url":"https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf","source":"Hacker News","score":763,"comments_count":325,"comments_url":"https://news.ycombinator.com/item?id=47230710","published_at":"2026-03-03T10:57:42","author":"fs123","text":null,"summary":"这篇文章是斯坦福大学高德纳教授关于Claude语言模型推理循环的学术论文，值得关注因为它从计算机科学理论角度深入分析了AI系统的推理机制。"},{"id":"hn-47249343","title":"Something is afoot in the land of Qwen","url":"https://simonwillison.net/2026/Mar/4/qwen/","source":"Hacker News","score":510,"comments_count":238,"comments_url":"https://news.ycombinator.com/item?id=47249343","published_at":"2026-03-04T15:55:34","author":"simonw","text":null,"summary":"文章讨论了通义千问模型的最新动态和潜在突破，值得关注因为它揭示了中文大模型领域的重要进展和竞争态势。"},{"id":"hn-47243272","title":"Agentic Engineering Patterns","url":"https://simonwillison.net/guides/agentic-engineering-patterns/","source":"Hacker News","score":487,"comments_count":279,"comments_url":"https://news.ycombinator.com/item?id=47243272","published_at":"2026-03-04T05:00:37","author":"r4um","text":null,"summary":"这篇文章系统总结了智能体工程的设计模式和最佳实践，值得关注因为它为构建可靠的AI代理系统提供了实用框架和指导原则。"},{"id":"hn-47246296","title":"Qwen3.5 Fine-Tuning Guide – Unsloth Documentation","url":"https://unsloth.ai/docs/models/qwen3.5/fine-tune","source":"Hacker News","score":272,"comments_count":64,"comments_url":"https://news.ycombinator.com/item?id=47246296","published_at":"2026-03-04T12:04:31","author":"bilsbie","text":null,"summary":"这是Unsloth平台提供的Qwen3.5模型微调技术文档，值得关注因为它为开发者提供了高效微调大型语言模型的实操指南和优化技巧。"},{"id":"hn-47246044","title":"Emails to Outlook.com rejected due to a fault or overzealous blocking rules","url":"https://www.theregister.com/2026/03/04/users_fume_at_outlookcom_email/","source":"Hacker News","score":143,"comments_count":82,"comments_url":"https://news.ycombinator.com/item?id=47246044","published_at":"2026-03-04T11:33:46","author":"Bender","text":null,"summary":"报道了Outlook.com邮件服务因过滤规则问题导致大量合法邮件被拒收的技术故障，值得关注因为它揭示了大型邮件服务商在垃圾邮件过滤与可用性之间的平衡难题。"},{"id":"hn-47255662","title":"Dario Amodei calls OpenAI’s messaging around military deal ‘straight up lies’","url":"https://techcrunch.com/2026/03/04/anthropic-ceo-dario-amodei-calls-openais-messaging-around-military-deal-straight-up-lies-report-says/","source":"Hacker News","score":130,"comments_count":38,"comments_url":"https://news.ycombinator.com/item?id=47255662","published_at":"2026-03-04T23:51:10","author":"SilverElfin","text":null,"summary":"Anthropic CEO公开指责OpenAI在军事合作方面的声明存在不实之处，值得关注因为它反映了AI行业领军企业在伦理和政策立场上的重大分歧。"},{"id":"hn-47251259","title":"NanoGPT Slowrun: Language Modeling with Limited Data, Infinite Compute","url":"https://qlabs.sh/slowrun","source":"Hacker News","score":121,"comments_count":24,"comments_url":"https://news.ycombinator.com/item?id=47251259","published_at":"2026-03-04T17:56:04","author":"sdpmas","text":null,"summary":"介绍了在有限数据条件下通过大量计算资源进行语言模型训练的实验项目，值得关注因为它挑战了当前大数据训练范式，探索了计算密集型替代方案。"},{"id":"hn-47255822","title":"Computer run on human brain cells learned to play 'Doom'","url":"https://www.popsci.com/technology/human-brain-cell-computer-plays-doom/","source":"Hacker News","score":4,"comments_count":0,"comments_url":"https://news.ycombinator.com/item?id=47255822","published_at":"2026-03-05T00:13:24","author":"wjb3","text":null,"summary":"报道了使用人类脑细胞构建的生物计算机成功运行《毁灭战士》游戏的突破性研究，值得关注因为它展示了生物计算与AI结合的前沿进展。"}],"locale":"zh"}]]}]]}]
+4.  **Show HN: Kybernis – Prevent AI agents from executing the same action twice**
+    *   **理由：** 当AI从“说”走向“做”时，可靠性成为生死攸关的问题。这篇文章指向了AI代理工程化落地中最具体、最关键的挑战之一。对于任何考虑将AI代理投入生产环境的人，这都是一个必须面对和解决的问题样本。
+    *   **链接：** https://kybernis.io
+
+5.  **Labor market impacts of AI: A new measure and early evidence**
+    *   **理由：** 来自顶级AI公司的实证研究，试图用数据而非空谈来回答“AI是否会取代工作”这个全社会关注的问题。无论结论如何，这种基于数据的研究方法都值得关注，它为我们理解AI的宏观影响提供了更坚实的依据。
+    *   **链接：** https://www.anthropic.com/research/labor-market-impacts0:{"buildId":"5-r0fHuUbjGuEI90wA1yU","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-03-06","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":18},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"ai","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"AI & Machine Learning"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"Artificial intelligence, machine learning, LLMs, and generative AI"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[18," ","篇文章"," • ","2026-03-06"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"AI & Machine Learning","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+c:T4db,Hi HN!<p>I&#x27;m the author of an Elixir Agent Framework called Jido. We reached our 2.0 release this week, shipping a production-hardened framework to build, manage and run Agents on the BEAM.<p>Jido now supports a host of Agentic features, including:<p>- Tool Calling and Agent Skills
+- Comprehensive multi-agent support across distributed BEAM processes with Supervision
+- Multiple reasoning strategies including ReAct, Chain of Thought, Tree of Thought, and more
+- Advanced workflow capabilities
+- Durability through a robust Storage and Persistence layer
+- Agentic Memory
+- MCP and Sensors to interface with external services
+- Deep observability and debugging capabilities, including full stack OTel<p>I know Agent Frameworks can be considered a bit stale, but there hasn&#x27;t been a major release of a framework on the BEAM.  With a growing realization that the architecture of the BEAM is a good match for Agentic workloads, the time was right to make the announcement.<p>My background is enterprise engineering, distributed systems and Open Source. We&#x27;ve got a strong and growing community of builders committed to the Jido ecosystem.  We&#x27;re looking forward to what gets built on top of Jido!<p>Come build agents with us!d:T53d,Title: Show HN: PageAgent, A GUI agent that lives inside your web app<p>Hi HN,<p>I&#x27;m building PageAgent, an open-source (MIT) library that embeds an AI agent directly into your frontend.<p>I built this because I believe there&#x27;s a massive design space for deploying general agents natively inside the web apps we already use, rather than treating the web merely as a dumb target for isolated bots.<p>Currently, most AI agents operate from external clients or server-side programs, effectively leaving web development out of the AI ecosystem. I&#x27;m experimenting with an &quot;inside-out&quot; paradigm instead. By dropping the library into a page, you get a client-side agent that interacts natively with the live DOM tree and inherits the user&#x27;s active session out of the box, which works perfectly for SPAs.<p>To handle cross-page tasks, I built an optional browser extension that acts as a &quot;bridge&quot;. This allows the web-page agent to control the entire browser with explicit user authorization. Instead of a desktop app controlling your browser, your web app is empowered to act as a general agent that can navigate the broader web.<p>I&#x27;d love to start a conversation about the viability of this architecture, and what you all think about the future of in-app general agents. Happy to answer any questions!e:Teea,Hi HN! We&#x27;re Gobhanu and Saatvik (brothers), building Vela (<a href="https:&#x2F;&#x2F;tryvela.ai">https:&#x2F;&#x2F;tryvela.ai</a>) - AI agents that handle multi-party, multi-channel scheduling.<p>Scheduling is a constraint satisfaction problem disguised as email! It’s easy when it’s two people, one timezone, one channel. But it becomes a constraint satisfaction problem when inputs are unstructured natural language across multiple communication channels, constraints change mid-solve, and the objective function includes social dynamics that don&#x27;t exist formally anywhere.<p>What if scheduling just happened? For example: a recruiter sends one message, and every interview across five candidates, three hiring managers, and two time zones gets booked, confirmed, and updated automatically. No links, no back-and-forth, no one spending hours with 20 emails. Everyone just gets the right invite at the right time, on whatever channel they actually use. That&#x27;s what we built Vela to do.<p>You loop in Vela into your emails, SMS, WhatsApp, Slack, phone or integrate into an ATS etc and it takes over: reads context, checks calendars, proposes times, follows up when people ghost, and rebooks when things shift.<p>One of our first customers is a staffing firm that searched for a scheduling solution for almost eight years. Their coordinators manage hundreds of candidate-client interviews where each side needs separate email threads, separate Zoom accounts to avoid double-booking links, and calendar invites connecting parties who never directly communicate. A client reschedules one interview and it cascades into four others. A candidate responds on SMS to a thread that started on email. Vela solved this in just 10 minutes of onboarding.<p>The hardest part has been the data problem. Scheduling behavior varies enormously across populations. C-suite folks respond to email within hours and expect formal 3-option proposals. Truck drivers applying for logistics roles respond to SMS at odd hours from shared devices with &quot;y tm wrks.&quot; The failure mode isn&#x27;t parsing -- it&#x27;s applying the wrong interaction pattern for the wrong segment and watching the conversation die. We&#x27;ve been building behavioral datasets from thousands of real interactions: response latency by role, channel preference by demographic, follow-up timing curves, how many options to propose before you hit decision paralysis. This data doesn&#x27;t exist anywhere.<p>The core agent challenge is state across channels. When someone responds on SMS to a thread that started in email, Vela needs to unify identity, merge context, and continue without losing information. Phone numbers don&#x27;t map cleanly to emails, people use nicknames on text, shared devices mean the responder might not be who you reached out to. Temporal NLU is its own problem -- &quot;next Friday&quot; means different things on Monday versus Thursday. We extract structured constraints from natural language and resolve against calendar state. When ambiguity can&#x27;t be resolved, Vela asks -- but deciding when to ask versus infer depends on the stakes of getting it wrong.<p>We&#x27;re live with paying enterprise customers and every client still surfaces edge cases that surprise us. Case studies on our site (<a href="https:&#x2F;&#x2F;tryvela.ai&#x2F;case-studies&#x2F;">https:&#x2F;&#x2F;tryvela.ai&#x2F;case-studies&#x2F;</a>). You can check out a demo here: <a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=MzUOjSG5Uvw" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=MzUOjSG5Uvw</a>.<p>We&#x27;d love feedback from anyone who&#x27;s worked on multi-agent coordination, conversational AI across channels, or constraint satisfaction in messy real-world domains. Looking forward to your comments!6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",18,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47230710","title":"Claude's Cycles [pdf]","url":"https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf","source":"Hacker News","score":804,"comments_count":347,"comments_url":"https://news.ycombinator.com/item?id=47230710","published_at":"2026-03-03T10:57:42","author":"fs123","text":null,"summary":"这篇文章是斯坦福大学Donald Knuth教授关于Claude模型周期性的学术论文，值得关注因为它可能揭示了大型语言模型训练或行为中的深层模式，对理解AI系统本质有重要意义。"},{"id":"hn-47265045","title":"GPT-5.4","url":"https://openai.com/index/introducing-gpt-5-4/","source":"Hacker News","score":624,"comments_count":549,"comments_url":"https://news.ycombinator.com/item?id=47265045","published_at":"2026-03-05T18:08:10","author":"mudkipdev","text":"<a href=\"https:&#x2F;&#x2F;openai.com&#x2F;index&#x2F;gpt-5-4-thinking-system-card&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;openai.com&#x2F;index&#x2F;gpt-5-4-thinking-system-card&#x2F;</a><p><a href=\"https:&#x2F;&#x2F;x.com&#x2F;OpenAI&#x2F;status&#x2F;2029620619743219811\" rel=\"nofollow\">https:&#x2F;&#x2F;x.com&#x2F;OpenAI&#x2F;status&#x2F;2029620619743219811</a>","summary":"OpenAI正式发布了GPT-5.4模型并提供了系统思考卡，值得关注因为它代表了当前最先进语言模型的最新迭代，其新能力和安全特性将直接影响AI应用的发展方向。"},{"id":"hn-47257394","title":"The L in \"LLM\" Stands for Lying","url":"https://acko.net/blog/the-l-in-llm-stands-for-lying/","source":"Hacker News","score":612,"comments_count":425,"comments_url":"https://news.ycombinator.com/item?id=47257394","published_at":"2026-03-05T04:02:32","author":"LorenDB","text":null,"summary":"文章探讨了大型语言模型（LLM）倾向于生成虚假信息（“撒谎”）的根本原因，值得关注因为它直面了当前生成式AI最核心的可靠性问题，对开发者和用户都有重要警示意义。"},{"id":"hn-47257803","title":"Relicensing with AI-Assisted Rewrite","url":"https://tuananh.net/2026/03/05/relicensing-with-ai-assisted-rewrite/","source":"Hacker News","score":377,"comments_count":366,"comments_url":"https://news.ycombinator.com/item?id=47257803","published_at":"2026-03-05T05:07:33","author":"tuananh","text":null,"summary":"作者分享了使用AI辅助工具重写代码以变更软件许可证的实践经验，值得关注因为它展示了AI在实际开发工作流中的具体应用，并触及了AI生成代码的版权和法律边界问题。"},{"id":"hn-47263036","title":"Show HN: Jido 2.0, Elixir Agent Framework","url":"https://jido.run/blog/jido-2-0-is-here","source":"Hacker News","score":248,"comments_count":53,"comments_url":"https://news.ycombinator.com/item?id=47263036","published_at":"2026-03-05T15:48:52","author":"mikehostetler","text":"$c","summary":"Jido 2.0是一个基于Elixir和BEAM虚拟机构建的生产级智能体（Agent）框架，值得关注因为它为构建可管理、可扩展的AI智能体系统提供了一个专门的基础设施解决方案。"},{"id":"hn-47267628","title":"Proton Mail Helped FBI Unmask Anonymous 'Stop Cop City' Protester","url":"https://www.404media.co/proton-mail-helped-fbi-unmask-anonymous-stop-cop-city-protestor/","source":"Hacker News","score":192,"comments_count":96,"comments_url":"https://news.ycombinator.com/item?id=47267628","published_at":"2026-03-05T21:35:40","author":"sedatk","text":null,"summary":"报道披露了Proton Mail应FBI要求提供用户数据，从而识别出一位匿名抗议者，值得关注因为它引发了关于加密邮件服务隐私承诺、法律合规与用户信任之间紧张关系的重大讨论。"},{"id":"hn-47208341","title":"World-first gigabit laser link between aircraft and geostationary satellite","url":"https://www.esa.int/Applications/Connectivity_and_Secure_Communications/World-first_gigabit-per-second_laser_link_between_aircraft_and_geostationary_satellite","source":"Hacker News","score":167,"comments_count":65,"comments_url":"https://news.ycombinator.com/item?id=47208341","published_at":"2026-03-01T16:49:46","author":"giuliomagnifico","text":null,"summary":"欧洲航天局（ESA）首次实现了飞机与地球静止轨道卫星之间的千兆比特激光通信链路，值得关注因为这项突破性技术为未来高速、安全的空天通信网络奠定了关键基础。"},{"id":"hn-47215602","title":"Hardware hotplug events on Linux, the gory details","url":"https://arcanenibble.github.io/hardware-hotplug-events-on-linux-the-gory-details.html","source":"Hacker News","score":116,"comments_count":5,"comments_url":"https://news.ycombinator.com/item?id=47215602","published_at":"2026-03-02T09:26:04","author":"todsacerdoti","text":null,"summary":"文章深入剖析了Linux内核中硬件热插拔事件的处理机制与底层细节，值得关注因为它为系统开发者和运维人员理解复杂的设备管理流程提供了宝贵的技术深度解析。"},{"id":"hn-47240424","title":"A man who broke into jail","url":"https://www.newyorker.com/magazine/2026/03/09/alexander-friedmann-profile-prison-reform","source":"Hacker News","score":108,"comments_count":50,"comments_url":"https://news.ycombinator.com/item?id=47240424","published_at":"2026-03-03T23:09:21","author":"fortran77","text":"<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;zt15Q\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;zt15Q</a>","summary":"《纽约客》杂志报道了Alexander Friedmann闯入监狱以推动监狱改革的事迹，值得关注因为它以独特视角探讨了社会活动、公民不服从与司法系统改革之间的交叉点。"},{"id":"hn-47258641","title":"Jails for NetBSD – Kernel Enforced Isolation and Native Resource Control","url":"https://netbsd-jails.petermann-digital.de/","source":"Hacker News","score":98,"comments_count":24,"comments_url":"https://news.ycombinator.com/item?id=47258641","published_at":"2026-03-05T07:23:40","author":"vermaden","text":null,"summary":"介绍了NetBSD操作系统中的Jails功能，它提供了内核强制的隔离和原生资源控制，值得关注因为它为在NetBSD上实现轻量级、安全的容器化或沙箱环境提供了重要的系统级支持。"},{"id":"hn-47267947","title":"A standard protocol to handle and discard low-effort, AI-Generated pull requests","url":"https://406.fail/","source":"Hacker News","score":81,"comments_count":20,"comments_url":"https://news.ycombinator.com/item?id=47267947","published_at":"2026-03-05T22:04:59","author":"Muhammad523","text":null,"summary":"这篇文章介绍了一个处理低质量AI生成拉取请求的标准协议，值得关注因为它为开源项目维护者提供了应对AI生成代码泛滥的实用解决方案。"},{"id":"hn-47268662","title":"The next generations of Bubble Tea, Lip Gloss, and Bubbles are available now","url":"https://charm.land/blog/v2/","source":"Hacker News","score":80,"comments_count":20,"comments_url":"https://news.ycombinator.com/item?id=47268662","published_at":"2026-03-05T23:26:52","author":"atkrad","text":null,"summary":"这篇文章宣布了Bubble Tea、Lip Gloss和Bubbles等命令行工具的新版本发布，值得关注因为这些工具在开发者社区中广泛使用，其更新可能带来重要的功能改进。"},{"id":"hn-47264138","title":"Show HN: PageAgent, A GUI agent that lives inside your web app","url":"https://alibaba.github.io/page-agent/","source":"Hacker News","score":74,"comments_count":37,"comments_url":"https://news.ycombinator.com/item?id=47264138","published_at":"2026-03-05T17:01:47","author":"simon_luv_pho","text":"$d","summary":"这篇文章展示了PageAgent，一个可以嵌入前端应用的GUI AI代理，值得关注因为它代表了AI与前端开发深度融合的新趋势，可能改变用户交互方式。"},{"id":"hn-47268391","title":"Labor market impacts of AI: A new measure and early evidence","url":"https://www.anthropic.com/research/labor-market-impacts","source":"Hacker News","score":60,"comments_count":61,"comments_url":"https://news.ycombinator.com/item?id=47268391","published_at":"2026-03-05T22:55:01","author":"jjwiseman","text":null,"summary":"这篇文章研究了AI对劳动力市场的影响并提出了新的衡量方法，值得关注因为它提供了关于AI经济影响的早期实证证据，对政策制定者有参考价值。"},{"id":"hn-47263661","title":"Datasets for Reconstructing Visual Perception from Brain Data","url":"https://github.com/seelikat/neuro-visual-reconstruction-dataset-index","source":"Hacker News","score":50,"comments_count":11,"comments_url":"https://news.ycombinator.com/item?id=47263661","published_at":"2026-03-05T16:26:29","author":"katsee","text":null,"summary":"这篇文章介绍了一个用于从脑数据重建视觉感知的数据集索引，值得关注因为它为神经科学和AI的交叉研究提供了宝贵资源，推动脑机接口技术的发展。"},{"id":"hn-47264741","title":"Launch HN: Vela (YC W26) – AI for complex scheduling","url":null,"source":"Hacker News","score":35,"comments_count":37,"comments_url":"https://news.ycombinator.com/item?id=47264741","published_at":"2026-03-05T17:43:31","author":"Gobhanu","text":"$e","summary":"这篇文章介绍了Vela，一个用于复杂调度的AI代理，值得关注因为它试图解决多参与方、多渠道协调的实际业务痛点，展示了AI在优化工作流程中的潜力。"},{"id":"hn-47269256","title":"The FCC Wants Your Next Customer Service Agent to Be in the U.S.","url":"https://www.wsj.com/business/telecom/the-fcc-wants-your-next-customer-service-agent-to-be-in-the-u-s-3c44e14e","source":"Hacker News","score":4,"comments_count":1,"comments_url":"https://news.ycombinator.com/item?id=47269256","published_at":"2026-03-06T00:40:07","author":"petethomas","text":null,"summary":"这篇文章报道了FCC要求客户服务代理位于美国的新政策，值得关注因为它反映了对AI和自动化可能影响就业的地域性监管考量，可能对跨国企业产生影响。"},{"id":"hn-47267024","title":"Show HN: Kybernis – Prevent AI agents from executing the same action twice","url":"https://kybernis.io","source":"Hacker News","score":4,"comments_count":2,"comments_url":"https://news.ycombinator.com/item?id=47267024","published_at":"2026-03-05T20:43:38","author":"wingrammer","text":"AI agents increasingly execute real system actions: issuing refunds, modifying databases, deploying infrastructure, calling external APIs.<p>Because agents retry steps, re-plan tasks, and run asynchronously, the same action can sometimes execute more than once.<p>In production systems this can cause duplicate payouts, repeated mutations, or inconsistent state.<p>Kybernis is a reliability layer that sits at the execution boundary of agent systems.<p>When an agent calls a tool:<p>1. execution intent is captured\n2. the action is recorded in an execution ledger\n3. idempotency guarantees are attached\n4. the mutation commits exactly once<p>Retries become safe.<p>Kybernis is framework-neutral and works with agent frameworks like LangGraph, AutoGen, CrewAI, or custom systems.<p>I built this after repeatedly seeing reliability failures when AI agents interacted with production APIs.<p>Would love feedback from anyone building agent systems.","summary":"这篇文章展示了Kybernis，一个防止AI代理重复执行相同动作的工具，值得关注因为它解决了AI代理在生产环境中可能造成的重复操作问题，提高了系统可靠性。"}],"locale":"zh"}]]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Lc",null,{"children":["$","$d",null,{"name":"Next.MetadataOutlet","children":"$@e"}]}]
-e:null
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+11:null
