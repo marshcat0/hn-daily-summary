@@ -3,793 +3,241 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-f:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-10:"$Sreact.suspense"
-5:T3f76,好的，作为一名技术新闻分析师，我将对今日（2026年3月11日）的“Technology”主题热门文章进行综合分析、总结和推荐。
+d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+5:T3de6,好的，作为一名技术新闻分析师，我将对今日“Technology”主题下的30篇热门文章进行综合分析、分组总结，并给出阅读推荐。
 
 ### **今日技术新闻综合分析报告**
 
-今日的技术社区讨论呈现出多元化的特点，涵盖了从计算机科学巨匠的离世、编程语言与工具的演进、人工智能的实用化进展，到对互联网生态、硬件创新和科技伦理的深度思考。整体来看，讨论热点主要集中在**编程与软件开发、人工智能/机器学习、互联网与平台动态**以及**科技文化/思考**这几个领域。
+今日的技术社区讨论热点呈现出明显的多元化特征，主要围绕**计算机科学先驱的纪念、开源与商业模式的冲突、编程语言与工具的演进、以及系统设计与工程实践**等核心主题展开。Hacker News 上的讨论热度极高，而 Lobsters 社区则提供了更多深度、实践导向的内容。
 
-以下是对30篇文章的分组总结：
-
----
-
-### **一、 编程语言、工具与标准**
-
-此主题关注编程语言的新特性、开发工具的改进以及Web标准的演进，是开发者社区的核心关切。
-
-1.  **Temporal: A nine-year journey to fix time in JavaScript**
-    *   **说明**： 这篇文章详细介绍了Temporal API，这是一个旨在彻底解决JavaScript中日期和时间处理长期痛点的提案。经过九年的努力，它即将成为标准，对任何涉及时间计算的Web开发者都至关重要。
-    *   **文章链接**： https://bloomberg.github.io/js-blog/post/temporal/
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47336989
-
-2.  **Zig – Type Resolution Redesign and Language Changes**
-    *   **说明**： Zig语言发布了关于类型解析重新设计和语言变更的开发日志。对于关注系统编程、追求简单性与性能的开发者而言，了解这门新兴语言的演进方向很有价值。
-    *   **文章链接**： https://ziglang.org/devlog/2026/#2026-03-10
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47330836
-
-3.  **Making WebAssembly a first-class language on the Web**
-    *   **说明**： Mozilla探讨了如何让WebAssembly成为Web上的一等语言，旨在提升其与JavaScript的互操作性和开发体验。这关系到Web应用性能边界的未来拓展。
-    *   **文章链接**： https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47331811
-
-4.  **Standardizing source maps**
-    *   **说明**： 关于标准化Source Maps的提案。Source Maps对于前端调试（如将压缩后的代码映射回源代码）至关重要，标准化将有助于工具链的统一和生态发展。
-    *   **文章链接**： https://bloomberg.github.io/js-blog/post/standardizing-source-maps/
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47331802
-
-5.  **FFmpeg-over-IP – Connect to remote FFmpeg servers**
-    *   **说明**： 一个允许通过网络连接远程FFmpeg服务器的工具。对于需要分布式视频/音频处理或希望集中管理FFmpeg资源的开发者来说，是一个实用的工程解决方案。
-    *   **文章链接**： https://github.com/steelbrain/ffmpeg-over-ip
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47327015
-
-6.  **A fully snapshotable Wasm interpreter**
-    *   **说明**： 介绍了一个完全支持快照的WebAssembly解释器“Gabagool”。这项技术对于需要快速启动、状态保存/恢复的Wasm应用场景（如插件系统、Serverless）有重要意义。
-    *   **文章链接**： https://github.com/friendlymatthew/gabagool?tab=readme-ov-file#gabagool
-    *   **讨论链接**： https://lobste.rs/s/eu5uiz/fully_snapshotable_wasm_interpreter
-
-7.  **Faster asin() Was Hiding In Plain Sight**
-    *   **说明**： 一篇关于优化反正弦函数`asin()`计算性能的文章。展示了通过深入的数学分析和算法改进，即使在成熟的数学库中也能发现显著的性能提升空间，对高性能计算爱好者有启发。
-    *   **文章链接**： https://16bpp.net/blog/post/faster-asin-was-hiding-in-plain-sight/
-    *   **讨论链接**： https://lobste.rs/s/bunmdv/faster_asin_was_hiding_plain_sight
+以下是按子主题分组的详细分析：
 
 ---
 
-### **二、 人工智能与机器学习**
+### **一、 计算机科学与历史**
 
-AI领域今日既有前沿的模型研究，也有面向开发者的工具平台，体现了技术从实验室向应用层快速转化的趋势。
+这个主题下的文章缅怀了先驱，也回顾了历史，引发了社区对技术演进和个人计算的深刻思考。
 
-8.  **BitNet: 100B Param 1-Bit model for local CPUs**
-    *   **说明**： 微软开源的BitNet项目，提出了一个参数量达1000亿但权重仅为1比特的模型架构。这标志着让大语言模型在本地CPU上高效运行取得了突破性进展，可能彻底改变AI模型的部署方式。
-    *   **文章链接**： https://github.com/microsoft/BitNet
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47334694
+1.  **Tony Hoare has died**
+    *   **说明**：计算机科学巨匠、图灵奖得主托尼·霍尔爵士逝世，他提出的快速排序算法、霍尔逻辑等对计算机科学影响深远。此消息引发了技术社区的集体缅怀和对其贡献的讨论。
+    *   **文章链接**：https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47324054
 
-9.  **Create value for others and don’t worry about the returns**
-    *   **说明**： 著名黑客George Hotz (geohot) 撰写的博客，分享了他同时运行69个AI智能体进行自动化任务的经验和哲学。文章提供了关于AI智能体规模化实践的一手见解，并引发了关于AI自动化未来的广泛讨论。
-    *   **文章链接**： https://geohot.github.io//blog/jekyll/update/2026/03/11/running-69-agents.html
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47332074
+2.  **An old photo of a large BBS (2022)**
+    *   **说明**：一张老照片展示了早期大型BBS（电子公告板系统）的壮观景象，引发了社区对互联网前数字社区时代的怀旧和讨论。
+    *   **文章链接**：https://rachelbythebay.com/w/2022/01/26/swcbbs/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47356017
 
-10. **Show HN: Klaus – OpenClaw on a VM, batteries included**
-    *   **说明**： Klaus是一个提供“开箱即用”的OpenClaw（一个流行的AI智能体框架）托管服务的平台。它简化了部署和集成流程，降低了开发者使用AI智能体框架的门槛。
-    *   **文章链接**： https://klausai.com/
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47337249
-
-11. **TADA: Speech generation through text-acoustic synchronization**
-    *   **说明**： Hume AI开源了TADA模型，这是一种通过文本-声学同步进行语音生成的新方法。它在语音合成的自然度和表现力方面可能有新的突破，对语音AI领域感兴趣的人值得关注。
-    *   **文章链接**： https://www.hume.ai/blog/opensource-tada
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47332054
-
-12. **Many SWE-bench-Passing PRs would not be merged**
-    *   **说明**： 一篇分析指出，许多能通过SWE-bench（评估AI编码能力的基准测试）的AI生成的Pull Request，在实际中并不会被合并。这引发了关于AI编程工具实用性、代码质量以及与人类工作流程融合的深度讨论。
-    *   **文章链接**： https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47341645
-
-13. **Personal Computer by Perplexity**
-    *   **说明**： AI搜索公司Perplexity推出了名为“Personal Computer”的产品等待名单。这暗示着该公司可能正在探索将AI深度集成到个人计算体验中的新方向，是观察AI如何重塑人机交互的一个窗口。
-    *   **文章链接**： https://www.perplexity.ai/personal-computer-waitlist
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47339223
+3.  **Dreaming of a ten-year computer**
+    *   **说明**：作者探讨了构建一台能够稳定使用十年、无需频繁升级的“十年电脑”的愿景，反思了当前消费电子产品的快速淘汰文化和可持续性。
+    *   **文章链接**：https://alexwlchan.net/2026/ten-year-computer/
+    *   **讨论链接**：https://lobste.rs/s/eng6mr/dreaming_ten_year_computer
 
 ---
 
-### **三、 互联网、平台与基础设施**
+### **二、 开源、商业与法律**
 
-内容涵盖云服务更新、重大并购、平台政策争议以及对互联网健康状态的反思。
+开源软件的商业模式、法律风险以及与商业公司的冲突是今日的焦点，相关文章讨论极为热烈。
 
-14. **Cloudflare crawl endpoint**
-    *   **说明**： Cloudflare为其Brotli压缩服务推出了一个“爬虫端点”。这为需要处理预压缩内容的开发者（如搜索引擎、归档工具）提供了便利，是基础设施层面一个实用的功能更新。
-    *   **文章链接**： https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47329557
+4.  **Malus – Clean Room as a Service**
+    *   **说明**：一个名为“Malus”的服务声称提供“净室即服务”，旨在帮助企业规避GPL等“传染性”开源许可证的法律风险。这引发了关于开源精神、许可证合规性和商业道德的激烈辩论。
+    *   **文章链接**：https://malus.sh
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47350424
 
-15. **Google closes deal to acquire Wiz**
-    *   **说明**： Google正式完成了对云安全公司Wiz价值320亿美元的收购。这是云计算和安全领域近年来最大的并购案之一，将显著改变云安全市场的竞争格局。
-    *   **文章链接**： https://www.wiz.io/blog/google-closes-deal-to-acquire-wiz
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47336476
+5.  **Italian prosecutors seek trial for Amazon, 4 execs in alleged $1.4B tax evasion**
+    *   **说明**：意大利检方寻求对亚马逊及其四名高管进行审判，指控其涉嫌14亿美元税收欺诈。这是科技巨头与监管机构持续博弈的又一案例。
+    *   **文章链接**：https://www.reuters.com/world/italian-prosecutors-seek-trial-amazon-four-execs-over-alleged-14-bln-tax-evasion-2026-03-12/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47352297
 
-16. **The dead Internet is not a theory anymore**
-    *   **说明**： 一篇探讨“互联网已死”理论的文章，认为由AI生成的内容、垃圾信息和无意义的互动已经充斥网络，侵蚀了早期互联网的有机性和真实性。这是一篇关于网络生态健康的重要文化评论。
-    *   **文章链接**： https://www.adriankrebs.ch/blog/dead-internet/
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47340935
-
-17. **X is selling existing users‘ handles**
-    *   **说明**： 一则用户爆料称，社交平台X（原Twitter）正在将长期不活跃用户的用户名（handle）收回并放入市场出售，甚至不允许原用户赎回。这引发了关于数字身份、平台权力和用户权利的激烈争议。
-    *   **文章链接**： 无（原帖为讨论帖）
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47340754
-
-18. **Show HN: I built a tool that watches webpages and exposes changes as RSS**
-    *   **说明**： 一个名为Site Spy的个人项目，可以监控网页特定元素的变化，并将变更以RSS feed或差异对比的形式输出。它解决了主动追踪网页信息变动的痛点，是一个巧妙而实用的工具。
-    *   **文章链接**： https://sitespy.app
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47337607
-
-19. **Mesh over Bluetooth LE, TCP, or Reticulum**
-    *   **说明**： 介绍了一个名为Columba的项目，支持通过蓝牙LE、TCP或Reticulum协议建立Mesh网络。对于去中心化通信、物联网和抗审查网络技术爱好者来说，是一个有趣的开源项目。
-    *   **文章链接**： https://github.com/torlando-tech/columba
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47327473
-
-20. **My PostgreSQL database got nuked lol**
-    *   **说明**： 一篇个人博文，作者幽默（又心酸）地讲述了数据库被意外摧毁的经历。这是一个关于备份、运维安全和“墨菲定律”的生动案例，对所有开发者都有警示作用。
-    *   **文章链接**： https://akselmo.dev/posts/they-broke-my-server/
-    *   **讨论链接**： https://lobste.rs/s/vb7ipx/my_postgresql_database_got_nuked_lol
+6.  **1B identity records exposed in ID verification data leak**
+    *   **说明**：一次大规模数据泄露事件暴露了10亿条身份验证记录，再次敲响了数据安全和隐私保护的警钟。
+    *   **文章链接**：https://www.aol.com/articles/1-billion-identity-records-exposed-152505381.html
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47348440
 
 ---
 
-### **四、 硬件、制造与跨学科创新**
+### **三、 Web 开发与 JavaScript 生态**
 
-将视角从纯软件扩展到物理世界和基础科学，展现了技术的广度。
+JavaScript 语言的重大演进和 Web 平台的新能力是开发者持续关注的重点。
 
-21. **The MacBook Neo**
-    *   **说明**： 关于苹果可能推出的“MacBook Neo”的传闻和分析，据称其设计将对PC行业造成冲击。由知名科技博主John Gruber撰写，引发了关于未来笔记本形态的广泛猜测和讨论。
-    *   **文章链接**： https://daringfireball.net/2026/03/the_macbook_neo
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47334293
+7.  **Temporal: The 9-year journey to fix time in JavaScript**
+    *   **说明**：深入介绍了新的 `Temporal` API，它旨在彻底解决 JavaScript 中日期和时间处理的长期痛点。文章回顾了其长达九年的标准化历程，对每位Web开发者都至关重要。
+    *   **文章链接**：https://bloomberg.github.io/js-blog/post/temporal/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47336989
 
-22. **Lego‘s 0.002mm specification and its implications for manufacturing (2025)**
-    *   **说明**： 深入分析了乐高积木极其严苛的0.002毫米制造公差，并探讨了这种对精度的追求对整个制造业的启示。是工程精度、质量控制和规模化生产领域的精彩案例研究。
-    *   **文章链接**： https://www.thewave.engineer/articles.html/productivity/legos-0002mm-specification-and-its-implications-for-manufacturing-r120/
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47335237
+8.  **Making WebAssembly a first-class language on the Web**
+    *   **说明**：Mozilla 阐述了让 WebAssembly 成为 Web 上一等公民的愿景和路线图，包括改进的调试、DOM 集成等，预示着 Web 开发生态的未来方向。
+    *   **文章链接**：https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47331811
 
-23. **Building a TB-303 from Scratch**
-    *   **说明**： 一篇教程，详细指导如何从零开始搭建传奇的Roland TB-303贝斯合成器。完美结合了硬件工程、音乐技术和DIY文化，是创客和音乐技术爱好者的宝藏。
-    *   **文章链接**： https://loopmaster.xyz/tutorials/tb303-from-scratch
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47291574
-
-24. **Fungal Electronics (2021)**
-    *   **说明**： 一篇2021年的arXiv论文，探讨了利用真菌菌丝体生长和传导特性制造电子元件的可能性。这是一个非常前沿和跨学科（生物与电子）的研究方向，充满了未来感。
-    *   **文章链接**： https://arxiv.org/abs/2111.11231
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47338055
-
-25. **Physicist Astrid Eichhorn is a leader in the field of asymptotic safety**
-    *   **说明**： Quanta Magazine对物理学家Astrid Eichhorn的专访，她是在“渐近安全”理论框架下探索量子引力的领军人物。文章以通俗的方式介绍了这个可能统一量子力学和引力的前沿理论。
-    *   **文章链接**： https://www.quantamagazine.org/where-some-see-strings-she-sees-a-space-time-made-of-fractals-20260311/
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47337177
+9.  **Show HN: s@: decentralized social networking over static sites**
+    *   **说明**：一个基于静态网站的去中心化社交网络协议。它利用现有的 Web 基础设施（如 GitHub Pages）来实现抗审查的社交功能，是 Fediverse 之外的另一种有趣探索。
+    *   **文章链接**：http://satproto.org/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47344548
 
 ---
 
-### **五、 科技文化、伦理与人物**
+### **四、 编程、算法与系统设计**
 
-聚焦于科技行业的社会影响、伦理问题以及对传奇人物的缅怀。
+这部分内容涵盖了从编程哲学、具体算法技巧到底层系统设计的广泛话题，极具实践价值。
 
-26. **Tony Hoare has died**
-    *   **说明**： 计算机科学巨匠、图灵奖得主托尼·霍尔爵士去世的讣告。他发明的快速排序算法、霍尔逻辑以及对并发编程的贡献，深刻影响了整个计算机行业。这是今日技术社区最沉重也最重要的新闻。
-    *   **文章链接**： https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47324054
+10. **Shall I implement it? No**
+    *   **说明**：一篇关于软件工程决策的经典短文，以幽默的方式阐述了“不实现某个功能”往往是最明智、最困难的选择，引发了关于产品管理和技术债务的讨论。
+    *   **文章链接**：https://gist.github.com/bretonium/291f4388e2de89a43b25c135b44e41f0
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47357042
 
-27. **Why the global elite gave up on spelling and grammar**
-    *   **说明**： 《华尔街日报》的一篇文章（需订阅，附存档链接），探讨了全球精英阶层中出现的拼写和语法“放弃”现象，并将其与权力展示、社交媒体文化联系起来。引发了关于沟通方式演变和社会规范的讨论。
-    *   **文章链接**： https://www.wsj.com/lifestyle/jeffrey-epstein-files-bad-grammar-spelling-trump-ellison-dorsey-gates-thiel-cbfe9fb1 (存档: https://archive.ph/wlwcA)
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47336806
+11. **Avoiding Trigonometry (2013)**
+    *   **说明**：一篇经典的技术文章，介绍了在图形编程和游戏开发中如何避免使用耗时的反三角函数（如 `acos`），通过向量运算等技巧来优化性能。
+    *   **文章链接**：https://iquilezles.org/articles/noacos/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47348192
 
-28. **Entities enabling scientific fraud at scale (2025)**
-    *   **说明**： 一篇发表于PNAS的学术论文，研究了大规模科学欺诈背后的“赋能实体”。这对于关注学术诚信、出版伦理以及AI如何被滥用于生成虚假研究的人来说，是一个严肃的议题。
-    *   **文章链接**： https://doi.org/10.1073/pnas.2420092122
-    *   **讨论链接**： https://news.ycombinator.com/item?id=47335349
+12. **Parametricity, or Comptime is Bonkers**
+    *   **说明**：探讨了 Zig 语言中“编译期”（comptime）概念的强大能力，将其与函数式编程中的“参数化多态”理论联系起来，展示了如何利用类型系统在编译期完成更多工作。
+    *   **文章链接**：https://noelwelsh.com/posts/comptime-is-bonkers/
+    *   **讨论链接**：https://lobste.rs/s/l3rkdl/parametricity_comptime_is_bonkers
 
-29. **Lobsters Interview with ngoldbaum**
-    *   **说明**： Lobsters社区对核心开发者ngoldbaum的采访，他正在为消灭Python的全局解释器锁（GIL）而努力。采访还涉及了开源工作、倦怠等内容，为了解Python语言未来发展和开源维护者心路提供了视角。
-    *   **文章链接**： https://alexalejandre.com/programming/interview-with-ngoldbaum/
-    *   **讨论链接**： https://lobste.rs/~ngoldbaum (此为个人主页，原文内嵌讨论)
+13. **WolfIP: Lightweight TCP/IP stack with no dynamic memory allocations**
+    *   **说明**：WolfSSL 推出的轻量级 TCP/IP 协议栈，特点是无动态内存分配，非常适合嵌入式系统和资源受限的环境。
+    *   **文章链接**：https://github.com/wolfssl/wolfip
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47352385
 
-30. **Why should we have user age tracking in Operating Systems and websites?**
-    *   **说明**： 一篇博客文章，探讨了在操作系统和网站中引入用户年龄追踪的利弊，涉及儿童在线安全、隐私权和设计复杂性等问题。这是一个重要的科技政策与伦理交叉话题。
-    *   **文章链接**： https://wiki.alcidesfonseca.com/blog/age-verification-in-operating-systems-and-the-internet/
-    *   **讨论链接**： https://lobste.rs/s/oyb3u8/why_should_we_have_user_age_tracking
+14. **Printf-Tac-Toe**
+    *   **说明**：一个极客趣味项目，仅使用 C 语言的 `printf` 函数来实现一个完整的井字棋游戏，展示了格式字符串的“神奇”用法（以及潜在的安全风险）。
+    *   **文章链接**：https://github.com/carlini/printf-tac-toe
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47296645
+
+15. **How do you manage SSH keys?**
+    *   **说明**：Lobsters 社区发起的关于 SSH 密钥管理最佳实践的讨论。这是一个非常实际的操作性问题，汇集了不同开发者的工作流和经验。
+    *   **文章链接**：https://lobste.rs/s/zcoz8h/how_do_you_manage_ssh_keys
+    *   **讨论链接**：同上（文章即讨论帖）
+
+---
+
+### **五、 数据、工具与性能**
+
+聚焦于数据处理工具、性能优化和实用技术分享。
+
+16. **Big data on the cheapest MacBook**
+    *   **说明**：DuckDB 团队演示了如何在最便宜的 MacBook 上使用 DuckDB 处理高达 1.4TB 的“大数据”，凸显了现代分析型数据库的强大性能和效率。
+    *   **文章链接**：https://duckdb.org/2026/03/11/big-data-on-the-cheapest-macbook
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47349277
+
+17. **My PostgreSQL database got nuked lol**
+    *   **说明**：一篇关于数据库灾难恢复的亲身经历文章。作者分享了其 PostgreSQL 数据库被意外摧毁后，如何从备份中恢复并总结经验教训，对运维人员有实际参考价值。
+    *   **文章链接**：https://akselmo.dev/posts/they-broke-my-server/
+    *   **讨论链接**：https://lobste.rs/s/vb7ipx/my_postgresql_database_got_nuked_lol
+
+---
+
+### **六、 硬件、模拟器与创意项目**
+
+涵盖了从硬件怀旧、软件模拟到跨界创意编程的内容。
+
+18. **Dolphin Progress Release 2603**
+    *   **说明**：著名的任天堂 GameCube 和 Wii 模拟器 Dolphin 发布了月度进度报告，持续更新和改进，是开源模拟器项目的典范。
+    *   **文章链接**：https://dolphin-emu.org/blog/2026/03/12/dolphin-progress-report-release-2603/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47348304
+
+19. **Personal Computer by Perplexity**
+    *   **说明**：AI 公司 Perplexity 推出了名为“个人电脑”的硬件产品等待名单，可能是一款集成其 AI 助手的专用设备，引发了关于 AI 硬件形态的猜测。
+    *   **文章链接**：https://www.perplexity.ai/personal-computer-waitlist
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47339223
+
+20. **This Is Not The Computer For You**
+    *   **说明**：一篇反思性文章，探讨了为什么当前主流的计算机（尤其是 macOS）可能并不适合所有创作者或专业人士，并怀念了过去硬件/软件更具可塑性的时代。
+    *   **文章链接**：https://samhenri.gold/blog/20260312-this-is-not-the-computer-for-you/
+    *   **讨论链接**：https://lobste.rs/s/zyt5uz/this_is_not_computer_for_you
+
+21. **Bubble Sorted Amen Break**
+    *   **说明**：一个创意编程项目，将经典的“Amen Break”鼓点循环与冒泡排序算法可视化结合，用声音来表现排序过程，是技术和艺术的趣味结合。
+    *   **文章链接**：https://parametricavocado.itch.io/amen-sorting
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47354098
+
+---
+
+### **七、 科技与社会、经济**
+
+讨论技术发展对社会结构、经济和工作方式产生的广泛影响。
+
+22. **ATMs didn‘t kill bank teller jobs, but the iPhone did**
+    *   **说明**：一篇反直觉的分析文章，指出自动取款机（ATM）并未减少银行柜员数量，而智能手机和移动 banking 的普及才是根本性改变金融服务行业和就业结构的原因。
+    *   **文章链接**：https://davidoks.blog/p/why-the-atm-didnt-kill-bank-teller
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47351371
+
+23. **Asian governments roll out 4-day weeks, WFH to solve fuel crisis caused by war**
+    *   **说明**：报道了亚洲一些国家为应对能源危机而推行四天工作制和远程办公的政策，探讨了外部冲击如何可能永久性地改变工作模式。
+    *   **文章链接**：https://fortune.com/2026/03/11/iran-war-fuel-crisis-asia-work-from-home-closed-schools-price-caps/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47352215
+
+24. **US private credit defaults hit record 9.2% in 2025, Fitch says**
+    *   **说明**：惠誉报告显示美国私人信贷违约率在2025年创下历史新高。这条经济新闻在技术社区引发讨论，常被视作宏观经济和科技投资环境的晴雨表。
+    *   **文章链接**：https://www.marketscreener.com/news/us-private-credit-defaults-hit-record-9-2-in-2025-fitch-says-ce7e5fd8df8fff2d
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47349806
+
+---
+
+### **八、 其他（科学、文化、生活）**
+
+一些与科技社区兴趣相关的跨界内容。
+
+25. **NASA‘s DART spacecraft changed an asteroid‘s orbit around the sun**
+    *   **说明**：关于NASA双小行星重定向测试（DART）任务后续成果的科学报道，确认了其成功改变了小行星的轨道，是人类行星防御技术的重要里程碑。
+    *   **文章链接**：https://www.sciencenews.org/article/spacecraft-changed-asteroid-orbit-nasa
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47303044
+
+26. **The Met releases high-def 3D scans of 140 famous art objects**
+    *   **说明**：纽约大都会艺术博物馆发布了140件著名艺术品的高清3D扫描模型，免费向公众开放。这是数字人文和文化遗产保护领域的重大进展。
+    *   **文章链接**：https://www.openculture.com/2026/03/the-met-releases-high-definition-3d-scans-of-140-famous-art-objects.html
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47352459
+
+27. **3D-Knitting: The Ultimate Guide**
+    *   **说明**：关于3D针织技术的详细介绍。这种数字化制造技术与编程和设计密切相关，吸引了对硬件、制造和材料科学感兴趣的技术爱好者。
+    *   **文章链接**：https://www.oliver-charles.com/pages/3d-knitting
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47347945
+
+28. **Long Overlooked as Crucial to Life, Fungi Start to Get Their Due**
+    *   **说明**：一篇关于真菌在生态系统中关键作用的科学文章。这类关于复杂系统、网络和生命科学的内容常在技术社区引发共鸣。
+    *   **文章链接**：https://e360.yale.edu/features/fungi-kingdom
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47350136
+
+29. **Datahäxan**
+    *   **说明**：一个风格独特的数字艺术/故事项目（“数据女巫”），内容较为隐晦，体现了技术社区对数字文化和实验性艺术的接纳。
+    *   **文章链接**：https://0dd.company/galleries/witches/7.html
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47310617
+
+30. **Runners who churn butter on their runs**
+    *   **说明**：一篇轻松的文章，讲述了跑步者如何在跑步时利用身体晃动来制作黄油。这种“生活黑客”和极客DIY精神很对技术社区的胃口。
+    *   **文章链接**：https://www.runnersworld.com/news/a70683169/how-to-make-butter-while-running/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47355781
 
 ---
 
 ### **今日最值得阅读文章推荐**
 
-基于话题的重要性、技术的突破性、讨论的深度以及对行业的普遍影响，我推荐以下五篇文章：
+基于话题重要性、讨论热度和对技术从业者的普遍价值，我推荐以下五篇文章：
 
 1.  **Tony Hoare has died**
-    *   **推荐理由**： 纪念一位定义了现代计算机科学基石的人物。不仅是缅怀，通过讨论区的分享，可以更全面地了解他的贡献和思想，感受技术历史的传承。这是今日必读。
-    *   **链接**： https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html
-    *   **讨论**： https://news.ycombinator.com/item?id=47324054
+    *   **理由**：纪念一位定义了现代计算机科学基石的巨人。阅读社区对他的缅怀和对其工作的回顾，是一次珍贵的技术历史教育。
+    *   **链接**：https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html
+    *   **讨论**：https://news.ycombinator.com/item?id=47324054
 
-2.  **BitNet: 100B Param 1-Bit model for local CPUs**
-    *   **推荐理由**： 代表了AI模型小型化和高效化的一个潜在拐点。如果这项技术走向成熟，将0:{"buildId":"gdwbgv3XPr9oCeU-u0XYE","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-03-12","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":20},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-03-12"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-c:T6c4,I built Site Spy after missing a visa appointment slot because a government page changed and I didn’t notice for two weeks.<p>It watches webpages for changes and shows the result like a diff. The part I think HN might find interesting is that it can monitor a specific element on a page, not just the whole page, and it can expose changes as RSS feeds.<p>So instead of tracking an entire noisy page, you can watch just a price, a stock status, a headline, or a specific content block. When it changes, you can inspect the diff, browse the snapshot history, or follow the updates in an RSS reader.<p>It’s a Chrome&#x2F;Firefox extension plus a web dashboard.<p>Main features:<p>- Element picker for tracking a specific part of a page<p>- Diff view plus full snapshot timeline<p>- RSS feeds per watch, per tag, or across all watches<p>- MCP server for Claude, Cursor, and other AI agents<p>- Browser push, Email, and Telegram notifications<p>Chrome: <a href="https:&#x2F;&#x2F;chromewebstore.google.com&#x2F;detail&#x2F;site-spy&#x2F;jeapcpanagdgipcfnncmogeojgfofige" rel="nofollow">https:&#x2F;&#x2F;chromewebstore.google.com&#x2F;detail&#x2F;site-spy&#x2F;jeapcpanag...</a><p>Firefox: <a href="https:&#x2F;&#x2F;addons.mozilla.org&#x2F;en-GB&#x2F;firefox&#x2F;addon&#x2F;site-spy&#x2F;" rel="nofollow">https:&#x2F;&#x2F;addons.mozilla.org&#x2F;en-GB&#x2F;firefox&#x2F;addon&#x2F;site-spy&#x2F;</a><p>Docs: <a href="https:&#x2F;&#x2F;docs.sitespy.app" rel="nofollow">https:&#x2F;&#x2F;docs.sitespy.app</a><p>I’d especially love feedback on two things:<p>- Is RSS actually a useful interface for this, or do most people just want direct alerts?<p>- Does element-level tracking feel meaningfully better than full-page monitoring?d:Tc16,We are Bailey and Robbie and we are working on Klaus (<a href="https:&#x2F;&#x2F;klausai.com&#x2F;" rel="nofollow">https:&#x2F;&#x2F;klausai.com&#x2F;</a>): hosted OpenClaw that is secure and powerful out of the box.<p>Running OpenClaw requires setting up a cloud VM or local container (a pain) or giving OpenClaw root access to your machine (insecure). Many basic integrations (eg Slack, Google Workspace) require you to create your own OAuth app.<p>We make running OpenClaw simple by giving each user their own EC2 instance, preconfigured with keys for OpenRouter, AgentMail, and Orthogonal. And we have OAuth apps to make it easy to integrate with Slack and Google Workspace.<p>We are both HN readers (Bailey has been on here for ~10 years) and we know OpenClaw has serious security concerns. We do a lot to make our users’ instances more secure: we run on a private subnet, automatically update the OpenClaw version our users run, and because you’re on our VM by default the only keys you leak if you get hacked belong to us. Connecting your email is still a risk. The best defense I know of is Opus 4.6 for resilience to prompt injection. If you have a better solution, we’d love to hear it!<p>We learned a lot about infrastructure management in the past month. Kimi K2.5 and Mimimax M2.5 are extremely good at hallucinating new ways to break openclaw.json and otherwise wreaking havoc on an EC2 instance. The week after our launch we spent 20+ hours fixing broken machines by hand.<p>We wrote a ton of best practices on using OpenClaw on AWS Linux into our users’ AGENTS.md, got really good at un-bricking EC2 machines over SSM, added a command-and-control server to every instance to facilitate hotfixes and migrations, and set up a Klaus instance to answer FAQs on discord.<p>In addition to all of this, we built ClawBert, our AI SRE for hotfixing OpenClaw instances automatically: <a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=v65F6VBXqKY" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=v65F6VBXqKY</a>. Clawbert is a Claude Code instance that runs whenever a health check fails or the user triggers it in the UI. It can read that user’s entries in our database and execute commands on the user’s instance. We expose a log of Clawbert’s runs to the user.<p>We know that setting up OpenClaw is easy for most HN readers, but I promise it is not for most people. Klaus has a long way to go, but it’s still very rewarding to see people who’ve never used Claude Code get their first taste of AI agents.<p>We charge $19&#x2F;m for a t4g.small, $49&#x2F;m for a t4g.medium, and $200&#x2F;m for a t4g.xlarge and priority support. You get $15 in tokens and $20 in Orthogonal credits one-time.<p>We want to know what you are building on OpenClaw so we can make sure we support it. We are already working with companies like Orthogonal and Openrouter that are building things to make agents more useful, and we’re sure there are more tools out there we don’t know about. If you’ve built something agents want, please let us know. Comments welcome!6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47324054","title":"Tony Hoare has died","url":"https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html","source":"Hacker News","score":1984,"comments_count":259,"comments_url":"https://news.ycombinator.com/item?id=47324054","published_at":"2026-03-10T14:50:16","author":"speckx","text":null,"summary":"计算机科学先驱托尼·霍尔去世，他提出的快速排序算法和霍尔逻辑对编程语言和并发计算产生了深远影响，值得缅怀。"},{"id":"hn-47332074","title":"Create value for others and don’t worry about the returns","url":"https://geohot.github.io//blog/jekyll/update/2026/03/11/running-69-agents.html","source":"Hacker News","score":651,"comments_count":434,"comments_url":"https://news.ycombinator.com/item?id=47332074","published_at":"2026-03-11T05:45:49","author":"ppew","text":null,"summary":"文章分享了通过为他人创造价值来获得回报的哲学，并介绍了运行69个AI代理的实践经验，对创业者和开发者有启发意义。"},{"id":"hn-47336989","title":"Temporal: A nine-year journey to fix time in JavaScript","url":"https://bloomberg.github.io/js-blog/post/temporal/","source":"Hacker News","score":507,"comments_count":174,"comments_url":"https://news.ycombinator.com/item?id=47336989","published_at":"2026-03-11T15:35:50","author":"robpalmer","text":null,"summary":"Temporal API历经九年开发，旨在解决JavaScript中日期和时间处理的长期痛点，为开发者提供了更可靠的时间操作方案。"},{"id":"hn-47329557","title":"Cloudflare crawl endpoint","url":"https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/","source":"Hacker News","score":471,"comments_count":180,"comments_url":"https://news.ycombinator.com/item?id=47329557","published_at":"2026-03-10T22:27:15","author":"jeffpalmer","text":null,"summary":"Cloudflare推出了新的爬虫端点功能，旨在帮助开发者更高效地管理和优化网络爬虫行为，提升网站性能和可访问性。"},{"id":"hn-47331811","title":"Making WebAssembly a first-class language on the Web","url":"https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/","source":"Hacker News","score":393,"comments_count":145,"comments_url":"https://news.ycombinator.com/item?id=47331811","published_at":"2026-03-11T04:44:46","author":"mikece","text":null,"summary":"Mozilla推动WebAssembly成为Web上的一等语言，旨在提升其性能和集成度，这对Web应用开发和跨平台部署有重要意义。"},{"id":"hn-47330836","title":"Zig – Type Resolution Redesign and Language Changes","url":"https://ziglang.org/devlog/2026/#2026-03-10","source":"Hacker News","score":389,"comments_count":223,"comments_url":"https://news.ycombinator.com/item?id=47330836","published_at":"2026-03-11T01:24:47","author":"Retro_Dev","text":null,"summary":"Zig语言进行了类型解析重设计和语言变更，这些改进旨在提升编译时安全性和开发体验，对系统编程爱好者值得关注。"},{"id":"hn-47334293","title":"The MacBook Neo","url":"https://daringfireball.net/2026/03/the_macbook_neo","source":"Hacker News","score":384,"comments_count":662,"comments_url":"https://news.ycombinator.com/item?id=47334293","published_at":"2026-03-11T11:37:24","author":"etothet","text":"<a href=\"https:&#x2F;&#x2F;www.pcmag.com&#x2F;news&#x2F;asus-co-ceo-macbook-neo-is-a-shock-to-the-pc-industry\" rel=\"nofollow\">https:&#x2F;&#x2F;www.pcmag.com&#x2F;news&#x2F;asus-co-ceo-macbook-neo-is-a-shoc...</a>","summary":"MacBook Neo被华硕联合CEO称为对PC行业的冲击，这可能预示着苹果在笔记本电脑设计上的创新，引发业界讨论。"},{"id":"hn-47335237","title":"Lego's 0.002mm specification and its implications for manufacturing (2025)","url":"https://www.thewave.engineer/articles.html/productivity/legos-0002mm-specification-and-its-implications-for-manufacturing-r120/","source":"Hacker News","score":344,"comments_count":293,"comments_url":"https://news.ycombinator.com/item?id=47335237","published_at":"2026-03-11T13:22:39","author":"scrlk","text":null,"summary":"乐高0.002毫米的制造规格展示了其精密制造能力，这对制造业和工程领域有启示，体现了高质量标准的重要性。"},{"id":"hn-47340935","title":"The dead Internet is not a theory anymore","url":"https://www.adriankrebs.ch/blog/dead-internet/","source":"Hacker News","score":320,"comments_count":224,"comments_url":"https://news.ycombinator.com/item?id=47340935","published_at":"2026-03-11T20:20:22","author":"hubraumhugo","text":null,"summary":"文章探讨了'死亡互联网'理论，指出网络内容日益由AI生成而非人类创作，这对互联网生态和真实性提出了严峻挑战。"},{"id":"hn-47334694","title":"BitNet: 100B Param 1-Bit model for local CPUs","url":"https://github.com/microsoft/BitNet","source":"Hacker News","score":299,"comments_count":149,"comments_url":"https://news.ycombinator.com/item?id=47334694","published_at":"2026-03-11T12:27:15","author":"redm","text":null,"summary":"微软推出的BitNet是一个1000亿参数的1位模型，专为本地CPU优化，这为在资源受限设备上运行大型AI模型提供了新可能。"},{"id":"hn-47335349","title":"Entities enabling scientific fraud at scale (2025)","url":"https://doi.org/10.1073/pnas.2420092122","source":"Hacker News","score":257,"comments_count":187,"comments_url":"https://news.ycombinator.com/item?id=47335349","published_at":"2026-03-11T13:32:12","author":"peyton","text":null,"summary":"这篇文章探讨了大规模科学欺诈背后的实体，揭示了学术不端行为的系统性成因，值得关注是因为它触及了科研诚信的核心问题，可能影响整个科学界的公信力。"},{"id":"hn-47327015","title":"FFmpeg-over-IP – Connect to remote FFmpeg servers","url":"https://github.com/steelbrain/ffmpeg-over-ip","source":"Hacker News","score":228,"comments_count":66,"comments_url":"https://news.ycombinator.com/item?id=47327015","published_at":"2026-03-10T18:26:39","author":"steelbrain","text":null,"summary":"FFmpeg-over-IP 是一个允许连接到远程 FFmpeg 服务器的工具，值得关注是因为它简化了分布式媒体处理，为开发者提供了更灵活的音频视频处理方案。"},{"id":"hn-47336476","title":"Google closes deal to acquire Wiz","url":"https://www.wiz.io/blog/google-closes-deal-to-acquire-wiz","source":"Hacker News","score":225,"comments_count":150,"comments_url":"https://news.ycombinator.com/item?id=47336476","published_at":"2026-03-11T14:58:20","author":"aldarisbm","text":"Previously: Google to buy Wiz for $32B - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=43398518\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=43398518</a> - March 2025 (845 comments)","summary":"谷歌完成了对网络安全公司 Wiz 的收购，这笔价值 320 亿美元的交易值得关注，因为它可能重塑云安全市场格局，并影响企业级安全服务的竞争态势。"},{"id":"hn-47291574","title":"Building a TB-303 from Scratch","url":"https://loopmaster.xyz/tutorials/tb303-from-scratch","source":"Hacker News","score":209,"comments_count":87,"comments_url":"https://news.ycombinator.com/item?id=47291574","published_at":"2026-03-07T21:18:11","author":"stagas","text":null,"summary":"这篇文章详细介绍了如何从零开始构建经典的 TB-303 合成器，值得关注是因为它结合了硬件工程和音乐技术，为电子音乐爱好者和 DIY 爱好者提供了实用的制作指南。"},{"id":"hn-47337607","title":"Show HN: I built a tool that watches webpages and exposes changes as RSS","url":"https://sitespy.app","source":"Hacker News","score":162,"comments_count":45,"comments_url":"https://news.ycombinator.com/item?id=47337607","published_at":"2026-03-11T16:21:06","author":"vkuprin","text":"$c","summary":"Site Spy 是一个监控网页变化并生成 RSS 订阅的工具，值得关注是因为它解决了用户错过重要网页更新的痛点，尤其适用于跟踪政府网站或动态内容。"},{"id":"hn-47327473","title":"Mesh over Bluetooth LE, TCP, or Reticulum","url":"https://github.com/torlando-tech/columba","source":"Hacker News","score":127,"comments_count":17,"comments_url":"https://news.ycombinator.com/item?id=47327473","published_at":"2026-03-10T19:02:01","author":"khimaros","text":null,"summary":"Columba 项目支持通过蓝牙 LE、TCP 或 Reticulum 协议构建网状网络，值得关注是因为它为去中心化通信提供了灵活的开源解决方案，适用于物联网和应急场景。"},{"id":"hn-47341645","title":"Many SWE-bench-Passing PRs would not be merged","url":"https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/","source":"Hacker News","score":122,"comments_count":34,"comments_url":"https://news.ycombinator.com/item?id=47341645","published_at":"2026-03-11T20:56:52","author":"mustaphah","text":null,"summary":"分析指出许多通过 SWE-bench 测试的代码拉取请求在实际中不会被合并，值得关注是因为它揭示了自动化代码评估与真实开发流程之间的差距，对 AI 编程工具的发展有启示。"},{"id":"hn-47340754","title":"X is selling existing users' handles","url":null,"source":"Hacker News","score":120,"comments_count":64,"comments_url":"https://news.ycombinator.com/item?id=47340754","published_at":"2026-03-11T20:11:50","author":"hac","text":"I&#x27;ve been on Twitter since 2007 as @hac.<p>In recent years I didn&#x27;t sign in frequently, then last week I saw my handle show up on the new X Handles marketplace.<p>It seems the account now belongs to X, and because I had a &quot;rare handle&quot; I can&#x27;t even buy it back. From what I can tell, they will wait for some time and then auction the handle for around $100k.<p>Losing your account is frustrating. Having it sold to someone else doesn&#x27;t feel right.<p>Of course, there is no warning when it happens. All you can do to prevent it is sign in every 30 days and read all changes to the TOS.","summary":"X（原 Twitter）正在出售现有用户的用户名，导致长期用户失去其稀有句柄，值得关注是因为这涉及数字身份和平台政策变化，可能引发用户权益和平台信任的讨论。"},{"id":"hn-47337249","title":"Show HN: Klaus – OpenClaw on a VM, batteries included","url":"https://klausai.com/","source":"Hacker News","score":115,"comments_count":68,"comments_url":"https://news.ycombinator.com/item?id=47337249","published_at":"2026-03-11T15:54:23","author":"robthompson2018","text":"$d","summary":"Klaus 是一个开箱即用的托管 OpenClaw 虚拟机服务，值得关注是因为它降低了运行开源 AI 工具的门槛，使开发者能更便捷地部署和实验 AI 模型。"},{"id":"hn-47337177","title":"Physicist Astrid Eichhorn is a leader in the field of asymptotic safety","url":"https://www.quantamagazine.org/where-some-see-strings-she-sees-a-space-time-made-of-fractals-20260311/","source":"Hacker News","score":111,"comments_count":16,"comments_url":"https://news.ycombinator.com/item?id=47337177","published_at":"2026-03-11T15:48:29","author":"tzury","text":null,"summary":"物理学家 Astrid Eichhorn 是渐近安全领域的领军人物，她的研究将时空视为分形结构，值得关注是因为这挑战了传统弦理论，为量子引力理论提供了新的视角。"},{"id":"hn-47339223","title":"Personal Computer by Perplexity","url":"https://www.perplexity.ai/personal-computer-waitlist","source":"Hacker News","score":108,"comments_count":94,"comments_url":"https://news.ycombinator.com/item?id=47339223","published_at":"2026-03-11T18:22:21","author":"josephwegner","text":null,"summary":"Perplexity AI推出了名为'Personal Computer'的新产品，目前正在开放候补名单注册。这值得关注，因为它可能代表了AI与个人计算设备结合的新方向，或是一个集成AI功能的创新操作系统/硬件平台。"},{"id":"hn-47336806","title":"Why the global elite gave up on spelling and grammar","url":"https://www.wsj.com/lifestyle/jeffrey-epstein-files-bad-grammar-spelling-trump-ellison-dorsey-gates-thiel-cbfe9fb1","source":"Hacker News","score":96,"comments_count":255,"comments_url":"https://news.ycombinator.com/item?id=47336806","published_at":"2026-03-11T15:22:10","author":"matthieu_bl","text":"<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;wlwcA\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;wlwcA</a>","summary":"这篇文章探讨了全球精英阶层（如特朗普、埃里森、多西、盖茨、蒂尔等）在拼写和语法上表现不佳的现象，并试图分析其背后的社会文化原因。它值得关注，因为它从一个独特的角度审视了权力、沟通方式与社会规范之间的关系，并可能挑战我们对语言准确性与社会地位的传统认知。"},{"id":"hn-47332054","title":"TADA: Speech generation through text-acoustic synchronization","url":"https://www.hume.ai/blog/opensource-tada","source":"Hacker News","score":94,"comments_count":25,"comments_url":"https://news.ycombinator.com/item?id=47332054","published_at":"2026-03-11T05:42:55","author":"smusamashah","text":null,"summary":"Hume AI开源了TADA模型，这是一种通过文本-声学同步来生成语音的新方法。这值得关注，因为它可能为语音合成领域带来更自然、更具表现力的生成效果，并推动相关开源工具的发展。"},{"id":"hn-47331802","title":"Standardizing source maps","url":"https://bloomberg.github.io/js-blog/post/standardizing-source-maps/","source":"Hacker News","score":75,"comments_count":12,"comments_url":"https://news.ycombinator.com/item?id=47331802","published_at":"2026-03-11T04:42:23","author":"Timothee","text":null,"summary":"彭博社的工程团队正在推动Source Maps（源代码映射）的标准化进程。这值得关注，因为Source Maps是前端开发中用于调试压缩后代码的关键技术，标准化将有助于改善开发工具链的互操作性和开发者体验。"},{"id":"hn-47338055","title":"Fungal Electronics (2021)","url":"https://arxiv.org/abs/2111.11231","source":"Hacker News","score":58,"comments_count":6,"comments_url":"https://news.ycombinator.com/item?id=47338055","published_at":"2026-03-11T16:53:11","author":"byt3h3ad","text":null,"summary":"这篇2021年的研究论文探讨了'真菌电子学'的概念，即利用真菌菌丝体的生物特性来构建电子电路或计算元件。这值得关注，因为它代表了一个高度跨学科（生物与电子工程）的前沿探索方向，可能为可持续或生物兼容的电子设备开辟新路径。"}],"locale":"zh"}],"$Le"]}]]}]
+2.  **Temporal: The 9-year journey to fix time in JavaScript**
+    *   **理由**：对于任何JavaScript开发者，处理日期和时间都是无法回避的痛点。这篇文章不仅深入讲解了即将到来的终极解决方案，还揭示了大型语言特性标准化的复杂历程，极具启发性。
+    *   **链接**：https://bloomberg.github.io/js-blog/post/temporal/
+    *   **讨论**：https://news.ycombinator.com/item?id=47336989
+
+3.  **Malus – Clean Room as a Service**
+    *   **理由**：这篇文章及其引发的爆炸性讨论，是当前开源软件与商业公司之间紧张关系的集中体现。无论你站在哪一方，理解这场关于许可证、合规和开源伦理的辩论都至关重要。
+    *   **链接**：https://malus.sh
+    *   **讨论**：https://news.ycombinator.com/item?id=47350424
+
+4.  **Shall I implement it? No**
+    *   **理由**：一篇短小精悍、直指核心的软件工程哲学文章。在追求“快速行动”的文化中，它提醒我们“战略性不作为”的价值，适合所有产品经理0:{"buildId":"WJJ9DoYQKOn19AJT2_D6Y","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-03-13","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":20},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-03-13"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47324054","title":"Tony Hoare has died","url":"https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html","source":"Hacker News","score":2012,"comments_count":264,"comments_url":"https://news.ycombinator.com/item?id=47324054","published_at":"2026-03-10T14:50:16","author":"speckx","text":null,"summary":"计算机科学先驱托尼·霍尔去世，他因提出快速排序算法和霍尔逻辑等贡献而闻名，他的逝世是计算机科学领域的重大损失。"},{"id":"hn-47350424","title":"Malus – Clean Room as a Service","url":"https://malus.sh","source":"Hacker News","score":1029,"comments_count":398,"comments_url":"https://news.ycombinator.com/item?id=47350424","published_at":"2026-03-12T13:42:04","author":"microflash","text":"<a href=\"https:&#x2F;&#x2F;fosdem.org&#x2F;2026&#x2F;schedule&#x2F;event&#x2F;SUVS7G-lets_end_open_source_together_with_this_one_simple_trick&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;fosdem.org&#x2F;2026&#x2F;schedule&#x2F;event&#x2F;SUVS7G-lets_end_open_...</a><p><a href=\"https:&#x2F;&#x2F;malus.sh&#x2F;blog.html\" rel=\"nofollow\">https:&#x2F;&#x2F;malus.sh&#x2F;blog.html</a>","summary":"Malus提供洁净室即服务，旨在通过一种简单技巧结束开源，这引发了关于开源软件未来和商业模式的讨论。"},{"id":"hn-47357042","title":"Shall I implement it? No","url":"https://gist.github.com/bretonium/291f4388e2de89a43b25c135b44e41f0","source":"Hacker News","score":772,"comments_count":284,"comments_url":"https://news.ycombinator.com/item?id=47357042","published_at":"2026-03-12T21:01:10","author":"breton","text":null,"summary":"这篇文章探讨了在软件开发中何时不应实现某个功能，强调了决策的重要性和避免过度工程的价值。"},{"id":"hn-47336989","title":"Temporal: The 9-year journey to fix time in JavaScript","url":"https://bloomberg.github.io/js-blog/post/temporal/","source":"Hacker News","score":765,"comments_count":256,"comments_url":"https://news.ycombinator.com/item?id=47336989","published_at":"2026-03-11T15:35:50","author":"robpalmer","text":null,"summary":"Temporal项目历经9年修复JavaScript中的时间处理问题，为开发者提供了更可靠的时间API，值得关注其标准化进展。"},{"id":"hn-47331811","title":"Making WebAssembly a first-class language on the Web","url":"https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/","source":"Hacker News","score":639,"comments_count":247,"comments_url":"https://news.ycombinator.com/item?id=47331811","published_at":"2026-03-11T04:44:46","author":"mikece","text":null,"summary":"Mozilla推动WebAssembly成为Web上的一等语言，旨在提升其性能和集成度，这对Web应用开发有深远影响。"},{"id":"hn-47344548","title":"Show HN: s@: decentralized social networking over static sites","url":"http://satproto.org/","source":"Hacker News","score":397,"comments_count":208,"comments_url":"https://news.ycombinator.com/item?id=47344548","published_at":"2026-03-12T00:22:19","author":"remywang","text":null,"summary":"s@协议支持通过静态站点实现去中心化社交网络，提供了一种轻量级、抗审查的社交媒体替代方案。"},{"id":"hn-47352215","title":"Asian governments roll out 4-day weeks, WFH to solve fuel crisis caused by war","url":"https://fortune.com/2026/03/11/iran-war-fuel-crisis-asia-work-from-home-closed-schools-price-caps/","source":"Hacker News","score":375,"comments_count":316,"comments_url":"https://news.ycombinator.com/item?id=47352215","published_at":"2026-03-12T15:30:37","author":"speckx","text":null,"summary":"亚洲政府推出四天工作制和远程办公以应对战争引发的燃料危机，这显示了技术如何适应全球政治经济变化。"},{"id":"hn-47351371","title":"ATMs didn't kill bank teller jobs, but the iPhone did","url":"https://davidoks.blog/p/why-the-atm-didnt-kill-bank-teller","source":"Hacker News","score":325,"comments_count":371,"comments_url":"https://news.ycombinator.com/item?id=47351371","published_at":"2026-03-12T14:48:57","author":"colinprince","text":null,"summary":"文章指出ATM并未减少银行柜员岗位，而iPhone等数字技术才是真正改变银行业就业结构的关键因素。"},{"id":"hn-47349277","title":"Big data on the cheapest MacBook","url":"https://duckdb.org/2026/03/11/big-data-on-the-cheapest-macbook","source":"Hacker News","score":307,"comments_count":251,"comments_url":"https://news.ycombinator.com/item?id=47349277","published_at":"2026-03-12T11:41:14","author":"bcye","text":null,"summary":"DuckDB展示了如何在最便宜的MacBook上处理大数据，突出了轻量级数据库工具的性能和可访问性优势。"},{"id":"hn-47348304","title":"Dolphin Progress Release 2603","url":"https://dolphin-emu.org/blog/2026/03/12/dolphin-progress-report-release-2603/","source":"Hacker News","score":305,"comments_count":50,"comments_url":"https://news.ycombinator.com/item?id=47348304","published_at":"2026-03-12T09:23:01","author":"BitPirate","text":null,"summary":"Dolphin模拟器发布2603版本进展报告，持续改进对任天堂GameCube和Wii游戏的兼容性，是游戏保存社区的重要更新。"},{"id":"hn-47354098","title":"Bubble Sorted Amen Break","url":"https://parametricavocado.itch.io/amen-sorting","source":"Hacker News","score":258,"comments_count":86,"comments_url":"https://news.ycombinator.com/item?id=47354098","published_at":"2026-03-12T17:13:56","author":"eieio","text":null,"summary":"这篇文章介绍了一个名为'Bubble Sorted Amen Break'的创意项目，它将经典的'Amen Break'鼓点循环与冒泡排序算法可视化结合，值得关注是因为它独特地融合了音乐、编程和艺术，展示了算法在创意表达中的应用。"},{"id":"hn-47349806","title":"US private credit defaults hit record 9.2% in 2025, Fitch says","url":"https://www.marketscreener.com/news/us-private-credit-defaults-hit-record-9-2-in-2025-fitch-says-ce7e5fd8df8fff2d","source":"Hacker News","score":251,"comments_count":346,"comments_url":"https://news.ycombinator.com/item?id=47349806","published_at":"2026-03-12T12:44:45","author":"JumpCrisscross","text":"See also: <a href=\"https:&#x2F;&#x2F;alternativecreditinvestor.com&#x2F;2025&#x2F;10&#x2F;22&#x2F;us-banks-exposure-to-private-credit-hits-300bn&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;alternativecreditinvestor.com&#x2F;2025&#x2F;10&#x2F;22&#x2F;us-banks-ex...</a>","summary":"文章报道了惠誉评级的数据显示，美国私人信贷违约率在2025年达到创纪录的9.2%，值得关注是因为这反映了信贷市场的潜在风险，可能对金融稳定性和经济产生影响。"},{"id":"hn-47352297","title":"Italian prosecutors seek trial for Amazon, 4 execs in alleged $1.4B tax evasion","url":"https://www.reuters.com/world/italian-prosecutors-seek-trial-amazon-four-execs-over-alleged-14-bln-tax-evasion-2026-03-12/","source":"Hacker News","score":238,"comments_count":61,"comments_url":"https://news.ycombinator.com/item?id=47352297","published_at":"2026-03-12T15:34:41","author":"amarcheschi","text":null,"summary":"意大利检察官寻求对亚马逊及其四名高管进行审判，指控其涉嫌14亿美元的税务欺诈，值得关注是因为这涉及大型科技公司的全球税务合规问题，可能引发更广泛的监管讨论。"},{"id":"hn-47352459","title":"The Met releases high-def 3D scans of 140 famous art objects","url":"https://www.openculture.com/2026/03/the-met-releases-high-definition-3d-scans-of-140-famous-art-objects.html","source":"Hacker News","score":224,"comments_count":46,"comments_url":"https://news.ycombinator.com/item?id=47352459","published_at":"2026-03-12T15:43:39","author":"coloneltcb","text":null,"summary":"大都会艺术博物馆发布了140件著名艺术品的高清3D扫描，值得关注是因为这推动了文化遗产的数字化和开放访问，为教育、研究和公众欣赏提供了新途径。"},{"id":"hn-47347945","title":"3D-Knitting: The Ultimate Guide","url":"https://www.oliver-charles.com/pages/3d-knitting","source":"Hacker News","score":212,"comments_count":77,"comments_url":"https://news.ycombinator.com/item?id=47347945","published_at":"2026-03-12T08:27:16","author":"ChadNauseam","text":null,"summary":"文章提供了关于3D针织技术的全面指南，值得关注是因为这项技术正在革新纺织和时尚行业，实现定制化、可持续的生产方式。"},{"id":"hn-47348440","title":"1B identity records exposed in ID verification data leak","url":"https://www.aol.com/articles/1-billion-identity-records-exposed-152505381.html","source":"Hacker News","score":212,"comments_count":50,"comments_url":"https://news.ycombinator.com/item?id=47348440","published_at":"2026-03-12T09:46:00","author":"robtherobber","text":null,"summary":"报道了一起涉及10亿条身份记录的数据泄露事件，发生在身份验证服务中，值得关注是因为它凸显了数据安全和隐私保护的紧迫性，可能影响全球用户。"},{"id":"hn-47348192","title":"Avoiding Trigonometry (2013)","url":"https://iquilezles.org/articles/noacos/","source":"Hacker News","score":206,"comments_count":63,"comments_url":"https://news.ycombinator.com/item?id=47348192","published_at":"2026-03-12T09:06:57","author":"WithinReason","text":null,"summary":"这篇文章（2013年）探讨了在编程中避免使用三角函数的替代方法，值得关注是因为它提供了优化计算性能的实用技巧，对图形学和游戏开发等领域有参考价值。"},{"id":"hn-47339223","title":"Personal Computer by Perplexity","url":"https://www.perplexity.ai/personal-computer-waitlist","source":"Hacker News","score":206,"comments_count":166,"comments_url":"https://news.ycombinator.com/item?id=47339223","published_at":"2026-03-11T18:22:21","author":"josephwegner","text":null,"summary":"Perplexity AI推出了'Personal Computer'产品的等待列表，值得关注是因为这代表了AI公司向个人计算设备领域的扩张，可能重塑人机交互方式。"},{"id":"hn-47356017","title":"An old photo of a large BBS (2022)","url":"https://rachelbythebay.com/w/2022/01/26/swcbbs/","source":"Hacker News","score":159,"comments_count":115,"comments_url":"https://news.ycombinator.com/item?id=47356017","published_at":"2026-03-12T19:41:35","author":"xbryanx","text":null,"summary":"文章分享了一张大型BBS（公告板系统）的旧照片（2022年），值得关注是因为它唤起了对早期互联网社区和技术的怀旧，展示了数字文化的历史演变。"},{"id":"hn-47310617","title":"Datahäxan","url":"https://0dd.company/galleries/witches/7.html","source":"Hacker News","score":125,"comments_count":10,"comments_url":"https://news.ycombinator.com/item?id=47310617","published_at":"2026-03-09T15:48:02","author":"akkartik","text":null,"summary":"'Datahäxan'是一个艺术项目，探索数据、女巫和科技的主题，值得关注是因为它以创意方式批判了数据收集和监控社会，引发了关于技术伦理的思考。"},{"id":"hn-47296645","title":"Printf-Tac-Toe","url":"https://github.com/carlini/printf-tac-toe","source":"Hacker News","score":120,"comments_count":12,"comments_url":"https://news.ycombinator.com/item?id=47296645","published_at":"2026-03-08T12:01:07","author":"carlos-menezes","text":null,"summary":"Printf-Tac-Toe是一个用C语言printf函数实现井字棋游戏的独特项目，它展示了格式化输出函数的强大功能和创造性编程思维，值得关注其如何利用基础函数实现复杂逻辑。"},{"id":"hn-47303044","title":"NASA's DART spacecraft changed an asteroid's orbit around the sun","url":"https://www.sciencenews.org/article/spacecraft-changed-asteroid-orbit-nasa","source":"Hacker News","score":107,"comments_count":73,"comments_url":"https://news.ycombinator.com/item?id=47303044","published_at":"2026-03-09T00:00:05","author":"pseudolus","text":null,"summary":"NASA的DART任务成功改变了小行星Didymos的轨道，这是人类首次通过主动撞击改变天体轨道的太空防御技术验证，标志着行星防御技术迈出关键一步。"},{"id":"hn-47350136","title":"Long Overlooked as Crucial to Life, Fungi Start to Get Their Due","url":"https://e360.yale.edu/features/fungi-kingdom","source":"Hacker News","score":92,"comments_count":32,"comments_url":"https://news.ycombinator.com/item?id=47350136","published_at":"2026-03-12T13:16:11","author":"speckx","text":null,"summary":"文章探讨了真菌在生态系统中的关键作用及其长期被忽视的重要性，随着科学研究深入，真菌在碳循环、医药和可持续发展领域的价值正获得重新评估。"},{"id":"hn-47355781","title":"Runners who churn butter on their runs","url":"https://www.runnersworld.com/news/a70683169/how-to-make-butter-while-running/","source":"Hacker News","score":91,"comments_count":50,"comments_url":"https://news.ycombinator.com/item?id=47355781","published_at":"2026-03-12T19:21:45","author":"randycupertino","text":null,"summary":"报道了跑步者如何在跑步过程中利用身体运动自制黄油的创新实践，结合了运动健身和传统食品制作，展示了跨领域的生活创意。"},{"id":"hn-47352385","title":"WolfIP: Lightweight TCP/IP stack with no dynamic memory allocations","url":"https://github.com/wolfssl/wolfip","source":"Hacker News","score":88,"comments_count":13,"comments_url":"https://news.ycombinator.com/item?id=47352385","published_at":"2026-03-12T15:39:50","author":"789c789c789c","text":null,"summary":"WolfIP是一个轻量级TCP/IP协议栈，其最大特点是不使用动态内存分配，适合嵌入式系统和资源受限环境，对物联网和实时系统开发有重要价值。"}],"locale":"zh"}],"$Lc"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
-12:Ta2d4,<p><a href="https://lobste.rs/~ngoldbaum" rel="ugc">@ngoldbaum</a> is doing awesome work <a href="https://labs.quansight.org/blog/free-threaded-python-halfway" rel="ugc">slaying Python's GIL</a> and moving the entire ecosystem to the free-threading build. We also talked about burnout, Mercurial and Jujutsu. <a href="https://ngoldbaum.github.io/" rel="ugc">He</a> likes PRs which <a href="https://github.com/numpy/numpy/pull/30770" rel="ugc">remove 1k loc</a>.</p>
-<hr />
-<p><strong>What are your thoughts on your own work? You get to do open source
-stuff and wanted to talk about this!</strong></p>
-<p>I discovered an unusual career niche and it's nice to show people it's
-possible. I started my career writing software to analyze simulations
-of galaxies which transitioned into working on software that makes
-grad students' lives easier. So I work on complicated Python projects
-which help others work on projects more directly important to society
-itself.</p>
-<p>tl;dr: So I went from astrophysics simulations to getting a commit bit on
-NumPy and PyO3.</p>
-<p><strong>So you have a <a href="https://ngoldbaum.github.io/" rel="ugc">website</a> with some
-articles, you've given a few talks, you're on lobsters, IRC and so on
-with your real name.
-You want to show people what's possible... What inspires you to engage
-with the public?</strong></p>
-<p>It's my privilege as a white dude with a US passport where I feel like I
-can have an online presence and participate in online communities with my
-real name without people bouncing down my door and telling me how much of
-a piece of shit I am. So far that hasn't happened. If it ever happens,
-I might change my stance.</p>
-<p>In academia, I was into open science. In
-astrophysics people would often keep their secret sauce, publishing
-papers about simulations whose code and data was private. A large
-fraction of the literature is worthless because you have to take it on
-faith they didn't have some bug. I wanted to help push everything to a
-culture of reproducible workflows with shared data and analysis scripts
-anyone could run. My PhD simulation data are
-<a href="https://girder.hub.yt/#collection/573647d3dd9119000164acf0" rel="ugc">still available</a>
-on a server at the University of Illinois.</p>
-<p>I find it personally satisfying to help people asking technical
-questions, if I know the answer. It's my karmic way of paying back.</p>
-<p>**Your website's about page is reverse chronological (interesting
-choice) but it ends at "got my PhD" what happened before? How'd you do
-you decide to do astrophysics? Were you programming before?</p>
-<p>I took a basic class in like 9th or 10th grade in high school. I already
-messed around with PC gaming. My dad was a PC technician so I would
-watch him build computers and debug bullshit. At 12, I had Windows ME
-which exposed me to dealing with computers breaking.</p>
-<p>I got a degree in Physics at CU Boulder and just went straight to grad
-school, hanging out in the physics library, which informed my approach
-where you haven't actually learned until you've explained it to someone
-(in a few ways!)</p>
-<p>A common pathology of hard science PhDs is:</p>
-<ul>
-<li>Get paid to work on something so huge no human could do it,
-discouraging you until you get distracted by something tractable.</li>
-<li>Your project needs software, you see an existing OSS project doing it,
-which you naturally fix.</li>
-<li>While fixing it, you interact with people on GitHub. It's both more enjoyable
-and more social than grad work.</li>
-<li>Get addicted to the dopamine hit from merging pull requests instead of
-getting your PhD advisor's approval.</li>
-</ul>
-<p>It's nice to solve a solvable problem like a bug report, sitting down
-for a couple of hours working on a self-contained thing, which really
-satisfies the kind of person who does a PhD, who is probably good at
-solving homework problems. Research, on the other hand, is open-ended
-and discouraging.</p>
-<p><strong>There's a similar dynamic in Common Lisp where we have 4-50 years
-worth of libraries which may have last been maintained 30 years ago or
-had a commit 12 years ago, but which generally run fine. But maybe so
-and so who updated it for their 1994 thesis didn't care about the bug
-you will encounter... Is this similar?</strong></p>
-<p>It's usually worse than that. Sometimes you just have a paper which
-describes an algorithm which you get to implement. If lucky, your
-advisor wrote some relevant code. And it'll always be buggy spaghetti
-Fortran or C++.</p>
-<p>But hopefully you can use a community tool others work on; many analysis
-tasks are quite similar so ideally we can maintain tricky code in common
-routines together with nice APIs which people want to use. So it's
-better to work on community packages, encourage people to use them and
-get dopamine hits with our friendly communities!</p>
-<p><strong>So, Python! I've long had the impression of things in Python not
-working together, so you have to write a lot of glue between two
-libraries. A big promise of Julia was that all libraries would work
-together because it had standard math formats. How does Python handle
-that today?</strong></p>
-<p>Via standardization! Projects which adhere to the <a href="https://github.com/data-apis/array-api" rel="ugc">Array API
-Standard</a> work together, so if
-someone passes a Torch tensor into scikit-learn it just works!
-scikit-learn's algorithms are written to call the Torch API in the right
-way to make it run directly on the GPU. But there are limitations; it
-only works if you can encode the algorithm as a series of NumPy
-operations or in Python, but not if you go into a Cython extension...</p>
-<p>I'd love to update the <a href="https://docs.python.org/3.15/c-api/buffer.html" rel="ugc">Buffer
-Protocol</a> API. It's a
-detail in the Python C API which allows you to do zero-copy sharing of a
-void* pointer to an arbitrary buffer containing bytes. People like 0
-copy data sharing! But the way the Buffer Protocol was originally
-formulated, it only works with data types NumPy supported 20 years ago.
-We can make it so NumPy, when sharing a buffer for e.g. a string dtype
-array, it will have extra format metadata saying "this is a NumPy string
-dtype buffer with version 1.1 and some basic
-metadata." This is useful for Cython and there's a ton of Cython code in
-the wild like Pandas, scikit-learn. It has neat syntax for passing a
-NumPy arrays to Cython via the Buffer Protocol called <a href="https://cython.readthedocs.io/en/latest/src/userguide/memoryviews.html" rel="ugc">typed
-memoryviews</a></p>
-<p>Right now it's impossible to share any type unsupported by the Buffer
-Protocol with this nice Cython syntax. Ideally I want to make it possible
-for anyone to define custom data types that can then be shared via the buffer
-protocol. That will take some work both in CPython and in the community to enable.</p>
-<p><strong>What's package management like in Python now?</strong></p>
-<p>There's a lot of stuff happening. The <a href="https://anaconda.org/" rel="ugc">Conda</a>
-ecosystem is really nice. I wouldn't necessarily use the Anaconda Python
-distribution because of some legal issues, but the community-maintained
-conda-forge package ecosystem makes stuff instantly available and
-installable in a uniform way on the main OSs, great especially for
-native dependencies. The classic example is
-<a href="https://gdal.org/en/stable/" rel="ugc">GDAL</a>, a complicated geophysical data
-analysis library with all kinds of native dependencies, which you could
-never <code>pip install</code>, but it works through conda.</p>
-<p>The <a href="https://pixi.prefix.dev/latest/" rel="ugc">Pixi</a> package manager lets
-you have a lock file with an environment with all your packages defined and has
-similar goals to <a href="https://github.com/astral-sh/uv" rel="ugc">uv</a> (uv is to Pip as Pixi is to Conda).
-I'm excited because conda packages can build the package too. So Pixi
-could recursively build everything in an environment from source,
-enabling sanitizer testing for packages all over the ecosystem. There
-are many packages of big Cython code bases, which is technically a
-memory safe language sort of, but there are styles where you're writing
-C in a Pythonic interface. I've personally shipped Cython code doing undefined behavior,
-generating garbage data in production, causing incorrect science
-results. I'm sure if you recursively built any big project's entire
-dependency stack including Python with sanitizer instrumentation, you'd
-see all kinds of use-after-frees, buffer overflows and other nastiness
-no one's noticing now. I want to make the process of running tests under
-sanitizers and other runtime validation tools super easy.</p>
-<p>I also want to enable people to reach for PyO3 and Rust, which doesn't
-have a hold in the scientific ecosystem; Cython took a hold before Rust
-existed. Currently, no one wants to add the Rust dependency, but I'd
-like to add a Rust module to NumPy so a Rust compiler is a NumPy build
-dependency, making it more straight forward for any other project to add
-a Rust dependency.</p>
-<p>I don't think C or C++ is a good choice for native, greenfield code in
-2026. I'd also always choose Rust over Cython; writing in a safe language with
-tooling and which doesn't compile to generated C is so much more pleasant.
-We should be handing people shovels not grenades.</p>
-<p>The main blocker to getting this going in the Python community is adding better
-support for Rust and PyO3 projects to meson and meson-python. PyO3 is tightly coupled
-to Python. Maturin manages this complexity, but meson-python will need to do something
-similar if it wants to directly support PyO3-based Rust projects. See <a href="https://github.com/mesonbuild/meson-python/issues/721" rel="ugc">this issue</a>
-for more details.</p>
-<p>What does work right now is putting Rust code in its own package that other projects
-can depend on. The Rust code is managed by maturin, so we nicely sidestep the issue with
-meson and meson-python. That said, I'd really like to be able to add Rust code directly
-to scientific projects and I'm hoping to find a way to get that meson-python feature request through.</p>
-<p><strong>What is your elevator pitch for free threading? Who is it for?</strong></p>
-<p>It's for people who understand <a href="https://en.wikipedia.org/wiki/Amdahl's_law" rel="ugc">Amdahl's law</a>.
-You'll always have CPU-bound pure-Python code to orchestrate low-level
-code that releases the GIL, so no matter how well your low-level code scales,
-Pure Python code and the GIL will eventually show up as a scaling bottleneck for almost
-any arbitrary Python code if you want to exploit
-your 100-core Threadripper.</p>
-<p>Now that we've gone through the effort and converted all these projects, you can really use your threads! We just
-need people to use it now.</p>
-<p><strong>Scientific computing's not new, what workflows does the free-threaded
-build help or enable?</strong></p>
-<p>Anywhere you have CPU bound code in Python. If someone has optimized
-something to death, I doubt the free-threaded build will lead to
-speedups, but it will really speed up development for e.g. throwing 12
-cores on a laptop at a data reduction pipeline. Right now, with
-<a href="https://docs.python.org/3/library/multiprocessing.html" rel="ugc">multiprocessing</a>
-you <em>can</em> do it but it might require copying a lot of data, without
-noticing. Pickle also introduces weird caveats for multiprocessing e.g.
-with Jupyter Notebooks. Free-threading will often be more efficient too.</p>
-<p>By the way, we dearly need people to test and report multi-threading
-performance issues. For example, whether a test is faster with multiprocessing than
-multi-threading. We're not sure where the scaling issues are because the
-community hasn't started experimenting yet. Some workflows won't work
-yet. I wouldn't make my production workflow depend on it yet. But most
-workflows should work! I'd love it if people who normally use
-multiprocessing would give this a try. Like, if you have a process pool
-executor, what happens if you replace it with our thread pool executor?
-We'd really love to find and fix the cases where it's slower. Ideally
-multithreading should always beat or be just as fast as multiprocessing.</p>
-<p><strong>Is there any reason to prefer multiprocessing?</strong></p>
-<p>One big issue with the free-threaded build is there's only one
-stop-the-world garbage collector, so many threads can wait on a GC pass,
-which we'll need to address. In some cases, process pools may be better.
-I ran into a case like this, so it won't always be a complete slam dunk
-depending on the region of scaling space you're in.</p>
-<p>Maybe a future version of the free-threaded interpreter will have a concurrent
-garbage collector to avoid scaling issues coming from GC pauses. It's also
-possible to re-architect extensions so long-running native calculations occasionally
-check in with the interpreter to allow the GC to run, so these issues can be worked around.</p>
-<p><strong>How did free threading finally become a thing?</strong></p>
-<p><a href="https://github.com/colesbury" rel="ugc">Sam Gross</a> and the Python runtime team at
-Meta are very, very smart and found
-a way to do it without invasive changes all over enormous legacy code
-bases! There's still a CPython runtime you have to explicitly attach
-and detach from, but now without releasing a lock! This builds on the
-enormous engineering effort to produce
-<a href="https://github.com/python/cpython/issues/90815" rel="ugc">mimalloc</a>, and efforts from WebKit to develop parking-lot style Mutexes, which directly inspired the design of
-<a href="https://docs.python.org/3/c-api/init.html#c.PyMutex" rel="ugc">pymutex</a>. So it was the right time
-in terms of technology.</p>
-<p>Because of the GIL, the community's multi-threaded C knowledge was low
-and injecting some modern sensibility is badly needed. We're finding all
-kinds of thread safety issues, present forever, because no one has
-been using threads.</p>
-<p><strong>How long have they been working on this?</strong></p>
-<p>Meta's been working on Cinder, their CPython fork, for a long time.
-I believe Instagram is running its Django on Cinder, without a GIL. Sam
-Gross forked Python 3.9 and got CPython running without the GIL around then.
-Also it's not all Sam. The Python runtime team at Meta has a lot of very
-talented folks who are working to improve CPython.</p>
-<p>At some point, I guess someone decided it'd cost less engineering effort
-to use the upstream version of CPython and everyone benefits, really.
-It's not always possible to align a mega corporation with community
-benefit, but the stars aligned. <a href="https://peps.python.org/pep-0703/" rel="ugc">PEP
-703</a> was approved in October 2023 and
-the steering cancelled asked Meta to fund two full-time equivalents to
-support the ecosystem, which was subcontracted to us at Quansight.</p>
-<p>In March, 2024 we started on NumPy, Cython, setuptools etc. trying to
-get the absolute bottom of the stack working with the three-threaded
-interpreter. It was mostly me for NumPy, fixing the global state, though
-ndarray is fundamentally unsafe. No matter how fancy the lock, you'd
-have contention and I don't want to deal with the fall out on something
-as stable as NumPy. It'd be better to make something with the same
-interfaces as ndarray but is CPU only and immutable. ndarray is deeply
-mutable but doesn't need to be.</p>
-<p>After NumPy, I helped get Py03 working, which is very sensitive to the
-ABI. Now, the free-threaded interpreter has a completely different ABI,
-a different layout to PyObject structs... There needs to be Rust code
-explicitly listing out the ABI down to the byte level, so the
-<a href="https://pyo3.rs/main/doc/pyo3_ffi/index.html" rel="ugc">pyo3-ffi</a> crate is
-basically rewriting the CPython headers with extra complexity for older
-Python versions via conditional compilation. It was a lot.</p>
-<p>Thankfully I
-had a lot of help from <a href="https://github.com/davidhewitt" rel="ugc">David Hewitt</a>
-who mentored me a bit. It's so nice to have someone who really knows a
-codebase and can just tell you what you need to work on. I'll have to do
-this again for 3.15's new ABI and for the new planned stable ABI.</p>
-<p>Historically, each release (3.3, 3.4) had its own ABI, you had to build
-a binary for. Around 3.2 they added a <a href="https://docs.python.org/3/c-api/stable.html#stable" rel="ugc">stable
-subset</a> of the
-CPython ABI, you could build extensions against to support arbitrary
-future versions. But the PyObject struct is public with 2 fields: the
-type and ref count, so for a multi-threaded program taking references to
-a Python object, you have to increment and decrement the ref counts
-(multi-threaded counter) on a shared object. Yikes.</p>
-<p>But you can't change the layout because you're exposing the ref count
-which people use and rely on (in dubious ways). Technically, you're not
-even supposed to move PyObjects in memory, just use pointers - but
-people do it! For free-threading, one of the fields is a mutex, so you
-need a per-object lock - there's nowhere to put it in the original
-layout. On the free-threaded build, PyObject has a completely different
-layout. The struct isn't even the same size.</p>
-<p>This means that reference count can be split into shared and local
-references. The cost is that many operations are no longer so simple.
-Py_INCREF is no longer just incrementing an unsigned integer. Take a
-look at
-<a href="https://github.com/python/cpython/blob/0fa1fc69f3ff0deb778e3c9f37cdc0c702bc8ad2/Include/refcount.h#L251-L306" rel="ugc">its implementation</a>!</p>
-<p>In the future, they want a shared ABI so you can ship one
-binary for both interpreters (but hopefully we'll only have the
-free-threaded interpreter) which means making PyObjects opaque.
-<a href="https://github.com/serhiy-storchaka" rel="ugc">Serhiy Storchaka</a>, <a href="https://github.com/hugovk" rel="ugc">Hugo van Kemenade</a>, <a href="https://encukou.cz/" rel="ugc">Petr
-Viktorin</a> are working on this.</p>
-<p><strong>What do you not anticipate supporting the free-threaded build?</strong></p>
-<p>There are some sketchily maintained or "done" libraries which many
-projects rely on. But with these radical changes to Python, the
-assumptions baked into them are no longer true. For example, we did a
-lot of work on <a href="https://github.com/python-cffi/cffi/" rel="ugc">cffi</a> whose author
-considered it done. There's a long tail of such projects.</p>
-<p>Thankfully for CFFI we were able to convince the original author and the
-current maintainer to accept our patches to make the C internals thread-safe.</p>
-<p>But even in the worst case, it's only a few weeks of effort. We were
-thinking <a href="https://github.com/python-greenlet/greenlet" rel="ugc">Greenlet</a> would
-be difficult to support, because it patches the interpreter and makes a
-lot of assumptions. But Thomas Wouters gave it a look and it's supported
-<a href="https://github.com/python-greenlet/greenlet/commit/e6fead23d967fd6194c5a1eaa48d55a07b4bda40" rel="ugc">experimentally</a>
-now.</p>
-<p>We've been focusing hard on the scientific and AI ecosystem where
-people are quite excited, but there's also the Python web developer
-ecosystem. The big reason I did PyO3 was to get cryptography working,
-which is a reverse dependency of almost every Python web stack. More
-niche things will definitely lag.</p>
-<p>I think the Python ecosystem is ripe for rewriting all these old C
-extensions. <a href="https://pola.rs/" rel="ugc">Polars</a> is faster and fixed a lot of
-mistakes in the Pandas API, leaving it in the dust.</p>
-<p><strong>You've been working on a lot of codebases in this project! How do you
-cope with that?</strong></p>
-<p>I had around 1500 contributions in 2025 according to the <a href="https://github.com/ngoldbaum" rel="ugc">Github
-graph</a>. Before Quansight, I had a lot of
-experience noticing and addressing a bug in random projects in the
-scientific Python ecosystem, for the most part well maintained packages
-with communities. But in this project, the packages with 1-2 maintainers
-we've been branching out to add free-threaded support to, are unique and
-we have to figure out how to work with them individually. We don't want
-to make it so no one can use these without explicit support for the
-free-threaded build, but there are often thread safety issues with
-static global variables in old C extensions, so we fix that where we
-can. Lately, I've been adding testing to pure Python projects, but some
-aren't actively maintained and they just sit there awaiting approval. A
-teammate has a spreadsheet generating reminders for them to look at our
-contributions.</p>
-<p>This is in no way a criticism of maintainers who aren't looking at my PRs
-as fast as I would like. It's a reflection of the open source ecosystem and
-lack of resources available for maintainers of critical but not-so-visible
-libraries.</p>
-<p><strong>How do you go about testing?</strong></p>
-<p>For free-threaded build support, we've used
-<a href="https://github.com/Quansight-Labs/pytest-run-parallel" rel="ugc">pytest-run-parallel</a>,
-a PyTest plugin, which runs each test in a suite many times at once in a
-thread pool, helping to shake out problematic global state. It's not
-perfect, it won't validate thread safety for mutable data structures, but
-it will find implementations that rely on global state. If a test suite passes under pytest-run-parallel,
-then it's probably safe to use the library in a multithreaded workflow, but without sharing
-any mutable state between threads (e.g. read-only map-reduce operations).</p>
-<p>Explicitly multi-threaded tests are better but trickier because you have
-to understand what you're actually trying to test and think hard to test
-something interesting, harder than running something automatically over
-the codebase.  But it's surprising if any of these code bases use
-threads at all, so we have to understand the project, hope the
-documentation is good... Sometimes it's more straightforward e.g. if it
-makes sense to share a mutable object like a counter between threads,
-you just make sure it's accumulating correctly. Sometimes you might only
-read an object from multiple threads! If there's an obvious
-multi-threaded workflow, we just set that up in a test with a thread
-pool. The free-threaded guide documents <a href="https://py-free-threading.github.io/testing/" rel="ugc">testing
-patterns</a> to set that up.
-We want to improve the documentation and tooling around this.</p>
-<p>If a project only exposes pure functions and doesn't expose any types with mutable
-state, it's easy to say whether it's thread safe. If there's no global
-state in the implementation, by definition it's thread safe. There can
-be weird issues like a thread mutating the argument to a function like <code>np.array()</code></p>
-<p>while another thread is creating an array from the object - but I'm
-usually assuming no one's intentionally trying to break anything like
-that. It's easy to get bogged down in patterns not indicative of real
-world use. For instance, fuzz tests are less impactful because they
-mostly find things people would never do. In the distant future, we
-should think about that, make things resilient against monkey business
-but it's not possible right now. So yeah, there be dragons all around
-multi-threaded testing, especially where there's nontrivial work with
-threads, wrapping a C library. Sometimes it's easy, FFmpeg is 100%
-thread safe! But if not, there are probably issues hiding in the
-GIL-enabled build already.</p>
-<p><strong>How much Rust is making its way into the Python ecosystem?</strong></p>
-<p>There's a move towards tooling and new packages, basing them on Rust and
-Py03 instead of Cython, the C API,
-<a href="https://github.com/pybind/pybind11" rel="ugc">pybind11</a> or
-<a href="https://github.com/wjakob/nanobind" rel="ugc">nanobind</a> and C++. So Polars,
-Astral's tooling, Pixi's tooling, UV, new type checkers etc. A lot of
-excitement now comes from implementing low level stuff in Rust. There's
-a lot for the web. The cryptography project led the way, putting Rust in
-everyone's stacks which made it easier for other projects because they
-could rely on the Rust already being there when distributions build nontrivial Python stacks.</p>
-<p>Business-y, data science tasks are more often C++. Scientific Python
-isn't ready for Rust yet - I want to fix the problems blocking more Rust adoption.
-Many communities are stable, people don't want to add new languages.
-Others see Rust as complicated and are comfortable with Cython's
-Pythonic syntax.</p>
-<p>I have a good mental model of how to write Rust and can reason solutions
-from compiler warnings, after <em>a few years</em>. It isn't easy. But if we
-start people now and shift towards that direction, a lot of things will
-be a lot easier. Many problems with NumPy are because changing the C
-code is so difficult; it'd be nice to work in a language where I can
-refactor things without feeling like I've broken something.</p>
-<p><strong>Do you think Python itself will be entirely written in Rust at any
-point?</strong></p>
-<p>David Hewitt gave a talk about adding Rust to the standard library. Emma Smith is also leading the effort to write a PEP to implement that proposal, currently targeting Python 3.16. A
-key issue's that Python helps bootstrap Linux distros and e.g. Debian
-gives exotic architectures first-class support, which a Rust dependency
-could block or complicate. But Rust is being included in Linux now and
-as it gets incorporated more, we could talk about introducing Rust in
-the Python interpreter. Personally, I think it makes the most sense
-for CPython to give extensions a Rust API alongside the C API. That might look like upstreaming parts of PyO3 into CPython itself.</p>
-<p><strong>Interestingly, you have an <a href="https://ngoldbaum.github.io/posts/python-vs-rust-nn/" rel="ugc">old article</a> where
-Python, because of its libraries, outcompetes Rust at scientific tasks.</strong></p>
-<p>That was in 2019, not knowing Rust well yet.</p>
-<p>You'll should still probably be doing machine learning in Python, but a lot of your dependencies will be written in Rust. If you're using Huggingface's tokenizers, that's Rust. However, the core will like still be C++,
-PyTorch or such. I don't think it's reasonable for every task to always
-be in Rust, but I think where it really shines is when you have Python
-which isn't fast enough.If a single function takes up all your
-runtime, I think PyO3 is really well-suited to replace the implementation. But if you wanted to deal with a complicated C++ library, PyO3
-of course doesn't make sense. So many domains are based on a huge corpus of a flavor of C++ I like to call "cmake soup".
-Rust isn't going to unseat that anytime soon, but I want to enable that possible future
-without memory unsafe languages.</p>
-<p><strong>How long do you think it'l take for free threading to be everywhere, to be the only build?</strong></p>
-<p>Maybe 3.16 or 3.17. That depends on community uptake, how people feel
-about it and how fast we address the issues the steering council
-identified. It's not good for CPython to have these <code>ifdef</code>s everywhere
-for onboarding new devs; two builds adds a lot of complexity. Hopefully
-we can manage this in the next year and half, address documentation
-issues and help packages support it. We're making steady progress here.</p>
-<p><strong>What would you like to do after free-threading?</strong></p>
-<p>I have a list of things in NumPy like improving the next iteration of
-StringDType, NumPy's variable-wdith utf-8 text data type. It'd be nice for it to support other encodings. It'd also be nice to have a BytesDType to go along with StringDType for cases where there is no valid encoding or the encoding is unknown. If NumPy has first-class support for arrays of text, it
-should also for arrays of bytes. Being able to specify an encoding would help memory map
-enormous CSV data set for performance optimization, addressing problems
-<a href="https://github.com/astropy/astropy" rel="ugc">astropy</a> faces. That's funded by a
-NASA grant.</p>
-<p><strong>What goes into a NumPy NEP?</strong></p>
-<p>It's looser than in Python with its steering council, bylaws and
-formalized rules. If Python's developer community's 100 people, NumPy's
-is perhaps 10 so there's significantly less social complexity.</p>
-<p>When starting a big project, taking more than e.g. 10 working sessions
-it's a good idea to sit down and write out a plan, even sketch out a
-prototype or get something mostly working, to inform a design document.
-I really like documentation driven design where I write the docs or
-example programs which demonstrate what I want to be able to do. After
-implementing a prototype, you can then compare with the examples and
-documentation to find bugs (whether in the implementation or design).</p>
-<p>A lot of my job is communicating, writing things on GitHub, so I try to
-write as clearly as possible. It's enjoyable though also time-consuming
-and labor-intensive, to draft a bigger document but worth while
-especially for technically complex work. Assembling all the details
-together helps discover mistakes and also gives you something to refer
-to later.</p>
-<p>For my first NumPy project (<a href="https://numpy.org/neps/nep-0055-string_dtype.html" rel="ugc">NEP55</a>) my main thrust
-was adding better support for variable length string arrays to NumPy. NumPy
-supports fixed-width strings, that is, arrays of strings with a fixed number of characters. For example, a scalar items in a "U4" string array are four-character unicode strings. So every entry in the array is a four
-character string and if NumPy is supplied a string with more than four characters to store in the arrays, it just truncates it. If an item has
-less than four characters, NumPy stores null bytes in the trailing characters, wasting memory.</p>
-<p>NumPy arrays are <a href="https://en.wikipedia.org/wiki/Stride_of_an_array" rel="ugc">strided</a> data. That things are fixed width is deeply baked into the
-structure and assumptions of NumPy, so adding variable length strings
-required some hacks. It took some engineering effort to make it possible
-to add new
-<a href="https://numpy.org/doc/stable/reference/arrays.dtypes.html" rel="ugc">dtypes</a> or
-add more advanced dtypes as user packages. This all builds on that.
-Sebastian Berg led the effort before me when at the Berkeley Institute
-for Data Science, but didn't manage to completely ship the new dtype implementation before I stated on NumPy. He helped me tackle it. The NumPy
-community also helped a lot; I'd propose a plan and others would give
-in-depth improvements to the plan along with example code!</p>
-<p><strong>Is there any Documentation that you are particularly proud of writing?</strong></p>
-<p>I am really proud of these:</p>
-<ul>
-<li><a href="https://unyt.readthedocs.io/en/stable/" rel="ugc">https://unyt.readthedocs.io/en/stable/</a></li>
-<li><a href="https://py-free-threading.github.io/" rel="ugc">https://py-free-threading.github.io/</a></li>
-<li><a href="https://numpy.org/neps/nep-0055-string_dtype.html" rel="ugc">https://numpy.org/neps/nep-0055-string_dtype.html</a></li>
-<li><a href="https://ytep.readthedocs.io/en/master/YTEPs/YTEP-0032.html" rel="ugc">https://ytep.readthedocs.io/en/master/YTEPs/YTEP-0032.html</a></li>
-</ul>
-<p><strong>What community development approaches do you like?</strong></p>
-<ul>
-<li>Clearly write down the norms</li>
-<li>Go where people actually are (e.g. people went to Discord from IRC,
-some active people like to communicate over email, others over chat or
-it can be easier to track something on a GitHub issue)</li>
-<li>In person meetings (e.g. everyone meet at a conference) are really
-cool, you get a lot done</li>
-<li>Regular meetings (like a <a href="https://scientific-python.org/calendars/" rel="ugc">public
-call</a> anyone can show up at)</li>
-</ul>
-<p>Anyone can do this, it just takes a few people to develop the habit,
-and if you stick a few people in a meeting for an hour they'll have
-interesting discussions about something!</p>
-<strong>Version Control</strong>
-<p><strong>You worked on a <a href="https://hg.sr.ht/~ngoldbaum/rug" rel="ugc">Mercurial client</a> at
-the Recurse center?</strong></p>
-<p>In the Mercurial IRC channel, I'd seen interesting technical discussions
-and development e.g. related to scaling from Google and Meta
-engineers doing actual real things, in real production code bases. I wanted a
-concrete project to learn Rust, spread out over multiple files. I wrote
-some <a href="https://ngoldbaum.github.io/posts/revlog/" rel="ugc">blog posts</a>.</p>
-<p>Mercurial's legacy is in <a href="github.com/jj-vcs/jj" rel="ugc">Jujutsu</a>, especially influencing the UI with
-<a href="https://jj-vcs.github.io/jj/latest/revsets/" rel="ugc">revsets</a>. Many of the
-Mercurial IRC people are now in the JJ discord too!</p>
-<strong>What about Mercurial became untenable for Meta, Google that they switched?</strong>
-<p>All the tooling in the universe is built around Git; a lot of tooling
-assumes any code in a repository is in Git. The only fix is to treat
-version control like an abstract system with an adapter for each
-alternative, which no one wants to do. So bootstrapping off Git makes a
-lot of sense today. There were attempts to make that work but e.g.
-BitBucket eventually decided it wouldn't support <code>hg</code> repos anymore -
-deleting all the repos, issues, PRs, discussions etc. But BitBucket was
-already terrible, for Open Source you had to use GitHub by 2015 at the
-latest, for super holdouts like CPython. Mercurial's death knell was
-Meta forking it (into <a href="https://github.com/facebook/sapling" rel="ugc">Sapling</a>).
-Before that, most dev effort in Mercurial was from Meta, but then they stopped
-contributing upstream...</p>
-<p><strong>Why did Meta move to Sapling?</strong></p>
-<p>I think Mercurial kept making Meta's goals harder than they needed to
-be. At first, Mercurial was quite lively, supported by Google Code etc.
-but as less people used Mercurial it stopped being worth it to upstream
-things, but I'm just speculating.</p>
-<p><strong>What do you want in a future forge?</strong></p>
-<p>To really replace Git, you need it usable for things besides text files.
-People want to version arbitrary binary files, natively. Figuring out
-semantic diffs as a first class thing, not just binary blobs. But I
-don't know how to actualize this nebulous concept.</p>
-<p>I think good jj native hosting will push things off the edge form Git.
-Maybe <a href="https://ersc.io/" rel="ugc">East River</a>. I'm skeptical of
-<a href="https://blog.tangled.sh/stacking" rel="ugc">Tangled</a>, was atProto really the best
-choice? We all know GitHub is shitting the bed, e.g. <a href="https://github.com/orgs/community/discussions/177971" rel="ugc">IP blocking South
-America</a> or being
-unreasonably slow on Safari due to a CSS bug. Or just generally being down a lot. It <em>would</em> take a lot of
-engineering to replicate GitHub actions, but do you really need to?</p>
-<p><strong>What different version control workflows have you had?</strong></p>
-<p>It's easiest to talk about in terms of metaphor. There's <a href="https://stevelosh.com/blog/2013/04/git-koans/" rel="ugc">this blog post</a> that sarcastically offers some "git koans"
-from 10 years ago. Things have improved a bit since then and there's work going on to improve Git's documentation and UI, but still Git's UI
-is arbitrarily complicated for no reason. <code>git checkout</code> is a homonym of
-3 different things! Mercurial (or JJ)'s UI is well composed, each
-command's a verb doing just one thing. Most commands accept <code>-r</code> or
-<code>--rev</code> where a revset can be a commit hash, branch name, change ID or
-an expression in the <a href="https://docs.jj-vcs.dev/latest/revsets/" rel="ugc">revset DSL</a> letting you
-search the commit graph with predicates! <code>hg rebase</code> or <code>jj rebase</code>
-works the same way with a source and base concept, not present in Git.</p>
-<p>In Mercurial (and jujutsu), a commits can "evolve", starting as a
-draft then getting published. You can rewrite draft commits while
-published/public commits are immutable (without <code>--force</code>). While doing
-a code review (e.g. a PR), commits are in draft phase and you can do
-whatever with them.</p>
-<p>There are 2 approaches for version control. Some
-treat it as a backup, pressing "save" every now and then. These people
-won't understand crafting commit messages. But you can also <strong>treat a
-commit like documentation: After you hack your way to a fix, squash it
-into a single commit which you then split into a reasoned history</strong>.
-Doing this, you'll very quickly run into more complicated things where
-Mercurial or jj come in handy. But <code>jj rebase</code> is of course already more
-pleasant if you keep a long running branch which you need to rebase
-every now and then.</p>
-<strong>Burnout</strong>
-<p>I definitely don't work on code very much outside of working hours. I
-burned out pretty hard and quit my job in 2020 and was was not working
-for a few years, I have tried to structure things so that work is very
-timelocked to 35 hours a week. At Quansight I have to put hours in a
-time sheet, which timeboxes me so they can't legitimately ask me to like
-be on call on the weekend or something. That's just not something
-Quansight does.</p>
-<p>While I was at the Recurse Center I had to job hunt too although I ended
-up finding a job without going through Recurse Center. I actually
-almost got a job working on the test team for the Windows probes at
-CrowdStrike. So I was almost on the team that caused the CrowdStrike
-global outage.</p>
-<p><strong>What did you do with your time after quitting?</strong></p>
-<p>Not much. It was the pandemic. So the first bit of that was just kind of
-like feeling like, yeah, I'm glad I don't have a job right now. And then
-after that  I was, I was like, okay, I'm going to take a break for six
-months. And then six months passed. And I was like, yeah, I don't really
-want to do it anymore. And just kind of my mental health wasn't getting
-any better. It was getting worse, in fact. And my wife encouraged me to
-seek therapy. And I started medication, which also helped a lot. I don't
-mind publicly saying that.
-My <a href="https://www.youtube.com/watch?v=cUhP0OCSWsk" rel="ugc">SciPy 2024 talk</a> covers
-this experience at what like the period after that experience, where I
-sort of got my legs back working on NumPy stuff. But yeah  I really
-wish I had started antidepressants in grad school. It would have helped
-me a lot. But for some reason, I had a mental block or had told
-myself that I would be like cheating or something or that like, yeah,
-the medication is bad. There's lots of incorrect presuppositions that<br />
-probably should have been disabused. But
-you know, I made my own way in the world and didn't have a lot of
-help from adults.
-at the end of that period, I reached out to Ralf Gommers. I said I was interested in looking for work.</p>
-<p>I was at Quansight from October 2019 to March 2020. So like six months.
-And then I started again, October 2022. And I haven't stopped since then
-first at 20 hours a week. Then after a year, 35 hours a week when I felt
-I could do more. I do more engineering management too. Ralf
-transitioned from head of Quansight Labs, an internal division inside of
-Quansight, to CEO of Quansight
-<a href="https://quansight.com/post/quansight-is-now-a-public-benefit-corporation/" rel="ugc">PBC</a>,
-which made me take on more responsibilities. He was leading the project
-that we're working on to do the free threaded support stuff.</p>
-<p><strong>What other interests do you have?</strong></p>
-<p>I quit in 2020 because I was thinking about work all the time. It didn't
-feel like I could be physically active, spend time with my wife and
-actually fulfill job requirements. I could pick 2, not 3. My mom died in
-2018, she was very unhealthy and I could see myself going down that
-path. So running, rock climbing and biking, I lost 50 pounds. So I was
-looking for things that aren't programming, while getting paid to
-program too.</p>
-<p><strong>What you would suggest people do to try to better segment time or
-mentally handle work and segment that from the rest of their life or
-something. But as a manager, do you have ideas for how you can help your
-team with this perhaps?</strong></p>
-<p>People are humans. If you
-have problems, it's okay. It's the Dutch management style, which I learned from Ralf. You just say
-what you mean and you accept people as humans. Sometimes people aren't
-able to do what we're asking of them, so I try to make space for them to
-contribute. Reasonable expectations are important. Maybe you can change
-their project to align better with their experience. But they're adults,
-I can't force them, only make them aware of expectations. If they won't do
-it, there are consequences.</p>
-<p>A good thing about the free threaded project is that everyone's very
-experienced. If I run into a hard technical problem, I can often just
-ask someone to arrive at an answer and fix it. In my past experience,
-the most I could do would be filing an issue and hope someone checks it out.</p>
-<p>Working with really talented excellent people makes managing them and
-keeping track of what they're doing really easy because you don't have
-to micromanage, just look at results!</p>
-<p><a href="https://lobste.rs/s/6lqnhh/lobsters_interview_with_ngoldbaum">Comments</a></p>e:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-090fb6c23334","title":"My PostgreSQL database got nuked lol","url":"https://akselmo.dev/posts/they-broke-my-server/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-03-11T18:06:57","author":"akselmo.dev by Aks","text":"<p><a href=\"https://lobste.rs/s/vb7ipx/my_postgresql_database_got_nuked_lol\">Comments</a></p>","summary":"作者分享了他的PostgreSQL数据库服务器被意外破坏（'nuked'）的经历。这值得关注，因为它是一个关于系统运维、数据库管理、备份策略和事故响应的真实案例，对开发者和运维人员具有实际的警示和教育意义。"},{"id":"rss-c9ae97cb9f4d","title":"A fully snapshotable Wasm interpreter","url":"https://github.com/friendlymatthew/gabagool?tab=readme-ov-file#gabagool","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-03-11T13:59:37","author":"github.com by matthewkim","text":"<p><a href=\"https://lobste.rs/s/eu5uiz/fully_snapshotable_wasm_interpreter\">Comments</a></p>","summary":"介绍了一个名为Gabagool的、完全支持快照功能的WebAssembly（Wasm）解释器。这值得关注，因为快照功能可以显著提升Wasm应用的启动速度和状态恢复能力，对Wasm在边缘计算、插件系统等场景的应用有积极影响。"},{"id":"rss-5e93805dbc40","title":"Lobsters Interview with ngoldbaum","url":"https://alexalejandre.com/programming/interview-with-ngoldbaum/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-03-11T22:16:55","author":"alexalejandre.com by veqq","text":"$12","summary":"这是一篇对ngoldbaum的采访，他正在致力于消除Python的全局解释器锁（GIL），推动整个生态系统转向自由线程（free-threading）构建。这值得关注，因为移除GIL是Python社区长期以来的重要目标，将极大提升Python在多核CPU上的并行计算性能。"},{"id":"rss-d197845ababa","title":"Faster asin() Was Hiding In Plain Sight","url":"https://16bpp.net/blog/post/faster-asin-was-hiding-in-plain-sight/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-03-11T16:00:20","author":"16bpp.net via knl","text":"<p><a href=\"https://lobste.rs/s/bunmdv/faster_asin_was_hiding_plain_sight\">Comments</a></p>","summary":"文章揭示了一种更快的反正弦函数（asin）计算方法，该方法其实一直隐藏在众所周知的数学公式中。这值得关注，因为它展示了通过算法优化（而非单纯依赖硬件）来提升基础数学函数性能的可能性，对图形学、游戏开发和高性能计算领域有实用价值。"},{"id":"rss-9db0f6d1b2d0","title":"Why should we have user age tracking in Operating Systems and websites?","url":"https://wiki.alcidesfonseca.com/blog/age-verification-in-operating-systems-and-the-internet/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-03-11T10:58:59","author":"wiki.alcidesfonseca.com by alcides","text":"<p><a href=\"https://lobste.rs/s/oyb3u8/why_should_we_have_user_age_tracking\">Comments</a></p>","summary":"文章探讨了在操作系统和网站中引入用户年龄追踪与验证机制的原因和潜在影响。这值得关注，因为它涉及隐私、在线安全、法规合规（如儿童保护）与用户体验之间的复杂平衡，是一个重要的技术和政策交叉议题。"}],"locale":"zh"}]
-11:null
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-a16e4eeb0979","title":"This Is Not The Computer For You","url":"https://samhenri.gold/blog/20260312-this-is-not-the-computer-for-you/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-03-12T16:43:27","author":"samhenri.gold via msangi","text":"<p><a href=\"https://lobste.rs/s/zyt5uz/this_is_not_computer_for_you\">Comments</a></p>","summary":"文章批判性地讨论了现代计算机设计如何偏离用户真实需求，强调硬件和软件应回归实用性，对当前技术消费主义趋势提出反思。"},{"id":"rss-6f3c7beee2cd","title":"How do you manage SSH keys?","url":"https://lobste.rs/s/zcoz8h/how_do_you_manage_ssh_keys","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-03-12T19:19:34","author":"by mt","text":"<p>Hi! Im interested in practices around key management.</p>\n<p>Do you just use one key for everything, or a single key per host, or even one per use case?</p>\n<p>Do you store them ~/.ssh, or in 1password or similar? Do you use ssh-agent or prefer specifying -i each time?</p>\n<p>Et cetera. Please share your practices, especially if you feel that they are “unorthodox” but useful to you.</p>","summary":"该讨论征集SSH密钥管理的最佳实践，涵盖密钥生成策略、存储方案和工具使用，对系统管理员和开发者的安全运维具有实际指导意义。"},{"id":"rss-b3f05621c560","title":"Parametricity, or Comptime is Bonkers","url":"https://noelwelsh.com/posts/comptime-is-bonkers/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-03-12T06:48:59","author":"noelwelsh.com via soareschen","text":"<p><a href=\"https://lobste.rs/s/l3rkdl/parametricity_comptime_is_bonkers\">Comments</a></p>","summary":"文章深入探讨了编译时计算（comptime）的概念及其与参数化多态的关系，通过Zig语言案例展示了编译时元编程的强大能力。"},{"id":"rss-090fb6c23334","title":"My PostgreSQL database got nuked lol","url":"https://akselmo.dev/posts/they-broke-my-server/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-03-11T18:06:57","author":"akselmo.dev by Aks","text":"<p><a href=\"https://lobste.rs/s/vb7ipx/my_postgresql_database_got_nuked_lol\">Comments</a></p>","summary":"作者分享了PostgreSQL数据库因服务器故障导致数据丢失的亲身经历，并总结了备份恢复和运维监控的教训，对数据库管理员具有警示作用。"},{"id":"rss-bc76d76b6233","title":"Dreaming of a ten-year computer","url":"https://alexwlchan.net/2026/ten-year-computer/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-03-12T16:17:40","author":"alexwlchan.net via msangi","text":"<p><a href=\"https://lobste.rs/s/eng6mr/dreaming_ten_year_computer\">Comments</a></p>","summary":"作者探讨了构建能持续使用十年的计算机的愿景，分析了硬件耐久性、软件兼容性和可持续设计，回应了电子废弃物和消费升级问题。"}],"locale":"zh"}]
+f:null
