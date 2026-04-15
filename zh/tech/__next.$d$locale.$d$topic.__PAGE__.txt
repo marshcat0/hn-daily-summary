@@ -5,213 +5,217 @@
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
 e:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
 f:"$Sreact.suspense"
-5:T3f2b,好的，作为一名技术新闻分析师，我已对今日“Technology”主题下的30篇热门文章进行了综合分析。这些内容主要来自Hacker News和Lobsters社区，涵盖了编程、软件工程、安全、工具发布、行业观察等多个子领域。
+5:T3d58,好的，作为一名技术新闻分析师，我已对今日的30篇热门技术文章进行了综合分析。这些内容主要围绕**安全与隐私、开发者工具与平台、开源与软件工程、法律与政策、以及文化与娱乐技术**等几个核心主题展开。
 
-以下是我的分析和总结，按主题关键词进行分组。
-
----
-
-### **今日技术热点分析总结**
-
-今日的热门内容呈现出几个清晰的焦点：**编程语言与形式验证**的深度探讨、**软件供应链安全**的持续警示、**开发者工具与体验**的迭代更新，以及关于**AI、开源生态和行业趋势**的广泛讨论。社区对理论（如单一运算符构建所有初等函数）和实践（如WordPress插件后门事件）都表现出浓厚兴趣，反映出技术圈既关注前沿探索，也重视现实世界的工程与安全挑战。
+以下是按子主题分组的详细总结与分析。
 
 ---
 
-### **文章分组总结**
+### 一、 安全、隐私与数据泄露
 
-#### **1. 编程语言、形式化方法与理论**
-这一组文章探讨了编程语言的深层理论、形式化验证的实践与局限，以及相关工具。
+今日社区对安全事件和隐私问题表现出高度关注，多篇文章涉及供应链攻击、数据泄露和监控。
 
-*   **All elementary functions from a single binary operator**
-    *   **说明**：一篇数学/计算机科学论文，展示了如何仅用一个二元运算符构建所有初等函数。这挑战了我们对计算基础的理解，具有深刻的理论意义。
-    *   **原文链接**：https://arxiv.org/abs/2603.21852
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47746610
-
-*   **A perfectable programming language**
-    *   **说明**：探讨了Lean定理证明器作为一种“可臻完美”的编程语言的理念，即通过形式化验证来保证程序的绝对正确性。
-    *   **原文链接**：https://alok.github.io/lean-pages/perfectable-lean/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47744540
-
-*   **Lean proved this program was correct; then I found a bug**
-    *   **说明**：一个关于形式化验证局限性的生动案例。作者发现即使被Lean定理证明器“证明”正确的程序，在实际中也可能存在bug，引发了关于形式验证与现实世界模型匹配的讨论。
-    *   **原文链接**：https://kirancodes.me/posts/log-who-watches-the-watchers.html
-    *   **讨论链接**：https://lobste.rs/s/wwr6zu/lean_proved_this_program_was_correct_then
-
-*   **JVM Options Explorer**
-    *   **说明**：一个交互式工具，帮助开发者探索和理解海量且复杂的JVM调优参数，对于Java生态下的性能优化至关重要。
-    *   **原文链接**：https://chriswhocodes.com/vm-options-explorer.html
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47738094
-
-#### **2. 安全与隐私**
-安全事件和隐私功能更新是今日的绝对热点，涉及供应链攻击、年度黑客事件总结和操作系统隐私改进。
-
-*   **Someone bought 30 WordPress plugins and planted a backdoor in all of them**
-    *   **说明**：一个惊人的软件供应链攻击实例。攻击者通过收购流行的WordPress插件并植入后门，影响了大量网站，凸显了依赖开源/第三方组件的巨大风险。
-    *   **原文链接**：https://anchor.host/someone-bought-30-wordpress-plugins-and-planted-a-backdoor-in-all-of-them/
+1.  **WordPress插件供应链攻击**
+    *   **标题**：Someone bought 30 WordPress plugins and planted a backdoor in all of them
+    *   **说明**：一起典型的供应链攻击事件。攻击者通过收购30个WordPress插件，在所有插件中植入了后门，影响范围巨大，凸显了开源生态中依赖第三方组件的安全风险。
+    *   **文章链接**：https://anchor.host/someone-bought-30-wordpress-plugins-and-planted-a-backdoor-in-all-of-them/
     *   **讨论链接**：https://news.ycombinator.com/item?id=47755629
 
-*   **This year’s insane timeline of hacks**
-    *   **说明**：文章梳理了今年发生的一系列重大安全漏洞和黑客攻击事件，试图描绘当前网络安全面临的严峻态势。
-    *   **原文链接**：https://ringmast4r.substack.com/p/we-may-be-living-through-the-most
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47752884
+2.  **Fiverr客户文件公开可搜索**
+    *   **标题**：Tell HN: Fiverr left customer files public and searchable
+    *   **说明**：自由职业平台Fiverr因错误配置，将客户与工作者之间传输的敏感文件（如PDF）存储在公开可访问的URL上，导致数据泄露。这暴露了企业在处理用户数据时的常见配置失误。
+    *   **文章链接**：无独立文章，内容在讨论帖中。
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47769796
 
-*   **Android now stops you sharing your location in photos**
-    *   **说明**：报道了Android系统的一项新隐私功能，将自动阻止通过照片分享地理位置信息（EXIF数据），这是对用户隐私保护的重要改进。
-    *   **原文链接**：https://shkspr.mobi/blog/2026/04/android-now-stops-you-sharing-your-location-in-photos/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47750669
+3.  **Flock监控项目**
+    *   **标题**：I wrote to Flock's privacy contact to opt out of their domestic spying program
+    *   **说明**：一篇关于个人尝试退出名为“Flock”的监控项目的经历。Flock被描述为一项国内监控计划，文章探讨了隐私权与监控技术之间的紧张关系。
+    *   **文章链接**：https://honeypot.net/2026/04/14/i-wrote-to-flocks-privacy.html
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47768813
 
-*   **Who‘s Been Impersonating This ProPublica Reporter?**
-    *   **说明**：调查记者被深度伪造技术冒充的事件，涉及AI生成的声音和视频，反映了新型技术滥用对个人和社会信任的威胁。
-    *   **原文链接**：https://www.propublica.org/article/impersonating-propublica-reporter
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47754100
+4.  **反对Flock的网站**
+    *   **标题**：Stop Flock
+    *   **说明**：一个专门呼吁停止“Flock”监控项目的网站。这通常与上一条新闻相关，代表了民间对特定监控技术的抵制运动。
+    *   **文章链接**：https://stopflock.com
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47772012
 
-#### **3. 开发者工具与工作流**
-涵盖终端工具、代码管理、笔记软件和浏览器引擎等提升开发者效率的工具和技巧。
+### 二、 开发者工具、平台与基础设施
 
-*   **Make tmux pretty and usable (2024)**
-    *   **说明**：一份详细的tmux终端复用器配置指南，帮助用户打造既美观又高效的命令行工作环境。
-    *   **原文链接**：https://hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47752819
+这是今日最丰富的主题，涵盖了版本控制系统、云存储、数据库、编程语言和开发实践。
 
-*   **GitHub Stacked PRs**
-    *   **说明**：GitHub官方推出的新功能“Stacked PRs”，旨在更好地管理依赖多个拉取请求的复杂代码评审流程，对大型项目或需要精细拆分的功能开发很有帮助。
-    *   **原文链接**：https://github.github.com/gh-stack/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47757495 (HN), https://lobste.rs/s/xr9g5d/github_stacked_prs (Lobsters)
+5.  **GitHub Stacked PRs**
+    *   **标题**：GitHub Stacked PRs
+    *   **说明**：GitHub官方推出的“堆叠式拉取请求”功能。允许开发者将大型功能拆分为一系列相互依赖的小型PR，旨在改善代码审查流程和团队协作，是Git工作流的重要演进。
+    *   **文章链接**：https://github.github.com/gh-stack/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47757495
 
-*   **Introduction to Obsidian**
-    *   **说明**：一篇面向新手的Obsidian笔记软件入门指南。Obsidian以其基于本地Markdown文件和强大的链接图谱功能深受知识工作者喜爱。
-    *   **原文链接**：https://bryanhogan.com/blog/obsidian-introduction
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47729694
+6.  **Jujutsu (jj) VCS**
+    *   **标题**：jj – the CLI for Jujutsu
+    *   **说明**：介绍新一代版本控制系统“Jujutsu”（简称jj）的教程。jj旨在解决Git的一些设计痛点，提供更一致、更强大的命令行体验，吸引了大量开发者关注和讨论。
+    *   **文章链接**：https://steveklabnik.github.io/jujutsu-tutorial/introduction/what-is-jj-and-why-should-i-care.html
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47763759
 
-*   **Servo 0.1.0 (first LTS version) is now available on crates.io**
-    *   **说明**：由Rust编写的实验性浏览器引擎Servo发布了首个长期支持版本，标志着该项目进入一个更稳定的阶段，对Rust和浏览器技术爱好者有重要意义。
-    *   **原文链接**：https://servo.org/blog/2026/04/13/servo-0.1.0-release/
-    *   **讨论链接**：https://lobste.rs/s/f8vyzy/servo_0_1_0_first_lts_version_is_now
+7.  **Backblaze停止备份特定云盘文件夹**
+    *   **标题**：Backblaze has stopped backing up OneDrive and Dropbox folders and maybe others
+    *   **说明**：云备份服务商Backblaze调整策略，停止自动备份指向OneDrive、Dropbox等同步文件夹的链接。这引发了关于云备份边界、数据所有权和“真正备份”定义的广泛讨论。
+    *   **文章链接**：https://rareese.com/posts/backblaze/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47762864
 
-*   **Did you notice the command error exit in the shell?**
-    *   **说明**：一篇短文探讨了如何在Shell中更醒目地提示上一条命令执行失败（非零退出码），属于提升开发体验的细节技巧。
-    *   **原文链接**：https://monzool.net/blog/2026/04/10/error-banner-in-shell/
-    *   **讨论链接**：https://lobste.rs/s/eqawpx/did_you_notice_command_error_exit_shell
+8.  **对简单S3的呼唤**
+    *   **标题**：I just want simple S3
+    *   **说明**：一篇博客文章，表达了开发者对AWS S3服务日益复杂化的不满，呼吁一个更简单、更专注的对象存储服务。反映了部分用户对云服务“功能膨胀”的普遍感受。
+    *   **文章链接**：https://blog.feld.me/posts/2026/04/i-just-want-simple-s3/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47729350
 
-*   **Configuration flags are where software goes to rot**
-    *   **说明**：批评了软件中过度使用配置标志（feature flags）的现象，认为这会导致代码复杂、难以维护和测试，是软件腐化的温床。
-    *   **原文链接**：https://00f.net/2026/04/11/config-flags/
-    *   **讨论链接**：https://lobste.rs/s/pvawq1/configuration_flags_are_where_software
+9.  **DuckDB内部设计与实现**
+    *   **标题**：Design and implementation of DuckDB internals
+    *   **说明**：DuckDB官方发布的其内部设计与实现文档。对于数据库开发者、研究者或任何想深入了解这个流行嵌入式分析型数据库如何工作的人来说，是极佳的学习资料。
+    *   **文章链接**：https://duckdb.org/library/design-and-implementation-of-duckdb-internals/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47718284
 
-#### **4. 人工智能与高性能计算**
-关注AI模型本地运行、GPU计算生态和AI辅助工具的动态。
+10. **分布式DuckDB实例**
+    *   **标题**：Distributed DuckDB Instance
+    *   **说明**：一个开源项目（OpenDuck），旨在将单机版的DuckDB扩展为分布式实例。这显示了社区对DuckDB能力的进一步探索，试图将其应用到更大规模的数据处理场景。
+    *   **文章链接**：https://github.com/citguru/openduck
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47761997
 
-*   **I ran Gemma 4 as a local model in Codex CLI**
-    *   **说明**：一篇实践教程，详细记录了如何在本地使用Codex CLI运行Google的Gemma 4大语言模型，为希望私有化部署AI能力的开发者提供了参考。
-    *   **原文链接**：https://blog.danielvaughan.com/i-ran-gemma-4-as-a-local-model-in-codex-cli-7fda754dc0d4
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47744255
+11. **OpenSSL 4.0.0发布**
+    *   **标题**：OpenSSL 4.0.0
+    *   **说明**：重要的加密库OpenSSL发布了4.0.0大版本。此类更新通常包含重大改进、API变更和安全修复，对全球互联网基础设施有深远影响。
+    *   **文章链接**：https://github.com/openssl/openssl/releases/tag/openssl-4.0.0
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47768788
 
-*   **Taking on CUDA with ROCm: ‘One Step After Another’**
-    *   **说明**：分析了AMD的ROCm平台在挑战NVIDIA CUDA于GPU计算领域统治地位方面的进展与策略，关乎高性能计算和AI训练的生态多样性。
-    *   **原文链接**：https://www.eetimes.com/taking-on-cuda-with-rocm-one-step-after-another/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47745284
+12. **Zig 0.16.0发布**
+    *   **标题**：Zig 0.16.0 Release Notes
+    *   **说明**：系统编程语言Zig发布了0.16.0版本。关注Zig的开发者可以通过发布说明了解语言的最新特性、改进和变化。
+    *   **文章链接**：https://ziglang.org/download/0.16.0/release-notes.html
+    *   **讨论链接**：https://lobste.rs/s/4vvozb/zig_0_16_0_release_notes
 
-*   **Microsoft isn‘t removing Copilot from Windows 11, it’s just renaming it**
-    *   **说明**：澄清了关于Windows 11中AI助手Copilot的传闻，指出微软只是将其更名为“AI Companion”，反映了AI功能与操作系统更深度的整合趋势。
-    *   **原文链接**：https://www.neowin.net/opinions/microsoft-isnt-removing-copilot-from-windows-11-its-just-renaming-it/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47751936
+13. **Rust应有稳定的尾调用优化**
+    *   **标题**：Rust should have stable tail calls
+    *   **说明**：一篇倡议文章，主张Rust语言应该提供稳定的尾调用优化支持。尾调用优化对函数式编程风格和某些算法实现很重要，这是关于语言设计方向的讨论。
+    *   **文章链接**：https://trifectatech.org/blog/tail-calls-project-goal/
+    *   **讨论链接**：https://lobste.rs/s/hedf1w/rust_should_have_stable_tail_calls
 
-#### **5. 软件工程与行业观察**
-涉及软件开发的经济学、设计哲学、创业环境以及性能优化等宏观和工程实践话题。
+14. **Ada语言中的面向对象编程**
+    *   **标题**：Object oriented programming in Ada
+    *   **说明**：介绍如何在安全至上的系统编程语言Ada中实现面向对象编程。对于从事航空、航天、交通等安全关键领域开发的工程师有参考价值。
+    *   **文章链接**：https://entropicthoughts.com/object-oriented-programming-in-ada
+    *   **讨论链接**：https://lobste.rs/s/ovlmz5/object_oriented_programming_ada
 
-*   **The economics of software teams: Why most engineering orgs are flying blind**
-    *   **说明**：从经济学角度分析软件团队的管理和产出衡量问题，指出许多工程组织缺乏有效的度量方式，处于“盲飞”状态。
-    *   **原文链接**：https://www.viktorcessan.com/the-economics-of-software-teams/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47748064
+### 三、 开源、软件工程与开发哲学
 
-*   **Bring Back Idiomatic Design (2023)**
-    *   **说明**：一篇关于软件设计哲学的雄文，倡导回归“地道的设计”，即符合问题领域本质、简洁而富有表现力的设计，反对过度抽象和复杂化。
-    *   **原文链接**：https://essays.johnloeber.com/p/4-bring-back-idiomatic-design
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47738827
+这部分内容聚焦于开发实践、项目管理哲学和开源生态的动态。
 
-*   **If you started a company two years ago, many assumptions are no longer true**
-    *   **说明**：资深创业导师Steve Blank指出，两年前成立的初创公司所基于的市场、技术和融资环境假设如今已发生剧变，创业者需要重新评估策略。
-    *   **原文链接**：https://steveblank.com/2026/03/17/your-startup-is-probably-dead-on-arrival/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47728192
+15. **负责任地编写更少的代码**
+    *   **标题**：Write less code, be more responsible
+    *   **说明**：一篇倡导“少写代码”的博客，认为更少的代码意味着更少的错误、更低的维护成本和更清晰的系统。这是一种回归简洁的软件工程哲学。
+    *   **文章链接**：https://blog.orhun.dev/code-responsibly/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47728970
 
-*   **How to make Firefox builds 17% faster**
-    *   **说明**：Mozilla工程师分享了一项通过缓存WebIDL代码生成来显著加速Firefox编译速度的优化技术，是大型C++项目构建优化的优秀案例。
-    *   **原文链接**：https://blog.farre.se/posts/2026/04/10/caching-webidl-codegen/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47756321
+16. **KeePassχ - KeePassXC的分支**
+    *   **标题**：KeePassχ - a KeePassXC fork
+    *   **说明**：知名开源密码管理器KeePassXC出现了一个名为KeePassχ的新分支。开源项目的分叉往往源于开发理念、路线图或社区治理的分歧，值得关注其后续发展。
+    *   **文章链接**：https://codeberg.org/keepasschi
+    *   **讨论链接**：https://lobste.rs/s/ak5mgm/keepass_keepassxc_fork
 
-*   **The Future of Everything Is Lies, I Guess: Safety**
-    *   **说明**：知名工程师Aphyr对当前科技界，特别是AI领域，滥用“安全”概念来规避责任、限制用户权利和进行道德说教的现象提出了尖锐批评。
-    *   **原文链接**：https://aphyr.com/posts/417-the-future-of-everything-is-lies-i-guess-safety
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47754379
+17. **工具调用与开源模型的M×N问题**
+    *   **标题**：The M×N problem of tool calling and open-source models
+    *   **说明**：探讨了大语言模型（LLM）工具调用生态中的一个核心问题：M个模型需要适配N个工具，导致组合爆炸和兼容性挑战。对于AI应用开发者是深刻的洞察。
+    *   **文章链接**：https://www.thetypicalset.com/blog/grammar-parser-maintenance-contract
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47704729
 
-#### **6. 新产品与趣味项目**
-社区成员展示自己开发的工具或有趣的项目。
+18. **“未来的一切都是谎言”：工作篇**
+    *   **标题**：The future of everything is lies, I guess: Work
+    *   **说明**：来自知名博主Aphyr的深度文章， likely以批判性的视角审视现代职场文化、技术炒作与管理实践中的问题。其文章通常以严谨和尖锐著称。
+    *   **文章链接**：https://aphyr.com/posts/418-the-future-of-everything-is-lies-i-guess-work
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47766550
 
-*   **Show HN: boringBar – a taskbar-style dock replacement for macOS**
-    *   **说明**：一个用于macOS的Dock替代工具，模仿Windows/Linux的任务栏，只显示当前工作空间的窗口，为从其他平台切换过来的用户或喜欢简洁工作流的用户提供了新选择。
-    *   **原文链接**：https://boringbar.app/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47742200
-
-*   **Show HN: Ithihāsas – a character explorer for Hindu epics, built in a few hours**
-    *   **说明**：一个利用图谱关系来探索印度史诗《摩诃婆罗多》和《罗摩衍那》中人物关系的趣味Web工具，展示了如何用技术解决特定领域的知识探索问题。
-    *   **原文链接**：https://www.ithihasas.in
+19. **Show HN: Ithihāsas – 印度史诗角色浏览器**
+    *   **标题**：Show HN: Ithihāsas – a character explorer for Hindu epics, built in a few hours
+    *   **说明**：一个开发者用几小时构建的Side Project，通过关系图谱的形式探索《摩诃婆罗多》和《罗摩衍那》中的人物。展示了如何用技术解决特定领域的知识探索难题，富有创意。
+    *   **文章链接**：https://www.ithihasas.in
     *   **讨论链接**：https://news.ycombinator.com/item?id=47756569
 
-*   **DIY Soft Drinks**
-    *   **说明**：一篇关于如何在家自制苏打水的指南，结合了化学、烹饪和DIY乐趣，体现了极客精神在生活领域的延伸。
-    *   **原文链接**：https://blinry.org/diy-soft-drinks/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47741701
+20. **120+个图标与计数**
+    *   **标题**：120+ Icons and Counting
+    *   **说明**：一篇关于为开源项目设计和维护大量应用图标的博客。揭示了开源软件中常被忽视但至关重要的设计工作及其背后的挑战。
+    *   **文章链接**：https://blog.jimmac.eu/posts/app-icon-requests/
+    *   **讨论链接**：https://lobste.rs/s/bvuhnp/120_icons_counting
 
-*   **Building a CLI for All of Cloudflare**
-    *   **说明**：Cloudflare官方博客介绍了其新推出的统一命令行工具`cf`，旨在用一个工具管理所有Cloudflare产品和服务，提升开发者体验。
-    *   **原文链接**：https://blog.cloudflare.com/cf-cli-local-explorer/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47753689
+### 四、 法律、政策与伦理
 
-*   **Nothing Ever Happens: Polymarket bot that always buys No on non-sports markets**
-    *   **说明**：一个针对预测市场Polymarket的自动化交易机器人，其策略基于“非体育事件通常不会发生”的假设，是一个结合了金融、数据和自动化思维的趣味项目。
-    *   **原文链接**：https://github.com/sterlingcrispin/nothing-ever-happens
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47753472
+技术社区持续关注可能影响创新、言论自由和个人权利的法律与政策动向。
 
-#### **7. 其他新闻**
-一些广泛意义上的科技或社会新闻。
+21. **加州3D打印审查立法的危险**
+    *   **标题**：The dangers of California's legislation to censor 3D printing
+    *   **说明**：电子前沿基金会（EFF）撰文，批评加州一项旨在监管3D打印的立法提案，认为其可能侵犯言论自由、阻碍创新，并对制造技术进行不当审查。
+    *   **文章链接**：https://www.eff.org/deeplinks/2026/04/dangers-californias-legislation-censor-3d-printing
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47759420
 
-*   **Seven countries now generate nearly all their electricity from renewables (2024)**
-    *   **说明**：报道了已有七个国家（如尼泊尔、不丹、冰岛等）几乎完全使用可再生能源发电，展示了全球能源转型的积极进展。
-    *   **原文链接**：https://www.the-independent.com/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47739313
-
-*   **US appeals court declares 158-year-old home distilling ban unconstitutional**
-    *   **说明**：美国一上诉法院裁定了一项有158年历史的家庭蒸馏禁令违宪。这条新闻在技术社区引发讨论，更多是出于对法规、历史和个人自由议题的兴趣。
-    *   **原文链接**：https://nypost.com/2026/04/11/us-news/us-appeals-court-declares-158-year-old-home-distilling-ban-unconstitutional/
+22. **美国上诉法院宣布家庭酿酒禁令违宪**
+    *   **标题**：US appeals court declares 158-year-old home distilling ban unconstitutional
+    *   **说明**：一项具有历史意义的法律判决，推翻了长达158年的家庭蒸馏酒禁令。虽然不直接关乎软件，但体现了技术社区对个人自由、陈旧法规与现代化冲突议题的广泛兴趣。
+    *   **文章链接**：https://nypost.com/2026/04/11/us-news/us-appeals-court-declares-158-year-old-home-distilling-ban-unconstitutional/
     *   **讨论链接**：https://news.ycombinator.com/item?id=47751781
 
----
+### 五、 媒体、娱乐与消费科技
 
-### **今日最值得阅读文章推荐**
+涉及内容平台、创意工具和趣味技术项目。
 
-基于话题的重要性、讨论热度以及对技术从业者的普遍参考价值，我推荐以下5篇文章：
+23. **DaVinci Resolve – Photo**
+    *   **标题**：DaVinci Resolve – Photo
+    *   **说明**：知名专业视频调色和剪辑软件DaVinci Resolve推出了独立的“Photo”版本，专注于照片编辑。这是Blackmagic Design进军静态图像领域的重要一步，可能挑战Adobe的地位。
+    *   **文章链接**：https://www.blackmagicdesign.com/products/davinciresolve/photo
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47760529
 
-1.  **Someone bought 30 WordPress plugins and planted a backdoor in all of them**
-    *   **理由**：这是一个极其典型且危害巨大的软件供应链攻击案例。它给所有开发者、运维人员和企业敲响了警钟：**对第三方依赖（尤其是通过收购易主的）必须保持高度警惕**。文章和讨论提供了事件细节、影响分析和防范思路，是当今网络安全必修课。
-    *   **链接**：https://anchor.host/someone-bought-30-wordpress-plugins-and-planted-a-backdoor-in-all-of-them/
+24. **罕见音乐会录音登陆互联网档案馆**
+    *   **标题**：Rare concert recordings are landing on the Internet Archive
+    *   **说明**：数千份罕见的音乐会录音被捐赠并数字化，保存在互联网档案馆（Internet Archive）。这是数字文化遗产保存的胜利，对音乐爱好者和研究者是宝藏。
+    *   **文章链接**：https://techcrunch.com/2026/04/13/thousands-of-rare-concert-recordings-are-landing-on-the-internet-archive-listen-now/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47765604
 
-2.  **All elementary functions from a single binary operator**
-    *   **理由**：这是今日理论深度最高的文章。它从一个非常基础且优美的数学视角出发，挑战了我们对计算和函数构建的常识。阅读这篇论文（或至少其摘要和讨论）能带来纯粹的智力愉悦，并提醒我们计算机科学根植于深刻的数学原理。
-    *   **链接**：https://arxiv.org/abs/2603.21852
+25. **YouTube成为全球最大媒体公司**
+    *   **标题**：YouTube now world's largest media company, topping Disney
+    *   **说明**：报道指出YouTube在营收上已超越迪士尼，成为全球最大的媒体公司。这标志着用户生成内容（UGC）平台对传统媒体帝国的颠覆，是媒体行业格局转变的里程碑。
+    *   **文章链接**：https://www.hollywoodreporter.com/business/digital/youtube-worlds-largest-media-company-2025-tops-disney-1236525130/
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47705278
 
-3.  **The economics of software teams: Why most engineering orgs are flying blind**
-    *   **理由**：对于技术管理者、团队领导或关心组织效率的工程师来说，这是一篇极具启发性的文章。它超越了具体的技术实践，从经济学和度量衡的角度剖析了软件工程管理的核心难题。**“如何衡量和优化知识工作的产出？”** 是每个成长中的技术组织都必须面对的问题。
-    *   **链接**：https://www.viktorcessan.com/the-economics-of-software-teams/
+26. **WiiFin – 任天堂Wii的Jellyfin客户端**
+    *   **标题**：WiiFin – Jellyfin Client for Nintendo Wii
+    *   **说明**：一个为已停产多年的任天堂Wii游戏机开发的Jellyfin（开源媒体服务器）客户端。体现了极客精神——让老旧硬件焕发新生，并接入现代媒体流服务。
+    *   **文章链接**：https://github.com/fabienmillet/WiiFin
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47759341
 
-4.  **Bring Back Idiomatic Design (2023)**
-    *   **理由**：在追求设计模式、架构范式和各种“最佳实践”的今天，这篇文章是一剂清醒剂。它呼吁回归设计的本源——清晰、简洁、符合领域逻辑。**无论你是初级还是资深开发者，文中的观点都能帮助你反思自己的代码和设计决策**，避免陷入过度工程化的陷阱。其Hacker News讨论也非常精彩。
-    *   **链接**：https://essays.johnloeber.com/p/4-bring-back-idiomatic-design
+27. **让我们谈谈太空厕所**
+    *   **标题**：Let's talk space toilets
+    *   **说明**：一篇关于太空厕所技术挑战的深度、 likely幽默的文章。这类“硬核”工程细节文章在技术社区很受欢迎，它揭示了那些支撑尖端科技的基础但至关重要的问题。
+    *   **文章链接**：https://mceglowski.substack.com/p/lets-talk-space-toilets
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47758870
 
-5.0:{"buildId":"2Xi8gTy0YPax1SIt94VGK","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-04-14","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":16},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-04-14"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-c:T5d4,Hi HN!<p>I recently switched from a Fedora&#x2F;GNOME laptop to a MacBook Air. My old setup served me well as a portable workstation, but I’ve started traveling more while working remotely and needed something with similar performance but better battery life. The main thing I missed was a simple taskbar that shows the windows in the current workspace instead of a Dock that mixes everything together.<p>I built boringBar so I would not have to use the Dock. It shows only the windows in the current Space, lets you switch Spaces by scrolling on the bar, and adds a desktop switcher so you can jump directly to any Space. You can also hide the system Dock, pin apps, preview windows with thumbnails, and launch apps from a searchable menu (I keep Spotlight disabled because for some reason it uses a lot of system resources on my machine).<p>I’ve been dogfooding it for a few months now, and it finally felt polished enough to share.<p>It’s for people who like macOS but want window management to feel a bit more like GNOME, Windows, or a traditional taskbar. It’s also for people like me who wanted an easier transition to macOS, especially now that Windows feels increasingly user-hostile.<p>I’d love feedback on the UX, bugs, and whether this solves the same Dock&#x2F;Spaces pain for anyone else.<p>P.S. It might also appeal to people who feel nostalgic for the GNOME 2 desktop of yore. I started my Linux journey with it, and boringBar brings back some of that feeling for me.6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47746610","title":"All elementary functions from a single binary operator","url":"https://arxiv.org/abs/2603.21852","source":"Hacker News","score":798,"comments_count":249,"comments_url":"https://news.ycombinator.com/item?id=47746610","published_at":"2026-04-13T01:49:32","author":"pizza","text":null,"summary":"这篇论文展示了如何仅使用一个二元运算符构建所有初等函数，这一理论突破可能简化数学和计算机科学中的函数表示与计算。"},{"id":"hn-47741701","title":"DIY Soft Drinks","url":"https://blinry.org/diy-soft-drinks/","source":"Hacker News","score":703,"comments_count":218,"comments_url":"https://news.ycombinator.com/item?id=47741701","published_at":"2026-04-12T16:38:43","author":"_Microft","text":null,"summary":"文章介绍了如何在家自制软饮料，包括配方和技巧，为追求健康或个性化饮品的人提供了实用指南。"},{"id":"hn-47755629","title":"Someone bought 30 WordPress plugins and planted a backdoor in all of them","url":"https://anchor.host/someone-bought-30-wordpress-plugins-and-planted-a-backdoor-in-all-of-them/","source":"Hacker News","score":691,"comments_count":193,"comments_url":"https://news.ycombinator.com/item?id=47755629","published_at":"2026-04-13T17:54:39","author":"speckx","text":null,"summary":"报道了有人购买30个WordPress插件并在其中植入后门的安全事件，突显了开源软件供应链的脆弱性和用户需警惕第三方插件风险。"},{"id":"hn-47738827","title":"Bring Back Idiomatic Design (2023)","url":"https://essays.johnloeber.com/p/4-bring-back-idiomatic-design","source":"Hacker News","score":673,"comments_count":368,"comments_url":"https://news.ycombinator.com/item?id=47738827","published_at":"2026-04-12T12:21:26","author":"phil294","text":null,"summary":"文章呼吁恢复符合语言习惯的设计（Idiomatic Design），强调在软件开发中遵循自然模式以提高可读性和可维护性的重要性。"},{"id":"hn-47739313","title":"Seven countries now generate nearly all their electricity from renewables (2024)","url":"https://www.the-independent.com/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html","source":"Hacker News","score":648,"comments_count":448,"comments_url":"https://news.ycombinator.com/item?id=47739313","published_at":"2026-04-12T13:21:39","author":"mpweiher","text":null,"summary":"报道指出已有七个国家几乎完全依靠可再生能源发电，这标志着全球能源转型的里程碑，对气候政策和清洁技术发展具有启示意义。"},{"id":"hn-47742200","title":"Show HN: boringBar – a taskbar-style dock replacement for macOS","url":"https://boringbar.app/","source":"Hacker News","score":500,"comments_count":284,"comments_url":"https://news.ycombinator.com/item?id=47742200","published_at":"2026-04-12T17:25:44","author":"a-ve","text":"$c","summary":"boringBar是一个为macOS设计的任务栏式Dock替代工具，旨在提供更简洁高效的工作流，特别适合从Linux切换过来的用户提升体验。"},{"id":"hn-47757495","title":"GitHub Stacked PRs","url":"https://github.github.com/gh-stack/","source":"Hacker News","score":424,"comments_count":248,"comments_url":"https://news.ycombinator.com/item?id=47757495","published_at":"2026-04-13T20:36:49","author":"ezekg","text":null,"summary":"GitHub推出了Stacked PRs功能，允许开发者将大型代码更改拆分为堆叠式的拉取请求，以简化代码审查和协作流程。"},{"id":"hn-47748064","title":"The economics of software teams: Why most engineering orgs are flying blind","url":"https://www.viktorcessan.com/the-economics-of-software-teams/","source":"Hacker News","score":388,"comments_count":256,"comments_url":"https://news.ycombinator.com/item?id=47748064","published_at":"2026-04-13T05:45:32","author":"kiyanwang","text":null,"summary":"文章探讨了软件团队的经济学原理，指出许多工程组织因缺乏数据驱动决策而盲目运作，并提出了改进团队效率和管理的见解。"},{"id":"hn-47753472","title":"Nothing Ever Happens: Polymarket bot that always buys No on non-sports markets","url":"https://github.com/sterlingcrispin/nothing-ever-happens","source":"Hacker News","score":356,"comments_count":174,"comments_url":"https://news.ycombinator.com/item?id=47753472","published_at":"2026-04-13T15:31:06","author":"m-hodges","text":null,"summary":"介绍了一个Polymarket机器人，它总是在非体育市场中购买“否”选项，以讽刺预测市场中的事件稀缺性，引发对市场设计和风险偏好的思考。"},{"id":"hn-47751936","title":"Microsoft isn't removing Copilot from Windows 11, it's just renaming it","url":"https://www.neowin.net/opinions/microsoft-isnt-removing-copilot-from-windows-11-its-just-renaming-it/","source":"Hacker News","score":331,"comments_count":242,"comments_url":"https://news.ycombinator.com/item?id=47751936","published_at":"2026-04-13T13:48:24","author":"bundie","text":null,"summary":"澄清了微软并未从Windows 11中移除Copilot，而是计划对其重命名，这反映了AI助手功能的持续整合和品牌策略调整。"},{"id":"hn-47752819","title":"Make tmux pretty and usable (2024)","url":"https://hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/","source":"Hacker News","score":313,"comments_count":202,"comments_url":"https://news.ycombinator.com/item?id=47752819","published_at":"2026-04-13T14:48:55","author":"speckx","text":null,"summary":"文章介绍了如何通过自定义tmux配置文件来美化界面并提升使用效率，对于经常使用终端和tmux的开发者来说，这是一个能显著改善工作流的实用指南。"},{"id":"hn-47750669","title":"Android now stops you sharing your location in photos","url":"https://shkspr.mobi/blog/2026/04/android-now-stops-you-sharing-your-location-in-photos/","source":"Hacker News","score":302,"comments_count":273,"comments_url":"https://news.ycombinator.com/item?id=47750669","published_at":"2026-04-13T11:48:15","author":"edent","text":null,"summary":"报道了Android系统新增了一项阻止在照片中分享地理位置信息的功能，这关系到用户隐私保护，是移动操作系统安全特性的重要更新。"},{"id":"hn-47751781","title":"US appeals court declares 158-year-old home distilling ban unconstitutional","url":"https://nypost.com/2026/04/11/us-news/us-appeals-court-declares-158-year-old-home-distilling-ban-unconstitutional/","source":"Hacker News","score":300,"comments_count":230,"comments_url":"https://news.ycombinator.com/item?id=47751781","published_at":"2026-04-13T13:37:33","author":"t-3","text":null,"summary":"美国上诉法院裁定一项存在158年之久的家庭蒸馏禁令违宪，这一法律判决可能对家庭酿酒文化和相关技术应用产生深远影响。"},{"id":"hn-47752884","title":"This year’s insane timeline of hacks","url":"https://ringmast4r.substack.com/p/we-may-be-living-through-the-most","source":"Hacker News","score":283,"comments_count":169,"comments_url":"https://news.ycombinator.com/item?id=47752884","published_at":"2026-04-13T14:53:05","author":"laurex","text":null,"summary":"文章梳理了今年发生的一系列重大黑客攻击事件的时间线，揭示了当前网络安全面临的严峻挑战，值得所有技术从业者警惕。"},{"id":"hn-47754379","title":"The Future of Everything Is Lies, I Guess: Safety","url":"https://aphyr.com/posts/417-the-future-of-everything-is-lies-i-guess-safety","source":"Hacker News","score":281,"comments_count":156,"comments_url":"https://news.ycombinator.com/item?id=47754379","published_at":"2026-04-13T16:23:09","author":"aphyr","text":null,"summary":"作者探讨了在技术发展中‘安全’概念面临的困境与未来，提出了对系统可靠性和真实性基础的深刻质疑，思想性很强。"},{"id":"hn-47753689","title":"Building a CLI for All of Cloudflare","url":"https://blog.cloudflare.com/cf-cli-local-explorer/","source":"Hacker News","score":259,"comments_count":83,"comments_url":"https://news.ycombinator.com/item?id=47753689","published_at":"2026-04-13T15:44:02","author":"soheilpro","text":null,"summary":"Cloudflare发布了为其全部服务构建的统一命令行界面工具，这能极大简化开发者对其庞大云服务生态的管理和操作。"},{"id":"hn-47745284","title":"Taking on CUDA with ROCm: 'One Step After Another'","url":"https://www.eetimes.com/taking-on-cuda-with-rocm-one-step-after-another/","source":"Hacker News","score":256,"comments_count":190,"comments_url":"https://news.ycombinator.com/item?id=47745284","published_at":"2026-04-12T22:38:45","author":"mindcrime","text":null,"summary":"文章分析了AMD的ROCm平台如何一步步挑战NVIDIA的CUDA在GPU计算领域的统治地位，这是高性能计算领域的重要竞争动态。"},{"id":"hn-47744255","title":"I ran Gemma 4 as a local model in Codex CLI","url":"https://blog.danielvaughan.com/i-ran-gemma-4-as-a-local-model-in-codex-cli-7fda754dc0d4","source":"Hacker News","score":245,"comments_count":101,"comments_url":"https://news.ycombinator.com/item?id=47744255","published_at":"2026-04-12T20:43:08","author":"dvaughan","text":null,"summary":"作者分享了在Codex CLI中本地运行Gemma 4模型的经验，为开发者探索和部署本地大型语言模型提供了实用的技术参考。"},{"id":"hn-47738094","title":"JVM Options Explorer","url":"https://chriswhocodes.com/vm-options-explorer.html","source":"Hacker News","score":217,"comments_count":104,"comments_url":"https://news.ycombinator.com/item?id=47738094","published_at":"2026-04-12T10:29:26","author":"0x54MUR41","text":null,"summary":"这是一个用于探索和理解众多JVM运行时参数的工具，能帮助Java开发者优化应用性能，是JVM调优的宝贵资源。"},{"id":"hn-47744540","title":"A perfectable programming language","url":"https://alok.github.io/lean-pages/perfectable-lean/","source":"Hacker News","score":203,"comments_count":119,"comments_url":"https://news.ycombinator.com/item?id=47744540","published_at":"2026-04-12T21:11:24","author":"yuppiemephisto","text":null,"summary":"文章探讨了Lean语言作为一种可臻完善（perfectable）的编程语言的理念与特性，对于关注编程语言设计和形式验证的开发者很有启发。"},{"id":"hn-47729694","title":"Introduction to Obsidian","url":"https://bryanhogan.com/blog/obsidian-introduction","source":"Hacker News","score":152,"comments_count":97,"comments_url":"https://news.ycombinator.com/item?id=47729694","published_at":"2026-04-11T11:35:02","author":"bryanhogan","text":null,"summary":"这篇文章介绍了笔记应用Obsidian，它值得关注是因为Obsidian以其基于Markdown的本地知识库和强大的链接功能，在开发者和技术爱好者中越来越受欢迎。"},{"id":"hn-47728192","title":"If you started a company two years ago, many assumptions are no longer true","url":"https://steveblank.com/2026/03/17/your-startup-is-probably-dead-on-arrival/","source":"Hacker News","score":138,"comments_count":107,"comments_url":"https://news.ycombinator.com/item?id=47728192","published_at":"2026-04-11T06:58:59","author":"tie-in","text":null,"summary":"文章讨论了初创公司在当前快速变化的市场环境中面临的挑战，指出许多两年前的商业假设已不再适用，这对创业者评估和调整策略具有重要参考价值。"},{"id":"hn-47756321","title":"How to make Firefox builds 17% faster","url":"https://blog.farre.se/posts/2026/04/10/caching-webidl-codegen/","source":"Hacker News","score":135,"comments_count":18,"comments_url":"https://news.ycombinator.com/item?id=47756321","published_at":"2026-04-13T18:50:08","author":"mbitsnbites","text":null,"summary":"文章分享了通过缓存WebIDL代码生成来使Firefox构建速度提升17%的技术方法，这对于浏览器开发者和性能优化爱好者来说是一个实用的效率提升案例。"},{"id":"hn-47754100","title":"Who's Been Impersonating This ProPublica Reporter?","url":"https://www.propublica.org/article/impersonating-propublica-reporter","source":"Hacker News","score":110,"comments_count":2,"comments_url":"https://news.ycombinator.com/item?id=47754100","published_at":"2026-04-13T16:05:19","author":"hn_acker","text":null,"summary":"这篇文章调查了冒充ProPublica记者的身份盗窃事件，揭示了数字时代新闻工作者面临的网络安全风险，对关注媒体诚信和在线隐私的读者具有重要意义。"},{"id":"hn-47756569","title":"Show HN: Ithihāsas – a character explorer for Hindu epics, built in a few hours","url":"https://www.ithihasas.in","source":"Hacker News","score":104,"comments_count":24,"comments_url":"https://news.ycombinator.com/item?id=47756569","published_at":"2026-04-13T19:10:07","author":"cvrajeesh","text":"Hi HN!<p>I’ve always found it hard to explore the Mahābhārata and Rāmāyaṇa online. Most content is either long-form or scattered, and understanding a character like Karna or Bhishma usually means opening multiple tabs.<p>I built <a href=\"https:&#x2F;&#x2F;www.ithihasas.in&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.ithihasas.in&#x2F;</a> to solve that. It is a simple character explorer that lets you navigate the epics through people and their relationships instead of reading everything linearly.<p>This was also an experiment with Claude CLI. I was able to put together the first version in a couple of hours. It helped a lot with generating structured content and speeding up development, but UX and data consistency still needed manual work.<p>Would love feedback on the UX and whether this way of exploring mythology works for you.","summary":"这是一个展示项目，构建了一个用于探索印度史诗《摩诃婆罗多》和《罗摩衍那》中角色的在线工具，它值得关注是因为它以技术手段简化了对复杂文化文本的访问和理解。"}],"locale":"zh"}],"$Ld"]}]]}]
+### 六、 其他（算法、形式化验证）
+
+一些独特的技术话题。
+
+28. **Lean证明了这个程序正确；然后我找到了一个Bug**
+    *   **标题**：Lean proved this program correct; then I found a bug
+    *   **说明**：一个关于形式化验证的迷人案例。作者使用Lean定理证明器“证明”了一个程序正确，但随后却在其中发现了真实bug。文章深入探讨了规范（Specification）与实现（Implementation）之间的鸿沟，以及“证明正确”的真正含义。
+    *   **文章链接**：https://kirancodes.me/posts/log-who-watches-the-watchers.html
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47759709
+
+29. **Nothing Ever Happens: 在非体育市场总是买“否”的Polymarket机器人**
+    *   **标题**：Nothing Ever Happens: Polymarket bot that always buys No on non-sports markets
+    *   **说明**：一个针对预测市场平台Polymarket的自动化交易策略。该机器人基于“黑天鹅事件罕见”的假设，在非体育类预测市场中总是押注“不会发生”。这是一个结合了金融、概率论和自动化的有趣项目。
+    *   **文章链接**：https://github.com/sterlingcrispin/nothing-ever-happens
+    *   **讨论链接**：https://news.ycombinator.com/item?id=47753472
+
+30. **谷歌针对“返回按钮劫持”的新垃圾政策**
+    *   **标题**：A new spam policy for “back button hijacking”
+    *   **说明**：谷歌搜索更新政策，将干扰浏览器返回按钮正常功能的0:{"buildId":"2COlovoRI1ShstFcCYKh5","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-04-15","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":13},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-04-15"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+c:T512,Fiverr (gig work&#x2F;task platform, competitor to Upwork) uses a service called Cloudinary to process PDF&#x2F;images in messaging, including work products from the worker to client.<p>Besides the PDF processing value add, Cloudinary effectively acts like S3 here, serving assets directly to the web client. Like S3, it has support for signed&#x2F;expiring URLs. However, Fiverr opted to use public URLs, not signed ones, for sensitive client-worker communication.<p>Moreover, it seems like they may be serving public HTML somewhere that links to these files. As a result, hundreds are in Google search results, many containing PII.<p>Example query: site:fiverr-res.cloudinary.com form 1040<p>In fact, Fiverr actively buys Google Ads for keywords like &quot;form 1234 filing&quot; despite knowing that it does not adequately secure the resulting work product, causing the preparer to violate the GLBA&#x2F;FTC Safeguards Rule.<p>Responsible Disclosure Note -- 40 days have passed since this was notified to the designated vulnerability email (security@fiverr.com). The security team did not reply. Therefore, this is being made public as it doesn&#x27;t seem eligible for CVE&#x2F;CERT processing as it is not really a code vulnerability, and I don&#x27;t know anyone else who would care about it.6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47755629","title":"Someone bought 30 WordPress plugins and planted a backdoor in all of them","url":"https://anchor.host/someone-bought-30-wordpress-plugins-and-planted-a-backdoor-in-all-of-them/","source":"Hacker News","score":1146,"comments_count":320,"comments_url":"https://news.ycombinator.com/item?id=47755629","published_at":"2026-04-13T17:54:39","author":"speckx","text":null,"summary":"有人购买了30个WordPress插件并在其中植入后门，这突显了供应链攻击对开源生态系统的严重威胁，值得所有网站管理员和安全研究人员警惕。"},{"id":"hn-47760529","title":"DaVinci Resolve – Photo","url":"https://www.blackmagicdesign.com/products/davinciresolve/photo","source":"Hacker News","score":1056,"comments_count":264,"comments_url":"https://news.ycombinator.com/item?id=47760529","published_at":"2026-04-14T02:25:15","author":"thebiblelover7","text":null,"summary":"DaVinci Resolve推出Photo版本，将专业级视频调色工具扩展到静态图像处理领域，为摄影师和创意工作者提供了新的高效工作流程。"},{"id":"hn-47762864","title":"Backblaze has stopped backing up OneDrive and Dropbox folders and maybe others","url":"https://rareese.com/posts/backblaze/","source":"Hacker News","score":967,"comments_count":592,"comments_url":"https://news.ycombinator.com/item?id=47762864","published_at":"2026-04-14T08:30:27","author":"rrreese","text":null,"summary":"Backblaze停止备份OneDrive和Dropbox等云存储文件夹，这一政策变化可能影响依赖该服务进行数据冗余的用户，突显了云备份策略的重要性。"},{"id":"hn-47757495","title":"GitHub Stacked PRs","url":"https://github.github.com/gh-stack/","source":"Hacker News","score":867,"comments_count":496,"comments_url":"https://news.ycombinator.com/item?id=47757495","published_at":"2026-04-13T20:36:49","author":"ezekg","text":null,"summary":"GitHub推出Stacked PRs功能，允许开发者将大型拉取请求拆分为更小的堆叠式更改，旨在改善代码审查体验和协作效率。"},{"id":"hn-47760764","title":"A new spam policy for “back button hijacking”","url":"https://developers.google.com/search/blog/2026/04/back-button-hijacking","source":"Hacker News","score":833,"comments_count":475,"comments_url":"https://news.ycombinator.com/item?id=47760764","published_at":"2026-04-14T03:06:27","author":"zdw","text":null,"summary":"谷歌针对‘返回按钮劫持’推出新的垃圾邮件政策，旨在打击恶意网站阻止用户离开的行为，这对提升网页用户体验和安全性具有重要意义。"},{"id":"hn-47765604","title":"Rare concert recordings are landing on the Internet Archive","url":"https://techcrunch.com/2026/04/13/thousands-of-rare-concert-recordings-are-landing-on-the-internet-archive-listen-now/","source":"Hacker News","score":521,"comments_count":158,"comments_url":"https://news.ycombinator.com/item?id=47765604","published_at":"2026-04-14T13:46:31","author":"jrm-veris","text":null,"summary":"数千份稀有音乐会录音被上传至互联网档案馆，为音乐爱好者和历史研究者提供了宝贵的文化遗产资源，促进了音乐历史的保存与共享。"},{"id":"hn-47768813","title":"I wrote to Flock's privacy contact to opt out of their domestic spying program","url":"https://honeypot.net/2026/04/14/i-wrote-to-flocks-privacy.html","source":"Hacker News","score":496,"comments_count":204,"comments_url":"https://news.ycombinator.com/item?id=47768813","published_at":"2026-04-14T17:47:00","author":"speckx","text":null,"summary":"一位用户联系Flock的隐私联系人以退出其国内监控计划，这起事件引发了关于科技公司数据收集实践与用户隐私权之间平衡的公众讨论。"},{"id":"hn-47763759","title":"jj – the CLI for Jujutsu","url":"https://steveklabnik.github.io/jujutsu-tutorial/introduction/what-is-jj-and-why-should-i-care.html","source":"Hacker News","score":492,"comments_count":437,"comments_url":"https://news.ycombinator.com/item?id=47763759","published_at":"2026-04-14T10:33:39","author":"tigerlily","text":null,"summary":"jj是Jujutsu版本控制系统的命令行界面，它提供了类似Git但更现代的体验，旨在解决分布式版本控制中的一些常见痛点。"},{"id":"hn-47753472","title":"Nothing Ever Happens: Polymarket bot that always buys No on non-sports markets","url":"https://github.com/sterlingcrispin/nothing-ever-happens","source":"Hacker News","score":460,"comments_count":262,"comments_url":"https://news.ycombinator.com/item?id=47753472","published_at":"2026-04-13T15:31:06","author":"m-hodges","text":null,"summary":"Nothing Ever Happens是一个在Polymarket预测市场上总是购买‘否’的机器人，它幽默地揭示了某些非体育事件市场结果的可预测性缺陷。"},{"id":"hn-47751781","title":"US appeals court declares 158-year-old home distilling ban unconstitutional","url":"https://nypost.com/2026/04/11/us-news/us-appeals-court-declares-158-year-old-home-distilling-ban-unconstitutional/","source":"Hacker News","score":444,"comments_count":329,"comments_url":"https://news.ycombinator.com/item?id=47751781","published_at":"2026-04-13T13:37:33","author":"t-3","text":null,"summary":"美国上诉法院宣布一项158年的家庭蒸馏禁令违宪，这一法律裁决可能对美国酿酒文化和相关小型企业产生深远影响。"},{"id":"hn-47759709","title":"Lean proved this program correct; then I found a bug","url":"https://kirancodes.me/posts/log-who-watches-the-watchers.html","source":"Hacker News","score":377,"comments_count":169,"comments_url":"https://news.ycombinator.com/item?id=47759709","published_at":"2026-04-14T00:25:08","author":"bumbledraven","text":null,"summary":"文章探讨了即使使用Lean等定理证明器验证程序正确性后，仍可能发现隐藏的bug，这凸显了形式化验证的局限性和软件开发的复杂性。"},{"id":"hn-47769796","title":"Tell HN: Fiverr left customer files public and searchable","url":null,"source":"Hacker News","score":347,"comments_count":62,"comments_url":"https://news.ycombinator.com/item?id=47769796","published_at":"2026-04-14T18:56:40","author":"morpheuskafka","text":"$c","summary":"Fiverr因使用Cloudinary服务处理文件时配置不当，导致客户文件被公开并可搜索，这暴露了第三方服务集成中的严重数据安全风险。"},{"id":"hn-47705278","title":"YouTube now world's largest media company, topping Disney","url":"https://www.hollywoodreporter.com/business/digital/youtube-worlds-largest-media-company-2025-tops-disney-1236525130/","source":"Hacker News","score":296,"comments_count":229,"comments_url":"https://news.ycombinator.com/item?id=47705278","published_at":"2026-04-09T15:50:54","author":"bookofjoe","text":null,"summary":"YouTube在2025年超越迪士尼成为全球最大的媒体公司，标志着数字视频平台对传统娱乐巨头的颠覆性影响。"},{"id":"hn-47766550","title":"The future of everything is lies, I guess: Work","url":"https://aphyr.com/posts/418-the-future-of-everything-is-lies-i-guess-work","source":"Hacker News","score":246,"comments_count":201,"comments_url":"https://news.ycombinator.com/item?id=47766550","published_at":"2026-04-14T15:00:45","author":"aphyr","text":null,"summary":"文章批判性地分析了现代工作环境中普遍存在的谎言文化，如绩效指标造假，并探讨了其对技术和社会信任的侵蚀。"},{"id":"hn-47759341","title":"WiiFin – Jellyfin Client for Nintendo Wii","url":"https://github.com/fabienmillet/WiiFin","source":"Hacker News","score":244,"comments_count":120,"comments_url":"https://news.ycombinator.com/item?id=47759341","published_at":"2026-04-13T23:33:18","author":"throwawayk7h","text":null,"summary":"WiiFin是一个为任天堂Wii游戏机开发的Jellyfin客户端，使得这款老旧硬件能够流媒体播放媒体内容，展示了社区驱动的复古技术复兴。"},{"id":"hn-47759420","title":"The dangers of California's legislation to censor 3D printing","url":"https://www.eff.org/deeplinks/2026/04/dangers-californias-legislation-censor-3d-printing","source":"Hacker News","score":243,"comments_count":256,"comments_url":"https://news.ycombinator.com/item?id=47759420","published_at":"2026-04-13T23:44:24","author":"salkahfi","text":null,"summary":"电子前沿基金会警告加州一项立法可能审查3D打印内容，这引发了关于数字制造技术自由与政府监管之间平衡的广泛争议。"},{"id":"hn-47729350","title":"I just want simple S3","url":"https://blog.feld.me/posts/2026/04/i-just-want-simple-s3/","source":"Hacker News","score":223,"comments_count":121,"comments_url":"https://news.ycombinator.com/item?id=47729350","published_at":"2026-04-11T10:36:15","author":"g0xA52A2A","text":null,"summary":"作者呼吁云服务提供商提供更简单、免管理的S3兼容存储服务，反映了开发者对复杂云基础设施日益增长的不满和简化需求。"},{"id":"hn-47768788","title":"OpenSSL 4.0.0","url":"https://github.com/openssl/openssl/releases/tag/openssl-4.0.0","source":"Hacker News","score":202,"comments_count":67,"comments_url":"https://news.ycombinator.com/item?id=47768788","published_at":"2026-04-14T17:45:34","author":"petecooper","text":null,"summary":"OpenSSL发布了重大版本4.0.0，引入了API清理、性能改进和新特性，这是该关键加密库的一次重要更新，对网络安全有广泛影响。"},{"id":"hn-47718284","title":"Design and implementation of DuckDB internals","url":"https://duckdb.org/library/design-and-implementation-of-duckdb-internals/","source":"Hacker News","score":180,"comments_count":15,"comments_url":"https://news.ycombinator.com/item?id=47718284","published_at":"2026-04-10T13:59:26","author":"mpweiher","text":null,"summary":"文章详细介绍了DuckDB数据库的内部设计和实现，为开发者提供了深入了解这个高性能嵌入式分析数据库架构的宝贵资源。"},{"id":"hn-47756569","title":"Show HN: Ithihāsas – a character explorer for Hindu epics, built in a few hours","url":"https://www.ithihasas.in","source":"Hacker News","score":168,"comments_count":44,"comments_url":"https://news.ycombinator.com/item?id=47756569","published_at":"2026-04-13T19:10:07","author":"cvrajeesh","text":"Hi HN!<p>I’ve always found it hard to explore the Mahābhārata and Rāmāyaṇa online. Most content is either long-form or scattered, and understanding a character like Karna or Bhishma usually means opening multiple tabs.<p>I built <a href=\"https:&#x2F;&#x2F;www.ithihasas.in&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.ithihasas.in&#x2F;</a> to solve that. It is a simple character explorer that lets you navigate the epics through people and their relationships instead of reading everything linearly.<p>This was also an experiment with Claude CLI. I was able to put together the first version in a couple of hours. It helped a lot with generating structured content and speeding up development, but UX and data consistency still needed manual work.<p>Would love feedback on the UX and whether this way of exploring mythology works for you.","summary":"Ithihāsas是一个快速构建的印度史诗角色探索工具，旨在解决在线浏览《摩诃婆罗多》和《罗摩衍那》时信息分散的难题，方便用户研究复杂人物关系。"},{"id":"hn-47761997","title":"Distributed DuckDB Instance","url":"https://github.com/citguru/openduck","source":"Hacker News","score":162,"comments_count":33,"comments_url":"https://news.ycombinator.com/item?id=47761997","published_at":"2026-04-14T06:31:44","author":"citguru","text":null,"summary":"开源项目OpenDuckDB推出了分布式DuckDB实例，这值得关注，因为它为数据分析提供了可扩展的分布式处理能力，可能提升大数据查询效率。"},{"id":"hn-47728970","title":"Write less code, be more responsible","url":"https://blog.orhun.dev/code-responsibly/","source":"Hacker News","score":161,"comments_count":117,"comments_url":"https://news.ycombinator.com/item?id=47728970","published_at":"2026-04-11T09:20:45","author":"orhunp_","text":null,"summary":"这篇文章探讨了如何通过编写更少的代码来提升开发责任感和软件质量，值得关注，因为它强调了简洁编程在维护和可持续性中的重要性。"},{"id":"hn-47772012","title":"Stop Flock","url":"https://stopflock.com","source":"Hacker News","score":152,"comments_count":15,"comments_url":"https://news.ycombinator.com/item?id=47772012","published_at":"2026-04-14T21:56:05","author":"cdrnsf","text":null,"summary":"Stop Flock是一个旨在减少社交媒体成瘾的工具，值得关注，因为它直接应对了现代数字生活中普遍存在的注意力分散问题。"},{"id":"hn-47704729","title":"The M×N problem of tool calling and open-source models","url":"https://www.thetypicalset.com/blog/grammar-parser-maintenance-contract","source":"Hacker News","score":140,"comments_count":43,"comments_url":"https://news.ycombinator.com/item?id=47704729","published_at":"2026-04-09T15:07:13","author":"remilouf","text":null,"summary":"文章分析了开源模型中工具调用的M×N问题及其维护挑战，值得关注，因为它揭示了开源软件生态中接口复杂性和可持续性的关键议题。"},{"id":"hn-47758870","title":"Let's talk space toilets","url":"https://mceglowski.substack.com/p/lets-talk-space-toilets","source":"Hacker News","score":137,"comments_count":47,"comments_url":"https://news.ycombinator.com/item?id=47758870","published_at":"2026-04-13T22:41:19","author":"zdw","text":null,"summary":"这篇文章深入探讨了太空厕所的技术挑战和设计，值得关注，因为它以幽默而严谨的方式揭示了航天工程中常被忽视但至关重要的生活支持系统。"}],"locale":"zh"}],"$Ld"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
 a:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
-d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-479dc1430dbe","title":"Lean proved this program was correct; then I found a bug","url":"https://kirancodes.me/posts/log-who-watches-the-watchers.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-13T16:04:27","author":"kirancodes.me by kirancodes","text":"<p><a href=\"https://lobste.rs/s/wwr6zu/lean_proved_this_program_was_correct_then\">Comments</a></p>","summary":"文章讲述了一个在Lean定理证明器已验证正确的程序中仍发现bug的案例，这引发了关于形式化验证工具局限性和软件可靠性的深刻讨论。"},{"id":"rss-1bdf8654a3f0","title":"Servo 0.1.0 (first LTS version) is now available on crates.io","url":"https://servo.org/blog/2026/04/13/servo-0.1.0-release/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-13T13:42:04","author":"servo.org via AsciiBoiler","text":"<p><a href=\"https://lobste.rs/s/f8vyzy/servo_0_1_0_first_lts_version_is_now\">Comments</a></p>","summary":"Servo浏览器引擎发布了其首个长期支持版本0.1.0，这标志着这个由Rust编写、曾由Mozilla发起的项目进入了一个更稳定的发展阶段，对浏览器技术社区有重要意义。"},{"id":"rss-8bfd9f2beccf","title":"GitHub Stacked PRs","url":"https://github.github.com/gh-stack/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-13T21:05:39","author":"github.github.com via jado","text":"<p><a href=\"https://lobste.rs/s/xr9g5d/github_stacked_prs\">Comments</a></p>","summary":"GitHub推出了Stacked PRs功能，旨在改进处理依赖拉取请求的工作流程，这对于使用GitHub进行协作开发的团队来说是一个值得关注的生产力工具更新。"},{"id":"rss-e40cf4726052","title":"Did you notice the command error exit in the shell?","url":"https://monzool.net/blog/2026/04/10/error-banner-in-shell/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-13T05:53:07","author":"monzool.net by monzool","text":"<p><a href=\"https://lobste.rs/s/eqawpx/did_you_notice_command_error_exit_shell\">Comments</a></p>","summary":"文章探讨了在Shell中如何更有效地提示命令错误退出，这是一个关于改善命令行用户体验和可发现性的实用技巧，对系统管理员和开发者很有帮助。"},{"id":"rss-02edecb47201","title":"Configuration flags are where software goes to rot","url":"https://00f.net/2026/04/11/config-flags/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-13T15:12:52","author":"00f.net via josephjnk","text":"<p><a href=\"https://lobste.rs/s/pvawq1/configuration_flags_are_where_software\">Comments</a></p>","summary":"文章批评了软件中过度使用配置标志导致代码腐化的现象，提出了关于软件设计和维护的深刻见解，对软件架构师和开发者具有启发意义。"}],"locale":"zh"}]
+d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-81661130d341","title":"Zig 0.16.0 Release Notes","url":"https://ziglang.org/download/0.16.0/release-notes.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-14T16:15:51","author":"ziglang.org via vpol","text":"<p><a href=\"https://lobste.rs/s/4vvozb/zig_0_16_0_release_notes\">Comments</a></p>","summary":"Zig 0.16.0发布了新版本，包含语言和标准库的更新，值得关注，因为它展示了这门系统编程语言的持续演进和社区活跃度。"},{"id":"rss-e0c80b502928","title":"KeePassχ - a KeePassXC fork","url":"https://codeberg.org/keepasschi","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-14T16:40:28","author":"codeberg.org via jmelesky","text":"<p><a href=\"https://lobste.rs/s/ak5mgm/keepass_keepassxc_fork\">Comments</a></p>","summary":"KeePassχ是KeePassXC的一个分支项目，值得关注，因为它代表了密码管理工具的开源生态中可能出现的新发展方向或社区分歧。"},{"id":"rss-d15561f4f64b","title":"Rust should have stable tail calls","url":"https://trifectatech.org/blog/tail-calls-project-goal/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-14T11:04:21","author":"trifectatech.org via LesleyLai","text":"<p><a href=\"https://lobste.rs/s/hedf1w/rust_should_have_stable_tail_calls\">Comments</a></p>","summary":"文章主张Rust语言应稳定支持尾调用优化，值得关注，因为这可能影响函数式编程风格在Rust中的性能和可用性，引发语言设计讨论。"},{"id":"rss-6a33c5ae811a","title":"Object oriented programming in Ada","url":"https://entropicthoughts.com/object-oriented-programming-in-ada","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-14T17:38:40","author":"entropicthoughts.com by kqr","text":"<p><a href=\"https://lobste.rs/s/ovlmz5/object_oriented_programming_ada\">Comments</a></p>","summary":"这篇文章介绍了Ada语言中的面向对象编程特性，值得关注，因为它帮助开发者了解这门安全关键型系统常用语言的现代编程范式。"},{"id":"rss-ea76d5e242a0","title":"120+ Icons and Counting","url":"https://blog.jimmac.eu/posts/app-icon-requests/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-14T10:56:57","author":"blog.jimmac.eu via FedericoSchonborn","text":"<p><a href=\"https://lobste.rs/s/bvuhnp/120_icons_counting\">Comments</a></p>","summary":"博客文章分享了处理120多个应用图标请求的经验，值得关注，因为它反映了开源或独立开发中设计资源管理的实际挑战和社区互动。"}],"locale":"zh"}]
 10:null
