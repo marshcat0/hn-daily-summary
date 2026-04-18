@@ -3,206 +3,218 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-e:"$Sreact.suspense"
-5:T3e76,好的，作为一名技术新闻分析师，我将对今日（2026年4月16日）的30篇热门技术文章进行综合分析、总结和推荐。
+f:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+5:T3ebf,好的，作为一名技术新闻分析师，我已对今日“Technology”主题下的30篇热门文章进行了综合分析。这些内容主要来自Hacker News和Lobsters社区，涵盖了从编程语言、软件开发、安全隐私到科技政策、太空探索等多个子领域。
 
-### **今日技术热点综合分析**
+以下是我的分析总结，文章已按核心主题进行分组。
 
-今日的热门文章呈现出几个鲜明的主题：**网络基础设施的里程碑事件**、**AI/LLM技术的应用与反思**、**编程语言与开发工具的更新**、**对技术文化与商业模式的批判性思考**，以及一些**有趣的系统级技术探索**。Hacker News 和 Lobsters 的社区关注点高度重合，尤其是在IPv6和Rust等话题上。
+### 今日技术热点分析总结
 
-以下是按子主题分组的详细分析：
-
----
-
-### **1. 网络与基础设施里程碑**
-这一组文章标志着互联网基础技术的重大进展。
-
-*   **IPv6 traffic crosses the 50% mark**
-    *   **说明**：这是今日最重磅的新闻之一。谷歌的统计数据显示，全球访问其服务的用户中，通过IPv6连接的比例首次超过50%。这标志着互联网从IPv4向IPv6的迁移达到了一个历史性的转折点，对未来的网络架构、设备连接和网络安全具有深远影响。
-    *   **原文链接**：https://www.google.com/intl/en/ipv6/statistics.html?yzh=28197
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47777894 (HN) | https://lobste.rs/s/xijpr1/ipv6_traffic_crosses_50_mark (Lobsters)
-
-*   **Artifacts: Versioned storage that speaks Git**
-    *   **说明**：Cloudflare 发布了一项名为 Artifacts 的 Beta 服务。它本质上是一个支持 Git 协议的版本化对象存储，专为 AI 智能体（Agents）设计，使其能像管理代码一样管理数据、模型权重等“制品”。这反映了基础设施正在为 AI 原生工作流进行重塑。
-    *   **原文链接**：https://blog.cloudflare.com/artifacts-git-for-agents-beta/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47792374
+今日的热门内容呈现出几个清晰的焦点：**对编程语言与开发工具的深度探讨**、**对安全与隐私问题的持续关注**、**对基础设施与系统设计的创新**，以及一些引人深思的**历史回顾与科技政策讨论**。
 
 ---
 
-### **2. 人工智能与代码生成**
-围绕 OpenAI Codex 及其影响，以及 AI 在开发中的新应用。
+### 一、 编程语言、开发工具与软件工程
 
-*   **Codex for almost everything**
-    *   **说明**：OpenAI 宣布其代码生成模型 Codex 的能力得到极大扩展，现在可以处理“几乎所有”编程任务。文章探讨了其对软件开发范式的潜在颠覆，引发了关于程序员角色演变的激烈讨论。
-    *   **原文链接**：https://openai.com/index/codex-for-almost-everything/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47796469
+这一主题下的文章数量最多，反映了开发者社区对提升开发体验和深入理解技术原理的持续热情。
 
-*   **Codex Hacked a Samsung TV**
-    *   **说明**：一个有趣的实践案例。作者详细描述了如何利用 Codex（或类似模型）来辅助发现并利用三星电视的漏洞。这篇文章展示了 AI 在安全研究（无论是攻击还是防御）中的强大辅助能力。
-    *   **原文链接**：https://blog.calif.io/p/codex-hacked-a-samsung-tv
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47791212
+1.  **Ada, its design, and the language that built the languages**
+    *   **说明**： 深度剖析了Ada语言的设计哲学及其对后续编程语言（如C++、Java、C#）产生的深远影响，是了解编程语言发展史的优秀文章。
+    *   **原文链接**： https://www.iqiipi.com/the-quiet-colossus.html
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47803844
 
-*   **Android CLI: Build Android apps 3x faster using any agent**
-    *   **说明**：谷歌官方博客宣布，Android 命令行工具现在可以集成任何 AI 智能体（如 Codex、Claude 等），通过自然语言指令自动执行构建、测试和部署任务，宣称能将开发速度提升3倍。这是 AI 深度融入主流开发工具链的明确信号。
-    *   **原文链接**：https://android-developers.googleblog.com/2026/04/build-android-apps-3x-faster-using-any-agent.html
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47797665
+2.  **A better R programming experience thanks to Tree-sitter**
+    *   **说明**： 介绍了如何利用Tree-sitter解析器为R语言生态（如RStudio）带来更强大的语法高亮、代码折叠和结构化导航功能，对数据科学家和R开发者有直接价值。
+    *   **原文链接**： https://ropensci.org/blog/2026/04/02/tree-sitter-overview/
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47799573
 
-*   **Darkbloom – Private inference on idle Macs**
-    *   **说明**：一个利用闲置 Mac 电脑的算力进行私有化 AI 模型推理的项目。它强调数据不出设备，保护隐私，同时利用分布式资源。这代表了在集中式云 AI 之外的一种去中心化、注重隐私的技术路径。
-    *   **原文链接**：https://darkbloom.dev
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47788542
+3.  **A Python Interpreter Written in Python**
+    *   **说明**： 一篇经典的“500 Lines or Less”系列文章，通过用Python实现一个Python子集来解释解释器的工作原理，是学习编译原理和语言实现的绝佳实践材料。
+    *   **原文链接**： https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47755261
 
----
+4.  **Spending 3 months coding by hand**
+    *   **说明**： 一位开发者分享了自己为期三个月“手写代码”（脱离IDE，使用纯文本编辑器）的体验和反思，引发了关于现代开发工具利弊的广泛讨论。
+    *   **原文链接**： https://miguelconner.substack.com/p/im-coding-by-hand
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47807583
 
-### **3. 编程语言与开发工具**
-关注特定语言的更新、开发实践和底层技术。
+5.  **Reflections on 30 years of HPC programming**
+    *   **说明**： Chapel语言团队回顾了30年高性能计算编程的演变，从MPI、OpenMP到现代PGAS模型，提供了对HPC领域发展脉络的宏观视角。
+    *   **原文链接**： https://chapel-lang.org/blog/posts/30years/
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47759436
 
-*   **Announcing Rust 1.95.0**
-    *   **说明**：Rust 语言发布了 1.95.0 版本。虽然 Lobsters 文章未提供详情，但按照惯例，每个 Rust 版本都会包含性能改进、新稳定 API 和编译增强，对 Rust 开发者社区是例行但重要的事件。
-    *   **原文链接**：https://blog.rust-lang.org/2026/04/16/Rust-1.95.0/
-    *   **讨论链接**：https://lobste.rs/s/pmxhem/announcing_rust_1_95_0
+6.  **Show HN: Stage – Putting humans back in control of code review**
+    *   **说明**： 一款新的代码审查工具，旨在通过分步引导的方式，帮助开发者更系统、更人性化地理解大型PR，而非直接面对庞杂的diff。
+    *   **原文链接**： https://stagereview.app/
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47796818
 
-*   **Okay, what actually uses Rust**
-    *   **说明**：一篇旨在澄清 Rust 语言实际应用场景的文章。它可能列举了在生产环境中成功使用 Rust 的大型项目或公司，回应了关于 Rust “是否只是炒作”的疑问，对评估技术选型有参考价值。
-    *   **原文链接**：https://blog.goose.love/posts/what-actually-uses-rust/
-    *   **讨论链接**：https://lobste.rs/s/dlxlvj/okay_what_actually_uses_rust
+7.  **Launch HN: Kampala (YC W26) – Reverse-Engineer Apps into APIs**
+    *   **说明**： 一个YC支持的创业项目，提供一种“中间人”代理，可以将现有应用（网页、移动端、桌面端）的操作流程逆向工程为可编程的API，为自动化测试和集成提供了新思路。
+    *   **原文链接**： https://www.zatanna.ai/kampala
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47794514
 
-*   **PHP 8.6 Closure Optimizations**
-    *   **说明**：PHP 社区正在讨论针对闭包（匿名函数）的优化提案（RFC）。这反映了这门“老牌”Web语言仍在持续进化，致力于提升性能，以满足现代应用开发的需求。
-    *   **原文链接**：https://wiki.php.net/rfc/closure-optimizations
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47763959
+8.  **tangled newsletter 01 — hello**
+    *   **说明**： 一个新的技术通讯创刊号，内容未知但引发了社区关注，可能预示着新的高质量技术内容源的诞生。
+    *   **原文链接**： https://blog.tangled.org/newsletter-01/
+    *   **讨论链接**： https://lobste.rs/s/y8jlwv/tangled_newsletter_01_hello
 
-*   **Stop using JWTs**
-    *   **说明**：一篇观点鲜明的技术文章，作者可能列举了 JSON Web Tokens (JWT) 在安全、复杂性和适用场景方面的常见误用与缺陷，倡导开发者重新考虑其认证/授权方案的选择。这类文章通常会引发强烈的正反辩论。
-    *   **原文链接**：https://gist.github.com/samsch/0d1f3d3b4745d778f78b230cf6061452
-    *   **讨论链接**：https://lobste.rs/s/myzsbg/stop_using_jwts
-
-*   **Retrofitting JIT Compilers into C Interpreters**
-    *   **说明**：一篇深度技术文章，探讨了如何为用 C 语言编写的解释器（例如某些脚本语言） retrofitting（后期改装）即时编译（JIT）功能。这对语言实现和虚拟机设计者很有启发。
-    *   **原文链接**：https://tratt.net/laurie/blog/2026/retrofitting_jit_compilers_into_c_interpreters.html
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47777897
-
-*   **Too much discussion of the XOR swap trick**
-    *   **说明**：一篇带有文化评论性质的文章。作者可能认为，关于“不使用临时变量交换两个值”的 XOR 技巧被过度讨论和神话了，而在实际工程中意义不大甚至有害。这触及了编程社区中“炫技”与“务实”的永恒话题。
-    *   **原文链接**：https://heather.cafe/posts/too_much_xor_swap_trick/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47750486
+9.  **A simplified model of Fil-C** (此主题下有两篇相同文章)
+    *   **说明**： 对“Fil-C”（一种并发编程模型或语言特性）的简化解释。文章在Hacker News和Lobsters上都被分享，表明其在特定技术圈内受到关注。
+    *   **原文链接**： https://www.corsix.org/content/simplified-model-of-fil-c
+    *   **讨论链接**：
+        *   HN: https://news.ycombinator.com/item?id=47810872
+        *   Lobsters: https://lobste.rs/s/rp1yrv/simplified_model_fil_c
 
 ---
 
-### **4. 系统、安全与底层探索**
-涉及操作系统、安全漏洞和硬件相关的技术内容。
+### 二、 安全、隐私与基础设施
 
-*   **RedSun: System user access on Win 11/10 and Server with the April 2026 Update**
-    *   **说明**：一个在 GitHub 上发布的工具或漏洞利用，声称能通过 2026 年 4 月更新在 Windows 系统上获取系统用户权限。这类安全工具/漏洞的公开会立即引起管理员和安全研究员的关注。
-    *   **原文链接**：https://github.com/Nightmare-Eclipse/RedSun
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47788473
+安全漏洞、隐私保护和基础设施决策是技术社区的永恒话题，今日有几篇高热度文章涉及。
 
-*   **PiCore - Raspberry Pi Port of Tiny Core Linux**
-    *   **说明**：极简主义 Linux 发行版 Tiny Core Linux 发布了针对树莓派（ARMv6）的移植版本 PiCore。这对于需要在资源受限的嵌入式设备或追求极致启动速度的场景下运行 Linux 的开发者是一个好消息。
-    *   **原文链接**：http://tinycorelinux.net/5.x/armv6/releases/README
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47784244
+10. **Ban the sale of precise geolocation**
+    *   **说明**： 一篇来自Lawfare的评论文章，呼吁立法禁止精确地理位置数据的商业销售。文章热度极高，反映了公众对数据隐私和监控资本主义的深切担忧。
+    *   **原文链接**： https://www.lawfaremedia.org/article/it-is-time-to-ban-the-sale-of-precise-geolocation
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47806304
 
-*   **Direct Win32 API, weird-shaped windows, and why they mostly disappeared**
-    *   **说明**：一篇怀旧与技术史文章，回顾了早期 Windows 开发中直接调用 Win32 API 创建异形窗口的“狂野”时代，并探讨了这种模式为何在现代 UI 框架中不再常见。适合对 GUI 发展史感兴趣的读者。
-    *   **原文链接**：https://warped3.substack.com/p/direct-win32-api-weird-shaped-windows
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47776667
+11. **NIST gives up enriching most CVEs**
+    *   **说明**： 报道了美国国家标准与技术研究院因资源不足，将停止为大多数CVE（公共漏洞与暴露）条目提供额外的元数据和分析（如严重性评分、影响评估）。这对全球漏洞管理生态可能产生重大影响。
+    *   **原文链接**： https://risky.biz/risky-bulletin-nist-gives-up-enriching-most-cves/
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47806777
 
-*   **Cybersecurity looks like proof of work now**
-    *   **说明**：一篇观点文章，将现代网络安全态势比作“工作量证明”（PoW）。作者可能想表达，防御者需要投入持续且巨大的“算力”（人力、物力）来应对无休止的攻击，这种模式是否可持续值得深思。
-    *   **原文链接**：https://www.dbreunig.com/2026/04/14/cybersecurity-is-proof-of-work-now.html
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47769089
+12. **Show HN: PanicLock – Close your MacBook lid disable TouchID –> password unlock**
+    *   **说明**： 一个出于现实隐私安全需求（记者被强制指纹解锁电脑）而开发的开源工具。合上MacBook盖子后，自动禁用TouchID，强制下次使用密码解锁，以应对法律上的“强制生物特征解锁”风险。
+    *   **原文链接**： https://github.com/paniclock/paniclock/
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47807809
 
----
+13. **Even “cat readme.txt” is not safe**
+    *   **说明**： 揭示了一个看似无害的`cat`命令也可能因为终端模拟器或字体渲染的漏洞而变得危险，提醒开发者注意供应链攻击和终端安全。
+    *   **原文链接**： https://blog.calif.io/p/mad-bugs-even-cat-readmetxt-is-not
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47809190
 
-### **5. 技术文化与商业反思**
-对行业现象、商业模式和开发者文化的深度评论。
+14. **HTTP desync in Discord’s media proxy: Spying on a whole platform**
+    *   **说明**： 一篇详细的技术文章，披露了在Discord媒体代理中发现的HTTP请求走私漏洞，攻击者可能利用此漏洞窥探平台上的媒体内容。这是实际攻防的典型案例。
+    *   **原文链接**： https://tmctmt.com/posts/http-desync-in-discord/
+    *   **讨论链接**： https://lobste.rs/s/zxgmfx/http_desync_discord_s_media_proxy_spying
 
-*   **The future of everything is lies, I guess: Where do we go from here?**
-    *   **说明**：来自知名博主 Aphyr（以“Jepsen”分布式系统测试框架闻名）的长文。标题极具冲击力，内容很可能对当前技术领域（尤其是AI、Web3、营销话术）中存在的夸大、欺骗和信任危机进行尖锐批判，并探讨出路。这是今日讨论度最高的文章之一。
-    *   **原文链接**：https://aphyr.com/posts/420-the-future-of-everything-is-lies-i-guess-where-do-we-go-from-here
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47792718
+15. **We beat Google’s zero-knowledge proof of quantum cryptanalysis**
+    *   **说明**： Trail of Bits团队宣布，他们成功破解了谷歌提出的一个用于证明量子密码分析能力的零知识证明挑战。这关乎后量子密码学和密码学证明的前沿领域。
+    *   **原文链接**： https://blog.trailofbits.com/2026/04/17/we-beat-googles-zero-knowledge-proof-of-quantum-cryptanalysis/
+    *   **讨论链接**： https://lobste.rs/s/d55yj0/we_beat_google_s_zero_knowledge_proof
 
-*   **The “Passive Income” trap ate a generation of entrepreneurs**
-    *   **说明**：批判了在开发者/创业者社区中流行的“被动收入”迷思。文章可能指出，过度追求“躺赚”产品导致了许多低质量项目，并扼杀了真正需要投入和创新的创业精神。
-    *   **原文链接**：https://www.joanwestenberg.com/the-passive-income-trap-ate-a-generation-of-entrepreneurs/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47799120
+16. **Healthchecks.io now uses self-hosted object storage**
+    *   **说明**： 知名定时任务监控服务Healthchecks.io宣布从云服务商的对象存储迁移到自托管方案。这是一篇关于创业公司基础设施成本控制和自主性的实战记录。
+    *   **原文链接**： https://blog.healthchecks.io/2026/04/healthchecks-io-now-uses-self-hosted-object-storage/
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47806348
 
-*   **Everything we like is a psyop**
-    *   **说明**：来自 TechCrunch 的评论文章，标题意为“我们喜欢的一切都是心理操作”。它可能探讨了在社交媒体算法、营销和网络文化的影响下，我们的喜好和流行趋势在多大程度上是被操纵和设计的，对科技与社会的关系提出质疑。
-    *   **原文链接**：https://techcrunch.com/2026/04/16/everything-we-like-is-a-psyop/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47800738
+17. **Hyperscalers have already outspent most famous US megaprojects**
+    *   **说明**： 通过数据对比，指出超大规模云服务商（如AWS、Azure、Google Cloud）在数据中心等基础设施上的累计支出，已经超过了美国历史上大多数著名的巨型工程（如州际公路系统、阿波罗计划）。凸显了数字基础设施的庞大规模。
+    *   **原文链接**： https://twitter.com/finmoorhouse/status/2044933442236776794
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47807619
 
-*   **Live Nation illegally monopolized ticketing market, jury finds**
-    *   **说明**：一项重大的反垄断判决。陪审团认定 Live Nation（Ticketmaster 母公司）非法垄断票务市场。这不仅是商业新闻，也关乎技术平台如何利用其市场地位，对消费者和行业竞争的影响深远。
-    *   **原文链接**：https://www.bloomberg.com/news/articles/2026-04-15/live-nation-illegally-monopolized-ticketing-market-jury-finds
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47783713
-
----
-
-### **6. 多媒体、设计与趣味内容**
-包括纪录片、图形学教程和趣味发现。
-
-*   **Clojure: The Documentary** / **Official Clojure Documentary page**
-    *   **说明**：关于函数式编程语言 Clojure 的官方纪录片正式发布。对于 Clojure 社区、函数式编程爱好者，或对编程语言历史感兴趣的人来说，这是一部值得观看的作品。
-    *   **原文链接**：https://clojure.org/about/documentary (官方页面) | https://www.youtube.com/watch?v=Y24vK_QDLFg (YouTube)
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47798345 (HN) | https://lobste.rs/s/nvzsa5/clojure_documentary (Lobsters)
-
-*   **Introduction to spherical harmonics for graphics programmers**
-    *   **说明**：一篇面向图形程序员的球面谐波（Spherical Harmonics）入门教程。球面谐波在全局光照、环境光遮蔽等高级渲染技术中非常重要，这篇教程能帮助开发者理解其数学原理和应用。
-    *   **原文链接**：https://gpfault.net/posts/sph.html
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47749548
-
-*   **The buns in McDonald's Japan's burger photos are all slightly askew**
-    *   **说明**：一个有趣且略带哲学意味的发现。有人指出日本麦当劳官网上的汉堡图片中，面包的倾斜角度都略有不同，并引发了关于设计意图、心理学（制造“手工感”）以及“完美的不完美”的广泛讨论。
-    *   **原文链接**：https://www.mcdonalds.co.jp/en/menu/burger/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47785738
-
-*   **The paper computer**
-    *   **说明**：一篇概念性文章，作者提出“纸计算机”的想法，可能是一种用于教学或思考计算的抽象模型。这类文章旨在剥离电子设备的复杂性，回归计算本质进行思考。
-    *   **原文链接**：https://jsomers.net/blog/the-paper-computer
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47747770
-
-*   **North American English Dialects**
-    *   **说明**：一个语言学资源网站，详细描绘了北美英语的各种方言。虽然不直接是编程技术，但这类关于语言、沟通和地域差异的内容在 hacker 社区中一直有稳定的兴趣群体。
-    *   **原文链接**：https://aschmann.net/AmEng/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47788398
-
-*   **Do you even need a database?**
-    *   **说明**：一篇挑战常规思维的文章，探讨在什么情况下你可以（或许应该）不使用传统的数据库，而采用文件系统、内存存储或其他更简单的方案。有助于开发者在项目初期进行合理的技术选型。
-    *   **原文链接**：https://www.dbpro.app/blog/do-you-even-need-a-database
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47778086
-
-*   **Hospital at centre of child HIV outbreak caught reusing syringes in Pakistan**
-    *   **说明**：一则关于巴基斯坦医院因重复使用注射器导致儿童 HIV 感染的公共卫生悲剧新闻。虽然主题沉重且非纯技术，但在 HN 上引发了对医疗系统、监管和全球健康不平等的讨论。
-    *   **原文链接**：https://www.bbc.com/news/articles/clyrd818gd2o
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47800839
-
-*   **Mozilla Thunderbolt**
-    *   **说明**：标题玩了一个“Mozilla Thunderbird”（邮件客户端）和“Thunderbolt”（雷电接口）的谐音梗。实际内容可能是一个与之相关的项目、玩笑或误解，需要点开链接才能确认其具体所指。
-    *   **原文链接**：https://www.thunderbolt.io/
-    *   **讨论链接**：https://news.ycombinator.com/item?id=47792368
+18. **Why is IPv6 so complicated?**
+    *   **说明**： 一篇探讨IPv6为何在部署和配置上给人以“复杂”印象的文章，可能涉及地址分配、路由协议、与IPv4的共存等问题，是网络工程师和系统管理员关心的话题。
+    *   **原文链接**： https://github.com/becarpenter/misc/blob/main/why6why.md
+    *   **讨论链接**： https://lobste.rs/s/m0c78b/why_is_ipv6_so_complicated
 
 ---
 
-### **今日最值得阅读文章推荐**
+### 三、 系统、工具与开源项目
 
-基于话题的重要性、讨论的深度和内容的独特性，我推荐以下五篇文章：
+展示新的技术项目或介绍经典工具，体现了社区的创造力和对效率的追求。
 
-1.  **IPv6 traffic crosses the 50% mark**
-    *   **理由**：这是见证互联网历史变迁的里程碑事件。无论你是开发者、运维还是普通网民，理解 IPv6 成为主流的意义都至关重要，它关乎未来十年互联网的形态。其高热度也反映了社区的共识。
-    *   **链接**：https://www.google.com/intl/en/ipv6/statistics.html?yzh=28197
+19. **Show HN: Smol machines – subsecond coldstart, portable virtual machines**
+    *   **说明**： 一个开源项目，旨在实现亚秒级冷启动、可移植的轻量级虚拟机，可能为边缘计算、函数计算等场景带来新的可能性。
+    *   **原文链接**： https://github.com/smol-machines/smolvm
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47808268
 
-2.  **The future of everything is lies, I guess: Where do we go from here?**
-    *   **理由**：来自一位备受尊敬的技术思想家的深度批判。在 AI 炒作、科技泡沫和信任危机交织的当下，这篇文章提供了难得的冷静视角和深刻的行业反思，阅读其引发的数百条讨论同样极具价值。
-    *   **链接**：https://aphyr.com/posts/420-the-future-of-everything-is-lies-i-guess-where-do-we-go-from-here
+20. **CadQuery is an open-source Python library for building 3D CAD models**
+    *   **说明**： 介绍一个基于Python的参数化3D CAD建模库。对于希望用代码（而非GUI）进行机械设计的工程师和爱好者来说，这是一个强大的工具。
+    *   **原文链接**： https://cadquery.github.io/
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47772725
 
-3.  **Codex for almost everything**
-    *   **理由**：直接0:{"buildId":"CCMnuPna4CaXTmwAZtr4Z","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-04-17","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":20},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-04-17"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47777894","title":"IPv6 traffic crosses the 50% mark","url":"https://www.google.com/intl/en/ipv6/statistics.html?yzh=28197","source":"Hacker News","score":771,"comments_count":566,"comments_url":"https://news.ycombinator.com/item?id=47777894","published_at":"2026-04-15T11:59:49","author":"Aaronmacaron","text":null,"summary":"IPv6流量首次突破50%大关，标志着互联网基础设施向下一代协议的重大迁移，对网络性能和未来发展至关重要。"},{"id":"hn-47796469","title":"Codex for almost everything","url":"https://openai.com/index/codex-for-almost-everything/","source":"Hacker News","score":677,"comments_count":365,"comments_url":"https://news.ycombinator.com/item?id=47796469","published_at":"2026-04-16T17:12:19","author":"mikeevans","text":null,"summary":"OpenAI的Codex模型扩展至几乎一切应用，展示了AI在代码生成和自动化领域的广泛潜力，值得关注其技术突破。"},{"id":"hn-47785738","title":"The buns in McDonald's Japan's burger photos are all slightly askew","url":"https://www.mcdonalds.co.jp/en/menu/burger/","source":"Hacker News","score":639,"comments_count":300,"comments_url":"https://news.ycombinator.com/item?id=47785738","published_at":"2026-04-15T21:48:18","author":"bckygldstn","text":null,"summary":"日本麦当劳汉堡照片中的面包故意轻微倾斜，揭示了营销中的视觉技巧，对消费者心理学和广告伦理有启发意义。"},{"id":"hn-47783713","title":"Live Nation illegally monopolized ticketing market, jury finds","url":"https://www.bloomberg.com/news/articles/2026-04-15/live-nation-illegally-monopolized-ticketing-market-jury-finds","source":"Hacker News","score":605,"comments_count":186,"comments_url":"https://news.ycombinator.com/item?id=47783713","published_at":"2026-04-15T19:06:39","author":"Alex_Bond","text":"<a href=\"https:&#x2F;&#x2F;www.nytimes.com&#x2F;2026&#x2F;04&#x2F;15&#x2F;arts&#x2F;music&#x2F;live-nation-antitrust-trial-verdict-monopoly.html\" rel=\"nofollow\">https:&#x2F;&#x2F;www.nytimes.com&#x2F;2026&#x2F;04&#x2F;15&#x2F;arts&#x2F;music&#x2F;live-nation-an...</a>, <a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;KA1wV\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;KA1wV</a><p><a href=\"https:&#x2F;&#x2F;www.theverge.com&#x2F;policy&#x2F;912689&#x2F;live-nation-ticketmaster-antitrust-monopoly-trial-verdict\" rel=\"nofollow\">https:&#x2F;&#x2F;www.theverge.com&#x2F;policy&#x2F;912689&#x2F;live-nation-ticketmas...</a>","summary":"陪审团裁定Live Nation非法垄断票务市场，这一反垄断案件可能重塑娱乐行业格局，影响消费者和市场竞争。"},{"id":"hn-47769089","title":"Cybersecurity looks like proof of work now","url":"https://www.dbreunig.com/2026/04/14/cybersecurity-is-proof-of-work-now.html","source":"Hacker News","score":534,"comments_count":206,"comments_url":"https://news.ycombinator.com/item?id=47769089","published_at":"2026-04-14T18:08:14","author":"dbreunig","text":null,"summary":"网络安全正演变为类似工作量证明的模式，强调资源消耗和验证，对防御策略和行业趋势有重要影响。"},{"id":"hn-47792718","title":"The future of everything is lies, I guess: Where do we go from here?","url":"https://aphyr.com/posts/420-the-future-of-everything-is-lies-i-guess-where-do-we-go-from-here","source":"Hacker News","score":510,"comments_count":559,"comments_url":"https://news.ycombinator.com/item?id=47792718","published_at":"2026-04-16T13:32:13","author":"aphyr","text":null,"summary":"文章探讨了未来可能被谎言充斥的困境，呼吁对技术和社会信任进行反思，具有深刻的哲学和技术警示意义。"},{"id":"hn-47788542","title":"Darkbloom – Private inference on idle Macs","url":"https://darkbloom.dev","source":"Hacker News","score":471,"comments_count":234,"comments_url":"https://news.ycombinator.com/item?id=47788542","published_at":"2026-04-16T04:06:39","author":"twapi","text":null,"summary":"Darkbloom项目利用闲置Mac进行私有推理，展示了分布式计算和隐私保护的新方法，对边缘AI应用有创新价值。"},{"id":"hn-47792368","title":"Mozilla Thunderbolt","url":"https://www.thunderbolt.io/","source":"Hacker News","score":328,"comments_count":294,"comments_url":"https://news.ycombinator.com/item?id=47792368","published_at":"2026-04-16T13:01:36","author":"dabinat","text":null,"summary":"Mozilla Thunderbolt项目可能涉及浏览器或网络技术的创新，值得关注其开源进展和对互联网生态的潜在影响。"},{"id":"hn-47778086","title":"Do you even need a database?","url":"https://www.dbpro.app/blog/do-you-even-need-a-database","source":"Hacker News","score":276,"comments_count":289,"comments_url":"https://news.ycombinator.com/item?id=47778086","published_at":"2026-04-15T12:26:11","author":"upmostly","text":null,"summary":"文章质疑是否真的需要数据库，探讨了替代数据存储方案，对开发者和架构师优化系统设计有实用参考价值。"},{"id":"hn-47747770","title":"The paper computer","url":"https://jsomers.net/blog/the-paper-computer","source":"Hacker News","score":270,"comments_count":86,"comments_url":"https://news.ycombinator.com/item?id=47747770","published_at":"2026-04-13T04:57:48","author":"jsomers","text":null,"summary":"纸计算机概念回顾了计算历史中的简单模拟方法，强调了思维实验在教育和技术理解中的重要性，富有启发性。"},{"id":"hn-47776667","title":"Direct Win32 API, weird-shaped windows, and why they mostly disappeared","url":"https://warped3.substack.com/p/direct-win32-api-weird-shaped-windows","source":"Hacker News","score":214,"comments_count":123,"comments_url":"https://news.ycombinator.com/item?id=47776667","published_at":"2026-04-15T09:24:31","author":"birdculture","text":null,"summary":"文章探讨了直接使用Win32 API创建不规则形状窗口的历史技术，并解释了这类技术为何在现代操作系统中逐渐消失。值得关注，因为它揭示了Windows图形界面演进的底层细节和设计哲学变迁。"},{"id":"hn-47791212","title":"Codex Hacked a Samsung TV","url":"https://blog.calif.io/p/codex-hacked-a-samsung-tv","source":"Hacker News","score":207,"comments_count":120,"comments_url":"https://news.ycombinator.com/item?id=47791212","published_at":"2026-04-16T10:44:45","author":"campuscodi","text":null,"summary":"报道了Codex团队成功入侵三星电视的安全漏洞事件，展示了智能电视可能存在的安全隐患。值得关注，因为它涉及物联网设备安全这一重要议题，并提供了实际的安全研究案例。"},{"id":"hn-47788473","title":"RedSun: System user access on Win 11/10 and Server with the April 2026 Update","url":"https://github.com/Nightmare-Eclipse/RedSun","source":"Hacker News","score":171,"comments_count":49,"comments_url":"https://news.ycombinator.com/item?id=47788473","published_at":"2026-04-16T03:54:21","author":"airhangerf15","text":null,"summary":"介绍了RedSun工具，该工具声称能在Windows 11/10及Server系统上获取系统用户访问权限，涉及2026年4月更新。值得关注，因为它可能揭示Windows系统的潜在安全漏洞，对系统管理员和安全研究人员有参考价值。"},{"id":"hn-47792374","title":"Artifacts: Versioned storage that speaks Git","url":"https://blog.cloudflare.com/artifacts-git-for-agents-beta/","source":"Hacker News","score":158,"comments_count":17,"comments_url":"https://news.ycombinator.com/item?id=47792374","published_at":"2026-04-16T13:02:03","author":"jgrahamc","text":null,"summary":"Cloudflare发布了Artifacts服务，这是一个支持Git版本控制的存储系统，专为AI代理设计。值得关注，因为它将Git的工作流引入AI代理数据管理，可能改变AI开发中的数据版本控制方式。"},{"id":"hn-47799120","title":"The \"Passive Income\" trap ate a generation of entrepreneurs","url":"https://www.joanwestenberg.com/the-passive-income-trap-ate-a-generation-of-entrepreneurs/","source":"Hacker News","score":149,"comments_count":109,"comments_url":"https://news.ycombinator.com/item?id=47799120","published_at":"2026-04-16T20:31:52","author":"devonnull","text":null,"summary":"文章批判了“被动收入”概念对一代创业者的负面影响，指出这种理念可能导致创业方向的偏差。值得关注，因为它对当前流行的创业文化提出了深刻反思，具有社会和经济讨论价值。"},{"id":"hn-47749548","title":"Introduction to spherical harmonics for graphics programmers","url":"https://gpfault.net/posts/sph.html","source":"Hacker News","score":144,"comments_count":28,"comments_url":"https://news.ycombinator.com/item?id=47749548","published_at":"2026-04-13T09:05:45","author":"luu","text":null,"summary":"为图形程序员介绍了球谐函数的基本概念和应用，这是计算机图形学中的重要数学工具。值得关注，因为它以易懂的方式解释了复杂的图形学数学基础，对游戏开发和渲染技术从业者有实用价值。"},{"id":"hn-47788398","title":"North American English Dialects","url":"https://aschmann.net/AmEng/","source":"Hacker News","score":142,"comments_count":86,"comments_url":"https://news.ycombinator.com/item?id=47788398","published_at":"2026-04-16T03:38:45","author":"skogstokig","text":null,"summary":"详细展示了北美英语方言的地理分布和语言特征，提供了丰富的方言地图和示例。值得关注，因为它系统性地整理了语言变异数据，对语言学家、社会学家和感兴趣的大众都有参考意义。"},{"id":"hn-47750486","title":"Too much discussion of the XOR swap trick","url":"https://heather.cafe/posts/too_much_xor_swap_trick/","source":"Hacker News","score":139,"comments_count":110,"comments_url":"https://news.ycombinator.com/item?id=47750486","published_at":"2026-04-13T11:22:22","author":"CJefferson","text":null,"summary":"文章讨论了XOR交换技巧在编程社区中被过度讨论的现象，分析了其实际效用和教学意义。值得关注，因为它对编程社区中的常见“技巧崇拜”提出了批判性思考，涉及编程教育和最佳实践。"},{"id":"hn-47784244","title":"PiCore - Raspberry Pi Port of Tiny Core Linux","url":"http://tinycorelinux.net/5.x/armv6/releases/README","source":"Hacker News","score":129,"comments_count":14,"comments_url":"https://news.ycombinator.com/item?id=47784244","published_at":"2026-04-15T19:45:47","author":"gregsadetsky","text":null,"summary":"介绍了Tiny Core Linux的树莓派移植版本PiCore，这是一个极简的Linux发行版。值得关注，因为它为嵌入式开发和资源受限环境提供了轻量级解决方案，适合物联网和单板计算机爱好者。"},{"id":"hn-47797665","title":"Android CLI: Build Android apps 3x faster using any agent","url":"https://android-developers.googleblog.com/2026/04/build-android-apps-3x-faster-using-any-agent.html","source":"Hacker News","score":125,"comments_count":30,"comments_url":"https://news.ycombinator.com/item?id=47797665","published_at":"2026-04-16T18:39:59","author":"ingve","text":null,"summary":"谷歌官方博客宣布了Android CLI工具，声称使用任何AI代理都能将Android应用构建速度提升3倍。值得关注，因为它代表了AI在移动开发工作流中的实际应用，可能显著改变Android开发者的工作效率。"},{"id":"hn-47777897","title":"Retrofitting JIT Compilers into C Interpreters","url":"https://tratt.net/laurie/blog/2026/retrofitting_jit_compilers_into_c_interpreters.html","source":"Hacker News","score":122,"comments_count":27,"comments_url":"https://news.ycombinator.com/item?id=47777897","published_at":"2026-04-15T12:00:24","author":"ltratt","text":null,"summary":"本文探讨了如何将即时编译（JIT）技术集成到C语言解释器中，以提高执行效率，值得关注因为它为传统解释器性能优化提供了新思路。"},{"id":"hn-47800839","title":"Hospital at centre of child HIV outbreak caught reusing syringes in Pakistan","url":"https://www.bbc.com/news/articles/clyrd818gd2o","source":"Hacker News","score":117,"comments_count":71,"comments_url":"https://news.ycombinator.com/item?id=47800839","published_at":"2026-04-16T23:29:07","author":"flykespice","text":null,"summary":"报道了巴基斯坦一家医院因重复使用注射器导致儿童HIV爆发的事件，值得关注因为它揭示了医疗安全漏洞对公共卫生的严重威胁。"},{"id":"hn-47763959","title":"PHP 8.6 Closure Optimizations","url":"https://wiki.php.net/rfc/closure-optimizations","source":"Hacker News","score":112,"comments_count":32,"comments_url":"https://news.ycombinator.com/item?id=47763959","published_at":"2026-04-14T10:59:33","author":"moebrowne","text":null,"summary":"介绍了PHP 8.6版本中对闭包（Closure）的优化改进，值得关注因为它能提升PHP代码的性能和运行效率。"},{"id":"hn-47798345","title":"Official Clojure Documentary page with Video, Shownotes, and Links","url":"https://clojure.org/about/documentary","source":"Hacker News","score":106,"comments_count":26,"comments_url":"https://news.ycombinator.com/item?id=47798345","published_at":"2026-04-16T19:32:18","author":"adityaathalye","text":null,"summary":"提供了Clojure编程语言官方纪录片的页面，包含视频、说明和链接，值得关注因为它有助于深入了解Clojure的历史和设计哲学。"},{"id":"hn-47800738","title":"Everything we like is a psyop","url":"https://techcrunch.com/2026/04/16/everything-we-like-is-a-psyop/","source":"Hacker News","score":104,"comments_count":54,"comments_url":"https://news.ycombinator.com/item?id=47800738","published_at":"2026-04-16T23:15:33","author":"evo_9","text":null,"summary":"讨论了现代社会中流行文化现象可能被操纵的观点，值得关注因为它引发了对技术和社会影响之间关系的批判性思考。"}],"locale":"en"}],"$Lc"]}]]}]
+21. **FIM – Linux framebuffer image viewer**
+    *   **说明**： 介绍了一个在Linux framebuffer上运行的无依赖图像查看器。对于服务器环境、嵌入式系统或追求极简主义的用户是实用工具。
+    *   **原文链接**： https://www.nongnu.org/fbi-improved/
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47803323
+
+22. **Iceye Open Data**
+    *   **说明**： 合成孔径雷达卫星公司Iceye宣布了其开放数据计划，免费提供部分SAR卫星数据。这对遥感、地理信息、环境监测等领域的研究者和开发者是重大利好。
+    *   **原文链接**： https://www.iceye.com/open-data-initiative
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47806440
+
+---
+
+### 四、 科技与社会、历史与太空
+
+这部分内容超越了纯技术范畴，涉及科技与人文、历史的交叉，以及太空探索的最新发现。
+
+23. **Isaac Asimov: The Last Question (1956)**
+    *   **说明**： 阿西莫夫的经典科幻短篇小说《最后的问题》再次被顶到榜首。这篇探讨宇宙、熵与终极智能的作品，常读常新，在技术社区被视为“圣经”般的存在，反映了对技术终极意义的哲学思考。
+    *   **原文链接**： https://hex.ooo/library/last_question.html
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47804965
+
+24. **All 12 moonwalkers had “lunar hay fever” from dust smelling like gunpowder (2018)**
+    *   **说明**： 欧洲空间局的文章回顾了阿波罗登月宇航员均出现的“月球花粉症”现象，并探讨了月球尘埃的毒性。这与未来月球基地建设及宇航员健康息息相关。
+    *   **原文链接**： https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/The_toxic_side_of_the_Moon
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47808913
+
+25. **NASA Force**
+    *   **说明**： NASA推出的一个新平台或服务（从域名看），具体内容未知，但能引发大量讨论，可能与NASA的公开数据、API或招聘有关。
+    *   **原文链接**： https://nasaforce.gov/
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47807209
+
+26. **Middle schooler finds coin from Troy in Berlin**
+    *   **说明**： 一名中学生在柏林发现了来自特洛伊的硬币。这是一则有趣的考古新闻，展示了历史与现实的意外连接。
+    *   **原文链接**： https://www.thehistoryblog.com/archives/75848
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47806484
+
+27. **Israel escalates attacks on medics in Lebanon with deadly ‘quadruple tap’**
+    *   **说明**： 一则国际政治/军事新闻。此类内容在HN上出现并引发讨论，通常反映了社区对科技被用于军事冲突、以及战争伦理的关注。
+    *   **原文链接**： https://www.theguardian.com/world/2026/apr/16/israel-escalates-attacks-on-medics-in-lebanon-with-deadly-quadruple-tap
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47806596
+
+28. **Teddy Roosevelt and Abraham Lincoln in the same photo (2010)**
+    *   **说明**： 一张罕见的历史照片，同时包含了西奥多·罗斯福（童年）和亚伯拉罕·林肯。是历史爱好者和普通读者都会感兴趣的内容。
+    *   **原文链接**： https://prologue.blogs.archives.gov/2010/11/09/teddy-roosevelt-and-abraham-lincoln-in-the-same-photo/
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47803992
+
+29. **Human Accelerated Region 1**
+    *   **说明**： 指向维基百科页面“人类加速区域1”，这是一段在人类进化中发生快速变化的DNA序列，可能与大脑发育和认知能力有关。体现了技术社区对基础科学和人类本质的好奇。
+    *   **原文链接**： https://en.wikipedia.org/wiki/Human_accelerated_region_1
+    *   **讨论链接**： https://news.ycombinator.com/item?id=47802312
+
+---
+
+### 今日最值得阅读文章推荐
+
+从以上30篇文章中，我筛选出以下5篇作为今日最值得阅读的推荐，它们或在技术上具有启发性，或对行业有潜在影响，或是经久不衰的经典。
+
+1.  **Isaac Asimov: The Last Question (1956)**
+    *   **推荐理由**： 这不仅是科幻经典，更是对技术、宇宙和人类终极命运的深刻哲学寓言。在AI技术飞速发展的今天重读，别有一番意味。它能帮助技术从业者跳出代码细节，思考工作的长远意义。
+    *   **链接**： https://hex.ooo/library/last_question.html
+
+2.  **Ban the sale of precise geolocation**
+    *   **推荐理由**： 隐私保护是当今数字时代最紧迫的议题之一。这篇文章从政策层面提出了一个具体且有力的倡议，其引发的热烈讨论（600+分数，167条评论）反映了行业的共识与分歧。无论你是开发者、创业者还是普通用户，都值得了解这场关乎每个人数字权利的前沿辩论。
+    *   **链接**： https://www.lawfaremedia.org/article/it-is-time-to-ban-the-sale-of-precise-geolocation
+
+3.  **HTTP desync in Discord’s media proxy: Spying on a whole platform**
+    *   **推荐理由**： 这是一篇高质量的安全技术深度分析文章。作者详细披露了在Discord这样一个亿级用户平台中发现的高危漏洞的利用过程，是学习现代Web安全攻防（特别是HTTP协议层攻击）的绝佳案例。对于安全工程师和所有后端开发者都有很高的参考价值。
+    *   **链接**： https://tmctmt.com/posts/http-desync-in-discord/
+
+4.  **Ada, its design, and the language that built the languages**
+    *   **推荐理由**： 如果你想深入理解现代编程语言（如C++、Java、C#）中许多设计选择的根源，这篇文章提供了独特的历史视角。它超越了语法和特性，深入到语言设计哲学和工程权衡，能极大丰富你对“编程”这件事的认知。
+    *   **链接**： https://www.iqiipi.com/the-quiet-colossus.html
+
+5.0:{"buildId":"ectcDSGTNwlKGwcFAnba6","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-04-18","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":12},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-04-18"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+c:T9e7,Hey HN! We&#x27;re Charles and Dean, and we&#x27;re building Stage: a code review tool that guides you through reading a PR step by step, instead of piecing together a giant diff.<p>Here&#x27;s a demo video: <a href="https:&#x2F;&#x2F;www.tella.tv&#x2F;video&#x2F;stage-demo-1pph" rel="nofollow">https:&#x2F;&#x2F;www.tella.tv&#x2F;video&#x2F;stage-demo-1pph</a>.
+You can play around with some example PRs here: <a href="https:&#x2F;&#x2F;stagereview.app&#x2F;explore">https:&#x2F;&#x2F;stagereview.app&#x2F;explore</a>.<p>Teams are moving faster than ever with AI these days, but more and more engineers are merging changes that they don&#x27;t really understand. The bottleneck isn&#x27;t writing code anymore, it&#x27;s reviewing it.<p>We&#x27;re two engineers who got frustrated with GitHub&#x27;s UI for code review. As coding agents took off, we saw our PR backlog pile up faster than we could handle. Not only that, the PRs themselves were getting larger and harder to understand, and we found ourselves spending most of our time trying to build a mental model of what a PR was actually doing.<p>We built Stage to make reviewing a PR feel more like reading chapters of a book, not an unorganized set of paragraphs. We use it every day now, not just to review each other&#x27;s code but also our own, and at this point we can&#x27;t really imagine going back to the old GitHub UI.<p>What Stage does: when a PR is opened, Stage groups the changes into small, logical &quot;chapters&quot;. These chapters get ordered in the way that makes most sense to read. For each chapter, Stage tells you what changed and specific things to double check. Once you review all the chapters, you&#x27;re done reviewing the PR.<p>You can sign in to Stage with your GitHub account and everything is synced seamlessly (commenting, approving etc.) so it fits into the workflows you&#x27;re already used to.<p>What we&#x27;re not building: a code review bot like CodeRabbit or Greptile. These tools are great for catching bugs (and we use them ourselves!) but at the end of the day humans are responsible for what gets shipped. It&#x27;s clear that reviewing code hasn&#x27;t scaled the same way that writing did, and they (we!) need better tooling to keep up with the onslaught of AI generated code, which is only going to grow.<p>We&#x27;ve had a lot of fun building this and are excited to take it further. If you&#x27;re like us and are also tired of using GitHub for reviewing PRs, we&#x27;d love for you to try it out and tell us what you think!d:Tbf9,Hey! I am Alex and together with my co-founder Tarun built Kampala (<a href="https:&#x2F;&#x2F;www.zatanna.ai&#x2F;kampala">https:&#x2F;&#x2F;www.zatanna.ai&#x2F;kampala</a>). It’s a man-in-the-middle (MITM) style proxy that allows you to agentically reverse engineer existing workflows without brittle browser automation or computer use agents. It works for websites, mobile apps, desktop apps.<p>Demo: <a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=z_PeostC-b4" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=z_PeostC-b4</a>.
+Many people spend hours per day in legacy dashboards and on-prem solutions reconciling data across platforms. Current attempts at automation use browser automations or computer use agents which are brittle, slow, and nondeterministic. 
+I come from a web reverse engineering background and spent the last 7-8 years building integrations by hand for sneaker&#x2F;ticket releases, sportsbooks logins, and everything in\ between. During that time I consulted for several companies and brought them off of browser based infrastructure into the requests layer.<p>When we started Zatanna (that’s our company name) we worked in dental tech, which meant we had to deal with tons of insurance payer dashboards and legacy dental-practice solutions. Our superpower (as a fairly undifferentiated voice agent&#x2F;front desk assistant company) was that we could integrate with nearly any system requested. During this time we built extensive tooling (including what we’re now calling Kampala) to allow us to spin up these integrations quickly. 
+Existing MITM proxies and tooling didn’t work for a few reasons: (1) They manipulated the TLS and HTTP2 fingerprint over the wire which was detected by strict anti-bots. (2) They had bad MCPs which did not adequately expose necessary features like scripts&#x2F;replay. (3) They did not allow for building workflows or actions given a sample or sequence of requests.<p>As the tools we built got more powerful, we began to use them internally to scrape conference attendees, connect to external PMS systems, and interact with slack apps. I even sent it to my property manager mom, who (with a lot of help from me lol), automated 2-3 hours of billing information entry in Yardi. At that point we realized that this wasn’t really about dentistry :)<p>Because Kampala is a MITM, it is able to leverage existing session tokens&#x2F;anti-bot cookies and automate things deterministically in seconds. You can either use our agent harness that directly creates scripts&#x2F;apis by prompting you with what actions to make, or our MCP by manually doing a  workflow once, and asking your preferred coding agent to use Kampala to make a script&#x2F;API to replicate it. Once you have an API&#x2F;script, you can export, run, or even have us host it for you.<p>We think the future of automation does not consist of sending screenshots of webpages to LLMs, but instead using the layer below that computers actually understand. Excited to hear your thoughts&#x2F;questions&#x2F;feedback!6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47804965","title":"Isaac Asimov: The Last Question (1956)","url":"https://hex.ooo/library/last_question.html","source":"Hacker News","score":621,"comments_count":259,"comments_url":"https://news.ycombinator.com/item?id=47804965","published_at":"2026-04-17T12:01:19","author":"ColinWright","text":null,"summary":"这篇文章探讨了艾萨克·阿西莫夫于1956年发表的经典科幻短篇小说《最后的问题》，它探讨了人工智能、宇宙熵增和人类终极命运等深刻主题，值得关注是因为其哲学思辨对科技发展有启发意义。"},{"id":"hn-47806304","title":"Ban the sale of precise geolocation","url":"https://www.lawfaremedia.org/article/it-is-time-to-ban-the-sale-of-precise-geolocation","source":"Hacker News","score":603,"comments_count":167,"comments_url":"https://news.ycombinator.com/item?id=47806304","published_at":"2026-04-17T14:25:46","author":"hn_acker","text":null,"summary":"文章主张禁止精确地理位置数据的销售，强调了隐私保护和数据滥用的风险，值得关注是因为它触及了数字时代个人数据安全的核心议题。"},{"id":"hn-47803844","title":"Ada, its design, and the language that built the languages","url":"https://www.iqiipi.com/the-quiet-colossus.html","source":"Hacker News","score":253,"comments_count":174,"comments_url":"https://news.ycombinator.com/item?id=47803844","published_at":"2026-04-17T08:51:38","author":"mpweiher","text":null,"summary":"本文介绍了Ada编程语言的设计理念及其对后续语言发展的影响，值得关注是因为它揭示了Ada在可靠性和安全性方面的历史贡献。"},{"id":"hn-47808913","title":"All 12 moonwalkers had \"lunar hay fever\" from dust smelling like gunpowder (2018)","url":"https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/The_toxic_side_of_the_Moon","source":"Hacker News","score":231,"comments_count":132,"comments_url":"https://news.ycombinator.com/item?id=47808913","published_at":"2026-04-17T18:17:01","author":"cybermango","text":null,"summary":"文章回顾了所有12位登月宇航员都曾因月球尘埃引发“月球花粉症”的现象，并提到尘埃气味类似火药，值得关注是因为它提供了人类太空探索中鲜为人知的健康挑战细节。"},{"id":"hn-47807209","title":"NASA Force","url":"https://nasaforce.gov/","source":"Hacker News","score":231,"comments_count":246,"comments_url":"https://news.ycombinator.com/item?id=47807209","published_at":"2026-04-17T15:47:41","author":"LorenDB","text":null,"summary":"这篇文章介绍了NASA Force网站，可能涉及NASA的力学科研或相关资源，值得关注是因为它展示了航天机构在公共教育和数据共享方面的努力。"},{"id":"hn-47808268","title":"Show HN: Smol machines – subsecond coldstart, portable virtual machines","url":"https://github.com/smol-machines/smolvm","source":"Hacker News","score":224,"comments_count":89,"comments_url":"https://news.ycombinator.com/item?id=47808268","published_at":"2026-04-17T17:18:58","author":"binsquare","text":null,"summary":"文章展示了Smol Machines项目，这是一种具有亚秒级冷启动和可移植性的虚拟机技术，值得关注是因为它在云计算和边缘计算中可能带来性能提升。"},{"id":"hn-47772725","title":"CadQuery is an open-source Python library for building 3D CAD models","url":"https://cadquery.github.io/","source":"Hacker News","score":218,"comments_count":59,"comments_url":"https://news.ycombinator.com/item?id=47772725","published_at":"2026-04-14T23:20:39","author":"gregsadetsky","text":null,"summary":"本文介绍了CadQuery，一个用于构建3D CAD模型的开源Python库，值得关注是因为它简化了参数化设计流程，对工程师和开发者具有实用价值。"},{"id":"hn-47806484","title":"Middle schooler finds coin from Troy in Berlin","url":"https://www.thehistoryblog.com/archives/75848","source":"Hacker News","score":201,"comments_count":91,"comments_url":"https://news.ycombinator.com/item?id=47806484","published_at":"2026-04-17T14:41:49","author":"speckx","text":null,"summary":"文章报道了一名中学生在柏林发现特洛伊硬币的事件，值得关注是因为它连接了古代历史与现代考古发现，展示了偶然发现的重要性。"},{"id":"hn-47806777","title":"NIST gives up enriching most CVEs","url":"https://risky.biz/risky-bulletin-nist-gives-up-enriching-most-cves/","source":"Hacker News","score":171,"comments_count":37,"comments_url":"https://news.ycombinator.com/item?id=47806777","published_at":"2026-04-17T15:09:14","author":"mooreds","text":null,"summary":"文章讨论了NIST决定停止对大多数CVE（通用漏洞披露）进行丰富化处理，值得关注是因为这可能影响网络安全漏洞的管理和响应方式。"},{"id":"hn-47799573","title":"A better R programming experience thanks to Tree-sitter","url":"https://ropensci.org/blog/2026/04/02/tree-sitter-overview/","source":"Hacker News","score":154,"comments_count":30,"comments_url":"https://news.ycombinator.com/item?id=47799573","published_at":"2026-04-16T21:14:02","author":"sebg","text":null,"summary":"本文探讨了如何通过Tree-sitter技术改善R编程体验，值得关注是因为它提升了代码编辑和分析的效率，对数据科学社区有积极影响。"},{"id":"hn-47806348","title":"Healthchecks.io now uses self-hosted object storage","url":"https://blog.healthchecks.io/2026/04/healthchecks-io-now-uses-self-hosted-object-storage/","source":"Hacker News","score":145,"comments_count":64,"comments_url":"https://news.ycombinator.com/item?id=47806348","published_at":"2026-04-17T14:29:11","author":"zdw","text":null,"summary":"Healthchecks.io 服务监控平台宣布改用自托管对象存储，这标志着其向提升数据自主权和降低对外部云服务依赖迈出重要一步，值得关注其对服务可靠性和成本控制的影响。"},{"id":"hn-47755261","title":"A Python Interpreter Written in Python","url":"https://aosabook.org/en/500L/a-python-interpreter-written-in-python.html","source":"Hacker News","score":142,"comments_count":46,"comments_url":"https://news.ycombinator.com/item?id=47755261","published_at":"2026-04-13T17:25:50","author":"xk3","text":null,"summary":"这篇文章介绍了一个用 Python 编写的 Python 解释器，深入探讨了语言实现的核心原理，对于理解编程语言设计和解释器工作原理具有很高的教育价值。"},{"id":"hn-47806596","title":"Israel escalates attacks on medics in Lebanon with deadly 'quadruple tap'","url":"https://www.theguardian.com/world/2026/apr/16/israel-escalates-attacks-on-medics-in-lebanon-with-deadly-quadruple-tap","source":"Hacker News","score":142,"comments_count":61,"comments_url":"https://news.ycombinator.com/item?id=47806596","published_at":"2026-04-17T14:53:11","author":"tcp_handshaker","text":null,"summary":"文章报道了以色列在黎巴嫩升级对医疗人员的致命攻击，这一事件涉及国际冲突与人道主义危机，其技术相关性在于可能引发关于战争技术与伦理的讨论。"},{"id":"hn-47803323","title":"FIM – Linux framebuffer image viewer","url":"https://www.nongnu.org/fbi-improved/","source":"Hacker News","score":138,"comments_count":74,"comments_url":"https://news.ycombinator.com/item?id=47803323","published_at":"2026-04-17T07:20:46","author":"Mr_Minderbinder","text":null,"summary":"FIM 是一个 Linux 帧缓冲区的图像查看器，为无图形界面的服务器或嵌入式系统提供了轻量级的图像显示解决方案，是系统管理和复古计算爱好者的实用工具。"},{"id":"hn-47807583","title":"Spending 3 months coding by hand","url":"https://miguelconner.substack.com/p/im-coding-by-hand","source":"Hacker News","score":135,"comments_count":139,"comments_url":"https://news.ycombinator.com/item?id=47807583","published_at":"2026-04-17T16:19:53","author":"evakhoury","text":null,"summary":"作者分享了三个月手工编码（不依赖现代IDE高级功能）的体验与反思，探讨了这种实践对编程思维、代码质量和开发者专注力的潜在影响，对现代开发流程有启发意义。"},{"id":"hn-47759436","title":"Reflections on 30 years of HPC programming","url":"https://chapel-lang.org/blog/posts/30years/","source":"Hacker News","score":135,"comments_count":105,"comments_url":"https://news.ycombinator.com/item?id=47759436","published_at":"2026-04-13T23:45:58","author":"matt_d","text":null,"summary":"文章回顾了高性能计算（HPC）编程三十年来的演变与经验教训，对于从事科学计算、并行编程和系统优化的开发者而言，是宝贵的行业洞察和历史总结。"},{"id":"hn-47803992","title":"Teddy Roosevelt and Abraham Lincoln in the same photo (2010)","url":"https://prologue.blogs.archives.gov/2010/11/09/teddy-roosevelt-and-abraham-lincoln-in-the-same-photo/","source":"Hacker News","score":132,"comments_count":40,"comments_url":"https://news.ycombinator.com/item?id=47803992","published_at":"2026-04-17T09:18:16","author":"bryanrasmussen","text":null,"summary":"这篇文章展示并探讨了一张同时包含西奥多·罗斯福和亚伯拉罕·林肯的罕见历史照片，其技术相关性在于展示了档案数字化和图像分析在历史研究中的价值。"},{"id":"hn-47807809","title":"Show HN: PanicLock – Close your MacBook lid disable TouchID –> password unlock","url":"https://github.com/paniclock/paniclock/","source":"Hacker News","score":128,"comments_count":55,"comments_url":"https://news.ycombinator.com/item?id=47807809","published_at":"2026-04-17T16:38:44","author":"seanieb","text":"I wrote this after the case of a Washington Post reporter, Hannah Natanson, was compelled to unlock her computer with her fingerprint. This resulted in access to her Desktop Signal on her computer, revealing sources and their conversations.<p><a href=\"https:&#x2F;&#x2F;www.yahoo.com&#x2F;news&#x2F;articles&#x2F;washington-post-raid-proves-face-153402560.html\" rel=\"nofollow\">https:&#x2F;&#x2F;www.yahoo.com&#x2F;news&#x2F;articles&#x2F;washington-post-raid-pro...</a><p>Edit: I&#x27;ve a lot more details about the legality and precedence on the apps landing page <a href=\"https:&#x2F;&#x2F;paniclock.github.io&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;paniclock.github.io&#x2F;</a>","summary":"PanicLock 是一款 macOS 工具，可在合上笔记本盖子后禁用 Touch ID 并强制使用密码解锁，旨在增强设备在特定场景下的物理安全性和隐私保护，回应了现实中的执法取证风险。"},{"id":"hn-47807619","title":"Hyperscalers have already outspent most famous US megaprojects","url":"https://twitter.com/finmoorhouse/status/2044933442236776794","source":"Hacker News","score":126,"comments_count":105,"comments_url":"https://news.ycombinator.com/item?id=47807619","published_at":"2026-04-17T16:23:22","author":"nowflux","text":null,"summary":"分析指出超大规模云服务商（Hyperscalers）的基础设施支出已超过美国多数著名巨型工程项目，这凸显了数字基础设施建设的巨大规模与经济影响力。"},{"id":"hn-47802312","title":"Human Accelerated Region 1","url":"https://en.wikipedia.org/wiki/Human_accelerated_region_1","source":"Hacker News","score":116,"comments_count":54,"comments_url":"https://news.ycombinator.com/item?id=47802312","published_at":"2026-04-17T03:55:54","author":"apollinaire","text":null,"summary":"文章介绍了人类加速区域1（HAR1），这是一个在人类进化中快速演化的基因调控区域，与大脑发育相关，其研究对于理解人类认知能力的遗传基础具有重要意义。"},{"id":"hn-47810872","title":"A simplified model of Fil-C","url":"https://www.corsix.org/content/simplified-model-of-fil-c","source":"Hacker News","score":111,"comments_count":57,"comments_url":"https://news.ycombinator.com/item?id=47810872","published_at":"2026-04-17T21:38:20","author":"aw1621107","text":null,"summary":"这篇文章介绍了一个简化的Fil-C模型，旨在帮助开发者更好地理解这个复杂系统的核心机制，值得关注因为它可能降低学习门槛并促进相关技术的应用。"},{"id":"hn-47806440","title":"Iceye Open Data","url":"https://www.iceye.com/open-data-initiative","source":"Hacker News","score":106,"comments_count":14,"comments_url":"https://news.ycombinator.com/item?id=47806440","published_at":"2026-04-17T14:37:16","author":"marklit","text":null,"summary":"Iceye公司推出了开放数据计划，提供合成孔径雷达卫星数据，这为地球观测和灾害监测等领域的研究与应用提供了新的重要资源。"},{"id":"hn-47796818","title":"Show HN: Stage – Putting humans back in control of code review","url":"https://stagereview.app/","source":"Hacker News","score":99,"comments_count":91,"comments_url":"https://news.ycombinator.com/item?id=47796818","published_at":"2026-04-16T17:36:29","author":"cpan22","text":"$c","summary":"Stage是一个创新的代码审查工具，通过分步引导的方式帮助开发者更高效地审查PR，值得关注因为它试图解决传统代码审查中信息过载和效率低下的痛点。"},{"id":"hn-47794514","title":"Launch HN: Kampala (YC W26) – Reverse-Engineer Apps into APIs","url":"https://www.zatanna.ai/kampala","source":"Hacker News","score":94,"comments_count":84,"comments_url":"https://news.ycombinator.com/item?id=47794514","published_at":"2026-04-16T15:19:54","author":"alexblackwell_","text":"$d","summary":"Kampala是一个MITM风格的代理工具，能够将现有应用工作流逆向工程为API，这为系统集成和自动化提供了新的可能性，尤其适合需要连接遗留系统的场景。"},{"id":"hn-47809190","title":"Even \"cat readme.txt\" is not safe","url":"https://blog.calif.io/p/mad-bugs-even-cat-readmetxt-is-not","source":"Hacker News","score":87,"comments_count":42,"comments_url":"https://news.ycombinator.com/item?id=47809190","published_at":"2026-04-17T18:43:32","author":"arkadiyt","text":null,"summary":"文章揭示了即使像'cat readme.txt'这样简单的命令也可能存在安全风险，提醒开发者注意命令行工具中潜在的漏洞，对安全实践有重要警示意义。"}],"locale":"en"}],"$Le"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["Generated by"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","Powered by DeepSeek"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
-c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-da134c94e4ff","title":"Okay, what actually uses Rust","url":"https://blog.goose.love/posts/what-actually-uses-rust/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-16T20:32:27","author":"blog.goose.love by blyxyas","text":"<p><a href=\"https://lobste.rs/s/dlxlvj/okay_what_actually_uses_rust\">Comments</a></p>","summary":"分析了Rust语言在实际生产环境中的应用案例，值得关注因为它展示了Rust在系统编程领域的广泛采纳和实用性。"},{"id":"rss-a5a6bf569388","title":"IPv6 traffic crosses the 50% mark","url":"https://www.google.com/intl/en/ipv6/statistics.html?yzh=28197","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-16T08:47:04","author":"google.com via dhruvp","text":"<p><a href=\"https://lobste.rs/s/xijpr1/ipv6_traffic_crosses_50_mark\">Comments</a></p>","summary":"报告显示IPv6流量已超过互联网总流量的50%，值得关注因为它标志着下一代互联网协议在全球部署中的重要里程碑。"},{"id":"rss-737bfc09fee3","title":"Announcing Rust 1.95.0","url":"https://blog.rust-lang.org/2026/04/16/Rust-1.95.0/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-16T15:14:10","author":"blog.rust-lang.org via itamarst","text":"<p><a href=\"https://lobste.rs/s/pmxhem/announcing_rust_1_95_0\">Comments</a></p>","summary":"宣布了Rust 1.95.0版本的发布，值得关注因为它带来了语言和工具链的新特性与改进，对开发者社区有直接影响。"},{"id":"rss-eb244f462568","title":"Stop using JWTs","url":"https://gist.github.com/samsch/0d1f3d3b4745d778f78b230cf6061452","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-16T17:34:44","author":"gist.github.com via lr0","text":"<p><a href=\"https://lobste.rs/s/myzsbg/stop_using_jwts\">Comments</a></p>","summary":"文章主张停止使用JWT（JSON Web Tokens）进行身份验证，值得关注因为它挑战了广泛采用的安全实践，并讨论了潜在风险。"},{"id":"rss-10735a16fc1b","title":"Clojure: The Documentary","url":"https://www.youtube.com/watch?v=Y24vK_QDLFg","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-16T19:12:07","author":"youtube.com via binjip978","text":"<p><a href=\"https://lobste.rs/s/nvzsa5/clojure_documentary\">Comments</a></p>","summary":"这是Clojure编程语言的纪录片视频，值得关注因为它通过视觉叙事方式，生动呈现了这门函数式语言的发展历程和社区文化。"}],"locale":"en"}]
-f:null
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+e:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-014d8fe0f61a","title":"HTTP desync in Discord's media proxy: Spying on a whole platform","url":"https://tmctmt.com/posts/http-desync-in-discord/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-17T11:59:40","author":"tmctmt.com via videah","text":"<p><a href=\"https://lobste.rs/s/zxgmfx/http_desync_discord_s_media_proxy_spying\">Comments</a></p>","summary":"研究人员在Discord的媒体代理中发现了HTTP反序列化漏洞，该漏洞可能允许攻击者监视整个平台，这对大型通信服务的安全架构提出了重要警示。"},{"id":"rss-aef9a6d82054","title":"tangled newsletter 01 — hello","url":"https://blog.tangled.org/newsletter-01/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-17T13:02:52","author":"blog.tangled.org via j3s","text":"<p><a href=\"https://lobste.rs/s/y8jlwv/tangled_newsletter_01_hello\">Comments</a></p>","summary":"这是tangled项目的首期通讯，介绍了该项目的基本情况和未来方向，值得关注因为它可能代表着一个新兴开源社区或技术项目的启动。"},{"id":"rss-b9fc8cf87e55","title":"We beat Google’s zero-knowledge proof of quantum cryptanalysis","url":"https://blog.trailofbits.com/2026/04/17/we-beat-googles-zero-knowledge-proof-of-quantum-cryptanalysis/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-17T13:49:55","author":"blog.trailofbits.com via sarciszewski","text":"<p><a href=\"https://lobste.rs/s/d55yj0/we_beat_google_s_zero_knowledge_proof\">Comments</a></p>","summary":"Trail of Bits团队宣布在零知识证明量子密码分析方面超越了谷歌的研究成果，这一突破可能对后量子密码学和网络安全领域产生重要影响。"},{"id":"rss-922665886635","title":"A simplified model of Fil-C","url":"https://www.corsix.org/content/simplified-model-of-fil-c","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-17T20:27:16","author":"corsix.org via fanf","text":"<p><a href=\"https://lobste.rs/s/rp1yrv/simplified_model_fil_c\">Comments</a></p>","summary":"这篇文章介绍了一个简化的Fil-C模型，旨在帮助开发者更好地理解这个复杂系统的核心机制，值得关注因为它可能降低学习门槛并促进相关技术的应用。"},{"id":"rss-b7596fd61316","title":"Why is IPv6 so complicated?","url":"https://github.com/becarpenter/misc/blob/main/why6why.md","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-17T21:00:34","author":"github.com via fanf","text":"<p><a href=\"https://lobste.rs/s/m0c78b/why_is_ipv6_so_complicated\">Comments</a></p>","summary":"文章探讨了IPv6协议为何在设计和实施上比IPv4更加复杂，分析了其中的技术原因和实际挑战，对网络工程师和协议设计者具有重要参考价值。"}],"locale":"en"}]
+11:null
