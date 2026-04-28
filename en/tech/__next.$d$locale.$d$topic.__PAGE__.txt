@@ -5,150 +5,192 @@
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
 d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
 e:"$Sreact.suspense"
-5:T3971,好的，作为专业的技术新闻分析师，我对今天（2026年4月27日）的“Technology”主题热门文章进行了综合分析。以下是我的总结与推荐。
+5:T39ee,好的，作为一名技术新闻分析师，今天（2026年4月28日）的Technology热门内容呈现出几个鲜明的主题：**商业模式的变迁、开发者工具与基础设施、硬件与嵌入式创新、以及科技与社会/法律的交叉**。以下是对全部30篇文章的详细分析和总结。
 
 ---
 
-### 总体趋势分析
+### 一、 开发者工具与基础设施
 
-今天的科技新闻呈现出几个鲜明的特点：
+这个分组涵盖了开发者日常使用的工具、平台以及底层基础设施的变化。
 
-1.  **软件工程与系统底层**：关于编程范式（Async/Await）、状态管理（Statecharts）、系统安全（OpenBSD）、浏览器开发（Dillo）以及性能优化（Linux timestamps）的深入技术讨论热度很高。
-2.  **AI能力评估的反思**：OpenAI 官方发文表示其基准测试（SWE-bench）已无法衡量前沿AI的编码能力，引发了关于AI进展和评估标准的广泛讨论。
-3.  **隐私与数字权利**：iPhone 被静默安装应用、欧盟年龄验证系统的隐私担忧，以及探索“小网”（Smolweb）的尝试，共同构成了对数字主权和隐私的关切。
-4.  **开源与复古技术**：Asahi Linux 的持续进展、Friendster 的复活计划、Super Nintendo 卡带技术分析，以及 Dillo 浏览器的新版本，都体现了对开源精神和经典技术的热爱。
-5.  **科技与社会的交汇**：从无人驾驶出租车与自行车道的冲突，到马拉松突破2小时大关，再到阿尔茨海默病研究的困境，科技新闻紧密地与社会、健康和体育议题交织在一起。
+1.  **GitHub Copilot 转向基于使用量的计费模式**
+    - **说明**: GitHub宣布其AI编程助手Copilot将从固定订阅制改为按使用量计费。这对于个人开发者和企业团队的成本结构将产生重大影响，引发了社区广泛讨论。
+    - **Article**: [https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/](https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47923357](https://news.ycombinator.com/item?id=47923357)
+
+2.  **GitHub 正在经历服务问题**
+    - **说明**: 全球最大的代码托管平台GitHub出现服务中断，影响了大量开发者的日常工作。这是一个典型的“基础设施即服务”的脆弱性案例。
+    - **Article**: [https://www.githubstatus.com](https://www.githubstatus.com)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47924775](https://news.ycombinator.com/item?id=47924775)
+
+3.  **Quarkdown – 拥有超能力的Markdown**
+    - **说明**: 一个旨在扩展Markdown语法的新项目，使其具备更强大的功能，可能改变文档编写和知识管理的方式。
+    - **Article**: [https://quarkdown.com/](https://quarkdown.com/)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47919240](https://news.ycombinator.com/item?id=47919240)
+
+4.  **The Prompt API**
+    - **说明**: Chrome团队发布了新的Prompt API，允许开发者在浏览器中直接调用本地AI模型进行文本生成。这标志着AI功能正在深入Web平台。
+    - **Article**: [https://developer.chrome.com/docs/ai/prompt-api](https://developer.chrome.com/docs/ai/prompt-api)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47917026](https://news.ycombinator.com/item?id=47917026)
+
+5.  **“为什么不用Lean？”**
+    - **说明**: 一篇关于形式化证明工具Lean的讨论文章，探讨了其适用场景和局限性，对编程语言理论和数学爱好者很有价值。
+    - **Article**: [https://lawrencecpaulson.github.io//2026/04/23/Why_not_Lean.html](https://lawrencecpaulson.github.io//2026/04/23/Why_not_Lean.html)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47922079](https://news.ycombinator.com/item?id=47922079)
+
+6.  **Wasm 并非严格意义上的栈式虚拟机**
+    - **说明**: 一篇深入的技术分析文章，挑战了WebAssembly（Wasm）作为“栈式虚拟机”的普遍认知，对于理解Wasm的底层设计和性能调优至关重要。
+    - **Article**: [https://purplesyringa.moe/blog/wasm-is-not-quite-a-stack-machine/](https://purplesyringa.moe/blog/wasm-is-not-quite-a-stack-machine/)
+    - **Discussion**: [Lobsters](https://lobste.rs/s/h8hlp7/wasm_is_not_quite_stack_machine)
+
+7.  **清理SVG的烦恼**
+    - **说明**: 探讨了净化用户上传的SVG文件时遇到的各种安全和技术难题，对Web安全开发者具有警示意义。
+    - **Article**: [https://muffin.ink/blog/scratch-svg-sanitization/](https://muffin.ink/blog/scratch-svg-sanitization/)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47922957](https://news.ycombinator.com/item?id=47922957)
+
+8.  **macOS 27 即将到来的网络变化**
+    - **说明**: 苹果新系统对网络堆栈的改动，可能影响开发者、系统管理员和普通用户的网络体验。
+    - **Article**: [https://eclecticlight.co/2026/04/23/networking-changes-coming-in-macos-27/](https://eclecticlight.co/2026/04/23/networking-changes-coming-in-macos-27/)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47923010](https://news.ycombinator.com/item?id=47923010)
 
 ---
 
-### 文章分组与详细分析
+### 二、 硬件、嵌入式与创客
 
-#### 1. 人工智能与软件开发
+这个分组关注从芯片级到消费级的硬件创新。
 
-- **SWE-bench Verified no longer measures frontier coding capabilities**
-  - **说明**：OpenAI 官方发布博文，指出其广泛使用的代码能力评估基准 SWE-bench Verified 已经饱和，不再能有效区分前沿模型的编码能力。这标志着AI编程能力评估进入了一个新阶段，需要更复杂、更全面的测试。
-  - **Article URL**: [https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/](https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/)
-  - **Discussion URL**: [https://news.ycombinator.com/item?id=47910388](https://news.ycombinator.com/item?id=47910388)
+1.  **Flipdiscs**
+    - **说明**: 一个关于翻盖式点阵屏（Flip-disc display）的项目或产品介绍。这类低功耗、高可视性的显示器在数字标牌和艺术装置中很受欢迎。
+    - **Article**: [https://flipdisc.io](https://flipdisc.io)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47875795](https://news.ycombinator.com/item?id=47875795)
 
-- **Statecharts: hierarchical state machines**
-  - **说明**：一篇关于状态图（Statecharts）的深度指南。状态图是一种比传统状态机更强大的建模工具，能有效处理复杂UI和系统逻辑。这篇文章对软件架构师和前端开发者有很高的参考价值。
-  - **Article URL**: [https://statecharts.dev/](https://statecharts.dev/)
-  - **Discussion URL**: [https://news.ycombinator.com/item?id=47908833](https://news.ycombinator.com/item?id=47908833)
+2.  **TurboQuant: 第一性原理详解**
+    - **说明**: 一个关于量化计算或信号处理的教学项目，从基本原理出发进行讲解，对学习相关领域的人很有帮助。
+    - **Article**: [https://arkaung.github.io/interactive-turboquant/](https://arkaung.github.io/interactive-turboquant/)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47916890](https://news.ycombinator.com/item?id=47916890)
 
-- **What async promised and what it delivered**
-  - **说明**：对“async/await”编程范式的深刻反思。文章探讨了异步编程承诺的简化并发模型与实际带来的复杂性（如颜色函数问题、错误处理等），对于理解现代编程语言的演进和权衡至关重要。
-  - **Article URL**: [https://causality.blog/essays/what-async-promised/](https://causality.blog/essays/what-async-promised/)
-  - **Discussion URL**: [https://news.ycombinator.com/item?id=47859442](https://news.ycombinator.com/item?id=47859442)
+3.  **为树莓派Pico打造的全功能音频DSP固件**
+    - **说明**: 一个开源项目，让廉价的树莓派Pico微控制器变身强大的数字信号处理器，用于音频处理，潜力巨大。
+    - **Article**: [https://github.com/WeebLabs/DSPi](https://github.com/WeebLabs/DSPi)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47901433](https://news.ycombinator.com/item?id=47901433)
 
-- **Simulacrum of Knowledge Work**
-  - **说明**：一篇批判性文章，探讨了现代知识工作中“模拟工作”的现象——即表面上忙碌，实际产出价值有限。文章可能涉及AI辅助编程、会议文化等，引发了关于生产力和工作本质的讨论。
-  - **Article URL**: [https://blog.happyfellow.dev/simulacrum-of-knowledge-work/](https://blog.happyfellow.dev/simulacrum-of-knowledge-work/)
-  - **Discussion URL**: [https://news.ycombinator.com/item?id=47902987](https://news.ycombinator.com/item?id=47902987)
+4.  **Super ZSNES – GPU驱动的SFC模拟器**
+    - **说明**: 经典模拟器ZSNES的现代重制版，利用GPU加速来模拟超级任天堂（SNES）游戏，性能和准确性将大幅提升。
+    - **Article**: [https://zsnes.com/](https://zsnes.com/)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47924877](https://news.ycombinator.com/item?id=47924877)
 
-- **Lua can be a really cool HTML templating engine**
-  - **说明**：来自Lobsters的技术分享，展示了如何利用轻量级脚本语言Lua作为HTML模板引擎。对于追求高性能和灵活性的Web开发者来说，这是一个有趣且实用的思路。
-  - **Article URL**: [https://riki.house/lua-html](https://riki.house/lua-html)
-  - **Discussion URL**: [https://lobste.rs/s/ukar7d/lua_can_be_really_cool_html_templating](https://lobste.rs/s/ukar7d/lua_can_be_really_cool_html_templating)
+5.  **粘土PCB教程**
+    - **说明**: 一个非常酷的创客项目，展示了如何用粘土制作印刷电路板（PCB），将手工艺与电子工程结合，极具创意和教育意义。
+    - **Article**: [https://feministhackerspaces.cargo.site/Clay-PCB-Tutorial](https://feministhackerspaces.cargo.site/Clay-PCB-Tutorial)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47911350](https://news.ycombinator.com/item?id=47911350)
 
-#### 2. 系统、硬件与底层技术
+6.  **Easyduino: 开源的KiCad开发板**
+    - **说明**: 一个在KiCad中设计的开源PCB开发板项目，简化了Arduino兼容板的制作流程，对硬件爱好者非常友好。
+    - **Article**: [https://github.com/Hanqaqa/Easyduino](https://github.com/Hanqaqa/Easyduino)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47924813](https://news.ycombinator.com/item?id=47924813)
 
-- **Asahi Linux Progress Linux 7.0**
-  - **说明**：Asahi Linux 项目发布了第七个进度报告，展示了在将Linux移植到Apple Silicon Mac上的最新成果。这是开源社区攻克封闭硬件的一个里程碑，对Linux生态和Mac用户都意义重大。
-  - **Article URL**: [https://asahilinux.org/2026/04/progress-report-7-0/](https://asahilinux.org/2026/04/progress-report-7-0/)
-  - **Discussion URL**: [https://news.ycombinator.com/item?id=47909226](https://news.ycombinator.com/item?id=47909226)
+7.  **从毫秒到26纳秒：一个20美元的SFP模块如何击败了我的整个NTP设置**
+    - **说明**: 一个令人惊叹的网络时间同步优化案例。作者使用廉价的SFP模块实现了极高的时间精度，对网络工程师和系统管理员极具启发。
+    - **Article**: [https://austinsnerdythings.com/2026/04/26/ptp-osa5401-26-nanoseconds-raspberry-pi/](https://austinsnerdythings.com/2026/04/26/ptp-osa5401-26-nanoseconds-raspberry-pi/)
+    - **Discussion**: [Lobsters](https://lobste.rs/s/trap9p/from_milliseconds_26_nanoseconds_how_20)
 
-- **USB Cheat Sheet (2022)**
-  - **说明**：由知名开发者 Fabien Sanglard 制作的USB协议速查表。虽然发布于2022年，但内容经典，涵盖了USB标准、速度、引脚定义等核心知识，是硬件工程师和底层开发者的宝贵资源。
-  - **Article URL**: [https://fabiensanglard.net/usbcheat/index.html](https://fabiensanglard.net/usbcheat/index.html)
-  - **Discussion URL**: [https://news.ycombinator.com/item?id=47904876](https://news.ycombinator.com/item?id=47904876)
+---
 
-- **Math Is Hard – OpenBSD Stories**
-  - **说明**：一篇关于OpenBSD开发中处理VAX浮点运算的趣闻轶事。它展示了在极端底层和硬件兼容性方面，软件开发所面临的独特挑战，充满了技术幽默和智慧。
-  - **Article URL**: [http://miod.online.fr/software/openbsd/stories/vaxfp.html](http://miod.online.fr/software/openbsd/stories/vaxfp.html)
-  - **Discussion URL**: [https://news.ycombinator.com/item?id=47876930](https://news.ycombinator.com/item?id=47876930)
+### 三、 科技、商业与社会
 
-- **The Super Nintendo Cartridges (2024)**
-  - **说明**：另一篇来自 Fabien Sanglard 的深度技术文章，详细解析了超级任天堂（SNES）卡带的技术原理，包括其内部的存储器映射、特殊芯片（如Super FX）等。对复古游戏爱好者是必读之作。
-  - **Article URL**: [https://fabiensanglard.net/snes_carts/](https://fabiensanglard.net/snes_carts/)
-  - **Discussion URL**: [https://news.ycombinator.com/item?id=47906161](https://news.ycombinator.com/item?id=47906161)
+这个分组涵盖了科技公司的商业决策、社会影响以及法律挑战。
 
-- **Dillo Browser Release 3.3.0**
-  - **说明**：轻量级网页浏览器 Dillo 发布了3.3.0版本。Dillo以其极快的速度和极小的体积著称，是“小网”（Smolweb）运动的代表项目。此版本更新对追求极简和效率的用户很有吸引力。
-  - **Article URL**: [https://dillo-browser.org/release/3.3.0/](https://dillo-browser.org/release/3.3.0/)
-  - **Discussion URLs**:
-    - [https://news.ycombinator.com/item?id=47911977](https://news.ycombinator.com/item?id=47911977)
-    - [https://lobste.rs/s/v247np/dillo_release_3_3_0](https://lobste.rs/s/v247np/dillo_release_3_3_0)
+1.  **我花3万美元买了Friendster——这是我打算用它做的事**
+    - **说明**: 前社交网络Friendster被个人以低价收购，引发了关于互联网历史、数据遗产和怀旧经济的讨论。
+    - **Article**: [https://ca98am79.medium.com/i-bought-friendster-for-30k-heres-what-i-m-doing-with-it-d5e8ddb3991d](https://ca98am79.medium.com/i-bought-friendster-for-30k-heres-what-i-m-doing-with-it-d5e8ddb3991d)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47914165](https://news.ycombinator.com/item?id=47914165)
 
-- **The fastest Linux timestamps**
-  - **说明**：来自Lobsters的技术文章，探讨了如何在Linux系统上以最高性能获取时间戳。对于性能敏感的应用（如数据库、高频交易系统）开发者来说，这是一个非常实用的优化技巧。
-  - **Article URL**: [https://www.hmpcabral.com/2026/04/26/the-fastest-linux-timestamps/](https://www.hmpcabral.com/2026/04/26/the-fastest-linux-timestamps/)
-  - **Discussion URL**: [https://lobste.rs/s/viax22/fastest_linux_timestamps](https://lobste.rs/s/viax22/fastest_linux_timestamps)
+2.  **荷兰央行放弃AWS，选择Lidl打造欧洲云**
+    - **说明**: 荷兰央行出于数据主权和成本考虑，选择与廉价超市Lidl合作构建欧洲云基础设施，这是对大型美国云服务商的一次挑战。
+    - **Article**: [https://www.techzine.eu/news/infrastructure/140634/dutch-central-bank-chooses-lidl-for-european-cloud/](https://www.techzine.eu/news/infrastructure/140634/dutch-central-bank-chooses-lidl-for-european-cloud/)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47922712](https://news.ycombinator.com/item?id=47922712)
 
-#### 3. 隐私、安全与数字权利
+3.  **美国最高法院审查警方使用手机位置数据**
+    - **说明**: 美国最高法院审理关于警方通过地理围栏（geofence）获取手机位置数据的案件，这将对数字隐私权产生深远影响。
+    - **Article**: [https://www.nytimes.com/2026/04/27/us/politics/supreme-court-cell-data-geofence.html](https://www.nytimes.com/2026/04/27/us/politics/supreme-court-cell-data-geofence.html)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47922940](https://news.ycombinator.com/item?id=47922940)
 
-- **Tell HN: An app is silently installing itself on my iPhone every day**
-  - **说明**：用户报告称，其iPhone每天会自动静默安装“Headspace”应用。尽管自动下载已关闭，问题依然存在。这引发了关于iOS系统安全性、应用安装机制以及用户数据隐私的严重担忧。目前原因不明，讨论热烈。
-  - **Article URL**: None (Discussion only)
-  - **Discussion URL**: [https://news.ycombinator.com/item?id=47906253](https://news.ycombinator.com/item?id=47906253)
+4.  **FDA批准首个治疗遗传性听力损失的基因疗法**
+    - **说明**: 这是生物技术和医疗领域的重大突破，FDA批准了首个针对遗传性耳聋的基因治疗药物，意义非凡。
+    - **Article**: [https://www.fda.gov/news-events/press-announcements/fda-approves-first-ever-gene-therapy-treatment-genetic-hearing-loss-under-national-priority-voucher](https://www.fda.gov/news-events/press-announcements/fda-approves-first-ever-gene-therapy-treatment-genetic-hearing-loss-under-national-priority-voucher)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47919733](https://news.ycombinator.com/item?id=47919733)
 
-- **EU Age Control: The trojan horse for digital IDs**
-  - **说明**：一篇观点尖锐的文章，认为欧盟的年龄验证系统是推行强制性数字身份证的“特洛伊木马”。文章深入分析了其技术实现、隐私风险以及对公民自由的影响，是理解数字权利斗争的重要读物。
-  - **Article URL**: [https://juraj.bednar.io/en/blog-en/2026/04/17/eu-age-control-the-trojan-horse-for-digital-ids/](https://juraj.bednar.io/en/blog-en/2026/04/17/eu-age-control-the-trojan-horse-for-digital-ids/) (Archive: [https://web.archive.org/web/20260426040218/https://juraj.bednar.io/en/blog-en/2026/04/17/eu-age-control-the-trojan-horse-for-digital-ids/](https://web.archive.org/web/20260426040218/https://juraj.bednar.io/en/blog-en/2026/04/17/eu-age-control-the-trojan-horse-for-digital-ids/))
-  - **Discussion URL**: [https://news.ycombinator.com/item?id=47907130](https://news.ycombinator.com/item?id=47907130)
+5.  **“威世智”联合工会**
+    - **说明**: 《龙与地下城》的母公司威世智（Wizards of the Coast）的员工宣布成立工会，这是游戏行业劳工权益运动的一个重要进展。
+    - **Article**: [https://unitedwizardsofthecoast.com/news/announcing-united-wizards-coast-cwa](https://unitedwizardsofthecoast.com/news/announcing-united-wizards-coast-cwa)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47925425](https://news.ycombinator.com/item?id=47925425)
 
-- **I Left Port 22 Open on the Internet for 54 Days. Here's Who Showed Up**
-  - **说明**：一个有趣的“蜜罐”实验。作者故意将SSH端口22暴露在公网，记录了54天内所有试图入侵的IP、用户名和攻击模式。这是一份关于互联网安全威胁现状的生动报告。
-  - **Article URL**: [https://arman-bd.hashnode.dev/i-left-port-22-open-on-the-internet-for-54-days-here-s-who-showed-up](https://arman-bd.hashnode.dev/i-left-port-22-open-on-the-internet-for-54-days-here-s-who-showed-up)
-  - **Discussion URL**: [https://lobste.rs/s/cpu221/i_left_port_22_open_on_internet_for_54_days](https://lobste.rs/s/cpu221/i_left_port_22_open_on_internet_for_54_days)
+6.  **我通过FOIA赢得了对Twelve South的胜利，获取了PlugBug 120W的电气信息**
+    - **说明**: 作者利用信息自由法（FOIA）迫使配件厂商公开产品电气信息，这是消费者权利和开放硬件的胜利。
+    - **Article**: [https://archive.org/details/pb120-us](https://archive.org/details/pb120-us)
+    - **Discussion**: [Lobsters](https://lobste.rs/s/kxnxyv/i_won_my_foia_against_twelve_south_open_up)
 
-- **Smolwebifying my site**
-  - **说明**：一位开发者分享了自己将个人网站“小网化”（Smolwebifying）的实践。这通常意味着回归更简单的HTML、CSS，减少JavaScript依赖，追求更快的加载速度和更强的可访问性，是对当今臃肿Web的一种反叛。
-  - **Article URL**: [https://akselmo.dev/posts/smolwebifying-my-site/](https://akselmo.dev/posts/smolwebifying-my-site/)
-  - **Discussion URL**: [https://lobste.rs/s/fyev5y/smolwebifying_my_site](https://lobste.rs/s/fyev5y/smolwebifying_my_site)
+---
 
-#### 4. 科技与社会、商业
+### 四、 个人成长、思考与生活
 
-- **I bought Friendster for $30k – Here's what I'm doing with it**
-  - **说明**：早期社交网络Friendster被以3万美元购得。新主人分享了其未来的计划，这引发了关于互联网历史、数字遗产以及已故社交平台商业价值的广泛讨论。
-  - **Article URL**: [https://ca98am79.medium.com/i-bought-friendster-for-30k-heres-what-i-m-doing-with-it-d5e8ddb3991d](https://ca98am79.medium.com/i-bought-friendster-for-30k-heres-what-i-m-doing-with-it-d5e8ddb3991d)
-  - **Discussion URL**: [https://news.ycombinator.com/item?id=47914165](https://news.ycombinator.com/item?id=47914165)
+这个分组更多是关于技术人员的个人感悟、工作效率和世界观。
 
-- **Waymo says can't avoid bike lanes because riders want to be dropped off in them**
-  - **说明**：Waymo 回应了其无人驾驶出租车频繁占用自行车道的问题，称原因是乘客希望在自行车道上下车。这揭示了自动驾驶技术在现实交通规则与人机交互中的伦理与实践困境，引发了激烈争论。
-  - **Article URL**: [https://road.cc/news/driverless-taxis-veering-into-cycle-lanes-normal-practice-says-waymo](https://road.cc/news/driverless-taxis-veering-into-cycle-lanes-normal-practice-says-waymo)
-  - **Discussion URL**: [https://news.ycombinator.com/item?id=47912645](https://news.ycombinator.com/item?id=47912645)
+1.  **凝视墙壁的男人们**
+    - **说明**: 一篇关于深度思考、无聊和创造力的反思文章，探讨了在信息过载时代“什么都不做”的价值。
+    - **Article**: [https://www.alexselimov.com/posts/men_who_stare_at_walls/](https://www.alexselimov.com/posts/men_who_stare_at_walls/)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47920074](https://news.ycombinator.com/item?id=47920074)
 
-- **Sawe becomes first athlete to run a sub-two-hour marathon in a competitive race**
-  - **说明**：人类马拉松首次在正式比赛中突破2小时大关。这不仅是一个体育奇迹，也涉及运动科学、营养学、装备技术（如Adidas跑鞋）的顶尖应用，是科技赋能人类极限的典范。
-  - **Article URL**: [https://www.bbc.com/sport/athletics/articles/crm1m7e0zwzo](https://www.bbc.com/sport/athletics/articles/crm1m7e0zwzo)
-  - **Discussion URLs**:
-    - [https://news.ycombinator.com/item?id=47914350](https://news.ycombinator.com/item?id=47914350)
-    - [https://www.letsrun.com/news/2026/04/15930-sabastian-sawe-shatters-the-2-hour-barrier-at-2026-london-marathon/](https://www.letsrun.com/news/2026/04/15930-sabastian-sawe-shatters-the-2-hour-barrier-at-2026-london-marathon/)
-    - [https://news.adidas.com/running/two-adidas-athletes-sabastian-sawe-and-yomif-kejelcha-break-the-sub-2-hour-marathon-barrier-in-the-r/s/d4be4eac-a3b8-47d5-835f-9cbd685638ca](https://news.adidas.com/running/two-adidas-athletes-sabastian-sawe-and-yomif-kejelcha-break-the-sub-2-hour-marathon-barrier-in-the-r/s/d4be4eac-a3b8-47d5-835f-9cbd685638ca)
+2.  **我的蓝色是你的蓝色吗？**
+    - **说明**: 一个有趣的交互式网站，探讨人类感知颜色的主观性，引发对“客观现实”的哲学思考。
+    - **Article**: [https://ismy.blue/](https://ismy.blue/)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47926861](https://news.ycombinator.com/item?id=47926861)
 
-- **America's Geothermal Breakthrough**
-  - **说明**：报道了美国在地热能源领域的重大突破，可能解锁高达150吉瓦的能源潜力。这对于全球能源转型和应对气候变化具有重要意义，是清洁技术领域的重磅新闻。
-  - **Article URL**: [https://oilprice.com/Alternative-Energy/Geothermal-Energy/Americas-Geothermal-Breakthrough-Could-Unlock-a-150-Gigawatt-Energy-Revolution.html](https://oilprice.com/Alternative-Energy/Geothermal-Energy/Americas-Geothermal-Breakthrough-Could-Unlock-a-150-Gigawatt-Energy-Revolution.html)
-  - **Discussion URL**: [https://news.ycombinator.com/item?id=47903945](https://news.ycombinator.com/item?id=47903945)
+3.  **致我的学生们**
+    - **说明**: 一位教授写给学生的公开信，可能包含关于学习、职业或人生的建议，情感真挚，引人共鸣。
+    - **Article**: [http://ozark.hendrix.edu/~yorgey/forest/00FD/index.xml](http://ozark.hendrix.edu/~yorgey/forest/00FD/index.xml)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47928828](https://news.ycombinator.com/item?id=47928828)
 
-- **The Joy of Folding Bikes**
-  - **说明**：一篇关于折叠自行车乐趣的个人博客文章。它不仅是关于一种交通工具，更探讨了城市通勤、生活方式、DIY精神和极简主义，在科技社区中引起了广泛共鸣。
-  - **Article URL**: [https://blog.korny.info/2026/04/19/the-joy-of-folding-bikes](https://blog.korny.info/2026/04/19/the-joy-of-folding-bikes)
-  - **Discussion URL**: [https://news.ycombinator.com/item?id=47866127](https://news.ycombinator.com/item?id=47866127)
+4.  **放弃你的副项目也没关系 (2024)**
+    - **说明**: 一篇缓解开发者焦虑的文章，鼓励人们在必要时放弃不再带来快乐的副项目，专注于真正重要的事情。
+    - **Article**: [https://robbowen.digital/wrote-about/abandoned-side-projects/](https://robbowen.digital/wrote-about/abandoned-side-projects/)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47918961](https://news.ycombinator.com/item?id=47918961)
 
-- **Why has there been so little progress on Alzheimer's disease?**
-  - **说明**：Freakonomics 播客探讨了阿尔茨海默病研究进展缓慢的原因。它从科研体制、药物研发策略、资金分配等多个角度进行了分析，是一个跨学科的深度话题。
-  - **Article URL**: [https://freakonomics.com/podcast/why-has-there-been-so-little-progress-on-alzheimers-disease/](https://freakonomics.com/podcast/why-has-there-been-so-little-progress-on-alzheimers-disease/)
-  - **Discussion URL**: [https://news.ycombinator.com/item?id=47905984](https://news.ycombinator.com/item?id=47905984)
+5.  **当便宜的那个才是酷的那个**
+    - **说明**: 反思消费主义和“性价比”的审美，探讨为什么在某些领域，廉价、实用的物品反而比昂贵、花哨的更有吸引力。
+    - **Article**: [https://arun.is/blog/cheap-cool/](https://arun.is/blog/cheap-cool/)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47906420](https://news.ycombinator.com/item?id=47906420)
 
-#### 5. 创意、教程与趣味内容
+6.  **电子邮件太疯狂了**
+    - **说明**: 一篇吐槽电子邮件协议复杂性和历史遗留问题的文章，技术宅们会很有共鸣。
+    - **Article**: [https://samkhawase.com/blog/email-is-crazy/](https://samkhawase.com/blog/email-is-crazy/)
+    - **Discussion**: [Lobsters](https://lobste.rs/s/esrk11/email_is_crazy)
 
-- **Show HN: Turning a Gaussian Splat into a videogame**
-  - **说明**：一个令人惊艳的演示，展示了如何将0:{"buildId":"6XwJ_DOvAOZsw-7BNexeW","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-04-27","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":16},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-04-27"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47909226","title":"Asahi Linux Progress Linux 7.0","url":"https://asahilinux.org/2026/04/progress-report-7-0/","source":"Hacker News","score":594,"comments_count":291,"comments_url":"https://news.ycombinator.com/item?id=47909226","published_at":"2026-04-26T10:50:32","author":"elisaado","text":null,"summary":"Asahi Linux 发布了 7.0 版本，带来了显著的进展，值得关注因为它为 Apple Silicon Mac 提供了更成熟的 Linux 支持。"},{"id":"hn-47906253","title":"Tell HN: An app is silently installing itself on my iPhone every day","url":null,"source":"Hacker News","score":534,"comments_count":178,"comments_url":"https://news.ycombinator.com/item?id=47906253","published_at":"2026-04-26T00:50:56","author":"_-x-_","text":"Every day for the past 3 days around 1pm EST the &#x27;Headspace&#x27; app has been silently appearing on my iPhone (13 Pro). Automatic downloads are turned off and I&#x27;ve updated to the latest iOS since this started happening.<p>I googled around and found a couple reddit threads with people reporting the exact same thing starting 2 or 3 days ago. There were reports from people on iPhone 12 and iPhone 17 so it doesn&#x27;t seem device-specific.<p>Anyone else seeing this? Does anyone understand how or why this is happening?","summary":"用户报告 Headspace 应用每天自动安装到 iPhone 上，即使关闭了自动下载，这引发了关于 iOS 安全性和应用权限的担忧。"},{"id":"hn-47904876","title":"USB Cheat Sheet (2022)","url":"https://fabiensanglard.net/usbcheat/index.html","source":"Hacker News","score":488,"comments_count":83,"comments_url":"https://news.ycombinator.com/item?id=47904876","published_at":"2026-04-25T21:51:18","author":"gwerbret","text":null,"summary":"这是一份 USB 速查表，提供了 USB 标准和接口的快速参考，对开发者和硬件爱好者很有用。"},{"id":"hn-47914165","title":"I bought Friendster for $30k – Here's what I'm doing with it","url":"https://ca98am79.medium.com/i-bought-friendster-for-30k-heres-what-i-m-doing-with-it-d5e8ddb3991d","source":"Hacker News","score":409,"comments_count":235,"comments_url":"https://news.ycombinator.com/item?id=47914165","published_at":"2026-04-26T20:41:06","author":"ca98am79","text":null,"summary":"一位用户以 3 万美元买下了 Friendster，并分享了其复兴计划，这展示了旧社交网络的文化和历史价值。"},{"id":"hn-47905984","title":"Why has there been so little progress on Alzheimer's disease?","url":"https://freakonomics.com/podcast/why-has-there-been-so-little-progress-on-alzheimers-disease/","source":"Hacker News","score":406,"comments_count":286,"comments_url":"https://news.ycombinator.com/item?id=47905984","published_at":"2026-04-26T00:12:47","author":"chiefalchemist","text":null,"summary":"文章探讨了阿尔茨海默病研究进展缓慢的原因，分析了科学和资金方面的挑战，对医疗领域有重要启示。"},{"id":"hn-47907130","title":"EU Age Control: The trojan horse for digital IDs","url":"https://juraj.bednar.io/en/blog-en/2026/04/17/eu-age-control-the-trojan-horse-for-digital-ids/","source":"Hacker News","score":329,"comments_count":183,"comments_url":"https://news.ycombinator.com/item?id=47907130","published_at":"2026-04-26T03:44:28","author":"gasull","text":"<a href=\"https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20260426040218&#x2F;https:&#x2F;&#x2F;juraj.bednar.io&#x2F;en&#x2F;blog-en&#x2F;2026&#x2F;04&#x2F;17&#x2F;eu-age-control-the-trojan-horse-for-digital-ids&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20260426040218&#x2F;https:&#x2F;&#x2F;juraj.bed...</a>","summary":"文章认为欧盟的年龄控制措施可能是数字 ID 的“特洛伊木马”，引发了关于隐私和监控的辩论。"},{"id":"hn-47908833","title":"Statecharts: hierarchical state machines","url":"https://statecharts.dev/","source":"Hacker News","score":281,"comments_count":79,"comments_url":"https://news.ycombinator.com/item?id=47908833","published_at":"2026-04-26T09:32:22","author":"sph","text":null,"summary":"Statecharts 是一种分层状态机，用于简化复杂系统设计，对软件工程和界面开发很有价值。"},{"id":"hn-47914350","title":"Sawe becomes first athlete to run a sub-two-hour marathon in a competitive race","url":"https://www.bbc.com/sport/athletics/articles/crm1m7e0zwzo","source":"Hacker News","score":256,"comments_count":198,"comments_url":"https://news.ycombinator.com/item?id=47914350","published_at":"2026-04-26T20:56:30","author":"berkeleyjunk","text":"<a href=\"https:&#x2F;&#x2F;www.letsrun.com&#x2F;news&#x2F;2026&#x2F;04&#x2F;15930-sabastian-sawe-shatters-the-2-hour-barrier-at-2026-london-marathon&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.letsrun.com&#x2F;news&#x2F;2026&#x2F;04&#x2F;15930-sabastian-sawe-sh...</a><p><a href=\"https:&#x2F;&#x2F;news.adidas.com&#x2F;running&#x2F;two-adidas-athletes-sabastian-sawe-and-yomif-kejelcha-break-the-sub-2-hour-marathon-barrier-in-the-r&#x2F;s&#x2F;d4be4eac-a3b8-47d5-835f-9cbd685638ca\" rel=\"nofollow\">https:&#x2F;&#x2F;news.adidas.com&#x2F;running&#x2F;two-adidas-athletes-sabastia...</a>","summary":"Sawe 成为首位在竞技马拉松中跑进 2 小时的运动员，这打破了人类极限，是体育史上的里程碑。"},{"id":"hn-47866127","title":"The Joy of Folding Bikes","url":"https://blog.korny.info/2026/04/19/the-joy-of-folding-bikes","source":"Hacker News","score":253,"comments_count":171,"comments_url":"https://news.ycombinator.com/item?id=47866127","published_at":"2026-04-22T16:50:27","author":"pavel_lishin","text":null,"summary":"文章分享了折叠自行车的乐趣和实用性，强调了其便携性和城市通勤的优势。"},{"id":"hn-47910388","title":"SWE-bench Verified no longer measures frontier coding capabilities","url":"https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/","source":"Hacker News","score":250,"comments_count":141,"comments_url":"https://news.ycombinator.com/item?id=47910388","published_at":"2026-04-26T13:58:13","author":"kmdupree","text":null,"summary":"OpenAI 宣布 SWE-bench Verified 不再能衡量前沿编码能力，这反映了 AI 编程评估工具的局限性。"},{"id":"hn-47859442","title":"What async promised and what it delivered","url":"https://causality.blog/essays/what-async-promised/","source":"Hacker News","score":243,"comments_count":284,"comments_url":"https://news.ycombinator.com/item?id=47859442","published_at":"2026-04-22T05:28:58","author":"zdw","text":null,"summary":"探讨异步编程的承诺与实际交付成果之间的差距，分析其技术演进中的得失，对理解现代编程范式演变具有重要参考价值。"},{"id":"hn-47910546","title":"Issue links now open in a popup","url":"https://github.com/orgs/community/discussions/192666","source":"Hacker News","score":229,"comments_count":122,"comments_url":"https://news.ycombinator.com/item?id=47910546","published_at":"2026-04-26T14:18:38","author":"luckman212","text":null,"summary":"GitHub宣布议题链接现在以弹出窗口形式打开，这一UI改进提升了开发者浏览效率，值得关注其对协作工作流的影响。"},{"id":"hn-47885239","title":"Mahjong: A Visual Guide","url":"https://themahjong.guide/","source":"Hacker News","score":208,"comments_count":54,"comments_url":"https://news.ycombinator.com/item?id=47885239","published_at":"2026-04-24T03:41:09","author":"iamwil","text":null,"summary":"提供麻将的视觉化指南，通过图解清晰展示规则与策略，对麻将爱好者和文化研究者具有实用与教育意义。"},{"id":"hn-47912645","title":"Waymo says can't avoid bike lanes because riders want to be dropped off in them","url":"https://road.cc/news/driverless-taxis-veering-into-cycle-lanes-normal-practice-says-waymo","source":"Hacker News","score":208,"comments_count":303,"comments_url":"https://news.ycombinator.com/item?id=47912645","published_at":"2026-04-26T18:34:31","author":"randycupertino","text":null,"summary":"Waymo承认自动驾驶出租车无法避免驶入自行车道，因为乘客要求在此处下车，引发对自动驾驶安全与基础设施冲突的讨论。"},{"id":"hn-47876071","title":"Show HN: Turning a Gaussian Splat into a videogame","url":"https://blog.playcanvas.com/turning-a-gaussian-splat-into-a-videogame/","source":"Hacker News","score":205,"comments_count":49,"comments_url":"https://news.ycombinator.com/item?id=47876071","published_at":"2026-04-23T14:18:52","author":"yak32","text":null,"summary":"展示如何将高斯泼溅技术转化为电子游戏，创新性地融合3D渲染与游戏开发，为实时图形领域带来新思路。"},{"id":"hn-47911350","title":"Clay PCB Tutorial","url":"https://feministhackerspaces.cargo.site/Clay-PCB-Tutorial","source":"Hacker News","score":194,"comments_count":121,"comments_url":"https://news.ycombinator.com/item?id=47911350","published_at":"2026-04-26T16:02:14","author":"j0r0b0","text":null,"summary":"介绍用黏土制作PCB的教程，探索低成本和环保的电路板制造方法，对创客和电子爱好者具有启发性。"},{"id":"hn-47902987","title":"Simulacrum of Knowledge Work","url":"https://blog.happyfellow.dev/simulacrum-of-knowledge-work/","source":"Hacker News","score":191,"comments_count":79,"comments_url":"https://news.ycombinator.com/item?id=47902987","published_at":"2026-04-25T17:20:34","author":"thehappyfellow","text":null,"summary":"批判现代知识工作中的模拟现象，指出许多工作流流于形式而非实质，引发对效率与真实价值的反思。"},{"id":"hn-47906161","title":"The Super Nintendo Cartridges (2024)","url":"https://fabiensanglard.net/snes_carts/","source":"Hacker News","score":161,"comments_count":24,"comments_url":"https://news.ycombinator.com/item?id=47906161","published_at":"2026-04-26T00:38:01","author":"offbyone42","text":null,"summary":"深入解析超级任天堂游戏卡带的技术细节，包括硬件架构与设计演变，对复古游戏和硬件爱好者极具吸引力。"},{"id":"hn-47911977","title":"Dillo Browser Release 3.3.0","url":"https://dillo-browser.org/release/3.3.0/","source":"Hacker News","score":158,"comments_count":24,"comments_url":"https://news.ycombinator.com/item?id=47911977","published_at":"2026-04-26T17:18:14","author":"rodarima","text":null,"summary":"Dillo浏览器发布3.3.0版本，作为轻量级开源浏览器，其更新对追求极简和隐私的用户具有实用价值。"},{"id":"hn-47903945","title":"America's Geothermal Breakthrough","url":"https://oilprice.com/Alternative-Energy/Geothermal-Energy/Americas-Geothermal-Breakthrough-Could-Unlock-a-150-Gigawatt-Energy-Revolution.html","source":"Hacker News","score":157,"comments_count":164,"comments_url":"https://news.ycombinator.com/item?id=47903945","published_at":"2026-04-25T19:38:55","author":"sleepyguy","text":null,"summary":"报道美国地热能突破，可能解锁150吉瓦的能源革命，对可再生能源转型和能源政策具有重大意义。"},{"id":"hn-47913855","title":"Fast16: High-precision software sabotage 5 years before Stuxnet","url":"https://www.sentinelone.com/labs/fast16-mystery-shadowbrokers-reference-reveals-high-precision-software-sabotage-5-years-before-stuxnet/","source":"Hacker News","score":156,"comments_count":43,"comments_url":"https://news.ycombinator.com/item?id=47913855","published_at":"2026-04-26T20:18:37","author":"dd23","text":null,"summary":"本文揭露了名为Fast16的早期高精度软件破坏行动，比著名的Stuxnet蠕虫早五年，揭示了网络战历史中的关键里程碑。"},{"id":"hn-47876930","title":"Math Is Hard – OpenBSD Stories","url":"http://miod.online.fr/software/openbsd/stories/vaxfp.html","source":"Hacker News","score":147,"comments_count":23,"comments_url":"https://news.ycombinator.com/item?id=47876930","published_at":"2026-04-23T15:29:50","author":"signa11","text":null,"summary":"通过OpenBSD开发中的趣事，探讨数学在系统编程中的挑战，值得关注其技术深度和开源社区文化。"},{"id":"hn-47914677","title":"Butterflies are in decline across North America, a look at the Western Monarch","url":"https://www.smithsonianmag.com/science-nature/butterflies-are-in-dramatic-decline-across-north-america-a-close-look-at-the-western-monarch-shows-why-180988582/","source":"Hacker News","score":131,"comments_count":38,"comments_url":"https://news.ycombinator.com/item?id=47914677","published_at":"2026-04-26T21:23:20","author":"1659447091","text":null,"summary":"北美蝴蝶数量大幅下降，文章以西部帝王蝶为例分析原因，强调生物多样性危机与生态保护紧迫性。"},{"id":"hn-47913406","title":"The 1944 Warsaw Uprising, in Color","url":"https://www.barwypowstania.pl/","source":"Hacker News","score":115,"comments_count":44,"comments_url":"https://news.ycombinator.com/item?id=47913406","published_at":"2026-04-26T19:44:35","author":"keiferski","text":null,"summary":"彩色修复的1944年华沙起义照片，提供历史事件的新视角，具有重要的文化和教育价值。"},{"id":"hn-47911013","title":"Show HN: Free textbook on engineering thermodynamics","url":"https://thermodynamicsbook.com/","source":"Hacker News","score":108,"comments_count":29,"comments_url":"https://news.ycombinator.com/item?id=47911013","published_at":"2026-04-26T15:17:34","author":"2DcAf","text":"Author here. Feel free to send questions of any kind.","summary":"免费工程热力学教科书发布，作者开放问答，对工程教育和技术学习有直接帮助。"}],"locale":"en"}],"$Lc"]}]]}]
+7.  **Niri v26.04**
+    - **说明**: 滚动式平铺窗口管理器Niri发布了新版本。对于Linux桌面爱好者来说，这是一个值得关注的项目更新。
+    - **Article**: [https://github.com/niri-wm/niri/releases/tag/v26.04](https://github.com/niri-wm/niri/releases/tag/v26.04)
+    - **Discussion**: [Lobsters](https://lobste.rs/s/uf38bg/niri_v26_04)
+
+---
+
+### 五、 其他（体育科技）
+
+1.  **Sawe成为首位在竞技比赛中跑进两小时大关的运动员**
+    - **说明**: 尽管主要是体育新闻，但其中涉及了运动科学、营养学、装备（Adidas跑鞋）等大量科技元素，是科技与人体极限结合的体现。
+    - **Article**: [https://www.bbc.com/sport/athletics/articles/crm1m7e0zwzo](https://www.bbc.com/sport/athletics/articles/crm1m7e0zwzo)
+    - **Discussion**: [https://news.ycombinator.com/item?id=47914350](https://news.ycombinator.com/item?id=47914350)
+
+---
+
+### 今日最值得阅读的文章推荐
+
+1.  **《我花3万美元买了Friendster——这是我打算用它做的事》**
+    - **理由**: 这是一个关于互联网历史、数字遗产和创业精神的独特故事。它不仅仅是新闻，更像是一个引人入胜的叙事，探讨了如何处理一个曾经辉煌但已没落的网络遗产。讨论区里充满了各种奇思妙想和法律/技术层面的讨论。
+    - **链接**: [Article](https://ca98am79.medium.com/i-bought-friendster-for-30k-heres-what-i-m-doing-with-it-d5e8ddb3991d) | [Discussion](https://news.ycom0:{"buildId":"qCaRi7B4TEDUbpmF8DJgT","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-04-28","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":15},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-04-28"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47914165","title":"I bought Friendster for $30k – Here's what I'm doing with it","url":"https://ca98am79.medium.com/i-bought-friendster-for-30k-heres-what-i-m-doing-with-it-d5e8ddb3991d","source":"Hacker News","score":1065,"comments_count":576,"comments_url":"https://news.ycombinator.com/item?id=47914165","published_at":"2026-04-26T20:41:06","author":"ca98am79","text":null,"summary":"Friendster被以3万美元收购，新主人计划将其转型为社交游戏平台，这一举动引发了对已消亡社交网络潜在价值的关注。"},{"id":"hn-47923357","title":"GitHub Copilot is moving to usage-based billing","url":"https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/","source":"Hacker News","score":554,"comments_count":422,"comments_url":"https://news.ycombinator.com/item?id=47923357","published_at":"2026-04-27T16:03:08","author":"frizlab","text":null,"summary":"GitHub Copilot转向按使用量计费，这一变化可能影响开发者成本和工作流程，值得关注其对企业和小型团队的影响。"},{"id":"hn-47875795","title":"Flipdiscs","url":"https://flipdisc.io","source":"Hacker News","score":546,"comments_count":86,"comments_url":"https://news.ycombinator.com/item?id=47875795","published_at":"2026-04-23T13:54:31","author":"skogstokig","text":null,"summary":"Flipdiscs是一种低功耗机械显示技术，常用于数字标牌，其独特性和复古美学在科技领域引起兴趣。"},{"id":"hn-47914350","title":"Sawe becomes first athlete to run a sub-two-hour marathon in a competitive race","url":"https://www.bbc.com/sport/athletics/articles/crm1m7e0zwzo","source":"Hacker News","score":506,"comments_count":330,"comments_url":"https://news.ycombinator.com/item?id=47914350","published_at":"2026-04-26T20:56:30","author":"berkeleyjunk","text":"<a href=\"https:&#x2F;&#x2F;www.letsrun.com&#x2F;news&#x2F;2026&#x2F;04&#x2F;15930-sabastian-sawe-shatters-the-2-hour-barrier-at-2026-london-marathon&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.letsrun.com&#x2F;news&#x2F;2026&#x2F;04&#x2F;15930-sabastian-sawe-sh...</a><p><a href=\"https:&#x2F;&#x2F;news.adidas.com&#x2F;running&#x2F;two-adidas-athletes-sabastian-sawe-and-yomif-kejelcha-break-the-sub-2-hour-marathon-barrier-in-the-r&#x2F;s&#x2F;d4be4eac-a3b8-47d5-835f-9cbd685638ca\" rel=\"nofollow\">https:&#x2F;&#x2F;news.adidas.com&#x2F;running&#x2F;two-adidas-athletes-sabastia...</a>","summary":"Sawe在伦敦马拉松中首次在竞技比赛中跑进2小时，这一突破性成就标志着人类耐力极限的新里程碑。"},{"id":"hn-47908051","title":"Self-updating screenshots","url":"https://interblah.net/self-updating-screenshots","source":"Hacker News","score":462,"comments_count":73,"comments_url":"https://news.ycombinator.com/item?id=47908051","published_at":"2026-04-26T07:00:39","author":"bjhess","text":null,"summary":"自更新截图技术允许截图内容随时间自动变化，为文档和演示提供了动态更新的可能性，值得关注其应用场景。"},{"id":"hn-47920074","title":"Men who stare at walls","url":"https://www.alexselimov.com/posts/men_who_stare_at_walls/","source":"Hacker News","score":455,"comments_count":206,"comments_url":"https://news.ycombinator.com/item?id=47920074","published_at":"2026-04-27T11:08:26","author":"aselimov3","text":null,"summary":"文章探讨了冥想或凝视墙壁的实践如何提升专注力和创造力，在快节奏科技文化中引发对反思价值的思考。"},{"id":"hn-47926861","title":"Is my blue your blue?","url":"https://ismy.blue/","source":"Hacker News","score":349,"comments_count":242,"comments_url":"https://news.ycombinator.com/item?id=47926861","published_at":"2026-04-27T20:24:33","author":"theogravity","text":null,"summary":"互动网站'Is my blue your blue?'通过颜色感知测试，引发对主观体验差异和颜色认知科学的讨论。"},{"id":"hn-47922712","title":"Dutch central bank ditches AWS and chooses Lidl for European Cloud","url":"https://www.techzine.eu/news/infrastructure/140634/dutch-central-bank-chooses-lidl-for-european-cloud/","source":"Hacker News","score":312,"comments_count":130,"comments_url":"https://news.ycombinator.com/item?id=47922712","published_at":"2026-04-27T15:12:41","author":"benterix","text":null,"summary":"荷兰央行放弃AWS，选择Lidl的云服务，这一决策可能推动欧洲云服务独立性和成本效益的讨论。"},{"id":"hn-47924775","title":"GitHub is having issues now","url":"https://www.githubstatus.com","source":"Hacker News","score":301,"comments_count":105,"comments_url":"https://news.ycombinator.com/item?id=47924775","published_at":"2026-04-27T17:42:19","author":"SenHeng","text":null,"summary":"GitHub当前出现服务问题，影响开发者的代码托管和协作，需关注其恢复进度和原因分析。"},{"id":"hn-47916890","title":"TurboQuant: A first-principles walkthrough","url":"https://arkaung.github.io/interactive-turboquant/","source":"Hacker News","score":282,"comments_count":56,"comments_url":"https://news.ycombinator.com/item?id=47916890","published_at":"2026-04-27T01:54:32","author":"kweezar","text":null,"summary":"TurboQuant是一个交互式量化金融教程，从基本原理出发讲解量化交易，为初学者提供了直观的学习工具。"},{"id":"hn-47901433","title":"Fully Featured Audio DSP Firmware for the Raspberry Pi Pico","url":"https://github.com/WeebLabs/DSPi","source":"Hacker News","score":266,"comments_count":76,"comments_url":"https://news.ycombinator.com/item?id=47901433","published_at":"2026-04-25T13:28:29","author":"BoingBoomTschak","text":null,"summary":"该项目为树莓派Pico提供了完整的音频DSP固件，值得关注因为它将专业音频处理能力引入低成本微控制器平台。"},{"id":"hn-47919240","title":"Quarkdown – Markdown with Superpowers","url":"https://quarkdown.com/","source":"Hacker News","score":260,"comments_count":95,"comments_url":"https://news.ycombinator.com/item?id=47919240","published_at":"2026-04-27T08:54:57","author":"amai","text":null,"summary":"Quarkdown是增强版Markdown工具，值得关注因为它引入了超能力特性，可能改变文档编写方式。"},{"id":"hn-47917026","title":"The Prompt API","url":"https://developer.chrome.com/docs/ai/prompt-api","source":"Hacker News","score":257,"comments_count":128,"comments_url":"https://news.ycombinator.com/item?id=47917026","published_at":"2026-04-27T02:18:58","author":"gslin","text":null,"summary":"Chrome的Prompt API允许开发者直接调用AI模型，值得关注因为它简化了浏览器端AI集成。"},{"id":"hn-47922079","title":"“Why not just use Lean?”","url":"https://lawrencecpaulson.github.io//2026/04/23/Why_not_Lean.html","source":"Hacker News","score":252,"comments_count":178,"comments_url":"https://news.ycombinator.com/item?id=47922079","published_at":"2026-04-27T14:24:53","author":"ibobev","text":null,"summary":"文章探讨为何不直接使用Lean定理证明器，值得关注因为它揭示了形式化验证工具的实际挑战。"},{"id":"hn-47928828","title":"To my students","url":"http://ozark.hendrix.edu/~yorgey/forest/00FD/index.xml","source":"Hacker News","score":251,"comments_count":140,"comments_url":"https://news.ycombinator.com/item?id=47928828","published_at":"2026-04-27T23:57:39","author":"marvinborner","text":null,"summary":"这是一封写给学生的公开信，值得关注因为它可能包含教育或技术领域的深刻见解。"},{"id":"hn-47924877","title":"Super ZSNES – GPU Powered SNES Emulator","url":"https://zsnes.com/","source":"Hacker News","score":244,"comments_count":68,"comments_url":"https://news.ycombinator.com/item?id=47924877","published_at":"2026-04-27T17:50:10","author":"haunter","text":null,"summary":"Super ZSNES是GPU加速的SNES模拟器，值得关注因为它通过硬件加速提升复古游戏性能。"},{"id":"hn-47911350","title":"Clay PCB Tutorial","url":"https://feministhackerspaces.cargo.site/Clay-PCB-Tutorial","source":"Hacker News","score":238,"comments_count":147,"comments_url":"https://news.ycombinator.com/item?id=47911350","published_at":"2026-04-26T16:02:14","author":"j0r0b0","text":null,"summary":"教程介绍如何制作粘土PCB，值得关注因为它结合了手工工艺与电子制造。"},{"id":"hn-47922940","title":"US Supreme Court reviews police use of cell location data","url":"https://www.nytimes.com/2026/04/27/us/politics/supreme-court-cell-data-geofence.html","source":"Hacker News","score":224,"comments_count":139,"comments_url":"https://news.ycombinator.com/item?id=47922940","published_at":"2026-04-27T15:29:41","author":"unethical_ban","text":"<a href=\"https:&#x2F;&#x2F;www.cnn.com&#x2F;2026&#x2F;04&#x2F;27&#x2F;politics&#x2F;geofencing-supreme-geofencing-cellphone-data\" rel=\"nofollow\">https:&#x2F;&#x2F;www.cnn.com&#x2F;2026&#x2F;04&#x2F;27&#x2F;politics&#x2F;geofencing-supreme-g...</a>","summary":"美国最高法院审查警方使用手机位置数据，值得关注因为它可能影响隐私法和数字监控边界。"},{"id":"hn-47919733","title":"FDA approves first gene therapy for treatment of genetic hearing loss","url":"https://www.fda.gov/news-events/press-announcements/fda-approves-first-ever-gene-therapy-treatment-genetic-hearing-loss-under-national-priority-voucher","source":"Hacker News","score":217,"comments_count":81,"comments_url":"https://news.ycombinator.com/item?id=47919733","published_at":"2026-04-27T10:15:17","author":"JeanKage","text":null,"summary":"FDA批准首个治疗遗传性听力损失的基因疗法，值得关注因为这是基因治疗领域的里程碑。"},{"id":"hn-47925425","title":"United Wizards of the Coast","url":"https://unitedwizardsofthecoast.com/news/announcing-united-wizards-coast-cwa","source":"Hacker News","score":212,"comments_count":203,"comments_url":"https://news.ycombinator.com/item?id=47925425","published_at":"2026-04-27T18:34:30","author":"d4mi3n","text":null,"summary":"威世智员工成立工会，值得关注因为它反映了游戏行业劳工权益运动的兴起。"},{"id":"hn-47923010","title":"Networking changes coming in macOS 27","url":"https://eclecticlight.co/2026/04/23/networking-changes-coming-in-macos-27/","source":"Hacker News","score":205,"comments_count":180,"comments_url":"https://news.ycombinator.com/item?id=47923010","published_at":"2026-04-27T15:36:12","author":"pvtmert","text":null,"summary":"macOS 27将引入网络功能变化，值得关注因为它可能影响系统兼容性与网络性能。"},{"id":"hn-47922957","title":"The woes of sanitizing SVGs","url":"https://muffin.ink/blog/scratch-svg-sanitization/","source":"Hacker News","score":182,"comments_count":76,"comments_url":"https://news.ycombinator.com/item?id=47922957","published_at":"2026-04-27T15:31:36","author":"varun_ch","text":null,"summary":"文章探讨SVG清理的难题，对Web安全开发者有重要参考价值。"},{"id":"hn-47918961","title":"It's OK to abandon your side-project (2024)","url":"https://robbowen.digital/wrote-about/abandoned-side-projects/","source":"Hacker News","score":182,"comments_count":86,"comments_url":"https://news.ycombinator.com/item?id=47918961","published_at":"2026-04-27T08:11:16","author":"hisamafahri","text":null,"summary":"讨论放弃副项目的合理性，鼓励开发者关注心理健康与优先级管理。"},{"id":"hn-47924813","title":"Easyduino: Open Source PCB Devboards for KiCad","url":"https://github.com/Hanqaqa/Easyduino","source":"Hacker News","score":175,"comments_count":26,"comments_url":"https://news.ycombinator.com/item?id=47924813","published_at":"2026-04-27T17:45:02","author":"Hanqaqa","text":null,"summary":"Easyduino提供开源PCB开发板，适合KiCad用户快速原型设计。"},{"id":"hn-47906420","title":"When the cheap one is the cool one","url":"https://arun.is/blog/cheap-cool/","source":"Hacker News","score":160,"comments_count":107,"comments_url":"https://news.ycombinator.com/item?id=47906420","published_at":"2026-04-26T01:25:13","author":"ddrmaxgt37","text":null,"summary":"反思廉价产品为何更酷，挑战消费主义观念，引发对实用性的思考。"}],"locale":"en"}],"$Lc"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["Generated by"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","Powered by DeepSeek"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
 a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
-c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-2d53c8750316","title":"Smolwebifying my site","url":"https://akselmo.dev/posts/smolwebifying-my-site/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-26T18:31:47","author":"akselmo.dev by Aks","text":"<p><a href=\"https://lobste.rs/s/fyev5y/smolwebifying_my_site\">Comments</a></p>","summary":"作者分享如何将网站精简为“小网”风格，关注极简设计与低资源消耗，适合技术爱好者。"},{"id":"rss-549fd1de7c2e","title":"Lua can be a really cool HTML templating engine","url":"https://riki.house/lua-html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-26T14:22:59","author":"riki.house by riki","text":"<p><a href=\"https://lobste.rs/s/ukar7d/lua_can_be_really_cool_html_templating\">Comments</a></p>","summary":"探讨Lua作为HTML模板引擎的潜力，展示其灵活性和性能优势，对Web开发有参考价值。"},{"id":"rss-53216ced6957","title":"Dillo release 3.3.0","url":"https://dillo-browser.org/release/3.3.0/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-26T16:45:45","author":"dillo-browser.org by rdg","text":"<p><a href=\"https://lobste.rs/s/v247np/dillo_release_3_3_0\">Comments</a></p>","summary":"Dillo浏览器发布3.3.0版本，作为轻量级开源浏览器，其更新对低资源设备用户重要。"},{"id":"rss-5350a66b8205","title":"I Left Port 22 Open on the Internet for 54 Days. Here's Who Showed Up","url":"https://arman-bd.hashnode.dev/i-left-port-22-open-on-the-internet-for-54-days-here-s-who-showed-up","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-26T08:49:42","author":"arman-bd.hashnode.dev via freddyb","text":"<p><a href=\"https://lobste.rs/s/cpu221/i_left_port_22_open_on_internet_for_54_days\">Comments</a></p>","summary":"作者暴露SSH端口22于互联网54天，记录攻击者行为，揭示网络安全风险与防御策略。"},{"id":"rss-52702c3fcd91","title":"The fastest Linux timestamps","url":"https://www.hmpcabral.com/2026/04/26/the-fastest-linux-timestamps/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-26T13:01:54","author":"hmpcabral.com by hmpc","text":"<p><a href=\"https://lobste.rs/s/viax22/fastest_linux_timestamps\">Comments</a></p>","summary":"测试Linux下最快时间戳获取方法，为系统性能优化提供实用数据。"}],"locale":"en"}]
+c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-35aa657d6c77","title":"Email is crazy","url":"https://samkhawase.com/blog/email-is-crazy/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-27T14:01:00","author":"samkhawase.com by FlyingSnake","text":"<p><a href=\"https://lobste.rs/s/esrk11/email_is_crazy\">Comments</a></p>","summary":"揭示电子邮件系统的复杂性与混乱，对理解现代通信基础设施有启发。"},{"id":"rss-b41eb7fb7bb8","title":"Niri v26.04","url":"https://github.com/niri-wm/niri/releases/tag/v26.04","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-27T10:51:27","author":"github.com via ana_glz","text":"<p><a href=\"https://lobste.rs/s/uf38bg/niri_v26_04\">Comments</a></p>","summary":"Niri v26.04发布，作为新兴窗口管理器，更新可能提升用户体验。"},{"id":"rss-8c18e79979c9","title":"I won my FOIA against Twelve South to open up the electrical information for the PlugBug 120W","url":"https://archive.org/details/pb120-us","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-27T15:47:31","author":"archive.org by reesericci","text":"<p><a href=\"https://lobste.rs/s/kxnxyv/i_won_my_foia_against_twelve_south_open_up\">Comments</a></p>","summary":"通过FOIA获取Twelve South充电器电气信息，强调消费者知情权与透明性。"},{"id":"rss-fc2792d84380","title":"From Milliseconds to 26 Nanoseconds: How a $20 eBay SFP Module Beat My Entire NTP Setup","url":"https://austinsnerdythings.com/2026/04/26/ptp-osa5401-26-nanoseconds-raspberry-pi/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-27T08:55:46","author":"austinsnerdythings.com via varesa","text":"<p><a href=\"https://lobste.rs/s/trap9p/from_milliseconds_26_nanoseconds_how_20\">Comments</a></p>","summary":"低成本SFP模块实现高精度时间同步，颠覆传统NTP方案，对网络工程师有实践意义。"},{"id":"rss-55cc33066796","title":"Wasm is not quite a stack machine","url":"https://purplesyringa.moe/blog/wasm-is-not-quite-a-stack-machine/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-27T06:20:36","author":"purplesyringa.moe via LesleyLai","text":"<p><a href=\"https://lobste.rs/s/h8hlp7/wasm_is_not_quite_stack_machine\">Comments</a></p>","summary":"论证Wasm并非严格栈机，挑战主流认知，对编译器与WebAssembly开发者重要。"}],"locale":"en"}]
 f:null
