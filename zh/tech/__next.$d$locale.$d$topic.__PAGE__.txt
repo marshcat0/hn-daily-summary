@@ -5,205 +5,169 @@
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
 e:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
 f:"$Sreact.suspense"
-5:T3b8b,好的，作为一名专业的技术新闻分析师，我对今日 Technology 领域的 Top 30 热门文章进行了综合分析。以下是按子主题分组的详细总结和精选推荐。
+5:T3c82,好的，作为一名技术新闻分析师，我已经对今日的“Technology”主题热门文章进行了深入分析和总结。以下是根据文章内容和讨论热度的综合报告。
+
+### 综合分析
+
+今日的科技新闻呈现出几个鲜明的主题：**开源生态的去中心化与信任危机**、**AI技术的模型竞赛与应用边界**、**开发者工具与编程范式的演进**，以及**基础设施与底层技术的深度探讨**。社区对大型平台依赖的反思（如离开GitHub）、对AI模型性能与伦理的关注（如IBM的模型、AI匿名性）以及对经典编程问题的重新思考（如击败二分查找）都表现出极高的讨论热情。
 
 ---
 
-### 综合分析：今日技术热点
+### 按子主题分组分析
 
-今日的技术新闻呈现出一个非常有趣的格局：**开发者工具与平台的信任危机** 成为绝对的核心议题，围绕 GitHub 的“离开”与“依赖”形成了激烈的讨论。同时，编程语言的哲学之争、AI 工具的实用性问题以及硬件/基础设施的深度报道也构成了重要组成部分。
+#### 1. 开源、平台依赖与社区治理
 
----
-
-### 按子主题分组
-
-#### 1. GitHub 的信任危机与开源生态的未来
-
-这个主题是今日热度最高的焦点，多篇文章从不同角度探讨了对 GitHub（及其母公司微软）的依赖和担忧。
+这个主题是今天最热门的领域，反映了开发者社区对平台权力集中和AI伦理的深刻思考。
 
 - **Ghostty is leaving GitHub**
-    - **说明**: 终端模拟器项目 Ghostty 的作者宣布将项目从 GitHub 迁移出去。这是对 GitHub 平台（尤其是 Copilot 和 Actions）日益增长的控制权和商业化的直接回应，引发了关于开源项目自主性的广泛讨论。这是今日最重磅的新闻之一。
-    - **文章**: https://mitchellh.com/writing/ghostty-leaving-github
-    - **讨论**: https://news.ycombinator.com/item?id=47939579
-
-- **Before GitHub**
-    - **说明**: 这篇文章回顾了 GitHub 出现之前的开源协作生态（如邮件列表、SVN等），为理解当前对 GitHub 的依赖提供了一个历史视角。与 Ghostty 离开的新闻形成鲜明对比和背景补充。
-    - **文章**: https://lucumr.pocoo.org/2026/4/28/before-github/
-    - **讨论**: https://news.ycombinator.com/item?id=47940921
-
-- **We need a federation of forges**
-    - **说明**: 文章提出了一个解决方案：建立一个由多个代码托管平台（Forge）组成的联邦（如基于 ForgeFed 协议），以避免对单一平台（GitHub）的过度依赖。这与 Ghostty 的离开和“Before GitHub”的回顾构成了一个完整的讨论闭环。
-    - **文章**: https://blog.tangled.org/federation/
-    - **讨论**: https://news.ycombinator.com/item?id=47948603
-
-- **GitHub Actions is the weakest link**
-    - **说明**: 文章警告 GitHub Actions 的安全风险，指出其工作流可能被利用作为攻击向量，成为整个软件供应链的薄弱环节。这加剧了对 GitHub 平台安全性的担忧。
-    - **文章**: https://nesbitt.io/2026/04/28/github-actions-is-the-weakest-link.html
-    - **讨论**: https://news.ycombinator.com/item?id=47933257
-
-- **GitHub Copilot code review will start consuming GitHub Actions minutes**
-    - **说明**: 这一公告意味着使用 Copilot 代码审查功能将开始消耗 Actions 的免费额度。这被许多人视为 GitHub 将其 AI 功能货币化、进一步锁定用户的举措，也是导致上述信任危机的原因之一。
-    - **文章**: https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026/
-    - **讨论**: https://news.ycombinator.com/item?id=47932028
-
-- **Soft launch of open-source code platform for government**
-    - **说明**: 荷兰政府推出了自己的开源代码平台。这可以看作是对“forge 联邦”理念的一种实践，表明政府机构也开始寻求 GitHub 之外的替代方案。
-    - **文章**: https://www.nldigitalgovernment.nl/news/soft-launch-for-government-open-source-code-platform/
-    - **讨论**: https://news.ycombinator.com/item?id=47945918
-
-#### 2. 编程语言与开发者工具
-
-- **Zed 1.0**
-    - **说明**: 由 Atom 和 Tree-sitter 作者创建的高性能代码编辑器 Zed 发布了 1.0 正式版。这是一个重要的里程碑，预示着编辑器市场可能出现新的有力竞争者。讨论热烈，关注其性能和协作功能。
-    - **文章**: https://zed.dev/blog/zed-1-0
-    - **讨论 (HN)**: https://news.ycombinator.com/item?id=47949027
-    - **讨论 (Lobsters)**: https://lobste.rs/s/ddrcj1/zed_is_1_0
-
-- **Bugs Rust won't catch**
-    - **说明**: 文章探讨了 Rust 语言的所有权模型也无法防止的常见 bug，如逻辑错误、死锁、性能问题等。这对于 Rust 开发者来说是一篇清醒剂式的文章，强调了类型系统和内存安全之外的挑战。
-    - **文章**: https://corrode.dev/blog/bugs-rust-wont-catch/
-    - **讨论**: https://news.ycombinator.com/item?id=47943499
-
-- **Why I still reach for Lisp and Scheme instead of Haskell**
-    - **说明**: 一篇关于编程语言哲学的对比文章。作者阐述了为什么在追求“简单、灵活、可演化”的哲学下，Lisp 和 Scheme 比 Haskell 更符合其需求。在 Lobsters 上也引发了讨论。
-    - **文章**: https://jointhefreeworld.org/blog/articles/lisps/why-i-still-reach-for-scheme-instead-of-haskell/index.html
-    - **讨论 (HN)**: https://news.ycombinator.com/item?id=47945707
-    - **讨论 (Lobsters)**: https://lobste.rs/s/b57uhm/functional_programmers_need_take_look_at (相关文章)
-
-- **Functional Programmers need to take a look at Zig**
-    - **说明**: 这篇文章建议函数式编程者关注 Zig 语言，探讨了 Zig 在编译期计算、内存管理和对底层控制方面的优势，认为其提供了一种不同于传统函数式语言的“实用主义”函数式编程方式。
-    - **文章**: https://pure-systems.org/posts/2026-04-29-functional-programmers-need-to-take-a-look-at-zig.html
-    - **讨论**: https://lobste.rs/s/b57uhm/functional_programmers_need_take_look_at
+    - **简要说明**：知名终端模拟器Ghostty的作者Mitchell Hashimoto宣布项目将离开GitHub，转向自托管。此举引发了关于开发者对单一平台依赖、代码托管去中心化以及开源项目自主权的广泛讨论。这是对“GitHub即开源中心”这一现状的一次重要挑战。
+    - **原文链接**：[https://mitchellh.com/writing/ghostty-leaving-github](https://mitchellh.com/writing/ghostty-leaving-github)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47939579](https://news.ycombinator.com/item?id=47939579)
 
 - **Contributor Poker and Zig's AI Ban**
-    - **说明**: 讨论了 Zig 社区最近的一项有争议的决定：禁止 AI 生成的代码贡献。文章分析了这项政策背后的原因（如代码质量、版权问题、社区文化）及其对贡献者生态的影响。
-    - **文章**: https://kristoff.it/blog/contributor-poker-and-ai/
-    - **讨论**: https://lobste.rs/s/ifcyr1/contributor_poker_zig_s_ai_ban
+    - **简要说明**：探讨了Zig语言社区关于禁止AI生成贡献的争议。文章提出了“贡献者扑克”的概念，分析了AI参与开源贡献可能带来的信任和审阅问题。反映了AI对传统开源协作模式的冲击。
+    - **原文链接**：[https://kristoff.it/blog/contributor-poker-and-ai/](https://kristoff.it/blog/contributor-poker-and-ai/)
+    - **讨论链接**：[https://lobste.rs/s/ifcyr1/contributor_poker_zig_s_ai_ban](https://lobste.rs/s/ifcyr1/contributor_poker_zig_s_ai_ban)
 
-- **I have officially retired from Emacs**
-    - **说明**: 一位资深 Emacs 用户宣布“退休”，转而使用其他工具（可能是 Neovim 或现代 IDE）。这篇文章分享了其长期使用 Emacs 的心得、遇到的瓶颈以及最终离开的原因，引发了老牌编辑器用户的共鸣。
-    - **文章**: https://nullprogram.com/blog/2026/04/26/
-    - **讨论**: https://news.ycombinator.com/item?id=47906651
+- **For Linux kernel vulnerabilities, there is no heads-up to distributions**
+    - **简要说明**：揭示了Linux内核安全漏洞披露流程中的一个关键问题：发行版无法提前获得漏洞预警。这直接影响了系统安全补丁的响应速度和用户安全，引发了关于内核安全策略和透明度的重要讨论。
+    - **原文链接**：[https://www.openwall.com/lists/oss-security/2026/04/30/10](https://www.openwall.com/lists/oss-security/2026/04/30/10)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47965108](https://news.ycombinator.com/item?id=47965108)
+
+- **Mozilla's opposition to Chrome's Prompt API**
+    - **简要说明**：Mozilla官方表示反对Chrome提出的Prompt API，该API旨在浏览器中集成AI模型。Mozilla的立场凸显了浏览器厂商在AI标准上的分歧，以及关于用户隐私、模型控制和Web开放性的深层担忧。
+    - **原文链接**：[https://github.com/mozilla/standards-positions/issues/1213#issuecomment-4347988313](https://github.com/mozilla/standards-positions/issues/1213#issuecomment-4347988313)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47959463](https://news.ycombinator.com/item?id=47959463)
+    - **相关讨论**：[https://lobste.rs/s/pcymmp/mozilla_s_position_on_prompt_api](https://lobste.rs/s/pcymmp/mozilla_s_position_on_prompt_api)
+
+#### 2. AI模型、应用与伦理
+
+AI领域的新闻从模型发布扩展到其应用边界和伦理问题。
+
+- **Granite 4.1: IBM's 8B Model Matching 32B MoE**
+    - **简要说明**：IBM发布了Granite 4.1模型，声称一个80亿参数的模型性能可与320亿参数的混合专家模型相媲美。这代表了模型效率的重大进步，对降低AI部署成本和能耗有重要意义，值得关注。
+    - **原文链接**：[https://firethering.com/granite-4-1-ibm-open-source-model-family/](https://firethering.com/granite-4-1-ibm-open-source-model-family/)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47960507](https://news.ycombinator.com/item?id=47960507)
+
+- **Where the goblins came from**
+    - **简要说明**：OpenAI发布的一篇研究，探讨了AI模型内部表征和“涌现”行为的起源。文章以“哥布林”为比喻，试图解释模型如何学习到复杂概念。对于理解深度学习的黑箱和可解释性具有价值。
+    - **原文链接**：[https://openai.com/index/where-the-goblins-came-from/](https://openai.com/index/where-the-goblins-came-from/)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47957688](https://news.ycombinator.com/item?id=47957688)
+
+- **Opus 4.7 knows the real Kelsey**
+    - **简要说明**：一篇关于与AI匿名交流的哲学和伦理探讨。文章讨论了当AI了解用户的真实身份时，对话的动态和隐私边界会发生怎样的变化。引发了关于AI时代匿名性价值的思考。
+    - **原文链接**：[https://www.theargumentmag.com/p/i-can-never-talk-to-an-ai-anonymously](https://www.theargumentmag.com/p/i-can-never-talk-to-an-ai-anonymously)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47951295](https://news.ycombinator.com/item?id=47951295)
 
 - **Cursor Camp**
-    - **说明**: 一个有趣的互动网站，模拟了使用 AI 编程工具 Cursor 的“编程营”体验。它以一种轻松的方式展示了 AI 辅助编程可能带来的混乱和乐趣，也侧面反映了 AI 编程工具的流行。
-    - **文章**: https://neal.fun/cursor-camp/
-    - **讨论**: https://news.ycombinator.com/item?id=47949939
+    - **简要说明**：一个有趣的互动网站，模拟了“光标营地”的概念，可能涉及AI辅助编程或编辑器交互的新玩法。因其高互动性和趣味性引发了大量点击和讨论。
+    - **原文链接**：[https://neal.fun/cursor-camp/](https://neal.fun/cursor-camp/)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47949939](https://news.ycombinator.com/item?id=47949939)
 
-- **Copy Fail: 732 Bytes to Root on Every Major Linux Distributions**
-    - **说明**: 一篇安全技术文章，揭示了一个存在于几乎所有主流 Linux 发行版中的严重本地提权漏洞，攻击者只需 732 字节的数据即可获得 root 权限。值得所有系统管理员关注。
-    - **文章**: https://xint.io/blog/copy-fail-linux-distributions
-    - **讨论**: https://lobste.rs/s/wsmc8s/copy_fail_732_bytes_root_on_every_major
+#### 3. 开发者工具、编程语言与软件工程
 
-- **FastCGI: 30 years old and still the better protocol for reverse proxies**
-    - **说明**: 一篇技术“怀旧”与“辩护”文章。作者论证了诞生 30 年的 FastCGI 协议在作为反向代理后端协议时，比现代的 HTTP/反向代理方案（如 uWSGI、Gunicorn 等）更优。
-    - **文章**: https://www.agwa.name/blog/post/fastcgi_is_the_better_protocol_for_reverse_proxies
-    - **讨论**: https://news.ycombinator.com/item?id=47950510
+这一组涵盖了编辑器、编译器、算法和软件架构的最新动态。
 
-#### 3. AI 与开发者工具
+- **Zed 1.0**
+    - **简要说明**：由Atom和Tree-sitter原作者打造的高性能代码编辑器Zed正式发布1.0版本。它以其极致的速度和协作功能著称，是当前编辑器领域最受瞩目的新星之一，对VSCode构成了有力挑战。
+    - **原文链接**：[https://zed.dev/blog/zed-1-0](https://zed.dev/blog/zed-1-0)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47949027](https://news.ycombinator.com/item?id=47949027)
 
-- **HERMES.md in commit messages causes requests to route to extra usage billing**
-    - **说明**: 一个有趣的 bug 或“特性”。当提交信息中包含 `HERMES.md` 时，Claude Code 的计费系统会出现异常，导致额外的使用计费。这揭示了 AI 工具与现有基础设施（如 Git）交互时可能出现的意想不到的问题。
-    - **文章**: https://github.com/anthropics/claude-code/issues/53262
-    - **讨论**: https://news.ycombinator.com/item?id=47952722
+- **GCC 16 has been released**
+    - **简要说明**：GNU编译器套件GCC发布了第16个主要版本。对于C/C++开发者来说，这是重要的年度更新，包含了新语言特性、优化和安全修复。
+    - **原文链接**：[https://gcc.gnu.org/gcc-16/changes.html](https://gcc.gnu.org/gcc-16/changes.html)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47961004](https://news.ycombinator.com/item?id=47961004)
+    - **相关讨论**：[https://lobste.rs/s/zbcg79/gcc_16_release_series_changes_new](https://lobste.rs/s/zbcg79/gcc_16_release_series_changes_new)
 
-- **Talkie: a 13B vintage language model from 1930**
-    - **说明**: 一个充满创意和讽刺意味的项目。它用 1930 年代的“技术”（如电话交换网络）的概念来类比现代大语言模型的工作原理，以一种“复古”的方式解释 AI。
-    - **文章**: https://talkie-lm.com/introducing-talkie
-    - **讨论**: https://news.ycombinator.com/item?id=47927903
+- **You can beat the binary search**
+    - **简要说明**：一篇关于算法优化的文章，探讨了在现代硬件（如分支预测、SIMD）下，如何通过特定技巧在某些场景下超越经典的二分查找。对性能敏感的开发者很有启发。
+    - **原文链接**：[https://lemire.me/blog/2026/04/27/you-can-beat-the-binary-search/](https://lemire.me/blog/2026/04/27/you-can-beat-the-binary-search/)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47924912](https://news.ycombinator.com/item?id=47924912)
+    - **相关讨论**：[https://lobste.rs/s/lvr02w/you_can_beat_binary_search](https://lobste.rs/s/lvr02w/you_can_beat_binary_search)
 
-- **Show HN: Drive any macOS app in the background without stealing the cursor**
-    - **说明**: 一个实用工具发布。它允许用户在不干扰当前操作的情况下，让 AI 代理或其他自动化脚本在后台控制 macOS 应用。解决了 GUI 自动化中一个常见的痛点。
-    - **文章**: https://github.com/trycua/cua
-    - **讨论**: https://news.ycombinator.com/item?id=47936312
+- **I built a Game Boy emulator in F#**
+    - **简要说明**：一篇技术博客，详细记录了用F#语言编写Game Boy模拟器的过程。对于函数式编程爱好者、游戏开发者以及对底层模拟感兴趣的人来说，这是一份极佳的学习和实践资料。
+    - **原文链接**：[https://nickkossolapov.github.io/fame-boy/building-a-game-boy-emulator-in-fsharp/](https://nickkossolapov.github.io/fame-boy/building-a-game-boy-emulator-in-fsharp/)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47965503](https://news.ycombinator.com/item?id=47965503)
 
-#### 4. 硬件、基础设施与社会影响
+- **Durable queues, streams, pub/sub, and a cron scheduler – inside your SQLite file**
+    - **简要说明**：介绍了一个名为`honker.dev`的项目，它允许你在SQLite文件中实现消息队列、流、发布/订阅和定时调度功能。这为边缘计算和轻量级应用提供了有趣的数据基础设施方案。
+    - **原文链接**：[https://honker.dev/](https://honker.dev/)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47963316](https://news.ycombinator.com/item?id=47963316)
 
-- **ASML became the chokepoint for cutting-edge chips**
-    - **说明**: 一篇深入分析 ASML（荷兰光刻机巨头）如何成为全球先进芯片制造“咽喉”的深度文章。对于理解当前的芯片地缘政治和半导体产业格局至关重要。
-    - **文章**: https://worksinprogress.co/issue/the-worlds-most-complex-machine/
-    - **讨论**: https://news.ycombinator.com/item?id=47901064
+- **A text editor as a user interface**
+    - **简要说明**：探讨了将文本编辑器（如Emacs、Vim）作为通用用户界面的理念和哲学。对于喜欢“一切皆文本”和高度定制化工作流的用户来说，这是一篇引人深思的文章。
+    - **原文链接**：[https://ratfactor.com/cards/text-editor-as-ui](https://ratfactor.com/cards/text-editor-as-ui)
+    - **讨论链接**：[https://lobste.rs/s/b9vrje/text_editor_as_user_interface](https://lobste.rs/s/b9vrje/text_editor_as_user_interface)
 
-- **Intel Arc Pro B70 Review**
-    - **说明**: 对 Intel 工作站级显卡 Arc Pro B70 的评测。对于内容创作者和需要专业图形性能的开发者来说，这是了解 Intel 在 GPU 市场竞争力的重要参考。
-    - **文章**: https://www.pugetsystems.com/labs/articles/intel-arc-pro-b70-review/
-    - **讨论**: https://news.ycombinator.com/item?id=47885644
+- **Reverse Engineering SimTower**
+    - **简要说明**：作者分享了逆向工程经典游戏《模拟大厦》的过程，并基于此构建了一个精确复刻的网页版。对于游戏开发和逆向工程爱好者来说，这是一个引人入胜的技术故事。
+    - **原文链接**：[https://phulin.me/blog/simtower](https://phulin.me/blog/simtower)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47937814](https://news.ycombinator.com/item?id=47937814)
 
-- **Online age verification is the hill to die on**
-    - **说明**: 一篇关于网络年龄验证政策的观点文章。作者认为这是当前数字权利斗争中一个值得“死守”的关键阵地，因为其实施方式将深刻影响网络隐私和自由。
-    - **文章**: https://x.com/GlennMeder/status/2049088498163216560
-    - **讨论**: https://news.ycombinator.com/item?id=47950091
+- **A Primer on Bézier Curves – So What Makes a Bézier Curve?**
+    - **简要说明**：一个关于贝塞尔曲线的经典交互式教程。对于任何从事图形学、UI设计或游戏开发的程序员来说，这都是一个必备的基础知识。
+    - **原文链接**：[https://pomax.github.io/bezierinfo/](https://pomax.github.io/bezierinfo/)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47933934](https://news.ycombinator.com/item?id=47933934)
 
-- **Maryland becomes first state to ban surveillance pricing in grocery stores**
-    - **说明**: 美国马里兰州成为首个禁止杂货店使用“监控定价”（即基于用户数据动态定价）的州。这是一个重要的消费者隐私和数据保护立法进展。
-    - **文章**: https://www.theguardian.com/technology/2026/apr/29/maryland-grocery-stores-ban-surveillance-pricing
-    - **讨论**: https://news.ycombinator.com/item?id=47951007
+- **Vercel’s pricing page**
+    - **简要说明**：一个讽刺性的网站，可能以幽默的方式吐槽了Vercel复杂的定价策略。反映了开发者社区对云服务定价透明度的普遍关注。
+    - **原文链接**：[https://theupsellgame.com/](https://theupsellgame.com/)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47967508](https://news.ycombinator.com/item?id=47967508)
 
-- **Kyoto cherry blossoms now bloom earlier than at any point in 1,200 years**
-    - **说明**: 一项显示气候变化的显著数据。京都的樱花在 2026 年达到了 1200 年来最早的开花期，这并非直接的技术新闻，但作为气候数据可视化与分析的结果，具有很强的冲击力。
-    - **文章**: https://jivx.com/kyoto-bloom
-    - **讨论**: https://news.ycombinator.com/item?id=47953275
+#### 4. 基础设施、硬件与底层技术
 
-- **UAE to leave OPEC**
-    - **说明**: 阿联酋宣布退出 OPEC。这是一则重大的地缘政治和能源市场新闻，虽然不直接涉及软件，但对全球能源技术（如石油、新能源）的格局有深远影响。
-    - **文章**: https://www.ft.com/content/8c354f2d-3e66-47f1-aad4-9b4aa30e386d
-    - **讨论**: https://news.ycombinator.com/item?id=47933983
+涵盖了从网络、散热到能源政策等更广泛的技术话题。
 
-#### 5. 其他有趣的项目
+- **10Gb/s Ethernet: what I did to get it working in my home**
+    - **简要说明**：作者分享了在家中部署10GbE网络的实战经验，包括硬件选择、布线、配置和故障排除。对于追求高速家庭网络的发烧友和技术人员很有参考价值。
+    - **原文链接**：[https://www.gilesthomas.com/2026/04/10g-ethernet-what-i-did](https://www.gilesthomas.com/2026/04/10g-ethernet-what-i-did)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47947944](https://news.ycombinator.com/item?id=47947944)
 
-- **Show HN: Rip.so – a graveyard for dead internet things**
-    - **说明**: 一个为已故的互联网项目、网站和服务设立的“数字墓地”。它以一种怀旧和纪念的方式记录了数字时代的“消亡”，引发了关于互联网记忆的讨论。
-    - **文章**: https://rip.so
-    - **讨论**: https://news.ycombinator.com/item?id=47945955
+- **Noctua releases official 3D CAD models for its cooling fans**
+    - **简要说明**：知名散热厂商猫头鹰（Noctua）发布了其风扇的官方3D CAD模型。这对于DIY玩家、3D打印爱好者和硬件设计师来说是一个极好的资源，方便了定制化设计和改装。
+    - **原文链接**：[https://www.noctua.at/en/3d-cad-models](https://www.noctua.at/en/3d-cad-models)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47927627](https://news.ycombinator.com/item?id=47927627)
 
-- **OpenTrafficMap**
-    - **说明**: 一个开源的交通地图项目，旨在提供实时路况信息。与 Google Maps 等商业服务不同，它强调开放数据和社区贡献。
-    - **文章**: https://opentrafficmap.org/
-    - **讨论**: https://news.ycombinator.com/item?id=47953541
+- **How an oil refinery works**
+    - **简要说明**：一篇深入浅出地介绍炼油厂工作原理的科普文章。虽然看似与编程无关，但它展示了复杂工业系统的工程之美，对任何对系统和流程感兴趣的工程师都有吸引力。
+    - **原文链接**：[https://www.construction-physics.com/p/how-an-oil-refinery-works](https://www.construction-physics.com/p/how-an-oil-refinery-works)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47962548](https://news.ycombinator.com/item?id=47962548)
 
-- **An open-source stethoscope that costs between $2.5 and $5 to produce**
-    - **说明**: 一个极具社会价值的开源硬件项目。它提供了一种极低成本的听诊器设计方案，有望在医疗资源匮乏地区发挥重要作用。
-    - **文章**: https://github.com/GliaX/Stethoscope
-    - **讨论**: https://news.ycombinator.com/item?id=47949204
+- **Belgium stops decommissioning nuclear power plants**
+    - **简要说明**：比利时政府决定停止退役核电站。这一能源政策的重大转向，对全球科技行业的能源供应（特别是数据中心电力）和碳中和目标具有深远影响。
+    - **原文链接**：[https://dpa-international.com/general-news/urn:newsml:dpa.com:20090101:260430-930-14717/](https://dpa-international.com/general-news/urn:newsml:dpa.com:20090101:260430-930-14717/)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47961319](https://news.ycombinator.com/item?id=47961319)
 
-- **Laws of UX**
-    - **说明**: 一个总结用户体验设计核心原则（如菲茨定律、希克定律等）的网站。对于任何从事软件设计和开发的人来说，都是一个很好的参考资源。
-    - **文章**: https://lawsofux.com/
-    - **讨论**: https://news.ycombinator.com/item?id=47951137
+#### 5. 隐私、数据与政策
 
----
+- **Can I disable all data collection from my vehicle?**
+    - **简要说明**：Rivian官方支持页面回答了用户是否可以完全禁用车辆数据收集的问题。这直接关系到智能汽车时代用户的隐私权和数据所有权，引发了广泛讨论。
+    - **原文链接**：[https://rivian.com/support/article/can-i-disable-all-data-collection-from-my-vehicle](https://rivian.com/support/article/can-i-disable-all-data-collection-from-my-vehicle)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47967786](https://news.ycombinator.com/item?id=47967786)
 
-### 今日最值得阅读的文章推荐
+- **How Mark Klein told the EFF about Room 641A [book excerpt]**
+    - **简要说明**：一篇关于斯诺登事件前的重要吹哨人——AT&T工程师Mark Klein的书籍节选。他揭露了NSA的秘密监控项目。在当今数据隐私问题日益突出的背景下，重温这段历史具有特殊意义。
+    - **原文链接**：[https://thereader.mitpress.mit.edu/the-whistleblower-who-uncovered-the-nsas-big-brother-machine/](https://thereader.mitpress.mit.edu/the-whistleblower-who-uncovered-the-nsas-big-brother-machine/)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47965060](https://news.ycombinator.com/item?id=47965060)
 
-1.  **Ghostty is leaving GitHub**
-    - **理由**: 这是今日技术社区讨论的绝对核心。它不仅仅是一个项目迁移，而是对当前开源生态对单一商业平台（GitHub）依赖性的深刻拷问。理解这篇文章及其引发的讨论，对于理解未来几年开源协作模式的演变至关重要。
-    - **链接**: https://mitchellh.com/writing/ghostty-leaving-github
-    - **讨论**: https://news.ycombinator.com/item?id=47939579
+- **U.S. Senators Vote to Ban Themselves from Trading on Prediction Markets**
+    - **简要说明**：美国参议员投票禁止自己参与预测市场交易。这反映了政客利用内幕信息进行金融投机的伦理争议，以及监管机构对新兴金融市场的态度。
+    - **原文链接**：[https://www.wsj.com/politics/policy/senators-vote-to-ban-themselves-from-trading-on-prediction-markets-ae4535dd](https://www.wsj.com/politics/policy/senators-vote-to-ban-themselves-from-trading-on-prediction-markets-ae4535dd)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47967289](https://news.ycombinator.com/item?id=47967289)
 
-2.  **Zed 1.0**
-    - **理由**: 如果你是一名开发者，关注编辑器的发展是必要的。Zed 代表了编辑器性能的极致追求，其 1.0 版本的发布是一个重要的行业事件。阅读官方公告可以了解其设计哲学和核心功能。
-    - **链接**: https://zed.dev/blog/zed-1-0
-    - **讨论**: https://news.ycombinator.com/item?id=47949027
+#### 6. 其他有趣内容
 
-3.  **Bugs Rust won't catch**
-    - **理由**: 对于正在学习或使用 Rust 的开发者来说，这是一篇必读文章。它打破了“Rust 能解决所有 bug”的迷思，帮助你建立更全面的软件质量观，理解除了内存安全之外的其他重要问题。
-    - **链接**: https://corrode.dev/blog/bugs-rust-wont-catch/
-    - **讨论**: https://news.ycombinator.com/item?id=47943499
+- **I aggregated 28 US Government auction sites into one search**
+    - **简要说明**：一个将28个美国政府拍卖网站整合到一个搜索界面的工具。对于喜欢“捡漏”或寻找政府剩余物资的人来说非常实用，体现了技术解决信息碎片化问题的力量。
+    - **原文链接**：[https://bidprowl.com](https://bidprowl.com)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=47961378](https://news.ycombinator.com/item?id=47961378)
 
-4.  **ASML became the chokepoint for cutting-edge chips**
-    - **理由**: 这篇深度报道是理解全球科技地缘政治和半导体供应链的关键。它解释了为什么一家荷兰公司会如此关键，以及它对未来 AI、云计算和国防科技发展的影响。比大多数新闻快讯更有深度。
-    - **链接**: https://worksinprogress.co/issue/the-worlds-most-complex-machine/
-    - **讨论**: https://news.ycombinator.com/item?id=47901064
-
-5.  **Copy Fail: 732 Bytes to Root on Every Major Linux Distributions**
-    - **理由**: 如果你管理任何 Linux 服务器，这篇文章是重要的安全警报。它详细披露了一个影响广泛且易于利用的提权漏洞，了解其原理对于系统加固和风险防范非常有价值。
-    - **链接**: https://xint.io/blog/copy-fail-linux-distributions
-    - **讨论**: https://lobste.rs/s/wsmc8s/copy_fail_732_bytes_root_on_every_major0:{"buildId":"H6ZpcLf-TTeS7nRbfxOdb","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-04-30","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":16},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-04-30"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-c:T10e2,Hi HN, Francesco from Cua here.
-I hacked this project together last weekend, inspired by the Codex Computer-Use release and lessons learned from deploying GUI-operating agents for our customers.<p>The main problem: when a UI automation process controls a desktop app today, it usually takes over the human’s session. Your cursor moves, keyboard focus gets stolen, windows jump to the front, and you have to stop working until the agent is done. That is why we have historically avoided encouraging users to run these processes directly on their host machine, instead relying on VMs or GUI containers for concurrency and background execution.<p>But computer-use - the tools we give agents to operate computers like humans - does not scale cleanly that way. As models get smarter, agents need to share hosts safely, run in the background, and avoid collisions with the human or other agents using the same machine.<p>We realized macOS has no first-class API for &quot;drive this app without touching the cursor&quot;. CGEventPost routes through the hardware input stream, so it moves your cursor. CGEvent.postToPid avoids the cursor warp, but Chromium treats those events as untrusted and silently drops clicks at the renderer boundary. Activating the target app first raises the window and pulls focus, defeating the point of background execution.<p>Cua Driver is our attempt at a real fix: a background computer-use driver for macOS that lets an agent click, type, scroll, and read native apps while your cursor, frontmost app, and Space stay where they are. The default interface is a CLI, so it is easy to script or call from any coding agent shell.<p>Try it on macOS 14+:<p>&#x2F;bin&#x2F;bash -c &quot;$(curl -fsSL <a href="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;trycua&#x2F;cua&#x2F;main&#x2F;libs&#x2F;cua-driver&#x2F;scripts&#x2F;install.sh" rel="nofollow">https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;trycua&#x2F;cua&#x2F;main&#x2F;libs&#x2F;cua-d...</a>)&quot;<p>The first internal use case was delegated demo recording. We ask Claude Code to drive an app while &#x27;cua-driver recording start&#x27; captures the trajectory, screenshots, actions, and click markers. The result is an agent-generated product demo, Screen Studio inspired.<p>Other things we have used it for:<p>- Replacing Vercel’s agent-browser and other browser-use CLIs. With Claude Code and Cua Driver, you do not need Chrome DevTools Protocol at all.<p>- A dev-loop QA agent that reproduces a visual bug, edits code, rebuilds, and verifies the UI while my editor stays frontmost.<p>- Personal-assistant flows that use iMessage from Claude Code, Hermes, or other general-purpose agent CLIs.<p>- Pulling visual context from Chrome, Figma, Preview, or YouTube windows I am not looking at, without relying on their APIs.<p>What made this harder than expected:<p>- CGEventPost warps the cursor because it goes through the HID stream.<p>- CGEvent.postToPid does not warp the cursor, but Chromium drops it at the renderer IPC boundary.<p>- Activating the target first raises the window and can drag you across Spaces.<p>- Electron apps stop keeping useful AX trees alive when windows are occluded without a private remote-aware SPI.<p>The unlock was SkyLight. SLEventPostToPid is a sibling of the public per-PID call, but it travels through a WindowServer channel Chromium accepts as trusted. Pair it with yabai’s focus-without-raise pattern, plus an off-screen primer click at (-1, -1), and the click lands without the window ever raising.<p>One thing we learned: the right addressing mode depends on the app. Native macOS apps usually have rich AX trees, Chromium-family apps often need a hybrid of AX and screenshots, and apps like Blender or CAD tools may expose almost no useful AX surface. The mistake is defaulting to pixels everywhere - or defaulting to AX everywhere.<p>Long technical writeup: <a href="https:&#x2F;&#x2F;github.com&#x2F;trycua&#x2F;cua&#x2F;blob&#x2F;main&#x2F;blog&#x2F;inside-macos-window-internals.md" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;trycua&#x2F;cua&#x2F;blob&#x2F;main&#x2F;blog&#x2F;inside-macos-wi...</a><p>I would like feedback from people building Mac automation, agent harnesses, or accessibility tooling. If it breaks on an macOS app you care about, that is useful data for us.6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47939579","title":"Ghostty is leaving GitHub","url":"https://mitchellh.com/writing/ghostty-leaving-github","source":"Hacker News","score":3359,"comments_count":1001,"comments_url":"https://news.ycombinator.com/item?id=47939579","published_at":"2026-04-28T19:44:52","author":"WadeGrimridge","text":null,"summary":"Ghostty宣布离开GitHub，转向自托管或替代平台，引发对开源项目依赖单一平台的反思。"},{"id":"hn-47949027","title":"Zed 1.0","url":"https://zed.dev/blog/zed-1-0","source":"Hacker News","score":1552,"comments_count":501,"comments_url":"https://news.ycombinator.com/item?id=47949027","published_at":"2026-04-29T14:34:19","author":"salkahfi","text":null,"summary":"Zed编辑器发布1.0版本，标志着其从测试阶段进入稳定版，值得关注其性能与协作特性。"},{"id":"hn-47952722","title":"HERMES.md in commit messages causes requests to route to extra usage billing","url":"https://github.com/anthropics/claude-code/issues/53262","source":"Hacker News","score":991,"comments_count":424,"comments_url":"https://news.ycombinator.com/item?id=47952722","published_at":"2026-04-29T18:54:31","author":"homebrewer","text":null,"summary":"GitHub提交信息中包含'HERMES.md'会导致路由到额外计费请求，暴露了GitHub的潜在安全或配置问题。"},{"id":"hn-47950091","title":"Online age verification is the hill to die on","url":"https://x.com/GlennMeder/status/2049088498163216560","source":"Hacker News","score":778,"comments_count":484,"comments_url":"https://news.ycombinator.com/item?id=47950091","published_at":"2026-04-29T15:49:57","author":"Cider9986","text":"<a href=\"https:&#x2F;&#x2F;xcancel.com&#x2F;GlennMeder&#x2F;status&#x2F;2049088498163216560\" rel=\"nofollow\">https:&#x2F;&#x2F;xcancel.com&#x2F;GlennMeder&#x2F;status&#x2F;2049088498163216560</a>","summary":"文章强调在线年龄验证是必须坚守的底线，涉及隐私与监管的争议性话题。"},{"id":"hn-47927903","title":"Talkie: a 13B vintage language model from 1930","url":"https://talkie-lm.com/introducing-talkie","source":"Hacker News","score":746,"comments_count":315,"comments_url":"https://news.ycombinator.com/item?id=47927903","published_at":"2026-04-27T21:55:48","author":"jekude","text":null,"summary":"Talkie是一个基于1930年代数据训练的13B参数语言模型，探索复古语言风格与AI的交叉点。"},{"id":"hn-47949939","title":"Cursor Camp","url":"https://neal.fun/cursor-camp/","source":"Hacker News","score":660,"comments_count":109,"comments_url":"https://news.ycombinator.com/item?id=47949939","published_at":"2026-04-29T15:39:43","author":"bpierre","text":null,"summary":"Cursor Camp是一个互动游戏或教育工具，通过趣味方式教授光标控制或编程概念。"},{"id":"hn-47940921","title":"Before GitHub","url":"https://lucumr.pocoo.org/2026/4/28/before-github/","source":"Hacker News","score":649,"comments_count":217,"comments_url":"https://news.ycombinator.com/item?id=47940921","published_at":"2026-04-28T21:17:40","author":"mlex","text":null,"summary":"文章回顾了GitHub出现之前的代码托管历史，探讨开源协作的演变与当前依赖风险。"},{"id":"hn-47943499","title":"Bugs Rust won't catch","url":"https://corrode.dev/blog/bugs-rust-wont-catch/","source":"Hacker News","score":628,"comments_count":341,"comments_url":"https://news.ycombinator.com/item?id=47943499","published_at":"2026-04-29T02:19:11","author":"lwhsiao","text":null,"summary":"分析Rust语言无法捕获的常见编程错误，强调即使内存安全语言也需警惕逻辑漏洞。"},{"id":"hn-47945918","title":"Soft launch of open-source code platform for government","url":"https://www.nldigitalgovernment.nl/news/soft-launch-for-government-open-source-code-platform/","source":"Hacker News","score":526,"comments_count":119,"comments_url":"https://news.ycombinator.com/item?id=47945918","published_at":"2026-04-29T09:14:37","author":"e12e","text":null,"summary":"荷兰政府软启动开源代码平台，推动公共部门透明与协作，值得关注政府技术开放趋势。"},{"id":"hn-47948603","title":"We need a federation of forges","url":"https://blog.tangled.org/federation/","source":"Hacker News","score":524,"comments_count":329,"comments_url":"https://news.ycombinator.com/item?id=47948603","published_at":"2026-04-29T14:00:59","author":"icy","text":null,"summary":"呼吁建立分布式代码托管联盟，减少对单一平台的依赖，提升开源生态韧性。"},{"id":"hn-47933983","title":"UAE to leave OPEC","url":"https://www.ft.com/content/8c354f2d-3e66-47f1-aad4-9b4aa30e386d","source":"Hacker News","score":481,"comments_count":656,"comments_url":"https://news.ycombinator.com/item?id=47933983","published_at":"2026-04-28T13:02:01","author":"bazzmt","text":"<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;d956y\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;d956y</a><p><a href=\"https:&#x2F;&#x2F;www.reuters.com&#x2F;markets&#x2F;commodities&#x2F;uae-says-it-quits-opec-opec-statement-2026-04-28&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.reuters.com&#x2F;markets&#x2F;commodities&#x2F;uae-says-it-quit...</a>","summary":"阿联酋宣布退出OPEC，这一决定可能重塑全球石油市场格局，值得关注其对油价和地缘政治的影响。"},{"id":"hn-47901064","title":"ASML became the chokepoint for cutting-edge chips","url":"https://worksinprogress.co/issue/the-worlds-most-complex-machine/","source":"Hacker News","score":401,"comments_count":237,"comments_url":"https://news.ycombinator.com/item?id=47901064","published_at":"2026-04-25T12:47:32","author":"mellosouls","text":null,"summary":"ASML成为尖端芯片制造的关键瓶颈，文章深入探讨其光刻机技术如何主导半导体行业，对科技供应链有重要启示。"},{"id":"hn-47932028","title":"GitHub Copilot code review will start consuming GitHub Actions minutes","url":"https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026/","source":"Hacker News","score":302,"comments_count":200,"comments_url":"https://news.ycombinator.com/item?id=47932028","published_at":"2026-04-28T09:01:05","author":"whtsky","text":null,"summary":"GitHub Copilot代码审查将消耗GitHub Actions分钟数，这一变化影响开发者工作流和成本，值得开发者注意。"},{"id":"hn-47951007","title":"Maryland becomes first state to ban surveillance pricing in grocery stores","url":"https://www.theguardian.com/technology/2026/apr/29/maryland-grocery-stores-ban-surveillance-pricing","source":"Hacker News","score":267,"comments_count":182,"comments_url":"https://news.ycombinator.com/item?id=47951007","published_at":"2026-04-29T16:50:01","author":"01-_-","text":null,"summary":"马里兰州成为美国首个禁止超市使用监控定价的州，此举保护消费者隐私，可能引发其他州效仿。"},{"id":"hn-47906651","title":"I have officially retired from Emacs","url":"https://nullprogram.com/blog/2026/04/26/","source":"Hacker News","score":262,"comments_count":178,"comments_url":"https://news.ycombinator.com/item?id=47906651","published_at":"2026-04-26T02:12:13","author":"Fudgel","text":null,"summary":"作者正式告别Emacs编辑器，分享其长期使用体验和迁移原因，对技术工具选择有反思价值。"},{"id":"hn-47950510","title":"FastCGI: 30 years old and still the better protocol for reverse proxies","url":"https://www.agwa.name/blog/post/fastcgi_is_the_better_protocol_for_reverse_proxies","source":"Hacker News","score":256,"comments_count":66,"comments_url":"https://news.ycombinator.com/item?id=47950510","published_at":"2026-04-29T16:16:39","author":"agwa","text":null,"summary":"FastCGI协议已30年，仍被认为是反向代理的更好选择，文章对比现代协议，对系统架构设计有参考意义。"},{"id":"hn-47953275","title":"Kyoto cherry blossoms now bloom earlier than at any point in 1,200 years","url":"https://jivx.com/kyoto-bloom","source":"Hacker News","score":256,"comments_count":72,"comments_url":"https://news.ycombinator.com/item?id=47953275","published_at":"2026-04-29T19:32:36","author":"momentmaker","text":null,"summary":"京都樱花花期创1200年来最早记录，反映气候变化加剧，值得关注其对生态和文化的长期影响。"},{"id":"hn-47933257","title":"GitHub Actions is the weakest link","url":"https://nesbitt.io/2026/04/28/github-actions-is-the-weakest-link.html","source":"Hacker News","score":246,"comments_count":86,"comments_url":"https://news.ycombinator.com/item?id=47933257","published_at":"2026-04-28T11:58:14","author":"dochtman","text":null,"summary":"GitHub Actions被指为安全链中最薄弱环节，文章揭示潜在风险，对CI/CD安全实践有警示作用。"},{"id":"hn-47949204","title":"An open-source stethoscope that costs between $2.5 and $5 to produce","url":"https://github.com/GliaX/Stethoscope","source":"Hacker News","score":205,"comments_count":79,"comments_url":"https://news.ycombinator.com/item?id=47949204","published_at":"2026-04-29T14:47:31","author":"0x54MUR41","text":null,"summary":"开源听诊器成本仅2.5-5美元，旨在降低医疗设备门槛，对全球健康公平有积极意义。"},{"id":"hn-47885644","title":"Intel Arc Pro B70 Review","url":"https://www.pugetsystems.com/labs/articles/intel-arc-pro-b70-review/","source":"Hacker News","score":193,"comments_count":117,"comments_url":"https://news.ycombinator.com/item?id=47885644","published_at":"2026-04-24T04:44:49","author":"zdw","text":null,"summary":"Intel Arc Pro B70专业显卡评测，分析其性能与性价比，对专业图形工作者有选购参考价值。"},{"id":"hn-47951137","title":"Laws of UX","url":"https://lawsofux.com/","source":"Hacker News","score":192,"comments_count":30,"comments_url":"https://news.ycombinator.com/item?id=47951137","published_at":"2026-04-29T16:58:13","author":"bobbiechen","text":null,"summary":"Laws of UX 网站总结了用户体验设计中的核心原则，如希克定律和菲茨定律，是设计师和开发者快速提升产品可用性的实用参考。"},{"id":"hn-47936312","title":"Show HN: Drive any macOS app in the background without stealing the cursor","url":"https://github.com/trycua/cua","source":"Hacker News","score":176,"comments_count":40,"comments_url":"https://news.ycombinator.com/item?id=47936312","published_at":"2026-04-28T16:03:34","author":"frabonacci","text":"$c","summary":"该项目展示了一种在macOS上后台运行应用而不占用鼠标光标的技术，解决了UI自动化中的关键痛点，值得关注。"},{"id":"hn-47945707","title":"Why I still reach for Lisp and Scheme instead of Haskell","url":"https://jointhefreeworld.org/blog/articles/lisps/why-i-still-reach-for-scheme-instead-of-haskell/index.html","source":"Hacker News","score":169,"comments_count":59,"comments_url":"https://news.ycombinator.com/item?id=47945707","published_at":"2026-04-29T08:43:17","author":"jjba23","text":null,"summary":"文章解释了作者为何偏好Lisp和Scheme而非Haskell，强调Lisp的简洁性和灵活性，对编程语言选择有启发意义。"},{"id":"hn-47945955","title":"Show HN: Rip.so – a graveyard for dead internet things","url":"https://rip.so","source":"Hacker News","score":166,"comments_count":110,"comments_url":"https://news.ycombinator.com/item?id=47945955","published_at":"2026-04-29T09:21:32","author":"bozdemir","text":null,"summary":"Rip.so 是一个专门收集已关闭或失效互联网项目的“墓地”，反映了数字遗产的脆弱性，值得关注。"},{"id":"hn-47953541","title":"OpenTrafficMap","url":"https://opentrafficmap.org/","source":"Hacker News","score":157,"comments_count":35,"comments_url":"https://news.ycombinator.com/item?id=47953541","published_at":"2026-04-29T19:49:30","author":"moooo99","text":null,"summary":"OpenTrafficMap 提供实时交通数据可视化，基于开放数据源，对交通分析和城市规划有价值。"}],"locale":"zh"}],"$Ld"]}]]}]
+-0:{"buildId":"e_bKV9sXXgV2g5fkJlscF","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-05-01","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":11},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-05-01"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+c:T534,This is the story of building <a href="https:&#x2F;&#x2F;towers.world" rel="nofollow">https:&#x2F;&#x2F;towers.world</a>, a ~perfect, tick-for-tick reproduction of 1993 game SimTower.<p>I spent weeks reverse-engineering the original EXE and writing up a detailed spec of how the simulation actually works under the hood — population flow, elevator AI, the whole star-rating system. The specs are all on GitHub if you want to read them: <a href="https:&#x2F;&#x2F;github.com&#x2F;phulin&#x2F;tower-together&#x2F;tree&#x2F;main&#x2F;specs" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;phulin&#x2F;tower-together&#x2F;tree&#x2F;main&#x2F;specs</a><p>It&#x27;s also collaborative. Multiple players can connect to the same tower, the simulation keeps running as long as anyone&#x27;s connected, and build actions sync across clients in real time.<p>Because I rebuilt the UI, I could add features like shift-click to build grids of rooms - instead of painstakingly clicking to build rows of offices and hotels, shift-click allows a 10-floor grid to be built all at once.<p>The game runs on Cloudflare Durable Objects, one of my favorite web primitives.<p>Everything is open source: <a href="https:&#x2F;&#x2F;github.com&#x2F;phulin&#x2F;tower-together" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;phulin&#x2F;tower-together</a>6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47939579","title":"Ghostty is leaving GitHub","url":"https://mitchellh.com/writing/ghostty-leaving-github","source":"Hacker News","score":3456,"comments_count":1032,"comments_url":"https://news.ycombinator.com/item?id=47939579","published_at":"2026-04-28T19:44:52","author":"WadeGrimridge","text":null,"summary":"Ghostty宣布离开GitHub，这一决定可能影响开源社区协作模式，值得关注其对开发者生态的潜在影响。"},{"id":"hn-47949027","title":"Zed 1.0","url":"https://zed.dev/blog/zed-1-0","source":"Hacker News","score":2062,"comments_count":668,"comments_url":"https://news.ycombinator.com/item?id=47949027","published_at":"2026-04-29T14:34:19","author":"salkahfi","text":null,"summary":"Zed编辑器发布1.0版本，标志着其从测试阶段迈向稳定，为开发者提供高性能代码编辑新选择。"},{"id":"hn-47949939","title":"Cursor Camp","url":"https://neal.fun/cursor-camp/","source":"Hacker News","score":1165,"comments_count":185,"comments_url":"https://news.ycombinator.com/item?id=47949939","published_at":"2026-04-29T15:39:43","author":"bpierre","text":null,"summary":"Cursor Camp是一个趣味性项目，可能展示AI或交互设计的新玩法，吸引技术爱好者关注。"},{"id":"hn-47957688","title":"Where the goblins came from","url":"https://openai.com/index/where-the-goblins-came-from/","source":"Hacker News","score":1016,"comments_count":630,"comments_url":"https://news.ycombinator.com/item?id=47957688","published_at":"2026-04-30T03:21:04","author":"ilreb","text":null,"summary":"OpenAI探讨哥布林文化的起源，结合AI视角分析神话传说，展现技术公司对人文领域的跨界探索。"},{"id":"hn-47961319","title":"Belgium stops decommissioning nuclear power plants","url":"https://dpa-international.com/general-news/urn:newsml:dpa.com:20090101:260430-930-14717/","source":"Hacker News","score":758,"comments_count":713,"comments_url":"https://news.ycombinator.com/item?id=47961319","published_at":"2026-04-30T12:17:14","author":"mpweiher","text":null,"summary":"比利时逆转核电站退役计划，反映能源政策调整，对全球核能利用和碳中和目标具有参考意义。"},{"id":"hn-47959463","title":"Mozilla's opposition to Chrome's Prompt API","url":"https://github.com/mozilla/standards-positions/issues/1213#issuecomment-4347988313","source":"Hacker News","score":597,"comments_count":218,"comments_url":"https://news.ycombinator.com/item?id=47959463","published_at":"2026-04-30T07:43:55","author":"jaffathecake","text":null,"summary":"Mozilla公开反对Chrome的Prompt API，凸显浏览器厂商在隐私和标准上的分歧，影响Web开发未来。"},{"id":"hn-47967786","title":"Can I disable all data collection from my vehicle?","url":"https://rivian.com/support/article/can-i-disable-all-data-collection-from-my-vehicle","source":"Hacker News","score":521,"comments_count":196,"comments_url":"https://news.ycombinator.com/item?id=47967786","published_at":"2026-04-30T20:27:22","author":"Cider9986","text":null,"summary":"Rivian回应车辆数据收集问题，涉及用户隐私权与智能汽车伦理，引发消费者对数据控制的讨论。"},{"id":"hn-47927627","title":"Noctua releases official 3D CAD models for its cooling fans","url":"https://www.noctua.at/en/3d-cad-models","source":"Hacker News","score":481,"comments_count":107,"comments_url":"https://news.ycombinator.com/item?id=47927627","published_at":"2026-04-27T21:35:07","author":"embedding-shape","text":null,"summary":"Noctua发布官方3D CAD模型，便利硬件工程师和DIY爱好者进行散热设计，提升产品兼容性。"},{"id":"hn-47965060","title":"How Mark Klein told the EFF about Room 641A [book excerpt]","url":"https://thereader.mitpress.mit.edu/the-whistleblower-who-uncovered-the-nsas-big-brother-machine/","source":"Hacker News","score":443,"comments_count":137,"comments_url":"https://news.ycombinator.com/item?id=47965060","published_at":"2026-04-30T16:41:00","author":"the-mitr","text":null,"summary":"揭秘Mark Klein揭露NSA监控室641A的经过，强调隐私保护与政府监控的冲突，具有历史警示意义。"},{"id":"hn-47965108","title":"For Linux kernel vulnerabilities, there is no heads-up to distributions","url":"https://www.openwall.com/lists/oss-security/2026/04/30/10","source":"Hacker News","score":381,"comments_count":308,"comments_url":"https://news.ycombinator.com/item?id=47965108","published_at":"2026-04-30T16:43:47","author":"ori_b","text":"Recent: <i>Copy Fail</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47952181\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47952181</a> - April 2026 (466 comments)","summary":"Linux内核漏洞披露流程缺乏对发行版的提前通知，可能增加系统安全风险，引发开源社区治理争议。"},{"id":"hn-47962548","title":"How an oil refinery works","url":"https://www.construction-physics.com/p/how-an-oil-refinery-works","source":"Hacker News","score":337,"comments_count":101,"comments_url":"https://news.ycombinator.com/item?id=47962548","published_at":"2026-04-30T13:54:20","author":"chmaynard","text":null,"summary":"本文详细介绍了炼油厂的工作原理，从原油蒸馏到裂化等关键过程，值得关注因为它揭示了现代工业基础设施的核心技术。"},{"id":"hn-47961004","title":"GCC 16 has been released","url":"https://gcc.gnu.org/gcc-16/changes.html","source":"Hacker News","score":288,"comments_count":51,"comments_url":"https://news.ycombinator.com/item?id=47961004","published_at":"2026-04-30T11:40:13","author":"HeliumHydride","text":null,"summary":"GCC 16发布，带来了多项新特性和改进，对于开发者而言是重要的编译器更新，值得关注以了解性能提升和新功能。"},{"id":"hn-47960507","title":"Granite 4.1: IBM's 8B Model Matching 32B MoE","url":"https://firethering.com/granite-4-1-ibm-open-source-model-family/","source":"Hacker News","score":280,"comments_count":174,"comments_url":"https://news.ycombinator.com/item?id=47960507","published_at":"2026-04-30T10:31:17","author":"steveharing1","text":null,"summary":"IBM的Granite 4.1模型以8B参数匹配32B MoE模型性能，展示了高效AI架构的突破，值得关注因为它挑战了模型规模与性能的平衡。"},{"id":"hn-47967289","title":"U.S. Senators Vote to Ban Themselves from Trading on Prediction Markets","url":"https://www.wsj.com/politics/policy/senators-vote-to-ban-themselves-from-trading-on-prediction-markets-ae4535dd","source":"Hacker News","score":280,"comments_count":96,"comments_url":"https://news.ycombinator.com/item?id=47967289","published_at":"2026-04-30T19:42:33","author":"kamaraju","text":null,"summary":"美国参议员投票禁止自己在预测市场交易，旨在防止利益冲突，值得关注因为它涉及政治伦理和金融监管的交叉点。"},{"id":"hn-47924912","title":"You can beat the binary search","url":"https://lemire.me/blog/2026/04/27/you-can-beat-the-binary-search/","source":"Hacker News","score":263,"comments_count":123,"comments_url":"https://news.ycombinator.com/item?id=47924912","published_at":"2026-04-27T17:52:12","author":"vok","text":null,"summary":"文章提出了一种超越二分查找的新算法，通过优化数据结构提高搜索效率，值得关注因为它可能改变基础算法实践。"},{"id":"hn-47961378","title":"I aggregated 28 US Government auction sites into one search","url":"https://bidprowl.com","source":"Hacker News","score":247,"comments_count":73,"comments_url":"https://news.ycombinator.com/item?id=47961378","published_at":"2026-04-30T12:24:53","author":"scarsam","text":null,"summary":"作者整合了28个美国政府拍卖网站到一个统一搜索平台，简化了资产查找过程，值得关注因为它提高了公共资源访问的便利性。"},{"id":"hn-47965503","title":"I built a Game Boy emulator in F#","url":"https://nickkossolapov.github.io/fame-boy/building-a-game-boy-emulator-in-fsharp/","source":"Hacker News","score":222,"comments_count":48,"comments_url":"https://news.ycombinator.com/item?id=47965503","published_at":"2026-04-30T17:14:21","author":"elvis70","text":null,"summary":"作者用F#构建了一个Game Boy模拟器，展示了函数式编程在底层系统中的应用，值得关注因为它结合了复古游戏和现代编程语言。"},{"id":"hn-47957714","title":"Biology is a Burrito: A text- and visual-based journey through a living cell","url":"https://burrito.bio/essays/biology-is-a-burrito","source":"Hacker News","score":193,"comments_count":28,"comments_url":"https://news.ycombinator.com/item?id=47957714","published_at":"2026-04-30T03:24:41","author":"the-mitr","text":null,"summary":"本文以图文形式生动解释活细胞内部机制，将生物学比作卷饼，值得关注因为它创新了科学教育方式。"},{"id":"hn-47963316","title":"Durable queues, streams, pub/sub, and a cron scheduler – inside your SQLite file","url":"https://honker.dev/","source":"Hacker News","score":179,"comments_count":51,"comments_url":"https://news.ycombinator.com/item?id=47963316","published_at":"2026-04-30T14:43:02","author":"ferriswil","text":null,"summary":"该项目在SQLite文件中实现了持久队列、流、发布/订阅和定时调度，值得关注因为它扩展了SQLite的实用性和轻量级应用场景。"},{"id":"hn-47951295","title":"Opus 4.7 knows the real Kelsey","url":"https://www.theargumentmag.com/p/i-can-never-talk-to-an-ai-anonymously","source":"Hacker News","score":174,"comments_count":105,"comments_url":"https://news.ycombinator.com/item?id=47951295","published_at":"2026-04-29T17:09:03","author":"ilamont","text":null,"summary":"文章探讨了AI匿名交流的局限，强调真实人际互动的重要性，值得关注因为它反思了AI伦理和社交体验。"},{"id":"hn-47947944","title":"10Gb/s Ethernet: what I did to get it working in my home","url":"https://www.gilesthomas.com/2026/04/10g-ethernet-what-i-did","source":"Hacker News","score":150,"comments_count":107,"comments_url":"https://news.ycombinator.com/item?id=47947944","published_at":"2026-04-29T13:15:46","author":"gpjt","text":null,"summary":"作者详细记录了在家中搭建10Gb/s以太网的经验，包括硬件选择、配置和故障排除，对追求高速家庭网络的爱好者极具参考价值。"},{"id":"hn-47933934","title":"A Primer on Bézier Curves – So What Makes a Bézier Curve?","url":"https://pomax.github.io/bezierinfo/","source":"Hacker News","score":131,"comments_count":21,"comments_url":"https://news.ycombinator.com/item?id=47933934","published_at":"2026-04-28T12:57:53","author":"mostlyk","text":null,"summary":"这是一篇深入浅出的贝塞尔曲线入门教程，从数学原理到实际应用全面解析，适合图形学和UI设计初学者。"},{"id":"hn-47937814","title":"Reverse Engineering SimTower","url":"https://phulin.me/blog/simtower","source":"Hacker News","score":127,"comments_count":20,"comments_url":"https://news.ycombinator.com/item?id=47937814","published_at":"2026-04-28T17:41:38","author":"patrickhulin","text":"$c","summary":"作者通过逆向工程1993年游戏《SimTower》，实现了精确的复刻版，展示了经典游戏模拟机制的深度分析。"},{"id":"hn-47941931","title":"London to Calcutta by Bus (2022)","url":"https://www.amusingplanet.com/2022/08/london-to-calcutta-by-bus.html","source":"Hacker News","score":118,"comments_count":33,"comments_url":"https://news.ycombinator.com/item?id=47941931","published_at":"2026-04-28T22:52:22","author":"CGMthrowaway","text":null,"summary":"文章记录了一次从伦敦到加尔各答的长途巴士旅行，充满冒险色彩，为旅行爱好者提供了独特的路线视角。"},{"id":"hn-47967508","title":"Vercel’s pricing page","url":"https://theupsellgame.com/","source":"Hacker News","score":109,"comments_count":19,"comments_url":"https://news.ycombinator.com/item?id=47967508","published_at":"2026-04-30T20:02:35","author":"bartoindahouse","text":null,"summary":"通过分析Vercel的定价页面，揭示了其销售策略和用户心理，对理解SaaS定价模型有启发意义。"}],"locale":"zh"}],"$Ld"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
 a:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
-d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-894a234eb005","title":"Contributor Poker and Zig's AI Ban","url":"https://kristoff.it/blog/contributor-poker-and-ai/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-29T16:12:55","author":"kristoff.it by kristoff","text":"<p><a href=\"https://lobste.rs/s/ifcyr1/contributor_poker_zig_s_ai_ban\">Comments</a></p>","summary":"文章讨论了Zig项目禁止AI贡献的争议，以及“贡献者扑克”现象，涉及开源社区治理和AI伦理。"},{"id":"rss-c198cb0234d6","title":"Zed is 1.0","url":"https://zed.dev/blog/zed-1-0","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-29T14:40:20","author":"zed.dev via notmeta","text":"<p><a href=\"https://lobste.rs/s/ddrcj1/zed_is_1_0\">Comments</a></p>","summary":"Zed编辑器正式发布1.0版本，标志着其从测试阶段进入稳定版，对开发者社区有重要影响。"},{"id":"rss-424acbe13214","title":"Functional Programmers need to take a look at Zig","url":"https://pure-systems.org/posts/2026-04-29-functional-programmers-need-to-take-a-look-at-zig.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-29T18:58:11","author":"pure-systems.org by doyougnu","text":"<p><a href=\"https://lobste.rs/s/b57uhm/functional_programmers_need_take_look_at\">Comments</a></p>","summary":"文章认为函数式程序员应关注Zig语言，因其结合了低级控制和现代特性，对编程范式有启示。"},{"id":"rss-757f4b857261","title":"Why I Still Reach for Lisp (& Scheme) Instead of Haskell","url":"https://jointhefreeworld.org/blog/articles/lisps/why-i-still-reach-for-scheme-instead-of-haskell/index.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-29T08:43:45","author":"jointhefreeworld.org by jjba23","text":"<p>After reading the original article <a href=\"https://web.archive.org/web/20121204010925/https://slidetocode.com/2012/04/09/why-i-prefer-scheme-to-haskell/\" rel=\"ugc\">https://web.archive.org/web/20121204010925/https://slidetocode.com/2012/04/09/why-i-prefer-scheme-to-haskell/</a></p>\n<p>I realized it really resonated with me and was actually telling my story (partially). So I wrote my own article on this topic. Hope you enjoy:</p>\n<p><a href=\"https://jointhefreeworld.org/blog/articles/lisps/why-i-still-reach-for-scheme-instead-of-haskell/index.html\" rel=\"ugc\">https://jointhefreeworld.org/blog/articles/lisps/why-i-still-reach-for-scheme-instead-of-haskell/index.html</a></p>\n<p><a href=\"https://lobste.rs/s/tzqafn/why_i_still_reach_for_lisp_scheme_instead\">Comments</a></p>","summary":"与第3篇类似，本文深入探讨为何选择Lisp而非Haskell，强调实用性和可读性，对语言选择有参考价值。"},{"id":"rss-b6d05c1815c8","title":"Copy Fail: 732 Bytes to Root on Every Major Linux Distributions","url":"https://xint.io/blog/copy-fail-linux-distributions","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-29T17:58:14","author":"xint.io via freddyb","text":"<p><a href=\"https://lobste.rs/s/wsmc8s/copy_fail_732_bytes_root_on_every_major\">Comments</a></p>","summary":"文章揭示了一个仅需732字节就能在主流Linux发行版上获取root权限的漏洞，对系统安全有重大警示。"}],"locale":"zh"}]
+d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-6161cd7821e6","title":"GCC 16 Release Series: Changes, New Features, and Fixes","url":"https://gcc.gnu.org/gcc-16/changes.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-30T16:08:37","author":"gcc.gnu.org via jmillikin","text":"<p><a href=\"https://lobste.rs/s/zbcg79/gcc_16_release_series_changes_new\">Comments</a></p>","summary":"GCC 16发布系列带来了新功能、改进和修复，对C/C++开发者至关重要，影响编译效率和代码优化。"},{"id":"rss-6754950847be","title":"You can beat the binary search","url":"https://lemire.me/blog/2026/04/27/you-can-beat-the-binary-search/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-30T14:54:15","author":"lemire.me via gabeio","text":"<p><a href=\"https://lobste.rs/s/lvr02w/you_can_beat_binary_search\">Comments</a></p>","summary":"文章提出了一种超越传统二分查找的算法优化方法，挑战了经典算法效率，对性能敏感型应用有实际价值。"},{"id":"rss-2886f44baca3","title":"Mozilla's position on the Prompt API","url":"https://mastodon.social/@firefoxwebdevs/116492853483021978","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-30T09:30:52","author":"mastodon.social via untitaker","text":"<p><a href=\"https://lobste.rs/s/pcymmp/mozilla_s_position_on_prompt_api\">Comments</a></p>","summary":"Mozilla对Prompt API的官方立场反映了浏览器厂商对AI集成技术的态度，影响Web开发未来方向。"},{"id":"rss-894a234eb005","title":"Contributor Poker and Zig's AI Ban","url":"https://kristoff.it/blog/contributor-poker-and-ai/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-29T16:12:55","author":"kristoff.it by kristoff","text":"<p><a href=\"https://lobste.rs/s/ifcyr1/contributor_poker_zig_s_ai_ban\">Comments</a></p>","summary":"探讨了Zig社区对AI贡献的禁令及其引发的‘贡献者扑克’现象，揭示了开源治理与AI伦理的冲突。"},{"id":"rss-4ca06bac6eb2","title":"A text editor as a user interface","url":"https://ratfactor.com/cards/text-editor-as-ui","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-30T08:09:07","author":"ratfactor.com via jbauer","text":"<p><a href=\"https://lobste.rs/s/b9vrje/text_editor_as_user_interface\">Comments</a></p>","summary":"文章论证了文本编辑器作为用户界面的潜力，挑战了传统GUI设计，对极简主义和高效工作流倡导者有吸引力。"}],"locale":"zh"}]
 10:null
