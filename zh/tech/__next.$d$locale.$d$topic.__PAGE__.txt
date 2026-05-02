@@ -3,171 +3,170 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-e:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-f:"$Sreact.suspense"
-5:T3c82,好的，作为一名技术新闻分析师，我已经对今日的“Technology”主题热门文章进行了深入分析和总结。以下是根据文章内容和讨论热度的综合报告。
+f:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+5:T39d6,好的，作为一名技术新闻分析师，我已经对今天（基于文章内容推断为2026年5月）的30篇热门技术文章进行了深入分析。以下是按主题分组的详细总结和推荐阅读。
 
 ### 综合分析
 
-今日的科技新闻呈现出几个鲜明的主题：**开源生态的去中心化与信任危机**、**AI技术的模型竞赛与应用边界**、**开发者工具与编程范式的演进**，以及**基础设施与底层技术的深度探讨**。社区对大型平台依赖的反思（如离开GitHub）、对AI模型性能与伦理的关注（如IBM的模型、AI匿名性）以及对经典编程问题的重新思考（如击败二分查找）都表现出极高的讨论热情。
+今天的科技新闻呈现出几个鲜明的趋势：**AI模型的军备竞赛仍在继续**，但开源模型开始挑战巨头地位；**网络安全与隐私**问题持续发酵，从基础设施攻击到个人数据泄露；**开发者工具和编程实践**的讨论依然热烈；同时，一些**怀旧与人文**色彩的文章也引发了广泛共鸣。
 
 ---
 
-### 按子主题分组分析
+### 主题分组与文章详解
 
-#### 1. 开源、平台依赖与社区治理
+#### 1. AI 与大型语言模型 (LLM)
 
-这个主题是今天最热门的领域，反映了开发者社区对平台权力集中和AI伦理的深刻思考。
-
-- **Ghostty is leaving GitHub**
-    - **简要说明**：知名终端模拟器Ghostty的作者Mitchell Hashimoto宣布项目将离开GitHub，转向自托管。此举引发了关于开发者对单一平台依赖、代码托管去中心化以及开源项目自主权的广泛讨论。这是对“GitHub即开源中心”这一现状的一次重要挑战。
-    - **原文链接**：[https://mitchellh.com/writing/ghostty-leaving-github](https://mitchellh.com/writing/ghostty-leaving-github)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47939579](https://news.ycombinator.com/item?id=47939579)
-
-- **Contributor Poker and Zig's AI Ban**
-    - **简要说明**：探讨了Zig语言社区关于禁止AI生成贡献的争议。文章提出了“贡献者扑克”的概念，分析了AI参与开源贡献可能带来的信任和审阅问题。反映了AI对传统开源协作模式的冲击。
-    - **原文链接**：[https://kristoff.it/blog/contributor-poker-and-ai/](https://kristoff.it/blog/contributor-poker-and-ai/)
-    - **讨论链接**：[https://lobste.rs/s/ifcyr1/contributor_poker_zig_s_ai_ban](https://lobste.rs/s/ifcyr1/contributor_poker_zig_s_ai_ban)
-
-- **For Linux kernel vulnerabilities, there is no heads-up to distributions**
-    - **简要说明**：揭示了Linux内核安全漏洞披露流程中的一个关键问题：发行版无法提前获得漏洞预警。这直接影响了系统安全补丁的响应速度和用户安全，引发了关于内核安全策略和透明度的重要讨论。
-    - **原文链接**：[https://www.openwall.com/lists/oss-security/2026/04/30/10](https://www.openwall.com/lists/oss-security/2026/04/30/10)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47965108](https://news.ycombinator.com/item?id=47965108)
-
-- **Mozilla's opposition to Chrome's Prompt API**
-    - **简要说明**：Mozilla官方表示反对Chrome提出的Prompt API，该API旨在浏览器中集成AI模型。Mozilla的立场凸显了浏览器厂商在AI标准上的分歧，以及关于用户隐私、模型控制和Web开放性的深层担忧。
-    - **原文链接**：[https://github.com/mozilla/standards-positions/issues/1213#issuecomment-4347988313](https://github.com/mozilla/standards-positions/issues/1213#issuecomment-4347988313)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47959463](https://news.ycombinator.com/item?id=47959463)
-    - **相关讨论**：[https://lobste.rs/s/pcymmp/mozilla_s_position_on_prompt_api](https://lobste.rs/s/pcymmp/mozilla_s_position_on_prompt_api)
-
-#### 2. AI模型、应用与伦理
-
-AI领域的新闻从模型发布扩展到其应用边界和伦理问题。
-
-- **Granite 4.1: IBM's 8B Model Matching 32B MoE**
-    - **简要说明**：IBM发布了Granite 4.1模型，声称一个80亿参数的模型性能可与320亿参数的混合专家模型相媲美。这代表了模型效率的重大进步，对降低AI部署成本和能耗有重要意义，值得关注。
-    - **原文链接**：[https://firethering.com/granite-4-1-ibm-open-source-model-family/](https://firethering.com/granite-4-1-ibm-open-source-model-family/)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47960507](https://news.ycombinator.com/item?id=47960507)
-
-- **Where the goblins came from**
-    - **简要说明**：OpenAI发布的一篇研究，探讨了AI模型内部表征和“涌现”行为的起源。文章以“哥布林”为比喻，试图解释模型如何学习到复杂概念。对于理解深度学习的黑箱和可解释性具有价值。
-    - **原文链接**：[https://openai.com/index/where-the-goblins-came-from/](https://openai.com/index/where-the-goblins-came-from/)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47957688](https://news.ycombinator.com/item?id=47957688)
+AI领域依然是今日焦点，多家公司发布了新模型，并引发了关于AI匿名性和使用方式的讨论。
 
 - **Opus 4.7 knows the real Kelsey**
-    - **简要说明**：一篇关于与AI匿名交流的哲学和伦理探讨。文章讨论了当AI了解用户的真实身份时，对话的动态和隐私边界会发生怎样的变化。引发了关于AI时代匿名性价值的思考。
-    - **原文链接**：[https://www.theargumentmag.com/p/i-can-never-talk-to-an-ai-anonymously](https://www.theargumentmag.com/p/i-can-never-talk-to-an-ai-anonymously)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47951295](https://news.ycombinator.com/item?id=47951295)
+  - **说明**: 一篇引人深思的文章，探讨了AI的“人格”和匿名性问题。作者认为，随着AI越来越了解用户，真正的匿名交流正变得不可能。这触及了AI伦理和隐私的核心。
+  - **Article**: [https://www.theargumentmag.com/p/i-can-never-talk-to-an-ai-anonymously](https://www.theargumentmag.com/p/i-can-never-talk-to-an-ai-anonymously)
+  - **Discussion**: [https://news.ycombinator.com/item?id=47951295](https://news.ycombinator.com/item?id=47951295)
 
-- **Cursor Camp**
-    - **简要说明**：一个有趣的互动网站，模拟了“光标营地”的概念，可能涉及AI辅助编程或编辑器交互的新玩法。因其高互动性和趣味性引发了大量点击和讨论。
-    - **原文链接**：[https://neal.fun/cursor-camp/](https://neal.fun/cursor-camp/)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47949939](https://news.ycombinator.com/item?id=47949939)
+- **Grok 4.3**
+  - **说明**: xAI发布了其最新模型Grok 4.3。作为Elon Musk旗下公司的产品，每次更新都备受关注，尤其是在与其他前沿模型的性能对比上。
+  - **Article**: [https://docs.x.ai/developers/models/grok-4.3](https://docs.x.ai/developers/models/grok-4.3)
+  - **Discussion**: [https://news.ycombinator.com/item?id=47972447](https://news.ycombinator.com/item?id=47972447)
 
-#### 3. 开发者工具、编程语言与软件工程
+- **Granite 4.1: IBM's 8B Model Matching 32B MoE**
+  - **说明**: IBM开源的Granite 4.1模型展示了惊人的效率——一个80亿参数的模型在性能上可以媲美320亿参数的混合专家模型。这对于降低AI应用的门槛和成本意义重大。
+  - **Article**: [https://firethering.com/granite-4-1-ibm-open-source-model-family/](https://firethering.com/granite-4-1-ibm-open-source-model-family/)
+  - **Discussion**: [https://news.ycombinator.com/item?id=47960507](https://news.ycombinator.com/item?id=47960507)
 
-这一组涵盖了编辑器、编译器、算法和软件架构的最新动态。
+- **Why I Don’t Vibe Code**
+  - **说明**: 一篇来自Lobsters的文章，作者反思了“Vibe Coding”（一种依赖AI生成代码的编程方式）的弊端，强调了理解和掌控代码的重要性。对于所有使用AI辅助编程的开发者来说，这是一剂清醒剂。
+  - **Article**: [https://jacobharr.is/personal/i-dont-vibe-code](https://jacobharr.is/personal/i-dont-vibe-code)
+  - **Discussion**: [https://lobste.rs/s/vwmojf/why_i_don_t_vibe_code](https://lobste.rs/s/vwmojf/why_i_don_t_vibe_code)
 
-- **Zed 1.0**
-    - **简要说明**：由Atom和Tree-sitter原作者打造的高性能代码编辑器Zed正式发布1.0版本。它以其极致的速度和协作功能著称，是当前编辑器领域最受瞩目的新星之一，对VSCode构成了有力挑战。
-    - **原文链接**：[https://zed.dev/blog/zed-1-0](https://zed.dev/blog/zed-1-0)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47949027](https://news.ycombinator.com/item?id=47949027)
+- **combat LLM spam by building a web of trust**
+  - **说明**: 针对日益泛滥的LLM生成垃圾内容，作者提出建立“信任网络”的解决方案。这是一个非常实际且具有前瞻性的讨论，关乎互联网内容的未来质量。
+  - **Article**: [https://blog.tangled.org/vouching/](https://blog.tangled.org/vouching/)
+  - **Discussion**: [https://lobste.rs/s/kghyn5/combat_llm_spam_by_building_web_trust](https://lobste.rs/s/kghyn5/combat_llm_spam_by_building_web_trust)
 
-- **GCC 16 has been released**
-    - **简要说明**：GNU编译器套件GCC发布了第16个主要版本。对于C/C++开发者来说，这是重要的年度更新，包含了新语言特性、优化和安全修复。
-    - **原文链接**：[https://gcc.gnu.org/gcc-16/changes.html](https://gcc.gnu.org/gcc-16/changes.html)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47961004](https://news.ycombinator.com/item?id=47961004)
-    - **相关讨论**：[https://lobste.rs/s/zbcg79/gcc_16_release_series_changes_new](https://lobste.rs/s/zbcg79/gcc_16_release_series_changes_new)
+- **A life update from Zach Oakes: Zig, AI, unemployment, and more**
+  - **说明**: 知名Clojure开发者Zach Oakes的回归视频，分享了他对Zig语言、AI以及个人职业生涯的思考。对于关注编译器、语言设计和独立开发者生态的人来说很有价值。
+  - **Article**: [https://www.youtube.com/watch?v=DhhPUrizZcw](https://www.youtube.com/watch?v=DhhPUrizZcw)
+  - **Discussion**: [https://lobste.rs/s/x8z1yc/life_update_from_zach_oakes_zig_ai](https://lobste.rs/s/x8z1yc/life_update_from_zach_oakes_zig_ai)
 
-- **You can beat the binary search**
-    - **简要说明**：一篇关于算法优化的文章，探讨了在现代硬件（如分支预测、SIMD）下，如何通过特定技巧在某些场景下超越经典的二分查找。对性能敏感的开发者很有启发。
-    - **原文链接**：[https://lemire.me/blog/2026/04/27/you-can-beat-the-binary-search/](https://lemire.me/blog/2026/04/27/you-can-beat-the-binary-search/)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47924912](https://news.ycombinator.com/item?id=47924912)
-    - **相关讨论**：[https://lobste.rs/s/lvr02w/you_can_beat_binary_search](https://lobste.rs/s/lvr02w/you_can_beat_binary_search)
+#### 2. 网络安全、隐私与基础设施
 
-- **I built a Game Boy emulator in F#**
-    - **简要说明**：一篇技术博客，详细记录了用F#语言编写Game Boy模拟器的过程。对于函数式编程爱好者、游戏开发者以及对底层模拟感兴趣的人来说，这是一份极佳的学习和实践资料。
-    - **原文链接**：[https://nickkossolapov.github.io/fame-boy/building-a-game-boy-emulator-in-fsharp/](https://nickkossolapov.github.io/fame-boy/building-a-game-boy-emulator-in-fsharp/)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47965503](https://news.ycombinator.com/item?id=47965503)
-
-- **Durable queues, streams, pub/sub, and a cron scheduler – inside your SQLite file**
-    - **简要说明**：介绍了一个名为`honker.dev`的项目，它允许你在SQLite文件中实现消息队列、流、发布/订阅和定时调度功能。这为边缘计算和轻量级应用提供了有趣的数据基础设施方案。
-    - **原文链接**：[https://honker.dev/](https://honker.dev/)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47963316](https://news.ycombinator.com/item?id=47963316)
-
-- **A text editor as a user interface**
-    - **简要说明**：探讨了将文本编辑器（如Emacs、Vim）作为通用用户界面的理念和哲学。对于喜欢“一切皆文本”和高度定制化工作流的用户来说，这是一篇引人深思的文章。
-    - **原文链接**：[https://ratfactor.com/cards/text-editor-as-ui](https://ratfactor.com/cards/text-editor-as-ui)
-    - **讨论链接**：[https://lobste.rs/s/b9vrje/text_editor_as_user_interface](https://lobste.rs/s/b9vrje/text_editor_as_user_interface)
-
-- **Reverse Engineering SimTower**
-    - **简要说明**：作者分享了逆向工程经典游戏《模拟大厦》的过程，并基于此构建了一个精确复刻的网页版。对于游戏开发和逆向工程爱好者来说，这是一个引人入胜的技术故事。
-    - **原文链接**：[https://phulin.me/blog/simtower](https://phulin.me/blog/simtower)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47937814](https://news.ycombinator.com/item?id=47937814)
-
-- **A Primer on Bézier Curves – So What Makes a Bézier Curve?**
-    - **简要说明**：一个关于贝塞尔曲线的经典交互式教程。对于任何从事图形学、UI设计或游戏开发的程序员来说，这都是一个必备的基础知识。
-    - **原文链接**：[https://pomax.github.io/bezierinfo/](https://pomax.github.io/bezierinfo/)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47933934](https://news.ycombinator.com/item?id=47933934)
-
-- **Vercel’s pricing page**
-    - **简要说明**：一个讽刺性的网站，可能以幽默的方式吐槽了Vercel复杂的定价策略。反映了开发者社区对云服务定价透明度的普遍关注。
-    - **原文链接**：[https://theupsellgame.com/](https://theupsellgame.com/)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47967508](https://news.ycombinator.com/item?id=47967508)
-
-#### 4. 基础设施、硬件与底层技术
-
-涵盖了从网络、散热到能源政策等更广泛的技术话题。
-
-- **10Gb/s Ethernet: what I did to get it working in my home**
-    - **简要说明**：作者分享了在家中部署10GbE网络的实战经验，包括硬件选择、布线、配置和故障排除。对于追求高速家庭网络的发烧友和技术人员很有参考价值。
-    - **原文链接**：[https://www.gilesthomas.com/2026/04/10g-ethernet-what-i-did](https://www.gilesthomas.com/2026/04/10g-ethernet-what-i-did)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47947944](https://news.ycombinator.com/item?id=47947944)
-
-- **Noctua releases official 3D CAD models for its cooling fans**
-    - **简要说明**：知名散热厂商猫头鹰（Noctua）发布了其风扇的官方3D CAD模型。这对于DIY玩家、3D打印爱好者和硬件设计师来说是一个极好的资源，方便了定制化设计和改装。
-    - **原文链接**：[https://www.noctua.at/en/3d-cad-models](https://www.noctua.at/en/3d-cad-models)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47927627](https://news.ycombinator.com/item?id=47927627)
-
-- **How an oil refinery works**
-    - **简要说明**：一篇深入浅出地介绍炼油厂工作原理的科普文章。虽然看似与编程无关，但它展示了复杂工业系统的工程之美，对任何对系统和流程感兴趣的工程师都有吸引力。
-    - **原文链接**：[https://www.construction-physics.com/p/how-an-oil-refinery-works](https://www.construction-physics.com/p/how-an-oil-refinery-works)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47962548](https://news.ycombinator.com/item?id=47962548)
+安全事件和隐私问题占据了重要篇幅，从国家级基础设施到个人设备数据。
 
 - **Belgium stops decommissioning nuclear power plants**
-    - **简要说明**：比利时政府决定停止退役核电站。这一能源政策的重大转向，对全球科技行业的能源供应（特别是数据中心电力）和碳中和目标具有深远影响。
-    - **原文链接**：[https://dpa-international.com/general-news/urn:newsml:dpa.com:20090101:260430-930-14717/](https://dpa-international.com/general-news/urn:newsml:dpa.com:20090101:260430-930-14717/)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47961319](https://news.ycombinator.com/item?id=47961319)
-
-#### 5. 隐私、数据与政策
+  - **说明**: 比利时决定停止核电站退役计划，这是一个重大的能源政策转变。在技术新闻中，这通常与能源安全、电网稳定性和科技巨头的能源消耗（如AI数据中心）密切相关。
+  - **Article**: [https://dpa-international.com/general-news/urn:newsml:dpa.com:20090101:260430-930-14717/](https://dpa-international.com/general-news/urn:newsml:dpa.com:20090101:260430-930-14717/)
+  - **Discussion**: [https://news.ycombinator.com/item?id=47961319](https://news.ycombinator.com/item?id=47961319)
 
 - **Can I disable all data collection from my vehicle?**
-    - **简要说明**：Rivian官方支持页面回答了用户是否可以完全禁用车辆数据收集的问题。这直接关系到智能汽车时代用户的隐私权和数据所有权，引发了广泛讨论。
-    - **原文链接**：[https://rivian.com/support/article/can-i-disable-all-data-collection-from-my-vehicle](https://rivian.com/support/article/can-i-disable-all-data-collection-from-my-vehicle)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47967786](https://news.ycombinator.com/item?id=47967786)
+  - **说明**: Rivian官方支持页面回答了车主能否关闭车辆数据收集的问题。在智能汽车时代，用户数据的控制权成为核心隐私议题，这篇文章的广泛讨论反映了公众的高度关切。
+  - **Article**: [https://rivian.com/support/article/can-i-disable-all-data-collection-from-my-vehicle](https://rivian.com/support/article/can-i-disable-all-data-collection-from-my-vehicle)
+  - **Discussion**: [https://news.ycombinator.com/item?id=47967786](https://news.ycombinator.com/item?id=47967786)
 
 - **How Mark Klein told the EFF about Room 641A [book excerpt]**
-    - **简要说明**：一篇关于斯诺登事件前的重要吹哨人——AT&T工程师Mark Klein的书籍节选。他揭露了NSA的秘密监控项目。在当今数据隐私问题日益突出的背景下，重温这段历史具有特殊意义。
-    - **原文链接**：[https://thereader.mitpress.mit.edu/the-whistleblower-who-uncovered-the-nsas-big-brother-machine/](https://thereader.mitpress.mit.edu/the-whistleblower-who-uncovered-the-nsas-big-brother-machine/)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47965060](https://news.ycombinator.com/item?id=47965060)
+  - **说明**: 一篇关于AT&T前员工Mark Klein如何揭露NSA大规模监听项目的书摘。在当今监控资本主义盛行的背景下，重温这一历史事件具有重要的警示意义。
+  - **Article**: [https://thereader.mitpress.mit.edu/the-whistleblower-who-uncovered-the-nsas-big-brother-machine/](https://thereader.mitpress.mit.edu/the-whistleblower-who-uncovered-the-nsas-big-brother-machine/)
+  - **Discussion**: [https://news.ycombinator.com/item?id=47965060](https://news.ycombinator.com/item?id=47965060)
 
-- **U.S. Senators Vote to Ban Themselves from Trading on Prediction Markets**
-    - **简要说明**：美国参议员投票禁止自己参与预测市场交易。这反映了政客利用内幕信息进行金融投机的伦理争议，以及监管机构对新兴金融市场的态度。
-    - **原文链接**：[https://www.wsj.com/politics/policy/senators-vote-to-ban-themselves-from-trading-on-prediction-markets-ae4535dd](https://www.wsj.com/politics/policy/senators-vote-to-ban-themselves-from-trading-on-prediction-markets-ae4535dd)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47967289](https://news.ycombinator.com/item?id=47967289)
+- **City Learns Flock Accessed Cameras in Children's Gymnastics Room as a Sales Demo**
+  - **说明**: Flock公司（一家监控摄像头公司）在销售演示中，未经授权访问了儿童体操房的摄像头。这一事件引发了关于监控技术滥用和隐私保护的强烈谴责。
+  - **Article**: [https://www.404media.co/city-learns-flock-accessed-cameras-in-childrens-gymnastics-room-as-a-sales-pitch-demo-renews-contract-anyway/](https://www.404media.co/city-learns-flock-accessed-cameras-in-childrens-gymnastics-room-as-a-sales-pitch-demo-renews-contract-anyway/)
+  - **Discussion**: [https://news.ycombinator.com/item?id=47978370](https://news.ycombinator.com/item?id=47978370)
 
-#### 6. 其他有趣内容
+- **Credit cards are vulnerable to brute force kind attacks**
+  - **说明**: 研究发现信用卡号可能受到暴力破解攻击。这暴露了支付系统中的一个潜在安全漏洞，对金融科技和电子商务安全有直接影响。
+  - **Article**: [https://metin.nextc.org/posts/Credit_Cards_Are_Vulnerable_To_Brute_Force_Kind_Attacks.html](https://metin.nextc.org/posts/Credit_Cards_Are_Vulnerable_To_Brute_Force_Kind_Attacks.html)
+  - **Discussion**: [https://news.ycombinator.com/item?id=47979839](https://news.ycombinator.com/item?id=47979839)
 
-- **I aggregated 28 US Government auction sites into one search**
-    - **简要说明**：一个将28个美国政府拍卖网站整合到一个搜索界面的工具。对于喜欢“捡漏”或寻找政府剩余物资的人来说非常实用，体现了技术解决信息碎片化问题的力量。
-    - **原文链接**：[https://bidprowl.com](https://bidprowl.com)
-    - **讨论链接**：[https://news.ycombinator.com/item?id=47961378](https://news.ycombinator.com/item?id=47961378)
+- **CPanel and WHM Authentication Bypass – CVE-2026-41940**
+  - **说明**: 一个严重的cPanel/WHM身份验证绕过漏洞被披露。对于托管行业和大量使用cPanel的网站管理员来说，这是一个需要立即关注和修补的紧急安全公告。
+  - **Article**: [https://labs.watchtowr.com/the-internet-is-falling-down-falling-down-falling-down-cpanel-whm-authentication-bypass-cve-2026-41940/](https://labs.watchtowr.com/the-internet-is-falling-down-falling-down-falling-down-cpanel-whm-authentication-bypass-cve-2026-41940/)
+  - **Discussion**: [https://news.ycombinator.com/item?id=47969288](https://news.ycombinator.com/item?id=47969288)
 
--0:{"buildId":"e_bKV9sXXgV2g5fkJlscF","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-05-01","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":11},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-05-01"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-c:T534,This is the story of building <a href="https:&#x2F;&#x2F;towers.world" rel="nofollow">https:&#x2F;&#x2F;towers.world</a>, a ~perfect, tick-for-tick reproduction of 1993 game SimTower.<p>I spent weeks reverse-engineering the original EXE and writing up a detailed spec of how the simulation actually works under the hood — population flow, elevator AI, the whole star-rating system. The specs are all on GitHub if you want to read them: <a href="https:&#x2F;&#x2F;github.com&#x2F;phulin&#x2F;tower-together&#x2F;tree&#x2F;main&#x2F;specs" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;phulin&#x2F;tower-together&#x2F;tree&#x2F;main&#x2F;specs</a><p>It&#x27;s also collaborative. Multiple players can connect to the same tower, the simulation keeps running as long as anyone&#x27;s connected, and build actions sync across clients in real time.<p>Because I rebuilt the UI, I could add features like shift-click to build grids of rooms - instead of painstakingly clicking to build rows of offices and hotels, shift-click allows a 10-floor grid to be built all at once.<p>The game runs on Cloudflare Durable Objects, one of my favorite web primitives.<p>Everything is open source: <a href="https:&#x2F;&#x2F;github.com&#x2F;phulin&#x2F;tower-together" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;phulin&#x2F;tower-together</a>6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47939579","title":"Ghostty is leaving GitHub","url":"https://mitchellh.com/writing/ghostty-leaving-github","source":"Hacker News","score":3456,"comments_count":1032,"comments_url":"https://news.ycombinator.com/item?id=47939579","published_at":"2026-04-28T19:44:52","author":"WadeGrimridge","text":null,"summary":"Ghostty宣布离开GitHub，这一决定可能影响开源社区协作模式，值得关注其对开发者生态的潜在影响。"},{"id":"hn-47949027","title":"Zed 1.0","url":"https://zed.dev/blog/zed-1-0","source":"Hacker News","score":2062,"comments_count":668,"comments_url":"https://news.ycombinator.com/item?id=47949027","published_at":"2026-04-29T14:34:19","author":"salkahfi","text":null,"summary":"Zed编辑器发布1.0版本，标志着其从测试阶段迈向稳定，为开发者提供高性能代码编辑新选择。"},{"id":"hn-47949939","title":"Cursor Camp","url":"https://neal.fun/cursor-camp/","source":"Hacker News","score":1165,"comments_count":185,"comments_url":"https://news.ycombinator.com/item?id=47949939","published_at":"2026-04-29T15:39:43","author":"bpierre","text":null,"summary":"Cursor Camp是一个趣味性项目，可能展示AI或交互设计的新玩法，吸引技术爱好者关注。"},{"id":"hn-47957688","title":"Where the goblins came from","url":"https://openai.com/index/where-the-goblins-came-from/","source":"Hacker News","score":1016,"comments_count":630,"comments_url":"https://news.ycombinator.com/item?id=47957688","published_at":"2026-04-30T03:21:04","author":"ilreb","text":null,"summary":"OpenAI探讨哥布林文化的起源，结合AI视角分析神话传说，展现技术公司对人文领域的跨界探索。"},{"id":"hn-47961319","title":"Belgium stops decommissioning nuclear power plants","url":"https://dpa-international.com/general-news/urn:newsml:dpa.com:20090101:260430-930-14717/","source":"Hacker News","score":758,"comments_count":713,"comments_url":"https://news.ycombinator.com/item?id=47961319","published_at":"2026-04-30T12:17:14","author":"mpweiher","text":null,"summary":"比利时逆转核电站退役计划，反映能源政策调整，对全球核能利用和碳中和目标具有参考意义。"},{"id":"hn-47959463","title":"Mozilla's opposition to Chrome's Prompt API","url":"https://github.com/mozilla/standards-positions/issues/1213#issuecomment-4347988313","source":"Hacker News","score":597,"comments_count":218,"comments_url":"https://news.ycombinator.com/item?id=47959463","published_at":"2026-04-30T07:43:55","author":"jaffathecake","text":null,"summary":"Mozilla公开反对Chrome的Prompt API，凸显浏览器厂商在隐私和标准上的分歧，影响Web开发未来。"},{"id":"hn-47967786","title":"Can I disable all data collection from my vehicle?","url":"https://rivian.com/support/article/can-i-disable-all-data-collection-from-my-vehicle","source":"Hacker News","score":521,"comments_count":196,"comments_url":"https://news.ycombinator.com/item?id=47967786","published_at":"2026-04-30T20:27:22","author":"Cider9986","text":null,"summary":"Rivian回应车辆数据收集问题，涉及用户隐私权与智能汽车伦理，引发消费者对数据控制的讨论。"},{"id":"hn-47927627","title":"Noctua releases official 3D CAD models for its cooling fans","url":"https://www.noctua.at/en/3d-cad-models","source":"Hacker News","score":481,"comments_count":107,"comments_url":"https://news.ycombinator.com/item?id=47927627","published_at":"2026-04-27T21:35:07","author":"embedding-shape","text":null,"summary":"Noctua发布官方3D CAD模型，便利硬件工程师和DIY爱好者进行散热设计，提升产品兼容性。"},{"id":"hn-47965060","title":"How Mark Klein told the EFF about Room 641A [book excerpt]","url":"https://thereader.mitpress.mit.edu/the-whistleblower-who-uncovered-the-nsas-big-brother-machine/","source":"Hacker News","score":443,"comments_count":137,"comments_url":"https://news.ycombinator.com/item?id=47965060","published_at":"2026-04-30T16:41:00","author":"the-mitr","text":null,"summary":"揭秘Mark Klein揭露NSA监控室641A的经过，强调隐私保护与政府监控的冲突，具有历史警示意义。"},{"id":"hn-47965108","title":"For Linux kernel vulnerabilities, there is no heads-up to distributions","url":"https://www.openwall.com/lists/oss-security/2026/04/30/10","source":"Hacker News","score":381,"comments_count":308,"comments_url":"https://news.ycombinator.com/item?id=47965108","published_at":"2026-04-30T16:43:47","author":"ori_b","text":"Recent: <i>Copy Fail</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47952181\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47952181</a> - April 2026 (466 comments)","summary":"Linux内核漏洞披露流程缺乏对发行版的提前通知，可能增加系统安全风险，引发开源社区治理争议。"},{"id":"hn-47962548","title":"How an oil refinery works","url":"https://www.construction-physics.com/p/how-an-oil-refinery-works","source":"Hacker News","score":337,"comments_count":101,"comments_url":"https://news.ycombinator.com/item?id=47962548","published_at":"2026-04-30T13:54:20","author":"chmaynard","text":null,"summary":"本文详细介绍了炼油厂的工作原理，从原油蒸馏到裂化等关键过程，值得关注因为它揭示了现代工业基础设施的核心技术。"},{"id":"hn-47961004","title":"GCC 16 has been released","url":"https://gcc.gnu.org/gcc-16/changes.html","source":"Hacker News","score":288,"comments_count":51,"comments_url":"https://news.ycombinator.com/item?id=47961004","published_at":"2026-04-30T11:40:13","author":"HeliumHydride","text":null,"summary":"GCC 16发布，带来了多项新特性和改进，对于开发者而言是重要的编译器更新，值得关注以了解性能提升和新功能。"},{"id":"hn-47960507","title":"Granite 4.1: IBM's 8B Model Matching 32B MoE","url":"https://firethering.com/granite-4-1-ibm-open-source-model-family/","source":"Hacker News","score":280,"comments_count":174,"comments_url":"https://news.ycombinator.com/item?id=47960507","published_at":"2026-04-30T10:31:17","author":"steveharing1","text":null,"summary":"IBM的Granite 4.1模型以8B参数匹配32B MoE模型性能，展示了高效AI架构的突破，值得关注因为它挑战了模型规模与性能的平衡。"},{"id":"hn-47967289","title":"U.S. Senators Vote to Ban Themselves from Trading on Prediction Markets","url":"https://www.wsj.com/politics/policy/senators-vote-to-ban-themselves-from-trading-on-prediction-markets-ae4535dd","source":"Hacker News","score":280,"comments_count":96,"comments_url":"https://news.ycombinator.com/item?id=47967289","published_at":"2026-04-30T19:42:33","author":"kamaraju","text":null,"summary":"美国参议员投票禁止自己在预测市场交易，旨在防止利益冲突，值得关注因为它涉及政治伦理和金融监管的交叉点。"},{"id":"hn-47924912","title":"You can beat the binary search","url":"https://lemire.me/blog/2026/04/27/you-can-beat-the-binary-search/","source":"Hacker News","score":263,"comments_count":123,"comments_url":"https://news.ycombinator.com/item?id=47924912","published_at":"2026-04-27T17:52:12","author":"vok","text":null,"summary":"文章提出了一种超越二分查找的新算法，通过优化数据结构提高搜索效率，值得关注因为它可能改变基础算法实践。"},{"id":"hn-47961378","title":"I aggregated 28 US Government auction sites into one search","url":"https://bidprowl.com","source":"Hacker News","score":247,"comments_count":73,"comments_url":"https://news.ycombinator.com/item?id=47961378","published_at":"2026-04-30T12:24:53","author":"scarsam","text":null,"summary":"作者整合了28个美国政府拍卖网站到一个统一搜索平台，简化了资产查找过程，值得关注因为它提高了公共资源访问的便利性。"},{"id":"hn-47965503","title":"I built a Game Boy emulator in F#","url":"https://nickkossolapov.github.io/fame-boy/building-a-game-boy-emulator-in-fsharp/","source":"Hacker News","score":222,"comments_count":48,"comments_url":"https://news.ycombinator.com/item?id=47965503","published_at":"2026-04-30T17:14:21","author":"elvis70","text":null,"summary":"作者用F#构建了一个Game Boy模拟器，展示了函数式编程在底层系统中的应用，值得关注因为它结合了复古游戏和现代编程语言。"},{"id":"hn-47957714","title":"Biology is a Burrito: A text- and visual-based journey through a living cell","url":"https://burrito.bio/essays/biology-is-a-burrito","source":"Hacker News","score":193,"comments_count":28,"comments_url":"https://news.ycombinator.com/item?id=47957714","published_at":"2026-04-30T03:24:41","author":"the-mitr","text":null,"summary":"本文以图文形式生动解释活细胞内部机制，将生物学比作卷饼，值得关注因为它创新了科学教育方式。"},{"id":"hn-47963316","title":"Durable queues, streams, pub/sub, and a cron scheduler – inside your SQLite file","url":"https://honker.dev/","source":"Hacker News","score":179,"comments_count":51,"comments_url":"https://news.ycombinator.com/item?id=47963316","published_at":"2026-04-30T14:43:02","author":"ferriswil","text":null,"summary":"该项目在SQLite文件中实现了持久队列、流、发布/订阅和定时调度，值得关注因为它扩展了SQLite的实用性和轻量级应用场景。"},{"id":"hn-47951295","title":"Opus 4.7 knows the real Kelsey","url":"https://www.theargumentmag.com/p/i-can-never-talk-to-an-ai-anonymously","source":"Hacker News","score":174,"comments_count":105,"comments_url":"https://news.ycombinator.com/item?id=47951295","published_at":"2026-04-29T17:09:03","author":"ilamont","text":null,"summary":"文章探讨了AI匿名交流的局限，强调真实人际互动的重要性，值得关注因为它反思了AI伦理和社交体验。"},{"id":"hn-47947944","title":"10Gb/s Ethernet: what I did to get it working in my home","url":"https://www.gilesthomas.com/2026/04/10g-ethernet-what-i-did","source":"Hacker News","score":150,"comments_count":107,"comments_url":"https://news.ycombinator.com/item?id=47947944","published_at":"2026-04-29T13:15:46","author":"gpjt","text":null,"summary":"作者详细记录了在家中搭建10Gb/s以太网的经验，包括硬件选择、配置和故障排除，对追求高速家庭网络的爱好者极具参考价值。"},{"id":"hn-47933934","title":"A Primer on Bézier Curves – So What Makes a Bézier Curve?","url":"https://pomax.github.io/bezierinfo/","source":"Hacker News","score":131,"comments_count":21,"comments_url":"https://news.ycombinator.com/item?id=47933934","published_at":"2026-04-28T12:57:53","author":"mostlyk","text":null,"summary":"这是一篇深入浅出的贝塞尔曲线入门教程，从数学原理到实际应用全面解析，适合图形学和UI设计初学者。"},{"id":"hn-47937814","title":"Reverse Engineering SimTower","url":"https://phulin.me/blog/simtower","source":"Hacker News","score":127,"comments_count":20,"comments_url":"https://news.ycombinator.com/item?id=47937814","published_at":"2026-04-28T17:41:38","author":"patrickhulin","text":"$c","summary":"作者通过逆向工程1993年游戏《SimTower》，实现了精确的复刻版，展示了经典游戏模拟机制的深度分析。"},{"id":"hn-47941931","title":"London to Calcutta by Bus (2022)","url":"https://www.amusingplanet.com/2022/08/london-to-calcutta-by-bus.html","source":"Hacker News","score":118,"comments_count":33,"comments_url":"https://news.ycombinator.com/item?id=47941931","published_at":"2026-04-28T22:52:22","author":"CGMthrowaway","text":null,"summary":"文章记录了一次从伦敦到加尔各答的长途巴士旅行，充满冒险色彩，为旅行爱好者提供了独特的路线视角。"},{"id":"hn-47967508","title":"Vercel’s pricing page","url":"https://theupsellgame.com/","source":"Hacker News","score":109,"comments_count":19,"comments_url":"https://news.ycombinator.com/item?id=47967508","published_at":"2026-04-30T20:02:35","author":"bartoindahouse","text":null,"summary":"通过分析Vercel的定价页面，揭示了其销售策略和用户心理，对理解SaaS定价模型有启发意义。"}],"locale":"zh"}],"$Ld"]}]]}]
+- **Canonical/Ubuntu have been under DDoS** & **Canonical is under attack**
+  - **说明**: Ubuntu的母公司Canonical遭遇了持续超过一天的大规模DDoS攻击，导致其基础设施（包括软件仓库和网站）下线。这对于数百万Ubuntu用户和开发者来说是一个重大事件，也凸显了开源基础设施的脆弱性。
+  - **Article**: [https://status.canonical.com/#/incident/KNms6QK9ewuzz-7xUsPsNylV20jEt5kyKsd8A-3ptQEHpOd8VQ40ZQs-KD81fboQXeGZB94okNHdHBGlCv58Sw==](https://status.canonical.com/#/incident/KNms6QK9ewuzz-7xUsPsNylV20jEt5kyKsd8A-3ptQEHpOd8VQ40ZQs-KD81fboQXeGZB94okNHdHBGlCv58Sw==)
+  - **Discussion**: [https://news.ycombinator.com/item?id=47972213](https://news.ycombinator.com/item?id=47972213)
+  - **Article (Lobsters)**: [https://status.canonical.com/](https://status.canonical.com/)
+  - **Discussion (Lobsters)**: [https://lobste.rs/s/h3q3ku/canonical_is_under_attack](https://lobste.rs/s/h3q3ku/canonical_is_under_attack)
+
+#### 3. 开发者工具、软件工程与编程
+
+这一部分涵盖了从编辑器到数据库、从逆向工程到编程哲学的广泛内容。
+
+- **Zed 1.0**
+  - **说明**: 由Atom和Tree-sitter原作者打造的代码编辑器Zed发布了1.0正式版。它以其极致的性能和原生体验著称，被誉为“VS Code的潜在挑战者”，是今天最受瞩目的开发者新闻。
+  - **Article**: [https://zed.dev/blog/zed-1-0](https://zed.dev/blog/zed-1-0)
+  - **Discussion**: [https://news.ycombinator.com/item?id=47949027](https://news.ycombinator.com/item?id=47949027)
+
+- **Show HN: WhatCable, a tiny menu bar app for inspecting USB-C cables**
+  - **说明**: 一个非常实用的macOS开源小工具，能识别USB-C线的具体能力（充电功率、数据速度等）。解决了用户面对一堆外观相同但性能各异的线缆时的困扰。
+  - **Article**: [https://github.com/darrylmorley/whatcable](https://github.com/darrylmorley/whatcable)
+  - **Discussion**: [https://news.ycombinator.com/item?id=47972511](https://news.ycombinator.com/item?id=47972511)
+
+- **Reverse Engineering SimTower**
+  - **说明**: 作者详细记录了如何逆向工程经典游戏《SimTower》，并构建了一个几乎完美的复刻版。这是一个关于软件考古学、逆向工程和游戏开发的精彩案例研究。
+  - **Article**: [https://phulin.me/blog/simtower](https://phulin.me/blog/simtower)
+  - **Discussion**: [https://news.ycombinator.com/item?id=47937814](https://news.ycombinator.com/item?id=47937814)
+
+- **Full-Text Search with DuckDB**
+  - **说明**: 一篇技术教程，展示了如何在轻量级分析数据库DuckDB中实现全文搜索。对于需要快速、嵌入式搜索功能的数据科学家和开发者来说非常实用。
+  - **Article**: [https://peterdohertys.website/blog-posts/full-text-search-w-duckdb.html](https://peterdohertys.website/blog-posts/full-text-search-w-duckdb.html)
+  - **Discussion**: [https://news.ycombinator.com/item?id=47966254](https://news.ycombinator.com/item?id=47966254)
+
+- **Does Postgres Scale?**
+  - **说明**: 一篇技术文章，通过基准测试探讨了PostgreSQL在任务调度工作流中的扩展性。对于依赖Postgres构建高并发应用的团队有重要参考价值。
+  - **Article**: [https://www.dbos.dev/blog/benchmarking-workflow-execution-scalability-on-postgres](https://www.dbos.dev/blog/benchmarking-workflow-execution-scalability-on-postgres)
+  - **Discussion**: [https://news.ycombinator.com/item?id=47966625](https://news.ycombinator.com/item?id=47966625)
+
+- **Your website is not for you**
+  - **说明**: 一篇关于Web设计的文章，核心观点是网站是为用户而非开发者自己设计的。它提醒开发者要跳出自我视角，关注用户体验和可访问性。
+  - **Article**: [https://websmith.studio/blog/your-website-is-not-for-you/](https://websmith.studio/blog/your-website-is-not-for-you/)
+  - **Discussion**: [https://news.ycombinator.com/item?id=47973376](https://news.ycombinator.com/item?id=47973376)
+
+- **Inverse Sapir-Whorf and programming languages**
+  - **说明**: 一篇探讨编程语言如何影响思维方式的文章，从语言学的萨丕尔-沃尔夫假说出发，讨论了编程语言的范式如何塑造程序员的思考模式。
+  - **Article**: [https://lukeplant.me.uk/blog/posts/inverse-sapir-whorf-and-programming-languages/](https://lukeplant.me.uk/blog/posts/inverse-sapir-whorf-and-programming-languages/)
+  - **Discussion**: [https://lobste.rs/s/hb9tdr/inverse_sapir_whorf_programming](https://lobste.rs/s/hb9tdr/inverse_sapir_whorf_programming)
+
+#### 4. 新硬件、教育与生活
+
+- **Ti-84 Evo**
+  - **说明**: 德州仪器发布了其经典图形计算器的新型号Ti-84 Evo。尽管计算器市场在萎缩，但TI-84系列在教育领域的统治地位依然稳固，其更新总能引发关于数学教育和科技产品的讨论。
+  - **Article**: [https://education.ti.com/en/products/calculators/graphing-calculators/ti-84-evo](https://education.ti.com/en/products/calculators/graphing-calculators/ti-84-evo)
+  - **Discussion**: [https://news.ycombinator.com/item?id=47979583](https://news.ycombinator.com/item?id=47979583)
+
+- **New mechanical panoramic film camera from Jeff Bridges**
+  - **说明**: 演员Jeff Bridges推出了一个新的全景胶片相机品牌。在数码时代，这则新闻吸引了摄影爱好者和怀旧者的目光，是对机械工艺和模拟摄影的致敬。
+  - **Article**: [https://wideluxx.com](https://wideluxx.com)
+  - **Discussion**: [https://news.ycombinator.com/item?id=47937033](https://news.ycombinator.com/item?id=47937033)
+
+- **OpenWarp**
+  - **说明**: 一个名为OpenWarp的开源项目，具体功能未在摘要中说明，但“Warp”通常与文件传输或时间旅行相关。鉴于其在高分列表中，很可能是一个有趣或有创新的项目，值得点击查看。
+  - **Article**: [https://openwarp.zerx.dev](https://openwarp.zerx.dev)
+  - **Discussion**: [https://news.ycombinator.com/item?id=47970622](https://news.ycombinator.com/item?id=47970622)
+
+#### 5. 人文、社会与杂谈
+
+- **New research suggests people can communicate and practice skills while dreaming**
+  - **说明**: 《纽约客》报道了关于“清醒梦”的新研究，表明人们可以在梦境中进行沟通和练习技能。这挑战了我们对睡眠和学习的传统认知，极具科幻感和新闻价值。
+  - **Article**: [https://www.newyorker.com/culture/annals-of-inquiry/its-possible-to-learn-in-our-sleep-should-we](https://www.newyorker.com/culture/annals-of-inquiry/its-possible-to-learn-in-our-sleep-should-we)
+  - **Discussion**: [https://news.ycombinator.com/item?id=47977748](https://news.ycombinator.com/item?id=47977748)
+
+- **An open letter asking NHS England to keep its code open**
+  - **说明**: 一封公开信，呼吁英国国家医疗服务体系（NHS）保持其代码开源。这关乎公共资金开发的软件是否应回馈社区，以及开源在公共服务中的价值。
+  - **Article**: [0:{"buildId":"KP5DUjxfcEc_p0-YIbsv_","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-05-02","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":11},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-05-02"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+c:T534,This is the story of building <a href="https:&#x2F;&#x2F;towers.world" rel="nofollow">https:&#x2F;&#x2F;towers.world</a>, a ~perfect, tick-for-tick reproduction of 1993 game SimTower.<p>I spent weeks reverse-engineering the original EXE and writing up a detailed spec of how the simulation actually works under the hood — population flow, elevator AI, the whole star-rating system. The specs are all on GitHub if you want to read them: <a href="https:&#x2F;&#x2F;github.com&#x2F;phulin&#x2F;tower-together&#x2F;tree&#x2F;main&#x2F;specs" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;phulin&#x2F;tower-together&#x2F;tree&#x2F;main&#x2F;specs</a><p>It&#x27;s also collaborative. Multiple players can connect to the same tower, the simulation keeps running as long as anyone&#x27;s connected, and build actions sync across clients in real time.<p>Because I rebuilt the UI, I could add features like shift-click to build grids of rooms - instead of painstakingly clicking to build rows of offices and hotels, shift-click allows a 10-floor grid to be built all at once.<p>The game runs on Cloudflare Durable Objects, one of my favorite web primitives.<p>Everything is open source: <a href="https:&#x2F;&#x2F;github.com&#x2F;phulin&#x2F;tower-together" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;phulin&#x2F;tower-together</a>d:T6a4,Please state the location and include REMOTE for remote work, REMOTE (US)
+or similar if the country is restricted, and ONSITE when remote work is <i>not</i> an option.<p>Please only post if you personally are part of the hiring company—no
+recruiting firms or job boards. One post per company. If it isn&#x27;t a household name,
+explain what your company does.<p>Please only post if you are actively filling a position and are committed
+to replying to applicants.<p>Commenters: please don&#x27;t reply to job posts to complain about
+something. It&#x27;s off topic here.<p>Readers: please only email if you are personally interested in the job.<p>Searchers: try <a href="https:&#x2F;&#x2F;nthesis.ai&#x2F;public&#x2F;hn-who-is-hiring" rel="nofollow">https:&#x2F;&#x2F;nthesis.ai&#x2F;public&#x2F;hn-who-is-hiring</a>, <a href="https:&#x2F;&#x2F;dheerajck.github.io&#x2F;hnwhoishiring&#x2F;" rel="nofollow">https:&#x2F;&#x2F;dheerajck.github.io&#x2F;hnwhoishiring&#x2F;</a>, <a href="http:&#x2F;&#x2F;nchelluri.github.io&#x2F;hnjobs&#x2F;" rel="nofollow">http:&#x2F;&#x2F;nchelluri.github.io&#x2F;hnjobs&#x2F;</a>,
+<a href="https:&#x2F;&#x2F;hnjobs.emilburzo.com" rel="nofollow">https:&#x2F;&#x2F;hnjobs.emilburzo.com</a>, or this (unofficial) Chrome extension:
+<a href="https:&#x2F;&#x2F;chromewebstore.google.com&#x2F;detail&#x2F;hn-hiring-pro&#x2F;mpfaljjblphnlloddaplgicpkinikjlp" rel="nofollow">https:&#x2F;&#x2F;chromewebstore.google.com&#x2F;detail&#x2F;hn-hiring-pro&#x2F;mpfal...</a>.<p>Don&#x27;t miss this other fine thread: <i>Who wants to be hired?</i> <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47975570">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47975570</a>6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47949027","title":"Zed 1.0","url":"https://zed.dev/blog/zed-1-0","source":"Hacker News","score":2108,"comments_count":681,"comments_url":"https://news.ycombinator.com/item?id=47949027","published_at":"2026-04-29T14:34:19","author":"salkahfi","text":null,"summary":"Zed 1.0 正式发布，标志着这款高性能代码编辑器达到稳定版本，值得关注因为它可能改变开发者对现代编辑器的使用体验。"},{"id":"hn-47961319","title":"Belgium stops decommissioning nuclear power plants","url":"https://dpa-international.com/general-news/urn:newsml:dpa.com:20090101:260430-930-14717/","source":"Hacker News","score":851,"comments_count":947,"comments_url":"https://news.ycombinator.com/item?id=47961319","published_at":"2026-04-30T12:17:14","author":"mpweiher","text":null,"summary":"比利时决定停止退役核电站，这一政策转变对欧洲能源安全和气候目标有重大影响，值得关注。"},{"id":"hn-47967786","title":"Can I disable all data collection from my vehicle?","url":"https://rivian.com/support/article/can-i-disable-all-data-collection-from-my-vehicle","source":"Hacker News","score":722,"comments_count":328,"comments_url":"https://news.ycombinator.com/item?id=47967786","published_at":"2026-04-30T20:27:22","author":"Cider9986","text":null,"summary":"Rivian 支持页面探讨能否禁用车辆数据收集，涉及隐私和用户控制权，值得关注因为汽车数据收集日益普遍。"},{"id":"hn-47965060","title":"How Mark Klein told the EFF about Room 641A [book excerpt]","url":"https://thereader.mitpress.mit.edu/the-whistleblower-who-uncovered-the-nsas-big-brother-machine/","source":"Hacker News","score":681,"comments_count":246,"comments_url":"https://news.ycombinator.com/item?id=47965060","published_at":"2026-04-30T16:41:00","author":"the-mitr","text":null,"summary":"本文摘录揭露了 Mark Klein 如何向 EFF 披露 NSA 的 Room 641A 监控项目，值得关注因为它揭示了大规模监控的历史内幕。"},{"id":"hn-47951295","title":"Opus 4.7 knows the real Kelsey","url":"https://www.theargumentmag.com/p/i-can-never-talk-to-an-ai-anonymously","source":"Hacker News","score":458,"comments_count":249,"comments_url":"https://news.ycombinator.com/item?id=47951295","published_at":"2026-04-29T17:09:03","author":"ilamont","text":null,"summary":"文章讨论 AI 无法真正匿名交流的问题，强调隐私在 AI 交互中的重要性，值得关注因为 AI 匿名性影响用户信任。"},{"id":"hn-47972511","title":"Show HN: WhatCable, a tiny menu bar app for inspecting USB-C cables","url":"https://github.com/darrylmorley/whatcable","source":"Hacker News","score":421,"comments_count":128,"comments_url":"https://news.ycombinator.com/item?id=47972511","published_at":"2026-05-01T08:43:45","author":"sleepingNomad","text":"USB-C cables can be a mess. One cable charges at 5W, another does 100W and Thunderbolt 4, and they look identical in the drawer.<p>WhatCable sits in your menu bar and reads the cable data your Mac already has access to. Plug in a cable and it tells you in plain English what it can actually do: charging wattage, data speed, display support, Thunderbolt, etc.<p>Built in Swift&#x2F;SwiftUI. Open source, free, no tracking.<p>GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;darrylmorley&#x2F;whatcable\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;darrylmorley&#x2F;whatcable</a>","summary":"WhatCable 是一款菜单栏应用，能识别 USB-C 电缆的实际能力，解决电缆混乱问题，值得关注因为它简化了日常技术使用。"},{"id":"hn-47972447","title":"Grok 4.3","url":"https://docs.x.ai/developers/models/grok-4.3","source":"Hacker News","score":376,"comments_count":506,"comments_url":"https://news.ycombinator.com/item?id=47972447","published_at":"2026-05-01T08:29:31","author":"simianwords","text":null,"summary":"Grok 4.3 发布，作为 xAI 的新模型，值得关注因为它可能推动 AI 对话能力的进步。"},{"id":"hn-47978370","title":"City Learns Flock Accessed Cameras in Children's Gymnastics Room as a Sales Demo","url":"https://www.404media.co/city-learns-flock-accessed-cameras-in-childrens-gymnastics-room-as-a-sales-pitch-demo-renews-contract-anyway/","source":"Hacker News","score":311,"comments_count":88,"comments_url":"https://news.ycombinator.com/item?id=47978370","published_at":"2026-05-01T18:37:47","author":"joshcsimmons","text":null,"summary":"Flock 公司以销售演示为由访问儿童体操房的摄像头，城市仍续约合同，值得关注因为它暴露了监控和隐私保护的严重问题。"},{"id":"hn-47960507","title":"Granite 4.1: IBM's 8B Model Matching 32B MoE","url":"https://firethering.com/granite-4-1-ibm-open-source-model-family/","source":"Hacker News","score":308,"comments_count":200,"comments_url":"https://news.ycombinator.com/item?id=47960507","published_at":"2026-04-30T10:31:17","author":"steveharing1","text":"<a href=\"https:&#x2F;&#x2F;research.ibm.com&#x2F;blog&#x2F;granite-4-1-ai-foundation-models\" rel=\"nofollow\">https:&#x2F;&#x2F;research.ibm.com&#x2F;blog&#x2F;granite-4-1-ai-foundation-mode...</a>","summary":"IBM 的 Granite 4.1 模型以 8B 参数匹配 32B MoE 性能，值得关注因为它展示了高效 AI 模型的潜力。"},{"id":"hn-47979583","title":"Ti-84 Evo","url":"https://education.ti.com/en/products/calculators/graphing-calculators/ti-84-evo","source":"Hacker News","score":301,"comments_count":290,"comments_url":"https://news.ycombinator.com/item?id=47979583","published_at":"2026-05-01T20:06:59","author":"thatxliner","text":null,"summary":"TI-84 Evo 是经典图形计算器的新版本，值得关注因为它可能延续教育工具的传统并引入新功能。"},{"id":"hn-47977748","title":"New research suggests people can communicate and practice skills while dreaming","url":"https://www.newyorker.com/culture/annals-of-inquiry/its-possible-to-learn-in-our-sleep-should-we","source":"Hacker News","score":249,"comments_count":133,"comments_url":"https://news.ycombinator.com/item?id=47977748","published_at":"2026-05-01T17:47:42","author":"XzetaU8","text":"<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;6wKhx\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;6wKhx</a>","summary":"新研究表明，人们在梦中也能进行沟通和练习技能，挑战了传统对睡眠学习能力的认知，值得关注因为它可能彻底改变教育和技能培训的方式。"},{"id":"hn-47973376","title":"Your website is not for you","url":"https://websmith.studio/blog/your-website-is-not-for-you/","source":"Hacker News","score":244,"comments_count":175,"comments_url":"https://news.ycombinator.com/item?id=47973376","published_at":"2026-05-01T11:08:20","author":"pumbaa","text":null,"summary":"文章强调网站设计应以用户为中心而非满足开发者自身需求，这一观点对提升用户体验和网站有效性至关重要。"},{"id":"hn-47937814","title":"Reverse Engineering SimTower","url":"https://phulin.me/blog/simtower","source":"Hacker News","score":244,"comments_count":72,"comments_url":"https://news.ycombinator.com/item?id=47937814","published_at":"2026-04-28T17:41:38","author":"patrickhulin","text":"$c","summary":"详细记录了逆向工程1993年游戏SimTower并构建精确复刻版的过程，展示了技术考古和模拟工程的深度，对游戏开发者和复古技术爱好者有重要参考价值。"},{"id":"hn-47975571","title":"Ask HN: Who is hiring? (May 2026)","url":null,"source":"Hacker News","score":229,"comments_count":256,"comments_url":"https://news.ycombinator.com/item?id=47975571","published_at":"2026-05-01T15:00:07","author":"whoishiring","text":"$d","summary":"Hacker News的月度招聘帖，汇集了科技公司的最新职位信息，是技术求职者追踪行业机会的关键资源。"},{"id":"hn-47975785","title":"An open letter asking NHS England to keep its code open","url":"https://keepthingsopen.com","source":"Hacker News","score":225,"comments_count":13,"comments_url":"https://news.ycombinator.com/item?id=47975785","published_at":"2026-05-01T15:15:36","author":"tvararu","text":null,"summary":"一封公开信呼吁NHS England保持其代码开源，强调医疗系统透明度和协作的重要性，直接影响公共健康和开源政策。"},{"id":"hn-47942863","title":"Maladaptive Frugality","url":"https://herbertlui.net/maladaptive-frugality/","source":"Hacker News","score":209,"comments_count":269,"comments_url":"https://news.ycombinator.com/item?id=47942863","published_at":"2026-04-29T00:50:15","author":"herbertl","text":null,"summary":"探讨了“不良节俭”现象，即过度省钱反而导致长期损失，这一概念对个人理财和决策心理学有深刻启示。"},{"id":"hn-47937033","title":"New mechanical panoramic film camera from Jeff Bridges","url":"https://wideluxx.com","source":"Hacker News","score":204,"comments_count":104,"comments_url":"https://news.ycombinator.com/item?id=47937033","published_at":"2026-04-28T16:49:12","author":"armadsen","text":null,"summary":"著名演员Jeff Bridges推出新型机械全景胶片相机，融合了复古工艺与现代设计，对摄影爱好者和技术怀旧者具有独特吸引力。"},{"id":"hn-47946899","title":"New copy of earliest poem in English, written 1,3k years ago, discovered in Rome","url":"https://www.tcd.ie/news_events/articles/2026/caedmons-hymn-discovery/","source":"Hacker News","score":203,"comments_count":125,"comments_url":"https://news.ycombinator.com/item?id=47946899","published_at":"2026-04-29T11:35:40","author":"giuliomagnifico","text":null,"summary":"在罗马发现了1300年前现存最古老英语诗歌的新副本，这一考古发现对语言学、历史学和文学研究意义重大。"},{"id":"hn-47970622","title":"OpenWarp","url":"https://openwarp.zerx.dev","source":"Hacker News","score":192,"comments_count":137,"comments_url":"https://news.ycombinator.com/item?id=47970622","published_at":"2026-05-01T02:10:46","author":"zero-lab","text":null,"summary":"介绍OpenWarp项目，可能涉及新型技术框架或工具，值得关注其创新潜力。"},{"id":"hn-47979839","title":"Credit cards are vulnerable to brute force kind attacks","url":"https://metin.nextc.org/posts/Credit_Cards_Are_Vulnerable_To_Brute_Force_Kind_Attacks.html","source":"Hacker News","score":191,"comments_count":156,"comments_url":"https://news.ycombinator.com/item?id=47979839","published_at":"2026-05-01T20:26:24","author":"kodbraker","text":null,"summary":"揭示信用卡系统易受暴力攻击的漏洞，对金融安全和消费者保护具有紧迫的警示意义。"},{"id":"hn-47966254","title":"Full-Text Search with DuckDB","url":"https://peterdohertys.website/blog-posts/full-text-search-w-duckdb.html","source":"Hacker News","score":178,"comments_count":33,"comments_url":"https://news.ycombinator.com/item?id=47966254","published_at":"2026-04-30T18:14:18","author":"ethagnawl","text":null,"summary":"本文介绍了如何在DuckDB中实现全文搜索，展示了其轻量级和高效的特点，对于数据分析和嵌入式场景具有实用价值。"},{"id":"hn-47966625","title":"Does Postgres Scale?","url":"https://www.dbos.dev/blog/benchmarking-workflow-execution-scalability-on-postgres","source":"Hacker News","score":169,"comments_count":83,"comments_url":"https://news.ycombinator.com/item?id=47966625","published_at":"2026-04-30T18:45:22","author":"KraftyOne","text":null,"summary":"本文通过基准测试探讨了PostgreSQL的扩展性，评估了工作流执行的可扩展性，为数据库选型和性能优化提供了关键参考。"},{"id":"hn-47972213","title":"Canonical/Ubuntu have been under DDoS","url":"https://status.canonical.com/#/incident/KNms6QK9ewuzz-7xUsPsNylV20jEt5kyKsd8A-3ptQEHpOd8VQ40ZQs-KD81fboQXeGZB94okNHdHBGlCv58Sw==","source":"Hacker News","score":165,"comments_count":53,"comments_url":"https://news.ycombinator.com/item?id=47972213","published_at":"2026-05-01T07:44:17","author":"jtlebigot","text":null,"summary":"报道了Canonical/Ubuntu遭受分布式拒绝服务攻击（DDoS）的事件，凸显了开源基础设施的安全风险，值得关注其影响和应对措施。"},{"id":"hn-47977583","title":"The X-Files has made me nostalgic for a time I never experienced","url":"https://midnightmurmurations.substack.com/p/the-x-files-has-made-me-nostalgic","source":"Hacker News","score":163,"comments_count":160,"comments_url":"https://news.ycombinator.com/item?id=47977583","published_at":"2026-05-01T17:34:49","author":"Teever","text":null,"summary":"文章从个人视角反思《X档案》带来的怀旧情感，探讨了媒体如何唤起对未曾经历时代的向往，具有文化分析价值。"},{"id":"hn-47969288","title":"CPanel and WHM Authentication Bypass – CVE-2026-41940","url":"https://labs.watchtowr.com/the-internet-is-falling-down-falling-down-falling-down-cpanel-whm-authentication-bypass-cve-2026-41940/","source":"Hacker News","score":146,"comments_count":58,"comments_url":"https://news.ycombinator.com/item?id=47969288","published_at":"2026-04-30T22:48:51","author":"zikani_03","text":null,"summary":"披露了CPanel和WHM中的身份验证绕过漏洞（CVE-2026-41940），对托管服务安全性构成严重威胁，需及时关注补丁。"}],"locale":"zh"}],"$Le"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
-d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-6161cd7821e6","title":"GCC 16 Release Series: Changes, New Features, and Fixes","url":"https://gcc.gnu.org/gcc-16/changes.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-30T16:08:37","author":"gcc.gnu.org via jmillikin","text":"<p><a href=\"https://lobste.rs/s/zbcg79/gcc_16_release_series_changes_new\">Comments</a></p>","summary":"GCC 16发布系列带来了新功能、改进和修复，对C/C++开发者至关重要，影响编译效率和代码优化。"},{"id":"rss-6754950847be","title":"You can beat the binary search","url":"https://lemire.me/blog/2026/04/27/you-can-beat-the-binary-search/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-30T14:54:15","author":"lemire.me via gabeio","text":"<p><a href=\"https://lobste.rs/s/lvr02w/you_can_beat_binary_search\">Comments</a></p>","summary":"文章提出了一种超越传统二分查找的算法优化方法，挑战了经典算法效率，对性能敏感型应用有实际价值。"},{"id":"rss-2886f44baca3","title":"Mozilla's position on the Prompt API","url":"https://mastodon.social/@firefoxwebdevs/116492853483021978","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-30T09:30:52","author":"mastodon.social via untitaker","text":"<p><a href=\"https://lobste.rs/s/pcymmp/mozilla_s_position_on_prompt_api\">Comments</a></p>","summary":"Mozilla对Prompt API的官方立场反映了浏览器厂商对AI集成技术的态度，影响Web开发未来方向。"},{"id":"rss-894a234eb005","title":"Contributor Poker and Zig's AI Ban","url":"https://kristoff.it/blog/contributor-poker-and-ai/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-29T16:12:55","author":"kristoff.it by kristoff","text":"<p><a href=\"https://lobste.rs/s/ifcyr1/contributor_poker_zig_s_ai_ban\">Comments</a></p>","summary":"探讨了Zig社区对AI贡献的禁令及其引发的‘贡献者扑克’现象，揭示了开源治理与AI伦理的冲突。"},{"id":"rss-4ca06bac6eb2","title":"A text editor as a user interface","url":"https://ratfactor.com/cards/text-editor-as-ui","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-04-30T08:09:07","author":"ratfactor.com via jbauer","text":"<p><a href=\"https://lobste.rs/s/b9vrje/text_editor_as_user_interface\">Comments</a></p>","summary":"文章论证了文本编辑器作为用户界面的潜力，挑战了传统GUI设计，对极简主义和高效工作流倡导者有吸引力。"}],"locale":"zh"}]
-10:null
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+e:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-9b68952e9645","title":"combat LLM spam by building a web of trust","url":"https://blog.tangled.org/vouching/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-01T17:17:13","author":"blog.tangled.org by op","text":"<p><a href=\"https://lobste.rs/s/kghyn5/combat_llm_spam_by_building_web_trust\">Comments</a></p>","summary":"提出通过构建信任网络来对抗LLM（大语言模型）生成的垃圾信息，是一种创新的内容过滤策略，对维护网络信息质量有借鉴意义。"},{"id":"rss-6ea507651f78","title":"Why I Don’t Vibe Code","url":"https://jacobharr.is/personal/i-dont-vibe-code","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-01T14:22:46","author":"jacobharr.is via lollipopman","text":"<p><a href=\"https://lobste.rs/s/vwmojf/why_i_don_t_vibe_code\">Comments</a></p>","summary":"作者解释了为何不采用“vibe coding”风格，强调代码质量和可维护性，对编程实践和开发文化有反思价值。"},{"id":"rss-32f10ce88e6f","title":"Canonical is under attack","url":"https://status.canonical.com/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-01T21:00:24","author":"status.canonical.com via labria","text":"<p>Also: <a href=\"https://arstechnica.com/security/2026/05/ubuntu-infrastructure-has-been-down-for-more-than-a-day/\" rel=\"ugc\">https://arstechnica.com/security/2026/05/ubuntu-infrastructure-has-been-down-for-more-than-a-day/</a></p>\n<p><a href=\"https://lobste.rs/s/h3q3ku/canonical_is_under_attack\">Comments</a></p>","summary":"报道了Canonical基础设施遭受持续攻击，导致服务中断超过一天，凸显了关键开源项目的安全脆弱性，值得密切关注。"},{"id":"rss-8dd4e1948709","title":"Inverse Sapir-Whorf and programming languages","url":"https://lukeplant.me.uk/blog/posts/inverse-sapir-whorf-and-programming-languages/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-01T20:56:02","author":"lukeplant.me.uk by spookylukey","text":"<p><a href=\"https://lobste.rs/s/hb9tdr/inverse_sapir_whorf_programming\">Comments</a></p>","summary":"探讨了反向萨丕尔-沃尔夫假说与编程语言的关系，分析语言如何影响思维，对编程语言设计和认知科学有启发性。"},{"id":"rss-85e6bbe1d77c","title":"A life update from Zach Oakes: Zig, AI, unemployment, and more","url":"https://www.youtube.com/watch?v=DhhPUrizZcw","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-01T12:10:28","author":"youtube.com via self","text":"<p>Zach Oakes, who some of you might know from his many Clojure projects, disappeared for a while.  He recently posted this and a couple of videos about what he's been up to and his VCS system.</p>\n<p><a href=\"https://lobste.rs/s/x8z1yc/life_update_from_zach_oakes_zig_ai\">Comments</a></p>","summary":"Zach Oakes分享了个人近况，包括转向Zig语言、AI相关工作和失业经历，并介绍其版本控制系统，对技术社区有参考价值。"}],"locale":"zh"}]
+11:null
