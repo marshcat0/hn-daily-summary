@@ -3,112 +3,120 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-f:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-10:"$Sreact.suspense"
-5:T1ffe,好的，作为一名专业的技术新闻分析师，我已经对今日“AI & Machine Learning”领域的11篇热门文章进行了深入分析和总结。以下是按子主题分组的内容概览。
+c:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+d:"$Sreact.suspense"
+5:T2f0c,好的，作为专业的技术新闻分析师，我已经对今天“AI & Machine Learning”主题的13篇热门文章进行了深入分析和总结。以下是我的报告。
 
-### 综合分析
+### 主题分析总览
 
-今日的热点呈现出清晰的“双轨并行”态势：一方面，前沿模型（如DeepSeek V4）和AI在社会应用中的伦理与实证研究（如算法招聘）依然是核心关注点；另一方面，大量开源项目和新框架正致力于将AI能力“工具化”和“产品化”，尤其是围绕“AI Agent”（智能体）的构建、交互界面（如仪表盘、PDF编辑）以及本地化运行（如桌面端数据分析工具），显示出社区正从“如何构建大模型”快速转向“如何用大模型构建实用工具”。
+今日的热门文章呈现出几个鲜明的趋势：
+1.  **前沿大模型竞赛：** 以DeepSeek V4为代表的新一代模型正在逼近性能前沿，同时价格极具竞争力，引发行业震动。
+2.  **AI在垂直领域的实证：** 医疗领域成为焦点，多项研究（如OpenAI o1在急诊诊断、ADHD脑部扫描）展示了AI超越人类专家的潜力，但也提出了方法论上的挑战（如个体差异）。
+3.  **AI Agent的反思与进化：** 社区对“Agentic”编码模式进行了激烈辩论，同时出现了更高效、更便宜的Agent实现方案（如DeepClaude），以及对Agent安全架构（沙箱外）的深入探讨。
+4.  **对LLM本质的哲学探讨：** 有文章尖锐指出LLM并非更高层次的抽象，引发了对技术本质的思考。
+5.  **AI在金融等严肃行业的落地：** 强调了AI应用中的“可验证性”和“可信度”问题。
 
----
+### 按子主题分组分析
 
-### 按子主题分组
+#### 主题一：前沿模型与新工具
 
-#### 1. 前沿模型与伦理研究
+**1. DeepSeek V4 – almost on the frontier**
+- **分析：** 这篇文章来自知名技术博主Simon Willison，评价DeepSeek V4“几乎处于前沿”。这表明中国AI模型在性能上已与GPT-4o、Claude等顶级模型不相上下，引发了Hacker News社区关于“开源vs闭源”、“模型成本”和“技术追赶”的热烈讨论。值得关注是因为它代表了AI竞争格局的重大变化。
+- **原文链接：** [https://simonwillison.net/2026/Apr/24/deepseek-v4/](https://simonwillison.net/2026/Apr/24/deepseek-v4/)
+- **讨论链接：** [https://news.ycombinator.com/item?id=47977026](https://news.ycombinator.com/item?id=47977026)
 
-- **DeepSeek V4—almost on the frontier**
-  - **简要说明**：Simon Willison对DeepSeek V4模型的评测文章。该模型性能接近前沿水平，但更引人注目的是其极高性价比和开源策略，对现有市场格局（如OpenAI、Anthropic）构成潜在冲击。值得关注是因为它代表了开源大模型追赶闭源模型的又一里程碑。
-  - **原文链接**：https://simonwillison.net/2026/Apr/24/deepseek-v4/
-  - **讨论链接**：https://news.ycombinator.com/item?id=47977026
+**5. DeepClaude – Claude Code agent loop with DeepSeek V4 Pro, 17x cheaper**
+- **分析：** 这是一个非常实用且引人注目的项目。它创造性地将Claude的Agent能力（Claude Code）与DeepSeek V4 Pro的推理能力结合，声称成本降低17倍。这反映了社区正在积极探索如何混合使用不同模型，以在性能和成本之间取得最佳平衡。
+- **原文链接：** [https://github.com/aattaran/deepclaude](https://github.com/aattaran/deepclaude)
+- **讨论链接：** [https://news.ycombinator.com/item?id=48002136](https://news.ycombinator.com/item?id=48002136)
 
-- **AI Self-preferencing in Algorithmic Hiring: Empirical Evidence and Insights**
-  - **简要说明**：一篇来自arXiv的实证研究论文，揭示了AI在算法招聘中可能存在“自我偏好”现象（即AI系统更倾向于选择与自己训练数据特征相似的候选人）。这触及了AI社会公平性的核心争议，对于HR技术从业者和政策制定者具有重要警示意义。
-  - **原文链接**：https://arxiv.org/abs/2509.00462
-  - **讨论链接**：https://news.ycombinator.com/item?id=47987256
+**11. How Kepler built verifiable AI for financial services with Claude**
+- **分析：** 这是一个成功的行业应用案例。Kepler公司利用Claude模型构建了金融服务的“可验证AI”。在金融领域，模型的决策必须可解释、可审计。这篇文章展示了如何将强大的LLM应用于对准确性、合规性要求极高的场景，具有很高的参考价值。
+- **原文链接：** [https://claude.com/blog/how-kepler-built-verifiable-ai-for-financial-services-with-claude](https://claude.com/blog/how-kepler-built-verifiable-ai-for-financial-services-with-claude)
+- **讨论链接：** [https://news.ycombinator.com/item?id=47999754](https://news.ycombinator.com/item?id=47999754)
 
-#### 2. 机器人学的“ChatGPT时刻”
+#### 主题二：AI Agent的批判与架构
 
-- **Eka’s robotic claw feels like we're approaching a ChatGPT moment**
-  - **简要说明**：Wired文章报道了Eka Robotics的机械爪技术，认为它可能标志着机器人领域的“ChatGPT时刻”——即一个通用、可泛化的基础模型出现，使机器人能执行多种复杂任务。这不仅是硬件进步，更可能是机器人软件栈（尤其是灵巧操控）的范式转变。
-  - **原文链接**：https://www.wired.com/story/when-robots-have-their-chatgpt-moment-remember-these-pincers/ (存档链接：https://archive.is/Wro1e)
-  - **讨论链接**：https://news.ycombinator.com/item?id=47955789
+**4. Agentic Coding Is a Trap**
+- **分析：** 这篇文章对当前火热的“Agentic Coding”（智能体编程）概念泼了一盆冷水。作者认为，完全依赖AI Agent来自动编写代码可能会带来代码质量、可维护性和调试复杂性等问题。这是一篇重要的反思性文章，提醒社区在拥抱新技术时保持理性。
+- **原文链接：** [https://larsfaye.com/articles/agentic-coding-is-a-trap](https://larsfaye.com/articles/agentic-coding-is-a-trap)
+- **讨论链接：** [https://news.ycombinator.com/item?id=48002442](https://news.ycombinator.com/item?id=48002442)
 
-#### 3. AI Agent 开发框架与基础设施
+**6. The agent harness belongs outside the sandbox**
+- **分析：** 这是一篇关于AI Agent安全架构的技术文章。作者主张Agent的控制核心（harness）应该放在沙箱之外，以更有效地管理、监控和限制Agent的行为。这触及了Agent部署中的关键安全问题，对于构建可靠、可控的Agent系统至关重要。
+- **原文链接：** [https://www.mendral.com/blog/agent-harness-belongs-outside-sandbox](https://www.mendral.com/blog/agent-harness-belongs-outside-sandbox)
+- **讨论链接：** [https://news.ycombinator.com/item?id=47990675](https://news.ycombinator.com/item?id=47990675)
 
-- **Open Design: Use Your Coding Agent as a Design Engine**
-  - **简要说明**：一个名为“Open Design”的开源项目，旨在将代码生成Agent（如GitHub Copilot）的能力扩展到UI/UX设计领域。它允许开发者通过自然语言描述来生成设计稿，模糊了“编码”与“设计”的界限，对于提升前端开发效率极具价值。
-  - **原文链接**：https://github.com/nexu-io/open-design
-  - **讨论链接**：https://news.ycombinator.com/item?id=47985750
+#### 主题三：AI在医疗健康领域的突破与挑战
 
-- **Flue is a TypeScript framework for building the next generation of agents**
-  - **简要说明**：一个全新的TypeScript框架，专为构建“下一代AI Agent”而设计。它可能提供了更高级的抽象、状态管理或工具调用机制，对于希望构建复杂、可靠Agent应用的开发者来说，是一个值得关注的新选择。
-  - **原文链接**：https://flueframework.com/
-  - **讨论链接**：https://news.ycombinator.com/item?id=47988501
+**2. OpenAI's o1 correctly diagnosed 67% of ER patients vs. 50-55% by triage doctors**
+- **分析：** 这是一项轰动性的研究成果。OpenAI的o1模型在急诊分诊诊断准确率上（67%）显著超过了人类医生（50-55%）。这不仅是AI能力的重大证明，更预示了AI在医疗资源紧张、误诊风险高的急诊科可能发挥巨大价值。高关注度和评论数也反映了公众和专业人士的震惊与期待。
+- **原文链接：** [https://www.theguardian.com/technology/2026/apr/30/ai-outperforms-doctors-in-harvard-trial-of-emergency-triage-diagnoses](https://www.theguardian.com/technology/2026/apr/30/ai-outperforms-doctors-in-harvard-trial-of-emergency-triage-diagnoses)
+- **讨论链接：** [https://news.ycombinator.com/item?id=47991981](https://news.ycombinator.com/item?id=47991981)
 
-- **The agent harness belongs outside the sandbox**
-  - **简要说明**：一篇关于Agent安全与部署架构的技术博客。作者主张Agent的“控制框架”（harness）应运行在沙箱之外，以更好地管理权限、监控行为和保证稳定性。这触及了Agent系统设计的核心安全范式，是构建生产级Agent的关键讨论。
-  - **原文链接**：https://www.mendral.com/blog/agent-harness-belongs-outside-sandbox
-  - **讨论链接**：https://news.ycombinator.com/item?id=47990675
+**8. Group averages obscure how an individual's brain controls behavior: study**
+- **分析：** 这篇文章虽然主要讲神经科学，但与AI紧密相关。它指出，基于群体平均数据得出的结论（如脑区功能）可能掩盖个体差异。这对于AI模型（尤其是医疗诊断模型）的训练和评估方法提出了警示：不能过度依赖群体统计，必须考虑个性化。
+- **原文链接：** [https://med.stanford.edu/news/all-news/2026/04/brain-scans-individual-versus-group.html](https://med.stanford.edu/news/all-news/2026/04/brain-scans-individual-versus-group.html)
+- **讨论链接：** [https://news.ycombinator.com/item?id=47969142](https://news.ycombinator.com/item?id=47969142)
 
-#### 4. AI驱动的数据与文档工具
+**9. Brain scans reveal 3 ADHD subtypes**
+- **分析：** 利用脑部扫描技术，研究者发现了三种不同的ADHD亚型。这项研究为ADHD的精准诊断和个性化治疗提供了科学依据，也展示了AI/ML在分析复杂脑成像数据、发现隐藏模式方面的强大能力。
+- **原文链接：** [https://www.washingtonpost.com/health/2026/04/30/adhd-subtype-extreme-brain-scans/](https://www.washingtonpost.com/health/2026/04/30/adhd-subtype-extreme-brain-scans/)
+- **讨论链接：** [https://news.ycombinator.com/item?id=47970597](https://news.ycombinator.com/item?id=47970597) (并附有存档链接： [https://archive.is/3a4VZ](https://archive.is/3a4VZ))
 
-- **Show HN: DAC – open-source dashboard as code tool for agents and humans**
-  - **简要说明**：一个名为DAC的开源“仪表盘即代码”工具。其核心价值在于，它允许人类和AI Agent通过编写声明式代码来构建数据仪表盘，解决了Agent难以操作UI工具的痛点，并保证了变更的可审查性。
-  - **原文链接**：https://github.com/bruin-data/dac
-  - **讨论链接**：https://news.ycombinator.com/item?id=47949066
+#### 主题四：LLM本质与哲学思考
 
-- **Show HN: Mljar Studio – local AI data analyst that saves analysis as notebooks**
-  - **简要说明**：MLJAR Studio是一个桌面应用，允许用户通过自然语言与本地数据进行交互式分析，AI会自动生成Python代码并将整个分析过程保存为可复现的Jupyter Notebook。它兼顾了AI的易用性和代码的可审计性，是本地化数据科学工作流的有力补充。
-  - **原文链接**：https://mljar.com/
-  - **讨论链接**：https://news.ycombinator.com/item?id=47985077
+**10. LLMs Are Not a Higher Level of Abstraction**
+- **分析：** 作者从软件工程的角度出发，论证LLM（大语言模型）与传统的编程抽象（如函数、类、库）有本质区别。LLM基于统计模式和概率，而非确定的逻辑规则。这篇文章有助于澄清人们对LLM能力的误解，避免将其视为一种“更高级的编程范式”。
+- **原文链接：** [https://www.lelanthran.com/chap15/content.html](https://www.lelanthran.com/chap15/content.html)
+- **讨论链接：** [https://news.ycombinator.com/item?id=47999520](https://news.ycombinator.com/item?id=47999520)
 
-- **Show HN: Filling PDF forms with AI using client-side tool calling**
-  - **简要说明**：SimplePDF Copilot是一个AI助手，能够在浏览器端完全本地化地填写PDF表单。它强调隐私保护（PDF不离浏览器），并展示了AI通过“工具调用”与现有应用（PDF编辑器）交互的实用模式，对文档处理场景有直接帮助。
-  - **原文链接**：https://copilot.simplepdf.com/?share=a7d00ad073c75a75d493228e6ff7b11eb3f2d945b6175913e87898ec96ca8076&form=w9&lang=en
-  - **讨论链接**：https://news.ycombinator.com/item?id=47984675
+**12. Talking to Transformers**
+- **分析：** 这篇博客可能深入探讨了Transformer架构的内部机制或交互方式。虽然得分不高，但作为技术博客，它可能提供了有价值的深度技术见解，适合希望理解模型工作原理的读者。
+- **原文链接：** [https://miraos.org/blog/2026/05/02/talking-to-transformers](https://miraos.org/blog/2026/05/02/talking-to-transformers)
+- **讨论链接：** [https://news.ycombinator.com/item?id=47999776](https://news.ycombinator.com/item?id=47999776)
 
-#### 5. 学习资源与行业动态
+#### 主题五：其他相关技术或社区项目
 
-- **Voice-AI-for-Beginners – A curated learning path for developers**
-  - **简要说明**：一个面向开发者的语音AI入门学习路径，整理了相关资源。对于希望进入语音技术领域（如语音识别、合成、对话系统）的开发者来说，是一个很好的起点。
-  - **原文链接**：https://github.com/mahimairaja/voiceai
-  - **讨论链接**：https://news.ycombinator.com/item?id=47991018
+**3. I built my own hair electrolysis machine**
+- **分析：** 这是一个DIY硬件项目，作者利用机器学习（可能用于图像识别或过程控制）构建了个人脱毛仪。它展示了AI/ML技术在个人硬件项目中的创造性应用，体现了技术民主化。
+- **原文链接：** [https://www.scd31.com/posts/diy-hair-electrolysis-machine](https://www.scd31.com/posts/diy-hair-electrolysis-machine)
+- **讨论链接：** [https://news.ycombinator.com/item?id=47943632](https://news.ycombinator.com/item?id=47943632)
 
-- **Wyoming celebrates 'nuclear Renaissance' as feds approve license for a reactor**
-  - **简要说明**：关于怀俄明州核反应堆获批的新闻。虽然该文章本身与AI无直接关系，但AI与能源的紧密联系（AI训练和推理的巨大能耗）使其成为背景信息。核能的复兴可能为AI的可持续发展提供关键能源支撑。
-  - **原文链接**：https://text.npr.org/nx-s1-5798892
-  - **讨论链接**：https://news.ycombinator.com/item?id=47992303
+**7. Let's Buy Spirit Air**
+- **分析：** 这是一个有趣的互联网众筹项目，试图通过集体购买来收购一家航空公司。虽然核心不是AI，但这类社区治理、集体行动的模式与AI Agent或去中心化AI的理念有潜在联系，且获得了极高的关注度。
+- **原文链接：** [https://letsbuyspiritair.com/](https://letsbuyspiritair.com/)
+- **讨论链接：** [https://news.ycombinator.com/item?id=48002777](https://news.ycombinator.com/item?id=48002777)
 
----
+**13. Unauthorized macOS port claiming Don Ho as an author?**
+- **分析：** 这是一个关于著名文本编辑器Notepad++的社区事件。涉及未经授权的移植和作者署名问题，虽然与AI核心技术无关，但反映了开源社区的版权和信任问题，是技术生态的一部分。
+- **原文链接：** [https://github.com/notepad-plus-plus/notepad-plus-plus/issues/17982](https://github.com/notepad-plus-plus/notepad-plus-plus/issues/17982)
+- **讨论链接：** [https://news.ycombinator.com/item?id=48003346](https://news.ycombinator.com/item?id=48003346)
 
-### 今日最值得阅读的推荐（Top 3）
+### 今日最值得阅读的文章推荐
 
-1. **DeepSeek V4—almost on the frontier**
-   - **推荐理由**：这是今日最具行业影响力的文章。它直接关系到开源模型与闭源模型的竞争格局、AI成本下降的趋势以及未来开发者可用的基础设施。无论你是模型使用者、研究者还是投资者，都值得一读。
-   - **链接**：https://simonwillison.net/2026/Apr/24/deepseek-v4/
+1.  **推荐：OpenAI's o1 correctly diagnosed 67% of ER patients vs. 50-55% by triage doctors**
+    - **理由：** 这是今日最具冲击力和实际意义的新闻。它提供了AI在关键医疗领域超越人类专家的强有力证据，直接关系到每个人的健康福祉。无论你是AI从业者、医生还是普通大众，都值得一读。
+    - **链接：** [https://www.theguardian.com/technology/2026/apr/30/ai-outperforms-doctors-in-harvard-trial-of-emergency-triage-diagnoses](https://www.theguardian.com/technology/2026/apr/30/ai-outperforms-doctors-in-harvard-trial-of-emergency-triage-diagnoses)
 
-2. **AI Self-preferencing in Algorithmic Hiring: Empirical Evidence and Insights**
-   - **推荐理由**：这是一篇具有深刻社会意义的实证研究。它揭示了AI系统在关键决策场景（招聘）中可能存在的隐性偏见，这对于所有使用或开发AI招聘工具的公司来说，都是一个必须正视的风险。该话题在Hacker News上引发了170条评论，讨论热度极高。
-   - **链接**：https://arxiv.org/abs/2509.00462
+2.  **推荐：DeepSeek V4 – almost on the frontier**
+    - **理由：** 如果你想了解AI领域的最新竞争格局，这篇是必读。它清晰地阐述了DeepSeek V4的性能水平及其行业意义，是理解“开源模型崛起”和“AI成本下降”趋势的关键入口。
+    - **链接：** [https://simonwillison.net/2026/Apr/24/deepseek-v4/](https://simonwillison.net/2026/Apr/24/deepseek-v4/)
 
-3. **Eka’s robotic claw feels like we're approaching a ChatGPT moment**
-   - **推荐理由**：这篇文章将AI领域的“ChatGPT时刻”类比到机器人领域，极具启发性和前瞻性。它指出，机器人行业的突破可能不再仅仅是硬件迭代，而是一个能够泛化学习的基础模型的出现。对于关注AI与物理世界交互的人来说，这是必读内容。
-   - **链接**：https://www.wired.com/story/when-robots-have-their-chatgpt-moment-remember-these-pincers/ (存档：https://archive.is/Wro1e)0:{"buildId":"ZUEYAcxOJOkCUs2jK3NhR","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-05-03","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":11},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"ai","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"AI & Machine Learning"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"Artificial intelligence, machine learning, LLMs, and generative AI"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[11," ","articles"," • ","2026-05-03"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"AI & Machine Learning","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-c:Tb7a,Hi all, this is Burak.<p>When agents became a reality one of the first things I wanted to do was to automate building dashboards. The first, and the most obvious, wall that I ran into was that a lot of the tools were just driven by UI. This meant that without the agents handling browser UIs and whatnot, it wasn&#x27;t possible to have the agents do that. In addition, it would be impossible to review any of the changes the agent would make.<p>The first instinct there is to get your agent to build a React app for the dashboard. This works beautifully for the happy path, but I quickly ran into other issues there:
-- every dashboard turns out to be different
-- have to implement a backend to centralize the query execution
-- there is no centralized mechanism to control the rules and standards around visualizations
-- there is no way to get a semantic layer working with the dashboards easily<p>In the end, agents ended up reinventing the wheel for every new dashboard, even under the same project. Building a standardized, local project for these turned out to be building a BI tool from scratch.<p>After trying these out, I asked myself: what if the dashboards were built for agents as the primary user?<p>A product like that would need to have a couple of features:
-- First of all, everything needs to be driven by version-controllable text. YAML is fine.
-- Changes to the dashboards should be easy to review and understand by humans.
-- Agents are great at writing code, it&#x27;d be great if this were driven by code to have dynamic stuff: JSX would be great.
-- Static analysis being a first-class citizen: validate dashboards before deploying. Agents can check their work too.
-- A standardized way of deploying these based on a couple of files in a folder: operationally very simple.
-- Built-in semantic layer to standardize metrics.<p>That&#x27;s what I ended up building: dac (Dashboard-As-Code) is an open-source tool and a spec to define dashboards, well, as code. It contains an implementation in Go that can be deployed as a single binary anywhere. The dashboards are defined in YAML and JSX, YAML for static stuff, JSX for dynamic dashboards. You can run queries at load time to define conditional charts, generate tabs on the fly per customer, or list charts for each A&#x2F;B test you are running.<p>I built it in Go because I do love Go, and I think it is the greatest language at the moment to work with AI agents.<p>dac runs as a single binary, you can get started with a `dac init` command and it&#x27;ll automatically create some sample dashboards for you based on duckdb. It supports 10+ SQL backends, with more to come. It supports validation, custom themes and whatnot.<p>You can see it here: <a href="https:&#x2F;&#x2F;github.com&#x2F;bruin-data&#x2F;dac" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;bruin-data&#x2F;dac</a><p>I would love to hear what can be improved here, please let me know your thoughts.d:T6c9,Hi HN,<p>I’ve been working on mljar-supervised (open-source AutoML for tabular data) for a few years. Recently I built a desktop app around it called MLJAR Studio.<p>The idea is simple: you talk to your data in natural language, the AI generates Python code, executes it locally, and the whole conversation becomes a reproducible notebook (*.ipynb file). So instead of just chatting with data, you end up with something you can inspect, modify, and rerun.<p>What MLJAR Studio does:<p>- Sets up a local Python environment automatically, runs on Mac, Windows, and Linux<p>- Installs missing packages during the conversation<p>- Built-in AutoML for tabular data (classification, regression, multiclass)<p>- Works with standard Python libraries (pandas, matplotlib, etc.)<p>- Works with any data file: CSV, Excel, Stata, Parquet ...<p>- Connects to PostgreSQL, MySQL, SQL Server, Snowflake, Databricks, and Supabase.<p>For AI: use Ollama locally (zero data egress), bring your own OpenAI key, or use MLJAR AI add-on.<p>I built this because I wanted something between Jupyter Notebook (flexible but manual) and AI tools that generate code but don’t preserve the workflow. Most tools I tried either hide too much or don’t give reproducible results and are cloud based<p>Demos:<p>- 60-second demo: <a href="https:&#x2F;&#x2F;youtu.be&#x2F;BjxpZYRiY4c" rel="nofollow">https:&#x2F;&#x2F;youtu.be&#x2F;BjxpZYRiY4c</a><p>- Full 3-minute analysis: <a href="https:&#x2F;&#x2F;youtu.be&#x2F;1DHMMxaNJxI" rel="nofollow">https:&#x2F;&#x2F;youtu.be&#x2F;1DHMMxaNJxI</a><p>Pricing is $199 one-time, with a 7-day trial.<p>Curious if this is useful for others doing real data work, or if I’m solving my own problem here.<p>Happy to answer questions.e:Tc85,Hey HN!<p>I built SimplePDF Copilot: an AI assistant that can interact with the PDF editor. It fills fields, answers questions, focuses on a specific field, adds fields, deletes pages, and so on.<p>It&#x27;s built on top of SimplePDF that I started 7 years ago, pioneering privacy-respecting client-side pdf editing, now used monthly by 200k+ people.<p>As for the privacy model: the PDF itself never leaves the browser. Parsing, rendering, and field detection all run client-side.<p>The text the model needs (and your messages) goes to whatever LLM you point at. By default that&#x27;s our demo proxy (DeepSeek V4 Flash, rate-capped), but you can BYOK and point it at any cloud provider, or go fully local (I&#x27;ve been testing with LM Studio).<p>Unlike the existing &quot;Chat with PDF&quot; tools that only retrieve the text&#x2F;OCR layer, Copilot can act on the PDF: filling fields, adding fields (detected client-side using CommonForms by Joe Barrow [1], jbarrow on HN with some post-processing heuristics I added on top), focusing on fields, deleting pages, and so on.<p>I built this because SimplePDF is mostly used by healthcare customers where document privacy is paramount, and I wanted an AI experience that didn&#x27;t require shipping PII to a third party.
-Stack is pretty standard:<p>- Tanstack Start<p>- AI SDK from Vercel<p>- Tailwind (I personally prefer CSS modules, I&#x27;m old-school but the goal since I open source it, I figured that Tailwind would be a better fit)<p>The more interesting part is the client-side tool calling: events are passed back and forth via iframe postMessage.<p>If you&#x27;re not familiar with &quot;tool calling&quot; and &quot;client-side tool calling&quot;, a quick primer:<p>Tool calling is what LLMs use to take actions. When Claude runs grep or ls, or hits an MCP server, those are tool calls.<p>Client-side tool calling means the intent to call a tool comes from the LLM, but the execution happens in the browser.<p>That matters for: speed, you can&#x27;t go faster than client-to-client operations and also gives you the ability to limit the data you expose to the LLM. For the demo I do feed the content of the document to the LLM, but that connection could be severed as simply as removing the tool that exposes the content data.<p>The demo is fully open source, available on Github [2] and the demo is the same as the link of this post [3]<p>What&#x27;s not open source is SimplePDF itself (loaded as the iframe).<p>I could talk on and on about this, let me know if you have any questions, anything goes!<p>[1] <a href="https:&#x2F;&#x2F;github.com&#x2F;jbarrow&#x2F;commonforms" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;jbarrow&#x2F;commonforms</a><p>[2] <a href="https:&#x2F;&#x2F;github.com&#x2F;SimplePDF&#x2F;simplepdf-embed&#x2F;tree&#x2F;main&#x2F;copilot" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;SimplePDF&#x2F;simplepdf-embed&#x2F;tree&#x2F;main&#x2F;copil...</a><p>[3] <a href="https:&#x2F;&#x2F;copilot.simplepdf.com&#x2F;?share=a7d00ad073c75a75d493228e6ff7b11eb3f2d945b6175913e87898ec96ca8076&amp;form=w9&amp;lang=en" rel="nofollow">https:&#x2F;&#x2F;copilot.simplepdf.com&#x2F;?share=a7d00ad073c75a75d493228...</a>6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",11,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47977026","title":"DeepSeek V4—almost on the frontier","url":"https://simonwillison.net/2026/Apr/24/deepseek-v4/","source":"Hacker News","score":496,"comments_count":309,"comments_url":"https://news.ycombinator.com/item?id=47977026","published_at":"2026-05-01T16:52:43","author":"indigodaddy","text":null,"summary":"DeepSeek V4模型性能接近前沿水平，值得关注因为它展示了中国AI模型的快速进步，可能改变全球AI竞争格局。"},{"id":"hn-47987256","title":"AI Self-preferencing in Algorithmic Hiring: Empirical Evidence and Insights","url":"https://arxiv.org/abs/2509.00462","source":"Hacker News","score":316,"comments_count":170,"comments_url":"https://news.ycombinator.com/item?id=47987256","published_at":"2026-05-02T15:28:13","author":"laurex","text":null,"summary":"研究揭示了AI在算法招聘中的自我偏好现象，提供了实证证据，对理解AI偏见和公平性具有重要价值。"},{"id":"hn-47985750","title":"Open Design: Use Your Coding Agent as a Design Engine","url":"https://github.com/nexu-io/open-design","source":"Hacker News","score":180,"comments_count":86,"comments_url":"https://news.ycombinator.com/item?id=47985750","published_at":"2026-05-02T12:16:16","author":"steveharing1","text":null,"summary":"Open Design项目提出将编码代理作为设计引擎，值得关注因为它探索了AI在创意设计中的新应用模式。"},{"id":"hn-47955789","title":"Eka’s robotic claw feels like we're approaching a ChatGPT moment","url":"https://www.wired.com/story/when-robots-have-their-chatgpt-moment-remember-these-pincers/","source":"Hacker News","score":165,"comments_count":233,"comments_url":"https://news.ycombinator.com/item?id=47955789","published_at":"2026-04-29T22:56:10","author":"zdw","text":"<a href=\"https:&#x2F;&#x2F;archive.is&#x2F;Wro1e\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.is&#x2F;Wro1e</a>","summary":"Eka的机器人爪被视为机器人领域的ChatGPT时刻，值得关注因为它可能标志着机器人技术从专用向通用能力的重大突破。"},{"id":"hn-47949066","title":"Show HN: DAC – open-source dashboard as code tool for agents and humans","url":"https://github.com/bruin-data/dac","source":"Hacker News","score":96,"comments_count":31,"comments_url":"https://news.ycombinator.com/item?id=47949066","published_at":"2026-04-29T14:37:20","author":"karakanb","text":"$c","summary":"DAC是一个开源仪表盘即代码工具，支持代理和人类使用，值得关注因为它简化了自动化数据可视化流程。"},{"id":"hn-47988501","title":"Flue is a TypeScript framework for building the next generation of agents","url":"https://flueframework.com/","source":"Hacker News","score":84,"comments_count":49,"comments_url":"https://news.ycombinator.com/item?id=47988501","published_at":"2026-05-02T17:32:07","author":"momentmaker","text":null,"summary":"Flue是一个用于构建下一代代理的TypeScript框架，值得关注因为它提供了开发AI代理的新工具和范式。"},{"id":"hn-47990675","title":"The agent harness belongs outside the sandbox","url":"https://www.mendral.com/blog/agent-harness-belongs-outside-sandbox","source":"Hacker News","score":66,"comments_count":54,"comments_url":"https://news.ycombinator.com/item?id=47990675","published_at":"2026-05-02T21:21:27","author":"shad42","text":null,"summary":"文章主张代理控制机制应放在沙箱之外，值得关注因为它挑战了传统安全设计，可能影响AI系统的部署策略。"},{"id":"hn-47985077","title":"Show HN: Mljar Studio – local AI data analyst that saves analysis as notebooks","url":"https://mljar.com/","source":"Hacker News","score":62,"comments_count":10,"comments_url":"https://news.ycombinator.com/item?id=47985077","published_at":"2026-05-02T10:21:31","author":"pplonski86","text":"$d","summary":"MLJAR Studio是一个本地AI数据分析桌面应用，将分析保存为笔记本，值得关注因为它结合了自然语言交互和代码透明性。"},{"id":"hn-47984675","title":"Show HN: Filling PDF forms with AI using client-side tool calling","url":"https://copilot.simplepdf.com/?share=a7d00ad073c75a75d493228e6ff7b11eb3f2d945b6175913e87898ec96ca8076&form=w9&lang=en","source":"Hacker News","score":50,"comments_count":23,"comments_url":"https://news.ycombinator.com/item?id=47984675","published_at":"2026-05-02T08:54:27","author":"nip","text":"$e","summary":"SimplePDF Copilot利用客户端AI工具调用填充PDF表单，值得关注因为它展示了隐私保护的AI应用方式。"},{"id":"hn-47991018","title":"Voice-AI-for-Beginners – A curated learning path for developers","url":"https://github.com/mahimairaja/voiceai","source":"Hacker News","score":28,"comments_count":0,"comments_url":"https://news.ycombinator.com/item?id=47991018","published_at":"2026-05-02T22:03:15","author":"mahimai","text":null,"summary":"Voice-AI-for-Beginners为开发者提供了语音AI学习路径，值得关注因为它降低了语音技术入门门槛。"},{"id":"hn-47992303","title":"Wyoming celebrates 'nuclear Renaissance' as feds approve license for a reactor","url":"https://text.npr.org/nx-s1-5798892","source":"Hacker News","score":2,"comments_count":0,"comments_url":"https://news.ycombinator.com/item?id=47992303","published_at":"2026-05-03T01:18:01","author":"mooreds","text":null,"summary":"美国联邦政府批准怀俄明州一座新反应堆的许可证，标志着该州核能复兴的里程碑。此举值得关注，因为它可能推动清洁能源发展并影响未来核能政策。"}],"locale":"en"}]]}]]}]
+3.  **推荐：Agentic Coding Is a Trap**
+    - **理由：** 在所有人都对AI Agent感到兴奋时，这篇文章提供了一种冷静、批判性的视角。它有助于你避免盲目跟风，更深入地思考Agent在软件开发中的真正价值、风险和适用场景。
+    - **链接：** [https://larsfaye.com/articles/agentic-coding-is-a-trap](https://larsfaye.com/articles/agentic-coding-is-a-trap)
+
+4.  **推荐：DeepClaude – Claude Code agent loop with DeepSeek V4 Pro, 17x cheaper**
+    - **理由：** 这是一个极具实操价值的项目。如果你对AI Agent编码感兴趣，或者想寻找更经济的AI开发方案，这个项目展示了如何“取长补短”地组合不同模型，是技术创新的典范。
+    - **链接：** [https://github.com/aattaran/deepclaude](https://github.com/aattaran/deepclaude)
+
+5.  **推荐：LLMs Are Not a Higher Level of Abstraction**
+    - **理由：** 这是一篇发人深省的文章。它从软件工程的底层逻辑出发，帮助你更准确地理解LLM的本质。读完这篇文章，你将能更理性地看待AI的能力边界，避免不切实际的期望。
+    - **链接：** [https://www.lelanthran.com/chap15/content.html](https://www.lelanthran.com/chap15/content.html)0:{"buildId":"fFqAmV1WguZBC6jWiL1Y4","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-05-04","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":13},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"ai","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"AI & Machine Learning"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"Artificial intelligence, machine learning, LLMs, and generative AI"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[13," ","articles"," • ","2026-05-04"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"AI & Machine Learning","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",13,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-47977026","title":"DeepSeek V4 – almost on the frontier","url":"https://simonwillison.net/2026/Apr/24/deepseek-v4/","source":"Hacker News","score":622,"comments_count":366,"comments_url":"https://news.ycombinator.com/item?id=47977026","published_at":"2026-05-01T16:52:43","author":"indigodaddy","text":null,"summary":"DeepSeek V4模型性能接近前沿水平，值得关注因为其展示了中国AI模型的快速进步，可能改变全球AI竞争格局。"},{"id":"hn-47991981","title":"OpenAI's o1 correctly diagnosed 67% of ER patients vs. 50-55% by triage doctors","url":"https://www.theguardian.com/technology/2026/apr/30/ai-outperforms-doctors-in-harvard-trial-of-emergency-triage-diagnoses","source":"Hacker News","score":282,"comments_count":241,"comments_url":"https://news.ycombinator.com/item?id=47991981","published_at":"2026-05-03T00:30:50","author":"donsupreme","text":null,"summary":"OpenAI的o1模型在急诊诊断中准确率达67%，优于医生的50-55%，表明AI在医疗诊断领域具有显著潜力，可能提升医疗效率。"},{"id":"hn-47943632","title":"I built my own hair electrolysis machine","url":"https://www.scd31.com/posts/diy-hair-electrolysis-machine","source":"Hacker News","score":185,"comments_count":46,"comments_url":"https://news.ycombinator.com/item?id=47943632","published_at":"2026-04-29T02:42:46","author":"y1n0","text":null,"summary":"作者自制了脱毛设备，虽非直接AI相关，但展示了DIY技术和开源创新的精神，值得关注因为其体现了个体技术创造力。"},{"id":"hn-48002442","title":"Agentic Coding Is a Trap","url":"https://larsfaye.com/articles/agentic-coding-is-a-trap","source":"Hacker News","score":166,"comments_count":113,"comments_url":"https://news.ycombinator.com/item?id=48002442","published_at":"2026-05-03T22:52:07","author":"ayoisaiah","text":null,"summary":"文章警告智能编码可能成为陷阱，强调过度依赖AI编码工具会削弱开发者技能，值得关注因为其引发对AI辅助开发风险的反思。"},{"id":"hn-48002136","title":"DeepClaude – Claude Code agent loop with DeepSeek V4 Pro, 17x cheaper","url":"https://github.com/aattaran/deepclaude","source":"Hacker News","score":165,"comments_count":77,"comments_url":"https://news.ycombinator.com/item?id=48002136","published_at":"2026-05-03T22:13:20","author":"alattaran","text":null,"summary":"DeepClaude结合Claude和DeepSeek V4 Pro，成本降低17倍，值得关注因为其展示了AI模型组合的优化潜力，推动更高效AI应用。"},{"id":"hn-47990675","title":"The agent harness belongs outside the sandbox","url":"https://www.mendral.com/blog/agent-harness-belongs-outside-sandbox","source":"Hacker News","score":165,"comments_count":111,"comments_url":"https://news.ycombinator.com/item?id=47990675","published_at":"2026-05-02T21:21:27","author":"shad42","text":null,"summary":"文章主张智能体控制框架应置于沙箱之外，以增强灵活性和安全性，值得关注因为其挑战了传统AI安全设计范式。"},{"id":"hn-48002777","title":"Let's Buy Spirit Air","url":"https://letsbuyspiritair.com/","source":"Hacker News","score":133,"comments_count":86,"comments_url":"https://news.ycombinator.com/item?id=48002777","published_at":"2026-05-03T23:36:11","author":"bjhess","text":null,"summary":"一个名为'Let's Buy Spirit Air'的众筹项目，虽非AI相关，但值得关注因为其体现了社区驱动的商业行动创新模式。"},{"id":"hn-47969142","title":"Group averages obscure how an individual's brain controls behavior: study","url":"https://med.stanford.edu/news/all-news/2026/04/brain-scans-individual-versus-group.html","source":"Hacker News","score":113,"comments_count":35,"comments_url":"https://news.ycombinator.com/item?id=47969142","published_at":"2026-04-30T22:35:36","author":"hhs","text":null,"summary":"斯坦福研究揭示群体平均数据掩盖了个体大脑控制行为的差异，值得关注因为其对AI模型个性化训练有重要启示。"},{"id":"hn-47970597","title":"Brain scans reveal 3 ADHD subtypes","url":"https://www.washingtonpost.com/health/2026/04/30/adhd-subtype-extreme-brain-scans/","source":"Hacker News","score":94,"comments_count":87,"comments_url":"https://news.ycombinator.com/item?id=47970597","published_at":"2026-05-01T02:03:57","author":"brandonb","text":"<a href=\"https:&#x2F;&#x2F;archive.is&#x2F;3a4VZ\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.is&#x2F;3a4VZ</a>","summary":"脑部扫描发现3种ADHD亚型，值得关注因为其可能推动精准医疗和AI诊断工具的发展。"},{"id":"hn-47999520","title":"LLMs Are Not a Higher Level of Abstraction","url":"https://www.lelanthran.com/chap15/content.html","source":"Hacker News","score":53,"comments_count":45,"comments_url":"https://news.ycombinator.com/item?id=47999520","published_at":"2026-05-03T17:51:58","author":"lelanthran","text":null,"summary":"文章认为LLM并非更高层次的抽象，值得关注因为其挑战了AI领域的主流观点，引发对AI本质的重新思考。"},{"id":"hn-47999754","title":"How Kepler built verifiable AI for financial services with Claude","url":"https://claude.com/blog/how-kepler-built-verifiable-ai-for-financial-services-with-claude","source":"Hacker News","score":35,"comments_count":21,"comments_url":"https://news.ycombinator.com/item?id=47999754","published_at":"2026-05-03T18:14:56","author":"eddiehammond","text":null,"summary":"本文介绍了Kepler如何利用Claude构建可验证的AI系统，用于金融服务领域，确保模型决策的透明性和可靠性。值得关注因为它展示了AI在高度监管行业中的实际应用，解决了信任和合规的关键问题。"},{"id":"hn-47999776","title":"Talking to Transformers","url":"https://miraos.org/blog/2026/05/02/talking-to-transformers","source":"Hacker News","score":28,"comments_count":3,"comments_url":"https://news.ycombinator.com/item?id=47999776","published_at":"2026-05-03T18:17:18","author":"taylorsatula","text":null,"summary":"文章探讨了与Transformer模型交互的方式和挑战，可能涉及模型解释性或对话机制。值得关注因为它深入分析了当前主流AI架构的交互问题，对理解AI行为有重要意义。"},{"id":"hn-48003346","title":"Unauthorized macOS port claiming Don Ho as an author?","url":"https://github.com/notepad-plus-plus/notepad-plus-plus/issues/17982","source":"Hacker News","score":7,"comments_count":0,"comments_url":"https://news.ycombinator.com/item?id=48003346","published_at":"2026-05-04T00:52:47","author":"jethronethro","text":null}],"locale":"en"}]]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["Generated by"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","Powered by DeepSeek"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
-11:null
+a:["$","$Lc",null,{"children":["$","$d",null,{"name":"Next.MetadataOutlet","children":"$@e"}]}]
+e:null
