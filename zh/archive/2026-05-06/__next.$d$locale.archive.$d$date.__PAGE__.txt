@@ -1,0 +1,499 @@
+1:"$Sreact.fragment"
+2:I[33453,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"Header"]
+3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
+4:I[4561,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],""]
+5:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
+e:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
+14:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+15:"$Sreact.suspense"
+6:T3e60,好的，作为专业的技术新闻分析师，我已经审阅了您提供的今日 AI & Machine Learning 领域的热门文章列表。以下是我的分析、总结和推荐。
+
+---
+
+### 今日 AI & Machine Learning 热点综合分析
+
+今日的热点文章呈现出几个鲜明的主题：**AI部署的隐私与争议**、**AI Agent（智能体）的实战与应用**、**AI开发与工程实践的反思**，以及**基础模型与工具链的进展**。整体上，社区关注点从“AI能做什么”转向了“如何负责任、高效地使用AI”，并对当前的一些实践提出了尖锐的批评和反思。
+
+### 按子主题分组分析
+
+#### 1. 隐私、争议与行业反思
+
+这个主题下的文章讨论度最高，反映了公众和开发者对AI技术落地过程中产生的负面影响的担忧。
+
+- **Google Chrome 静默安装 4GB AI 模型**
+  - **简要说明**: 文章揭露谷歌Chrome浏览器在未经用户明确同意的情况下，悄悄下载并安装了一个约4GB的本地AI模型（Gemini Nano）。此举引发了关于用户隐私、数据主权和强制推送的激烈讨论。
+  - **为什么值得关注**: 这是科技巨头在本地AI部署策略上的一个典型案例，直接触及了用户知情权和设备资源占用等敏感问题，是AI普惠化进程中隐私与便利性矛盾的集中体现。
+  - **原文链接**: [https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/](https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48019219](https://news.ycombinator.com/item?id=48019219)
+
+- **当每个人都有AI，公司却依然一无所获**
+  - **简要说明**: 文章探讨了企业在普及AI工具后，为何未能实现知识沉淀和组织学习。核心观点是，如果企业文化和流程不改变，AI工具只会加剧信息孤岛，而不会带来真正的组织智慧。
+  - **为什么值得关注**: 它从一个更高的管理层面反思了AI落地的瓶颈，指出技术本身不是万能药，组织变革才是关键。对于CIO和CTO来说，这篇文章极具启发性。
+  - **原文链接**: [https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/](https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48020063](https://news.ycombinator.com/item?id=48020063)
+
+- **AI 产品坟场**
+  - **简要说明**: 一个网站收录了大量已经停止运营或失败的AI产品。
+  - **为什么值得关注**: 在AI热潮中，这个网站提供了一个冷静的视角，提醒我们AI领域的泡沫和残酷的现实。它是对“AI万能论”的一种纠偏。
+  - **原文链接**: [https://tooldirectory.ai/ai-graveyard](https://tooldirectory.ai/ai-graveyard)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48021968](https://news.ycombinator.com/item?id=48021968)
+
+- **Xbox CEO 终止 Copilot AI 开发并重组领导层**
+  - **简要说明**: 微软Xbox部门宣布放弃其游戏领域的AI助手Copilot项目，并进行了相应的人事调整。
+  - **为什么值得关注**: 这是大型科技公司调整其AI战略的鲜活案例，表明并非所有AI应用都能找到产品市场契合点（PMF），尤其是在用户期望极高的游戏领域。
+  - **原文链接**: [https://www.dexerto.com/gaming/xbox-ceo-ends-copilot-ai-development-overhauls-leadership-3361353/](https://www.dexerto.com/gaming/xbox-ceo-ends-copilot-ai-development-overhauls-leadership-3361353/)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48029753](https://news.ycombinator.com/item?id=48029753)
+
+#### 2. AI Agent（智能体）的崛起与实践
+
+Agent是今日最热门的子主题之一，文章涵盖了从技术实现、行业应用到工程管理等多个维度。
+
+- **OpenAI 如何大规模交付低延迟语音AI**
+  - **简要说明**: OpenAI分享了其语音模型在实时交互中实现低延迟的技术细节和架构设计。
+  - **为什么值得关注**: 对于构建交互式AI Agent（如语音助手）的开发者来说，这是宝贵的一手工程经验，揭示了顶级AI公司如何解决实时性难题。
+  - **原文链接**: [https://openai.com/index/delivering-low-latency-voice-ai-at-scale/](https://openai.com/index/delivering-low-latency-voice-ai-at-scale/)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48013919](https://news.ycombinator.com/item?id=48013919)
+
+- **面向金融服务的AI Agent**
+  - **简要说明**: Anthropic 发布了一篇关于如何为金融服务和保险业构建AI Agent的文章，讨论了其安全性、准确性和合规性要求。
+  - **为什么值得关注**: 这是AI Agent在高度监管的垂直行业落地的关键参考，展示了Anthropic对负责任AI的承诺，并指明了高价值应用方向。
+  - **原文链接**: [https://www.anthropic.com/news/finance-agents](https://www.anthropic.com/news/finance-agents)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48023533](https://news.ycombinator.com/item?id=48023533)
+
+- **Agentic Coding 的经验教训：当代码变得廉价时，我们该做什么？**
+  - **简要说明**: 文章总结了在AI辅助编程（Agentic Coding）时代，开发者的角色和软件工程实践应如何演变。核心观点是，代码生成成本降低后，设计、架构和测试的价值凸显。
+  - **为什么值得关注**: 这是对AI编程工具（如GitHub Copilot、Cursor）实践经验的深度总结，对所有开发者都具有指导意义。
+  - **原文链接**: [https://www.dbreunig.com/2026/05/04/10-lessons-for-agentic-coding.html](https://www.dbreunig.com/2026/05/04/10-lessons-for-agentic-coding.html)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48019025](https://news.ycombinator.com/item?id=48019025)
+
+- **像对待开发者一样对待你的编码Agent**
+  - **简要说明**: 文章提出，要充分发挥编码AI Agent的潜力，就应该像管理人类开发者一样，给它们明确的任务、提供上下文、进行代码审查和迭代反馈。
+  - **为什么值得关注**: 它提供了一种全新的管理视角，将AI Agent视为团队中的“数字同事”，而非简单的工具，这可能会改变未来的软件开发协作模式。
+  - **原文链接**: [https://finbarr.site/2026/05/05/treat-your-coding-agents-like-developers.html](https://finbarr.site/2026/05/05/treat-your-coding-agents-like-developers.html)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48025013](https://news.ycombinator.com/item?id=48025013)
+
+- **Airbyte Agents – 为Agent跨多个数据源提供上下文**
+  - **简要说明**: 数据集成平台Airbyte推出了Agent功能，旨在为AI Agent提供一个统一的数据层，使其能够发现并操作来自不同业务系统的信息。
+  - **为什么值得关注**: 数据是Agent的“燃料”。这个产品精准地解决了Agent在企业应用中的核心痛点——数据孤岛问题，是AI Agent走向企业级应用的关键基础设施。
+  - **原文链接**: 无 (Show HN 帖子)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48023496](https://news.ycombinator.com/item?id=48023496)
+
+- **GLM-5V-Turbo: 面向多模态Agent的原生基础模型**
+  - **简要说明**: 一篇学术论文，介绍了一个新的多模态基础模型，旨在成为多模态Agent的“原生”基础。
+  - **为什么值得关注**: 代表了多模态AI Agent模型发展的前沿方向，即模型本身的设计就是为了驱动Agent，而不是事后将Agent能力附加到模型上。
+  - **原文链接**: [https://arxiv.org/abs/2604.26752](https://arxiv.org/abs/2604.26752)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48026021](https://news.ycombinator.com/item?id=48026021)
+
+- **Wiki Builder: 构建LLM知识库的技能**
+  - **简要说明**: 介绍了一个名为“Wiki Builder”的工具或方法，用于帮助构建LLM（大语言模型）的知识库。
+  - **为什么值得关注**: 知识库是RAG（检索增强生成）应用的核心，这个工具降低了构建高质量LLM知识库的门槛。
+  - **原文链接**: [https://academy.dair.ai/blog/wiki-builder-claude-code-plugin](https://academy.dair.ai/blog/wiki-builder-claude-code-plugin)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=47997915](https://news.ycombinator.com/item?id=47997915)
+
+#### 3. AI开发与工程实践反思
+
+这个主题下的文章更具批判性，思考了AI开发中的根本性问题和潜在风险。
+
+- **AI没有删除你的数据库，是你删的**
+  - **简要说明**: 文章反驳了“AI导致数据库被删”的说法，认为根本原因在于开发者自身的操作失误、权限配置不当或缺乏安全实践，AI只是替罪羊。
+  - **为什么值得关注**: 这是一篇为AI“正名”的文章，提醒开发者不要将所有问题归咎于AI工具，而应反思自身的工程规范和流程。
+  - **原文链接**: [https://idiallo.com/blog/ai-didnt-delete-your-database-you-did](https://idiallo.com/blog/ai-didnt-delete-your-database-you-did)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48022742](https://news.ycombinator.com/item?id=48022742)
+
+- **AI的三条反定律**
+  - **简要说明**: 文章提出了三条关于AI的“反定律”，例如“任何足够先进的AI，在用户眼中都像魔法，直到它犯错”，反思了我们对AI能力的过高期望和对风险的忽视。
+  - **为什么值得关注**: 这是一篇充满哲思的文章，有助于社区更清醒、理性地看待AI技术的发展，避免盲目乐观。
+  - **原文链接**: [https://susam.net/inverse-laws-of-robotics.html](https://susam.net/inverse-laws-of-robotics.html)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48023861](https://news.ycombinator.com/item?id=48023861)
+
+- **2026年是否该在生产环境中使用普通的Docker Compose？**
+  - **简要说明**: 文章讨论了在生产环境直接使用Docker Compose的利弊，尤其是在AI/ML工作负载的背景下。它探讨了编排复杂性、可扩展性和运维挑战。
+  - **为什么值得关注**: 虽然标题不直接关于AI，但在AI部署中，容器化是标准实践。这个问题触及了从开发到生产的“最后一公里”难题，对所有AI工程师都很重要。
+  - **原文链接**: [https://distr.sh/blog/running-docker-in-production/](https://distr.sh/blog/running-docker-in-production/)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=47962032](https://news.ycombinator.com/item?id=47962032)
+
+#### 4. 基础模型、工具与创意应用
+
+- **从头开始训练你自己的LLM**
+  - **简要说明**: 一个GitHub仓库，提供了从零开始训练一个LLM的完整指南和代码。
+  - **为什么值得关注**: 对于想深入理解LLM内部机制的研究者和开发者来说，这是一个极佳的学习资源。
+  - **原文链接**: [https://github.com/angelos-p/llm-from-scratch](https://github.com/angelos-p/llm-from-scratch)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48017948](https://news.ycombinator.com/item?id=48017948)
+
+- **Show HN: 从3000幅大师画作中探索调色板**
+  - **简要说明**: 一个网站，收录了从3000多位大师画作中提取的配色方案，供设计师和艺术家使用。
+  - **为什么值得关注**: 这是一个将AI/ML技术（图像分析、色彩提取）应用于创意领域的优雅案例，展示了AI如何帮助人类发掘和利用已有的艺术宝库。
+  - **原文链接**: [https://paletteinspiration.com/](https://paletteinspiration.com/)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48026342](https://news.ycombinator.com/item?id=48026342)
+
+#### 5. 其他相关技术新闻
+
+- **CVE-2026-31431: Copy Fail vs. rootless containers**
+  - **简要说明**: 一个关于rootless容器（无根容器）的安全漏洞披露。
+  - **为什么值得关注**: 容器安全是云原生AI部署的基础。这个CVE提醒所有使用容器的团队，安全是持续的过程。
+  - **原文链接**: [https://www.dragonsreach.it/2026/05/04/cve-2026-31431-copy-fail-rootless-containers/](https://www.dragonsreach.it/2026/05/04/cve-2026-31431-copy-fail-rootless-containers/)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48017813](https://news.ycombinator.com/item?id=48017813)
+
+- **为什么航空公司总是破产**
+  - **简要说明**: 分析航空公司行业持续亏损的结构性原因。
+  - **为什么值得关注**: 虽然与AI不直接相关，但AI可应用于航空业的定价、运营优化和预测性维护。理解行业困境是应用AI的前提。
+  - **原文链接**: [https://davidoks.blog/p/why-airlines-are-always-going-bankrupt](https://davidoks.blog/p/why-airlines-are-always-going-bankrupt)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48025282](https://news.ycombinator.com/item?id=48025282)
+
+- **首次使用裸盖菇素后的人脑变化**
+  - **简要说明**: 一篇Nature论文，研究首次使用迷幻药后大脑的变化。
+  - **为什么值得关注**: AI可用于分析复杂的脑成像数据，帮助理解神经科学。这是AI在生命科学领域应用的背景知识。
+  - **原文链接**: [https://www.nature.com/articles/s41467-026-71962-3](https://www.nature.com/articles/s41467-026-71962-3)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48030098](https://news.ycombinator.com/item?id=48030098)
+
+- **空气中的微塑料可能正在使地球变暖**
+  - **简要说明**: 一篇关于微塑料对气候影响的科学报道。
+  - **为什么值得关注**: AI可用于环境监测、气候建模和污染源追踪。这是AI在环境科学领域应用的背景知识。
+  - **原文链接**: [https://e360.yale.edu/digest/airborne-microplastics-climate-change](https://e360.yale.edu/digest/airborne-microplastics-climate-change)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48023346](https://news.ycombinator.com/item?id=48023346)
+
+---
+
+### 今日最值得阅读的 Top 5 推荐
+
+1.  **Google Chrome silently installs a 4 GB AI model on your device without consent**
+    - **推荐理由**: 这是今日讨论热度最高、争议最大的文章。它触及了AI时代的核心矛盾：便利性 vs. 用户控制权。无论你是开发者、科技爱好者还是普通用户，这篇文章都值得一读，因为它关系到你设备上的“数字主权”。它引发的讨论比文章本身更有价值。
+    - **文章链接**: [https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/](https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/)
+
+2.  **Lessons for Agentic Coding: What should we do when code is cheap?**
+    - **推荐理由**: 这是对当前AI编程工具热潮最深刻的反思之一。它没有停留在“AI很强大”的层面，而是深入探讨了在AI生成代码成本趋近于零时，软件工程的核心价值（架构、设计、测试、安全）将如何重新定义。对所有从事软件开发的读者都有直接指导意义。
+    - **文章链接**: [https://www.dbreunig.com/2026/05/04/10-lessons-for-agentic-coding.html](https://www.dbreunig.com/2026/05/04/10-lessons-for-agentic-coding.html)
+
+3.  **How OpenAI delivers low-latency voice AI at scale**
+    - **推荐理由**: 如果你想了解如何构建高性能的AI产品，这篇文章是必读的。它是一份珍贵的“工程食谱”，揭示了OpenAI在处理实时语音交互时面临的挑战和解决方案。对于任何致力于打造低延迟AI Agent的团队来说，这是第一手的技术蓝本。
+    - **文章链接**: [https://openai.com/index/delivering-low-latency-voice-ai-at-scale/](https://openai.com/index/delivering-low-latency-voice-ai-at-scale/)
+
+4.  **Three Inverse Laws of AI**
+    -0:{"buildId":"fjy93RUAciY5GDf3s_kYh","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-05-06","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":20},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg","children":[["$","h2",null,{"className":"text-sm font-medium text-gray-500 dark:text-gray-400 mb-2","children":"历史存档"}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L4","2026-05-06",{"href":"/zh/archive/2026-05-06","className":"px-3 py-1 rounded text-sm bg-hn-orange text-white","children":"2026-05-06"}],["$","$L4","2026-02-03",{"href":"/zh/archive/2026-02-03","className":"px-3 py-1 rounded text-sm bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600","children":"2026-02-03"}]]}]]}],["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":["历史存档",": ","2026-05-06"]}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"历史技术摘要"}]]}],["$","div",null,{"className":"space-y-12","children":[["$","section","ai",{"id":"ai","children":[["$","div",null,{"className":"flex items-center gap-3 mb-6","children":[["$","h2",null,{"className":"text-2xl font-bold text-gray-900 dark:text-white","children":"AI & Machine Learning"}],["$","span",null,{"className":"text-sm text-gray-500 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded","children":[20," ","篇文章"]}]]}],["$","div",null,{"className":"space-y-6","children":[["$","$L5",null,{"summary":"$6","topicName":"AI & Machine Learning","locale":"zh"}],"$L7"]}]]}],"$L8","$L9"]}]]}],"$La"]}],["$Lb","$Lc"],"$Ld"]}],"loading":null,"isPartial":false}
+f:T110d,I’m Michel, co-founder and CEO of Airbyte (<a href="https:&#x2F;&#x2F;airbyte.com&#x2F;" rel="nofollow">https:&#x2F;&#x2F;airbyte.com&#x2F;</a>). We’ve spent the last six years building data connectors. Today we&#x27;re launching Airbyte Agents (<a href="https:&#x2F;&#x2F;docs.airbyte.com&#x2F;ai-agents&#x2F;" rel="nofollow">https:&#x2F;&#x2F;docs.airbyte.com&#x2F;ai-agents&#x2F;</a>), a unified data layer for agents to discover information and take action across operational systems.<p>Here’s a quick walkthrough: <a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=ZosDytyf1fg" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=ZosDytyf1fg</a><p>As agents move into real workflows, they need access to more tools (e.g. Slack, Salesforce, Linear). That means a ton of API plumbing: authentication, pagination, filters, handling schema, and matching entities across systems.<p>Most MCPs don’t fix this. They’re thin wrappers over APIs, so agents inherit their weak primitives and still get it wrong most of the time, especially when working across tools.<p>An even deeper issue is that APIs assume you already know what to query (think endpoints, Object IDs, fields), whereas agents usually start one step earlier: they need first to discover what matters before they can even start reasoning.<p>So we built Airbyte Agents to be a context layer between your Agents and all of your data. The core of this is something we call Context Store: a data index optimized for agentic search, populated by our replication connectors. All that work on data connectors the last six years comes in handy here!<p>This gives agents a structured way to discover data, while still allowing them to read and write directly to the upstream system when needed.<p>What got us working on this was an insane trace from an agent we were migrating to our new SDK. It was supposed to answer &quot;which customers are at risk of leaving this quarter?&quot; The trace had 47 steps. Most were API calls. The agent first had to find a bunch of accounts, then map them to the right customers, then look for tickets, bla bla... and when the Agent finally responded, the answer sounded ok, but was wrong. Not only that, it was excruciatingly slow. So we had to do something about it.<p>That 47-step agent is one example of a question where Airbyte Agents does particularly well. Other examples: - “Show me all enterprise deals closing this month with open support tickets.&quot; - “Find every support ticket that doesn’t have a Github issue opened”<p>Some of these might sound simple, but the quality of the answer changes dramatically when the agent doesn’t have to assemble all that context at runtime.<p>Once we had an early version of the product, I spent a weekend building a benchmark harness to see if it worked. Also for fun, I like writing benchmarks :). I compared calling the Airbyte Agent MCP vs calling a bunch of vendor MCPs directly. I tested retrieval, and search.<p>For the sake of simplicity, I used token consumption as a unit of measure. I think that’s a good proxy for how well agents are working. A failing agent (like the one that took 47 steps), will churn through lots of tokens while getting nowhere, while a successful one will get straight to the point.<p>Here&#x27;s what I found when measuring: for Gong, it used up to 80% fewer tokens than their own MCP, for Zendesk up to 90% fewer, for Linear up to 75%, and for Salesforce up to 16% (Salesforce’s own SOQL does a good job here).<p>Of course there is the usual obvious bias: we are the builders of what we are benchmarking. So we made the test harness public: <a href="https:&#x2F;&#x2F;github.com&#x2F;airbytehq&#x2F;airbyte-agents-benchmarks" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;airbytehq&#x2F;airbyte-agents-benchmarks</a>. Feel free to poke at it, and please tell us what you find if you do!<p>It&#x27;s still early and some parts are rough, but we wanted to share this with the community asap. We&#x27;d love to hear from people building agents:
+- Are you indexing data ahead of time, or letting the agent call APIs live?
+- How are you matching entities across systems?<p>Would also love to hear any thoughts, comments, or ideas of how we could make this better, and if there are obvious things we’re missing. For now, we’re excited to keep building!7:["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Le","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-48019219","title":"Google Chrome silently installs a 4 GB AI model on your device without consent","url":"https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/","source":"Hacker News","score":1252,"comments_count":853,"comments_url":"https://news.ycombinator.com/item?id=48019219","published_at":"2026-05-05T07:34:55","author":"john-doe","text":null,"summary":"Google Chrome在未经用户同意的情况下静默安装了一个4GB的AI模型，引发隐私担忧，值得关注因为它暴露了大科技公司对用户数据控制权的潜在滥用。"},{"id":"hn-48013919","title":"How OpenAI delivers low-latency voice AI at scale","url":"https://openai.com/index/delivering-low-latency-voice-ai-at-scale/","source":"Hacker News","score":493,"comments_count":142,"comments_url":"https://news.ycombinator.com/item?id=48013919","published_at":"2026-05-04T19:42:47","author":"Sean-Der","text":null,"summary":"OpenAI分享了如何实现低延迟语音AI的规模化部署，强调其技术突破，值得关注因为它展示了实时语音交互在AI应用中的前沿进展。"},{"id":"hn-48022742","title":"AI didn't delete your database, you did","url":"https://idiallo.com/blog/ai-didnt-delete-your-database-you-did","source":"Hacker News","score":491,"comments_count":272,"comments_url":"https://news.ycombinator.com/item?id=48022742","published_at":"2026-05-05T14:07:50","author":"Brajeshwar","text":null,"summary":"文章指出AI并非删除数据库的元凶，而是用户自身操作失误导致，值得关注因为它纠正了AI责任归咎的常见误解，强调人类在技术管理中的核心角色。"},{"id":"hn-48017948","title":"Train Your Own LLM from Scratch","url":"https://github.com/angelos-p/llm-from-scratch","source":"Hacker News","score":424,"comments_count":49,"comments_url":"https://news.ycombinator.com/item?id=48017948","published_at":"2026-05-05T04:09:17","author":"kristianpaul","text":null,"summary":"一个开源项目指导用户从零开始训练自己的大语言模型，值得关注因为它降低了AI开发门槛，促进了个性化模型构建的民主化。"},{"id":"hn-48023861","title":"Three Inverse Laws of AI","url":"https://susam.net/inverse-laws-of-robotics.html","source":"Hacker News","score":367,"comments_count":248,"comments_url":"https://news.ycombinator.com/item?id=48023861","published_at":"2026-05-05T15:27:18","author":"blenderob","text":null,"summary":"文章提出AI领域的三个逆定律，挑战传统认知，值得关注因为它提供了对AI发展方向的批判性思考，可能影响未来技术策略。"},{"id":"hn-47962032","title":"Should I run plain Docker Compose in production in 2026?","url":"https://distr.sh/blog/running-docker-in-production/","source":"Hacker News","score":359,"comments_count":256,"comments_url":"https://news.ycombinator.com/item?id=47962032","published_at":"2026-04-30T13:21:43","author":"pmig","text":null,"summary":"探讨2026年是否应在生产环境中直接使用Docker Compose，值得关注因为它为容器化部署的最佳实践提供了前瞻性建议。"},{"id":"hn-48020063","title":"When everyone has AI and the company still learns nothing","url":"https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/","source":"Hacker News","score":313,"comments_count":221,"comments_url":"https://news.ycombinator.com/item?id=48020063","published_at":"2026-05-05T09:30:22","author":"youngbrioche","text":null,"summary":"即使每个人都使用AI，公司仍可能无法从数据中学习，值得关注因为它揭示了AI采纳中的组织学习障碍，强调文化变革的重要性。"},{"id":"hn-48021968","title":"AI Product Graveyard","url":"https://tooldirectory.ai/ai-graveyard","source":"Hacker News","score":245,"comments_count":86,"comments_url":"https://news.ycombinator.com/item?id=48021968","published_at":"2026-05-05T13:00:47","author":"StriverGuy","text":null,"summary":"一个目录列出了已停用的AI产品，值得关注因为它反映了AI行业的快速迭代和失败案例，为投资和开发提供警示。"},{"id":"hn-48019025","title":"Lessons for Agentic Coding: What should we do when code is cheap?","url":"https://www.dbreunig.com/2026/05/04/10-lessons-for-agentic-coding.html","source":"Hacker News","score":229,"comments_count":224,"comments_url":"https://news.ycombinator.com/item?id=48019025","published_at":"2026-05-05T07:05:25","author":"ingve","text":null,"summary":"讨论在代码成本降低的背景下，代理式编码的10条经验教训，值得关注因为它指导开发者如何高效利用AI生成代码。"},{"id":"hn-48023533","title":"Agents for financial services and insurance","url":"https://www.anthropic.com/news/finance-agents","source":"Hacker News","score":201,"comments_count":152,"comments_url":"https://news.ycombinator.com/item?id=48023533","published_at":"2026-05-05T15:05:47","author":"louiereederson","text":null,"summary":"Anthropic介绍了AI代理在金融服务和保险领域的应用，值得关注因为它展示了AI在高度监管行业中的实际部署潜力。"},{"id":"hn-48017813","title":"CVE-2026-31431: Copy Fail vs. rootless containers","url":"https://www.dragonsreach.it/2026/05/04/cve-2026-31431-copy-fail-rootless-containers/","source":"Hacker News","score":185,"comments_count":110,"comments_url":"https://news.ycombinator.com/item?id=48017813","published_at":"2026-05-05T03:43:08","author":"averi","text":null,"summary":"本文披露了CVE-2026-31431漏洞，涉及rootless容器中的复制失败问题，对容器安全有重要影响，值得关注。"},{"id":"hn-48026021","title":"GLM-5V-Turbo: Toward a Native Foundation Model for Multimodal Agents","url":"https://arxiv.org/abs/2604.26752","source":"Hacker News","score":116,"comments_count":23,"comments_url":"https://news.ycombinator.com/item?id=48026021","published_at":"2026-05-05T17:52:31","author":"gmays","text":null,"summary":"论文介绍了GLM-5V-Turbo，一种面向多模态代理的原生基础模型，推动了AI在多模态交互领域的发展，值得关注。"},{"id":"hn-48026342","title":"Show HN: Explore color palettes inspired by 3000 master painter artworks","url":"https://paletteinspiration.com/","source":"Hacker News","score":112,"comments_count":41,"comments_url":"https://news.ycombinator.com/item?id=48026342","published_at":"2026-05-05T18:13:14","author":"ouli","text":"I built PaletteInspiration.com, a browsable archive of color palettes pulled from artworks by 3,000+ master painters (Monet, Vermeer, Raphael, Van Gogh).\nWhy I built it: every color palette generator I tried converged on the same five muted pastels. Painters spent centuries figuring out color and we mostly ignore that body of work when picking colors for digital design.\nPlease share your feedback on the Color Harmony Explorer - drag the wheel to any color and it shows which hues master painters historically paired with it (not only standard complementary, analogous, triadic, etc.) It is solely based on co-occurrence across thousands of real paintings. Not algorithmic color theory rules - actual empirical pairings.<p>No signup, no paywall, no email capture. Just curious what people think.","summary":"PaletteInspiration.com是一个从3000多位大师画作中提取配色方案的网站，为设计师提供了独特的色彩灵感，值得关注。"},{"id":"hn-48023496","title":"Show HN: Airbyte Agents – context for agents across multiple data sources","url":null,"source":"Hacker News","score":96,"comments_count":23,"comments_url":"https://news.ycombinator.com/item?id=48023496","published_at":"2026-05-05T15:03:18","author":"mtricot","text":"$f","summary":"Airbyte推出Agents功能，为AI代理提供跨多数据源的上下文，简化了数据集成，值得关注。"},{"id":"hn-48029753","title":"Xbox CEO ends Copilot AI development and overhauls leadership","url":"https://www.dexerto.com/gaming/xbox-ceo-ends-copilot-ai-development-overhauls-leadership-3361353/","source":"Hacker News","score":55,"comments_count":11,"comments_url":"https://news.ycombinator.com/item?id=48029753","published_at":"2026-05-05T22:43:47","author":"gmays","text":null,"summary":"Xbox CEO终止了Copilot AI开发并重组领导层，反映了AI在游戏领域的战略调整，值得关注。"},{"id":"hn-48025282","title":"Why airlines are always going bankrupt","url":"https://davidoks.blog/p/why-airlines-are-always-going-bankrupt","source":"Hacker News","score":40,"comments_count":28,"comments_url":"https://news.ycombinator.com/item?id=48025282","published_at":"2026-05-05T17:03:03","author":"bko","text":null,"summary":"本文分析了航空公司频繁破产的原因，涉及经济和管理因素，对理解行业动态有参考价值。"},{"id":"hn-48030098","title":"Human brain changes after first psilocybin use","url":"https://www.nature.com/articles/s41467-026-71962-3","source":"Hacker News","score":21,"comments_count":6,"comments_url":"https://news.ycombinator.com/item?id=48030098","published_at":"2026-05-05T23:23:11","author":"karma_daemon","text":null,"summary":"研究揭示了首次使用psilocybin后人类大脑的变化，对神经科学和心理健康领域有重要意义。"},{"id":"hn-48023346","title":"Airborne Microplastics May Be Warming the Planet","url":"https://e360.yale.edu/digest/airborne-microplastics-climate-change","source":"Hacker News","score":20,"comments_count":4,"comments_url":"https://news.ycombinator.com/item?id=48023346","published_at":"2026-05-05T14:53:52","author":"speckx","text":null,"summary":"研究发现空气中的微塑料可能加剧全球变暖，揭示了塑料污染对气候的新影响，值得关注。"},{"id":"hn-48025013","title":"Treat your coding agents like developers","url":"https://finbarr.site/2026/05/05/treat-your-coding-agents-like-developers.html","source":"Hacker News","score":18,"comments_count":7,"comments_url":"https://news.ycombinator.com/item?id=48025013","published_at":"2026-05-05T16:46:00","author":"Finbarr","text":null,"summary":"文章建议将编程AI代理视为开发者，强调管理方法对提升AI效率的重要性，值得关注。"},{"id":"hn-47997915","title":"Wiki Builder: Skill to Build LLM Knowledge Bases","url":"https://academy.dair.ai/blog/wiki-builder-claude-code-plugin","source":"Hacker News","score":9,"comments_count":1,"comments_url":"https://news.ycombinator.com/item?id=47997915","published_at":"2026-05-03T15:28:48","author":"omarsar","text":null,"summary":"Wiki Builder是一种构建LLM知识库的技能，简化了AI知识管理，对开发者有实用价值。"}],"locale":"zh"}]]}]
+10:T2b84,好的，作为一名专业的技术新闻分析师，我对今日“Design”领域的15篇热门文章进行了深入分析和总结。这些文章涵盖了从AI对设计行业的影响、设计工艺的本质，到具体的技术工具和设计方法论，展现了当前设计领域面临的机遇与挑战。
+
+---
+
+### 今日设计热点分析与总结
+
+#### 子主题一：AI时代的设计师角色与行业反思
+
+这个子主题是今日最受关注的话题，多篇文章共同探讨了AI如何重塑设计师的工作方式、思维模式以及行业的未来。
+
+1.  **标题：Design is the work**
+    -   **简要说明：** 文章指出，AI工具在已知目标和背景的情况下能发挥巨大作用，但如果设计师本身不清楚“构建什么”和“为什么构建”，AI则可能带来风险。这强调了在AI时代，设计师的**核心思考能力**和**战略定位**仍然是不可替代的。
+    -   **原文链接：** [https://design-is-the-work.figma.site/](https://design-is-the-work.figma.site/)
+    -   **讨论链接：** 无
+
+2.  **标题：Strong opinions, loosely held (in the age of AI)**
+    -   **简要说明：** 文章探讨了在AI参与意见形成的背景下，经典原则“坚定的观点，宽松地持有”如何被重新定义。AI正在改变谁在形成观点，这对团队的决策过程和协作方式提出了新的挑战。
+    -   **原文链接：** [https://jeffgothelf.com/blog/strong-opinions-loosely-held-and-what-that-means-in-the-age-of-ai/](https://jeffgothelf.com/blog/strong-opinions-loosely-held-and-what-that-means-in-the-age-of-ai/)
+    -   **讨论链接：** 无
+
+3.  **标题：The death of design**
+    -   **简要说明：** 文章提出了一个尖锐的观点：自动化正在将设计师从“创造者”转变为“策展人”。这迫使行业重新思考设计的本质和价值，以及设计师在未来需要掌握的新技能。
+    -   **原文链接：** [https://nathanbeck.eu/essays/death-of-design/](https://nathanbeck.eu/essays/death-of-design/)
+    -   **讨论链接：** 无
+
+4.  **标题：On being a designer in the most interesting, exhausting moment of our careers**
+    -   **简要说明：** 文章直面当下设计师面临的巨大压力和职业倦怠，呼吁在追求速度的同时，优先考虑**心理清晰度**和**保持高工艺标准**。这是对快节奏、AI驱动的设计环境的一种人文关怀。
+    -   **原文链接：** [https://medium.com/design-bootcamp/on-being-a-designer-in-the-most-interesting-exhausting-moment-of-our-careers-7284735e0927](https://medium.com/design-bootcamp/on-being-a-designer-in-the-most-interesting-exhausting-moment-of-our-careers-7284735e0927)
+    -   **讨论链接：** 无
+
+5.  **标题：Open web vs AI: what can W3C do?**
+    -   **简要说明：** 文章记录了W3C（万维网联盟）会议上关于开放网络与AI关系的讨论。这关乎到未来网络标准的制定，以及如何在AI时代维护一个开放、公平的网络环境，对设计师而言是重要的宏观背景。
+    -   **原文链接：** [https://hidde.blog/web-ai-breakout/](https://hidde.blog/web-ai-breakout/)
+    -   **讨论链接：** 无
+
+6.  **标题：Prompt to Product: A virtual AI skills week for the humans in the loop**
+    -   **简要说明：** 这是一个关于AI技能周的活动预告。它邀请Google、Delivery Hero等公司分享他们在工作流中使用AI的真实经验，强调“什么真正有效”。这为设计师提供了学习AI落地实践的机会。
+    -   **原文链接：** [https://bit.ly/side-push2](https://bit.ly/side-push2)
+    -   **讨论链接：** 无
+
+#### 子主题二：设计工艺、原则与方法论
+
+这个子主题回归设计本质，探讨了让产品从“可用”到“被喜爱”的工艺维度、信息架构的重要性以及提升设计影响力的策略。
+
+7.  **标题：The five dimensions of craft**
+    -   **简要说明：** 文章提出了区分“人们使用的产品”和“人们喜爱的产品”的五个永恒工艺维度。这为设计师提供了自我审视和提升作品质量的框架。
+    -   **原文链接：** [https://www.linkedin.com/pulse/five-dimensions-craft-ethan-eismann-uf3dc/](https://www.linkedin.com/pulse/five-dimensions-craft-ethan-eismann-uf3dc/)
+    -   **讨论链接：** 无
+
+8.  **标题：Information architecture (still) matters**
+    -   **简要说明：** 文章重申了信息架构（IA）的重要性，指出**结构是任何系统的支柱**。在内容爆炸和AI生成内容泛滥的今天，清晰、合理的信息结构比以往任何时候都更为关键。
+    -   **原文链接：** [https://saturdave.com/information-architecture-still-matters/](https://saturdave.com/information-architecture-still-matters/)
+    -   **讨论链接：** 无
+
+9.  **标题：Boost design autonomy with an information pipeline**
+    -   **简要说明：** 来自NN/g的一篇实用文章。它提出了一个四步框架，帮助设计师通过构建“信息管道”来弥合大型组织中的信息鸿沟，从而增强对产品方向的影响力，提升设计自主权。
+    -   **原文链接：** [https://www.nngroup.com/articles/information-pipeline/](https://www.nngroup.com/articles/information-pipeline/)
+    -   **讨论链接：** 无
+
+10. **标题：Users own the present. You own the future.**
+    -   **简要说明：** 文章探讨了用户研究的局限性：用户了解当下，但无法预见未来。它指出聪明的用户会给出令人信服但错误的答案，并指导设计师如何进行研究以开拓产品空间。
+    -   **原文链接：** [https://www.dir14.com/articles/users-own-the-present-you-own-the-future](https://www.dir14.com/articles/users-own-the-present-you-own-the-future)
+    -   **讨论链接：** 无
+
+#### 子主题三：技术、工具与案例分析
+
+这个子主题涵盖了具体的技术原理、AI产品设计案例、有趣的技术测验以及新工具介绍。
+
+11. **标题：Designing, refining, and maintaining agent skills at Perplexity**
+    -   **简要说明：** 来自Perplexity AI的官方研究文章。它分享了如何通过“Agent Skills”构建更可预测的AI行为。对于从事AI产品设计的设计师来说，这是一个极具价值的实战案例。
+    -   **原文链接：** [https://research.perplexity.ai/articles/designing-refining-and-maintaining-agent-skills-at-perplexity](https://research.perplexity.ai/articles/designing-refining-and-maintaining-agent-skills-at-perplexity)
+    -   **讨论链接：** 无
+
+12. **标题：The world’s most complex machine**
+    -   **简要说明：** 文章讲述了ASML如何通过押注极紫外光刻（EUV）技术，成为尖端芯片制造不可或缺的“咽喉”。这是一个关于**长期战略、技术赌注和复杂系统工程**的精彩故事，对理解产品背后的技术极限有启发。
+    -   **原文链接：** [https://worksinprogress.co/issue/the-worlds-most-complex-machine/](https://worksinprogress.co/issue/the-worlds-most-complex-machine/)
+    -   **讨论链接：** 无
+
+13. **标题：Six characters**
+    -   **简要说明：** 文章深入浅出地解释了登机牌上的PNR码（乘客姓名记录）背后包含的信息，以及票价计算为何使用一种不存在的货币。这是一个关于**系统设计、信息编码和行业惯例**的有趣案例。
+    -   **原文链接：** [https://ajitem.com/blog/iron-core-part-2-six-characters/](https://ajitem.com/blog/iron-core-part-2-six-characters/)
+    -   **讨论链接：** 无
+
+14. **标题：CSS or BS?**
+    -   **简要说明：** 一个有趣的CSS知识测验。它列出20道题，要求判断一个CSS属性是真实的还是虚构的。这不仅考验了CSS功底，也以一种娱乐化的方式提醒设计师关注基础技术。
+    -   **原文链接：** [https://www.keithcirkel.co.uk/css-or-bs/](https://www.keithcirkel.co.uk/css-or-bs/)
+    -   **讨论链接：** 无
+
+15. **标题：TUIStudio**
+    -   **简要说明：** 一款类似Figma的、用于设计TUI（终端用户界面）应用的**可视化编辑器**。它支持拖拽组件、实时编辑属性，并能一键导出到6种框架。这是一个颇具创新性的工具，填补了TUI设计领域的空白。
+    -   **原文链接：** [https://tui.studio/](https://tui.studio/)
+    -   **讨论链接：** 无
+
+---
+
+### 今日最值得阅读的文章推荐
+
+基于内容深度、话题热度以及对设计师的启发性，我推荐以下5篇文章作为今日必读：
+
+1.  **《The death of design》** - **推荐理由：** 这是一篇具有**思想冲击力**的文章。它迫使每一位设计师直面AI带来的身份危机，并思考“在自动化时代，我们还能创造什么独特价值？”。这个问题是当下所有设计师都无法回避的。
+    -   **链接：** [https://nathanbeck.eu/essays/death-of-design/](https://nathanbeck.eu/essays/death-of-design/)
+
+2.  **《Designing, refining, and maintaining agent skills at Perplexity》** - **推荐理由：** 这是**最实用的AI产品设计案例**之一。Perplexity作为AI搜索的先锋，其团队分享的“如何设计可预测的Agent行为”的经验，对于任何从事AI驱动产品设计的团队来说，都是极具价值的直接参考。
+    -   **链接：** [https://research.perplexity.ai/articles/designing-refining-and-maintaining-agent-skills-at-perplexity](https://research.perplexity.ai/articles/designing-refining-and-maintaining-agent-skills-at-perplexity)
+
+3.  **《Information architecture (still) matters》** - **推荐理由：** 在人人谈论AI和动态效果时，这篇文章**回归了设计的根本**。它提醒我们，无论技术如何发展，清晰、逻辑、可扩展的信息架构永远是优秀用户体验的基石。对于任何级别的设计师，都是一次有益的“基本功”重温。
+    -   **链接：** [https://saturdave.com/information-architecture-still-matters/](https://saturdave.com/information-architecture-still-matters/)
+
+4.  **《Boost design autonomy with an information pipeline》** - **推荐理由：** 这是一篇**极具实战价值的“软技能”指南**。来自NN/g的研究表明，设计师的困境往往不在于设计本身，而在于信息不足。这篇文章提供了一个可操作的框架，帮助设计师在公司内部建立影响力，推动更好的设计决策。
+    -   **链接：** [https://www.nngroup.com/articles/information-pipeline/](https://www.nngroup.com/articles/information-pipeline/)
+
+5.  **《The world’s most complex machine》** - **推荐理由：** 虽然它不直接讲UI/UX，但它是关于 **“极致工程”和“长期主义”** 的绝佳故事。理解ASML如何通过技术赌注成就了今天芯片产业的“咽喉”，能启发设计师思考产品背后更宏大的系统、约束和战略，拓宽设计视野。
+    -   **链接：** [https://worksinprogress.co/issue/the-worlds-most-complex-machine/](https://worksinprogress.co/issue/the-worlds-most-complex-machine/)8:["$","section","design",{"id":"design","children":[["$","div",null,{"className":"flex items-center gap-3 mb-6","children":[["$","h2",null,{"className":"text-2xl font-bold text-gray-900 dark:text-white","children":"Design"}],["$","span",null,{"className":"text-sm text-gray-500 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded","children":[15," ","篇文章"]}]]}],["$","div",null,{"className":"space-y-6","children":[["$","$L5",null,{"summary":"$10","topicName":"Design","locale":"zh"}],"$L11"]}]]}]
+12:T3967,好的，作为一名技术新闻分析师，我对今天（2026年5月6日）的30篇热门技术文章进行了综合分析。以下是按子主题分组的总结、每篇文章的要点与链接，以及今日最值得阅读的推荐文章。
+
+---
+
+### 综合分析：今日技术趋势
+
+今日的技术新闻呈现出几个鲜明的主题：**AI的经济性与实用性反思**、**编程语言生态的演进与挑战**、**企业界的动荡与争议**，以及**基础设施与工具链的细节问题**。开发者社区在拥抱AI带来的效率提升（如Agentic Coding）的同时，也开始严肃审视其高昂的成本和潜在风险。同时，编程语言领域（尤其是Rust和Zig）的互相借鉴与批评，以及异步编程的成熟度争论，显示出技术社区正在经历深刻的自我迭代。
+
+---
+
+### 按子主题分组分析
+
+#### 1. AI与开发者工具：成本、效率与反思
+
+这个主题占据了今日新闻的核心，反映了业界对AI应用从“能做”到“值得做”的深度思考。
+
+- **Computer Use is 45x more expensive than structured APIs**
+  - **说明**：文章通过硬数据对比，指出让AI“使用电脑”（Computer Use）的成本是调用结构化API的45倍，为AI代理的落地泼了一盆冷水，极具现实意义。
+  - **Article URL**: https://reflex.dev/blog/computer-use-is-45x-more-expensive-than-structured-apis/
+  - **Discussion**: https://news.ycombinator.com/item?id=48024859
+
+- **Lessons for Agentic Coding: What should we do when code is cheap?**
+  - **说明**：当AI让写代码变得廉价时，开发者真正的价值在哪里？本文提供了10条关于“智能体编码”的思考，引导开发者重新定位自身角色。
+  - **Article URL**: https://www.dbreunig.com/2026/05/04/10-lessons-for-agentic-coding.html
+  - **Discussion**: https://news.ycombinator.com/item?id=48019025
+
+- **Agents for financial services and insurance**
+  - **说明**：Anthropic官方博客，展示了AI Agent在金融和保险等高价值、高监管行业的具体应用案例，是AI落地的正面范例。
+  - **Article URL**: https://www.anthropic.com/news/finance-agents
+  - **Discussion**: https://news.ycombinator.com/item?id=48023533
+
+- **Accelerating Gemma 4: faster inference with multi-token prediction drafters**
+  - **说明**：Google发布了Gemma 4模型加速推理的技术细节，展示了AI模型优化前沿，对关注AI效率的开发者很有价值。
+  - **Article URL**: https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/
+  - **Discussion**: https://news.ycombinator.com/item?id=48024540
+
+- **claude code is not making your product better**
+  - **说明**：一篇反思性文章，指出过度依赖Claude Code等AI编码工具可能导致产品同质化或质量下降，提醒开发者保持批判性思维。
+  - **Article URL**: https://ethanding.substack.com/p/claude-code-is-not-making-your-product
+  - **Comments**: https://lobste.rs/s/kn0jwm/claude_code_is_not_making_your_product
+
+- **I'm scared about biological computing**
+  - **说明**：一篇引发思考的深度文章，探讨生物计算（如DNA存储、神经网络）的风险和伦理问题，视角独特。
+  - **Article URL**: https://kuber.studio/blog/Reflections/I%27m-Scared-About-Biological-Computing
+  - **Discussion**: https://news.ycombinator.com/item?id=48024358
+
+#### 2. 编程语言：Rust、Zig与异步的争议
+
+编程语言社区内部的讨论异常激烈，既有技术移植，也有对现状的不满。
+
+- **Zig → Rust porting guide**
+  - **说明**：Bun团队将代码从Zig移植到Rust的详细提交记录，对想了解两种语言在实战中优劣的开发者是宝贵资料。
+  - **Article URL**: https://github.com/oven-sh/bun/commit/46d3bc29f270fa881dd5730ef1549e88407701a5
+  - **Discussion**: https://news.ycombinator.com/item?id=48016880
+
+- **Async Rust never left the MVP state**
+  - **说明**：一篇尖锐的批评文章，指出Rust异步编程生态（Async Rust）一直处于“最小可行产品”状态，存在诸多未解决的问题，对Rust社区影响深远。
+  - **Article URL**: https://tweedegolf.nl/en/blog/237/async-rust-never-left-the-mvp-state
+  - **Discussion**: https://news.ycombinator.com/item?id=48019163
+
+- **A bidirectional typechecking puzzle**
+  - **说明**：一篇关于Haskell类型系统的技术谜题文章，适合对类型理论和函数式编程有深入兴趣的开发者。
+  - **Article URL**: https://haskellforall.com/2026/05/a-bidirectional-typechecking-puzzle
+  - **Comments**: https://lobste.rs/s/rsj8sx/bidirectional_typechecking_puzzle
+
+#### 3. 企业、商业与法律
+
+科技巨头和新兴公司的新闻占据了显著位置，涉及收购、裁员、法律纠纷和商业模式的反思。
+
+- **GameStop makes $55.5B takeover offer for eBay**
+  - **说明**：GameStop对eBay发起天价收购要约，这是零售业与电商巨头之间的重大事件，可能重塑行业格局。
+  - **Article URL**: https://www.bbc.co.uk/news/articles/cn0p8yled1do
+  - **Discussion**: https://news.ycombinator.com/item?id=48006402
+
+- **Today I've made the difficult decision to reduce the size of Coinbase by ~14%**
+  - **说明**：Coinbase CEO宣布新一轮裁员，反映了加密行业在经历市场波动后的持续调整。
+  - **Article URL**: https://twitter.com/brian_armstrong/status/2051616759145185723
+  - **Discussion**: https://news.ycombinator.com/item?id=48021368
+
+- **Zuckerberg 'Personally Authorized and Encouraged' Meta's Copyright Infringement**
+  - **说明**：重磅法律新闻，指控扎克伯格亲自授权Meta在AI训练中侵犯版权，对AI行业的版权法律界定有重大影响。
+  - **Article URL**: https://variety.com/2026/digital/news/meta-ai-mark-zuckerberg-copyright-infringement-lawsuit-publishers-scott-turow-1236738383/
+  - **Discussion**: https://news.ycombinator.com/item?id=48026207
+
+- **NPR finds "no sign" of Polymarket at its Panama HQ address**
+  - **说明**：调查报道，质疑预测市场平台Polymarket的实体存在和透明度，涉及监管信任问题。
+  - **Article URL**: https://www.npr.org/2026/05/05/nx-s1-5807918/polymarket-panama-prediction-market
+  - **Discussion**: https://news.ycombinator.com/item?id=48029114
+
+- **California farmers to destroy 420k peach trees following Del Monte bankruptcy**
+  - **说明**：虽然非纯技术新闻，但揭示了供应链、农业与金融（Del Monte破产）的脆弱联系，引发广泛讨论。
+  - **Article URL**: https://www.sfgate.com/centralcoast/article/usda-aid-california-farmers-22240694.php
+  - **Discussion**: https://news.ycombinator.com/item?id=48026349
+
+- **Clarification on the Notepad++ Trademark Issue**
+  - **说明**：知名开源项目Notepad++就商标问题发布澄清，对开源社区的知识产权保护有参考价值。
+  - **Article URL**: https://notepad-plus-plus.org/news/clarify-npp-trademark-infringement/
+  - **Discussion**: https://news.ycombinator.com/item?id=48026206
+
+#### 4. 基础设施、运维与工具
+
+这一组关注底层技术、运维实践和开发者日常使用的工具。
+
+- **.de TLD offline due to DNSSEC?**
+  - **说明**：德国顶级域名.de出现大面积故障，疑似与DNSSEC有关，是网络基础设施领域的重要事件。
+  - **Article URL**: https://dnssec-analyzer.verisignlabs.com/nic.de
+  - **Discussion**: https://news.ycombinator.com/item?id=48027897
+
+- **Formatting a 25M-line codebase overnight**
+  - **说明**：Stripe分享如何使用Rubyfmt格式化2500万行代码，是大型代码库工程化管理的精彩案例。
+  - **Article URL**: https://stripe.dev/blog/formatting-an-entire-25-million-line-codebase-overnight-the-rubyfmt-story
+  - **Discussion**: https://news.ycombinator.com/item?id=48014325
+
+- **PyInfra 3.8.0**
+  - **说明**：基础设施自动化工具PyInfra发布新版本，对DevOps和系统管理员是重要更新。
+  - **Article URL**: https://github.com/pyinfra-dev/pyinfra/releases/tag/v3.8.0
+  - **Discussion**: https://news.ycombinator.com/item?id=48008083
+
+- **Docker 29 has changed its default image store for new installs**
+  - **说明**：Docker 29版本更改了默认镜像存储后端（转向containerd），对Docker用户影响巨大。
+  - **Article URL**: https://docs.docker.com/engine/storage/containerd
+  - **Discussion**: https://news.ycombinator.com/item?id=47986331
+
+- **A Caddy Cert Expired Because systemd-resolved Was Selectively Broken**
+  - **说明**：一篇详细的排错记录，展示了systemd-resolved的微妙bug如何导致Caddy证书续期失败，对系统管理员是很好的警示。
+  - **Article URL**: https://rant.mvh.dev/a-caddy-cert-expired-because-systemd-resolved-was-selectively-broken/
+  - **Comments**: https://lobste.rs/s/z0ozbb/caddy_cert_expired_because_systemd
+
+- **Why didn’t IPv6 work in my home network?**
+  - **说明**：一篇实用的家庭网络IPv6排错指南，解释了常见问题，对网络爱好者有帮助。
+  - **Article URL**: https://gowtham.dev/blog/ipv6-problems.html
+  - **Comments**: https://lobste.rs/s/yhk0mq/why_didn_t_ipv6_work_my_home_network
+
+- **RSS Feeds Send Me More Traffic Than Google**
+  - **说明**：一个有趣的流量分析案例，证明了RSS源的价值和“复古”技术的生命力。
+  - **Article URL**: https://shkspr.mobi/blog/2026/05/rss-feeds-send-me-more-traffic-than-google/
+  - **Comments**: https://lobste.rs/s/z0nkyf/rss_feeds_send_me_more_traffic_than_google
+
+#### 5. 软件文化、历史与趣味
+
+- **Talking to strangers at the gym**
+  - **说明**：一篇关于在健身房与陌生人交谈的社会实验文章，因其高互动性（1470分）成为今日最热门话题，反映了技术社区对非技术类人文内容的兴趣。
+  - **Article URL**: https://thienantran.com/talking-to-35-strangers-at-the-gym/
+  - **Discussion**: https://news.ycombinator.com/item?id=48007438
+
+- **iOS 27 is adding a 'Create a Pass' button to Apple Wallet**
+  - **说明**：关于未来iOS版本的一个功能预测或发现，对iOS开发者有参考价值。
+  - **Article URL**: https://walletwallet.alen.ro/blog/ios-27-wallet-create-pass/
+  - **Discussion**: https://news.ycombinator.com/item?id=48021561
+
+- **How Monero’s proof of work works**
+  - **说明**：深入浅出地解释门罗币（Monero）的工作量证明机制（RandomX），对密码学和技术爱好者是优质内容。
+  - **Article URL**: https://blog.alcazarsec.com/tech/posts/how-moneros-proof-of-work-works
+  - **Discussion**: https://news.ycombinator.com/item?id=48009020
+
+- **IBM didn't want Microsoft to use the Tab key to move between dialog fields**
+  - **说明**：一则有趣的科技史轶事，Raymond Chen（The Old New Thing）讲述IBM曾反对Tab键用于切换对话框输入框。
+  - **Article URL**: https://devblogs.microsoft.com/oldnewthing/20260505-00/?p=112298
+  - **Discussion**: https://news.ycombinator.com/item?id=48025687
+
+- **Empty Screenings – Finds AMC movie screenings with few or no tickets sold**
+  - **说明**：一个有趣的工具，帮助用户找到几乎没人的电影场次，是“小工具解决大问题”的典范。
+  - **Article URL**: https://walzr.com/empty-screenings
+  - **Discussion**: https://news.ycombinator.com/item?id=48018066
+
+- **EEVblog: The 555 Timer is 55 years old [video]**
+  - **说明**：经典555定时器芯片55周年纪念视频，对电子工程和硬件爱好者有纪念意义。
+  - **Article URL**: https://www.youtube.com/watch?v=6JhK8iCQuqI
+  - **Discussion**: https://news.ycombinator.com/item?id=48024129
+
+- **Hand Drawn QR Codes (2025)**
+  - **说明**：一篇有趣的文章，展示如何手绘QR码，结合了艺术与技术。
+  - **Article URL**: https://sethmlarson.dev/hand-drawn-qr-codes
+  - **Discussion**: https://news.ycombinator.com/item?id=48017907
+
+- **Write some software, give it away for free**
+  - **说明**：一篇关于开源精神和自由软件哲学的感悟文章，引发开发者共鸣。
+  - **Article URL**: https://nonogra.ph/write-some-software-give-it-away-for-free-05-05-2026
+  - **Discussion**: https://news.ycombinator.com/item?id=48028842
+
+---
+
+### 今日最值得阅读的文章推荐
+
+1.  **Computer Use is 45x more expensive than structured APIs**
+    - **推荐理由**：这篇文章用数据说话，直击当前AI应用的核心痛点——成本。它迫使开发者、产品经理和决策者去思考：AI的“智能”是否值得如此高昂的代价？在AI热潮中，这种冷静、量化的分析极具价值。
+    - **链接**: [Article](https://reflex.dev/blog/computer-use-is-45x-more-expensive-than-structured-apis/)
+
+2.  **Async Rust never left the MVP state**
+    - **推荐理由**：无论你是Rust的拥护者还是批评者，这篇文章都值得一读。它大胆地指出了Rust生态中最受关注也最复杂的部分——异步编程——所存在的问题。这不仅是技术讨论，更是对一门语言社区发展方向的重要反思。
+    - **链接**: [Article](https://tweedegolf.nl/en/blog/237/async-rust-never-left-the-mvp-state)
+
+3.  **Formatting a 25M-line codebase overnight**
+    - **推荐理由**：来自Stripe的工程实践分享，展示了在超大规模代码库中执行格式化这种看似简单却极具挑战的任务。文章充满了工程智慧、工具选择和权衡取舍的细节，是学习大型项目代码管理的绝佳案例。
+    - **链接**: [Article](https://stripe.dev/blog/formatting-an-entire-25-million-line-codebase-overnight-the-rubyfmt-story)
+
+4.  **Lessons for Agentic Coding: What should we do when code is cheap?**
+    - **推荐理由**：当AI让写代码变得“便宜”时，软件工程师的价值何在？这篇文章提供了10条深刻而实用的教训，引导开发者超越“写代码”本身，去思考设计、架构、安全、用户体验和商业价值。对于所有在AI时代感到焦虑或兴奋的开发者，这都是必读之选。
+    - **链接**: [Article](https://www.dbreunig.com/2026/05/04/10-lessons-for-agentic-coding.html)
+
+5.  **Zuckerberg 'Personally Authorized and Encouraged' Meta's Copyright Infringement**
+    - **推荐理由**：这不仅仅是一条法律新闻，它可能成为AI监管历史上的一个里程碑。该指控直指AI公司使用受版权保护数据训练模型的合法性问题。无论结果如何，此案都将深刻影响未来AI的发展路径和立法方向。
+    - **链接**: [Article](https://variety.com/2026/digital/news/meta-ai-mark-zuckerberg-copyright-infringement-lawsuit-publishers-scott-turow-1236738383/)9:["$","section","tech",{"id":"tech","children":[["$","div",null,{"className":"flex items-center gap-3 mb-6","children":[["$","h2",null,{"className":"text-2xl font-bold text-gray-900 dark:text-white","children":"Technology"}],["$","span",null,{"className":"text-sm text-gray-500 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded","children":[30," ","篇文章"]}]]}],["$","div",null,{"className":"space-y-6","children":[["$","$L5",null,{"summary":"$12","topicName":"Technology","locale":"zh"}],"$L13"]}]]}]
+a:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
+b:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
+c:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
+d:["$","$L14",null,{"children":["$","$15",null,{"name":"Next.MetadataOutlet","children":"$@16"}]}]
+11:["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Le","Sidebar.io",{"sourceName":"Sidebar.io","articles":[{"id":"rss-4f8c2637ab51","title":"Design is the work","url":"https://design-is-the-work.figma.site/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-05T05:10:19","author":"unknown","text":"<p>AI tooling are great if you already know what you’re building and why. It’s dangerous if you don’t.</p>\n<br /><br />","summary":"AI工具在明确目标和原因时很有用，但缺乏清晰度则可能带来危险。这篇文章探讨了设计作为核心工作的重要性。"},{"id":"rss-40720f4598ed","title":"The five dimensions of craft","url":"https://www.linkedin.com/pulse/five-dimensions-craft-ethan-eismann-uf3dc/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-05T05:09:27","author":"unknown","text":"<p>Timeless principles that separate products people use from products people love.</p>\n<br /><br />","summary":"文章提出了五个永恒原则，区分了人们使用的产品和人们喜爱的产品。值得关注，因为它深入探讨了工艺的本质。"},{"id":"rss-4a5f8819336e","title":"Six characters","url":"https://ajitem.com/blog/iron-core-part-2-six-characters/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-05T05:08:57","author":"unknown","text":"<p>What the PNR locator on your boarding pass actually contains, and why fare calculations are written in a currency that does not exist.</p>\n<br /><br />","summary":"解释了登机牌上PNR定位器的实际内容，以及票价计算为何使用不存在的货币。这篇文章揭示了航空系统背后的设计复杂性。"},{"id":"rss-9638b135943e","title":"Designing, refining, and maintaining agent skills at Perplexity","url":"https://research.perplexity.ai/articles/designing-refining-and-maintaining-agent-skills-at-perplexity","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-05T05:08:12","author":"unknown","text":"<p>How to build more predictable AI behaviors with agents.</p>\n<br /><br />","summary":"介绍了如何在Perplexity构建更可预测的AI代理行为。值得关注，因为它提供了实用的AI设计方法。"},{"id":"rss-d503c807e210","title":"The world’s most complex machine","url":"https://worksinprogress.co/issue/the-worlds-most-complex-machine/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-05T05:06:50","author":"unknown","text":"<p>By betting on extreme ultraviolet lithography long before it worked, ASML became the chokepoint for cutting-edge chips.</p>\n<br /><br />","summary":"讲述了ASML通过押注极紫外光刻技术成为尖端芯片制造关键节点的故事。这篇文章展示了复杂机器设计的历史与影响。"},{"id":"rss-f2f477d17377","title":"Prompt to Product: A virtual AI skills week for the humans in the loop","url":"https://bit.ly/side-push2","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-04T08:31:00","author":"unknown","text":"<p>Learn how Google, Delivery Hero &amp; others use AI in their workflows. Honest trainings &amp; talks on what actually works. 18–22 May, online.</p>\n<br /><br />","summary":"宣传一个在线AI技能周活动，涵盖Google和Delivery Hero等公司的工作流程实践。值得关注，因为它提供了真实的AI应用案例。"},{"id":"rss-2f496c64c48d","title":"Strong opinions, loosely held (in the age of AI)","url":"https://jeffgothelf.com/blog/strong-opinions-loosely-held-and-what-that-means-in-the-age-of-ai/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-04T08:28:47","author":"unknown","text":"<p>AI changes who’s forming the opinion. Here’s what that means for your team.</p>\n<br /><br />","summary":"探讨了AI如何改变意见形成的主体，以及这对团队意味着什么。这篇文章挑战了传统决策模式，值得关注。"},{"id":"rss-f6c86b5f022e","title":"TUIStudio","url":"https://tui.studio/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-04T08:26:16","author":"unknown","text":"<p>A Figma-like visual editor for TUI applications. Drag-and-drop components, edit properties in real-time, and export to 6 frameworks with one click.</p>\n<br /><br />","summary":"介绍了一个类似Figma的TUI应用可视化编辑器，支持拖放组件、实时编辑和导出到6种框架。值得关注，因为它简化了终端界面设计。"},{"id":"rss-2669ece71336","title":"Information architecture (still) matters","url":"https://saturdave.com/information-architecture-still-matters/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-04T08:25:45","author":"unknown","text":"<p>Why structure is the backbone of any system.</p>\n<br /><br />","summary":"强调了信息架构作为系统支柱的重要性。这篇文章提醒我们结构在设计中仍然至关重要。"},{"id":"rss-20e28885d60f","title":"The death of design","url":"https://nathanbeck.eu/essays/death-of-design/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-04T08:24:42","author":"unknown","text":"<p>How automation is turning designers into curators.</p>\n<br /><br />","summary":"讨论了自动化如何将设计师转变为策展人。这篇文章引发了对设计角色演变的思考，值得关注。"},{"id":"rss-3811e1f6e8e2","title":"On being a designer in the most interesting, exhausting moment of our careers","url":"https://medium.com/design-bootcamp/on-being-a-designer-in-the-most-interesting-exhausting-moment-of-our-careers-7284735e0927","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-01T06:32:06","author":"unknown","text":"<p>Prioritizing mental clarity over speed to maintain high craft standards.</p>\n<br /><br />","summary":"探讨设计师在当前职业阶段如何优先保持思维清晰而非追求速度，以维持高标准的设计工艺，反映了行业对工作节奏与质量平衡的深刻反思。"},{"id":"rss-c9ffbaa865cf","title":"CSS or BS?","url":"https://www.keithcirkel.co.uk/css-or-bs/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-01T06:31:04","author":"unknown","text":"<p>Think you know CSS? Real property or made-up nonsense? 20 rounds. No mercy.</p>\n<br /><br />","summary":"以20道趣味问答形式考验读者对CSS属性的真伪辨别能力，强调对CSS核心知识的掌握，适合开发者自测和巩固基础。"},{"id":"rss-13f4075f59b7","title":"Open web vs AI: what can W3C do?","url":"https://hidde.blog/web-ai-breakout/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-01T06:30:41","author":"unknown","text":"<p>Thoughts after breakout at AC meeting.</p>\n<br /><br />","summary":"总结W3C咨询委员会会议中关于开放网络与AI关系的讨论，提出W3C在协调两者发展中的潜在作用，对关注网络标准与AI融合的读者具有前瞻性价值。"},{"id":"rss-43a55e5f98f5","title":"Boost design autonomy with an information pipeline","url":"https://www.nngroup.com/articles/information-pipeline/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-01T06:30:08","author":"unknown","text":"<p>A four-step framework for building influence over product direction by closing the information gaps that large, complex organizations create.</p>\n<br /><br />","summary":"提出通过构建信息管道来弥补大型组织中的信息鸿沟，从而增强设计师对产品方向的影响力，为提升设计自主性提供了实用框架。"},{"id":"rss-7f0a8b216cab","title":"Users own the present. You own the future.","url":"https://www.dir14.com/articles/users-own-the-present-you-own-the-future","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-01T06:29:01","author":"unknown","text":"<p>Users know their day. They don’t know your roadmap. Why smart users give convincing wrong answers, and how to do research that opens product space.</p>\n<br /><br />","summary":"指出用户只了解当前需求而无法预见未来产品路线，强调设计师需通过正确的研究方法挖掘潜在空间，避免被用户误导，对产品创新有指导意义。"}],"locale":"zh"}]]}]
+13:["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Le","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-48007438","title":"Talking to strangers at the gym","url":"https://thienantran.com/talking-to-35-strangers-at-the-gym/","source":"Hacker News","score":1470,"comments_count":730,"comments_url":"https://news.ycombinator.com/item?id=48007438","published_at":"2026-05-04T11:41:02","author":"thitran","text":null,"summary":"作者分享了在健身房与陌生人交谈的亲身经历，探讨了社交互动在现代生活中的价值，值得关注因为它挑战了数字时代的人际疏离感。"},{"id":"hn-48006402","title":"GameStop makes $55.5B takeover offer for eBay","url":"https://www.bbc.co.uk/news/articles/cn0p8yled1do","source":"Hacker News","score":700,"comments_count":685,"comments_url":"https://news.ycombinator.com/item?id=48006402","published_at":"2026-05-04T09:31:12","author":"n1b0m","text":null,"summary":"GameStop以555亿美元收购eBay的提议震惊市场，凸显了游戏零售商向电商巨头的转型野心，对零售和金融领域具有重大影响。"},{"id":"hn-48016880","title":"Zig → Rust porting guide","url":"https://github.com/oven-sh/bun/commit/46d3bc29f270fa881dd5730ef1549e88407701a5","source":"Hacker News","score":698,"comments_count":518,"comments_url":"https://news.ycombinator.com/item?id=48016880","published_at":"2026-05-05T01:08:17","author":"SergeAx","text":null,"summary":"Bun项目发布了从Zig到Rust的移植指南，展示了性能优化和代码迁移的实践，对关注系统编程语言演进和项目重构的开发者极具参考价值。"},{"id":"hn-48027897","title":".de TLD offline due to DNSSEC?","url":"https://dnssec-analyzer.verisignlabs.com/nic.de","source":"Hacker News","score":535,"comments_count":252,"comments_url":"https://news.ycombinator.com/item?id=48027897","published_at":"2026-05-05T20:16:35","author":"warpspin","text":null,"summary":".de顶级域名因DNSSEC问题离线，突显了域名系统安全扩展的脆弱性，对网络基础设施稳定性和安全运维有重要警示意义。"},{"id":"hn-48024540","title":"Accelerating Gemma 4: faster inference with multi-token prediction drafters","url":"https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/","source":"Hacker News","score":455,"comments_count":201,"comments_url":"https://news.ycombinator.com/item?id=48024540","published_at":"2026-05-05T16:14:17","author":"amrrs","text":null,"summary":"谷歌加速Gemma 4推理速度，采用多令牌预测技术提升效率，值得关注因为它推动了AI模型在实时应用中的性能突破。"},{"id":"hn-48019163","title":"Async Rust never left the MVP state","url":"https://tweedegolf.nl/en/blog/237/async-rust-never-left-the-mvp-state","source":"Hacker News","score":427,"comments_count":230,"comments_url":"https://news.ycombinator.com/item?id=48019163","published_at":"2026-05-05T07:26:03","author":"pjmlp","text":null,"summary":"文章批评异步Rust仍停留在MVP阶段，指出其生态和工具链不成熟，对Rust社区和异步编程实践者具有反思和指导意义。"},{"id":"hn-48021561","title":"iOS 27 is adding a 'Create a Pass' button to Apple Wallet","url":"https://walletwallet.alen.ro/blog/ios-27-wallet-create-pass/","source":"Hacker News","score":382,"comments_count":292,"comments_url":"https://news.ycombinator.com/item?id=48021561","published_at":"2026-05-05T12:28:28","author":"alentodorov","text":null,"summary":"iOS 27在Apple Wallet中添加‘创建通行证’按钮，简化了数字凭证管理，对移动支付和用户便利性有积极影响。"},{"id":"hn-48024859","title":"Computer Use is 45x more expensive than structured APIs","url":"https://reflex.dev/blog/computer-use-is-45x-more-expensive-than-structured-apis/","source":"Hacker News","score":322,"comments_count":188,"comments_url":"https://news.ycombinator.com/item?id=48024859","published_at":"2026-05-05T16:34:48","author":"palashawas","text":null,"summary":"研究表明计算机视觉操作比结构化API贵45倍，强调了API设计在成本效益中的关键作用，对开发者和企业决策有重要启示。"},{"id":"hn-48018066","title":"Empty Screenings – Finds AMC movie screenings with few or no tickets sold","url":"https://walzr.com/empty-screenings","source":"Hacker News","score":315,"comments_count":260,"comments_url":"https://news.ycombinator.com/item?id=48018066","published_at":"2026-05-05T04:33:22","author":"MrBuddyCasino","text":null,"summary":"‘Empty Screenings’工具可查找AMC电影场次中售票极少的情况，帮助用户享受近乎包场的观影体验，对电影爱好者和数据应用爱好者有吸引力。"},{"id":"hn-48009020","title":"How Monero’s proof of work works","url":"https://blog.alcazarsec.com/tech/posts/how-moneros-proof-of-work-works","source":"Hacker News","score":307,"comments_count":218,"comments_url":"https://news.ycombinator.com/item?id=48009020","published_at":"2026-05-04T14:10:50","author":"alcazar","text":null,"summary":"文章详细解释了Monero的工作量证明机制，突出了其隐私和抗ASIC特性，对加密货币技术和去中心化理念的研究者具有深度价值。"},{"id":"hn-48025687","title":"IBM didn't want Microsoft to use the Tab key to move between dialog fields","url":"https://devblogs.microsoft.com/oldnewthing/20260505-00/?p=112298","source":"Hacker News","score":302,"comments_count":176,"comments_url":"https://news.ycombinator.com/item?id=48025687","published_at":"2026-05-05T17:28:18","author":"SeenNotHeard","text":null,"summary":"本文揭示了IBM曾反对微软在对话框中使用Tab键切换字段的历史，展现了早期UI设计中的权力博弈，对理解人机交互发展有重要参考价值。"},{"id":"hn-48008083","title":"PyInfra 3.8.0","url":"https://github.com/pyinfra-dev/pyinfra/releases/tag/v3.8.0","source":"Hacker News","score":295,"comments_count":102,"comments_url":"https://news.ycombinator.com/item?id=48008083","published_at":"2026-05-04T12:53:46","author":"wowi42","text":null,"summary":"PyInfra 3.8.0发布，这是一个基础设施自动化工具，其新版本可能带来性能或功能改进，对DevOps社区具有实用意义。"},{"id":"hn-48026349","title":"California farmers to destroy 420k peach trees following Del Monte bankruptcy","url":"https://www.sfgate.com/centralcoast/article/usda-aid-california-farmers-22240694.php","source":"Hacker News","score":273,"comments_count":324,"comments_url":"https://news.ycombinator.com/item?id=48026349","published_at":"2026-05-05T18:13:47","author":"littlexsparkee","text":null,"summary":"因Del Monte破产，加州农民将销毁42万棵桃树，反映了农业供应链的脆弱性和经济冲击，值得关注农业与食品行业动态。"},{"id":"hn-48021368","title":"Today I've made the difficult decision to reduce the size of Coinbase by ~14%","url":"https://twitter.com/brian_armstrong/status/2051616759145185723","source":"Hacker News","score":269,"comments_count":390,"comments_url":"https://news.ycombinator.com/item?id=48021368","published_at":"2026-05-05T12:10:24","author":"adrianmsmith","text":null,"summary":"Coinbase宣布裁员约14%，这是加密货币行业在监管和市场压力下的重大调整，对投资者和从业者具有警示意义。"},{"id":"hn-48026207","title":"Zuckerberg 'Personally Authorized and Encouraged' Meta's Copyright Infringement","url":"https://variety.com/2026/digital/news/meta-ai-mark-zuckerberg-copyright-infringement-lawsuit-publishers-scott-turow-1236738383/","source":"Hacker News","score":257,"comments_count":231,"comments_url":"https://news.ycombinator.com/item?id=48026207","published_at":"2026-05-05T18:04:25","author":"spankibalt","text":"<a href=\"https:&#x2F;&#x2F;apnews.com&#x2F;article&#x2F;meta-mark-zuckerberg-ai-publishers-lawsuit-llama-5609846d4d840014974a847b01079c32\" rel=\"nofollow\">https:&#x2F;&#x2F;apnews.com&#x2F;article&#x2F;meta-mark-zuckerberg-ai-publisher...</a>","summary":"扎克伯格被指控亲自授权Meta的版权侵权行为，涉及AI训练数据争议，可能影响科技公司的法律与伦理边界。"},{"id":"hn-48024129","title":"EEVblog: The 555 Timer is 55 years old [video]","url":"https://www.youtube.com/watch?v=6JhK8iCQuqI","source":"Hacker News","score":231,"comments_count":58,"comments_url":"https://news.ycombinator.com/item?id=48024129","published_at":"2026-05-05T15:47:18","author":"brudgers","text":null,"summary":"555定时器芯片迎来55周年，视频回顾其历史与影响，对电子工程爱好者和技术史研究者具有纪念和教育价值。"},{"id":"hn-48019025","title":"Lessons for Agentic Coding: What should we do when code is cheap?","url":"https://www.dbreunig.com/2026/05/04/10-lessons-for-agentic-coding.html","source":"Hacker News","score":229,"comments_count":224,"comments_url":"https://news.ycombinator.com/item?id=48019025","published_at":"2026-05-05T07:05:25","author":"ingve","text":null,"summary":"文章探讨在代码成本降低的背景下，智能编码代理的实践教训，对AI辅助开发领域具有前瞻性指导意义。"},{"id":"hn-48029114","title":"NPR finds \"no sign\" of Polymarket at its Panama HQ address","url":"https://www.npr.org/2026/05/05/nx-s1-5807918/polymarket-panama-prediction-market","source":"Hacker News","score":225,"comments_count":100,"comments_url":"https://news.ycombinator.com/item?id=48029114","published_at":"2026-05-05T21:50:21","author":"ilamont","text":null,"summary":"NPR调查发现Polymarket在巴拿马总部地址无实际运营痕迹，揭示预测市场平台的合规与透明度问题，值得投资者警惕。"},{"id":"hn-48017907","title":"Hand Drawn QR Codes (2025)","url":"https://sethmlarson.dev/hand-drawn-qr-codes","source":"Hacker News","score":203,"comments_count":42,"comments_url":"https://news.ycombinator.com/item?id=48017907","published_at":"2026-05-05T04:02:01","author":"jollyjerry","text":null,"summary":"手工绘制QR码的创意实践，展示了技术艺术化的可能性，对设计和技术爱好者具有启发意义。"},{"id":"hn-48023533","title":"Agents for financial services and insurance","url":"https://www.anthropic.com/news/finance-agents","source":"Hacker News","score":201,"comments_count":152,"comments_url":"https://news.ycombinator.com/item?id=48023533","published_at":"2026-05-05T15:05:47","author":"louiereederson","text":null,"summary":"Anthropic发布面向金融和保险行业的AI代理方案，可能推动行业自动化与效率提升，对金融科技领域具有重要影响。"},{"id":"hn-48014325","title":"Formatting a 25M-line codebase overnight","url":"https://stripe.dev/blog/formatting-an-entire-25-million-line-codebase-overnight-the-rubyfmt-story","source":"Hacker News","score":197,"comments_count":102,"comments_url":"https://news.ycombinator.com/item?id=48014325","published_at":"2026-05-04T20:11:53","author":"r00k","text":null,"summary":"Stripe工程团队分享如何用Rubyfmt一夜之间格式化2500万行代码，展示了大规模代码库自动格式化的可行性与挑战。"},{"id":"hn-48026206","title":"Clarification on the Notepad++ Trademark Issue","url":"https://notepad-plus-plus.org/news/clarify-npp-trademark-infringement/","source":"Hacker News","score":167,"comments_count":75,"comments_url":"https://news.ycombinator.com/item?id=48026206","published_at":"2026-05-05T18:04:20","author":"minimaxir","text":null,"summary":"Notepad++官方澄清商标侵权问题，说明其商标使用规范，对开源项目维护者和用户具有重要参考价值。"},{"id":"hn-48024358","title":"I'm scared about biological computing","url":"https://kuber.studio/blog/Reflections/I%27m-Scared-About-Biological-Computing","source":"Hacker News","score":148,"comments_count":133,"comments_url":"https://news.ycombinator.com/item?id=48024358","published_at":"2026-05-05T16:03:06","author":"kuberwastaken","text":null,"summary":"作者表达对生物计算发展的担忧，探讨其潜在伦理和安全风险，引发对技术未来方向的深思。"},{"id":"hn-48028842","title":"Write some software, give it away for free","url":"https://nonogra.ph/write-some-software-give-it-away-for-free-05-05-2026","source":"Hacker News","score":136,"comments_count":99,"comments_url":"https://news.ycombinator.com/item?id=48028842","published_at":"2026-05-05T21:26:50","author":"nohell","text":null,"summary":"文章倡导免费发布软件的理念，强调开源分享对个人和社区的长期价值，适合开发者反思技术初衷。"},{"id":"hn-47986331","title":"Docker 29 has changed its default image store for new installs","url":"https://docs.docker.com/engine/storage/containerd","source":"Hacker News","score":118,"comments_count":78,"comments_url":"https://news.ycombinator.com/item?id=47986331","published_at":"2026-05-02T13:41:43","author":"neitsab","text":null,"summary":"Docker 29版本更改默认镜像存储为containerd，影响新安装用户，对容器化部署实践有直接指导意义。"}],"locale":"zh"}],"$L17"]}]
+16:null
+17:["$","$Le","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-c28cbcfa15b4","title":"Why didn’t IPv6 work in my home network?","url":"https://gowtham.dev/blog/ipv6-problems.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-05T13:46:37","author":"gowtham.dev by gowthamgts","text":"<p><a href=\"https://lobste.rs/s/yhk0mq/why_didn_t_ipv6_work_my_home_network\">Comments</a></p>","summary":"作者记录家庭网络IPv6配置失败的经历，分析常见问题与解决方案，对网络管理员有实用价值。"},{"id":"rss-8a5f9a9f6833","title":"RSS Feeds Send Me More Traffic Than Google","url":"https://shkspr.mobi/blog/2026/05/rss-feeds-send-me-more-traffic-than-google/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-05T14:46:08","author":"shkspr.mobi via repl","text":"<p><a href=\"https://lobste.rs/s/z0nkyf/rss_feeds_send_me_more_traffic_than_google\">Comments</a></p>","summary":"一项数据表明RSS订阅带来的流量超过谷歌搜索，强调传统聚合工具在信息分发中的持续影响力。"},{"id":"rss-0faca19e4523","title":"A bidirectional typechecking puzzle","url":"https://haskellforall.com/2026/05/a-bidirectional-typechecking-puzzle","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-05T13:21:28","author":"haskellforall.com by Gabriella439","text":"<p><a href=\"https://lobste.rs/s/rsj8sx/bidirectional_typechecking_puzzle\">Comments</a></p>","summary":"文章提出一个双向类型检查的编程谜题，挑战类型系统设计思维，对编程语言爱好者有启发。"},{"id":"rss-191d9e588cd2","title":"A Caddy Cert Expired Because systemd-resolved Was Selectively Broken","url":"https://rant.mvh.dev/a-caddy-cert-expired-because-systemd-resolved-was-selectively-broken/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-05T12:32:59","author":"rant.mvh.dev via robalex","text":"<p><a href=\"https://lobste.rs/s/z0ozbb/caddy_cert_expired_because_systemd\">Comments</a></p>","summary":"因systemd-resolved选择性故障导致Caddy证书过期，揭示系统组件间依赖的脆弱性，值得运维人员警惕。"},{"id":"rss-d6dcf82cd9b2","title":"claude code is not making your product better","url":"https://ethanding.substack.com/p/claude-code-is-not-making-your-product","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-05T13:27:10","author":"ethanding.substack.com via carlana","text":"<p><a href=\"https://lobste.rs/s/kn0jwm/claude_code_is_not_making_your_product\">Comments</a></p>","summary":"批评Claude Code等AI工具未必能提升产品质量，提醒开发者理性看待技术炒作，聚焦实际效果。"}],"locale":"zh"}]
