@@ -5,160 +5,174 @@
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
 d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
 e:"$Sreact.suspense"
-5:T3c6b,好的，作为一名技术新闻分析师，我已经对今天“Technology”主题下的30篇文章进行了全面的分析和总结。以下是综合报告。
+5:T3d0b,好的，作为一名专业的技术新闻分析师，我对今日“Technology”主题的30篇热门文章进行了综合分析。以下是按子主题分组的详细总结，以及最终的重点推荐。
 
 ---
 
-### 今日技术新闻综合分析报告
+### 总体分析
 
-今天的科技新闻呈现出几个明显的热点：**人工智能与平台变革**、**网络安全与治理**、**开源生态与开发者工具**、以及**趣味与探索性项目**。其中，Apple的AI辅助无障碍功能、Google搜索的AI化改造，以及OpenBSD 7.9的发布，分别代表了大型平台、核心工具和开源社区的重要动向。同时，CISA的密钥泄露和GitHub的内部仓库调查事件也再次敲响了安全的警钟。
+今日技术新闻呈现出几个显著趋势：
+1.  **巨头冲突与信任危机**：围绕谷歌和GitHub的负面新闻占据主导，涉及审查、安全漏洞、平台权力滥用等，反映了科技行业深层次的信任问题。
+2.  **安全与隐私是核心议题**：从GitHub的源代码泄露到GCP账户封禁，再到数据隐私保护的新模式，安全话题贯穿始终。
+3.  **编程语言与开发者生态**：C语言的“未定义行为”讨论、asm.js的退役、Node.js的重大版本发布以及Ruby、Haskell等语言的社区反思，共同构成了开发者生态的丰富图景。
+4.  **怀旧与技术考古**：虚拟博物馆、DOS游戏、FiveThirtyEight存档等文章，体现了技术社区对历史和过去项目的浓厚兴趣。
 
-### 一、人工智能与平台变革
+---
 
-这个主题下的文章主要关注大型科技公司如何将AI深度整合到其核心产品和服务中，以及由此带来的影响。
+### 按子主题分组分析
 
-1.  **Apple unveils new accessibility features**
-    - **简要说明**: Apple宣布了一系列新的无障碍功能，这些功能深度集成了Apple Intelligence（AI）。这表明Apple正将AI作为提升用户体验，特别是为残障人士提供服务的核心驱动力，具有深远的社会意义。
-    - **Article URL**: [https://www.apple.com/newsroom/2026/05/apple-unveils-new-accessibility-features-and-updates-with-apple-intelligence/](https://www.apple.com/newsroom/2026/05/apple-unveils-new-accessibility-features-and-updates-with-apple-intelligence/)
-    - **Discussion URL**: [https://news.ycombinator.com/item?id=48192224](https://news.ycombinator.com/item?id=48192224)
+#### 1. 平台权力、审查与信任危机
 
-2.  **Google changes its search box**
-    - **简要说明**: Google对搜索框进行了重大改版，将AI（Gemini）直接集成到搜索栏中。这是Google搜索历史上最显著的变革之一，预示着传统搜索引擎正在向AI驱动的对话式助手转变，引发大量关于信息获取方式改变和广告模式的讨论。
+这一主题是今天最受关注的话题，涉及科技巨头如何行使权力及其带来的后果。
+
+- **Meta blocks human rights accounts from reaching audiences in Saudi Arabia, UAE**
+    - **简要说明**：Meta（Facebook/Instagram）被曝在沙特和阿联酋屏蔽人权组织的账号，引发关于平台审查、言论自由和地缘政治干预的激烈讨论。这是对大型平台如何在不同国家执行内容政策的深度拷问。
+    - **Article URL**: [https://www.alqst.org/ar/posts/1190](https://www.alqst.org/ar/posts/1190)
+    - **Discussion**: [https://news.ycombinator.com/item?id=48206768](https://news.ycombinator.com/item?id=48206768)
+
+- **Google changes its search box**
+    - **简要说明**：谷歌宣布对其搜索框进行重大AI改造，可能从根本上改变用户与互联网交互的方式。评论高达910条，显示了公众对谷歌搜索结果质量下降、广告增多以及AI可能带来的垄断风险的深切担忧。
     - **Article URL**: [https://blog.google/products-and-platforms/products/search/search-io-2026/](https://blog.google/products-and-platforms/products/search/search-io-2026/)
-    - **Discussion URL**: [https://news.ycombinator.com/item?id=48197370](https://news.ycombinator.com/item?id=48197370)
-    - **额外参考**: [NYTimes Article](https://www.nytimes.com/2026/05/19/business/google-seach-bar-ai-gemini.html), [TechCrunch](https://techcrunch.com/2026/05/19/google-sear...)
+    - **Discussion**: [https://news.ycombinator.com/item?id=48197370](https://news.ycombinator.com/item?id=48197370)
 
-3.  **Cursor Introduces Composer 2.5**
-    - **简要说明**: AI编程助手Cursor发布了Composer 2.5版本。对于软件工程师来说，AI辅助编码工具的性能提升直接关系到开发效率。这个更新很可能在代码生成、理解和重构方面有显著进步，值得开发者关注。
-    - **Article URL**: [https://cursor.com/blog/composer-2-5](https://cursor.com/blog/composer-2-5)
-    - **Discussion URL**: [https://news.ycombinator.com/item?id=48182516](https://news.ycombinator.com/item?id=48182516)
+- **Apparently Google hates us now**
+    - **简要说明**：一个知名社区账号（Pokemon Central）抱怨其内容被谷歌搜索降权，引发了关于谷歌算法是否“惩罚”特定类型内容或小型网站的广泛讨论。这加剧了人们对谷歌作为流量分配者权力过大的担忧。
+    - **Article URL**: [https://twitter.com/pokemoncentral/status/2057123807404638250](https://twitter.com/pokemoncentral/status/2057123807404638250)
+    - **Discussion**: [https://news.ycombinator.com/item?id=48210263](https://news.ycombinator.com/item?id=48210263)
 
-4.  **Disney erased FiveThirtyEight**
-    - **简要说明**: 迪士尼关闭了知名数据新闻网站FiveThirtyEight。这不仅是媒体行业的重大事件，也引发了关于数据驱动报道、新闻独立性和大型企业并购后遗症的广泛讨论。
-    - **Article URL**: [https://www.natesilver.net/p/disney-erased-fivethirtyeight](https://www.natesilver.net/p/disney-erased-fivethirtyeight)
-    - **Discussion URL**: [https://news.ycombinator.com/item?id=48197703](https://news.ycombinator.com/item?id=48197703)
+- **Google Declaring War on the Web**
+    - **简要说明**：这是一篇观点尖锐的博客文章，认为谷歌最近的AI搜索改革（如AI Overviews）是在“向网络宣战”，因为它会减少对原始网站的流量，从而破坏开放网络的生态。这篇文章是今天讨论的焦点之一。
+    - **Article URL**: [https://tante.cc/2026/05/20/on-google-declaring-war-on-the-web/](https://tante.cc/2026/05/20/on-google-declaring-war-on-the-web/)
+    - **Discussion**: [https://news.ycombinator.com/item?id=48214449](https://news.ycombinator.com/item?id=48214449)
 
-### 二、网络安全、治理与隐私
+#### 2. 安全漏洞与数据泄露
 
-这一组文章涵盖了从国家级安全漏洞到个人设备隐私的广泛话题。
+安全领域今天出现了两个重大事件，都与GitHub相关。
 
-5.  **CISA Admin Leaked AWS GovCloud Keys on GitHub**
-    - **简要说明**: 美国网络安全和基础设施安全局（CISA）的一名管理员将AWS GovCloud（美国政府云）的密钥泄露到了GitHub上。这起事件严重暴露了政府机构内部的安全管理漏洞，其潜在影响巨大，是今天最受关注的安全新闻。
-    - **Article URL**: [https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/](https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/)
-    - **Discussion URL**: [https://news.ycombinator.com/item?id=48190454](https://news.ycombinator.com/item?id=48190454)
-
-6.  **Minnesota becomes first state to ban prediction markets**
-    - **简要说明**: 明尼苏达州成为美国第一个全面禁止预测市场的州。这起事件涉及金融监管、言论自由和政治博弈，对于加密货币和新兴金融工具的未来发展具有标志性意义。
-    - **Article URL**: [https://www.npr.org/2026/05/19/nx-s1-5821265/minnesota-ban-prediction-markets](https://www.npr.org/2026/05/19/nx-s1-5821265/minnesota-ban-prediction-markets)
-    - **Discussion URL**: [https://news.ycombinator.com/item?id=48197980](https://news.ycombinator.com/item?id=48197980)
-
-7.  **GitHub is investigating unauthorized access to their internal repositories**
-    - **简要说明**: GitHub官方宣布正在调查对其内部代码仓库的未授权访问。这直接影响到全球数百万开发者的信任，如果入侵者获得了核心基础设施的访问权限，后果不堪设想。
+- **GitHub is investigating unauthorized access to their internal repositories**
+    - **简要说明**：GitHub官方发布推文，确认正在调查对其内部仓库的未授权访问。这是当天安全事件的序幕，引发了社区的广泛关注。
     - **Article URL**: [https://twitter.com/github/status/2056884788179726685](https://twitter.com/github/status/2056884788179726685)
-    - **Discussion URL**: [https://news.ycombinator.com/item?id=48201316](https://news.ycombinator.com/item?id=48201316)
+    - **Discussion**: [https://news.ycombinator.com/item?id=48201316](https://news.ycombinator.com/item?id=48201316)
 
-8.  **Anyone on the Internet Can Ring Your Doorbell**
-    - **简要说明**: 文章揭示了某些智能门铃的安全漏洞，任何人都可以通过网络远程触发门铃。这再次提醒我们，物联网设备的安全问题不容忽视，可能直接威胁到个人隐私甚至物理安全。
-    - **Article URL**: [https://www.abgeo.dev/blog/anyone-can-ring-your-doorbell](https://www.abgeo.dev/blog/anyone-can-ring-your-doorbell)
-    - **Discussion URL**: [https://news.ycombinator.com/item?id=48165944](https://news.ycombinator.com/item?id=48165944)
+- **GitHub confirms breach of 3,800 repos via malicious VSCode extension**
+    - **简要说明**：GitHub随后确认了调查结果：一个恶意的VSCode扩展导致3800个仓库被入侵。这是对软件供应链安全的一次重大警示，证明了开发工具本身可能成为攻击媒介。
+    - **Article URL**: [https://www.bleepingcomputer.com/news/security/github-confirms-breach-of-3-800-repos-via-malicious-vscode-extension/](https://www.bleepingcomputer.com/news/security/github-confirms-breach-of-3-800-repos-via-malicious-vscode-extension/)
+    - **Discussion**: [https://news.ycombinator.com/item?id=48207660](https://news.ycombinator.com/item?id=48207660)
 
-9.  **My domain got abused on Github Pages**
-    - **简要说明**: 一位开发者讲述了自己的域名被他人通过GitHub Pages滥用的经历。这暴露了GitHub Pages域名配置中的潜在风险和滥用问题，对于所有使用该服务的开发者都有警示意义。
-    - **Article URL**: [https://meertens.dev/blog/github-enables-domain-abuse/](https://meertens.dev/blog/github-enables-domain-abuse/)
-    - **Discussion URL (Lobsters)**: [https://lobste.rs/s/zsjasr/my_domain_got_abused_on_github_pages](https://lobste.rs/s/zsjasr/my_domain_got_abused_on_github_pages)
+- **GitHub Source Code Breach - TeamPCP Claims Access to Internal Source Code**
+    - **简要说明**：一个名为TeamPCP的团体声称在之前的泄露事件中获取了GitHub的完整源代码。这起事件将GitHub的危机推向了新的高度，引发了关于平台核心安全性的质疑。
+    - **Article URL**: [https://cybersecuritynews.com/github-source-code-breach/](https://cybersecuritynews.com/github-source-code-breach/)
+    - **Content**: 可在Lobste.rs上找到讨论链接。
 
-### 三、开源生态与开发者工具
+- **Incident Report: May 19, 2026 – GCP Account Suspension**
+    - **简要说明**：Railway（一个云平台）发布了关于其GCP账户被错误封禁的详细事件报告。这揭示了云服务提供商在自动化风控和人工审核方面可能存在的严重问题，对依赖单一云服务的企业是重要警示。
+    - **Article URL**: [https://blog.railway.com/p/incident-report-may-19-2026-gcp-account-outage](https://blog.railway.com/p/incident-report-may-19-2026-gcp-account-outage)
+    - **Discussion**: [https://news.ycombinator.com/item?id=48204770](https://news.ycombinator.com/item?id=48204770)
 
-这个分组聚焦于操作系统、新工具、开发实践以及开源社区的现状。
+- **Chromium publishes fixed exploit 4 years later, turns out it's actually unfixed**
+    - **简要说明**：一个令人尴尬的安全事件：Chromium项目在4年后发布了一个声称已修复的漏洞，但随后被证明并未真正修复。这暴露了大型项目在安全补丁生命周期管理上的缺陷。
+    - **Article URL**: [https://infosec.exchange/@rebane2001/116606719764376414](https://infosec.exchange/@rebane2001/116606719764376414)
+    - **Content**: 可在Lobste.rs上找到讨论链接。
 
-10. **OpenBSD 7.9**
-    - **简要说明**: 以安全性和代码质量闻名的OpenBSD发布了7.9版本。对于追求极致安全和稳定性的系统管理员和开发者来说，这是每年最重要的事件之一。
-    - **Article URL**: [https://www.openbsd.org/79.html](https://www.openbsd.org/79.html)
-    - **Discussion URL (HN)**: [https://news.ycombinator.com/item?id=48192882](https://news.ycombinator.com/item?id=48192882)
-    - **Discussion URL (Lobsters)**: [https://lobste.rs/s/wwcjoc/openbsd_7_9_released](https://lobste.rs/s/wwcjoc/openbsd_7_9_released)
+#### 3. 开源生态、软件开发与编程语言
 
-11. **Dumb ways for an open source project to die**
-    - **简要说明**: 作者总结了开源项目消亡的多种“愚蠢”方式。这篇文章对开源社区的健康发展和项目维护者具有重要的反思价值，探讨了项目治理、社区建设和可持续发展等核心问题。
-    - **Article URL**: [https://nesbitt.io/2026/05/19/dumb-ways-for-an-open-source-project-to-die.html](https://nesbitt.io/2026/05/19/dumb-ways-for-an-open-source-project-to-die.html)
-    - **Discussion URL**: [https://news.ycombinator.com/item?id=48198127](https://news.ycombinator.com/item?id=48198127)
+- **Everything in C is undefined behavior**
+    - **简要说明**：一篇关于C语言中未定义行为（UB）的深入文章，指出几乎所有操作在严格意义上都是UB。这引发了程序员社区对C语言安全性、编译器优化以及现代编程实践的激烈辩论。
+    - **Article URL**: [https://blog.habets.se/2026/05/Everything-in-C-is-undefined-behavior.html](https://blog.habets.se/2026/05/Everything-in-C-is-undefined-behavior.html)
+    - **Discussion**: [https://news.ycombinator.com/item?id=48203698](https://news.ycombinator.com/item?id=48203698)
 
-12. **Type out the code**
-    - **简要说明**: 一篇来自Haskell社区的博客文章，提倡“写出代码”的编程哲学。这可能是关于类型驱动开发、Haskell编程最佳实践或某种特定设计模式的深入讨论，对Haskell和函数式编程爱好者有吸引力。
+- **Saying goodbye to asm.js**
+    - **简要说明**：Mozilla的SpiderMonkey团队宣布将逐步淘汰asm.js。这标志着WebAssembly（WASM）已完全取代其前身，是Web平台演进的一个重要里程碑。
+    - **Article URL**: [https://spidermonkey.dev/blog/2026/05/20/saying-goodbye-to-asmjs.html](https://spidermonkey.dev/blog/2026/05/20/saying-goodbye-to-asmjs.html)
+    - **Discussion**: [https://news.ycombinator.com/item?id=48206340](https://news.ycombinator.com/item?id=48206340)
+
+- **Node.js 26.0.0 (Now with Temporal)**
+    - **简要说明**：Node.js发布了第26个大版本，其中最引人注目的是集成了`Temporal` API，这是一个现代化的、功能强大的日期和时间处理库，有望终结JavaScript中日期处理的混乱局面。
+    - **Article URL**: [https://nodejs.org/en/blog/release/v26.0.0](https://nodejs.org/en/blog/release/v26.0.0)
+    - **Discussion**: [https://news.ycombinator.com/item?id=48212242](https://news.ycombinator.com/item?id=48212242)
+
+- **Why Ruby Still Feels Like Home After All These Years**
+    - **简要说明**：一篇充满个人感悟的文章，探讨了Ruby语言在经历多年发展后，为何仍能让开发者感到亲切和高效。它触及了编程语言社区文化和情感连接的话题。
+    - **Article URL**: [https://caio.ca/blog/why-ruby-still-feels-like-home](https://caio.ca/blog/why-ruby-still-feels-like-home)
+    - **Content**: 可在Lobste.rs上找到讨论链接。
+
+- **Why does the arrow (->) operator in C exist?**
+    - **简要说明**：来自Stack Overflow的一个经典问题，探讨了C语言中`->`操作符存在的历史原因和语法设计哲学。对于理解C语言的底层机制很有帮助。
+    - **Article URL**: [https://stackoverflow.com/questions/13366083/why-does-the-arrow-operator-in-c-exist](https://stackoverflow.com/questions/13366083/why-does-the-arrow-operator-in-c-exist)
+    - **Content**: 可在Lobste.rs上找到讨论链接。
+
+- **Type out the code**
+    - **简要说明**：一篇来自Haskell社区的博客，探讨了类型驱动开发的理念和优势，强调了类型系统在编写正确、健壮代码中的核心作用。
     - **Article URL**: [https://haskellforall.com/2026/05/type-out-the-code](https://haskellforall.com/2026/05/type-out-the-code)
-    - **Discussion URL (Lobsters)**: [https://lobste.rs/s/zotppg/type_out_code](https://lobste.rs/s/zotppg/type_out_code)
+    - **Content**: 可在Lobste.rs上找到讨论链接。
 
-13. **The foundations of a provably secure operating system (PSOS) (1979) [pdf]**
-    - **简要说明**: 在Peter Neumann去世的背景下，这篇1979年的经典论文被重新提及。它探讨了构建“可证明安全”的操作系统的基础理论，在今天看来依然具有前瞻性和指导意义。
-    - **Article URL**: [http://www.csl.sri.com/users/neumann/psos.pdf](http://www.csl.sri.com/users/neumann/psos.pdf)
-    - **Discussion URL**: [https://news.ycombinator.com/item?id=48177300](https://news.ycombinator.com/item?id=48177300)
+- **SBCL: the ultimate assembly code breadboard (2014)**
+    - **简要说明**：一篇2014年的经典文章，介绍了如何将SBCL（Steel Bank Common Lisp）用作一个强大的汇编代码实验平台。对Lisp和底层编程感兴趣的人会很喜欢。
+    - **Article URL**: [https://pvk.ca/Blog/2014/03/15/sbcl-the-ultimate-assembly-code-breadboard/](https://pvk.ca/Blog/2014/03/15/sbcl-the-ultimate-assembly-code-breadboard/)
+    - **Discussion**: [https://news.ycombinator.com/item?id=48209558](https://news.ycombinator.com/item?id=48209558)
 
-14. **PyTorch Landscape**
-    - **简要说明**: 一个可视化的PyTorch生态系统概览工具。对于机器学习和深度学习开发者来说，了解PyTorch相关的库、工具和项目图谱是非常有价值的。
-    - **Article URL**: [https://pytorch.landscape2.io](https://pytorch.landscape2.io)
-    - **Discussion URL**: [https://news.ycombinator.com/item?id=48189178](https://news.ycombinator.com/item?id=48189178)
+- **Dumb ways for an open source project to die**
+    - **简要说明**：一篇关于开源项目如何因为一些“愚蠢”的原因（如糟糕的维护者、不合理的决策、社区内斗等）而走向衰亡的反思性文章。对开源贡献者和维护者很有启发。
+    - **Article URL**: [https://nesbitt.io/2026/05/19/dumb-ways-for-an-open-source-project-to-die.html](https://nesbitt.io/2026/05/19/dumb-ways-for-an-open-source-project-to-die.html)
+    - **Discussion**: [https://news.ycombinator.com/item?id=48198127](https://news.ycombinator.com/item?id=48198127)
 
-15. **What would you want from a forge?**
-    - **简要说明**: 这是一个面向开发者社区的问题，探讨下一代代码托管平台（Forge）应该具备什么特性。这反映了开发者对GitHub/GitLab等现有平台的不满和对新工具（如Jujutsu）的期待。
-    - **Article URL**: [https://lobste.rs/s/wed6lj/what_would_you_want_from_forge](https://lobste.rs/s/wed6lj/what_would_you_want_from_forge)
-    - **Discussion URL (Lobsters)**: [https://lobste.rs/s/wed6lj/what_would_you_want_from_forge](https://lobste.rs/s/wed6lj/what_would_you_want_from_forge)
+- **Colorado Amended SB051 (Age Verification Bill) to Exclude Open Source Projects**
+    - **简要说明**：科罗拉多州一项关于年龄验证的法案在修正后，特别将开源项目排除在外。这是开源社区成功游说立法者的一个案例，对全球开源政策具有参考意义。
+    - **Article URL**: [https://legiscan.com/CO/bill/SB051/2026](https://legiscan.com/CO/bill/SB051/2026)
+    - **Discussion**: [https://news.ycombinator.com/item?id=48213651](https://news.ycombinator.com/item?id=48213651)
 
-16. **Better generated branch names with jj**
-    - **简要说明**: 一篇关于如何使用新版本控制工具`jj`（Jujutsu）来生成更好的分支名称的技术文章。对于正在探索或使用`jj`的开发者来说，这是一个实用的技巧。
-    - **Article URL**: [https://ddbeck.com/notes/jj-git-push-bookmark-template/](https://ddbeck.com/notes/jj-git-push-bookmark-template/)
-    - **Discussion URL (Lobsters)**: [https://lobste.rs/s/r4xf2n/better_generated_branch_names_with_jj](https://lobste.rs/s/r4xf2n/better_generated_branch_names_with_jj)
+#### 4. 技术历史、文化与趣味项目
 
-### 四、趣味项目、硬件与探索
-
-这组文章展示了技术有趣、有创造力的一面，涵盖了从极客项目到科学发现的内容。
-
-17. **I’ve built a virtual museum with nearly every operating system you can think of**
-    - **简要说明**: 作者创建了一个虚拟博物馆，几乎包含了你能想到的所有操作系统。这是一个非常酷的怀旧项目，对于计算机历史爱好者和技术极客来说，是一个值得探索的宝藏。
+- **I’ve built a virtual museum with nearly every operating system you can think of**
+    - **简要说明**：一个令人惊叹的个人项目，在线虚拟博物馆展示了几乎所有你能想到的操作系统。对于技术历史爱好者和怀旧者来说，这是一个宝藏。
     - **Article URL**: [https://virtualosmuseum.org/](https://virtualosmuseum.org/)
-    - **Discussion URL**: [https://news.ycombinator.com/item?id=48195009](https://news.ycombinator.com/item?id=48195009)
+    - **Discussion**: [https://news.ycombinator.com/item?id=48195009](https://news.ycombinator.com/item?id=48195009)
 
-18. **Show HN: Gaussian Splat of a Strawberry**
-    - **简要说明**: 一个使用高斯泼溅（Gaussian Splatting）技术渲染的草莓3D模型。这项技术是目前3D重建和渲染领域的前沿热点，这个项目展示了其惊人的视觉效果，引人注目。
-    - **Article URL**: [https://superspl.at/scene/84df8849](https://superspl.at/scene/84df8849)
-    - **Discussion URL**: [https://news.ycombinator.com/item?id=48191602](https://news.ycombinator.com/item?id=48191602)
+- **Map of Metal**
+    - **简要说明**：一个交互式的“重金属音乐地图”，将不同风格的重金属音乐（如死亡金属、黑金属、厄运金属等）以视觉化的方式呈现。虽然与核心技术无关，但其信息可视化设计非常有趣。
+    - **Article URL**: [https://mapofmetal.com/](https://mapofmetal.com/)
+    - **Discussion**: [https://news.ycombinator.com/item?id=48205699](https://news.ycombinator.com/item?id=48205699)
 
-19. **Regex Chess: A 2-ply minimax chess engine in 84,688 regular expressions**
-    - **简要说明**: 一个极其疯狂的项目：用84,688个正则表达式实现了一个2层深度的极小化极大国际象棋引擎。这展示了正则表达式的强大和作者惊人的创造力，是当之无愧的“Show HN”典范。
-    - **Article URL**: [https://nicholas.carlini.com/writing/2025/regex-chess.html](https://nicholas.carlini.com/writing/2025/regex-chess.html)
-    - **Discussion URL**: [https://news.ycombinator.com/item?id=48136909](https://news.ycombinator.com/item?id=48136909)
+- **FiveThirtyEight articles on the Internet Archive**
+    - **简要说明**：一个专门索引和存档FiveThirtyEight（一个专注于数据新闻的网站）所有文章的网站。对于数据分析和新闻领域的研究者来说，这是一个宝贵的资源。
+    - **Article URL**: [https://fivethirtyeightindex.com/](https://fivethirtyeightindex.com/)
+    - **Discussion**: [https://news.ycombinator.com/item?id=48201973](https://news.ycombinator.com/item?id=48201973)
 
-20. **Kv4p HT – A homebrew 1W radio (VHF or UHF) that plugs into an Android phone**
-    - **简要说明**: 一个自制的小功率无线电收发器，可以通过Android手机控制。这是硬件黑客和业余无线电爱好者的绝佳项目，体现了DIY精神和移动通信的融合。
-    - **Article URL**: [https://www.kv4p.com/](https://www.kv4p.com/)
-    - **Discussion URL**: [https://news.ycombinator.com/item?id=48161772](https://news.ycombinator.com/item?id=48161772)
+- **DOS Zone**
+    - **简要说明**：一个在线DOS游戏模拟器集合，让你可以直接在浏览器中玩经典DOS游戏。是技术圈怀旧文化的又一个体现。
+    - **Article URL**: [https://dos.zone/](https://dos.zone/)
+    - **Discussion**: [https://news.ycombinator.com/item?id=48215418](https://news.ycombinator.com/item?id=48215418)
 
-21. **I found ultra-pure quantum crystals in an abandoned mine in the Atacama desert**
-    - **简要说明**: 作者在智利阿塔卡马沙漠的废弃矿井中发现了超纯的“量子晶体”。这篇文章结合了冒险、地质学和量子物理，充满了神秘感和科学探索的魅力。
-    - **Article URL**: [https://medium.com/@breid.at/ultra-pure-quantum-crystals-from-an-abandoned-mine-in-a-mysterious-desert-93cc87d12314](https://medium.com/@breid.at/ultra-pure-quantum-crystals-from-an-abandoned-mine-in-a-mysterious-desert-93cc87d12314)
-    - **Discussion URL**: [https://news.ycombinator.com/item?id=48165797](https://news.ycombinator.com/item?id=48165797)
+- **Why is Inkwell stuck in review**
+    - **简要说明**：Inkwell（一个博客平台）的开发者讲述了其App Store审核被卡住的故事，揭示了苹果应用商店审核流程的不透明和开发者面临的困境。
+    - **Article URL**: [https://www.manton.org/2026/05/19/why-is-inkwell-stuck-in.html](https://www.manton.org/2026/05/19/why-is-inkwell-stuck-in.html)
+    - **Discussion**: [https://news.ycombinator.com/item?id=48211134](https://news.ycombinator.com/item?id=48211134)
 
-22. **Show HN: Number Gacha, a gacha game distilled to its essence**
-    - **简要说明**: 一个极简的“抽卡”游戏，将抽卡机制提炼到最纯粹的数字形式。它是对现代游戏氪金机制的半讽刺、半认真的模拟，玩法简单但容易上瘾。
-    - **Article URL**: [https://isabisabel.com/gacha/](https://isabisabel.com/gacha/)
-    - **Discussion URL**: [https://news.ycombinator.com/item?id=48123359](https://news.ycombinator.com/item?id=48123359)
+#### 5. 硬件、汽车与科学
 
-23. **Polypad**
-    - **简要说明**: 一个在线数学画板工具，可用于教学和探索。它提供了丰富的数学可视化组件，是教育科技领域一个不错的资源。
-    - **Article URL**: [https://polypad.amplify.com/](https://polypad.amplify.com/)
-    - **Discussion URL**: [https://news.ycombinator.com/item?id=48166744](https://news.ycombinator.com/item?id=48166744)
+- **Flipper One Tech Specs**
+    - **简要说明**：Flipper Zero的继任者Flipper One的技术规格被公布。作为一款备受黑客和极客喜爱的多功能工具，其新版本的硬件升级备受关注。
+    - **Article URL**: [https://docs.flipper.net/one/general/tech-specs](https://docs.flipper.net/one/general/tech-specs)
+    - **Discussion**: [https://news.ycombinator.com/item?id=48212046](https://news.ycombinator.com/item?id=48212046)
 
-24. **Show HN: I made a 3D pose maker for artists**
-    - **简要说明**: 一个为艺术家设计的3D姿势生成工具。它可以快速创建和调整人体模型姿势，对于概念设计、插画和动画制作非常实用。
-    - **Article URL**: [https://setpose.com/](https://setpose.com/)
-    - **Discussion URL**: [https://news.ycombinator.com/item?id=48193474](https://news.ycombinator.com/item?id=48193474)
+- **SpaceX S-1**
+    - **简要说明**：SpaceX向SEC提交了S-1文件，这是其进行IPO前的关键一步。文件内容揭示了其财务状况，是科技和商业领域的重大新闻。
+    - **Article URL**: [https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm](https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm)
+    - **Discussion**: [https://news.ycombinator.com/item?id=48213933](https://news.ycombinator.com/item?id=48213933)
 
-25. **Why is almost everyone right-handed? A new study connects it to bipedalism**
-    - **简要说明**: 牛津大学的一项新研究将人类普遍右撇子的现象与双足行走的演化联系起来。这是一项有趣的跨学科研究，结合了生物学、人类学和神经科学。
-    - **Article URL**: [https://www.ox.ac.uk/news/2026-05-15-why-is-almost-everyone-right-handed-the-answer-may-lie-in-how-we-learned-to-walk](https://www.ox.ac.uk/news/2026-05-15-why-is-almost-everyone-right-handed-the-answer-may-lie-in-how-we-learned-to-walk)
-    - **Discussion URL**: [https://news.ycom0:{"buildId":"dKac3vhfrKF_zzZ_-ij0f","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-05-20","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":19},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-05-20"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-48195009","title":"I’ve built a virtual museum with nearly every operating system you can think of","url":"https://virtualosmuseum.org/","source":"Hacker News","score":611,"comments_count":146,"comments_url":"https://news.ycombinator.com/item?id=48195009","published_at":"2026-05-19T15:53:38","author":"andreww591","text":null,"summary":"作者创建了一个虚拟博物馆，收录了几乎所有你能想到的操作系统，是技术历史和怀旧爱好者的宝贵资源。"},{"id":"hn-48192224","title":"Apple unveils new accessibility features","url":"https://www.apple.com/newsroom/2026/05/apple-unveils-new-accessibility-features-and-updates-with-apple-intelligence/","source":"Hacker News","score":606,"comments_count":313,"comments_url":"https://news.ycombinator.com/item?id=48192224","published_at":"2026-05-19T12:04:18","author":"interpol_p","text":null,"summary":"苹果宣布了新的辅助功能，旨在通过Apple Intelligence提升无障碍体验，体现了对包容性技术的持续投入。"},{"id":"hn-48197980","title":"Minnesota becomes first state to ban prediction markets","url":"https://www.npr.org/2026/05/19/nx-s1-5821265/minnesota-ban-prediction-markets","source":"Hacker News","score":487,"comments_count":148,"comments_url":"https://news.ycombinator.com/item?id=48197980","published_at":"2026-05-19T19:13:26","author":"ortusdux","text":null,"summary":"明尼苏达州成为美国首个禁止预测市场的州，这一立法可能影响金融科技和在线博彩的未来发展。"},{"id":"hn-48191602","title":"Show HN: Gaussian Splat of a Strawberry","url":"https://superspl.at/scene/84df8849","source":"Hacker News","score":482,"comments_count":186,"comments_url":"https://news.ycombinator.com/item?id=48191602","published_at":"2026-05-19T10:38:47","author":"danybittel","text":"The Setup:<p><a href=\"https:&#x2F;&#x2F;i.imgur.com&#x2F;o0hgybh.jpeg\" rel=\"nofollow\">https:&#x2F;&#x2F;i.imgur.com&#x2F;o0hgybh.jpeg</a><p><a href=\"https:&#x2F;&#x2F;i.imgur.com&#x2F;mcNiomp.jpeg\" rel=\"nofollow\">https:&#x2F;&#x2F;i.imgur.com&#x2F;mcNiomp.jpeg</a><p><a href=\"https:&#x2F;&#x2F;i.imgur.com&#x2F;vIjw6pc.jpeg\" rel=\"nofollow\">https:&#x2F;&#x2F;i.imgur.com&#x2F;vIjw6pc.jpeg</a><p><a href=\"https:&#x2F;&#x2F;i.imgur.com&#x2F;nzOwmSC.jpeg\" rel=\"nofollow\">https:&#x2F;&#x2F;i.imgur.com&#x2F;nzOwmSC.jpeg</a>","summary":"展示了一个草莓的高斯溅射3D重建效果，展示了先进的计算机视觉和图形技术，值得关注其逼真的渲染细节。"},{"id":"hn-48190454","title":"CISA Admin Leaked AWS GovCloud Keys on GitHub","url":"https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/","source":"Hacker News","score":408,"comments_count":168,"comments_url":"https://news.ycombinator.com/item?id=48190454","published_at":"2026-05-19T07:45:53","author":"LelouBil","text":null,"summary":"一名CISA管理员在GitHub上泄露了AWS GovCloud密钥，暴露了政府云安全管理的严重漏洞，引发对数据保护的担忧。"},{"id":"hn-48197370","title":"Google changes its search box","url":"https://blog.google/products-and-platforms/products/search/search-io-2026/","source":"Hacker News","score":393,"comments_count":567,"comments_url":"https://news.ycombinator.com/item?id=48197370","published_at":"2026-05-19T18:34:27","author":"berkeleyjunk","text":"<a href=\"https:&#x2F;&#x2F;www.nytimes.com&#x2F;2026&#x2F;05&#x2F;19&#x2F;business&#x2F;google-seach-bar-ai-gemini.html?unlocked_article_code=1.jlA.95yh.ptfBUHf-rBtB&amp;smid=url-share\" rel=\"nofollow\">https:&#x2F;&#x2F;www.nytimes.com&#x2F;2026&#x2F;05&#x2F;19&#x2F;business&#x2F;google-seach-bar...</a>, <a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;XI1sQ\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;XI1sQ</a><p><a href=\"https:&#x2F;&#x2F;techcrunch.com&#x2F;2026&#x2F;05&#x2F;19&#x2F;google-search-as-you-know-it-is-over&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;techcrunch.com&#x2F;2026&#x2F;05&#x2F;19&#x2F;google-search-as-you-know-...</a><p><a href=\"https:&#x2F;&#x2F;www.theverge.com&#x2F;tech&#x2F;932970&#x2F;google-search-ai-update-io-2026\" rel=\"nofollow\">https:&#x2F;&#x2F;www.theverge.com&#x2F;tech&#x2F;932970&#x2F;google-search-ai-update...</a>","summary":"谷歌对其搜索框进行了重大更改，整合了AI功能，可能重塑用户搜索体验和搜索引擎市场格局。"},{"id":"hn-48192882","title":"OpenBSD 7.9","url":"https://www.openbsd.org/79.html","source":"Hacker News","score":373,"comments_count":267,"comments_url":"https://news.ycombinator.com/item?id=48192882","published_at":"2026-05-19T13:11:51","author":"bradley_taunt","text":null,"summary":"OpenBSD 7.9发布，带来安全性和性能更新，对注重系统安全的用户和开发者具有重要参考价值。"},{"id":"hn-48197703","title":"Disney erased FiveThirtyEight","url":"https://www.natesilver.net/p/disney-erased-fivethirtyeight","source":"Hacker News","score":333,"comments_count":195,"comments_url":"https://news.ycombinator.com/item?id=48197703","published_at":"2026-05-19T18:56:25","author":"7777777phil","text":null,"summary":"迪士尼关闭了数据新闻网站FiveThirtyEight，标志着传统媒体与数据驱动报道融合的挫折，引发对新闻独立性的讨论。"},{"id":"hn-48188787","title":"Peter Neumann has died","url":"https://www.tuhs.org/pipermail/tuhs/2026-May/033748.html","source":"Hacker News","score":305,"comments_count":24,"comments_url":"https://news.ycombinator.com/item?id=48188787","published_at":"2026-05-19T03:17:45","author":"pabs3","text":"<a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Peter_G._Neumann\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Peter_G._Neumann</a>","summary":"计算机安全先驱Peter Neumann去世，他的贡献影响了UNIX和网络安全领域，值得纪念。"},{"id":"hn-48182516","title":"Cursor Introduces Composer 2.5","url":"https://cursor.com/blog/composer-2-5","source":"Hacker News","score":278,"comments_count":207,"comments_url":"https://news.ycombinator.com/item?id=48182516","published_at":"2026-05-18T17:20:43","author":"asar","text":"<a href=\"https:&#x2F;&#x2F;twitter.com&#x2F;cursor_ai&#x2F;status&#x2F;2056415413077233983\" rel=\"nofollow\">https:&#x2F;&#x2F;twitter.com&#x2F;cursor_ai&#x2F;status&#x2F;2056415413077233983</a>","summary":"Cursor推出Composer 2.5，增强了AI辅助编程功能，可能提升开发者的编码效率和创造力。"},{"id":"hn-48165797","title":"I found ultra-pure quantum crystals in an abandoned mine in the Atacama desert","url":"https://medium.com/@breid.at/ultra-pure-quantum-crystals-from-an-abandoned-mine-in-a-mysterious-desert-93cc87d12314","source":"Hacker News","score":272,"comments_count":112,"comments_url":"https://news.ycombinator.com/item?id=48165797","published_at":"2026-05-17T03:25:23","author":"vi_sextus_vi","text":null,"summary":"在智利阿塔卡马沙漠废弃矿井中发现超纯量子晶体，可能推动量子计算材料研究，因其罕见性和潜在应用价值值得关注。"},{"id":"hn-48123359","title":"Show HN: Number Gacha, a gacha game distilled to its essence","url":"https://isabisabel.com/gacha/","source":"Hacker News","score":238,"comments_count":120,"comments_url":"https://news.ycombinator.com/item?id=48123359","published_at":"2026-05-13T15:39:41","author":"babel16","text":"Number Gacha is a half-parody, half-real gacha game where you roll, unwrap, and battle numbers. Play on Desktop for the best experience!","summary":"Number Gacha是一款半戏仿半真实的扭蛋游戏，核心机制是抽取、解锁和战斗数字，以极简设计吸引玩家，适合桌面体验。"},{"id":"hn-48166744","title":"Polypad","url":"https://polypad.amplify.com/","source":"Hacker News","score":208,"comments_count":23,"comments_url":"https://news.ycombinator.com/item?id=48166744","published_at":"2026-05-17T07:20:14","author":"ivank","text":null,"summary":"Polypad是一个多功能数学教学工具，提供交互式画布和资源，因其创新性和教育实用性值得关注。"},{"id":"hn-48136909","title":"Regex Chess: A 2-ply minimax chess engine in 84,688 regular expressions","url":"https://nicholas.carlini.com/writing/2025/regex-chess.html","source":"Hacker News","score":172,"comments_count":48,"comments_url":"https://news.ycombinator.com/item?id=48136909","published_at":"2026-05-14T15:30:36","author":"surprisetalk","text":null,"summary":"用84,688个正则表达式实现了一个2层极小化极大搜索的象棋引擎，展示了正则表达式的极限应用和编程创意。"},{"id":"hn-48161772","title":"Kv4p HT – A homebrew 1W radio (VHF or UHF) that plugs into an Android phone","url":"https://www.kv4p.com/","source":"Hacker News","score":165,"comments_count":69,"comments_url":"https://news.ycombinator.com/item?id=48161772","published_at":"2026-05-16T16:49:15","author":"krupan","text":null,"summary":"Kv4p HT是一款自制1瓦特无线电设备，可插入Android手机用于VHF或UHF通信，因其开源硬件和低成本通信方案值得关注。"},{"id":"hn-48201316","title":"GitHub is investigating unauthorized access to their internal repositories","url":"https://twitter.com/github/status/2056884788179726685","source":"Hacker News","score":161,"comments_count":42,"comments_url":"https://news.ycombinator.com/item?id=48201316","published_at":"2026-05-20T00:01:18","author":"splenditer","text":null,"summary":"GitHub正在调查对其内部仓库的未授权访问，涉及安全漏洞，因影响广泛开发者社区而值得关注。"},{"id":"hn-48198127","title":"Dumb ways for an open source project to die","url":"https://nesbitt.io/2026/05/19/dumb-ways-for-an-open-source-project-to-die.html","source":"Hacker News","score":154,"comments_count":95,"comments_url":"https://news.ycombinator.com/item?id=48198127","published_at":"2026-05-19T19:22:56","author":"chmaynard","text":null,"summary":"文章列举开源项目因管理不善、社区分裂等常见原因失败，为开发者提供警示和实用建议。"},{"id":"hn-48182872","title":"Hanoi’s humble beer glass and the memory of a nation","url":"https://sundaylongread.com/2026/05/15/hanois-humble-beer-glass-and-the-memory-of-a-nation/","source":"Hacker News","score":125,"comments_count":38,"comments_url":"https://news.ycombinator.com/item?id=48182872","published_at":"2026-05-18T17:45:02","author":"NaOH","text":null,"summary":"通过河内啤酒杯探讨其文化意义和民族记忆，结合历史与社会视角，因独特叙事和人文价值值得关注。"},{"id":"hn-48177300","title":"The foundations of a provably secure operating system (PSOS) (1979) [pdf]","url":"http://www.csl.sri.com/users/neumann/psos.pdf","source":"Hacker News","score":121,"comments_count":83,"comments_url":"https://news.ycombinator.com/item?id=48177300","published_at":"2026-05-18T09:40:51","author":"rurban","text":null,"summary":"1979年关于可证明安全操作系统基础的经典论文，为现代系统安全提供理论框架，因历史影响和学术价值值得关注。"},{"id":"hn-48165944","title":"Anyone on the Internet Can Ring Your Doorbell","url":"https://www.abgeo.dev/blog/anyone-can-ring-your-doorbell","source":"Hacker News","score":119,"comments_count":85,"comments_url":"https://news.ycombinator.com/item?id=48165944","published_at":"2026-05-17T03:59:22","author":"jrdres","text":null,"summary":"揭示智能门铃因配置不当导致任何人可远程响铃的安全漏洞，警示物联网设备风险，因实用性和紧迫性值得关注。"},{"id":"hn-48194098","title":"Why is almost everyone right-handed? A new study connects it to bipedalism","url":"https://www.ox.ac.uk/news/2026-05-15-why-is-almost-everyone-right-handed-the-answer-may-lie-in-how-we-learned-to-walk","source":"Hacker News","score":95,"comments_count":152,"comments_url":"https://news.ycombinator.com/item?id=48194098","published_at":"2026-05-19T14:50:42","author":"gmays","text":null,"summary":"牛津大学新研究将人类普遍右利手与双足行走联系起来，挑战传统认知，为理解大脑偏侧化演化提供新视角。"},{"id":"hn-48189178","title":"PyTorch Landscape","url":"https://pytorch.landscape2.io","source":"Hacker News","score":92,"comments_count":23,"comments_url":"https://news.ycombinator.com/item?id=48189178","published_at":"2026-05-19T04:29:39","author":"salamo","text":null,"summary":"PyTorch Landscape 是一个可视化 PyTorch 生态系统的交互式工具，帮助开发者快速了解相关库和工具。"},{"id":"hn-48165283","title":"The lasting influence of Netscape Time","url":"https://thehistoryoftheweb.com/the-lasting-influence-of-netscape-time/","source":"Hacker News","score":90,"comments_count":27,"comments_url":"https://news.ycombinator.com/item?id=48165283","published_at":"2026-05-17T01:22:57","author":"zdw","text":null,"summary":"文章回顾了网景公司对互联网发展的持久影响，揭示了早期浏览器如何塑造现代网络文化。"},{"id":"hn-48188506","title":"War game exposed U.S. vulnerability to low-tech warfare","url":"https://nsarchive.gwu.edu/news/2024-11-01/rigged-war-game-exposed-us-vulnerability-low-tech-warfare","source":"Hacker News","score":80,"comments_count":82,"comments_url":"https://news.ycombinator.com/item?id=48188506","published_at":"2026-05-19T02:25:29","author":"KnuthIsGod","text":null,"summary":"一份解密报告显示，美国在一次兵棋推演中暴露了面对低技术战争时的脆弱性，引发对军事战略的反思。"},{"id":"hn-48193474","title":"Show HN: I made a 3D pose maker for artists","url":"https://setpose.com/","source":"Hacker News","score":70,"comments_count":30,"comments_url":"https://news.ycombinator.com/item?id=48193474","published_at":"2026-05-19T14:04:19","author":"augustvdv","text":null,"summary":"作者开发了 SetPose，一个面向艺术家的 3D 姿势生成工具，可快速创建参考姿势，提升创作效率。"}],"locale":"zh"}],"$Lc"]}]]}]
+- **Nobody understands the point of hybrid cars [video]**
+    - **简要说明**：一个视频探讨了人们对混合动力汽车的普遍误解，分析了其相对于纯电和燃油车的独特价值。引发了关于未来汽车技术路线的讨论。
+    - **Article URL**: [https://www.youtube.com/watch?v=KnUFH5GX_fI](https://www.youtube.com/watch?v=KnUFH5GX_fI)
+    - **Discussion**: [https://news.ycombinator.com/item?id=48176189](https://news.ycombinator.com/item?id=48176189)
+
+- **Japan is gripped by mass allergies. A 1950s project is to blame**
+    - **简要说明**：一篇来自BBC的文章，揭示了日本大规模花粉过敏的根源是1950年代的一个造林项目。这是一个典型的“好心办坏事”的案例，与科技、环境和社会问题都相关。
+    - **Article URL**: [https://www.bbc.com/future/article/20260515-the-1950s-blunder-which-causes-mass-hay-fever-in-japan](https://www.bbc.com/future/article/20260515-the-1950s-blunder-which-causes-mass-hay-fever-in-japan)
+    - **Discussion**: [https0:{"buildId":"KdS9b-mA32TtbA8QqLe5_","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-05-21","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":20},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-05-21"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-48206768","title":"Meta blocks human rights accounts from reaching audiences in Saudi Arabia, UAE","url":"https://www.alqst.org/ar/posts/1190","source":"Hacker News","score":936,"comments_count":404,"comments_url":"https://news.ycombinator.com/item?id=48206768","published_at":"2026-05-20T12:43:41","author":"giuliomagnifico","text":null,"summary":"Meta在沙特阿拉伯和阿联酋屏蔽了人权组织的账号，限制其内容传播，引发对言论自由和平台责任的关注。"},{"id":"hn-48195009","title":"I’ve built a virtual museum with nearly every operating system you can think of","url":"https://virtualosmuseum.org/","source":"Hacker News","score":924,"comments_count":212,"comments_url":"https://news.ycombinator.com/item?id=48195009","published_at":"2026-05-19T15:53:38","author":"andreww591","text":null,"summary":"作者创建了一个虚拟博物馆，收录了几乎所有你能想到的操作系统，展示了计算历史的演变，对技术怀旧者和教育者极具价值。"},{"id":"hn-48197370","title":"Google changes its search box","url":"https://blog.google/products-and-platforms/products/search/search-io-2026/","source":"Hacker News","score":671,"comments_count":910,"comments_url":"https://news.ycombinator.com/item?id=48197370","published_at":"2026-05-19T18:34:27","author":"berkeleyjunk","text":"<a href=\"https:&#x2F;&#x2F;www.nytimes.com&#x2F;2026&#x2F;05&#x2F;19&#x2F;business&#x2F;google-seach-bar-ai-gemini.html?unlocked_article_code=1.jlA.95yh.ptfBUHf-rBtB&amp;smid=url-share\" rel=\"nofollow\">https:&#x2F;&#x2F;www.nytimes.com&#x2F;2026&#x2F;05&#x2F;19&#x2F;business&#x2F;google-seach-bar...</a>, <a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;XI1sQ\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;XI1sQ</a><p><a href=\"https:&#x2F;&#x2F;techcrunch.com&#x2F;2026&#x2F;05&#x2F;19&#x2F;google-search-as-you-know-it-is-over&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;techcrunch.com&#x2F;2026&#x2F;05&#x2F;19&#x2F;google-search-as-you-know-...</a><p><a href=\"https:&#x2F;&#x2F;www.theverge.com&#x2F;tech&#x2F;932970&#x2F;google-search-ai-update-io-2026\" rel=\"nofollow\">https:&#x2F;&#x2F;www.theverge.com&#x2F;tech&#x2F;932970&#x2F;google-search-ai-update...</a>","summary":"Google对其搜索框进行了重大更新，整合了AI功能，可能改变用户搜索体验，是搜索引擎演进的关键节点。"},{"id":"hn-48201316","title":"GitHub is investigating unauthorized access to their internal repositories","url":"https://twitter.com/github/status/2056884788179726685","source":"Hacker News","score":609,"comments_count":326,"comments_url":"https://news.ycombinator.com/item?id=48201316","published_at":"2026-05-20T00:01:18","author":"splenditer","text":"<a href=\"https:&#x2F;&#x2F;xcancel.com&#x2F;github&#x2F;status&#x2F;2056884788179726685\" rel=\"nofollow\">https:&#x2F;&#x2F;xcancel.com&#x2F;github&#x2F;status&#x2F;2056884788179726685</a>","summary":"GitHub正在调查其内部仓库的未授权访问事件，涉及潜在安全漏洞，对开发者和开源社区有直接影响。"},{"id":"hn-48207660","title":"GitHub confirms breach of 3,800 repos via malicious VSCode extension","url":"https://www.bleepingcomputer.com/news/security/github-confirms-breach-of-3-800-repos-via-malicious-vscode-extension/","source":"Hacker News","score":573,"comments_count":206,"comments_url":"https://news.ycombinator.com/item?id=48207660","published_at":"2026-05-20T13:43:37","author":"Timofeibu","text":"Previous thread in sequence:<p><i>GitHub is investigating unauthorized access to their internal repositories</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48201316\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48201316</a> - May 2026 (321 comments)","summary":"GitHub确认通过恶意VSCode扩展泄露了3800个仓库，突显了开发工具供应链攻击的严重性，值得开发者警惕。"},{"id":"hn-48203698","title":"Everything in C is undefined behavior","url":"https://blog.habets.se/2026/05/Everything-in-C-is-undefined-behavior.html","source":"Hacker News","score":475,"comments_count":623,"comments_url":"https://news.ycombinator.com/item?id=48203698","published_at":"2026-05-20T06:07:22","author":"lycopodiopsida","text":null,"summary":"文章探讨了C语言中大量行为被定义为未定义行为的现象，揭示了编程语言规范中的潜在陷阱，对C语言开发者有重要警示意义。"},{"id":"hn-48210263","title":"Apparently Google hates us now","url":"https://twitter.com/pokemoncentral/status/2057123807404638250","source":"Hacker News","score":433,"comments_count":230,"comments_url":"https://news.ycombinator.com/item?id=48210263","published_at":"2026-05-20T16:27:25","author":"zeitg3ist","text":null,"summary":"有用户声称Google现在对他们充满敌意，可能涉及搜索排名或服务变化，反映了用户对科技巨头行为的担忧。"},{"id":"hn-48205699","title":"Map of Metal","url":"https://mapofmetal.com/","source":"Hacker News","score":404,"comments_count":147,"comments_url":"https://news.ycombinator.com/item?id=48205699","published_at":"2026-05-20T10:47:20","author":"robin_reala","text":null,"summary":"一个交互式地图展示了金属音乐的各种子流派及其关系，是音乐爱好者和数据可视化爱好者的趣味资源。"},{"id":"hn-48204770","title":"Incident Report: May 19, 2026 – GCP Account Suspension","url":"https://blog.railway.com/p/incident-report-may-19-2026-gcp-account-outage","source":"Hacker News","score":393,"comments_count":236,"comments_url":"https://news.ycombinator.com/item?id=48204770","published_at":"2026-05-20T08:37:55","author":"0xedb","text":"Previous thread: <i>Incident Report: Railway Blocked by Google Cloud [resolved]</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48201484\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48201484</a>","summary":"Railway公司报告了其GCP账户被暂停的事件，揭示了云服务依赖风险，对使用Google Cloud的企业有参考价值。"},{"id":"hn-48214449","title":"Google Declaring War on the Web","url":"https://tante.cc/2026/05/20/on-google-declaring-war-on-the-web/","source":"Hacker News","score":369,"comments_count":249,"comments_url":"https://news.ycombinator.com/item?id=48214449","published_at":"2026-05-20T21:33:18","author":"cdrnsf","text":null,"summary":"文章批评Google正通过其策略向网络宣战，可能威胁开放互联网，引发了关于科技垄断和数字权利的讨论。"},{"id":"hn-48201973","title":"FiveThirtyEight articles on the Internet Archive","url":"https://fivethirtyeightindex.com/","source":"Hacker News","score":364,"comments_count":78,"comments_url":"https://news.ycombinator.com/item?id=48201973","published_at":"2026-05-20T01:34:19","author":"ChocMontePy","text":null,"summary":"该文章索引了互联网档案馆中所有FiveThirtyEight文章，方便用户访问和存档，对数据保存和媒体研究有重要价值。"},{"id":"hn-48202047","title":"Japan is gripped by mass allergies. A 1950s project is to blame","url":"https://www.bbc.com/future/article/20260515-the-1950s-blunder-which-causes-mass-hay-fever-in-japan","source":"Hacker News","score":341,"comments_count":155,"comments_url":"https://news.ycombinator.com/item?id=48202047","published_at":"2026-05-20T01:43:06","author":"ranit","text":null,"summary":"本文揭示日本大规模花粉过敏的根源是1950年代的一个植树项目，引发对历史决策环境影响的反思，值得关注。"},{"id":"hn-48206340","title":"Saying goodbye to asm.js","url":"https://spidermonkey.dev/blog/2026/05/20/saying-goodbye-to-asmjs.html","source":"Hacker News","score":322,"comments_count":137,"comments_url":"https://news.ycombinator.com/item?id=48206340","published_at":"2026-05-20T12:01:56","author":"eqrion","text":null,"summary":"Mozilla宣布逐步淘汰asm.js，转向WebAssembly，标志着Web技术演进的关键节点，对开发者有直接影响。"},{"id":"hn-48174920","title":"How fast is N tokens per second really?","url":"https://mikeveerman.github.io/tokenspeed/","source":"Hacker News","score":316,"comments_count":73,"comments_url":"https://news.ycombinator.com/item?id=48174920","published_at":"2026-05-18T02:04:38","author":"hexagr","text":null,"summary":"本文剖析了AI模型推理速度“N tokens/s”指标的实际意义，帮助用户理解性能瓶颈，对AI应用优化有指导作用。"},{"id":"hn-48212046","title":"Flipper One Tech Specs","url":"https://docs.flipper.net/one/general/tech-specs","source":"Hacker News","score":270,"comments_count":98,"comments_url":"https://news.ycombinator.com/item?id=48212046","published_at":"2026-05-20T18:33:56","author":"gregsadetsky","text":null,"summary":"Flipper One的技术规格公布，展示了其硬件能力，对黑客和嵌入式爱好者有参考价值。"},{"id":"hn-48213933","title":"SpaceX S-1","url":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm","source":"Hacker News","score":246,"comments_count":186,"comments_url":"https://news.ycombinator.com/item?id=48213933","published_at":"2026-05-20T20:49:59","author":"cachecow","text":null,"summary":"SpaceX提交S-1文件，可能涉及上市或融资，对航天和投资界意义重大。"},{"id":"hn-48198127","title":"Dumb ways for an open source project to die","url":"https://nesbitt.io/2026/05/19/dumb-ways-for-an-open-source-project-to-die.html","source":"Hacker News","score":208,"comments_count":140,"comments_url":"https://news.ycombinator.com/item?id=48198127","published_at":"2026-05-19T19:22:56","author":"chmaynard","text":null,"summary":"本文列举开源项目常见的失败原因，提供警示，对维护者和贡献者具有实用价值。"},{"id":"hn-48212279","title":"Tracking Starbucks' 'widely recyclable' cups: none ended up at recycling","url":"https://www.beyondplastics.org/press-releases/starbucks-cups-recyclable-report","source":"Hacker News","score":192,"comments_count":137,"comments_url":"https://news.ycombinator.com/item?id=48212279","published_at":"2026-05-20T18:50:59","author":"theanonymousone","text":null,"summary":"调查显示星巴克宣称的“可广泛回收”杯子实际并未进入回收流程，揭露企业环保承诺的漏洞，引发公众关注。"},{"id":"hn-48176189","title":"Nobody understands the point of hybrid cars [video]","url":"https://www.youtube.com/watch?v=KnUFH5GX_fI","source":"Hacker News","score":163,"comments_count":169,"comments_url":"https://news.ycombinator.com/item?id=48176189","published_at":"2026-05-18T06:27:47","author":"CHB0403085482","text":null,"summary":"视频指出人们对混合动力汽车的误解，澄清其实际优势，对消费者购车决策有参考意义。"},{"id":"hn-48203536","title":"Infomaniak transitions to a foundation model to protect user data privacy","url":"https://news.infomaniak.com/en/infomaniak-foundation-sovereign-cloud/","source":"Hacker News","score":158,"comments_count":45,"comments_url":"https://news.ycombinator.com/item?id=48203536","published_at":"2026-05-20T05:43:51","author":"darktoto","text":null,"summary":"Infomaniak转向基金会模式以保护用户数据隐私，体现云服务行业对隐私的重视，值得关注。"},{"id":"hn-48213651","title":"Colorado Amended SB051 (Age Verification Bill) to Exclude Open Source Projects","url":"https://legiscan.com/CO/bill/SB051/2026","source":"Hacker News","score":140,"comments_count":39,"comments_url":"https://news.ycombinator.com/item?id=48213651","published_at":"2026-05-20T20:28:18","author":"ki4jgt","text":null,"summary":"科罗拉多州修订SB051法案，豁免开源项目于年龄验证要求，这对开源社区和数字隐私保护具有里程碑意义。"},{"id":"hn-48209558","title":"SBCL: the ultimate assembly code breadboard (2014)","url":"https://pvk.ca/Blog/2014/03/15/sbcl-the-ultimate-assembly-code-breadboard/","source":"Hacker News","score":128,"comments_count":7,"comments_url":"https://news.ycombinator.com/item?id=48209558","published_at":"2026-05-20T15:39:48","author":"yacin","text":null,"summary":"2014年的文章探讨SBCL作为汇编代码实验平台的独特优势，对于Lisp和底层编程爱好者具有历史参考价值。"},{"id":"hn-48212242","title":"Node.js 26.0.0 (Now with Temporal)","url":"https://nodejs.org/en/blog/release/v26.0.0","source":"Hacker News","score":126,"comments_count":39,"comments_url":"https://news.ycombinator.com/item?id=48212242","published_at":"2026-05-20T18:48:30","author":"aarestad","text":null,"summary":"Node.js 26.0.0正式发布，新增Temporal API，显著提升日期和时间处理能力，对JavaScript开发者至关重要。"},{"id":"hn-48211134","title":"Why is Inkwell stuck in review","url":"https://www.manton.org/2026/05/19/why-is-inkwell-stuck-in.html","source":"Hacker News","score":112,"comments_count":36,"comments_url":"https://news.ycombinator.com/item?id=48211134","published_at":"2026-05-20T17:30:15","author":"speckx","text":null,"summary":"分析Inkwell应用在App Store审核中受阻的原因，揭示平台审核机制的潜在问题，值得开发者关注。"},{"id":"hn-48215418","title":"DOS Zone","url":"https://dos.zone/","source":"Hacker News","score":111,"comments_count":22,"comments_url":"https://news.ycombinator.com/item?id=48215418","published_at":"2026-05-20T22:53:27","author":"rglover","text":null,"summary":"DOS Zone提供在线DOS游戏和软件模拟器，唤起复古计算怀旧情怀，对技术史爱好者有吸引力。"}],"locale":"zh"}],"$Lc"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
 a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
-c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-b0f4431244d9","title":"Type out the code","url":"https://haskellforall.com/2026/05/type-out-the-code","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-19T14:37:27","author":"haskellforall.com by Gabriella439","text":"<p><a href=\"https://lobste.rs/s/zotppg/type_out_code\">Comments</a></p>","summary":"文章探讨了通过类型系统来推导代码实现的方法，强调类型在函数式编程中的指导作用。"},{"id":"rss-e13a420f6ff9","title":"OpenBSD 7.9 released","url":"https://www.openbsd.org/79.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-19T13:30:09","author":"openbsd.org via utzig","text":"<p><a href=\"https://lobste.rs/s/wwcjoc/openbsd_7_9_released\">Comments</a></p>","summary":"OpenBSD 7.9 正式发布，带来安全增强和硬件支持更新，对追求系统安全的用户至关重要。"},{"id":"rss-77d45f63e228","title":"My domain got abused on Github Pages","url":"https://meertens.dev/blog/github-enables-domain-abuse/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-19T12:29:28","author":"meertens.dev via lalitm","text":"<p><a href=\"https://lobste.rs/s/zsjasr/my_domain_got_abused_on_github_pages\">Comments</a></p>","summary":"作者揭露其域名被 GitHub Pages 滥用的问题，引发对平台责任和域名安全的讨论。"},{"id":"rss-2ff9e64cdcc6","title":"What would you want from a forge?","url":"https://lobste.rs/s/wed6lj/what_would_you_want_from_forge","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-19T14:29:40","author":"by runxiyu","text":"<p>(This is more or less open ended, but sorta directed to users of Jujutsu and other version control systems. However, if you have a workflow with pure Git that isn't covered by many major forges, I'd appreciate hearing them too!)</p>\n<p>I'm referring to features related to version control and the presentation/behavior of repositories itself, rather than things like SPA/JS vs server-rendered HTML, etc.</p>\n<p>There have been many ideas in this space, such as Tangled, GitHub's stacked PRs, forgefed, etc., but I haven't found a place where people really voice their opinions and discuss on the design itself. While stacked PRs/MRs, alternative collaboration models, etc., are definitely on-topic, I've found almost no discussion on, e.g., the presentation of tags/commits/tree/blobs themselves, which seem to be largely uniform across forges other than minor formatting differences.</p>","summary":"社区讨论对版本控制平台（如 Jujutsu 或 Git）的功能需求，尤其关注非主流工作流支持。"},{"id":"rss-2d0dcc2dcd28","title":"Better generated branch names with jj","url":"https://ddbeck.com/notes/jj-git-push-bookmark-template/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-19T17:02:39","author":"ddbeck.com via pushcx","text":"<p><a href=\"https://lobste.rs/s/r4xf2n/better_generated_branch_names_with_jj\">Comments</a></p>","summary":"文章介绍如何用 jj 工具生成更好的分支名称，提升版本控制工作流的清晰度。"}],"locale":"zh"}]
+c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-7b8fe3bdb316","title":"Chromium publishes fixed exploit 4 years later, turns out it's actually unfixed","url":"https://infosec.exchange/@rebane2001/116606719764376414","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-20T20:29:05","author":"infosec.exchange via hugoarnal","text":"<p><a href=\"https://lobste.rs/s/e7lsqn/chromium_publishes_fixed_exploit_4_years\">Comments</a></p>","summary":"Chromium在4年后发布所谓已修复的漏洞，实际仍未被修复，暴露了安全补丁管理的严重缺陷。"},{"id":"rss-0372a62d0d6b","title":"Why Ruby Still Feels Like Home After All These Years","url":"https://caio.ca/blog/why-ruby-still-feels-like-home","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-20T04:25:35","author":"caio.ca by Caio","text":"<p><a href=\"https://lobste.rs/s/n1gytv/why_ruby_still_feels_like_home_after_all\">Comments</a></p>","summary":"作者深情回顾Ruby语言的持久魅力，强调其简洁性和社区温暖，适合Ruby开发者阅读。"},{"id":"rss-734c758eab29","title":"Why does the arrow (->) operator in C exist?","url":"https://stackoverflow.com/questions/13366083/why-does-the-arrow-operator-in-c-exist","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-20T20:12:38","author":"stackoverflow.com via spc476","text":"<p><a href=\"https://lobste.rs/s/garq37/why_does_arrow_operator_c_exist\">Comments</a></p>","summary":"Stack Overflow讨论C语言中箭头运算符存在的历史原因，揭示语言设计决策背后的逻辑。"},{"id":"rss-d2d940b84f55","title":"GitHub Source Code Breach - TeamPCP Claims Access to Internal Source Code","url":"https://cybersecuritynews.com/github-source-code-breach/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-20T07:08:51","author":"cybersecuritynews.com via mseri","text":"<p><a href=\"https://lobste.rs/s/ges2gt/github_source_code_breach_teampcp_claims\">Comments</a></p>","summary":"TeamPCP声称入侵GitHub并获取内部源代码，引发对全球最大代码托管平台安全的广泛担忧。"},{"id":"rss-b0f4431244d9","title":"Type out the code","url":"https://haskellforall.com/2026/05/type-out-the-code","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-05-19T14:37:27","author":"haskellforall.com by Gabriella439","text":"<p><a href=\"https://lobste.rs/s/zotppg/type_out_code\">Comments</a></p>","summary":"倡导通过手动输入代码来加深理解，反对盲目复制粘贴，对编程学习者和教育者有启发。"}],"locale":"zh"}]
 f:null
