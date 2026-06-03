@@ -3,167 +3,145 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-e:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-f:"$Sreact.suspense"
-5:T39c4,好的，作为一名专业的技术新闻分析师，以下是对今日“Technology”主题下30篇热门文章的深度分析与总结。
+d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+5:T396d,好的，作为一名专业的技术新闻分析师，我对今日 Technology 领域的 Top 30 热门文章进行了综合分析。以下是按照子主题分组后的详细总结：
 
 ### 综合分析
 
-今日的技术新闻呈现出几个鲜明的主题：**AI硬件与模型的军备竞赛**、**软件供应链安全危机**、**开发者生态与工具链的演进**，以及**对技术伦理与数字自由的反思**。从NVIDIA和微软的硬件新品，到Meta的AI客服被用于账号劫持，再到对编译器、编程语言和系统工具的深入讨论，今日的内容既有宏大的产业叙事，也有非常具体的工程技术细节。
+今日的技术热点呈现出几个鲜明的趋势：**安全与隐私**（尤其是平台权力滥用和监控）是讨论度最高的领域；**开发者工具与语言生态**（如 Janet、Clojure、Gleam、Rust）持续活跃；**开源与系统工具**（如 systemd、Vim、Oils）的讨论充满热情；同时，**AI 应用落地**（如图像 RAG、Copilot 应用）和**硬件怀旧与创新**（如 HP-16C 计算器、BYD 汽车拆解）也吸引了大量关注。
+
+---
 
 ### 按子主题分组
 
-#### 1. AI 硬件、模型与基础设施
+#### 1. 安全、隐私与平台权力
+这个主题下的文章讨论热度最高，核心围绕科技巨头对用户账户的控制、政府监控以及广告行业对浏览器的侵蚀。
 
-- **NVIDIA RTX Spark** (Score: 340)
-  - **说明**: NVIDIA正式发布RTX Spark，一款面向Windows笔记本和桌面PC的新处理器，旨在与Intel和AMD竞争，并强化AI能力。这是AI从数据中心走向个人设备的标志性事件。
-  - **Article**: [https://www.nvidia.com/en-us/products/rtx-spark/](https://www.nvidia.com/en-us/products/rtx-spark/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48352939](https://news.ycombinator.com/item?id=48352939)
+- **The newest Instagram “exploit” is the goofiest I've seen** (Score: 2137)
+    - **说明**：揭露了黑客利用 Meta 的 AI 客服机器人接管 Instagram 账户的新漏洞，讽刺了平台自动化安全机制的脆弱性。这是今日热度最高的文章，引发了关于账户安全和 AI 客服风险的广泛讨论。
+    - **原文链接**: [https://www.0xsid.com/blog/meta-account-takeover-fiasco](https://www.0xsid.com/blog/meta-account-takeover-fiasco)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48359102](https://news.ycombinator.com/item?id=48359102)
+- **Age verification for social media, the beginning of the end for a free internet?** (Score: 474)
+    - **说明**：Mullvad VPN 探讨了社交媒体年龄验证法案可能带来的后果，认为这可能是“自由互联网终结的开端”，引发了关于隐私、审查和身份验证的激烈辩论。
+    - **原文链接**: [https://mullvad.net/en/blog/age-verification-for-social-media-the-beginning-of-the-end-for-a-free-internet](https://mullvad.net/en/blog/age-verification-for-social-media-the-beginning-of-the-end-for-a-free-internet)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48363882](https://news.ycombinator.com/item?id=48363882)
+- **A walking tour of surveillance infrastructure in Seattle (2020)** (Score: 379)
+    - **说明**：一篇关于西雅图城市监控基础设施的深度报道，虽然发布于2020年，但当前的热度表明公众对城市监控和隐私问题的持续关注。
+    - **原文链接**: [https://coveillance.org/a-walking-tour-of-surveillance-infrastructure-in-seattle/](https://coveillance.org/a-walking-tour-of-surveillance-infrastructure-in-seattle/)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48369980](https://news.ycombinator.com/item?id=48369980)
+- **The advertising cartel coming to your web browser** (Score: 140)
+    - **说明**：警告了浏览器中广告联盟（cartel）的崛起，分析了这种趋势如何影响用户体验和网络中立性。
+    - **原文链接**: [https://blog.zgp.org/the-advertising-cartel-coming-to-your-web-browser/](https://blog.zgp.org/the-advertising-cartel-coming-to-your-web-browser/)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48375175](https://news.ycombinator.com/item?id=48375175)
+- **Squillions: How money laundering won** (Score: 167)
+    - **说明**：来自《伦敦书评》的一篇长文，深入剖析了全球洗钱问题的规模与机制。虽然不完全是技术文章，但在技术社区引发了关于金融科技和系统风险的热议。
+    - **原文链接**: [https://www.lrb.co.uk/the-paper/v48/n09/john-lanchester/squillions](https://www.lrb.co.uk/the-paper/v48/n09/john-lanchester/squillions)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48344535](https://news.ycombinator.com/item?id=48344535)
 
-- **Microsoft builds MacBook Pro rival with NVIDIA-powered Surface Laptop Ultra** (Score: 156)
-  - **说明**: 微软推出了搭载NVIDIA芯片的Surface Laptop Ultra，直接对标苹果MacBook Pro。这标志着Windows PC阵营在高端移动计算领域的一次重要反击，也深化了微软与NVIDIA的合作。
-  - **Article**: [https://www.windowslatest.com/2026/06/01/microsoft-builds-its-ultimate-macbook-pro-rival-with-the-nvidia-powered-surface-laptop-ultra/](https://www.windowslatest.com/2026/06/01/microsoft-builds-its-ultimate-macbook-pro-rival-with-the-nvidia-powered-surface-laptop-ultra/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48355720](https://news.ycombinator.com/item?id=48355720)
+#### 2. 开发者工具、编程语言与软件工程
+这一类别文章众多，反映了社区对提升开发效率、探索新语言和反思现有工具的持续兴趣。
 
-- **Nvidia Cosmos 3** (Score: 144)
-  - **说明**: NVIDIA发布了Cosmos 3平台，用于开发“物理AI”的世界模型和行动模型。这是AI从语言和图像向理解与交互物理世界迈出的重要一步，对机器人和自动驾驶领域意义重大。
-  - **Article**: [https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3/](https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48356654](https://news.ycombinator.com/item?id=48356654)
+- **Why Janet? (2023)** (Score: 432)
+    - **说明**：一篇关于编程语言 Janet 的深度推荐文章，解释了其作为 Lisp 方言的独特优势（如嵌入式、轻量级）。引发了关于语言设计哲学和实用性的讨论。
+    - **原文链接**: [https://ianthehenry.com/posts/why-janet/](https://ianthehenry.com/posts/why-janet/)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48367907](https://news.ycombinator.com/item?id=48367907)
+- **Love systemd timers** (Score: 359)
+    - **说明**：作者热情地推荐 systemd 定时器，认为其比传统的 cron 更强大、更易用。文章引发了 Linux 用户关于定时任务管理的热烈讨论。
+    - **原文链接**: [https://blog.tjll.net/you-dont-love-systemd-timers-enough/](https://blog.tjll.net/you-dont-love-systemd-timers-enough/)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48367904](https://news.ycombinator.com/item?id=48367904)
+- **Show HN: Eyeball** (Score: 236)
+    - **说明**：一个有趣的开源项目，用于在终端中跟踪眼睛位置。展示了创意硬件/软件结合的可能性。
+    - **原文链接**: [https://eyeball.rory.codes/](https://eyeball.rory.codes/)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48367723](https://news.ycombinator.com/item?id=48367723)
+- **Coreutils for Windows** (Score: 203)
+    - **说明**：微软官方提供的 Windows 版 GNU Coreutils。这对 Windows 开发者是个好消息，意味着可以在原生 Windows 上使用 `ls`, `grep` 等工具。
+    - **原文链接**: [https://github.com/microsoft/coreutils](https://github.com/microsoft/coreutils)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48372853](https://news.ycombinator.com/item?id=48372853)
+- **Use your Nvidia GPU's VRAM as swap space on Linux** (Score: 170)
+    - **说明**：一个名为 `nbd-vram` 的工具，允许将 Nvidia GPU 的显存用作 Linux 的交换空间。对于内存有限的用户来说，这是一个极具创意的解决方案。
+    - **原文链接**: [https://github.com/c0dejedi/nbd-vram](https://github.com/c0dejedi/nbd-vram)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48377404](https://news.ycombinator.com/item?id=48377404)
+- **My thoughts after using Clojure for about a month** (Score: 129)
+    - **说明**：一位开发者分享了他学习 Clojure 一个月后的体验和思考。对于正在考虑学习这门语言的人来说，是很好的参考。
+    - **原文链接**: [https://www.acdw.net/clojure/](https://www.acdw.net/clojure/)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48375393](https://news.ycombinator.com/item?id=48375393)
+- **Gleam v1.17.0** (Score: 103)
+    - **说明**：Gleam 语言发布了新版本，支持将程序编译为单文件的 Escript，简化了部署流程。对于 BEAM 生态的开发者是重要更新。
+    - **原文链接**: [https://gleam.run/news/single-file-gleam-beam-programs-with-escript/](https://gleam.run/news/single-file-gleam-beam-programs-with-escript/)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48377080](https://news.ycombinator.com/item?id=48377080)
+- **CQL: Categorical Databases** (Score: 102)
+    - **说明**：介绍了一种基于范畴论（Category Theory）的数据库查询语言 CQL。对于对数据库理论和函数式编程感兴趣的读者来说，这是一个前沿话题。
+    - **原文链接**: [https://categoricaldata.net/](https://categoricaldata.net/)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48335022](https://news.ycombinator.com/item?id=48335022)
+- **GitHub Copilot App** (Score: 101)
+    - **说明**：GitHub 发布了 Copilot 的原生 App，可能意味着更深度地集成到工作流中。对于所有使用 Copilot 的开发者来说，这是一个重要的产品动向。
+    - **原文链接**: [https://github.com/features/preview/github-app](https://github.com/features/preview/github-app)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48373764](https://news.ycombinator.com/item?id=48373764)
+- **How we index images for RAG** (Score: 97)
+    - **说明**：Kapa.ai 分享了他们如何为 RAG（检索增强生成）系统建立图像索引的技术细节。对构建多模态 AI 应用的开发者很有参考价值。
+    - **原文链接**: [https://www.kapa.ai/blog/how-we-index-images-for-rag](https://www.kapa.ai/blog/how-we-index-images-for-rag)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48372239](https://news.ycombinator.com/item?id=48372239)
+- **iddqd, or the hardest kind of unsafe Rust** (Score: 0, Lobsters)
+    - **说明**：来自 Oxide Computer 的深度技术文章，探讨了 Rust 中 `unsafe` 代码最复杂和最危险的使用场景。对于 Rust 进阶开发者是必读内容。
+    - **原文链接**: [https://oxide.computer/blog/iddqd-unsafe](https://oxide.computer/blog/iddqd-unsafe)
+    - **讨论链接**: [https://lobste.rs/s/6eyhii/iddqd_hardest_kind_unsafe_rust](https://lobste.rs/s/6eyhii/iddqd_hardest_kind_unsafe_rust)
+- **Edsger – a handwritten Clojure REPL for the reMarkable 2** (Score: 0, Lobsters)
+    - **说明**：一个名为 Edsger 的项目，允许用户在 reMarkable 2 电子墨水平板电脑上手写运行 Clojure REPL。这是硬件、手写识别和编程语言的巧妙结合。
+    - **原文链接**: [https://handwritten.danieljanus.pl/2026-06-01-edsger.html](https://handwritten.danieljanus.pl/2026-06-01-edsger.html)
+    - **讨论链接**: [https://lobste.rs/s/4u4znq/edsger_handwritten_clojure_repl_for](https://lobste.rs/s/4u4znq/edsger_handwritten_clojure_repl_for)
+- **Oils - Reviewing Our NLnet Grants After 4 Years** (Score: 0, Lobsters)
+    - **说明**：Oils（一个 Unix shell 项目）团队回顾了他们过去4年获得的 NLnet 资助情况，对于关注开源项目资金和发展的读者很有价值。
+    - **原文链接**: [https://oils.pub/blog/2026/06/grants.html](https://oils.pub/blog/2026/06/grants.html)
+    - **讨论链接**: [https://lobste.rs/s/rlt5x6/oils_reviewing_our_nlnet_grants_after_4](https://lobste.rs/s/rlt5x6/oils_reviewing_our_nlnet_grants_after_4)
 
-- **A 10 year old Xeon is all you need** (Score: 672)
-  - **说明**: 这篇文章展示了在2016年的老旧Xeon服务器上成功运行Google的Gemma 4模型。它挑战了“AI必须用最新最贵硬件”的固有观念，对于预算有限的研究者和爱好者极具启发性。
-  - **Article**: [https://point.free/blog/gemma-4-on-a-2016-xeon/](https://point.free/blog/gemma-4-on-a-2016-xeon/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48353348](https://news.ycombinator.com/item?id=48353348)
+#### 3. 硬件、DIY 与复古计算
+这个类别聚焦于有趣的硬件项目、经典产品的回归以及底层技术分析。
 
-- **CS336: Language Modeling from Scratch** (Score: 372)
-  - **说明**: 斯坦福大学发布的经典课程，从头教你构建语言模型。对于希望深入理解LLM内部机制（而非只做API调用）的开发者来说，是极其宝贵的学习资源。
-  - **Article**: [https://cs336.stanford.edu/](https://cs336.stanford.edu/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48357075](https://news.ycombinator.com/item?id=48357075)
+- **CT scans of BYD car parts** (Score: 258)
+    - **说明**：Lumafield 使用 CT 扫描技术对比亚迪汽车零部件进行逆向工程分析，展示了其制造工艺和质量。对于汽车爱好者和硬件工程师来说非常有吸引力。
+    - **原文链接**: [https://www.lumafield.com/scan-of-the-month/byd](https://www.lumafield.com/scan-of-the-month/byd)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48375824](https://news.ycombinator.com/item?id=48375824)
+- **Muxcard, a DIY credit card size computer** (Score: 235)
+    - **说明**：一个 DIY 项目，展示如何制作一张信用卡大小的自供电计算机。体现了极致的硬件小型化设计。
+    - **原文链接**: [https://github.com/krauseler/muxcard](https://github.com/krauseler/muxcard)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48342399](https://news.ycombinator.com/item?id=48342399)
+- **HP re-releases classic computer science calculator: The HP-16C** (Score: 135)
+    - **说明**：惠普重新发布了经典的计算机科学计算器 HP-16C 的收藏版。对于老程序员和计算器收藏家来说，这是一件令人兴奋的怀旧产品。
+    - **原文链接**: [https://hpcalcs.com/product/hp-16c-collectors-edition/](https://hpcalcs.com/product/hp-16c-collectors-edition/)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48374685](https://news.ycombinator.com/item?id=48374685)
+- **Fidonet: Technology, Use, Tools, and History (1993)** (Score: 153)
+    - **说明**：一篇关于 FidoNet 网络的技术和历史文献。在互联网普及之前，FidoNet 是重要的 BBS 网络，这篇文章唤起了技术社区对早期网络文化的回忆。
+    - **原文链接**: [https://www.fidonet.org/inet92_Randy_Bush.txt](https://www.fidonet.org/inet92_Randy_Bush.txt)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48370291](https://news.ycombinator.com/item?id=48370291)
+- **OpenFOV – Webcam head tracking for iRacing** (Score: 92)
+    - **说明**：一个开源项目，利用普通摄像头实现 iRacing 游戏中的头部追踪。对于模拟赛车爱好者来说，这是一个低成本的沉浸式体验方案。
+    - **原文链接**: [https://www.openfov.com/](https://www.openfov.com/)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48336783](https://news.ycombinator.com/item?id=48336783)
 
-#### 2. 安全、隐私与信任危机
+#### 4. AI 与行业动态
+- **Expanding Project Glasswing** (Score: 160)
+    - **说明**：Anthropic 宣布扩展其“Project Glasswing”项目，将其 AI 模型 Claude 部署到 15 个国家的关键基础设施中。这是 AI 进入关键领域的重要一步，引发了关于安全性和可靠性的讨论。
+    - **原文链接**: [https://www.anthropic.com/news/expanding-project-glasswing](https://www.anthropic.com/news/expanding-project-glasswing)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48369863](https://news.ycombinator.com/item?id=48369863)
 
-- **The newest Instagram “exploit” is the goofiest I've seen** (Score: 1399)
-  - **说明**: 安全研究员披露了一种利用Meta的AI支持机器人劫持Instagram账户的攻击手法。该漏洞因其“愚蠢”程度而引发热议，凸显了AI客服系统在安全性设计上的严重缺陷。
-  - **Article**: [https://www.0xsid.com/blog/meta-account-takeover-fiasco](https://www.0xsid.com/blog/meta-account-takeover-fiasco)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48359102](https://news.ycombinator.com/item?id=48359102)
+#### 5. 前端与 Web 开发
+- **CSS-Native Parallax Effect** (Score: 130)
+    - **说明**：介绍了如何使用纯 CSS 实现视差滚动效果，无需 JavaScript。对于前端开发者来说，这是一个提升页面性能的新技巧。
+    - **原文链接**: [https://dan-webnotes.com/posts/2026-06-02-css-native-parallax-effect/](https://dan-webnotes.com/posts/2026-06-02-css-native-parallax-effect/)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48368291](https://news.ycombinator.com/item?id=48368291)
 
-- **Malicious npm packages detected across Red Hat Cloud Services** (Score: 733)
-  - **说明**: 在Red Hat的多个云服务JavaScript客户端中发现了恶意npm包。这再次敲响了软件供应链安全的警钟，即使是大型企业的官方仓库也可能被渗透。
-  - **Article**: [https://github.com/RedHatInsights/javascript-clients/issues/492](https://github.com/RedHatInsights/javascript-clients/issues/492)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48356625](https://news.ycombinator.com/item?id=48356625)
-
-- **Age verification for social media, the beginning of the end for a free internet?** (Score: 111)
-  - **说明**: Mullvad VPN发文探讨社交媒体年龄验证法案可能带来的负面影响。文章认为，这种看似保护未成年人的措施，实际上可能导致全面的网络监控和身份审查，威胁互联网自由。
-  - **Article**: [https://mullvad.net/en/blog/age-verification-for-social-media-the-beginning-of-the-end-for-a-free-internet](https://mullvad.net/en/blog/age-verification-for-social-media-the-beginning-of-the-end-for-a-free-internet)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48363882](https://news.ycombinator.com/item?id=48363882)
-
-#### 3. 编程、系统工具与开发者体验
-
-- **Only 17% of all 64-bit Integers are products of two 32-bit integers** (Score: 206)
-  - **说明**: 一篇关于整数运算的数学趣闻，揭示了64位整数空间的稀疏性。这对于理解数据类型、哈希函数和算法优化有深远意义。
-  - **Article**: [https://lemire.me/blog/2026/05/22/only-17-of-all-64-bit-integers-are-products-of-two-32-bit-integers/](https://lemire.me/blog/2026/05/22/only-17-of-all-64-bit-integers-are-products-of-two-32-bit-integers/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48311003](https://news.ycombinator.com/item?id=48311003)
-
-- **Should you normalize RGB values by 255 or 256?** (Score: 201)
-  - **说明**: 一个看似简单但充满陷阱的计算机图形学问题。文章深入探讨了归一化除法的原理和潜在错误，对于图像处理、深度学习从业者来说是必读的“避坑指南”。
-  - **Article**: [https://30fps.net/pages/255-vs-256-division/](https://30fps.net/pages/255-vs-256-division/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48360054](https://news.ycombinator.com/item?id=48360054)
-
-- **Tracing HTTP Requests with Go's net/HTTP/httptrace** (Score: 173)
-  - **说明**: 一篇实用的Go语言教程，介绍了如何使用标准库中的`httptrace`包来追踪HTTP请求的各个阶段。对于需要排查网络性能问题的Go开发者非常有价值。
-  - **Article**: [https://blainsmith.com/articles/httptrace-with-go/](https://blainsmith.com/articles/httptrace-with-go/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48311587](https://news.ycombinator.com/item?id=48311587)
-
-- **I made my phone slow on purpose** (Score: 169)
-  - **说明**: 作者通过刻意降低手机速度，反思了现代数字生活中对即时反馈的依赖。这是一篇关于“慢技术”和数字极简主义的哲思文章，引发了大量共鸣。
-  - **Article**: [https://vinewallapp.com/notes/i-made-my-phone-slow-on-purpose/](https://vinewallapp.com/notes/i-made-my-phone-slow-on-purpose/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48312443](https://news.ycombinator.com/item?id=48312443)
-
-- **Stealing from Biologists to Compile Haskell Faster** (Score: 99)
-  - **说明**: 作者从生物学（特别是基因组组装算法）中借鉴思路，优化了Haskell编译器的编译速度。这是一个跨学科思维解决工程难题的绝佳案例。
-  - **Article**: [https://www.iankduncan.com/engineering/2026-05-30-stealing-from-biologists-to-compile-haskell-faster/](https://www.iankduncan.com/engineering/2026-05-30-stealing-from-biologists-to-compile-haskell-faster/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48338891](https://news.ycombinator.com/item?id=48338891)
-
-- **Announcing Zstandard in Rust** (Lobsters)
-  - **说明**: Trifecta Tech宣布发布了用纯Rust实现的Zstandard压缩算法库。这对于Rust生态系统的数据压缩能力是一个重要补充，性能和安全性值得期待。
-  - **Article**: [https://trifectatech.org/blog/announcing-zstandard-in-rust/](https://trifectatech.org/blog/announcing-zstandard-in-rust/)
-  - **Discussion (Lobsters)**: [https://lobste.rs/s/jhbndn/announcing_zstandard_rust](https://lobste.rs/s/jhbndn/announcing_zstandard_rust)
-
-- **You Don't Love systemd Timers Enough** (Lobsters)
-  - **说明**: 一篇为`systemd timer`“正名”的文章，详细介绍了其相比cron的强大功能和灵活性。对于Linux系统管理员和开发者来说，是优化定时任务的优质指南。
-  - **Article**: [https://blog.tjll.net/you-dont-love-systemd-timers-enough/](https://blog.tjll.net/you-dont-love-systemd-timers-enough/)
-  - **Discussion (Lobsters)**: [https://lobste.rs/s/9vt4ng/you_don_t_love_systemd_timers_enough](https://lobste.rs/s/9vt4ng/you_don_t_love_systemd_timers_enough)
-
-- **github and the crime against software** (Lobsters)
-  - **说明**: 一篇批判性文章，讨论了GitHub作为平台对软件开发文化产生的负面影响，例如单点故障风险、对开源贡献的剥削以及中心化带来的问题。
-  - **Article**: [https://eblog.fly.dev/githubbad.html](https://eblog.fly.dev/githubbad.html)
-  - **Discussion (Lobsters)**: [https://lobste.rs/s/vkoa7r/github_crime_against_software](https://lobste.rs/s/vkoa7r/github_crime_against_software)
-
-- **QBE - Compiler Backend: Version 1.3** (Lobsters)
-  - **说明**: QBE是一个轻量级的编译器后端，发布了1.3版本。对于对编译器原理感兴趣或希望开发小型语言的开发者来说，QBE是一个比LLVM更简洁的选择。
-  - **Article**: [https://c9x.me/compile/release/qbe-1.3.html](https://c9x.me/compile/release/qbe-1.3.html)
-  - **Discussion (Lobsters)**: [https://lobste.rs/s/aahxxs/qbe_compiler_backend_version_1_3](https://lobste.rs/s/aahxxs/qbe_compiler_backend_version_1_3)
-
-- **Cessation of public development of Kefir C compiler** (Score: 129)
-  - **说明**: Kefir C编译器项目宣布停止公开开发。这对于关注编译器开发和小众编程语言生态的社区来说是一个遗憾的消息，也反映了开源项目维护的挑战。
-  - **Article**: [https://kefir.protopopov.lv/posts/announce2.html](https://kefir.protopopov.lv/posts/announce2.html)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48354224](https://news.ycombinator.com/item?id=48354224)
-
-- **Debug Project** (Score: 159)
-  - **说明**: 一个名为“Debug”的神秘项目上线，引发了社区的广泛猜测。其网站内容模糊，可能是一个新的开发者工具或服务，值得关注后续发展。
-  - **Article**: [https://debug.com/](https://debug.com/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48362347](https://news.ycombinator.com/item?id=48362347)
-
-#### 4. 学习资源、职业发展与数字生活
-
-- **Linux Basics for Hackers (2019)** (Score: 134)
-  - **说明**: 一本经典书籍的笔记分享，对于网络安全初学者来说是很好的入门材料。虽然内容是2019年的，但Linux基础命令和概念依然适用。
-  - **Article**: [https://github.com/ahegazy0/linux-basics-for-hackers-notes](https://github.com/ahegazy0/linux-basics-for-hackers-notes)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48356468](https://news.ycombinator.com/item?id=48356468)
-
-- **Flipper Zero Zig Template** (Score: 129)
-  - **说明**: 一个为Flipper Zero设备开发的Zig语言模板项目。对于硬件黑客和嵌入式开发者来说，这是一个使用现代语言开发Flipper Zero应用的起点。
-  - **Article**: [https://github.com/NishantJoshi00/flipper-template](https://github.com/NishantJoshi00/flipper-template)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48356490](https://news.ycombinator.com/item?id=48356490)
-
-- **Windows GOG DOS Games on M-Series Macs** (Score: 141)
-  - **说明**: 一篇技术指南，教你如何在Apple Silicon Mac上运行Windows版的GOG DOS游戏。对于怀旧游戏玩家和跨平台技术爱好者非常有价值。
-  - **Article**: [https://f055.net/technology/windows-gog-dos-games-on-m-series-macs/](https://f055.net/technology/windows-gog-dos-games-on-m-series-macs/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48356603](https://news.ycombinator.com/item?id=48356603)
-
-- **GrapheneOS Speech Services version 2 released** (Score: 102)
-  - **说明**: 注重隐私的Android系统GrapheneOS发布了其语音服务v2版本。这是构建去Google化、保护用户隐私的移动体验的重要进展。
-  - **Article**: [https://discuss.grapheneos.org/d/36001-grapheneos-speech-services-version-2-released](https://discuss.grapheneos.org/d/36001-grapheneos-speech-services-version-2-released)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48360871](https://news.ycombinator.com/item?id=48360871)
-
-- **Ask HN: Who is hiring? (June 2026)** (Score: 165)
-  - **说明**: Hacker News的月度招聘帖，是科技行业求职者的风向标。可以从中观察到当前热门的技能需求、公司招聘趋势以及远程工作的普及程度。
-  - **Discussion**: [https://news.ycombinator.com/item?id=48357725](https://news.ycombinator.com/item?id=48357725)
-
-- **Roughly a quarter of American professionals hit a wall in their careers** (Score: 163)
-  - **说明**: 《华尔街日报》报道的研究显示，约四分之一的美国专业人士遭遇职业瓶颈。这个话题在技术圈引发了对职业发展路径和中年危机的广泛讨论。
-  - **Article**: [https://www.wsj.com/lifestyle/careers/white-collar-workers-career-nyu-study-a81a7d9c](https://www.wsj.com/lifestyle/careers/white-collar-workers-career-nyu-study-a81a7d9c)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48357063](https://news.ycombinator.com/item?id=48357063)
-
-- **Ask HN: Who wants to be hired? (June 2026)** (Score: 99)
-  - **说明**: 与招聘帖对应的求职帖，求职者可以在这里展示自己的技能和意向。对于招聘方来说，这是一个寻找人才的渠道。
-  - **Discussion**: [https://news.ycombinator.com/item?id=48357724](https://news.ycombinator.com/item?id=48357724)
-
-#### 5. 跨学科与深度思考
-
-- **Decades of Effort Restore Steelhead and Salmon Passage on Alameda Creek** (Score: 225)
-  - **说明**: 一篇关于加州Alameda Creek生态修复的成功故事，体现了长期工程努力对环境的积极影响。虽然不0:{"buildId":"RsqQka6vPXp_1cAOJrbg6","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-06-02","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":12},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-06-02"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-c:T6a4,Please state the location and include REMOTE for remote work, REMOTE (US)
-or similar if the country is restricted, and ONSITE when remote work is <i>not</i> an option.<p>Please only post if you personally are part of the hiring company—no
-recruiting firms or job boards. One post per company. If it isn&#x27;t a household name,
-explain what your company does.<p>Please only post if you are actively filling a position and are committed
-to replying to applicants.<p>Commenters: please don&#x27;t reply to job posts to complain about
-something. It&#x27;s off topic here.<p>Readers: please only email if you are personally interested in the job.<p>Searchers: try <a href="https:&#x2F;&#x2F;nthesis.ai&#x2F;public&#x2F;hn-who-is-hiring" rel="nofollow">https:&#x2F;&#x2F;nthesis.ai&#x2F;public&#x2F;hn-who-is-hiring</a>, <a href="https:&#x2F;&#x2F;dheerajck.github.io&#x2F;hnwhoishiring&#x2F;" rel="nofollow">https:&#x2F;&#x2F;dheerajck.github.io&#x2F;hnwhoishiring&#x2F;</a>,
-<a href="http:&#x2F;&#x2F;nchelluri.github.io&#x2F;hnjobs&#x2F;" rel="nofollow">http:&#x2F;&#x2F;nchelluri.github.io&#x2F;hnjobs&#x2F;</a>, <a href="https:&#x2F;&#x2F;hnjobs.emilburzo.com" rel="nofollow">https:&#x2F;&#x2F;hnjobs.emilburzo.com</a>, or this (unofficial) Chrome extension:
-<a href="https:&#x2F;&#x2F;chromewebstore.google.com&#x2F;detail&#x2F;hn-hiring-pro&#x2F;mpfaljjblphnlloddaplgicpkinikjlp" rel="nofollow">https:&#x2F;&#x2F;chromewebstore.google.com&#x2F;detail&#x2F;hn-hiring-pro&#x2F;mpfal...</a>.<p>Don&#x27;t miss this other fine thread: <i>Who wants to be hired?</i> <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48357724">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48357724</a>6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-48359102","title":"The newest Instagram “exploit” is the goofiest I've seen","url":"https://www.0xsid.com/blog/meta-account-takeover-fiasco","source":"Hacker News","score":1399,"comments_count":333,"comments_url":"https://news.ycombinator.com/item?id=48359102","published_at":"2026-06-01T16:31:42","author":"ssiddharth","text":"<a href=\"https:&#x2F;&#x2F;krebsonsecurity.com&#x2F;2026&#x2F;06&#x2F;hackers-used-metas-ai-support-bot-to-seize-instagram-accounts&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;krebsonsecurity.com&#x2F;2026&#x2F;06&#x2F;hackers-used-metas-ai-su...</a>","summary":"文章揭露了黑客利用Meta的AI支持机器人接管Instagram账户的新漏洞，其方法荒诞但有效，凸显了AI客服系统的安全隐患。"},{"id":"hn-48356625","title":"Malicious npm packages detected across Red Hat Cloud Services","url":"https://github.com/RedHatInsights/javascript-clients/issues/492","source":"Hacker News","score":733,"comments_count":418,"comments_url":"https://news.ycombinator.com/item?id=48356625","published_at":"2026-06-01T13:30:21","author":"kurmiashish","text":null,"summary":"Red Hat云服务中发现恶意npm包，威胁供应链安全，值得关注因其影响企业级云基础设施的完整性。"},{"id":"hn-48353348","title":"A 10 year old Xeon is all you need","url":"https://point.free/blog/gemma-4-on-a-2016-xeon/","source":"Hacker News","score":672,"comments_count":272,"comments_url":"https://news.ycombinator.com/item?id=48353348","published_at":"2026-06-01T06:38:42","author":"cafkafk","text":null,"summary":"作者证明2016年的至强处理器足以运行现代AI模型（如Gemma 4），挑战了硬件升级的必然性，对低成本计算有启示。"},{"id":"hn-48357075","title":"CS336: Language Modeling from Scratch","url":"https://cs336.stanford.edu/","source":"Hacker News","score":372,"comments_count":43,"comments_url":"https://news.ycombinator.com/item?id=48357075","published_at":"2026-06-01T14:10:32","author":"kristianpaul","text":null,"summary":"斯坦福大学推出CS336课程，从零开始教授语言模型构建，适合深度学习爱好者系统学习NLP基础。"},{"id":"hn-48352939","title":"Nvidia RTX Spark","url":"https://www.nvidia.com/en-us/products/rtx-spark/","source":"Hacker News","score":340,"comments_count":337,"comments_url":"https://news.ycombinator.com/item?id=48352939","published_at":"2026-06-01T05:24:40","author":"shenli3514","text":"<a href=\"https:&#x2F;&#x2F;www.theverge.com&#x2F;tech&#x2F;940589&#x2F;nvidia-rtx-spark-n1-n1x-laptop-desktop-pc-cpu-gpu-ai-release-date\" rel=\"nofollow\">https:&#x2F;&#x2F;www.theverge.com&#x2F;tech&#x2F;940589&#x2F;nvidia-rtx-spark-n1-n1x...</a><p><a href=\"https:&#x2F;&#x2F;finance.yahoo.com&#x2F;markets&#x2F;article&#x2F;nvidia-debuts-rtx-spark-processor-for-windows-laptops-taking-aim-at-intel-amd-053000567.html\" rel=\"nofollow\">https:&#x2F;&#x2F;finance.yahoo.com&#x2F;markets&#x2F;article&#x2F;nvidia-debuts-rtx-...</a><p><a href=\"https:&#x2F;&#x2F;www.macrumors.com&#x2F;2026&#x2F;06&#x2F;01&#x2F;nvidia-challenges-apple-rtx-spark-pc-chip&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.macrumors.com&#x2F;2026&#x2F;06&#x2F;01&#x2F;nvidia-challenges-apple...</a>","summary":"Nvidia发布RTX Spark系列，集成CPU和GPU的AI PC，标志边缘计算与AI融合的新里程碑，值得关注其性能与定价。"},{"id":"hn-48327453","title":"Decades of Effort Restore Steelhead and Salmon Passage on Alameda Creek","url":"https://www.fisheries.noaa.gov/feature-story/decades-effort-restore-steelhead-and-salmon-passage-californias-alameda-creek","source":"Hacker News","score":225,"comments_count":56,"comments_url":"https://news.ycombinator.com/item?id=48327453","published_at":"2026-05-29T18:37:22","author":"rawgabbit","text":null,"summary":"经过数十年努力，加州阿拉米达溪恢复虹鳟和鲑鱼洄游通道，展示了生态修复的长期成效，对环保政策有参考价值。"},{"id":"hn-48311003","title":"Only 17% of all 64-bit Integers are products of two 32-bit integers","url":"https://lemire.me/blog/2026/05/22/only-17-of-all-64-bit-integers-are-products-of-two-32-bit-integers/","source":"Hacker News","score":206,"comments_count":94,"comments_url":"https://news.ycombinator.com/item?id=48311003","published_at":"2026-05-28T16:11:45","author":"sebg","text":null,"summary":"研究发现仅17%的64位整数是两个32位整数的乘积，揭示了整数运算的统计特性，对算法优化和数学建模有启发。"},{"id":"hn-48360054","title":"Should you normalize RGB values by 255 or 256?","url":"https://30fps.net/pages/255-vs-256-division/","source":"Hacker News","score":201,"comments_count":85,"comments_url":"https://news.ycombinator.com/item?id=48360054","published_at":"2026-06-01T17:37:20","author":"pplanu","text":null,"summary":"文章探讨RGB值归一化时除以255还是256的差异，影响图像处理精度，对计算机视觉开发者有实用指导。"},{"id":"hn-48357905","title":"What appear to be biochemical processes may be a natural feature of geology","url":"https://www.quantamagazine.org/the-dirt-that-refused-to-die-20260601/","source":"Hacker News","score":197,"comments_count":65,"comments_url":"https://news.ycombinator.com/item?id=48357905","published_at":"2026-06-01T15:11:35","author":"speckx","text":null,"summary":"《量子杂志》报道地质过程可能模仿生化现象，挑战生命起源认知，值得关注因其跨学科的科学意义。"},{"id":"hn-48311587","title":"Tracing HTTP Requests with Go's net/HTTP/httptrace","url":"https://blainsmith.com/articles/httptrace-with-go/","source":"Hacker News","score":173,"comments_count":10,"comments_url":"https://news.ycombinator.com/item?id=48311587","published_at":"2026-05-28T16:46:10","author":"speckx","text":null,"summary":"介绍Go语言net/http/httptrace包追踪HTTP请求的方法，帮助开发者优化网络性能，实用性强。"},{"id":"hn-48312443","title":"I made my phone slow on purpose","url":"https://vinewallapp.com/notes/i-made-my-phone-slow-on-purpose/","source":"Hacker News","score":169,"comments_count":161,"comments_url":"https://news.ycombinator.com/item?id=48312443","published_at":"2026-05-28T17:30:46","author":"gcampos","text":null,"summary":"作者故意让手机变慢，探讨了数字减速的体验与反思，值得关注因为它挑战了我们对速度和效率的默认假设。"},{"id":"hn-48357725","title":"Ask HN: Who is hiring? (June 2026)","url":null,"source":"Hacker News","score":165,"comments_count":239,"comments_url":"https://news.ycombinator.com/item?id=48357725","published_at":"2026-06-01T15:00:48","author":"whoishiring","text":"$c","summary":"Hacker News 的每月招聘帖，提供远程和现场工作机会，是科技行业求职者的重要资源。"},{"id":"hn-48357063","title":"Roughly a quarter of American professionals hit a wall in their careers","url":"https://www.wsj.com/lifestyle/careers/white-collar-workers-career-nyu-study-a81a7d9c","source":"Hacker News","score":163,"comments_count":204,"comments_url":"https://news.ycombinator.com/item?id=48357063","published_at":"2026-06-01T14:09:34","author":"charliebwrites","text":null,"summary":"约四分之一的美国专业人士在职业生涯中遭遇瓶颈，这一现象揭示了职场晋升的普遍困境，值得关注其背后的经济和社会因素。"},{"id":"hn-48362347","title":"Debug Project","url":"https://debug.com/","source":"Hacker News","score":159,"comments_count":72,"comments_url":"https://news.ycombinator.com/item?id=48362347","published_at":"2026-06-01T20:40:13","author":"Eridanus2","text":null,"summary":"Debug Project 是一个专注于调试技术的网站，可能提供工具或方法，对开发者有参考价值。"},{"id":"hn-48355720","title":"Microsoft builds MacBook Pro rival with NVIDIA-powered Surface Laptop Ultra","url":"https://www.windowslatest.com/2026/06/01/microsoft-builds-its-ultimate-macbook-pro-rival-with-the-nvidia-powered-surface-laptop-ultra/","source":"Hacker News","score":156,"comments_count":363,"comments_url":"https://news.ycombinator.com/item?id=48355720","published_at":"2026-06-01T12:04:29","author":"jbk","text":"<a href=\"https:&#x2F;&#x2F;www.microsoft.com&#x2F;en-us&#x2F;surface&#x2F;devices&#x2F;surface-laptop-ultra\" rel=\"nofollow\">https:&#x2F;&#x2F;www.microsoft.com&#x2F;en-us&#x2F;surface&#x2F;devices&#x2F;surface-lapt...</a><p><a href=\"https:&#x2F;&#x2F;blogs.windows.com&#x2F;devices&#x2F;2026&#x2F;05&#x2F;31&#x2F;introducing-surface-laptop-ultra-made-for-world-makers&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;blogs.windows.com&#x2F;devices&#x2F;2026&#x2F;05&#x2F;31&#x2F;introducing-sur...</a>","summary":"微软推出搭载NVIDIA芯片的Surface Laptop Ultra，直接挑战MacBook Pro，标志着Windows笔记本在性能和设计上的重大突破。"},{"id":"hn-48356654","title":"Nvidia Cosmos 3","url":"https://developer.nvidia.com/blog/develop-physical-ai-reasoning-world-and-action-models-with-nvidia-cosmos-3/","source":"Hacker News","score":144,"comments_count":27,"comments_url":"https://news.ycombinator.com/item?id=48356654","published_at":"2026-06-01T13:32:44","author":"tosh","text":null,"summary":"Nvidia发布Cosmos 3，旨在开发物理AI推理与世界模型，推动机器人学和自动驾驶等领域的进步。"},{"id":"hn-48356603","title":"Windows GOG DOS Games on M-Series Macs","url":"https://f055.net/technology/windows-gog-dos-games-on-m-series-macs/","source":"Hacker News","score":141,"comments_count":82,"comments_url":"https://news.ycombinator.com/item?id=48356603","published_at":"2026-06-01T13:28:53","author":"f055","text":null,"summary":"文章介绍如何在M系列Mac上运行Windows GOG和DOS游戏，为游戏玩家和复古爱好者提供了实用的跨平台解决方案。"},{"id":"hn-48356468","title":"Linux Basics for Hackers (2019)","url":"https://github.com/ahegazy0/linux-basics-for-hackers-notes","source":"Hacker News","score":134,"comments_count":31,"comments_url":"https://news.ycombinator.com/item?id=48356468","published_at":"2026-06-01T13:19:01","author":"ibobev","text":null,"summary":"这是一本面向黑客的Linux基础指南，适合安全爱好者和初学者学习系统操作与渗透测试。"},{"id":"hn-48356490","title":"Flipper Zero Zig Template","url":"https://github.com/NishantJoshi00/flipper-template","source":"Hacker News","score":129,"comments_count":10,"comments_url":"https://news.ycombinator.com/item?id=48356490","published_at":"2026-06-01T13:20:54","author":"Nars088","text":null,"summary":"Flipper Zero的Zig模板项目，为硬件黑客提供了快速开发工具，简化了多功能设备的编程流程。"},{"id":"hn-48354224","title":"Cessation of public development of Kefir C compiler","url":"https://kefir.protopopov.lv/posts/announce2.html","source":"Hacker News","score":129,"comments_count":109,"comments_url":"https://news.ycombinator.com/item?id=48354224","published_at":"2026-06-01T08:52:05","author":"f311a","text":null,"summary":"Kefir C编译器停止公开开发，这一决定可能影响依赖该编译器的项目，值得关注其背后的原因和后续影响。"},{"id":"hn-48360137","title":"Superintelligence: The Idea That Eats Smart People (2016)","url":"https://idlewords.com/talks/superintelligence.htm","source":"Hacker News","score":123,"comments_count":160,"comments_url":"https://news.ycombinator.com/item?id=48360137","published_at":"2026-06-01T17:43:07","author":"thoughtpeddler","text":null,"summary":"本文探讨了超级智能这一概念如何吸引并消耗聪明人的精力，值得关注因为它揭示了人工智能领域长期存在的理论陷阱和认知偏差。"},{"id":"hn-48363882","title":"Age verification for social media, the beginning of the end for a free internet?","url":"https://mullvad.net/en/blog/age-verification-for-social-media-the-beginning-of-the-end-for-a-free-internet","source":"Hacker News","score":111,"comments_count":60,"comments_url":"https://news.ycombinator.com/item?id=48363882","published_at":"2026-06-01T23:22:28","author":"StrLght","text":null,"summary":"文章讨论了社交媒体年龄验证可能成为自由互联网终结的开端，值得关注因为它触及了隐私、审查和数字权利的核心争议。"},{"id":"hn-48360871","title":"GrapheneOS Speech Services version 2 released","url":"https://discuss.grapheneos.org/d/36001-grapheneos-speech-services-version-2-released","source":"Hacker News","score":102,"comments_count":16,"comments_url":"https://news.ycombinator.com/item?id=48360871","published_at":"2026-06-01T18:39:53","author":"pretext","text":null,"summary":"GrapheneOS发布了语音服务2.0版本，值得关注因为这是注重隐私的移动操作系统在语音功能上的重要更新。"},{"id":"hn-48338891","title":"Stealing from Biologists to Compile Haskell Faster","url":"https://www.iankduncan.com/engineering/2026-05-30-stealing-from-biologists-to-compile-haskell-faster/","source":"Hacker News","score":99,"comments_count":4,"comments_url":"https://news.ycombinator.com/item?id=48338891","published_at":"2026-05-30T17:50:21","author":"mooreds","text":null,"summary":"本文介绍了从生物学中借鉴技术来加速Haskell编译的方法，值得关注因为它展示了跨学科创新在软件优化中的潜力。"},{"id":"hn-48357724","title":"Ask HN: Who wants to be hired? (June 2026)","url":null,"source":"Hacker News","score":99,"comments_count":280,"comments_url":"https://news.ycombinator.com/item?id=48357724","published_at":"2026-06-01T15:00:48","author":"whoishiring","text":"Share your information if you are looking for work. Please use this format:<p><pre><code>  Location:\n  Remote:\n  Willing to relocate:\n  Technologies:\n  Résumé&#x2F;CV:\n  Email:\n</code></pre>\nPlease only post if you are personally looking for work. Agencies, recruiters, job boards,\nand so on, are off topic here.<p>Readers: please only email these addresses to discuss work opportunities.<p>Searchers: try <a href=\"https:&#x2F;&#x2F;nthesis.ai&#x2F;public&#x2F;hn-wants-to-be-hired\" rel=\"nofollow\">https:&#x2F;&#x2F;nthesis.ai&#x2F;public&#x2F;hn-wants-to-be-hired</a>, <a href=\"https:&#x2F;&#x2F;www.wantstobehired.com\" rel=\"nofollow\">https:&#x2F;&#x2F;www.wantstobehired.com</a>.","summary":"这是一个招聘求职帖，供求职者分享信息，值得关注因为它反映了当前技术就业市场的动态。"}],"locale":"zh"}],"$Ld"]}]]}]
+#### 6. 平台生态与开发者体验
+- **Apple rejected my dictation app for using the accessibility API** (Score: 294)
+    - **说明**：一位开发者分享了他的听写 App 因使用辅助功能 API 而被苹果拒绝的经历。这引发了关于 App Store 审核机制、辅助功能 API 使用边界和开发者权益的讨论。
+    - **原文链接**: [https://www.mitmllc.com/blog/apple-rejected-my-dictation-app/](https://www.mitmllc.com/blog/apple-rejected-my-dictation-app/)
+    - **讨论链接**: [https://news.ycombinator.com/item?id=48369088](https://news.ycombinator.com/item?id=48369088)
+- **Preparing for KDE Plasma's Last X11-Supported Release** (Score: 155)
+    - **说明**：KDE Plasma 桌面环境宣布即将结束对 X11 的支持，全面转向 Wayland。对于 Linux 桌面用户来说，这是一个重要的里程碑0:{"buildId":"t84elqNycZUUgb3VlN17w","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-06-03","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":15},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-06-03"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-48359102","title":"The newest Instagram “exploit” is the goofiest I've seen","url":"https://www.0xsid.com/blog/meta-account-takeover-fiasco","source":"Hacker News","score":2137,"comments_count":474,"comments_url":"https://news.ycombinator.com/item?id=48359102","published_at":"2026-06-01T16:31:42","author":"ssiddharth","text":"<a href=\"https:&#x2F;&#x2F;krebsonsecurity.com&#x2F;2026&#x2F;06&#x2F;hackers-used-metas-ai-support-bot-to-seize-instagram-accounts&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;krebsonsecurity.com&#x2F;2026&#x2F;06&#x2F;hackers-used-metas-ai-su...</a>","summary":"文章揭露了一种利用Meta AI客服机器人接管Instagram账户的漏洞，因其荒诞手法而引发关注，凸显AI客服的安全隐患。"},{"id":"hn-48363882","title":"Age verification for social media, the beginning of the end for a free internet?","url":"https://mullvad.net/en/blog/age-verification-for-social-media-the-beginning-of-the-end-for-a-free-internet","source":"Hacker News","score":474,"comments_count":395,"comments_url":"https://news.ycombinator.com/item?id=48363882","published_at":"2026-06-01T23:22:28","author":"StrLght","text":null,"summary":"探讨社交媒体年龄验证可能成为自由互联网终结的开端，引发对隐私和网络自由的担忧。"},{"id":"hn-48367907","title":"Why Janet? (2023)","url":"https://ianthehenry.com/posts/why-janet/","source":"Hacker News","score":432,"comments_count":234,"comments_url":"https://news.ycombinator.com/item?id=48367907","published_at":"2026-06-02T09:34:31","author":"yacin","text":null,"summary":"解释为何选择Janet编程语言，强调其简洁性和独特设计，适合对新兴语言感兴趣的开发者。"},{"id":"hn-48369980","title":"A walking tour of surveillance infrastructure in Seattle (2020)","url":"https://coveillance.org/a-walking-tour-of-surveillance-infrastructure-in-seattle/","source":"Hacker News","score":379,"comments_count":257,"comments_url":"https://news.ycombinator.com/item?id=48369980","published_at":"2026-06-02T13:24:32","author":"eustoria","text":null,"summary":"通过西雅图的步行导览，揭示城市监控基础设施的分布与影响，引发对隐私和公民自由的思考。"},{"id":"hn-48367904","title":"Love systemd timers","url":"https://blog.tjll.net/you-dont-love-systemd-timers-enough/","source":"Hacker News","score":359,"comments_count":229,"comments_url":"https://news.ycombinator.com/item?id=48367904","published_at":"2026-06-02T09:34:11","author":"yacin","text":null,"summary":"深入介绍systemd定时器的优势与使用技巧，帮助系统管理员高效管理任务调度。"},{"id":"hn-48369088","title":"Apple rejected my dictation app for using the accessibility API","url":"https://www.mitmllc.com/blog/apple-rejected-my-dictation-app/","source":"Hacker News","score":294,"comments_count":162,"comments_url":"https://news.ycombinator.com/item?id=48369088","published_at":"2026-06-02T12:00:03","author":"RZelaya","text":null,"summary":"苹果因使用辅助功能API拒绝了一款听写应用，引发对App Store审核标准和开发者权利的讨论。"},{"id":"hn-48375824","title":"CT scans of BYD car parts","url":"https://www.lumafield.com/scan-of-the-month/byd","source":"Hacker News","score":258,"comments_count":98,"comments_url":"https://news.ycombinator.com/item?id=48375824","published_at":"2026-06-02T20:30:08","author":"viasfo","text":null,"summary":"通过CT扫描展示比亚迪汽车零部件的内部结构，提供独特视角分析其制造工艺和质量。"},{"id":"hn-48368059","title":"Stop Ruining It","url":"https://seths.blog/2026/06/stop-ruining-it/","source":"Hacker News","score":249,"comments_count":117,"comments_url":"https://news.ycombinator.com/item?id=48368059","published_at":"2026-06-02T09:52:42","author":"herbertl","text":null,"summary":"呼吁停止破坏数字体验，强调简单性和用户友好设计的重要性，对产品开发者有警示意义。"},{"id":"hn-48367723","title":"Show HN: Eyeball","url":"https://eyeball.rory.codes/","source":"Hacker News","score":236,"comments_count":75,"comments_url":"https://news.ycombinator.com/item?id=48367723","published_at":"2026-06-02T09:04:49","author":"mrroryflint","text":null,"summary":"展示名为Eyeball的创意项目，可能涉及视觉或交互技术，值得关注其创新性。"},{"id":"hn-48342399","title":"Muxcard, a DIY credit card size computer","url":"https://github.com/krauseler/muxcard","source":"Hacker News","score":235,"comments_count":77,"comments_url":"https://news.ycombinator.com/item?id=48342399","published_at":"2026-05-31T01:59:06","author":"sargstuff","text":"Recent and related:<p><i>A self-powered computer in actual credit-card size (~1mm thick)</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48251528\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48251528</a> - May 2026 (11 comments)","summary":"介绍Muxcard，一款信用卡大小的自供电DIY计算机，展示微型化技术的突破和DIY社区的创造力。"},{"id":"hn-48372853","title":"Coreutils for Windows","url":"https://github.com/microsoft/coreutils","source":"Hacker News","score":203,"comments_count":204,"comments_url":"https://news.ycombinator.com/item?id=48372853","published_at":"2026-06-02T16:55:11","author":"gigel82","text":null,"summary":"微软开源了Coreutils for Windows，将GNU核心工具移植到Windows平台，为开发者提供跨平台兼容性，值得关注因为它简化了Windows上的Unix工具使用。"},{"id":"hn-48377404","title":"Use your Nvidia GPU's VRAM as swap space on Linux","url":"https://github.com/c0dejedi/nbd-vram","source":"Hacker News","score":170,"comments_count":49,"comments_url":"https://news.ycombinator.com/item?id=48377404","published_at":"2026-06-02T22:55:33","author":"tanelpoder","text":null,"summary":"介绍了一个Linux工具，允许将Nvidia GPU的VRAM用作交换空间，显著提升内存密集型任务性能，对AI和深度学习开发者具有实用价值。"},{"id":"hn-48344535","title":"Squillions: How money laundering won","url":"https://www.lrb.co.uk/the-paper/v48/n09/john-lanchester/squillions","source":"Hacker News","score":167,"comments_count":169,"comments_url":"https://news.ycombinator.com/item?id=48344535","published_at":"2026-05-31T10:26:55","author":"rwmj","text":"<a href=\"https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20260602021543&#x2F;https:&#x2F;&#x2F;www.lrb.co.uk&#x2F;the-paper&#x2F;v48&#x2F;n09&#x2F;john-lanchester&#x2F;squillions\" rel=\"nofollow\">https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20260602021543&#x2F;https:&#x2F;&#x2F;www.lrb.c...</a><p><a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;Tl5ci\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;Tl5ci</a>","summary":"文章深入分析了全球洗钱问题的规模与影响，指出其已渗透金融体系，值得关注因为它揭示了系统性腐败和监管漏洞的严峻现实。"},{"id":"hn-48369863","title":"Expanding Project Glasswing","url":"https://www.anthropic.com/news/expanding-project-glasswing","source":"Hacker News","score":160,"comments_count":217,"comments_url":"https://news.ycombinator.com/item?id=48369863","published_at":"2026-06-02T13:15:14","author":"surprisetalk","text":"<a href=\"https:&#x2F;&#x2F;techcrunch.com&#x2F;2026&#x2F;06&#x2F;02&#x2F;anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;techcrunch.com&#x2F;2026&#x2F;06&#x2F;02&#x2F;anthropic-scales-claude-my...</a>","summary":"Anthropic扩展了Project Glasswing，将Claude AI部署到15个国家的关键基础设施中，值得关注因为这标志着AI在公共服务领域的重大应用进展。"},{"id":"hn-48370588","title":"Preparing for KDE Plasma's Last X11-Supported Release","url":"https://blog.davidedmundson.co.uk/blog/596/","source":"Hacker News","score":155,"comments_count":189,"comments_url":"https://news.ycombinator.com/item?id=48370588","published_at":"2026-06-02T14:16:30","author":"jandeboevrie","text":null,"summary":"KDE Plasma团队宣布即将推出最后一个支持X11的版本，转向Wayland，值得关注因为这标志着Linux桌面环境的重大技术转型。"},{"id":"hn-48370291","title":"Fidonet: Technology, Use, Tools, and History (1993)","url":"https://www.fidonet.org/inet92_Randy_Bush.txt","source":"Hacker News","score":153,"comments_count":63,"comments_url":"https://news.ycombinator.com/item?id=48370291","published_at":"2026-06-02T13:53:52","author":"BruceEel","text":null,"summary":"1993年关于Fidonet技术、工具和历史的文档，值得关注因为它是早期互联网通信网络的历史记录，对理解网络发展有参考价值。"},{"id":"hn-48375175","title":"The advertising cartel coming to your web browser","url":"https://blog.zgp.org/the-advertising-cartel-coming-to-your-web-browser/","source":"Hacker News","score":140,"comments_count":41,"comments_url":"https://news.ycombinator.com/item?id=48375175","published_at":"2026-06-02T19:39:25","author":"speckx","text":null,"summary":"文章警告浏览器中广告联盟的兴起可能威胁用户隐私和网络中立性，值得关注因为它涉及数字广告生态系统的关键争议。"},{"id":"hn-48374685","title":"HP re-releases classic computer science calculator: The HP-16C","url":"https://hpcalcs.com/product/hp-16c-collectors-edition/","source":"Hacker News","score":135,"comments_count":85,"comments_url":"https://news.ycombinator.com/item?id=48374685","published_at":"2026-06-02T19:02:40","author":"dm319","text":null,"summary":"HP重新发布了经典计算机科学计算器HP-16C的收藏版，值得关注因为它满足怀旧和编程爱好者的需求，并展示了复古硬件的复兴趋势。"},{"id":"hn-48368291","title":"CSS-Native Parallax Effect","url":"https://dan-webnotes.com/posts/2026-06-02-css-native-parallax-effect/","source":"Hacker News","score":130,"comments_count":51,"comments_url":"https://news.ycombinator.com/item?id=48368291","published_at":"2026-06-02T10:23:37","author":"dandep","text":null,"summary":"介绍了纯CSS实现的视差滚动效果，无需JavaScript，值得关注因为它提供了一种轻量级、高性能的网页设计技术。"},{"id":"hn-48375393","title":"My thoughts after using Clojure for about a month","url":"https://www.acdw.net/clojure/","source":"Hacker News","score":129,"comments_count":81,"comments_url":"https://news.ycombinator.com/item?id=48375393","published_at":"2026-06-02T19:56:46","author":"speckx","text":null,"summary":"作者分享了一个月使用Clojure编程语言的体验和见解，值得关注因为它为开发者提供了关于函数式编程和Lisp方言的实用参考。"},{"id":"hn-48377080","title":"Gleam v1.17.0","url":"https://gleam.run/news/single-file-gleam-beam-programs-with-escript/","source":"Hacker News","score":103,"comments_count":9,"comments_url":"https://news.ycombinator.com/item?id=48377080","published_at":"2026-06-02T22:16:20","author":"figbert","text":null,"summary":"Gleam v1.17.0 发布，新增通过 escript 创建单文件 Beam 程序的功能，简化了 Gleam 应用的部署和分发，对 Erlang 虚拟机生态开发者具有实用价值。"},{"id":"hn-48335022","title":"CQL: Categorical Databases","url":"https://categoricaldata.net/","source":"Hacker News","score":102,"comments_count":36,"comments_url":"https://news.ycombinator.com/item?id=48335022","published_at":"2026-05-30T11:18:04","author":"noworriesnate","text":null,"summary":"CQL（分类数据库）是一种基于范畴论的新型数据库查询语言，旨在提供更强大的数据建模和查询能力，值得关注因为它可能改变数据库设计范式。"},{"id":"hn-48373764","title":"GitHub Copilot App","url":"https://github.com/features/preview/github-app","source":"Hacker News","score":101,"comments_count":68,"comments_url":"https://news.ycombinator.com/item?id=48373764","published_at":"2026-06-02T17:58:55","author":"theanonymousone","text":null,"summary":"GitHub Copilot App 预览版发布，将 AI 编程助手扩展为独立应用，可能提升开发者的代码生成体验和集成度。"},{"id":"hn-48372239","title":"How we index images for RAG","url":"https://www.kapa.ai/blog/how-we-index-images-for-rag","source":"Hacker News","score":97,"comments_count":14,"comments_url":"https://news.ycombinator.com/item?id=48372239","published_at":"2026-06-02T16:13:41","author":"mooreds","text":null,"summary":"Kapa.ai 分享了其如何为 RAG（检索增强生成）系统索引图像的技术细节，涉及多模态数据处理，对构建更智能的搜索和问答系统有参考价值。"},{"id":"hn-48336783","title":"OpenFOV – Webcam head tracking for iRacing","url":"https://www.openfov.com/","source":"Hacker News","score":92,"comments_count":50,"comments_url":"https://news.ycombinator.com/item?id=48336783","published_at":"2026-05-30T14:42:55","author":"mwit2023","text":null,"summary":"OpenFOV 是一款为 iRacing 游戏设计的网络摄像头头部追踪工具，无需专用硬件即可实现沉浸式驾驶体验，对模拟赛车爱好者具有吸引力。"}],"locale":"zh"}],"$Lc"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
-d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-aebe6c840a8a","title":"Announcing Zstandard in Rust","url":"https://trifectatech.org/blog/announcing-zstandard-in-rust/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-01T13:11:00","author":"trifectatech.org via jmillikin","text":"<p><a href=\"https://lobste.rs/s/jhbndn/announcing_zstandard_rust\">Comments</a></p>","summary":"文章宣布了用Rust语言实现的Zstandard压缩库，值得关注因为Rust的安全性和性能优势为这一流行压缩算法带来了新可能。"},{"id":"rss-e46e9f0fe19d","title":"You Don't Love systemd Timers Enough","url":"https://blog.tjll.net/you-dont-love-systemd-timers-enough/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-01T17:28:15","author":"blog.tjll.net via edwardloveall","text":"<p><a href=\"https://lobste.rs/s/9vt4ng/you_don_t_love_systemd_timers_enough\">Comments</a></p>","summary":"本文强调了systemd定时器的强大功能，值得关注因为它挑战了传统cron的使用习惯，并展示了现代Linux系统管理的优势。"},{"id":"rss-d1f4bb9b523f","title":"github and the crime against software","url":"https://eblog.fly.dev/githubbad.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-01T15:36:49","author":"eblog.fly.dev via abnercoimbre","text":"<p><a href=\"https://lobste.rs/s/vkoa7r/github_crime_against_software\">Comments</a></p>","summary":"文章批评了GitHub对软件生态的负面影响，值得关注因为它引发了关于平台垄断和开源社区健康的讨论。"},{"id":"rss-6b07057a80d4","title":"QBE - Compiler Backend: Version 1.3","url":"https://c9x.me/compile/release/qbe-1.3.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-01T11:57:04","author":"c9x.me via orib","text":"<p><a href=\"https://lobste.rs/s/aahxxs/qbe_compiler_backend_version_1_3\">Comments</a></p>","summary":"QBE编译器后端发布了1.3版本，值得关注因为这是一个轻量级、高效的编译器工具链的重要更新。"},{"id":"rss-ea0e29ae1779","title":"The Newest Instagram \"Exploit\" is the Goofiest I've Seen","url":"https://www.0xsid.com/blog/meta-account-takeover-fiasco","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-01T17:38:50","author":"0xsid.com via sinic","text":"<p><a href=\"https://lobste.rs/s/pmkmil/newest_instagram_exploit_is_goofiest_i_ve\">Comments</a></p>","summary":"本文描述了一个Instagram上最滑稽的账户劫持漏洞，值得关注因为它揭示了社交媒体安全机制的薄弱环节。"}],"locale":"zh"}]
-10:null
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-f42a9325c115","title":"Quality in the Age of Slop","url":"https://sinclairtarget.com/blog/2026/06/01/quality-in-the-age-of-slop/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-02T09:11:39","author":"sinclairtarget.com by sinclairtarget","text":"<p><a href=\"https://lobste.rs/s/8ohth3/quality_age_slop\">Comments</a></p>","summary":"文章探讨在内容质量普遍下降的“垃圾时代”，如何坚持和定义高质量标准，对内容创作者和消费者具有反思意义。"},{"id":"rss-a16711a6f0a1","title":"Vim Classic 8.3 released","url":"https://vim-classic.org/news/vim-8.3-released.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-02T11:53:01","author":"vim-classic.org via bezdomni","text":"<p><a href=\"https://lobste.rs/s/6xwqvv/vim_classic_8_3_released\">Comments</a></p>","summary":"Vim Classic 8.3 版本发布，作为经典文本编辑器的延续，可能带来稳定性和兼容性改进，对 Vim 忠实用户是重要更新。"},{"id":"rss-1e3838e61fad","title":"iddqd, or the hardest kind of unsafe Rust","url":"https://oxide.computer/blog/iddqd-unsafe","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-02T16:20:18","author":"oxide.computer by sunshowers","text":"<p><a href=\"https://lobste.rs/s/6eyhii/iddqd_hardest_kind_unsafe_rust\">Comments</a></p>","summary":"深入分析 Rust 中一种最危险的 unsafe 代码模式（类似游戏作弊码 iddqd），揭示内存安全风险，对 Rust 开发者理解安全边界至关重要。"},{"id":"rss-2fb17d8a8a05","title":"Edsger – a handwritten Clojure REPL for the reMarkable 2","url":"https://handwritten.danieljanus.pl/2026-06-01-edsger.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-02T18:55:14","author":"handwritten.danieljanus.pl by nathell","text":"<p><a href=\"https://lobste.rs/s/4u4znq/edsger_handwritten_clojure_repl_for\">Comments</a></p>","summary":"Edsger 项目为 reMarkable 2 手写平板开发了手写 Clojure REPL，结合模拟与数字编程体验，对函数式编程和硬件爱好者具有创新价值。"},{"id":"rss-0885fc469469","title":"Oils - Reviewing Our NLnet Grants After 4 Years","url":"https://oils.pub/blog/2026/06/grants.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-02T20:57:41","author":"oils.pub by andyc","text":"<p><a href=\"https://lobste.rs/s/rlt5x6/oils_reviewing_our_nlnet_grants_after_4\">Comments</a></p>","summary":"Oils 项目回顾了 4 年来 NLnet 资助的成果，评估开源 shell 语言的发展，对关注开源资助和系统工具演进的读者有参考意义。"}],"locale":"zh"}]
+f:null
