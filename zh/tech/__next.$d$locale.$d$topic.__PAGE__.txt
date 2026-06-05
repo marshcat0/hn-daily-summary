@@ -3,169 +3,147 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-e:"$Sreact.suspense"
-5:T3aac,好的，作为一名专业的技术新闻分析师，我已经仔细审阅了今天（2026年6月3日）的30篇热门技术文章。以下是我的综合分析、分组总结以及今日推荐阅读。
+e:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+5:T3864,好的，作为一名技术新闻分析师，我已经仔细审阅了今日（2026年6月4日）的Top 30技术文章。这些内容来自Hacker News、Lobsters等多个平台，涵盖了从前沿AI、编程语言进化到硬件架构、社会现象等多个维度。
+
+以下是我对这些内容的综合分析、分组总结以及最终推荐。
 
 ---
 
 ### 综合分析报告
 
-今日技术新闻热点纷呈，主要围绕**人工智能与大型语言模型**、**编程语言与工具链的重大更新**、**网络安全漏洞**、**硬件与系统创新**，以及**开发者文化与社区讨论**等几个核心主题展开。其中，Google 的 Gemma 4 模型发布、Elixir 1.20 引入渐进类型系统、以及多个严重的安全漏洞（如 VSCode 和音频攻击）引发了社区的高度关注和热烈讨论。
+今日的技术新闻呈现出一个有趣的“两极分化”趋势：一方面是**前沿技术的高速迭代**（如AI模型、编程语言、GPU加速），另一方面是**对技术本质、社会影响及个人健康的深刻反思**（如AI意识、代码审查、屏幕时间）。此外，一些非纯粹技术但极具人文关怀和科学趣味的内容（如罕见疾病、考古发现、天文现象）也获得了大量关注，显示出技术社区更广泛的知识兴趣。
 
-### 文章分组与详细分析
+### 按子主题分组
 
-#### 1. 人工智能与大型语言模型 (AI & LLMs)
+#### 1. 人工智能与大型语言模型
+这个类别是今日最热门的领域之一，既有新模型的发布，也有对AI本质的哲学思辨。
 
-这个主题是今日最热门的讨论领域，涵盖了新模型发布、AI 意识哲学讨论以及实际应用。
+- **Gemma 4 12B:** Google发布了新一代轻量级多模态模型，强调“无编码器”架构，是AI民主化的重要一步。
+    - 文章: [Gemma 4 12B: A unified, encoder-free multimodal model](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/)
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48385906)
+- **Artificial intelligence is not conscious:** 著名科幻作家Ted Chiang在《大西洋月刊》撰文，从哲学和语言学角度论证当前AI并非有意识，引发了社区关于“智能”与“意识”区别的激烈讨论（1283条评论）。
+    - 文章: [Artificial intelligence is not conscious – Ted Chiang](https://www.theatlantic.com/philosophy/2026/06/no-artificial-intelligence-is-not-conscious/687378/)（[存档链接](https://archive.is/bcpZl)）
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48387270)
+- **They’re made out of weights:** 一篇技术博客，深入探讨了神经网络权重的本质，可能是对模型压缩、知识蒸馏或权重可视化等技术主题的探讨。
+    - 文章: [They’re made out of weights](https://maxleiter.com/blog/weights)
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48391611)
 
-- **Gemma 4 12B: A unified, encoder-free multimodal model**
-    - **说明**: Google 发布了其最新的 Gemma 4 12B 模型，这是一个统一、无需编码器的多模态模型。它在性能上取得了显著突破，且保持了较小的模型尺寸，对开发者和研究社区有重大意义。
-    - **原文链接**: [https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48385906](https://news.ycombinator.com/item?id=48385906)
+#### 2. 编程语言与软件工程
+这是技术社区永恒的核心话题，今日看点集中在类型系统、工具链和代码质量上。
 
-- **Artificial intelligence is not conscious – Ted Chiang**
-    - **说明**: 著名科幻作家 Ted Chiang 在《大西洋月刊》撰文，深入探讨了当前 AI 是否具有意识的问题。他的观点在社区中引发了巨大的争议和哲学讨论，是理解当前 AI 范式局限性的重要文章。
-    - **原文链接**: [https://www.theatlantic.com/philosophy/2026/06/no-artificial-intelligence-is-not-conscious/687378/](https://www.theatlantic.com/philosophy/2026/06/no-artificial-intelligence-is-not-conscious/687378/)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48387270](https://news.ycombinator.com/item?id=48387270)
+- **Elixir v1.20: Now a gradually typed language:** Elixir 迈出了历史性的一步，引入了渐进类型系统，这将对函数式编程和Erlang生态系统产生深远影响。
+    - 文章: [Elixir v1.20: Now a gradually typed language](https://elixir-lang.org/blog/2026/06/03/elixir-v1-20-0-released/)
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48388324)
+- **VoidZero Is Joining Cloudflare:** VoidZero（一个JavaScript工具链项目）被Cloudflare收购，这表明云服务商对前端开发工具链的重视。
+    - 文章: [VoidZero Is Joining Cloudflare](https://blog.cloudflare.com/voidzero-joins-cloudflare/)（[VoidZero官方声明](https://voidzero.dev/posts/voidzero-cloudflare)）
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48398055)
+- **Reviewing code requires reading:** 一篇来自Lobsters的短文，看似平凡，实则直击软件工程的核心痛点：有效的代码审查需要认真阅读，而非机械地检查。
+    - 文章: [Reviewing code requires reading](https://hauleth.dev/post/review-requires-reading/)
+    - 讨论: [Lobsters](https://lobste.rs/s/hb1s2k/reviewing_code_requires_reading)
+- **jujutsu v0.42.0 released:** 版本控制系统 `jj` 的新版本发布。`jj` 被视为 `git` 的潜在继任者，其每一次更新都备受开发者关注。
+    - 文章: [jujutsu v0.42.0 released](https://github.com/jj-vcs/jj/releases/tag/v0.42.0)
+    - 讨论: [Lobsters](https://lobste.rs/s/jqkedb/jujutsu_v0_42_0_released)
+- **A faster bump allocator for rust:** 针对Rust语言的内存分配器优化，体现了Rust社区对极致性能的追求。
+    - 文章: [A faster bump allocator for rust](https://owen.cafe/posts/stumpalo/)
+    - 讨论: [Lobsters](https://lobste.rs/s/vta6wp/faster_bump_allocator_for_rust)
+- **The C++ Standard Library Has Been Walking Itself Back for Fifteen Years:** 对C++标准库过去15年演变的批判性分析，指出其设计上的反复和复杂性。对于C++开发者极具参考价值。
+    - 文章: [The C++ Standard Library Has Been Walking Itself Back for Fifteen Years, and the Receipts Are Public](https://hftuniversity.com/post/the-c-standard-library-has-been-walking-itself-back-for-fifteen-years-and-the-receipts-are-public)
+    - 讨论: [Lobsters](https://lobste.rs/s/7jt1ix/c_standard_library_has_been_walking)
 
-- **How we index images for RAG**
-    - **说明**: Kapa.ai 分享了他们为检索增强生成（RAG）系统索引图像的技术方案。这对于任何希望构建能理解图片内容的多模态搜索或问答系统的开发者来说，都是一篇非常实用的工程实践指南。
-    - **原文链接**: [https://www.kapa.ai/blog/how-we-index-images-for-rag](https://www.kapa.ai/blog/how-we-index-images-for-rag)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48372239](https://news.ycombinator.com/item?id=48372239)
+#### 3. 硬件架构与系统底层
+- **PlayStation Architecture:** 一篇深入分析初代PlayStation硬件架构的文章，对于怀旧游戏开发者、计算机体系结构爱好者来说是极佳的学习材料。
+    - 文章: [PlayStation Architecture](https://www.copetti.org/writings/consoles/playstation/)
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48382142)
+- **Every Byte Matters:** 探讨极致优化（如嵌入式系统、网络协议）中“每个字节”的重要性，体现了底层开发的严谨性。
+    - 文章: [Every Byte Matters](https://fzakaria.com/2026/06/01/every-byte-matters)
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48382382)
+- **Gooey: A GPU-accelerated UI framework for Zig:** 一个为新兴系统编程语言Zig开发的GPU加速UI框架，展示了Zig在图形和交互领域的潜力。
+    - 文章: [Gooey: A GPU-accelerated UI framework for Zig](https://github.com/duanebester/gooey)
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48386725)
+- **IPv6 zones in URLs are a mistake:** 对IPv6 Zone ID在URL中使用的批评，指出了其设计上的混乱和潜在问题。
+    - 文章: [IPv6 zones in URLs are a mistake](https://xeiaso.net/notes/2026/ipv6-zones-go-url/)
+    - 讨论: [Lobsters](https://lobste.rs/s/lcnc5e/ipv6_zones_urls_are_mistake)
 
-- **Leiden Declaration on Artificial Intelligence and Mathematics**
-    - **说明**: 这是一份关于人工智能与数学关系的莱顿宣言，探讨了 AI 在数学研究中的作用与伦理。它代表了学术界对 AI 影响的严肃思考，值得关注。
-    - **原文链接**: [https://leidendeclaration.ai/](https://leidendeclaration.ai/)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48380670](https://news.ycombinator.com/item?id=48380670)
+#### 4. 科技与社会、隐私、环境
+- **Meta's ships facial recognition on smart glasses:** Meta在其智能眼镜上部署了面部识别功能，引发了关于隐私和监视的广泛担忧，这是技术伦理的重要议题。
+    - 文章: [Meta's ships facial recognition on smart glasses](https://www.buchodi.com/meta-glasses-facial-recognition/)
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48403588)
+- **The desperation of NYTimes:** 一篇对《纽约时报》商业策略的批评文章，可能涉及付费墙、内容质量或数字化转型的困境。
+    - 文章: [The desperation of NYTimes](https://rozumem.xyz/posts/16)
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48401965)
+- **Wind and solar generated more power than gas globally in April 2026:** 可再生能源的历史性里程碑，标志着能源转型进入新阶段。
+    - 文章: [Wind and solar generated more power than gas globally in April 2026](https://electrek.co/2026/05/20/in-a-first-wind-solar-generated-more-power-than-gas-globally-april-2026/)
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48399332)
 
-#### 2. 编程语言与工具链 (Programming Languages & Toolchains)
+#### 5. 个人故事、人文与趣味
+- **I was recently diagnosed with anti-NMDA receptor encephalitis:** 来自著名Rust开发者 `burntsushi` 的个人经历分享，讲述了一种罕见自身免疫性脑炎的诊断过程，感人且具有科普价值。
+    - 文章: [I was recently diagnosed with anti-NMDA receptor encephalitis](https://burntsushi.net/encephalitis/)
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48384355)
+- **Ian's Secure Shoelace Knot:** 一篇关于如何系一个“安全”鞋带结的教程，在技术社区意外走红，体现了极客们对“优化”日常生活的热情。
+    - 文章: [Ian's Secure Shoelace Knot](https://www.fieggen.com/shoelace/secureknot.htm)
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48397028)
+- **Retro-Tech Parenting:** 一位家长分享如何用“复古技术”（如功能手机、有线耳机）来养育孩子，以减少屏幕时间，引发了关于数字育儿的讨论。
+    - 文章: [Retro-Tech Parenting](https://havenweb.org/2026/05/28/retro-tech.html)
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48400588)
+- **A Man Who Reads Books for a Living:** 介绍一位职业读书人的故事，对于热爱阅读的技术人员来说别有一番风味。
+    - 文章: [A Man Who Reads Books for a Living](https://lithub.com/the-man-who-reads-books-for-a-living-one-every-two-days/)
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48389284)
+- **Sagrada Família Lego set:** 乐高推出了圣家堂模型，是建筑与乐高爱好者的双重福音。
+    - 文章: [Sagrada Família Lego set](https://www.lego.com/en-us/product/sagrada-familia-21065)
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48400918)
+- **Meteor Explodes over Massachusetts / Mornings and nights no longer exist at 47C / Under Notre Dame...:** 这些是科学、天文、考古和环境类新闻，展示了技术社区对世界的好奇心。
+    - 文章: [Meteor Explodes over Massachusetts](https://www.nbcboston.com/news/local/meteor-explodes-over-massachusetts-what-we-know-and-where-it-landed/3957663/) | [Mornings and nights no longer exist at 47C](https://www.bbc.co.uk/news/articles/crmp0krp98ro) | [Under Notre Dame, a 'dig of the century'](https://apnews.com/article/notre-dame-dig-treasures-paris-archaeology-roman-dae41f792c1402faf32a87c154cc9a77)
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48362255) | [Hacker News](https://news.ycombinator.com/item?id=48369416) | [Hacker News](https://news.ycombinator.com/item?id=48368725)
 
-Elixir 的重大更新是今日语言领域的头条新闻，此外还有 Gooey 框架和 Pluto.jl 等新工具的出现。
+#### 6. 工具、产品与项目展示
+- **Show HN: Uruky (EU-based Kagi alternative):** 一个基于欧洲的搜索引擎，试图成为Kagi的替代品，并引入了图像搜索和URL重写功能，体现了搜索引擎市场的多元化趋势。
+    - 文章: [Uruky](https://uruky.com/?il=en)
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48396004)
+- **Ableton Extensions SDK:** Ableton Live发布了扩展SDK，允许开发者为其创建插件，对音乐制作和音频编程社区是重大利好。
+    - 文章: [Ableton Extensions SDK](https://www.ableton.com/en/live/extensions/)
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48389681)
+- **Gaussian Point Splatting:** 一种新的计算机图形学渲染技术，可能是对NeRF的改进或替代，代表了图形学的前沿。
+    - 文章: [Gaussian Point Splatting](https://momentsingraphics.de/Siggraph2026.html)
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48396792)
+- **Learn SQL Once, Use It for 30 Years:** 一篇强调SQL持久价值的文章，对于所有数据从业者来说都是很好的提醒。
+    - 文章: [Learn SQL Once, Use It for 30 Years](https://fagnerbrack.com/learn-sql-once-use-it-for-30-years-9aceb0bdee03)
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48347483)
+- **U.S. Army Corps of Engineers Bay Model:** 介绍一个巨大的旧金山湾物理水文模型，是工程史上的奇观。
+    - 文章: [U.S. Army Corps of Engineers Bay Model](https://en.wikipedia.org/wiki/U.S._Army_Corps_of_Engineers_Bay_Model)
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48373642)
+- **French-Iranian author Marjane Satrapi...:** 悼念著名作家Marjane Satrapi，其作品《Persepolis》影响深远。
+    - 文章: [French-Iranian author Marjane Satrapi, author of 'Persepolis', dies at 56](https://www.france24.com/en/culture/20260604-french-iranian-author-marjane-satrapi-author-of-persepolis-dies-at-56)
+    - 讨论: [Hacker News](https://news.ycombinator.com/item?id=48397233)
 
-- **Elixir v1.20: Now a gradually typed language**
-    - **说明**: Elixir 1.20 正式发布，最大亮点是引入了渐进类型系统。这对于 Elixir 生态系统的成熟度和在大型项目中的应用具有里程碑式的意义，是函数式编程社区的重大事件。
-    - **原文链接**: [https://elixir-lang.org/blog/2026/06/03/elixir-v1-20-0-released/](https://elixir-lang.org/blog/2026/06/03/elixir-v1-20-0-released/)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48388324](https://news.ycombinator.com/item?id=48388324) (Hacker News) / [https://lobste.rs/s/wq1csk/elixir_v1_20_released_now_gradually_typed](https://lobste.rs/s/wq1csk/elixir_v1_20_released_now_gradually_typed) (Lobsters)
+---
 
-- **Gooey: A GPU-accelerated UI framework for Zig**
-    - **说明**: 一个为 Zig 语言打造的 GPU 加速 UI 框架。对于 Zig 开发者来说，这是一个令人兴奋的新项目，有望提升该语言在图形界面开发领域的竞争力。
-    - **原文链接**: [https://github.com/duanebester/gooey](https://github.com/duanebester/gooey)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48386725](https://news.ycombinator.com/item?id=48386725)
+### 今日最值得阅读的文章推荐
 
-- **Pluto.jl 1.0 release – reactive notebook for Julia**
-    - **说明**: Julia 语言的交互式笔记本环境 Pluto.jl 发布了 1.0 正式版。它以其反应式编程模型和简洁的 UI 著称，对于数据科学和科学计算领域是重要的工具更新。
-    - **原文链接**: [https://discourse.julialang.org/t/pluto-1-0-release/137296](https://discourse.julialang.org/t/pluto-1-0-release/137296)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48377496](https://news.ycombinator.com/item?id=48377496)
+1.  **Elixir v1.20: Now a gradually typed language**
+    - **理由:** 这是编程语言领域的一个里程碑事件。Elixir作为一门在并发和容错方面表现出色的语言，引入渐进类型系统将极大地提升其大型项目的可维护性和开发者体验，影响深远。
+    - **链接:** [Article](https://elixir-lang.org/blog/2026/06/03/elixir-v1-20-0-released/) | [Discussion](https://news.ycombinator.com/item?id=48388324)
 
-- **Show HN: Edsger – A handwritten Clojure REPL for the reMarkable 2**
-    - **说明**: 一个非常有趣的 Show HN 项目，在 reMarkable 2 电子墨水屏设备上实现了手写输入 Clojure 的 REPL。它展示了硬件与创意编程的结合。
-    - **原文链接**: [https://handwritten.danieljanus.pl/2026-06-01-edsger.html](https://handwritten.danieljanus.pl/2026-06-01-edsger.html)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48374552](https://news.ycombinator.com/item?id=48374552)
+2.  **Artificial intelligence is not conscious – Ted Chiang**
+    - **理由:** 在AI热潮中，Ted Chiang的文章提供了冷静、深刻的哲学视角。这篇文章引发了社区长达1283条评论的激烈讨论，是理解当前AI能力边界和“意识”本质的必读之作。
+    - **链接:** [Article](https://www.theatlantic.com/philosophy/2026/06/no-artificial-intelligence-is-not-conscious/687378/)（[存档](https://archive.is/bcpZl)） | [Discussion](https://news.ycombinator.com/item?id=48387270)
 
-- **My Software North Star**
-    - **说明**: 一篇关于个人软件开发理念和“北极星”目标的博文，探讨了开发者如何找到并坚持自己的核心方向。对于所有软件工程师都有启发意义。
-    - **原文链接**: [https://kristoff.it/blog/north-star/](https://kristoff.it/blog/north-star/)
-    - **讨论链接**: [https://lobste.rs/s/g6lkw1/my_software_north_star](https://lobste.rs/s/g6lkw1/my_software_north_star)
+3.  **I was recently diagnosed with anti-NMDA receptor encephalitis**
+    - **理由:** 来自Rust社区核心开发者 `burntsushi` 的个人叙事。这篇文章不仅科普了一种罕见疾病，更以第一人称视角展现了面对严重健康危机时的坚韧与技术社区的支持。它提醒我们，技术背后是活生生的人。
+    - **链接:** [Article](https://burntsushi.net/encephalitis/) | [Discussion](https://news.ycombinator.com/item?id=48384355)
 
-#### 3. 网络安全与隐私 (Security & Privacy)
+4.  **Meta's ships facial recognition on smart glasses**
+    - **理由:** 这是今天最紧迫的科技伦理议题之一。当无处不在的摄像头加上AI人脸识别，隐私的边界在哪里？这篇文章及其评论是了解并参与讨论这项技术社会影响的绝佳起点。
+    - **链接:** [Article](https://www.buchodi.com/meta-glasses-facial-recognition/) | [Discussion](https://news.ycombinator.com/item?id=48403588)
 
-安全漏洞是今日的另一个焦点，从硬件攻击到 IDE 漏洞，影响范围广泛。
-
-- **Pwnd Blaster: Hacking your PC using your speaker without ever touching it**
-    - **说明**: 一个令人震惊的安全研究，展示了如何仅通过声波（利用扬声器）远程攻击电脑，而不需要任何物理接触。这颠覆了传统的攻击面认知。
-    - **原文链接**: [https://blog.nns.ee/2026/06/03/katana-badusb/](https://blog.nns.ee/2026/06/03/katana-badusb/)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48382310](https://news.ycombinator.com/item?id=48382310)
-
-- **1-Click GitHub Token Stealing via a VSCode Bug**
-    - **说明**: 一个严重的 VSCode 漏洞，攻击者可以仅通过一次点击就窃取用户的 GitHub Token。这对广大开发者构成了直接且严重的威胁，需要立即关注和修复。
-    - **原文链接**: [https://blog.ammaraskar.com/github-token-stealing/](https://blog.ammaraskar.com/github-token-stealing/)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48371562](https://news.ycombinator.com/item?id=48371562)
-
-- **Meta workers can opt out of being tracked at work up to 30 min**
-    - **说明**: 报道称 Meta 员工现在可以选择在工作时最多 30 分钟不被追踪。这引发了关于工作场所监视、员工隐私和公司文化的广泛讨论。
-    - **原文链接**: [https://www.bbc.com/news/articles/c93x0k194yno](https://www.bbc.com/news/articles/c93x0k194yno)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48383220](https://news.ycombinator.com/item?id=48383220)
-
-- **A Post-Quantum Future for Let's Encrypt**
-    - **说明**: Let's Encrypt 宣布了其向后量子密码学迁移的计划。这对于保障未来互联网通信的安全性至关重要，是所有网络从业者需要关注的趋势。
-    - **原文链接**: [https://letsencrypt.org/2026/06/03/pq-certs](https://letsencrypt.org/2026/06/03/pq-certs)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48385114](https://news.ycombinator.com/item?id=48385114)
-
-- **Bot vs human traffic**
-    - **说明**: Cloudflare 发布了关于网络流量中机器人与人类比例的雷达报告。这揭示了互联网流量的真实构成，对理解网络安全和内容分发有参考价值。
-    - **原文链接**: [https://radar.cloudflare.com/traffic#bot-vs-human](https://radar.cloudflare.com/traffic#bot-vs-human)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48387144](https://news.ycombinator.com/item?id=48387144)
-
-#### 4. 硬件、系统与开源 (Hardware, Systems & Open Source)
-
-硬件新品、系统工具和开源项目的进展构成了这一板块。
-
-- **Use your Nvidia GPU's VRAM as swap space on Linux**
-    - **说明**: 一个名为 `nbd-vram` 的开源项目，允许在 Linux 上将 Nvidia GPU 的显存用作交换空间。这对于显存充裕但内存紧张的用户来说是一个非常有创意的解决方案。
-    - **原文链接**: [https://github.com/c0dejedi/nbd-vram](https://github.com/c0dejedi/nbd-vram)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48377404](https://news.ycombinator.com/item?id=48377404)
-
-- **DaVinci Resolve 21**
-    - **说明**: 专业视频编辑软件 DaVinci Resolve 发布了第 21 版，带来了新功能和改进。对于视频创作者和后期制作人员来说，这是一次重要的软件更新。
-    - **原文链接**: [https://www.blackmagicdesign.com/products/davinciresolve/whatsnew](https://www.blackmagicdesign.com/products/davinciresolve/whatsnew)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48384482](https://news.ycombinator.com/item?id=48384482)
-
-- **MacBook Neo is so popular that Apple doubled production**
-    - **说明**: 据分析师郭明錤称，由于市场反响热烈，Apple 已将 MacBook Neo 的产量翻倍。这表明该产品取得了巨大的商业成功，也是市场趋势的重要信号。
-    - **原文链接**: [https://www.macrumors.com/2026/06/03/macbook-neo-production-doubled-says-kuo/](https://www.macrumors.com/2026/06/03/macbook-neo-production-doubled-says-kuo/)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48386238](https://news.ycombinator.com/item?id=48386238)
-
-- **ESP32-S31**
-    - **说明**: 乐鑫科技（Espressif）推出了新的 ESP32-S31 芯片。作为物联网和嵌入式开发领域的明星产品线，新芯片的发布总是能吸引大量开发者的关注。
-    - **原文链接**: [https://www.espressif.com/en/products/socs/esp32-s31](https://www.espressif.com/en/products/socs/esp32-s31)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48385965](https://news.ycombinator.com/item?id=48385965)
-
-- **Roku LT Operating System open source distribution**
-    - **说明**: Roku 宣布开源其 LT 操作系统。这对于智能电视和流媒体设备领域来说是一个重要事件，可能会推动更多基于 Roku 生态的第三方开发和定制。
-    - **原文链接**: [https://blog.roku.com/developer/roku-lt-os](https://blog.roku.com/developer/roku-lt-os)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48378495](https://news.ycombinator.com/item?id=48378495)
-
-- **PlayStation Architecture**
-    - **说明**: 一篇深度技术文章，详细剖析了原始 PlayStation 的硬件架构。对于游戏开发者和怀旧技术爱好者来说，这是一篇极具价值的技术考古文献。
-    - **原文链接**: [https://www.copetti.org/writings/consoles/playstation/](https://www.copetti.org/writings/consoles/playstation/)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48382142](https://news.ycombinator.com/item?id=48382142)
-
-#### 5. 开发者文化与社区 (Developer Culture & Community)
-
-这类文章反映了技术社区内部的讨论、个人经历和有趣的项目。
-
-- **I was recently diagnosed with anti-NMDA receptor encephalitis** / **burntsushi discusses personal medical diagnosis**
-    - **说明**: 知名 Rust 开发者 burntsushi (Andrew Gallant) 分享了自己被诊断出患有罕见自身免疫性脑炎的经历。这篇文章在社区内引起了巨大反响，许多开发者表达了支持和关心，也展现了技术社区人性化的一面。
-    - **原文链接**: [https://burntsushi.net/encephalitis/](https://burntsushi.net/encephalitis/)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48384355](https://news.ycombinator.com/item?id=48384355) (Hacker News) / [https://lobste.rs/s/ovbcr4/burntsushi_discusses_personal_medical](https://lobste.rs/s/ovbcr4/burntsushi_discusses_personal_medical) (Lobsters)
-
-- **Stop Killing Games**
-    - **说明**: 一篇文章呼吁停止“杀死”游戏，即反对游戏公司关闭在线游戏服务器导致游戏无法游玩的行为。这引发了关于数字所有权和游戏保存的讨论。
-    - **原文链接**: [https://jxself.org/stop-killing-games.shtml](https://jxself.org/stop-killing-games.shtml)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48356449](https://news.ycombinator.com/item?id=48356449)
-
-- **Every Byte Matters**
-    - **说明**: 一篇关于代码优化和“每个字节都很重要”理念的文章，探讨了在资源受限环境下进行极致优化的艺术和哲学。
-    - **原文链接**: [https://fzakaria.com/2026/06/01/every-byte-matters](https://fzakaria.com/2026/06/01/every-byte-matters)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48382382](https://news.ycombinator.com/item?id=48382382)
-
-- **I built a ceiling projection mapping of the planes flying over my house**
-    - **说明**: 一个非常酷的创客项目，作者在天花板上实时投影显示飞过他房屋上空的飞机轨迹。这是将数据可视化与物理空间结合的绝佳范例。
-    - **原文链接**: [https://old.reddit.com/r/nextfuckinglevel/comments/1tvmcin/i_live_in_the_take_off_path_of_sfo_and_built_a/](https://old.reddit.com/r/nextfuckinglevel/comments/1tvmcin/i_live_in_the_take_off_path_of_sfo_and_built_a/)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48383823](https://news.ycombinator.com/item?id=48383823)
-
-- **Show HN: I reverse-engineered the world maps of Test Drive III (1990 DOS game)**
-    - **说明**: 一个有趣的逆向工程项目，作者成功解析了 1990 年 DOS 游戏《Test Drive III》的世界地图。这对复古游戏爱好者和逆向工程师来说很有吸引力。
-    - **原文链接**: [https://github.com/s-macke/Test-Drive-3-Maps](https://github.com/s-macke/Test-Drive-3-Maps)
-    - **讨论链接**: [https://news.ycombinator.com/item?id=48344327](https://news.ycombinator.com/item?id=48344327)
-
-- **The Unreasonable Redundancy of Nature's Protein Folds**
-    - **说明**: 一篇关于生物信息学的0:{"buildId":"ivH_kVzJd0_z5JDqJ1UuF","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-06-04","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":13},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-06-04"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-48385906","title":"Gemma 4 12B: A unified, encoder-free multimodal model","url":"https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/","source":"Hacker News","score":717,"comments_count":293,"comments_url":"https://news.ycombinator.com/item?id=48385906","published_at":"2026-06-03T16:04:42","author":"rvz","text":null,"summary":"Google发布了Gemma 4 12B，一种统一的无编码器多模态模型，简化了架构并提升了性能，值得关注因为它代表了高效多模态AI的新方向。"},{"id":"hn-48383220","title":"Meta workers can opt out of being tracked at work up to 30 min","url":"https://www.bbc.com/news/articles/c93x0k194yno","source":"Hacker News","score":697,"comments_count":669,"comments_url":"https://news.ycombinator.com/item?id=48383220","published_at":"2026-06-03T12:42:07","author":"reconnecting","text":null,"summary":"Meta允许员工选择在工作中被追踪的时间最多30分钟，这一政策引发了对隐私和监控平衡的讨论，值得关注因为它反映了大型科技公司内部员工权益的演变。"},{"id":"hn-48382310","title":"Pwnd Blaster: Hacking your PC using your speaker without ever touching it","url":"https://blog.nns.ee/2026/06/03/katana-badusb/","source":"Hacker News","score":653,"comments_count":106,"comments_url":"https://news.ycombinator.com/item?id=48382310","published_at":"2026-06-03T10:53:00","author":"xx_ns","text":null,"summary":"文章展示了如何通过扬声器利用声波攻击电脑（Pwnd Blaster），无需物理接触即可实现黑客攻击，值得关注因为它揭示了新型侧信道攻击的潜在风险。"},{"id":"hn-48371562","title":"1-Click GitHub Token Stealing via a VSCode Bug","url":"https://blog.ammaraskar.com/github-token-stealing/","source":"Hacker News","score":636,"comments_count":96,"comments_url":"https://news.ycombinator.com/item?id=48371562","published_at":"2026-06-02T15:29:05","author":"ammar2","text":null,"summary":"发现一个VSCode漏洞，可通过一次点击窃取GitHub令牌，威胁开发者安全，值得关注因为该漏洞影响广泛，需立即修复。"},{"id":"hn-48388324","title":"Elixir v1.20: Now a gradually typed language","url":"https://elixir-lang.org/blog/2026/06/03/elixir-v1-20-0-released/","source":"Hacker News","score":583,"comments_count":220,"comments_url":"https://news.ycombinator.com/item?id=48388324","published_at":"2026-06-03T19:02:26","author":"cloud8421","text":null,"summary":"Elixir v1.20发布，引入渐进类型系统，使语言更安全且易于使用，值得关注因为它标志着Elixir在类型系统上的重大进化。"},{"id":"hn-48384355","title":"I was recently diagnosed with anti-NMDA receptor encephalitis","url":"https://burntsushi.net/encephalitis/","source":"Hacker News","score":518,"comments_count":160,"comments_url":"https://news.ycombinator.com/item?id=48384355","published_at":"2026-06-03T14:10:06","author":"Tomte","text":null,"summary":"作者分享了自己被诊断出抗NMDA受体脑炎的经历，这是一种罕见但严重的自身免疫性疾病，值得关注因为它提高了对这种疾病的认知。"},{"id":"hn-48377404","title":"Use your Nvidia GPU's VRAM as swap space on Linux","url":"https://github.com/c0dejedi/nbd-vram","source":"Hacker News","score":456,"comments_count":115,"comments_url":"https://news.ycombinator.com/item?id=48377404","published_at":"2026-06-02T22:55:33","author":"tanelpoder","text":null,"summary":"介绍了一个Linux工具，允许将Nvidia GPU的VRAM用作交换空间，提升内存密集型任务性能，值得关注因为它为资源受限环境提供了创新解决方案。"},{"id":"hn-48384482","title":"DaVinci Resolve 21","url":"https://www.blackmagicdesign.com/products/davinciresolve/whatsnew","source":"Hacker News","score":400,"comments_count":188,"comments_url":"https://news.ycombinator.com/item?id=48384482","published_at":"2026-06-03T14:18:39","author":"pentagrama","text":null,"summary":"DaVinci Resolve 21发布，带来了新功能和性能改进，值得关注因为它是一款专业视频编辑软件，更新对创作者有直接影响。"},{"id":"hn-48386238","title":"MacBook Neo is so popular that Apple doubled production","url":"https://www.macrumors.com/2026/06/03/macbook-neo-production-doubled-says-kuo/","source":"Hacker News","score":328,"comments_count":380,"comments_url":"https://news.ycombinator.com/item?id=48386238","published_at":"2026-06-03T16:33:17","author":"tosh","text":null,"summary":"MacBook Neo因需求旺盛，苹果已将其产量翻倍，值得关注因为它表明该产品在市场上的巨大成功和苹果的战略调整。"},{"id":"hn-48387270","title":"Artificial intelligence is not conscious – Ted Chiang","url":"https://www.theatlantic.com/philosophy/2026/06/no-artificial-intelligence-is-not-conscious/687378/","source":"Hacker News","score":267,"comments_count":480,"comments_url":"https://news.ycombinator.com/item?id=48387270","published_at":"2026-06-03T17:51:37","author":"lordleft","text":"<a href=\"https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20260603173839&#x2F;https:&#x2F;&#x2F;www.theatlantic.com&#x2F;philosophy&#x2F;2026&#x2F;06&#x2F;no-artificial-intelligence-is-not-conscious&#x2F;687378&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20260603173839&#x2F;https:&#x2F;&#x2F;www.theat...</a><p><a href=\"https:&#x2F;&#x2F;archive.is&#x2F;bcpZl\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.is&#x2F;bcpZl</a>","summary":"Ted Chiang在文章中论证人工智能并非有意识，挑战了当前AI领域的炒作，值得关注因为它提供了哲学视角，有助于理性看待AI能力。"},{"id":"hn-48382142","title":"PlayStation Architecture","url":"https://www.copetti.org/writings/consoles/playstation/","source":"Hacker News","score":264,"comments_count":50,"comments_url":"https://news.ycombinator.com/item?id=48382142","published_at":"2026-06-03T10:24:25","author":"gregsadetsky","text":null,"summary":"深度解析初代PlayStation硬件架构，涵盖CPU、GPU及音频系统设计，对复古游戏开发和系统理解有重要参考价值。"},{"id":"hn-48385965","title":"ESP32-S31","url":"https://www.espressif.com/en/products/socs/esp32-s31","source":"Hacker News","score":256,"comments_count":144,"comments_url":"https://news.ycombinator.com/item?id=48385965","published_at":"2026-06-03T16:10:25","author":"volemo","text":null,"summary":"乐鑫发布ESP32-S31芯片，集成边缘AI加速与低功耗蓝牙，为物联网设备提供更强本地处理能力。"},{"id":"hn-48374552","title":"Show HN: Edsger – A handwritten Clojure REPL for the reMarkable 2","url":"https://handwritten.danieljanus.pl/2026-06-01-edsger.html","source":"Hacker News","score":237,"comments_count":34,"comments_url":"https://news.ycombinator.com/item?id=48374552","published_at":"2026-06-02T18:52:52","author":"nathell","text":null,"summary":"为reMarkable 2平板开发的手写Clojure REPL，实现手写代码直接交互，探索数字笔记与编程的融合。"},{"id":"hn-48382382","title":"Every Byte Matters","url":"https://fzakaria.com/2026/06/01/every-byte-matters","source":"Hacker News","score":231,"comments_count":114,"comments_url":"https://news.ycombinator.com/item?id=48382382","published_at":"2026-06-03T11:04:04","author":"ingve","text":null,"summary":"探讨在软件优化中关注每个字节的重要性，通过实际案例展示极致性能优化的思路与方法。"},{"id":"hn-48385114","title":"A Post-Quantum Future for Let's Encrypt","url":"https://letsencrypt.org/2026/06/03/pq-certs","source":"Hacker News","score":224,"comments_count":133,"comments_url":"https://news.ycombinator.com/item?id=48385114","published_at":"2026-06-03T15:06:09","author":"SGran","text":null,"summary":"Let's Encrypt宣布向抗量子加密迁移，以应对未来量子计算机对现有SSL/TLS证书体系的威胁。"},{"id":"hn-48377496","title":"Pluto.jl 1.0 release – reactive notebook for Julia","url":"https://discourse.julialang.org/t/pluto-1-0-release/137296","source":"Hacker News","score":217,"comments_count":38,"comments_url":"https://news.ycombinator.com/item?id=48377496","published_at":"2026-06-02T23:09:09","author":"fons-p","text":null,"summary":"Pluto.jl 1.0正式发布，为Julia语言提供响应式交互式笔记本环境，强化数据科学和可视化工作流。"},{"id":"hn-48383823","title":"I built a ceiling projection mapping of the planes flying over my house","url":"https://old.reddit.com/r/nextfuckinglevel/comments/1tvmcin/i_live_in_the_take_off_path_of_sfo_and_built_a/","source":"Hacker News","score":210,"comments_count":31,"comments_url":"https://news.ycombinator.com/item?id=48383823","published_at":"2026-06-03T13:33:00","author":"frereubu","text":null,"summary":"利用天花板投影映射实时显示头顶飞机轨迹，结合飞行数据与投影技术实现独特的可视化体验。"},{"id":"hn-48372239","title":"How we index images for RAG","url":"https://www.kapa.ai/blog/how-we-index-images-for-rag","source":"Hacker News","score":199,"comments_count":27,"comments_url":"https://news.ycombinator.com/item?id=48372239","published_at":"2026-06-02T16:13:41","author":"mooreds","text":null,"summary":"分享为检索增强生成（RAG）系统构建图像索引的技术方案，提升多模态搜索的准确性与效率。"},{"id":"hn-48356449","title":"Stop Killing Games","url":"https://jxself.org/stop-killing-games.shtml","source":"Hacker News","score":198,"comments_count":192,"comments_url":"https://news.ycombinator.com/item?id=48356449","published_at":"2026-06-01T13:16:51","author":"amcclure","text":null,"summary":"呼吁停止游戏关停行为，强调数字游戏保存对文化传承的重要性，引发对玩家权益的讨论。"},{"id":"hn-48344327","title":"Show HN: I reverse-engineered the world maps of Test Drive III (1990 DOS game)","url":"https://github.com/s-macke/Test-Drive-3-Maps","source":"Hacker News","score":197,"comments_count":54,"comments_url":"https://news.ycombinator.com/item?id=48344327","published_at":"2026-05-31T09:45:45","author":"s-macke","text":null,"summary":"逆向工程1990年DOS游戏《Test Drive III》的世界地图，揭示早期3D游戏的地图生成技术。"},{"id":"hn-48379669","title":"The Unreasonable Redundancy of Nature's Protein Folds","url":"https://research.ligo.bio/posts/unreasonable-redundancy-of-natural-protein-folds/","source":"Hacker News","score":151,"comments_count":50,"comments_url":"https://news.ycombinator.com/item?id=48379669","published_at":"2026-06-03T03:47:56","author":"ray__","text":null,"summary":"本文探讨了自然界蛋白质折叠中令人惊讶的冗余性，揭示了这种冗余对生物功能和进化的深远影响，值得关注因为它挑战了我们对蛋白质设计的传统理解。"},{"id":"hn-48386725","title":"Gooey: A GPU-accelerated UI framework for Zig","url":"https://github.com/duanebester/gooey","source":"Hacker News","score":141,"comments_count":49,"comments_url":"https://news.ycombinator.com/item?id=48386725","published_at":"2026-06-03T17:12:27","author":"ksec","text":null,"summary":"Gooey是一个基于GPU加速的Zig语言UI框架，旨在提升图形界面性能，对于关注新兴编程语言和高效UI开发的开发者来说很有价值。"},{"id":"hn-48387144","title":"Bot vs human traffic","url":"https://radar.cloudflare.com/traffic#bot-vs-human","source":"Hacker News","score":135,"comments_count":71,"comments_url":"https://news.ycombinator.com/item?id=48387144","published_at":"2026-06-03T17:43:00","author":"jmsflknr","text":null,"summary":"Cloudflare的流量雷达展示了机器人与人类流量的对比分析，突显了网络流量中机器人的占比和影响，对于网络安全和流量管理领域至关重要。"},{"id":"hn-48378495","title":"Roku LT Operating System open source distribution","url":"https://blog.roku.com/developer/roku-lt-os","source":"Hacker News","score":131,"comments_count":65,"comments_url":"https://news.ycombinator.com/item?id=48378495","published_at":"2026-06-03T01:13:38","author":"dpmdpm","text":null,"summary":"Roku LT操作系统的开源发布，使得开发者可以自由访问和修改其代码，这对于嵌入式系统和开源社区是一个重要里程碑。"},{"id":"hn-48380670","title":"Leiden Declaration on Artificial Intelligence and Mathematics","url":"https://leidendeclaration.ai/","source":"Hacker News","score":122,"comments_count":75,"comments_url":"https://news.ycombinator.com/item?id=48380670","published_at":"2026-06-03T06:33:27","author":"zvr","text":null,"summary":"《莱顿人工智能与数学宣言》提出了AI与数学交叉领域的原则和方向，值得关注因为它可能影响未来AI研究和数学应用的政策。"}],"locale":"zh"}],"$Lc"]}]]}]
+5.  **PlayStation Architecture**
+    - **理由:** 对于任何对计算机体系结构、游戏历史或逆向工程感兴趣的人来说，这是一篇宝藏文章。它深入浅出地剖析了初代PlayStation的硬件设计，是理解“如何用有限的硬件创造奇迹”的经典案例。
+    - **链接:** [Article](https://www.copetti.org/writings/consoles/playstation/) | [Discussion](https://news.ycombinator.com/item?id=48382142)0:{"buildId":"kFHONSugKDQliDecK0KAe","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-06-05","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":18},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-06-05"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+c:T6b6,You can get a 2h free trial by solving a proof-of-work captcha when topping up your account for the first time.<p>If you&#x27;d like to learn more, an independent interview was posted a couple of weeks ago [1], and the FAQ [2] has a lot of information as well.<p>For the source code sharing, we&#x27;ve talked with lawyers and are inclined to no longer require the NDA&#x2F;NCC for privacy reasons shared with us before (signing requires identification), but instead use a source-available permissive license that doesn&#x27;t allow competition, like PolyForm Shield [3] (we do still have about 6 months before finalising a decision, here).<p>This does come with a lot more risks for us (it&#x27;s harder to track down if someone publishes the code or uses it against the license), but given we&#x27;ve already passed 100 monthly active accounts, we&#x27;re feeling more confident it&#x27;s an acceptable risk.<p>The plan is to give logged in accounts (who are 12 months old or more) a way to download a ZIP of the current code base that&#x27;s in the server.<p>Obviously there&#x27;s no easy way to prove that&#x27;s the case, but we&#x27;re open to ideas&#x2F;suggestions if someone here has them.<p>[1]: <a href="https:&#x2F;&#x2F;theprivacydad.com&#x2F;interview-with-the-engineer-of-uruky-a-private-search-engine&#x2F;" rel="nofollow">https:&#x2F;&#x2F;theprivacydad.com&#x2F;interview-with-the-engineer-of-uru...</a><p>[2]: <a href="https:&#x2F;&#x2F;uruky.com&#x2F;faq" rel="nofollow">https:&#x2F;&#x2F;uruky.com&#x2F;faq</a><p>[3]: <a href="https:&#x2F;&#x2F;polyformproject.org&#x2F;licenses&#x2F;shield&#x2F;1.0.0" rel="nofollow">https:&#x2F;&#x2F;polyformproject.org&#x2F;licenses&#x2F;shield&#x2F;1.0.0</a>6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-48391611","title":"They’re made out of weights","url":"https://maxleiter.com/blog/weights","source":"Hacker News","score":1404,"comments_count":628,"comments_url":"https://news.ycombinator.com/item?id=48391611","published_at":"2026-06-03T23:37:18","author":"MaxLeiter","text":null,"summary":"文章探讨了AI模型中的“权重”概念，指出它们并非传统意义上的代码，而是训练数据压缩后的统计模式，这对于理解AI本质至关重要。"},{"id":"hn-48385906","title":"Gemma 4 12B: A unified, encoder-free multimodal model","url":"https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/","source":"Hacker News","score":1018,"comments_count":382,"comments_url":"https://news.ycombinator.com/item?id=48385906","published_at":"2026-06-03T16:04:42","author":"rvz","text":null,"summary":"Google发布Gemma 4 12B模型，这是一款无需编码器的统一多模态模型，能直接处理文本和图像，标志着AI架构的简化与效率提升。"},{"id":"hn-48388324","title":"Elixir v1.20: Now a gradually typed language","url":"https://elixir-lang.org/blog/2026/06/03/elixir-v1-20-0-released/","source":"Hacker News","score":966,"comments_count":383,"comments_url":"https://news.ycombinator.com/item?id=48388324","published_at":"2026-06-03T19:02:26","author":"cloud8421","text":null,"summary":"Elixir 1.20版本引入渐进类型系统，使动态语言获得静态类型检查的优势，对函数式编程社区和开发者工具链有重大影响。"},{"id":"hn-48387270","title":"Artificial intelligence is not conscious – Ted Chiang","url":"https://www.theatlantic.com/philosophy/2026/06/no-artificial-intelligence-is-not-conscious/687378/","source":"Hacker News","score":742,"comments_count":1283,"comments_url":"https://news.ycombinator.com/item?id=48387270","published_at":"2026-06-03T17:51:37","author":"lordleft","text":"<a href=\"https:&#x2F;&#x2F;archive.is&#x2F;bcpZl\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.is&#x2F;bcpZl</a>","summary":"Ted Chiang在《大西洋月刊》撰文，坚决否认AI具有意识，从哲学和科学角度分析当前AI的局限性，引发对人工智能本质的深度思考。"},{"id":"hn-48384355","title":"I was recently diagnosed with anti-NMDA receptor encephalitis","url":"https://burntsushi.net/encephalitis/","source":"Hacker News","score":733,"comments_count":244,"comments_url":"https://news.ycombinator.com/item?id=48384355","published_at":"2026-06-03T14:10:06","author":"Tomte","text":null,"summary":"作者分享自己确诊抗NMDA受体脑炎的经历，这是一种罕见但可治的自身免疫性疾病，文章提高了公众对神经系统疾病的认识。"},{"id":"hn-48398055","title":"VoidZero Is Joining Cloudflare","url":"https://blog.cloudflare.com/voidzero-joins-cloudflare/","source":"Hacker News","score":579,"comments_count":259,"comments_url":"https://news.ycombinator.com/item?id=48398055","published_at":"2026-06-04T13:00:51","author":"coloneltcb","text":"<a href=\"https:&#x2F;&#x2F;voidzero.dev&#x2F;posts&#x2F;voidzero-cloudflare\" rel=\"nofollow\">https:&#x2F;&#x2F;voidzero.dev&#x2F;posts&#x2F;voidzero-cloudflare</a>","summary":"VoidZero加入Cloudflare，旨在优化网络性能和安全，这一合作可能改变云服务格局，值得关注其技术整合。"},{"id":"hn-48397028","title":"Ian's Secure Shoelace Knot","url":"https://www.fieggen.com/shoelace/secureknot.htm","source":"Hacker News","score":518,"comments_count":199,"comments_url":"https://news.ycombinator.com/item?id=48397028","published_at":"2026-06-04T11:17:34","author":"mooreds","text":null,"summary":"介绍一种名为“Ian's Secure Shoelace Knot”的鞋带系法，以实用性和安全性著称，展示了日常生活中的小创新。"},{"id":"hn-48397233","title":"French-Iranian author Marjane Satrapi, author of 'Persepolis', dies at 56","url":"https://www.france24.com/en/culture/20260604-french-iranian-author-marjane-satrapi-author-of-persepolis-dies-at-56","source":"Hacker News","score":406,"comments_count":115,"comments_url":"https://news.ycombinator.com/item?id=48397233","published_at":"2026-06-04T11:39:28","author":"fidotron","text":null,"summary":"法国-伊朗作家、《波斯波利斯》作者玛嘉·莎塔碧去世，享年56岁，她的作品对跨文化叙事和女性权利有深远影响。"},{"id":"hn-48399332","title":"Wind and solar generated more power than gas globally in April 2026","url":"https://electrek.co/2026/05/20/in-a-first-wind-solar-generated-more-power-than-gas-globally-april-2026/","source":"Hacker News","score":367,"comments_count":330,"comments_url":"https://news.ycombinator.com/item?id=48399332","published_at":"2026-06-04T14:36:39","author":"speckx","text":null,"summary":"2026年4月，全球风能和太阳能发电量首次超过天然气，标志着可再生能源在能源结构中的关键转折点。"},{"id":"hn-48382142","title":"PlayStation Architecture","url":"https://www.copetti.org/writings/consoles/playstation/","source":"Hacker News","score":336,"comments_count":66,"comments_url":"https://news.ycombinator.com/item?id=48382142","published_at":"2026-06-03T10:24:25","author":"gregsadetsky","text":null,"summary":"详细解析初代PlayStation的硬件架构，包括CPU、GPU和内存设计，对游戏历史和计算机工程爱好者极具价值。"},{"id":"hn-48401965","title":"The desperation of NYTimes","url":"https://rozumem.xyz/posts/16","source":"Hacker News","score":325,"comments_count":289,"comments_url":"https://news.ycombinator.com/item?id=48401965","published_at":"2026-06-04T17:39:13","author":"rozumem","text":null,"summary":"这篇文章批评了《纽约时报》的报道质量，指出其存在偏见和错误，值得关注因为它反映了主流媒体面临的信任危机。"},{"id":"hn-48347483","title":"Learn SQL Once, Use It for 30 Years","url":"https://fagnerbrack.com/learn-sql-once-use-it-for-30-years-9aceb0bdee03","source":"Hacker News","score":272,"comments_count":195,"comments_url":"https://news.ycombinator.com/item?id=48347483","published_at":"2026-05-31T17:16:15","author":"karakoram","text":null,"summary":"文章强调SQL技能的长久价值，认为掌握SQL一次即可使用30年，值得关注因为它凸显了基础技术技能在快速变化的技术领域中的持久重要性。"},{"id":"hn-48382382","title":"Every Byte Matters","url":"https://fzakaria.com/2026/06/01/every-byte-matters","source":"Hacker News","score":261,"comments_count":142,"comments_url":"https://news.ycombinator.com/item?id=48382382","published_at":"2026-06-03T11:04:04","author":"ingve","text":null,"summary":"文章探讨了在软件开发中优化每一字节的重要性，值得关注因为它提供了关于性能优化和资源效率的实用见解。"},{"id":"hn-48400588","title":"Retro-Tech Parenting","url":"https://havenweb.org/2026/05/28/retro-tech.html","source":"Hacker News","score":257,"comments_count":174,"comments_url":"https://news.ycombinator.com/item?id=48400588","published_at":"2026-06-04T16:02:35","author":"mawise","text":null,"summary":"文章介绍了使用旧技术进行育儿的方法，值得关注因为它提供了减少屏幕时间和培养孩子创造力的替代方案。"},{"id":"hn-48403588","title":"Meta's ships facial recognition on smart glasses","url":"https://www.buchodi.com/meta-glasses-facial-recognition/","source":"Hacker News","score":238,"comments_count":209,"comments_url":"https://news.ycombinator.com/item?id=48403588","published_at":"2026-06-04T19:36:48","author":"buchodi","text":null,"summary":"文章报道了Meta在智能眼镜上部署面部识别技术，值得关注因为它引发了关于隐私和伦理的讨论。"},{"id":"hn-48373642","title":"U.S. Army Corps of Engineers Bay Model","url":"https://en.wikipedia.org/wiki/U.S._Army_Corps_of_Engineers_Bay_Model","source":"Hacker News","score":219,"comments_count":53,"comments_url":"https://news.ycombinator.com/item?id=48373642","published_at":"2026-06-02T17:50:00","author":"tosh","text":null,"summary":"文章介绍了美国陆军工程兵团的旧金山湾模型，值得关注因为它展示了工程和模拟技术在环境管理中的历史应用。"},{"id":"hn-48396004","title":"Show HN: Uruky (EU-based Kagi alternative) now has Image Search and URL Rewrites","url":"https://uruky.com/?il=en","source":"Hacker News","score":210,"comments_count":194,"comments_url":"https://news.ycombinator.com/item?id=48396004","published_at":"2026-06-04T08:56:10","author":"BrunoBernardino","text":"$c","summary":"文章介绍了Uruky（基于欧盟的Kagi替代品）新增图像搜索和URL重写功能，值得关注因为它为用户提供了更多隐私友好的搜索引擎选择。"},{"id":"hn-48386725","title":"Gooey: A GPU-accelerated UI framework for Zig","url":"https://github.com/duanebester/gooey","source":"Hacker News","score":195,"comments_count":84,"comments_url":"https://news.ycombinator.com/item?id=48386725","published_at":"2026-06-03T17:12:27","author":"ksec","text":null,"summary":"文章介绍了Gooey，一个用于Zig语言的GPU加速UI框架，值得关注因为它为高性能图形应用提供了新的开发工具。"},{"id":"hn-48400918","title":"Sagrada Família Lego set","url":"https://www.lego.com/en-us/product/sagrada-familia-21065","source":"Hacker News","score":182,"comments_count":150,"comments_url":"https://news.ycombinator.com/item?id=48400918","published_at":"2026-06-04T16:25:20","author":"speckx","text":null,"summary":"文章介绍了圣家堂乐高套装，值得关注因为它结合了建筑与娱乐，吸引了乐高爱好者和建筑迷。"},{"id":"hn-48396792","title":"Gaussian Point Splatting","url":"https://momentsingraphics.de/Siggraph2026.html","source":"Hacker News","score":179,"comments_count":66,"comments_url":"https://news.ycombinator.com/item?id=48396792","published_at":"2026-06-04T10:48:13","author":"ibobev","text":null,"summary":"文章介绍了高斯点溅射技术，值得关注因为它代表了计算机图形学中的一种新渲染方法，可能提升3D场景的视觉质量。"},{"id":"hn-48389284","title":"A Man Who Reads Books for a Living","url":"https://lithub.com/the-man-who-reads-books-for-a-living-one-every-two-days/","source":"Hacker News","score":173,"comments_count":122,"comments_url":"https://news.ycombinator.com/item?id=48389284","published_at":"2026-06-03T20:08:33","author":"gmays","text":null,"summary":"本文介绍了一位以阅读为职业的人，他每两天读完一本书，揭示了阅读作为工作的独特视角，值得关注是因为它探讨了知识工作者的生活方式和阅读的深层价值。"},{"id":"hn-48389681","title":"Ableton Extensions SDK","url":"https://www.ableton.com/en/live/extensions/","source":"Hacker News","score":164,"comments_count":80,"comments_url":"https://news.ycombinator.com/item?id=48389681","published_at":"2026-06-03T20:39:34","author":"bennett_dev","text":null,"summary":"Ableton发布了Extensions SDK，允许开发者扩展Live软件的功能，这对音乐制作和技术创新者来说是一个重要的开发工具更新。"},{"id":"hn-48368725","title":"Under Notre Dame, a 'dig of the century' unearths 1,700 years of history","url":"https://apnews.com/article/notre-dame-dig-treasures-paris-archaeology-roman-dae41f792c1402faf32a87c154cc9a77","source":"Hacker News","score":160,"comments_count":41,"comments_url":"https://news.ycombinator.com/item?id=48368725","published_at":"2026-06-02T11:20:10","author":"cobbzilla","text":null,"summary":"巴黎圣母院下的考古发掘被称为‘世纪挖掘’，揭示了1700年的历史，包括罗马时期遗迹，值得关注因为它结合了历史、考古和文化遗产保护。"},{"id":"hn-48362255","title":"Meteor Explodes over Massachusetts","url":"https://www.nbcboston.com/news/local/meteor-explodes-over-massachusetts-what-we-know-and-where-it-landed/3957663/","source":"Hacker News","score":155,"comments_count":94,"comments_url":"https://news.ycombinator.com/item?id=48362255","published_at":"2026-06-01T20:31:24","author":"1970-01-01","text":null,"summary":"一颗流星在马萨诸塞州上空爆炸，引发公众关注，文章提供了事件详情和可能的着陆点，值得关注因为它涉及天文事件和公共安全。"},{"id":"hn-48369416","title":"Mornings and nights no longer exist at 47C: A day in the hottest place in India","url":"https://www.bbc.co.uk/news/articles/crmp0krp98ro","source":"Hacker News","score":129,"comments_count":102,"comments_url":"https://news.ycombinator.com/item?id=48369416","published_at":"2026-06-02T12:35:20","author":"mellosouls","text":null,"summary":"报道了印度最热地区在47°C高温下，早晨和夜晚的概念消失，揭示了极端气候对日常生活的影响，值得关注因为它突显了气候变化带来的现实挑战。"}],"locale":"zh"}],"$Ld"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
-c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-63bfdd982fa5","title":"burntsushi discusses personal medical diagnosis","url":"https://burntsushi.net/encephalitis/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-03T15:07:10","author":"burntsushi.net via carlana","text":"<p><a href=\"https://lobste.rs/s/ovbcr4/burntsushi_discusses_personal_medical\">Comments</a></p>","summary":"burntsushi分享个人医疗诊断经历，结合技术视角讨论数据分析和诊断工具，对于关注健康科技和开源项目的读者有启发。"},{"id":"rss-393234c1a2d9","title":"My Software North Star","url":"https://kristoff.it/blog/north-star/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-03T20:09:08","author":"kristoff.it by kristoff","text":"<p><a href=\"https://lobste.rs/s/g6lkw1/my_software_north_star\">Comments</a></p>","summary":"作者阐述了自己的软件发展北极星理念，强调长期目标和价值观在技术决策中的重要性，适合寻求职业指导的软件工程师。"},{"id":"rss-21195b4e494e","title":".furry - A Top-Level Domain for furries","url":"https://www.dotfurry.org/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-03T10:17:28","author":"dotfurry.org via Aks","text":"<p><a href=\"https://lobste.rs/s/1bie2j/furry_top_level_domain_for_furries\">Comments</a></p>","summary":"提出.furry顶级域名的计划，旨在为兽迷社区提供专属网络空间，反映了互联网文化多样性和域名系统的创新应用。"},{"id":"rss-826eae5313dc","title":"Elixir v1.20 released: now a gradually typed language","url":"https://elixir-lang.org/blog/2026/06/03/elixir-v1-20-0-released/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-03T19:05:36","author":"elixir-lang.org via munksgaard","text":"<p><a href=\"https://lobste.rs/s/wq1csk/elixir_v1_20_released_now_gradually_typed\">Comments</a></p>","summary":"Elixir 1.20版本发布，引入了渐进类型系统，标志着该语言向类型安全迈出重要一步，对函数式编程和并发应用开发者意义重大。"},{"id":"rss-8791184b5ea1","title":"rsync and outrage","url":"https://medium.com/@tridge60/rsync-and-outrage-d9849599e5a0","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-03T05:50:07","author":"medium.com via projectgus","text":"<p><a href=\"https://lobste.rs/s/k1b0za/rsync_outrage\">Comments</a></p>","summary":"文章讨论了rsync工具引发的争议，涉及开源社区的伦理和沟通问题，值得关注因为它揭示了技术社区中的冲突与解决方式。"}],"locale":"zh"}]
-f:null
+a:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-8d25b3bcbc2d","title":"Reviewing code requires reading","url":"https://hauleth.dev/post/review-requires-reading/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-04T17:37:35","author":"hauleth.dev by hauleth","text":"<p><a href=\"https://lobste.rs/s/hb1s2k/reviewing_code_requires_reading\">Comments</a></p>","summary":"文章强调代码审查需要仔细阅读，而不仅仅是表面检查，这对软件开发实践有重要指导意义，值得关注因为它提升了代码质量意识。"},{"id":"rss-bd4770e2ddd9","title":"jujutsu v0.42.0 released","url":"https://github.com/jj-vcs/jj/releases/tag/v0.42.0","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-04T16:53:12","author":"github.com via mediremi","text":"<p><a href=\"https://lobste.rs/s/jqkedb/jujutsu_v0_42_0_released\">Comments</a></p>","summary":"jujutsu版本v0.42.0发布，带来了新功能和改进，作为版本控制工具，值得关注因为它可能影响开发者的工作流程。"},{"id":"rss-993ae907c607","title":"A faster bump allocator for rust","url":"https://owen.cafe/posts/stumpalo/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-04T21:27:13","author":"owen.cafe by atocanist","text":"<p><a href=\"https://lobste.rs/s/vta6wp/faster_bump_allocator_for_rust\">Comments</a></p>","summary":"介绍了一种更快的Rust bump分配器，优化了内存管理性能，值得关注因为它对Rust系统编程和性能优化有直接帮助。"},{"id":"rss-ddd95d23345f","title":"IPv6 zones in URLs are a mistake","url":"https://xeiaso.net/notes/2026/ipv6-zones-go-url/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-04T21:09:47","author":"xeiaso.net via gmem","text":"<p><a href=\"https://lobste.rs/s/lcnc5e/ipv6_zones_urls_are_mistake\">Comments</a></p>","summary":"文章批评了URL中IPv6区域ID的设计，认为这是一个错误，值得关注因为它涉及网络协议和URL标准的讨论。"},{"id":"rss-a861de9591e1","title":"The C++ Standard Library Has Been Walking Itself Back for Fifteen Years, and the Receipts Are Public","url":"https://hftuniversity.com/post/the-c-standard-library-has-been-walking-itself-back-for-fifteen-years-and-the-receipts-are-public","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-04T07:52:00","author":"hftuniversity.com via tmcb","text":"<p><a href=\"https://lobste.rs/s/7jt1ix/c_standard_library_has_been_walking\">Comments</a></p>","summary":"分析了过去15年C++标准库的演变，指出其逐步改进的公开记录，值得关注因为它为C++开发者提供了历史视角和未来趋势的洞察。"}],"locale":"zh"}]
+10:null
