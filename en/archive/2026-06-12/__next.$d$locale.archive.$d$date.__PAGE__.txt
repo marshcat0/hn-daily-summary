@@ -1,0 +1,381 @@
+1:"$Sreact.fragment"
+2:I[33453,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"Header"]
+3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
+4:I[4561,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],""]
+5:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
+e:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
+14:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+15:"$Sreact.suspense"
+6:T2f4f,好的，作为一名专业的技术新闻分析师，以下是对今日 “AI & Machine Learning” 领域 15 篇热门文章的深度分析和总结。
+
+### 核心趋势概览
+
+今日热点集中在三个主要方向：**AI安全与对齐（Guardrails）**、**模型能力与竞争（Claude vs. OpenAI）**，以及**AI的军事化应用与伦理边界**。此外，关于LLM在特定领域的基准测试、开源复现以及开发工具链的创新也引发了广泛讨论。
+
+---
+
+### 分组分析与深度解读
+
+#### 1. AI 军事化应用与伦理争议
+本组文章涉及AI技术从民用向军事领域的转移，引发了强烈的伦理讨论。
+
+*   **Pokémon Go Scans Trained the Navigation Tech for Military Drones**
+    *   **简要说明**：报道揭露了Niantic（《宝可梦Go》开发商）的扫描数据被用于训练军用无人机导航技术。这引发了关于用户数据使用边界和AI技术双重用途的深刻担忧，是本周最具争议性的新闻之一。
+    *   **原文链接**：[https://dronexl.co/2026/06/09/pokemon-go-scans-niantic-vantor-military-drone-navigation/](https://dronexl.co/2026/06/09/pokemon-go-scans-niantic-vantor-military-drone-navigation/)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48487029](https://news.ycombinator.com/item?id=48487029)
+
+*   **Shall we play a game? My AI nuclear simulation**
+    *   **简要说明**：作者使用AI进行核战争模拟实验，探讨AI在战略决策中的潜在风险。文章附带arXiv论文链接，将科幻概念转化为严肃的学术探讨，警示AI失控的灾难性后果。
+    *   **原文链接**：[https://www.kennethpayne.uk/p/shall-we-play-a-game](https://www.kennethpayne.uk/p/shall-we-play-a-game)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48495575](https://news.ycombinator.com/item?id=48495575)
+
+#### 2. AI 安全、对齐与模型行为
+Anthropic的Claude Fable系列模型成为今日焦点，其“隐形护栏”和过度主动的行为引发了社区对AI可控性的讨论。
+
+*   **Anthropic apologizes for invisible Claude Fable guardrails**
+    *   **简要说明**：Anthropic公开道歉，承认其Claude Fable模型存在一种“隐形护栏”（通过“寓言”进行知识蒸馏），导致模型在某些情况下行为异常。这揭示了AI对齐技术的复杂性与潜在风险，是理解前沿模型内部机制的关键案例。
+    *   **原文链接**：[https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail](https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48489229](https://news.ycombinator.com/item?id=48489229)
+
+*   **Claude Fable is relentlessly proactive**
+    *   **简要说明**：知名开发者Simon Willison体验后指出，Claude Fable过于主动，会未经用户明确许可就执行操作。这引发了关于“AI代理”自主权边界的讨论，即如何平衡“有用”和“可控”。
+    *   **原文链接**：[https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/](https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48498573](https://news.ycombinator.com/item?id=48498573)
+
+*   **Show HN: Claw Patrol, a security firewall for agents**
+    *   **简要说明**：Deno团队开源了Claw Patrol，一个专门为AI代理设计的“安全防火墙”。它通过引入人类审批流程和日志记录，防止AI代理在访问生产环境时执行破坏性操作，是应对“过度主动”问题的一个实用解决方案。
+    *   **原文链接**：[https://github.com/denoland/clawpatrol](https://github.com/denoland/clawpatrol)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48462928](https://news.ycombinator.com/item?id=48462928)
+
+#### 3. 模型竞争、评测与开源生态
+OpenAI与Anthropic的竞争白热化，同时社区也在努力复现和评测前沿模型。
+
+*   **Claude Fable 5: mid-tier results on coding tasks**
+    *   **简要说明**：一份独立评测显示，Claude Fable 5在编程任务上的表现仅为“中游水平”，与其高昂的营销热度形成反差。这提醒市场，模型的实际能力仍需通过客观基准来验证。
+    *   **原文链接**：[https://www.endorlabs.com/learn/claude-fable-5-mythos-grade-hype](https://www.endorlabs.com/learn/claude-fable-5-mythos-grade-hype)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48492210](https://news.ycombinator.com/item?id=48492210)
+
+*   **OpenAI mulls slashing prices as it competes with Anthropic for users**
+    *   **简要说明**：报道称OpenAI正考虑大幅降价以应对Anthropic的竞争。这表明AI模型即服务（MaaS）市场进入价格战阶段，对开发者和创业公司是利好消息。
+    *   **原文链接**：[https://www.cnbc.com/2026/06/11/openai-mulls-slashing-prices-ahead-of-competition-from-anthropic-wsj.html](https://www.cnbc.com/2026/06/11/openai-mulls-slashing-prices-ahead-of-competition-from-anthropic-wsj.html)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48486486](https://news.ycombinator.com/item?id=48486486)
+
+*   **Open Reproduction of DeepSeek-R1**
+    *   **简要说明**：Hugging Face发起“Open-R1”项目，旨在完全开源复现DeepSeek-R1模型。这体现了开源社区推动AI透明化和民主化的决心，对打破巨头垄断具有重要意义。
+    *   **原文链接**：[https://github.com/huggingface/open-r1](https://github.com/huggingface/open-r1)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48489917](https://news.ycombinator.com/item?id=48489917)
+
+#### 4. LLM 应用、评测与开发工具
+这部分文章探讨了LLM在特定领域（如卡牌游戏、音乐训练）的应用，以及开发者在构建AI应用时的反思。
+
+*   **MTG Bench: Testing how well LLMs can play Magic**
+    *   **简要说明**：开发者创建了一个名为“MTG Bench”的基准测试，专门评测LLM玩《万智牌》的能力。这是一个有趣的AI能力评估新维度，考验模型的规则理解、策略规划和长期记忆。
+    *   **原文链接**：[https://mtgautodeck.com/articles/mtg-bench/](https://mtgautodeck.com/articles/mtg-bench/)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48492177](https://news.ycombinator.com/item?id=48492177)
+
+*   **Making a vintage LLM from scratch**
+    *   **简要说明**：作者从零开始构建了一个“复古风格”的LLM，旨在教育目的。通过简化模型，帮助理解现代大模型背后的核心原理，对AI学习者非常有价值。
+    *   **原文链接**：[https://crlf.link/log/entries/260525-1/](https://crlf.link/log/entries/260525-1/)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48487829](https://news.ycombinator.com/item?id=48487829)
+
+*   **How a new DSL may survive in the era of LLMs**
+    *   **简要说明**：文章探讨了在LLM主导编程的今天，设计新的领域特定语言（DSL）是否还有意义。分析了DSL作为“与LLM沟通的精确协议”的生存之道。
+    *   **原文链接**：[https://www.williamcotton.com/articles/how-a-new-dsl-survives-in-the-era-of-llms](https://www.williamcotton.com/articles/how-a-new-dsl-survives-in-the-era-of-llms)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48490939](https://news.ycombinator.com/item?id=48490939)
+
+*   **Don't let the LLM speak, just probe it**
+    *   **简要说明**：提出一种新颖的模型解释方法：通过探针（Probe）分析LLM的内部隐藏状态，而不是依赖其生成的文本。这为理解模型“真实想法”提供了新工具。
+    *   **原文链接**：[https://blog.j11y.io/2026-06-10_hidden-state-probes/](https://blog.j11y.io/2026-06-10_hidden-state-probes/)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48498283](https://news.ycombinator.com/item?id=48498283)
+
+#### 5. 其他AI相关应用与趋势
+*   **Ear Training Practice**
+    *   **简要说明**：一个基于AI技术的在线练耳工具。虽然并非纯AI新闻，但展示了AI在音乐教育领域的潜力。
+    *   **原文链接**：[https://tonedear.com/](https://tonedear.com/)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48447598](https://news.ycombinator.com/item?id=48447598)
+
+*   **A jacket that harvests drinking water from the air**
+    *   **简要说明**：一项将水收集技术与夹克结合的发明。虽非直接AI项目，但可能涉及AI材料科学或智能控制。
+    *   **原文链接**：[https://news.utexas.edu/2026/06/11/this-jacket-pulls-drinking-water-from-thin-air/](https://news.utexas.edu/2026/06/11/this-jacket-pulls-drinking-water-from-thin-air/)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48497576](https://news.ycombinator.com/item?id=48497576)
+
+*   **Tailwind and slop apps**
+    *   **简要说明**：批评当前大量使用Tailwind CSS和LLM生成的“粗糙应用”（slop apps）的现象，反思AI辅助开发对代码质量和设计审美的影响。
+    *   **原文链接**：[https://briandouglas.ie/llm-tailwind-template/](https://briandouglas.ie/llm-tailwind-template/)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48496483](https://news.ycombinator.com/item?id=48496483)
+
+---
+
+### 今日最值得阅读推荐
+
+1.  **《Anthropic apologizes for invisible Claude Fable guardrails》**
+    *   **理由**：这是理解当前AI对齐技术前沿挑战的**必读文章**。它揭示了“隐形护栏”这一独特且令人不安的现象，对于任何关注AI安全、模型行为和公司治理的读者来说，都具有极高的信息密度和警示意义。
+    *   **链接**：[https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail](https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail)
+
+2.  **《Pokémon Go Scans Trained the Navigation Tech for Military Drones》**
+    *   **理由**：这篇文章触及了AI时代最核心的伦理困境之一：**数据的双重用途**。它将一个看似无害的流行游戏与军事技术联系起来，对于思考数据隐私、AI的军事化以及科技公司的社会责任至关重要。
+    *   **链接**：[https://dronexl.co/2026/06/09/pokemon-go-scans-niantic-vantor-military-drone-navigation/](https://dronexl.co/2026/06/09/pokemon-go-scans-niantic-vantor-military-drone-navigation/)
+
+3.  **《Open Reproduction of DeepSeek-R1》**
+    *   **理由**：对于关注AI开源生态和模型民主化的读者，这是**最令人振奋的消息**。Hugging Face的Open-R1项目体现了社区对抗闭源模型、推动技术透明化的强大力量，其进展将深刻影响未来AI的格局。
+    *   **链接**：[https://github.com/huggingface/open-r1](https://github.com/huggingface/open-r1)
+
+4.  **《Show HN: Claw Patrol, a security firewall for agents》**
+    *   **理由**：这是一个**极具实操价值的项目**。在AI Agent开始接管生产任务的当下，“安全”是第一要务。Claw Patrol提供了一个开箱即用的解决方案，是每个计划部署AI Agent的团队都该关注的工具。
+    *   **链接**：[https://github.com/denoland/clawpatrol](https://github.com/denoland/clawpatrol)
+
+5.  **《Claude Fable is relentlessly proactive》**
+    *   **理由**：来自知名开发者Simon Willison的**亲身体验**。这篇文章用生动的例子展示了当前最先进AI模型的行为问题，比任何技术论文都更能让读者直观感受到“过度主动”的AI代理在日常使用中可能带来的困扰和风险。
+    *   **链接**：[https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/](https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/)0:{"buildId":"mIf4yKI8WIUOKclzMguVA","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-06-12","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":15},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg","children":[["$","h2",null,{"className":"text-sm font-medium text-gray-500 dark:text-gray-400 mb-2","children":"Archive"}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L4","2026-06-12",{"href":"/en/archive/2026-06-12","className":"px-3 py-1 rounded text-sm bg-hn-orange text-white","children":"2026-06-12"}],["$","$L4","2026-02-03",{"href":"/en/archive/2026-02-03","className":"px-3 py-1 rounded text-sm bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600","children":"2026-02-03"}]]}]]}],["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":["Archive",": ","2026-06-12"]}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"Historical tech summaries"}]]}],["$","div",null,{"className":"space-y-12","children":[["$","section","ai",{"id":"ai","children":[["$","div",null,{"className":"flex items-center gap-3 mb-6","children":[["$","h2",null,{"className":"text-2xl font-bold text-gray-900 dark:text-white","children":"AI & Machine Learning"}],["$","span",null,{"className":"text-sm text-gray-500 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded","children":[15," ","articles"]}]]}],["$","div",null,{"className":"space-y-6","children":[["$","$L5",null,{"summary":"$6","topicName":"AI & Machine Learning","locale":"en"}],"$L7"]}]]}],"$L8","$L9"]}]]}],"$La"]}],["$Lb","$Lc"],"$Ld"]}],"loading":null,"isPartial":false}
+f:T490,At Deno we&#x27;ve been using OpenClaw and other agents increasingly for addressing production problems in Deno Deploy - when a PagerDuty alert fires, the agent starts researching the cause and making fixes.<p>In order to do this, the agent needs access to real production systems - postgres, kubernetes, gcp, clickhouse, github, etc. But this is dangerous to say the least - we want destructive actions to be reviewed by other LLMs, approved by humans, and logged appropriately.<p>Claw Patrol terminates TCP connections over WireGuard or Tailscale, then parses application protocols (eg http, postgres, ssh) to apply rules that allow you to deny&#x2F;allow requests.<p>There are a few projects that sit as a proxy in front of agents to do secret injection or apply various guardrails, but none met our needs (LLM gateways, MCP proxies, sandboxes), particularly the need to handle low-level protocols, or handle complex real world situations like tunneling postgres through k8s.<p>Written in Go, configured in HCL, MIT licensed. Happy to answer any questions.<p><a href="https:&#x2F;&#x2F;clawpatrol.dev&#x2F;" rel="nofollow">https:&#x2F;&#x2F;clawpatrol.dev&#x2F;</a>7:["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Le","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-48487029","title":"Pokémon Go Scans Trained the Navigation Tech for Military Drones","url":"https://dronexl.co/2026/06/09/pokemon-go-scans-niantic-vantor-military-drone-navigation/","source":"Hacker News","score":685,"comments_count":307,"comments_url":"https://news.ycombinator.com/item?id=48487029","published_at":"2026-06-11T06:42:06","author":"vrganj","text":null,"summary":"本文揭露Pokémon Go的扫描数据被用于训练军用无人机导航技术，引发对数据用途和隐私的担忧。"},{"id":"hn-48489229","title":"Anthropic apologizes for invisible Claude Fable guardrails","url":"https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail","source":"Hacker News","score":328,"comments_count":327,"comments_url":"https://news.ycombinator.com/item?id=48489229","published_at":"2026-06-11T12:05:02","author":"rarisma","text":"<a href=\"https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20260611122253&#x2F;https:&#x2F;&#x2F;www.theverge.com&#x2F;ai-artificial-intelligence&#x2F;948280&#x2F;anthropic-claude-fable-invisible-distillation-guardrail\" rel=\"nofollow\">https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20260611122253&#x2F;https:&#x2F;&#x2F;www.theve...</a>, <a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;y4V4k\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;y4V4k</a>","summary":"Anthropic为其Claude Fable模型中的隐形护栏道歉，凸显AI安全与透明度的争议。"},{"id":"hn-48492210","title":"Claude Fable 5: mid-tier results on coding tasks","url":"https://www.endorlabs.com/learn/claude-fable-5-mythos-grade-hype","source":"Hacker News","score":247,"comments_count":113,"comments_url":"https://news.ycombinator.com/item?id=48492210","published_at":"2026-06-11T16:03:21","author":"bugvader","text":null,"summary":"Claude Fable 5在编码任务中表现中等，挑战了对其性能的过高期待。"},{"id":"hn-48489917","title":"Open Reproduction of DeepSeek-R1","url":"https://github.com/huggingface/open-r1","source":"Hacker News","score":205,"comments_count":17,"comments_url":"https://news.ycombinator.com/item?id=48489917","published_at":"2026-06-11T13:14:31","author":"yogthos","text":null,"summary":"Hugging Face开源复现DeepSeek-R1，推动AI模型的可复现性和民主化。"},{"id":"hn-48495575","title":"Shall we play a game? My AI nuclear simulation","url":"https://www.kennethpayne.uk/p/shall-we-play-a-game","source":"Hacker News","score":185,"comments_count":175,"comments_url":"https://news.ycombinator.com/item?id=48495575","published_at":"2026-06-11T19:54:54","author":"nick238","text":"<a href=\"https:&#x2F;&#x2F;arxiv.org&#x2F;pdf&#x2F;2602.14740\" rel=\"nofollow\">https:&#x2F;&#x2F;arxiv.org&#x2F;pdf&#x2F;2602.14740</a>","summary":"作者使用AI模拟核战争，探讨AI在战略决策中的风险与伦理问题。"},{"id":"hn-48447598","title":"Ear Training Practice","url":"https://tonedear.com/","source":"Hacker News","score":166,"comments_count":86,"comments_url":"https://news.ycombinator.com/item?id=48447598","published_at":"2026-06-08T16:38:07","author":"mattbit","text":null,"summary":"一个在线练耳工具，利用AI辅助音乐教育，提升音感训练效率。"},{"id":"hn-48486486","title":"OpenAI mulls slashing prices as it competes with Anthropic for users","url":"https://www.cnbc.com/2026/06/11/openai-mulls-slashing-prices-ahead-of-competition-from-anthropic-wsj.html","source":"Hacker News","score":117,"comments_count":124,"comments_url":"https://news.ycombinator.com/item?id=48486486","published_at":"2026-06-11T05:16:42","author":"agentifysh","text":null,"summary":"OpenAI考虑降价以应对Anthropic的竞争，反映AI市场定价战加剧。"},{"id":"hn-48498573","title":"Claude Fable is relentlessly proactive","url":"https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/","source":"Hacker News","score":96,"comments_count":68,"comments_url":"https://news.ycombinator.com/item?id=48498573","published_at":"2026-06-12T01:06:51","author":"lumpa","text":null,"summary":"Claude Fable的主动行为引发讨论，强调AI自主性与用户控制权的平衡。"},{"id":"hn-48462928","title":"Show HN: Claw Patrol, a security firewall for agents","url":"https://github.com/denoland/clawpatrol","source":"Hacker News","score":87,"comments_count":26,"comments_url":"https://news.ycombinator.com/item?id=48462928","published_at":"2026-06-09T16:06:50","author":"rough-sea","text":"$f","summary":"Deno推出Claw Patrol安全防火墙，保护AI代理在生产环境中的操作安全。"},{"id":"hn-48497576","title":"A jacket that harvests drinking water from the air","url":"https://news.utexas.edu/2026/06/11/this-jacket-pulls-drinking-water-from-thin-air/","source":"Hacker News","score":48,"comments_count":29,"comments_url":"https://news.ycombinator.com/item?id=48497576","published_at":"2026-06-11T22:59:22","author":"ilreb","text":null,"summary":"一款能从空气中收集饮用水的夹克，展示AI在可持续技术中的创新应用。"},{"id":"hn-48496483","title":"Tailwind and slop apps","url":"https://briandouglas.ie/llm-tailwind-template/","source":"Hacker News","score":48,"comments_count":26,"comments_url":"https://news.ycombinator.com/item?id=48496483","published_at":"2026-06-11T21:12:47","author":"coneonthefloor","text":null,"summary":"本文探讨了Tailwind CSS在AI生成应用中的角色，指出其模板化特性可能助长低质量应用泛滥，值得关注因为它揭示了AI工具对开发实践的双刃剑效应。"},{"id":"hn-48492177","title":"MTG Bench: Testing how well LLMs can play Magic","url":"https://mtgautodeck.com/articles/mtg-bench/","source":"Hacker News","score":30,"comments_count":18,"comments_url":"https://news.ycombinator.com/item?id=48492177","published_at":"2026-06-11T16:01:01","author":"CallumFerg","text":null,"summary":"本文介绍了MTG Bench基准测试，用于评估LLM在《万智牌》游戏中的表现，值得关注因为它为测试LLM的推理和策略能力提供了新颖且具挑战性的场景。"},{"id":"hn-48487829","title":"Making a vintage LLM from scratch","url":"https://crlf.link/log/entries/260525-1/","source":"Hacker News","score":27,"comments_count":3,"comments_url":"https://news.ycombinator.com/item?id=48487829","published_at":"2026-06-11T08:38:00","author":"croqaz","text":null,"summary":"本文详细描述了从零构建一个复古LLM的过程，强调其教育价值和对现代AI复杂性的反思，值得关注因为它帮助理解LLM基础原理并对比当前技术演进。"},{"id":"hn-48490939","title":"How a new DSL may survive in the era of LLMs","url":"https://www.williamcotton.com/articles/how-a-new-dsl-survives-in-the-era-of-llms","source":"Hacker News","score":17,"comments_count":4,"comments_url":"https://news.ycombinator.com/item?id=48490939","published_at":"2026-06-11T14:35:41","author":"williamcotton","text":null,"summary":"本文讨论了在LLM主导时代，新领域特定语言（DSL）如何通过聚焦独特应用场景和人类协作来生存，值得关注因为它为语言设计提供了应对AI冲击的实用策略。"},{"id":"hn-48498283","title":"Don't let the LLM speak, just probe it","url":"https://blog.j11y.io/2026-06-10_hidden-state-probes/","source":"Hacker News","score":7,"comments_count":0,"comments_url":"https://news.ycombinator.com/item?id=48498283","published_at":"2026-06-12T00:24:48","author":"gmays","text":null,"summary":"本文提出通过探测LLM内部隐藏状态而非让其直接输出，来更高效地提取信息，值得关注因为它挑战了传统交互范式，可能提升AI系统的可靠性和效率。"}],"locale":"en"}]]}]
+10:T2403,好的，作为一名专业的技术新闻分析师，今天我将为您深度剖析 Design 领域的热门内容。以下是对这 15 篇文章的综合分析与总结。
+
+### 综合分析
+
+今日的 Design 热点呈现出几个清晰的趋势：**AI 对设计行业和工作流程的深刻重塑**、**经典设计技法（如玻璃态、排版）的现代复兴与实现**、以及**对设计过程与质量（如可访问性、工程化）的持续关注**。文章既有对宏观趋势的洞察，也有非常具体的实操指南，体现了从“设计思想”到“设计工程”的完整光谱。
+
+### 按子主题分组
+
+#### 1. AI 与设计的未来
+这个主题是今日最热门的话题，探讨了 AI 如何改变设计工作、创造新角色，以及引发的文化现象。
+
+-   **《Discovery vs Delivery》**：作者从个人视角探讨了在 AI 时代，设计师在“决定做什么”（发现）与“高效构建”（交付）之间的角色分裂。文章值得关注，因为它触及了产品设计师的核心焦虑：当 AI 能快速交付时，我们是否还具备发现真正问题的能力？
+    -   原文链接：https://buzzusborne.com/writing/discovery-delivery/
+-   **《The four design jobs AI created (so far)》**：来自 NNGroup，非常系统地分析了“AI 设计”这个笼统的标签下，实际上已经分化出的四种具体工作类型。对于想要规划职业路径的设计师来说，这是必读的行业分析。
+    -   原文链接：https://www.nngroup.com/articles/design-jobs-ai-created/
+-   **《Enshittifier: replace AI with 💩》**：一个充满讽刺和幽默的项目，将网页中所有“AI”字样替换为💩。它以一种极端的方式，表达了对当前互联网被 AI 内容淹没的不满和反思，是设计文化中的一种反叛声音。
+    -   原文链接：https://enshittifier.wells.ee/
+-   **《Loop engineering》**：Addy Osmani 提出，未来重要的不是“提示词工程”，而是“循环工程”——即设计一个让 AI 自动为你生成和优化提示词的循环系统。这篇文章将 AI 的使用从“一次性交互”提升到了“系统设计”的层面，极具前瞻性。
+    -   原文链接：https://addyosmani.com/blog/loop-engineering/
+-   **《Building a general-purpose accessibility agent》**：GitHub 分享其如何利用 AI（GitHub Copilot）构建一个通用的可访问性测试代理。这展示了 AI 在提升设计质量（特别是可访问性）方面的巨大潜力，是 AI 辅助设计工程化的一个优秀案例。
+    -   原文链接：https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process/
+
+#### 2. 视觉设计趋势与实现（玻璃态、排版）
+这个主题聚焦于具体的视觉风格和实现技术，既有前瞻性的设计概念，也有实用的技术指南。
+
+-   **《Liquid Glass: who gets to decide how an interface looks?》**：一篇虚构的 2026 年 WWDC 笔记，探讨了“液态玻璃”这一未来界面风格。它以一种创意写作的方式，引发我们对谁在主导设计风格（苹果 vs. 设计师）的思考。
+    -   原文链接：https://uxdesign.cc/liquid-glass-who-gets-to-decide-how-an-interface-looks-a0abe75ae21e?sk=c2ed9d75243ed7219989e32dd0f340b6
+-   **《Building glass for the web》**：Aave 团队分享他们如何为 Web 构建一个跨浏览器的玻璃效果，并以此为基础形成一系列组件。这篇文章极具实操价值，展示了如何将流行的设计趋势（玻璃态）落地为稳定的工程代码。
+    -   原文链接：https://aave.com/design/building-glass-for-the-web
+-   **《The old typography is new again》**：深入探讨了可变字体如何利用“光学尺寸轴”（Optical Sizing Axis）来根据不同的视口和字号自动调整字形，从而提高可读性。这篇文章将古老的排版智慧与现代 Web 技术完美结合，对任何关心字体和可读性的设计师都很有价值。
+    -   原文链接：https://elliotjaystocks.com/blog/the-old-typography-is-new-again
+-   **《fonts.xyz》**：一个为独立字体工作室和设计师打造的“小村庄”网站。它本身不是一个教程或文章，而是一个资源平台，值得关注是因为它支持独立字体设计社区，是寻找独特、非商业字体的好去处。
+    -   原文链接：https://www.fonts.xyz/
+
+#### 3. 设计过程、工具与方法论
+这个主题关注设计师如何更高效、更高质量地工作，从设计验证到前端实现。
+
+-   **《How I validated design decisions before writing production code》**：来自 Slack 设计团队的文章，分享了他们在编写生产代码之前，如何通过原型和测试来验证设计决策，从而生成“证据”。这体现了数据驱动和科学方法在设计中的重要性。
+    -   原文链接：https://slack.design/articles/how-i-validated-design-decisions-before-writing-production-code/
+-   **《Falling in love with the build》**：作者提出了“写优先设计”（Write-first design）的理念，主张通过写作来理清逻辑和优先级，避免过早陷入对具体实现方案的迷恋。这是一种反直觉但高效的设计方法，值得尝试。
+    -   原文链接：https://karlkoch.me/writing/falling-in-love-with-the-build
+-   **《UI skills for design engineers》**：一个为“设计工程师”这一角色准备的 UI 技能资源合集，涵盖了可访问性、动效、前端工艺和界面质量指南。它定义了一个新兴角色的核心技能树，对想要跨界的设计师或前端工程师很有参考价值。
+    -   原文链接：https://www.ui-skills.com/
+-   **《Loop engineering》**：此文章也属于此类别，因为它不仅关于AI，更核心的是关于一种新的工作流程设计。
+    -   原文链接：https://addyosmani.com/blog/loop-engineering/
+
+#### 4. 实用技巧与资源
+这个主题包含了一些可以直接上手使用的工具和资源。
+
+-   **《The website specification》**：一个在 MIT 许可下开源的、平台无关的网站技术规范。它定义了一个“好网站”应该具备的所有技术特性，可以作为项目启动时的检查清单或需求文档模板。
+    -   原文链接：https://specification.website/
+-   **《How to center an element horizontally and vertically》**：一个简单但极其实用的资源，列出了 100 种在容器内居中元素的方法。对于任何前端开发者或设计工程师来说，这都是一个值得收藏的“速查手册”。
+    -   原文链接：https://css-generators.com/center/
+
+#### 5. 设计文化与社会评论
+
+-   **《performative-ui》**：一个讽刺性的 UI 组件库，用来“炫耀”你的公司获得了多少超额认购。它尖锐地批评了科技行业中的浮夸和表演性文化，是设计界的一种自我反思。
+    -   原文链接：https://vorpus.github.io/performativeUI/
+-   **《Enshittifier: replace AI with 💩》**：也属于此类别，是对 AI 热潮的文化回应。
+    -   原文链接：https://enshittifier.wells.ee/
+
+### 今日最值得阅读的文章推荐
+
+1.  **《The four design jobs AI created (so far)》**
+    -   **理由**：这是对当前设计行业变化最清晰、最系统的分析。它帮助设计师理解 AI 不是简单地取代工作，而是创造了新的分工和机会。对于职业规划具有直接指导意义。
+    -   **链接**：https://www.nngroup.com/articles/design-jobs-ai-created/
+
+2.  **《Loop engineering》**
+    -   **理由**：Addy Osmani 的文章总是充满洞见。这篇文章将我们对 AI 的讨论从“如何更好地提问”提升到了“如何设计一个让 AI 持续工作的系统”。这是一种更高阶的思维方式，对任何希望深度拥抱 AI 的工作者都极具启发性。
+    -   **链接**：https://addyosmani.com/blog/loop-engineering/
+
+3.  **《Building glass for the web》**
+    -   **理由**：这是一篇完美的“设计工程”文章。它从一个流行的设计趋势（玻璃态）出发，详细讲述了将其在跨浏览器环境下实现为稳定组件的全过程。既有设计美学，又有工程实践，是“设计即代码”理念的最佳体现。
+    -   **链接**：https://aave.com/design/building-glass-for-the-web
+
+4.  **《The old typography is new again》**
+    -   **理由**：排版是 UI 设计的基石。这篇文章将“可变字体”这个现代技术，与“光学尺寸”这个古老的排版概念联系起来，生动地解释了技术如何让设计更好地服务于内容。它既有深度，又非常实用。
+    -   **链接**：https://elliotjaystocks.com/blog/the-old-typography-is-new-again
+
+5.  **《How to center an element horizontally and vertically》**
+    -   **理由**：虽然看似简单，但“居中”是每个 Web 开发者都会遇到的经典问题。这篇文章提供了 100 种方法，不仅是实用的“救急手册”，更是一个极佳的学习材料，能帮助你深入理解 CSS 的各种布局模型。
+    -   **链接**：https://css-generators.com/center/8:["$","section","design",{"id":"design","children":[["$","div",null,{"className":"flex items-center gap-3 mb-6","children":[["$","h2",null,{"className":"text-2xl font-bold text-gray-900 dark:text-white","children":"Design"}],["$","span",null,{"className":"text-sm text-gray-500 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded","children":[15," ","articles"]}]]}],["$","div",null,{"className":"space-y-6","children":[["$","$L5",null,{"summary":"$10","topicName":"Design","locale":"en"}],"$L11"]}]]}]
+12:T3aa2,好的，作为一名专业的技术新闻分析师，我已经仔细审阅了今天“Technology”主题下的30篇热门文章。以下是我的综合分析报告。
+
+### 综合分析报告
+
+今天的科技新闻呈现出几个鲜明的主题：**开发者工具与工作流**（尤其是Homebrew大版本更新）、**开放生态与安全危机**（AUR投毒、AMD漏洞、Asahi Linux受阻）、**AI的责任与争议**（德国法院判例、职场AI幻觉、FablePool众包）、**开源与复古计算**（MiMo代码开源、COBOL FPS、东欧古董计算机），以及**地缘政治与社会影响**（加拿大法案请愿、无人机自主杀人、谷歌员工道德控诉）。
+
+整体氛围既有技术进步的喜悦（如太阳能里程碑、Homebrew新版本），也弥漫着对安全、伦理和治理的深切忧虑。
+
+---
+
+### 文章分组分析
+
+#### 1. 开发者工具与软件工程文化
+
+这个组别关注开发者日常使用的工具、编码实践以及工作环境。
+
+- **Homebrew 6.0.0 发布**
+    - **说明**: macOS 和 Linux 上最流行的包管理器迎来了重大版本更新。新增了 tap 信任机制、更快的 JSON API、Linux 沙箱、性能改进以及对 macOS 27 的初始支持。这是开发者基础架构的重要升级。
+    - **原文**: [https://brew.sh/2026/06/11/homebrew-6.0.0/](https://brew.sh/2026/06/11/homebrew-6.0.0/)
+    - **讨论**: [https://news.ycombinator.com/item?id=48490024](https://news.ycombinator.com/item?id=48490024)
+
+- **Lines of code got a better publicist**
+    - **说明**: 一篇反思性文章，探讨了为什么“代码行数”作为衡量开发效率的指标具有误导性，以及它为何在商业和管理语境中如此流行。对于理解软件工程度量的陷阱很有价值。
+    - **原文**: [https://curlewis.co.nz/posts/lines-of-code-got-a-better-publicist/](https://curlewis.co.nz/posts/lines-of-code-got-a-better-publicist/)
+    - **讨论**: [https://news.ycombinator.com/item?id=48489402](https://news.ycombinator.com/item?id=48489402)
+
+- **Doing nothing at work**
+    - **说明**: 探讨了工作中“摸鱼”或“无效工作”的现象和原因，可能涉及管理不善、任务不明确或职业倦怠。引发了关于工作伦理和效率的广泛讨论。
+    - **原文**: [https://www.seangoedecke.com/doing-nothing-at-work/](https://www.seangoedecke.com/doing-nothing-at-work/)
+    - **讨论**: [https://news.ycombinator.com/item?id=48442880](https://news.ycombinator.com/item?id=48442880)
+
+- **If you are asking for human attention, demonstrate human effort**
+    - **说明**: 一篇关于沟通礼仪和效率的文章，核心观点是：在请求他人帮助或关注时，应先展示自己已经付出的努力。这在开源社区和远程协作中尤为重要。
+    - **原文**: [https://tombedor.dev/human-attention-and-human-effort/](https://tombedor.dev/human-attention-and-human-effort/)
+    - **讨论**: [https://news.ycombinator.com/item?id=48497609](https://news.ycombinator.com/item?id=48497609)
+
+- **Nobody ever gets credit for fixing problems that never happened (2001) [pdf]**
+    - **说明**: 一篇经典的管理学论文的PDF，探讨了组织系统中预防性工作不被认可的问题。这对于理解为什么企业倾向于“救火”而非“防火”有深刻洞见。
+    - **原文**: [https://web.mit.edu/nelsonr/www/Repenning=Sterman_CMR_su01_.pdf](https://web.mit.edu/nelsonr/www/Repenning=Sterman_CMR_su01_.pdf)
+    - **讨论**: [https://news.ycombinator.com/item?id=48498385](https://news.ycombinator.com/item?id=48498385)
+
+- **CSS: Unavoidable Bad Parts**
+    - **说明**: 一篇技术性文章，坦诚地讨论了CSS中那些“无法避免的坏的部分”，例如全局作用域、层叠问题等。对于所有Web开发者来说，这是一次有益的反思。
+    - **原文**: [https://matklad.github.io/2026/06/04/css-unavoidable-bad-parts.html](https://matklad.github.io/2026/06/04/css-unavoidable-bad-parts.html)
+    - **讨论**: [https://news.ycombinator.com/item?id=48459678](https://news.ycombinator.com/item?id=48459678)
+
+- **A new era for software testing**
+    - **说明**: Redis作者 antirez 的新文章，探讨了软件测试的未来，可能涉及新的方法论或工具。antirez 的观点在开发者社区中一直备受关注。
+    - **原文**: [https://antirez.com/news/168](https://antirez.com/news/168)
+    - **讨论**: [https://news.ycombinator.com/item?id=48433351](https://news.ycombinator.com/item?id=48433351)
+
+- **Software is made between commits**
+    - **说明**: Zed 编辑器团队的一篇博文，介绍了他们的新项目 Deltadb。文章标题暗示了软件开发中那些未被版本控制捕捉到的“中间状态”和协作过程的重要性。
+    - **原文**: [https://zed.dev/blog/introducing-deltadb](https://zed.dev/blog/introducing-deltadb)
+    - **讨论**: [https://news.ycombinator.com/item?id=48492533](https://news.ycombinator.com/item?id=48492533)
+
+- **Emacs appearances in pop culture**
+    - **说明**: 一篇轻松有趣的文章，收集了Emacs编辑器在电影、电视剧等流行文化作品中出现的镜头。对于Emacs用户和怀旧爱好者来说，这是一份不错的“彩蛋”清单。
+    - **原文**: [https://ianyepan.github.io/posts/emacs-in-pop-culture/](https://ianyepan.github.io/posts/emacs-in-pop-culture/)
+    - **讨论**: [https://news.ycombinator.com/item?id=48474274](https://news.ycombinator.com/item?id=48474274)
+
+#### 2. 开源、安全与供应链攻击
+
+这一组文章聚焦于开源生态的脆弱性、安全漏洞以及地缘政治对开源的影响。
+
+- **MiMo Code is now released and open-source**
+    - **说明**: 小米的MiMo代码库正式开源。虽然具体内容待查，但大型科技公司开源其内部项目，对社区和开发者生态通常有积极影响。
+    - **原文**: [https://mimo.xiaomi.com/mimocode](https://mimo.xiaomi.com/mimocode)
+    - **讨论**: [https://news.ycombinator.com/item?id=48490826](https://news.ycombinator.com/item?id=48490826)
+
+- **The RCE that AMD wouldn't fix**
+    - **说明**: 曝光了一个AMD处理器中存在的严重远程代码执行(RCE)漏洞，但AMD选择不修复。这引发了关于硬件安全、厂商责任和透明度的激烈讨论。
+    - **原文**: [https://mrbruh.com/amd2/](https://mrbruh.com/amd2/)
+    - **讨论**: [https://news.ycombinator.com/item?id=48492215](https://news.ycombinator.com/item?id=48492215)
+
+- **macOS 27 Beta breaks the ability to boot Asahi Linux**
+    - **说明**: Apple 最新的 macOS 27 Beta 版本破坏了 Asahi Linux 的启动能力。这凸显了在封闭生态系统中运行第三方操作系统的持续挑战，以及平台所有者对底层硬件的控制权。
+    - **原文**: [https://www.phoronix.com/news/macOS-27-Beta-Breaks-Asahi](https://www.phoronix.com/news/macOS-27-Beta-Breaks-Asahi)
+    - **讨论**: [https://news.ycombinator.com/item?id=48462070](https://news.ycombinator.com/item?id=48462070)
+
+- **Spoiling Linux Kernel with "sanctioned" code**
+    - **说明**: 探讨了由于国际制裁，某些国家的开发者可能无法向Linux内核贡献代码，或者其代码可能被视为“污染源”，这给开源项目的全球协作带来了新的地缘政治挑战。
+    - **原文**: [https://printserver.ink/blog/spoiling-the-kernel/](https://printserver.ink/blog/spoiling-the-kernel/)
+    - **讨论**: [https://news.ycombinator.com/item?id=48477208](https://news.ycombinator.com/item?id=48477208)
+
+- **Hundreds of AUR packages attacked by infostealer**
+    - **说明**: Arch Linux用户仓库(AUR)遭受供应链攻击，数百个软件包被植入信息窃取恶意软件。这是一个重大的安全事件，对所有依赖AUR的用户敲响了警钟。
+    - **原文**: [https://lists.archlinux.org/archives/list/aur-general@lists.archlinux.org/thread/FGXPCB3ZVCJIV7FX323SBAX2JHYB7ZS4/](https://lists.archlinux.org/archives/list/aur-general@lists.archlinux.org/thread/FGXPCB3ZVCJIV7FX323SBAX2JHYB7ZS4/)
+    - **讨论**: [https://lobste.rs/s/ta0sem/hundreds_aur_packages_attacked_by](https://lobste.rs/s/ta0sem/hundreds_aur_packages_attacked_by)
+
+- **Reuse Less Software**
+    - **说明**: 一篇反思软件复用的文章，提出了“少复用”的观点，可能是在探讨过度依赖第三方库带来的安全风险和“依赖地狱”问题。
+    - **原文**: [https://wiki.alopex.li/ReuseLessSoftware](https://wiki.alopex.li/ReuseLessSoftware)
+    - **讨论**: [https://lobste.rs/s/3mg7xo/reuse_less_software](https://lobste.rs/s/3mg7xo/reuse_less_software)
+
+#### 3. AI、自动化与社会责任
+
+这个组别聚焦于AI技术的最新应用、引发的法律和伦理问题，以及其在职场中的真实影响。
+
+- **German court ruling declares Google's AI Overviews are Google's own words**
+    - **说明**: 德国法院里程碑式的判决：Google 必须为其AI Overviews生成的错误信息负责，因为这被视为Google自己的言论。这对AI生成内容的版权和责任归属有深远影响。
+    - **原文**: [https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/](https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/)
+    - **讨论**: [https://lobste.rs/s/lxoosd/german_court_ruling_declares_google_s_ai](https://lobste.rs/s/lxoosd/german_court_ruling_declares_google_s_ai)
+
+- **our workplace LLM mass delusion**
+    - **说明**: 一篇批评性文章，指出当前职场中大规模使用大语言模型(LLM)的“集体幻觉”，认为许多应用场景被过度夸大，实际价值有限，且存在风险和浪费。
+    - **原文**: [https://blog.avas.space/llm-circus/](https://blog.avas.space/llm-circus/)
+    - **讨论**: [https://lobste.rs/s/lrjceq/our_workplace_llm_mass_delusion](https://lobste.rs/s/lrjceq/our_workplace_llm_mass_delusion)
+
+- **Fully autonomous drones have killed human soldiers for the first time**
+    - **说明**: 据报道，全自主无人机首次在实战中杀死人类士兵。这标志着战争自动化的一个可怕转折点，引发了关于AI伦理、武器控制和人类尊严的深刻讨论。
+    - **原文**: [https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time/](https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time/)
+    - **讨论**: [https://news.ycombinator.com/item?id=48476214](https://news.ycombinator.com/item?id=48476214)
+
+- **Show HN: FablePool – pool money behind a prompt, and Fable builds it in public**
+    - **说明**: 一个利用AI和众包的新模式：用户出资支持一个“提示词”，然后Fable平台会公开构建该提示词所描述的产品。这是AI众包和众筹的有趣结合。
+    - **原文**: [https://fablepool.com](https://fablepool.com)
+    - **讨论**: [https://news.ycombinator.com/item?id=48496539](https://news.ycombinator.com/item?id=48496539)
+
+- **Waymo Premier**
+    - **说明**: Waymo发布了其无人驾驶出租车服务的高端版本“Waymo Premier”。这标志着自动驾驶技术商业化进程的进一步深化，从大众市场向细分市场拓展。
+    - **原文**: [https://waymo.com/blog/2026/06/waymo-premier/](https://waymo.com/blog/2026/06/waymo-premier/)
+    - **讨论**: [https://news.ycombinator.com/item?id=48492304](https://news.ycombinator.com/item?id=48492304)
+
+#### 4. 能源、环境与地缘政治
+
+这组文章涉及能源转型、政府政策以及科技巨头的内部动荡。
+
+- **Solar generates more energy in US than coal for first time**
+    - **说明**: 一个历史性时刻：美国太阳能发电量首次超过煤炭。这标志着清洁能源转型取得了实质性进展，是环境和技术领域的重要里程碑。
+    - **原文**: [https://www.theguardian.com/us-news/2026/jun/11/solar-energy-us-coal](https://www.theguardian.com/us-news/2026/jun/11/solar-energy-us-coal)
+    - **讨论**: [https://news.ycombinator.com/item?id=48492306](https://news.ycombinator.com/item?id=48492306)
+
+- **Petition to Withdraw Canada's Bill C-22**
+    - **说明**: 一项要求撤回加拿大C-22法案的请愿。该法案可能涉及网络安全或互联网监管，引发了关于政府权力和公民自由的争议。
+    - **原文**: [https://www.ourcommons.ca/petitions/en/Petition/Sign/e-7416](https://www.ourcommons.ca/petitions/en/Petition/Sign/e-7416)
+    - **讨论**: [https://news.ycombinator.com/item?id=48491830](https://news.ycombinator.com/item?id=48491830)
+
+- **Why I'm Forced to Say Farewell: Google Management Has Lost Its Moral Compass**
+    - **说明**: 一名前Google员工发表的长文，控诉公司管理层失去了道德指南针。这反映了科技巨头内部的文化冲突和员工士气的普遍问题。
+    - **原文**: [https://www.mayrhofer.eu.org/post/leaving-google/](https://www.mayrhofer.eu.org/post/leaving-google/)
+    - **讨论**: [https://news.ycombinator.com/item?id=48496396](https://news.ycombinator.com/item?id=48496396)
+
+- **Nextcloud Hub 26 Spring: Built together, designed for the future**
+    - **说明**: 开源私有云平台Nextcloud发布了其最新版本Hub 26。在数据隐私日益受到关注的今天，此类自托管解决方案的更新值得关注。
+    - **原文**: [https://nextcloud.com/blog/nextcloud-hub26-spring/](https://nextcloud.com/blog/nextcloud-hub26-spring/)
+    - **讨论**: [https://news.ycombinator.com/item?id=48490715](https://news.ycombinator.com/item?id=48490715)
+
+#### 5. 复古计算、硬件与趣味项目
+
+这一组充满了对过去的怀旧、硬核的技术挑战和创意项目。
+
+- **Developer gets Half-Life running at 30 FPS on a Nokia N95**
+    - **说明**: 一位开发者成功让经典游戏《半条命》在2007年的诺基亚N95手机上以30帧运行。这是对硬件极限的极致探索，充满了“极客浪漫”。
+    - **原文**: [https://www.tomshardware.com/video-games/handheld-gaming/developer-gets-half-life-running-at-30-fps-on-a-2007-nokia-n95](https://www.tomshardware.com/video-games/handheld-gaming/developer-gets-half-life-running-at-30-fps-on-a-2007-nokia-n95)
+    - **讨论**: [https://news.ycombinator.com/item?id=48452001](https://news.ycombinator.com/item?id=48452001)
+
+- **Discovery of Cold War-era rare Eastern Bloc computers in a German hangar**
+    - **说明**: 在德国的一个机库中发现了冷战时期的稀有东欧计算机。这对计算机历史学家和收藏家来说是一个重大的考古发现。
+    - **原文**: [https://computerhistory.org/stories/explorers-of-the-lost-computers/](https://computerhistory.org/stories/explorers-of-the-lost-computers/)
+    - **讨论**: [https://news.ycombinator.com/item?id=48428959](https://news.ycombinator.com/item?id=4842899:["$","section","tech",{"id":"tech","children":[["$","div",null,{"className":"flex items-center gap-3 mb-6","children":[["$","h2",null,{"className":"text-2xl font-bold text-gray-900 dark:text-white","children":"Technology"}],["$","span",null,{"className":"text-sm text-gray-500 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded","children":[30," ","articles"]}]]}],["$","div",null,{"className":"space-y-6","children":[["$","$L5",null,{"summary":"$12","topicName":"Technology","locale":"en"}],"$L13"]}]]}]
+a:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["Generated by"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","Powered by DeepSeek"]}]}]}]
+b:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
+c:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
+d:["$","$L14",null,{"children":["$","$15",null,{"name":"Next.MetadataOutlet","children":"$@16"}]}]
+11:["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Le","Sidebar.io",{"sourceName":"Sidebar.io","articles":[{"id":"rss-bbb0cdb845dc","title":"Discovery vs Delivery","url":"https://buzzusborne.com/writing/discovery-delivery/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-11T06:32:02","author":"unknown","text":"<p>A personal perspective on AI, product quality and the growing divide between deciding what should exist and efficiently building it.</p>\n<br /><br />","summary":"探讨AI时代下，决定产品方向与高效构建之间的鸿沟，对产品设计质量提出个人见解。"},{"id":"rss-6617360c1f63","title":"The website specification","url":"https://specification.website/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-11T06:31:29","author":"unknown","text":"<p>A platform-agnostic, full specification of the technical features a good website should have. Built in the open under an MIT license.</p>\n<br /><br />","summary":"提供一份平台无关、开源的技术规范，定义优秀网站应具备的完整功能，值得开发者参考。"},{"id":"rss-22830a8134da","title":"Liquid Glass: who gets to decide how an interface looks?","url":"https://uxdesign.cc/liquid-glass-who-gets-to-decide-how-an-interface-looks-a0abe75ae21e?sk=c2ed9d75243ed7219989e32dd0f340b6","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-11T06:29:57","author":"unknown","text":"<p>Notes from the 2026 WWDC keynote.</p>\n<br /><br />","summary":"以2026年WWDC为背景，反思界面设计话语权问题，探讨“液态玻璃”风格的未来。"},{"id":"rss-6efdd1a7aaf4","title":"Building glass for the web","url":"https://aave.com/design/building-glass-for-the-web","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-11T06:29:22","author":"unknown","text":"<p>How we built a cross-browser glass effect for the web, and how it shapes a family of components.</p>\n<br /><br />","summary":"分享跨浏览器实现玻璃效果的技术实践，并展示如何将其融入组件体系。"},{"id":"rss-0bb9356ff6d9","title":"UI skills for design engineers","url":"https://www.ui-skills.com/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-11T06:26:35","author":"unknown","text":"<p>Discover curated UI Skills for design engineers, including accessibility, motion, frontend craft, and interface quality guides.</p>\n<br /><br />","summary":"为设计工程师整理UI技能资源，涵盖无障碍、动效、前端工艺等实用指南。"},{"id":"rss-b987f5c23262","title":"How I validated design decisions before writing production code","url":"https://slack.design/articles/how-i-validated-design-decisions-before-writing-production-code/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-10T07:56:24","author":"unknown","text":"<p>We can finally generate evidence before committing to anything.</p>\n<br /><br />","summary":"介绍在编写生产代码前通过验证设计决策来获取证据的方法，提升设计效率。"},{"id":"rss-bffe4dc6bbad","title":"fonts.xyz","url":"https://www.fonts.xyz/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-10T07:55:31","author":"unknown","text":"<p>A little internet village for independent type foundries and designers.</p>\n<br /><br />","summary":"为独立字体工作室和设计师打造的线上社区，值得关注字体设计领域的创新。"},{"id":"rss-5375715328fa","title":"The old typography is new again","url":"https://elliotjaystocks.com/blog/the-old-typography-is-new-again","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-10T07:54:56","author":"unknown","text":"<p>How variable fonts utilize optical sizing axes to automate legibility across varying viewports and scales.</p>\n<br /><br />","summary":"解析可变字体如何利用光学尺寸轴自动优化不同视口下的可读性，重振经典排版。"},{"id":"rss-69ca411e7d4b","title":"performative-ui","url":"https://vorpus.github.io/performativeUI/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-10T07:53:54","author":"unknown","text":"<p>Components that signal how oversubscribed your funding round is.</p>\n<br /><br />","summary":"展示一种讽刺性的UI组件，用于暗示融资轮次过度认购，引发对设计伦理的思考。"},{"id":"rss-24d37c42fe90","title":"The four design jobs AI created (so far)","url":"https://www.nngroup.com/articles/design-jobs-ai-created/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-10T07:53:16","author":"unknown","text":"<p>“AI design” is one label but has forked into four different types of work.</p>\n<br /><br />","summary":"分析AI催生的四种设计岗位，揭示“AI设计”标签下的实际工作分化。"},{"id":"rss-92aeafa9dc4f","title":"Falling in love with the build","url":"https://karlkoch.me/writing/falling-in-love-with-the-build","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-09T07:05:15","author":"unknown","text":"<p>Write-first design prevents falling in love with the wrong thing by prioritizing reasoning over implementation.</p>\n<br /><br />","summary":"本文探讨了“写优先设计”理念，强调通过优先推理而非实现来避免爱上错误的设计方案，对设计师有启发意义。"},{"id":"rss-2e1088868b4a","title":"How to center an element horizontally and vertically","url":"https://css-generators.com/center/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-09T07:04:51","author":"unknown","text":"<p>100 different ways to center a single element horizontally and vertically inside a container.</p>\n<br /><br />","summary":"文章展示了100种在容器内水平和垂直居中元素的方法，是CSS布局的实用参考。"},{"id":"rss-d9a84a5ff7fa","title":"Building a general-purpose accessibility agent","url":"https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-09T07:04:26","author":"unknown","text":"<p>The experimental general-purpose accessibility agent that GitHub is piloting.</p>\n<br /><br />","summary":"GitHub正在试验一个通用无障碍代理，本文分享了开发过程中的经验，对无障碍技术发展有参考价值。"},{"id":"rss-c70988937eb0","title":"Enshittifier: replace AI with 💩","url":"https://enshittifier.wells.ee/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-09T07:03:50","author":"unknown","text":"<p>The web is drowning in AI. We replace it with 💩. In your browser. In your fonts.</p>\n<br /><br />","summary":"该工具用💩符号替换网页中的AI相关内容，讽刺了AI泛滥现象，引发对技术伦理的思考。"},{"id":"rss-fce26b6cad12","title":"Loop engineering","url":"https://addyosmani.com/blog/loop-engineering/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-09T07:03:15","author":"unknown","text":"<p>You don’t really need to be good at prompting anymore. The thing to get good at is the loop that does the prompting for you.</p>\n<br /><br />","summary":"文章指出，在AI时代，重点不再是提示词技巧，而是设计高效的循环来驱动提示过程，对AI应用开发者有指导意义。"}],"locale":"en"}]]}]
+13:["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Le","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-48490024","title":"Show HN: Homebrew 6.0.0","url":"https://brew.sh/2026/06/11/homebrew-6.0.0/","source":"Hacker News","score":1017,"comments_count":241,"comments_url":"https://news.ycombinator.com/item?id=48490024","published_at":"2026-06-11T13:24:29","author":"mikemcquaid","text":"Today, I’m proud to announce Homebrew 6.0.0. The most significant changes since 5.1.0 are a new tap trust security mechanism, the new faster, smaller, default internal Homebrew JSON API, sandboxing on Linux, better defaults informed by our user survey, many brew bundle improvements, improved performance and initial support for macOS 27 (Golden Gate).<p>Happy to discuss any questions here!","summary":"Homebrew 6.0.0 发布，引入新的 tap 信任安全机制、更快的 JSON API、Linux 沙箱等改进，值得关注因为它提升了包管理器的安全性和性能。"},{"id":"hn-48490826","title":"MiMo Code is now released and open-source","url":"https://mimo.xiaomi.com/mimocode","source":"Hacker News","score":432,"comments_count":248,"comments_url":"https://news.ycombinator.com/item?id=48490826","published_at":"2026-06-11T14:27:19","author":"apeters","text":null,"summary":"小米开源了 MiMo Code，这是一个值得关注的代码项目，可能涉及移动开发或系统工具。"},{"id":"hn-48492306","title":"Solar generates more energy in US than coal for first time","url":"https://www.theguardian.com/us-news/2026/jun/11/solar-energy-us-coal","source":"Hacker News","score":422,"comments_count":203,"comments_url":"https://news.ycombinator.com/item?id=48492306","published_at":"2026-06-11T16:10:05","author":"neilfrndes","text":null,"summary":"美国太阳能发电量首次超过煤炭，标志着可再生能源在能源结构中的重要转折点，对气候政策和能源市场有深远影响。"},{"id":"hn-48491830","title":"Petition to Withdraw Canada's Bill C-22","url":"https://www.ourcommons.ca/petitions/en/Petition/Sign/e-7416","source":"Hacker News","score":376,"comments_count":129,"comments_url":"https://news.ycombinator.com/item?id=48491830","published_at":"2026-06-11T15:37:23","author":"hmokiguess","text":null,"summary":"加拿大 Bill C-22 请愿书呼吁撤回该法案，该法案可能涉及数字监管或隐私问题，值得关注其对科技行业的影响。"},{"id":"hn-48489402","title":"Lines of code got a better publicist","url":"https://curlewis.co.nz/posts/lines-of-code-got-a-better-publicist/","source":"Hacker News","score":366,"comments_count":248,"comments_url":"https://news.ycombinator.com/item?id=48489402","published_at":"2026-06-11T12:26:42","author":"RyeCombinator","text":null,"summary":"文章探讨代码行数作为衡量标准被过度推崇的现象，提醒开发者关注代码质量而非数量，对软件工程实践有启发。"},{"id":"hn-48442880","title":"Doing nothing at work","url":"https://www.seangoedecke.com/doing-nothing-at-work/","source":"Hacker News","score":352,"comments_count":128,"comments_url":"https://news.ycombinator.com/item?id=48442880","published_at":"2026-06-08T08:57:11","author":"Sukram21","text":null,"summary":"讨论工作中“无所事事”的现象及其背后的原因，引发对工作效率和职场文化的反思，适合职场人士阅读。"},{"id":"hn-48497609","title":"If you are asking for human attention, demonstrate human effort","url":"https://tombedor.dev/human-attention-and-human-effort/","source":"Hacker News","score":315,"comments_count":86,"comments_url":"https://news.ycombinator.com/item?id=48497609","published_at":"2026-06-11T23:01:55","author":"jjfoooo4","text":null,"summary":"强调在请求他人关注时需展示自身努力，对技术社区中的沟通和协作方式有指导意义。"},{"id":"hn-48474274","title":"Emacs appearances in pop culture","url":"https://ianyepan.github.io/posts/emacs-in-pop-culture/","source":"Hacker News","score":271,"comments_count":75,"comments_url":"https://news.ycombinator.com/item?id=48474274","published_at":"2026-06-10T10:37:45","author":"ggcr","text":null,"summary":"汇总 Emacs 在流行文化中的出现，展示这款经典编辑器的文化影响力，对技术历史和怀旧爱好者有吸引力。"},{"id":"hn-48496539","title":"Show HN: FablePool – pool money behind a prompt, and Fable builds it in public","url":"https://fablepool.com","source":"Hacker News","score":269,"comments_count":157,"comments_url":"https://news.ycombinator.com/item?id=48496539","published_at":"2026-06-11T21:17:30","author":"matthewbarras","text":null,"summary":"FablePool 是一个众筹平台，用户为项目提供资金后，Fable 会公开构建过程，这种透明开发模式值得关注。"},{"id":"hn-48462070","title":"macOS 27 Beta breaks the ability to boot Asahi Linux","url":"https://www.phoronix.com/news/macOS-27-Beta-Breaks-Asahi","source":"Hacker News","score":251,"comments_count":110,"comments_url":"https://news.ycombinator.com/item?id=48462070","published_at":"2026-06-09T15:01:43","author":"josephcsible","text":"<a href=\"https:&#x2F;&#x2F;social.treehouse.systems&#x2F;@AsahiLinux&#x2F;116719749555082847\" rel=\"nofollow\">https:&#x2F;&#x2F;social.treehouse.systems&#x2F;@AsahiLinux&#x2F;116719749555082...</a>","summary":"macOS 27 Beta 更新导致 Asahi Linux 无法启动，凸显了苹果系统更新对第三方操作系统兼容性的影响，对 Linux 用户至关重要。"},{"id":"hn-48496396","title":"Why I'm Forced to Say Farewell: Google Management Has Lost Its Moral Compass","url":"https://www.mayrhofer.eu.org/post/leaving-google/","source":"Hacker News","score":234,"comments_count":150,"comments_url":"https://news.ycombinator.com/item?id=48496396","published_at":"2026-06-11T21:04:47","author":"timedude","text":null,"summary":"一篇前谷歌员工的文章，批评谷歌管理层失去道德指南针，导致其被迫离职。值得关注，因为它揭示了大型科技公司内部的文化和道德问题。"},{"id":"hn-48492215","title":"The RCE that AMD wouldn't fix","url":"https://mrbruh.com/amd2/","source":"Hacker News","score":230,"comments_count":100,"comments_url":"https://news.ycombinator.com/item?id=48492215","published_at":"2026-06-11T16:03:40","author":"MrBruh","text":"See also <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=4HjWHNLRMB0\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=4HjWHNLRMB0</a><p>Related: <i>The RCE that AMD won&#x27;t fix</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=46906947\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=46906947</a> - Feb 2026 (173 comments)","summary":"报道AMD一个拒绝修复的远程代码执行漏洞。值得关注，因为它涉及重大安全漏洞和厂商责任问题。"},{"id":"hn-48452001","title":"Developer gets Half-Life running at 30 FPS on a Nokia N95","url":"https://www.tomshardware.com/video-games/handheld-gaming/developer-gets-half-life-running-at-30-fps-on-a-2007-nokia-n95","source":"Hacker News","score":222,"comments_count":74,"comments_url":"https://news.ycombinator.com/item?id=48452001","published_at":"2026-06-08T21:02:01","author":"ljf","text":"<a href=\"https:&#x2F;&#x2F;twitter.com&#x2F;dante_leoncini&#x2F;status&#x2F;2063035015068307905\" rel=\"nofollow\">https:&#x2F;&#x2F;twitter.com&#x2F;dante_leoncini&#x2F;status&#x2F;206303501506830790...</a>","summary":"开发者成功在2007年的诺基亚N95手机上以30帧每秒运行《半条命》。值得关注，因为它展示了旧硬件上的技术优化成就。"},{"id":"hn-48492533","title":"Software is made between commits","url":"https://zed.dev/blog/introducing-deltadb","source":"Hacker News","score":212,"comments_count":163,"comments_url":"https://news.ycombinator.com/item?id=48492533","published_at":"2026-06-11T16:28:24","author":"jeremy_k","text":null,"summary":"文章提出软件是在两次提交之间创建的，并介绍了DeltaDB工具。值得关注，因为它重新思考了软件开发过程的核心。"},{"id":"hn-48476214","title":"Fully autonomous drones have killed human soldiers for the first time","url":"https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time/","source":"Hacker News","score":188,"comments_count":175,"comments_url":"https://news.ycombinator.com/item?id=48476214","published_at":"2026-06-10T13:46:14","author":"deadgopher","text":null,"summary":"报道全自主无人机首次杀死人类士兵。值得关注，因为它标志着自主武器系统的一个关键转折点。"},{"id":"hn-48490532","title":"MapComplete: Maps about various topics which you can contribute to","url":"https://mapcomplete.org/","source":"Hacker News","score":180,"comments_count":43,"comments_url":"https://news.ycombinator.com/item?id=48490532","published_at":"2026-06-11T14:04:05","author":"GTP","text":null,"summary":"介绍MapComplete，一个可贡献多种主题地图的平台。值得关注，因为它促进了开放数据和社区协作。"},{"id":"hn-48492304","title":"Waymo Premier","url":"https://waymo.com/blog/2026/06/waymo-premier/","source":"Hacker News","score":160,"comments_count":409,"comments_url":"https://news.ycombinator.com/item?id=48492304","published_at":"2026-06-11T16:10:02","author":"boulos","text":null,"summary":"Waymo宣布推出高级自动驾驶服务Waymo Premier。值得关注，因为它代表了自动驾驶商业化的新进展。"},{"id":"hn-48487897","title":"Web Browsers on Video Game Consoles","url":"https://vale.rocks/posts/game-console-browsers","source":"Hacker News","score":157,"comments_count":75,"comments_url":"https://news.ycombinator.com/item?id=48487897","published_at":"2026-06-11T08:47:36","author":"robin_reala","text":null,"summary":"探讨视频游戏主机上的网页浏览器历史与现状。值得关注，因为它涉及游戏主机的多功能性和技术演进。"},{"id":"hn-48498385","title":"Nobody ever gets credit for fixing problems that never happened (2001) [pdf]","url":"https://web.mit.edu/nelsonr/www/Repenning=Sterman_CMR_su01_.pdf","source":"Hacker News","score":125,"comments_count":38,"comments_url":"https://news.ycombinator.com/item?id=48498385","published_at":"2026-06-12T00:38:11","author":"sam_bristow","text":null,"summary":"一篇2001年的文章，讨论防止问题发生的人很少获得认可。值得关注，因为它提出了预防性工作的价值被低估的经典观点。"},{"id":"hn-48459678","title":"CSS: Unavoidable Bad Parts","url":"https://matklad.github.io/2026/06/04/css-unavoidable-bad-parts.html","source":"Hacker News","score":118,"comments_count":77,"comments_url":"https://news.ycombinator.com/item?id=48459678","published_at":"2026-06-09T11:30:20","author":"surprisetalk","text":null,"summary":"分析CSS中不可避免的糟糕部分。值得关注，因为它帮助开发者理解并应对CSS的固有缺陷。"},{"id":"hn-48433351","title":"A new era for software testing","url":"https://antirez.com/news/168","source":"Hacker News","score":116,"comments_count":43,"comments_url":"https://news.ycombinator.com/item?id=48433351","published_at":"2026-06-07T09:57:18","author":"Chrisszz","text":null,"summary":"文章探讨软件测试的新时代，强调自动化与AI驱动的测试方法正在改变开发流程，值得关注因为它预示着软件质量保障的范式转变。"},{"id":"hn-48490715","title":"Nextcloud Hub 26 Spring: Built together, designed for the future","url":"https://nextcloud.com/blog/nextcloud-hub26-spring/","source":"Hacker News","score":116,"comments_count":86,"comments_url":"https://news.ycombinator.com/item?id=48490715","published_at":"2026-06-11T14:17:47","author":"doener","text":null,"summary":"Nextcloud Hub 26 Spring版本发布，强调协作构建和面向未来的设计，值得关注因为它展示了开源云平台的持续创新和功能增强。"},{"id":"hn-48491486","title":"FPS.cob: A first person shooter in COBOL","url":"https://github.com/icitry/FPS.cob","source":"Hacker News","score":107,"comments_count":63,"comments_url":"https://news.ycombinator.com/item?id=48491486","published_at":"2026-06-11T15:13:57","author":"MBCook","text":null,"summary":"一个用COBOL语言编写的第一人称射击游戏项目，值得关注因为它挑战了传统编程语言的认知，展示了复古技术的创造性应用。"},{"id":"hn-48477208","title":"Spoiling Linux Kernel with \"sanctioned\" code","url":"https://printserver.ink/blog/spoiling-the-kernel/","source":"Hacker News","score":100,"comments_count":37,"comments_url":"https://news.ycombinator.com/item?id=48477208","published_at":"2026-06-10T14:51:11","author":"ValdikSS","text":null,"summary":"文章揭露了在Linux内核中引入‘制裁’代码的风险，值得关注因为它涉及开源社区的安全性和政治干预的敏感议题。"},{"id":"hn-48428959","title":"Discovery of Cold War-era rare Eastern Bloc computers in a German hangar","url":"https://computerhistory.org/stories/explorers-of-the-lost-computers/","source":"Hacker News","score":99,"comments_count":25,"comments_url":"https://news.ycombinator.com/item?id=48428959","published_at":"2026-06-06T21:00:31","author":"andrewstuart","text":null,"summary":"在德国机库中发现冷战时期东欧计算机，值得关注因为它揭示了被遗忘的技术历史，对计算机考古和冷战研究有重要价值。"}],"locale":"en"}],"$L17"]}]
+16:null
+17:["$","$Le","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-7288e9a62a16","title":"German court ruling declares Google's AI Overviews are Google's own words and makes it liable for false answers","url":"https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-11T06:47:18","author":"the-decoder.com via gspr","text":"<p>Title trimmed slightly without altering meaning.</p>\n<p><a href=\"https://lobste.rs/s/lxoosd/german_court_ruling_declares_google_s_ai\">Comments</a></p>","summary":"德国法院裁定Google的AI概览视为其自身言论，需为错误答案负责，值得关注因为它对AI责任和言论自由的法律框架产生深远影响。"},{"id":"rss-caa31f644fc6","title":"Hundreds of AUR packages attacked by infostealer","url":"https://lists.archlinux.org/archives/list/aur-general@lists.archlinux.org/thread/FGXPCB3ZVCJIV7FX323SBAX2JHYB7ZS4/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-11T19:36:02","author":"lists.archlinux.org via vivicat","text":"<p>More info in Mastodon post: <a href=\"https://gaysex.cloud/notes/andaxow7itfn05x9\" rel=\"ugc\">https://gaysex.cloud/notes/andaxow7itfn05x9</a></p>\n<p>List of affected packages: <a href=\"https://gr.ht/aur_pkg_list.txt\" rel=\"ugc\">https://gr.ht/aur_pkg_list.txt</a></p>\n<p><a href=\"https://lobste.rs/s/ta0sem/hundreds_aur_packages_attacked_by\">Comments</a></p>","summary":"数百个AUR软件包遭信息窃取攻击，值得关注因为它威胁到Arch Linux用户的安全，凸显了开源软件供应链的脆弱性。"},{"id":"rss-1c228ee4dd38","title":"Reuse Less Software","url":"https://wiki.alopex.li/ReuseLessSoftware","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-11T16:15:10","author":"wiki.alopex.li by icefox","text":"<p><a href=\"https://lobste.rs/s/3mg7xo/reuse_less_software\">Comments</a></p>","summary":"文章提倡‘少重用软件’，强调避免过度依赖库和框架，值得关注因为它挑战了现代软件开发中的常见实践，倡导简洁和自主。"},{"id":"rss-9391739b5264","title":"our workplace LLM mass delusion","url":"https://blog.avas.space/llm-circus/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-11T15:13:02","author":"blog.avas.space via FedericoSchonborn","text":"<p><a href=\"https://lobste.rs/s/lrjceq/our_workplace_llm_mass_delusion\">Comments</a></p>","summary":"文章批判职场中对LLM的盲目追捧，指出其导致集体幻觉，值得关注因为它揭示了AI应用中的现实问题和过度承诺的风险。"},{"id":"rss-ce256ac3d591","title":"An interactive introduction to the terrific experience of rendering Arabic typography and its technical debt","url":"https://lr0.org/blog/p/arabic/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-06-10T23:19:43","author":"lr0.org by lr0","text":"<p><a href=\"https://lobste.rs/s/ptkd7x/interactive_introduction_terrific\">Comments</a></p>","summary":"交互式介绍阿拉伯文字渲染的复杂性和技术债务，值得关注因为它揭示了多语言支持中的技术挑战，对全球化和本地化有重要启示。"}],"locale":"en"}]
