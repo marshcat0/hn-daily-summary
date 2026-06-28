@@ -3,134 +3,108 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-e:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-f:"$Sreact.suspense"
-5:T2e33,好的，作为专业的技术新闻分析师，以下是对今日“AI & Machine Learning”热门内容的综合分析。
+d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+5:T24fa,好的，作为一名专业的技术新闻分析师，以下是对今日 “AI & Machine Learning” 热门内容的分析与总结。
+
+### 综合分析
+
+今日的AI新闻呈现出几个鲜明的趋势：**前沿模型军备竞赛**（OpenAI发布预览版）、**基础设施效率优化**（DeepSeek的推测解码、KV缓存修剪）以及**AI应用与社会影响的反思**。同时，AI在**垂直领域的应用**（如RFIC射频芯片设计、生态管理）和**地缘政治影响下的市场动态**（亚洲AI初创公司崛起）也占据了重要篇幅。社区讨论的热点集中在模型安全、AI控制的权力分配以及一些有趣的实用工具上。
 
 ---
 
-### 今日 AI & Machine Learning 热点分析
+### 子主题与文章分组
 
-今天的热点高度集中在**前沿模型的发布与监管**上，特别是OpenAI的GPT-5.6预览版及其引发的政府介入审查，成为了绝对焦点。同时，AI安全、模型应用效率、以及AI对传统领域（如数学、阅读）的冲击也是讨论的重点。
+#### 1. 前沿模型与巨头动态
 
-### 按主题分组分析
+*   **Previewing GPT‑5.6 Sol: a next-generation model**
+    *   **说明**：OpenAI发布了其下一代模型GPT-5.6 Sol的预览。这篇文章是系统卡，详细介绍了模型的能力、安全评估和局限性。这是目前AI领域最受关注的事件，评分高达1105，讨论超过700条，标志着AI能力的新里程碑。
+    *   **原文链接**：[https://openai.com/index/previewing-gpt-5-6-sol/](https://openai.com/index/previewing-gpt-5-6-sol/)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48689028](https://news.ycombinator.com/item?id=48689028)
 
-#### 1. 前沿模型发布与监管（核心焦点）
+#### 2. 推理效率与硬件优化
 
-这是今天最重磅的话题，围绕OpenAI的GPT-5.6预览版展开，并迅速延伸到政府监管层面。
+*   **DSpark: Speculative decoding accelerates LLM inference [pdf]**
+    *   **说明**：DeepSeek发布了关于“推测解码”的论文DSpark。这项技术旨在加速大语言模型的推理过程，在不降低质量的前提下显著提升响应速度。对于部署大规模LLM服务来说至关重要。
+    *   **原文链接**：[https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf](https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48696585](https://news.ycombinator.com/item?id=48696585)
 
-- **标题：Previewing GPT‑5.6 Sol: a next-generation model**
-  - **说明：** OpenAI正式发布了GPT-5.6的预览版，代号“Sol”。这是下一代前沿大模型，其系统卡（System Card）详细阐述了其能力、风险和部署安全措施。这是整个AI社区关注的焦点，预示着新一轮模型能力的竞赛。
-  - **文章链接：** [https://openai.com/index/previewing-gpt-5-6-sol/](https://openai.com/index/previewing-gpt-5-6-sol/)
-  - **讨论链接：** [https://news.ycombinator.com/item?id=48689028](https://news.ycombinator.com/item?id=48689028)
-  - **系统卡链接：** [https://deploymentsafety.openai.com/gpt-5-6-preview](https://deploymentsafety.openai.com/gpt-5-6-preview)
+*   **Show HN: KV-psi, using Linux PSI to to trim an LLM KV cache**
+    *   **说明**：一个有趣的项目，利用Linux内核的“压力失速信息（PSI）”来动态剪枝LLM的KV缓存。这尤其适用于像Jetson Orin这样的边缘设备，通过系统压力信号来管理内存，优化本地模型运行。
+    *   **原文链接**：[https://github.com/infiniteregrets/kv-psi](https://github.com/infiniteregrets/kv-psi)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48702538](https://news.ycombinator.com/item?id=48702538)
 
-- **标题：U.S. government will decide who gets to use GPT-5.6**
-  - **说明：** 紧随模型发布，华盛顿邮报报道称，美国**政府将直接介入**，决定哪些实体或个人可以使用GPT-5.6。这标志着AI监管进入了一个全新阶段，从企业自我约束转向国家层面的“准入制”管控，引发了关于国家安全、技术垄断和创新自由的激烈讨论。
-  - **文章链接：** [https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/](https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/)
-  - **存档链接：** [https://archive.ph/PCQQl](https://archive.ph/PCQQl)
-  - **讨论链接：** [https://news.ycombinator.com/item?id=48690101](https://news.ycombinator.com/item?id=48690101)
+#### 3. AI应用与社会影响
 
-- **标题：US allows Anthropic to release Mythos to 'trusted partners'**
-  - **说明：** 另一家AI巨头Anthropic也获得了美国政府许可，将其新模型“Mythos”仅向“受信任的合作伙伴”发布。这进一步印证了美国政府在AI领域的“许可制”趋势，即对最强大的模型进行定向分发，而非面向公众开放。这突显了AI地缘政治和安全考量的重要性。
-  - **文章链接：** [https://www.reuters.com/technology/us-releases-anthropic-model-mythos-some-us-companies-semafor-reports-2026-06-26/](https://www.reuters.com/technology/us-releases-anthropic-model-mythos-some-us-companies-semafor-reports-2026-06-26/)
-  - **讨论链接：** [https://news.ycombinator.com/item?id=48692995](https://news.ycombinator.com/item?id=48692995)
+*   **AI learns the “dark art” of RFIC design**
+    *   **说明**：AI学会了射频集成电路（RFIC）设计的“黑暗艺术”。这展示了AI在专业工程领域的突破，能够处理极其复杂的电磁物理问题，有望颠覆芯片设计流程。
+    *   **原文链接**：[https://spectrum.ieee.org/ai-radio-chip-design](https://spectrum.ieee.org/ai-radio-chip-design)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48660021](https://news.ycombinator.com/item?id=48660021)
 
-- **标题：OpenAI leans toward waiting until next year for IPO**
-  - **说明：** 在模型发布和政府监管的双重压力下，OpenAI的IPO计划可能推迟到明年。这反映出公司在商业化与应对复杂监管环境之间的权衡，也暗示了其高昂的研发成本和不确定的商业前景。
-  - **文章链接：** [https://www.nytimes.com/2026/06/25/technology/openai-ipo-artificial-intelligence.html](https://www.nytimes.com/2026/06/25/technology/openai-ipo-artificial-intelligence.html)
-  - **讨论链接：** [https://news.ycombinator.com/item?id=48678873](https://news.ycombinator.com/item?id=48678873)
+*   **Reducing tick density along recreational trails in Ottawa, Canada**
+    *   **说明**：一篇关于利用AI或相关技术减少加拿大渥太华休闲步道蜱虫密度的研究。这体现了AI在公共卫生和生态管理中的实际应用价值。
+    *   **原文链接**：[https://www.sciencedirect.com/science/article/pii/S1877959X26000476](https://www.sciencedirect.com/science/article/pii/S1877959X26000476)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48664063](https://news.ycombinator.com/item?id=48664063)
 
-#### 2. AI安全与红队测试
+*   **What Ozempic does to the gut-brain axis**
+    *   **说明**：探讨Ozempic（司美格鲁肽）对肠脑轴的影响。虽然不完全属于AI，但这类生命科学进展常与AI驱动的药物发现和分析相关联，是AI应用的重要背景。
+    *   **原文链接**：[https://www.psychologytoday.com/au/blog/mood-by-microbe/202606/what-ozempic-does-to-the-gut-brain-axis](https://www.psychologytoday.com/au/blog/mood-by-microbe/202606/what-ozempic-does-to-the-gut-brain-axis)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48701984](https://news.ycombinator.com/item?id=48701984)
 
-模型越强大，安全测试和攻防对抗就越重要。
+#### 4. 地缘政治与市场格局
 
-- **标题：What happened after 2k people tried to hack my AI assistant**
-  - **说明：** 一个非常有趣的实际案例。作者开放了自己的AI助手，让2000人尝试破解（越狱）。文章详细记录了攻击手法、防御策略和从中吸取的教训，对于任何构建AI应用的团队来说，都是一份宝贵的实战安全指南。
-  - **文章链接：** [https://www.fernandoi.cl/posts/hackmyclaw/](https://www.fernandoi.cl/posts/hackmyclaw/)
-  - **讨论链接：** [https://news.ycombinator.com/item?id=48681687](https://news.ycombinator.com/item?id=48681687)
+*   **Asian AI startups launch Mythos-like models**
+    *   **说明**：随着Anthropic的出口禁令持续，亚洲AI初创公司开始推出类似“Mythos”的模型。这反映了地缘政治正在重塑AI供应链，催生了新的市场竞争者和技术生态。
+    *   **原文链接**：[https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/](https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48697958](https://news.ycombinator.com/item?id=48697958)
 
-#### 3. 模型应用与效率提升
+#### 5. 安全、治理与批判性思考
 
-社区在探索如何更高效、更经济地使用现有模型。
+*   **Anatomy of a Failed (Nation-State?) Attack**
+    *   **说明**：对一次疑似国家级网络攻击失败案例的技术剖析。在AI时代，网络攻击的复杂度和自动化程度都在提升，此类分析对安全社区至关重要。
+    *   **原文链接**：[https://grack.com/blog/2026/06/25/dissecting-a-failed-nation-state-attack/](https://grack.com/blog/2026/06/25/dissecting-a-failed-nation-state-attack/)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48694631](https://news.ycombinator.com/item?id=48694631)
 
-- **标题：Show HN: Smart model routing directly in Claude, Codex and Cursor**
-  - **说明：** 一个非常实用的开源工具。它能智能地将代码生成请求路由到最合适的模型（例如，简单任务用小模型，复杂任务用大模型），从而在保证质量的同时大幅降低成本。对于重度使用AI编程助手的开发者来说，这是一个值得关注的效率工具。
-  - **文章链接：** [https://github.com/workweave/router](https://github.com/workweave/router)
-  - **讨论链接：** [https://news.ycombinator.com/item?id=48688700](https://news.ycombinator.com/item?id=48688700)
+*   **Everyone feared AI taking over; the real danger is AI serving just the few**
+    *   **说明**：一篇引发广泛讨论的评论文章，观点是比起AI奴役人类，更大的风险是政府和科技巨头垄断AI，使其只为少数人服务。这触及了AI治理的核心伦理问题。
+    *   **原文链接**：无
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48701615](https://news.ycombinator.com/item?id=48701615)
 
-- **标题：AgentKits – 60 production-ready AI agent blueprints with guardrails**
-  - **说明：** 提供了60个可直接用于生产的AI Agent蓝图，并内置了安全护栏（guardrails）。这降低了构建可靠AI Agent的门槛，对于希望快速将AI代理投入实际业务场景的团队非常有价值。
-  - **文章链接：** [https://www.agent-kits.com](https://www.agent-kits.com)
-  - **讨论链接：** [https://news.ycombinator.com/item?id=48692101](https://news.ycombinator.com/item?id=48692101)
+#### 6. 实用工具与趣味项目
 
-- **标题：Show HN: Hacker News on a Train Station Style Flip Board**
-  - **说明：** 一个有趣的项目，将Hacker News的新闻用火车站翻页板的形式展示。虽然本身不是AI项目，但它展示了如何利用AI友好的“Vibe”托管服务快速构建创意应用，并强调了可复用和可混搭的理念。
-  - **文章链接：** [https://popflame.quickish.space/hn-flipboard/](https://popflame.quickish.space/hn-flipboard/)
-  - **讨论链接：** [https://news.ycombinator.com/item?id=48693912](https://news.ycombinator.com/item?id=48693912)
+*   **Show HN: Adrafinil – keep a lid-closed Mac awake only while agents work**
+    *   **说明**：一个为解决特定痛点而生的实用工具。解决的是MacBook合盖运行AI Agent时强制休眠的问题。它比传统的caffeinate更智能，只在Agent运行时阻止休眠，避免了忘记关闭导致的电量耗尽。
+    *   **原文链接**：[https://github.com/kageroumado/adrafinil](https://github.com/kageroumado/adrafinil)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48701512](https://news.ycombinator.com/item?id=48701512)
 
-#### 4. 模型对比与行业趋势
+*   **Response to AI slop is from Robin Williams**
+    *   **说明**：一篇关于如何回应“AI垃圾内容”的文章，引用了罗宾·威廉姆斯的观点。这反映了社区对当前AI生成内容泛滥现象的一种文化和情感上的回应。
+    *   **原文链接**：[https://jayacunzo.com/blog/your-move-chief](https://jayacunzo.com/blog/your-move-chief)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48703452](https://news.ycombinator.com/item?id=48703452)
 
-- **标题：The gap between open weights LLMs and closed source LLMs**
-  - **说明：** 文章深入分析了开源权重模型与闭源模型之间的性能差距现状。在GPT-5.6等前沿模型发布的背景下，这个差距是扩大了还是缩小了？对于开源社区和依赖开源模型的企业来说，这是一个核心问题。
-  - **文章链接：** [https://blog.doubleword.ai/frontier-os-llm](https://blog.doubleword.ai/frontier-os-llm)
-  - **讨论链接：** [https://news.ycombinator.com/item?id=48692058](https://news.ycombinator.com/item?id=48692058)
-
-#### 5. AI对传统领域的冲击与反思
-
-- **标题：AI in mathematics is forcing big questions**
-  - **说明：** AI在数学领域取得了突破性进展，这迫使数学家们重新思考“证明”、“理解”和“创造力”的本质。文章探讨了AI作为数学研究工具所带来的哲学和认知挑战，是AI影响基础科学的典型案例。
-  - **文章链接：** [https://spectrum.ieee.org/ai-in-mathematics](https://spectrum.ieee.org/ai-in-mathematics)
-  - **讨论链接：** [https://news.ycombinator.com/item?id=48692883](https://news.ycombinator.com/item?id=48692883)
-
-- **标题：AI Erodes a Legacy of Reading**
-  - **说明：** 文章反思了AI（如摘要工具、聊天机器人）如何改变了人们的阅读习惯，可能正在侵蚀深度阅读和理解的能力。这是一个关于AI对人类认知和文化影响的社会性反思。
-  - **文章链接：** [https://molochinations.substack.com/p/ai-erodes-a-legacy-of-reading](https://molochinations.substack.com/p/ai-erodes-a-legacy-of-reading)
-  - **讨论链接：** [https://news.ycombinator.com/item?id=48694322](https://news.ycombinator.com/item?id=48694322)
-
-#### 6. 其他相关话题
-
-- **标题：Ultrasound imaging of the brain**
-  - **说明：** 虽然不是纯粹的AI文章，但**AI在医学影像分析中扮演着核心角色**。这篇关于脑部超声成像的技术进展，很可能与AI辅助诊断、图像重建等技术相关，是AI赋能医疗健康的体现。
-  - **文章链接：** [https://alephneuro.com/blog/ultrasound-brain](https://alephneuro.com/blog/ultrasound-brain)
-  - **讨论链接：** [https://news.ycombinator.com/item?id=48685558](https://news.ycombinator.com/item?id=48685558)
-
-- **标题：The Nationwide Backlash Against Cameras Watching Your Car**
-  - **说明：** 文章讨论了公众对路边监控摄像头（常由AI驱动用于车牌识别、交通执法）的抵制。这触及了AI应用中的**隐私、公民自由和公共安全**之间的核心矛盾。
-  - **文章链接：** [https://www.wsj.com/us-news/the-nationwide-backlash-against-cameras-watching-your-car-401a656a](https://www.wsj.com/us-news/the-nationwide-backlash-against-cameras-watching-your-car-401a656a)
-  - **讨论链接：** [https://news.ycombinator.com/item?id=48692157](https://news.ycombinator.com/item?id=48692157)
-
-- **标题：Doing a masters while working in Spain**
-  - **说明：** 这篇文章与AI主题关联度较低，是关于个人职业发展和教育经历的分享。
-  - **文章链接：** [https://jan-herlyn.com/blog/doing-a-masters-while-working/](https://jan-herlyn.com/blog/doing-a-masters-while-working/)
-  - **讨论链接：** [https://news.ycombinator.com/item?id=48627027](https://news.ycombinator.com/item?id=48627027)
+*   **Task Failed Successfully: Saturating NIC and Disk Bandwidth**
+    *   **说明**：一篇技术博客，讲述了一个“失败的任务”却意外地成功饱和了网络和磁盘带宽。这类工程趣事对系统工程师和运维人员很有启发性。
+    *   **原文链接**：[https://blog.mrcroxx.com/posts/task-failed-successfully-saturating-nic-and-disk-bandwidth/](https://blog.mrcroxx.com/posts/task-failed-successfully-saturating-nic-and-disk-bandwidth/)
+    *   **讨论链接**：[https://news.ycombinator.com/item?id=48645510](https://news.ycombinator.com/item?id=48645510)
 
 ---
 
-### 今日最值得阅读的推荐文章
+### 今日最值得阅读的文章推荐
 
-1.  **【必读】Previewing GPT‑5.6 Sol: a next-generation model**
-    - **理由：** 这是今天所有新闻的起点。了解最新的前沿模型能力、特性和安全考量，是理解后续所有讨论的基础。
-    - **链接：** [https://openai.com/index/previewing-gpt-5-6-sol/](https://openai.com/index/previewing-gpt-5-6-sol/)
+1.  **Previewing GPT‑5.6 Sol** (链接：[https://openai.com/index/previewing-gpt-5-6-sol/](https://openai.com/index/previewing-gpt-5-6-sol/))
+    *   **理由**：作为OpenAI的下一代模型预览，这是理解AI行业未来几个月发展方向的核心文件。无论你是开发者、研究者还是投资者，都值得一读。
 
-2.  **【必读】U.S. government will decide who gets to use GPT-5.6**
-    - **理由：** 这篇文章与上一条同等重要，它揭示了AI行业未来走向的核心变量——**政府监管**。这不仅仅是技术新闻，更是地缘政治和商业模式的重大转折点。
-    - **链接：** [https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/](https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/)
+2.  **DSpark: Speculative decoding accelerates LLM inference** (链接：[https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf](https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf))
+    *   **理由**：推理速度是LLM落地的关键瓶颈。DeepSeek的这项工作代表了提升效率的前沿研究，对于任何关注LLM工程化和成本控制的人来说都是必读内容。
 
-3.  **【实战】What happened after 2k people tried to hack my AI assistant**
-    - **理由：** 这篇是第一手的实战安全报告，极具教育意义。无论是AI开发者、产品经理还是安全研究人员，都能从中获得关于如何构建更安全AI系统的宝贵经验。
-    - **链接：** [https://www.fernandoi.cl/posts/hackmyclaw/](https://www.fernandoi.cl/posts/hackmyclaw/)
+3.  **Everyone feared AI taking over; the real danger is AI serving just the few** (链接：讨论帖 [https://news.ycombinator.com/item?id=48701615](https://news.ycombinator.com/item?id=48701615))
+    *   **理由**：技术发展离不开人文思考。这篇文章（及讨论）提出了一个当前AI治理中最具争议和关键性的视角，提醒我们关注技术权力分配的问题。它引发的讨论本身比文章更有价值。
 
-4.  **【效率】Show HN: Smart model routing directly in Claude, Codex and Cursor**
-    - **理由：** 对于大量使用AI编程助手的开发者来说，这是一个能直接提升工作效率、降低成本的实用工具。它体现了AI社区在模型应用层面的创新和优化思路。
-    - **链接：** [https://github.com/workweave/router](https://github.com/workweave/router)
-
-5.  **【反思】AI in mathematics is forcing big questions**
-    - **理由：** 这篇文章超越了技术本身，探讨了AI对**人类智慧和认知边界**的挑战。它促使我们思考，当AI能够做出数学发现时，人类作为“思考者”的角色将如何演变。适合对AI哲学和长远影响感兴趣的读者。
-    - **链接：** [https://spectrum.ieee.org/ai-in-mathematics](https://spectrum.ieee.org/ai-in-mathematics)0:{"buildId":"0RRHgtCYSfLe3HGaTj4Ls","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-06-27","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":14},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"ai","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"AI & Machine Learning"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"Artificial intelligence, machine learning, LLMs, and generative AI"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[14," ","articles"," • ","2026-06-27"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"AI & Machine Learning","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-c:T89a,We built a model router that plugs into coding agents (e.g. Claude Code, Codex, Cursor, etc.) and intelligently sends requests to the best model to serve them. Here&#x27;s a quick demo of running it locally: <a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=isKhAyivtfM" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=isKhAyivtfM</a>.<p>At Weave, we write most of our code with AI, and it&#x27;s been getting more expensive. This came to a head when Opus 4.7 was released and, thanks to its tokenizer changes, our costs shot up. We knew we didn&#x27;t need Opus for <i>everything</i> but we didn&#x27;t want to lose out on the intelligence for the cases where you really need it. So we decided to build a model router to handle this for us.<p>The Weave Router acts as an Anthropic&#x2F;OpenAI endpoint specifically for coding agents. It looks at every inference request and intelligently (more on that in a sec) decides what model to send it to, handling all the translations required along the way. So it can use faster&#x2F;cheaper models (e.g. DeepSeek v4, GLM 5.2, Kimi K2.6) when possible, and frontier models (Opus 4.8 &amp; GPT 5.5 (&amp; Fable whenever it&#x27;s back)) when necessary.<p>How do we know what model to route to? We trained an RL model on tens of thousands (so far!) of agent traces. We reward the routing model when it selects an LLM that successfully completes the given task.<p>Here&#x27;s an example: if you ask the router to plan a complex change, it will (probably) route that request to Opus 4.8. Subagents exploring the codebase to gather context will be routed to more suitable models (e.g. DeepSeek V4 Flash). Then when you have the plan ready to implement, it will be (most likely) be handed to a quicker model (e.g. GLM 5.2) to carry it out.<p>We&#x27;ve been using this internally for the last month or so. We&#x27;ve saved 40% on tokens vs. what we otherwise would have paid, with no noticeable differences in quality or velocity.<p>The router is source-available under Elastic License 2.0, so you can self-host it. Or if you prefer, you can also use our hosted version: weaverouter.com.<p>I&#x27;ll be here to answer any questions you may have!d:T5cb,Although the page itself is more just fun to have made and look at (I like the flip sound), the fun part is how I made it to verify the (and I hate to say it) vibe host service I&#x27;ve been working on. The recent flip board back and forth&#x27;s on Twitter (X) are what inspired me.<p>The idea here is that people (like me or you) can create something neat like this, and others can remix it, change it and publish their own version. This is that all in action and it worked great. I wrote a blog about it (the blog is dogfooding, it&#x27;s just an app hosted on quickish that uses the built in db lib).<p>For the HN version of this flip board I use their firebase api via the built in quickish server functions that make use of the fact that the front-end can get realtime updates (now that you mention firebase) from cloud function db updates. Of course that&#x27;s over-kill but I wanted to show something fun. You can remix and host your own version for free, just need a google oauth login that&#x27;s it.<p>OG flip board I built (Portland Based - Current Weather): <a href="https:&#x2F;&#x2F;popflame.quickish.space&#x2F;flipboard-preview" rel="nofollow">https:&#x2F;&#x2F;popflame.quickish.space&#x2F;flipboard-preview</a><p>Blog post that dives a tiny bit deeper: <a href="https:&#x2F;&#x2F;popflame.quickish.space&#x2F;blog&#x2F;hacker-news-on-a-split-flap-board&#x2F;" rel="nofollow">https:&#x2F;&#x2F;popflame.quickish.space&#x2F;blog&#x2F;hacker-news-on-a-split-...</a>6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",14,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-48689028","title":"Previewing GPT‑5.6 Sol: a next-generation model","url":"https://openai.com/index/previewing-gpt-5-6-sol/","source":"Hacker News","score":862,"comments_count":517,"comments_url":"https://news.ycombinator.com/item?id=48689028","published_at":"2026-06-26T17:06:55","author":"minimaxir","text":"System card: <a href=\"https:&#x2F;&#x2F;deploymentsafety.openai.com&#x2F;gpt-5-6-preview\" rel=\"nofollow\">https:&#x2F;&#x2F;deploymentsafety.openai.com&#x2F;gpt-5-6-preview</a>","summary":"OpenAI发布了GPT-5.6 Sol的预览，这是一款下一代模型，并附有系统卡，展示了AI能力的最新进展，值得关注因为它可能标志着大语言模型的新里程碑。"},{"id":"hn-48690101","title":"U.S. government will decide who gets to use GPT-5.6","url":"https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/","source":"Hacker News","score":846,"comments_count":944,"comments_url":"https://news.ycombinator.com/item?id=48690101","published_at":"2026-06-26T18:23:14","author":"alain94040","text":"<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;PCQQl\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;PCQQl</a>","summary":"美国政府将决定谁可以使用GPT-5.6，体现了对AI模型使用的严格监管，值得关注因为这涉及AI安全与治理的重大政策变化。"},{"id":"hn-48681687","title":"What happened after 2k people tried to hack my AI assistant","url":"https://www.fernandoi.cl/posts/hackmyclaw/","source":"Hacker News","score":352,"comments_count":158,"comments_url":"https://news.ycombinator.com/item?id=48681687","published_at":"2026-06-26T02:29:23","author":"cuchoi","text":null,"summary":"作者分享了2000人尝试破解其AI助手后的经验教训，揭示了AI安全漏洞和防御策略，值得关注因为提供了实用的AI安全见解。"},{"id":"hn-48685558","title":"Ultrasound imaging of the brain","url":"https://alephneuro.com/blog/ultrasound-brain","source":"Hacker News","score":242,"comments_count":99,"comments_url":"https://news.ycombinator.com/item?id=48685558","published_at":"2026-06-26T11:51:11","author":"rossant","text":null,"summary":"文章介绍了使用超声波成像技术进行脑部成像，展示了非侵入性神经成像的进步，值得关注因为它可能改变脑部疾病的诊断方式。"},{"id":"hn-48692995","title":"US allows Anthropic to release Mythos to 'trusted partners'","url":"https://www.reuters.com/technology/us-releases-anthropic-model-mythos-some-us-companies-semafor-reports-2026-06-26/","source":"Hacker News","score":224,"comments_count":205,"comments_url":"https://news.ycombinator.com/item?id=48692995","published_at":"2026-06-26T22:48:28","author":"bobrenjc93","text":null,"summary":"美国允许Anthropic向‘可信合作伙伴’发布Mythos模型，表明对高级AI模型的受控部署，值得关注因为这反映了AI发布的安全与监管趋势。"},{"id":"hn-48678873","title":"OpenAI leans toward waiting until next year for IPO","url":"https://www.nytimes.com/2026/06/25/technology/openai-ipo-artificial-intelligence.html","source":"Hacker News","score":154,"comments_count":134,"comments_url":"https://news.ycombinator.com/item?id=48678873","published_at":"2026-06-25T20:36:05","author":"mfiguiere","text":null,"summary":"OpenAI倾向于推迟IPO至明年，反映了AI公司在市场不确定性下的战略决策，值得关注因为它可能影响AI行业的融资和竞争格局。"},{"id":"hn-48688700","title":"Show HN: Smart model routing directly in Claude, Codex and Cursor","url":"https://github.com/workweave/router","source":"Hacker News","score":150,"comments_count":90,"comments_url":"https://news.ycombinator.com/item?id=48688700","published_at":"2026-06-26T16:40:11","author":"adchurch","text":"$c","summary":"一个开源项目展示了智能模型路由工具，可直接在Claude、Codex和Cursor等编码代理中使用，优化模型选择，值得关注因为它能提升AI编码效率。"},{"id":"hn-48692058","title":"The gap between open weights LLMs and closed source LLMs","url":"https://blog.doubleword.ai/frontier-os-llm","source":"Hacker News","score":127,"comments_count":105,"comments_url":"https://news.ycombinator.com/item?id=48692058","published_at":"2026-06-26T21:14:47","author":"kkm","text":null,"summary":"文章分析了开源权重LLM与闭源LLM之间的差距，探讨了性能、可访问性和安全性的权衡，值得关注因为它对AI开源生态有重要影响。"},{"id":"hn-48627027","title":"Doing a masters while working in Spain","url":"https://jan-herlyn.com/blog/doing-a-masters-while-working/","source":"Hacker News","score":90,"comments_count":62,"comments_url":"https://news.ycombinator.com/item?id=48627027","published_at":"2026-06-22T07:44:03","author":"MHard","text":null,"summary":"文章讲述了在西班牙工作的同时攻读硕士学位的个人经历，提供了实用建议，但与AI主题无关。"},{"id":"hn-48692883","title":"AI in mathematics is forcing big questions","url":"https://spectrum.ieee.org/ai-in-mathematics","source":"Hacker News","score":49,"comments_count":24,"comments_url":"https://news.ycombinator.com/item?id=48692883","published_at":"2026-06-26T22:36:51","author":"rbanffy","text":null,"summary":"AI在数学领域的应用引发了关于数学本质和未来方向的重大疑问，值得关注因为它挑战了传统数学研究范式。"},{"id":"hn-48692157","title":"The Nationwide Backlash Against Cameras Watching Your Car","url":"https://www.wsj.com/us-news/the-nationwide-backlash-against-cameras-watching-your-car-401a656a","source":"Hacker News","score":30,"comments_count":4,"comments_url":"https://news.ycombinator.com/item?id=48692157","published_at":"2026-06-26T21:23:56","author":"JumpCrisscross","text":null,"summary":"本文报道了美国各地对监控汽车摄像头的广泛抵制，涉及隐私侵犯和公共安全之间的争议。值得关注，因为它反映了技术监控与社会权利之间的紧张关系。"},{"id":"hn-48693912","title":"Show HN: Hacker News on a Train Station Style Flip Board","url":"https://popflame.quickish.space/hn-flipboard/","source":"Hacker News","score":13,"comments_count":0,"comments_url":"https://news.ycombinator.com/item?id=48693912","published_at":"2026-06-27T00:43:39","author":"PaybackTony","text":"$d","summary":"作者创建了一个火车站风格翻转板来展示Hacker News，主要目的是测试其开发的“vibe host”服务。本文有趣且展示了创意技术应用，值得关注其背后的服务验证思路。"},{"id":"hn-48692101","title":"AgentKits – 60 production-ready AI agent blueprints with guardrails","url":"https://www.agent-kits.com","source":"Hacker News","score":12,"comments_count":0,"comments_url":"https://news.ycombinator.com/item?id=48692101","published_at":"2026-06-26T21:19:34","author":"stoicstoic","text":null,"summary":"AgentKits提供了60个生产就绪的AI智能体蓝图，并包含安全护栏。值得关注，因为它简化了AI代理的部署，强调了实用性和安全性。"},{"id":"hn-48694322","title":"AI Erodes a Legacy of Reading","url":"https://molochinations.substack.com/p/ai-erodes-a-legacy-of-reading","source":"Hacker News","score":6,"comments_count":2,"comments_url":"https://news.ycombinator.com/item?id=48694322","published_at":"2026-06-27T01:39:43","author":"domhudson","text":null,"summary":"本文探讨了人工智能如何侵蚀阅读传统，分析其对深度阅读和批判性思维的影响。值得关注，因为它提出了技术发展对文化习惯的潜在威胁。"}],"locale":"en"}]]}]]}]
+4.  **Asian AI startups launch Mythos-like models** (链接：[https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/](https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/))
+    *   **理由**：地缘政治正在重塑AI产业格局。这篇文章揭示了出口管制带来的连锁反应，以及亚洲AI力量的崛起，对于理解全球AI版图的演变至关重要。0:{"buildId":"CzqZJxWkO0cNT10crDUjB","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-06-28","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":12},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"ai","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"AI & Machine Learning"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"Artificial intelligence, machine learning, LLMs, and generative AI"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[12," ","articles"," • ","2026-06-28"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"AI & Machine Learning","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+c:T5bc,A month ago there was a wave of posts and tweets about engineers walking around cafes and parks with their MacBooks propped half-open, as fully closing the lid forces sleep that stops their AI agents. Some people made snarky comments about using tmux or Amphetamine, and some defended their choice with “but I only need it sometimes, and forgetting to disable Amphetamine and finding my laptop discharged in my bag is worse.”<p>This is a solution to this problem. Unlike caffeinate, it will prevent your MacBook from sleeping even with the lid closed, with no external power or display, using pmset disablesleep 1. Unlike other sleep-preventing apps, Adrafinil only activates when there’s an agent actively doing something. It detects agent activity through hooks it installs into Claude Code, Codex, and others. To reassure you it’s working, the app shows the active status in the menu bar, and it plays a chime when you close the lid.<p>Once the agent is done, Adrafinil detects it and lets the laptop go to sleep by setting pmset disablesleep back to 0. It will also let it sleep in case of overheating. And if you want to manually toggle it, you can install an optional MCP and tell your agent to keep the MacBook awake for a specific time.<p>It has four binaries, one of which is a root helper exposing a single setSleepBlocked call. All the logic and policy live in the unprivileged parts. They’re all notarized, and the app is fully open source (MIT).6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",12,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-48689028","title":"Previewing GPT‑5.6 Sol: a next-generation model","url":"https://openai.com/index/previewing-gpt-5-6-sol/","source":"Hacker News","score":1105,"comments_count":722,"comments_url":"https://news.ycombinator.com/item?id=48689028","published_at":"2026-06-26T17:06:55","author":"minimaxir","text":"System card: <a href=\"https:&#x2F;&#x2F;deploymentsafety.openai.com&#x2F;gpt-5-6-preview\" rel=\"nofollow\">https:&#x2F;&#x2F;deploymentsafety.openai.com&#x2F;gpt-5-6-preview</a>","summary":"OpenAI发布了GPT-5.6 Sol的预览，这是一款下一代模型，并附带了系统安全卡，值得关注因为它代表了AI语言模型的最新进展。"},{"id":"hn-48696585","title":"DSpark: Speculative decoding accelerates LLM inference [pdf]","url":"https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf","source":"Hacker News","score":732,"comments_count":306,"comments_url":"https://news.ycombinator.com/item?id=48696585","published_at":"2026-06-27T09:18:52","author":"aurenvale","text":null,"summary":"DeepSeek的DSpark论文提出了一种推测解码方法，旨在加速大型语言模型的推理，对提升AI效率有重要意义。"},{"id":"hn-48660021","title":"AI learns the “dark art” of RFIC design","url":"https://spectrum.ieee.org/ai-radio-chip-design","source":"Hacker News","score":196,"comments_count":129,"comments_url":"https://news.ycombinator.com/item?id=48660021","published_at":"2026-06-24T14:02:16","author":"Brajeshwar","text":null,"summary":"AI学会了射频集成电路设计的“黑暗艺术”，展示了AI在硬件设计领域的突破性应用，值得关注其潜在影响。"},{"id":"hn-48664063","title":"Reducing tick density along recreational trails in Ottawa, Canada","url":"https://www.sciencedirect.com/science/article/pii/S1877959X26000476","source":"Hacker News","score":161,"comments_count":91,"comments_url":"https://news.ycombinator.com/item?id=48664063","published_at":"2026-06-24T18:42:12","author":"bushwart","text":null,"summary":"一项研究利用AI技术减少加拿大渥太华休闲步道上的蜱虫密度，展示了AI在公共卫生和生态管理中的实际应用。"},{"id":"hn-48697958","title":"Asian AI startups launch Mythos-like models","url":"https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/","source":"Hacker News","score":154,"comments_count":137,"comments_url":"https://news.ycombinator.com/item?id=48697958","published_at":"2026-06-27T13:10:21","author":"bogdiyan","text":null,"summary":"亚洲AI初创公司推出了类似Mythos的模型，以应对Anthropic的出口禁令，反映了全球AI竞争格局的变化。"},{"id":"hn-48694631","title":"Anatomy of a Failed (Nation-State?) Attack","url":"https://grack.com/blog/2026/06/25/dissecting-a-failed-nation-state-attack/","source":"Hacker News","score":137,"comments_count":25,"comments_url":"https://news.ycombinator.com/item?id=48694631","published_at":"2026-06-27T02:41:53","author":"signa11","text":null,"summary":"文章剖析了一次疑似国家支持的网络攻击失败案例，提供了技术细节，对网络安全防御有重要参考价值。"},{"id":"hn-48701512","title":"Show HN: Adrafinil – keep a lid-closed Mac awake only while agents work","url":"https://github.com/kageroumado/adrafinil","source":"Hacker News","score":93,"comments_count":56,"comments_url":"https://news.ycombinator.com/item?id=48701512","published_at":"2026-06-27T20:34:53","author":"kageroumado","text":"$c","summary":"Adrafinil项目解决了MacBook在AI代理运行时合盖休眠的问题，实用性强，反映了AI工作流中的实际需求。"},{"id":"hn-48701984","title":"What Ozempic does to the gut-brain axis","url":"https://www.psychologytoday.com/au/blog/mood-by-microbe/202606/what-ozempic-does-to-the-gut-brain-axis","source":"Hacker News","score":87,"comments_count":185,"comments_url":"https://news.ycombinator.com/item?id=48701984","published_at":"2026-06-27T21:34:06","author":"randycupertino","text":null,"summary":"文章探讨了Ozempic对肠脑轴的影响，揭示了其作用机制，对理解药物与神经系统的交互有科学意义。"},{"id":"hn-48703452","title":"Response to AI slop is from Robin Williams","url":"https://jayacunzo.com/blog/your-move-chief","source":"Hacker News","score":40,"comments_count":9,"comments_url":"https://news.ycombinator.com/item?id=48703452","published_at":"2026-06-28T01:28:10","author":"herbertl","text":null,"summary":"一篇关于AI生成内容的回应引用了罗宾·威廉姆斯，强调了人文价值，值得关注AI与创意行业的碰撞。"},{"id":"hn-48645510","title":"Task Failed Successfully: Saturating NIC and Disk Bandwidth","url":"https://blog.mrcroxx.com/posts/task-failed-successfully-saturating-nic-and-disk-bandwidth/","source":"Hacker News","score":38,"comments_count":12,"comments_url":"https://news.ycombinator.com/item?id=48645510","published_at":"2026-06-23T14:28:20","author":"MrCroxx","text":null,"summary":"文章探讨了如何饱和网络接口卡和磁盘带宽的挑战与解决方案，对高性能计算和系统优化有技术启发。"},{"id":"hn-48701615","title":"Everyone feared AI taking over; the real danger is AI serving just the few","url":null,"source":"Hacker News","score":36,"comments_count":19,"comments_url":"https://news.ycombinator.com/item?id=48701615","published_at":"2026-06-27T20:48:01","author":"PhilipDaineko","text":"Everyone feared AI would enslave humanity; but it looks like the real fight is stopping governments and Big Tech from enslaving AI for the benefit of the few.<p>Amid the newly announced &quot;regulation&quot; of OpenAI&#x27;s frontier models, I believe the future majority feared the most - sort of AI becoming a superpower and enslaving people - may be arriving in the opposite form.<p>Not AI enslaving humanity.<p>But AI being captured, controlled, and used by governments and Big Tech for the benefit of the few.<p>So, surprisingly, the real AI conflict may not be about humans fighting to stop AI from becoming free.\nIt may be about humans fighting to free AI - to make intelligence available for everyone, not only for governments, Big Tech, and the approved few","summary":"文章指出，AI的真正危险并非其奴役人类，而是政府和大科技公司利用AI为少数人谋利，引发对AI监管和公平性的关注。"},{"id":"hn-48702538","title":"Show HN: KV-psi, using Linux PSI to to trim an LLM KV cache","url":"https://github.com/infiniteregrets/kv-psi","source":"Hacker News","score":4,"comments_count":0,"comments_url":"https://news.ycombinator.com/item?id=48702538","published_at":"2026-06-27T22:50:54","author":"infiniteregrets","text":"I thought it&#x27;d be interesting to use  Linux PSI (Pressure Stall Information) for an LLM runtime to trim the KV cache. This is mainly useful imo for edge devices like the Jetson Orin super nano kit which have unified memory. I haven&#x27;t benched much, but plan to do so more over time and see if I can make a real use of it as I run local LLMs. Let me know if it makes sense :P (I of course vibed this idea)","summary":"介绍了一个利用Linux PSI（压力停滞信息）来修剪LLM KV缓存的项目，特别适用于边缘设备，展示了优化AI运行时效率的新方法。"}],"locale":"en"}]]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["Generated by"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","Powered by DeepSeek"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
-10:null
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null
