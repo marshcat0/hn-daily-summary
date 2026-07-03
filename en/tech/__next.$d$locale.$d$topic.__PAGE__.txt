@@ -5,167 +5,179 @@
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
 e:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
 f:"$Sreact.suspense"
-5:T3aa2,好的，作为一名专业的技术新闻分析师，我已对今日“Technology”主题下的30篇热门文章进行了综合分析。以下是按子主题分组的详细总结与推荐。
+5:T3978,好的，作为一名专业的技术新闻分析师，我对今天（2026年7月2日）的“Technology”领域热门文章进行了综合分析。这些文章来自Hacker News、Lobsters等不同来源，涵盖了安全、开源软件、隐私、编程实践、AI等多个子主题。
+
+以下是对全部30篇文章的整理、分组和总结。
 
 ---
 
-### 今日技术热点综合分析
+### 一、 安全与隐私 (Security & Privacy)
 
-今天的科技新闻呈现出几个鲜明的主题：**合成生物学与生命科学的突破**、**游戏与数字娱乐的产业变革**、**开源软件与基础设施的重大更新**、以及**对互联网未来与数据隐私的深刻反思**。此外，**硬件与嵌入式系统**、**编程语言与工具**也有不少值得关注的进展。
+这个主题是今日最受关注的焦点，涉及Android生态、数据销售、加密标准等多个方面。
+
+1.  **标题：Android Developer Verification: Threat masquerading as protection**
+    - **简要说明：** 这篇文章来自F-Droid，警告Google的Android开发者验证过程存在严重缺陷，可能被滥用来威胁开发者而非保护用户。讨论非常热烈（682条评论），是今日最受关注的文章之一。
+    - **原文链接：** [https://f-droid.org/2026/07/01/adv-malware.html](https://f-droid.org/2026/07/01/adv-malware.html)
+    - **讨论链接：** [https://news.ycombinator.com/item?id=48755965](https://news.ycombinator.com/item?id=48755965)
+
+2.  **标题：Virginia bans sale of geolocation data**
+    - **简要说明：** 弗吉尼亚州签署了一项禁止出售地理位置数据的法案。这是美国在数据隐私立法方面的一个重要进展，值得关注其对科技公司和广告行业的影响。
+    - **原文链接：** [https://www.hunton.com/privacy-and-cybersecurity-law-blog/virginia-bans-sale-of-geolocation-data](https://www.hunton.com/privacy-and-cybersecurity-law-blog/virginia-bans-sale-of-geolocation-data)
+    - **讨论链接：** [https://news.ycombinator.com/item?id=48767347](https://news.ycombinator.com/item?id=48767347)
+
+3.  **标题：An American Privacy Emergency**
+    - **简要说明：** 知名博主Scott Aaronson撰文，认为美国正面临一场隐私危机，探讨了当前数据收集和监控的严峻现状。
+    - **原文链接：** [https://scottaaronson.blog/?p=9902](https://scottaaronson.blog/?p=9902)
+    - **讨论链接：** [https://news.ycombinator.com/item?id=48768992](https://news.ycombinator.com/item?id=48768992)
+
+4.  **标题：EFF letter to FTC on X consent order (2 July 2026) [pdf]**
+    - **简要说明：** 电子前哨基金会（EFF）致信美国联邦贸易委员会（FTC），就X（原Twitter）的同意令发表意见。这关系到大型社交平台如何履行其数据隐私承诺。
+    - **原文链接：** [https://cdn.arstechnica.net/wp-content/uploads/2026/07/EFF-letter-to-FTC-on-X-consent-order-7-2-26.pdf](https://cdn.arstechnica.net/wp-content/uploads/2026/07/EFF-letter-to-FTC-on-X-consent-order-7-2-26.pdf)
+    - **讨论链接：** [https://news.ycombinator.com/item?id=48766209](https://news.ycombinator.com/item?id=48766209)
+
+5.  **标题：NSA tries to weaken mlkem standardisation?**
+    - **简要说明：** 一篇极具争议性的文章，指控NSA试图削弱ML-KEM（一种后量子密码学标准）的标准化进程。这对全球信息安全未来至关重要。
+    - **原文链接：** [https://nsa.2026.action.cr.yp.to](https://nsa.2026.action.cr.yp.to)
+    - **讨论链接：** [https://news.ycombinator.com/item?id=48760490](https://news.ycombinator.com/item?id=48760490)
+
+6.  **标题：Since Linux 6.9, LUKS suspend stopped wiping disk-encryption keys from memory**
+    - **简要说明：** 一项重要的安全发现：自Linux 6.9内核起，LUKS挂起功能不再从内存中清除磁盘加密密钥。这可能导致在系统休眠时加密密钥被泄露。
+    - **原文链接：** [https://mathstodon.xyz/@iblech/116769502749142438](https://mathstodon.xyz/@iblech/116769502749142438)
+    - **讨论链接：** [https://news.ycombinator.com/item?id=48763035](https://news.ycombinator.com/item?id=48763035)
 
 ---
 
-### 分组分析
+### 二、 开源软件与开发者工具 (Open Source & Developer Tools)
 
-#### 1. 生命科学与生物技术突破
+此类别包含了多个重要的项目发布和工具讨论。
 
-这个主题是今日科技新闻中最具震撼力的部分，展现了人类在模拟和改造生命方面的巨大进步。
+7.  **标题：PeerTube is a free, decentralized and federated video platform**
+    - **简要说明：** 随着对中心化平台的担忧增加，PeerTube作为YouTube的去中心化替代方案再次受到关注。它的联邦化特性（ActivityPub）是其核心优势。
+    - **原文链接：** [https://github.com/Chocobozzz/PeerTube](https://github.com/Chocobozzz/PeerTube)
+    - **讨论链接：** [https://news.ycombinator.com/item?id=48759634](https://news.ycombinator.com/item?id=48759634)
 
--   **For first time, a cell built from scratch grows and divides**
-    -   **简要说明**：科学家首次成功制造出了一种名为“Spudcell”的合成细胞，它能够像天然细胞一样生长和分裂。这是合成生物学领域的里程碑式成就，对于理解生命起源、制造新型生物材料以及开发新疗法具有深远意义。
-    -   **Article URL**: [https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/](https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48747304](https://news.ycombinator.com/item?id=48747304)
+8.  **标题：Podman v6.0.0**
+    - **简要说明：** Podman发布了6.0.0版本，作为Docker的主要替代品之一，其重大版本更新通常意味着新特性、性能改进和API变更，对容器生态有重要影响。
+    - **原文链接：** [https://blog.podman.io/2026/07/introducing-podman-v6-0-0/](https://blog.podman.io/2026/07/introducing-podman-v6-0-0/)
+    - **讨论链接：** [https://news.ycombinator.com/item?id=48762098](https://news.ycombinator.com/item?id=48762098)
 
--   **The first early human eggs from stem cells**
-    -   **简要说明**：生物技术公司Conception宣布，他们首次成功地从人类干细胞中培育出了早期卵子（卵母细胞）。这项技术如果成熟，可能彻底改变生殖医学，为不孕不育治疗提供全新方案，但也引发了深刻的伦理讨论。
-    -   **Article URL**: [https://www.conception.bio/science-and-updates/the-first-early-human-eggs-from-stem-cells](https://www.conception.bio/science-and-updates/the-first-early-human-eggs-from-stem-cells)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48742483](https://news.ycombinator.com/item?id=48742483)
+9.  **标题：Immich 3.0**
+    - **简要说明：** Immich是一个开源的、自托管的Google Photos替代品。3.0版本是一个重大里程碑，标志着该项目在功能和成熟度上的巨大进步。
+    - **原文链接：** [https://github.com/immich-app/immich/discussions/29439](https://github.com/immich-app/immich/discussions/29439)
+    - **讨论链接：** [https://news.ycombinator.com/item?id=48761944](https://news.ycombinator.com/item?id=48761944)
 
--   **Global review confirms mRNA vaccines are safe, effective and full of promise**
-    -   **简要说明**：不列颠哥伦比亚大学（UBC）发布的一项全球性回顾研究再次确认了mRNA疫苗的安全性和有效性，并指出其在癌症治疗、罕见病等领域的巨大潜力。这对于持续对抗疫苗犹豫、推动mRNA技术发展具有积极作用。
-    -   **Article URL**: [https://news.ubc.ca/2026/06/mrna-vaccines-are-safe-effective-and-full-of-promise/](https://news.ubc.ca/2026/06/mrna-vaccines-are-safe-effective-and-full-of-promise/)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48754963](https://news.ycombinator.com/item?id=48754963)
+10. **标题：Show HN: ZeroFS – A log-structured filesystem for S3**
+    - **简要说明：** 一个专为S3对象存储设计的日志结构文件系统。它旨在解决在S3上运行传统文件系统时的性能和一致性挑战，是一个有趣的基础设施项目。
+    - **原文链接：** [https://www.zerofs.net/](https://www.zerofs.net/)
+    - **讨论链接：** [https://news.ycombinator.com/item?id=48761493](https://news.ycombinator.com/item?id=48761493)
 
-#### 2. 游戏与数字娱乐产业变革
+11. **标题：Postgres transactions are a distributed systems superpower**
+    - **简要说明：** 文章探讨了如何利用PostgreSQL的事务特性来简化分布式系统的设计，例如工作流编排。这对后端开发者很有启发。
+    - **原文链接：** [https://www.dbos.dev/blog/co-locating-workflow-state-with-your-data](https://www.dbos.dev/blog/co-locating-workflow-state-with-your-data)
+    - **讨论链接：** [https://news.ycombinator.com/item?id=48765639](https://news.ycombinator.com/item?id=48765639)
 
-游戏产业正经历从物理介质到数字化的深刻转变，同时经典IP的回归也牵动着玩家的心。
+12. **标题：crustc: entirety of `rustc`, translated to C**
+    - **简要说明：** 一个雄心勃勃的项目，试图将整个Rust编译器（rustc）翻译成C语言。这可能是为了研究、引导或为了在无法运行Rust的环境中使用。在Hacker News和Lobsters上都有讨论。
+    - **原文链接：** [https://github.com/FractalFir/crustc](https://github.com/FractalFir/crustc)
+    - **讨论链接（HN）：** [https://news.ycombinator.com/item?id=48768464](https://news.ycombinator.com/item?id=48768464)
+    - **讨论链接（Lobsters）：** [https://lobste.rs/s/ryny2c/crustc_entirety_rustc_translated_c](https://lobste.rs/s/ryny2c/crustc_entirety_rustc_translated_c)
 
--   **Physical disc production ending in Jan 2028 for new games on PlayStation**
-    -   **简要说明**：索尼PlayStation宣布，将于2028年1月停止生产面向PlayStation主机的新游戏实体光盘。这标志着游戏产业全面数字化转型的一个重要节点，引发了关于游戏保存、所有权和消费者选择的广泛讨论。
-    -   **Article URL**: [https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/](https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48745456](https://news.ycombinator.com/item?id=48745456)
+13. **标题：jj v0.43.0 released**
+    - **简要说明：** Jujutsu（jj）是一个新兴的、功能强大的版本控制系统，旨在成为Git的现代化替代品。0.43.0是其最新的稳定版本。
+    - **原文链接：** [https://github.com/jj-vcs/jj/releases/tag/v0.43.0](https://github.com/jj-vcs/jj/releases/tag/v0.43.0)
+    - **讨论链接：** [https://lobste.rs/s/e1uduo/jj_v0_43_0_released](https://lobste.rs/s/e1uduo/jj_v0_43_0_released)
 
--   **Fable 5 Is Back**
-    -   **简要说明**：经典游戏系列《神鬼寓言》的第五部正统续作被宣布正在开发中。对于老玩家而言，这是一个充满情怀的消息，也体现了游戏行业对经典IP的持续挖掘。
-    -   **Article URL**: [https://twitter.com/claudeai/status/2072402636813607381](https://twitter.com/claudeai/status/2072402636813607381)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48752030](https://news.ycombinator.com/item?id=48752030)
+14. **标题：Wordgard Release 0.1**
+    - **简要说明：** 由知名开发者Marijn Haverbeke（CodeMirror、Tern的作者）创建的一个新项目，是一个基于文本的、用于创建交互式教程的工具。值得关注。
+    - **原文链接：** [https://marijnhaverbeke.nl/blog/wordgard-0.1.html](https://marijnhaverbeke.nl/blog/wordgard-0.1.html)
+    - **讨论链接：** [https://lobste.rs/s/hejdhj/wordgard_release_0_1](https://lobste.rs/s/hejdhj/wordgard_release_0_1)
 
--   **FFmpeg 9.1's new AAC encoder**
-    -   **简要说明**：著名的多媒体处理工具FFmpeg发布了9.1版本，其核心亮点是一个全新的AAC音频编码器。这有望提升音频编码效率和质量，对广大开发者、内容创作者和多媒体爱好者来说是个好消息。
-    -   **Article URL**: [https://hydrogenaudio.org/index.php/topic,129691.0.html](https://hydrogenaudio.org/index.php/topic,129691.0.html)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48747116](https://news.ycombinator.com/item?id=48747116)
+15. **标题：Show HN: A graph paper generator that renders vector PDFs in the browser**
+    - **简要说明：** 一个在浏览器中生成矢量PDF格式网格纸的实用小工具，对于需要打印特定格式纸张的设计师、工程师和学生来说非常方便。
+    - **原文链接：** [https://freegraphpaper.net/](https://freegraphpaper.net/)
+    - **讨论链接：** [https://news.ycombinator.com/item?id=48761294](https://news.ycombinator.com/item?id=48761294)
 
-#### 3. 开源软件、基础设施与编程工具
+16. **标题：.gitignore Isn’t the Only Way To Ignore Files in Git**
+    - **简要说明：** 一篇面向所有Git用户的科普文章，介绍了`.gitignore`之外的其他忽略文件的方法（如`.git/info/exclude`、全局gitignore等）。
+    - **原文链接：** [https://nelson.cloud/.gitignore-isnt-the-only-way-to-ignore-files-in-git/](https://nelson.cloud/.gitignore-isnt-the-only-way-to-ignore-files-in-git/)
+    - **讨论链接：** [https://lobste.rs/s/3kvccm/gitignore_isn_t_only_way_ignore_files_git](https://lobste.rs/s/3kvccm/gitignore_isn_t_only_way_ignore_files_git)
 
-这是技术社区最活跃的领域，涵盖了Linux发行版、物理引擎、编程语言、Web框架和分布式系统等多个方面。
+---
 
--   **Asahi Linux 7.1 Progress Report**
-    -   **简要说明**：Asahi Linux项目发布了7.1版本进展报告。该项目致力于将Linux完美移植到Apple Silicon芯片的Mac上。本次更新意味着在Mac上运行Linux的体验又向前迈进了一大步，对开源社区和Mac用户意义重大。
-    -   **Article URL**: [https://asahilinux.org/2026/06/progress-report-7-1/](https://asahilinux.org/2026/06/progress-report-7-1/)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48744518](https://news.ycombinator.com/item?id=48744518)
+### 三、 AI与软件工程 (AI & Software Engineering)
 
--   **Box3D, an open source 3D physics engine**
-    -   **简要说明**：Box2D的作者宣布了其3D物理引擎的继任者——Box3D。Box2D是游戏开发中最广泛使用的2D物理引擎之一，Box3D的出现有望为游戏、模拟和机器人领域提供一个高质量的开源3D物理方案。
-    -   **Article URL**: [https://box2d.org/posts/2026/06/announcing-box3d/](https://box2d.org/posts/2026/06/announcing-box3d/)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48745445](https://news.ycombinator.com/item?id=48745445)
+AI相关的讨论依然火热，但焦点已从“它能做什么”转向“如何衡量和信任它”。
 
--   **ArXiv's Next Chapter**
-    -   **简要说明**：全球最重要的学术预印本平台ArXiv宣布了其未来发展规划。这对于科研工作者来说是基础性设施的重要新闻，关乎学术交流的效率与公平。
-    -   **Article URL**: [https://blog.arxiv.org/2026/06/30/arxivs-next-chapter/](https://blog.arxiv.org/2026/06/30/arxivs-next-chapter/)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48741748](https://news.ycombinator.com/item?id=48741748)
+17. **标题：Senior SWE-Bench: open-source benchmark that assesses agents as senior engineers**
+    - **简要说明：** 一个旨在评估AI代理（如编码助手）达到高级软件工程师水平的开源基准测试。这反映了行业对AI能力评估的精细化需求。
+    - **原文链接：** [https://senior-swe-bench.snorkel.ai/](https://senior-swe-bench.snorkel.ai/)
+    - **讨论链接：** [https://news.ycombinator.com/item?id=48755928](https://news.ycombinator.com/item?id=48755928)
 
--   **ZCode – Harness for GLM-5.2**
-    -   **简要说明**：智谱AI发布了新的代码生成模型GLM-5.2及其配套工具ZCode。这表明AI辅助编程领域的竞争依然激烈，开发者工具正在快速进化。
-    -   **Article URL**: [https://zcode.z.ai/en](https://zcode.z.ai/en)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48753715](https://news.ycombinator.com/item?id=48753715)
+18. **标题：CursorBench 3.1**
+    - **简要说明：** Cursor（一个AI驱动的代码编辑器）发布了其3.1版本，并附带了其评估基准的更新。这表明了AI代码助手领域的快速迭代。
+    - **原文链接：** [https://cursor.com/evals](https://cursor.com/evals)
+    - **讨论链接：** [https://news.ycombinator.com/item?id=48756840](https://news.ycombinator.com/item?id=48756840)
 
--   **How We Made IPFS Content Publishing 10x Faster**
-    -   **简要说明**：Protocol Labs分享了如何将IPFS（星际文件系统）的内容发布速度提升10倍。这对于去中心化存储和Web3应用的发展是一个重要的性能优化。
-    -   **Article URL**: [https://probelab.io/blog/optimistic-provide/](https://probelab.io/blog/optimistic-provide/)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48748518](https://news.ycombinator.com/item?id=48748518)
+19. **标题：Asymmetric Quantization: Near-Lossless Retrieval with 97% Storage Reduction**
+    - **简要说明：** 一项关于向量数据库（RAG的关键组件）优化的技术文章。它声称通过非对称量化技术，能在几乎不损失准确性的情况下减少97%的存储空间，对AI应用的成本和效率影响巨大。
+    - **原文链接：** [https://www.mixedbread.com/blog/asymmetric-quant](https://www.mixedbread.com/blog/asymmetric-quant)
+    - **讨论链接：** [https://news.ycombinator.com/item?id=48724127](https://news.ycombinator.com/item?id=48724127)
 
--   **Hanami 3.0: In Full Bloom**
-    -   **简要说明**：Ruby Web框架Hanami发布了3.0正式版。作为Rails的有力竞争者，Hanami 3.0带来了架构和性能上的重大改进，值得Ruby社区关注。
-    -   **Article URL**: [https://hanakai.org/blog/2026/06/30/hanami-3-0-in-full-bloom](https://hanakai.org/blog/2026/06/30/hanami-3-0-in-full-bloom)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48750527](https://news.ycombinator.com/item?id=48750527)
+20. **标题：Launch HN: Manufact (YC S25) – MCP Cloud**
+    - **简要说明：** YC孵化的新公司，提供MCP（Model Context Protocol）应用的云服务。MCP是AI模型与外部工具交互的新兴协议，此项目可能成为其重要基础设施。
+    - **原文链接：** [https://manufact.com](https://manufact.com)
+    - **讨论链接：** [https://news.ycombinator.com/item?id=48762862](https://news.ycombinator.com/item?id=48762862)
 
--   **Red Programming Language: Static linking support**
-    -   **简要说明**：Red语言（一种受Rebol启发的全栈编程语言）增加了静态链接支持，这使得用Red编写的程序可以更容易地分发和部署，解决了语言生态中的一个关键痛点。
-    -   **Article URL**: [https://www.red-lang.org/2026/06/static-linking-support.html](https://www.red-lang.org/2026/06/static-linking-support.html)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48732582](https://news.ycombinator.com/item?id=48732582)
+21. **标题：No LLM code in dependencies**
+    - **简要说明：** 一篇观点鲜明的文章，作者Joey Hess（知名Debian开发者）认为不应在软件依赖中包含由大语言模型（LLM）生成的代码，引发了关于代码质量和可信来源的讨论。
+    - **原文链接：** [https://joeyh.name/blog/entry/no_LLM_code_in_dependencies/](https://joeyh.name/blog/entry/no_LLM_code_in_dependencies/)
+    - **讨论链接：** [https://lobste.rs/s/oe8pxn/no_llm_code_dependencies](https://lobste.rs/s/oe8pxn/no_llm_code_dependencies)
 
--   **Fixing a kubelet memory leak in Kubernetes 1.36**
-    -   **简要说明**：一篇深入的技术博客，详细记录了如何发现并修复Kubernetes 1.36版本中kubelet组件的内存泄漏问题。对于K8s运维和开发者来说是宝贵的实战经验分享。
-    -   **Article URL**: [https://heyoncall.com/blog/fixing-kubernetes-kubelet-memory-leak](https://heyoncall.com/blog/fixing-kubernetes-kubelet-memory-leak)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48741609](https://news.ycombinator.com/item?id=48741609)
+---
 
--   **Pidgin 3.0 Alpha 2 (2.96.0) has been released**
-    -   **简要说明**：经典的多协议即时通讯客户端Pidgin发布了3.0的第二个Alpha版本。对于怀念统一聊天体验的用户来说，这是一个怀旧且充满希望的更新。
-    -   **Article URL**: [https://discourse.imfreedom.org/t/pidgin-3-0-alpha-2-2-96-0-has-been-released/398](https://discourse.imfreedom.org/t/pidgin-3-0-alpha-2-2-96-0-has-been-released/398)
-    -   **Discussion**: [https://lobste.rs/s/iloa3u/pidgin_3_0_alpha_2_2_96_0_has_been_released](https://lobste.rs/s/iloa3u/pidgin_3_0_alpha_2_2_96_0_has_been_released)
+### 四、 技术文化、回顾与杂谈 (Tech Culture, Retrospectives & Misc)
 
-#### 4. 互联网、云计算与数据治理
+这些文章涵盖了从社区形式到历史趣闻的广泛话题。
 
-这一主题聚焦于互联网的商业化、隐私保护和技术基础设施的演变。
+22. **标题：Bring back crappy forums**
+    - **简要说明：** 一篇怀旧文章，呼吁回归早期互联网的“简陋”论坛。作者认为，现代社交媒体平台虽然精致，但失去了早期论坛的社区感和真诚交流。引发了大量关于网络社区演变的讨论。
+    - **原文链接：** [https://tedium.co/2026/07/01/online-web-forums-retrospective/](https://tedium.co/2026/07/01/online-web-forums-retrospective/)
+    - **讨论链接：** [https://news.ycombinator.com/item?id=48755731](https://news.ycombinator.com/item?id=48755731)
 
--   **Monetization Gateway: Charge for any resource behind Cloudflare via x402**
-    -   **简要说明**：Cloudflare推出“变现网关”，允许网站所有者通过x402协议对其背后的任何资源（如API、内容）进行收费。这为内容创作者和开发者提供了一种新的、去中心化的变现方式，可能改变互联网的商业模式。
-    -   **Article URL**: [https://blog.cloudflare.com/monetization-gateway/](https://blog.cloudflare.com/monetization-gateway/)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48746914](https://news.ycombinator.com/item?id=48746914)
+23. **标题：How to ask for help from people who don't know you**
+    - **简要说明：** 一篇实用的指导文章，教你如何向陌生人有效求助（例如在论坛或邮件列表中）。这对于所有开发者，尤其是新手，都非常有价值。
+    - **原文链接：** [https://pradyuprasad.com/writings/how-to-ask-for-help/](https://pradyuprasad.com/writings/how-to-ask-for-help/)
+    - **讨论链接：** [https://news.ycombinator.com/item?id=48761118](https://news.ycombinator.com/item?id=48761118)
 
--   **What happened to the fight for the internet?**
-    -   **简要说明**：一篇深刻反思互联网理想主义与现实困境的文章，探讨了大型科技公司垄断、用户数据滥用等问题如何侵蚀了早期互联网的开放精神。
-    -   **Article URL**: [https://dustycloud.org/blog/what-happened-to-the-fight-for-the-internet/](https://dustycloud.org/blog/what-happened-to-the-fight-for-the-internet/)
-    -   **Discussion**: [https://lobste.rs/s/rfkmw3/what_happened_fight_for_internet](https://lobste.rs/s/rfkmw3/what_happened_fight_for_internet)
+24. **标题：Why jet engines aren't made in China**
+    - **简要说明：** 一篇深度分析文章，探讨了为什么中国在航空发动机（特别是喷气发动机）领域进展缓慢，从材料科学、工业基础到知识产权等多个维度进行了分析。
+    - **原文链接：** [https://aakash.substack.com/p/why-jet-engines-arent-made-in-china](https://aakash.substack.com/p/why-jet-engines-arent-made-in-china)
+    - **讨论链接：** [https://news.ycombinator.com/item?id=48740971](https://news.ycombinator.com/item?id=48740971)
 
--   **US Supreme Court just blew up EU-US Data Transfers**
-    -   **简要说明**：美国最高法院的一项裁决可能再次颠覆欧盟与美国之间的数据跨境传输法律框架（如Privacy Shield的后续协议）。这将对所有依赖跨大西洋数据流动的科技公司产生深远影响。
-    -   **Article URL**: [https://noyb.eu/en/us-supreme-court-just-blew-eu-us-data-transfers](https://noyb.eu/en/us-supreme-court-just-blew-eu-us-data-transfers)
-    -   **Discussion**: [https://lobste.rs/s/thkwcf/us_supreme_court_just_blew_up_eu_us_data](https://lobste.rs/s/thkwcf/us_supreme_court_just_blew_up_eu_us_data)
+25. **标题：The fall of the theorem economy**
+    - **简要说明：** 一篇数学和思想史领域的文章，探讨了“定理经济”——即数学证明作为一种可交换的智力资产的兴衰。对数学和计算机科学的交叉领域有兴趣的读者会感兴趣。
+    - **原文链接：** [https://davidbessis.substack.com/p/the-fall-of-the-theorem-economy](https://davidbessis.substack.com/p/the-fall-of-the-theorem-economy)
+    - **讨论链接：** [https://news.ycombinator.com/item?id=48758048](https://news.ycombinator.com/item?id=48758048)
 
-#### 5. 硬件、嵌入式与机器人
-
--   **Weave Robotics launches Isaac 1, a $7,999 home robot with Fall 2026 deliveries**
-    -   **简要说明**：Weave Robotics发布了售价7999美元的家用机器人Isaac 1，计划于2026年秋季交付。这标志着家用机器人市场又增加了一位高价位、高期望的竞争者，引发了关于其功能、实用性和市场接受度的讨论。
-    -   **Article URL**: [https://www.weaverobotics.com/isaac-1](https://www.weaverobotics.com/isaac-1)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48750989](https://news.ycombinator.com/item?id=48750989)
-
--   **Building a passive Ethernet tap**
-    -   **简要说明**：一篇关于如何自制无源以太网嗅探器（Tap）的硬件黑客教程。对于网络工程师、安全研究人员和硬件爱好者来说，这是一个非常实用且有趣的DIY项目。
-    -   **Article URL**: [https://blog.lvmbdv.dev/posts/building-a-passive-ethernet-tap/](https://blog.lvmbdv.dev/posts/building-a-passive-ethernet-tap/)
-    -   **Discussion**: [https://lobste.rs/s/qwk5vn/building_passive_ethernet_tap](https://lobste.rs/s/qwk5vn/building_passive_ethernet_tap)
-
-#### 6. 编程、图形学与开发者生涯
-
--   **What to learn to be a graphics programmer**
-    -   **简要说明**：一篇详尽的指南，为有志于成为图形程序员的开发者提供了学习路径和资源推荐。内容涵盖了数学基础、渲染管线、API（OpenGL/Vulkan）等核心知识，是入门图形编程的绝佳参考。
-    -   **Article URL**: [https://blog.demofox.org/2026/07/01/what-to-learn-to-be-a-graphics-programmer/](https://blog.demofox.org/2026/07/01/what-to-learn-to-be-a-graphics-programmer/)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48750710](https://news.ycombinator.com/item?id=48750710)
-
--   **Ask HN: Who is hiring? (July 2026)** & **Ask HN: Who wants to be hired? (July 2026)**
-    -   **简要说明**：Hacker News的月度招聘与求职贴。这是了解当前技术就业市场动态、公司招聘需求以及求职者技能分布的绝佳窗口。
-    -   **Discussion (Hiring)**: [https://news.ycombinator.com/item?id=48747976](https://news.ycombinator.com/item?id=48747976)
-    -   **Discussion (Hired)**: [https://news.ycombinator.com/item?id=48747975](https://news.ycombinator.com/item?id=48747975)
-
--   **1-Bit Pixel Art Emojis**
-    -   **简要说明**：一个创意项目，展示了用1位（单色）像素艺术风格绘制的Emoji。对于像素艺术家和复古美学爱好者来说，这是一个充满趣味和灵感的作品。
-    -   **Article URL**: [https://hypertalking.com/2023/05/15/1-bit-pixel-art-emojis/](https://hypertalking.com/2023/05/15/1-bit-pixel-art-emojis/)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48672848](https://news.ycombinator.com/item?id=48672848)
-
-#### 7. 其他（科学、社会、文化）
-
--   **Internal Combustion Engine (2021)**
-    -   **简要说明**：一篇关于内燃机工作原理的、极具视觉吸引力和教育意义的交互式文章。虽然是2021年的内容，但因其卓越的质量而再次被广泛分享，是工程科普的0:{"buildId":"PdrKKG9yaZBBaLfh5O_Qn","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-07-02","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":8},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-07-02"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-c:T595,Please state the location and include REMOTE for remote work, REMOTE (US)
-or similar if the country is restricted, and ONSITE when remote work is <i>not</i> an option.<p>Please only post if you personally are part of the hiring company—no
-recruiting firms or job boards. One post per company. If it isn&#x27;t a household name,
-explain what your company does.<p>Please only post if you are actively filling a position and are committed
-to replying to applicants.<p>Commenters: please don&#x27;t reply to job posts to complain about
-something. It&#x27;s off topic here.<p>Readers: please only email if you are personally interested in the job.<p>Searchers: try <a href="https:&#x2F;&#x2F;nthesis.ai&#x2F;public&#x2F;hn-who-is-hiring" rel="nofollow">https:&#x2F;&#x2F;nthesis.ai&#x2F;public&#x2F;hn-who-is-hiring</a>, <a href="https:&#x2F;&#x2F;dheerajck.github.io&#x2F;hnwhoishiring&#x2F;" rel="nofollow">https:&#x2F;&#x2F;dheerajck.github.io&#x2F;hnwhoishiring&#x2F;</a>,
-<a href="http:&#x2F;&#x2F;nchelluri.github.io&#x2F;hnjobs&#x2F;" rel="nofollow">http:&#x2F;&#x2F;nchelluri.github.io&#x2F;hnjobs&#x2F;</a>, <a href="https:&#x2F;&#x2F;hnjobs.emilburzo.com" rel="nofollow">https:&#x2F;&#x2F;hnjobs.emilburzo.com</a>.<p>Don&#x27;t miss this other fine thread: <i>Who wants to be hired?</i> <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48747975">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48747975</a>6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-48747304","title":"For first time, a cell built from scratch grows and divides","url":"https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/","source":"Hacker News","score":749,"comments_count":255,"comments_url":"https://news.ycombinator.com/item?id=48747304","published_at":"2026-07-01T14:20:52","author":"defrost","text":"<a href=\"https:&#x2F;&#x2F;biotic.org&#x2F;research&#x2F;spudcell&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;biotic.org&#x2F;research&#x2F;spudcell&#x2F;</a><p><a href=\"https:&#x2F;&#x2F;www.science.org&#x2F;content&#x2F;article&#x2F;lab-created-spudcell-marks-major-step-toward-building-life-scratch\" rel=\"nofollow\">https:&#x2F;&#x2F;www.science.org&#x2F;content&#x2F;article&#x2F;lab-created-spudcell...</a><p><a href=\"https:&#x2F;&#x2F;www.nytimes.com&#x2F;interactive&#x2F;2026&#x2F;07&#x2F;01&#x2F;science&#x2F;spudcells-synthetic-cell.html?unlocked_article_code=1.uVA.6Rwg.20U5t0kLK6oU&amp;smid=nytcore-ios-share\" rel=\"nofollow\">https:&#x2F;&#x2F;www.nytimes.com&#x2F;interactive&#x2F;2026&#x2F;07&#x2F;01&#x2F;science&#x2F;spudc...</a>","summary":"科学家首次成功构建出能自主生长和分裂的合成细胞，标志着合成生物学领域的重大突破，为理解生命起源和创造定制化生物系统铺平道路。"},{"id":"hn-48745456","title":"Physical disc production ending in Jan 2028 for new games on PlayStation","url":"https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/","source":"Hacker News","score":613,"comments_count":636,"comments_url":"https://news.ycombinator.com/item?id=48745456","published_at":"2026-07-01T12:13:34","author":"Tiberium","text":null,"summary":"索尼宣布将于2028年1月停止生产PlayStation新游戏的实体光盘，标志着游戏行业全面转向数字发行的关键转折点，影响玩家收藏习惯和二手市场。"},{"id":"hn-48744518","title":"Asahi Linux 7.1 Progress Report","url":"https://asahilinux.org/2026/06/progress-report-7-1/","source":"Hacker News","score":531,"comments_count":196,"comments_url":"https://news.ycombinator.com/item?id=48744518","published_at":"2026-07-01T10:07:04","author":"pantalaimon","text":null,"summary":"Asahi Linux发布7.1版本进度报告，展示了在Apple Silicon Mac上运行Linux的最新进展，包括硬件支持和性能优化，对开源社区和Mac用户具有重要意义。"},{"id":"hn-48745445","title":"Box3D, an open source 3D physics engine","url":"https://box2d.org/posts/2026/06/announcing-box3d/","source":"Hacker News","score":425,"comments_count":92,"comments_url":"https://news.ycombinator.com/item?id=48745445","published_at":"2026-07-01T12:12:17","author":"makepanic","text":null,"summary":"Box3D作为开源3D物理引擎正式发布，源自流行的Box2D项目，为游戏开发和模拟提供免费、高效的物理计算工具，值得开发者关注。"},{"id":"hn-48752030","title":"Fable 5 Is Back","url":"https://twitter.com/claudeai/status/2072402636813607381","source":"Hacker News","score":332,"comments_count":310,"comments_url":"https://news.ycombinator.com/item?id=48752030","published_at":"2026-07-01T19:35:57","author":"mfiguiere","text":null,"summary":"《神鬼寓言5》宣布回归，引发游戏界热议，作为经典RPG系列的续作，其重启可能带来全新的叙事和技术体验。"},{"id":"hn-48747116","title":"FFmpeg 9.1's new AAC encoder","url":"https://hydrogenaudio.org/index.php/topic,129691.0.html","source":"Hacker News","score":294,"comments_count":99,"comments_url":"https://news.ycombinator.com/item?id=48747116","published_at":"2026-07-01T14:10:28","author":"ledoge","text":null,"summary":"FFmpeg 9.1版本引入全新的AAC音频编码器，显著提升编码效率和质量，对多媒体处理和流媒体行业具有重要影响。"},{"id":"hn-48746076","title":"Internal Combustion Engine (2021)","url":"https://ciechanow.ski/internal-combustion-engine/","source":"Hacker News","score":287,"comments_count":75,"comments_url":"https://news.ycombinator.com/item?id=48746076","published_at":"2026-07-01T13:04:16","author":"StefanBatory","text":null,"summary":"一篇深度解析内燃机工作原理的互动文章（2021年发布），通过可视化方式展示机械细节，适合技术爱好者学习基础工程知识。"},{"id":"hn-48741748","title":"ArXiv's Next Chapter","url":"https://blog.arxiv.org/2026/06/30/arxivs-next-chapter/","source":"Hacker News","score":273,"comments_count":89,"comments_url":"https://news.ycombinator.com/item?id=48741748","published_at":"2026-07-01T02:51:36","author":"subset","text":null,"summary":"arXiv宣布进入新篇章，可能涉及运营改进或功能升级，作为学术预印本平台的核心地位，其变化将影响全球科研交流。"},{"id":"hn-48746914","title":"Monetization Gateway: Charge for any resource behind Cloudflare via x402","url":"https://blog.cloudflare.com/monetization-gateway/","source":"Hacker News","score":252,"comments_count":171,"comments_url":"https://news.ycombinator.com/item?id=48746914","published_at":"2026-07-01T13:59:13","author":"soheilpro","text":null,"summary":"Cloudflare推出Monetization Gateway，允许用户通过x402协议对任何资源收费，为内容创作者和网站提供新的变现方式，简化支付流程。"},{"id":"hn-48750710","title":"What to learn to be a graphics programmer","url":"https://blog.demofox.org/2026/07/01/what-to-learn-to-be-a-graphics-programmer/","source":"Hacker News","score":248,"comments_count":131,"comments_url":"https://news.ycombinator.com/item?id=48750710","published_at":"2026-07-01T17:53:44","author":"atan2","text":null,"summary":"一篇实用指南介绍成为图形程序员所需学习的技能和知识，涵盖数学、渲染管线等核心内容，对初学者和职业转型者极具参考价值。"},{"id":"hn-48711052","title":"Newly discovered spider builds spring loaded snare to catch ants","url":"https://phys.org/news/2026-06-newly-australian-ballista-spider-snare.html","source":"Hacker News","score":243,"comments_count":59,"comments_url":"https://news.ycombinator.com/item?id=48711052","published_at":"2026-06-28T20:05:56","author":"chimpanzee","text":null,"summary":"新发现的澳大利亚蜘蛛能构建弹簧陷阱捕食蚂蚁，展示了自然界中罕见的机械捕猎策略，值得关注因为它拓展了我们对蜘蛛行为多样性的认知。"},{"id":"hn-48752905","title":"Show HN: Searchable directory of 22k+ products from worker-owned co-ops","url":"https://www.workerowned.info/","source":"Hacker News","score":242,"comments_count":39,"comments_url":"https://news.ycombinator.com/item?id=48752905","published_at":"2026-07-01T20:47:41","author":"IESAI_ski","text":null,"summary":"一个可搜索的目录收录了超过2.2万种来自工人合作社的产品，值得关注因为它为支持公平贸易和替代经济模式提供了实用工具。"},{"id":"hn-48753715","title":"ZCode – Harness for GLM-5.2","url":"https://zcode.z.ai/en","source":"Hacker News","score":223,"comments_count":218,"comments_url":"https://news.ycombinator.com/item?id=48753715","published_at":"2026-07-01T22:03:36","author":"chvid","text":null,"summary":"ZCode 为 GLM-5.2 模型提供了测试框架，值得关注因为它可能提升大型语言模型的开发效率与可靠性。"},{"id":"hn-48742483","title":"The first early human eggs from stem cells","url":"https://www.conception.bio/science-and-updates/the-first-early-human-eggs-from-stem-cells","source":"Hacker News","score":169,"comments_count":130,"comments_url":"https://news.ycombinator.com/item?id=48742483","published_at":"2026-07-01T05:09:30","author":"dsr12","text":null,"summary":"研究人员首次利用干细胞培育出早期人类卵子，值得关注因为这在生殖医学和发育生物学领域具有里程碑意义。"},{"id":"hn-48747976","title":"Ask HN: Who is hiring? (July 2026)","url":null,"source":"Hacker News","score":164,"comments_count":177,"comments_url":"https://news.ycombinator.com/item?id=48747976","published_at":"2026-07-01T15:01:21","author":"whoishiring","text":"$c","summary":"2026年7月的招聘帖合集，允许公司发布职位并注明远程或现场要求，值得关注因为它反映了当前科技就业市场的趋势。"},{"id":"hn-48672848","title":"1-Bit Pixel Art Emojis","url":"https://hypertalking.com/2023/05/15/1-bit-pixel-art-emojis/","source":"Hacker News","score":151,"comments_count":25,"comments_url":"https://news.ycombinator.com/item?id=48672848","published_at":"2026-06-25T13:15:18","author":"surprisetalk","text":null,"summary":"文章展示了1位像素艺术表情符号的设计，值得关注因为它结合了复古美学与现代数字交流，具有创意价值。"},{"id":"hn-48748518","title":"How We Made IPFS Content Publishing 10x Faster","url":"https://probelab.io/blog/optimistic-provide/","source":"Hacker News","score":148,"comments_count":48,"comments_url":"https://news.ycombinator.com/item?id=48748518","published_at":"2026-07-01T15:30:35","author":"dennis-tra","text":null,"summary":"研究团队通过优化策略将IPFS内容发布速度提升10倍，值得关注因为它显著改善了去中心化存储系统的性能。"},{"id":"hn-48754963","title":"Global review confirms mRNA vaccines are safe, effective and full of promise ","url":"https://news.ubc.ca/2026/06/mrna-vaccines-are-safe-effective-and-full-of-promise/","source":"Hacker News","score":118,"comments_count":72,"comments_url":"https://news.ycombinator.com/item?id=48754963","published_at":"2026-07-02T00:40:14","author":"coloneltcb","text":null,"summary":"全球综述确认mRNA疫苗安全有效且前景广阔，值得关注因为它为疫苗技术的持续应用和研发提供了权威支持。"},{"id":"hn-48747975","title":"Ask HN: Who wants to be hired? (July 2026)","url":null,"source":"Hacker News","score":108,"comments_count":256,"comments_url":"https://news.ycombinator.com/item?id=48747975","published_at":"2026-07-01T15:01:21","author":"whoishiring","text":"Share your information if you are looking for work. Please use this format:<p><pre><code>  Location:\n  Remote:\n  Willing to relocate:\n  Technologies:\n  Résumé&#x2F;CV:\n  Email:\n</code></pre>\nPlease only post if you are personally looking for work. Agencies, recruiters, job boards,\nand so on, are off topic here.<p>Readers: please only email these addresses to discuss work opportunities.<p>Searchers: try <a href=\"https:&#x2F;&#x2F;nthesis.ai&#x2F;public&#x2F;hn-wants-to-be-hired\" rel=\"nofollow\">https:&#x2F;&#x2F;nthesis.ai&#x2F;public&#x2F;hn-wants-to-be-hired</a>, <a href=\"https:&#x2F;&#x2F;www.wantstobehired.com\" rel=\"nofollow\">https:&#x2F;&#x2F;www.wantstobehired.com</a>.","summary":"2026年7月的求职者自荐帖合集，允许个人发布技能和求职意向，值得关注因为它展示了科技人才的流动趋势。"},{"id":"hn-48753220","title":"I Left Harry's All-Night Hamburgers","url":"https://escapepod.org/2013/09/14/ep413-why-i-left-harrys-all-night-hamburgers/","source":"Hacker News","score":87,"comments_count":11,"comments_url":"https://news.ycombinator.com/item?id=48753220","published_at":"2026-07-01T21:15:41","author":"rbanffy","text":null,"summary":"一篇关于离开哈利全天候汉堡店的科幻故事，值得关注因为它探讨了个人选择与冒险主题，在科技社区中引发思考。"},{"id":"hn-48750989","title":"Weave Robotics launches Isaac 1, a $7,999 home robot with Fall 2026 deliveries","url":"https://www.weaverobotics.com/isaac-1","source":"Hacker News","score":83,"comments_count":135,"comments_url":"https://news.ycombinator.com/item?id=48750989","published_at":"2026-07-01T18:12:18","author":"ryanmerket","text":"<a href=\"https:&#x2F;&#x2F;runtimewire.com&#x2F;article&#x2F;weave-robotics-isaac-1-home-robot-launch\" rel=\"nofollow\">https:&#x2F;&#x2F;runtimewire.com&#x2F;article&#x2F;weave-robotics-isaac-1-home-...</a>","summary":"Weave Robotics发布了售价7999美元的家用机器人Isaac 1，计划于2026年秋季交付，标志着家用机器人市场向高端消费级产品迈出重要一步。"},{"id":"hn-48750527","title":"Hanami 3.0: In Full Bloom","url":"https://hanakai.org/blog/2026/06/30/hanami-3-0-in-full-bloom","source":"Hacker News","score":81,"comments_count":26,"comments_url":"https://news.ycombinator.com/item?id=48750527","published_at":"2026-07-01T17:41:00","author":"PuercoPop","text":null,"summary":"Hanami 3.0正式发布，作为Ruby Web框架的重大更新，提升了开发效率和性能，值得关注其新特性对Web开发的影响。"},{"id":"hn-48740971","title":"Why jet engines aren't made in China","url":"https://aakash.substack.com/p/why-jet-engines-arent-made-in-china","source":"Hacker News","score":80,"comments_count":57,"comments_url":"https://news.ycombinator.com/item?id=48740971","published_at":"2026-07-01T00:22:41","author":"paulpauper","text":null,"summary":"文章深入分析中国为何未能制造喷气发动机，探讨技术、材料和工业基础等障碍，对理解全球航空产业格局有重要价值。"},{"id":"hn-48732582","title":"Red Programming Language: Static linking support","url":"https://www.red-lang.org/2026/06/static-linking-support.html","source":"Hacker News","score":71,"comments_count":14,"comments_url":"https://news.ycombinator.com/item?id=48732582","published_at":"2026-06-30T13:36:20","author":"em-bee","text":null,"summary":"Red编程语言新增静态链接支持，增强了其作为高效系统编程语言的实用性，对开发者社区具有技术参考意义。"},{"id":"hn-48741609","title":"Fixing a kubelet memory leak in Kubernetes 1.36","url":"https://heyoncall.com/blog/fixing-kubernetes-kubelet-memory-leak","source":"Hacker News","score":70,"comments_count":13,"comments_url":"https://news.ycombinator.com/item?id=48741609","published_at":"2026-07-01T02:14:29","author":"compumike","text":null,"summary":"文章详细介绍了Kubernetes 1.36中kubelet内存泄漏的修复过程，对运维和云原生开发者有直接的技术指导价值。"}],"locale":"en"}],"$Ld"]}]]}]
+26. **标题：Exapunks (2018)**
+    - **简要说明：** Zachtronics出品的经典编程游戏，在2018年发布后再次被提及。它通过模拟黑客攻防来教授汇编思维，是学习底层编程概念的绝佳方式。
+    - **原文链接：** [https://www.zachtronics.com/exapunks/](https://www.zachtronics.com/exapunks/)
+    - **讨论链接：** [https://news.ycombinator.com/item?id=4876560:{"buildId":"NWJaG1SgSho5Nb6PCq2Kr","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-07-03","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":15},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-07-03"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+c:T1a56,Hi HN, we are Pietro and Luigi, cofounders of Manufact (<a href="https:&#x2F;&#x2F;manufact.com">https:&#x2F;&#x2F;manufact.com</a>), a cloud for MCP apps and servers. We used to be called mcp-use, and still build open source SDKs for MCP under that name: <a href="https:&#x2F;&#x2F;github.com&#x2F;mcp-use&#x2F;mcp-use" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;mcp-use&#x2F;mcp-use</a>. We did a Show HN about that last year: <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=44747229">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=44747229</a>.<p>Today we want to tell you about our cloud product, Manufact, which is to mcp-use as Vercel is to Next.js. Manufact is an MCP vertical cloud designed for dev teams putting MCP Apps and servers in production.You can ship, iterate on, test and monitor your MCPs, and get them ready for the store submissions. All with the best developer and agent experience in mind.<p>Here is a demo video of the product: <a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=R2rbr5OT9LI" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=R2rbr5OT9LI</a>.<p>We have been working on MCP since April 2025. Our first focus was making it easy to build agents that could use any MCP server, and a lot of people started using our SDKs. Then the harness revolution kicked off: Claude Code, Claude Cowork, ChatGPT, Codex, OpenCode started shipping agent harnesses that made most standalone agent frameworks redundant. That pushed us to the other side of the connection, the servers. If agents were going to consolidate into a few harnesses, then first-class integration with the rest of a company&#x27;s systems (i.e. MCP) would become the thing that mattered, so we started building up our server SDKs.<p>Then in succession:<p>1. Oct 2025. ChatGPT Apps SDK. OpenAI brings app UIs to ChatGPT, built on top of MCP and the work of mcp-ui.
+2. Late 2025. The stores open. ChatGPT starts accepting app submissions, Claude grows its connector directory with selected partners.
+3. Jan 2026. MCP Apps becomes official. SEP-1865 merges as the first MCP extension (io.modelcontextprotocol&#x2F;ui): one UI standard any host can render.<p>Today, all the major clients fully support MCP and are opening marketplaces of reviewed MCPs that can be one click installed. All major tech companies have an MCP server, and many of those are reporting that already 15+% of their usage comes from their MCP, and we start to have a good way to distribute them just now.<p>MCP can return fully interactive UIs. So companies can (1) display data in more meaningful ways to their users (e.g. analytics, ecommerce) and (2) display their branding in some of the most used products on the planet (ChatGPT, Claude etc). Numbers: an engineer at Amplitude reported that their MCP saw a 2x increase in retention after adding UI to their MCP.<p>Clients (Claude, ChatGPT, Cursor) are starting to dynamically present MCP servers&#x2F;apps to users, based on their intent. Products will be organically discovered on the chats!<p>We feel that MCP is reaching its maturity moment. Now that MCPs are starting to be easy to install and discover, there is going to be a huge incentive for users to use them and for companies to create them:<p>1 - Most work is already done from AI chats, this is not going to stop, MCP gives you a way to interact with products without manually using their dashboards.<p>2 - MCP allows you to bring the context together in one place: you can read an email, create a ticket while plugged into the source code of your product, or your knowledge base. Aggregation of products that was not possible before, will happen in the chat, orchestrated by increasingly intelligent models.<p>If AI apps (Codex, Claude Desktop) are the new browsers, as PG said in a recent tweet <a href="https:&#x2F;&#x2F;x.com&#x2F;paulg&#x2F;status&#x2F;2069080429236191504" rel="nofollow">https:&#x2F;&#x2F;x.com&#x2F;paulg&#x2F;status&#x2F;2069080429236191504</a>, then MCPs are the new websites.<p>But there is a catch:<p>- Submission process on the stores is still quite tricky, manual and takes up valuable time.
+- Hardly anybody knows how to design a good MCP: most of them are 1:1 proxies of the API and are abandoned, since being one shotted a few months ago.
+- The MCP Spec advances quickly and it is not easy to keep track of the changes, and what they mean for your server.
+- Auth is still a mystery for most teams (API key in the URL ???).
+- Most companies are not even aware that MCPs can return interactive UIs.
+- Clients still have to consolidate behavior, some do dynamic tool discovery, some don&#x27;t, some persist authentication properly some don&#x27;t.<p>We built Manufact and mcp-use to solve these problems.
+Our SDKs help them build good MCPs, our inspector helps them test locally, and our cloud helps them ship&#x2F;publish and monitor them in production.<p>To deploy on Manufact you just need to connect a Github app, pick the repo, we&#x27;ll detect the framework you are working with and get you a live MCP url as soon as possible.<p>In our platform, that live URL will be used to give you a chat where you can try&#x2F;debug your MCP immediately and share it with your team. If you push an update on a new experimental branch, you&#x27;ll be able to test that as well thanks to preview deployments.<p>Once your server is ready to go live, we help you make sure that it does not break. You can configure automated tests that will take your MCP server, install it in ChatGPT and Claude and test it. We do not test the model, we test the client (model + harness). This way you reliably know if your server breaks where people use it.<p>Since publishing on the store is a major distribution unlock for companies (your MCP can be dynamically discovered and one click installed across Claude
+products, and ChatGPT), we collected a set of requirements that will keep your submission from being rejected. You check this locally before going through the actual review process.<p>Once your server is live, you&#x27;ll want to understand how it is used. Our analytics are designed for MCP, so you&#x27;ll know how many users are hitting
+your MCP, how many tool calls you receive, from which client.<p>You can try out <a href="https:&#x2F;&#x2F;manufact.com">https:&#x2F;&#x2F;manufact.com</a> for free today. We have usage-based pricing and on our free account we give free credits for you to try it out. If you have an
+MCP already, just connect your Github repo and deploy, if not you can build one using our skill and SDKs pretty simply (we will guide you in the onboarding).<p>We would love to hear feedback about the product in the comments, and hear thoughts from everyone about MCP. Thanks! :)6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-48755965","title":"Android Developer Verification: Threat masquerading as protection","url":"https://f-droid.org/2026/07/01/adv-malware.html","source":"Hacker News","score":1579,"comments_count":682,"comments_url":"https://news.ycombinator.com/item?id=48755965","published_at":"2026-07-02T03:00:15","author":"drewfax","text":null,"summary":"F-Droid揭露Android开发者验证机制存在安全漏洞，可能被恶意利用，值得关注因为它威胁到Android应用生态的安全性。"},{"id":"hn-48755731","title":"Bring back crappy forums","url":"https://tedium.co/2026/07/01/online-web-forums-retrospective/","source":"Hacker News","score":538,"comments_count":330,"comments_url":"https://news.ycombinator.com/item?id=48755731","published_at":"2026-07-02T02:30:16","author":"pentagrama","text":null,"summary":"文章呼吁回归简单论坛形式，批评现代社交媒体的复杂性，值得关注因为它反思了在线社区的发展方向。"},{"id":"hn-48759634","title":"PeerTube is a free, decentralized and federated video platform","url":"https://github.com/Chocobozzz/PeerTube","source":"Hacker News","score":520,"comments_count":235,"comments_url":"https://news.ycombinator.com/item?id=48759634","published_at":"2026-07-02T11:17:45","author":"doener","text":null,"summary":"PeerTube是一个去中心化、联邦制的视频平台，值得关注因为它提供了一种替代主流视频服务的隐私友好型选择。"},{"id":"hn-48767347","title":"Virginia bans sale of geolocation data","url":"https://www.hunton.com/privacy-and-cybersecurity-law-blog/virginia-bans-sale-of-geolocation-data","source":"Hacker News","score":510,"comments_count":92,"comments_url":"https://news.ycombinator.com/item?id=48767347","published_at":"2026-07-02T21:03:45","author":"toomuchtodo","text":null,"summary":"弗吉尼亚州禁止销售地理定位数据，值得关注因为这是美国在数据隐私立法方面的重要进展。"},{"id":"hn-48763035","title":"Since Linux 6.9, LUKS suspend stopped wiping disk-encryption keys from memory","url":"https://mathstodon.xyz/@iblech/116769502749142438","source":"Hacker News","score":406,"comments_count":190,"comments_url":"https://news.ycombinator.com/item?id=48763035","published_at":"2026-07-02T15:25:16","author":"IngoBlechschmid","text":null,"summary":"自Linux 6.9起，LUKS暂停功能不再从内存中清除磁盘加密密钥，值得关注因为这可能影响系统安全。"},{"id":"hn-48762098","title":"Podman v6.0.0","url":"https://blog.podman.io/2026/07/introducing-podman-v6-0-0/","source":"Hacker News","score":401,"comments_count":159,"comments_url":"https://news.ycombinator.com/item?id=48762098","published_at":"2026-07-02T14:23:09","author":"soheilpro","text":null,"summary":"Podman v6.0.0发布，带来新功能和改进，值得关注因为它是一个重要的容器管理工具更新。"},{"id":"hn-48761118","title":"How to ask for help from people who don't know you","url":"https://pradyuprasad.com/writings/how-to-ask-for-help/","source":"Hacker News","score":396,"comments_count":63,"comments_url":"https://news.ycombinator.com/item?id=48761118","published_at":"2026-07-02T13:19:22","author":"FigurativeVoid","text":null,"summary":"文章提供向陌生人寻求帮助的实用建议，值得关注因为它有助于提升职场和社交中的沟通效率。"},{"id":"hn-48740971","title":"Why jet engines aren't made in China","url":"https://aakash.substack.com/p/why-jet-engines-arent-made-in-china","source":"Hacker News","score":286,"comments_count":265,"comments_url":"https://news.ycombinator.com/item?id=48740971","published_at":"2026-07-01T00:22:41","author":"paulpauper","text":null,"summary":"分析中国为何无法制造喷气发动机，涉及技术、工业和政治因素，值得关注因为它揭示了全球航空工业的竞争格局。"},{"id":"hn-48758048","title":"The fall of the theorem economy","url":"https://davidbessis.substack.com/p/the-fall-of-the-theorem-economy","source":"Hacker News","score":253,"comments_count":109,"comments_url":"https://news.ycombinator.com/item?id=48758048","published_at":"2026-07-02T08:01:15","author":"varjag","text":null,"summary":"探讨数学定理经济学的衰落，认为过度追求论文数量损害了数学研究，值得关注因为它引发对学术评价体系的反思。"},{"id":"hn-48765663","title":"Exapunks (2018)","url":"https://www.zachtronics.com/exapunks/","source":"Hacker News","score":221,"comments_count":81,"comments_url":"https://news.ycombinator.com/item?id=48765663","published_at":"2026-07-02T18:41:19","author":"yu3zhou4","text":null,"summary":"介绍编程游戏Exapunks，值得关注因为它通过游戏化方式教授编程概念，适合技术爱好者学习。"},{"id":"hn-48761944","title":"Immich 3.0","url":"https://github.com/immich-app/immich/discussions/29439","source":"Hacker News","score":204,"comments_count":93,"comments_url":"https://news.ycombinator.com/item?id=48761944","published_at":"2026-07-02T14:13:26","author":"hashier","text":null,"summary":"Immich 3.0 发布了重大更新，作为开源自托管照片管理平台，它提升了隐私保护和功能灵活性，值得关注是因为它挑战了Google Photos等商业服务的地位。"},{"id":"hn-48755928","title":"Senior SWE-Bench: open-source benchmark that assesses agents as senior engineers","url":"https://senior-swe-bench.snorkel.ai/","source":"Hacker News","score":166,"comments_count":105,"comments_url":"https://news.ycombinator.com/item?id=48755928","published_at":"2026-07-02T02:55:16","author":"matt_d","text":null,"summary":"Senior SWE-Bench 是一个开源基准测试，用于评估AI代理作为高级工程师的能力，值得关注因为它推动了AI在软件工程领域的实用性评估。"},{"id":"hn-48756840","title":"CursorBench 3.1","url":"https://cursor.com/evals","source":"Hacker News","score":160,"comments_count":95,"comments_url":"https://news.ycombinator.com/item?id=48756840","published_at":"2026-07-02T05:19:34","author":"handfuloflight","text":null,"summary":"CursorBench 3.1 是Cursor IDE的评估工具更新，旨在提升代码编辑性能，值得关注因为它优化了开发者体验和AI辅助编程。"},{"id":"hn-48768992","title":"An American Privacy Emergency","url":"https://scottaaronson.blog/?p=9902","source":"Hacker News","score":151,"comments_count":44,"comments_url":"https://news.ycombinator.com/item?id=48768992","published_at":"2026-07-03T00:01:06","author":"flowercalled","text":null,"summary":"文章探讨了美国隐私危机，指出数据滥用和监管缺失的严重性，值得关注因为它揭示了技术时代个人隐私的紧迫威胁。"},{"id":"hn-48702006","title":"German button maker searched rivers of American Midwest for valuable shells","url":"https://www.smithsonianmag.com/smithsonian-institution/how-one-german-button-maker-searched-the-rivers-of-the-american-midwest-for-the-shells-that-could-make-him-a-fortune-180989012/","source":"Hacker News","score":143,"comments_count":46,"comments_url":"https://news.ycombinator.com/item?id=48702006","published_at":"2026-06-27T21:38:05","author":"bookofjoe","text":null,"summary":"讲述了一位德国纽扣制造商在美国中西部河流中寻找珍贵贝壳的故事，值得关注因为它展示了19世纪全球贸易与自然资源的独特联系。"},{"id":"hn-48768464","title":"crustc: entirety of `rustc`, translated to C","url":"https://github.com/FractalFir/crustc","source":"Hacker News","score":139,"comments_count":28,"comments_url":"https://news.ycombinator.com/item?id=48768464","published_at":"2026-07-02T22:57:35","author":"Philpax","text":null,"summary":"crustc 项目将整个Rust编译器翻译为C语言，值得关注因为它可能简化Rust的跨平台部署和性能分析。"},{"id":"hn-48714884","title":"My favorite keyboards","url":"https://fabiensanglard.net/keyboards/index.html","source":"Hacker News","score":128,"comments_count":127,"comments_url":"https://news.ycombinator.com/item?id=48714884","published_at":"2026-06-29T04:41:18","author":"tmach32","text":null,"summary":"作者分享了自己最喜爱的键盘型号和设计偏好，值得关注因为它为键盘爱好者和技术工作者提供了实用参考。"},{"id":"hn-48761493","title":"Show HN: ZeroFS – A log-structured filesystem for S3","url":"https://www.zerofs.net/","source":"Hacker News","score":117,"comments_count":52,"comments_url":"https://news.ycombinator.com/item?id=48761493","published_at":"2026-07-02T13:41:11","author":"Eikon","text":null,"summary":"ZeroFS 是一个为S3设计的日志结构文件系统，值得关注因为它优化了云存储的效率和可靠性。"},{"id":"hn-48765639","title":"Postgres transactions are a distributed systems superpower","url":"https://www.dbos.dev/blog/co-locating-workflow-state-with-your-data","source":"Hacker News","score":113,"comments_count":55,"comments_url":"https://news.ycombinator.com/item?id=48765639","published_at":"2026-07-02T18:38:32","author":"KraftyOne","text":null,"summary":"文章强调PostgreSQL事务在分布式系统中的强大作用，值得关注因为它展示了如何利用数据库特性简化分布式工作流管理。"},{"id":"hn-48766209","title":"EFF letter to FTC on X consent order (2 July 2026) [pdf]","url":"https://cdn.arstechnica.net/wp-content/uploads/2026/07/EFF-letter-to-FTC-on-X-consent-order-7-2-26.pdf","source":"Hacker News","score":109,"comments_count":32,"comments_url":"https://news.ycombinator.com/item?id=48766209","published_at":"2026-07-02T19:27:38","author":"Terretta","text":null,"summary":"EFF致FTC的信函涉及X平台的同意令，值得关注因为它反映了对社交媒体隐私和合规性的持续监督。"},{"id":"hn-48760490","title":"NSA tries to weaken mlkem standardisation?","url":"https://nsa.2026.action.cr.yp.to","source":"Hacker News","score":107,"comments_count":67,"comments_url":"https://news.ycombinator.com/item?id=48760490","published_at":"2026-07-02T12:33:08","author":"SuperSandro2000","text":null,"summary":"文章质疑NSA试图削弱mlkem标准化，可能影响加密安全标准，值得关注。"},{"id":"hn-48724127","title":"Asymmetric Quantization: Near-Lossless Retrieval with 97% Storage Reduction","url":"https://www.mixedbread.com/blog/asymmetric-quant","source":"Hacker News","score":104,"comments_count":41,"comments_url":"https://news.ycombinator.com/item?id=48724127","published_at":"2026-06-29T19:42:15","author":"breadislove","text":null,"summary":"介绍非对称量化技术，实现97%存储缩减下的近无损检索，对数据压缩领域有重要意义。"},{"id":"hn-48762862","title":"Launch HN: Manufact (YC S25) – MCP Cloud","url":"https://manufact.com","source":"Hacker News","score":101,"comments_count":62,"comments_url":"https://news.ycombinator.com/item?id=48762862","published_at":"2026-07-02T15:11:20","author":"pzullo","text":"$c","summary":"Launch HN介绍Manufact（YC S25），一个MCP云平台，提供应用和服务器支持，值得关注其开源SDK发展。"},{"id":"hn-48763790","title":"24-bit/192kHz music downloads and why they make no sense (2012)","url":"https://people.xiph.org/~xiphmont/demo/neil-young.html#toc_wd2bm","source":"Hacker News","score":98,"comments_count":211,"comments_url":"https://news.ycombinator.com/item?id=48763790","published_at":"2026-07-02T16:24:49","author":"Kaapeine","text":null,"summary":"解释24-bit/192kHz音乐下载无实际意义，挑战高分辨率音频的营销说法，对音频爱好者有启示。"},{"id":"hn-48761294","title":"Show HN: A graph paper generator that renders vector PDFs in the browser","url":"https://freegraphpaper.net/","source":"Hacker News","score":93,"comments_count":22,"comments_url":"https://news.ycombinator.com/item?id=48761294","published_at":"2026-07-02T13:29:09","author":"lam_hg94","text":null,"summary":"展示一个浏览器内生成矢量PDF的网格纸生成器，实用工具，适合绘图和设计需求。"}],"locale":"en"}],"$Ld"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["Generated by"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","Powered by DeepSeek"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
 a:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
-d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-c78b2e33e5b4","title":"What happened to the fight for the internet?","url":"https://dustycloud.org/blog/what-happened-to-the-fight-for-the-internet/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-01T00:17:06","author":"dustycloud.org by dustyweb","text":"<p><a href=\"https://lobste.rs/s/rfkmw3/what_happened_fight_for_internet\">Comments</a></p>","summary":"反思互联网自由斗争的现状，探讨为何早期理想主义让位于商业化，引发对数字权利和网络治理的深刻思考。"},{"id":"rss-e8d1a36526c1","title":"US Supreme Court just blew up EU-US Data Transfers","url":"https://noyb.eu/en/us-supreme-court-just-blew-eu-us-data-transfers","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-01T14:55:34","author":"noyb.eu via kngl","text":"<p><a href=\"https://lobste.rs/s/thkwcf/us_supreme_court_just_blew_up_eu_us_data\">Comments</a></p>","summary":"美国最高法院裁决可能颠覆欧美数据传输机制，对全球数据隐私和跨境业务产生深远影响，值得密切关注。"},{"id":"rss-60e4b4cb0d59","title":"Building a passive Ethernet tap","url":"https://blog.lvmbdv.dev/posts/building-a-passive-ethernet-tap/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-01T10:32:50","author":"blog.lvmbdv.dev by lvmbdv","text":"<p><a href=\"https://lobste.rs/s/qwk5vn/building_passive_ethernet_tap\">Comments</a></p>","summary":"介绍如何构建无源以太网分流器，为网络调试和安全分析提供实用方案，适合技术爱好者学习。"},{"id":"rss-a444d07bf266","title":"Pidgin 3.0 Alpha 2 (2.96.0) has been released","url":"https://discourse.imfreedom.org/t/pidgin-3-0-alpha-2-2-96-0-has-been-released/398","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-01T16:04:07","author":"discourse.imfreedom.org by grim","text":"<p><a href=\"https://lobste.rs/s/iloa3u/pidgin_3_0_alpha_2_2_96_0_has_been_released\">Comments</a></p>","summary":"Pidgin 3.0 Alpha 2发布，作为经典即时通讯客户端的重大更新，其新功能和改进值得关注。"},{"id":"rss-9e6fe3a7eaf4","title":"Announcing Box3D","url":"https://box2d.org/posts/2026/06/announcing-box3d/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-01T13:38:39","author":"box2d.org via yokljo","text":"<p><a href=\"https://lobste.rs/s/jcdcit/announcing_box3d\">Comments</a></p>","summary":"Box2D团队宣布Box3D，一个3D物理引擎，继承Box2D的简洁设计，对游戏开发和物理模拟领域有重要影响。"}],"locale":"en"}]
+d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-3ae9152d8d60","title":"jj v0.43.0 released","url":"https://github.com/jj-vcs/jj/releases/tag/v0.43.0","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-02T12:01:19","author":"github.com via asymmetric","text":"<p><a href=\"https://lobste.rs/s/e1uduo/jj_v0_43_0_released\">Comments</a></p>","summary":"jj v0.43.0发布，版本控制工具更新，可能引入新功能或修复，值得关注其改进。"},{"id":"rss-871948a49285","title":"No LLM code in dependencies","url":"https://joeyh.name/blog/entry/no_LLM_code_in_dependencies/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-02T18:43:32","author":"joeyh.name via gioele","text":"<p><a href=\"https://lobste.rs/s/oe8pxn/no_llm_code_dependencies\">Comments</a></p>","summary":"讨论不应在依赖中包含LLM代码，强调代码纯净性，对软件工程实践有警示。"},{"id":"rss-64c004a465b7","title":"Wordgard Release 0.1","url":"https://marijnhaverbeke.nl/blog/wordgard-0.1.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-02T10:05:50","author":"marijnhaverbeke.nl via freddyb","text":"<p><a href=\"https://lobste.rs/s/hejdhj/wordgard_release_0_1\">Comments</a></p>","summary":"Wordgard 0.1发布，新工具或库的初始版本，值得关注其功能和设计。"},{"id":"rss-d9d444ea597a","title":"crustc: Entirety of rustc, translated to C","url":"https://github.com/FractalFir/crustc","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-02T23:19:21","author":"github.com via ajdecon","text":"<p><a href=\"https://lobste.rs/s/ryny2c/crustc_entirety_rustc_translated_c\">Comments</a></p>","summary":"crustc项目将rustc编译器完整翻译为C语言，对Rust生态和编译器研究有重大意义。"},{"id":"rss-1e1ce95cf2b6","title":".gitignore Isn’t the Only Way To Ignore Files in Git","url":"https://nelson.cloud/.gitignore-isnt-the-only-way-to-ignore-files-in-git/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-02T16:33:28","author":"nelson.cloud via abnercoimbre","text":"<p><a href=\"https://lobste.rs/s/3kvccm/gitignore_isn_t_only_way_ignore_files_git\">Comments</a></p>","summary":"介绍Git中除.gitignore外的其他忽略文件方法，扩展开发者对Git管理的理解。"}],"locale":"en"}]
 10:null
