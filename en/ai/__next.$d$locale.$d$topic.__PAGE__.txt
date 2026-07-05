@@ -3,129 +3,126 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-e:"$Sreact.suspense"
-5:T2db8,好的，作为专业的技术新闻分析师，以下是对今日“AI & Machine Learning”领域15篇热门文章的深度分析和总结。
+c:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+d:"$Sreact.suspense"
+5:T322d,好的，作为一名专业的技术新闻分析师，我将对今日 “AI & Machine Learning” 领域的14篇热门文章进行全面的分析和总结。
 
 ### 综合分析
 
-今日的热点呈现出一个清晰的“双轨并行”格局。
-**第一轨道**是“AI主权与本地化”。大量高热度文章（#1, #2, #3, #14）聚焦于保护本地运行AI的权利、如何高效运行本地大模型，以及相关的安全和隐私问题。这反映了社区对云端AI依赖性的反思，以及对数据主权和自主控制的强烈渴望。
-**第二轨道**是“AI编程工具的进化与痛点”。多篇文章（#5, #7, #12, #15）深入探讨了当前AI编程助手的局限性，如打断心流、缺乏长期记忆、推荐不安全代码等。同时，也涌现出一些创新的解决方案，如搜索历史会话、检查依赖安全等，显示出社区正在积极寻求突破。
+今天的文章主要围绕几个核心主题展开：**AI Agent（智能体）的实践与成本**、**AI模型性能与退化问题**、**AI在特定领域的应用（如数据存储、渲染、大脑研究）**，以及**AI带来的社会与安全问题（如虚假信息、加密、漏洞）**。值得注意的是，AI Agent（特别是编码Agent）的实践经验和成本成为了讨论的焦点，同时关于模型性能退化和AI生成虚假内容的担忧也占据了重要位置。
 
-此外，一个值得注意的交叉点是**安全与伦理**。从间谍软件攻击（#3）到AI模型发布伴随的漏洞激增（#9），再到编程助手引入的安全风险（#12），安全议题贯穿多个子主题。
+### 按子主题分组
 
-### 按子主题分组分析
+#### 1. AI Agent & 编码实践
 
-#### 组一：AI主权、本地化与隐私
+这个主题是今日最热门的话题，讨论集中在AI辅助编程和Agentic工作流的经验、成本和潜在问题。
 
-**1. Protect your right to run local AI**
-- **为什么值得关注**: 这是今日热度最高的文章，直接触及AI领域的核心政治与法律议题。它呼吁保护用户在自己的硬件上运行AI模型的权利，对抗大型科技公司可能通过云服务形成的垄断。对于任何关心AI未来发展方向的人来说，这是必读的。
-- **原文链接**: [https://righttointelligence.org/](https://righttointelligence.org/)
-- **讨论链接**: [https://news.ycombinator.com/item?id=48768951](https://news.ycombinator.com/item?id=48768951)
+- **标题：Agentic coding notes from Galapagos Island**
+  - **简要说明：** 作者Dan Luu分享了在“加拉帕戈斯群岛”（泛指一个封闭或独特的开发环境）中使用AI Agent进行编码的详细笔记。文章深入探讨了Agent循环的复杂性、成功与失败案例，对于任何尝试构建或使用AI编码Agent的开发者来说，都是极具价值的实战经验。
+  - **原文链接：** [https://danluu.com/ai-coding/#appendix-agentic-loops-and-writing-this-post](https://danluu.com/ai-coding/#appendix-agentic-loops-and-writing-this-post)
+  - **讨论链接：** [https://news.ycombinator.com/item?id=48782671](https://news.ycombinator.com/item?id=48782671)
 
-**2. Jamesob's guide to running SOTA LLMs locally**
-- **为什么值得关注**: 这篇是“如何做”的实践指南，与第一篇“为什么”的理论呼吁完美互补。它为开发者提供了在个人电脑上运行最先进大语言模型（SOTA LLMs）的实用教程，极大降低了本地AI的门槛。
-- **原文链接**: [https://github.com/jamesob/local-llm](https://github.com/jamesob/local-llm)
-- **讨论链接**: [https://news.ycombinator.com/item?id=48775921](https://news.ycombinator.com/item?id=48775921)
+- **标题：$85,000 in tokens later: What I learned from scaling agentic coding at Lovable**
+  - **简要说明：** Lovable公司分享了他们在扩展AI Agent编码（从原型到规模化应用）过程中花费85,000美元Token所获得的深刻教训。这篇文章直击AI Agent商业化的核心痛点——成本、可靠性和效率，对初创公司和开发者极具参考价值。
+  - **原文链接：** [https://lovable.dev/blog/85000-in-tokens-later-scaling-agentic-coding-at-lovable](https://lovable.dev/blog/85000-in-tokens-later-scaling-agentic-coding-at-lovable)
+  - **讨论链接：** [https://news.ycombinator.com/item?id=48789042](https://news.ycombinator.com/item?id=48789042)
 
-**3. Espionage Against the European Parliament**
-- **为什么值得关注**: 尽管不直接关于AI，但该文揭露了使用Pegasus间谍软件对欧洲议会议员进行黑客攻击的事件。这为“本地AI”的讨论提供了重要的安全背景：当云端和通信渠道都可能被渗透时，在本地运行敏感数据和AI模型成为了一种安全策略。
-- **原文链接**: [https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/](https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/)
-- **讨论链接**: [https://news.ycombinator.com/item?id=48779683](https://news.ycombinator.com/item?id=48779683)
+- **标题：My AI-built PHP engine in Rust passes 17% of PHP-src tests, renders WordPress**
+  - **简要说明：** 一位开发者仅靠AI辅助（“我不知道Rust”），就用Rust语言重写了PHP引擎，并成功通过了17%的PHP核心测试，还能渲染WordPress页面。这是一个关于AI颠覆传统软件开发流程的惊人案例，展示了AI在代码生成和跨语言重写方面的巨大潜力。
+  - **原文链接：** [https://ekinertac.com/blog/i-dont-know-rust-my-ai-is-rewriting-php-in-it/](https://ekinertac.com/blog/i-dont-know-rust-my-ai-is-rewriting-php-in-it/)
+  - **讨论链接：** [https://news.ycombinator.com/item?id=48789325](https://news.ycombinator.com/item?id=48789325)
 
-**14. Save Claude Code Tokens with Smart Routing**
-- **为什么值得关注**: 该工具通过智能路由，在简单任务上使用更便宜的本地模型，复杂任务再调用Claude，旨在平衡成本、速度和性能。这是本地化与云端结合的一种务实探索。
-- **原文链接**: [https://github.com/regolo-ai/brick-SR1](https://github.com/regolo-ai/brick-SR1)
-- **讨论链接**: [https://news.ycombinator.com/item?id=48780858](https://news.ycombinator.com/item?id=48780858)
+#### 2. AI模型性能 & 架构
 
-#### 组二：AI编程工具的现状、痛点与创新
+这部分关注AI模型本身的技术问题，包括性能退化和架构创新。
 
-**4. I Wasn't Allowed Prompting ChatGPT During My Chalk Talk: This Is Discrimination (2025)**
-- **为什么值得关注**: 文章探讨了在学术或专业环境中禁止使用AI工具的伦理问题，将其定义为一种“歧视”。这引发了关于AI辅助是否应被视为“作弊”或“合理工具”的辩论，是AI融入工作流过程中的一个标志性事件。
-- **原文链接**: [https://inpreparation.substack.com/p/opinion-i-was-not-allowed-to-type](https://inpreparation.substack.com/p/opinion-i-was-not-allowed-to-type)
-- **讨论链接**: [https://news.ycombinator.com/item?id=48777728](https://news.ycombinator.com/item?id=48777728)
+- **标题：GPT-5.5 Codex reasoning-token clustering may be leading to degraded performance**
+  - **简要说明：** 有报告指出，OpenAI的GPT-5.5 Codex模型可能因为“推理Token聚类”问题而导致性能下降。这个问题直接关系到最新一代大模型的推理能力和可靠性，对依赖这些模型进行代码生成等任务的开发者来说至关重要。
+  - **原文链接：** [https://github.com/openai/codex/issues/30364](https://github.com/openai/codex/issues/30364)
+  - **讨论链接：** [https://news.ycombinator.com/item?id=48789428](https://news.ycombinator.com/item?id=48789428)
 
-**5. Ask HN: Is anyone experimenting with different ways of using LLMs for coding?**
-- **为什么值得关注**: 这是一篇来自社区的真诚发问，作者反映了当前主流编程助手（如Claude Code）打断心流体验的痛点。它代表了大量开发者的心声，并激发了关于如何改进AI编程体验的广泛讨论。
-- **原文链接**: 无
-- **讨论链接**: [https://news.ycombinator.com/item?id=48771515](https://news.ycombinator.com/item?id=48771515)
+- **标题：Mapping with In-Memory Layers to Reduce LLM Overload**
+  - **简要说明：** 这篇文章提出了一种使用内存层（类似Mapbox的矢量瓦片）来减少LLM过载的新架构思路。通过将结构化、可缓存的“地图”数据与LLM的推理能力结合，旨在提高效率并降低API调用成本，是LLM应用架构优化的一个有趣探索。
+  - **原文链接：** [https://ridgetext.com/blog/mapbox-llm-composition](https://ridgetext.com/blog/mapbox-llm-composition)
+  - **讨论链接：** [https://news.ycombinator.com/item?id=48789986](https://news.ycombinator.com/item?id=48789986)
 
-**7. Show HN: ctx – Search the coding agent history already on your machine**
-- **为什么值得关注**: 直接回应了“AI编程助手没有长期记忆”的痛点。ctx通过将本地的AI对话历史转录为可搜索的数据库，让开发者能复用过去的解决方案，是一种非常实用且优雅的“记忆增强”方案。
-- **原文链接**: [https://github.com/ctxrs/ctx](https://github.com/ctxrs/ctx)
-- **讨论链接**: [https://news.ycombinator.com/item?id=48763462](https://news.ycombinator.com/item?id=48763462)
+#### 3. AI在特定领域的应用
 
-**12. Show HN: CLI that helps AI agents avoid vulnerable dependencies**
-- **为什么值得关注**: 指出了AI编程助手的一个严重安全风险：推荐过时或有漏洞的依赖包。deptrust作为一个本地检查工具，可以自动拦截这些不安全建议，是提升AI编程安全性的必要补充。
-- **原文链接**: [https://github.com/clidey/deptrust](https://github.com/clidey/deptrust)
-- **讨论链接**: [https://news.ycombinator.com/item?id=48752948](https://news.ycombinator.com/item?id=48752948)
+展示了AI在数据工程、图形学和神经科学等领域的创新应用。
 
-**15. CueBench for Developers is live: score how well you drive coding agents**
-- **为什么值得关注**: 将焦点从AI模型本身转移到“人类如何有效驾驭AI”上。CueBench提供了一个基准，来评估开发者编写提示词、引导AI代理解决问题的能力，这标志着“提示工程”开始走向量化和专业化。
-- **原文链接**: [https://app.cuebench.dev](https://app.cuebench.dev)
-- **讨论链接**: [https://news.ycombinator.com/item?id=48781865](https://news.ycombinator.com/item?id=48781865)
+- **标题：Postgres data stored in Parquet on S3: LTAP architecture explained**
+  - **简要说明：** Databricks提出了一种名为LTAP（Lakehouse Transactional Analytical Processing）的架构，将Postgres数据存储在S3上的Parquet格式中。这旨在融合事务处理（OLTP）和分析处理（OLAP）的优势，是数据湖仓一体技术的重要进展，对数据工程师和架构师非常有吸引力。
+  - **原文链接：** [https://www.databricks.com/blog/lakebase-ltap-rethinking-database-storage](https://www.databricks.com/blog/lakebase-ltap-rethinking-database-storage)
+  - **讨论链接：** [https://news.ycombinator.com/item?id=48745855](https://news.ycombinator.com/item?id=48745855)
 
-#### 组三：AI安全与模型影响
+- **标题：Plein Air**
+  - **简要说明：** 这是一个结合了AI的艺术项目，可能在户外写生或生成艺术方面有独特应用。它展示了AI在创意和艺术表达领域的潜力，是技术与人文的结合。
+  - **原文链接：** [https://art.joonas.wtf/](https://art.joonas.wtf/)
+  - **讨论链接：** [https://news.ycombinator.com/item?id=48786880](https://news.ycombinator.com/item?id=48786880)
 
-**8. Kagi Changelog (July 2): Heads, tails, and an AI toggle**
-- **为什么值得关注**: Kagi作为注重隐私的搜索引擎，其更新中包含了AI功能开关。这反映了用户对AI功能与隐私控制之间平衡的持续关注，是“AI可开关化”趋势的一个例证。
-- **原文链接**: [https://kagi.com/changelog#10959](https://kagi.com/changelog#10959)
-- **讨论链接**: [https://news.ycombinator.com/item?id=48779352](https://news.ycombinator.com/item?id=48779352)
+- **标题：Neural Render Proxies for Interactive and Differentiable Lighting**
+  - **简要说明：** 迪士尼研究团队提出了一种“神经渲染代理”技术，用于实现交互式和可微分的照明。这项研究可能对电影制作、游戏开发和虚拟现实中的实时渲染和光照设计产生深远影响。
+  - **原文链接：** [https://studios.disneyresearch.com/2026/07/01/neural-render-proxies-for-interactive-and-differentiable-lighting/](https://studios.disneyresearch.com/2026/07/01/neural-render-proxies-for-interactive-and-differentiable-lighting/)
+  - **讨论链接：** [https://news.ycombinator.com/item?id=48753160](https://news.ycombinator.com/item?id=48753160)
 
-**9. New serious vulnerabilities spiked around release of Claude Mythos Preview**
-- **为什么值得关注**: 文章揭示了一个令人担忧的趋势：新AI模型的发布可能与新安全漏洞的激增相关。这暗示了AI模型开发过程中的安全测试可能存在不足，或模型本身被用于发现和利用漏洞。对于安全从业者至关重要。
-- **原文链接**: [https://epoch.ai/data-insights/cve-severity-spike](https://epoch.ai/data-insights/cve-severity-spike)
-- **讨论链接**: [https://news.ycombinator.com/item?id=48780056](https://news.ycombinator.com/item?id=48780056)
+- **标题：Scientists reverse brain aging, with a nasal spray**
+  - **简要说明：** 科学家通过鼻喷雾剂实现了逆转大脑衰老的突破。虽然这并非纯AI技术，但它代表了一项重大的生物医学进展，AI在药物发现和基因分析中可能扮演了关键角色。
+  - **原文链接：** [https://stories.tamu.edu/news/2026/04/14/scientists-reverse-brain-aging-with-a-nasal-spray/](https://stories.tamu.edu/news/2026/04/14/scientists-reverse-brain-aging-with-a-nasal-spray/)
+  - **讨论链接：** [https://news.ycombinator.com/item?id=48790066](https://news.ycombinator.com/item?id=48790066)
 
-**11. MSI Center – How to gain SYSTEM privileges in seconds**
-- **为什么值得关注**: 虽然不直接是AI，但这是关于软件供应链安全的经典案例。对于构建和使用AI工具（尤其是需要高权限的）的开发者来说，了解这类基础系统漏洞是防范风险的第一步。
-- **原文链接**: [https://mrbruh.com/msicenter/](https://mrbruh.com/msicenter/)
-- **讨论链接**: [https://news.ycombinator.com/item?id=48781688](https://news.ycombinator.com/item?id=48781688)
+#### 4. AI安全、伦理与社会影响
 
-#### 组四：其他相关主题
+这部分文章聚焦于AI带来的负面效应和潜在风险。
 
-**6. My dad helped build North America's oat supply chain: Can it be remade?**
-- **为什么值得关注**: 这篇文章与AI主题关联较弱。它讲述了一个关于供应链的故事，可以作为AI应用于农业、物流等实体经济的背景思考。
-- **原文链接**: [https://ambrook.com/offrange/perspective/how-we-lost-our-oats](https://ambrook.com/offrange/perspective/how-we-lost-our-oats)
-- **讨论链接**: [https://news.ycombinator.com/item?id=48732870](https://news.ycombinator.com/item?id=48732870)
+- **标题：The Reports of Jim Carrey's Death Are a Failure Mode**
+  - **简要说明：** 文章分析了关于金·凯瑞死亡的虚假报道是如何产生的，并将其归结为AI信息生态系统的“故障模式”。它探讨了AI生成内容如何污染信息源、放大谣言，是AI时代信息真实性危机的典型案例。
+  - **原文链接：** [https://tane.dev/2026/07/the-reports-of-jim-carreys-death-are-a-failure-mode/](https://tane.dev/2026/07/the-reports-of-jim-carreys-death-are-a-failure-mode/)
+  - **讨论链接：** [https://news.ycombinator.com/item?id=48784662](https://news.ycombinator.com/item?id=48784662)
 
-**10. The circuit that lets your brain think and see**
-- **为什么值得关注**: 这篇神经科学文章探讨了大脑的物理机制。虽然不直接是AI，但它为理解“智能”的本质提供了生物学基础，可能启发新的AI架构（如类脑计算）的设计。
-- **原文链接**: [https://www.engineering.columbia.edu/about/news/circuit-lets-your-brain-think-and-see](https://www.engineering.columbia.edu/about/news/circuit-lets-your-brain-think-and-see)
-- **讨论链接**: [https://news.ycombinator.com/item?id=48780996](https://news.ycombinator.com/item?id=48780996)
+- **标题：Australian influencer Lily Jay's tangled web of AI manipulation**
+  - **简要说明：** 澳大利亚网红Lily Jay被曝使用AI生成误导性视频，编织了一个复杂的欺骗网络。这直接展示了AI工具（如深度伪造）如何被用于个人欺诈和操纵公众，是AI伦理与监管问题的现实写照。
+  - **原文链接：** [https://www.abc.net.au/news/2026-07-05/lily-jay-foundation-posts-ai-generated-misleading-videos/106866422](https://www.abc.net.au/news/2026-07-05/lily-jay-foundation-posts-ai-generated-misleading-videos/106866422)
+  - **讨论链接：** [https://news.ycombinator.com/item?id=48789416](https://news.ycombinator.com/item?id=48789416)
 
-**13. The Trans-America Trail Guide**
-- **为什么值得关注**: 与AI主题无关。这是一篇关于越野旅行的指南，可能被算法错误推荐。
-- **原文链接**: [https://transamtrail.com/plan/](https://transamtrail.com/plan/)
-- **讨论链接**: [https://news.ycombinator.com/item?id=48781199](https://news.ycombinator.com/item?id=48781199)
+- **标题：Protocol Prying: Vulnerability Research in AirDrop and Quick Share**
+  - **简要说明：** 这是一篇关于AirDrop和Quick Share协议安全漏洞的研究论文。虽然不直接是AI，但这些漏洞可能被恶意AI Agent利用，进行数据窃取或攻击，是AI安全生态的一部分。
+  - **原文链接：** [https://arxiv.org/abs/2606.26967](https://arxiv.org/abs/2606.26967)
+  - **讨论链接：** [https://news.ycombinator.com/item?id=48788849](https://news.ycombinator.com/item?id=48788849)
 
----
+- **标题：Shipping post-quantum cryptography to Python – The Trail of Bits Blog**
+  - **简要说明：** Trail of Bits博客讨论了如何将后量子密码学（PQC）部署到Python生态系统中。随着量子计算威胁的临近，PQC是保障AI模型、数据和通信长期安全的关键基础设施。
+  - **原文链接：** [https://blog.trailofbits.com/2026/06/30/shipping-post-quantum-cryptography-to-python/](https://blog.trailofbits.com/2026/06/30/shipping-post-quantum-cryptography-to-python/)
+  - **讨论链接：** [https://news.ycombinator.com/item?id=48787000](https://news.ycombinator.com/item?id=48787000)
 
-### 今日最值得阅读的推荐文章 (Top 3-5)
+- **标题：Nvidia Has Become the Bank Behind the AI Boom**
+  - **简要说明：** 文章指出英伟达通过其CUDA生态和硬件垄断，实际上成为了AI热潮的“银行家”——所有AI公司都需要向它“存款”（购买GPU）。这揭示了AI产业背后巨大的资本集中和权力结构。
+  - **原文链接：** [https://startupfortune.com/nvidia-has-quietly-become-the-bank-behind-the-ai-boom/](https://startupfortune.com/nvidia-has-quietly-become-the-bank-behind-the-ai-boom/)
+  - **讨论链接：** [https://news.ycombinator.com/item?id=48790151](https://news.ycombinator.com/item?id=48790151)
 
-1.  **Protect your right to run local AI**
-    - **理由**: 这是今日的“议题设置者”。它定义了未来AI发展中的一个关键战场：用户控制权 vs. 平台控制权。无论你是开发者、用户还是政策制定者，这篇文章都是理解当前AI格局的基石。
-    - **链接**: [https://righttointelligence.org/](https://righttointelligence.org/)
+### 今日最值得阅读的文章推荐
 
-2.  **Jamesob's guide to running SOTA LLMs locally**
-    - **理由**: 这是“如何行动”的最佳指南。它直接回应了上一篇的呼吁，提供了将“本地AI”从理想变为现实的具体路径。对于想要尝试本地模型的技术人员来说，这是绝佳的起点。
-    - **链接**: [https://github.com/jamesob/local-llm](https://github.com/jamesob/local-llm)
+1.  **Agentic coding notes from Galapagos Island**
+    - **推荐理由：** 这是今日最受关注的文章之一，内容详实、见解深刻。作者Dan Luu以批判性思维分析了AI编码Agent的实际表现，既有成功的喜悦，也有失败的教训。对于任何关注AI编程未来的人来说，这是必读之作。
+    - **链接：** [https://danluu.com/ai-coding/#appendix-agentic-loops-and-writing-this-post](https://danluu.com/ai-coding/#appendix-agentic-loops-and-writing-this-post)
 
-3.  **Ask HN: Is anyone experimenting with different ways of using LLMs for coding?**
-    - **理由**: 这是社区的真实声音和集体智慧。阅读这个讨论，可以深入了解当前AI编程工具最核心的痛点（心流中断）以及社区正在尝试的各种创意解决方案。它是“AI for Code”领域的风向标。
-    - **链接**: [https://news.ycombinator.com/item?id=48771515](https://news.ycombinator.com/item?id=48771515)
+2.  **$85,000 in tokens later: What I learned from scaling agentic coding at Lovable**
+    - **推荐理由：** 与上一条相辅相成，这篇文章从商业和工程化的角度，坦率地分享了AI Agent落地的真实成本和挑战。它提供了宝贵的“反常识”见解，比如规模化后的成本爆炸和可靠性问题，对创业者和管理者尤其有价值。
+    - **链接：** [https://lovable.dev/blog/85000-in-tokens-later-scaling-agentic-coding-at-lovable](https://lovable.dev/blog/85000-in-tokens-later-scaling-agentic-coding-at-lovable)
 
-4.  **Show HN: deptrust – CLI that helps AI agents avoid vulnerable dependencies**
-    - **理由**: 实用性强，且切中要害。随着AI编程的普及，其引入的安全风险将呈指数级增长。deptrust提供了一种即插即用的防护手段，是任何在项目中使用AI编程助手的人都应该了解的工具。
-    - **链接**: [https://github.com/clidey/deptrust](https://github.com/clidey/deptrust)
+3.  **GPT-5.5 Codex reasoning-token clustering may be leading to degraded performance**
+    - **推荐理由：** 直接关系到当前最先进模型的性能和未来发展方向。如果“推理Token聚类”问题被证实，它将解释许多开发者在使用最新模型时遇到的“变笨”现象，并可能影响OpenAI的后续模型设计。
+    - **链接：** [https://github.com/openai/codex/issues/30364](https://github.com/openai/codex/issues/30364)
 
-5.  **New serious vulnerabilities spiked around release of Claude Mythos Preview**
-    - **理由**: 这是一个重要的警示。它提醒我们，在拥抱AI带来的效率提升时，必须警惕其可能带来的安全风险，尤其是在模型发布等关键节点。这篇文章对安全团队和AI平台开发者有很高的参考价值。
-    - **链接**: [https://epoch.ai/data-insights/cve-severity-spike](https://epoch.ai/data-insights/cve-severity-spike)0:{"buildId":"nIw4BDK1-1mfXdPco8u72","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-07-04","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":15},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"ai","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"AI & Machine Learning"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"Artificial intelligence, machine learning, LLMs, and generative AI"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[15," ","articles"," • ","2026-07-04"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"AI & Machine Learning","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-c:T822,Coding agents don&#x27;t have long-term memory.<p>But you do have months of full-fidelity agent transcripts stored on your machine.<p>A simple solution that goes a long way: ingest those transcripts and logs into a structured SQLite database, then search them with ranked text match. Everything is fully local and doesn&#x27;t require anything fancy like a graph database or hosted memory service.<p>This is the idea behind ctx, a Rust CLI that handles the ingestion and searching.<p>We give our agents a skill that tells them to reference past sessions before working in an area. Usually we do this through an &quot;Agent History Research Subagent&quot; whose job is just to prepare a short brief covering any relevant history before the task begins.<p>A real example: sometimes our test suite runs would fail because disk was full on the runner. The correct approach was to run the cleanup runbook, but the root cause of the failure was not clear to the agents, so they would think it was a test regression and go down the wrong rabbit hole debugging. When the agent searched history, it realized this failure had been encountered before and found the right workaround immediately. That got the agent onto the right cleanup path, and later we improved the log output so the same failure would be clearer next time. It&#x27;s a boring story, but it&#x27;s real agent productivity.<p>Another nice use case is quickly generating session transcripts for sharing. You can exclude the noisy intermediate messages, so the transcript shows the important parts of the session more cleanly. Try attaching a session transcript to your next PR so your teammate and their agent can review the provenance and prompting behind the change.<p>If you&#x27;re up for an additional challenge, ask your agent to &quot;exhaustively review all agent history in this repo and find where the SDLC is struggling or isn&#x27;t agent-native&quot;. Using past sessions to recursively improve the agentic SDLC is a loop that we&#x27;re using a lot today.<p>If you try it out, please let us know what you think!6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",15,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-48768951","title":"Protect your right to run local AI","url":"https://righttointelligence.org/","source":"Hacker News","score":496,"comments_count":175,"comments_url":"https://news.ycombinator.com/item?id=48768951","published_at":"2026-07-02T23:54:03","author":"thoughtpeddler","text":null,"summary":"该网站倡导保护用户运行本地AI的权利，强调在AI日益集中的趋势下，保持本地部署和控制的重要性。值得关注因为它触及AI民主化和用户自主权的核心争议。"},{"id":"hn-48775921","title":"Jamesob's guide to running SOTA LLMs locally","url":"https://github.com/jamesob/local-llm","source":"Hacker News","score":278,"comments_count":126,"comments_url":"https://news.ycombinator.com/item?id=48775921","published_at":"2026-07-03T15:03:43","author":"livestyle","text":null,"summary":"一份实用指南，介绍如何在本地运行最先进的大语言模型（SOTA LLMs），适合对隐私和控制有要求的用户。值得关注因为它提供了可操作的本地AI部署方案。"},{"id":"hn-48779683","title":"Espionage Against the European Parliament","url":"https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/","source":"Hacker News","score":276,"comments_count":67,"comments_url":"https://news.ycombinator.com/item?id=48779683","published_at":"2026-07-03T20:38:26","author":"ledoge","text":null,"summary":"报告揭露了针对欧洲议会调查间谍软件委员会的成员遭到Pegasus间谍软件攻击的间谍活动。值得关注因为它揭示了高级网络威胁对民主机构的渗透。"},{"id":"hn-48777728","title":"I Wasn't Allowed Prompting ChatGPT During My Chalk Talk: This Is Discrimination (2025)","url":"https://inpreparation.substack.com/p/opinion-i-was-not-allowed-to-type","source":"Hacker News","score":169,"comments_count":76,"comments_url":"https://news.ycombinator.com/item?id=48777728","published_at":"2026-07-03T17:46:10","author":"theanonymousone","text":null,"summary":"作者因在学术演示中使用ChatGPT而被禁止，声称这是歧视，引发对AI辅助学术规范的讨论。值得关注因为它挑战了传统学术环境对AI工具的接受度。"},{"id":"hn-48771515","title":"Ask HN: Is anyone experimenting with different ways of using LLMs for coding?","url":null,"source":"Hacker News","score":130,"comments_count":161,"comments_url":"https://news.ycombinator.com/item?id=48771515","published_at":"2026-07-03T06:21:44","author":"yehiaabdelm","text":"I&#x27;m a bit annoyed by the feeling that we&#x27;re kind of stuck when it comes to using LLMs for programming.<p>I use Claude Code and Codex, but I haven&#x27;t been able to enter flow state like I can when I hand write code.<p>This is kind of ironic to me since AI should be a bicycle for the mind, but right now it feels like a bicycle that just brakes abruptly every couple minutes. I stop, wait, review, prompt again.<p>Is there anyone exploring something fundamentally different than the prompt response loop we have today?<p>I actually think the idea of a tab model is directionally better than prompt response.<p>Would love to hear about any startups, personal experiments, etc.","summary":"一位开发者表达了对当前LLM编程工具（如Claude Code和Codex）无法达到手写代码时心流状态的失望，并寻求新用法。值得关注因为它反映了AI编程工具的局限性和用户期望。"},{"id":"hn-48732870","title":"My dad helped build North America's oat supply chain: Can it be remade?","url":"https://ambrook.com/offrange/perspective/how-we-lost-our-oats","source":"Hacker News","score":86,"comments_count":51,"comments_url":"https://news.ycombinator.com/item?id=48732870","published_at":"2026-06-30T14:00:51","author":"surprisetalk","text":null,"summary":"作者回顾其父亲帮助建立北美燕麦供应链的经历，探讨该供应链能否被重建。值得关注因为它从个人视角切入农业供应链的韧性和可持续性问题。"},{"id":"hn-48763462","title":"Show HN: ctx – Search the coding agent history already on your machine","url":"https://github.com/ctxrs/ctx","source":"Hacker News","score":64,"comments_count":39,"comments_url":"https://news.ycombinator.com/item?id=48763462","published_at":"2026-07-02T15:58:32","author":"luca-ctx","text":"$c","summary":"介绍ctx工具，它通过将编码代理的日志和转录存入SQLite数据库，实现长期记忆搜索，弥补代理无记忆的缺陷。值得关注因为它提供了一种简单有效的方法来提升编码代理的实用性。"},{"id":"hn-48779352","title":"Kagi Changelog (July 2): Heads, tails, and an AI toggle","url":"https://kagi.com/changelog#10959","source":"Hacker News","score":52,"comments_count":11,"comments_url":"https://news.ycombinator.com/item?id=48779352","published_at":"2026-07-03T20:08:01","author":"mroche","text":null,"summary":"Kagi搜索引擎的更新日志，新增了“正面”、“反面”结果和AI开关功能。值得关注因为它展示了搜索引擎在AI整合和用户体验上的创新。"},{"id":"hn-48780056","title":"New serious vulnerabilities spiked around release of Claude Mythos Preview","url":"https://epoch.ai/data-insights/cve-severity-spike","source":"Hacker News","score":47,"comments_count":8,"comments_url":"https://news.ycombinator.com/item?id=48780056","published_at":"2026-07-03T21:16:16","author":"cubefox","text":null,"summary":"数据显示，在Claude Mythos预览版发布前后，严重漏洞（CVE）数量激增，暗示AI模型可能引入新安全风险。值得关注因为它警示AI部署可能带来的安全挑战。"},{"id":"hn-48780996","title":"The circuit that lets your brain think and see","url":"https://www.engineering.columbia.edu/about/news/circuit-lets-your-brain-think-and-see","source":"Hacker News","score":39,"comments_count":6,"comments_url":"https://news.ycombinator.com/item?id=48780996","published_at":"2026-07-03T22:56:17","author":"hhs","text":null,"summary":"哥伦比亚大学研究揭示了一个让大脑同时进行思考和视觉处理的电路机制。值得关注因为它深化了对神经科学和认知功能的理解，可能启发AI架构设计。"},{"id":"hn-48781688","title":"MSI Center – How to gain SYSTEM privileges in seconds","url":"https://mrbruh.com/msicenter/","source":"Hacker News","score":24,"comments_count":7,"comments_url":"https://news.ycombinator.com/item?id=48781688","published_at":"2026-07-04T00:57:44","author":"MrBruh","text":null,"summary":"该文章揭示了MSI Center软件存在严重安全漏洞，可让攻击者在数秒内获取系统最高权限，值得关注因为它影响大量用户系统安全。"},{"id":"hn-48752948","title":"Show HN: CLI that helps AI agents avoid vulnerable dependencies","url":"https://github.com/clidey/deptrust","source":"Hacker News","score":22,"comments_count":4,"comments_url":"https://news.ycombinator.com/item?id=48752948","published_at":"2026-07-01T20:51:47","author":"modelorona","text":"deptrust is a CLI that checks package versions for known vulnerabilities across npm, PyPI, crates.io, Go modules, RubyGems, NuGet, Maven, Packagist, pub.dev, CocoaPods, Hex.pm, Hackage, GitHub Actions, and more.<p>It runs locally as a CLI and as an MCP server. It calls public package registry and OSV APIs directly; there is no hosted deptrust service.<p>I built this because AI coding agents kept suggesting outdated or vulnerable package versions. I kept having to manually tell tools like Claude and Codex to use newer, safer versions.<p>deptrust gives the agent a quick way to verify whether a dependency version has known vulnerabilities before it installs or recommends it.<p>You can install it with:<p>1. pnpx @clidey&#x2F;deptrust@latest install<p>2. brew install clidey&#x2F;tap&#x2F;deptrust<p>3. Or directly with go: go install github.com&#x2F;clidey&#x2F;deptrust&#x2F;cmd&#x2F;deptrust@latest","summary":"deptrust是一个CLI工具，能帮助AI代理检查多种包管理器的依赖漏洞，运行在本地或作为MCP服务器，值得关注因为它能提升AI开发的安全性。"},{"id":"hn-48781199","title":"The Trans-America Trail Guide","url":"https://transamtrail.com/plan/","source":"Hacker News","score":8,"comments_count":1,"comments_url":"https://news.ycombinator.com/item?id=48781199","published_at":"2026-07-03T23:24:52","author":"e-dant","text":null,"summary":"该指南提供跨美洲越野路线的详细规划信息，值得关注因为它为户外探险爱好者提供了实用的路线资源。"},{"id":"hn-48780858","title":"Save Claude Code Tokens with Smart Routing","url":"https://github.com/regolo-ai/brick-SR1","source":"Hacker News","score":6,"comments_count":0,"comments_url":"https://news.ycombinator.com/item?id=48780858","published_at":"2026-07-03T22:39:24","author":"FrancescoMassa","text":null,"summary":"该项目通过智能路由优化节省Claude Code的令牌使用，值得关注因为它能降低AI编码服务的成本。"},{"id":"hn-48781865","title":"CueBench for Developers is live: score how well you drive coding agents","url":"https://app.cuebench.dev","source":"Hacker News","score":5,"comments_count":1,"comments_url":"https://news.ycombinator.com/item?id=48781865","published_at":"2026-07-04T01:30:49","author":"DillonMehta","text":null,"summary":"CueBench为开发者提供评分工具，测试他们驱动编码代理的能力，值得关注因为它帮助提升人机协作编程的效率。"}],"locale":"en"}]]}]]}]
+4.  **The Reports of Jim Carrey's Death Are a Failure Mode**
+    - **推荐理由：** 这篇文章以具体案例揭示了AI时代“信息疫情”的运作机制。它不仅是一个技术分析，更是一个社会警示，帮助我们理解为何虚假信息在AI加持下变得如此难以控制。
+    - **链接：** [https://tane.dev/2026/07/the-reports-of-jim-carreys-death-are-a-failure-mode/](https://tane.dev/2026/07/the-reports-of-jim-carreys-death-are-a-failure-mode/)
+
+5.  **My AI-built PHP engine in Rust passes 17% of PHP-src tests, renders WordPress**
+    - **推荐理由：** 这是一个令人瞠目结舌的“黑客”级项目。它极大地挑战了我们对“懂编程”的定义，并展示了AI在代码生成和跨语言重写方面的惊人潜力。无论结果如何，这个过程本身就极具启发性和娱乐性。
+    - **链接：** [https://ekinertac.com/blog/i-dont-know-rust-my-ai-is-rewriting-php-in-it/](https://ekinertac.com/blog/i-dont-know-rust-my-ai-is-rewriting-php-in-it/)0:{"buildId":"hye8-LMC15XvWtKWTISvW","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-07-05","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":14},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"ai","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"AI & Machine Learning"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"Artificial intelligence, machine learning, LLMs, and generative AI"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[14," ","articles"," • ","2026-07-05"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"AI & Machine Learning","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",14,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-48745855","title":"Postgres data stored in Parquet on S3: LTAP architecture explained","url":"https://www.databricks.com/blog/lakebase-ltap-rethinking-database-storage","source":"Hacker News","score":169,"comments_count":52,"comments_url":"https://news.ycombinator.com/item?id=48745855","published_at":"2026-07-01T12:48:56","author":"andrenotgiant","text":null,"summary":"本文介绍了LTAP架构，将Postgres数据存储在S3上的Parquet格式中，旨在重新思考数据库存储方式。值得关注是因为它可能显著提升数据湖与事务处理的整合效率。"},{"id":"hn-48782671","title":"Agentic coding notes from Galapagos Island","url":"https://danluu.com/ai-coding/#appendix-agentic-loops-and-writing-this-post","source":"Hacker News","score":163,"comments_count":78,"comments_url":"https://news.ycombinator.com/item?id=48782671","published_at":"2026-07-04T04:37:15","author":"gm678","text":null,"summary":"文章分享了在加拉帕戈斯群岛的AI编程笔记，探讨智能体编码循环及其在写作中的应用。值得关注因为它提供了AI辅助编程的独特见解和实际经验。"},{"id":"hn-48789428","title":"GPT-5.5 Codex reasoning-token clustering may be leading to degraded performance","url":"https://github.com/openai/codex/issues/30364","source":"Hacker News","score":153,"comments_count":49,"comments_url":"https://news.ycombinator.com/item?id=48789428","published_at":"2026-07-04T21:51:09","author":"maille","text":null,"summary":"本文指出GPT-5.5 Codex的推理token聚类可能导致性能下降。值得关注因为它揭示了大型语言模型的潜在优化问题，对AI发展有重要参考价值。"},{"id":"hn-48790066","title":"Scientists reverse brain aging, with a nasal spray","url":"https://stories.tamu.edu/news/2026/04/14/scientists-reverse-brain-aging-with-a-nasal-spray/","source":"Hacker News","score":146,"comments_count":55,"comments_url":"https://news.ycombinator.com/item?id=48790066","published_at":"2026-07-04T23:41:10","author":"cybermango","text":null,"summary":"科学家通过鼻喷雾成功逆转了小鼠的大脑衰老过程。值得关注因为它展示了抗衰老研究的重大突破，可能对人类健康产生深远影响。"},{"id":"hn-48786880","title":"Plein Air","url":"https://art.joonas.wtf/","source":"Hacker News","score":58,"comments_count":9,"comments_url":"https://news.ycombinator.com/item?id=48786880","published_at":"2026-07-04T16:55:29","author":"bookofjoe","text":null,"summary":"Plein Air是一个艺术项目网站，可能涉及AI或数字艺术创作。值得关注因为它探索了技术与艺术的交叉领域。"},{"id":"hn-48753160","title":"Neural Render Proxies for Interactive and Differentiable Lighting","url":"https://studios.disneyresearch.com/2026/07/01/neural-render-proxies-for-interactive-and-differentiable-lighting/","source":"Hacker News","score":52,"comments_count":8,"comments_url":"https://news.ycombinator.com/item?id=48753160","published_at":"2026-07-01T21:10:16","author":"tobr","text":null,"summary":"迪士尼研究提出了神经渲染代理，用于交互式和可微光照。值得关注因为它推动了实时图形渲染和AI在动画中的应用。"},{"id":"hn-48784662","title":"The Reports of Jim Carrey's Death Are a Failure Mode","url":"https://tane.dev/2026/07/the-reports-of-jim-carreys-death-are-a-failure-mode/","source":"Hacker News","score":49,"comments_count":30,"comments_url":"https://news.ycombinator.com/item?id=48784662","published_at":"2026-07-04T11:39:01","author":"taubek","text":null,"summary":"文章分析了关于金·凯瑞死亡的虚假报道，将其视为信息传播中的失败模式。值得关注因为它讨论了AI时代虚假信息的传播机制和应对策略。"},{"id":"hn-48789416","title":"Australian influencer Lily Jay's tangled web of AI manipulation","url":"https://www.abc.net.au/news/2026-07-05/lily-jay-foundation-posts-ai-generated-misleading-videos/106866422","source":"Hacker News","score":36,"comments_count":6,"comments_url":"https://news.ycombinator.com/item?id=48789416","published_at":"2026-07-04T21:50:14","author":"phs318u","text":null,"summary":"澳大利亚网红Lily Jay被曝使用AI生成误导性视频，编织复杂的欺骗网络。值得关注因为它揭示了AI在社交媒体中的滥用风险。"},{"id":"hn-48789325","title":"My AI-built PHP engine in Rust passes 17% of PHP-src tests, renders WordPress","url":"https://ekinertac.com/blog/i-dont-know-rust-my-ai-is-rewriting-php-in-it/","source":"Hacker News","score":28,"comments_count":38,"comments_url":"https://news.ycombinator.com/item?id=48789325","published_at":"2026-07-04T21:35:30","author":"ekinertac","text":null,"summary":"作者用AI构建了一个用Rust编写的PHP引擎，通过了17%的PHP-src测试并能渲染WordPress。值得关注因为它展示了AI在代码重写和语言实现中的潜力。"},{"id":"hn-48788849","title":"Protocol Prying: Vulnerability Research in AirDrop and Quick Share","url":"https://arxiv.org/abs/2606.26967","source":"Hacker News","score":14,"comments_count":1,"comments_url":"https://news.ycombinator.com/item?id=48788849","published_at":"2026-07-04T20:38:39","author":"logickkk1","text":null,"summary":"本文研究了AirDrop和Quick Share协议中的漏洞，进行了安全分析。值得关注因为它揭示了流行文件共享协议的安全隐患，对用户隐私保护至关重要。"},{"id":"hn-48789986","title":"Mapping with In-Memory Layers to Reduce LLM Overload","url":"https://ridgetext.com/blog/mapbox-llm-composition","source":"Hacker News","score":10,"comments_count":0,"comments_url":"https://news.ycombinator.com/item?id=48789986","published_at":"2026-07-04T23:25:53","author":"Buckwheat469","text":null,"summary":"本文介绍了一种通过内存映射层（如Mapbox）来减少大型语言模型（LLM）负载的方法，旨在优化AI系统的资源利用效率。值得关注是因为它提出了解决LLM高计算成本的实际方案，对提升AI应用性能有直接参考价值。"},{"id":"hn-48787000","title":"Shipping post-quantum cryptography to Python – The Trail of Bits Blog","url":"https://blog.trailofbits.com/2026/06/30/shipping-post-quantum-cryptography-to-python/","source":"Hacker News","score":10,"comments_count":1,"comments_url":"https://news.ycombinator.com/item?id=48787000","published_at":"2026-07-04T17:11:52","author":"rbanffy","text":null,"summary":"Trail of Bits博客宣布将后量子密码学引入Python，标志着量子安全加密在主流编程语言中的实际部署。这一进展对保护未来AI系统免受量子计算攻击至关重要，是密码学与AI交叉领域的重要里程碑。"},{"id":"hn-48789042","title":"$$85,000 in tokens later: What I learned from scaling agentic coding at Lovable","url":"https://lovable.dev/blog/85000-in-tokens-later-scaling-agentic-coding-at-lovable","source":"Hacker News","score":8,"comments_count":8,"comments_url":"https://news.ycombinator.com/item?id=48789042","published_at":"2026-07-04T20:59:25","author":"aliclark","text":null,"summary":"文章分享了在Lovable平台扩展代理编码时消耗85,000美元代币的经验教训，揭示了大规模AI代理开发中的成本与效率挑战。对AI从业者而言，其实际案例和优化策略具有高度借鉴意义。"},{"id":"hn-48790151","title":"Nvidia Has Become the Bank Behind the AI Boom","url":"https://startupfortune.com/nvidia-has-quietly-become-the-bank-behind-the-ai-boom/","source":"Hacker News","score":7,"comments_count":3,"comments_url":"https://news.ycombinator.com/item?id=48790151","published_at":"2026-07-04T23:59:06","author":"insanetechh","text":null,"summary":"报道指出英伟达已悄然成为AI热潮的“银行”，通过投资和信贷支持初创公司，间接推动AI生态发展。这一角色转变凸显了硬件巨头在AI产业中的金融影响力，值得关注其长期战略影响。"}],"locale":"en"}]]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["Generated by"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","Powered by DeepSeek"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
-f:null
+a:["$","$Lc",null,{"children":["$","$d",null,{"name":"Next.MetadataOutlet","children":"$@e"}]}]
+e:null
