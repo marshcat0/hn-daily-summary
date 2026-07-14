@@ -5,156 +5,187 @@
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
 d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
 e:"$Sreact.suspense"
-5:T3c16,好的，作为一名技术新闻分析师，我已经仔细审阅了今日“Technology”主题的30篇热门文章。以下是我的综合分析、分组总结和推荐。
+5:T2c78,好的，作为一名专业的技术新闻分析师，我对今日 (2026年7月13日) 的 Technology 领域 Top 30 热门文章进行了综合分析。以下是我的总结和推荐。
 
----
+### 综合分析总结
 
-### 综合分析
+今日的技术新闻呈现出几个鲜明的主题：**开源与基础设施**（如 Rust 重写 Linux 内核、Lobste.rs 迁移至 SQLite）、**安全与隐私**（Linux 内核漏洞、LAPD 终止监控合同）、**硬件与复古计算**（Sega CD 艺术、E-Waste GPU 评测），以及 **AI 与开发工具**（Clawk 提供隔离环境、YouTube 吉他谱解析器）。此外，也包含了互联网先驱 Vint Cerf 的退休、维基百科的监管动态等具有文化和社会意义的事件。
 
-今日技术新闻呈现出几个鲜明的主题：**AI辅助编程的演进与反思**、**网络安全与隐私的新挑战**、**编程语言与工具链的深度探索**，以及**技术对社会与基础设施的宏观影响**。从Hacker News和Lobsters的讨论热度来看，开发者社区既对AI带来的生产力提升感到兴奋，也开始冷静思考其带来的代码质量与理解问题。同时，关于系统底层安全漏洞、资源消耗（数据中心电力）以及个人隐私（浏览器指纹）的讨论，显示出技术社区对可持续发展与安全基石的持续关注。
+### 文章分组分析
 
----
+#### 1. 开源、基础设施与软件工程
 
-### 按子主题分组
+- **Linux 0.11 以 Rust 重写并启动** - 展示了 Rust 在系统编程领域的潜力，是对经典内核的现代化尝试。
+  - 文章: https://github.com/Poseidon-fan/linux-0.11-rs
+  - 讨论: https://news.ycombinator.com/item?id=48898134
+- **Lobste.rs 迁移到 SQLite** - 一个流行的技术社区成功从 MariaDB 迁移到 SQLite，带来了性能和成本优化，为其他项目提供了参考。
+  - 文章: https://lobste.rs/s/ko1ji1/lobste_rs_is_now_running_on_sqlite
+- **crates.io 开发更新** - Rust 官方包管理器的开发进展，对 Rust 生态系统至关重要。
+  - 文章: https://blog.rust-lang.org/2026/07/13/crates-io-development-update/
+- **Human Emacs** - 一个拒绝 LLM 生成贡献的 Emacs 分支，引发了关于 AI 在开源项目中角色的讨论。
+  - 文章: https://human-emacs.org/
+- **用“无用”的 if 语句使代码性能翻四倍** - 一个反直觉的性能优化技巧，展示了编译器优化的复杂性。
+  - 文章: https://purplesyringa.moe/blog/quadrupling-code-performance-with-a-useless-if/
+- **Logseq 2.0 Beta (DB 版本)** - 流行的知识管理工具的重大更新，转向数据库后端，值得关注。
+  - 文章: https://github.com/logseq/logseq/releases
+  - 讨论: https://news.ycombinator.com/item?id=48896229
 
-#### 1. AI与编程的未来：工具、反思与自动化
+#### 2. 安全、隐私与监控
 
-- **Old and new apps, via modern coding agents**
-  - **简要说明**：著名数学家陶哲轩分享了他如何使用现代AI编码代理（Coding Agents）来创建新应用和改造旧应用。这篇文章值得关注，因为它来自一位顶级学者，展示了AI如何让非专业程序员也能快速实现想法，是“AI辅助编程”的实战案例。
-  - **Article**: [https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/](https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48880170](https://news.ycombinator.com/item?id=48880170)
+- **GhostLock: 存在于所有 Linux 发行版中 15 年的堆 UAF 漏洞** - 一个影响深远的严重内核漏洞，值得所有 Linux 用户关注。
+  - 文章: https://nebusec.ai/research/ionstack-part-2/
+  - 讨论: https://news.ycombinator.com/item?id=48834309
+- **LAPD 终止与监控巨头 Flock 的合同** - 因公民自由和隐私问题，LAPD 不再续约，这是隐私权的一次重要胜利。
+  - 文章: https://techcrunch.com/2026/07/13/lapd-lets-contract-with-surveillance-giant-flock-expire-citing-serious-concerns-over-civil-liberties-and-privacy/
+  - 讨论: https://news.ycombinator.com/item?id=48893947
+- **TFTP 蜜罐结果** - 对 TFTP 协议安全性的实际调查，揭示了网络中的脆弱点。
+  - 文章: https://bruceediger.com/posts/tftp-honeypot-results/
+  - 讨论: https://news.ycombinator.com/item?id=48897329
+- **Clawk: 为编码代理提供一次性 Linux 虚拟机** - 一种创新的安全沙箱方案，防止 AI 编码工具对宿主机造成破坏。
+  - 文章: https://github.com/clawkwork/clawk
+  - 讨论: https://news.ycombinator.com/item?id=48892859
 
-- **Show HN: Mindwalk – Replay coding-agent sessions on a 3D map of your codebase**
-  - **简要说明**：一个名为Mindwalk的开源工具，可以将AI编码代理的整个工作过程可视化，在代码库的3D地图上回放。这对于理解AI是如何修改代码、进行调试和审查非常有价值，是提升AI编程透明度的创新尝试。
-  - **Article**: [https://github.com/cosmtrek/mindwalk](https://github.com/cosmtrek/mindwalk)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48878682](https://news.ycombinator.com/item?id=48878682)
+#### 3. 经典与复古计算
 
-- **Why write code in 2026**
-  - **简要说明**：在AI能自动生成大量代码的2026年，作者探讨了人类为何还要学习编写代码。文章讨论了代码的可读性、可维护性、调试和架构设计等AI目前难以替代的“软技能”，是对“AI取代程序员”论调的理性回应。
-  - **Article**: [https://softwaredoug.com/blog/2026/07/09/write-code](https://softwaredoug.com/blog/2026/07/09/write-code)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48861923](https://news.ycombinator.com/item?id=48861923)
+- **Sega CD Silpheed 的艺术与工程** - Fabien Sanglard 的深度技术考古，解析了这款经典游戏背后的技术和艺术。
+  - 文章: https://fabiensanglard.net/silpheed/index.html
+  - 讨论: https://news.ycombinator.com/item?id=48893639
+- **在 Sega 32X 上运行 Linux** - 在极其有限的硬件上运行现代操作系统的极限挑战，充满了黑客精神。
+  - 文章: https://cakehonolulu.github.io/linux-on-32x/
+  - 讨论: https://news.ycombinator.com/item?id=48896600
+- **15 块“电子垃圾”GPU 的现代负载基准测试** - 评测老旧 Tesla GPU 在 AI 推理等现代场景下的表现，很有实用价值。
+  - 文章: https://esologic.com/benchmarking-tesla-gpus/
+  - 讨论: https://news.ycombinator.com/item?id=48892638
+- **受诅咒的电路 #6: 反向雪崩振荡器** - 关于电子工程的趣味探索，展示了非传统电路设计。
+  - 文章: https://lcamtuf.substack.com/p/cursed-circuits-6-reverse-avalanche
+  - 讨论: https://news.ycombinator.com/item?id=48841962
+- **莫尔斯电码的“绝对魔力”** - 探讨了这种古老通信方式在现代的持久魅力和社区。
+  - 文章: https://www.bbc.com/news/articles/cwye0dlzgejo
+  - 讨论: https://news.ycombinator.com/item?id=48832329
 
-- **Automation Without Understanding**
-  - **简要说明**：一篇来自arXiv的学术论文，探讨了“无理解的自动化”现象。它批评了当前AI和自动化工具在不理解底层原理的情况下生成代码或执行任务，可能导致系统脆弱和难以维护。这对追求可靠性的开发者来说是一个重要的警示。
-  - **Article**: [https://arxiv.org/abs/2607.06377](https://arxiv.org/abs/2607.06377)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48882554](https://news.ycombinator.com/item?id=48882554)
+#### 4. 开发工具与技巧
 
-- **LARP – Revenue infrastructure for serious founders**
-  - **简要说明**：一个面向“严肃创始人”的收入基础设施服务。它值得关注，因为它代表了在AI时代，初创公司如何通过工具化手段，更高效地处理商业核心环节（如支付、计费），让创始人能更专注于产品和增长。
-  - **Article**: [https://www.larp.website/](https://www.larp.website/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48882569](https://news.ycombinator.com/item?id=48882569)
+- **无需打开 Xcode 构建和发布 Mac/iOS 应用** - 介绍了一种完全使用命令行工具链的开发流程，对 CI/CD 和偏好命令行的人很有用。
+  - 文章: https://scottwillsey.com/building-and-shipping-mac-and-ios-apps-without-ever-opening-xcode/
+  - 讨论: https://news.ycombinator.com/item?id=48896665
+- **DOM-docx: HTML 转原生可编辑 Word 文档** - 一个实用的开源库，解决了将网页内容转换为 Word 文档的痛点。
+  - 文章: https://github.com/floodtide/dom-docx
+  - 讨论: https://news.ycombinator.com/item?id=48891267
+- **YouTube 吉他谱解析器** - 利用 Claude Vision 将 YouTube 教学视频中的吉他谱提取为 PDF，是 AI 辅助开发的一个有趣应用。
+  - 文章: https://github.com/marcelpanse/youtube-guitar-tab-parser
+  - 讨论: https://news.ycombinator.com/item?id=48898154
+- **无回溯草书** - 探讨了一种无需回溯的草书渲染算法，可能对字体渲染和图形学有启发。
+  - 文章: https://mmapped.blog/posts/52-backtrack-free-cursive
+  - 讨论: https://news.ycombinator.com/item?id=48888518
+- **Just Let Me Write Digits** - 吐槽了输入数字时糟糕的 UX 设计，引发了关于用户界面细节的讨论。
+  - 文章: https://gendignoux.com/blog/2026/07/13/input-digits.html
 
-#### 2. 安全、隐私与系统底层
+#### 5. 互联网、社会与监管
 
-- **Since Chromium 148, Math.tanh is now fingerprintable to link underlying OS**
-  - **简要说明**：安全研究人员发现，从Chromium 148开始，`Math.tanh`函数的实现可以被用来作为浏览器指纹，从而识别用户的操作系统。这揭示了即使是最底层的数学库实现也可能成为隐私泄露的渠道，对Web隐私有深远影响。
-  - **Article**: [https://scrapfly.dev/posts/browser-math-os-fingerprint/](https://scrapfly.dev/posts/browser-math-os-fingerprint/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48884853](https://news.ycombinator.com/item?id=48884853)
+- **Vint Cerf (互联网之父) 退休** - 一个时代的终结，回顾了互联网的发展历程和 Cerf 的贡献。
+  - 文章: https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/
+  - 讨论: https://news.ycombinator.com/item?id=48854168
+- **维基百科暂时逃脱英国《在线安全法案》的 Category 1 分类** - 这对维基百科和互联网自由有重要意义，监管与开放知识的博弈仍在继续。
+  - 文章: https://en.wikipedia.org/wiki/Wikipedia:Wikipedia_Signpost/2026-07-13/Special_report
+  - 讨论: https://news.ycombinator.com/item?id=48894671
+- **加州“无限滚动”法案可能通过** - 一项旨在保护青少年、限制社交媒体成瘾设计的法案，可能改变互联网产品的交互模式。
+  - 文章: https://www.sfgate.com/politics/article/meta-social-media-teenagers-22337724.php
+  - 讨论: https://news.ycombinator.com/item?id=48897104
+- **前 NOAA 员工建立 Climate.us 保护气候数据** - 面对政治压力，科学家们自建平台保护宝贵的气候数据资源。
+  - 文章: https://19thnews.org/2026/07/noaa-climate-data-website/
+  - 讨论: https://news.ycombinator.com/item?id=48897945
+- **对话的社会物理学** - 探讨了对话模式对人际关系和社会的影响，提供了一种理解沟通的新视角。
+  - 文章: https://andiroberts.com/citizenship/the-social-physics-of-conversation-citizenship-leadership
+  - 讨论: https://news.ycombinator.com/item?id=48828576
 
-- **GhostLock, a stack-UAF that has existed in all Linux distributions for 15 years**
-  - **简要说明**：安全公司披露了一个存在于Linux内核中长达15年的“Use-After-Free”漏洞（GhostLock）。这凸显了即使是最成熟、最广泛使用的操作系统，也可能存在潜伏多年的严重安全缺陷，对服务器和云基础设施安全构成威胁。
-  - **Article**: [https://nebusec.ai/research/ionstack-part-2/](https://nebusec.ai/research/ionstack-part-2/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48834309](https://news.ycombinator.com/item?id=48834309)
+#### 6. 趣味与文化
 
-- **Unauthenticated RCE in Motorola's MR2600 Router**
-  - **简要说明**：研究者在摩托罗拉MR2600路由器中发现了一个无需认证的远程代码执行漏洞。这提醒我们，物联网设备（尤其是家用路由器）的安全性依然薄弱，是网络攻击的常见切入点。
-  - **Article**: [https://mrbruh.com/motorola/](https://mrbruh.com/motorola/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48880406](https://news.ycombinator.com/item?id=48880406)
+- **体素东京：实时日本时间，乘坐山手线学日语** - 一个结合了游戏、教育和实时数据的创意 Web 项目，体验很棒。
+  - 文章: https://jivx.com/densha
+  - 讨论: https://news.ycombinator.com/item?id=48890959
+- **古罗马棋盘游戏** - 一个在线的古罗马棋盘游戏，充满历史趣味。
+  - 文章: https://ludus-coriovalli.web.app/
+  - 讨论: https://news.ycombinator.com/item?id=48852159
+- **Mawlynnong，印度“亚洲最干净的村庄”，周日禁止游客** - 旅游业的成功带来的新挑战，一个关于可持续发展的有趣案例。
+  - 文章: https://www.bbc.com/travel/article/20260625-why-asias-cleanest-village-bans-tourists-on-sundays
+  - 讨论: https://news.ycombinator.com/item?id=48899672
+- **一位在摄影普及前描绘印度的英国女性** - 一幅历史画卷，展示了艺术在记录历史中的独特价值。
+  - 文章: https://www.bbc.com/news/articles/cm2drrv6q54o
+  - 讨论: https://news.ycombinator.com/item?id=48900191
+- **Ask HN: 你在做什么？(2026年7月)** - Hacker News 的月度社区讨论，是了解当前技术创客们在做什么的窗口。
+  - 讨论: https://news.ycombinator.com/item?id=48884984
 
-- **Who does Anubis actually stop?**
-  - **简要说明**：作者对“Anubis”这类网站反爬虫/反机器人工具的有效性进行了反思。文章探讨了这些工具实际上在阻止谁（普通用户还是高级机器人），以及它们对网站可访问性和用户体验的负面影响。
-  - **Article**: [https://fzakaria.com/2026/07/09/who-does-anubis-actually-stop](https://fzakaria.com/2026/07/09/who-does-anubis-actually-stop)
-  - **Discussion**: [https://lobste.rs/s/ktew3s/who_does_anubis_actually_stop](https://lobste.rs/s/ktew3s/who_does_anubis_actually_stop) (Lobsters)
+### 今日最值得阅读的文章推荐
 
-#### 3. 编程语言、工具链与开发体验
+1.  **《GhostLock, a stack-UAF that has existed in all Linux distributions for 15 years》**
+    - **理由**: 这是一个极其严重且影响广泛的底层安全漏洞。了解其原理和影响对于任何使用 Linux 系统的开发者、运维人员和安全从业者来说都至关重要。这篇文章的技术深度和现实意义使其成为今日必读。
+    - **文章链接**: https://nebusec.ai/research/ionstack-part-2/
+    - **讨论链接**: https://news.ycombinator.com/item?id=48834309
 
-- **Understanding the Odin programming language**
-  - **简要说明**：一本关于Odin编程语言的在线书籍。Odin是一种新兴的系统编程语言，旨在成为C语言的现代替代品。它值得关注，因为它代表了编程语言设计的最新探索，特别是对数据导向设计和性能的追求。
-  - **Article**: [https://odinbook.com/](https://odinbook.com/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48880499](https://news.ycombinator.com/item?id=48880499)
+2.  **《LAPD lets contract with surveillance giant Flock expire》**
+    - **理由**: 这是一个关于隐私、公民自由与执法监控之间博弈的重要里程碑。它不仅是技术新闻，更是社会新闻。阅读此文可以了解大型监控项目面临的挑战以及公众舆论的力量。
+    - **文章链接**: https://techcrunch.com/2026/07/13/lapd-lets-contract-with-surveillance-giant-flock-expire-citing-serious-concerns-over-civil-liberties-and-privacy/
+    - **讨论链接**: https://news.ycombinator.com/item?id=48893947
 
-- **Protobuf-py: Protobuf for Python, without compromises**
-  - **简要说明**：Buf公司发布了`protobuf-py`，一个为Python从头重写的Protocol Buffers库。它声称性能更好、API更现代、没有兼容性妥协。这对于大量使用Protobuf的Python开发者（尤其是在数据工程和微服务领域）来说是一个重要更新。
-  - **Article**: [https://buf.build/blog/protobuf-py](https://buf.build/blog/protobuf-py)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48827058](https://news.ycombinator.com/item?id=48827058)
+3.  **《The art and engineering of Sega CD Silpheed》**
+    - **理由**: Fabien Sanglard 的深度技术考古文章总是质量极高。这篇文章不仅满足了怀旧情怀，更深入剖析了 90 年代游戏开发的工程智慧和艺术成就。对于游戏开发者、计算机图形学爱好者和技术史爱好者来说，这是一场盛宴。
+    - **文章链接**: https://fabiensanglard.net/silpheed/index.html
+    - **讨论链接**: https://news.ycombinator.com/item?id=48893639
 
-- **Show HN: Shirei, cross-platform GUI framework in native Go**
-  - **简要说明**：一个用原生Go编写的跨平台GUI框架。Go语言在系统编程和微服务领域很受欢迎，但一直缺乏一个强大、原生的GUI库。Shirei的出现可能填补这一空白，为Go开发者提供了构建桌面应用的新选项。
-  - **Article**: [https://github.com/hasenj/go-shirei/](https://github.com/hasenj/go-shirei/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48882562](https://news.ycombinator.com/item?id=48882562)
+4.  **《Building and shipping Mac and iOS apps without opening Xcode》**
+    - **理由**: 对于 macOS/iOS 开发者来说，这篇文章极具实用价值。它展示了如何利用 `xcodebuild` 和命令行工具构建一个完全自动化的、脱离 IDE 的开发流程。这对于持续集成、持续部署和追求极致效率的开发者是宝贵的知识。
+    - **文章链接**: https://scottwillsey.com/building-and-shipping-mac-and-ios-apps-without-ever-opening-xcode/
+    - **讨论链接**: https://news.ycombinator.com/item?id=48896665
 
-- **Closing a three-year-old issue using Rust arenas**
-  - **简要说明**：作者分享了一个有趣的案例：通过将Gleam语言的某些部分用Rust Arena分配器重写，修复了一个存在三年的性能/内存问题。这展示了Rust作为“后端”语言，如何为其他语言（如Gleam）提供底层优化能力。
-  - **Article**: [https://giacomocavalieri.me/writing/gleam-rust-arenas](https://giacomocavalieri.me/writing/gleam-rust-arenas)
-  - **Discussion**: [https://lobste.rs/s/7840ca/closing_three_year_old_issue_using_rust](https://lobste.rs/s/7840ca/closing_three_year_old_issue_using_rust) (Lobsters)
-
-- **Evan's Jujutsu Tutorial**
-  - **简要说明**：一篇关于Jujutsu（jj）版本控制系统的教程。Jujutsu是一个新兴的、设计更现代的Git替代品，由前Google工程师开发。这篇教程由知名开发者撰写，是学习这个潜力巨大的新工具的好起点。
-  - **Article**: [https://evmar.github.io/jjtut/](https://evmar.github.io/jjtut/)
-  - **Discussion**: [https://lobste.rs/s/beqyuc/evan_s_jujutsu_tutorial](https://lobste.rs/s/beqyuc/evan_s_jujutsu_tutorial) (Lobsters)
-
-- **Ghostel.el: Terminal emulator powered by libghostty**
-  - **简要说明**：一个Emacs插件，它将Ghostty终端模拟器的核心（通过libghostty）集成到Emacs中。这为Emacs用户提供了一个高性能、GPU加速的终端体验，是编辑器与终端融合的典范。
-  - **Article**: [https://dakra.github.io/ghostel/](https://dakra.github.io/ghostel/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48879504](https://news.ycombinator.com/item?id=48879504) (Hacker News) & [https://lobste.rs/s/xgdsao/ghostel_el_terminal_emulator_powered_by](https://lobste.rs/s/xgdsao/ghostel_el_terminal_emulator_powered_by) (Lobsters)
-
-#### 4. 技术与社会、文化、基础设施
-
-- **Vint Cerf, “father of the Internet”, is retiring**
-  - **简要说明**：“互联网之父”文特·瑟夫宣布退休。这标志着互联网时代一个标志性人物的职业生涯结束，引发了社区对互联网过去、现在和未来的广泛讨论。
-  - **Article**: [https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/](https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48854168](https://news.ycombinator.com/item?id=48854168)
-
-- **Irish datacenters now guzzle 23% of the country's electricity**
-  - **简要说明**：报告指出，爱尔兰的数据中心现在消耗了该国23%的电力。这引发了关于科技行业能源消耗、环境影响和可持续发展的激烈辩论，是AI和云计算时代必须面对的现实问题。
-  - **Article**: [https://www.theregister.com/on-prem/2026/07/11/irish-datacenters-now-guzzle-23-of-the-countrys-electricity/5270013](https://www.theregister.com/on-prem/2026/07/11/irish-datacenters-now-guzzle-23-of-the-countrys-electricity/5270013)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48884322](https://news.ycombinator.com/item?id=48884322)
-
-- **Death of the Status Update: Why 55% of Americans Stopped Posting on Social Media**
-  - **简要说明**：文章探讨了社交媒体上“状态更新”的衰落，指出55%的美国人已停止发布。这反映了社交媒体从“分享生活”到“消费内容”的转变，以及用户对隐私、算法和负面情绪的疲劳。
-  - **Article**: [https://ca.pcmag.com/social-media/16790/the-death-of-the-status-update-why-55-of-americans-stopped-posting-on-social-media](https://ca.pcmag.com/social-media/16790/the-death-of-the-status-update-why-55-of-americans-stopped-posting-on-social-media)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48879902](https://news.ycombinator.com/item?id=48879902)
-
-- **How we can reduce traffic congestion**
-  - **简要说明**：Google Research发布了一篇关于如何减少交通拥堵的文章，探讨了利用协作和数据分析来优化交通流的方法。这展示了大型科技公司如何利用自身技术优势解决城市交通这一普遍的社会问题。
-  - **Article**: [https://research.google/blog/the-power-of-collaboration-how-we-can-reduce-traffic-congestion/](https://research.google/blog/the-power-of-collaboration-how-we-can-reduce-traffic-congestion/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48881967](https://news.ycombinator.com/item?id=48881967)
-
-- **Neocities: Create your own free website**
-  - **简要说明**：Neocities是一个提供免费静态网站托管的服务，旨在复兴早期互联网的创作精神。在社交媒体和大型平台主导的今天，它代表了个人建站和DIY文化的一种回归。
-  - **Article**: [https://neocities.org/](https://neocities.org/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48884052](https://news.ycombinator.com/item?id=48884052)
-
-- **The Proportional Web**
-  - **简要说明**：一篇文章探讨了“比例网络”的概念，可能涉及一种新的、更公平的、自组织的网络架构或协议。它反映了对当前中心化互联网架构的反思和替代方案的探索。
-  - **Article**: [https://owickstrom.github.io/the-proportional-web/](https://owickstrom.github.io/the-proportional-web/)
-  - **Discussion**: [https://lobste.rs/s/2vsvdm/proportional_web](https://lobste.rs/s/2vsvdm/proportional_web) (Lobsters)
-
-#### 5. 学习、兴趣与个人发展
-
-- **How to read more books**
-  - **简要说明**：作者分享了自己如何增加阅读量的实用技巧。在信息碎片化的时代，这篇文章提供了对抗注意力分散、回归深度阅读的方法论。
-  - **Article**: [https://scotto.me/blog/2026-07-12-how-to-read-more-books/](https://scotto.me/blog/2026-07-12-how-to-read-more-books/)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48882056](https://news.ycombinator.com/item?id=48882056)
-
-- **The shingles vaccine may reduce the risk of dementia**
-  - **简要说明**：《经济学人》报道称，带状疱疹疫苗可能降低患痴呆症的风险。这虽然不是纯技术新闻，但作为一项重要的医学发现，它通过技术媒体广泛传播，对科技从业者的健康意识有启发意义。
-  - **Article**: [https://www.economist.com/leaders/2026/07/09/a-no-brainer-for-protecting-your-brain](https://www.economist.com/leaders/2026/07/09/a-no-brainer-for-protecting-your-brain) (Alternate: [https://archive.ph/PzPop](https://archive.ph/PzPop))
-  - **Discussion**: [https://news.ycombinator.com/item?id=48881874](https://news.ycombinator.com/item?id=48881874)
-
-- **Don't you mean extinct?**
-  - **简要说明**：Fabien Sanglard（知名游戏和图形程序员）的一篇文章，标题引人深思，内容可能涉及技术、历史或游戏开发中一些被遗忘或“灭绝”的概念。它值得关注，因为Sanglard的文章通常富有洞见和深度。
-  - **Article**: [https://fabiensanglard.net/extinct/index.html](https://fabiensanglard.net/extinct/index.html)
-  - **Discussion**: [https://news.ycombinator.com/item?id=48881830](https://news.ycombinator.com/item?id=48881830)
-
-- **So you want to learn physics (second edition, 2021)**
-  - **简要说明**：一份自学物理学的指南（2021年第二版）。它为想要系统学习物理学的非专业人士提供了清晰的路径和资源推荐，是终身学习的优秀指引。
-  - **Article**: [https://www.susanrigetti.com/physics](https://www.susanrigetti.com/physics)
-  -0:{"buildId":"qjFN3wm6Y0OyaK1mnXLaf","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-07-13","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":14},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-07-13"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-48880170","title":"Old and new apps, via modern coding agents","url":"https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/","source":"Hacker News","score":413,"comments_count":120,"comments_url":"https://news.ycombinator.com/item?id=48880170","published_at":"2026-07-12T11:09:42","author":"subset","text":null,"summary":"探讨现代编码代理如何帮助重构旧应用和开发新应用，展示了AI辅助编程的实用价值。"},{"id":"hn-48884853","title":"Since Chromium 148, Math.tanh is now fingerprintable to link underlying OS","url":"https://scrapfly.dev/posts/browser-math-os-fingerprint/","source":"Hacker News","score":310,"comments_count":153,"comments_url":"https://news.ycombinator.com/item?id=48884853","published_at":"2026-07-12T21:12:11","author":"joahnn_s","text":null,"summary":"揭示Chromium 148中Math.tanh函数可被用于指纹识别操作系统，引发浏览器隐私安全担忧。"},{"id":"hn-48854168","title":"Vint Cerf, “father of the Internet”, is retiring","url":"https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/","source":"Hacker News","score":282,"comments_count":162,"comments_url":"https://news.ycombinator.com/item?id=48854168","published_at":"2026-07-10T00:06:59","author":"compiler-guy","text":null,"summary":"互联网之父Vint Cerf宣布退休，标志着一个技术时代的结束，值得回顾其对互联网发展的深远影响。"},{"id":"hn-48879504","title":"Ghostel.el: Terminal emulator powered by libghostty","url":"https://dakra.github.io/ghostel/","source":"Hacker News","score":265,"comments_count":50,"comments_url":"https://news.ycombinator.com/item?id=48879504","published_at":"2026-07-12T08:52:59","author":"signa11","text":null,"summary":"介绍基于libghostty的终端模拟器Ghostel.el，为Emacs用户提供更高效的终端体验。"},{"id":"hn-48882056","title":"How to read more books","url":"https://scotto.me/blog/2026-07-12-how-to-read-more-books/","source":"Hacker News","score":256,"comments_count":145,"comments_url":"https://news.ycombinator.com/item?id=48882056","published_at":"2026-07-12T15:47:16","author":"silcoon","text":null,"summary":"分享实用阅读技巧，帮助人们克服障碍、增加阅读量，对知识工作者有直接启发。"},{"id":"hn-48881874","title":"The shingles vaccine may reduce the risk of dementia","url":"https://www.economist.com/leaders/2026/07/09/a-no-brainer-for-protecting-your-brain","source":"Hacker News","score":214,"comments_count":177,"comments_url":"https://news.ycombinator.com/item?id=48881874","published_at":"2026-07-12T15:23:59","author":"saikatsg","text":"<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;PzPop\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;PzPop</a>","summary":"报道带状疱疹疫苗可能降低痴呆风险的研究，为公共卫生和个人健康决策提供新视角。"},{"id":"hn-48884322","title":"Irish datacenters now guzzle 23% of the country's electricity","url":"https://www.theregister.com/on-prem/2026/07/11/irish-datacenters-now-guzzle-23-of-the-countrys-electricity/5270013","source":"Hacker News","score":212,"comments_count":205,"comments_url":"https://news.ycombinator.com/item?id=48884322","published_at":"2026-07-12T20:16:12","author":"Bender","text":null,"summary":"爱尔兰数据中心耗电量占全国23%，凸显数字基础设施的能源挑战与可持续发展问题。"},{"id":"hn-48881830","title":"Don't you mean extinct?","url":"https://fabiensanglard.net/extinct/index.html","source":"Hacker News","score":183,"comments_count":114,"comments_url":"https://news.ycombinator.com/item?id=48881830","published_at":"2026-07-12T15:17:20","author":"zdw","text":null,"summary":"以幽默方式探讨技术术语的误用，引发对语言准确性和技术文化反思。"},{"id":"hn-48882569","title":"LARP – Revenue infrastructure for serious founders","url":"https://www.larp.website/","source":"Hacker News","score":163,"comments_count":35,"comments_url":"https://news.ycombinator.com/item?id=48882569","published_at":"2026-07-12T16:56:41","author":"BerislavLopac","text":null,"summary":"为创业者提供收入基础设施服务，简化财务和支付流程，助力初创公司快速成长。"},{"id":"hn-48878682","title":"Show HN: Mindwalk – Replay coding-agent sessions on a 3D map of your codebase","url":"https://github.com/cosmtrek/mindwalk","source":"Hacker News","score":150,"comments_count":62,"comments_url":"https://news.ycombinator.com/item?id=48878682","published_at":"2026-07-12T05:51:32","author":"cosmtrek","text":null,"summary":"发布Mindwalk工具，通过3D代码库地图可视化编码代理会话，提升代码理解和调试效率。"},{"id":"hn-48884395","title":"Tiny Emulators","url":"https://floooh.github.io/tiny8bit-preview/index.html","source":"Hacker News","score":148,"comments_count":9,"comments_url":"https://news.ycombinator.com/item?id=48884395","published_at":"2026-07-12T20:23:05","author":"naves","text":null,"summary":"本文介绍了一个微型模拟器项目，可运行8位计算机系统，因其极简设计和怀旧技术价值而值得关注。"},{"id":"hn-48880499","title":"Understanding the Odin programming language","url":"https://odinbook.com/","source":"Hacker News","score":147,"comments_count":91,"comments_url":"https://news.ycombinator.com/item?id=48880499","published_at":"2026-07-12T12:08:07","author":"AlexeyBrin","text":null,"summary":"本文提供Odin编程语言的全面指南，适合希望学习这门新兴语言的开发者关注。"},{"id":"hn-48827058","title":"Protobuf-py: Protobuf for Python, without compromises","url":"https://buf.build/blog/protobuf-py","source":"Hacker News","score":130,"comments_count":47,"comments_url":"https://news.ycombinator.com/item?id=48827058","published_at":"2026-07-08T03:16:38","author":"ming13","text":null,"summary":"本文介绍了Protobuf-py，一个无妥协的Python Protobuf实现，因其提升性能和易用性而值得关注。"},{"id":"hn-48861923","title":"Why write code in 2026","url":"https://softwaredoug.com/blog/2026/07/09/write-code","source":"Hacker News","score":115,"comments_count":152,"comments_url":"https://news.ycombinator.com/item?id=48861923","published_at":"2026-07-10T16:12:52","author":"softwaredoug","text":null,"summary":"本文探讨了2026年编写代码的意义，反思技术趋势和开发者角色，值得关注以理解编程的未来。"},{"id":"hn-48879902","title":"Death of the Status Update: Why 55% of Americans Stopped Posting on Social Media","url":"https://ca.pcmag.com/social-media/16790/the-death-of-the-status-update-why-55-of-americans-stopped-posting-on-social-media","source":"Hacker News","score":112,"comments_count":136,"comments_url":"https://news.ycombinator.com/item?id=48879902","published_at":"2026-07-12T10:14:40","author":"thunderbong","text":null,"summary":"本文分析55%美国人停止在社交媒体发帖的原因，揭示社交平台使用行为的重大转变，值得关注。"},{"id":"hn-48827126","title":"So you want to learn physics (second edition, 2021)","url":"https://www.susanrigetti.com/physics","source":"Hacker News","score":102,"comments_count":11,"comments_url":"https://news.ycombinator.com/item?id=48827126","published_at":"2026-07-08T03:28:00","author":"azhenley","text":null,"summary":"本文提供学习物理学的系统指南（2021年版），适合初学者和自学者，因其权威性和实用性而值得关注。"},{"id":"hn-48882554","title":"Automation Without Understanding","url":"https://arxiv.org/abs/2607.06377","source":"Hacker News","score":95,"comments_count":41,"comments_url":"https://news.ycombinator.com/item?id=48882554","published_at":"2026-07-12T16:54:47","author":"root-parent","text":null,"summary":"本文探讨自动化缺乏理解的风险，强调在AI时代需谨慎设计系统，值得关注以应对技术挑战。"},{"id":"hn-48834309","title":"GhostLock, a stack-UAF that has existed in all Linux distributions for 15 years","url":"https://nebusec.ai/research/ionstack-part-2/","source":"Hacker News","score":90,"comments_count":15,"comments_url":"https://news.ycombinator.com/item?id=48834309","published_at":"2026-07-08T16:53:58","author":"ranger_danger","text":"UAF = Use After Free (<a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Dangling_pointer\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Dangling_pointer</a>)","summary":"本文揭示一个存在15年的Linux内核堆栈UAF漏洞（GhostLock），因其广泛影响和严重性而值得关注。"},{"id":"hn-48884052","title":"Neocities: Create your own free website","url":"https://neocities.org/","source":"Hacker News","score":82,"comments_count":28,"comments_url":"https://news.ycombinator.com/item?id=48884052","published_at":"2026-07-12T19:49:53","author":"Tomte","text":null,"summary":"本文介绍Neocities平台，允许用户创建免费网站，因其支持互联网独立性和复古风格而值得关注。"},{"id":"hn-48881967","title":"How we can reduce traffic congestion","url":"https://research.google/blog/the-power-of-collaboration-how-we-can-reduce-traffic-congestion/","source":"Hacker News","score":79,"comments_count":91,"comments_url":"https://news.ycombinator.com/item?id=48881967","published_at":"2026-07-12T15:35:36","author":"raahelb","text":null,"summary":"本文分享Google研究如何通过协作减少交通拥堵，提供创新解决方案，值得关注以改善城市交通。"},{"id":"hn-48884984","title":"Ask HN: What Are You Working On? (July 2026)","url":null,"source":"Hacker News","score":78,"comments_count":202,"comments_url":"https://news.ycombinator.com/item?id=48884984","published_at":"2026-07-12T21:26:41","author":"david927","text":"What are you working on?  Any new ideas that you&#x27;re thinking about?","summary":"Hacker News上的一个讨论帖，邀请开发者分享他们正在进行的项目和新想法，反映了社区当前的技术创作趋势。"},{"id":"hn-48885643","title":"Cyberpunk Comics, Manga and Graphic Novels","url":"https://shellzine.net/cyberpunk-comics/","source":"Hacker News","score":78,"comments_count":17,"comments_url":"https://news.ycombinator.com/item?id=48885643","published_at":"2026-07-12T22:45:31","author":"zdw","text":null,"summary":"介绍赛博朋克主题的漫画、漫画书和图像小说，为赛博朋克文化爱好者提供了一份值得关注的阅读清单。"},{"id":"hn-48882562","title":"Show HN: Shirei, cross-platform GUI framework in native Go","url":"https://github.com/hasenj/go-shirei/","source":"Hacker News","score":78,"comments_count":48,"comments_url":"https://news.ycombinator.com/item?id=48882562","published_at":"2026-07-12T16:55:42","author":"hsn915","text":null,"summary":"展示了一个用原生Go语言构建的跨平台GUI框架Shirei，因其简化了Go GUI开发而值得关注。"},{"id":"hn-48880406","title":"Unauthenticated RCE in Motorola's MR2600 Router","url":"https://mrbruh.com/motorola/","source":"Hacker News","score":78,"comments_count":25,"comments_url":"https://news.ycombinator.com/item?id=48880406","published_at":"2026-07-12T11:52:21","author":"MrBruh","text":null,"summary":"披露了摩托罗拉MR2600路由器中的一个未认证远程代码执行漏洞，对网络安全领域具有警示意义。"},{"id":"hn-48882097","title":"Why study Diophantine equations?","url":"https://hidden-phenomena.com/articles/modular","source":"Hacker News","score":65,"comments_count":24,"comments_url":"https://news.ycombinator.com/item?id=48882097","published_at":"2026-07-12T15:53:53","author":"mb1699","text":null,"summary":"探讨了研究丢番图方程的原因，揭示了其在数学理论和实际应用中的重要性。"}],"locale":"zh"}],"$Lc"]}]]}]
+5.  **《The infinite scroll may become endangered if controversial Calif. law passes》**
+    - **理由**: 这篇文章触及了互联网产品设计的核心矛盾：用户粘性 vs. 用户福祉。如果该法案通过，将深刻改变社交媒体、新闻网站和无数应用的交互方式。所有产品经理、设计师和关心互联网未来的读者都应该了解这项潜在立法的影响。
+    - **文章链接**: https://www.sfgate.com/politics/article/meta-social-media-teenagers-22337724.php
+    - **讨论链接**: https://news.ycombinator.com/item?id=488971040:{"buildId":"uZqDi_6lYxiBxUZzyvPqq","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-07-14","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":14},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-07-14"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-48897945","title":"Former NOAA employees built Climate.us to preserve climate data and resources","url":"https://19thnews.org/2026/07/noaa-climate-data-website/","source":"Hacker News","score":435,"comments_count":173,"comments_url":"https://news.ycombinator.com/item?id=48897945","published_at":"2026-07-13T19:57:55","author":"benwerd","text":null,"summary":"前NOAA员工建立Climate.us网站，旨在保存气候数据和资源，防止数据丢失或政治干预，对关注气候科学和数据可访问性的人士至关重要。"},{"id":"hn-48893947","title":"LAPD lets contract with surveillance giant Flock expire","url":"https://techcrunch.com/2026/07/13/lapd-lets-contract-with-surveillance-giant-flock-expire-citing-serious-concerns-over-civil-liberties-and-privacy/","source":"Hacker News","score":432,"comments_count":381,"comments_url":"https://news.ycombinator.com/item?id=48893947","published_at":"2026-07-13T15:11:50","author":"forks","text":null,"summary":"洛杉矶警察局因公民自由和隐私担忧，终止与监控巨头Flock的合同，标志着公共安全与隐私权平衡的重大转变。"},{"id":"hn-48834309","title":"GhostLock, a stack-UAF that has existed in all Linux distributions for 15 years","url":"https://nebusec.ai/research/ionstack-part-2/","source":"Hacker News","score":393,"comments_count":191,"comments_url":"https://news.ycombinator.com/item?id=48834309","published_at":"2026-07-08T16:53:58","author":"ranger_danger","text":"UAF = Use After Free (<a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Dangling_pointer\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Dangling_pointer</a>)","summary":"发现名为GhostLock的堆栈UAF漏洞，已在所有Linux发行版中存在15年，凸显开源软件长期安全风险的严重性。"},{"id":"hn-48854168","title":"Vint Cerf, “father of the Internet”, is retiring","url":"https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/","source":"Hacker News","score":358,"comments_count":200,"comments_url":"https://news.ycombinator.com/item?id=48854168","published_at":"2026-07-10T00:06:59","author":"compiler-guy","text":null,"summary":"互联网之父Vint Cerf宣布退休，标志着一个技术时代的结束，值得回顾他对网络发展的巨大贡献。"},{"id":"hn-48890959","title":"A voxel Tokyo in real Japan time – ride the Yamanote line and study Japanese","url":"https://jivx.com/densha","source":"Hacker News","score":346,"comments_count":67,"comments_url":"https://news.ycombinator.com/item?id=48890959","published_at":"2026-07-13T11:18:30","author":"momentmaker","text":null,"summary":"一个基于真实东京时间的体素东京项目，允许用户乘坐山手线并学习日语，融合了游戏化学习与城市模拟。"},{"id":"hn-48896665","title":"Building and shipping Mac and iOS apps without opening Xcode","url":"https://scottwillsey.com/building-and-shipping-mac-and-ios-apps-without-ever-opening-xcode/","source":"Hacker News","score":314,"comments_count":136,"comments_url":"https://news.ycombinator.com/item?id=48896665","published_at":"2026-07-13T18:22:16","author":"speckx","text":null,"summary":"介绍如何在不打开Xcode的情况下构建和发布Mac和iOS应用，为开发者提供自动化工作流的实用指南。"},{"id":"hn-48888518","title":"Backtrack-Free Cursive","url":"https://mmapped.blog/posts/52-backtrack-free-cursive","source":"Hacker News","score":251,"comments_count":117,"comments_url":"https://news.ycombinator.com/item?id=48888518","published_at":"2026-07-13T06:08:12","author":"dmit","text":null,"summary":"探讨无回溯草书书写技术，可能提升手写输入效率，对字体设计和人机交互领域有启发意义。"},{"id":"hn-48884984","title":"Ask HN: What Are You Working On? (July 2026)","url":null,"source":"Hacker News","score":245,"comments_count":945,"comments_url":"https://news.ycombinator.com/item?id=48884984","published_at":"2026-07-12T21:26:41","author":"david927","text":"What are you working on?  Any new ideas that you&#x27;re thinking about?","summary":"Hacker News的月度讨论帖，汇集开发者当前项目和新想法，是了解技术社区创新动态的窗口。"},{"id":"hn-48893639","title":"The art and engineering of Sega CD Silpheed","url":"https://fabiensanglard.net/silpheed/index.html","source":"Hacker News","score":224,"comments_count":46,"comments_url":"https://news.ycombinator.com/item?id=48893639","published_at":"2026-07-13T14:52:33","author":"ibobev","text":null,"summary":"深入分析Sega CD游戏Silpheed的艺术与工程，揭示复古游戏开发的技术细节和创意过程。"},{"id":"hn-48892859","title":"Show HN: Clawk – Give coding agents a disposable Linux VM, not your laptop","url":"https://github.com/clawkwork/clawk","source":"Hacker News","score":174,"comments_count":140,"comments_url":"https://news.ycombinator.com/item?id=48892859","published_at":"2026-07-13T14:02:03","author":"celrenheit","text":null,"summary":"Clawk项目为编码代理提供一次性Linux虚拟机，而非开发者本地环境，增强安全性和隔离性，适合AI编程工具使用。"},{"id":"hn-48828576","title":"The social physics of conversation: Communication patterns matter","url":"https://andiroberts.com/citizenship/the-social-physics-of-conversation-citizenship-leadership","source":"Hacker News","score":162,"comments_count":38,"comments_url":"https://news.ycombinator.com/item?id=48828576","published_at":"2026-07-08T07:05:49","author":"kiyanwang","text":null,"summary":"本文探讨了对话中的社交物理学，强调沟通模式对公民身份和领导力的影响，值得关注因为它揭示了人际互动的深层机制。"},{"id":"hn-48891267","title":"Show HN: DOM-docx – HTML to native, editable Word docs (MIT)","url":"https://github.com/floodtide/dom-docx","source":"Hacker News","score":137,"comments_count":32,"comments_url":"https://news.ycombinator.com/item?id=48891267","published_at":"2026-07-13T11:51:56","author":"fishbone","text":null,"summary":"介绍了一个名为DOM-docx的开源工具，可将HTML转换为原生可编辑的Word文档，对文档处理开发者有实用价值。"},{"id":"hn-48832329","title":"The 'absolute magic' of Morse code that still connects people globally","url":"https://www.bbc.com/news/articles/cwye0dlzgejo","source":"Hacker News","score":119,"comments_count":71,"comments_url":"https://news.ycombinator.com/item?id=48832329","published_at":"2026-07-08T14:20:09","author":"austinallegro","text":null,"summary":"讲述了摩尔斯电码在全球仍能连接人们的'绝对魔力'，突出了这一古老通信技术的持久魅力。"},{"id":"hn-48892638","title":"Benchmarking 15 “E-Waste” GPUs with Modern Workloads","url":"https://esologic.com/benchmarking-tesla-gpus/","source":"Hacker News","score":115,"comments_count":49,"comments_url":"https://news.ycombinator.com/item?id=48892638","published_at":"2026-07-13T13:48:42","author":"eso_logic","text":null,"summary":"对15款'电子垃圾'GPU进行了现代工作负载基准测试，为低成本硬件升级提供了性能参考。"},{"id":"hn-48896600","title":"Linux on the Sega 32X. Who needs hardware synchronization primitives anyway?","url":"https://cakehonolulu.github.io/linux-on-32x/","source":"Hacker News","score":101,"comments_count":22,"comments_url":"https://news.ycombinator.com/item?id=48896600","published_at":"2026-07-13T18:18:25","author":"cakehonolulu","text":null,"summary":"展示了在Sega 32X上运行Linux的尝试，探讨了缺乏硬件同步原语的挑战，对复古硬件爱好者有吸引力。"},{"id":"hn-48894671","title":"Wikipedia escapes Category 1 designation under the UK Online Safety Act for now","url":"https://en.wikipedia.org/wiki/Wikipedia:Wikipedia_Signpost/2026-07-13/Special_report","source":"Hacker News","score":100,"comments_count":80,"comments_url":"https://news.ycombinator.com/item?id=48894671","published_at":"2026-07-13T15:59:36","author":"hn_acker","text":null,"summary":"报道了维基百科暂时免于被英国《在线安全法》列为第一类平台，对网络监管和自由知识传播有重要意义。"},{"id":"hn-48852159","title":"Ancient Roman Board Game","url":"https://ludus-coriovalli.web.app/","source":"Hacker News","score":91,"comments_count":37,"comments_url":"https://news.ycombinator.com/item?id=48852159","published_at":"2026-07-09T20:47:45","author":"nobody9999","text":null,"summary":"介绍了一个古罗马棋盘游戏的数字版本，结合历史与交互设计，适合游戏开发者和历史爱好者。"},{"id":"hn-48896229","title":"Logseq 2.0 Beta (DB version) is here","url":"https://github.com/logseq/logseq/releases","source":"Hacker News","score":90,"comments_count":63,"comments_url":"https://news.ycombinator.com/item?id=48896229","published_at":"2026-07-13T17:49:49","author":"karencarits","text":null,"summary":"Logseq 2.0 Beta版本发布，引入数据库版本，标志着知识管理工具的重大更新。"},{"id":"hn-48898134","title":"Linux 0.11 rewritten in idiomatic Rust, boots in QEMU","url":"https://github.com/Poseidon-fan/linux-0.11-rs","source":"Hacker News","score":85,"comments_count":71,"comments_url":"https://news.ycombinator.com/item?id=48898134","published_at":"2026-07-13T20:11:29","author":"arto","text":null,"summary":"将Linux 0.11内核用Rust重写并能在QEMU中启动，展示了Rust在系统编程中的潜力。"},{"id":"hn-48841962","title":"Cursed circuits #6: reverse avalanche oscillator","url":"https://lcamtuf.substack.com/p/cursed-circuits-6-reverse-avalanche","source":"Hacker News","score":82,"comments_count":21,"comments_url":"https://news.ycombinator.com/item?id=48841962","published_at":"2026-07-09T07:00:17","author":"surprisetalk","text":null,"summary":"探讨了反向雪崩振荡器这一'诅咒电路'，揭示了电子工程中的奇特现象，对硬件爱好者有教育意义。"},{"id":"hn-48897104","title":"The infinite scroll may become endangered if controversial Calif. law passes","url":"https://www.sfgate.com/politics/article/meta-social-media-teenagers-22337724.php","source":"Hacker News","score":80,"comments_count":132,"comments_url":"https://news.ycombinator.com/item?id=48897104","published_at":"2026-07-13T18:53:53","author":"Stratoscope","text":null,"summary":"加州一项有争议的法律可能使无限滚动功能面临风险，该法律旨在限制社交媒体对青少年的影响，值得关注因为它可能改变用户界面设计。"},{"id":"hn-48898154","title":"Show HN: YouTube Guitar Tab Parser","url":"https://github.com/marcelpanse/youtube-guitar-tab-parser","source":"Hacker News","score":72,"comments_count":47,"comments_url":"https://news.ycombinator.com/item?id=48898154","published_at":"2026-07-13T20:13:14","author":"neogenix","text":"I created a simple CLI that turns a YouTube guitar-lesson video into a PDF of the guitar tab.<p>There are services that transcribe music from Youtube videos into tabs, but they never work well enough for me. Instead I&#x27;m taking a simpler approach. \nIt downloads the video, samples frames, uses Claude vision to locate the tab region, crops every frame to that region, de-duplicates the crops by the bar number printed on each line of the score, and stitches the distinct tab lines vertically into a PDF.<p>I didn&#x27;t test it on a lot of different Youtube videos yet, so problem will arise for sure.","summary":"一个将YouTube吉他教学视频转换为PDF吉他谱的命令行工具，采用简单采样方法，为音乐学习者提供实用方案。"},{"id":"hn-48899672","title":"Mawlynnong, India, transformed by tourism, bans visitors on Sundays","url":"https://www.bbc.com/travel/article/20260625-why-asias-cleanest-village-bans-tourists-on-sundays","source":"Hacker News","score":64,"comments_count":60,"comments_url":"https://news.ycombinator.com/item?id=48899672","published_at":"2026-07-13T22:19:16","author":"gmays","text":null,"summary":"印度Mawlynnong村因旅游转型而禁止游客周日进入，反映过度旅游对当地社区的影响。"},{"id":"hn-48897329","title":"TFTP Honey Pot Results","url":"https://bruceediger.com/posts/tftp-honeypot-results/","source":"Hacker News","score":57,"comments_count":25,"comments_url":"https://news.ycombinator.com/item?id=48897329","published_at":"2026-07-13T19:11:17","author":"speckx","text":null,"summary":"TFTP蜜罐结果分析揭示了网络攻击模式，对网络安全防御有参考价值。"},{"id":"hn-48900191","title":"An Englishwoman who sketched India before photography took hold","url":"https://www.bbc.com/news/articles/cm2drrv6q54o","source":"Hacker News","score":47,"comments_count":8,"comments_url":"https://news.ycombinator.com/item?id=48900191","published_at":"2026-07-13T23:12:22","author":"1659447091","text":null,"summary":"一位英国女性在摄影普及前通过素描记录印度，展现了历史与艺术的独特视角。"}],"locale":"zh"}],"$Lc"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
 a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
-c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-93a25cc7c4c8","title":"Closing a three-year-old issue using Rust arenas","url":"https://giacomocavalieri.me/writing/gleam-rust-arenas","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-12T18:58:31","author":"giacomocavalieri.me by giacomo_cavalieri","text":"<p><a href=\"https://lobste.rs/s/7840ca/closing_three_year_old_issue_using_rust\">Comments</a></p>","summary":"通过Rust的arenas技术解决了一个存在三年的旧问题，展示了Rust在内存管理方面的创新应用。"},{"id":"rss-76559f4c08c5","title":"Evan's Jujutsu Tutorial","url":"https://evmar.github.io/jjtut/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-12T15:19:32","author":"evmar.github.io by evmar","text":"<p><a href=\"https://lobste.rs/s/beqyuc/evan_s_jujutsu_tutorial\">Comments</a></p>","summary":"提供了Evan的Jujutsu教程，帮助开发者学习这个新兴的版本控制系统，值得关注其与Git的差异。"},{"id":"rss-552b92b47e31","title":"ghostel.el - Terminal emulator powered by libghostty","url":"https://dakra.github.io/ghostel/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-12T12:18:13","author":"dakra.github.io via hoistbypetard","text":"<p><a href=\"https://lobste.rs/s/xgdsao/ghostel_el_terminal_emulator_powered_by\">Comments</a></p>","summary":"推出了ghostel.el，一个由libghostty驱动的终端模拟器，为Emacs用户提供了新的终端体验。"},{"id":"rss-64dda711e3e1","title":"The Proportional Web","url":"https://owickstrom.github.io/the-proportional-web/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-12T06:40:15","author":"owickstrom.github.io via typesanitizer","text":"<p><a href=\"https://lobste.rs/s/2vsvdm/proportional_web\">Comments</a></p>","summary":"提出了“比例网络”概念，探讨了更公平的互联网资源分配方式，对网络架构设计有启发意义。"},{"id":"rss-4b31ae96e3fb","title":"Who does Anubis actually stop?","url":"https://fzakaria.com/2026/07/09/who-does-anubis-actually-stop","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-12T02:34:31","author":"fzakaria.com via zk","text":"<p><a href=\"https://lobste.rs/s/ktew3s/who_does_anubis_actually_stop\">Comments</a></p>","summary":"分析了Anubis工具的实际防护效果，揭示了其在阻止恶意流量方面的真实作用，对安全实践有参考价值。"}],"locale":"zh"}]
+10:T2491,<p>This past Saturday, <a href="https://lobste.rs/~pushcx" rel="ugc">@pushcx</a> and I deployed the <a href="https://github.com/lobsters/lobsters/pull/1927" rel="ugc">SQLite pull request</a> to production.
+We were waiting till this morning to see how it would react to the Monday traffic spike before making this post.
+Needless to say, SQLite seems to have passed with flying colors: cpu usage is down, memory usage is down, site seems to be snappier at least for me, 1/2 the vps cost once mariadb vps is taken down, and finally <a href="https://gist.github.com/pushcx/eb7cdf2dc9707dc3ab9e7173d197ddfc?permalink_comment_id=6251610#gistcomment-6251610" rel="ugc">"We're having a quiet Monday."</a>.
+Finally <a href="https://github.com/lobsters/lobsters/issues/539#issuecomment-4959857588" rel="ugc">#539 Migrate to SQLite</a> was closed this morning.</p>
+<p>Let us know if you have any questions about the migration.</p>
+<p>Background Story:</p>
+<p>I got involved with this migration because back in 2019 I stumbled upon <a href="https://github.com/lobsters/lobsters/issues/539" rel="ugc">#539</a> and because I had lots of experience working with, managing and migrating largish databases, I left a <a href="https://github.com/lobsters/lobsters/issues/539#issuecomment-509041532" rel="ugc">comment</a> suggesting MySQL as an alternative, because of the compatibility between MariaDB and MySQL. At that time I wasn't planning on getting involved since there were already conversations in place to migrate to PostgreSQL.</p>
+<p>Fast forward to 2025, <a href="https://github.com/lobsters/lobsters/issues/539#issuecomment-2604683262" rel="ugc">Rahul left a comment</a> mentioning K1's acquisition of MariaDB. A discussion around the details of migrating to postgresql proceeded. Then in February, <a href="https://github.com/lobsters/lobsters/issues/539#issuecomment-2640076884" rel="ugc">Rahul asked "Can lobsters run on sqlite?</a> which included a very detailed post around SQLite.</p>
+<p>I officially showed interest in taking on this project in <a href="https://github.com/lobsters/lobsters/issues/539#issuecomment-2956952922" rel="ugc">June 2025</a>. I think this somehow got mentioned in <a href="https://lobste.rs/s/zzprkr/weekly_lobsters_office_hours" rel="ugc">lobsters office hours</a> but it has been so long since then that I don't rememeber for certain.</p>
+<p>In <a href="https://github.com/lobsters/lobsters/issues/539#issuecomment-3198784051" rel="ugc">August 2025</a> I opened my <a href="https://github.com/lobsters/lobsters/pull/1705" rel="ugc">first pull request attempt</a> when I got busy and couldn't attend to the PR. Github closed it as stale and I couldn't reopen it so I opened another PR. The <a href="https://github.com/lobsters/lobsters/pull/1871" rel="ugc">second PR attempt</a> included some performance testing, a <a href="https://github.com/lobsters/lobsters/blob/main/lib/tasks/migrate.rake" rel="ugc">database x to database y script</a> (since none of the existing mariadb/mysql to sqlite scripts satisfied me), debugging and thinking around data integrity.</p>
+<p>Then came the first deploy on Feb 21st. <a href="https://lobste.rs/~pushcx" rel="ugc">@pushcx</a> and I got on a call, came up with a <a href="https://gist.github.com/pushcx/eb7cdf2dc9707dc3ab9e7173d197ddfc/a11e6d5865776f3bb4e1adbc56582a3b1f99878c" rel="ugc">checklist</a> for the deployment. Everything went right up until the deployment of the PR. Once deployed the site was in readonly mode, but just the readonly traffic was spiking all the cpus to 100%. We couldn't figure out what the problem was so we decided to <a href="https://github.com/lobsters/lobsters/pull/1924" rel="ugc">revert</a>. I didn't feel great after that first failed deploy since I knew that performance could be a problem due to not having access to the production database.</p>
+<p>Two days after the failed deploy I opened the <a href="https://github.com/lobsters/lobsters/pull/1927" rel="ugc">3rd and final pr attempt</a>. I fixed some <a href="https://github.com/lobsters/lobsters/pull/1927/changes/e7630ffe5c0df9fc0a388db5b6b6e11eb4a4c407" rel="ugc">minor issues with search</a> that were discovered during the failed deploy, created a <a href="https://github.com/lobsters/lobsters/pull/1927/changes/c3c12e6f134c9d67c37c57a0390f9d3a2c9f26d8" rel="ugc">bulk data creation script</a> which took a week to get half of lobsters' data set size created locally, and committed the three changes that fixed the performance issues during the first deploy: <a href="https://github.com/lobsters/lobsters/pull/1927/changes/14a8c5f412cc23c887a5b809453596c02d8df6d1" rel="ugc">1</a>, <a href="https://github.com/lobsters/lobsters/pull/1927/changes/4dc58fc1d98ed393c4b447c71568bc0cb700896b" rel="ugc">2</a>, <a href="https://github.com/lobsters/lobsters/pull/1927/changes/4476ae3e50602b5e0d7805fef40fc94a81daaa39" rel="ugc">3</a>. The performance issues boiled down to SQLite doing full table scans on the largest tables in the database for 2 of queries and the 3rd one solved an n+1 issue. During the morning of the second deployment, I also added a <a href="https://github.com/lobsters/lobsters/pull/1927/changes/a62fc572c068f7df45ade8a5fad117dafc68cc00" rel="ugc">slow query log</a> just in case there were more performance issues during the deployment.</p>
+<p>Then came the second deploy on July 11th. <a href="https://lobste.rs/~pushcx" rel="ugc">@pushcx</a> and I got on a morning call and came up with a deployment and revert checklist. Everything was going smoothly and then <a href="https://lobste.rs/~pushcx" rel="ugc">@pushcx</a> merged and deployed the PR. Once deployed the site was still live and the cpu/memory usage was still good. This was a big relief for me. We monitored site metrics and irc for people mentioning issues, which a couple did and those were promptly fixed: <a href="https://github.com/lobsters/lobsters/commit/1dd9d5e4d7ecc7f924a88c8792ec44f7c90d4691" rel="ugc">1</a>, <a href="https://github.com/lobsters/lobsters/commit/e88a07e1f121cbae772340c29e482399b1e92b75" rel="ugc">2</a>. Overall the site seemed to work so we wrapped up the call and waited till Monday when the traffic spikes.</p>
+<p>Monday came and the site is stil happy so we're calling this a win and moving on.</p>
+<p>SQLite lessons:</p>
+<ol>
+<li>The SQLite gem supports user defined functions (udfs) and we used it to implement some missing functions in SQLite like <a href="https://github.com/lobsters/lobsters/blob/main/config/initializers/sqlite_functions.rb" rel="ugc">regexp, if and stddev</a> so that we wouldn't have to deal with too many sql migration workarounds.</li>
+<li>SQLite doesn't support unsigned bigints. Previously, the mariadb was using unsigned bigints for certain ids, so we had to switch those to bigints for the migration.</li>
+<li>Collation in SQLite is rather weak compared to MariaDB. Lobste.rs used utf8mb4_general_ci in MariaDB, but used <a href="https://www.sqlite.org/datatype3.html#collating_sequences" rel="ugc">NOCASE</a> in SQLite. The downside of NOCASE is that it only supports ASCII characters, not the full UTF case folding.</li>
+<li>Use the preferred <a href="https://www.sqlite.org/fts5.html#contentless_delete_tables" rel="ugc">Contentless-Delete Tables in SQLite</a> for your full text search tables. These are not the default. I'm constantly surprised by the default choices of SQLite.</li>
+</ol>
+<p>Rails lessons:</p>
+<ol>
+<li>The <a href="https://github.com/rails/rails/blob/v8.0.5/activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb#L84-L91" rel="ugc">default PRAGMAs in Rails</a> seem to be working for lobsters.</li>
+<li>You typically don't think about it but database migrations are database specific. I had to move the old migrations out to an <a href="https://github.com/lobsters/lobsters/tree/main/db/old_migrations" rel="ugc">old migrations</a> directory so that db:migrate would continue to work.</li>
+</ol>
+<p>Lobsters codebase lessons:</p>
+<ol>
+<li>There is a <a href="https://github.com/lobsters/lobsters/blob/main/app/models/search_parser.rb" rel="ugc">search parser</a> in the lobsters codebase.</li>
+<li>I learned about <a href="https://github.com/lobsters/lobsters/blob/main/config/initializers/heinous_inline_partial.rb" rel="ugc">heinous_inline_partials</a> which is a hack to speed up rendering.</li>
+<li>The lobsters testsuite was essential in making sure I could migrate to SQLite without a ton of manual testing.</li>
+</ol>
+<p>Overall lessons:</p>
+<ol>
+<li>I think a key ingredient in making this work was good communication from everyone that participated. I don't think this would have been possible otherwise.</li>
+<li>Migrating the underlying database without having access to the production database is really hard to get right. This was my first underlying database migration without having access to production. One lesson I'll take away from this is that I'll make sure to have realistic dataset sizes before doing another underlying database migration in the future.</li>
+</ol>
+<p>Wishes:</p>
+<ol>
+<li>I wish we could say in a test, "Fail if you encounter any full table scans". Which would have caught the perf issues we experienced during the first deploy.</li>
+<li>I wish creating a production like dataset would be much easier than having to manually write something and waiting a week.</li>
+</ol>c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-6ceea0fb21c4","title":"Just Let Me Write Digits","url":"https://gendignoux.com/blog/2026/07/13/input-digits.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-13T16:01:28","author":"gendignoux.com by gendx","text":"<p><a href=\"https://lobste.rs/s/yf6vbc/just_let_me_write_digits\">Comments</a></p>","summary":"文章批评数字输入界面设计，强调用户对简单数字输入的需求，引发对用户体验的思考。"},{"id":"rss-b9116fc7ed90","title":"lobste.rs is now running on SQLite","url":"https://lobste.rs/s/ko1ji1/lobste_rs_is_now_running_on_sqlite","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-13T20:03:24","author":"by thomas0","text":"$10","summary":"Lobste.rs网站迁移到SQLite数据库，展示了技术决策对性能和可维护性的影响。"},{"id":"rss-481d3290f861","title":"Human Emacs","url":"https://human-emacs.org/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-13T16:18:36","author":"human-emacs.org via tusharhero","text":"<p>LLM-generated contributions free (possible) fork of GNU Emacs.</p>\n<p><a href=\"https://lobste.rs/s/t0aqzy/human_emacs\">Comments</a></p>","summary":"Human Emacs项目提出禁止LLM生成代码的Emacs分支，引发关于AI在开源中角色的讨论。"},{"id":"rss-753a53540f36","title":"Quadrupling code performance with a \"useless\" if","url":"https://purplesyringa.moe/blog/quadrupling-code-performance-with-a-useless-if/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-13T03:33:01","author":"purplesyringa.moe by purplesyringa","text":"<p><a href=\"https://lobste.rs/s/1an425/quadrupling_code_performance_with\">Comments</a></p>","summary":"通过一个看似无用的if语句实现代码性能四倍提升，展示了底层优化的意外效果。"},{"id":"rss-00a8df5e13ac","title":"crates.io: development update","url":"https://blog.rust-lang.org/2026/07/13/crates-io-development-update/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-13T11:33:27","author":"blog.rust-lang.org via ehamberg","text":"<p><a href=\"https://lobste.rs/s/posxmd/crates_io_development_update\">Comments</a></p>","summary":"Rust包管理器crates.io的开发更新，对Rust生态系统的发展至关重要。"}],"locale":"zh"}]
 f:null
