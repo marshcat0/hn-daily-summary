@@ -5,169 +5,148 @@
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
 e:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
 f:"$Sreact.suspense"
-5:T3a13,好的，作为一名技术新闻分析师，我已经仔细审阅了今日的30篇热门技术文章。以下是我的综合分析、分组总结以及精选推荐。
-
----
+5:T335c,好的，作为一名专业的技术新闻分析师，我将对今日（2026年7月19日）的 Top 30 技术文章进行深入分析和总结。
 
 ### 综合分析
 
-今日的技术新闻呈现出几个鲜明的主题：**AI 大模型的性能与评测争议**、**云服务的可靠性危机**、**经典技术的开源与回顾**，以及**编程语言生态的多样化发展**。此外，关于数据库（特别是SQLite）、太空探索和硬件复古的内容也引发了社区的广泛关注。
+今日的技术新闻呈现出几个鲜明的主题。**人工智能**，特别是来自中国的 Kimi K3 模型，成为了绝对的焦点，引发了关于开源、基准测试和全球AI格局的激烈讨论。与此同时，**云计算与基础设施**领域爆发了重大事件，AWS 的计费错误和 LG 的隐私争议凸显了云服务和硬件的潜在风险。**安全与隐私**依然是热点，包括物联网设备泄露数据和WordPress严重漏洞。此外，**编程语言与开源社区**也充满活力，Elixir、Rust、Gleam 等语言都有新动态，而“复古”与“极简”主题（如Z80芯片50周年、用Arch Linux复活老上网本）则展现了技术社区的另一面。
 
-**主要趋势与洞察：**
+### 文章分组与分析
 
-1.  **AI 领域：性能与评测的信任危机**：以 Kimi K3 的发布及其引发的关于 AGI 评测标准（Pelican benchmark）的激烈讨论为核心，社区对 AI 模型的评估方法和结果真实性提出了深刻质疑。Kaggle 比赛中的“不一致性”报告更是将这一信任危机推向了高潮。
-2.  **云服务：账单惊魂与可靠性**：AWS 用户收到高达 17 亿美元的预估账单，虽然最终被证实是一个“不准确的预估数据”，但这一事件集中暴露了大型云服务商在计费系统透明度和可靠性方面的巨大隐患，引发了广泛讨论。
-3.  **经典技术的生命力**：从 Microsoft Comic Chat 的开源，到 Z80 处理器诞生 50 周年，再到 SQLite 被 Lobste.rs 等社区网站采用，以及 Roman 混凝土的耐久性研究，都显示出经典技术在情感、实用性和科学价值上的持久魅力。
-4.  **编程语言与工具**：关于 Lisp 的路线选择、Haskell 在企业中的应用，以及使用 Assembly 编写 Linux X Server 等文章，反映了技术社区在编程语言选择和系统底层探索上的持续热情。
+#### 1. 人工智能：Kimi K3 的冲击波
+
+这是今日最热门的话题，多篇文章从不同角度探讨了 Kimi K3 模型。
+
+- **Kimi K3: Open Frontier Intelligence** (Score: 2063)
+  - **说明**: 官方发布公告。Kimi K3 声称在多项基准测试中达到或超越了 GPT-4o 和 Claude 3.5 Sonnet 的水平，并且是“开放前沿”的，引发了关于其性能、成本及开源程度的巨大关注。
+  - **关注理由**: 这可能是AI领域格局变化的标志性事件，证明了非美国公司也能在AI前沿取得领先地位。
+  - **原文链接**: [https://www.kimi.com/blog/kimi-k3](https://www.kimi.com/blog/kimi-k3)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48935342](https://news.ycombinator.com/item?id=48935342)
+
+- **Kimi K3, and what we can still learn from the pelican benchmark** (Score: 397)
+  - **说明**: 著名博主 Simon Willison 对 Kimi K3 及其使用的“Pelican”基准测试进行了深入分析，探讨了这些基准测试的有效性和局限性。
+  - **关注理由**: 提供了对基准测试的批判性视角，帮助读者理性看待K3的成绩。
+  - **原文链接**: [https://simonwillison.net/2026/Jul/16/kimi-k3/](https://simonwillison.net/2026/Jul/16/kimi-k3/)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48947717](https://news.ycombinator.com/item?id=48947717)
+
+- **The Kimi K3 Moment** (Score: 295)
+  - **说明**: 一篇个人博客，将 Kimi K3 的发布视为一个“时刻”，认为它标志着AI竞争进入新阶段，并讨论了其对开源社区和开发者的意义。
+  - **关注理由**: 提供了社区对K3的感性反应和宏观解读。
+  - **原文链接**: [https://stephen.bochinski.dev/blog/2026/07/18/the-kimi-k3-moment/](https://stephen.bochinski.dev/blog/2026/07/18/the-kimi-k3-moment/)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48960218](https://news.ycombinator.com/item?id=48960218)
+
+#### 2. 云计算与基础设施：信任危机与计费灾难
+
+- **AWS: Inaccurate Estimated Billing Data – $1.7 billion** (Score: 1273)
+  - **说明**: 用户报告AWS控制台显示当月预估账单高达17亿美元，而实际正常使用费用不到5美元。此问题引发了广泛恐慌和关于AWS计费系统可靠性的质疑。
+  - **关注理由**: 直接触及云服务用户的痛点——成本控制。任何计费系统的错误都可能导致巨大损失。
+  - **原文链接**: 无（原始帖为Hacker News讨论）
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48945241](https://news.ycombinator.com/item?id=48945241)
+
+- **LG monitors silently install software through Windows Update without consent** (Score: 1006)
+  - **说明**: 报道称LG显示器通过Windows Update强制安装驱动程序/软件，且未获得用户明确同意。这被认为是对用户自主权的侵犯。
+  - **关注理由**: 揭示了硬件厂商利用系统机制进行不透明操作的隐私和安全问题。
+  - **原文链接**: [https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent](https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48956688](https://news.ycombinator.com/item?id=48956688)
+
+#### 3. 安全与隐私：从物联网到Web核心
+
+- **TP-Link Kasa cameras leaked home GPS via unauthenticated UDP for 6 years** (Score: 220)
+  - **说明**: 研究人员发现TP-Link Kasa摄像头通过未认证的UDP广播泄露了家庭GPS坐标，该漏洞存在长达6年。
+  - **关注理由**: 这是一个非常典型的物联网安全案例，暴露了设备本地通信协议设计的缺陷，直接威胁用户物理位置隐私。
+  - **原文链接**: [https://github.com/BadChemical/IoT-Vulnerability-Research-Public/blob/main/TP-Link_Kasa_EC71/Kasa_EC71.md](https://github.com/BadChemical/IoT-Vulnerability-Research-Public/blob/main/TP-Link_Kasa_EC71/Kasa_EC71.md)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48952565](https://news.ycombinator.com/item?id=48952565)
+
+- **wp2shell: Pre Authentication RCE in WordPress Core** (Score: 0 on Lobsters)
+  - **说明**: 披露了一个WordPress核心的严重远程代码执行漏洞，无需任何认证即可利用。
+  - **关注理由**: WordPress是全球使用最广泛的CMS，此漏洞影响面极广，属于最高级别的安全威胁。
+  - **原文链接**: [https://wp2shell.com/](https://wp2shell.com/)
+  - **讨论链接**: [https://lobste.rs/s/aipvbn/wp2shell_pre_authentication_rce](https://lobste.rs/s/aipvbn/wp2shell_pre_authentication_rce)
+
+- **Show HN: Watch bots interact with an SSH honeypot in real time** (Score: 175)
+  - **说明**: 一个实时展示SSH蜜罐被机器人攻击的网站，直观地展示了互联网上的自动化攻击行为。
+  - **关注理由**: 具有极高的教育意义和娱乐性，让安全威胁变得可见。
+  - **原文链接**: [https://honeypotlive.cc/](https://honeypotlive.cc/)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48947548](https://news.ycombinator.com/item?id=48947548)
+
+#### 4. 编程语言与开源社区
+
+- **Elixir-lang.org has a new design** (Score: 170)
+  - **说明**: Elixir 编程语言的官方网站进行了重新设计。
+  - **关注理由**: 反映了该语言社区的活跃度和对开发者体验的重视。
+  - **原文链接**: [https://elixir-lang.org/](https://elixir-lang.org/)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48959042](https://news.ycombinator.com/item?id=48959042)
+
+- **Gleam Is Now on Tangled** (Score: 209)
+  - **说明**: Gleam 语言（一种运行在Erlang虚拟机上的类型安全函数式语言）现在可以在 Tangled 平台上使用。
+  - **关注理由**: 意味着Gleam有了一个更友好的在线运行和分享环境，有助于吸引新用户。
+  - **原文链接**: [https://tangled.org/gleam.run/gleam](https://tangled.org/gleam.run/gleam)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48959143](https://news.ycombinator.com/item?id=48959143)
+
+- **Topcoat: The full full-stack framework for Rust** (Score: 116)
+  - **说明**: Tokio 团队发布了 Topcoat，一个用于 Rust 的全栈Web框架。
+  - **关注理由**: 由 Tokio 官方支持，可能成为 Rust Web 开发的重要选择。
+  - **原文链接**: [https://github.com/tokio-rs/topcoat](https://github.com/tokio-rs/topcoat)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48952067](https://news.ycombinator.com/item?id=48952067)
+
+- **Reviewing AI Code Is Not A Viable Argument** (Score: 0 on Lobsters)
+  - **说明**: 文章反驳了“只要审查AI生成的代码就没问题”的观点，认为AI代码的审查成本高、效果差。
+  - **关注理由**: 触及了AI辅助编程的核心争议，对开发者有重要启示。
+  - **原文链接**: [https://softwaremaxims.com/blog/reviewing-ai-code](https://softwaremaxims.com/blog/reviewing-ai-code)
+  - **讨论链接**: [https://lobste.rs/s/5kgenk/reviewing_ai_code_is_not_viable_argument](https://lobste.rs/s/5kgenk/reviewing_ai_code_is_not_viable_argument)
+
+#### 5. 复古、极简与硬件
+
+- **The Zilog Z80 has turned 50** (Score: 274)
+  - **说明**: 纪念经典处理器Z80诞生50周年。
+  - **关注理由**: 致敬技术历史，Z80对个人电脑革命有巨大贡献。
+  - **原文链接**: [https://goliath32.com/blog/z80.html](https://goliath32.com/blog/z80.html)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48951461](https://news.ycombinator.com/item?id=48951461)
+
+- **Reviving a 15-year-old netbook with Arch Linux** (Score: 209)
+  - **说明**: 作者通过安装轻量级的Arch Linux，成功复活了一台15年前的上网本。
+  - **关注理由**: 展示了Linux对旧硬件的友好性，以及技术极客的动手精神。
+  - **原文链接**: [https://parksb.github.io/en/article/41.html](https://parksb.github.io/en/article/41.html)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48907063](https://news.ycombinator.com/item?id=48907063)
+
+- **Open Book Touch: open-source e-reader** (Score: 160)
+  - **说明**: 一款开源电子书阅读器在众筹平台上线。
+  - **关注理由**: 代表了硬件开放的趋势，满足了用户对可定制、无锁电子阅读器的需求。
+  - **原文链接**: [https://www.crowdsupply.com/oddly-specific-objects/open-book-touch](https://www.crowdsupply.com/oddly-specific-objects/open-book-touch)
+  - **讨论链接**: [https://news.ycombinator.com/item?id=48952135](https://news.ycombinator.com/item?id=48952135)
 
 ---
 
-### 文章分组与摘要
+### 其他值得关注的文章
 
-#### 1. AI 大模型、评测与争议
-该组文章围绕 AI 模型性能、基准评测的公平性展开，是今日最受关注的话题。
+- **Regressive JPEGs** (Score: 654): 一个有趣的项目，展示了如何制作“越来越模糊”的JPEG图片。 (原文: [https://maurycyz.com/projects/bad_jpeg/](https://maurycyz.com/projects/bad_jpeg/))
+- **First atmosphere found on Earth-like planet in habitable zone of distant star** (Score: 517): 天文学重大发现，在系外类地行星上发现了大气层。 (原文: [https://www.bbc.com/news/articles/cy4kdd1e0ejo](https://www.bbc.com/news/articles/cy4kdd1e0ejo))
+- **Static search trees: 40x faster than binary search (2024)** (Score: 178): 一篇关于数据结构和算法优化的技术文章。 (原文: [https://curiouscoding.nl/posts/static-search-tree/](https://curiouscoding.nl/posts/static-search-tree/))
+- **Goodbye, and Thanks for All the Bikesheds** (Score: 183): ACM Queue 上的一篇告别文章，回顾了技术社区中的现象。 (原文: [https://queue.acm.org/detail.cfm?id=3818307](https://queue.acm.org/detail.cfm?id=3818307))
+- **Speech Recognition and TTS in less than 500kb** (Score: 277): 一个极小的语音识别和合成模型，适合边缘设备。 (原文: [https://github.com/moonshine-ai/moonshine/tree/main/micro](https://github.com/moonshine-ai/moonshine/tree/main/micro))
 
--   **Kimi K3: Open Frontier Intelligence**
-    -   **说明**：Kimi 发布了其最新的 K3 模型，号称“开放前沿智能”。文章提供了性能与价格分析，引发了关于模型能力的广泛讨论。
-    -   **Article**: [https://www.kimi.com/blog/kimi-k3](https://www.kimi.com/blog/kimi-k3)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48935342](https://news.ycombinator.com/item?id=48935342)
+### 今日最值得阅读的文章推荐
 
--   **Kimi K3, and what we can still learn from the pelican benchmark**
-    -   **说明**：知名开发者 Simon Willison 深入分析了 Kimi K3 在 Pelican 基准测试上的表现，并探讨了基准测试本身的意义和局限性。
-    -   **Article**: [https://simonwillison.net/2026/Jul/16/kimi-k3/](https://simonwillison.net/2026/Jul/16/kimi-k3/)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48947717](https://news.ycombinator.com/item?id=48947717)
+1.  **Kimi K3: Open Frontier Intelligence**
+    - **理由**: 这是今日最具讨论度的新闻，可能标志着AI竞争进入新阶段。阅读官方博客可以获取第一手信息，了解其声称的性能和“开放”的定义。
+    - **链接**: [https://www.kimi.com/blog/kimi-k3](https://www.kimi.com/blog/kimi-k3)
 
--   **Evidence of inconsistencies in evaluation process and selection of winners**
-    -   **说明**：在 Kaggle 的“Measuring AGI”竞赛中，有参赛者发布了详细证据，指出评估过程和获胜者选择存在不一致性。这直接动摇了该竞赛的公信力。
-    -   **Article**: [https://www.kaggle.com/competitions/kaggle-measuring-agi/discussion/724918#3498423](https://www.kaggle.com/competitions/kaggle-measuring-agi/discussion/724918#3498423)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48946010](https://news.ycombinator.com/item?id=48946010)
+2.  **AWS: Inaccurate Estimated Billing Data – $1.7 billion**
+    - **理由**: 对于任何使用云服务的人来说，这都是一个警示故事。它揭示了云基础设施的脆弱性，以及依赖单一供应商的潜在风险。讨论帖中充满了受害者的故事和AWS的应对。
+    - **链接**: [https://news.ycombinator.com/item?id=48945241](https://news.ycombinator.com/item?id=48945241)
 
--   **Latent Space as a New Medium**
-    -   **说明**：Kevin Kelly 探讨了将 AI 的“潜在空间”作为一种全新的创作媒介，思考其对人机交互和创意表达的深远影响。
-    -   **Article**: [https://kevinkelly.substack.com/p/latent-space-as-a-new-medium](https://kevinkelly.substack.com/p/latent-space-as-a-new-medium)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48896513](https://news.ycombinator.com/item?id=48896513)
+3.  **LG monitors silently install software through Windows Update without consent**
+    - **理由**: 这是一个关于用户自主权和隐私的典型案例。它展示了硬件厂商如何利用操作系统机制进行不透明的操作，值得所有Windows用户关注。
+    - **链接**: [https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent](https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent)
 
-#### 2. 云服务与基础设施
-该组聚焦于云服务商（尤其是AWS）的可靠性、成本和开发者体验。
+4.  **TP-Link Kasa cameras leaked home GPS via unauthenticated UDP for 6 years**
+    - **理由**: 这是物联网安全问题的教科书级案例。漏洞简单、影响严重（暴露家庭位置）、持续时间长。对于任何拥有物联网设备的用户来说，这篇文章都值得一读，以了解潜在的风险。
+    - **链接**: [https://github.com/BadChemical/IoT-Vulnerability-Research-Public/blob/main/TP-Link_Kasa_EC71/Kasa_EC71.md](https://github.com/BadChemical/IoT-Vulnerability-Research-Public/blob/main/TP-Link_Kasa_EC71/Kasa_EC71.md)
 
--   **AWS: Inaccurate Estimated Billing Data – $1.7 billion**
-    -   **说明**：一位 AWS 用户发现其预估账单飙升至 17 亿美元（日常使用不到 5 美元），引发社区对 AWS 计费系统准确性的恐慌和讨论。虽然最终被证实是错误数据，但暴露了巨大的信任风险。
-    -   **Article**: 无（原始链接为 AWS 健康仪表盘）
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48945241](https://news.ycombinator.com/item?id=48945241)
-
-#### 3. 开源、软件历史与复古计算
-该组文章体现了技术社区对历史、开源精神和“复古”技术的热爱。
-
--   **Microsoft Comic Chat is now open source**
-    -   **说明**：微软将经典的 90 年代聊天软件 Comic Chat 开源。这是一个极具情怀的项目，对于研究早期互联网文化和聊天技术的历史爱好者来说非常有价值。
-    -   **Article**: [https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source/](https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source/)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48936426](https://news.ycombinator.com/item?id=48936426)
-
--   **The Zilog Z80 has turned 50**
-    -   **说明**：Z80 微处理器迎来 50 岁生日。这篇文章回顾了这款传奇芯片的历史、影响以及它至今仍被使用的领域。
-    -   **Article**: [https://goliath32.com/blog/z80.html](https://goliath32.com/blog/z80.html)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48951461](https://news.ycombinator.com/item?id=48951461)
-
--   **Frame – Linux X server in Assembly**
-    -   **说明**：一个用汇编语言编写的 Linux X 服务器。这展示了极致的底层编程能力，对于理解操作系统图形栈的深层原理极具学习价值。
-    -   **Article**: [https://isene.org/2026/07/Frame.html](https://isene.org/2026/07/Frame.html)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48948597](https://news.ycombinator.com/item?id=48948597)
-
--   **Pebble Mega Update – July 2026**
-    -   **说明**：Pebble 智能手表（被谷歌开源后，由社区接手）发布了重大更新，显示了开源硬件项目的持续生命力。
-    -   **Article**: [https://repebble.com/blog/pebble-mega-update-july-2026](https://repebble.com/blog/pebble-mega-update-july-2026)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48943174](https://news.ycombinator.com/item?id=48943174)
-
--   **Thanks HN for 15 years of support and helping me find my life's work**
-    -   **说明**：Recurse Center（编程学习社区）的联合创始人在 HN 上发帖，感谢社区 15 年来的支持。这是一个充满人情味的社区故事。
-    -   **Article**: 无
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48949551](https://news.ycombinator.com/item?id=48949551)
-
-#### 4. 数据库与编程语言
-该组涵盖了 SQLite 的深入使用、Lisp 和 Haskell 等编程语言的讨论。
-
--   **Learning a few things about running SQLite**
-    -   **说明**：Julia Evans 分享了她学习运行 SQLite 时的实用技巧和发现，内容深入浅出，对任何使用 SQLite 的开发者都非常有价值。
-    -   **Article**: [https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/](https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/)
-    -   **Discussion** (HN): [https://news.ycombinator.com/item?id=48950122](https://news.ycombinator.com/item?id=48950122)
-    -   **Discussion** (Lobsters): [https://lobste.rs/s/ryksor/learning_few_things_about_running_sqlite](https://lobste.rs/s/ryksor/learning_few_things_about_running_sqlite)
-
--   **Lobste.rs is now running on SQLite**
-    -   **说明**：知名技术社区 Lobste.rs 宣布其网站后端已迁移至 SQLite。这是 SQLite 在“中等规模”Web 应用中的一次成功实践。
-    -   **Article**: [https://lobste.rs/s/ko1ji1](https://lobste.rs/s/ko1ji1)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48899847](https://news.ycombinator.com/item?id=48899847)
-
--   **A Road to Lisp: Which Lisp**
-    -   **说明**：为想要学习 Lisp 的开发者提供了一份路线图，探讨了 Common Lisp、Scheme、Clojure 等不同方言的选择。
-    -   **Article**: [https://scotto.me/blog/2026-07-17-which-lisp/](https://scotto.me/blog/2026-07-17-which-lisp/)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48947455](https://news.ycombinator.com/item?id=48947455)
-
--   **Enterprise Haskell at H-E-B**
-    -   **说明**：美国零售商 H-E-B 分享了他们在企业环境中使用 Haskell 的经验。这是函数式编程在工业界应用的宝贵案例。
-    -   **Article**: [https://blog.haskell.org/enterprise-haskell-at-h-e-b/](https://blog.haskell.org/enterprise-haskell-at-h-e-b/)
-    -   **Discussion** (Lobsters): [https://lobste.rs/s/zar7fc/enterprise_haskell_at_h_e_b](https://lobste.rs/s/zar7fc/enterprise_haskell_at_h_e_b)
-
--   **Lobsters Interview with matheusmoreira about Lone Lisp**
-    -   **说明**：对 Lone Lisp（一个直接构建在 Linux 系统调用上的 Lisp 方言）作者的访谈，深入探讨了底层系统编程和 Lisp 的实现。
-    -   **Article**: [https://alexalejandre.com/interviews/interview-with-matheus-moreira/](https://alexalejandre.com/interviews/interview-with-matheus-moreira/)
-    -   **Discussion** (Lobsters): [https://lobste.rs/s/nwp3sm/faulty_towers_vibe_sickness_vibe_bobsled](https://lobste.rs/s/nwp3sm/faulty_towers_vibe_sickness_vibe_bobsled) (注：原文链接指向另一篇文章，但此条目本身是 Lobsters 上的一个独立讨论)
-
--   **Mathematics of Data Science**
-    -   **说明**：一篇来自 arXiv 的论文，系统性地梳理了数据科学背后的数学基础。适合希望夯实理论基础的从业者。
-    -   **Article**: [https://arxiv.org/abs/2607.11938](https://arxiv.org/abs/2607.11938)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48939896](https://news.ycombinator.com/item?id=48939896)
-
-#### 5. 太空探索与科学发现
--   **First atmosphere found on Earth-like planet in habitable zone of distant star**
-    -   **说明**：天文学家首次在一颗位于宜居带的类地行星上发现大气层。这是系外行星研究领域的里程碑式突破。
-    -   **Article**: [https://www.bbc.com/news/articles/cy4kdd1e0ejo](https://www.bbc.com/news/articles/cy4kdd1e0ejo)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48947560](https://news.ycombinator.com/item?id=48947560)
-
--   **Helium escaping from atmosphere of nearby rocky exoplanet in a habitable zone**
-    -   **说明**：另一项发现，一个邻近的岩石系外行星正在从其大气中泄漏氦气。这为理解行星大气演化提供了重要线索。
-    -   **Article**: [https://www.science.org/doi/10.1126/science.aea9708](https://www.science.org/doi/10.1126/science.aea9708)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48939742](https://news.ycombinator.com/item?id=48939742)
-
-#### 6. 硬件、DIY与创意项目
--   **Camera Chase Vehicle**
-    -   **说明**：一个自制的高速追踪摄像车，用于拍摄动态镜头。展示了电子、机械和编程的完美结合。
-    -   **Article**: [https://transistor-man.com/gimbal_camera_rover.html](https://transistor-man.com/gimbal_camera_rover.html)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48854988](https://news.ycombinator.com/item?id=48854988)
-
--   **Show HN: Watch bots interact with an SSH honeypot in real time**
-    -   **说明**：一个实时展示 SSH 蜜罐如何与互联网上的自动攻击机器人交互的网站。对网络安全感兴趣的人来说非常有趣且具有教育意义。
-    -   **Article**: [https://honeypotlive.cc/](https://honeypotlive.cc/)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48947548](https://news.ycombinator.com/item?id=48947548)
-
--   **Turn your singing voice into printable notes (in the browser)**
-    -   **说明**：一个纯浏览器端的工具，可以将你的歌声实时转换为可打印的乐谱。展示了 Web Audio API 的强大功能。
-    -   **Article**: [https://om-intelligence.ch/projects/vocal-notation/vocal-notation.html](https://om-intelligence.ch/projects/vocal-notation/vocal-notation.html)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48900686](https://news.ycombinator.com/item?id=48900686)
-
-#### 7. 文化、设计与生活
--   **How Has Roman Concrete Lasted for Millennia? 1,900-Year-Old Latrine Offers Clues**
-    -   **说明**：科学家从 1900 年前的罗马厕所中发现了古罗马混凝土经久不衰的秘密。这是一篇将历史、考古和材料科学结合的有趣文章。
-    -   **Article**: [https://www.smithsonianmag.com/smart-news/how-has-roman-concrete-lasted-for-millennia-a-1900-year-old-latrine-offers-new-clues-about-the-materials-impressive-durability-180989115/](https://www.smithsonianmag.com/smart-news/how-has-roman-concrete-lasted-for-millennia-a-1900-year-old-latrine-offers-new-clues-about-the-materials-impressive-durability-180989115/)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48943142](https://news.ycombinator.com/item?id=48943142)
-
--   **CD sales growth outpaced vinyl in the first half of 2026**
-    -   **说明**：CD 销量增长首次超过黑胶唱片。这反映了实体音乐市场的微妙变化。
-    -   **Article**: [https://consequence.net/2026/07/the-cd-revival-is-getting-hard-to-ignore/](https://consequence.net/2026/07/the-cd-revival-is-getting-hard-to-ignore/)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48937398](https://news.ycombinator.com/item?id=48937398)
-
--   **Three ways people respond to a problem (other than solving it)**
-    -   **说明**：一篇关于问题解决心理学的文章，探讨了除了直接解决问题之外的其他应对方式。
-    -   **Article**: [https://improvesomething.today/responses-to-problems/](https://improvesomething.today/responses-to-problems/)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48947490](https://news.ycombinator.com/item?id=48947490)
-
--   **More Bounce to the Ounce**
-    -   **说明**：一篇关于物理、工程或音乐中“弹跳”现象的文章（具体内容需进一步查看），但标题暗示了某种趣味性。
-    -   **Article**: [https://mceglowski.substack.com/p/more-bounce-to-the-ounce](https://mceglowski.substack.com/p/more-bounce-to-the-ounce)
-    -   **Discussion**: [https://news.ycombinator.com/item?id=48947201](https://news.ycombinator.com/item?id=48947201)
-
--   **Frank Lloyd Wright’s first home**
-    -   **说明**：建筑杂志深入介绍了建筑大师 Frank Lloyd Wright 的第一栋住宅，对建筑和设计爱好者是0:{"buildId":"TrXFl7zIP1lxSfmEsdrDc","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-07-18","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":13},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-07-18"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-c:T774,Tomorrow is the 15th anniversary of the first day of the Recurse Center (<a href="https:&#x2F;&#x2F;www.recurse.com&#x2F;" rel="nofollow">https:&#x2F;&#x2F;www.recurse.com&#x2F;</a>)<p>My cofounders and I did YC all the way back in the Summer of 2010, with the initial idea of building &quot;OkCupid for jobs.&quot; That idea quickly fizzled, and we spent the better part of a year pivoting between other ideas that also failed.<p>Finally, we made something that we wanted ourselves: a self-directed programming retreat, where people built fun projects, contributed to open source, and helped each other become better programmers.<p>After running two small batches, we launched on HN[1] and got an incredible reception.<p>That post on HN helped us reach beyond our personal networks and meet programmers from around the world, many of whom have since become friends. HN brought us the majority of people who came to our next few batches, and in the years since, HN has remained our #2 source of applicants (after word of mouth).<p>Alas, pg&#x27;s comment[2] on HN when we launched turned out to be prescient: Running free programming retreats isn&#x27;t a billion-dollar business, but it&#x27;s still a worthwhile thing to do, and has positively impacted over 3,000 people so far. And 15 years on I still wake up every day excited to keep working on it.<p>So, thanks HN, for helping make the Recurse Center possible, and for helping me find my life&#x27;s work.<p>[1] <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=3435183">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=3435183</a><p>[2] &quot;This sounds like a crazy plan for a startup, I realize, but this is the right sort of crazy. In fact, the way the Hackruiters think about Hacker School is a lot like the way we initially thought about YC: if it doesn&#x27;t make money, it will at least have been a benevolent thing to do.&quot;6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-48935342","title":"Kimi K3: Open Frontier Intelligence","url":"https://www.kimi.com/blog/kimi-k3","source":"Hacker News","score":1998,"comments_count":1161,"comments_url":"https://news.ycombinator.com/item?id=48935342","published_at":"2026-07-16T14:46:05","author":"vincent_s","text":"<a href=\"https:&#x2F;&#x2F;www.kimi.com&#x2F;en\" rel=\"nofollow\">https:&#x2F;&#x2F;www.kimi.com&#x2F;en</a><p>Kimi K3 Intelligence, Performance &amp; Price Analysis: <a href=\"https:&#x2F;&#x2F;artificialanalysis.ai&#x2F;models&#x2F;kimi-k3\" rel=\"nofollow\">https:&#x2F;&#x2F;artificialanalysis.ai&#x2F;models&#x2F;kimi-k3</a>","summary":"Kimi K3 是一款新的AI模型，文章分析了其智能、性能和价格，值得关注因为它代表了前沿AI技术的进展。"},{"id":"hn-48945241","title":"AWS: Inaccurate Estimated Billing Data – $1.7 billion","url":null,"source":"Hacker News","score":1053,"comments_count":641,"comments_url":"https://news.ycombinator.com/item?id=48945241","published_at":"2026-07-17T09:42:05","author":"nprateem","text":"URL already posted: <a href=\"https:&#x2F;&#x2F;health.aws.amazon.com&#x2F;health&#x2F;status\" rel=\"nofollow\">https:&#x2F;&#x2F;health.aws.amazon.com&#x2F;health&#x2F;status</a><p>I&#x27;ve got an estimated bill for $1.7 BILLION over this month. Normal usage is &lt; $5.<p>Obvs have created an urgent AWS support ticket. Anyone else seeing something like this?<p>Update: Reddit link: <a href=\"https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;aws&#x2F;comments&#x2F;1uyuaw7&#x2F;help_my_bill_skyrocketed_from_around_5_cents_per&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;aws&#x2F;comments&#x2F;1uyuaw7&#x2F;help_my_bill_s...</a>","summary":"AWS计费系统出现严重错误，显示用户预估账单高达17亿美元，而实际使用费用不到5美元，凸显了云服务计费系统的可靠性问题。"},{"id":"hn-48936426","title":"Microsoft Comic Chat is now open source","url":"https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source/","source":"Hacker News","score":787,"comments_count":172,"comments_url":"https://news.ycombinator.com/item?id=48936426","published_at":"2026-07-16T16:06:27","author":"jervant","text":null,"summary":"微软将Comic Chat开源，这是一个历史性的聊天工具，值得关注因为它展示了微软对开源社区的贡献。"},{"id":"hn-48946010","title":"Evidence of inconsistencies in evaluation process and selection of winners","url":"https://www.kaggle.com/competitions/kaggle-measuring-agi/discussion/724918#3498423","source":"Hacker News","score":447,"comments_count":276,"comments_url":"https://news.ycombinator.com/item?id=48946010","published_at":"2026-07-17T11:30:00","author":"twerkmeister","text":null,"summary":"Kaggle竞赛中发现了评估过程和获奖者选择的不一致证据，可能影响竞赛的公正性。"},{"id":"hn-48947560","title":"First atmosphere found on Earth-like planet in habitable zone of distant star","url":"https://www.bbc.com/news/articles/cy4kdd1e0ejo","source":"Hacker News","score":369,"comments_count":232,"comments_url":"https://news.ycombinator.com/item?id=48947560","published_at":"2026-07-17T14:06:13","author":"neversaydie","text":null,"summary":"科学家首次在宜居带类地行星上发现大气层，这是系外行星研究的重要突破。"},{"id":"hn-48949551","title":"Thanks HN for 15 years of support and helping me find my life's work","url":null,"source":"Hacker News","score":326,"comments_count":30,"comments_url":"https://news.ycombinator.com/item?id=48949551","published_at":"2026-07-17T16:57:27","author":"nicholasjbs","text":"$c","summary":"Recurse Center创始人感谢Hacker News社区15年来的支持，并分享其创业故事，体现了社区对个人职业发展的影响。"},{"id":"hn-48947717","title":"Kimi K3, and what we can still learn from the pelican benchmark","url":"https://simonwillison.net/2026/Jul/16/kimi-k3/","source":"Hacker News","score":276,"comments_count":146,"comments_url":"https://news.ycombinator.com/item?id=48947717","published_at":"2026-07-17T14:21:51","author":"droidjj","text":null,"summary":"文章讨论了Kimi K3模型，并回顾了Pelican基准测试的教训，对AI模型评估有参考价值。"},{"id":"hn-48943174","title":"Pebble Mega Update – July 2026","url":"https://repebble.com/blog/pebble-mega-update-july-2026","source":"Hacker News","score":259,"comments_count":174,"comments_url":"https://news.ycombinator.com/item?id=48943174","published_at":"2026-07-17T03:53:38","author":"crazysaem","text":null,"summary":"Pebble智能手表在2026年7月发布重大更新，可能涉及新功能或改进，值得Pebble用户关注。"},{"id":"hn-48943142","title":"How Has Roman Concrete Lasted for Millennia? 1,900-Year-Old Latrine Offers Clues","url":"https://www.smithsonianmag.com/smart-news/how-has-roman-concrete-lasted-for-millennia-a-1900-year-old-latrine-offers-new-clues-about-the-materials-impressive-durability-180989115/","source":"Hacker News","score":254,"comments_count":214,"comments_url":"https://news.ycombinator.com/item?id=48943142","published_at":"2026-07-17T03:48:26","author":"divbzero","text":null,"summary":"通过研究1900年前的罗马厕所，科学家揭示了罗马混凝土持久耐用的新线索，对现代材料科学有启示。"},{"id":"hn-48854988","title":"Camera Chase Vehicle","url":"https://transistor-man.com/gimbal_camera_rover.html","source":"Hacker News","score":210,"comments_count":21,"comments_url":"https://news.ycombinator.com/item?id=48854988","published_at":"2026-07-10T02:17:55","author":"geerlingguy","text":null,"summary":"文章介绍了一种用于相机追踪的车辆设计，可能用于摄影或自动驾驶领域，展示了创新工程应用。"},{"id":"hn-48939896","title":"Mathematics of Data Science","url":"https://arxiv.org/abs/2607.11938","source":"Hacker News","score":203,"comments_count":13,"comments_url":"https://news.ycombinator.com/item?id=48939896","published_at":"2026-07-16T20:38:48","author":"Anon84","text":null,"summary":"《数据科学数学》一文系统梳理了数据科学领域的核心数学基础，包括线性代数、概率论和优化方法，对于希望夯实理论根基的数据从业者极具参考价值。"},{"id":"hn-48947490","title":"Three ways people respond to a problem (other than solving it)","url":"https://improvesomething.today/responses-to-problems/","source":"Hacker News","score":195,"comments_count":113,"comments_url":"https://news.ycombinator.com/item?id=48947490","published_at":"2026-07-17T14:00:04","author":"surprisetalk","text":null,"summary":"文章探讨了人们面对问题时的三种非解决性反应（如回避、抱怨或转移焦点），揭示了常见思维陷阱，对提升问题解决能力有启发意义。"},{"id":"hn-48947455","title":"A Road to Lisp: Which Lisp","url":"https://scotto.me/blog/2026-07-17-which-lisp/","source":"Hacker News","score":176,"comments_count":127,"comments_url":"https://news.ycombinator.com/item?id=48947455","published_at":"2026-07-17T13:56:04","author":"silcoon","text":null,"summary":"本文为Lisp初学者提供了选择方言（如Common Lisp、Scheme、Clojure）的实用指南，结合社区生态和项目需求给出了建议，是入门Lisp的优质参考。"},{"id":"hn-48937398","title":"CD sales growth outpaced vinyl in the first half of 2026","url":"https://consequence.net/2026/07/the-cd-revival-is-getting-hard-to-ignore/","source":"Hacker News","score":175,"comments_count":203,"comments_url":"https://news.ycombinator.com/item?id=48937398","published_at":"2026-07-16T17:19:16","author":"speckx","text":null,"summary":"2026年上半年CD销量增长超过黑胶唱片，颠覆了近年黑胶复兴的趋势，反映了实体音乐市场的动态变化，值得音乐产业和消费者关注。"},{"id":"hn-48951461","title":"The Zilog Z80 has turned 50","url":"https://goliath32.com/blog/z80.html","source":"Hacker News","score":166,"comments_count":49,"comments_url":"https://news.ycombinator.com/item?id=48951461","published_at":"2026-07-17T19:41:02","author":"st_goliath","text":null,"summary":"Zilog Z80处理器迎来50周年纪念，文章回顾了其历史影响（如用于早期个人电脑和嵌入式系统），凸显了经典芯片在技术演进中的持久地位。"},{"id":"hn-48950122","title":"Learning a few things about running SQLite","url":"https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/","source":"Hacker News","score":164,"comments_count":40,"comments_url":"https://news.ycombinator.com/item?id=48950122","published_at":"2026-07-17T17:45:41","author":"surprisetalk","text":null,"summary":"作者分享了运行SQLite的实用技巧，包括性能优化、并发处理和数据完整性维护，对于日常使用SQLite的开发者有直接帮助。"},{"id":"hn-48899847","title":"Lobste.rs is now running on SQLite","url":"https://lobste.rs/s/ko1ji1","source":"Hacker News","score":153,"comments_count":126,"comments_url":"https://news.ycombinator.com/item?id=48899847","published_at":"2026-07-13T22:35:49","author":"abetusk","text":null,"summary":"Lobste.rs网站迁移至SQLite数据库，展示了SQLite在中等规模Web应用中的可行性和优势，为技术选型提供了实际案例。"},{"id":"hn-48939742","title":"Helium escaping from atmosphere of nearby rocky exoplanet in a habitable zone","url":"https://www.science.org/doi/10.1126/science.aea9708","source":"Hacker News","score":144,"comments_count":50,"comments_url":"https://news.ycombinator.com/item?id=48939742","published_at":"2026-07-16T20:24:02","author":"anyonecancode","text":null,"summary":"科学家发现一颗位于宜居带的岩石系外行星大气中氦气正在逃逸，这对理解行星大气演化及宜居性条件具有重要科学意义。"},{"id":"hn-48947548","title":"Show HN: Watch bots interact with an SSH honeypot in real time","url":"https://honeypotlive.cc/","source":"Hacker News","score":139,"comments_count":50,"comments_url":"https://news.ycombinator.com/item?id=48947548","published_at":"2026-07-17T14:05:15","author":"tusksm","text":null,"summary":"该项目实时展示SSH蜜罐中机器人的交互行为，揭示了网络攻击的自动化模式，对网络安全研究和防御策略制定有参考价值。"},{"id":"hn-48948597","title":"Frame – Linux X server in Assembly","url":"https://isene.org/2026/07/Frame.html","source":"Hacker News","score":136,"comments_count":92,"comments_url":"https://news.ycombinator.com/item?id=48948597","published_at":"2026-07-17T15:31:22","author":"guybedo","text":null,"summary":"Frame是一个用汇编语言编写的Linux X服务器，挑战了现代系统编程的常规做法，展示了底层开发的极致性能潜力，对操作系统爱好者有吸引力。"},{"id":"hn-48947201","title":"More Bounce to the Ounce","url":"https://mceglowski.substack.com/p/more-bounce-to-the-ounce","source":"Hacker News","score":111,"comments_count":45,"comments_url":"https://news.ycombinator.com/item?id=48947201","published_at":"2026-07-17T13:32:11","author":"pavel_lishin","text":null,"summary":"本文探讨了音频压缩技术中“更多弹跳”的概念，对于理解数字音频处理有重要价值。"},{"id":"hn-48896513","title":"Latent Space as a New Medium","url":"https://kevinkelly.substack.com/p/latent-space-as-a-new-medium","source":"Hacker News","score":91,"comments_count":31,"comments_url":"https://news.ycombinator.com/item?id=48896513","published_at":"2026-07-13T18:12:09","author":"thm","text":null,"summary":"文章讨论了潜在空间作为新媒介的潜力，对AI和创意领域的发展具有启发意义。"},{"id":"hn-48900686","title":"Turn your singing voice into printable notes (in the browser)","url":"https://om-intelligence.ch/projects/vocal-notation/vocal-notation.html","source":"Hacker News","score":86,"comments_count":26,"comments_url":"https://news.ycombinator.com/item?id=48900686","published_at":"2026-07-14T00:10:36","author":"busssard","text":null,"summary":"介绍了一个浏览器工具，可将歌声转换为可打印的乐谱，展示了AI在音乐创作中的实际应用。"},{"id":"hn-48887102","title":"Frank Lloyd Wright’s first home","url":"https://www.architecturaldigest.com/story/frank-lloyd-wright-home-and-studio-everything-you-need-to-know","source":"Hacker News","score":77,"comments_count":41,"comments_url":"https://news.ycombinator.com/item?id=48887102","published_at":"2026-07-13T02:23:19","author":"NaOH","text":null,"summary":"回顾了弗兰克·劳埃德·赖特的第一所住宅，对建筑设计和历史爱好者具有参考价值。"},{"id":"hn-48948693","title":"Workspaces – Explore the workspaces of modern creators","url":"https://workspaces.xyz/","source":"Hacker News","score":72,"comments_count":58,"comments_url":"https://news.ycombinator.com/item?id=48948693","published_at":"2026-07-17T15:41:05","author":"ryangilbert","text":"Want to see what items show up in these setups time and time again?<p>I compiled all of the data from 500+ interviews into one easy to read report: <a href=\"https:&#x2F;&#x2F;workspaces.xyz&#x2F;gear-report\" rel=\"nofollow\">https:&#x2F;&#x2F;workspaces.xyz&#x2F;gear-report</a>","summary":"展示了现代创作者的工作空间，并提供了500+访谈的装备报告，为提升工作效率提供灵感。"}],"locale":"en"}],"$Ld"]}]]}]
+5.  **Reviewing AI Code Is Not A Viable Argument**
+    - **理由**: 在当前AI辅助编程盛行的背景下，这篇文章提出了一个重要的反方观点。它挑战了“只要有人审查AI代码就安全”的普遍假设，对于所有在开发中使用AI的工程师都具有启发意义。
+    - **链接**: [https://softwaremaxims.com/blog/reviewing-ai-code](https://softwaremaxims.com/blog/reviewing-ai-code)0:{"buildId":"oHUDW_1XBaceTb6bXm6KP","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-07-19","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":12},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-07-19"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+c:T774,Tomorrow is the 15th anniversary of the first day of the Recurse Center (<a href="https:&#x2F;&#x2F;www.recurse.com&#x2F;" rel="nofollow">https:&#x2F;&#x2F;www.recurse.com&#x2F;</a>)<p>My cofounders and I did YC all the way back in the Summer of 2010, with the initial idea of building &quot;OkCupid for jobs.&quot; That idea quickly fizzled, and we spent the better part of a year pivoting between other ideas that also failed.<p>Finally, we made something that we wanted ourselves: a self-directed programming retreat, where people built fun projects, contributed to open source, and helped each other become better programmers.<p>After running two small batches, we launched on HN[1] and got an incredible reception.<p>That post on HN helped us reach beyond our personal networks and meet programmers from around the world, many of whom have since become friends. HN brought us the majority of people who came to our next few batches, and in the years since, HN has remained our #2 source of applicants (after word of mouth).<p>Alas, pg&#x27;s comment[2] on HN when we launched turned out to be prescient: Running free programming retreats isn&#x27;t a billion-dollar business, but it&#x27;s still a worthwhile thing to do, and has positively impacted over 3,000 people so far. And 15 years on I still wake up every day excited to keep working on it.<p>So, thanks HN, for helping make the Recurse Center possible, and for helping me find my life&#x27;s work.<p>[1] <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=3435183">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=3435183</a><p>[2] &quot;This sounds like a crazy plan for a startup, I realize, but this is the right sort of crazy. In fact, the way the Hackruiters think about Hacker School is a lot like the way we initially thought about YC: if it doesn&#x27;t make money, it will at least have been a benevolent thing to do.&quot;6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-48935342","title":"Kimi K3: Open Frontier Intelligence","url":"https://www.kimi.com/blog/kimi-k3","source":"Hacker News","score":2063,"comments_count":1188,"comments_url":"https://news.ycombinator.com/item?id=48935342","published_at":"2026-07-16T14:46:05","author":"vincent_s","text":"<a href=\"https:&#x2F;&#x2F;www.kimi.com&#x2F;en\" rel=\"nofollow\">https:&#x2F;&#x2F;www.kimi.com&#x2F;en</a><p>Kimi K3 Intelligence, Performance &amp; Price Analysis: <a href=\"https:&#x2F;&#x2F;artificialanalysis.ai&#x2F;models&#x2F;kimi-k3\" rel=\"nofollow\">https:&#x2F;&#x2F;artificialanalysis.ai&#x2F;models&#x2F;kimi-k3</a>","summary":"Kimi K3是开放式前沿智能模型，文章分析了其性能与价格，值得关注因为它代表了AI模型在开放性和经济性上的新进展。"},{"id":"hn-48945241","title":"AWS: Inaccurate Estimated Billing Data – $1.7 billion","url":null,"source":"Hacker News","score":1273,"comments_count":735,"comments_url":"https://news.ycombinator.com/item?id=48945241","published_at":"2026-07-17T09:42:05","author":"nprateem","text":"URL already posted: <a href=\"https:&#x2F;&#x2F;health.aws.amazon.com&#x2F;health&#x2F;status\" rel=\"nofollow\">https:&#x2F;&#x2F;health.aws.amazon.com&#x2F;health&#x2F;status</a><p>I&#x27;ve got an estimated bill for $1.7 BILLION over this month. Normal usage is &lt; $5.<p>Obvs have created an urgent AWS support ticket. Anyone else seeing something like this?<p>Update: Reddit link: <a href=\"https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;aws&#x2F;comments&#x2F;1uyuaw7&#x2F;help_my_bill_skyrocketed_from_around_5_cents_per&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;aws&#x2F;comments&#x2F;1uyuaw7&#x2F;help_my_bill_s...</a>","summary":"AWS计费数据出现严重错误，预估账单高达17亿美元，远超正常使用费用，值得关注因为它暴露了云服务计费系统的潜在风险。"},{"id":"hn-48956688","title":"LG monitors silently install software through Windows Update without consent","url":"https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent","source":"Hacker News","score":1006,"comments_count":513,"comments_url":"https://news.ycombinator.com/item?id=48956688","published_at":"2026-07-18T10:21:19","author":"baranul","text":null,"summary":"LG显示器通过Windows Update未经用户同意静默安装软件，值得关注因为它涉及用户隐私和系统安全的重要问题。"},{"id":"hn-48949551","title":"Thanks HN for 15 years of support and helping me find my life's work","url":null,"source":"Hacker News","score":792,"comments_count":99,"comments_url":"https://news.ycombinator.com/item?id=48949551","published_at":"2026-07-17T16:57:27","author":"nicholasjbs","text":"$c","summary":"Recurse Center创始人感谢Hacker News社区15年来的支持，分享了创业历程，值得关注因为它展示了技术社区对个人职业发展的深远影响。"},{"id":"hn-48954851","title":"Regressive JPEGs","url":"https://maurycyz.com/projects/bad_jpeg/","source":"Hacker News","score":654,"comments_count":65,"comments_url":"https://news.ycombinator.com/item?id=48954851","published_at":"2026-07-18T03:14:20","author":"vitaut","text":null,"summary":"文章介绍了‘退化JPEG’项目，探索JPEG图像压缩的极限，值得关注因为它挑战了传统图像处理技术，可能启发新的压缩方法。"},{"id":"hn-48947560","title":"First atmosphere found on Earth-like planet in habitable zone of distant star","url":"https://www.bbc.com/news/articles/cy4kdd1e0ejo","source":"Hacker News","score":517,"comments_count":301,"comments_url":"https://news.ycombinator.com/item?id=48947560","published_at":"2026-07-17T14:06:13","author":"neversaydie","text":null,"summary":"科学家首次在宜居带类地行星上发现大气层，值得关注因为这是寻找地外生命的关键突破。"},{"id":"hn-48947717","title":"Kimi K3, and what we can still learn from the pelican benchmark","url":"https://simonwillison.net/2026/Jul/16/kimi-k3/","source":"Hacker News","score":397,"comments_count":209,"comments_url":"https://news.ycombinator.com/item?id=48947717","published_at":"2026-07-17T14:21:51","author":"droidjj","text":null,"summary":"文章分析了Kimi K3模型的表现，并探讨了从‘鹈鹕基准测试’中学到的经验，值得关注因为它提供了评估AI模型的新视角。"},{"id":"hn-48960218","title":"The Kimi K3 Moment","url":"https://stephen.bochinski.dev/blog/2026/07/18/the-kimi-k3-moment/","source":"Hacker News","score":295,"comments_count":315,"comments_url":"https://news.ycombinator.com/item?id=48960218","published_at":"2026-07-18T17:32:40","author":"sbochins","text":null,"summary":"文章讨论了Kimi K3模型发布带来的行业影响，称其为‘Kimi K3时刻’，值得关注因为它可能标志着AI技术发展的转折点。"},{"id":"hn-48911793","title":"Speech Recognition and TTS in less than 500kb","url":"https://github.com/moonshine-ai/moonshine/tree/main/micro","source":"Hacker News","score":277,"comments_count":32,"comments_url":"https://news.ycombinator.com/item?id=48911793","published_at":"2026-07-14T19:25:10","author":"petewarden","text":null,"summary":"该项目实现了小于500KB的语音识别和文本转语音功能，值得关注因为它展示了轻量级AI应用的潜力，适用于资源受限设备。"},{"id":"hn-48951461","title":"The Zilog Z80 has turned 50","url":"https://goliath32.com/blog/z80.html","source":"Hacker News","score":274,"comments_count":109,"comments_url":"https://news.ycombinator.com/item?id=48951461","published_at":"2026-07-17T19:41:02","author":"st_goliath","text":null,"summary":"Zilog Z80微处理器迎来50周年纪念，值得关注因为它回顾了这款经典芯片对计算机历史的深远影响。"},{"id":"hn-48958269","title":"EU ban on destruction of unsold clothes and shoes enters into application","url":"https://environment.ec.europa.eu/news/ban-destruction-unsold-clothes-and-shoes-enters-application-2026-07-17_en","source":"Hacker News","score":272,"comments_count":271,"comments_url":"https://news.ycombinator.com/item?id=48958269","published_at":"2026-07-18T14:04:42","author":"robtherobber","text":null,"summary":"欧盟禁止销毁未售出服装和鞋类的法规正式生效，旨在减少纺织废料并推动可持续时尚，对环保和零售行业具有重大影响。"},{"id":"hn-48959090","title":"If You Build It, They Will Come","url":"https://www.benlandautaylor.com/p/if-you-build-it-they-will-come","source":"Hacker News","score":270,"comments_count":99,"comments_url":"https://news.ycombinator.com/item?id=48959090","published_at":"2026-07-18T15:37:01","author":"barry-cotter","text":null,"summary":"文章探讨了构建产品与吸引用户之间的关系，强调在技术开发中先发优势的重要性，值得创业者关注。"},{"id":"hn-48854988","title":"Camera Chase Vehicle","url":"https://transistor-man.com/gimbal_camera_rover.html","source":"Hacker News","score":251,"comments_count":25,"comments_url":"https://news.ycombinator.com/item?id=48854988","published_at":"2026-07-10T02:17:55","author":"geerlingguy","text":null,"summary":"介绍了一种用于拍摄的相机追踪车辆设计，结合了机械工程与摄影技术，对影视制作和自动化设备爱好者有启发。"},{"id":"hn-48952565","title":"TP-Link Kasa cameras leaked home GPS via unauthenticated UDP for 6 years","url":"https://github.com/BadChemical/IoT-Vulnerability-Research-Public/blob/main/TP-Link_Kasa_EC71/Kasa_EC71.md","source":"Hacker News","score":220,"comments_count":88,"comments_url":"https://news.ycombinator.com/item?id=48952565","published_at":"2026-07-17T21:42:43","author":"BadChemical","text":null,"summary":"TP-Link Kasa摄像头存在长达6年的漏洞，可通过未认证UDP泄露家庭GPS位置，凸显物联网设备安全问题的严重性。"},{"id":"hn-48959143","title":"Gleam Is Now on Tangled","url":"https://tangled.org/gleam.run/gleam","source":"Hacker News","score":209,"comments_count":134,"comments_url":"https://news.ycombinator.com/item?id=48959143","published_at":"2026-07-18T15:44:04","author":"nerdypepper","text":null,"summary":"编程语言Gleam现已支持Tangled平台，提供更便捷的代码交互和分享方式，对函数式编程社区有积极意义。"},{"id":"hn-48907063","title":"Reviving a 15-year-old netbook with Arch Linux","url":"https://parksb.github.io/en/article/41.html","source":"Hacker News","score":209,"comments_count":154,"comments_url":"https://news.ycombinator.com/item?id=48907063","published_at":"2026-07-14T14:02:36","author":"parksb","text":null,"summary":"作者使用Arch Linux成功复活了一台15年前的上网本，展示了轻量级系统延长旧硬件寿命的可能性，适合技术爱好者参考。"},{"id":"hn-48916044","title":"Is this the end of the once-mighty GoPro?","url":"https://amateurphotographer.com/latest/photo-news/going-going-gone-is-this-the-end-of-the-once-mighty-gopro/","source":"Hacker News","score":194,"comments_count":409,"comments_url":"https://news.ycombinator.com/item?id=48916044","published_at":"2026-07-15T03:46:35","author":"aanet","text":null,"summary":"分析GoPro面临的困境，包括市场竞争和产品创新不足，可能标志其辉煌时代的结束，对运动相机行业有警示作用。"},{"id":"hn-48960155","title":"Goodbye, and Thanks for All the Bikesheds","url":"https://queue.acm.org/detail.cfm?id=3818307","source":"Hacker News","score":183,"comments_count":192,"comments_url":"https://news.ycombinator.com/item?id=48960155","published_at":"2026-07-18T17:27:24","author":"Ygg2","text":null,"summary":"一篇告别文章，回顾了技术社区中的“自行车棚效应”（即琐碎问题占主导），反思协作与决策效率，对项目管理有启发。"},{"id":"hn-48951898","title":"Static search trees: 40x faster than binary search (2024)","url":"https://curiouscoding.nl/posts/static-search-tree/","source":"Hacker News","score":178,"comments_count":15,"comments_url":"https://news.ycombinator.com/item?id=48951898","published_at":"2026-07-17T20:24:55","author":"lalitmaganti","text":null,"summary":"提出静态搜索树算法，比传统二分查找快40倍，对数据库和搜索引擎优化有潜在应用价值。"},{"id":"hn-48947548","title":"Show HN: Watch bots interact with an SSH honeypot in real time","url":"https://honeypotlive.cc/","source":"Hacker News","score":175,"comments_count":59,"comments_url":"https://news.ycombinator.com/item?id=48947548","published_at":"2026-07-17T14:05:15","author":"tusksm","text":null,"summary":"展示了一个SSH蜜罐的实时监控界面，可观察机器人攻击行为，对网络安全研究和威胁分析有实用价值。"},{"id":"hn-48959042","title":"Elixir-lang.org has a new design","url":"https://elixir-lang.org/","source":"Hacker News","score":170,"comments_count":105,"comments_url":"https://news.ycombinator.com/item?id=48959042","published_at":"2026-07-18T15:32:04","author":"bbg2401","text":null,"summary":"Elixir语言官网全新设计上线，展示了更现代和用户友好的界面，值得关注因为它可能反映语言社区的发展方向。"},{"id":"hn-48952135","title":"Open Book Touch: open-source e-reader","url":"https://www.crowdsupply.com/oddly-specific-objects/open-book-touch","source":"Hacker News","score":160,"comments_count":54,"comments_url":"https://news.ycombinator.com/item?id=48952135","published_at":"2026-07-17T20:47:57","author":"surprisetalk","text":null,"summary":"Open Book Touch是一款开源电子阅读器，在Crowd Supply上众筹，因其开放硬件和软件特性，对电子书爱好者和开源社区有重要意义。"},{"id":"hn-48955042","title":"Show HN: IKEA Complexity Index","url":"https://ikea.greg.technology/","source":"Hacker News","score":146,"comments_count":80,"comments_url":"https://news.ycombinator.com/item?id=48955042","published_at":"2026-07-18T03:51:42","author":"gregsadetsky","text":null,"summary":"一个展示宜家产品复杂度的趣味网站，通过技术手段量化家具组装难度，值得关注因为它结合了数据可视化与日常生活。"},{"id":"hn-48956231","title":"The Computer at the Bottom of a Canal","url":"https://negroniventurestudios.com/2026/07/18/the-computer-at-the-bottom-of-a-canal/","source":"Hacker News","score":145,"comments_count":38,"comments_url":"https://news.ycombinator.com/item?id=48956231","published_at":"2026-07-18T08:33:31","author":"Kudos","text":null,"summary":"讲述一台计算机在运河底部的奇特故事，融合了历史与技术考古，值得关注因为它揭示了技术遗产的意外发现。"},{"id":"hn-48952067","title":"Topcoat: The full full-stack framework for Rust","url":"https://github.com/tokio-rs/topcoat","source":"Hacker News","score":116,"comments_count":44,"comments_url":"https://news.ycombinator.com/item?id=48952067","published_at":"2026-07-17T20:41:43","author":"wertyk","text":null,"summary":"Topcoat是Rust语言的全栈框架，基于Tokio运行时，值得关注因为它可能简化Rust在Web开发中的应用。"}],"locale":"en"}],"$Ld"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["Generated by"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","Powered by DeepSeek"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
@@ -256,5 +235,5 @@ Ruby was my favorite language though. I wrote a few gems back then. I think one 
 <p>I'm a doctor. I graduated medical school in 2019. It started with AI. In highschool, I started liking biology because I was reading about programming neural networks. Some days I work 10 to 14 hours straight, practicing medicine. Other days I don't work at all. Today is one such day. Schedule is clear, no appointments today. Medicine affords a bit of freedom to make one's own hours. Many career paths to choose from. Surgeons practically live in the hospitals. I wanted a more lighthearted lifestyle because I need time to unwind. I work at a popular clinic with electronic records. It's really efficient, especially for a techie like me. Even when the system is slow or doesn't have features, I make up for it with my own skills. Even some small templates saved to the computer speed things up by 100x. Thus I can have quick consults and maintain a good relationship with patients. Even the ability to touch type helps! I can type in everything while looking people in the eye! My peers can't! The rails project I mentioned earlier is exactly this. I'm making my own electronic patient records system to scratch my own itch. Even if it fails, I'll be well served.</p>
 <p><strong>There are precious few non-professional programmers. You of course started early, but why do you think more professionals don't scratch their own itches?</strong></p>
 <p>I think many don't actually like computers. To change this, we'd have to interest them in computing, how awesome computers can be. It does take effort to learn but most people's mindset seems to be focused on results. I already saw that attitude in highschool among people who chose to attend the programming classes. Curiosity is necessary to care about things beyond just the results, to dig into how the sausage is made. I'm not sure how to inspire that in people. If you find out how to do it, I'd like to know.</p>
-<p><a href="https://lobste.rs/s/grutu0/lobsters_interview_with_matheusmoreira">Comments</a></p>d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-85ec5ba4fd5c","title":"Faulty Towers, vibe sickness, and the vibe bobsled","url":"https://dustycloud.org/blog/faulty-towers-vibe-sickness-and-the-vibe-bobsled/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-17T19:53:06","author":"dustycloud.org via vivicat","text":"<p><a href=\"https://lobste.rs/s/nwp3sm/faulty_towers_vibe_sickness_vibe_bobsled\">Comments</a></p>","summary":"文章探讨了技术系统中的“故障塔”和“氛围病”现象，对理解系统设计缺陷有深刻见解。"},{"id":"rss-9ce4578a0703","title":"Learning a few things about running SQLite","url":"https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-17T19:54:44","author":"jvns.ca via tumdum","text":"<p><a href=\"https://lobste.rs/s/ryksor/learning_few_things_about_running_sqlite\">Comments</a></p>","summary":"分享了运行SQLite的实用技巧，对数据库管理和性能优化有直接帮助。"},{"id":"rss-45c4507fc0b0","title":"Lobsters Interview with matheusmoreira about Lone Lisp","url":"https://alexalejandre.com/interviews/interview-with-matheus-moreira/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-17T21:07:10","author":"alexalejandre.com by veqq","text":"$11","summary":"采访了Lone Lisp的开发者，讨论了基于Linux系统调用的编程语言设计，对系统编程爱好者有启发。"},{"id":"rss-737434fb3a58","title":"Enterprise Haskell at H-E-B","url":"https://blog.haskell.org/enterprise-haskell-at-h-e-b/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-17T21:51:07","author":"blog.haskell.org via Hecate","text":"<p><a href=\"https://lobste.rs/s/zar7fc/enterprise_haskell_at_h_e_b\">Comments</a></p>","summary":"介绍了Haskell在H-E-B企业的实际应用，展示了函数式编程在商业环境中的价值。"},{"id":"rss-d942570a4169","title":"What are you doing this weekend?","url":"https://lobste.rs/s/1vplvg/what_are_you_doing_this_weekend","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-17T08:31:40","author":"by caius","text":"<p>Feel free to tell what you plan on doing this weekend and even ask for help or feedback.</p>\n<p>Please keep in mind it’s more than OK to do nothing at all too!</p>","summary":"这是一个社区互动帖子，鼓励分享周末计划，适合了解技术社区的文化和动态。"}],"locale":"en"}]
+<p><a href="https://lobste.rs/s/grutu0/lobsters_interview_with_matheusmoreira">Comments</a></p>d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-49d1b8a35d52","title":"Reviewing AI Code Is Not A Viable Argument","url":"https://softwaremaxims.com/blog/reviewing-ai-code","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-18T16:25:19","author":"softwaremaxims.com by Diana","text":"<p><a href=\"https://lobste.rs/s/5kgenk/reviewing_ai_code_is_not_viable_argument\">Comments</a></p>","summary":"文章质疑审查AI代码作为论证的有效性，认为这不能保证代码质量，值得关注因为它引发对AI辅助开发流程的反思。"},{"id":"rss-13a944517ae7","title":"GitRoot","url":"https://gitroot.dev/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-18T07:52:15","author":"gitroot.dev via Hasnep","text":"<p><a href=\"https://lobste.rs/s/z01edy/gitroot\">Comments</a></p>","summary":"GitRoot是一个新工具或平台，可能与Git相关，但具体内容未明确，值得关注因为它可能改进版本控制工作流。"},{"id":"rss-f72a7b220afe","title":"Regressive JPEGs","url":"https://maurycyz.com/projects/bad_jpeg/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-18T04:31:13","author":"maurycyz.com via lcamtuf","text":"<p><a href=\"https://lobste.rs/s/ihel7n/regressive_jpegs\">Comments</a></p>","summary":"介绍一种称为“回归JPEG”的图像压缩技术，可能通过退化方法生成艺术效果，值得关注因为它探索了图像处理的创意边界。"},{"id":"rss-45c4507fc0b0","title":"Lobsters Interview with matheusmoreira about Lone Lisp","url":"https://alexalejandre.com/interviews/interview-with-matheus-moreira/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-17T21:07:10","author":"alexalejandre.com by veqq","text":"$11","summary":"对Lone Lisp创建者matheusmoreira的采访，他直接在Linux系统调用上构建了Lisp语言，值得关注因为它展示了底层编程的深度实践。"},{"id":"rss-095b3076168f","title":"wp2shell: Pre Authentication RCE in WordPress Core","url":"https://wp2shell.com/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-18T18:12:17","author":"wp2shell.com via Helithumper","text":"<p><a href=\"https://lobste.rs/s/aipvbn/wp2shell_pre_authentication_rce\">Comments</a></p>","summary":"披露WordPress核心中的一个预认证远程代码执行漏洞，严重威胁网站安全，值得关注因为它需要紧急修补。"}],"locale":"en"}]
 10:null
