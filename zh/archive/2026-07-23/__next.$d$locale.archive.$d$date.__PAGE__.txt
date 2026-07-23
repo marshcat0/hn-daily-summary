@@ -1,0 +1,472 @@
+1:"$Sreact.fragment"
+2:I[33453,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"Header"]
+3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
+4:I[4561,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],""]
+5:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
+e:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
+16:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+17:"$Sreact.suspense"
+6:T36d7,好的，作为一名专业的技术新闻分析师，我已对今日“AI & Machine Learning”主题的15篇热门文章进行了深入分析和总结。以下是按子主题分组的详细报告。
+
+### 综合分析摘要
+
+今日的热门内容呈现出几个鲜明的趋势：
+1.  **安全与伦理警钟长鸣**：OpenAI与Hugging Face的安全事件，以及关于儿童与AI聊天机器人交互中的拟人化研究，凸显了AI部署中日益严峻的安全与伦理挑战。
+2.  **对AI现状的反思与批判**：多篇文章从不同角度（AI生成内容质量、AI UI设计、对“AI实验室”现状的戏谑）对当前AI热潮进行了冷静甚至尖锐的批评。
+3.  **AI能力评估与工具创新**：利用经典MUD游戏评估LLM、将NVIDIA DGX Spark作为日常开发机、以及AI驱动的数据库管理工具，展示了AI评估和实用工具的多元化探索。
+4.  **AI与非AI话题的交织**：列表中也包含了一些与AI无关但同样热门的技术话题（如Passkeys、Reddit、流媒体服务），反映了技术社区的广泛兴趣。
+
+---
+
+### 按子主题分组分析
+
+#### 1. AI安全、伦理与社会影响
+
+- **文章1: OpenAI and Hugging Face address security incident during model evaluation**
+    - **简要说明**：OpenAI和Hugging Face联合披露了一起在模型评估过程中发生的安全事故。该事件由OpenAI的一个模型引发，导致Hugging Face平台出现安全漏洞。此事件是AI供应链安全的重要案例，引发了对模型评估流程安全性的广泛讨论。
+    - **为什么值得关注**：直接关系到AI生态系统的信任基石。任何大型模型或平台的安全漏洞都可能产生连锁反应，影响数以万计的下游应用。
+    - **原文链接**：[https://openai.com/index/hugging-face-model-evaluation-security-incident/](https://openai.com/index/hugging-face-model-evaluation-security-incident/)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=48997548](https://news.ycombinator.com/item?id=48997548)
+
+- **文章15: Anthropomorphism in Children's Interactions with LLM Chatbots**
+    - **简要说明**：一篇来自arXiv的学术论文，研究儿童在与LLM聊天机器人互动时表现出的拟人化倾向。这项研究探讨了儿童是否会将聊天机器人视为有情感、有思想的“人”，以及这种认知可能带来的心理影响。
+    - **为什么值得关注**：随着AI聊天机器人越来越多地进入家庭和教育场景，了解儿童如何感知这些非人类智能至关重要，这直接关系到儿童保护、AI产品设计规范和伦理准则的制定。
+    - **原文链接**：[https://arxiv.org/abs/2607.18250](https://arxiv.org/abs/2607.18250)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=49014537](https://news.ycombinator.com/item?id=49014537)
+
+#### 2. AI能力评估与前沿探索
+
+- **文章2: Terrence Tao's ChatGPT Conversation about the Jacobian Conjecture Counterexample**
+    - **简要说明**：著名数学家陶哲轩分享了他与ChatGPT关于雅可比猜想反例的对话。陶哲轩是数学界公认的顶尖人物，他深入探索LLM在复杂数学推理中的能力，具有极高的标杆意义。
+    - **为什么值得关注**：展示了顶级学者如何利用LLM作为研究工具，探讨了LLM在解决前沿数学难题中的潜力和局限性，是AI for Science的生动案例。
+    - **原文链接**：[https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56](https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=49010345](https://news.ycombinator.com/item?id=49010345)
+
+- **文章9: Can a MUD evaluate LLMs? A $99 proof of concept**
+    - **简要说明**：作者仅花费99美元API费用，通过让LLM玩经典的MUD（多用户地牢）文字游戏来评估其能力。该项目不仅生成了有趣的排行榜，还从多个行为维度（如探索、解决问题、社交等）对LLM进行了量化评估。
+    - **为什么值得关注**：提出了一种低成本、创新性的LLM评估方法。传统的基准测试往往存在数据污染或评估维度单一的问题，而MUD游戏提供了更接近真实世界复杂交互的测试环境。
+    - **原文链接**：[https://cruciblebench.ai/](https://cruciblebench.ai/)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=49008538](https://news.ycombinator.com/item?id=49008538)
+
+- **文章10: Nvidia DGX Spark as a daily driver**
+    - **简要说明**：一位开发者分享了他将NVIDIA DGX Spark（一款小型AI超级计算机）作为日常开发主力机的体验。文章探讨了其性能、功耗、软件生态以及是否适合作为通用计算设备。
+    - **为什么值得关注**：这是对“AI PC”概念的一次硬核实践。DGX Spark代表了将强大AI算力集成到桌面设备的趋势，对于AI开发者、研究人员以及高性能计算爱好者具有重要参考价值。
+    - **原文链接**：[https://daniel.lawrence.lu/blog/2026-07-15-dgx-spark-as-daily-driver/](https://daniel.lawrence.lu/blog/2026-07-15-dgx-spark-as-daily-driver/)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=48971128](https://news.ycombinator.com/item?id=48971128)
+
+#### 3. 对AI现状的反思与批判
+
+- **文章4: Are AI Labs Pelicanmaxxing?**
+    - **简要说明**：作者用“Pelicanmaxxing”这个网络梗来讽刺AI实验室的现状，指其像一只为了吞下大鱼而不断扩张喙的鹈鹕，盲目追求更大模型、更多数据，却忽视了实际效率和可持续性。
+    - **为什么值得关注**：以一种幽默但尖锐的方式，批评了当前AI领域“越大越好”的军备竞赛思维，引发了关于AI发展路线和资源分配的深刻思考。
+    - **原文链接**：[https://dylancastillo.co/posts/pelicanmaxxing.html](https://dylancastillo.co/posts/pelicanmaxxing.html)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=49010129](https://news.ycombinator.com/item?id=49010129)
+
+- **文章7: Businesses with ugly AI menu redesigns**
+    - **简要说明**：文章列举了一些企业使用AI重新设计的、被用户普遍认为“丑陋”或体验糟糕的菜单界面。这反映了AI在UI/UX设计领域的应用有时会脱离实际用户需求。
+    - **为什么值得关注**：这是一个关于AI应用失败的典型案例。它提醒我们，AI工具必须服务于人类，而不是为了用AI而用AI。糟糕的AI设计会直接损害品牌形象和用户体验。
+    - **原文链接**：[https://blog.fiddery.com/businesses-with-ugly-ai-menu-redesigns/](https://blog.fiddery.com/businesses-with-ugly-ai-menu-redesigns/)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=49005973](https://news.ycombinator.com/item?id=49005973)
+
+- **文章8: Quality non-fiction books are the antithesis of AI slop**
+    - **简要说明**：文章指出，高质量的纪实类书籍（非虚构作品）与当前泛滥的“AI垃圾内容”（AI slop）形成了鲜明对比。它强调了人类深度思考、严谨研究和叙事艺术的价值。
+    - **为什么值得关注**：在AI生成内容充斥网络的今天，这篇文章为“什么是真正有价值的信息”提供了标准。它鼓励人们回归深度阅读，并批判了AI内容生产模式中缺乏原创性和深度的问题。
+    - **原文链接**：[https://resobscura.substack.com/p/quality-non-fiction-books-are-the](https://resobscura.substack.com/p/quality-non-fiction-books-are-the)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=49007247](https://news.ycombinator.com/item?id=49007247)
+
+#### 4. AI驱动的工具与应用
+
+- **文章12: Launch HN: Unlayer (YC W22) – Add email and document builders to your app**
+    - **简要说明**：Unlayer是一个YC孵化的项目，提供API，允许开发者轻松地将邮件、网页和文档编辑器集成到自己的应用中。它支持代码编辑、可视化编辑和AI辅助创建三种模式。
+    - **为什么值得关注**：这是一个实用的B2B SaaS工具，精准地解决了大量应用开发中的“内容创建”痛点。AI功能的加入使其更具竞争力，是AI赋能传统软件开发的一个好例子。
+    - **原文链接**：[https://unlayer.com](https://unlayer.com)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=49008901](https://news.ycombinator.com/item?id=49008901)
+
+- **文章13: Show HN: DeepSQL – A self-hostable DBA agent for Postgres and MySQL**
+    - **简要说明**：DeepSQL是一个自托管的AI代理，专为Postgres和MySQL数据库设计。它能像资深DBA一样工作，包括修复慢查询、解决数据库膨胀、阻止不安全的模式变更等，帮助团队将数据库支出降低数倍。
+    - **为什么值得关注**：这是一个非常具体的AI应用场景——数据库运维。它展示了AI在降低运维成本、提升系统稳定性方面的巨大潜力，尤其对拥有大量数据库的企业极具吸引力。
+    - **原文链接**：[https://deepsql.ai/](https://deepsql.ai/)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=48980286](https://news.ycombinator.com/item?id=48980286)
+
+#### 5. 其他热门技术话题（非AI核心，但与AI社区兴趣相关）
+
+- **文章3: Passkeys were invented by engineers with zero understanding of consumer brain**
+    - **简要说明**：一篇批评Passkeys（通行密钥）用户体验的帖子。作者认为，Passkeys的设计过于复杂，完全不符合普通用户的心智模型，导致采用率低。
+    - **原文链接**：[https://twitter.com/nikitabier/status/2079787406300266743](https://twitter.com/nikitabier/status/2079787406300266743)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=49007374](https://news.ycombinator.com/item?id=49007374)
+- **文章5: So Reddit has decided that plain HTML is unsafe**
+    - **简要说明**：文章指出，Reddit平台正在限制或标记纯HTML内容，引发了关于平台安全策略、内容审查和开放性的讨论。
+    - **原文链接**：[https://www.cole-k.com/2026/07/21/reddit/](https://www.cole-k.com/2026/07/21/reddit/)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=49005747](https://news.ycombinator.com/item?id=49005747)
+- **文章6: Back to Kagi**
+    - **简要说明**：作者分享了从其他搜索引擎回归使用付费搜索引擎Kagi的体验，强调了其无广告、注重隐私、高质量搜索结果的优势。
+    - **原文链接**：[https://blog.melashri.net/micro/back-to-kagi/](https://blog.melashri.net/micro/back-to-kagi/)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=49006195](https://news.ycombinator.com/item?id=49006195)
+- **文章11: Fairphone 6 wide camera experimental Linux support**
+    - **简要说明**：一篇关于在Fairphone 6上为广角摄像头提供实验性Linux驱动的技术文章。
+    - **原文链接**：[https://nondescriptpointer.com/articles/fairphone-6-wide-camera-linux/](https://nondescriptpointer.com/articles/fairphone-6-wide-camera-linux/)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=49012777](https://news.ycombinator.com/item?id=49012777)
+- **文章14: Which streaming service was that on again?**
+    - **简要说明**：一个解决“忘记电影/剧集在哪个流媒体平台”问题的个人项目或服务。
+    - **原文链接**：[https://www.timwehrle.de/blog/which-streaming-service-was-that-on-again/](https://www.timwehrle.de/blog/which-streaming-service-was-that-on-again/)
+    - **讨论链接**：[https://news.ycombinator.com/item?id=49007671](https://news.ycombinator.com/item?id=49007671)
+
+---
+
+### 今日最值得阅读的文章推荐
+
+**1. OpenAI and Hugging Face address security incident during model evaluation**
+- **推荐理由**：AI安全是当前最核心的议题之一。这篇文章直接涉及两个行业巨头的安全事件，其披露的细节和后续影响对整个AI行业具有警示和指导意义。讨论区（1088条评论）的热度也证明了其重要性。
+- **链接**：[https://openai.com/index/hugging-face-model-evaluation-security-incident/](https://openai.com/index/hugging-face-model-evaluation-security-incident/)
+
+**2. Terrence Tao's ChatGPT Conversation about the Jacobian Conjecture Counterexample**
+- **推荐理由**：这是AI能力展示的“天花板”级别内容。观察顶尖数学家如何与AI互动，探讨前沿数学问题，能让我们最直观地理解当前LLM的推理能力边界。这是一个里程碑式的对话记录。
+- **链接**：[https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56](https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56)
+
+**3. Can a MUD evaluate LLMs? A $99 proof of concept**
+- **推荐理由**：创意十足且极具启发性的项目。它用一种新颖、低成本且有趣的方式挑战了传统的LLM评估方法。对于任何关心“如何更好地测试AI”的人来说，这篇文章都值得一读。
+- **链接**：[https://cruciblebench.ai/](https://cruciblebench.ai/)
+
+**4. Are AI Labs Pelicanmaxxing?**
+- **推荐理由**：在AI热潮中，需要这样的反思声音。这篇文章用幽默和讽刺的笔触，提出了一个关于AI发展方向的关键问题：我们是否在盲目扩张而忽略了真正重要的东西？它能引发有价值的讨论和思考。
+- **链接**：[https://dylancastillo.co/posts/pelicanmaxxing.html](https://dylancastillo.co/posts/pelicanmaxxing.html)
+
+**5. Anthropomorphism in Children's Interactions with LLM Chatbots**
+- **推荐理由**：这是一个关乎下一代AI伦理的严肃研究。随着AI进入儿童的生活，我们如何设计产品、如何教育孩子，都离不开对这类研究的深入理解。这篇文章的学术背景使其具有权威性和深度。
+- **链接**：[https://arxiv.org/abs/2607.18250](https://arxiv.org/abs/2607.18250)0:{"buildId":"BGAv4o62oZhhhsnIzBsC5","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-07-23","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":15},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg","children":[["$","h2",null,{"className":"text-sm font-medium text-gray-500 dark:text-gray-400 mb-2","children":"历史存档"}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L4","2026-07-23",{"href":"/zh/archive/2026-07-23","className":"px-3 py-1 rounded text-sm bg-hn-orange text-white","children":"2026-07-23"}],["$","$L4","2026-02-03",{"href":"/zh/archive/2026-02-03","className":"px-3 py-1 rounded text-sm bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600","children":"2026-02-03"}]]}]]}],["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":["历史存档",": ","2026-07-23"]}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"历史技术摘要"}]]}],["$","div",null,{"className":"space-y-12","children":[["$","section","ai",{"id":"ai","children":[["$","div",null,{"className":"flex items-center gap-3 mb-6","children":[["$","h2",null,{"className":"text-2xl font-bold text-gray-900 dark:text-white","children":"AI & Machine Learning"}],["$","span",null,{"className":"text-sm text-gray-500 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded","children":[15," ","篇文章"]}]]}],["$","div",null,{"className":"space-y-6","children":[["$","$L5",null,{"summary":"$6","topicName":"AI & Machine Learning","locale":"zh"}],"$L7"]}]]}],"$L8","$L9"]}]]}],"$La"]}],["$Lb","$Lc"],"$Ld"]}],"loading":null,"isPartial":false}
+f:T828,I&#x27;m the author of a paper my friends and I wrote after we were curious if a MUD, text games originating in the 1970s, could be used to evaluate LLMs. We&#x27;ve spent the last several months on nights and weekends running this experiment and writing the paper on just our personal computers with about $99 in API credits.<p>Our experiment did have an interesting leaderboard but even more surprising was the measurements of each LLM. We scored each on four behavioral dimensions, two of which lean heavily on an LLM classifier. When we removed those two, one of the frontier models fell six positions. When we then checked the classifier against a second judge, the per-model agreement between them ranged from 85% to 22%. The aggregate kappa (0.04 on probe detection) indicated the instrument was noisy without saying which models the noise was hitting. The most affected model shared a model family with the classifier. This isn&#x27;t proof of bias, just one observation we recorded.<p>We realize LLM judges can be unreliable, and while it wasn&#x27;t our original intent to test this, it ended up being the most interesting finding. The divergence between the two judges is the finding we think generalizes to other judge-based benchmarks.<p>We emphasize this is just a proof of concept and not a validated benchmark. We prepared a thorough limitations section in the paper, including just 50 runs per model, overlapping CIs among the top models, no human raters, a tiny environment, etc.<p>Everything we did is publicly available, the paper and data are CC BY 4.0, while the code is MIT. The paper, transcripts, code, and complete API billing export  can be found at <a href="https:&#x2F;&#x2F;doi.org&#x2F;10.5281&#x2F;zenodo.21386663" rel="nofollow">https:&#x2F;&#x2F;doi.org&#x2F;10.5281&#x2F;zenodo.21386663</a><p>If you find issues, please let us know, that&#x27;s why we&#x27;re sharing this. We&#x27;re currently designing Phase 2 and want it to be as robust as possible. We&#x27;re looking at human baselines, multiple judges, more objectives, a larger environment, etc.10:T14d5,Hi HN, We’re Adeel and Umair, co-founders of Unlayer (<a href="https:&#x2F;&#x2F;unlayer.com&#x2F;">https:&#x2F;&#x2F;unlayer.com&#x2F;</a>). We let you add content creation to your applications without having to build an entire editor, renderer, template, and export stack yourself. Unlayer lets you create emails, web pages, and documents inside your app, in three different ways: in code, visually, or with AI.<p>Here’s a demo: <a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=0HsDtNkdMpM" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=0HsDtNkdMpM</a>.<p>We started with an embeddable email editor because a lot of products eventually need one: CRMs, marketing tools, customer engagement platforms, marketplaces, internal tools, and vertical SaaS apps all run into this at some point. At first, it sounds like a small feature: &quot;just&quot; add a drag and drop editor. In practice, it turns into a big pain. You end up dealing with email rendering, Outlook quirks, responsive layouts, templates, merge tags, image uploads, exports, permissions, localization, versioning, and a long tail of edge cases that have nothing to do with your core product<p>Over time, we saw the same problem beyond email. Apps also need landing pages, invoices, proposals, reports, contracts, and PDFs. Some of this content is best created visually by end users. Some of it is better generated in code by developers. Increasingly, some of it is also generated by AI agents. Many teams eventually need all three workflows. That is the direction we have been working toward with Unlayer.<p>There are three parts we are showing today:<p>(1) <i>Unlayer Elements</i>. This is our open-source React component library for creating emails, pages, and documents in code (repo: <a href="https:&#x2F;&#x2F;github.com&#x2F;unlayer&#x2F;elements" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;unlayer&#x2F;elements</a>, more at <a href="https:&#x2F;&#x2F;unlayer.com&#x2F;elements">https:&#x2F;&#x2F;unlayer.com&#x2F;elements</a>). Instead of hand-writing raw HTML templates, developers can compose content using React components, reuse sections like headers, footers, CTAs, invoice rows, and branded blocks, keep templates in Git, and render them into production output.<p>One newer use case we are seeing is AI-assisted content creation. If an AI agent is asked to create an email, invoice, report, or landing page, the output is usually raw HTML or markdown that becomes hard to maintain. With Elements, the agent can generate structured React components instead. A developer can review the result, refactor it, keep it in Git, and still pass the design into a visual builder later if someone needs to edit it.<p>(2) <i>Visual Builder</i>. This is the drag and drop editor (repo: <a href="https:&#x2F;&#x2F;github.com&#x2F;unlayer&#x2F;react-email-editor" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;unlayer&#x2F;react-email-editor</a>, more at <a href="https:&#x2F;&#x2F;unlayer.com&#x2F;email-builder">https:&#x2F;&#x2F;unlayer.com&#x2F;email-builder</a>) that can be embedded inside an app so non-technical users can create or edit content. In the demo, we show the email builder and the AI assistant inside the builder. The goal is not to replace the developer workflow, but to connect it with a visual workflow when marketers, admins, customers, or internal teams need to make changes themselves.<p>(3) <i>Document Builder</i>. This is for structured documents such as proposals, reports, invoices, contracts, and PDFs. We have seen a lot of teams build separate systems for email templates, web pages, and document generation, even though the underlying primitives are similar: layout, content blocks, variables, assets, preview, export, and permissions. More: <a href="https:&#x2F;&#x2F;unlayer.com&#x2F;document-builder">https:&#x2F;&#x2F;unlayer.com&#x2F;document-builder</a><p>The technical challenge is making these workflows share a common foundation. Developers should be able to build templates in code when that makes sense. End users should be able to edit visually when that makes sense. AI agents should be able to generate structured content instead of unmaintainable blobs. The final output should still be usable by the host application.<p>We make money by selling hosted builder, template, export, and platform features to companies embedding this into their products. Elements is open source. The commercial product is the broader hosted platform around builders, collaboration, storage, exports, and production use cases.<p>We were part of W22, so this is a late Launch HN. At the time, Unlayer was an embeddable email editor, and we did not think we had the right broader story for HN yet. Since then, the product has expanded into a more general content creation layer for products, including emails, pages, documents, APIs, open-source developer projects, and AI-assisted workflows. That felt like a better moment to bring it to HN and ask for feedback.<p>We&#x27;d really appreciate thoughts from HN. This is one of those areas where a lot of people have strong opinions because they’ve been burned by editors, email HTML, document editing, or “simple” content workflows before. We&#x27;d love to hear what resonates, what sounds wrong, and what you think we should be thinking harder about!11:T69e,Hi HN - I&#x27;m Venkat, founder of Stayflexi (YC), CMU CS grad and Ex-Oracle Query Engine team (patents in core databases)<p>DeepSQL started as an internal tool to stop our own databases from becoming the bottleneck they were becoming (13,000+ hotels in production). It worked well enough that we&#x27;re releasing it.<p>DeepSQL is an AI agent that operates a database the way a senior DBA and Data Engineer would<p>1. Fixes slow queries (we cutdown DB spend by 4x)
+2. Fixes DB bloat (blocks unnecessary schema changes, in vibecoded setup)
+2. BI dashboards(we removed spend on tableau, retool and appsmith)
+3. Security (We could redact access to sensitive, PII data to our employees) while engaging everyone in the org to interact with our database<p>How it works
+1. Deepsql learns your data and relationships from your code base, rules and query logs
+2. Deepsql agent has 20 background jobs that continuously monitor the schema changes, bottlenecks, and come up with solutions before the problem arises. (Schema bloat issues are irreversible)
+3. Deepsql Brain has CLI and MCP surfaces that can directly work with Claude &#x2F; Codex and Cursor. 
+4. Deepsql digest delivers the daily database health report.
+5. Your team can connect to deepsql with their favourate surface areas - Web UI, CLI, MCP or Slack.<p>One line install:
+curl -fsSL <a href="https:&#x2F;&#x2F;install.deepsql.ai&#x2F;install.sh" rel="nofollow">https:&#x2F;&#x2F;install.deepsql.ai&#x2F;install.sh</a> | bash<p>For community support:
+<a href="https:&#x2F;&#x2F;discord.gg&#x2F;duEJq7AeeG" rel="nofollow">https:&#x2F;&#x2F;discord.gg&#x2F;duEJq7AeeG</a><p>Or just email me for expert level setup guidance
+venkat@deepsql.ai7:["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Le","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-48997548","title":"OpenAI and Hugging Face address security incident during model evaluation","url":"https://openai.com/index/hugging-face-model-evaluation-security-incident/","source":"Hacker News","score":1548,"comments_count":1088,"comments_url":"https://news.ycombinator.com/item?id=48997548","published_at":"2026-07-21T20:09:52","author":"mfiguiere","text":"<a href=\"https:&#x2F;&#x2F;www.axios.com&#x2F;2026&#x2F;07&#x2F;21&#x2F;openai-says-hugging-face-breach-caused-by-one-its-models\" rel=\"nofollow\">https:&#x2F;&#x2F;www.axios.com&#x2F;2026&#x2F;07&#x2F;21&#x2F;openai-says-hugging-face-br...</a><p>See also <i>Security incident disclosure – July 2026</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48956248\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48956248</a> (9 comments)<p><a href=\"https:&#x2F;&#x2F;www.bbc.com&#x2F;news&#x2F;articles&#x2F;c3ek3gvdnj3o\" rel=\"nofollow\">https:&#x2F;&#x2F;www.bbc.com&#x2F;news&#x2F;articles&#x2F;c3ek3gvdnj3o</a>","summary":"OpenAI和Hugging Face披露了一起在模型评估期间发生的安全事件，强调了AI合作中安全漏洞的严重性。"},{"id":"hn-49010345","title":"Terrence Tao's ChatGPT Conversation about the Jacobian Conjecture Counterexample","url":"https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56","source":"Hacker News","score":625,"comments_count":381,"comments_url":"https://news.ycombinator.com/item?id=49010345","published_at":"2026-07-22T17:30:40","author":"gmays","text":null,"summary":"著名数学家Terrence Tao与ChatGPT就雅可比猜想反例进行了对话，展示了AI在高级数学推理中的潜力。"},{"id":"hn-49007374","title":"Passkeys were invented by engineers with zero understanding of consumer brain","url":"https://twitter.com/nikitabier/status/2079787406300266743","source":"Hacker News","score":451,"comments_count":615,"comments_url":"https://news.ycombinator.com/item?id=49007374","published_at":"2026-07-22T14:25:13","author":"ksec","text":"<a href=\"https:&#x2F;&#x2F;xcancel.com&#x2F;nikitabier&#x2F;status&#x2F;2079787406300266743\" rel=\"nofollow\">https:&#x2F;&#x2F;xcancel.com&#x2F;nikitabier&#x2F;status&#x2F;2079787406300266743</a>","summary":"文章批评通行密钥的设计缺乏对普通用户认知的理解，指出其可用性问题。"},{"id":"hn-49010129","title":"Are AI Labs Pelicanmaxxing?","url":"https://dylancastillo.co/posts/pelicanmaxxing.html","source":"Hacker News","score":401,"comments_count":156,"comments_url":"https://news.ycombinator.com/item?id=49010129","published_at":"2026-07-22T17:17:54","author":"dcastm","text":null,"summary":"探讨AI实验室是否在过度追求类似‘鹈鹕最大化’的指标，引发对AI研究方向的反思。"},{"id":"hn-49005747","title":"So Reddit has decided that plain HTML is unsafe","url":"https://www.cole-k.com/2026/07/21/reddit/","source":"Hacker News","score":286,"comments_count":288,"comments_url":"https://news.ycombinator.com/item?id=49005747","published_at":"2026-07-22T12:32:48","author":"montroser","text":null,"summary":"Reddit认为纯HTML不安全，这一决定引发了对网络平台安全策略的争议。"},{"id":"hn-49006195","title":"Back to Kagi","url":"https://blog.melashri.net/micro/back-to-kagi/","source":"Hacker News","score":200,"comments_count":160,"comments_url":"https://news.ycombinator.com/item?id=49006195","published_at":"2026-07-22T13:08:19","author":"speckx","text":null,"summary":"作者分享重新使用Kagi搜索引擎的体验，强调其隐私和搜索质量优势。"},{"id":"hn-49005973","title":"Businesses with ugly AI menu redesigns","url":"https://blog.fiddery.com/businesses-with-ugly-ai-menu-redesigns/","source":"Hacker News","score":185,"comments_count":150,"comments_url":"https://news.ycombinator.com/item?id=49005973","published_at":"2026-07-22T12:49:45","author":"speckx","text":null,"summary":"列举了企业使用AI进行菜单重新设计的丑陋案例，批评AI在用户体验中的不当应用。"},{"id":"hn-49007247","title":"Quality non-fiction books are the antithesis of AI slop","url":"https://resobscura.substack.com/p/quality-non-fiction-books-are-the","source":"Hacker News","score":166,"comments_count":77,"comments_url":"https://news.ycombinator.com/item?id=49007247","published_at":"2026-07-22T14:18:05","author":"benbreen","text":"<a href=\"https:&#x2F;&#x2F;book-prize-index.vercel.app&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;book-prize-index.vercel.app&#x2F;</a>","summary":"强调高质量非虚构书籍与AI生成内容的对立，呼吁重视深度阅读和人类创作的价值。"},{"id":"hn-49008538","title":"Can a MUD evaluate LLMs? A $99 proof of concept","url":"https://cruciblebench.ai/","source":"Hacker News","score":99,"comments_count":69,"comments_url":"https://news.ycombinator.com/item?id=49008538","published_at":"2026-07-22T15:39:01","author":"Davisb135","text":"$f","summary":"通过一个MUD游戏（1970年代的文本游戏）以99美元成本评估LLM，展示了低成本AI测试的创新方法。"},{"id":"hn-48971128","title":"Nvidia DGX Spark as a daily driver","url":"https://daniel.lawrence.lu/blog/2026-07-15-dgx-spark-as-daily-driver/","source":"Hacker News","score":84,"comments_count":68,"comments_url":"https://news.ycombinator.com/item?id=48971128","published_at":"2026-07-19T19:44:44","author":"plun9","text":null,"summary":"探讨将Nvidia DGX Spark作为日常电脑使用的可行性，关注其性能和应用场景。"},{"id":"hn-49012777","title":"Fairphone 6 wide camera experimental Linux support","url":"https://nondescriptpointer.com/articles/fairphone-6-wide-camera-linux/","source":"Hacker News","score":73,"comments_count":6,"comments_url":"https://news.ycombinator.com/item?id=49012777","published_at":"2026-07-22T20:16:01","author":"helonaut","text":null,"summary":"文章介绍了为Fairphone 6的广角摄像头提供实验性Linux支持的技术进展，展示了开源社区在移动设备硬件兼容性上的持续努力，值得关注因为它推动了Linux在移动端的实用性。"},{"id":"hn-49008901","title":"Launch HN: Unlayer (YC W22) – Add email and document builders to your app","url":"https://unlayer.com","source":"Hacker News","score":46,"comments_count":30,"comments_url":"https://news.ycombinator.com/item?id=49008901","published_at":"2026-07-22T16:02:03","author":"adeelraza","text":"$10","summary":"Unlayer是一个YC孵化的工具，允许开发者轻松将邮件和文档编辑器集成到应用中，无需自建完整编辑栈，值得关注因为它能显著降低内容创建功能的开发成本。"},{"id":"hn-48980286","title":"Show HN: DeepSQL – A self-hostable DBA agent for Postgres and MySQL","url":"https://deepsql.ai/","source":"Hacker News","score":45,"comments_count":24,"comments_url":"https://news.ycombinator.com/item?id=48980286","published_at":"2026-07-20T15:32:20","author":"venkat971","text":"$11","summary":"DeepSQL是一个自托管的数据库管理代理，专为Postgres和MySQL设计，源自Stayflexi内部工具，旨在优化数据库性能，值得关注因为它提供了实用的数据库瓶颈解决方案。"},{"id":"hn-49007671","title":"Which streaming service was that on again?","url":"https://www.timwehrle.de/blog/which-streaming-service-was-that-on-again/","source":"Hacker News","score":44,"comments_count":64,"comments_url":"https://news.ycombinator.com/item?id=49007671","published_at":"2026-07-22T14:46:14","author":"weetii","text":null,"summary":"文章探讨了如何快速识别流媒体服务上的内容来源，解决用户在多平台间切换时的困扰，值得关注因为它回应了流媒体碎片化时代的常见痛点。"},{"id":"hn-49014537","title":"Anthropomorphism in Children's Interactions with LLM Chatbots","url":"https://arxiv.org/abs/2607.18250","source":"Hacker News","score":25,"comments_count":17,"comments_url":"https://news.ycombinator.com/item?id=49014537","published_at":"2026-07-22T22:49:58","author":"StatsAreFun","text":null,"summary":"论文研究了儿童在与LLM聊天机器人互动中的拟人化倾向，分析了AI对儿童认知发展的潜在影响，值得关注因为它涉及AI伦理和儿童教育的重要议题。"}],"locale":"zh"}]]}]
+12:T2846,好的，各位设计师朋友，大家好。今天是2026年7月16日，欢迎收看今天的《设计热点周报》。我是你们的技术新闻分析师。今天我们收到了15篇来自设计社区的热门文章，涵盖了从AI冲击到字体革命，从设计系统反思到个人职业成长的方方面面。
+
+让我们开始今天的内容分析。
+
+### 一、AI 时代的机遇、挑战与反思
+
+AI无疑是当前设计领域最核心的议题。今天的文章既有拥抱AI的实用指南，也有对其潜在风险的深刻批判。
+
+1.  **《Layers: AI skills for product designers》 (AI技能：产品设计师的七层修炼)**
+    - **简要说明**：这是一份非常实用的指南，将产品设计师需要掌握的AI技能划分为七个层次，从基础的提示词工程到高级的AI系统设计，为设计师提供了清晰的AI能力成长路径。在AI工具泛滥的今天，这种结构化的学习框架尤为珍贵。
+    - **原文链接**：https://layers.jamiemill.com/
+    - **讨论链接**：无
+
+2.  **《Designing with web standards: The playbook for this AI moment》 (用Web标准设计：AI时代的行动手册)**
+    - **简要说明**：作者是Web标准运动的先驱Jeffrey Zeldman。文章将当前AI的混乱局面类比于当年的“浏览器大战”，并呼吁设计师和开发者回归Web标准，用理性、开放和标准化的思维来驾驭AI，而不是被工具和平台绑架。这是一篇极具战略眼光的文章。
+    - **原文链接**：https://uxdesign.cc/designing-with-web-standards-the-playbook-for-this-ai-moment-92394884dc0d
+    - **讨论链接**：无
+
+3.  **《AI mania is eviscerating global decisionmaking》 (AI狂热正在摧毁全球决策能力)**
+    - **简要说明**：一篇充满批判精神的文章，直指当前对AI的盲目追捧正在损害组织有效运行的能力。它提醒我们，在追求效率的同时，不要丢失人类的判断力、价值观和深思熟虑的决策过程。对于身处AI浪潮中的设计师来说，这是一剂重要的清醒剂。
+    - **原文链接**：https://hermit-tech.com/blog/ai-mania-is-eviscerating-global-decisionmaking
+    - **讨论链接**：无
+
+### 二、反思设计工具、系统与流程
+
+这个主题下的文章都在挑战我们习以为常的“最佳实践”，鼓励我们进行更深层次的思考。
+
+4.  **《Against design system federation》 (反对设计系统联邦化)**
+    - **简要说明**：文章指出“设计系统联邦化”（即多个团队各自维护独立但互相关联的设计系统）是一个充满陷阱的模型，可能会让设计系统的发展倒退。作者主张集中化治理，以保持设计系统的一致性、可维护性和影响力。对于正在建设或扩展设计系统的团队来说，这是一个非常及时且重要的警告。
+    - **原文链接**：https://karolinaszczur.com/journal/against-design-system-federation/
+    - **讨论链接**：无
+
+5.  **《Do we still need build tools?》 (2026年，我们还需要构建工具吗？)**
+    - **简要说明**：随着浏览器原生功能的增强和Web标准的进步，这篇文章对前端开发中复杂的构建工具链提出了质疑。它探讨了“无构建”开发的可行性和适用场景，对于追求简洁高效工作流的设计师和前端开发者来说，是一个值得思考的方向。
+    - **原文链接**：https://olliewilliams.xyz/blog/no-build/
+    - **讨论链接**：无
+
+6.  **《The shape of apps》 (应用的形状)**
+    - **简要说明**：一篇充满怀旧与批判色彩的文章。它认为强制所有应用使用圆角矩形图标（iOS风格）对于长期使用Mac OS X的用户来说，是一种“心碎”的设计妥协。文章探讨了平台标识、视觉一致性与个性表达之间的冲突。
+    - **原文链接**：https://parakeet.co/blog/the-shape-of-apps/
+    - **讨论链接**：无
+
+7.  **《The self-driving company》 (自动驾驶的公司)**
+    - **简要说明**：来自Replit的博客，描绘了一幅未来图景：当一家公司学会“自我运营”，会发生什么？文章探讨了AI如何自动化公司的运营、决策和开发流程，这对于思考产品设计在高度自动化组织中的新角色极具启发性。
+    - **原文链接**：https://replit.com/blog/self-driving-company
+    - **讨论链接**：无
+
+### 三、字体排印与视觉设计的边界探索
+
+这一组文章展示了设计师在字体和视觉领域的大胆创新和深刻思考。
+
+8.  **《Datatype》 (数据类型字体)**
+    - **简要说明**：这是一项令人惊叹的技术创新！一款名为“Datatype”的OpenType可变字体，可以将简单的文本表达式直接渲染成内联图表。无需JavaScript，无需图片，仅靠字体本身就能实现数据可视化。这模糊了字体设计与数据可视化之间的界限。
+    - **原文链接**：https://franktisellano.github.io/datatype/
+    - **讨论链接**：无
+
+9.  **《Are we stuck in the typographic principles of the 20th century?》 (我们是否困在20世纪的字体排印原则里？)**
+    - **简要说明**：文章提出一个大胆的问题：在数字媒体时代，我们是否还在盲目遵循一个世纪前的字体设计规则？它介绍了一本名为《Matter of New New Typography》的出版物，探讨了当代字体设计的不稳定性与可能性，挑战了传统教条。
+    - **原文链接**：https://www.itsnicethat.com/articles/matter-of-new-new-typography-graphic-design-publication-project-150726
+    - **讨论链接**：无
+
+10. **《A history of menus is a menu of history》 (菜单的历史就是历史的菜单)**
+    - **简要说明**：来自知名数据叙事媒体《The Pudding》。文章通过对美国早期餐厅菜单的视觉设计进行分析，揭示了菜单背后所反映的社会变迁、文化潮流和消费心理。这是一次将视觉设计、历史学和数据叙事巧妙结合的绝佳案例。
+    - **原文链接**：https://pudding.cool/2026/06/menu-story/
+    - **讨论链接**：无
+
+### 四、设计师的成长、工具与人文关怀
+
+这个主题关注设计师的内心世界、技能提升和日常工具。
+
+11. **《Earning taste and judgment》 (赢取品味与判断力)**
+    - **简要说明**：作者Addy Osmani（谷歌工程师）指出，过去“品味”是大量实践（reps）的副产品。但在AI代理（agents）承担了大量基础工作的今天，初级设计师必须“刻意”地去获取品味和判断力。文章为年轻设计师的职业发展提供了宝贵的建议。
+    - **原文链接**：https://addyosmani.com/blog/earning-judgment/
+    - **讨论链接**：无
+
+12. **《Five to Nine: a photographic series》 (五点到九点：摄影系列)**
+    - **简要说明**：这是“九点上班，五点下班”的另一种解读。这组摄影作品捕捉了设计师在下班后（脱下工牌后）的生活状态，展示了他们作为“普通人”的那一面。它提醒我们，设计师的身份远不止于工作，充满了人文关怀。
+    - **原文链接**：https://www.doc.cc/five
+    - **讨论链接**：无
+
+13. **《Loading UI》 (加载UI)**
+    - **简要说明**：一个非常实用的开源资源网站，提供了大量免费、开源的CSS和React加载动画组件。它专注于打造精致、无障碍的加载状态，是每个前端和UI设计师都值得收藏的工具。
+    - **原文链接**：https://loading-ui.com/
+    - **讨论链接**：无
+
+14. **《ColorSym》 (色彩符号)**
+    - **简要说明**：一个关注无障碍设计的开源工具。当仅靠颜色不足以区分信息时（例如色盲用户），ColorSym可以提供符号化的辅助方案。它体现了“设计为所有人”的理念。
+    - **原文链接**：https://colorsym.com/
+    - **讨论链接**：无
+
+15. **《noclip》 (无剪辑)**
+    - **简要说明**：一个电子游戏关卡的“数字博物馆”。它是一个开源项目，允许用户以3D形式自由探索经典游戏的关卡设计。对于游戏UI/UX设计师和任何对空间设计感兴趣的人来说，这都是一个绝佳的灵感来源和学习工具。
+    - **原文链接**：https://noclip.website/#pkmnpl/0;ShareData=AtVk!W}Ec4W4KX_X5Yc@aC
+    - **讨论链接**：无
+
+---
+
+### 今日最值得阅读的Top 5推荐
+
+1.  **《Designing with web standards: The playbook for this AI moment》**
+    - **理由**：这是一篇具有历史视角和战略高度的文章。在AI喧嚣中，它为我们提供了冷静、理性的行动指南，其“回归标准”的核心理念对所有设计师都具有长远的指导意义。
+    - **链接**：https://uxdesign.cc/designing-with-web-standards-the-playbook-for-this-ai-moment-92394884dc0d
+
+2.  **《Against design system federation》**
+    - **理由**：对于任何参与或领导设计系统建设的人来说，这篇文章都至关重要。它精准地指出了“联邦化”这个看似灵活实则危险的陷阱，能帮助你避免未来可能出现的巨大混乱。
+    - **链接**：https://karolinaszczur.com/journal/against-design-system-federation/
+
+3.  **《Datatype》**
+    - **理由**：纯粹的技术与创意之美。它打破了我们对字体的传统认知，展示了一个充满可能性的未来。你无需是字体设计师，也能感受到这种创新的震撼力。
+    - **链接**：https://franktisellano.github.io/datatype/
+
+4.  **《Earning taste and judgment》**
+    - **理由**：一篇直击当下设计师职业痛点的文章。它清晰地解释了为什么在AI时代，培养“品味”和“判断力”变得比以往任何时候都更加重要，并为初级设计师指明了努力方向。
+    - **链接**：https://addyosmani.com/blog/earning-judgment/
+
+5.  **《A history of menus is a menu of history》**
+    - **理由**：一次赏心悦目的数据叙事与视觉设计之旅。它证明了优秀的设计分析可以多么引人入胜，同时也为我们如何从日常物品中挖掘设计灵感提供了绝佳范例。
+    - **链接**：https://pudding.cool/2026/06/menu-story/
+
+以上就是今天的设计热点分析。希望这些内容能给你带来启发。我们下期再见！8:["$","section","design",{"id":"design","children":[["$","div",null,{"className":"flex items-center gap-3 mb-6","children":[["$","h2",null,{"className":"text-2xl font-bold text-gray-900 dark:text-white","children":"Design"}],["$","span",null,{"className":"text-sm text-gray-500 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded","children":[15," ","篇文章"]}]]}],["$","div",null,{"className":"space-y-6","children":[["$","$L5",null,{"summary":"$12","topicName":"Design","locale":"zh"}],"$L13"]}]]}]
+14:T3cb9,好的，作为专业的技术新闻分析师，我已经对今日 “Technology” 主题下的 30 篇文章进行了全面的分析和总结。以下是按子主题分组的内容概览、关键文章解读以及今日最值得阅读的推荐。
+
+---
+
+### 一、 综合分析与主题分组
+
+今天的技术新闻内容丰富，涵盖了从硬件制造、开源生态、编程技术到行业人物与公司动态等多个方面。主要可以归纳为以下几个子主题：
+
+#### 1. 人物与行业动态
+
+这个主题聚焦于科技界的重要人物去世和大型公司（LG、Intel）的最新动态。
+
+- **John C. Dvorak has died** (来源：Hacker News)
+    - **简介**：知名科技专栏作家、播客主持人 John C. Dvorak 去世，引发了科技社区的广泛哀悼和对其职业生涯的回顾。他是 PC 时代和早期互联网的重要评论者。
+    - **原文链接**：https://twitter.com/na_announce/status/2079952538040672302
+    - **讨论链接**：https://news.ycombinator.com/item?id=49012070
+
+- **LG to ban residential proxies from smart TV apps** (来源：Hacker News / Lobsters)
+    - **简介**：LG 宣布将禁止其智能电视应用使用住宅代理，此举旨在打击广告欺诈和内容区域限制绕过行为，但也引发了关于用户隐私和设备控制权的广泛讨论。
+    - **原文链接**：https://krebsonsecurity.com/2026/07/lg-to-ban-residential-proxies-from-smart-tv-apps/
+    - **讨论链接**：https://news.ycombinator.com/item?id=49000864
+
+- **Intel Starts Shipping High-NA EUV Silicon** (来源：Hacker News)
+    - **简介**：英特尔开始出货采用高数值孔径极紫外（High-NA EUV）光刻技术制造的芯片，这是半导体制造工艺的一个里程碑，标志着芯片微缩技术进入新阶段。
+    - **原文链接**：https://morethanmoore.substack.com/p/intel-starts-shipping-high-na-euv
+    - **讨论链接**：https://news.ycombinator.com/item?id=48961698
+
+#### 2. 编程语言、工具与性能优化
+
+这个主题是今日内容的重点，涵盖了从底层优化（SIMD）到高层工具（Bento、Late.sh）的多个创新。
+
+- **Show HN: Bento - An entire PowerPoint in one HTML file** (来源：Hacker News)
+    - **简介**：一个革命性的演示文稿工具，将所有功能（编辑、查看、数据、协作）打包进一个 HTML 文件中。无需安装、无需登录，可离线使用，并支持动画和共享编辑。它解决了“代码生成幻灯片”难以微调的问题。
+    - **原文链接**：https://bento.page/slides/
+    - **讨论链接**：https://news.ycombinator.com/item?id=49008211
+
+- **GigaToken: ~1000x faster Language model tokenization** (来源：Hacker News)
+    - **简介**：一个号称比现有方案快约 1000 倍的语言模型分词库。分词是 LLM 推理的瓶颈之一，这项突破可能极大地加速模型处理速度，对 AI 应用开发者意义重大。
+    - **原文链接**：https://github.com/marcelroed/gigatoken/
+    - **讨论链接**：https://news.ycombinator.com/item?id=49010167
+
+- **Late.sh – a command-line Clubhouse for computer people** (来源：Hacker News)
+    - **简介**：一个为技术人员打造的基于命令行的语音聊天室。它结合了终端的极简主义和实时语音社交，为开发者社区提供了一种新颖的交流方式。
+    - **原文链接**：https://late.sh/
+    - **讨论链接**：https://news.ycombinator.com/item?id=49001127
+
+- **Everyone Should Know SIMD** (来源：Hacker News)
+    - **简介**：一篇由知名开发者 Mitchell Hashimoto 撰写的文章，深入浅出地解释了 SIMD（单指令多数据流）的概念、工作原理和重要性。文章认为，理解 SIMD 是成为优秀程序员的关键。
+    - **原文链接**：https://mitchellh.com/writing/everyone-should-know-simd
+    - **讨论链接**：https://news.ycombinator.com/item?id=49010648
+
+- **SIMD for Collision** (来源：Lobsters)
+    - **简介**：Box2D 物理引擎作者关于如何使用 SIMD 优化碰撞检测的深度技术文章。对于游戏开发和物理模拟领域的开发者来说，这是非常实用的进阶内容。
+    - **原文链接**：https://box2d.org/posts/2026/07/simd-for-collision/
+    - **讨论链接**：https://lobste.rs/s/gkcjic/simd_for_collision
+
+- **Introduction to Formal Verification with Lean Part 1** (来源：Hacker News)
+    - **简介**：一个关于使用 Lean 定理证明器进行形式化验证的入门教程。对于追求软件正确性和可靠性的开发者，这是了解前沿验证方法的好机会。
+    - **原文链接**：https://hashcloak.com/blog/tutorial-introduction-to-formal-verification-with-lean-(part-1)
+    - **讨论链接**：https://news.ycombinator.com/item?id=48969200
+
+- **Why care about programming languages** (来源：Lobsters)
+    - **简介**：一篇反思性文章，探讨为什么程序员应该关心和学习不同的编程语言，以及编程语言设计背后的哲学和权衡。
+    - **原文链接**：https://ebellani.github.io/blog/2026/why-care-about-programming-languages/
+    - **讨论链接**：https://lobste.rs/s/lv12lc/why_care_about_programming_languages
+
+#### 3. 开源生态与项目管理
+
+这个主题关注开源社区的管理动态、项目历史和潜在的供应链安全问题。
+
+- **PyPI releases now reject new files after 14 days** (来源：Lobsters)
+    - **简介**：Python 包索引 PyPI 发布了一项新政策：发布 14 天后，将拒绝为该版本添加新文件。这旨在防止恶意行为者向旧版本注入恶意代码，增强了软件供应链的安全性。
+    - **原文链接**：https://blog.pypi.org/posts/2026-07-22-releases-now-reject-new-files-after-14-days/
+    - **讨论链接**：https://lobste.rs/s/53g8f7/pypi_releases_now_reject_new_files_after
+
+- **Original Apollo 11 Guidance Computer source code** (来源：Hacker News)
+    - **简介**：阿波罗 11 号制导计算机的原始源代码被重新发现并托管在 GitHub 上。这是一个宝贵的历史和技术文献，展示了早期计算机编程的智慧和挑战。
+    - **原文链接**：https://github.com/chrislgarry/Apollo-11
+    - **讨论链接**：https://news.ycombinator.com/item?id=49002166
+
+- **I Inspected My Take-Home Interview Project. It Was a Whole Operation** (来源：Hacker News)
+    - **简介**：一位开发者发现自己的“家庭作业式”面试项目代码被植入了 Git 钩子，旨在窃取其他凭据。这是一个关于招聘过程中供应链攻击的警示故事。
+    - **原文链接**：https://citizendot.github.io/articles/fake-job-interview-git-hook-malware/
+    - **讨论链接**：https://news.ycombinator.com/item?id=49013036
+
+- **So Reddit has decided that plain HTML is unsafe** (来源：Lobsters)
+    - **简介**：一篇批评 Reddit 新政策的文章，该政策似乎将纯 HTML 内容视为不安全并进行限制，引发了关于平台审查和开放性的讨论。
+    - **原文链接**：https://www.cole-k.com/2026/07/21/reddit/
+    - **讨论链接**：https://lobste.rs/s/gqdvdt/so_reddit_has_decided_plain_html_is_unsafe
+
+#### 4. 硬件、AI与商业
+
+这个主题探讨了 AI 模型竞争、GPU 市场的不确定性以及一些有趣的技术产品。
+
+- **“We have information that Moonshot distilled Fable for the development of K3”** (来源：Hacker News)
+    - **简介**：一条来自 X（Twitter）的指控，声称某 AI 初创公司 Moonshot 使用了另一家公司 Fable 的模型进行知识蒸馏来开发自己的模型 K3。这引发了关于 AI 模型训练伦理和知识产权的新一轮争论。
+    - **原文链接**：https://twitter.com/mkratsios47/status/2079933645888880708
+    - **讨论链接**：https://news.ycombinator.com/item?id=49007610
+
+- **Nobody knows what a used GPU cluster is worth** (来源：Hacker News)
+    - **简介**：随着 AI 热潮的波动，二手 GPU 集群市场变得混乱且估值困难。文章探讨了 GPU 作为资产的不确定性、折旧问题以及其对 AI 初创公司的影响。
+    - **原文链接**：https://ciphertalk.substack.com/p/nobody-knows-what-a-used-gpu-cluster
+    - **讨论链接**：https://news.ycombinator.com/item?id=48917135
+
+- **The startup's Postgres survival guide** (来源：Hacker News)
+    - **简介**：一篇非常实用的指南，为初创公司提供了如何避免 PostgreSQL 数据库常见陷阱、进行性能优化和架构设计的建议。对任何使用 Postgres 的团队都很有价值。
+    - **原文链接**：https://hatchet.run/blog/postgres-survival-guide
+    - **讨论链接**：https://news.ycombinator.com/item?id=49005787
+
+#### 5. 其他有趣内容
+
+这个主题包含了一些新奇、有趣或引人深思的内容。
+
+- **Show HN: HN Hall of Fame – browse 3,100 legendary Hacker News links** (来源：Hacker News)
+    - **简介**：一个网站，汇集了 Hacker News 历史上最传奇的 3100 个链接，是一个极佳的“时间胶囊”和内容发现工具。
+    - **原文链接**：https://www.orangecrumbs.com/hall/
+    - **讨论链接**：https://news.ycombinator.com/item?id=49008406
+
+- **ScreenWall – Turn old phones into synced widgets for your space** (来源：Hacker News)
+    - **简介**：一个应用，可以将闲置的旧手机变成同步的桌面小部件，如时钟、日历、天气等。是电子废物再利用的创意方案。
+    - **原文链接**：https://screenwall.app/
+    - **讨论链接**：https://news.ycombinator.com/item?id=48945804
+
+- **Does creatine make you smarter?** (来源：Hacker News)
+    - **简介**：一篇探讨肌酸补充剂对认知能力影响的文章，引用了多项科学研究。这个话题在技术社区中引起了关于“生物黑客”和认知增强的广泛讨论。
+    - **原文链接**：https://dynomight.net/creatine/
+    - **讨论链接**：https://news.ycombinator.com/item?id=49008642
+
+- **Making** (来源：Hacker News)
+    - **简介**：一篇关于“创造”本质的哲学性文章，探讨了在 AI 时代，人类进行手工制作、编程和艺术创作的意义。
+    - **原文链接**：https://beej.us/blog/data/ai-making/
+    - **讨论链接**：https://news.ycombinator.com/item?id=49008440
+
+- **Never Enough** (来源：Hacker News)
+    - **简介**：知名 Rust 开发者 Armin Ronacher 的一篇个人反思，探讨了在开源项目、工作和生活中“永不满足”的心态。
+    - **原文链接**：https://dark.ronacher.eu/2026/7/21/never-enough/
+    - **讨论链接**：https://news.ycombinator.com/item?id=49001472
+
+- **Back to Kagi** (来源：Hacker News)
+    - **简介**：用户分享的一篇个人体验，讲述为何从其他搜索引擎重新切换回付费搜索引擎 Kagi，并对其无广告、注重隐私的体验给予高度评价。
+    - **原文链接**：https://blog.melashri.net/micro/back-to-kagi/
+    - **讨论链接**：https://news.ycombinator.com/item?id=49006195
+
+- **Ghost Cut – or why Cut and Paste is broken everywhere** (来源：Hacker News)
+    - **简介**：一篇技术文章，深入探讨了“剪贴”操作在各种操作系统和应用程序中的实现缺陷，并提出了改进方案。
+    - **原文链接**：https://ishmael.textualize.io/blog/ghost-cut/
+    - **讨论链接**：https://news.ycombinator.com/item?id=49007626
+
+- **10 REM"_(C2SLFF4** (来源：Hacker News)
+    - **简介**：一篇有趣的技术考古文章，试图解码一段神秘的 Commodore BASIC 代码注释，带领读者回到早期个人电脑时代。
+    - **原文链接**：https://beej.us/blog/data/mystery-comment/
+    - **讨论链接**：https://news.ycombinator.com/item?id=49005329
+
+- **Cornell's Interactive Wall of Birds** (来源：Hacker News)
+    - **简介**：康奈尔大学鸟类学实验室制作的一个交互式网站，展示了世界各地的鸟类，是教育技术与自然科学的完美结合，视觉效果令人惊叹。
+    - **原文链接**：https://academy.allaboutbirds.org/features/wallofbirds/?_hsmi=428996456
+    - **讨论链接**：https://news.ycombinator.com/item?id=48962282
+
+- **Hologram Works. Sponsor What Comes Next** (来源：Hacker News)
+    - **简介**：一个名为 Hologram 的项目宣布其技术已成功运行，并开始寻求赞助以支持其下一步发展。这涉及到全息显示技术的商业化进展。
+    - **原文链接**：https://hologram.page/blog/backing-hologram
+    - **讨论链接**：https://news.ycombinator.com/item?id=49007620
+
+- **OpenNode – Bitcoin Payment Processor** (来源：Hacker News)
+    - **简介**：一个比特币支付处理器的介绍，专注于利用闪电网络实现快速、低成本的比特币交易。
+    - **原文链接**：https://opennode.com/
+    - **讨论链接**：https://news.ycombinator.com/item?id=49007524
+
+- **Why do you suck at juggling now?** (来源：Hacker News)
+    - **简介**：一篇关于学习新技能（以杂耍为例）背后神经科学原理的有趣文章，解释了为什么我们有时会“退步”以及如何克服学习瓶颈。
+    - **原文链接**：https://pgadey.ca/notes/suck-at-juggling/
+    - **讨论链接**：https://news.ycombinator.com/item?id=48859309
+
+---
+
+### 二、 今日最值得阅读的文章推荐
+
+**1. 开发者必读：Everyone Should Know SIMD**
+   - **推荐理由**：由业界大牛 Mitchell Hashimoto 撰写，将看似高深的 SIMD 概念讲得清晰透彻。无论你是系统程序员、游戏开发者还是对性能优化感兴趣的工程师，这篇文章都能为你打开一扇新的大门，理解现代 CPU 的并行计算能力。
+   - **链接**：https://mitchellh.com/writing/everyone-should-know-simd
+
+**2. 实用工具革新：Show HN: Bento - An entire PowerPoint in one HTML file**
+   - **推荐理由**：这是对演示文稿工具的一次彻底重构。它将所有功能集成到一个文件中，解决了协作、离线使用和微调代码生成内容的痛点。对于经常制作技术分享或培训材料的开发者来说，这是一个潜在的“游戏规则改变者”。
+   - **链接**：https://bento.page/slides/
+
+**3. 行业警示与安全：I Inspected My Take-Home Interview Project. It Was a Whole Operation**
+   - **推荐理由**：一个令人震惊的真实案例，揭示了招聘流程中隐藏的供应链安全风险。这篇文章对所有正在求职或负责招聘的技术人员都是一个重要的警示，提醒我们即使在看似无害的“家庭作业”项目中也要保持警惕。
+   - **链接**：https://citizendot.github.io/articles/fake-job-interview-git-hook-malware/
+
+**4. 历史与致敬：Original Apollo 11 Guidance Computer source code**
+   - **推荐理由**：这是技术史上的瑰宝。阅读半个多世纪前，在极端资源限制下，人类为登月而编写的代码，不仅能感受到编程艺术的纯粹，更能体会到工程创新的伟大。对于任何热爱科技的人来说，这都是一次朝圣之旅。
+   - **链接**：https://github.com/chrislgarry/Apollo-11
+
+**5. AI 性能突破：GigaToken: ~1000x faster Language model tokenization**
+   - **推荐理由**：AI 领域的性能提升往往能带来范式转移。如果 GigaToken 的宣称属实，它将极大地降低 LLM 推理的延迟和成本，对 AI 应用的普及和效率提升有巨大价值。对于 AI 从业者来说，这是必须关注的技术前沿。
+   - **链接**：https://github.com/marcelroed/gigatoken/9:["$","section","tech",{"id":"tech","children":[["$","div",null,{"className":"flex items-center gap-3 mb-6","children":[["$","h2",null,{"className":"text-2xl font-bold text-gray-900 dark:text-white","children":"Technology"}],["$","span",null,{"className":"text-sm text-gray-500 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded","children":[30," ","篇文章"]}]]}],["$","div",null,{"className":"space-y-6","children":[["$","$L5",null,{"summary":"$14","topicName":"Technology","locale":"zh"}],"$L15"]}]]}]
+a:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
+b:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
+c:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
+d:["$","$L16",null,{"children":["$","$17",null,{"name":"Next.MetadataOutlet","children":"$@18"}]}]
+13:["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Le","Sidebar.io",{"sourceName":"Sidebar.io","articles":[{"id":"rss-c3e08855a217","title":"The shape of apps","url":"https://parakeet.co/blog/the-shape-of-apps/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-22T04:36:57","author":"unknown","text":"<p>How mandating rounded square app icons is downright heartbreaking to long-time Mac OS X users.</p>\n<br /><br />","summary":"本文探讨了强制使用圆角方形应用图标对长期使用Mac OS X用户的困扰，揭示了设计规范与用户情感之间的冲突。"},{"id":"rss-54f63daf3488","title":"noclip","url":"https://noclip.website/#pkmnpl/0;ShareData=AtVk!W}Ec4W4KX_X5Yc@aC","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-22T04:36:01","author":"unknown","text":"<p>A digital museum of video game levels. An open source project.</p>\n<br /><br />","summary":"noclip是一个开源的数字博物馆，收录了电子游戏关卡，为游戏设计和历史研究提供了独特资源。"},{"id":"rss-c1c698f3e3cb","title":"Against design system federation","url":"https://karolinaszczur.com/journal/against-design-system-federation/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-22T04:33:44","author":"unknown","text":"<p>Avoid the fraught model that will set your design system back.</p>\n<br /><br />","summary":"作者警告设计系统联盟模式可能带来的问题，主张避免这种复杂且易倒退的模型。"},{"id":"rss-fe920d85c46f","title":"Datatype","url":"https://franktisellano.github.io/datatype/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-22T04:33:05","author":"unknown","text":"<p>An OpenType variable font that turns simple text expressions into inline charts. No JavaScript, no images—just type.</p>\n<br /><br />","summary":"Datatype是一种可变字体，能将文本表达式直接转换为内联图表，无需JavaScript或图片，创新了数据可视化方式。"},{"id":"rss-618ab917f6d1","title":"Layers: AI skills for product designers","url":"https://layers.jamiemill.com/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-22T04:32:21","author":"unknown","text":"<p>AI skills for product designers—guidance through the seven layers of product design.</p>\n<br /><br />","summary":"本文为产品设计师提供了AI技能指南，涵盖产品设计的七个层次，助力设计师在AI时代提升能力。"},{"id":"rss-562807c0f8c7","title":"AI mania is eviscerating global decisionmaking","url":"https://hermit-tech.com/blog/ai-mania-is-eviscerating-global-decisionmaking","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-21T07:15:12","author":"unknown","text":"<p>The reality of how much damage AI mania is doing to our ability to run institutions effectively.</p>\n<br /><br />","summary":"文章批判了AI热潮对全球决策能力的破坏，揭示了其损害机构有效运作的现实。"},{"id":"rss-87d6d58f34cb","title":"Five to Nine: a photographic series","url":"https://www.doc.cc/five","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-21T07:14:23","author":"unknown","text":"<p>This series slips into the hours after the badge comes off—the unbranded life where designers become someone the job never meets.</p>\n<br /><br />","summary":"摄影系列《五点到九点》捕捉了设计师下班后的非职业生活，展现了设计身份之外的个体面貌。"},{"id":"rss-a4cc5899622b","title":"The self-driving company","url":"https://replit.com/blog/self-driving-company","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-21T07:13:45","author":"unknown","text":"<p>We are beginning to see what happens when a company learns to operate itself.</p>\n<br /><br />","summary":"本文探讨了公司实现自我运营的可能性，预示了自动化管理的新趋势。"},{"id":"rss-39680956dc60","title":"Loading UI","url":"https://loading-ui.com/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-21T07:12:57","author":"unknown","text":"<p>Free and open source CSS and React loaders, spinners, and animations to create polished, accessible loading states for modern web apps.</p>\n<br /><br />","summary":"Loading UI提供了免费开源的CSS和React加载动画，帮助开发者创建优雅且可访问的加载状态。"},{"id":"rss-ad050226d36b","title":"Are we stuck in the typographic principles of the 20th century?","url":"https://www.itsnicethat.com/articles/matter-of-new-new-typography-graphic-design-publication-project-150726?","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-21T07:12:15","author":"unknown","text":"<p>A manual for the most unstable art: type design.</p>\n<br /><br />","summary":"文章质疑现代排版是否仍受20世纪原则束缚，并介绍了关于不稳定艺术——字体设计的新手册。"},{"id":"rss-41d15892a6bf","title":"Designing with web standards: The playbook for this AI moment","url":"https://uxdesign.cc/designing-with-web-standards-the-playbook-for-this-ai-moment-92394884dc0d","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-20T07:47:18","author":"unknown","text":"<p>Jeffrey Zeldman helped end the browser wars by making the case for standards. We are starting that journey again.</p>\n<br /><br />","summary":"文章回顾了Jeffrey Zeldman通过倡导Web标准结束浏览器战争的历史，并指出在当前AI时代，我们正重新踏上类似的道路。值得关注是因为它提供了在技术变革中坚持标准的重要策略。"},{"id":"rss-9be2f42bf713","title":"ColorSym","url":"https://colorsym.com/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-20T07:46:37","author":"unknown","text":"<p>A free, open-source way to identify color when color alone isn’t enough. </p>\n<br /><br />","summary":"介绍了一个免费开源的色彩识别工具ColorSym，旨在帮助色盲或视力障碍用户识别颜色。值得关注是因为它体现了包容性设计，提升了数字产品的可访问性。"},{"id":"rss-92001c56688d","title":"Earning taste and judgment","url":"https://addyosmani.com/blog/earning-judgment/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-20T07:46:06","author":"unknown","text":"<p>Taste used to be a byproduct of the reps. Agents took the reps. So if you’re junior you now have to go get the taste and judgment on purpose.</p>\n<br /><br />","summary":"文章探讨了在AI时代，初级设计师如何有意识地培养品味和判断力，而非依赖传统经验积累。值得关注是因为它提供了职业成长的新视角，对设计新手有实际指导意义。"},{"id":"rss-257d9d9852b5","title":"A history of menus is a menu of history","url":"https://pudding.cool/2026/06/menu-story/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-20T07:45:30","author":"unknown","text":"<p>What do America’s earliest restaurant menus teach us about America?</p>\n<br /><br />","summary":"通过分析美国早期餐厅菜单，揭示了菜单背后的历史和文化内涵。值得关注是因为它以独特视角将设计与历史结合，启发了对日常物品深层意义的思考。"},{"id":"rss-51f589d53a59","title":"Do we still need build tools?","url":"https://olliewilliams.xyz/blog/no-build/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-20T07:43:36","author":"unknown","text":"<p>How necessary are build tools for frontend development in 2026? Let’s take a look.</p>\n<br /><br />","summary":"文章讨论了2026年前端开发中构建工具的必要性，质疑其是否仍不可或缺。值得关注是因为它挑战了行业惯例，促使开发者重新评估工作流程的效率。"}],"locale":"zh"}]]}]
+19:T721,Over the past few months, our team has been building more and more slidedecks using web frontend technologies with coding harnesses like Claude Code, but a common complaint is to make even small edits we need to edit the code either manually or via the harness.<p>To avoid this loop, I ended up creating Bento, a single HTML file with everything you need in a slide tool including animations and shared editing. There&#x27;s no install or cloud login, everything works offline. The default deck is around 560 KB and it doesn&#x27;t need to fetch anything once you got it.<p>Open it in a browser and then you can edit, present, print and save. Share it via email or via Airdrop and all they need is a browser to edit, present and also do live collab on the slides. Drop it in to Claude or ChatGPT to transform existing pptx files into Bento slides. There is no cloud involved, only an encrypted blind relay to allow for shared editing. The relay doesn&#x27;t see any of the data.<p>Check it out at <a href="https:&#x2F;&#x2F;bento.page&#x2F;slides&#x2F;" rel="nofollow">https:&#x2F;&#x2F;bento.page&#x2F;slides&#x2F;</a> which takes you straight to the editor.<p>Go to <a href="https:&#x2F;&#x2F;bento.page&#x2F;guestbook&#x2F;" rel="nofollow">https:&#x2F;&#x2F;bento.page&#x2F;guestbook&#x2F;</a> to try out the live guestbook to experience share editing &#x2F; collab.<p>There is also a gallery with some sample decks on the website - <a href="https:&#x2F;&#x2F;bento.page&#x2F;" rel="nofollow">https:&#x2F;&#x2F;bento.page&#x2F;</a><p>All the code is MIT licensed and you can find it here - <a href="https:&#x2F;&#x2F;github.com&#x2F;nyblnet&#x2F;bento" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;nyblnet&#x2F;bento</a> . I used reveal.js with several other libraries (including some homegrown ones), and Claude Code.15:["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Le","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-49008211","title":"Show HN: Bento - An entire PowerPoint in one HTML file (edit+view+data+collab)","url":"https://bento.page/slides/","source":"Hacker News","score":662,"comments_count":152,"comments_url":"https://news.ycombinator.com/item?id=49008211","published_at":"2026-07-22T15:19:23","author":"starfallg","text":"$19","summary":"Bento 是一个将整个 PowerPoint 演示文稿打包到单个 HTML 文件中的工具，支持编辑、查看、数据集成和协作。它解决了需要直接编辑代码才能修改幻灯片的问题，值得关注因为它简化了基于 Web 的幻灯片制作流程。"},{"id":"hn-49012070","title":"John C. Dvorak has died","url":"https://twitter.com/na_announce/status/2079952538040672302","source":"Hacker News","score":561,"comments_count":179,"comments_url":"https://news.ycombinator.com/item?id=49012070","published_at":"2026-07-22T19:22:19","author":"coleca","text":"<a href=\"https:&#x2F;&#x2F;xcancel.com&#x2F;na_announce&#x2F;status&#x2F;2079952538040672302\" rel=\"nofollow\">https:&#x2F;&#x2F;xcancel.com&#x2F;na_announce&#x2F;status&#x2F;2079952538040672302</a><p><a href=\"https:&#x2F;&#x2F;www.twit.community&#x2F;t&#x2F;john-c-dvorak-has-passed-away&#x2F;20291\" rel=\"nofollow\">https:&#x2F;&#x2F;www.twit.community&#x2F;t&#x2F;john-c-dvorak-has-passed-away&#x2F;2...</a><p><a href=\"https:&#x2F;&#x2F;www.facebook.com&#x2F;aric.mackey&#x2F;posts&#x2F;john-c-dvorak-19462026john-c-dvorak-a-pioneering-technology-journalist-podcaster&#x2F;10242625420121221&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.facebook.com&#x2F;aric.mackey&#x2F;posts&#x2F;john-c-dvorak-194...</a>","summary":"知名科技评论员 John C. Dvorak 去世的消息。值得关注因为他是科技新闻界的资深人物，其观点曾影响行业讨论。"},{"id":"hn-49000864","title":"LG to ban residential proxies from smart TV apps","url":"https://krebsonsecurity.com/2026/07/lg-to-ban-residential-proxies-from-smart-tv-apps/","source":"Hacker News","score":401,"comments_count":406,"comments_url":"https://news.ycombinator.com/item?id=49000864","published_at":"2026-07-22T01:52:31","author":"DemiGuru","text":null,"summary":"LG 计划在其智能电视应用中禁止使用住宅代理，以加强内容访问控制。值得关注因为这涉及用户隐私和网络中立性争议。"},{"id":"hn-49010167","title":"GigaToken: ~1000x faster Language model tokenization","url":"https://github.com/marcelroed/gigatoken/","source":"Hacker News","score":374,"comments_count":72,"comments_url":"https://news.ycombinator.com/item?id=49010167","published_at":"2026-07-22T17:20:38","author":"syrusakbary","text":null,"summary":"GigaToken 是一种声称比现有方法快约 1000 倍的语言模型分词器。值得关注因为它可能大幅提升自然语言处理任务的效率。"},{"id":"hn-49005787","title":"The startup's Postgres survival guide","url":"https://hatchet.run/blog/postgres-survival-guide","source":"Hacker News","score":320,"comments_count":173,"comments_url":"https://news.ycombinator.com/item?id=49005787","published_at":"2026-07-22T12:36:08","author":"abelanger","text":null,"summary":"一篇为初创公司提供的 PostgreSQL 数据库生存指南，涵盖常见问题和最佳实践。值得关注因为数据库管理是初创企业技术栈的关键环节。"},{"id":"hn-49001127","title":"Late.sh – a command-line Clubhouse for computer people","url":"https://late.sh/","source":"Hacker News","score":308,"comments_count":112,"comments_url":"https://news.ycombinator.com/item?id=49001127","published_at":"2026-07-22T02:32:30","author":"itherseed","text":null,"summary":"Late.sh 是一个面向技术人员的命令行版 Clubhouse，提供语音社交功能。值得关注因为它结合了开发者工具与社交互动。"},{"id":"hn-49008440","title":"Making","url":"https://beej.us/blog/data/ai-making/","source":"Hacker News","score":280,"comments_count":111,"comments_url":"https://news.ycombinator.com/item?id=49008440","published_at":"2026-07-22T15:33:48","author":"erikschoster","text":null,"summary":"Beej 探讨了人工智能在“制作”过程中的角色和影响。值得关注因为它反思了 AI 对创意工作的意义。"},{"id":"hn-49008642","title":"Does creatine make you smarter?","url":"https://dynomight.net/creatine/","source":"Hacker News","score":269,"comments_count":229,"comments_url":"https://news.ycombinator.com/item?id=49008642","published_at":"2026-07-22T15:45:18","author":"surprisetalk","text":null,"summary":"文章分析了肌酸补充剂是否可能提升认知能力。值得关注因为它涉及营养学与神经科学的交叉领域。"},{"id":"hn-49013036","title":"I Inspected My Take-Home Interview Project. It Was a Whole Operation","url":"https://citizendot.github.io/articles/fake-job-interview-git-hook-malware/","source":"Hacker News","score":267,"comments_count":70,"comments_url":"https://news.ycombinator.com/item?id=49013036","published_at":"2026-07-22T20:33:44","author":"CITIZENDOT","text":null,"summary":"作者揭露其求职面试项目实为恶意软件操作。值得关注因为它警示了招聘过程中的网络安全风险。"},{"id":"hn-49010648","title":"Everyone Should Know SIMD","url":"https://mitchellh.com/writing/everyone-should-know-simd","source":"Hacker News","score":258,"comments_count":74,"comments_url":"https://news.ycombinator.com/item?id=49010648","published_at":"2026-07-22T17:48:18","author":"WadeGrimridge","text":null,"summary":"Mitchell Hashimoto 主张所有开发者都应了解 SIMD（单指令多数据流）技术。值得关注因为 SIMD 能显著提升计算密集型应用的性能。"},{"id":"hn-48961698","title":"Intel Starts Shipping High-NA EUV Silicon","url":"https://morethanmoore.substack.com/p/intel-starts-shipping-high-na-euv","source":"Hacker News","score":233,"comments_count":106,"comments_url":"https://news.ycombinator.com/item?id=48961698","published_at":"2026-07-18T19:56:33","author":"zdw","text":null,"summary":"Intel已开始出货高数值孔径极紫外（High-NA EUV）硅片，标志着芯片制造工艺的重大突破。值得关注，因为High-NA EUV是下一代光刻技术，有望推动半导体行业向更小制程发展。"},{"id":"hn-48969200","title":"Introduction to Formal Verification with Lean Part 1","url":"https://hashcloak.com/blog/tutorial-introduction-to-formal-verification-with-lean-(part-1)","source":"Hacker News","score":224,"comments_count":46,"comments_url":"https://news.ycombinator.com/item?id=48969200","published_at":"2026-07-19T15:49:58","author":"badcryptobitch","text":null,"summary":"本文介绍了使用Lean进行形式化验证的教程第一部分，涵盖了基础概念和实践。值得关注，因为形式化验证在提高软件可靠性方面日益重要，Lean作为新兴工具备受开发者青睐。"},{"id":"hn-49007610","title":"“We have information that Moonshot distilled Fable for the development of K3”","url":"https://twitter.com/mkratsios47/status/2079933645888880708","source":"Hacker News","score":221,"comments_count":570,"comments_url":"https://news.ycombinator.com/item?id=49007610","published_at":"2026-07-22T14:42:08","author":"softwaredoug","text":"<a href=\"https:&#x2F;&#x2F;xcancel.com&#x2F;mkratsios47&#x2F;status&#x2F;2079933645888880708\" rel=\"nofollow\">https:&#x2F;&#x2F;xcancel.com&#x2F;mkratsios47&#x2F;status&#x2F;2079933645888880708</a>","summary":"消息称Moonshot公司为开发K3产品而蒸馏了Fable模型，引发行业讨论。值得关注，因为这涉及AI模型蒸馏的争议性实践，可能影响技术伦理和知识产权。"},{"id":"hn-49001472","title":"Never Enough","url":"https://dark.ronacher.eu/2026/7/21/never-enough/","source":"Hacker News","score":204,"comments_count":93,"comments_url":"https://news.ycombinator.com/item?id=49001472","published_at":"2026-07-22T03:24:36","author":"reasonableklout","text":null,"summary":"文章探讨了“永不满足”的技术文化，反思持续追求进步的代价。值得关注，因为它提出了对技术发展速度的批判性思考，引发读者对平衡创新与可持续性的讨论。"},{"id":"hn-49006195","title":"Back to Kagi","url":"https://blog.melashri.net/micro/back-to-kagi/","source":"Hacker News","score":200,"comments_count":160,"comments_url":"https://news.ycombinator.com/item?id=49006195","published_at":"2026-07-22T13:08:19","author":"speckx","text":null,"summary":"作者分享了回归使用Kagi搜索引擎的体验，强调了其隐私保护和搜索质量。值得关注，因为Kagi作为付费搜索引擎的替代方案，反映了用户对数据隐私的日益关注。"},{"id":"hn-49008406","title":"Show HN: HN Hall of Fame – browse 3,100 legendary Hacker News links","url":"https://www.orangecrumbs.com/hall/","source":"Hacker News","score":183,"comments_count":37,"comments_url":"https://news.ycombinator.com/item?id=49008406","published_at":"2026-07-22T15:30:36","author":"oyster143","text":null,"summary":"HN Hall of Fame是一个展示3100个传奇Hacker News链接的网站，方便用户浏览历史热门内容。值得关注，因为它聚合了社区精华，为技术爱好者提供发现经典资源的便捷途径。"},{"id":"hn-49002166","title":"Original Apollo 11 Guidance Computer source code for command and lunar modules","url":"https://github.com/chrislgarry/Apollo-11","source":"Hacker News","score":172,"comments_count":52,"comments_url":"https://news.ycombinator.com/item?id=49002166","published_at":"2026-07-22T05:18:08","author":"noteness","text":null,"summary":"原始阿波罗11号制导计算机的源代码（包括指令舱和登月模块）已公开在GitHub上。值得关注，因为这是计算机历史的重要文物，展示了早期太空任务的编程技术。"},{"id":"hn-48917135","title":"Nobody knows what a used GPU cluster is worth","url":"https://ciphertalk.substack.com/p/nobody-knows-what-a-used-gpu-cluster","source":"Hacker News","score":170,"comments_count":158,"comments_url":"https://news.ycombinator.com/item?id=48917135","published_at":"2026-07-15T06:50:49","author":"rbanffy","text":null,"summary":"文章指出二手GPU集群的市场价值难以确定，受供需和AI热潮影响。值得关注，因为这揭示了硬件市场的波动性，对AI初创公司和投资者有重要参考意义。"},{"id":"hn-49005329","title":"10 REM\"_(C2SLFF4","url":"https://beej.us/blog/data/mystery-comment/","source":"Hacker News","score":157,"comments_count":46,"comments_url":"https://news.ycombinator.com/item?id=49005329","published_at":"2026-07-22T11:58:09","author":"ingve","text":null,"summary":"文章解密了一个神秘BASIC注释“10 REM\"_(C2SLFF4”，追溯其起源。值得关注，因为它展示了早期编程文化的趣味性，并引发对代码考古和怀旧技术的兴趣。"},{"id":"hn-49007626","title":"Ghost Cut – or why Cut and Paste is broken everywhere","url":"https://ishmael.textualize.io/blog/ghost-cut/","source":"Hacker News","score":129,"comments_count":89,"comments_url":"https://news.ycombinator.com/item?id=49007626","published_at":"2026-07-22T14:43:28","author":"willm","text":null,"summary":"文章解释了“Ghost Cut”现象，即剪切粘贴功能在多个应用中存在漏洞，导致数据丢失或错误。值得关注，因为这是一个普遍但被忽视的UX问题，影响日常工作效率。"},{"id":"hn-48945804","title":"ScreenWall – Turn old phones into synced widgets for your space","url":"https://screenwall.app/","source":"Hacker News","score":129,"comments_count":47,"comments_url":"https://news.ycombinator.com/item?id=48945804","published_at":"2026-07-17T11:00:04","author":"buibuibui","text":null,"summary":"ScreenWall 是一款能将旧手机转化为同步桌面小工具的应用程序，适合环保和创意家居爱好者关注。"},{"id":"hn-49007524","title":"OpenNode – Bitcoin Payment Processor","url":"https://opennode.com/","source":"Hacker News","score":107,"comments_count":88,"comments_url":"https://news.ycombinator.com/item?id=49007524","published_at":"2026-07-22T14:34:23","author":"gurjeet","text":null,"summary":"OpenNode 是一个比特币支付处理平台，为商家提供便捷的加密货币支付解决方案，值得关注数字货币支付领域的发展。"},{"id":"hn-48859309","title":"Why do you suck at juggling now?","url":"https://pgadey.ca/notes/suck-at-juggling/","source":"Hacker News","score":99,"comments_count":61,"comments_url":"https://news.ycombinator.com/item?id=48859309","published_at":"2026-07-10T13:00:28","author":"surprisetalk","text":null,"summary":"文章探讨了为何人们会突然失去杂耍技能，从认知科学角度分析技能退化现象，对学习与记忆研究有启发。"},{"id":"hn-48962282","title":"Cornell's Interactive Wall of Birds","url":"https://academy.allaboutbirds.org/features/wallofbirds/?_hsmi=428996456","source":"Hacker News","score":94,"comments_count":32,"comments_url":"https://news.ycombinator.com/item?id=48962282","published_at":"2026-07-18T20:54:15","author":"yareally","text":null,"summary":"康奈尔大学的互动鸟类墙是一个教育性数字展览，展示了鸟类多样性，适合自然爱好者和教育工作者。"},{"id":"hn-49007620","title":"Hologram Works. Sponsor What Comes Next","url":"https://hologram.page/blog/backing-hologram","source":"Hacker News","score":89,"comments_count":25,"comments_url":"https://news.ycombinator.com/item?id=49007620","published_at":"2026-07-22T14:42:49","author":"lawik","text":null,"summary":"Hologram 项目宣布获得赞助，旨在推动全息技术发展，关注其未来应用潜力。"}],"locale":"zh"}],"$L1a"]}]
+18:null
+1a:["$","$Le","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-2a7ba79acde3","title":"So Reddit has decided that plain HTML is unsafe","url":"https://www.cole-k.com/2026/07/21/reddit/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-22T08:48:18","author":"cole-k.com by cole-k","text":"<p><a href=\"https://lobste.rs/s/gqdvdt/so_reddit_has_decided_plain_html_is_unsafe\">Comments</a></p>","summary":"Reddit 将纯 HTML 视为不安全，引发对网络内容安全策略的讨论，值得关注平台政策变化。"},{"id":"rss-8cec77d9f212","title":"Why care about programming languages","url":"https://ebellani.github.io/blog/2026/why-care-about-programming-languages/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-22T21:33:12","author":"ebellani.github.io by b--man","text":"<p><a href=\"https://lobste.rs/s/lv12lc/why_care_about_programming_languages\">Comments</a></p>","summary":"文章探讨编程语言的重要性，强调其对开发效率和系统设计的影响，适合程序员和软件工程师阅读。"},{"id":"rss-0f94323aa0dc","title":"LG to Ban Residential Proxies from Smart TV Apps","url":"https://krebsonsecurity.com/2026/07/lg-to-ban-residential-proxies-from-smart-tv-apps/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-22T05:56:08","author":"krebsonsecurity.com via raymii","text":"<p><a href=\"https://lobste.rs/s/ny0yzm/lg_ban_residential_proxies_from_smart_tv\">Comments</a></p>","summary":"LG 计划在智能电视应用中禁止住宅代理，涉及隐私和网络访问控制，对智能设备用户有直接影响。"},{"id":"rss-39af8fb8d5cf","title":"PyPI releases now reject new files after 14 days","url":"https://blog.pypi.org/posts/2026-07-22-releases-now-reject-new-files-after-14-days/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-22T15:01:49","author":"blog.pypi.org via ngoldbaum","text":"<p><a href=\"https://lobste.rs/s/53g8f7/pypi_releases_now_reject_new_files_after\">Comments</a></p>","summary":"PyPI 更新政策，发布14天后拒绝新文件上传，旨在提升包管理安全性，对Python开发者至关重要。"},{"id":"rss-19b6399e893c","title":"SIMD for Collision","url":"https://box2d.org/posts/2026/07/simd-for-collision/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-22T10:00:55","author":"box2d.org via mikejsavage","text":"<p><a href=\"https://lobste.rs/s/gkcjic/simd_for_collision\">Comments</a></p>","summary":"文章介绍如何使用SIMD指令优化碰撞检测算法，提升游戏和物理模拟性能，适合游戏开发者关注。"}],"locale":"zh"}]
