@@ -3,225 +3,192 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-e:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-f:"$Sreact.suspense"
-5:T37fe,# 今日技术热点分析报告（2026年8月1日）
+d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+5:T3a6e,# 📰 技术新闻日报 | 2026年8月2日
 
-## 一、总览
+## 一、今日热点总览
 
-今日技术热点涵盖多个维度：**AI基础设施与模型部署**、**编程语言与开发者生态**、**开源社区动态**、**硬件与性能优化**、**数据与算法**、**Web技术演进**，以及**社会议题与技术政策**。以下按子主题逐一分析。
+今日技术圈呈现出几个鲜明主题：**AI开发工具与生态**、**开源操作系统更新**、**开发者工具链**、**编程语言与底层技术**、以及**技术伦理与行业反思**。以下按主题分组分析全部30篇文章。
 
 
 ## 二、按主题分组分析
 
-### 主题1：AI模型与基础设施
+### 🧠 主题一：AI 工具与 AI 安全（4篇）
 
-**13. Run Kimi K3 using 29 GB of RAM at 0.50 tok/s**
-- **简要说明**：一个名为"waste"的项目实现了在仅29GB内存环境下运行Kimi K3模型（尽管速度仅0.50 tok/s），这代表了AI推理在资源受限环境下的极致优化尝试，对边缘计算和小规模部署有参考价值。
-- **原文链接**：https://github.com/sqliteai/waste
-- **讨论链接**：https://news.ycombinator.com/item?id=49123386
+**1. qm – Multiplayer agent harness for work** | 热度 650🔥
+一个面向工作场景的多智能体协作框架，支持多个 AI agent 协同完成任务。AI 从单打独斗走向团队协作是明确趋势，这个项目代表了 AI 工程化的新方向。
+🔗 [文章链接](https://github.com/yc-software/qm) | [讨论](https://news.ycombinator.com/item?id=49126604)
 
-**22. Moonshot’s Kimi uses 20k Nvidia chip cluster from Alibaba**
-- **简要说明**：彭博社报道Moonshot AI的Kimi模型构建在阿里提供的2万块Nvidia芯片集群之上。这揭示了当前大模型训练对算力规模的巨大需求，以及中国AI公司与云厂商之间的深度绑定关系。
-- **原文链接**：https://www.bloomberg.com/news/articles/2026-07-31/moonshot-s-kimi-built-on-20-000-nvidia-chip-cluster-from-alibaba（备用链接：https://archive.is/vgmMB）
-- **讨论链接**：https://news.ycombinator.com/item?id=49122838
+**2. Investigating three real-world incidents in our cybersecurity evaluations** | 热度 245
+Anthropic 发布的 AI 安全评估报告，剖析了三个真实网络安全事件中的 AI 角色。随着 AI 被用于攻击和防御两端，这类实证研究对行业安全标准制定至关重要。
+🔗 [文章链接](https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals) | [讨论](https://news.ycombinator.com/item?id=49116922)
 
-**3. qm – Multiplayer agent harness for work**
-- **简要说明**：一个面向工作的"多人智能体协作框架"，允许AI智能体像团队一样协同完成任务。这代表了AI从单点工具向协作系统演进的方向，值得关注。
-- **原文链接**：https://github.com/yc-software/qm
-- **讨论链接**：https://news.ycombinator.com/item?id=49126604
+**3. Seedance 2.5** | 热度 180
+字节跳动推出的视频生成模型新版本，主打"一次性创作"和灵活引用。AI 视频生成竞争白热化，字节跳动持续加码该赛道。
+🔗 [文章链接](https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5) | [讨论](https://news.ycombinator.com/item?id=49138302)
 
-**8. Investigating three real-world incidents in our cybersecurity evaluations**
-- **简要说明**：Anthropic公开了其网络安全评估中三个真实世界事件的分析报告。在AI安全日益受到关注的背景下，这种透明度对行业规范建立有积极意义。
-- **原文链接**：https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals
-- **讨论链接**：https://news.ycombinator.com/item?id=49116922
-
-**12. Twenty-five years ago it was cryptography, today it's model weights**
-- **简要说明**：作者类比25年前加密技术的管制与今天AI模型权重的管控，探讨了技术监管的历史循环。这是关于AI治理的重要评论文章。
-- **原文链接**：https://weeraman.com/because-we-can/
-- **讨论链接**：https://news.ycombinator.com/item?id=49083599
+**4. Cursor removed cost information from the usage page and CSV export** | 热度 310🔥
+Cursor 悄悄移除了用量页面和 CSV 导出中的费用信息，引发用户强烈不满。AI 编程工具定价透明度问题成为社区焦点，这对 AI 工具的用户信任建设有重要启示。
+🔗 [文章链接](https://forum.cursor.com/t/usage-page-to-token-amount-what/167153) | [讨论](https://news.ycombinator.com/item?id=49135257)
 
 
-### 主题2：编程语言与开发者生态
+### 🐧 主题二：开源操作系统与内核（4篇）
 
-**7. JEP 401: Value Objects (Preview) merged to OpenJDK master**
-- **简要说明**：Java迎来了里程碑式更新——Value Objects（值对象）预览版合并入OpenJDK主分支。这将彻底改变Java中值语义的处理方式，对Java开发者有深远影响。
-- **原文链接**：https://github.com/openjdk/jdk/pull/31120
-- **讨论链接**：https://news.ycombinator.com/item?id=49119063
+**5. NetBSD 11.0** | 热度 218（HN）+ Lobsters 同步
+NetBSD 发布 11.0 大版本更新。以可移植性和简洁性著称的 NetBSD 依然在 Unix 系操作系统中占有独特地位，此次更新值得关注。
+🔗 [文章链接](https://blog.netbsd.org/tnf/entry/netbsd_11_0_released) | [HN讨论](https://news.ycombinator.com/item?id=49136736) | [Lobsters讨论](https://lobste.rs/s/pvrnor/netbsd_11_0_released)
 
-**28. Go 1.27 interactive tour**
-- **简要说明**：VictoriaMetrics团队发布了Go 1.27版本的交互式教程。Go作为云原生领域的主力语言，其版本更新值得开发者关注。
-- **原文链接**：https://victoriametrics.com/blog/go-1-27/
-- **讨论链接**：https://lobste.rs/s/7ibjyl/go_1_27_interactive_tour
+**6. Linux on ESP32** | 热度 100
+在 ESP32-S3 上运行 Linux 的开源项目。物联网设备跑 Linux 意味着更强大的生态兼容性，对嵌入式开发者极具吸引力。
+🔗 [文章链接](https://github.com/GrieferPig/esp32-s31-linux) | [讨论](https://news.ycombinator.com/item?id=49087499)
 
-**27. Why I forked rand**
-- **简要说明**：作者解释了为何分叉了Rust生态中广泛使用的`rand`库。这反映了开源维护中的挑战，以及社区对依赖管理的反思。
-- **原文链接**：https://casualhacks.net/blog/2026-07-27-why-i-forked-rand.html
-- **讨论链接**：https://lobste.rs/s/kvxee3/why_i_forked_rand
+**7. But can your calculator run Linux?** | Lobsters
+让计算器运行 Linux 的极客尝试。这类"极限移植"项目总能激发社区热情，展示了 Linux 内核惊人的硬件适应能力。
+🔗 [文章链接](https://raymii.org/s/articles/But_can_your_calculator_run_Linux.html) | [讨论](https://lobste.rs/s/voozor/can_your_calculator_run_linux)
 
-**30. How to speed up the Rust compiler in July 2026**
-- **简要说明**：Nicholas Nethercote持续更新Rust编译器性能优化指南。编译速度一直是Rust的痛点，这篇文章提供了实用的优化建议。
-- **原文链接**：https://nnethercote.github.io/2026/07/31/how-to-speed-up-the-rust-compiler-in-july-2026.html
-- **讨论链接**：https://lobste.rs/s/ycsivx/how_speed_up_rust_compiler_july_2026
-
-**26. Ruby Central's Destructive Legacy**
-- **简要说明**：一篇批评Ruby Central组织管理方式的文章，引发了Ruby社区的讨论。开源组织的治理问题值得深思。
-- **原文链接**：https://andre.arko.net/2026/07/30/ruby-centrals-destructive-legacy/
-- **讨论链接**：https://lobste.rs/s/qvbkpa/ruby_central_s_destructive_legacy
-
-**29. Guix shell now inside Emacs**
-- **简要说明**：Guix shell现在可以在Emacs内部使用，这是GNU Guix包管理器与Emacs编辑器生态整合的最新进展。
-- **原文链接**：https://tusharhero.codeberg.page/guix-shell-in-emacs.html
-- **讨论链接**：https://lobste.rs/s/uxsmk6/guix_shell_now_inside_emacs
+**8. Postmortem for Kernel Soundness Bug #14576** | 热度 116
+一个内核健全性 bug 的详细事故复盘。Leandro 的复盘文章是学习编译器/内核调试的绝佳材料，透明的事后分析对社区价值巨大。
+🔗 [文章链接](https://leodemoura.github.io/blog/2026-8-1-postmortem-for-kernel-soundness-bug-14576/) | [讨论](https://news.ycombinator.com/item?id=49137060)
 
 
-### 主题3：开源社区与基础设施
+### 🛠️ 主题三：开发者工具链与编程（6篇）
 
-**17. Arch Linux disables AUR package adoption**
-- **简要说明**：Arch Linux宣布禁用AUR（Arch用户软件仓库）的包采纳功能。这对Arch生态有重大影响，涉及社区维护和信任机制的变化。
-- **原文链接**：https://lwn.net/Articles/1086489/
-- **讨论链接**：https://news.ycombinator.com/item?id=49123208
+**9. RipGrep musl binaries occasionally segfault during very-large searches** | 热度 252
+RipGrep 在超大搜索时偶发段错误的问题报告。作为开发者日常高频使用的搜索工具，这个 issue 引发广泛讨论，涉及 musl libc 与 glibc 的兼容性差异。
+🔗 [文章链接](https://github.com/BurntSushi/ripgrep/issues/3494) | [讨论](https://news.ycombinator.com/item?id=49133889)
 
-**20. June in Servo: real world compat, media queries, SharedWorker, and more**
-- **简要说明**：Servo浏览器引擎发布月度进展报告，包括真实世界兼容性改进、媒体查询和SharedWorker支持。Servo作为Mozilla孵化的下一代浏览器引擎，其进展值得关注。
-- **原文链接**：https://servo.org/blog/2026/07/31/june-in-servo/
-- **讨论链接**：https://news.ycombinator.com/item?id=49126765
+**10. The Art of 64-bit Assembly** | 热度 189
+NoStarch 出版的 64 位汇编艺术第二版。在高级语言主导的时代，汇编依然有不可替代的教育价值——理解底层是优秀工程师的必修课。
+🔗 [文章链接](https://nostarch.com/art-64-bit-assembly-v2) | [讨论](https://news.ycombinator.com/item?id=49134599)
 
+**11. An old-new take on argument parsing in Rust** | Lobsters
+Rust 命令行参数解析的新思路，借鉴了传统 getopt 的设计哲学。Rust 生态中 CLI 工具竞争激烈，这种"复古创新"值得关注。
+🔗 [文章链接](https://jmmv.dev/2026/07/hello-getoptsargs.html) | [讨论](https://lobste.rs/s/vrd28h/old_new_take_on_argument_parsing_rust)
 
-### 主题4：Web开发与前端技术
+**12. wiff** | Lobsters
+Wez Furlong（wezterm 作者）的新工具。这位知名开发者的作品通常质量极高，值得关注其功能定位。
+🔗 [文章链接](https://wezfurlong.org/wiff/) | [讨论](https://lobste.rs/s/tc82u0/wiff)
 
-**24. Progressive Web Components**
-- **简要说明**：作者提出了"渐进式Web组件"概念，并发布了Elena框架。这代表了对Web Components标准的进一步探索，旨在提升开发体验和性能。
-- **原文链接**：https://arielsalminen.com/2026/progressive-web-components/（相关链接：https://github.com/arielsalminen/elena、https://elenajs.com/）
-- **讨论链接**：https://news.ycombinator.com/item?id=49121196
+**13. The development pipeline is a production system** | 热度 160
+将开发流水线视为生产系统的观点——CI/CD 本身也需要运维思维。现代软件工程中，开发效率即业务竞争力，此文提供了很好的观察视角。
+🔗 [文章链接](https://sundry.jerryorr.com/2026/07/31/development-pipeline-is-a-production-system) | [讨论](https://news.ycombinator.com/item?id=49130726)
 
-**19. How JPEG works: Interactively explore JPEG's lossy compression methods**
-- **简要说明**：交互式JPEG压缩原理教程，通过可视化方式讲解有损压缩的工作机制。对理解图像处理和编码有很好的教育价值。
-- **原文链接**：https://cgjennings.ca/articles/jpeg-compression/
-- **讨论链接**：https://news.ycombinator.com/item?id=49070810
-
-
-### 主题5：硬件与性能优化
-
-**14. Getting 25 Gbps Thunderbolt Ethernet on My Mac Studio**
-- **简要说明**：Jeff Geerling分享了在Mac Studio上通过Thunderbolt接口实现25 Gbps以太网的经验。对需要高带宽网络的专业用户有实用价值。
-- **原文链接**：https://www.jeffgeerling.com/blog/2026/getting-25g-ethernet-mac-thunderbolt/
-- **讨论链接**：https://news.ycombinator.com/item?id=49125034
-
-**5. The Religion of Speed**
-- **简要说明**：一篇关于"速度崇拜"的思考文章，探讨了现代技术文化中对速度的痴迷及其代价。具有文化批判视角。
-- **原文链接**：https://graybeard.ing/the-religion-of-speed/
-- **讨论链接**：https://news.ycombinator.com/item?id=49117284
-
-**21. The mean means nothing: data visualization to debug a latency problem**
-- **简要说明**：作者通过数据可视化揭示平均值掩盖真实问题的情况，展示了调试延迟问题时的分析方法论。
-- **原文链接**：https://fzakaria.com/2026/07/27/the-mean-means-nothing
-- **讨论链接**：https://news.ycombinator.com/item?id=49096170
+**14. Diátaxis** | 热度 197
+一个关于技术文档分类的框架（教程、操作指南、解释、参考）。文档质量直接影响开发者体验，这个框架为文档写作提供了清晰的方法论。
+🔗 [文章链接](https://diataxis.fr/) | [讨论](https://news.ycombinator.com/item?id=49138188)
 
 
-### 主题6：数据与算法
+### 🌐 主题四：Web 技术与 RSS 生态（5篇）
 
-**23. Algorithms on billion-scale graph using 10GB RAM: I love DataFusion**
-- **简要说明**：作者展示了如何使用DataFusion在仅10GB内存下处理十亿级图数据。这对大规模图计算和内存优化有参考价值。
-- **原文链接**：https://semyonsinchenko.github.io/ssinchenko/post/datafusion-graphs-cc-2/
-- **讨论链接**：https://news.ycombinator.com/item?id=49124658
+**15. Show HN: Elevators** | 热度 1581🔥（今日最高）
+一个名为 Elevators 的创意项目，在 HN 上获得超高关注度。387 条评论说明其引发了广泛共鸣。
+🔗 [文章链接](https://john.fun/elevators) | [讨论](https://news.ycombinator.com/item?id=49124218)
 
-**2. The session you cannot take with you**
-- **简要说明**：关于"会话可移植性"的技术文章，探讨了Web会话在不同设备/浏览器间迁移的挑战与方案。
-- **原文链接**：https://earendil.com/posts/session-portability/
-- **讨论链接**：https://news.ycombinator.com/item?id=49118781
+**16. How Google helped destroy adoption of RSS feeds (2023)** | 热度 404
+回顾 Google Reader 关闭如何重创 RSS 生态。RSS 的复兴故事在 2026 年仍在继续，这篇文章是理解 RSS 兴衰史的关键材料。
+🔗 [文章链接](https://openrss.org/blog/how-google-helped-destroy-adoption-of-rss-feeds) | [讨论](https://news.ycombinator.com/item?id=49136821)
 
+**17. A directory of people who love RSS** | 热度 166
+RSS 爱好者名录，是 RSS 社区复兴的又一信号。在算法推荐泛滥的时代，RSS 所代表的"用户自主订阅"理念正在回流。
+🔗 [文章链接](https://andrewshell.org/2026/07/i-%e2%99%a5-rss/) | [讨论](https://news.ycombinator.com/item?id=49136063)
 
-### 主题7：社会议题与科技政策
+**18. Progressive Web Components** | 热度 189
+渐进式 Web Components 方案，配套 ElenaJS 框架。Web Components 标准化进程持续推进，这个项目探索了组件化开发的新可能。
+🔗 [文章链接](https://arielsalminen.com/2026/progressive-web-components/) | [讨论](https://news.ycombinator.com/item?id=49121196) | [GitHub](https://github.com/arielsalminen/elena)
 
-**1. Elevators**
-- **简要说明**：这篇文章以"电梯"为主题，在Hacker News上获得了极高的关注度（888分）。文章用电梯作为隐喻探讨了技术与社会的关系，引发广泛讨论。
-- **原文链接**：https://john.fun/elevators
-- **讨论链接**：https://news.ycombinator.com/item?id=49124218
-
-**4. The End of an Era**
-- **简要说明**：作者Hugh Howey以高评分（388分）和大量评论（425条）引发了关于"一个时代终结"的讨论，涉及出版业/创作行业的变革。
-- **原文链接**：https://hughhowey.com/the-end-of-an-era/
-- **讨论链接**：https://news.ycombinator.com/item?id=49121980
-
-**6. Premier league bans gambling sponsors**
-- **简要说明**：英超联赛正式禁止博彩赞助商，这一体育产业政策变化也引发了关于广告与道德的技术/社会讨论。
-- **原文链接**：https://www.footyheadlines.com/2646571793/betting-ban-takes-effect-no-more-gambling-sponsors-in-the-premier-league.html
-- **讨论链接**：https://news.ycombinator.com/item?id=49117266
-
-**9. Severance**
-- **简要说明**：知名安全研究员lcamtuf撰写的"Severance"（离职补偿）文章，讨论了技术行业中的离职与补偿问题，引发共鸣。
-- **原文链接**：https://lcamtuf.substack.com/p/severance
-- **讨论链接**：https://news.ycombinator.com/item?id=49125971
-
-**11. Big Food vs. the People**
-- **简要说明**：调查报告揭露大型食品工业对公众健康的影响，在技术社区引发关于数据、监管和公共利益的讨论。
-- **原文链接**：https://www.lighthousereports.com/investigation/big-food-vs-the-people/
-- **讨论链接**：https://news.ycombinator.com/item?id=49124858
-
-**15. The most official water costs $120k a gallon**
-- **简要说明**：探讨"最官方的水"（标准参考水）高达每加仑12万美元的成本，揭示了标准制定背后的科学和成本问题。
-- **原文链接**：https://signoregalilei.com/2026/07/26/the-most-official-water-costs-120000-a-gallon/
-- **讨论链接**：https://news.ycombinator.com/item?id=49124042
-
-**16. Danube's record low levels force shutdown of Hungary's only nuclear plant**
-- **简要说明**：多瑙河创纪录低水位导致匈牙利唯一核电站关闭。气候变化对关键基础设施的影响值得警惕。
-- **原文链接**：https://www.bbc.com/news/articles/cn0nqv05g0do
-- **讨论链接**：https://news.ycombinator.com/item?id=49120120
-
-**18. Dubious research tied to Red Bull has shaped energy drink policy**
-- **简要说明**：调查显示红牛资助的可疑研究影响了能量饮料政策制定。这引发了关于企业资助科学与政策制定的讨论。
-- **原文链接**：https://www.theexamination.org/articles/red-bull-funded-research-energy-drinks-alcohol
-- **讨论链接**：https://news.ycombinator.com/item?id=49124738
-
-**25. IMAX vs. IMAX 70mm: The difference between these two cinema formats**
-- **简要说明**：技术性对比IMAX与IMAX 70mm两种影院格式的差异，对影音技术爱好者有参考价值。
-- **原文链接**：https://www.engadget.com/2220571/differences-between-imax-70mm/
-- **讨论链接**：https://news.ycombinator.com/item?id=49048452
+**19. RamenHaus** | 热度 229
+一个关于拉面的网站/应用，在 HN 上意外走红。技术社区对美食类项目的热情总是很高，这类"生活化"项目为技术圈增添了烟火气。
+🔗 [文章链接](https://ramen.haus/) | [讨论](https://news.ycombinator.com/item?id=49132460)
 
 
-### 主题8：移动开发与工具
+### ⚖️ 主题五：技术伦理、隐私与行业反思（5篇）
 
-**10. Show HN: Gander, an Android file viewer that asks for no permissions**
-- **简要说明**：作者开发的Android文件查看器Gander，不需要任何权限即可查看PDF、Word、Excel、图片、视频等格式。解决了Android生态中文件查看的隐私痛点。
-- **原文链接**：https://github.com/mokshablr/gander
-- **讨论链接**：https://news.ycombinator.com/item?id=49119425
+**20. A Surveillance Treaty in Disguise: Canada Signs UN Cybercrime Convention** | 热度 275
+加拿大签署联合国网络犯罪公约引发的隐私担忧。网络犯罪治理与公民隐私保护的边界问题，值得每个技术从业者关注。
+🔗 [文章链接](https://www.michaelgeist.ca/2026/07/a-surveillance-treaty-in-disguise-the-trouble-with-canadas-quiet-decision-to-sign-the-un-cybercrime-convention/) | [讨论](https://news.ycombinator.com/item?id=49134694)
 
+**21. The Silicon Valley Founder Meat Grinder** | 热度 202
+对硅谷创始人"绞肉机"文化的犀利批判。创业者的心理健康问题长期被忽视，这篇文章引发了对创业文化可持续性的反思。
+🔗 [文章链接](https://zaksa.zip/blog/silicon-valley-founder-meat-grinder/) | [讨论](https://news.ycombinator.com/item?id=49138045)
 
-## 三、今日最值得阅读的TOP 5推荐
+**22. Resigning from Arch Linux** | Lobsters
+一位 Arch Linux 维护者宣布辞职。开源维护者倦怠问题日益严重，每次离职都提醒我们开源可持续性面临的挑战。
+🔗 [文章链接](https://linderud.dev/blog/resigning-from-arch-linux/) | [讨论](https://lobste.rs/s/ectcmr/resigning_from_arch_linux)
 
-### 🥇 第1名：**JEP 401: Value Objects (Preview) merged to OpenJDK master**
-- **推荐理由**：Java语言迎来重大变革，值对象将改变Java开发者的编程范式。这是Java语言演进中的里程碑事件，对Java生态影响深远。
-- **链接**：https://github.com/openjdk/jdk/pull/31120
+**23. How to Exist** | 热度 371
+一篇哲学随笔，探讨"如何存在"这一终极问题。在技术快节奏下，这类深度思考文章获得高热度，说明社区对人文关怀的需求。
+🔗 [文章链接](https://www.raptitude.com/2026/07/how-to-exist/) | [讨论](https://news.ycombinator.com/item?id=49129990)
 
-### 🥈 第2名：**Run Kimi K3 using 29 GB of RAM at 0.50 tok/s**
-- **推荐理由**：展示了AI推理在资源受限环境下的极限优化可能，对未来AI部署的硬件需求提供了新的思路。
-- **链接**：https://github.com/sqliteai/waste
-
-### 🥉 第3名：**The session you cannot take with you**
-- **推荐理由**：深入探讨了Web会话可移植性这一长期被忽视的技术挑战，对Web开发者和架构师有重要参考价值。
-- **链接**：https://earendil.com/posts/session-portability/
-
-### 第4名：**Arch Linux disables AUR package adoption**
-- **推荐理由**：Arch Linux作为最受欢迎的滚动发行版之一，其AUR政策变化将影响大量用户和社区开发者。
-- **链接**：https://lwn.net/Articles/1086489/
-
-### 第5名：**How JPEG works: Interactively explore JPEG's lossy compression methods**
-- **推荐理由**：交互式学习体验极佳，既适合初学者理解图像压缩原理，也适合资深工程师复习巩固基础知识。
-- **链接**：https://cgjennings.ca/articles/jpeg-compression/
+**24. The Absurdity of Albert Camus** | 热度 175
+关于加缪"荒谬哲学"的历史文章。技术与哲学的交汇点，提醒我们在追求效率的同时不要忘记人文思考。
+🔗 [文章链接](https://www.historytoday.com/archive/portrait-author-historian/absurdity-albert-camus) | [讨论](https://news.ycombinator.com/item?id=49117089)
 
 
-## 四、今日趋势观察
+### 🔬 主题六：硬件、物理与生活科技（4篇）
 
-1. **AI推理轻量化**：从Kimi K3在29GB内存运行到Moonshot的2万芯片集群，AI部署呈现"极致轻量"与"超大规模"两极分化。
-2. **编程语言持续演进**：Java的Value Objects和Go 1.27都表明主流语言仍在积极进化。
-3. **开源治理挑战**：AUR政策调整、Ruby Central争议、rand库分叉，都指向开源社区治理的深层问题。
-4. **技术与社会议题交织**：从英超禁博彩到红牛研究争议，技术社区对公共议题的关注度持续上升。
-5. **基础设施与气候风险**：多瑙河低水位导致核电站关闭，技术基础设施对气候变化的脆弱性成为新话题。0:{"buildId":"SpGCcKNAPvDKn6t-crrYb","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-08-01","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":16},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-08-01"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-c:T458,Hi HN,<p>I built an Android file viewer that opens PDF, Word, Excel, PowerPoint, images, video, audio, Markdown and code, and asks for no permissions at all.<p>I have always been uneasy about opening files people send me. On Android you either install a 400 MB office suite and sign in or use a small free viewer that wants storage access and ends up uploading your file to a server to render it. Also the hassle of having to download different apps for different file formats was really annoying.<p>Gander holds no permissions, not even INTERNET so the OS itself guarantees the file cannot leave the phone.<p>PDFs use Pdfium, media uses Media3, and Office formats are rendered by bundled JS libraries in a WebView and so no request goes to any server.<p>It is a viewer only. Complex PowerPoint decks come out approximately right, spreadsheet charts are not drawn, and old binary .doc and .ppt are unsupported. I&#x27;ll work on it as issues come up :P<p>It is 14 MB, MIT licensed and uploaded on Github releases.<p>Do try it! I would love some feedback especially on files that render badly or need new support.6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-49124218","title":"Elevators","url":"https://john.fun/elevators","source":"Hacker News","score":888,"comments_count":223,"comments_url":"https://news.ycombinator.com/item?id=49124218","published_at":"2026-07-31T15:17:28","author":"Jrh0203","text":null,"summary":"这篇文章探讨了电梯这一日常技术的历史与设计，反思其如何塑造城市生活。值得关注，因为它以独特视角揭示技术对社会的隐性影响。"},{"id":"hn-49118781","title":"The session you cannot take with you","url":"https://earendil.com/posts/session-portability/","source":"Hacker News","score":733,"comments_count":212,"comments_url":"https://news.ycombinator.com/item?id=49118781","published_at":"2026-07-31T03:47:59","author":"apitman","text":null,"summary":"文章讨论了会话数据在不同设备间的可移植性问题，分析其技术挑战与隐私影响。对关注用户数据自主权和跨平台体验的开发者有重要参考价值。"},{"id":"hn-49126604","title":"qm – Multiplayer agent harness for work","url":"https://github.com/yc-software/qm","source":"Hacker News","score":468,"comments_count":101,"comments_url":"https://news.ycombinator.com/item?id=49126604","published_at":"2026-07-31T18:04:58","author":"tosh","text":null,"summary":"qm是一个用于工作场景的多智能体协作工具，旨在通过协调多个AI代理提升生产力。值得关注，因为它代表了AI协作技术的前沿方向，可能改变未来工作模式。"},{"id":"hn-49121980","title":"The End of an Era","url":"https://hughhowey.com/the-end-of-an-era/","source":"Hacker News","score":388,"comments_count":425,"comments_url":"https://news.ycombinator.com/item?id=49121980","published_at":"2026-07-31T11:51:46","author":"harscoat","text":null,"summary":"作者回顾了某个时代或技术的终结，可能涉及行业变革或个人经历。值得关注，因为它提供了对技术周期更迭的深刻反思，适合行业观察者阅读。"},{"id":"hn-49117284","title":"The Religion of Speed","url":"https://graybeard.ing/the-religion-of-speed/","source":"Hacker News","score":277,"comments_count":144,"comments_url":"https://news.ycombinator.com/item?id=49117284","published_at":"2026-07-30T23:43:22","author":"MobiusHorizons","text":null,"summary":"文章批判了现代社会中追求速度的狂热文化，探讨其对技术和生活的影响。值得关注，因为它引发对技术发展节奏的哲学思考，挑战主流价值观。"},{"id":"hn-49117266","title":"Premier league bans gambling sponsors","url":"https://www.footyheadlines.com/2646571793/betting-ban-takes-effect-no-more-gambling-sponsors-in-the-premier-league.html","source":"Hacker News","score":262,"comments_count":100,"comments_url":"https://news.ycombinator.com/item?id=49117266","published_at":"2026-07-30T23:40:59","author":"paoliniluis","text":null,"summary":"英超联赛宣布禁止赌博赞助商，这一政策影响体育和广告行业。值得关注，因为它标志着体育商业化中的道德转向，可能引发其他联赛效仿。"},{"id":"hn-49119063","title":"JEP 401: Value Objects (Preview) merged to OpenJDK master","url":"https://github.com/openjdk/jdk/pull/31120","source":"Hacker News","score":224,"comments_count":152,"comments_url":"https://news.ycombinator.com/item?id=49119063","published_at":"2026-07-31T04:38:19","author":"mfiguiere","text":null,"summary":"JEP 401（值对象预览）已合并到OpenJDK主分支，这是Java语言演进的重要里程碑。值得关注，因为值对象有望提升性能并简化并发编程，对Java开发者影响深远。"},{"id":"hn-49116922","title":"Investigating three real-world incidents in our cybersecurity evaluations","url":"https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals","source":"Hacker News","score":223,"comments_count":178,"comments_url":"https://news.ycombinator.com/item?id=49116922","published_at":"2026-07-30T23:00:51","author":"surprisetalk","text":null,"summary":"Anthropic报告了其网络安全评估中三个真实事件的调查结果，揭示了AI安全测试的实践挑战。值得关注，因为它提供了AI安全领域的一手经验，对AI开发者至关重要。"},{"id":"hn-49125971","title":"Severance","url":"https://lcamtuf.substack.com/p/severance","source":"Hacker News","score":209,"comments_count":69,"comments_url":"https://news.ycombinator.com/item?id=49125971","published_at":"2026-07-31T17:15:09","author":"surprisetalk","text":null,"summary":"文章讨论了员工离职时与公司分离的过程，可能涉及技术行业的工作文化。值得关注，因为它探讨了职业流动性中的情感与法律问题，引发对现代雇佣关系的思考。"},{"id":"hn-49119425","title":"Show HN: Gander, an Android file viewer that asks for no permissions","url":"https://github.com/mokshablr/gander","source":"Hacker News","score":194,"comments_count":65,"comments_url":"https://news.ycombinator.com/item?id=49119425","published_at":"2026-07-31T05:45:13","author":"mokshablr","text":"$c","summary":"Gander是一款无需任何权限的Android文件查看器，支持多种格式。值得关注，因为它解决了Android应用权限滥用的痛点，推动了隐私友好的软件设计。"},{"id":"hn-49124858","title":"Big Food vs. the People","url":"https://www.lighthousereports.com/investigation/big-food-vs-the-people/","source":"Hacker News","score":193,"comments_count":132,"comments_url":"https://news.ycombinator.com/item?id=49124858","published_at":"2026-07-31T16:04:32","author":"jruohonen","text":null,"summary":"这篇调查报道揭露了大型食品公司如何通过游说和营销影响公共政策，损害消费者健康，值得关注因为它揭示了食品行业背后的权力博弈。"},{"id":"hn-49083599","title":"Twenty-five years ago it was cryptography, today it's model weights","url":"https://weeraman.com/because-we-can/","source":"Hacker News","score":170,"comments_count":67,"comments_url":"https://news.ycombinator.com/item?id=49083599","published_at":"2026-07-28T13:31:25","author":"aweeraman","text":null,"summary":"文章对比了25年前的密码学争议与当今AI模型权重监管，指出技术控制权的转移，值得关注因为它引发了关于开源与安全的深刻思考。"},{"id":"hn-49123386","title":"Run Kimi K3 using 29 GB of RAM at 0.50 tok/s","url":"https://github.com/sqliteai/waste","source":"Hacker News","score":159,"comments_count":62,"comments_url":"https://news.ycombinator.com/item?id=49123386","published_at":"2026-07-31T14:12:38","author":"marcobambini","text":null,"summary":"该项目展示了如何在仅29GB内存下以0.50 tok/s的速度运行Kimi K3模型，值得关注因为它为资源受限环境下的AI部署提供了新可能。"},{"id":"hn-49125034","title":"Getting 25 Gbps Thunderbolt Ethernet on My Mac Studio","url":"https://www.jeffgeerling.com/blog/2026/getting-25g-ethernet-mac-thunderbolt/","source":"Hacker News","score":142,"comments_count":84,"comments_url":"https://news.ycombinator.com/item?id=49125034","published_at":"2026-07-31T16:15:31","author":"speckx","text":null,"summary":"作者分享了在Mac Studio上通过Thunderbolt实现25Gbps以太网的详细过程，值得关注因为它解决了高速网络连接的实用技术难题。"},{"id":"hn-49124042","title":"The most official water costs $120k a gallon","url":"https://signoregalilei.com/2026/07/26/the-most-official-water-costs-120000-a-gallon/","source":"Hacker News","score":139,"comments_count":123,"comments_url":"https://news.ycombinator.com/item?id=49124042","published_at":"2026-07-31T15:00:15","author":"surprisetalk","text":null,"summary":"文章探讨了售价高达12万美元一加仑的“最官方”水（如标准参考物质），值得关注因为它揭示了计量标准背后的科学和商业价值。"},{"id":"hn-49120120","title":"Danube's record low levels force shutdown of Hungary's only nuclear plant","url":"https://www.bbc.com/news/articles/cn0nqv05g0do","source":"Hacker News","score":136,"comments_count":135,"comments_url":"https://news.ycombinator.com/item?id=49120120","published_at":"2026-07-31T07:33:10","author":"vrganj","text":null,"summary":"多瑙河水位创纪录新低导致匈牙利唯一核电站停运，值得关注因为它凸显了气候变化对能源基础设施的直接影响。"},{"id":"hn-49123208","title":"Arch Linux disables AUR package adoption","url":"https://lwn.net/Articles/1086489/","source":"Hacker News","score":135,"comments_count":100,"comments_url":"https://news.ycombinator.com/item?id=49123208","published_at":"2026-07-31T13:57:35","author":"database64128","text":null,"summary":"Arch Linux宣布禁用AUR包采纳功能，值得关注因为这影响大量用户的软件安装方式，并引发社区对治理和安全的讨论。"},{"id":"hn-49124738","title":"Dubious research tied to Red Bull has shaped energy drink policy","url":"https://www.theexamination.org/articles/red-bull-funded-research-energy-drinks-alcohol","source":"Hacker News","score":118,"comments_count":181,"comments_url":"https://news.ycombinator.com/item?id=49124738","published_at":"2026-07-31T15:58:15","author":"Jimmc414","text":null,"summary":"调查发现红牛资助的可疑研究影响了能量饮料政策，值得关注因为它暴露了科学研究和公共政策之间的利益冲突。"},{"id":"hn-49070810","title":"How JPEG works: Interactively explore JPEG's lossy compression methods","url":"https://cgjennings.ca/articles/jpeg-compression/","source":"Hacker News","score":112,"comments_count":13,"comments_url":"https://news.ycombinator.com/item?id=49070810","published_at":"2026-07-27T15:11:14","author":"at1as","text":null,"summary":"文章以交互方式解释JPEG有损压缩原理，值得关注因为它让复杂的图像编码技术变得直观易懂，适合技术爱好者学习。"},{"id":"hn-49126765","title":"June in Servo: real world compat, media queries, SharedWorker, and more","url":"https://servo.org/blog/2026/07/31/june-in-servo/","source":"Hacker News","score":107,"comments_count":32,"comments_url":"https://news.ycombinator.com/item?id=49126765","published_at":"2026-07-31T18:17:52","author":"iamnothere","text":null,"summary":"Servo浏览器引擎的月度更新报告，展示了兼容性改进、媒体查询支持和SharedWorker等新特性，值得关注因为它标志着开源浏览器引擎的持续进步。"},{"id":"hn-49096170","title":"The mean means nothing: data visualization to debug a latency problem","url":"https://fzakaria.com/2026/07/27/the-mean-means-nothing","source":"Hacker News","score":106,"comments_count":17,"comments_url":"https://news.ycombinator.com/item?id=49096170","published_at":"2026-07-29T11:42:04","author":"fanf2","text":null,"summary":"本文通过实际案例展示如何使用数据可视化技术调试延迟问题，指出平均值可能掩盖关键性能瓶颈，值得关注因为它提供了实用的性能优化方法论。"},{"id":"hn-49122838","title":"Moonshot’s Kimi uses 20k Nvidia chip cluster from Alibaba","url":"https://www.bloomberg.com/news/articles/2026-07-31/moonshot-s-kimi-built-on-20-000-nvidia-chip-cluster-from-alibaba","source":"Hacker News","score":104,"comments_count":63,"comments_url":"https://news.ycombinator.com/item?id=49122838","published_at":"2026-07-31T13:24:03","author":"gk1","text":"<a href=\"https:&#x2F;&#x2F;archive.is&#x2F;vgmMB\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.is&#x2F;vgmMB</a>","summary":"报道了Moonshot AI的Kimi模型使用阿里巴巴提供的2万块Nvidia芯片集群，凸显中国AI公司在算力获取上的策略，对理解全球AI竞争格局有重要意义。"},{"id":"hn-49124658","title":"Algorithms on billion-scale graph using 10GB RAM: I love DataFusion","url":"https://semyonsinchenko.github.io/ssinchenko/post/datafusion-graphs-cc-2/","source":"Hacker News","score":103,"comments_count":32,"comments_url":"https://news.ycombinator.com/item?id=49124658","published_at":"2026-07-31T15:53:37","author":"speckx","text":null,"summary":"文章介绍如何在仅10GB内存下处理十亿级图数据的算法，基于DataFusion框架，展示了内存高效计算的新思路，对大数据处理领域具有参考价值。"},{"id":"hn-49121196","title":"Progressive Web Components","url":"https://arielsalminen.com/2026/progressive-web-components/","source":"Hacker News","score":92,"comments_count":14,"comments_url":"https://news.ycombinator.com/item?id=49121196","published_at":"2026-07-31T10:04:40","author":"hosteur","text":"<a href=\"https:&#x2F;&#x2F;github.com&#x2F;arielsalminen&#x2F;elena\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;arielsalminen&#x2F;elena</a><p><a href=\"https:&#x2F;&#x2F;elenajs.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;elenajs.com&#x2F;</a>","summary":"提出“渐进式Web组件”概念，结合Web组件和渐进增强，旨在提升前端性能和可维护性，对Web开发实践有启发意义。"},{"id":"hn-49048452","title":"IMAX vs. IMAX 70mm: The difference between these two cinema formats","url":"https://www.engadget.com/2220571/differences-between-imax-70mm/","source":"Hacker News","score":83,"comments_count":127,"comments_url":"https://news.ycombinator.com/item?id=49048452","published_at":"2026-07-25T15:33:10","author":"ksec","text":null,"summary":"详细比较IMAX和IMAX 70mm两种影院格式的差异，包括画质、沉浸感和技术规格，帮助影迷理解不同观影体验，值得关注因其科普价值。"}],"locale":"en"}],"$Ld"]}]]}]
+**25. Increasing the lifespan of a bulb makes it worse in every other way** | 热度 171
+关于钨丝灯泡寿命与性能权衡的物理分析。从材料科学角度解释"长寿灯泡反而更差"的反直觉现象，兼具趣味性和科普价值。
+🔗 [文章链接](https://maurycyz.com/misc/tungsten/) | [讨论](https://news.ycombinator.com/item?id=49121849)
+
+**26. Just because a game is on disc doesn't mean it will work in the future** | 热度 100
+Ars Technica 指出光盘游戏仍需额外下载才能运行的现象。"买实体盘≠拥有游戏"的讨论对游戏行业和消费者权益都有深远意义。
+🔗 [文章链接](https://arstechnica.com/gaming/2026/07/the-disc-is-not-the-game-physical-releases-increasingly-require-extra-downloads/) | [讨论](https://news.ycombinator.com/item?id=49120230)
+
+**27. The tiny holdout building in the middle of Macy's is back in view** | 热度 205
+纽约 Macy's 百货中间"钉子户"小楼的历史故事。城市发展中的建筑保护话题，展示了技术之外的都市人文视角。
+🔗 [文章链接](https://ephemeralnewyork.wordpress.com/2026/07/27/hidden-by-billboards-for-over-100-years-the-tiny-holdout-building-in-the-middle-of-macys-is-back-in-view/) | [讨论](https://news.ycombinator.com/item?id=49091614)
+
+**28. Kenji/Serious Eats – 30-Min Pressure Cooker Pho Ga** | 热度 100
+美食作家 Kenji 的压力锅越南鸡肉河粉食谱。技术社区对高质量食谱的热情向来高涨，烹饪也是另一种形式的"工程"。
+🔗 [文章链接](https://www.seriouseats.com/30-minute-pressure-cooker-pho-ga-recipe) | [讨论](https://news.ycombinator.com/item?id=49135426)
+
+
+### 📐 主题七：设计与排版（1篇）
+
+**29. Manual: •.,:;…!?·** | 热度 115
+关于标点符号排版的深度指南。在数字排版时代，标点细节的视觉处理依然是一门精深的工艺。
+🔗 [文章链接](https://type.today/en/journal/dots) | [讨论](https://news.ycombinator.com/item?id=49105013)
+
+
+## 三、今日最佳阅读推荐 ⭐
+
+### 🥇 第一名：Show HN: Elevators（热度 1581）
+**为什么值得读：** 今日 HN 最高热度项目，387 条评论的讨论热度说明它触动了大量开发者的共鸣。无论它是创意工具、趣味项目还是技术演示，都值得一看。
+🔗 [文章链接](https://john.fun/elevators) | [讨论](https://news.ycombinator.com/item?id=49124218)
+
+### 🥈 第二名：qm – Multiplayer agent harness for work（热度 650）
+**为什么值得读：** 多智能体协作是 AI 落地的关键方向之一。这个开源框架展示了 AI agent 从"单兵作战"走向"团队协作"的实践路径，对 AI 工程师和产品经理都极具参考价值。
+🔗 [文章链接](https://github.com/yc-software/qm) | [讨论](https://news.ycombinator.com/item?id=49126604)
+
+### 🥉 第三名：How Google helped destroy adoption of RSS feeds（热度 404）
+**为什么值得读：** 这是理解 RSS 生态兴衰的必读文章。Google Reader 的关闭对 RSS 的打击至今仍在产生影响，而 RSS 的复兴运动正在兴起。结合本日另外两篇 RSS 相关文章（#17、#19），可以形成完整的行业观察。
+🔗 [文章链接](https://openrss.org/blog/how-google-helped-destroy-adoption-of-rss-feeds) | [讨论](https://news.ycombinator.com/item?id=49136821)
+
+### 🏅 第四名：Investigating three real-world incidents in our cybersecurity evaluations（热度 245）
+**为什么值得读：** Anthropic 作为 AI 安全领域的头部实验室，其实证研究具有行业风向标意义。了解 AI 在真实安全事件中的角色，对安全从业者和 AI 开发者都至关重要。
+🔗 [文章链接](https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals) | [讨论](https://news.ycombinator.com/item?id=49116922)
+
+### 🏅 第五名：NetBSD 11.0 released（热度 218）
+**为什么值得读：** 老牌 Unix 系统的重大版本更新。NetBSD 以其极致的可移植性和代码整洁度著称，11.0 的发布对操作系统爱好者和嵌入式开发者都有参考价值。同一篇文章在 HN 和 Lobsters 双平台热榜出现，足见其社区关注度。
+🔗 [文章链接](https://blog.netbsd.org/tnf/entry/netbsd_11_0_released) | [HN讨论](https://news.ycombinator.com/item?id=49136736)
+
+
+## 四、今日趋势总结
+
+1. **AI 工具链快速成熟**：从多智能体框架（qm）到视频生成（Seedance 2.5），AI 正在从"玩具"走向"生产力工具"，但定价透明度（Cursor 事件）成为新痛点。
+2. **RSS 复兴信号强烈**：三篇 RSS 相关文章同日上榜，从"被 Google 毁掉"到"爱好者名录"再到"使用指南"，RSS 社区正在积极重建生态。
+3. **开源可持续性挑战**：Arch Linux 维护者辞职、NetBSD 新版发布、Linux on ESP32 等文章共同指向开源社区的人才与维护问题。
+4. **技术人文反思回归**：从"如何存在"到"创始人绞肉机"到加缪哲学，技术社区对人文关怀和心理健康话题的关注度显著提升。
+5. **底层技术热度不减**：64 位汇编、RipGrep 段错误、Linux 内核 bug 复盘等底层技术内容依然能获得高关注，说明开发者对"知其所以然"的追求从未改变。
+
+---
+
+*本日报基于 Hacker News、Lobsters 等平台的热门文章综合分析生成，数据截至 2026 年 8 月 2 0:{"buildId":"bRYOyFPu5vbnwODUKmGfk","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-08-02","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":15},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-08-02"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-49124218","title":"Show HN: Elevators","url":"https://john.fun/elevators","source":"Hacker News","score":1581,"comments_count":387,"comments_url":"https://news.ycombinator.com/item?id=49124218","published_at":"2026-07-31T15:17:28","author":"Jrh0203","text":null,"summary":"作者展示了其个人项目“Elevators”，一个关于电梯的趣味或创意应用，值得关注以了解其独特设计。"},{"id":"hn-49126604","title":"qm – Multiplayer agent harness for work","url":"https://github.com/yc-software/qm","source":"Hacker News","score":650,"comments_count":152,"comments_url":"https://news.ycombinator.com/item?id=49126604","published_at":"2026-07-31T18:04:58","author":"tosh","text":null,"summary":"qm是一个用于工作的多人智能体协作工具，旨在通过多智能体协调提升工作效率，值得关注其技术实现和潜在应用。"},{"id":"hn-49136821","title":"How Google helped destroy adoption of RSS feeds (2023)","url":"https://openrss.org/blog/how-google-helped-destroy-adoption-of-rss-feeds","source":"Hacker News","score":404,"comments_count":142,"comments_url":"https://news.ycombinator.com/item?id=49136821","published_at":"2026-08-01T18:07:07","author":"pudgywalsh","text":null,"summary":"文章剖析了Google如何通过停止对RSS的支持（如关闭Google Reader）导致RSS普及率下降，值得关注以反思科技巨头对开放标准的影响。"},{"id":"hn-49129990","title":"How to Exist","url":"https://www.raptitude.com/2026/07/how-to-exist/","source":"Hacker News","score":371,"comments_count":233,"comments_url":"https://news.ycombinator.com/item?id=49129990","published_at":"2026-08-01T00:25:00","author":"walterbell","text":null,"summary":"一篇哲学性随笔，探讨如何面对存在与生活，提供反思现代生存状态的视角，值得关注其深度见解。"},{"id":"hn-49135257","title":"Cursor removed cost information from the usage page and CSV export","url":"https://forum.cursor.com/t/usage-page-to-token-amount-what/167153","source":"Hacker News","score":310,"comments_count":142,"comments_url":"https://news.ycombinator.com/item?id=49135257","published_at":"2026-08-01T15:25:21","author":"EugeneOZ","text":null,"summary":"用户指出Cursor工具从使用页面和CSV导出中隐藏了成本信息，引发对透明度问题的讨论，值得关注以了解用户反馈和产品争议。"},{"id":"hn-49134694","title":"A Surveillance Treaty in Disguise: Canada Signs UN Cybercrime Convention","url":"https://www.michaelgeist.ca/2026/07/a-surveillance-treaty-in-disguise-the-trouble-with-canadas-quiet-decision-to-sign-the-un-cybercrime-convention/","source":"Hacker News","score":275,"comments_count":149,"comments_url":"https://news.ycombinator.com/item?id=49134694","published_at":"2026-08-01T14:19:51","author":"iamnothere","text":null,"summary":"文章批评加拿大签署联合国网络犯罪公约实为监视条约，可能侵犯隐私，值得关注以了解国际法对公民自由的影响。"},{"id":"hn-49133889","title":"RipGrep musl binaries occasionally segfault during very-large searches","url":"https://github.com/BurntSushi/ripgrep/issues/3494","source":"Hacker News","score":252,"comments_count":168,"comments_url":"https://news.ycombinator.com/item?id=49133889","published_at":"2026-08-01T12:34:25","author":"throwaway2037","text":null,"summary":"报告了RipGrep的musl二进制在大规模搜索时偶发段错误的问题，值得关注以了解该工具的稳定性缺陷和潜在修复。"},{"id":"hn-49116922","title":"Investigating three real-world incidents in our cybersecurity evaluations","url":"https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals","source":"Hacker News","score":245,"comments_count":195,"comments_url":"https://news.ycombinator.com/item?id=49116922","published_at":"2026-07-30T23:00:51","author":"surprisetalk","text":null,"summary":"Anthropic分享了其网络安全评估中三个真实事件的调查结果，值得关注以了解AI安全评估的实践和挑战。"},{"id":"hn-49132460","title":"RamenHaus","url":"https://ramen.haus/","source":"Hacker News","score":229,"comments_count":112,"comments_url":"https://news.ycombinator.com/item?id=49132460","published_at":"2026-08-01T08:48:58","author":"oler","text":null,"summary":"RamenHaus是一个关于拉面的网站，可能提供拉面食谱或文化内容，值得关注其创意和用户体验。"},{"id":"hn-49136736","title":"NetBSD 11.0","url":"https://blog.netbsd.org/tnf/entry/netbsd_11_0_released","source":"Hacker News","score":218,"comments_count":94,"comments_url":"https://news.ycombinator.com/item?id=49136736","published_at":"2026-08-01T17:56:41","author":"jaypatelani","text":null,"summary":"NetBSD 11.0正式发布，作为一款注重可移植性和安全性的操作系统，值得关注其新特性和改进。"},{"id":"hn-49091614","title":"The tiny holdout building in the middle of Macy’s is back in view","url":"https://ephemeralnewyork.wordpress.com/2026/07/27/hidden-by-billboards-for-over-100-years-the-tiny-holdout-building-in-the-middle-of-macys-is-back-in-view/","source":"Hacker News","score":205,"comments_count":58,"comments_url":"https://news.ycombinator.com/item?id=49091614","published_at":"2026-07-28T23:56:45","author":"donohoe","text":null,"summary":"纽约梅西百货中心一座被广告牌遮挡百年之久的小型保留建筑重新显露，引发对城市历史与建筑保护的关注。"},{"id":"hn-49138045","title":"The Silicon Valley Founder Meat Grinder","url":"https://zaksa.zip/blog/silicon-valley-founder-meat-grinder/","source":"Hacker News","score":202,"comments_count":139,"comments_url":"https://news.ycombinator.com/item?id=49138045","published_at":"2026-08-01T20:20:58","author":"Kaizeras","text":null,"summary":"文章剖析硅谷创始人面临的残酷压力与淘汰机制，揭示创业文化中的高风险与心理代价，值得创业者反思。"},{"id":"hn-49138188","title":"Diátaxis","url":"https://diataxis.fr/","source":"Hacker News","score":197,"comments_count":30,"comments_url":"https://news.ycombinator.com/item?id=49138188","published_at":"2026-08-01T20:33:27","author":"ryanseys","text":null,"summary":"Diátaxis是一种技术文档组织框架，通过任务导向的划分提升文档可用性，对开发者与文档编写者具有实用价值。"},{"id":"hn-49134599","title":"The Art of 64-bit Assembly","url":"https://nostarch.com/art-64-bit-assembly-v2","source":"Hacker News","score":189,"comments_count":86,"comments_url":"https://news.ycombinator.com/item?id=49134599","published_at":"2026-08-01T14:09:00","author":"0x54MUR41","text":null,"summary":"《64位汇编艺术》第二版发布，深入讲解x86-64汇编编程，适合系统编程爱好者学习底层原理。"},{"id":"hn-49121196","title":"Progressive Web Components","url":"https://arielsalminen.com/2026/progressive-web-components/","source":"Hacker News","score":189,"comments_count":52,"comments_url":"https://news.ycombinator.com/item?id=49121196","published_at":"2026-07-31T10:04:40","author":"hosteur","text":"<a href=\"https:&#x2F;&#x2F;github.com&#x2F;arielsalminen&#x2F;elena\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;arielsalminen&#x2F;elena</a><p><a href=\"https:&#x2F;&#x2F;elenajs.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;elenajs.com&#x2F;</a>","summary":"文章介绍渐进式Web组件概念，结合Elena框架实现高性能与可访问性，为前端开发提供新思路。"},{"id":"hn-49138302","title":"Seedance 2.5","url":"https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5","source":"Hacker News","score":180,"comments_count":82,"comments_url":"https://news.ycombinator.com/item?id=49138302","published_at":"2026-08-01T20:45:12","author":"njaremko","text":null,"summary":"字节跳动发布Seedance 2.5视频生成模型，支持一次性生成与灵活引用，推动AI视频创作技术发展。"},{"id":"hn-49117089","title":"The Absurdity of Albert Camus","url":"https://www.historytoday.com/archive/portrait-author-historian/absurdity-albert-camus","source":"Hacker News","score":175,"comments_count":87,"comments_url":"https://news.ycombinator.com/item?id=49117089","published_at":"2026-07-30T23:21:17","author":"apollinaire","text":null,"summary":"历史文章探讨加缪的荒诞哲学，分析其对人生意义的思考，在当代仍具思想启发性。"},{"id":"hn-49121849","title":"Increasing the lifespan of a bulb makes it worse in every other way","url":"https://maurycyz.com/misc/tungsten/","source":"Hacker News","score":171,"comments_count":175,"comments_url":"https://news.ycombinator.com/item?id=49121849","published_at":"2026-07-31T11:34:24","author":"tonyg","text":null,"summary":"文章指出延长灯泡寿命会牺牲其他性能指标，揭示工程权衡的复杂性，引发对产品设计优化的思考。"},{"id":"hn-49136063","title":"A directory of people who love RSS","url":"https://andrewshell.org/2026/07/i-%e2%99%a5-rss/","source":"Hacker News","score":166,"comments_count":82,"comments_url":"https://news.ycombinator.com/item?id=49136063","published_at":"2026-08-01T16:52:41","author":"speckx","text":null,"summary":"一个收录RSS爱好者的目录，旨在推广RSS技术，帮助用户重拾信息自主权，适合订阅控关注。"},{"id":"hn-49130726","title":"The development pipeline is a production system","url":"https://sundry.jerryorr.com/2026/07/31/development-pipeline-is-a-production-system","source":"Hacker News","score":160,"comments_count":81,"comments_url":"https://news.ycombinator.com/item?id=49130726","published_at":"2026-08-01T03:16:09","author":"firefoxd","text":null,"summary":"文章将软件开发流程视为生产系统，强调效率与瓶颈管理，为团队优化开发流程提供新视角。"},{"id":"hn-49137060","title":"Postmortem for Kernel Soundness Bug #14576","url":"https://leodemoura.github.io/blog/2026-8-1-postmortem-for-kernel-soundness-bug-14576/","source":"Hacker News","score":116,"comments_count":41,"comments_url":"https://news.ycombinator.com/item?id=49137060","published_at":"2026-08-01T18:32:20","author":"juhopitk","text":null,"summary":"该文深入剖析了内核健全性漏洞#14576的根本原因与修复过程，对系统安全研究者和内核开发者具有重要参考价值。"},{"id":"hn-49105013","title":"Manual: •.,:;…!?·","url":"https://type.today/en/journal/dots","source":"Hacker News","score":115,"comments_count":28,"comments_url":"https://news.ycombinator.com/item?id=49105013","published_at":"2026-07-30T01:05:42","author":"behnamoh","text":null,"summary":"文章探讨了标点符号在排版中的细微设计，揭示了这些看似简单的符号背后的美学与功能考量，适合设计爱好者和文字工作者阅读。"},{"id":"hn-49135426","title":"Kenji/Serious Eats – 30-Min Pressure Cooker Pho Ga","url":"https://www.seriouseats.com/30-minute-pressure-cooker-pho-ga-recipe","source":"Hacker News","score":100,"comments_count":62,"comments_url":"https://news.ycombinator.com/item?id=49135426","published_at":"2026-08-01T15:46:54","author":"stasomatic","text":null,"summary":"介绍了利用高压锅在30分钟内制作越南鸡肉河粉的食谱，兼顾效率与传统风味，为忙碌的美食爱好者提供了实用技巧。"},{"id":"hn-49087499","title":"Linux on ESP32","url":"https://github.com/GrieferPig/esp32-s31-linux","source":"Hacker News","score":100,"comments_count":36,"comments_url":"https://news.ycombinator.com/item?id=49087499","published_at":"2026-07-28T17:52:00","author":"boveyking","text":null,"summary":"展示了在ESP32微控制器上运行Linux的可行性，拓展了嵌入式系统的应用边界，对物联网和极客开发者极具吸引力。"},{"id":"hn-49120230","title":"Just because a game is on disc doesn't mean it will work in the future","url":"https://arstechnica.com/gaming/2026/07/the-disc-is-not-the-game-physical-releases-increasingly-require-extra-downloads/","source":"Hacker News","score":100,"comments_count":98,"comments_url":"https://news.ycombinator.com/item?id=49120230","published_at":"2026-07-31T07:50:48","author":"rbanffy","text":null,"summary":"文章指出实体游戏光盘可能因强制下载内容而无法在未来正常游玩，引发对数字版权和游戏保存性的讨论，值得玩家和行业关注。"}],"locale":"en"}],"$Lc"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["Generated by"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","Powered by DeepSeek"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
-d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-0cd70ef8fe8c","title":"Ruby Central's Destructive Legacy","url":"https://andre.arko.net/2026/07/30/ruby-centrals-destructive-legacy/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-31T14:47:21","author":"andre.arko.net via soulcutter","text":"<p><a href=\"https://lobste.rs/s/qvbkpa/ruby_central_s_destructive_legacy\">Comments</a></p>","summary":"文章批评Ruby Central的治理和决策对社区造成的负面影响，引发对开源组织责任和透明度的讨论，对Ruby社区成员有重要参考价值。"},{"id":"rss-a4d491816af4","title":"Why I forked rand","url":"https://casualhacks.net/blog/2026-07-27-why-i-forked-rand.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-31T15:02:41","author":"casualhacks.net via ollien","text":"<p><a href=\"https://lobste.rs/s/kvxee3/why_i_forked_rand\">Comments</a></p>","summary":"作者解释为何分叉Rust的rand库，涉及设计理念分歧和社区治理问题，对Rust生态开发者理解库的演进和开源协作有启示。"},{"id":"rss-44eab83f0a53","title":"Go 1.27 interactive tour","url":"https://victoriametrics.com/blog/go-1-27/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-31T11:15:54","author":"victoriametrics.com via cgrinds","text":"<p><a href=\"https://lobste.rs/s/7ibjyl/go_1_27_interactive_tour\">Comments</a></p>","summary":"提供Go 1.27版本的交互式教程，涵盖新特性和改进，帮助开发者快速上手，值得关注因其实用性和时效性。"},{"id":"rss-7b9deb2e18e7","title":"Guix shell now inside Emacs","url":"https://tusharhero.codeberg.page/guix-shell-in-emacs.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-31T17:58:24","author":"tusharhero.codeberg.page by tusharhero","text":"<p><a href=\"https://lobste.rs/s/uxsmk6/guix_shell_now_inside_emacs\">Comments</a></p>","summary":"介绍Guix shell功能现在集成到Emacs中，提升了开发环境的便利性，对Guix和Emacs用户有直接价值，展示了工具链整合趋势。"},{"id":"rss-4252c9d8e802","title":"How to speed up the Rust compiler in July 2026","url":"https://nnethercote.github.io/2026/07/31/how-to-speed-up-the-rust-compiler-in-july-2026.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-07-31T05:46:14","author":"nnethercote.github.io via asb","text":"<p><a href=\"https://lobste.rs/s/ycsivx/how_speed_up_rust_compiler_july_2026\">Comments</a></p>","summary":"作者分享2026年7月加速Rust编译器编译速度的实用技巧，基于性能分析，对Rust开发者优化构建时间有直接帮助，值得关注。"}],"locale":"en"}]
-10:null
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-97606eabe68e","title":"NetBSD 11.0 released","url":"https://blog.netbsd.org/tnf/entry/netbsd_11_0_released","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-01T17:57:00","author":"blog.netbsd.org via jaypatelani","text":"<p><a href=\"https://lobste.rs/s/pvrnor/netbsd_11_0_released\">Comments</a></p>","summary":"NetBSD 11.0正式发布，带来了性能提升、新硬件支持和改进的兼容性，对开源操作系统社区意义重大。"},{"id":"rss-705d0873b216","title":"An old-new take on argument parsing in Rust","url":"https://jmmv.dev/2026/07/hello-getoptsargs.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-01T19:31:15","author":"jmmv.dev by jmmv","text":"<p><a href=\"https://lobste.rs/s/vrd28h/old_new_take_on_argument_parsing_rust\">Comments</a></p>","summary":"作者提出了一种结合传统与创新的Rust命令行参数解析方法，为Rust开发者提供了新的思路和工具。"},{"id":"rss-8c44855993e8","title":"But can your calculator run Linux?","url":"https://raymii.org/s/articles/But_can_your_calculator_run_Linux.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-01T19:44:40","author":"raymii.org by raymii","text":"<p><a href=\"https://lobste.rs/s/voozor/can_your_calculator_run_linux\">Comments</a></p>","summary":"文章展示了在计算器上运行Linux的趣味实验，体现了开源硬件的灵活性和极客精神，激发技术爱好者的探索欲。"},{"id":"rss-886877f33be4","title":"wiff","url":"https://wezfurlong.org/wiff/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-01T13:27:00","author":"wezfurlong.org via jparise","text":"<p><a href=\"https://lobste.rs/s/tc82u0/wiff\">Comments</a></p>","summary":"介绍了wiff这一新工具，可能用于终端或系统交互，其简洁的设计或能提升开发效率，值得技术社区关注。"},{"id":"rss-79e795dee047","title":"Resigning from Arch Linux","url":"https://linderud.dev/blog/resigning-from-arch-linux/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-01T22:47:01","author":"linderud.dev via FedericoSchonborn","text":"<p><a href=\"https://lobste.rs/s/ectcmr/resigning_from_arch_linux\">Comments</a></p>","summary":"作者详细说明了辞去Arch Linux维护者职务的原因，涉及项目治理和社区压力，对开源项目管理和参与者有警示意义。"}],"locale":"en"}]
+f:null
