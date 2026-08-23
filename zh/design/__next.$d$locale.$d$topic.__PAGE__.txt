@@ -5,114 +5,142 @@
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
 c:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
 d:"$Sreact.suspense"
-5:T28c7,## Design 领域今日热点分析
+5:T28da,# Design 领域今日热点分析
 
-今天的 Design 热门榜单呈现出非常鲜明的趋势：**AI 对设计行业的冲击与重构**、**对旧互联网文化的怀旧与反思**、以及**设计工具链的技术深化**（WebGPU、色彩算法、字体排印）构成了三大主线。以下按主题分组逐一分析。
-
-
-### 一、AI 与设计行业的未来
-
-这是今日最核心的议题，多篇文章从不同角度探讨 AI 如何重塑设计师的角色、工作方式和行业生态。
-
-**1. Is design dead in the age of AI?（设计在 AI 时代已死？）**
-由著名设计师 Jessica Walsh 撰写，Adobe Design 官方发布。文章明确回应：设计没有死，但正在经历一次“修订”。Walsh 认为 AI 不会取代设计师，而是会淘汰那些只做执行、缺乏策略思维的设计师。这篇文章之所以值得关注，是因为它来自 Adobe Design 官方平台，且作者本人是 Design 界最具影响力的实践者之一，代表了主流设计圈对 AI 的权威态度——不是恐慌，而是重新定义设计的价值层级。
-🔗 文章：https://adobe.design/ideas/is-design-dead-in-the-age-of-ai
-
-**2. How to become an AI Designer（如何成为 AI 设计师）**
-UX Collective 上的一篇务实指南，标题中的 “shipping your own designs” 点明了核心观点：真正的 AI 设计师不是会“提示词工程”的人，而是能利用 AI 工具将设计真正落地、交付的人。文章给出了可操作的学习路径，对正处于职业转型焦虑中的设计师来说，是一份难得的实操地图。
-🔗 文章：https://uxdesign.cc/how-to-become-an-ai-designer-ff8ee8aed205
-
-**3. Claude Academy**
-Anthropic 官方推出的免费 AI 学习平台，涵盖从 AI 基础入门到团队级 Claude 部署的课程与用例。对设计师而言，这不仅是学习工具，更是一个值得研究的产品设计案例——AI 教育产品如何做信息架构和课程体验设计。
-🔗 文章：https://academy.claude.com/
-
-**4. Agent behavior（Agent 行为标准）**
-一个关于“如何描述和评估 AI Agent 预期行为”的标准格式提案，面向 trace review（轨迹审查）和 evaluation（评估）场景。随着 AI Agent 越来越多地承担设计工作流中的自主任务，如何定义、测量和审查其行为，正在成为设计系统必须面对的新课题。
-🔗 文章：https://www.agentbehavior.dev/
-
-**5. Agent experience needs failure affordances（Agent 体验需要“失败可供性”）**
-这篇文章提出了一个非常犀利的设计概念：当一个系统具备自主性时，它必须有一种方式告诉系统的其他部分——“常规控制已经失效了”。类比人类世界的“紧急停止按钮”，AI Agent 的交互设计同样需要设计“失败路径”。这是目前 Agent 体验设计中最被忽视、却最关键的环节之一。
-🔗 文章：https://blog.ronbronson.com/agent-experience-needs-failure-affordances
-
-**6. Try these 10 skills—and show off your own（试试这 10 个技能——并展示你自己的）**
-Figma 官方博客宣布：用户现在可以直接在 Figma 中为 Figma Agent 编写“技能”（Skills），将自己的设计观点转化为可执行的 Agent 能力。Figma 正在把“设计”从静态交付物推进到“可编程的设计行为”时代。文中的 10 个精选技能是理解 Figma 未来产品方向的重要窗口。
-🔗 文章：https://www.figma.com/blog/try-these-10-skills-and-show-off-your-own/
+今天的 Design 主题文章呈现出几个明显的趋势：**AI 对设计行业的冲击与重塑**、**对旧互联网时代的怀旧情绪**、**设计工具与技术的创新**，以及**设计领导力的新范式**。以下按子主题进行分组分析。
 
 
-### 二、旧互联网的怀旧与数字记忆
+## 一、AI × 设计：职业转型与行业反思
 
-这一组文章反映了对当前互联网环境（算法操控、商业巨头垄断、内容同质化）的集体厌倦，以及对早期互联网精神的文化回望。
+这一主题是今日最集中的讨论方向，反映了 AI 对设计行业的深层影响。
 
-**7. RIP.so: the digital graveyard（数字墓地）**
-一个为“被互联网遗忘的信使、社交网络、浏览器和网站”建立的纪念网站。它不仅是怀旧，更是一种数字文化遗产保护实践——对设计史研究者而言，这些消失产品的界面和交互模式，是研究设计语言演变的珍贵样本。
-🔗 文章：https://rip.so/
+### 1. How to become an AI Designer
+- **文章链接**：https://uxdesign.cc/how-to-become-an-ai-designer-ff8ee8aed205
+- **讨论链接**：无
+- **简要说明**：一篇务实的转型指南，强调"用作品说话"而非空谈概念。作者提出 AI 设计师不是"会用 AI 工具的设计师"，而是能**将 AI 能力融入设计流程、独立交付产品**的人。在当前 AI 岗位需求激增但定义模糊的背景下，这篇文章提供了清晰的路径参考。
 
-**8. Do you miss the old internet?（你怀念旧互联网吗？）**
-直接呼应了当代互联网用户的普遍情绪——对“无灵魂的算法推荐、心理变态的 CEO、科技兄弟和网红”占据网络空间的不满。这篇文章来自 pi.fyi，其本身就是一个试图回归“旧互联网”气质的平台。值得关注的是它作为“反算法设计”案例的立场：不做个性化推荐，不做增长黑客。
-🔗 文章：https://www.pi.fyi/welcome
+### 2. Is design dead in the age of AI?
+- **文章链接**：https://adobe.design/ideas/is-design-dead-in-the-age-of-ai
+- **讨论链接**：无
+- **简要说明**：由知名设计师 Jessica Walsh 撰写的 Adobe Design 官方文章。她的回答是"没有死，但正在经历修订"。文章探讨了 AI 如何迫使设计师重新定义自身价值——从"执行者"转向"策展人和判断者"。值得关注是因为它来自 Adobe 这样的行业巨头，代表了主流设计机构的立场。
 
+### 3. Claude Academy
+- **文章链接**：https://academy.claude.com/
+- **讨论链接**：无
+- **简要说明**：Anthropic 推出的免费 AI 学习平台，包含课程、教程和实际用例。虽然不是传统意义上的"设计文章"，但对设计师来说，这是了解 Claude 能力边界、探索 AI 辅助设计工作流的实用资源。AI 素养正在成为设计师的必备技能，这类官方学习资源值得收藏。
 
-### 三、设计工具与技术深化
+### 4. Agent behavior
+- **文章链接**：https://www.agentbehavior.dev/
+- **讨论链接**：无
+- **简要说明**：提出了一个用于描述 AI Agent 预期行为的标准格式，服务于 trace review 和评估。对设计 AI 交互体验的设计师来说，这意味着**需要一种新的规范来定义 AI 系统的行为边界**——这是 Agent 体验设计的底层基础设施。
 
-这一组聚焦于具体的设计技术：字体选择、色彩生成、WebGPU 动效，以及一个有趣的代码艺术项目。
+### 5. Agent experience needs failure affordances
+- **文章链接**：https://blog.ronbronson.com/agent-experience-needs-failure-affordances
+- **讨论链接**：无
+- **简要说明**：核心观点：自治系统需要明确的"失败信号"来告知用户和系统其他部分"常规控制已失效"。这是 AI Agent 交互设计中一个被忽视但极其重要的概念——**失败的可感知性（failure affordance）**。当 AI 出错时，用户如何感知、理解并接管？这是 Agent 体验设计的关键课题。
 
-**9. How to choose a UI font (and 10 Inter alternatives)（如何选择 UI 字体——以及 10 个 Inter 替代方案）**
-当 Inter 成为 UI 设计的“默认字体”后，审美疲劳已经开始蔓延。这篇文章提出了两个真正有技术含量的筛选标准：**cap-centered vertical metrics（以大写字母为中心的垂直度量）** 和 **tall x-height（高 x 高度）**，并给出了 10 个替代方案。对于任何正在做设计系统或产品界面的人，这是一篇可以直接落地的实用指南。
-🔗 文章：https://yeptype.com/article/inter-alternatives
-
-**10. Poline: esoteric color palette generation（Poline：深奥的色彩调色板生成）**
-一个轻量级、零依赖、用 TypeScript 编写的 JavaScript 函数库，用于生成色彩调色板。名字中的 “esoteric”（深奥的）暗示了它在色彩算法上的独到之处。对追求差异化视觉风格的设计师和前端开发者来说，这是一个值得加入工具箱的生成工具。
-🔗 文章：https://meodai.github.io/poline/
-
-**11. Shading motion（着色动效）**
-一篇技术深度极高的文章，深入探讨了如何用 **WebGPU 和 TSL** 实现运动检测、提取与风格化——涵盖运动遮罩、斑点追踪、光流计算和基于速度的运动模糊。这是当前 Web 图形技术的最前沿，对从事创意编码、交互动效或 WebGL 开发的设计师有很高的参考价值。
-🔗 文章：https://blog.maximeheckel.com/posts/shading-motion/
-
-**12. Play**
-一个基于浏览器的实时编码环境，输出形式仅限文本。它把“代码即设计”的理念推向极致——用纯文字输出创造视觉体验。对探索文本媒介的创意边界、或对 live-coding 表演感兴趣的设计师来说，这是一个有趣的实验场。
-🔗 文章：https://play.ertdfgcvb.xyz/
-
-
-### 四、设计思维与职业反思
-
-**13. The task isn’t the job（任务不是工作）**
-作者在新角色中提出的思考：当我们说“完成一个任务”时，我们是否真的完成了“工作”？这篇文章探讨的是任务与工作本质之间的鸿沟——对设计师而言，画一个按钮是任务，但理解这个按钮在用户旅程中的意义才是工作。适合正在经历职业转型或对工作意义有困惑的设计师阅读。
-🔗 文章：https://sunilpai.dev/posts/the-task-isnt-the-job/
-
-**14. Syntax（句法）**
-Doc.cc 推出的系列文章，旨在追溯“塑造我们设计世界的核心概念”的起源，并剖析其实际意义。对设计概念史感兴趣的读者，这是一个值得追踪的系列。
-🔗 文章：https://www.doc.cc/syntax
-
-**15. Rethinking design leadership with swarms and flocks（用“蜂群与鸟群”重新思考设计领导力）**
-这篇文章提出了一个极具想象力的管理模型：用**结构化涌现（structured emergence）**替代传统的层级管理，以解决设计经理的 burnout（职业倦怠）、团队瓶颈和系统性设计债务。在 AI 加速设计产出、团队规模不断变化的当下，这篇文章为设计管理提供了全新的组织学视角。
-🔗 文章：https://uxdesign.cc/rethinking-design-leadership-with-swarms-and-flocks-9298db8c59d2
+### 6. Try these 10 skills—and show off your own
+- **文章链接**：https://www.figma.com/blog/try-these-10-skills-and-show-off-your-own/
+- **讨论链接**：无
+- **简要说明**：Figma 宣布支持用户为 Figma AI Agent 编写自定义 Skills，并推荐了 10 个优秀示例。这意味着**设计工具正在从"被动执行"走向"主动代理"**，设计师可以通过编写 Skills 将自己的设计方法论注入工具中——设计工具的个性化时代正在到来。
 
 
-### 📌 今日最值得阅读的 Top 5 推荐
+## 二、设计工具与技术：从字体到实时渲染
 
-**1. Is design dead in the age of AI?**
-由 Jessica Walsh 执笔、Adobe Design 发布的行业定调之作。如果你今天只读一篇关于 AI 与设计关系的文章，请读这篇。它给出了一个清醒且有力的框架：AI 杀死的是“执行型设计”，解放的是“策略型设计”。
-🔗 https://adobe.design/ideas/is-design-dead-in-the-age-of-ai
+### 7. How to choose a UI font (and 10 Inter alternatives)
+- **文章链接**：https://yeptype.com/article/inter-alternatives
+- **讨论链接**：无
+- **简要说明**：针对"Inter 字体无处不在"的审美疲劳，提出了选择 UI 字体的两个核心标准：**cap-centered 垂直度量和较高的 x-height**，并推荐了 10 款替代方案。对 UI 设计师来说，这是一篇实用价值极高的参考文章。
 
-**2. Agent experience needs failure affordances**
-这篇文章提出了一个几乎所有 AI 产品设计都在忽略的问题：**Agent 失败时怎么办？** “失败可供性”这个概念值得每一个做 AI 产品的设计师认真思考。它是目前关于 Agent 交互设计最前沿、最犀利的观点之一。
-🔗 https://blog.ronbronson.com/agent-experience-needs-failure-affordances
+### 8. Poline: esoteric color palette generation
+- **文章链接**：https://meodai.github.io/poline/
+- **讨论链接**：无
+- **简要说明**：一个轻量级、无依赖的 TypeScript 色彩方案生成工具。它采用非传统的色彩生成算法，帮助设计师跳出常规配色思路。对于探索差异化视觉风格的设计师来说，这是一个有趣的实验工具。
 
-**3. How to choose a UI font (and 10 Inter alternatives)**
-最实用的一篇。如果你厌倦了 Inter，或者正在为新产品挑选 UI 字体，这篇文章给出的两个筛选标准（cap-centered vertical metrics 和 tall x-height）可以直接改变你的字体决策方式。
-🔗 https://yeptype.com/article/inter-alternatives
+### 9. Shading motion
+- **文章链接**：https://blog.maximeheckel.com/posts/shading-motion/
+- **讨论链接**：无
+- **简要说明**：深入探讨了使用 WebGPU 和 TSL 进行运动检测、提取和风格化渲染的技术文章，涵盖运动遮罩、光流分析和基于速度的运动模糊。这是目前 web 端实时图形处理的前沿技术，对创意编码者和交互设计师具有很高的参考价值。
 
-**4. Try these 10 skills—and show off your own**
-理解 Figma 未来战略的关键文章。当设计工具从“画布”进化为“Agent 平台”，设计师的能力模型也将随之改变。这篇文章展示了 Figma 正在如何定义下一代设计工作流。
-🔗 https://www.figma.com/blog/try-these-10-skills-and-show-off-your-own/
-
-**5. Rethinking design leadership with swarms and flocks**
-对设计管理者的强烈推荐。用“蜂群与鸟群”的涌现逻辑替代金字塔式的科层管理，这个想法既有生物学基础，又有现实的管理痛点支撑（burnout、瓶颈、设计债务），是一篇能带来全新思维框架的文章。
-🔗 https://uxdesign.cc/rethinking-design-leadership-with-swarms-and-flocks-9298db8c59d2
+### 10. Play
+- **文章链接**：https://play.ertdfgcvb.xyz/
+- **讨论链接**：无
+- **简要说明**：一个基于浏览器的实时编码环境，输出方式仅限文本。它将"代码即设计"的理念推向极致——用文字作为唯一的视觉表达媒介。对喜欢实验性创作的设计师来说，这是一个激发灵感的玩具。
 
 
-**总结**：今日 Design 热点的核心信号非常清晰——**AI 不再是“要不要用”的问题，而是“如何重新定义设计”的问题**。从 Adobe 到 Figma，从设计管理到 Agent 交互，整个行业正在经历一场从“设计产出”到“设计行为”的范式转移。与此同时，对旧互联网的怀念和对 Inter 字体的审美疲劳，则暗示着设计师们正在集体寻找下一个“差异化的出口”。0:{"buildId":"-2nPpTxQ-sxKxaYKJl1lj","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-08-22","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":13},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"design","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Design"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"UI/UX design, product design, and visual design"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[15," ","篇文章"," • ","2026-08-22"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Design","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",15,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Sidebar.io",{"sourceName":"Sidebar.io","articles":[{"id":"rss-f053d4dce626","title":"The task isn’t the job","url":"https://sunilpai.dev/posts/the-task-isnt-the-job/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-21T04:19:05","author":"unknown","text":"<p>A new role, and some questions I want to build my way through.</p>\n<br /><br />","summary":"作者在新角色中提出了一系列关于设计工作本质的问题，探讨任务与职位之间的区别，引发对设计职业的深层思考。"},{"id":"rss-90fe47caf736","title":"Syntax","url":"https://www.doc.cc/syntax","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-21T04:18:11","author":"unknown","text":"<p>This series examines core concepts shaping our designed world, tracing their origins and dissecting their practical significance.</p>\n<br /><br />","summary":"该系列文章深入剖析塑造设计世界的核心概念，追溯其起源并解析其实际意义，为设计师提供理论背景。"},{"id":"rss-ac6cf804ca47","title":"Claude Academy","url":"https://academy.claude.com/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-21T04:17:39","author":"unknown","text":"<p>Free courses, tutorials, and use cases from Anthropic — whether you’re exploring AI, getting started with Claude, or rolling it out to your team.</p>\n<br /><br />","summary":"Anthropic 推出的免费AI学习平台，提供课程、教程和用例，帮助用户从入门到团队部署全面掌握Claude，值得AI从业者关注。"},{"id":"rss-8735d2613410","title":"RIP.so: the digital graveyard","url":"https://rip.so/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-21T04:17:08","author":"unknown","text":"<p>A memorial to the messengers, social networks, browsers and websites the internet forgot.</p>\n<br /><br />","summary":"一个纪念被遗忘的互联网产品（如社交网络、浏览器）的网站，唤起对数字遗产的怀旧与反思。"},{"id":"rss-0e66febc1b71","title":"How to become an AI Designer","url":"https://uxdesign.cc/how-to-become-an-ai-designer-ff8ee8aed205","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-21T04:16:22","author":"unknown","text":"<p>A realistic guide to shipping your own designs.</p>\n<br /><br />","summary":"提供成为AI设计师的实用指南，强调通过实际项目交付设计，而非空谈理论，对转型中的设计师有参考价值。"},{"id":"rss-fdcfb8277b88","title":"Is design dead in the age of AI?","url":"https://adobe.design/ideas/is-design-dead-in-the-age-of-ai","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-20T04:39:47","author":"unknown","text":"<p>No, but it’s undergoing a revision. Written by Jessica Walsh.</p>\n<br /><br />","summary":"Jessica Walsh 撰文探讨AI时代设计的未来，认为设计并未消亡，而是正在经历变革，为设计师提供前瞻视角。"},{"id":"rss-f39c6a1b2f89","title":"Do you miss the old internet?","url":"https://www.pi.fyi/welcome","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-20T04:39:00","author":"unknown","text":"<p>Before vibeless algo curation, psychopath CEOs, tech bros, and influencers took over? You came to the right place.</p>\n<br /><br />","summary":"该网站为怀念旧互联网（无算法推荐和科技巨头控制）的用户提供一个怀旧社区，反映对当前网络环境的不满。"},{"id":"rss-4e622e67a49b","title":"How to choose a UI font (and 10 Inter alternatives)","url":"https://yeptype.com/article/inter-alternatives","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-20T04:37:20","author":"unknown","text":"<p>Tired of Inter being everywhere? Two real criteria—cap-centered vertical metrics and a tall x-height—for choosing a UI font.</p>\n<br /><br />","summary":"针对UI字体选择，提出两个关键标准（cap-centered垂直度量和x-height），并推荐10个Inter替代字体，实用性强。"},{"id":"rss-e15efc74d07b","title":"Poline: esoteric color palette generation","url":"https://meodai.github.io/poline/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-20T04:36:48","author":"unknown","text":"<p>Poline is a lightweight, dependency free and fast JavaScript function written in TypeScript.</p>\n<br /><br />","summary":"Poline 是一个轻量级TypeScript函数，用于生成独特的色彩方案，为设计师提供创意配色工具。"},{"id":"rss-a7d41126ee61","title":"Shading motion","url":"https://blog.maximeheckel.com/posts/shading-motion/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-20T04:35:45","author":"unknown","text":"<p>Detecting, extracting, and stylizing motion with WebGPU and TSL, covering motion masking, blob tracking, optical flow, and velocity-based motion blur.</p>\n<br /><br />","summary":"文章深入讲解如何使用WebGPU和TSL实现运动检测、提取和风格化，涵盖运动遮罩、光流等技术，适合前端图形开发者。"},{"id":"rss-58d1125e4dc2","title":"Rethinking design leadership with swarms and flocks","url":"https://uxdesign.cc/rethinking-design-leadership-with-swarms-and-flocks-9298db8c59d2","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-19T04:46:17","author":"unknown","text":"<p>How structured emergence solves manager burnout, team bottlenecks, and systemic design debt.</p>\n<br /><br />","summary":"本文探讨了如何通过结构化涌现（swarms and flocks）来重新思考设计领导力，解决管理者倦怠、团队瓶颈和系统性设计债务问题。值得关注是因为它提出了一种新颖的领导力模型，可能变革设计团队的管理方式。"},{"id":"rss-fdcc2cb121c5","title":"Agent behavior","url":"https://www.agentbehavior.dev/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-19T04:45:44","author":"unknown","text":"<p>A standard format for describing expected agent behavior for trace review and evaluation.</p>\n<br /><br />","summary":"文章介绍了一种描述预期代理行为的标准格式，用于追踪审查和评估。值得关注是因为它为AI代理的行为规范提供了标准化方法，有助于提升系统的可解释性和可靠性。"},{"id":"rss-d4e330263ae9","title":"Try these 10 skills—and show off your own","url":"https://www.figma.com/blog/try-these-10-skills-and-show-off-your-own/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-19T04:45:17","author":"unknown","text":"<p>Now you can author skills for our agent, directly in Figma, to put your point of view to work. Here are 10 of our favorites to get you started.</p>\n<br /><br />","summary":"Figma宣布用户可以在其平台内为代理编写技能，并推荐了10个技能示例。值得关注是因为这展示了设计工具与AI代理的集成趋势，为设计师提供了新的创作和自动化可能性。"},{"id":"rss-48a539dbe259","title":"Play","url":"https://play.ertdfgcvb.xyz/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-19T04:44:36","author":"unknown","text":"<p>A browser-based live-code environment with text-only output.</p>\n<br /><br />","summary":"介绍了一个基于浏览器的实时编码环境，仅支持文本输出。值得关注是因为它提供了一个极简的创作平台，适合探索代码艺术和交互设计的新形式。"},{"id":"rss-798585a85f5b","title":"Agent experience needs failure affordances","url":"https://blog.ronbronson.com/agent-experience-needs-failure-affordances","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-19T04:43:52","author":"unknown","text":"<p>A system that operates with some autonomy needs a way to tell the rest of the system when ordinary control is no longer adequate.</p>\n<br /><br />","summary":"文章讨论了自主系统在遇到超出常规控制的情况时，需要具备失败提示机制。值得关注是因为它强调了设计中的容错性，对于提升AI代理的用户体验和系统稳健性至关重要。"}],"locale":"zh"}]]}]]}]
+## 三、设计思维与领导力
+
+### 11. The task isn’t the job
+- **文章链接**：https://sunilpai.dev/posts/the-task-isnt-the-job/
+- **讨论链接**：无
+- **简要说明**：作者在新角色中提出了一系列想通过实践回答的问题。核心洞察：**任务不等于工作**——设计师的价值不在于完成一个个孤立的任务，而在于理解任务背后的目标和系统。这对正在经历职业转型或角色扩展的设计师很有启发。
+
+### 12. Rethinking design leadership with swarms and flocks
+- **文章链接**：https://uxdesign.cc/rethinking-design-leadership-with-swarms-and-flocks-9298db8c59d2
+- **讨论链接**：无
+- **简要说明**：借用"鸟群/蜂群"的自组织模式，提出"结构化涌现（structured emergence）"作为设计领导力的新范式，以解决管理者过载、团队瓶颈和系统性设计债务。这是对传统"自上而下"设计管理模式的有力反思。
+
+
+## 四、怀旧与数字文化
+
+### 13. RIP.so: the digital graveyard
+- **文章链接**：https://rip.so/
+- **讨论链接**：无
+- **简要说明**：一个为互联网遗忘的 messengers、社交网络、浏览器和网站设立的"数字墓地"。它不仅是怀旧，更是对**数字文化短暂性**的反思——设计作品终将消逝，但值得被铭记。对设计师来说，这是一次关于"设计遗产"的情感教育。
+
+### 14. Do you miss the old internet?
+- **文章链接**：https://www.pi.fyi/welcome
+- **讨论链接**：无
+- **简要说明**：直接回应"你是否怀念旧互联网"的问题——在算法推荐、科技巨头和网红文化主导之前。这反映了当下设计师群体中对**去中心化、无算法干预的互联网体验**的渴望，与当前 AI 主导的互联网形成鲜明对比。
+
+
+## 五、设计理论
+
+### 15. Syntax
+- **文章链接**：https://www.doc.cc/syntax
+- **讨论链接**：无
+- **简要说明**：一个系列文章，探讨塑造我们设计世界的核心概念，追溯其起源并剖析其实际意义。适合作为设计理论的基础读物，帮助设计师建立更系统的认知框架。
+
+
+## 📌 今日最值得阅读推荐
+
+### 🥇 首选推荐：Is design dead in the age of AI?
+**链接**：https://adobe.design/ideas/is-design-dead-in-the-age-of-ai
+
+**理由**：这是今日最具行业影响力的文章。Jessica Walsh 作为国际知名设计师，在 Adobe 官方平台上回应了当下最紧迫的问题——AI 是否会让设计消亡。她的"修订而非死亡"的立场，为设计师提供了应对 AI 时代的心态框架。无论你持何种观点，这篇文章都是理解行业主流立场的关键文本。
+
+### 🥈 次选推荐：Agent experience needs failure affordances
+**链接**：https://blog.ronbronson.com/agent-experience-needs-failure-affordances
+
+**理由**：这是今日最具前瞻性的一篇文章。当所有人都在讨论 AI 能做什么时，这篇文章提出了一个被忽视的问题：**AI 失败时用户怎么办？** 随着 AI Agent 从工具演变为"自治系统"，失败的可感知性将成为交互设计的核心议题。如果你关注 AI 交互设计的未来，这篇文章不容错过。
+
+### 🥉 第三推荐：How to choose a UI font (and 10 Inter alternatives)
+**链接**：https://yeptype.com/article/inter-alternatives
+
+**理由**：实用价值最高的文章。Inter 字体虽然优秀，但过度使用已导致界面同质化。这篇文章提供了清晰的选型标准和 10 个替代方案，可以直接应用于日常设计工作中。对 UI 设计师来说，这是"今天读完明天就能用"的干货。
+
+### 第四推荐：Try these 10 skills—and show off your own
+**链接**：https://www.figma.com/blog/try-these-10-skills-and-show-off-your-own/
+
+**理由**：Figma 正在重新定义设计工具的可能性——从"软件"变成"可编程的代理平台"。了解这些 Skills 不仅能提升你的工作效率，更能让你看到设计工具演化的方向。对重度 Figma 用户来说，这是必须关注的功能更新。
+
+### 第五推荐：How to become an AI Designer
+**链接**：https://uxdesign.cc/how-to-become-an-ai-designer-ff8ee8aed205
+
+**理由**：如果你正在思考职业转型，这篇文章提供了比"学会用 Midjourney"更深刻的答案。它强调 AI 设计师的核心能力是**端到端的产品思维 + AI 技术理解**，而非单纯的工具操作。在当前 AI 设计师岗位定义模糊的时期，这篇文章提供了清晰的坐标。
+
+
+## 总结
+
+今日 Design 领域的热点呈现出几个值得关注的信号：
+
+1. **AI 不再是"要不要用"的问题，而是"如何重新定义设计"的问题**——从职业转型、工具变革到交互范式，AI 正在全方位重构设计行业。
+2. **对旧互联网的怀念与对 AI 主导未来的不安并存**——RIP.so 和 "Do you miss the old internet" 折射出设计师群体对数字文化同质化的焦虑。
+3. **设计工具正在经历"代理化"转型**——Figma 的 Skills 和 Agent behavior 标准预示着设计工具将从"执行指令"进化为"理解意图"。
+4. **设计领导力开始去中心化**——"swarms and flocks" 的提出反映了对传统科层制设计管理的反思。
+
+**总体判断**：AI 时代的设计行业正处于"旧范式失效、新范式未定"的过渡期。今日文章中最有价值的思考，不是给出确定答案，而是提出了正确的问题。0:{"buildId":"i3Xkgt68eo9Y1JfMASSdD","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-08-23","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":14},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"design","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Design"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"UI/UX design, product design, and visual design"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[15," ","篇文章"," • ","2026-08-23"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Design","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",15,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Sidebar.io",{"sourceName":"Sidebar.io","articles":[{"id":"rss-f053d4dce626","title":"The task isn’t the job","url":"https://sunilpai.dev/posts/the-task-isnt-the-job/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-21T04:19:05","author":"unknown","text":"<p>A new role, and some questions I want to build my way through.</p>\n<br /><br />","summary":"作者在新角色中提出了一些希望通过实践来解答的问题，探讨了任务与工作本质的区别，对设计师的职业发展有启发意义。"},{"id":"rss-90fe47caf736","title":"Syntax","url":"https://www.doc.cc/syntax","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-21T04:18:11","author":"unknown","text":"<p>This series examines core concepts shaping our designed world, tracing their origins and dissecting their practical significance.</p>\n<br /><br />","summary":"该系列文章追溯设计世界中核心概念的起源并剖析其实际意义，帮助读者深入理解设计背后的原理。"},{"id":"rss-ac6cf804ca47","title":"Claude Academy","url":"https://academy.claude.com/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-21T04:17:39","author":"unknown","text":"<p>Free courses, tutorials, and use cases from Anthropic — whether you’re exploring AI, getting started with Claude, or rolling it out to your team.</p>\n<br /><br />","summary":"Anthropic推出的免费AI学习平台，提供课程、教程和用例，适合从入门到团队部署的各个阶段，是掌握AI技能的实用资源。"},{"id":"rss-8735d2613410","title":"RIP.so: the digital graveyard","url":"https://rip.so/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-21T04:17:08","author":"unknown","text":"<p>A memorial to the messengers, social networks, browsers and websites the internet forgot.</p>\n<br /><br />","summary":"一个纪念被互联网遗忘的通讯工具、社交网络、浏览器和网站的线上墓地，引发对数字遗产和互联网演变的思考。"},{"id":"rss-0e66febc1b71","title":"How to become an AI Designer","url":"https://uxdesign.cc/how-to-become-an-ai-designer-ff8ee8aed205","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-21T04:16:22","author":"unknown","text":"<p>A realistic guide to shipping your own designs.</p>\n<br /><br />","summary":"一份关于如何成为AI设计师的实用指南，强调通过实际项目来提升设计能力，而非空谈理论。"},{"id":"rss-fdcfb8277b88","title":"Is design dead in the age of AI?","url":"https://adobe.design/ideas/is-design-dead-in-the-age-of-ai","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-20T04:39:47","author":"unknown","text":"<p>No, but it’s undergoing a revision. Written by Jessica Walsh.</p>\n<br /><br />","summary":"Jessica Walsh撰文探讨AI时代设计是否已死，认为设计并未消亡，而是在经历变革，为设计师提供了前瞻性视角。"},{"id":"rss-f39c6a1b2f89","title":"Do you miss the old internet?","url":"https://www.pi.fyi/welcome","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-20T04:39:00","author":"unknown","text":"<p>Before vibeless algo curation, psychopath CEOs, tech bros, and influencers took over? You came to the right place.</p>\n<br /><br />","summary":"该网站为怀念旧互联网时代（无算法推荐、无科技巨头主导）的用户提供了一个怀旧社区，反映了对当前互联网生态的反思。"},{"id":"rss-4e622e67a49b","title":"How to choose a UI font (and 10 Inter alternatives)","url":"https://yeptype.com/article/inter-alternatives","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-20T04:37:20","author":"unknown","text":"<p>Tired of Inter being everywhere? Two real criteria—cap-centered vertical metrics and a tall x-height—for choosing a UI font.</p>\n<br /><br />","summary":"文章提出选择UI字体的两个关键标准（垂直度量和x高度），并推荐了10款Inter的替代字体，帮助设计师摆脱审美疲劳。"},{"id":"rss-e15efc74d07b","title":"Poline: esoteric color palette generation","url":"https://meodai.github.io/poline/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-20T04:36:48","author":"unknown","text":"<p>Poline is a lightweight, dependency free and fast JavaScript function written in TypeScript.</p>\n<br /><br />","summary":"Poline是一个轻量级的TypeScript函数，用于生成独特的色彩方案，为设计师提供了一种新颖的调色工具。"},{"id":"rss-a7d41126ee61","title":"Shading motion","url":"https://blog.maximeheckel.com/posts/shading-motion/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-20T04:35:45","author":"unknown","text":"<p>Detecting, extracting, and stylizing motion with WebGPU and TSL, covering motion masking, blob tracking, optical flow, and velocity-based motion blur.</p>\n<br /><br />","summary":"文章深入探讨了使用WebGPU和TSL进行运动检测、提取和风格化的技术，包括运动遮罩、光流等，对前端开发者极具技术价值。"},{"id":"rss-58d1125e4dc2","title":"Rethinking design leadership with swarms and flocks","url":"https://uxdesign.cc/rethinking-design-leadership-with-swarms-and-flocks-9298db8c59d2","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-19T04:46:17","author":"unknown","text":"<p>How structured emergence solves manager burnout, team bottlenecks, and systemic design debt.</p>\n<br /><br />","summary":"本文探讨了如何通过“结构化涌现”和“群体/鸟群”模式重新思考设计领导力，以解决管理者倦怠、团队瓶颈和系统性设计债务问题。值得关注，因为它为设计管理提供了创新的组织范式。"},{"id":"rss-fdcc2cb121c5","title":"Agent behavior","url":"https://www.agentbehavior.dev/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-19T04:45:44","author":"unknown","text":"<p>A standard format for describing expected agent behavior for trace review and evaluation.</p>\n<br /><br />","summary":"文章介绍了一种用于描述预期智能体行为的标准格式，旨在支持追踪审查和评估。这对AI代理的可观测性和可靠性至关重要。"},{"id":"rss-d4e330263ae9","title":"Try these 10 skills—and show off your own","url":"https://www.figma.com/blog/try-these-10-skills-and-show-off-your-own/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-19T04:45:17","author":"unknown","text":"<p>Now you can author skills for our agent, directly in Figma, to put your point of view to work. Here are 10 of our favorites to get you started.</p>\n<br /><br />","summary":"Figma允许用户直接在平台内为代理编写技能，并推荐了10个技能示例。这展示了设计工具与AI代理的集成趋势，为设计师提供了新的表达方式。"},{"id":"rss-48a539dbe259","title":"Play","url":"https://play.ertdfgcvb.xyz/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-19T04:44:36","author":"unknown","text":"<p>A browser-based live-code environment with text-only output.</p>\n<br /><br />","summary":"这是一个基于浏览器的实时编码环境，仅输出文本。它简化了创意编码的入门门槛，适合快速原型和实验。"},{"id":"rss-798585a85f5b","title":"Agent experience needs failure affordances","url":"https://blog.ronbronson.com/agent-experience-needs-failure-affordances","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-08-19T04:43:52","author":"unknown","text":"<p>A system that operates with some autonomy needs a way to tell the rest of the system when ordinary control is no longer adequate.</p>\n<br /><br />","summary":"文章强调自主系统需要“失败承担”机制，以便在常规控制失效时向系统其他部分发出信号。这对设计可靠、可恢复的AI代理体验至关重要。"}],"locale":"zh"}]]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
