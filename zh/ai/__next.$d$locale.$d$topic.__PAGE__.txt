@@ -3,204 +3,154 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-c:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-d:"$Sreact.suspense"
-5:T3019,# 今日 AI & Machine Learning 热点分析报告
+d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+5:T26ae,# 今日 AI & Machine Learning 热门文章分析总结
 
-**分析日期**：2026年9月8日 | **主题**：AI & Machine Learning
 
----
+## 一、大语言模型前沿进展
 
-## 一、产业与融资动态
+### 1. GPT-6 Astra、循环 Transformer 与隐藏推理
+**标题：** GPT-6 Astra, looped transformers, and hidden reasoning
+**说明：** Sebastian Raschka 深入解析 GPT-6 Astra 的架构创新，特别是"循环 Transformer"（looped transformers）和隐藏推理机制。这是理解下一代 LLM 架构方向的重要技术分析，对研究者和工程师都极具参考价值。
+- 原文：https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and
+- 讨论：https://news.ycombinator.com/item?id=49627370
 
-### 1. Mistral完成30亿欧元融资，剑指"主权开放权重AI"前沿
-**热度**: 🔥 809分 | 567条评论 | **来源**: Hacker News
+### 2. Qwen 3.8 跟随 GPT-5.5 Pro 的推理预填充
+**标题：** Qwen 3.8 follows GPT-5.5 Pro reasoning prefills
+**说明：** 一份 GitHub Gist 展示了 Qwen 3.8 如何复现/跟随 GPT-5.5 Pro 的推理预填充（reasoning prefills）行为。这反映了开源模型与闭源前沿模型在推理能力上的快速追赶，值得关注模型对齐与蒸馏技术的读者阅读。
+- 原文：https://gist.github.com/wsxiaoys/e0286dc6bb624ff5fdf49e7f4c528ba3
+- 讨论：https://news.ycombinator.com/item?id=49630026
+
+### 3. GPT-5.6 Sol 如何助力量子计算实验
+**标题：** How GPT‑5.6 Sol helps run quantum computing experiments
+**说明：** OpenAI 官方博客介绍 GPT-5.6 Sol 在量子计算实验中的实际应用。这是 AI 辅助科学研究（AI for Science）的一个具体案例，展示了 LLM 如何从"聊天工具"进化为科研协作者。
+- 原文：https://openai.com/index/codex-quantum-computing-experiments/
+- 讨论：https://news.ycombinator.com/item?id=49622561
 
-Mistral AI宣布完成30亿欧元巨额融资，这是欧洲AI领域迄今最大规模的融资之一。其核心叙事是"主权开放权重AI"（Sovereign Open-Weight AI），即打造不依赖美国科技巨头、符合欧洲数据主权与价值观的前沿AI模型。这一事件标志着欧洲在AI竞赛中从"追赶者"向"独立竞争者"转变的关键节点。
 
-- **原文**: [Mistral Makes Sovereign Open-Weight AI to Frontier](https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/)
-- **讨论**: [Hacker News 讨论帖](https://news.ycombinator.com/item?id=49605767)
+## 二、AI Agent 与开发工具
 
----
+### 4. Claude，把"加入购物车"按钮改成蓝色
+**标题：** Claude, change the "Add to Cart" button to blue
+**说明：** 今日最高分文章（1029 分，404 条评论）。这是一个用 Claude 进行前端代码修改的实操演示/实验，引发了关于 AI 编程助手实际能力边界的热烈讨论。标题本身带有调侃意味，反映了开发者对 AI 编码工具既期待又审视的态度。
+- 原文：https://opusfived.dev/
+- 讨论：https://news.ycombinator.com/item?id=49623754
 
-### 2. Cognition（Devin）融资20亿美元，估值飙至480亿美元
-**热度**: 21分 | 5条评论 | **来源**: Hacker News
+### 5. Show HN: Geiger — 查看机器上每个 AI Agent 及其可触及范围
+**标题：** Show HN: Geiger – See every AI agent on your machine and what it can touch
+**说明：** 一个安全工具，用于枚举本机上运行的所有 AI Agent 及其权限范围。随着 AI Agent 越来越多地在本地运行，这类"Agent 可观测性/安全审计"工具的需求正在快速增长。
+- 原文：https://github.com/Atomburstofficial/geiger
+- 讨论：https://news.ycombinator.com/item?id=49627646
 
-AI编程智能体公司Cognition（旗下产品为Devin）完成E轮融资，估值高达480亿美元。Devin是"AI软件工程师"赛道的明星产品，此次融资进一步验证了资本市场对AI编程工具赛道的狂热押注。值得注意的是，该新闻热度不高，可能与Mistral的大新闻在同日形成"虹吸效应"有关。
+### 6. Show HN: 自托管公司操作系统，部门级 Claude Code 与 Codex Agent
+**标题：** Show HN: Self-hosted company OS, Claude Code and Codex agents in departments
+**说明：** 作者 Dimitris 构建了一个多租户自托管"公司操作系统"，支持 Claude Code 和 Codex CLI Agent 在各部门协作运行，可使用 Anthropic/OpenAI 订阅或本地模型。代表了"AI Agent 作为组织基础设施"的探索方向。
+- 原文：https://github.com/OtoDock/oto-dock
+- 讨论：https://news.ycombinator.com/item?id=49630606
 
-- **原文**: [Cognition Series E 公告](https://cognition.com/blog/series-e)
-- **讨论**: [Hacker News 讨论帖](https://news.ycombinator.com/item?id=49613312)
+### 7. 面向 LLM Agent 的自我演化执行结构：程序化图
+**标题：** Procedural Graphs: Self-Evolving Execution Structures for LLM Agents
+**说明：** arXiv 论文，提出用"程序化图"让 LLM Agent 的执行结构能够自我演化。这是 Agent 架构研究的前沿方向，关注如何让 Agent 动态调整自身的任务分解与执行流程。
+- 原文：https://arxiv.org/abs/2609.09153
+- 讨论：https://news.ycombinator.com/item?id=49629868
 
----
 
-## 二、模型与基准测试
+## 三、AI 产业与商业动态
 
-### 3. Qwen3.8 27B量化基准测试：4-bit表现稳定，1-bit全面崩溃
-**热度**: 218分 | 109条评论 | **来源**: Hacker News
+### 8. Shopify 收购 Tailwind
+**标题：** Shopify acquires Tailwind
+**说明：** 今日第二大热门（904 分，359 条评论）。Shopify 收购 Tailwind CSS 框架，这在开发者社区引发巨大反响。虽然不直接是 AI 新闻，但 Tailwind 在 AI 生成前端代码中被广泛使用，此次收购可能影响 AI 编码工具的前端生态。
+- 原文：https://tailwindcss.com/blog/tailwind-is-joining-shopify
+- 讨论：https://news.ycombinator.com/item?id=49626190
 
-一篇针对Qwen3.8 27B模型不同量化精度的深度基准测试报告。结果显示4-bit量化几乎无损，而1-bit量化则导致模型能力严重退化。这篇报告对AI工程实践极具参考价值——在边缘设备部署和推理成本优化成为刚需的当下，"量化到什么程度不会牺牲太多质量"是每个工程师都关心的问题。
+### 9. Muse — Meta 的个人 AI Agent
+**标题：** Muse – Meta's personal AI agent
+**说明：** Meta 推出个人 AI Agent 产品 Muse，评论数高达 704 条，讨论极为热烈。这是 Meta 在消费级 AI Agent 领域的重要布局，与 OpenAI、Google 的个人助手形成直接竞争。
+- 原文：https://ai.meta.com/muse/
+- 讨论：https://news.ycombinator.com/item?id=49615537
 
-- **原文**: [Qwen38-27B Quantizations Benchmarked](https://quesma.com/blog/qwen38-27b-quantizations-benchmarked/)
-- **讨论**: [Hacker News 讨论帖](https://news.ycombinator.com/item?id=49611128)
 
----
+## 四、AI 安全与伦理
 
-### 4. LLM注意力可视化工具（Show HN）
-**热度**: 132分 | 22条评论 | **来源**: Hacker News
+### 10. 抱歉，你不会死于 AI 制造的超级病毒
+**标题：** I'm sorry, you're not going to die from an AI-engineered supervirus
+**说明：** 一篇理性反驳"AI 生物武器威胁论"的文章，针对近期关于 AI 可能被用于制造超级病毒的恐慌进行降温。在 AI 安全讨论日益极化的背景下，这类冷静分析值得一读。
+- 原文：https://blog.genesmindsmachines.com/p/im-sorry-youre-not-going-to-die-from
+- 讨论：https://news.ycombinator.com/item?id=49636906
 
-一位开发者发布了一款LLM注意力机制可视化工具。对于研究者和教育者来说，直观地看到模型在生成每个token时"关注"哪些输入位置，是理解Transformer内部机制的重要辅助手段。该工具降低了Transformer架构的学习门槛。
+### 11. 微软称垃圾邮件发送者正在采用 ASCII 走私
+**标题：** Microsoft says email spammers are adopting ASCII smuggling
+**说明：** ASCII 走私技术最初被用于攻击 AI 系统（如提示注入），现在已被垃圾邮件发送者采纳。这展示了 AI 攻击技术向传统网络犯罪扩散的趋势，对安全从业者有警示意义。
+- 原文：https://arstechnica.com/security/2026/09/once-popular-for-attacking-ai-ascii-smuggling-is-embraced-by-spammers/
+- 讨论：https://news.ycombinator.com/item?id=49573629
 
-- **原文**: [LLM Attention Visualizer](https://ishamf.dev/p/llm-attention-visualizer/)
-- **讨论**: [Hacker News 讨论帖](https://news.ycombinator.com/item?id=49613068)
+### 12. Trezor 的邮件服务商遭到入侵
+**标题：** Trezor's email provider has been breached
+**说明：** 硬件钱包厂商 Trezor 的邮件服务商被入侵，可能被用于针对加密货币用户的钓鱼攻击。虽然不直接涉及 AI，但在 AI 驱动社交工程攻击日益增多的背景下值得关注。
+- 原文：https://twitter.com/Trezor/status/2097786518110609620
+- 讨论：https://news.ycombinator.com/item?id=49634032
 
----
 
-## 三、AI Agent 与工程实践
+## 五、AI 代码质量与开发实践
 
-### 5. "我有ADHD"技能：阻止编码Agent"藏起答案"
-**热度**: 327分 | 256条评论 | **来源**: Hacker News
+### 13. 更好的 AI 代码注释检测器
+**标题：** Better AI code comment detector
+**说明：** 探讨如何更准确地检测 AI 生成的代码注释。随着 AI 生成代码大量涌入代码库，识别和治理"AI 味"注释成为代码质量管理的新课题。
+- 原文：https://entropicthoughts.com/better-ai-comment-classifier
+- 讨论：https://news.ycombinator.com/item?id=49628454
 
-一个有趣且极具共鸣的开源项目。作者开发了一个名为"i-have-adhd"的skill/指令集，专门针对编码AI Agent（如Claude Code、Cursor等）的一个通病——在长对话中，Agent往往会把关键结论埋在冗长的日志和中间步骤中，导致用户"找不到答案"。这个skill强制Agent在回复开头直接给出结论。这反映了AI Agent工程中"用户体验细节"的重要性。
 
-- **原文**: [GitHub - i-have-adhd](https://github.com/ayghri/i-have-adhd)
-- **讨论**: [Hacker News 讨论帖](https://news.ycombinator.com/item?id=49610631)
+## 六、基础设施与其他
 
----
-
-### 6. Agent使用测试/验证技术的能力如何？
-**热度**: 175分 | 64条评论 | **来源**: Hacker News
-
-知名工程师Dan Luu发布深度分析，探讨当前AI Agent在编程任务中运用测试和验证技术（如单元测试、类型检查、静态分析）的实际能力边界。文章指出Agent在"写代码"和"验证代码正确性"之间存在显著差距，为评估AI编程工具的真实生产力提供了重要参考。
-
-- **原文**: [How well do agents use test/verification techniques?](https://danluu.com/agentic-testing/)
-- **讨论**: [Hacker News 讨论帖](https://news.ycombinator.com/item?id=49605246)
-
----
-
-## 四、AI 安全、政策与地缘政治
-
-### 7. 美国国防部报告：中国AI公司对美国AI企业发起"恶意蒸馏"行动
-**热度**: 14分 | 10条评论 | **来源**: Hacker News
-
-美国国防部发布网络安全通告（CSA），指控中国AI公司针对美国AI企业进行系统性的"恶意模型蒸馏"（Malicious Distillation）——即通过API接口大量提取美国前沿模型的知识，用于加速自身模型训练。这一事件为中美AI竞争增添了新的对抗维度，涉及知识产权、出口管制和模型安全等多重议题。
-
-- **原文**: [美国国防部 CSA 报告 (PDF)](https://media.defense.gov/2026/Sep/08/2003992823/-1/-1/1/CSA_CHINA_BASED_AI_COMPANIES_MALICIOUS_DISTILLATION_AGAINST_US.PDF)
-- **讨论**: [Hacker News 讨论帖](https://news.ycombinator.com/item?id=49618622)
-
----
-
-### 8. AI责任之争：OpenAI vs Anthropic
-**热度**: 10分 | 1条评论 | **来源**: Hacker News
-
-一条来自推特的讨论，对比OpenAI和Anthropic在"AI责任"（Responsibility）问题上的立场与实践差异。Anthropic以"安全第一"为品牌标签，而OpenAI在商业化与安全之间的平衡策略一直备受争议。该话题虽热度不高，但触及AI伦理的核心矛盾。
-
-- **原文**: [Twitter/X 讨论帖](https://twitter.com/hilbertspaess/status/2097476196791709843)
-- **讨论**: [Hacker News 讨论帖](https://news.ycombinator.com/item?id=49619639)
-
----
-
-### 9. GrapheneOS 对 AI 使用的立场声明
-**热度**: 27分 | 0条评论 | **来源**: Hacker News
-
-以隐私安全著称的移动操作系统GrapheneOS发布声明，阐述其对AI使用的立场。在移动端AI助手日益普及的背景下，隐私保护与AI功能之间的张力成为焦点。GrapheneOS的立场对隐私敏感用户具有风向标意义。
-
-- **原文**: [GrapheneOS 社交媒体声明](https://grapheneos.social/@GrapheneOS/117236529351603001)
-- **讨论**: [Hacker News 讨论帖](https://news.ycombinator.com/item?id=49614101)
-
----
-
-## 五、AI 与学术/知识边界
-
-### 10. 陶哲轩：开放数学问题正被AI"不可再生地开采"
-**热度**: 171分 | 112条评论 | **来源**: Hacker News
-
-菲尔兹奖得主、数学家陶哲轩在Mathstodon上发文，提出了一个极具思辨性的观点：AI正在以"不可再生资源"的方式开采开放数学问题。即AI辅助证明工具正在快速消耗那些原本可供人类数学家长期研究的经典难题，可能导致数学研究生态的变化。此文引发了关于"AI时代数学研究的未来"的广泛讨论。
-
-- **原文**: [陶哲轩 Mathstodon 帖子](https://mathstodon.xyz/@tao/117237320796901560)
-- **讨论**: [Hacker News 讨论帖](https://news.ycombinator.com/item?id=49616968)
-
----
-
-### 11. 独立维基百科的"Google监狱"现象
-**热度**: 523分 | 222条评论 | **来源**: Hacker News
-
-虽然标题未直接提及AI，但这篇文章与AI搜索（如AI Overviews）对独立内容生态的冲击密切相关。文章指出，Google搜索在引入AI摘要后，独立维基（如游戏Wiki）的流量被严重挤压，形成了新的"Google监狱"——内容被AI抓取和总结，但原始创作者却得不到应有的流量回报。这是"AI vs 内容创作者"矛盾的最新案例。
-
-- **原文**: [There's a new "Google Jail" for independent wikis](https://weirdgloop.org/blog/google-jail)
-- **讨论**: [Hacker News 讨论帖](https://news.ycombinator.com/item?id=49604870)
-
----
-
-### 12. 两个其实是"佛陀"的基督教圣徒
-**热度**: 221分 | 164条评论 | **来源**: Hacker News
-
-（注：该文章内容与AI无明显直接关联，可能为当日热榜中的"杂项"内容。但考虑到其高热度，可视为AI社区用户兴趣的侧面反映。建议在分析中标注其为"非AI内容"，但为完整性保留。）
-
-- **原文**: [The Two Christian Saints Who Are Secretly the Buddha](https://signoregalilei.com/2026/08/30/the-two-christian-saints-who-are-secretly-the-buddha/)
-- **讨论**: [Hacker News 讨论帖](https://news.ycombinator.com/item?id=49611051)
-
----
-
-## 六、其他相关新闻（低热度但值得关注）
-
-### 13. Meta 发布 Muse 个人 AI 代理
-**热度**: 338分 | 343条评论 | **来源**: Hacker News
-
-Meta推出其个人AI代理产品"Muse"。在OpenAI、Google和Anthropic纷纷布局个人AI助手的背景下，Meta的入局意味着个人AI代理赛道的竞争进一步白热化。343条评论表明社区对该产品的能力边界、隐私策略和与现有Meta生态的整合存在大量讨论。
-
-- **原文**: [Meta AI - Muse](https://ai.meta.com/muse/)
-- **讨论**: [Hacker News 讨论帖](https://news.ycombinator.com/item?id=49615537)
-
----
-
-### 14. 美国将于9月29日禁止进口加拿大乳制品、酒精和机动车
-**热度**: 37分 | 20条评论 | **来源**: Hacker News
-
-（注：与AI主题无关的时事新闻，因算法推荐进入列表。）
-
-- **原文**: [Reuters 报道](https://www.reuters.com/business/us-ban-canadian-dairy-alcohol-motor-vehicle-imports-september-29-2026-09-08/)
-- **讨论**: [Hacker News 讨论帖](https://news.ycombinator.com/item?id=49619457)
-
----
-
-### 15. 伊朗称在霍尔木兹海峡捕获美国潜艇无人机
-**热度**: 11分 | 0条评论 | **来源**: Hacker News
-
-（注：地缘政治新闻，涉及军事无人机（可视为AI/自主系统在军事领域的延伸），但非典型AI主题。）
-
-- **原文**: [Reuters 报道](https://www.reuters.com/world/middle-east/iran-says-it-captured-us-submarine-drone-strait-hormuz-2026-09-08/)
-- **讨论**: [Hacker News 讨论帖](https://news.ycombinator.com/item?id=49619949)
-
----
-
-## 七、今日必读推荐 TOP 5
-
-#### 1. **Mistral raises €3B — 欧洲AI的历史性转折点**
-为什么读：这是今日最具产业影响力的新闻。30亿欧元融资不仅是商业事件，更标志着"主权AI"从口号变为现实。理解Mistral的开放权重战略，有助于把握全球AI格局从"美国单极"走向"多极竞争"的趋势。
-🔗 [阅读原文](https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/) | [参与讨论](https://news.ycombinator.com/item?id=49605767)
-
-#### 2. **"Google Jail" for Independent Wikis — AI搜索时代的创作者困境**
-为什么读：这是AI技术与社会影响交叉的最典型案例。当AI摘要成为默认入口，独立内容创作者的生计受到直接威胁。这篇文章的讨论帖（222条评论）充满了来自维基编辑、站长和SEO从业者的一手经验，值得每个关注AI生态的人阅读。
-🔗 [阅读原文](https://weirdgloop.org/blog/google-jail) | [参与讨论](https://news.ycombinator.com/item?id=49604870)
-
-#### 3. **Qwen3.8 27B量化基准测试 — 工程实践的硬核参考**
-为什么读：如果你正在做模型部署、推理优化或边缘AI，这篇量化基准测试是一份不可多得的实战数据。4-bit与1-bit之间的巨大性能鸿沟，直接关系到成本与质量的权衡决策。
-🔗 [阅读原文](https://quesma.com/blog/qwen38-27b-quantizations-benchmarked/) | [参与讨论](https://news.ycombinator.com/item?id=49611128)
-
-#### 4. **陶哲轩：AI正在"不可再生地开采"数学问题**
-为什么读：当所有人都在讨论AI能做什么时，陶哲轩提出了一个反向问题——AI的进步正在让人类失去什么？这篇文章将AI对数学研究生态的深层影响摆上台面，思辨性强，适合深度阅读。
-🔗 [阅读原文](https://mathstodon.xyz/@tao/117237320796901560) | [参与讨论](https://news.ycombinator.com/item?id=49616968)
-
-#### 5. **I-have-ADHD — 编码Agent的"结论前置"革命**
-为什么读：这是今日最"接地气"的AI工程文章。它精准击中了一大痛点：AI Agent输出冗长、结论难找。这个开源skill的走红（327分）说明社区对AI Agent可用性的要求正在从"能干活"升级到"干得漂亮"。
-🔗 [阅读原文](https://github.com/ayghri/i-have-adhd) | [参与讨论](https://news.ycombinator.com/item?id=49610631)
-
----
-
-*报告完*0:{"buildId":"IAcdgB4NwH-3RLfLt-fnf","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-09-09","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":15},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"ai","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"AI & Machine Learning"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"Artificial intelligence, machine learning, LLMs, and generative AI"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[15," ","篇文章"," • ","2026-09-09"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"AI & Machine Learning","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",15,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-49605767","title":"Mistral raises €3B","url":"https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/","source":"Hacker News","score":809,"comments_count":567,"comments_url":"https://news.ycombinator.com/item?id=49605767","published_at":"2026-09-08T05:06:23","author":"kuberwastaken","text":null,"summary":"法国AI公司Mistral宣布融资30亿欧元，致力于开发主权级开源权重AI模型，挑战美国科技巨头在AI领域的主导地位。此举标志着欧洲在AI竞争中的重大投入，对全球AI格局和开源生态具有深远影响。"},{"id":"hn-49604870","title":"There's a new \"Google Jail\" for independent wikis","url":"https://weirdgloop.org/blog/google-jail","source":"Hacker News","score":523,"comments_count":222,"comments_url":"https://news.ycombinator.com/item?id=49604870","published_at":"2026-09-08T01:57:23","author":"pizzaiolo","text":null,"summary":"文章探讨了独立维基百科网站被搜索引擎（如Google）降权或忽略的现象，称之为“Google监狱”。这揭示了搜索引擎算法对小型内容平台的压制，引发对信息多样性和网络公平性的关注。"},{"id":"hn-49615537","title":"Muse – Meta’s personal AI agent","url":"https://ai.meta.com/muse/","source":"Hacker News","score":338,"comments_count":343,"comments_url":"https://news.ycombinator.com/item?id=49615537","published_at":"2026-09-08T19:25:00","author":"yks","text":null,"summary":"Meta发布了名为Muse的个性化AI代理，旨在通过自然交互协助用户完成日常任务。作为科技巨头在AI代理领域的最新布局，Muse可能重新定义人机交互方式，值得关注其隐私和实用性挑战。"},{"id":"hn-49610631","title":"I-have-ADHD: A skill to stop coding agents from burying the answer","url":"https://github.com/ayghri/i-have-adhd","source":"Hacker News","score":327,"comments_count":256,"comments_url":"https://news.ycombinator.com/item?id=49610631","published_at":"2026-09-08T14:13:26","author":"domhudson","text":null,"summary":"一个名为“i-have-adhd”的GitHub项目提供了一种技能，帮助编码AI代理避免冗长输出，直接给出核心答案。这反映了AI工具在用户体验上的优化趋势，尤其对注意力分散的开发者和效率提升有实际价值。"},{"id":"hn-49611051","title":"The two Christian saints who are the Buddha","url":"https://signoregalilei.com/2026/08/30/the-two-christian-saints-who-are-secretly-the-buddha/","source":"Hacker News","score":221,"comments_count":164,"comments_url":"https://news.ycombinator.com/item?id=49611051","published_at":"2026-09-08T14:44:25","author":"surprisetalk","text":null,"summary":"文章从历史和文化角度分析，指出两位基督教圣徒的形象可能源自佛教中的佛陀，探讨了跨宗教传播和文化融合。这为理解东西方思想交流提供了新视角，虽非直接技术新闻，但引发对知识传播的思考。"},{"id":"hn-49611128","title":"Benchmarking Qwen3.8 27B quantizations: 4-bit holds up, 1-bit collapses","url":"https://quesma.com/blog/qwen38-27b-quantizations-benchmarked/","source":"Hacker News","score":218,"comments_count":109,"comments_url":"https://news.ycombinator.com/item?id=49611128","published_at":"2026-09-08T14:49:19","author":"stared","text":null,"summary":"一项基准测试评估了Qwen3.8 27B模型在不同量化级别下的性能，发现4-bit量化保持良好，而1-bit量化严重退化。这对于AI模型部署的效率和精度权衡具有重要参考价值，直接影响边缘计算和资源受限场景。"},{"id":"hn-49605246","title":"How well do agents use test/verification techniques?","url":"https://danluu.com/agentic-testing/","source":"Hacker News","score":175,"comments_count":64,"comments_url":"https://news.ycombinator.com/item?id=49605246","published_at":"2026-09-08T02:58:16","author":"vinhnx","text":null,"summary":"文章深入分析了AI代理在软件测试和验证技术中的应用效果，指出其当前局限和潜力。这关系到AI在软件开发自动化中的可靠性，对开发者社区和AI工程实践有重要启示。"},{"id":"hn-49616968","title":"Tao: Open math problems being non-renewably mined by AI","url":"https://mathstodon.xyz/@tao/117237320796901560","source":"Hacker News","score":171,"comments_count":112,"comments_url":"https://news.ycombinator.com/item?id=49616968","published_at":"2026-09-08T21:00:52","author":"_alternator_","text":null,"summary":"数学家陶哲轩在社交媒体上提出，AI正在“非可再生”地挖掘开放数学问题，可能加速某些问题的解决，但也可能耗尽传统研究资源。这引发了关于AI在科学研究中角色和伦理的讨论，对数学界和AI领域均有冲击。"},{"id":"hn-49613068","title":"Show HN: LLM Attention Visualization","url":"https://ishamf.dev/p/llm-attention-visualizer/","source":"Hacker News","score":132,"comments_count":22,"comments_url":"https://news.ycombinator.com/item?id=49613068","published_at":"2026-09-08T16:59:41","author":"ifz","text":null,"summary":"一个名为“LLM Attention Visualization”的Show HN项目提供了可视化大语言模型注意力机制的交互工具。这有助于研究者和开发者理解模型内部工作方式，对AI可解释性和教育具有实用价值。"},{"id":"hn-49619457","title":"US to ban Canadian dairy, alcohol, motor vehicle imports on September 29","url":"https://www.reuters.com/business/us-ban-canadian-dairy-alcohol-motor-vehicle-imports-september-29-2026-09-08/","source":"Hacker News","score":37,"comments_count":20,"comments_url":"https://news.ycombinator.com/item?id=49619457","published_at":"2026-09-09T01:13:57","author":"JumpCrisscross","text":null,"summary":"据路透社报道，美国将于9月29日禁止从加拿大进口乳制品、酒精和机动车，这是贸易紧张升级的信号。该政策将影响北美供应链和经济关系，对相关行业和消费者产生直接冲击，需关注后续发展。"},{"id":"hn-49614101","title":"GrapheneOS on AI Usage","url":"https://grapheneos.social/@GrapheneOS/117236529351603001","source":"Hacker News","score":27,"comments_count":0,"comments_url":"https://news.ycombinator.com/item?id=49614101","published_at":"2026-09-08T18:00:58","author":"garo-pro","text":null,"summary":"GrapheneOS发布关于AI使用的声明，强调隐私保护与AI技术应用的冲突，值得关注因其对移动安全与AI结合的行业影响。"},{"id":"hn-49613312","title":"Cognition (Devin) raises $2B at $48B valuation","url":"https://cognition.com/blog/series-e","source":"Hacker News","score":21,"comments_count":5,"comments_url":"https://news.ycombinator.com/item?id=49613312","published_at":"2026-09-08T17:16:20","author":"meco","text":null,"summary":"AI编程公司Cognition（Devin）以480亿美元估值融资20亿美元，凸显AI编程工具市场的爆发式增长和资本热度。"},{"id":"hn-49618622","title":"Chinese AI Companies Conducting Distillation Campaigns Against U.S. AI Companies [pdf]","url":"https://media.defense.gov/2026/Sep/08/2003992823/-1/-1/1/CSA_CHINA_BASED_AI_COMPANIES_MALICIOUS_DISTILLATION_AGAINST_US.PDF","source":"Hacker News","score":14,"comments_count":10,"comments_url":"https://news.ycombinator.com/item?id=49618622","published_at":"2026-09-08T23:28:43","author":"michaefe","text":null,"summary":"美国国防部报告指控中国AI公司对美国AI企业进行恶意蒸馏活动，涉及技术窃取与竞争安全，值得关注因中美AI博弈升级。"},{"id":"hn-49619949","title":"Iran says it captured US submarine drone in Strait of Hormuz","url":"https://www.reuters.com/world/middle-east/iran-says-it-captured-us-submarine-drone-strait-hormuz-2026-09-08/","source":"Hacker News","score":11,"comments_count":0,"comments_url":"https://news.ycombinator.com/item?id=49619949","published_at":"2026-09-09T02:12:05","author":"harambae","text":null,"summary":"伊朗声称在霍尔木兹海峡捕获美国潜艇无人机，事件可能加剧中东紧张局势，并对AI军事应用的国际规则提出挑战。"},{"id":"hn-49619639","title":"AI Responsibility – OpenAI and Anthropic","url":"https://twitter.com/hilbertspaess/status/2097476196791709843","source":"Hacker News","score":10,"comments_count":1,"comments_url":"https://news.ycombinator.com/item?id=49619639","published_at":"2026-09-09T01:32:49","author":"getatme32","text":null,"summary":"文章探讨OpenAI和Anthropic的AI责任问题，聚焦AI伦理与治理，值得关注因主要AI公司的责任框架影响行业标准。"}],"locale":"zh"}]]}]]}]
+### 14. 了解近期针对 Read the Docs 的 DDoS 攻击
+**标题：** Understanding the recent DDoS attack against Read the Docs
+**说明：** Read the Docs 官方披露近期遭受的 DDoS 攻击详情。作为开发者文档基础设施，其安全事件影响广泛，也提醒人们 AI 时代基础设施安全的重要性。
+- 原文：https://about.readthedocs.com/blog/2026/09/2026-ddos-attack/
+- 讨论：https://news.ycombinator.com/item?id=49628614
+
+### 15. AirPods 5
+**标题：** AirPods 5
+**说明：** 苹果发布 AirPods 5，主打开放式主动降噪。虽然主要是硬件新闻，但 AirPods 日益集成 AI 功能（如实时翻译、语音助手），是 AI 向消费硬件渗透的观察窗口。
+- 原文：https://www.apple.com/newsroom/2026/09/apple-introduces-airpods-5-with-best-in-class-open-ear-active-noise-cancellation/
+- 讨论：https://news.ycombinator.com/item?id=49630253
+
+### 16. 用苍蝇的大脑玩马里奥 64
+**标题：** Playing mario 64 using a fly's brain
+**说明：** 一个有趣的实验，用苍蝇大脑的连接组数据来驱动马里奥 64 的操作。这是神经科学启发的 AI/计算神经科学交叉领域的趣味探索，展示了生物智能与人工控制的结合。
+- 原文：https://twitter.com/barrelshifter/status/2097004115826200898
+- 讨论：https://news.ycombinator.com/item?id=49637281
+
+
+## 今日最值得阅读的 5 篇文章推荐
+
+### 🥇 1. GPT-6 Astra、循环 Transformer 与隐藏推理
+**理由：** 理解下一代 LLM 架构方向的最关键技术分析。Sebastian Raschka 的解读兼具深度与可读性，适合所有想跟上模型架构演进的读者。
+🔗 https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and
+
+### 🥈 2. Claude，把"加入购物车"按钮改成蓝色
+**理由：** 今日最高热度，直观展示 AI 编程助手的实际能力与局限。404 条评论中的讨论本身就是一份关于"AI 编码工具现状"的社区共识快照。
+🔗 https://opusfived.dev/
+
+### 🥉 3. Muse — Meta 的个人 AI Agent
+**理由：** Meta 在个人 AI Agent 领域的重要产品发布，704 条评论反映了社区对消费级 AI Agent 的高度关注和争议。想了解 AI Agent 大众化趋势必读。
+🔗 https://ai.meta.com/muse/
+
+### 4. 面向 LLM Agent 的自我演化执行结构：程序化图
+**理由：** Agent 架构研究的前沿论文，提出让 Agent 执行结构自我演化的新范式。对 Agent 研究者和技术决策者都有启发。
+🔗 https://arxiv.org/abs/2609.09153
+
+### 5. 更好的 AI 代码注释检测器
+**理由：** 切中当下开发者日常痛点——如何识别和治理 AI 生成代码。实用性强，适合所有在团队中引入 AI 编码工具的工程师。
+🔗 https://entropicthoughts.com/better-ai-comment-classifier
+
+
+**今日趋势总结：** 今日 AI 领域呈现三大主线——**模型架构持续演进**（GPT-6 Astra、Qwen 3.8）、**AI Agent 从工具走向基础设施**（Meta Muse、自托管公司 OS、Geiger 安全工具）、以及**AI 安全议题向传统领域扩散**（ASCII 走私、DDoS 攻击）。开发者社区对 AI 编码工具的态度日趋务实，从"惊叹"转向"审视其真实边界"。0:{"buildId":"30pKRJ4SmJ3dz_jvX96cA","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-09-10","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":16},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"ai","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"AI & Machine Learning"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"Artificial intelligence, machine learning, LLMs, and generative AI"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[16," ","篇文章"," • ","2026-09-10"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"AI & Machine Learning","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+c:T6d5,Hi HN, I am Dimitris. 
+This is a company OS that I built and use to run my business and anyone can install it and self host it for free. Think of it as Claude Code, Cowork and the cloud sessions in one self hosted application.<p>It is a Multi-tenant application by design where many people can collaborate on the company agents with 4 different modes of collaboration, and it runs with your Anthropic or OpenAi subscription or even with local models.<p>Every agent can run on Claude Code or Codex CLI running as a persistent process on your server in a kernel sandbox (bubblewrap) with network isolation always on (pasta), with its own workspace, memory, schedules and tools. The same agents can also be configured to run identical on any remote computer through one outbound WebSocket (no inbound ports, no VPN needed).<p>The agent already have lots of built in features, as an example they can answer and place phone calls through Twilio or your own Asterisk, they can edit videos and excel, word, ppt files and preview them directly inside the chat with collabora and many more.<p>Trying it is one install script and a docker compose, no signup. The license is Fair Source, all the code is public and self hosting is free up to 5 users. 1.6.0 went out today.<p>AI Disclaimer: large parts of OtoDock are written using OtoDock itself, running Claude Code.<p>I would love people to read the code, take a look in the sandbox model, and tell me what would stop you from running this on your own hardware.<p>GitHub: <a href="https:&#x2F;&#x2F;github.com&#x2F;OtoDock&#x2F;oto-dock" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;OtoDock&#x2F;oto-dock</a>
+Website: <a href="https:&#x2F;&#x2F;otodock.io" rel="nofollow">https:&#x2F;&#x2F;otodock.io</a>6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",16,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-49623754","title":"Claude, change the “Add to Cart” button to blue","url":"https://opusfived.dev/","source":"Hacker News","score":1029,"comments_count":404,"comments_url":"https://news.ycombinator.com/item?id=49623754","published_at":"2026-09-09T09:39:46","author":"matthieu_bl","text":null,"summary":"文章探讨了使用Claude等AI工具修改网页按钮颜色等简单前端任务的实践，值得关注是因为它反映了AI辅助编程在日常开发中的实际应用与局限。"},{"id":"hn-49626190","title":"Shopify acquires Tailwind","url":"https://tailwindcss.com/blog/tailwind-is-joining-shopify","source":"Hacker News","score":904,"comments_count":359,"comments_url":"https://news.ycombinator.com/item?id=49626190","published_at":"2026-09-09T13:27:11","author":"EdwinHoksberg","text":null,"summary":"Shopify宣布收购Tailwind CSS，这一消息值得关注是因为它可能影响Tailwind这一广泛使用的前端框架的未来发展方向和开源生态。"},{"id":"hn-49615537","title":"Muse – Meta’s personal AI agent","url":"https://ai.meta.com/muse/","source":"Hacker News","score":639,"comments_count":704,"comments_url":"https://news.ycombinator.com/item?id=49615537","published_at":"2026-09-08T19:25:00","author":"yks","text":null,"summary":"Meta推出了名为Muse的个人AI代理，值得关注是因为它代表了大型科技公司在个人AI助手领域的最新布局，可能改变用户与AI交互的方式。"},{"id":"hn-49630253","title":"AirPods 5","url":"https://www.apple.com/newsroom/2026/09/apple-introduces-airpods-5-with-best-in-class-open-ear-active-noise-cancellation/","source":"Hacker News","score":386,"comments_count":313,"comments_url":"https://news.ycombinator.com/item?id=49630253","published_at":"2026-09-09T17:39:24","author":"awad","text":null,"summary":"苹果发布AirPods 5，主打开放式主动降噪功能，值得关注是因为它展示了苹果在可穿戴音频设备上的最新技术进展和市场策略。"},{"id":"hn-49627370","title":"GPT-6 Astra, looped transformers, and hidden reasoning","url":"https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and","source":"Hacker News","score":357,"comments_count":126,"comments_url":"https://news.ycombinator.com/item?id=49627370","published_at":"2026-09-09T14:37:47","author":"ModelForge","text":null,"summary":"文章分析了GPT-6 Astra、循环Transformer架构以及隐藏推理机制，值得关注是因为它深入探讨了下一代大语言模型可能采用的关键技术方向。"},{"id":"hn-49630026","title":"Qwen 3.8 follows GPT-5.5 Pro reasoning prefills","url":"https://gist.github.com/wsxiaoys/e0286dc6bb624ff5fdf49e7f4c528ba3","source":"Hacker News","score":181,"comments_count":73,"comments_url":"https://news.ycombinator.com/item?id=49630026","published_at":"2026-09-09T17:24:28","author":"wsxiaoys","text":null,"summary":"Qwen 3.8模型跟随GPT-5.5 Pro的推理预填充策略，值得关注是因为它反映了开源模型在推理能力上追赶闭源前沿模型的趋势。"},{"id":"hn-49628614","title":"Understanding the recent DDoS attack against Read the Docs","url":"https://about.readthedocs.com/blog/2026/09/2026-ddos-attack/","source":"Hacker News","score":162,"comments_count":55,"comments_url":"https://news.ycombinator.com/item?id=49628614","published_at":"2026-09-09T15:55:53","author":"davidfischer","text":null,"summary":"文章详细分析了Read the Docs近期遭受的DDoS攻击，值得关注是因为它揭示了开源基础设施面临的安全威胁及应对经验。"},{"id":"hn-49622561","title":"How GPT‑5.6 Sol helps run quantum computing experiments","url":"https://openai.com/index/codex-quantum-computing-experiments/","source":"Hacker News","score":144,"comments_count":106,"comments_url":"https://news.ycombinator.com/item?id=49622561","published_at":"2026-09-09T07:22:46","author":"theanonymousone","text":null,"summary":"文章介绍了GPT-5.6 Sol如何帮助运行量子计算实验，值得关注是因为它展示了AI在加速前沿科学研究中的实际应用潜力。"},{"id":"hn-49629868","title":"Procedural Graphs: Self-Evolving Execution Structures for LLM Agents","url":"https://arxiv.org/abs/2609.09153","source":"Hacker News","score":49,"comments_count":15,"comments_url":"https://news.ycombinator.com/item?id=49629868","published_at":"2026-09-09T17:13:52","author":"omarsar","text":null,"summary":"论文提出了一种面向LLM代理的自演化执行结构——程序化图，值得关注是因为它为提升AI代理的任务规划和自适应能力提供了新思路。"},{"id":"hn-49636906","title":"I'm sorry, you're not going to die from an AI-engineered supervirus","url":"https://blog.genesmindsmachines.com/p/im-sorry-youre-not-going-to-die-from","source":"Hacker News","score":48,"comments_count":67,"comments_url":"https://news.ycombinator.com/item?id=49636906","published_at":"2026-09-10T01:02:44","author":"jryb","text":null,"summary":"文章驳斥了AI工程化超级病毒可能导致人类灭绝的恐慌论调，值得关注是因为它理性分析了AI生物安全风险的实际边界，有助于公众正确理解相关威胁。"},{"id":"hn-49573629","title":"Microsoft says email spammers are adopting ASCII smuggling","url":"https://arstechnica.com/security/2026/09/once-popular-for-attacking-ai-ascii-smuggling-is-embraced-by-spammers/","source":"Hacker News","score":48,"comments_count":28,"comments_url":"https://news.ycombinator.com/item?id=49573629","published_at":"2026-09-05T06:24:26","author":"utiiiD","text":null,"summary":"微软指出垃圾邮件发送者正在采用ASCII走私技术，这种技术此前常用于攻击AI系统。值得关注的是，攻击手法正从AI领域向传统垃圾邮件扩散，可能影响邮件安全防护策略。"},{"id":"hn-49627646","title":"Show HN: Geiger – See every AI agent on your machine and what it can touch","url":"https://github.com/Atomburstofficial/geiger","source":"Hacker News","score":44,"comments_count":20,"comments_url":"https://news.ycombinator.com/item?id=49627646","published_at":"2026-09-09T14:54:49","author":"atomburst","text":null,"summary":"Geiger是一款开源工具，可扫描并展示机器上运行的所有AI代理及其可访问的资源。对于关注AI代理安全与权限管理的开发者而言，它提供了实用的可见性方案。"},{"id":"hn-49630606","title":"Show HN: Self-hosted company OS, Claude Code and Codex agents in departments","url":"https://github.com/OtoDock/oto-dock","source":"Hacker News","score":42,"comments_count":10,"comments_url":"https://news.ycombinator.com/item?id=49630606","published_at":"2026-09-09T17:57:55","author":"dimitrismrtzs","text":"$c","summary":"这是一个可自托管的公司操作系统，将Claude Code、Cowork和云会话集成于一体，支持多租户协作。值得关注的是它让企业能在自有基础设施上部署AI代理团队，兼顾灵活性与数据控制。"},{"id":"hn-49628454","title":"Better AI code comment detector","url":"https://entropicthoughts.com/better-ai-comment-classifier","source":"Hacker News","score":40,"comments_count":22,"comments_url":"https://news.ycombinator.com/item?id=49628454","published_at":"2026-09-09T15:45:43","author":"ibobev","text":null,"summary":"文章介绍了一种改进的AI代码注释检测器，旨在更准确地区分人类与AI生成的注释。对于维护代码质量和理解AI生成内容的研究者具有参考价值。"},{"id":"hn-49634032","title":"Trezor's email provider has been breached","url":"https://twitter.com/Trezor/status/2097786518110609620","source":"Hacker News","score":12,"comments_count":3,"comments_url":"https://news.ycombinator.com/item?id=49634032","published_at":"2026-09-09T20:48:02","author":"andreyazimov","text":null,"summary":"硬件钱包厂商Trezor的邮件服务提供商遭到入侵。由于Trezor涉及加密货币安全，此事件提醒用户警惕钓鱼邮件和潜在的数据泄露风险。"},{"id":"hn-49637281","title":"Playing mario 64 using a fly's brain","url":"https://twitter.com/barrelshifter/status/2097004115826200898","source":"Hacker News","score":3,"comments_count":2,"comments_url":"https://news.ycombinator.com/item?id=49637281","published_at":"2026-09-10T01:43:57","author":"rguiscard","text":null,"summary":"该项目尝试用苍蝇的大脑来玩《超级马里奥64》，展示了生物神经网络与游戏控制的跨界结合。值得关注的是它探索了非传统AI架构在复杂任务中的可能性。"}],"locale":"zh"}]]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Lc",null,{"children":["$","$d",null,{"name":"Next.MetadataOutlet","children":"$@e"}]}]
-e:null
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+f:null
