@@ -5,201 +5,210 @@
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
 d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
 e:"$Sreact.suspense"
-5:T27fc,# 今日 Technology 热门内容分析报告
+5:T2d6a,# 今日 Technology 热门文章综合分析
 
-> 数据来源：Hacker News（25 篇）、Lobsters（5 篇）｜共 30 篇
+今天的技术新闻呈现出几个鲜明的主题：**移动开发回归原生**、**Rust 生态持续扩张**、**软件工程文化与职业倦怠**、**安全漏洞与隐私争议**，以及一批高质量的技术深度内容。以下按子主题分组分析全部 30 篇文章。
 
 
-## 一、苹果生态与新品发布（5 篇）
+## 一、移动开发与原生回归
 
-苹果在本日集中发布多款新品，成为 HN 上讨论量最大的话题之一。
+### 1. Shopify is moving from React Native back to Swift and Kotlin
+Shopify 工程团队宣布从 React Native 迁回 Swift 和 Kotlin 原生开发栈。这是继 Airbnb、Dropbox 之后又一家大型公司放弃跨平台方案的案例，对跨平台与原生之争具有重要参考价值。
+- 原文：https://shopify.engineering/back-to-native
+- 讨论：https://news.ycombinator.com/item?id=49643982
 
-**1. iPhone Duo**
-- 苹果推出的新机型，讨论热度极高（1728 条评论），是今日争议与关注度最高的产品。
+### 2. iPhone Duo
+Apple 发布 iPhone Duo，以 1415 分和 2443 条评论成为今日绝对热度第一。讨论量远超其他话题，说明产品形态或定价策略引发了巨大争议。
 - 原文：https://www.apple.com/iphone-duo/
 - 讨论：https://news.ycombinator.com/item?id=49630931
 
-**9. iPhone 18 Pro and iPhone 18 Pro Max**
-- 苹果新闻稿正式发布 iPhone 18 Pro 系列。
-- 原文：https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/
-- 讨论：https://news.ycombinator.com/item?id=49630151
 
-**11. Apple Watch Series 12**
-- 搭载全新健康传感系统的 Apple Watch Series 12。
-- 原文：https://www.apple.com/newsroom/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system/
-- 讨论：https://news.ycombinator.com/item?id=49630566
+## 二、Rust 生态与语言演进
 
-**22. Apple Watch Ultra 4**
-- Apple Watch Ultra 系列更新。
-- 原文：https://www.apple.com/newsroom/2026/09/apple-unveils-apple-watch-ultra-4/
-- 讨论：https://news.ycombinator.com/item?id=49630583
+### 3. Rust is tier-1 language at Microsoft
+微软正式将 Rust 列为一级（Tier-1）语言，意味着官方工具链、文档和支持力度全面升级。这是 Rust 在工业界主流化的重要里程碑。
+- 原文：https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/
+- 讨论：https://news.ycombinator.com/item?id=49643546
 
-**26. Apple Event for September 9th, 2026**（Lobsters）
-- 苹果发布会直播入口，评论调侃管理层变动（"Out with the Tim, in with the John"）。
-- 原文：https://www.apple.com/apple-events/event-stream/
-- 讨论：https://lobste.rs/s/zj6mij/apple_event_for_september_9th_2026
+### 4. Rust Is Tier-1 Language at Microsoft（Lobsters 重复条目）
+同一文章在 Lobsters 上的转载，反映该消息在多个社区同步发酵。
+- 原文：https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/
+- 讨论：https://lobste.rs/s/eerwba/rust_is_tier_1_language_at_microsoft
 
 
-## 二、AI 与前沿研究（6 篇）
+## 三、安全漏洞与隐私争议
 
-**3. AlphaGenome Atlas: a high-resolution map of human DNA**
-- Google DeepMind 发布人类基因组高分辨率预测图谱，可预测任意 DNA 单碱基变化的影响，是生物+AI 交叉领域的重大进展。
-- 原文：https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas/
-- 讨论：https://news.ycombinator.com/item?id=49611251
-- 相关：https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/
+### 5. Forgejo <=16.0.3 Critical RCE
+Forgejo 自托管 Git 平台曝出严重远程代码执行漏洞，影响 16.0.3 及以下版本。所有自托管用户应立即升级。
+- 原文：https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md
+- 讨论：https://news.ycombinator.com/item?id=49645907
 
-**5. Desert Ant Labs: local, fast models that run on device**
-- 主打端侧本地运行的小型快速模型，呼应"本地 AI"趋势。
-- 原文：https://desertant.com/blog/introducing-desert-ant-labs/
-- 讨论：https://news.ycombinator.com/item?id=49624823
+### 6. Forgejo 16.0.4 has a critical security bug fix（Lobsters 重复条目）
+Lobsters 上对该安全修复的同步报道。
+- 原文：https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md
+- 讨论：https://lobste.rs/s/b3cqyr/forgejo_16_0_4_has_critical_security_bug
 
-**13. What will our economic future look like?**
-- Anthropic 研究所发布的经济情景分析，探讨 AI 对经济未来的影响。
-- 原文：https://www.anthropic.com/institute/econ-scenarios
-- 讨论：https://news.ycombinator.com/item?id=49626373
+### 7. List of references on Sony websites to players "owning" their digital games
+汇总索尼官网中关于玩家"拥有"数字游戏的表述，为数字游戏所有权诉讼提供证据。对数字版权与消费者权益议题极具价值。
+- 原文：https://consumerrights.wiki/w/Sony_PlayStation_digital_game_ownership_lawsuit
+- 讨论：https://news.ycombinator.com/item?id=49642531
 
-**25. We accidentally built a synthetic cell factory**
-- 合成生物学意外成果，虽然评论很少但内容新颖。
-- 原文：https://bnext.bio/post/we-accidentally-built-a-synthetic-cell-factory
-- 讨论：https://news.ycombinator.com/item?id=49628290
+### 8. The Deathray: A simple way for an untrusted site to freeze a Mac
+揭示一种让不可信网站冻结 Mac 的简单方法，属于浏览器安全与资源耗尽攻击范畴，对 macOS 用户和浏览器开发者都有警示意义。
+- 原文：https://auberon.xyz/blog/posts/deathray/
+- 讨论：https://news.ycombinator.com/item?id=49649124
 
-**27. I Don't Want to Interact With Stochastic Parrots**（Lobsters）
-- 关于 AI 交互政策的反思文章，标题借用"随机鹦鹉"这一 LLM 批评术语。
-- 原文：https://ploum.net/2026-09-09-ai_policy.html
-- 讨论：https://lobste.rs/s/rdhsu9/i_don_t_want_interact_with_stochastic
-
-**1. Navier-Stokes – Tristan Buckmaster [pdf]**
-- 虽属数学领域，但在 HN 上以 1995 分登顶，讨论达 810 条，涉及纳维-斯托克斯方程这一千禧年难题，与 AI 辅助数学研究热潮相关。
-- 原文：https://cims.nyu.edu/~tristanb/statement.pdf
-- 讨论：https://news.ycombinator.com/item?id=49605915
-- 延伸：https://simonwillison.net/2026/Sep/8/on-navier-stokes/
+### 9. A rant about phishing: It's not the user's fault (and not DNS either)
+一篇关于钓鱼攻击的评论文章，主张责任不应归咎于用户或 DNS。对安全设计与责任归属讨论有启发。
+- 原文：https://maurycyz.com/misc/domains/
+- 讨论：https://lobste.rs/s/9szn91/rant_about_phishing_it_s_not_user_s_fault
 
 
-## 三、软件工程与开发实践（6 篇）
+## 四、软件工程文化与职业反思
 
-**16. Lotus Notes and the dangers of starting from scratch**
-- 以 Lotus Notes 为例，探讨"从零重写"的工程风险，是经典架构决策话题。
-- 原文：https://buttondown.com/blog/lotus-notes-email
-- 讨论：https://news.ycombinator.com/item?id=49623937
+### 10. I have a theory that software drives people insane
+一篇探讨软件开发如何影响心理健康的随笔，引发 169 条评论共鸣，反映行业对职业倦怠的普遍关注。
+- 原文：https://graybeard.ing/software-drives-people-insane/
+- 讨论：https://news.ycombinator.com/item?id=49646181
 
-**28. A decade of rustls**（Lobsters）
-- Rust 生态中重要 TLS 库 rustls 的十年回顾。
-- 原文：https://rustls.dev/blog/2026-09-08-a-decade-of-rustls/
-- 讨论：https://lobste.rs/s/zffgb8/decade_rustls
+### 11. Don't let anyone take away your big box of cables
+一篇关于"线缆盒子"文化的怀旧与技术自主性文章，探讨物理硬件与数字生活的隐喻关系。
+- 原文：https://blog.jim-nielsen.com/2026/hands-off-my-cables/
+- 讨论：https://news.ycombinator.com/item?id=49645393
 
-**30. ID design and primary keys**（Lobsters）
-- 数据库主键与 ID 设计实践，后端工程师值得一读。
-- 原文：https://anchorsandlinks.com/posts/primary-keys/
-- 讨论：https://lobste.rs/s/tiltfq/id_design_primary_keys
+### 12. Creativity is the new moat
+探讨在 AI 时代创造力如何成为企业新的护城河，对产品与创业方向有战略参考价值。
+- 原文：https://www.inventbuild.studio/blog/genuine-creativity-is-your-new-moat
+- 讨论：https://news.ycombinator.com/item?id=49648732
 
-**18. Bespoke: A programming language for people who say please**
-- 一个趣味编程语言项目，带有"礼貌用语"设计理念，轻松但有趣。
-- 原文：https://blog.hofstede.it/bespoke-a-programming-language-for-people-who-say-please/
-- 讨论：https://news.ycombinator.com/item?id=49584361
+### 13. To write non-fiction, draw the trunk, then the rest of the tree
+关于非虚构写作方法论的短文，强调先搭主干再扩展枝叶，对技术写作与文档撰写有借鉴意义。
+- 原文：https://devz.cl/posts/how-to-write/
+- 讨论：https://news.ycombinator.com/item?id=49610780
 
-**21. A Biography of Lee Holloway, the Architect of Cloudflare's Technology (Part 1)**
-- Cloudflare 技术架构师 Lee Holloway 的传记第一部分，基础设施领域人物志。
-- 原文：https://note.com/masakazu_urabe/n/n7815f5b64fab?hl=en
-- 讨论：https://news.ycombinator.com/item?id=49621102
-
-**15. GNU Radio in the browser**
-- 将 GNU Radio 软件定义无线电带入浏览器，WebAssembly 应用典型案例。
-- 原文：https://gnuradioworld.com/
-- 讨论：https://news.ycombinator.com/item?id=49628576
+### 14. Automattic's board forces CEO Matt Mullenweg into leave of absence
+Automattic 董事会强制 CEO Matt Mullenweg 休假，涉及 WordPress 母公司治理与领导层变动，对开源商业生态影响深远。
+- 原文：https://techcrunch.com/2026/09/09/automattics-board-forces-ceo-matt-mullenweg-into-leave-of-absence/
+- 讨论：https://news.ycombinator.com/item?id=49636283
 
 
-## 四、安全与隐私（2 篇）
+## 五、数据库与性能工程
 
-**7. How I advertise malicious software on Google Ads**
-- 作者亲述如何在 Google Ads 上投放恶意软件广告，揭露广告平台审核漏洞，安全从业者必读。
-- 原文：https://xlii.space/eng/malicious-software-on-google-ads/
-- 讨论：https://news.ycombinator.com/item?id=49624856
+### 15. Neki – Sharded Postgres
+PlanetScale 推出 Neki，一个分片 Postgres 方案。对需要水平扩展的 Postgres 用户是重要新选择。
+- 原文：https://planetscale.com/blog/introducing-neki
+- 讨论：https://news.ycombinator.com/item?id=49645686
 
-**6. What do Visa and Mastercard do? An intro to card networks**
-- 支付卡网络机制入门，涉及金融基础设施与安全。
+### 16. Python sets and dictionaries can have quadratic-time performance
+揭示 Python 集合与字典在特定情况下可能出现二次时间复杂度，对性能敏感场景有实际警示。
+- 原文：https://lemire.me/blog/2026/09/03/python-sets-and-dictionaries-can-have-quadratic-time-performance/
+- 讨论：https://news.ycombinator.com/item?id=49612470
+
+### 17. Show HN: Compute polynomials twice as fast
+作者用 Lean 形式化验证了多项式求值的新方法，速度提升两倍。数学严谨性与工程实用性的结合。
+- 原文：https://thomasahle.com/fast-polynomials/
+- 讨论：https://news.ycombinator.com/item?id=49623398
+
+
+## 六、计算机历史与算法趣闻
+
+### 18. What algorithm did Windows XP use to choose your initial user picture?
+微软 Old New Thing 博客揭秘 Windows XP 如何为用户选择初始头像，属于经典技术考古内容。
+- 原文：https://devblogs.microsoft.com/oldnewthing/20260909-00/?p=112683
+- 讨论：https://news.ycombinator.com/item?id=49640646
+
+### 19. What algorithm did Windows XP use to choose your initial user picture?（Lobsters 重复条目）
+Lobsters 上对该文章的同步转载。
+- 原文：https://devblogs.microsoft.com/oldnewthing/20260909-00/?p=112683
+- 讨论：https://lobste.rs/s/izt4a2/what_algorithm_did_windows_xp_use_choose
+
+### 20. Stockfish 19
+国际象棋引擎 Stockfish 发布第 19 版，代表棋类 AI 的最新进展。
+- 原文：https://stockfishchess.org/blog/2026/stockfish-19/
+- 讨论：https://news.ycombinator.com/item?id=49599992
+
+### 21. What do Visa and Mastercard do? An intro to card networks
+一篇关于银行卡网络运作机制的入门文章，解释 Visa 和 Mastercard 的实际角色，对支付系统理解有帮助。
 - 原文：https://tautology.town/2026/06/01/card-networks.html
 - 讨论：https://news.ycombinator.com/item?id=49614280
 
 
-## 五、硬件、DIY 与创客（5 篇）
+## 七、科学与跨学科内容
 
-**4. We built our house for LAN parties (2024)**
-- 为局域网派对专门设计的房子，趣味性极强，社区共鸣高。
-- 原文：https://lanparty.house/
-- 讨论：https://news.ycombinator.com/item?id=49579443
+### 22. Show HN: What if the speed of light was 5 km/h?
+将光速缩小到人类可感知速度的可视化项目，帮助直觉理解相对论效应，创意与技术兼具。
+- 原文：https://rivendell.dmitrybrant.com/relativity/
+- 讨论：https://news.ycombinator.com/item?id=49637385
 
-**24. Building a Wall Lamp from Scratch**
-- 从零制作壁灯的 DIY 记录。
-- 原文：https://mbugert.de/posts/2026-09-09-bedroom-lamp-build/
-- 讨论：https://news.ycombinator.com/item?id=49623938
+### 23. Technique for Manipulating Satellite Photos Now Reveals Ancient Images (2025)
+NASA 的卫星图像处理技术（去相关拉伸）被用于揭示古代图像，展示技术转移的跨领域价值。
+- 原文：https://spinoff.nasa.gov/Manipulating_Satellite_Photos_Now_Reveals_Ancient_Images
+- 讨论：https://news.ycombinator.com/item?id=49645437
 
-**29. How to build a f**king printer**（Lobsters）
-- 从零构建打印机的硬核 DIY 指南。
-- 原文：https://nishantjosh.dev/blogs/how-to-build-a-fking-printer/
-- 讨论：https://lobste.rs/s/pxreik/how_build_f_king_printer
+### 24. Douglas Hofstadter: Analogy as the Core of Cognition [video]
+Hofstadter 关于"类比是认知核心"的演讲视频，对 AI 与认知科学交叉领域有深远启发。
+- 原文：https://www.youtube.com/watch?v=n8m7lFQ3njk
+- 讨论：https://news.ycombinator.com/item?id=49587121
 
-**12. The Helicopter with Radioactive Blades**
-- 冷战时期带放射性桨叶的直升机奇闻，Hackaday 出品。
-- 原文：https://hackaday.com/2026/09/07/the-helicopter-with-radioactive-blades/
-- 讨论：https://news.ycombinator.com/item?id=49600901
+### 25. Larger Pacific striped octopus
+关于较大太平洋条纹章鱼的维基百科条目，因其独特社交行为而引人关注，属于轻松科普内容。
+- 原文：https://en.wikipedia.org/wiki/Larger_Pacific_striped_octopus
+- 讨论：https://news.ycombinator.com/item?id=49621018
 
-**17. Planet Labs' open satellite feed**
-- Planet Labs 开放卫星数据源，地理空间与遥感开发者的实用资源。
-- 原文：https://tech.marksblogg.com/planet-labs-open-satellite-feed.html
-- 讨论：https://news.ycombinator.com/item?id=49628429
+### 26. The UN challenges five centuries of cartography
+联合国挑战五百年制图传统，涉及地图投影与地缘政治，对 GIS 与地理信息领域有参考价值。
+- 原文：https://www.not-ship.com/united-nations-map/
+- 讨论：https://news.ycombinator.com/item?id=49629209
 
-
-## 六、科学、社会与文化（6 篇）
-
-**10. Growing proof that autonomous cars save lives**
-- IEEE Spectrum 报道自动驾驶减少事故的证据累积，涉及监管与安全辩论（427 条评论）。
-- 原文：https://spectrum.ieee.org/are-self-driving-cars-safe
-- 讨论：https://news.ycombinator.com/item?id=49629886
-
-**8. No Man's Sky Cosmos**
-- 《无人深空》大型更新 Cosmos，游戏技术社区关注。
-- 原文：https://www.nomanssky.com/cosmos-update/
-- 讨论：https://news.ycombinator.com/item?id=49628493
-
-**19. Blizzard Workers Win Historic Union Contract**
-- 暴雪员工赢得历史性工会合同，可能为游戏行业树立新标准。
-- 原文：https://www.gamespot.com/articles/blizzard-workers-win-historic-union-contract-that-could-set-a-new-standard-for-game-developers
-- 讨论：https://news.ycombinator.com/item?id=49635384
-
-**23. Researchers Spot Fake Ancient Pottery Using the Earth's Magnetic Field**
-- 利用地磁场鉴别伪造古陶器，考古与物理交叉的巧妙方法。
-- 原文：https://www.smithsonianmag.com/smart-news/researchers-determine-how-to-spot-fake-ancient-pottery-using-the-earths-magnetic-field-180989441/
-- 讨论：https://news.ycombinator.com/item?id=49580761
-
-**14. Coyote v. Acme (1990)**
-- 《纽约客》经典幽默法律文章，HN 上常青的"文化休息"帖。
-- 原文：https://www.newyorker.com/magazine/1990/02/26/coyote-v-acme
-- 讨论：https://news.ycombinator.com/item?id=49586494
-- 存档：https://archive.ph/KgB6h
-
-**20. On Really Trying (2009)**
-- Gwern 关于"真正努力"的经典随笔，个人成长类常青内容。
-- 原文：https://gwern.net/on-really-trying
-- 讨论：https://news.ycombinator.com/item?id=49622305
+### 27. Music Theory for the 21st-Century Classroom
+面向 21 世纪课堂的音乐理论教材，属于跨学科教育资源。
+- 原文：https://musictheory.pugetsound.edu/mt21c/MusicTheory.html
+- 讨论：https://news.ycombinator.com/item?id=49647134
 
 
-## 七、今日最值得阅读的 5 篇文章推荐
+## 八、硬件、能源与产业
 
-| 排名 | 文章 | 推荐理由 | 链接 |
-|---|---|---|---|
-| 1 | **AlphaGenome Atlas** | AI+基因组学里程碑，DeepMind 出品，理解 AI 在生命科学中落地的绝佳案例 | https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas/ |
-| 2 | **How I advertise malicious software on Google Ads** | 第一手揭露广告平台安全漏洞，对安全、广告、平台治理都有启发 | https://xlii.space/eng/malicious-software-on-google-ads/ |
-| 3 | **Lotus Notes and the dangers of starting from scratch** | 软件工程经典教训，"重写陷阱"的生动教材，适合所有架构师 | https://buttondown.com/blog/lotus-notes-email |
-| 4 | **Growing proof that autonomous cars save lives** | 自动驾驶安全性的实证综述，涉及技术、政策与社会争议 | https://spectrum.ieee.org/are-self-driving-cars-safe |
-| 5 | **A decade of rustls** | Rust 生态重要基础设施的十年复盘，系统编程与开源维护者必读 | https://rustls.dev/blog/2026-09-08-a-decade-of-rustls/ |
+### 28. Hitachi launches CO2 heat pump water heaters with solar-friendly tariff controls
+日立推出支持太阳能友好电价控制的 CO2 热泵热水器，属于清洁能源与智能家居交叉领域。
+- 原文：https://www.pv-magazine.com/2026/09/07/hitachi-launches-co2-heat-pump-water-heaters-with-solar-friendly-tariff-controls/
+- 讨论：https://news.ycombinator.com/item?id=49627634
 
----
+### 29. Xteink X4 Pro review
+Xteink X4 Pro 的评测，属于硬件评测内容，对电子阅读或便携设备用户有参考意义。
+- 原文：https://abstractnonsense.xyz/microblog/2026-09-07-xteink-x4-pro-review/
+- 讨论：https://lobste.rs/s/aiikt1/xteink_x4_pro_review
 
-**总体观察**：今日 HN 由苹果新品发布和数学/科学话题主导，但真正具有长期价值的内容集中在 **AI 交叉科学（AlphaGenome）**、**安全揭露（Google Ads 恶意软件）** 与 **工程实践反思（Lotus Notes、rustls）** 三类。Lobsters 侧则偏向开发实践与 AI 文化批评，整体技术深度更高但互动量较低。0:{"buildId":"30pKRJ4SmJ3dz_jvX96cA","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-09-10","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":16},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-09-10"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-49605915","title":"Navier-Stokes – Tristan Buckmaster [pdf]","url":"https://cims.nyu.edu/~tristanb/statement.pdf","source":"Hacker News","score":1995,"comments_count":810,"comments_url":"https://news.ycombinator.com/item?id=49605915","published_at":"2026-09-08T05:42:28","author":"procedurecall","text":"Further discussion: <a href=\"https:&#x2F;&#x2F;simonwillison.net&#x2F;2026&#x2F;Sep&#x2F;8&#x2F;on-navier-stokes&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;simonwillison.net&#x2F;2026&#x2F;Sep&#x2F;8&#x2F;on-navier-stokes&#x2F;</a>, <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49621697\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49621697</a>","summary":"这是一份关于Navier-Stokes方程研究进展的PDF声明，由数学家Tristan Buckmaster发布，可能涉及流体力学千禧年难题的重要突破，值得数学和物理领域研究者关注。"},{"id":"hn-49630931","title":"iPhone Duo","url":"https://www.apple.com/iphone-duo/","source":"Hacker News","score":928,"comments_count":1728,"comments_url":"https://news.ycombinator.com/item?id=49630931","published_at":"2026-09-09T18:15:43","author":"thecosmicfrog","text":null,"summary":"苹果发布iPhone Duo，可能是一款双屏或双摄创新机型，作为Hacker News热点，值得关注苹果在智能手机形态上的新尝试。"},{"id":"hn-49611251","title":"AlphaGenome Atlas: a high-resolution map of human DNA","url":"https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas/","source":"Hacker News","score":591,"comments_count":129,"comments_url":"https://news.ycombinator.com/item?id=49611251","published_at":"2026-09-08T14:55:45","author":"utiiiD","text":"<a href=\"https:&#x2F;&#x2F;deepmind.google&#x2F;blog&#x2F;alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;deepmind.google&#x2F;blog&#x2F;alphagenome-atlas-a-predictive-...</a><p><a href=\"https:&#x2F;&#x2F;deepmind.google.com&#x2F;science&#x2F;alphagenome&#x2F;atlas\" rel=\"nofollow\">https:&#x2F;&#x2F;deepmind.google.com&#x2F;science&#x2F;alphagenome&#x2F;atlas</a>","summary":"Google DeepMind发布AlphaGenome Atlas，提供人类DNA全基因组变异的高分辨率预测图谱，对遗传学和精准医疗研究具有重要价值。"},{"id":"hn-49579443","title":"We built our house for LAN parties (2024)","url":"https://lanparty.house/","source":"Hacker News","score":581,"comments_count":360,"comments_url":"https://news.ycombinator.com/item?id=49579443","published_at":"2026-09-05T18:44:40","author":"fittingopposite","text":null,"summary":"一对夫妇为局域网派对专门建造房屋，展示了极客生活方式与建筑设计的结合，作为2024年旧文重提，引发关于游戏文化与居住空间的讨论。"},{"id":"hn-49624823","title":"Desert Ant Labs: local, fast models that run on device","url":"https://desertant.com/blog/introducing-desert-ant-labs/","source":"Hacker News","score":405,"comments_count":93,"comments_url":"https://news.ycombinator.com/item?id=49624823","published_at":"2026-09-09T11:39:46","author":"willwhitedc","text":null,"summary":"Desert Ant Labs推出可在设备本地运行的快速AI模型，强调隐私和低延迟，值得关注端侧AI推理的发展趋势。"},{"id":"hn-49614280","title":"What do Visa and Mastercard do? An intro to card networks","url":"https://tautology.town/2026/06/01/card-networks.html","source":"Hacker News","score":392,"comments_count":227,"comments_url":"https://news.ycombinator.com/item?id=49614280","published_at":"2026-09-08T18:11:05","author":"evakhoury","text":null,"summary":"一篇介绍Visa和Mastercard等卡组织运作机制的入门文章，解释支付网络如何促成交易，适合对金融科技基础设施感兴趣的读者。"},{"id":"hn-49624856","title":"How I advertise malicious software on Google Ads","url":"https://xlii.space/eng/malicious-software-on-google-ads/","source":"Hacker News","score":362,"comments_count":220,"comments_url":"https://news.ycombinator.com/item?id=49624856","published_at":"2026-09-09T11:43:21","author":"xlii","text":null,"summary":"作者详细描述如何在Google Ads上投放恶意软件广告，揭示广告平台的安全漏洞，对网络安全和广告审核机制有警示意义。"},{"id":"hn-49628493","title":"No Man's Sky Cosmos","url":"https://www.nomanssky.com/cosmos-update/","source":"Hacker News","score":308,"comments_count":330,"comments_url":"https://news.ycombinator.com/item?id=49628493","published_at":"2026-09-09T15:47:42","author":"Limb","text":null,"summary":"No Man's Sky发布Cosmos更新，可能带来宇宙生成或探索玩法的大幅扩展，值得游戏玩家和太空模拟爱好者关注。"},{"id":"hn-49630151","title":"iPhone 18 Pro and iPhone 18 Pro Max","url":"https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/","source":"Hacker News","score":292,"comments_count":300,"comments_url":"https://news.ycombinator.com/item?id=49630151","published_at":"2026-09-09T17:33:20","author":"meetpateltech","text":null,"summary":"苹果发布iPhone 18 Pro和iPhone 18 Pro Max，作为年度旗舰新品，其新功能和硬件升级是科技消费者关注的焦点。"},{"id":"hn-49629886","title":"Growing proof that autonomous cars save lives","url":"https://spectrum.ieee.org/are-self-driving-cars-safe","source":"Hacker News","score":227,"comments_count":427,"comments_url":"https://news.ycombinator.com/item?id=49629886","published_at":"2026-09-09T17:14:59","author":"bookofjoe","text":null,"summary":"IEEE Spectrum文章汇总越来越多证据表明自动驾驶汽车能挽救生命，为自动驾驶安全性的争论提供数据支持，值得政策制定者和公众关注。"},{"id":"hn-49630566","title":"Apple Watch Series 12","url":"https://www.apple.com/newsroom/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system/","source":"Hacker News","score":220,"comments_count":265,"comments_url":"https://news.ycombinator.com/item?id=49630566","published_at":"2026-09-09T17:56:17","author":"Lealen","text":null,"summary":"苹果发布 Apple Watch Series 12，搭载全新健康传感系统。这标志着可穿戴设备在健康监测领域的重要升级，值得关注。"},{"id":"hn-49600901","title":"The Helicopter with Radioactive Blades","url":"https://hackaday.com/2026/09/07/the-helicopter-with-radioactive-blades/","source":"Hacker News","score":198,"comments_count":59,"comments_url":"https://news.ycombinator.com/item?id=49600901","published_at":"2026-09-07T17:44:33","author":"zdw","text":null,"summary":"介绍一架使用放射性桨叶的直升机，属于冷门工程史话题。因其离奇的技术方案和潜在的安全争议而值得一读。"},{"id":"hn-49626373","title":"What will our economic future look like?","url":"https://www.anthropic.com/institute/econ-scenarios","source":"Hacker News","score":181,"comments_count":352,"comments_url":"https://news.ycombinator.com/item?id=49626373","published_at":"2026-09-09T13:38:23","author":"oumua_don17","text":null,"summary":"Anthropic 研究所探讨未来经济可能呈现的多种情景。对于理解 AI 时代的经济走向和政策讨论具有参考价值。"},{"id":"hn-49586494","title":"Coyote v. Acme (1990)","url":"https://www.newyorker.com/magazine/1990/02/26/coyote-v-acme","source":"Hacker News","score":177,"comments_count":88,"comments_url":"https://news.ycombinator.com/item?id=49586494","published_at":"2026-09-06T13:43:48","author":"ChrisArchitect","text":"<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;KgB6h\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;KgB6h</a><p><a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Coyote_vs._Acme\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Coyote_vs._Acme</a>","summary":"《纽约客》1990 年经典幽默文章《Coyote v. Acme》，以法律文书形式调侃动画角色。因其独特的讽刺风格和持久文化影响而值得关注。"},{"id":"hn-49628576","title":"GNU Radio in the browser","url":"https://gnuradioworld.com/","source":"Hacker News","score":176,"comments_count":23,"comments_url":"https://news.ycombinator.com/item?id=49628576","published_at":"2026-09-09T15:53:06","author":"kristianpaul","text":null,"summary":"GNU Radio 现在可以在浏览器中运行，降低了软件无线电的使用门槛。对业余无线电和信号处理爱好者来说是个重要进展。"},{"id":"hn-49623937","title":"Lotus Notes and the dangers of starting from scratch","url":"https://buttondown.com/blog/lotus-notes-email","source":"Hacker News","score":157,"comments_count":115,"comments_url":"https://news.ycombinator.com/item?id=49623937","published_at":"2026-09-09T10:01:15","author":"maguay","text":null,"summary":"回顾 Lotus Notes 的历史，探讨从零开始构建软件的危险。对企业软件设计和产品演进有警示意义。"},{"id":"hn-49628429","title":"Planet Labs' open satellite feed","url":"https://tech.marksblogg.com/planet-labs-open-satellite-feed.html","source":"Hacker News","score":148,"comments_count":27,"comments_url":"https://news.ycombinator.com/item?id=49628429","published_at":"2026-09-09T15:44:09","author":"marklit","text":null,"summary":"介绍 Planet Labs 的开放卫星影像数据源及使用方式。对地理空间分析和遥感应用开发者很有价值。"},{"id":"hn-49584361","title":"Bespoke: A programming language for people who say please","url":"https://blog.hofstede.it/bespoke-a-programming-language-for-people-who-say-please/","source":"Hacker News","score":136,"comments_count":30,"comments_url":"https://news.ycombinator.com/item?id=49584361","published_at":"2026-09-06T08:13:53","author":"birdculture","text":null,"summary":"Bespoke 是一门要求程序员说“请”的编程语言，属于趣味语言设计。因其幽默和反常规的交互方式而受到关注。"},{"id":"hn-49635384","title":"Blizzard Workers Win Historic Union Contract","url":"https://www.gamespot.com/articles/blizzard-workers-win-historic-union-contract-that-could-set-a-new-standard-for-game-developers","source":"Hacker News","score":109,"comments_count":29,"comments_url":"https://news.ycombinator.com/item?id=49635384","published_at":"2026-09-09T22:22:53","author":"dbg31415","text":null,"summary":"暴雪员工赢得历史性的工会合同，可能为游戏行业树立新标准。这是游戏开发者劳动权益的重要里程碑。"},{"id":"hn-49622305","title":"On Really Trying (2009)","url":"https://gwern.net/on-really-trying","source":"Hacker News","score":99,"comments_count":61,"comments_url":"https://news.ycombinator.com/item?id=49622305","published_at":"2026-09-09T06:58:44","author":"whoami_nr","text":null,"summary":"Gwern 2009 年的文章《On Really Trying》，探讨真正努力的含义与心理机制。对个人成长和效率实践有启发意义。"},{"id":"hn-49621102","title":"A Biography of Lee Holloway, the Architect of Cloudflare's Technology (Part 1)","url":"https://note.com/masakazu_urabe/n/n7815f5b64fab?hl=en","source":"Hacker News","score":97,"comments_count":20,"comments_url":"https://news.ycombinator.com/item?id=49621102","published_at":"2026-09-09T04:43:46","author":"porridgeraisin","text":null,"summary":"这是一篇关于Cloudflare技术架构师Lee Holloway的传记文章第一部分，回顾了他对Cloudflare核心技术栈的贡献。对于了解这家全球最大CDN与安全公司的技术起源和早期工程决策具有重要参考价值。"},{"id":"hn-49630583","title":"Apple Watch Ultra 4","url":"https://www.apple.com/newsroom/2026/09/apple-unveils-apple-watch-ultra-4/","source":"Hacker News","score":82,"comments_count":124,"comments_url":"https://news.ycombinator.com/item?id=49630583","published_at":"2026-09-09T17:56:57","author":"tech234a","text":null,"summary":"Apple发布了Apple Watch Ultra 4，介绍了其在户外运动、健康监测和续航等方面的最新升级。值得关注的是Apple在可穿戴设备领域的最新迭代方向及其对专业运动市场的持续投入。"},{"id":"hn-49580761","title":"Researchers Spot Fake Ancient Pottery Using the Earth's Magnetic Field","url":"https://www.smithsonianmag.com/smart-news/researchers-determine-how-to-spot-fake-ancient-pottery-using-the-earths-magnetic-field-180989441/","source":"Hacker News","score":80,"comments_count":30,"comments_url":"https://news.ycombinator.com/item?id=49580761","published_at":"2026-09-05T21:14:18","author":"cisc","text":null,"summary":"研究人员发现可以利用地球磁场来鉴别伪造的古代陶器，通过分析陶器烧制时记录的地磁信息判断其真伪。这一方法为文物鉴定提供了新的科学手段，有望打击文物造假行为。"},{"id":"hn-49623938","title":"Building a Wall Lamp from Scratch","url":"https://mbugert.de/posts/2026-09-09-bedroom-lamp-build/","source":"Hacker News","score":78,"comments_count":32,"comments_url":"https://news.ycombinator.com/item?id=49623938","published_at":"2026-09-09T10:01:16","author":"jcklie","text":null,"summary":"一篇从零开始手工制作壁灯的项目记录，详细展示了设计、选材和制作的全过程。对于喜欢DIY和硬件动手实践的读者来说，是一份有趣且实用的参考。"},{"id":"hn-49628290","title":"We accidentally built a synthetic cell factory","url":"https://bnext.bio/post/we-accidentally-built-a-synthetic-cell-factory","source":"Hacker News","score":75,"comments_count":6,"comments_url":"https://news.ycombinator.com/item?id=49628290","published_at":"2026-09-09T15:34:51","author":"rajivm","text":null,"summary":"文章讲述了作者意外构建出一个合成细胞工厂的经历，探讨了合成生物学领域的前沿进展。这一意外发现可能对生物制造和合成生物学研究带来新的思路。"}],"locale":"zh"}],"$Lc"]}]]}]
+### 30. Silicon Valley is transforming the military-industrial complex? (2024)
+布朗大学战争成本项目关于硅谷如何改变军工复合体的研究，涉及科技伦理与地缘政治。
+- 原文：https://costsofwar.watson.brown.edu/paper/how-big-tech-and-silicon-valley-are-transforming-military-industrial-complex
+- 讨论：https://news.ycombinator.com/item?id=49645754
+
+
+## 今日最值得阅读的 5 篇文章推荐
+
+1. **Shopify is moving from React Native back to Swift and Kotlin**
+   理由：跨平台 vs 原生的争论持续多年，Shopify 的回归是重要行业信号，对移动开发者决策有直接参考价值。
+   https://shopify.engineering/back-to-native
+
+2. **Rust is tier-1 language at Microsoft**
+   理由：微软将 Rust 列为一级语言，标志着 Rust 在主流工业界的地位确立，对语言选型和职业规划有深远影响。
+   https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/
+
+3. **Forgejo <=16.0.3 Critical RCE**
+   理由：严重安全漏洞，所有自托管 Forgejo 用户需立即行动，属于高优先级安全通告。
+   https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md
+
+4. **What do Visa and Mastercard do? An intro to card networks**
+   理由：清晰解释支付网络的核心机制，是理解现代金融基础设施的优质入门材料。
+   https://tautology.town/2026/06/01/card-networks.html
+
+5. **Show HN: What if the speed of light was 5 km/h?**
+   理由：极具创意的相对论可视化项目，既能直观理解物理概念，也是优秀的技术演示案例。
+   https://rivendell.dmitrybrant.com/relativity/0:{"buildId":"r38ZW_ZDJk_6kN3HolEyE","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-09-11","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":16},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-09-11"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-49630931","title":"iPhone Duo","url":"https://www.apple.com/iphone-duo/","source":"Hacker News","score":1415,"comments_count":2443,"comments_url":"https://news.ycombinator.com/item?id=49630931","published_at":"2026-09-09T18:15:43","author":"thecosmicfrog","text":null,"summary":"苹果发布 iPhone Duo，可能是一款双屏或双卡双待新机型，值得关注苹果在智能手机形态上的最新探索。"},{"id":"hn-49643982","title":"Shopify is moving from React Native back to Swift and Kotlin","url":"https://shopify.engineering/back-to-native","source":"Hacker News","score":804,"comments_count":539,"comments_url":"https://news.ycombinator.com/item?id=49643982","published_at":"2026-09-10T14:09:31","author":"fnthawar2","text":null,"summary":"Shopify 宣布从 React Native 回归 Swift 和 Kotlin 原生开发，反映跨平台框架在大型应用中的实际挑战与取舍。"},{"id":"hn-49614280","title":"What do Visa and Mastercard do? An intro to card networks","url":"https://tautology.town/2026/06/01/card-networks.html","source":"Hacker News","score":654,"comments_count":392,"comments_url":"https://news.ycombinator.com/item?id=49614280","published_at":"2026-09-08T18:11:05","author":"evakhoury","text":null,"summary":"一篇介绍 Visa 和 Mastercard 等卡组织运作机制的入门文章，帮助理解支付网络背后的商业逻辑。"},{"id":"hn-49643546","title":"Rust is tier-1 language at Microsoft","url":"https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/","source":"Hacker News","score":613,"comments_count":350,"comments_url":"https://news.ycombinator.com/item?id=49643546","published_at":"2026-09-10T13:39:16","author":"mmastrac","text":null,"summary":"微软将 Rust 列为一级语言，表明 Rust 在系统编程领域获得主流科技巨头进一步认可。"},{"id":"hn-49637385","title":"Show HN: What if the speed of light was 5 km/h?","url":"https://rivendell.dmitrybrant.com/relativity/","source":"Hacker News","score":569,"comments_count":258,"comments_url":"https://news.ycombinator.com/item?id=49637385","published_at":"2026-09-10T01:58:00","author":"dmitrybrant","text":"I&#x27;ve always wanted to make a visualization where the speed of light was scaled down to human speeds, so that we could intuit relativistic effects with everyday objects. Here is the first version of it!","summary":"一个将光速缩小到 5 km/h 的相对论可视化项目，让普通人能直观感受相对论效应。"},{"id":"hn-49636283","title":"Automattic's board forces CEO Matt Mullenweg into leave of absence","url":"https://techcrunch.com/2026/09/09/automattics-board-forces-ceo-matt-mullenweg-into-leave-of-absence/","source":"Hacker News","score":430,"comments_count":324,"comments_url":"https://news.ycombinator.com/item?id=49636283","published_at":"2026-09-09T23:49:29","author":"LeoPanthera","text":null,"summary":"Automattic 董事会迫使 CEO Matt Mullenweg 休假，可能对 WordPress 和 Tumblr 等产品的未来走向产生重大影响。"},{"id":"hn-49646181","title":"I have a theory that software drives people insane","url":"https://graybeard.ing/software-drives-people-insane/","source":"Hacker News","score":410,"comments_count":169,"comments_url":"https://news.ycombinator.com/item?id=49646181","published_at":"2026-09-10T16:13:42","author":"rglover","text":null,"summary":"一篇探讨软件如何让人发疯的随笔，引发对现代软件复杂性和开发者体验的反思。"},{"id":"hn-49642531","title":"List of references on Sony websites to players \"owning\" their digital games","url":"https://consumerrights.wiki/w/Sony_PlayStation_digital_game_ownership_lawsuit","source":"Hacker News","score":369,"comments_count":123,"comments_url":"https://news.ycombinator.com/item?id=49642531","published_at":"2026-09-10T12:18:06","author":"haunter","text":null,"summary":"汇总索尼网站上关于玩家“拥有”数字游戏的表述，与数字游戏所有权诉讼相关，涉及消费者权益。"},{"id":"hn-49640646","title":"What algorithm did Windows XP use to choose your initial user picture?","url":"https://devblogs.microsoft.com/oldnewthing/20260909-00/?p=112683","source":"Hacker News","score":340,"comments_count":166,"comments_url":"https://news.ycombinator.com/item?id=49640646","published_at":"2026-09-10T09:04:14","author":"soheilpro","text":null,"summary":"微软旧事博客揭秘 Windows XP 如何选择初始用户图片的算法，满足技术怀旧与好奇心。"},{"id":"hn-49645393","title":"Don't let anyone take away your big box of cables","url":"https://blog.jim-nielsen.com/2026/hands-off-my-cables/","source":"Hacker News","score":338,"comments_count":261,"comments_url":"https://news.ycombinator.com/item?id=49645393","published_at":"2026-09-10T15:27:22","author":"Brajeshwar","text":null,"summary":"一篇为“线缆囤积”辩护的博客文章，从实用主义角度反思极简主义对技术爱好者的影响。"},{"id":"hn-49627634","title":"Hitachi launches CO2 heat pump water heaters with solar-friendly tariff controls","url":"https://www.pv-magazine.com/2026/09/07/hitachi-launches-co2-heat-pump-water-heaters-with-solar-friendly-tariff-controls/","source":"Hacker News","score":287,"comments_count":230,"comments_url":"https://news.ycombinator.com/item?id=49627634","published_at":"2026-09-09T14:54:12","author":"thelastgallon","text":null,"summary":"日立推出采用CO2制冷剂的热泵热水器，支持太阳能友好型电价控制。该产品结合环保制冷剂与智能电价管理，有助于降低碳排放和用电成本，值得关注。"},{"id":"hn-49645437","title":"Technique for Manipulating Satellite Photos Now Reveals Ancient Images (2025)","url":"https://spinoff.nasa.gov/Manipulating_Satellite_Photos_Now_Reveals_Ancient_Images","source":"Hacker News","score":277,"comments_count":42,"comments_url":"https://news.ycombinator.com/item?id=49645437","published_at":"2026-09-10T15:29:30","author":"gumby","text":"<a href=\"https:&#x2F;&#x2F;dstretch.com&#x2F;DecorrelationStretch.pdf\" rel=\"nofollow\">https:&#x2F;&#x2F;dstretch.com&#x2F;DecorrelationStretch.pdf</a><p><a href=\"https:&#x2F;&#x2F;www.nasa.gov&#x2F;technology&#x2F;tech-transfer-spinoffs&#x2F;nasa-technique-for-manipulating-satellite-photos-now-reveals-ancient-images&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.nasa.gov&#x2F;technology&#x2F;tech-transfer-spinoffs&#x2F;nasa-...</a>","summary":"NASA开发的一项卫星照片处理技术（去相关拉伸）被重新用于揭示古代图像。该技术展示了遥感图像增强方法在考古和文化遗产领域的跨学科应用潜力。"},{"id":"hn-49599992","title":"Stockfish 19","url":"https://stockfishchess.org/blog/2026/stockfish-19/","source":"Hacker News","score":273,"comments_count":157,"comments_url":"https://news.ycombinator.com/item?id=49599992","published_at":"2026-09-07T16:17:27","author":"atiedebee","text":null,"summary":"国际象棋引擎Stockfish发布第19版。作为最强开源棋力引擎之一，新版本通常在搜索效率和棋力上有显著提升，受到棋界和AI研究者关注。"},{"id":"hn-49645686","title":"Neki – Sharded Postgres","url":"https://planetscale.com/blog/introducing-neki","source":"Hacker News","score":203,"comments_count":113,"comments_url":"https://news.ycombinator.com/item?id=49645686","published_at":"2026-09-10T15:43:49","author":"simon_weber","text":null,"summary":"PlanetScale推出Neki，一个分片Postgres解决方案。它为Postgres提供水平扩展能力，可能简化大规模数据库的分片管理，对后端架构师有参考价值。"},{"id":"hn-49647134","title":"Music Theory for the 21st-Century Classroom","url":"https://musictheory.pugetsound.edu/mt21c/MusicTheory.html","source":"Hacker News","score":167,"comments_count":80,"comments_url":"https://news.ycombinator.com/item?id=49647134","published_at":"2026-09-10T17:14:12","author":"aanet","text":null,"summary":"《21世纪课堂音乐理论》是一本在线开源音乐理论教材。它提供系统且免费的音乐理论课程，适合学生和自学者，体现了开放教育资源的价值。"},{"id":"hn-49645907","title":"Forgejo <=16.0.3 Critical RCE","url":"https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md","source":"Hacker News","score":155,"comments_count":57,"comments_url":"https://news.ycombinator.com/item?id=49645907","published_at":"2026-09-10T15:57:40","author":"weierstass","text":null,"summary":"Forgejo 16.0.3及之前版本存在严重远程代码执行漏洞。自托管Git服务的用户需尽快升级到16.0.4以修复该安全风险，值得所有实例管理员关注。"},{"id":"hn-49645754","title":"Silicon Valley is transforming the military-industrial complex? (2024)","url":"https://costsofwar.watson.brown.edu/paper/how-big-tech-and-silicon-valley-are-transforming-military-industrial-complex","source":"Hacker News","score":154,"comments_count":308,"comments_url":"https://news.ycombinator.com/item?id=49645754","published_at":"2026-09-10T15:47:50","author":"paimapi","text":null,"summary":"布朗大学战争成本项目分析硅谷如何改变军工复合体。文章探讨科技公司与国防合作的趋势及影响，对理解军民融合和科技伦理有重要参考意义。"},{"id":"hn-49587121","title":"Douglas Hofstadter: Analogy as the Core of Cognition [video]","url":"https://www.youtube.com/watch?v=n8m7lFQ3njk","source":"Hacker News","score":148,"comments_count":74,"comments_url":"https://news.ycombinator.com/item?id=49587121","published_at":"2026-09-06T14:59:33","author":"tosh","text":null,"summary":"侯世达在视频中阐述类比是认知的核心。他通过类比解释人类思维的本质，对认知科学、AI和哲学研究者具有启发价值。"},{"id":"hn-49648732","title":"Creativity is the new moat","url":"https://www.inventbuild.studio/blog/genuine-creativity-is-your-new-moat","source":"Hacker News","score":135,"comments_count":75,"comments_url":"https://news.ycombinator.com/item?id=49648732","published_at":"2026-09-10T19:03:34","author":"virgil_disgr4ce","text":null,"summary":"文章主张真正的创造力是新的护城河。在AI生成内容泛滥的时代，它强调原创性和独特视角作为竞争优势，对创业者和创作者有启发。"},{"id":"hn-49623398","title":"Show HN: Compute polynomials twice as fast","url":"https://thomasahle.com/fast-polynomials/","source":"Hacker News","score":129,"comments_count":38,"comments_url":"https://news.ycombinator.com/item?id=49623398","published_at":"2026-09-09T08:53:58","author":"thomasahle","text":"A few years ago my coauthor and I was wondering if we could reduce the number of multiplications used for hashing algorithms. We had a construction and a 100 page proof, but we were not 100% sure it was correct. Now we have a full Lean proof, so we decided to publish it.<p>I made this website to make it easy for anyone how has polynomials to evaluate to see how it would be done using our method, as well as a number of previous approaches by Knuth and others.","summary":"Show HN项目展示如何将多项式计算速度提升一倍。作者用Lean形式化验证了算法正确性，对计算数学和形式化方法感兴趣的人值得一看。"},{"id":"hn-49621018","title":"Larger Pacific striped octopus","url":"https://en.wikipedia.org/wiki/Larger_Pacific_striped_octopus","source":"Hacker News","score":126,"comments_count":64,"comments_url":"https://news.ycombinator.com/item?id=49621018","published_at":"2026-09-09T04:32:22","author":"olalonde","text":null,"summary":"介绍太平洋大条纹章鱼这一独特物种的维基百科条目，其奇特的交配行为和群居习性使其成为海洋生物学中备受关注的研究对象。"},{"id":"hn-49629209","title":"The UN challenges five centuries of cartography","url":"https://www.not-ship.com/united-nations-map/","source":"Hacker News","score":124,"comments_count":286,"comments_url":"https://news.ycombinator.com/item?id=49629209","published_at":"2026-09-09T16:33:44","author":"speckx","text":null,"summary":"探讨联合国对五百年制图学传统的挑战，涉及地图表示方式的根本性变革，对地理信息标准和国际治理具有深远影响。"},{"id":"hn-49612470","title":"Python sets and dictionaries can have quadratic-time performance","url":"https://lemire.me/blog/2026/09/03/python-sets-and-dictionaries-can-have-quadratic-time-performance/","source":"Hacker News","score":92,"comments_count":52,"comments_url":"https://news.ycombinator.com/item?id=49612470","published_at":"2026-09-08T16:17:51","author":"ibobev","text":null,"summary":"分析Python集合和字典在特定情况下可能出现的二次时间复杂度问题，提醒开发者注意性能陷阱，对编写高效Python代码具有实用价值。"},{"id":"hn-49649124","title":"The Deathray: A simple way for an untrusted site to freeze a Mac","url":"https://auberon.xyz/blog/posts/deathray/","source":"Hacker News","score":91,"comments_count":58,"comments_url":"https://news.ycombinator.com/item?id=49649124","published_at":"2026-09-10T19:34:20","author":"auberonedu","text":null,"summary":"揭示一种名为Deathray的简单方法，可让不受信任的网站冻结Mac设备，属于重要的浏览器安全漏洞，值得macOS用户和开发者关注。"},{"id":"hn-49610780","title":"To write non-fiction, draw the trunk, then the rest of the tree","url":"https://devz.cl/posts/how-to-write/","source":"Hacker News","score":88,"comments_count":27,"comments_url":"https://news.ycombinator.com/item?id=49610780","published_at":"2026-09-08T14:25:04","author":"DanielVZ","text":null,"summary":"分享非虚构写作的方法论：先画树干再画枝叶，即先构建核心论点再展开细节，对技术写作和内容创作有实用指导意义。"}],"locale":"zh"}],"$Lc"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
 a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
-c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-9e917bff7c59","title":"Apple Event for September 9th, 2026","url":"https://www.apple.com/apple-events/event-stream/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-09T16:54:31","author":"apple.com via calvin","text":"<p>Out with the Tim, in with the John. Who knows if they'll fold?</p>\n<p><a href=\"https://lobste.rs/s/zj6mij/apple_event_for_september_9th_2026\">Comments</a></p>","summary":"这是Apple 2026年9月9日发布会的直播页面，社区评论暗示了管理层变动和可能的产品折叠设计。值得关注的是Apple在领导层更替后的产品战略走向。"},{"id":"rss-8998b2be7a48","title":"I Don’t Want to Interact With Stochastic Parrots","url":"https://ploum.net/2026-09-09-ai_policy.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-09T17:18:32","author":"ploum.net via cgrinds","text":"<p><a href=\"https://lobste.rs/s/rdhsu9/i_don_t_want_interact_with_stochastic\">Comments</a></p>","summary":"作者表达了对与AI聊天机器人（被称作随机鹦鹉）交互的抵触，并提出了相关的AI使用政策思考。这篇文章反映了当前关于AI交互伦理和人机关系的重要讨论。"},{"id":"rss-21eb8200aae4","title":"A decade of rustls","url":"https://rustls.dev/blog/2026-09-08-a-decade-of-rustls/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-09T11:13:13","author":"rustls.dev via wofo","text":"<p><a href=\"https://lobste.rs/s/zffgb8/decade_rustls\">Comments</a></p>","summary":"回顾了Rust语言编写的TLS库rustls十年来的发展历程，总结了其在安全性和性能方面的演进。对于关注Rust生态和网络安全基础设施的开发者具有重要参考意义。"},{"id":"rss-a70449dbdc8b","title":"How to build a f**king printer","url":"https://nishantjosh.dev/blogs/how-to-build-a-fking-printer/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-08T21:39:21","author":"nishantjosh.dev by nishantjosh","text":"<p><a href=\"https://lobste.rs/s/pxreik/how_build_f_king_printer\">Comments</a></p>","summary":"一篇关于如何从零构建一台打印机的技术指南，涵盖硬件选型和软件驱动的完整过程。对于想深入理解打印机工作原理的硬件爱好者来说是一份难得的实践教程。"},{"id":"rss-5f922a2607f4","title":"ID design and primary keys","url":"https://anchorsandlinks.com/posts/primary-keys/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-09T18:31:44","author":"anchorsandlinks.com by squadette","text":"<p><a href=\"https://lobste.rs/s/tiltfq/id_design_primary_keys\">Comments</a></p>","summary":"文章探讨了数据库主键和ID设计的最佳实践，分析了不同方案在性能、可扩展性和可读性方面的权衡。对于后端工程师和数据库设计者来说是一份实用的设计参考。"}],"locale":"zh"}]
+c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-de4debb24363","title":"A rant about phishing: It's not the user's fault (and not DNS either)","url":"https://maurycyz.com/misc/domains/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-10T15:14:48","author":"maurycyz.com by maurycy","text":"<p><a href=\"https://lobste.rs/s/9szn91/rant_about_phishing_it_s_not_user_s_fault\">Comments</a></p>","summary":"一篇关于网络钓鱼的评论文章，主张钓鱼攻击不应归咎于用户或DNS，而应从系统设计层面反思责任归属，引发对安全设计哲学的讨论。"},{"id":"rss-5e2d4e85b568","title":"Rust Is Tier-1 Language at Microsoft","url":"https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-10T13:40:19","author":"rustfoundation.org via mmastrac","text":"<p><a href=\"https://lobste.rs/s/eerwba/rust_is_tier_1_language_at_microsoft\">Comments</a></p>","summary":"报道Rust已成为微软的一级语言，标志着Rust在企业级软件开发中的地位显著提升，对系统编程语言生态具有里程碑意义。"},{"id":"rss-4c1a37ec98b1","title":"Xteink X4 Pro review","url":"https://abstractnonsense.xyz/microblog/2026-09-07-xteink-x4-pro-review/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-10T15:05:43","author":"abstractnonsense.xyz via abnercoimbre","text":"<p><a href=\"https://lobste.rs/s/aiikt1/xteink_x4_pro_review\">Comments</a></p>","summary":"对Xteink X4 Pro设备的评测文章，为关注该硬件的技术爱好者提供了一手使用体验和购买参考。"},{"id":"rss-678fd0148ffb","title":"Forgejo 16.0.4 has a critical security bug fix (RCE - Remote Code Execution)","url":"https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-10T17:40:19","author":"codeberg.org via brn","text":"<p><a href=\"https://lobste.rs/s/b3cqyr/forgejo_16_0_4_has_critical_security_bug\">Comments</a></p>","summary":"Forgejo 16.0.4发布关键安全修复，修补了远程代码执行漏洞，所有使用该自托管Git服务的用户应立即升级。"},{"id":"rss-77a9460f8236","title":"What algorithm did Windows XP use to choose your initial user picture?","url":"https://devblogs.microsoft.com/oldnewthing/20260909-00/?p=112683","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-10T15:48:37","author":"devblogs.microsoft.com via hoistbypetard","text":"<p><a href=\"https://lobste.rs/s/izt4a2/what_algorithm_did_windows_xp_use_choose\">Comments</a></p>","summary":"探究Windows XP选择初始用户图片的算法，是一篇有趣的软件考古文章，揭示了早期操作系统设计中的随机化逻辑。"}],"locale":"zh"}]
 f:null
