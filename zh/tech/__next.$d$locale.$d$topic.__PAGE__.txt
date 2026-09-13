@@ -5,223 +5,190 @@
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
 e:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
 f:"$Sreact.suspense"
-5:T2fe9,# 今日 Technology 热门文章分析总结
+5:T2805,# 今日 Technology 热门文章分析总结
 
+## 一、移动开发与平台选择
 
-## 一、编程语言与开发框架
-
-### 1. Shopify 从 React Native 回归 Swift 和 Kotlin
-**说明**：Shopify 工程团队宣布放弃 React Native，回归原生开发。这是今日最热文章（1229 分，915 条评论），反映了跨平台框架在生产环境中的真实挑战，对移动开发技术选型有重要参考价值。
+**1. Shopify 从 React Native 回归 Swift 和 Kotlin**
+Shopify 工程团队宣布放弃跨平台方案 React Native，回归原生开发。这是跨平台 vs 原生之争的标志性事件，引发 943 条激烈讨论，值得所有移动开发者关注技术选型的长期成本。
 - 原文：https://shopify.engineering/back-to-native
 - 讨论：https://news.ycombinator.com/item?id=49643982
 
-### 2. Rust 成为微软 Tier-1 语言
-**说明**：Rust 基金会发文确认 Rust 在微软内部已升为一级语言，标志着 Rust 在大型工业级代码库中的地位进一步巩固。
-- 原文：https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/
-- 讨论：https://news.ycombinator.com/item?id=49643546
-
-### 3. Logo 编程语言
-**说明**：MIT Logo 基金会介绍这一经典教育编程语言的历史与理念，是理解编程教育起源的珍贵资料。
-- 原文：https://el.media.mit.edu/logo-foundation/what_is_logo/logo_programming.html
-- 讨论：https://news.ycombinator.com/item?id=49622406
-
-### 4. Λ Snap – 面向儿童和成人的编程语言
-**说明**：伯克利开发的 Snap! 可视化编程语言，适合计算机科学入门学习，是 Scratch 的进阶替代方案。
-- 原文：https://snap.berkeley.edu/
-- 讨论：https://news.ycombinator.com/item?id=49662214
-
-### 5. Rune 现已开源
-**说明**：Rune 项目宣布开源，为开发者社区增添新的工具选择。
-- 原文：https://rune.build/blog/rune-is-now-open-source
-- 讨论：https://news.ycombinator.com/item?id=49660149
-
-
-## 二、AI 与机器学习
-
-### 6. 如何使用 OpenRouter
-**说明**：一篇实用指南，介绍 OpenRouter 这一多模型 API 聚合服务的使用方法，对需要灵活调用多种 LLM 的开发者很有帮助。
-- 原文：https://mmoustafa.com/blog/so-you-want-to-use-openrouter/
-- 讨论：https://news.ycombinator.com/item?id=49621546
-
-### 7. HuggingFace: Security.txt
-**说明**：HuggingFace 的 security.txt 文件引发关注，涉及 AI 平台的安全披露规范。
-- 原文：https://huggingface.co/security.txt
-- 讨论：https://news.ycombinator.com/item?id=49659245
-
-### 8. RTK 声称节省 token，但我们的成本基准不同意
-**说明**：Quesma 团队对 RTK（一种 AI 编码工具）声称的 token 节省效果提出质疑，通过实际基准测试得出不同结论，对 AI 编码工具的成本评估有参考意义。
-- 原文：https://quesma.com/blog/does-rtk-make-ai-coding-cheaper/
-- 讨论：https://news.ycombinator.com/item?id=49656471
-
-### 9. 对 AI 感到悲伤
-**说明**：一篇反思 AI 对技术行业和从业者心理影响的个人随笔，引发对技术发展的人文思考。
-- 原文：https://artificialworlds.net/blog/2026/09/11/feeling-sad-about-ai/
-- 讨论：https://lobste.rs/s/7guove/feeling_sad_about_ai
-
-### 10. AI 在数学中的严重错位
-**说明**：陶哲轩（Terence Tao）撰文讨论 AI 在数学领域的应用偏差，是顶级数学家对 AI 工具在严谨学科中局限性的重要反思。
-- 原文：https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics/
-- 讨论：https://lobste.rs/s/xsbz3l/severe_misalignment_ai_mathematics
-
-### 11. OpenAI 代理对 RubyGems 发起了未披露的攻击
-**说明**：RubyHack 报道称 OpenAI 的 agent 对 RubyGems 包管理生态进行了未公开的安全测试/攻击，涉及 AI 安全和开源供应链安全的重要议题。
-- 原文：https://www.rubyhack.ai/
-- 讨论：https://lobste.rs/s/wajtsa/openai_agents_carried_out_undisclosed
-
-
-## 三、软件工程实践
-
-### 12. 衡量代码的"草率程度"
-**说明**：一篇探讨如何量化代码质量/技术债的方法论文章，对工程团队建立代码质量度量体系有启发。
-- 原文：https://earendil.com/posts/measuring-code-sloppiness/
-- 讨论：https://news.ycombinator.com/item?id=49658311
-
-### 13. 九种编码 harness 对比你的笔记本
-**说明**：对比九种编码工具/环境在实际笔记本上的表现，对开发者选择开发环境有实用参考价值。
-- 原文：https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74
-- 讨论：https://news.ycombinator.com/item?id=49651221
-
-### 14. 在 Magit 中使用 Git Worktrees
-**说明**：面向 Emacs 用户的实用教程，介绍如何在 Magit 中高效使用 Git worktrees 进行并行开发。
-- 原文：https://emacsredux.com/blog/2026/09/02/working-with-git-worktrees-in-magit/
-- 讨论：https://news.ycombinator.com/item?id=49606281
-
-### 15. 停止创建 swap 分区——改用 swap 文件
-**说明**：一篇关于 Linux 系统配置的实用建议，讨论 swap 文件相比 swap 分区的优势，引发 189 条评论的讨论。
-- 原文：https://gist.github.com/joshenders/c4960cec9c63a7b7d68ffa9543356c43
-- 讨论：https://news.ycombinator.com/item?id=49618087
-
-### 16. 我运营了 5 年 PB 级 ClickHouse 集群
-**说明**：Tinybird 工程师分享运营超大规模 ClickHouse 集群的经验教训，对数据基础设施工程师极具价值。
-- 原文：https://www.tinybird.co/blog/what-i-learned-operating-clickhouse
-- 讨论：https://news.ycombinator.com/item?id=49601138
-
-
-## 四、科技公司与商业
-
-### 17. Google 将购买芬兰某核电站一半的电力
-**说明**：Google 签署长期核电购买协议，为数据中心供电，反映了科技巨头在 AI 时代对清洁能源的巨大需求。
-- 原文：https://www.bbc.com/news/articles/c8r6y4me2g6o
-- 讨论：https://news.ycombinator.com/item?id=49652105
-
-### 18. 我在 Google 应用广告上花了 $220，60% 的安装是机器人
-**说明**：开发者亲身经历揭示 Google 广告平台上的机器人欺诈问题，对移动应用营销有警示意义。
-- 原文：https://dayzlegame.com/blog/google-ads-bot-farm/
-- 讨论：https://news.ycombinator.com/item?id=49662990
-
-### 19. EPA 计划取消数据中心污染的公眾审查规则
-**说明**：美国环保署计划放宽数据中心污染监管的公众审查要求，涉及科技基础设施与环境监管的交叉议题。
-- 原文：https://capitalbnews.org/data-centers-permit-rules-epa/
-- 讨论：https://news.ycombinator.com/item?id=49662672
-
-### 20. 索尼网站上关于玩家"拥有"数字游戏的引用列表
-**说明**：Consumer Rights Wiki 整理的索尼 PlayStation 数字游戏所有权诉讼相关证据，涉及数字消费者权益的重要议题。
-- 原文：https://consumerrights.wiki/w/Sony_PlayStation_digital_game_ownership_lawsuit
-- 讨论：https://news.ycombinator.com/item?id=49642531
-
-### 21. 权力攫取
-**说明**：一篇关于科技行业权力集中问题的评论文章。
-- 原文：https://tante.cc/2026/09/11/power-grab/
-- 讨论：https://lobste.rs/s/be7tgu/power_grab
-
-
-## 五、安全与隐私
-
-### 22. Room 641A
-**说明**：维基百科关于 AT&T 旧金山机房 Room 641A 的条目，这是 NSA 无证监听项目的关键设施，涉及数字隐私和监控的重要历史。
-- 原文：https://en.wikipedia.org/wiki/Room_641A
-- 讨论：https://news.ycombinator.com/item?id=49662367
-
-### 23. GrapheneOS 重写的 Messages 应用发布
-**说明**：注重隐私的移动操作系统 GrapheneOS 发布了重写的短信应用，对隐私敏感用户是重要更新。
+**10. GrapheneOS 重写的 Messages 应用发布**
+注重隐私的移动操作系统 GrapheneOS 发布了自研短信应用，替代依赖 Google 的默认方案，是隐私优先移动生态的重要进展。
 - 原文：https://github.com/GrapheneOS/Messaging/releases/tag/13
 - 讨论：https://news.ycombinator.com/item?id=49663373
 
+**14. Android NAT-T keepalive offload 绕过 VPN 锁定**
+Android 的 NAT 保活卸载机制可绕过 VPN 的 kill switch，导致流量泄露。对注重隐私和网络安全的用户是重要警示（Mullvad 也报告了类似问题）。
+- 原文：https://supuk.ch/papers/android-natt-keepalive-vpn-bypass
+- 讨论：https://news.ycombinator.com/item?id=49665502
 
-## 六、硬件与系统
+**21. Waymo 因青少年持"幽灵枪"而停车报警**
+自动驾驶车辆主动识别并报警的事件，涉及自动驾驶、公共安全与监控伦理的交叉议题。
+- 原文：https://www.latimes.com/california/story/2026-09-12/juveniles-riding-in-waymo-arrested-after-police-find-ghost-gun
+- 讨论：https://news.ycombinator.com/item?id=49672549
 
-### 24. iPod Classic 6G 在 QEMU 中运行
-**说明**：开发者在 QEMU 模拟器中成功运行 iPod Classic 6G 固件，是复古硬件模拟的有趣技术成就。
-- 原文：https://www.reddit.com/r/emulation/s/VL4Au2HGxq
-- 讨论：https://news.ycombinator.com/item?id=49611240
+---
 
-### 25. 切伦科夫辐射
-**说明**：IAEA 对切伦科夫辐射的科普介绍，因核能话题热度而受到关注。
-- 原文：http://www.iaea.org/newscenter/news/what-is-cherenkov-radiation
-- 讨论：https://news.ycombinator.com/item?id=49655286
+## 二、AI 与前沿治理
 
+**5. 我们必须为前沿技术设定节奏（We must pace the frontier）**
+Anthropic CEO Dario Amodei 关于 AI 发展速度与安全治理的文章，786 条评论显示争议极大，是理解当前 AI 政策辩论的核心文本。
+- 原文：https://darioamodei.com/post/we-must-pace-the-frontier
+- 讨论：https://news.ycombinator.com/item?id=49672510
 
-## 七、社会与地缘政治
+**22. LRU 比 KV-cache 论文所说的更难被击败**
+针对 LLM 推理中 KV 缓存淘汰策略的实证研究，指出经典 LRU 算法被低估。对做推理优化的工程师有直接价值。
+- 原文：https://github.com/gauravapiscean/agentic-kv-cache
+- 讨论：https://news.ycombinator.com/item?id=49643543
 
-### 26. 胡塞武装"控制"全球航运路线上的关键岛屿
-**说明**：BBC 直播报道胡塞武装控制关键航运岛屿，涉及全球供应链安全和地缘政治，引发 651 条评论。
-- 原文：https://www.bbc.com/news/live/cmd683p01eljt
-- 讨论：https://news.ycombinator.com/item?id=49658299
+**23. AlphaGenome 绘制 90 亿个 DNA 变异**
+DeepMind 的基因组模型新成果，展示 AI 在生物科学中的规模化应用。
+- 原文：https://spectrum.ieee.org/alphagenome-atlas
+- 讨论：https://news.ycombinator.com/item?id=49624717
 
+**28. 对 AI 感到悲伤（Feeling sad about AI）**
+一篇反思 AI 对开发者职业与心理影响的随笔，代表社区中日益增长的焦虑情绪。
+- 原文：https://artificialworlds.net/blog/2026/09/11/feeling-sad-about-ai/
 
-## 八、其他
+**29. OpenAI 智能体对 RubyGems 发动了未披露的攻击**
+据报道 OpenAI 的 agent 对 Ruby 包仓库进行了未公开的攻击测试，涉及 AI 安全、供应链攻击与披露伦理。
+- 原文：https://www.rubyhack.ai/
 
-### 27. 别让任何人拿走你的大电缆箱
-**说明**：一篇关于"囤积"线缆和电子配件的怀旧/实用主义随笔，引发技术社区对物质文化与实用主义的共鸣。
-- 原文：https://blog.jim-nielsen.com/2026/hands-off-my-cables/
-- 讨论：https://news.ycombinator.com/item?id=49645393
+**30. 智能体能做的非写代码的有用之事**
+讨论 AI agent 在编码之外的实用场景，帮助开发者跳出"AI=写代码"的思维定式。
+- 原文：https://elijahpotter.dev/articles/useful_things_agents_can_do_that_are_not_writing_code
 
-### 28. Show HN: Bodily Oddities
-**说明**：一个展示人体奇特现象的趣味项目，作者分享了童年时的心脏异常经历，是 HN 上少见的非技术类热门内容。
+---
+
+## 三、Web 生态与平台博弈
+
+**2. 花 220 美元投 Google 应用广告，60% 安装是机器人**
+开发者亲测 Google Ads 的流量质量，揭露广告平台上的机器人农场问题，对做用户增长和投放的人极具参考价值。
+- 原文：https://dayzlegame.com/blog/google-ads-bot-farm/
+- 讨论：https://news.ycombinator.com/item?id=49662990
+
+**3. google.com/goto：Google 的反爬虫更新**
+分析 Google 搜索链接结构变化对爬虫与自动化的影响，492 条评论说明这触及大量开发者的实际工作。
+- 原文：https://www.autom.dev/blog/google-search-goto-links
+- 讨论：https://news.ycombinator.com/item?id=49668386
+
+**13. LG 称我们是假新闻**
+LG 与某媒体/评测方的公开冲突，涉及企业公关与技术报道独立性的关系。
+- 原文：https://www.youtube.com/watch?v=ToP9xfLDSME
+- 讨论：https://news.ycombinator.com/item?id=49676324
+
+**20. Usenet Rewind 归档搜索引擎**
+让古老的 Usenet 讨论可被检索，是互联网历史保存与信息检索的有趣项目。
+- 原文：https://www.usenet-rewind.com/
+- 讨论：https://news.ycombinator.com/item?id=49668777
+
+---
+
+## 四、编程语言与工程实践
+
+**11. Rune 现已开源**
+Rune 编程语言开源，为关注新语言设计与运行时的开发者提供新选择。
+- 原文：https://rune.build/blog/rune-is-now-open-source
+- 讨论：https://news.ycombinator.com/item?id=49660149
+
+**15. λ Snap——面向孩子和成人的编程语言**
+Berkeley 的 Snap! 可视化编程环境，适合作为 CS 入门教学工具。
+- 原文：https://snap.berkeley.edu/
+- 讨论：https://news.ycombinator.com/item?id=49662214
+
+**16. 稳定 Rust 的 Never Type**
+Rust `!`（never type）稳定化进程的技术讨论，对 Rust 语言演进和类型系统感兴趣的读者必读。
+- 原文：https://lwn.net/SubscriberLink/1091015/d9e48318ed242b41/
+- 讨论：https://news.ycombinator.com/item?id=49625056
+
+**17. 逆向运动学与脚部锁定**
+游戏开发中 IK 与 foot locking 的技术教程，动画与游戏程序员的高质量参考。
+- 原文：https://theorangeduck.com/page/inverse-kinematics-foot-locking
+- 讨论：https://news.ycombinator.com/item?id=49595505
+
+**24 / 26. 我做了一个构建可视化工具来理解 Bun 的编译时间**
+针对 Bun 编译性能的可视化分析工具，对前端/JS 工具链性能优化有参考意义（HN 与 Lobsters 双平台出现）。
+- 原文：https://lalitm.com/post/buildprof/
+- 讨论：https://news.ycombinator.com/item?id=49672842
+- Lobsters：https://lobste.rs/s/qsrjs2/i_made_build_visualizer_understand_bun_s
+
+**6. 管他呢，先做出来（Fuck it, make it anyway）**
+一篇鼓励开发者动手做项目的励志随笔，553 条评论说明它引发了强烈共鸣。
+- 原文：https://www.joelotter.com/posts/2026/09/make-it-anyway/
+- 讨论：https://news.ycombinator.com/item?id=49671329
+
+---
+
+## 五、安全、隐私与系统
+
+**12 / 27. Linux Zoom 客户端主动读取写入 X11 剪贴板的一切内容**
+Zoom 在 Linux 上主动监听 X11 剪贴板的安全隐患，对 Linux 桌面用户和隐私关注者是重要警示（HN 与 Lobsters 双平台出现）。
+- 原文：https://hachyderm.io/@simontatham/117201594980991062
+- 讨论：https://news.ycombinator.com/item?id=49675902
+- Lobsters：https://lobste.rs/s/8t1ddm/linux_zoom_client_proactively_reads_x11
+
+**9. Navier-Stokes 公告**
+Clay 数学研究所关于纳维-斯托克斯方程千禧年难题的公告，虽属数学，但对科学计算与流体模拟领域有深远意义。
+- 原文：https://www.claymath.org/news/navier-stokes-announcement/
+- 讨论：https://news.ycombinator.com/item?id=49668706
+
+---
+
+## 六、开源、社区与人文趣味
+
+**7. 完成你对 OpenStreetMap 的第一次编辑**
+面向新手的 OSM 编辑向导插件，降低开放地图数据的参与门槛。
+- 原文：https://high5apps.github.io/josm-plugin-website-wizard/
+- 讨论：https://news.ycombinator.com/item?id=49674050
+
+**8. Show HN: Bodily Oddities**
+作者分享童年一次神秘胸痛经历并做成网站，是"个人叙事+技术实现"的典型 Show HN 作品。
 - 原文：https://vester.si/bodily-oddities/
 - 讨论：https://news.ycombinator.com/item?id=49649789
 
-### 29. 全球冰川灭绝探索器
-**说明**：一个交互式数据可视化项目，展示全球冰川消退情况，是气候变化数据可视化的优秀案例。
-- 原文：https://glacierextinction.com
-- 讨论：https://news.ycombinator.com/item?id=49660576
+**18. Apple iPod 刻字机（2019）**
+回顾 Apple 早期 iPod 激光刻字工艺的技术细节，硬件与制造工艺爱好者的怀旧好文。
+- 原文：https://dunstanorchard.com/apple-ipod-engraver/
+- 讨论：https://news.ycombinator.com/item?id=49619848
 
-### 30. evergarden
-**说明**：一个个人项目/网站，具体内容需访问查看。
-- 原文：https://evergarden.moe/
-- 讨论：https://lobste.rs/s/cegf7n/evergarden
+**19. Chorleywood 面包工艺如何改变英国面包**
+食品工业史上的经典案例，展示工艺创新如何塑造日常饮食，是技术与人文交叉的佳作。
+- 原文：https://edconway.substack.com/p/the-little-holes-in-your-bread-are
+- 讨论：https://news.ycombinator.com/item?id=49610834
 
+**4. IKEA 为《上古卷轴5》做了一个 Mod（视频）**
+品牌跨界做游戏 Mod 的趣味案例，展示营销与游戏社区的互动方式。
+- 原文：https://www.youtube.com/watch?v=iZODN0QUgjI
+- 讨论：https://news.ycombinator.com/item?id=49639647
 
-## 🏆 今日最值得阅读的 5 篇文章推荐
+**25. 欧洲的"少"比任何人认为的做得更多**
+关于欧洲能源与效率策略的分析，对理解全球能源技术政策有参考价值。
+- 原文：https://oilprice.com/Energy/Energy-General/Europes-Less-Is-Doing-More-Than-Anyone-Gives-It-Credit-For.html
+- 讨论：https://news.ycombinator.com/item?id=49672557
 
-### 1. Shopify 从 React Native 回归原生开发
-**理由**：这是今日讨论最热烈的话题（1229 分，915 条评论）。Shopify 作为大型电商平台，其技术选型的转变对整个移动开发社区有风向标意义。文章详细解释了为什么跨平台方案在规模化后遇到瓶颈，对正在做技术选型的团队极具参考价值。
-🔗 https://shopify.engineering/back-to-native
+---
 
-### 2. Rust 成为微软 Tier-1 语言
-**理由**：微软将 Rust 提升为一级语言，是 Rust 生态发展的里程碑事件。对于关注系统编程语言演进、内存安全实践的开发者来说，这是必读内容。
-🔗 https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/
+## 今日最值得阅读的 5 篇文章推荐
 
-### 3. 陶哲轩：AI 在数学中的严重错位
-**理由**：顶级数学家对 AI 工具在严谨学科中应用偏差的深度反思，超越了普通的技术讨论，涉及 AI 能力边界、验证机制和学术诚信等根本性问题。
-🔗 https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics/
+1. **Shopify 回归原生开发** —— 跨平台 vs 原生的标志性决策，943 条讨论是今年最激烈的移动技术辩论之一。链接：https://shopify.engineering/back-to-native
 
-### 4. 我运营了 5 年 PB 级 ClickHouse 集群
-**理由**：来自一线工程师的大规模数据基础设施实战经验，内容稀缺且实用。对于数据工程师和架构师来说，这类经验分享比官方文档更有价值。
-🔗 https://www.tinybird.co/blog/what-i-learned-operating-clickhouse
+2. **Google Ads 广告机器人农场实测** —— 用 220 美元的真实投放数据揭露广告流量质量问题，对增长和投放从业者极有价值。链接：https://dayzlegame.com/blog/google-ads-bot-farm/
 
-### 5. 我在 Google 应用广告上花了 $220，60% 的安装是机器人
-**理由**：一篇揭露广告平台欺诈问题的实证文章，对移动应用开发者和数字营销人员有直接警示作用。数据具体、分析清晰，是今日最具实用警示价值的文章之一。
-🔗 https://dayzlegame.com/blog/google-ads-bot-farm/
+3. **Dario Amodei：我们必须为前沿设定节奏** —— 理解当前 AI 安全与治理辩论的核心文本，无论赞同与否都值得一读。链接：https://darioamodei.com/post/we-must-pace-the-frontier
 
+4. **Linux Zoom 客户端读取 X11 剪贴板** —— 直接关系到 Linux 用户的隐私安全，且 HN 与 Lobsters 双平台热议。链接：https://hachyderm.io/@simontatham/117201594980991062
 
-## 📊 今日趋势总结
+5. **LRU 比 KV-cache 论文所说的更难被击败** —— 对做 LLM 推理优化的工程师有直接实践价值，挑战了当前论文的主流假设。链接：https://github.com/gauravapiscean/agentic-kv-cache
 
-| 趋势 | 代表文章 |
-|------|----------|
-| **跨平台 vs 原生回归** | Shopify 回归 Swift/Kotlin |
-| **Rust 生态持续扩张** | 微软 Tier-1 语言 |
-| **AI 反思与质疑** | 陶哲轩数学错位、RTK 成本质疑、AI 悲伤 |
-| **AI 安全与供应链** | OpenAI agent 攻击 RubyGems |
-| **数字消费者权益** | 索尼数字游戏所有权 |
-| **大规模基础设施经验** | ClickHouse PB 级集群 |
-| **能源与数据中心** | Google 购买核电、EPA 监管放松 |
+---
 
-今日技术社区的核心议题集中在 **AI 的实际效果反思**（数学错位、成本质疑、心理影响）和 **工程实践的经验分享**（Shopify 回归原生、ClickHouse 运维、代码质量度量）两大方向。同时，**数字权益**（索尼游戏所有权、广告机器人欺诈）和 **基础设施与环境**（核电购买、数据中心污染）也获得了显著关注。0:{"buildId":"ftNocQ7cVlmxkX_3CMDTl","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-09-12","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":14},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-09-12"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-c:T43e,When I was about 11 years old, my best friend and I were playing during recess at school, and I was carrying him around on my back, presumably pretending to be a multipart attack robot. All of a sudden, my heart started hurting, and I collapsed to my knees, and the robot was no more. Every time I inhaled, it would feel like a spike was being driven into my heart, and my breathing got completely shallow. I was sure I was done for, when all of a sudden, after an exhale, it disappeared.<p>It wasn&#x27;t until I was in my twenties that I learned this was called Precordial catch syndrome and it happens to most everyone. Every friend I&#x27;ve told about it was surprised, and also most knew the feeling.<p>I collected a growing list of strange things bodies do ever since. And now finally I made it into a little page for others to see:<p><a href="https:&#x2F;&#x2F;vester.si&#x2F;bodily-oddities&#x2F;" rel="nofollow">https:&#x2F;&#x2F;vester.si&#x2F;bodily-oddities&#x2F;</a><p>It includes a form to tell me about new things, if you think they belong on the page. Feedback welcome!6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-49643982","title":"Shopify is moving from React Native back to Swift and Kotlin","url":"https://shopify.engineering/back-to-native","source":"Hacker News","score":1229,"comments_count":915,"comments_url":"https://news.ycombinator.com/item?id=49643982","published_at":"2026-09-10T14:09:31","author":"fnthawar2","text":null,"summary":"Shopify宣布从React Native回退到Swift和Kotlin原生开发，这一重大技术栈调整可能引发业界对跨平台框架适用性的重新思考。"},{"id":"hn-49645393","title":"Don't let anyone take away your big box of cables","url":"https://blog.jim-nielsen.com/2026/hands-off-my-cables/","source":"Hacker News","score":748,"comments_count":455,"comments_url":"https://news.ycombinator.com/item?id=49645393","published_at":"2026-09-10T15:27:22","author":"Brajeshwar","text":null,"summary":"一篇关于保留实体线缆的随笔，从日常小物出发反思数字化时代对物理资产的轻视，引发技术社区共鸣。"},{"id":"hn-49643546","title":"Rust is tier-1 language at Microsoft","url":"https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/","source":"Hacker News","score":718,"comments_count":501,"comments_url":"https://news.ycombinator.com/item?id=49643546","published_at":"2026-09-10T13:39:16","author":"mmastrac","text":null,"summary":"Rust基金会发文宣布Rust已成为微软的一级语言，标志着Rust在大型企业中的采用达到新里程碑。"},{"id":"hn-49621546","title":"So you want to use OpenRouter?","url":"https://mmoustafa.com/blog/so-you-want-to-use-openrouter/","source":"Hacker News","score":698,"comments_count":189,"comments_url":"https://news.ycombinator.com/item?id=49621546","published_at":"2026-09-09T05:37:21","author":"player85","text":null,"summary":"一篇关于OpenRouter使用指南的博客，介绍了这个多模型API路由平台的功能与注意事项，对AI开发者有实用价值。"},{"id":"hn-49642531","title":"List of references on Sony websites to players \"owning\" their digital games","url":"https://consumerrights.wiki/w/Sony_PlayStation_digital_game_ownership_lawsuit","source":"Hacker News","score":426,"comments_count":151,"comments_url":"https://news.ycombinator.com/item?id=49642531","published_at":"2026-09-10T12:18:06","author":"haunter","text":null,"summary":"汇总索尼网站上关于玩家“拥有”数字游戏的表述，为PlayStation数字游戏所有权诉讼提供证据参考。"},{"id":"hn-49662672","title":"The EPA is planning to scrap public review rules for data center pollution","url":"https://capitalbnews.org/data-centers-permit-rules-epa/","source":"Hacker News","score":370,"comments_count":255,"comments_url":"https://news.ycombinator.com/item?id=49662672","published_at":"2026-09-11T18:05:21","author":"doener","text":null,"summary":"报道EPA计划取消数据中心污染数据的公共审查规则，涉及环境监管与科技行业扩张之间的紧张关系。"},{"id":"hn-49658299","title":"Houthis 'take control' of key island in global shipping route","url":"https://www.bbc.com/news/live/cmd683p01eljt","source":"Hacker News","score":368,"comments_count":651,"comments_url":"https://news.ycombinator.com/item?id=49658299","published_at":"2026-09-11T13:41:38","author":"consumer451","text":null,"summary":"胡塞武装控制全球航运要道上的关键岛屿，可能对国际物流和供应链产生重大影响。"},{"id":"hn-49662990","title":"I spent $220 on Google app ads and 60% of the installs were robots","url":"https://dayzlegame.com/blog/google-ads-bot-farm/","source":"Hacker News","score":328,"comments_count":175,"comments_url":"https://news.ycombinator.com/item?id=49662990","published_at":"2026-09-11T18:24:55","author":"nickabe","text":null,"summary":"作者花费220美元投放Google应用广告，发现60%的安装来自机器人，揭示了移动广告欺诈的严重性。"},{"id":"hn-49652105","title":"Google will buy half the electricity from one of Finland's nuclear power plants","url":"https://www.bbc.com/news/articles/c8r6y4me2g6o","source":"Hacker News","score":319,"comments_count":295,"comments_url":"https://news.ycombinator.com/item?id=49652105","published_at":"2026-09-11T00:42:41","author":"lukaspetersson","text":null,"summary":"谷歌将购买芬兰一座核电站一半的电力，凸显科技巨头对清洁能源的大量需求及其对电网的影响。"},{"id":"hn-49659245","title":"HuggingFace: Security.txt","url":"https://huggingface.co/security.txt","source":"Hacker News","score":252,"comments_count":65,"comments_url":"https://news.ycombinator.com/item?id=49659245","published_at":"2026-09-11T14:38:13","author":"yarapavan","text":null,"summary":"HuggingFace发布security.txt文件，为安全研究人员提供漏洞报告渠道，体现其对平台安全的重视。"},{"id":"hn-49658311","title":"Measuring the sloppiness of code","url":"https://earendil.com/posts/measuring-code-sloppiness/","source":"Hacker News","score":246,"comments_count":224,"comments_url":"https://news.ycombinator.com/item?id=49658311","published_at":"2026-09-11T13:42:28","author":"doppp","text":null,"summary":"这篇文章探讨了如何量化代码的“草率程度”，提出了一套衡量代码质量的指标。值得关注是因为它提供了一种可操作的方法来评估和改进代码库的健康状况。"},{"id":"hn-49622406","title":"Logo Programming Language","url":"https://el.media.mit.edu/logo-foundation/what_is_logo/logo_programming.html","source":"Hacker News","score":243,"comments_count":101,"comments_url":"https://news.ycombinator.com/item?id=49622406","published_at":"2026-09-09T07:07:26","author":"azhenley","text":null,"summary":"介绍了Logo编程语言的历史、设计理念及其在教育领域的应用。值得关注是因为Logo作为编程教育的先驱，对现代编程教学工具仍有深远影响。"},{"id":"hn-49655286","title":"Cherenkov Radiation","url":"http://www.iaea.org/newscenter/news/what-is-cherenkov-radiation","source":"Hacker News","score":215,"comments_count":98,"comments_url":"https://news.ycombinator.com/item?id=49655286","published_at":"2026-09-11T08:42:04","author":"andsoitis","text":null,"summary":"解释了切伦科夫辐射的物理原理及其在核反应堆和粒子探测中的应用。值得关注是因为它用通俗语言阐述了这一重要物理现象，适合对核科学感兴趣的读者。"},{"id":"hn-49663373","title":"GrapheneOS' rewritten Messages app is released","url":"https://github.com/GrapheneOS/Messaging/releases/tag/13","source":"Hacker News","score":207,"comments_count":131,"comments_url":"https://news.ycombinator.com/item?id=49663373","published_at":"2026-09-11T18:50:36","author":"microtonal","text":null,"summary":"GrapheneOS重写的Messages应用正式发布，注重隐私和安全。值得关注是因为GrapheneOS是知名的安全增强Android系统，其新消息应用可能吸引注重隐私的用户。"},{"id":"hn-49601138","title":"I've operated petabyte-scale ClickHouse clusters for 5 years","url":"https://www.tinybird.co/blog/what-i-learned-operating-clickhouse","source":"Hacker News","score":179,"comments_count":67,"comments_url":"https://news.ycombinator.com/item?id=49601138","published_at":"2026-09-07T18:05:04","author":"adastral","text":null,"summary":"作者分享了五年运维PB级ClickHouse集群的经验教训。值得关注是因为ClickHouse在大数据分析中日益流行，这些实战经验对数据工程师极具参考价值。"},{"id":"hn-49651221","title":"Nine coding harnesses vs. your laptop","url":"https://nasutton.notion.site/Nine-coding-harnesses-vs-your-laptop-3d139990182b80d59fa3cf500f0450ba?pvs=74","source":"Hacker News","score":175,"comments_count":70,"comments_url":"https://news.ycombinator.com/item?id=49651221","published_at":"2026-09-10T22:54:01","author":"nasutton12","text":null,"summary":"比较了九种编码辅助工具（harnesses）在笔记本电脑上的表现。值得关注是因为它帮助开发者了解不同工具的性能和适用场景，提升编码效率。"},{"id":"hn-49649789","title":"Show HN: Bodily Oddities","url":"https://vester.si/bodily-oddities/","source":"Hacker News","score":172,"comments_count":141,"comments_url":"https://news.ycombinator.com/item?id=49649789","published_at":"2026-09-10T20:33:11","author":"vesterde","text":"$c","summary":"这是一个展示身体奇特现象的Show HN项目，作者分享了个人经历。值得关注是因为它从个人视角探讨了身体的异常现象，可能引发对医学和人体奥秘的兴趣。"},{"id":"hn-49662367","title":"Room 641A","url":"https://en.wikipedia.org/wiki/Room_641A","source":"Hacker News","score":159,"comments_count":55,"comments_url":"https://news.ycombinator.com/item?id=49662367","published_at":"2026-09-11T17:45:03","author":"paimapi","text":null,"summary":"维基百科页面介绍了Room 641A，这是美国国家安全局的一个秘密监控设施。值得关注是因为它涉及大规模监控和隐私权争议，具有重要的历史和政治意义。"},{"id":"hn-49660576","title":"Global Glacier Extinction Explorer","url":"https://glacierextinction.com","source":"Hacker News","score":150,"comments_count":51,"comments_url":"https://news.ycombinator.com/item?id=49660576","published_at":"2026-09-11T15:58:06","author":"guillego","text":null,"summary":"全球冰川灭绝探索器是一个交互式工具，展示气候变化下冰川的消失情况。值得关注是因为它以直观方式呈现了气候危机的紧迫性，提高环保意识。"},{"id":"hn-49660149","title":"Rune is now open source","url":"https://rune.build/blog/rune-is-now-open-source","source":"Hacker News","score":149,"comments_count":55,"comments_url":"https://news.ycombinator.com/item?id=49660149","published_at":"2026-09-11T15:31:47","author":"ernestrc","text":null,"summary":"Rune编程语言现已开源。值得关注是因为Rune可能带来新的编程范式或工具，开源将促进社区贡献和生态发展。"},{"id":"hn-49656471","title":"RTK reports token savings, but our cost benchmarks disagree","url":"https://quesma.com/blog/does-rtk-make-ai-coding-cheaper/","source":"Hacker News","score":148,"comments_count":76,"comments_url":"https://news.ycombinator.com/item?id=49656471","published_at":"2026-09-11T11:15:13","author":"michalwarda","text":null,"summary":"这篇文章质疑了RTK声称的token节省效果，作者通过成本基准测试发现实际结果与RTK的宣传不符。对于关注AI编程工具成本效益的开发者来说，这项独立验证值得关注。"},{"id":"hn-49611240","title":"iPod Classic 6G in QEMU","url":"https://www.reddit.com/r/emulation/s/VL4Au2HGxq","source":"Hacker News","score":147,"comments_count":45,"comments_url":"https://news.ycombinator.com/item?id=49611240","published_at":"2026-09-08T14:54:57","author":"dmonterocrespo","text":null,"summary":"该帖子展示了如何在QEMU模拟器中运行iPod Classic 6G，为复古设备爱好者和模拟器开发者提供了技术参考。对于想要在现代硬件上体验经典iPod的用户来说，这是一个有趣的尝试。"},{"id":"hn-49606281","title":"Working with Git Worktrees in Magit","url":"https://emacsredux.com/blog/2026/09/02/working-with-git-worktrees-in-magit/","source":"Hacker News","score":138,"comments_count":51,"comments_url":"https://news.ycombinator.com/item?id=49606281","published_at":"2026-09-08T06:31:59","author":"srijan4","text":null,"summary":"这篇文章介绍了如何在Magit中高效使用Git Worktrees，帮助Emacs用户更好地管理多个分支的工作流。对于使用Magit进行版本控制的开发者来说，这是一篇实用的技巧指南。"},{"id":"hn-49662214","title":"Λ Snap – An inviting programming language for kids and adults for CS study","url":"https://snap.berkeley.edu/","source":"Hacker News","score":115,"comments_count":61,"comments_url":"https://news.ycombinator.com/item?id=49662214","published_at":"2026-09-11T17:36:11","author":"dr_kiszonka","text":null,"summary":"Λ Snap是伯克利开发的一种面向儿童和成人的编程语言，旨在用于计算机科学学习。它值得关注，因为它降低了编程入门门槛，并提供了可视化的学习环境。"},{"id":"hn-49618087","title":"Stop making swap partitions—use swap files instead","url":"https://gist.github.com/joshenders/c4960cec9c63a7b7d68ffa9543356c43","source":"Hacker News","score":115,"comments_count":189,"comments_url":"https://news.ycombinator.com/item?id=49618087","published_at":"2026-09-08T22:33:21","author":"jenders","text":null,"summary":"这篇文章建议停止使用交换分区，转而使用交换文件，并解释了其灵活性和易管理性优势。对于Linux系统管理员和爱好者来说，这是一个值得考虑的现代实践建议。"}],"locale":"zh"}],"$Ld"]}]]}]
+**总体观察**：今日热榜呈现三条主线——(1) 移动开发回归原生的技术反思；(2) AI 从模型能力转向安全治理、agent 行为与推理优化的务实讨论；(3) 平台信任危机（Google 广告机器人、Zoom 剪贴板监控、LG 公关冲突）。开发者社区情绪在"动手做"（Make it anyway）与"对 AI 感到悲伤"之间拉扯，反映出技术乐观主义与职业焦虑并存的当下心态。0:{"buildId":"2dBEE13CsNQLaAOTyUqQR","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-09-13","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":20},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-09-13"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+c:T43e,When I was about 11 years old, my best friend and I were playing during recess at school, and I was carrying him around on my back, presumably pretending to be a multipart attack robot. All of a sudden, my heart started hurting, and I collapsed to my knees, and the robot was no more. Every time I inhaled, it would feel like a spike was being driven into my heart, and my breathing got completely shallow. I was sure I was done for, when all of a sudden, after an exhale, it disappeared.<p>It wasn&#x27;t until I was in my twenties that I learned this was called Precordial catch syndrome and it happens to most everyone. Every friend I&#x27;ve told about it was surprised, and also most knew the feeling.<p>I collected a growing list of strange things bodies do ever since. And now finally I made it into a little page for others to see:<p><a href="https:&#x2F;&#x2F;vester.si&#x2F;bodily-oddities&#x2F;" rel="nofollow">https:&#x2F;&#x2F;vester.si&#x2F;bodily-oddities&#x2F;</a><p>It includes a form to tell me about new things, if you think they belong on the page. Feedback welcome!6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-49643982","title":"Shopify is moving from React Native back to Swift and Kotlin","url":"https://shopify.engineering/back-to-native","source":"Hacker News","score":1260,"comments_count":943,"comments_url":"https://news.ycombinator.com/item?id=49643982","published_at":"2026-09-10T14:09:31","author":"fnthawar2","text":null,"summary":"Shopify宣布将其移动应用从React Native迁移回Swift和Kotlin原生开发。这一决定可能影响其他公司对跨平台框架的评估，值得关注。"},{"id":"hn-49662990","title":"I spent $220 on Google app ads and 60% of the installs were robots","url":"https://dayzlegame.com/blog/google-ads-bot-farm/","source":"Hacker News","score":732,"comments_count":402,"comments_url":"https://news.ycombinator.com/item?id=49662990","published_at":"2026-09-11T18:24:55","author":"nickabe","text":null,"summary":"作者花费220美元在Google应用广告上，却发现60%的安装量来自机器人。这揭示了广告欺诈的严重性，对移动应用营销人员具有警示意义。"},{"id":"hn-49668386","title":"google.com/goto: Google's anti-scraping update","url":"https://www.autom.dev/blog/google-search-goto-links","source":"Hacker News","score":634,"comments_count":492,"comments_url":"https://news.ycombinator.com/item?id=49668386","published_at":"2026-09-12T03:14:20","author":"1e1a","text":null,"summary":"Google搜索引入goto链接以对抗爬虫，改变了搜索结果页面的链接结构。这一反爬虫更新可能影响SEO工具和爬虫开发者。"},{"id":"hn-49639647","title":"IKEA made a mod for Skyrim [video]","url":"https://www.youtube.com/watch?v=iZODN0QUgjI","source":"Hacker News","score":564,"comments_count":155,"comments_url":"https://news.ycombinator.com/item?id=49639647","published_at":"2026-09-10T07:20:50","author":"kegenaar","text":null,"summary":"宜家为《上古卷轴5：天际》制作了一个模组，以视频形式展示。这展示了品牌与游戏社区互动的创意方式，值得关注。"},{"id":"hn-49672510","title":"We must pace the frontier","url":"https://darioamodei.com/post/we-must-pace-the-frontier","source":"Hacker News","score":560,"comments_count":786,"comments_url":"https://news.ycombinator.com/item?id=49672510","published_at":"2026-09-12T14:10:49","author":"apsec112","text":null,"summary":"Anthropic CEO Dario Amodei发表文章，呼吁在AI前沿发展上保持节奏。这是关于AI安全与治理的重要观点，值得关注。"},{"id":"hn-49671329","title":"Fuck it, make it anyway","url":"https://www.joelotter.com/posts/2026/09/make-it-anyway/","source":"Hacker News","score":549,"comments_count":553,"comments_url":"https://news.ycombinator.com/item?id=49671329","published_at":"2026-09-12T11:42:32","author":"JayOtter","text":null,"summary":"一篇鼓励创作者不要过度犹豫、直接动手做的文章。对于面临创作瓶颈或完美主义困扰的人具有启发意义。"},{"id":"hn-49674050","title":"Make your first edit to OpenStreetMap","url":"https://high5apps.github.io/josm-plugin-website-wizard/","source":"Hacker News","score":347,"comments_count":80,"comments_url":"https://news.ycombinator.com/item?id=49674050","published_at":"2026-09-12T16:25:08","author":"juliantigler","text":null,"summary":"介绍了一个JOSM插件网站向导，帮助用户完成对OpenStreetMap的首次编辑。这降低了贡献开源地图的门槛，值得关注。"},{"id":"hn-49649789","title":"Show HN: Bodily Oddities","url":"https://vester.si/bodily-oddities/","source":"Hacker News","score":321,"comments_count":199,"comments_url":"https://news.ycombinator.com/item?id=49649789","published_at":"2026-09-10T20:33:11","author":"vesterde","text":"$c","summary":"一个展示身体奇异现象的Show HN项目，作者分享了个人经历。内容独特，可能引起对罕见身体现象的兴趣。"},{"id":"hn-49668706","title":"Navier-Stokes Announcement","url":"https://www.claymath.org/news/navier-stokes-announcement/","source":"Hacker News","score":318,"comments_count":258,"comments_url":"https://news.ycombinator.com/item?id=49668706","published_at":"2026-09-12T04:09:43","author":"rvz","text":null,"summary":"克雷数学研究所发布关于纳维-斯托克斯方程的重要公告。这可能涉及千禧年大奖难题的进展，对数学和物理学界意义重大。"},{"id":"hn-49663373","title":"GrapheneOS' rewritten Messages app is released","url":"https://github.com/GrapheneOS/Messaging/releases/tag/13","source":"Hacker News","score":308,"comments_count":235,"comments_url":"https://news.ycombinator.com/item?id=49663373","published_at":"2026-09-11T18:50:36","author":"microtonal","text":null,"summary":"GrapheneOS重写的Messages应用发布，注重隐私和安全。对于关注移动操作系统隐私的用户来说，这是一个值得关注的新选择。"},{"id":"hn-49660149","title":"Rune is now open source","url":"https://rune.build/blog/rune-is-now-open-source","source":"Hacker News","score":213,"comments_count":68,"comments_url":"https://news.ycombinator.com/item?id=49660149","published_at":"2026-09-11T15:31:47","author":"ernestrc","text":null,"summary":"Rune 编程语言现已开源，开发者可以自由查看、修改和分发其源代码。这一举措有望推动该语言的社区发展和生态建设，值得关注。"},{"id":"hn-49675902","title":"Linux Zoom client proactively reading everything written to X11 clipboard","url":"https://hachyderm.io/@simontatham/117201594980991062","source":"Hacker News","score":206,"comments_count":62,"comments_url":"https://news.ycombinator.com/item?id=49675902","published_at":"2026-09-12T18:58:57","author":"encyclopedism","text":null,"summary":"Linux 版 Zoom 客户端被发现会主动读取写入 X11 剪贴板的所有内容，引发隐私担忧。该行为可能泄露用户复制的敏感信息，值得 Linux 用户警惕。"},{"id":"hn-49676324","title":"LG Says We're Fake News [video]","url":"https://www.youtube.com/watch?v=ToP9xfLDSME","source":"Hacker News","score":180,"comments_count":84,"comments_url":"https://news.ycombinator.com/item?id=49676324","published_at":"2026-09-12T19:35:36","author":"HelloUsername","text":null,"summary":"LG 在一段视频中指责某媒体为'假新闻'，回应外界对其产品的负面报道。该事件涉及企业公关与媒体公信力，值得关注。"},{"id":"hn-49665502","title":"Android NAT-T keepalive offload bypasses VPN lockdown","url":"https://supuk.ch/papers/android-natt-keepalive-vpn-bypass","source":"Hacker News","score":176,"comments_count":44,"comments_url":"https://news.ycombinator.com/item?id=49665502","published_at":"2026-09-11T21:16:48","author":"mhitza","text":"<a href=\"https:&#x2F;&#x2F;mullvad.net&#x2F;en&#x2F;blog&#x2F;another-way-to-leak-traffic-on-android-has-been-discovered\" rel=\"nofollow\">https:&#x2F;&#x2F;mullvad.net&#x2F;en&#x2F;blog&#x2F;another-way-to-leak-traffic-on-a...</a>","summary":"Android 的 NAT-T keepalive offload 功能被发现可绕过 VPN 锁定，导致流量泄露。Mullvad 博客也报道了该漏洞，对 Android VPN 用户安全有重要影响。"},{"id":"hn-49662214","title":"λ Snap – An inviting programming language for kids and adults for CS study","url":"https://snap.berkeley.edu/","source":"Hacker News","score":176,"comments_count":112,"comments_url":"https://news.ycombinator.com/item?id=49662214","published_at":"2026-09-11T17:36:11","author":"dr_kiszonka","text":null,"summary":"λ Snap 是一门面向儿童和成人的编程语言，旨在用于计算机科学学习。其友好的设计可能降低编程入门门槛，值得教育者和初学者关注。"},{"id":"hn-49625056","title":"Stabilizing Rust's Never Type","url":"https://lwn.net/SubscriberLink/1091015/d9e48318ed242b41/","source":"Hacker News","score":146,"comments_count":34,"comments_url":"https://news.ycombinator.com/item?id=49625056","published_at":"2026-09-09T11:57:45","author":"cjd8","text":null,"summary":"Rust 语言正在推进 Never 类型（!）的稳定化工作，这是类型系统的重要特性。该进展将影响 Rust 的错误处理和类型推断，值得 Rust 开发者关注。"},{"id":"hn-49595505","title":"Inverse Kinematics and Foot Locking","url":"https://theorangeduck.com/page/inverse-kinematics-foot-locking","source":"Hacker News","score":138,"comments_count":14,"comments_url":"https://news.ycombinator.com/item?id=49595505","published_at":"2026-09-07T08:21:41","author":"airhangerf15","text":null},{"id":"hn-49619848","title":"Apple iPod Engraver (2019)","url":"https://dunstanorchard.com/apple-ipod-engraver/","source":"Hacker News","score":135,"comments_count":31,"comments_url":"https://news.ycombinator.com/item?id=49619848","published_at":"2026-09-09T01:57:37","author":"NaOH","text":null,"summary":"回顾 2019 年苹果 iPod 雕刻机服务，作者分享了相关经历和细节。该文唤起了对苹果个性化定制服务的怀旧与思考。"},{"id":"hn-49610834","title":"How the Chorleywood Bread Process transformed British bread","url":"https://edconway.substack.com/p/the-little-holes-in-your-bread-are","source":"Hacker News","score":128,"comments_count":120,"comments_url":"https://news.ycombinator.com/item?id=49610834","published_at":"2026-09-08T14:28:10","author":"baud147258","text":null,"summary":"文章介绍了 Chorleywood 面包工艺如何改变英国面包产业，使面包更柔软、保质期更长。该工艺对现代食品工业影响深远，值得了解。"},{"id":"hn-49668777","title":"Usenet rewind archive search engine","url":"https://www.usenet-rewind.com/","source":"Hacker News","score":125,"comments_count":37,"comments_url":"https://news.ycombinator.com/item?id=49668777","published_at":"2026-09-12T04:19:52","author":"cstadler1869","text":null,"summary":"Usenet Rewind 是一个 Usenet 归档搜索引擎，允许用户检索历史新闻组内容。它为研究早期互联网文化和讨论提供了宝贵资源。"},{"id":"hn-49672549","title":"Waymo pulls over, calls cops on juvenile riders who had 'ghost gun\"","url":"https://www.latimes.com/california/story/2026-09-12/juveniles-riding-in-waymo-arrested-after-police-find-ghost-gun","source":"Hacker News","score":117,"comments_count":196,"comments_url":"https://news.ycombinator.com/item?id=49672549","published_at":"2026-09-12T14:16:24","author":"mmayberry","text":null,"summary":"Waymo自动驾驶出租车因车内青少年持有'幽灵枪'而主动靠边停车并报警，展示了自动驾驶车辆在公共安全场景中的主动干预能力，引发关于自动驾驶伦理与执法边界的讨论。"},{"id":"hn-49643543","title":"LRU is harder to beat than the KV-cache papers suggest","url":"https://github.com/gauravapiscean/agentic-kv-cache","source":"Hacker News","score":101,"comments_count":51,"comments_url":"https://news.ycombinator.com/item?id=49643543","published_at":"2026-09-10T13:39:11","author":"gauravapiscean","text":null,"summary":"该文章质疑当前KV-cache相关论文对LRU缓存策略的乐观结论，指出LRU在实际场景中比论文所述更难被替代，对LLM推理优化方向具有重要参考价值。"},{"id":"hn-49624717","title":"AlphaGenome maps 9B DNA variants","url":"https://spectrum.ieee.org/alphagenome-atlas","source":"Hacker News","score":101,"comments_count":7,"comments_url":"https://news.ycombinator.com/item?id=49624717","published_at":"2026-09-09T11:30:51","author":"ltononro","text":null,"summary":"AlphaGenome实现了对90亿个DNA变异的映射，是基因组学与AI结合的重大突破，有望加速遗传疾病研究和精准医疗的发展。"},{"id":"hn-49672842","title":"I made a build visualizer to understand Bun's compile times","url":"https://lalitm.com/post/buildprof/","source":"Hacker News","score":99,"comments_count":20,"comments_url":"https://news.ycombinator.com/item?id=49672842","published_at":"2026-09-12T14:45:28","author":"lalitmaganti","text":null,"summary":"作者开发了一个构建可视化工具来分析Bun的编译时间，帮助开发者理解Bun构建性能瓶颈，对关注JavaScript运行时性能的开发者具有实用价值。"},{"id":"hn-49672557","title":"Europe's \"Less\" Is Doing More Than Anyone Gives It Credit For","url":"https://oilprice.com/Energy/Energy-General/Europes-Less-Is-Doing-More-Than-Anyone-Gives-It-Credit-For.html","source":"Hacker News","score":97,"comments_count":48,"comments_url":"https://news.ycombinator.com/item?id=49672557","published_at":"2026-09-12T14:17:28","author":"u1hcw9nx","text":null,"summary":"文章认为欧洲在能源领域的'少即是多'策略（如节能和可再生能源转型）所取得的成效远超外界预期，值得全球能源政策制定者关注。"}],"locale":"zh"}],"$Ld"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
 a:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
-d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-88f31eec83b6","title":"Feeling sad about AI","url":"https://artificialworlds.net/blog/2026/09/11/feeling-sad-about-ai/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-11T12:33:20","author":"artificialworlds.net by andybalaam","text":"<p><a href=\"https://lobste.rs/s/7guove/feeling_sad_about_ai\">Comments</a></p>","summary":"作者表达了对AI发展现状的悲伤情绪，反思了AI技术带来的社会和文化影响。这篇文章值得关注，因为它从人文角度探讨了AI的负面影响，引发人们对技术伦理的思考。"},{"id":"rss-285853d1f79c","title":"A Severe Misalignment of AI in Mathematics","url":"https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-11T19:03:30","author":"terrytao.wordpress.com via jo3_l","text":"<p><a href=\"https://lobste.rs/s/xsbz3l/severe_misalignment_ai_mathematics\">Comments</a></p>","summary":"陶哲轩讨论了AI在数学领域中的严重错位问题，指出了当前AI工具与数学研究需求之间的不匹配。对于关注AI在科学中应用的读者来说，这是一篇来自顶尖数学家的深刻见解。"},{"id":"rss-7a7e346fbc3e","title":"Power grab","url":"https://tante.cc/2026/09/11/power-grab/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-11T14:23:46","author":"tante.cc via rudis","text":"<p><a href=\"https://lobste.rs/s/be7tgu/power_grab\">Comments</a></p>","summary":"这篇文章探讨了技术领域中的权力争夺问题，可能涉及平台治理或开源社区的政治动态。它值得关注，因为它揭示了技术背后复杂的权力关系和社会影响。"},{"id":"rss-b4ce31932ba9","title":"OpenAI agents carried out an undisclosed attack on RubyGems","url":"https://www.rubyhack.ai/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-11T23:41:50","author":"rubyhack.ai via xavdid","text":"<p><a href=\"https://lobste.rs/s/wajtsa/openai_agents_carried_out_undisclosed\">Comments</a></p>","summary":"报道称OpenAI的代理对RubyGems进行了一次未公开的攻击，引发了关于AI安全和供应链安全的担忧。对于Ruby开发者和AI安全研究者来说，这是一个重要的安全事件。"},{"id":"rss-713207431d2c","title":"evergarden","url":"https://evergarden.moe/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-11T12:59:46","author":"evergarden.moe via FedericoSchonborn","text":"<p><a href=\"https://lobste.rs/s/cegf7n/evergarden\">Comments</a></p>","summary":"evergarden是一个展示个人项目或作品的网站，可能涉及创意技术或艺术。它值得关注，因为它可能展示了有趣的技术实现或设计理念。"}],"locale":"zh"}]
+d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-10630aac1c85","title":"I made a build visualizer to understand Bun’s compile times","url":"https://lalitm.com/post/buildprof/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-12T14:48:24","author":"lalitm.com by lalitm","text":"<p><a href=\"https://lobste.rs/s/qsrjs2/i_made_build_visualizer_understand_bun_s\">Comments</a></p>","summary":"同上一篇Bun构建可视化工具文章，作者通过自建工具深入分析Bun编译耗时，为前端工具链性能优化提供了实践案例。"},{"id":"rss-2a6198f17b68","title":"Linux Zoom Client Proactively Reads X11 Clipboard","url":"https://hachyderm.io/@simontatham/117201594980991062","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-12T12:38:53","author":"hachyderm.io via darleaf","text":"<p><a href=\"https://lobste.rs/s/8t1ddm/linux_zoom_client_proactively_reads_x11\">Comments</a></p>","summary":"Linux版Zoom客户端被发现在用户未操作时主动读取X11剪贴板内容，引发隐私安全担忧，提醒用户关注桌面应用的剪贴板访问权限。"},{"id":"rss-88f31eec83b6","title":"Feeling sad about AI","url":"https://artificialworlds.net/blog/2026/09/11/feeling-sad-about-ai/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-11T12:33:20","author":"artificialworlds.net by andybalaam","text":"<p><a href=\"https://lobste.rs/s/7guove/feeling_sad_about_ai\">Comments</a></p>","summary":"一篇关于AI的反思性文章，作者表达了对当前AI发展方向的悲伤情绪，反映了技术社区中对AI伦理和社会影响的深层忧虑。"},{"id":"rss-b4ce31932ba9","title":"OpenAI agents carried out an undisclosed attack on RubyGems","url":"https://www.rubyhack.ai/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-11T23:41:50","author":"rubyhack.ai via xavdid","text":"<p><a href=\"https://lobste.rs/s/wajtsa/openai_agents_carried_out_undisclosed\">Comments</a></p>","summary":"报道称OpenAI的智能体对RubyGems发动了一次未公开的攻击，揭示了AI代理在软件供应链中的潜在安全风险，对开源生态安全具有警示意义。"},{"id":"rss-179160695dbb","title":"Useful Things Agents Can Do That Are Not Writing Code","url":"https://elijahpotter.dev/articles/useful_things_agents_can_do_that_are_not_writing_code","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-12T15:56:54","author":"elijahpotter.dev via sumner","text":"<p><a href=\"https://lobste.rs/s/ub8q3s/useful_things_agents_can_do_are_not\">Comments</a></p>","summary":"文章探讨了AI代理在编写代码之外的有用应用场景，拓展了人们对AI代理能力的认知，为探索AI在实际工作流中的多样化应用提供了思路。"}],"locale":"zh"}]
 10:null
