@@ -3,230 +3,216 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-e:"$Sreact.suspense"
-5:T321d,# 今日 Technology 热门文章分析总结
+e:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+5:T29c1,# 今日 Technology 热门文章分析总结
 
-## 一、AI 与模型前沿
+> 数据来源：Hacker News、Lobsters 等。共 30 篇（其中第 10 与第 30 篇为同一文章在不同平台的重复出现，下文合并处理并注明）。
 
-**1. Introducing System One Models and Jev**（HN 1797分，474评论）
-TypeSafe 发布 System One 模型与 Jev，是今日技术圈讨论度最高的 AI 发布之一，值得关注其架构定位与"系统一"命名的认知科学隐喻。
-- 文章：https://typesafe.ai/blog/introducing-system-one-models-and-jev
-- 讨论：https://news.ycombinator.com/item?id=49717558
 
-**2. A warning about 'model welfare'**（HN 202分，538评论）
-Mustafa Suleyman 对"模型福利"议题发出警告，评论数远超分数，说明这是争议性极强的话题——AI 是否应被赋予道德考量。
-- 文章：https://mustafa-suleyman.ai/a-warning-about-model-welfare
-- 讨论：https://news.ycombinator.com/item?id=49727580
+## 一、AI 与机器学习基础设施
 
-**3. Dream-RSI: Recursive Self-Improvement through Evolving Worlds**（HN 182分）
-arXiv 论文，探讨通过演化世界实现递归自我改进，是 AGI 路径研究中的一个新方向。
-- 文章：https://arxiv.org/abs/2609.14858
-- 讨论：https://news.ycombinator.com/item?id=49726955
-
-**4. The DeepMind Institute**（HN 153分）
-DeepMind 成立新研究机构，值得关注其与 Google 内部研究体系的定位差异。
-- 文章：https://institute.deepmind.com/
-- 讨论：https://news.ycombinator.com/item?id=49727659
-
----
-
-## 二、安全、隐私与内容真实性
-
-**5. Apple Reference Image: A New Approach for Verified Photography**（HN 500分，331评论）
-苹果提出"参考图像"方案应对 AI 伪造照片问题，是平台级内容真实性基础设施的重要尝试。
-- 文章：https://security.apple.com/blog/apple-reference-image/
-- 讨论：https://news.ycombinator.com/item?id=49721322
-
-**6. Hackers Got Inside a Flock Camera**（HN 485分）
-Flock 车牌识别摄像头被曝存在硬编码凭证等严重漏洞，涉及大规模监控系统的安全性，附带 Micah Lee 的技术分析。
-- 文章：https://www.wired.com/story/hackers-flock-camera-data-shows-how-system-works/
-- 补充：https://micahflee.com/flock-cameras-are-riddled-with-security-vulnerabilities-and-hard-coded-credentials/
-- 讨论：https://news.ycombinator.com/item?id=49726586
-
-**7. Forgery of C2PA on a Pixel 10**（Lobsters）
-与 Apple Reference Image 形成对照：C2PA 内容凭证在 Pixel 10 上被成功伪造，说明"内容溯源"标准本身仍存在可攻破的环节。
-- 文章：https://www.hackerfactor.com/blog/index.php?/archives/1102-C2PA-and-Pixel-Glitter-Milk.html
-- 讨论：https://lobste.rs/s/tgrvxh/forgery_c2pa_on_pixel_10
-
-**8. Original Sony PlayStation 2 security chip 'broken wide open' after 26 years**（HN 264分）
-PS2 的 Mechacon 安全芯片在发售 26 年后被逆向攻破，是硬件安全与逆向工程的经典案例。
-- 文章：https://www.tomshardware.com/video-games/playstation/26-year-old-sony-ps2-security-chip-broken-wide-open-after-four-years-of-effort-reverse-engineering-enthusiast-successfully-unlocks-cxp102064-mechacon-chip
-- 讨论：https://news.ycombinator.com/item?id=49725356
-
----
-
-## 三、编程语言、性能与工程实践
-
-**9. Nvidia announces native GPU programming in Rust**（HN 341分）
-NVIDIA 官方博客介绍 CUDA Rust 的两条 GPU kernel 编写路径，是 Rust 进入 GPU 计算主流生态的标志性事件。
-- 文章：https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/
+**1. Nvidia 宣布在 Rust 中原生支持 GPU 编程**
+Nvidia 官方博客发布 CUDA Rust 两条技术路线，标志着 Rust 正式进入 GPU 高性能计算主流生态，对系统编程社区意义重大。
+- 原文：https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/
 - 讨论：https://news.ycombinator.com/item?id=49724881
 
-**10. Performance Improvements in .NET 11**（HN 196分）
-微软官方 .NET 11 性能改进详解，是 .NET 开发者必读的版本升级参考。
-- 文章：https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-11/
-- 讨论：https://news.ycombinator.com/item?id=49711424
+**2. GLM 如何构建自己的推理基础设施**
+智谱（Z.ai）披露其自建推理基础设施的技术细节，对大模型部署与推理优化有较高参考价值。
+- 原文：https://z.ai/blog/glm-built-its-inference-infrastructure
+- 讨论：https://news.ycombinator.com/item?id=49737922
 
-**11. Vectorized and performance-portable Quicksort (2022)**（HN 166分）
-Google 开源博客经典文章回顾，讲向量化且性能可移植的快速排序，对高性能计算与 SIMD 优化有参考价值。
-- 文章：https://opensource.googleblog.com/2022/06/Vectorized%20and%20performance%20portable%20Quicksort.html
-- 讨论：https://news.ycombinator.com/item?id=49731054
+**3. Astra for Law（OpenAI）**
+OpenAI 推出面向法律行业的 Astra 产品，引发关于 AI 进入专业服务领域的广泛讨论（371 条评论，争议度高）。
+- 原文：https://openai.com/index/astra-for-law/
+- 讨论：https://news.ycombinator.com/item?id=49745940
 
-**12. Small programming tricks**（HN 415分）
-Will Keleher 关于"小技巧很重要"的编程随笔，高分说明工程社区对实用经验的强烈共鸣。
-- 文章：https://will-keleher.com/posts/small-programming-tricks-matter/
-- 讨论：https://news.ycombinator.com/item?id=49729000
+**4. 人工智能现已击败部分顶尖人类预测者**
+《经济学人》报道 AI 在预测任务上超越优秀人类预测者，涉及 AI 能力边界与决策应用。
+- 原文：https://www.economist.com/science-and-technology/2026/09/16/artificial-intelligence-now-beats-some-of-the-best-human-forecasters
+- 讨论：https://news.ycombinator.com/item?id=49742021
 
-**13. Reversing Factorio's RNG**（HN 152分）
-逆向 Factorio 的随机数生成器，是游戏逆向与 RNG 实现分析的趣味案例。
-- 文章：https://gegell.github.io/posts/factorio-rng/
-- 讨论：https://news.ycombinator.com/item?id=49674451
+**5. 迈向"自动驾驶"的代码库（Towards Self-Driving Codebases）**
+探讨 AI 驱动的代码库自动化演进方向，属于 AI + 软件工程的前沿思考。
+- 原文：https://blog.detail.dev/posts/towards-self-driving-codebases/
+- 讨论：https://news.ycombinator.com/item?id=49743527
 
-**14. Introducing GNOME 51**（Lobsters）
-GNOME 51 正式发布，Linux 桌面用户关注的新版本。
-- 文章：https://release.gnome.org/51/
-- 讨论：https://lobste.rs/s/gs10ad/introducing_gnome_51
+**6. 我不喜欢 LLM（Martin Fowler）**
+软件工程泰斗 Martin Fowler 撰文表达对 LLM 的保留态度，观点权威、值得一读。
+- 原文：https://martinfowler.com/articles/2026-dont-like-llms.html
+- 讨论：https://lobste.rs/s/pkj7mf/i_don_t_like_llms
 
----
 
-## 四、平台治理、可靠性与基础设施
+## 二、Rust 生态与系统安全
 
-**15. An update on Wayback Machine access**（HN 665分，351评论）
-Internet Archive 关于 Wayback Machine 访问状态的最新说明，涉及数字存档的可持续性，是互联网公共基础设施的重要议题。
-- 文章：https://blog.archive.org/2026/09/15/an-update-on-wayback-machine-access/
-- 讨论：https://news.ycombinator.com/item?id=49716176
+**7. 警惕：针对知名 Rust 开发者的定向攻击**
+Rust 官方博客发布安全警告，涉及开源社区供应链安全，所有 Rust 使用者都应关注。
+- 原文：https://blog.rust-lang.org/2026/09/17/targeted-attacks/
+- 讨论：https://lobste.rs/s/uz30ed/be_alert_targeted_attacks_on_prominent
 
-**16. Salesforce Global Outage**（HN 266分）
-Salesforce 全球宕机事件，企业级 SaaS 单点依赖风险的又一实例。
-- 文章：https://status.salesforce.com/products/all
-- 讨论：https://news.ycombinator.com/item?id=49724488
+**8. 用 Verus 开发可证明正确的 Rust 代码**
+Amazon Science 介绍如何借助 Verus 进行形式化验证，是 Rust 安全性与形式化方法的结合。
+- 原文：https://www.amazon.science/blog/developing-provably-correct-rust-code-with-verus
+- 讨论：https://news.ycombinator.com/item?id=49700153
 
-**17. AWS says it can't restore some data from mideast facilities struck by Iran**（HN 256分）
-AWS 中东设施受伊朗打击后部分数据无法恢复，是地缘政治对云基础设施影响的极端案例。
-- 文章：https://www.wsj.com/world/middle-east/aws-says-it-cant-restore-some-data-from-mideast-facilities-struck-by-iran-ddcb7e5d
-- 存档：https://archive.is/Ay7RJ
-- 讨论：https://news.ycombinator.com/item?id=49719249
+**9. Cloudflare/Security-Audit-Skill**
+Cloudflare 开源的安全审计技能/工具仓库，对安全工程实践有直接帮助。
+- 原文：https://github.com/cloudflare/security-audit-skill
+- 讨论：https://news.ycombinator.com/item?id=49736466
 
-**18. Can we stop with the uptime percentages?**（HN 133分）
-Jim Nielsen 质疑"99.9% 可用性"这类指标的实际意义，与 Salesforce 宕机事件形成呼应。
-- 文章：https://blog.jim-nielsen.com/2026/stop-with-the-uptime-percentage/
-- 讨论：https://news.ycombinator.com/item?id=49728733
+**10. CrowdSec 源代码泄露事件声明**
+CrowdSec 官方就源码泄露发布声明，涉及开源安全公司的供应链与代码保护议题。
+- 原文：https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure
+- 讨论：https://news.ycombinator.com/item?id=49742355
 
-**19. The Google Play app review process now regularly takes longer than a week**（HN 341分）
-Google Play 审核周期常态化超过一周，对独立开发者影响显著。
-- 文章：https://gultsch.social/@daniel/117280438824908947
-- 讨论：https://news.ycombinator.com/item?id=49724927
 
-**20. A/I Shuts Down**（Lobsters）
-Autistici/Inventati 关闭，影响欧洲约 2 万邮箱、2 万博客、5 千邮件列表、1500 网站，是独立互联网基础设施的重大损失。
-- 文章：https://keepitfree.ai/announcements/a/i-shuts-down-stay-human/
-- 讨论：https://lobste.rs/s/ihw0hq/end_verygoodsoftwarenotvirus_ru
+## 三、硬件、芯片与底层系统
 
-**21. The end of verygoodsoftwarenotvirus.ru**（Lobsters）
-一个个人技术博客站点的终结，与 A/I 关闭同属"互联网小型独立站点消亡"主题。
-- 文章：https://blog.verygoodsoftwarenotvirus.dev/posts/2026/09/12/the-end-of-verygoodsoftwarenotvirus-dot-ru/
-- 讨论：https://lobste.rs/s/ihw0hq/end_verygoodsoftwarenotvirus_ru
+**11. 富士通发布日本制造的新一代 CPU FUJITSU-MONAKA**
+日本本土芯片制造的重要进展，涉及 Arm 架构高性能 CPU 与半导体自主化。
+- 原文：https://global.fujitsu/en-global/pr/news/2026/09/14-02
+- 讨论：https://news.ycombinator.com/item?id=49715813
 
----
+**12. 蜡马达（Wax motor）原理**
+维基百科词条，介绍利用石蜡热胀冷缩驱动的微型马达，机械工程冷知识，讨论轻松有趣。
+- 原文：https://en.wikipedia.org/wiki/Wax_motor
+- 讨论：https://news.ycombinator.com/item?id=49726007
 
-## 五、硬件、创意项目与逆向工程
+**13. Malloc() 算法比较**
+深入对比 arena 架构下的内存分配算法，系统编程与性能优化硬核内容。
+- 原文：https://egbert.net/blog/articles/comparison-of-arena-architecture-in-malloc.html
+- 讨论：https://news.ycombinator.com/item?id=49715318
 
-**22. Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations**（HN 2098分，240评论）
-今日最高分项目：墨水屏相框识别鸟鸣并绘制成 19 世纪插画风格。硬件 + AI + 复古美学的完美结合，社区反响热烈。
-- 文章：https://github.com/arnegiacomo/fugleramme
+
+## 四、Web 浏览器与开源项目
+
+**14. Servo 赞助开发一周年**
+Servo 浏览器引擎在赞助支持下的一年进展总结，开源浏览器引擎复兴的重要里程碑。
+- 原文：https://servo.org/blog/2026/09/15/one-year-of-sponsorship/
+- 讨论：https://news.ycombinator.com/item?id=49737849
+
+**15. Hister：为你的浏览页面与本地文件打造的私有搜索引擎**
+注重隐私的本地搜索工具，可索引浏览历史与本地文件，隐私工具爱好者关注。
+- 原文：https://github.com/asciimoo/hister
+- 讨论：https://news.ycombinator.com/item?id=49743097
+
+**16. Show HN：一块能"听见"鸟叫并绘制成 19 世纪插画的电子墨水相框**
+今日 HN 最高分（2274 分）项目，融合硬件、AI 识别与电子墨水显示，创意与完成度俱佳。
+- 原文：https://github.com/arnegiacomo/fugleramme
 - 讨论：https://news.ycombinator.com/item?id=49711544
-- 相关：https://news.ycombinator.com/item?id=48343424
 
-**23. Doing Everyone Else's Job**（HN 198分）
-Yosef K 关于工程角色边界与"替别人干活"的反思文章，是团队协作与工程文化类佳作。
-- 文章：https://yosefk.com/blog/doing-everyone-elses-job.html
-- 讨论：https://news.ycombinator.com/item?id=49705944
+**17. GitLab.com 速率限制即将变更**
+影响所有 GitLab 用户的平台政策调整，CI/CD 与 API 使用者需注意。
+- 原文：https://about.gitlab.com/blog/rate-limit-change-2026/
+- 讨论：https://news.ycombinator.com/item?id=49742353
 
-**24. Tell the speakers that you liked their talks**（HN 278分）
-一篇关于技术会议文化的短文：主动告诉演讲者你喜欢他们的分享。低门槛但高价值的行为建议。
-- 文章：https://ohhelloana.blog/tell-the-speakers/
-- 讨论：https://news.ycombinator.com/item?id=49710903
 
-**25. How to get a DOI for your blog posts**（Lobsters）
-为博客文章申请 DOI 的实操指南，对希望让个人写作被学术引用的技术作者很有价值。
-- 文章：https://shkspr.mobi/blog/2026/09/how-to-get-a-doi-for-your-blog-posts/
-- 讨论：https://lobste.rs/s/lvld5b/how_get_doi_for_your_blog_posts
+## 五、编程语言与软件工程实践
 
----
+**18. 我 2014 年的临时 PHP 修复方案已有近 2000 万次安装，今天我要弃用它**
+一个"临时"方案演变成广泛依赖的经典案例，涉及开源维护者责任与技术债。
+- 原文：https://jakeasmith.com/blog/http-build-url/
+- 讨论：https://news.ycombinator.com/item?id=49718773
 
-## 六、科技与社会、政策、能源
+**19. 黄金道钉：复活 Vale(n) 编程语言**
+Verdagon 讲述如何重启 Vale/Valen 语言开发，对编程语言设计与内存安全方向有兴趣者值得一看。
+- 原文：https://verdagon.dev/blog/golden-spike-reviving-vale-valen
+- 讨论：https://lobste.rs/s/fjnkn4/golden_spike_resurrecting_vale_n
 
-**26. Australia says it could follow Canada in forging deeper ties with EU**（HN 170分）
-澳大利亚可能效仿加拿大与欧盟深化关系，涉及全球科技与贸易格局的地缘重组。
-- 文章：https://www.independent.co.uk/news/world/australasia/canda-eu-membership-australia-us-trade-b3050227.html
-- 讨论：https://news.ycombinator.com/item?id=49734171
+**20. 我对 Google 期待更高**
+一篇批评 Google 产品/服务体验的文章，反映开发者对科技巨头的失望情绪。
+- 原文：https://www.minitap.ai/blog/i-expected-better-from-google
+- 讨论：https://lobste.rs/s/11uiiv/i_expected_better_from_google
 
-**27. ER visits for gambling disorders doubled after expanded online gambling market**（HN 151分）
-在线博彩市场扩张后，赌博障碍急诊就诊量近乎翻倍，是技术产品社会负面外部性的实证研究。
-- 文章：https://temertymedicine.utoronto.ca/news/emergency-room-visits-gambling-disorders-nearly-doubled-after-expanded-online-gambling-market
-- 讨论：https://news.ycombinator.com/item?id=49730239
 
-**28. Saving Jet Fuel**（HN 130分）
-用 scikit-decide 与 OpenAP 做最优飞行规划以节省航空燃油，是运筹优化与工程结合的实用案例。
-- 文章：https://tech.marksblogg.com/scikit-decide-openap-optimal-flight-planning.html
-- 讨论：https://news.ycombinator.com/item?id=49720164
+## 六、科技社会与文化观察
 
-**29. The engineering behind the US Strategic Petroleum Reserve**（HN 120分）
-美国战略石油储备背后的工程细节，是大型基础设施工程科普的优质内容。
-- 文章：https://johnjwang.com/post/2026/09/15/engineering-behind-us-strategic-petroleum-reserve
-- 讨论：https://news.ycombinator.com/item?id=49719596
+**21. 每个人都疯了（Everybody's Lost Their Minds）**
+Netmeister 博客文章，对当下技术圈/社会现象的犀利评论，HN 与 Lobsters 双平台热议。
+- 原文：https://www.netmeister.org/blog/everybodys-lost-their-minds.html
+- 讨论（HN）：https://news.ycombinator.com/item?id=49745570
+- 讨论（Lobsters）：https://lobste.rs/s/rok1za/everybody_s_lost_their_minds
 
-**30. Japan's book scene is moving from bookstores to libraries**（HN 127分）
-日本图书生态从书店向图书馆迁移，是出版业与公共文化基础设施变迁的观察。
-- 文章：https://untranslatedjp.substack.com/p/japans-book-scene-is-quietly-moving
-- 讨论：https://news.ycombinator.com/item?id=49677916
+**22. 美国自助仓储设施的"宗教"**
+《纽约客》长文，从文化视角剖析美国自助仓储现象，非技术但视角独特。
+- 原文：https://www.newyorker.com/magazine/2026/09/21/the-american-religion-of-self-storage-facilities
+- 讨论：https://news.ycombinator.com/item?id=49740260
 
----
+**23. 日本百岁以上人口超过 10 万**
+BBC 报道日本老龄化数据，涉及社会人口结构与技术社会的宏观背景。
+- 原文：https://www.bbc.com/news/articles/cmzezj5e18xxo
+- 讨论：https://news.ycombinator.com/item?id=49746117
+
+**24. 卢卡斯艺术的"来世"**
+回顾 LucasArts 游戏公司的兴衰，游戏史与怀旧文化内容。
+- 原文：https://togameforlife.wordpress.com/2023/12/09/on-lucasarts-afterlife/
+- 讨论：https://news.ycombinator.com/item?id=49719751
+
+**25. CCC 邀请所有"模范公民"参加 40C3**
+欧洲混沌计算机俱乐部（CCC）第 40 届大会公告，黑客文化与社区活动资讯。
+- 原文：https://events.ccc.de/en/2026/09/12/40c3-model-citizens/
+- 讨论：https://news.ycombinator.com/item?id=49737787
+
+**26. 谁在太空（Whoisinspace.com）**
+实时展示当前在太空中的宇航员信息的小工具网站，轻量有趣。
+- 原文：https://whoisinspace.com
+- 讨论：https://news.ycombinator.com/item?id=49742714
+
+
+## 七、数学、物理与学术
+
+**27. 为什么我没有签署菲尔兹奖得主们的公开信**
+数学家 Timothy Gowers 解释其拒签原因，涉及学术共同体与公开信伦理，讨论热烈（315 条评论）。
+- 原文：https://gowers.wordpress.com/2026/09/17/why-i-didnt-sign-the-fields-medallists-letter/
+- 讨论：https://news.ycombinator.com/item?id=49738091
+
+**28. 狄拉克：数学与物理学的关系（1939）**
+狄拉克经典演讲原文，物理学与数学思想史的珍贵文献。
+- 原文：https://www.damtp.cam.ac.uk/events/strings02/dirac/speach.html
+- 讨论：https://news.ycombinator.com/item?id=49685835
+
+
+## 八、实用问题与求助
+
+**29. Ask HN：手机被盗后如何恢复 Google 认证？**
+真实困境求助帖，反映 Google 自动化系统在账号恢复上的失灵，99 条讨论提供实操建议。
+- 原文：无
+- 讨论：https://news.ycombinator.com/item?id=49742976
+
 
 ## 今日最值得阅读的 5 篇文章推荐
 
-1. **Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations**
-   理由：今日最高分（2098），硬件 + 音频识别 + 生成式插画的创意项目，代表"个人制造 + AI"的最佳实践。
-   https://github.com/arnegiacomo/fugleramme ｜ 讨论：https://news.ycombinator.com/item?id=49711544
+1. **Show HN：电子墨水鸟鸣相框**（HN 今日最高分 2274）
+   硬件 + AI + 艺术的完美结合，创意与工程完成度都极高，是今日最具启发性的项目。
+   https://github.com/arnegiacomo/fugleramme
 
-2. **Introducing System One Models and Jev**
-   理由：今日第二高分且 474 条评论，是 AI 模型架构的新发布，讨论热度与信息密度都很高。
-   https://typesafe.ai/blog/introducing-system-one-models-and-jev ｜ 讨论：https://news.ycombinator.com/item?id=49717558
+2. **Nvidia 在 Rust 中原生支持 GPU 编程**
+   对 Rust 生态和 GPU 计算都是里程碑事件，385 条讨论显示社区高度关注。
+   https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/
 
-3. **Apple Reference Image: A New Approach for Verified Photography**
-   理由：AI 伪造内容泛滥背景下，苹果给出的平台级"可信照片"方案，与 Lobsters 上的 C2PA 伪造案例对照阅读更佳。
-   https://security.apple.com/blog/apple-reference-image/ ｜ 讨论：https://news.ycombinator.com/item?id=49721322
+3. **警惕：针对知名 Rust 开发者的定向攻击**
+   开源供应链安全的重要警示，所有依赖开源生态的开发者都应阅读。
+   https://blog.rust-lang.org/2026/09/17/targeted-attacks/
 
-4. **Nvidia announces native GPU programming in Rust**
-   理由：Rust 进入 GPU 原生编程是生态级事件，对系统程序员和 Rust 社区都有长期影响。
-   https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/ ｜ 讨论：https://news.ycombinator.com/item?id=49724881
+4. **Martin Fowler：我不喜欢 LLM**
+   来自软件工程权威的冷静反思，在 AI 热潮中提供难得的批判性视角。
+   https://martinfowler.com/articles/2026-dont-like-llms.html
 
-5. **AWS says it can't restore some data from mideast facilities struck by Iran**
-   理由：地缘政治直接导致云数据永久丢失，是"云不等于绝对安全"的最强现实案例，值得所有架构师阅读。
-   https://www.wsj.com/world/middle-east/aws-says-it-cant-restore-some-data-from-mideast-facilities-struck-by-iran-ddcb7e5d （存档：https://archive.is/Ay7RJ）｜ 讨论：https://news.ycombinator.com/item?id=49719249
+5. **Ask HN：手机被盗后如何恢复 Google 认证？**
+   极具现实意义的账号安全案例，提醒每个人重新审视自己的 2FA 与账号恢复策略。
+   https://news.ycombinator.com/item?id=49742976
 
 ---
 
-**总体趋势观察**：今日技术新闻呈现三条主线——(1) AI 模型与"模型福利"等治理议题持续升温；(2) 内容真实性与监控系统安全（Apple Reference Image、Flock 摄像头、C2PA 伪造）成为安全领域焦点；(3) 基础设施可靠性（Salesforce 宕机、AWS 数据无法恢复、Internet Archive）与独立互联网服务消亡（A/I、verygoodsoftwarenotvirus.ru）共同构成对"集中化互联网"的反思。0:{"buildId":"ESGTfyOe-FeWGMJ2om0J1","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-09-17","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":16},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-09-17"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-49711544","title":"Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations","url":"https://github.com/arnegiacomo/fugleramme","source":"Hacker News","score":2098,"comments_count":240,"comments_url":"https://news.ycombinator.com/item?id=49711544","published_at":"2026-09-15T12:31:10","author":"arnemunthekaas","text":"See also: <i>Avian Visitors</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48343424\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48343424</a> - May 2026 (20 comments)","summary":"这是一个在Hacker News上展示的电子墨水相框项目，能够识别鸟鸣并将鸟类绘制成19世纪风格的插画。该项目结合了音频识别、电子墨水显示和复古艺术生成，展示了硬件与AI创意结合的趣味性。"},{"id":"hn-49717558","title":"Introducing System One Models and Jev","url":"https://typesafe.ai/blog/introducing-system-one-models-and-jev","source":"Hacker News","score":1797,"comments_count":474,"comments_url":"https://news.ycombinator.com/item?id=49717558","published_at":"2026-09-15T19:25:03","author":"albelfio","text":null,"summary":"Typesafe.ai发布了System One模型和Jev，可能涉及AI推理或类型安全相关的新工具。值得关注的是其可能为开发者提供更高效的模型部署或编程体验。"},{"id":"hn-49716176","title":"An update on Wayback Machine access","url":"https://blog.archive.org/2026/09/15/an-update-on-wayback-machine-access/","source":"Hacker News","score":665,"comments_count":351,"comments_url":"https://news.ycombinator.com/item?id=49716176","published_at":"2026-09-15T17:52:18","author":"ChrisArchitect","text":null,"summary":"互联网档案馆发布了关于Wayback Machine访问权限的最新更新，可能涉及法律或技术调整。该服务对保存网络历史至关重要，任何访问变化都会影响研究者和公众。"},{"id":"hn-49721322","title":"Apple Reference Image: A New Approach for Verified Photography","url":"https://security.apple.com/blog/apple-reference-image/","source":"Hacker News","score":500,"comments_count":331,"comments_url":"https://news.ycombinator.com/item?id=49721322","published_at":"2026-09-16T02:07:31","author":"imwally","text":null,"summary":"苹果推出Reference Image，一种用于验证摄影真实性的新方法，可能利用加密签名或元数据来确保照片未被篡改。在AI生成图像泛滥的背景下，这对新闻、法律和证据领域具有重要意义。"},{"id":"hn-49726586","title":"Hackers Got Inside a Flock Camera","url":"https://www.wired.com/story/hackers-flock-camera-data-shows-how-system-works/","source":"Hacker News","score":485,"comments_count":221,"comments_url":"https://news.ycombinator.com/item?id=49726586","published_at":"2026-09-16T13:18:47","author":"driverdan","text":"<a href=\"https:&#x2F;&#x2F;micahflee.com&#x2F;flock-cameras-are-riddled-with-security-vulnerabilities-and-hard-coded-credentials&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;micahflee.com&#x2F;flock-cameras-are-riddled-with-securit...</a>","summary":"Wired报道黑客入侵了Flock摄像头，并揭示了该系统的运作方式，同时有文章指出其存在安全漏洞和硬编码凭证。这引发了对公共监控摄像头隐私和安全性的严重担忧。"},{"id":"hn-49729000","title":"Small programming tricks","url":"https://will-keleher.com/posts/small-programming-tricks-matter/","source":"Hacker News","score":415,"comments_count":187,"comments_url":"https://news.ycombinator.com/item?id=49729000","published_at":"2026-09-16T15:56:47","author":"signa11","text":null,"summary":"这篇文章探讨了小型编程技巧的重要性，强调日常编码中细微优化和习惯对开发效率的累积影响。对程序员来说，这类经验分享具有实用的启发价值。"},{"id":"hn-49724881","title":"Nvidia announces native GPU programming in Rust","url":"https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/","source":"Hacker News","score":341,"comments_count":136,"comments_url":"https://news.ycombinator.com/item?id=49724881","published_at":"2026-09-16T11:15:53","author":"nonmaskable","text":null,"summary":"英伟达宣布在Rust中支持原生GPU编程，并提供了两条编写GPU内核的路径。这标志着Rust在系统编程和高性能计算领域的进一步扩展，对追求安全与性能的开发者极具吸引力。"},{"id":"hn-49724927","title":"The Google Play app review process now regularly takes longer than a week","url":"https://gultsch.social/@daniel/117280438824908947","source":"Hacker News","score":341,"comments_count":331,"comments_url":"https://news.ycombinator.com/item?id=49724927","published_at":"2026-09-16T11:19:11","author":"inputmice","text":null,"summary":"有开发者指出Google Play的应用审核流程现在经常超过一周，可能影响应用更新和发布节奏。这反映了平台审核效率问题，对依赖Google Play的开发者社区有较大影响。"},{"id":"hn-49710903","title":"Tell the speakers that you liked their talks","url":"https://ohhelloana.blog/tell-the-speakers/","source":"Hacker News","score":278,"comments_count":76,"comments_url":"https://news.ycombinator.com/item?id=49710903","published_at":"2026-09-15T11:28:19","author":"whisper2020","text":null,"summary":"这篇文章鼓励听众主动告诉演讲者自己喜欢他们的演讲，强调了正面反馈对演讲者的激励作用。在技术社区中，这种简单的行为能促进更积极的交流氛围。"},{"id":"hn-49724488","title":"Salesforce Global Outage","url":"https://status.salesforce.com/products/all","source":"Hacker News","score":266,"comments_count":168,"comments_url":"https://news.ycombinator.com/item?id=49724488","published_at":"2026-09-16T10:37:08","author":"mabil","text":null,"summary":"Salesforce遭遇全球性宕机，状态页面显示多个产品受影响。作为主流CRM平台，其服务中断可能对众多企业的业务运营造成严重影响。"},{"id":"hn-49725356","title":"Original Sony PlayStation 2 security chip 'broken wide open' after 26 years","url":"https://www.tomshardware.com/video-games/playstation/26-year-old-sony-ps2-security-chip-broken-wide-open-after-four-years-of-effort-reverse-engineering-enthusiast-successfully-unlocks-cxp102064-mechacon-chip","source":"Hacker News","score":264,"comments_count":76,"comments_url":"https://news.ycombinator.com/item?id=49725356","published_at":"2026-09-16T11:49:40","author":"rbanffy","text":null,"summary":"一位逆向工程爱好者经过四年努力，成功破解了索尼PlayStation 2已使用26年的安全芯片CXP102064 Mechacon，这对游戏主机安全和模拟器社区具有重大意义。"},{"id":"hn-49719249","title":"AWS says it can't restore some data from mideast facilities struck by Iran","url":"https://www.wsj.com/world/middle-east/aws-says-it-cant-restore-some-data-from-mideast-facilities-struck-by-iran-ddcb7e5d","source":"Hacker News","score":256,"comments_count":225,"comments_url":"https://news.ycombinator.com/item?id=49719249","published_at":"2026-09-15T21:41:42","author":"berkeleyjunk","text":"<a href=\"https:&#x2F;&#x2F;archive.is&#x2F;Ay7RJ\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.is&#x2F;Ay7RJ</a>","summary":"AWS表示无法从中东地区遭伊朗袭击的设施中恢复部分数据，凸显了地缘政治冲突对云基础设施和数据安全的现实威胁。"},{"id":"hn-49727580","title":"A warning about 'model welfare'","url":"https://mustafa-suleyman.ai/a-warning-about-model-welfare","source":"Hacker News","score":202,"comments_count":538,"comments_url":"https://news.ycombinator.com/item?id=49727580","published_at":"2026-09-16T14:27:47","author":"andsoitis","text":null,"summary":"Mustafa Suleyman撰文对'模型福利'（model welfare）概念发出警告，引发关于AI模型是否应被赋予道德考量的讨论。"},{"id":"hn-49705944","title":"Doing Everyone Else's Job","url":"https://yosefk.com/blog/doing-everyone-elses-job.html","source":"Hacker News","score":198,"comments_count":96,"comments_url":"https://news.ycombinator.com/item?id=49705944","published_at":"2026-09-15T00:01:31","author":"luu","text":null,"summary":"一篇关于职场中'替所有人干活'现象的文章，探讨了工程师在团队协作中承担过多职责的困境与反思。"},{"id":"hn-49711424","title":"Performance Improvements in .NET 11","url":"https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-11/","source":"Hacker News","score":196,"comments_count":38,"comments_url":"https://news.ycombinator.com/item?id=49711424","published_at":"2026-09-15T12:18:16","author":"soheilpro","text":null,"summary":".NET 11带来了显著的性能改进，微软官方博客详细介绍了运行时和库层面的优化，对.NET开发者具有重要参考价值。"},{"id":"hn-49726955","title":"Dream-RSI: Recursive Self-Improvement through Evolving Worlds","url":"https://arxiv.org/abs/2609.14858","source":"Hacker News","score":182,"comments_count":49,"comments_url":"https://news.ycombinator.com/item?id=49726955","published_at":"2026-09-16T13:44:40","author":"bananaflag","text":null,"summary":"一篇关于Dream-RSI的论文，探讨通过演化世界实现递归自我改进的AI方法，代表了AI自主进化研究的前沿方向。"},{"id":"hn-49734171","title":"Australia says it could follow Canada in forging deeper ties with EU","url":"https://www.independent.co.uk/news/world/australasia/canda-eu-membership-australia-us-trade-b3050227.html","source":"Hacker News","score":170,"comments_count":113,"comments_url":"https://news.ycombinator.com/item?id=49734171","published_at":"2026-09-16T22:56:48","author":"doener","text":null,"summary":"澳大利亚表示可能效仿加拿大与欧盟建立更紧密的贸易关系，反映了全球贸易格局在美国政策影响下的重新调整。"},{"id":"hn-49731054","title":"Vectorized and performance-portable Quicksort (2022)","url":"https://opensource.googleblog.com/2022/06/Vectorized%20and%20performance%20portable%20Quicksort.html","source":"Hacker News","score":166,"comments_count":27,"comments_url":"https://news.ycombinator.com/item?id=49731054","published_at":"2026-09-16T18:31:35","author":"mococa","text":null,"summary":"谷歌开源博客介绍了一种向量化且性能可移植的快速排序算法，对高性能计算和跨平台优化具有实用价值。"},{"id":"hn-49727659","title":"The DeepMind Institute","url":"https://institute.deepmind.com/","source":"Hacker News","score":153,"comments_count":47,"comments_url":"https://news.ycombinator.com/item?id=49727659","published_at":"2026-09-16T14:32:11","author":"vertigoruntime","text":null,"summary":"DeepMind成立了新的研究所（DeepMind Institute），这一动向值得关注，可能预示着AI研究组织架构和方向的重大调整。"},{"id":"hn-49674451","title":"Reversing Factorio's RNG","url":"https://gegell.github.io/posts/factorio-rng/","source":"Hacker News","score":152,"comments_count":20,"comments_url":"https://news.ycombinator.com/item?id=49674451","published_at":"2026-09-12T17:02:19","author":"jheitmann","text":null,"summary":"一篇逆向分析Factorio游戏随机数生成器（RNG）的技术文章，对游戏机制研究和随机算法理解具有趣味性和技术深度。"},{"id":"hn-49730239","title":"ER visits for gambling disorders doubled after expanded online gambling market","url":"https://temertymedicine.utoronto.ca/news/emergency-room-visits-gambling-disorders-nearly-doubled-after-expanded-online-gambling-market","source":"Hacker News","score":151,"comments_count":138,"comments_url":"https://news.ycombinator.com/item?id=49730239","published_at":"2026-09-16T17:27:37","author":"geox","text":null,"summary":"研究显示，在线赌博市场扩张后，因赌博障碍而前往急诊的病例几乎翻倍，凸显了放松在线赌博监管可能带来的公共健康风险。"},{"id":"hn-49728733","title":"Can we stop with the uptime percentages?","url":"https://blog.jim-nielsen.com/2026/stop-with-the-uptime-percentage/","source":"Hacker News","score":133,"comments_count":100,"comments_url":"https://news.ycombinator.com/item?id=49728733","published_at":"2026-09-16T15:40:04","author":"surprisetalk","text":null,"summary":"作者批评业界滥用“正常运行时间百分比”作为服务可靠性指标，认为这种表述容易误导用户且缺乏实际意义，值得开发者反思。"},{"id":"hn-49720164","title":"Saving Jet Fuel","url":"https://tech.marksblogg.com/scikit-decide-openap-optimal-flight-planning.html","source":"Hacker News","score":130,"comments_count":66,"comments_url":"https://news.ycombinator.com/item?id=49720164","published_at":"2026-09-15T23:17:20","author":"marklit","text":null,"summary":"文章介绍如何利用scikit-decide和OpenAP进行最优飞行规划以节省航空燃油，展示了机器学习在绿色航空领域的应用潜力。"},{"id":"hn-49677916","title":"Japan's book scene is moving from bookstores to libraries","url":"https://untranslatedjp.substack.com/p/japans-book-scene-is-quietly-moving","source":"Hacker News","score":127,"comments_count":49,"comments_url":"https://news.ycombinator.com/item?id=49677916","published_at":"2026-09-12T22:35:25","author":"herbertl","text":null,"summary":"日本图书市场正从实体书店向图书馆转移，反映了阅读习惯和公共文化设施角色的变化，对出版业有启示意义。"},{"id":"hn-49719596","title":"The engineering behind the US Strategic Petroleum Reserve","url":"https://johnjwang.com/post/2026/09/15/engineering-behind-us-strategic-petroleum-reserve","source":"Hacker News","score":120,"comments_count":45,"comments_url":"https://news.ycombinator.com/item?id=49719596","published_at":"2026-09-15T22:15:25","author":"johnjwang","text":null,"summary":"文章深入解析美国战略石油储备背后的工程设计与运营细节，揭示了这一关键能源基础设施的复杂性和战略价值。"}],"locale":"en"}],"$Lc"]}]]}]
+**总体趋势观察**：今日技术圈呈现三条主线——① **Rust 生态全面扩张**（GPU 编程、形式化验证、安全事件）；② **AI 深入专业领域与基础设施**（法律、预测、推理基建），同时伴随来自 Fowler 等权威的反思声音；③ **开源安全与供应链风险**持续升温（CrowdSec 泄露、Rust 定向攻击）。硬件方面，富士通 MONAKA 代表日本半导体自主化努力，值得长期跟踪。0:{"buildId":"IGnqIGNSefaLfcNCCEKpe","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-09-18","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":16},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-09-18"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+c:T66e,As we know, google has been effective at automating a lot of their systems, to the point where it can feel like there isn&#x27;t any help available from a human. So what is supposed to be the plan when this type of situation happens?<p>Basically I have a situation that after my phone was stolen, I can&#x27;t get into any of my accounts that are either connected to google, or connected to the phone via 2FA. This has made it complicated&#x2F;impossible not only to get info about my phone, but also my banking, email, drive, etc.<p>Of course they offer you &quot;multiple options&quot; to recover an account, but not if you forgot your old email&#x27;s password. At that point the options you get are,<p><pre><code>  a) Use old phone (obviously the phone is long gone)
+  b) Use current phone (the phone is gone)
+  c) Use old email (I haven&#x27;t used it in like 12 years)
+</code></pre>
+Does anyone know if their is a process to appeal 2FA or anything to deal with this type of situation?<p>I&#x27;d imagine that this has happened to people many many times, and given how phones and particularly, google auth have become so critical to accomplishing essential tasks within society, there must be some way. Or maybe it&#x27;s just like, once your phone is gone, you are completely over with society? If anyone has any experience with this or inside knowledge please share it!<p>I&#x27;m sure people here have heard of this, and maybe experienced it themselves.<p>Is there a secret option that exists that allows us to use passwords instead of rigamarole? I would love an account that let me simply log in with a password, like google used to be.6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-49711544","title":"Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations","url":"https://github.com/arnegiacomo/fugleramme","source":"Hacker News","score":2274,"comments_count":255,"comments_url":"https://news.ycombinator.com/item?id=49711544","published_at":"2026-09-15T12:31:10","author":"arnemunthekaas","text":"See also: <i>Avian Visitors</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48343424\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48343424</a> - May 2026 (20 comments)","summary":"这是一个展示项目：一个电子墨水屏相框，能识别鸟鸣并将鸟类以19世纪插画风格绘制出来。它结合了音频识别、电子墨水显示和复古美学，值得关注的是其创意性的软硬件整合。"},{"id":"hn-49724881","title":"Nvidia announces native GPU programming in Rust","url":"https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/","source":"Hacker News","score":927,"comments_count":385,"comments_url":"https://news.ycombinator.com/item?id=49724881","published_at":"2026-09-16T11:15:53","author":"nonmaskable","text":null,"summary":"Nvidia宣布在Rust中支持原生GPU编程，提供两条编写CUDA Rust内核的路径。这标志着Rust在GPU计算领域的官方支持，对系统编程和AI开发者意义重大。"},{"id":"hn-49715813","title":"Fujitsu launches made-in-Japan next-generation CPU FUJITSU-MONAKA","url":"https://global.fujitsu/en-global/pr/news/2026/09/14-02","source":"Hacker News","score":522,"comments_count":198,"comments_url":"https://news.ycombinator.com/item?id=49715813","published_at":"2026-09-15T17:28:38","author":"my123","text":null,"summary":"富士通发布了日本制造的下一代CPU FUJITSU-MONAKA。这是日本本土芯片研发的重要进展，可能影响全球高性能计算和半导体供应链格局。"},{"id":"hn-49743097","title":"Hister: A private search engine for the pages you visit and the files you keep","url":"https://github.com/asciimoo/hister","source":"Hacker News","score":485,"comments_count":138,"comments_url":"https://news.ycombinator.com/item?id=49743097","published_at":"2026-09-17T16:25:37","author":"bookofjoe","text":null,"summary":"Hister是一个私有搜索引擎，可搜索你访问过的网页和保存的文件。它强调隐私和本地化搜索，适合注重数据安全的用户。"},{"id":"hn-49737922","title":"How GLM built its own inference infrastructure","url":"https://z.ai/blog/glm-built-its-inference-infrastructure","source":"Hacker News","score":379,"comments_count":264,"comments_url":"https://news.ycombinator.com/item?id=49737922","published_at":"2026-09-17T08:27:09","author":"whiteros_e","text":null,"summary":"GLM介绍了其自建推理基础设施的历程。这展示了大型语言模型公司如何优化推理性能和成本，对AI基础设施领域有参考价值。"},{"id":"hn-49745940","title":"Astra for Law","url":"https://openai.com/index/astra-for-law/","source":"Hacker News","score":344,"comments_count":371,"comments_url":"https://news.ycombinator.com/item?id=49745940","published_at":"2026-09-17T20:17:48","author":"vertigoruntime","text":null,"summary":"OpenAI推出面向法律领域的Astra产品。这标志着AI在专业法律服务中的进一步落地，可能改变法律行业的效率和工作方式。"},{"id":"hn-49737849","title":"One year of sponsored Servo development","url":"https://servo.org/blog/2026/09/15/one-year-of-sponsorship/","source":"Hacker News","score":344,"comments_count":142,"comments_url":"https://news.ycombinator.com/item?id=49737849","published_at":"2026-09-17T08:13:54","author":"AshleysBrain","text":null,"summary":"Servo项目回顾了获得赞助一年来的开发进展。Servo是一个用Rust编写的浏览器引擎，其发展对Web渲染和开源浏览器生态有重要意义。"},{"id":"hn-49737787","title":"CCC invites all model citizens to 40C3","url":"https://events.ccc.de/en/2026/09/12/40c3-model-citizens/","source":"Hacker News","score":340,"comments_count":181,"comments_url":"https://news.ycombinator.com/item?id=49737787","published_at":"2026-09-17T08:03:54","author":"antonly","text":null,"summary":"CCC（混沌计算机俱乐部）邀请所有“模范公民”参加40C3大会。这是欧洲知名黑客与科技文化聚会，值得关注其议题和社区动态。"},{"id":"hn-49718773","title":"My temporary PHP fix from 2014 has nearly 20M installs. Today I'm deprecating it","url":"https://jakeasmith.com/blog/http-build-url/","source":"Hacker News","score":329,"comments_count":99,"comments_url":"https://news.ycombinator.com/item?id=49718773","published_at":"2026-09-15T20:53:36","author":"jakeasmith","text":null,"summary":"作者回顾了2014年写的一个临时PHP修复，它已被安装近2000万次，如今决定弃用。这反映了开源代码的长期影响和维护责任。"},{"id":"hn-49745570","title":"Everybody's Lost Their Minds","url":"https://www.netmeister.org/blog/everybodys-lost-their-minds.html","source":"Hacker News","score":290,"comments_count":243,"comments_url":"https://news.ycombinator.com/item?id=49745570","published_at":"2026-09-17T19:43:34","author":"ibobev","text":null,"summary":"一篇博客文章《所有人都疯了》，可能讨论当前科技或社会中的非理性现象。标题引人好奇，内容或涉及对行业趋势的批判性观察。"},{"id":"hn-49726007","title":"Wax motor","url":"https://en.wikipedia.org/wiki/Wax_motor","source":"Hacker News","score":260,"comments_count":50,"comments_url":"https://news.ycombinator.com/item?id=49726007","published_at":"2026-09-16T12:35:14","author":"mhb","text":null,"summary":"介绍蜡马达（Wax motor）的工作原理与应用，这是一种利用蜡的热胀冷缩产生机械运动的简单可靠装置，常见于家电和汽车中。值得关注的是它作为基础机械组件的巧妙设计，对工程师和创客有启发意义。"},{"id":"hn-49738091","title":"Why I didn’t sign the Fields medallists’ letter","url":"https://gowers.wordpress.com/2026/09/17/why-i-didnt-sign-the-fields-medallists-letter/","source":"Hacker News","score":218,"comments_count":315,"comments_url":"https://news.ycombinator.com/item?id=49738091","published_at":"2026-09-17T08:51:51","author":"simianwords","text":null,"summary":"数学家Timothy Gowers解释他为何拒绝签署一份由菲尔兹奖得主发起的公开信，涉及学术自由与政治立场的争议。该文引发对学术界联名信文化及数学界政治化的讨论。"},{"id":"hn-49740260","title":"The American Religion of Self-Storage Facilities","url":"https://www.newyorker.com/magazine/2026/09/21/the-american-religion-of-self-storage-facilities","source":"Hacker News","score":198,"comments_count":345,"comments_url":"https://news.ycombinator.com/item?id=49740260","published_at":"2026-09-17T13:12:28","author":"pseudolus","text":"<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;F77tj\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;F77tj</a>","summary":"《纽约客》文章探讨美国自助仓储设施如何成为一种独特的文化现象，甚至带有宗教般的色彩。值得关注的是它揭示了消费主义、物质主义与精神生活之间的张力。"},{"id":"hn-49736466","title":"Cloudflare/Security-Audit-Skill","url":"https://github.com/cloudflare/security-audit-skill","source":"Hacker News","score":194,"comments_count":36,"comments_url":"https://news.ycombinator.com/item?id=49736466","published_at":"2026-09-17T04:36:55","author":"donk8r","text":null,"summary":"Cloudflare在GitHub上发布了一个安全审计技能（Security-Audit-Skill）项目，可能提供自动化安全审计工具或指南。值得关注的是Cloudflare在安全领域的开源贡献，对开发者和安全工程师有实用价值。"},{"id":"hn-49742353","title":"Rate limits on GitLab.com are changing","url":"https://about.gitlab.com/blog/rate-limit-change-2026/","source":"Hacker News","score":159,"comments_count":106,"comments_url":"https://news.ycombinator.com/item?id=49742353","published_at":"2026-09-17T15:33:54","author":"darkwater","text":null,"summary":"GitLab宣布将调整GitLab.com的速率限制策略，可能影响API调用和CI/CD流水线。值得关注的是这一变化对依赖GitLab的开发者与团队的影响及应对措施。"},{"id":"hn-49685835","title":"The Relation Between Mathematics and Physics by Paul Dirac (1939)","url":"https://www.damtp.cam.ac.uk/events/strings02/dirac/speach.html","source":"Hacker News","score":158,"comments_count":62,"comments_url":"https://news.ycombinator.com/item?id=49685835","published_at":"2026-09-13T16:38:22","author":"rramadass","text":null,"summary":"保罗·狄拉克1939年关于数学与物理学关系的经典演讲，探讨了数学美与物理真理之间的深刻联系。值得关注的是它作为科学思想史的珍贵文献，对理解理论物理的方法论有重要价值。"},{"id":"hn-49700153","title":"Developing provably correct Rust code with Verus","url":"https://www.amazon.science/blog/developing-provably-correct-rust-code-with-verus","source":"Hacker News","score":157,"comments_count":73,"comments_url":"https://news.ycombinator.com/item?id=49700153","published_at":"2026-09-14T16:57:50","author":"Betelbuddy","text":null,"summary":"亚马逊科学博客介绍如何使用Verus工具开发可证明正确的Rust代码，结合形式化验证与系统编程。值得关注的是它展示了Rust在安全关键领域的应用潜力，对追求高可靠性的开发者有参考意义。"},{"id":"hn-49746117","title":"More than 100k people in Japan are now aged 100 or older","url":"https://www.bbc.com/news/articles/cmzezj5e18xxo","source":"Hacker News","score":137,"comments_count":129,"comments_url":"https://news.ycombinator.com/item?id=49746117","published_at":"2026-09-17T20:33:00","author":"karakoram","text":null,"summary":"BBC报道日本百岁及以上人口超过10万，反映该国老龄化趋势与长寿社会的挑战。值得关注的是这一人口结构变化对经济、医疗和社会政策的深远影响。"},{"id":"hn-49715318","title":"Comparison of Malloc() Algorithms","url":"https://egbert.net/blog/articles/comparison-of-arena-architecture-in-malloc.html","source":"Hacker News","score":134,"comments_count":37,"comments_url":"https://news.ycombinator.com/item?id=49715318","published_at":"2026-09-15T16:52:25","author":"egberts1","text":null,"summary":"比较不同malloc内存分配算法的文章，重点分析arena架构在性能与碎片管理上的优劣。值得关注的是它对系统程序员优化内存分配有实践指导意义。"},{"id":"hn-49742355","title":"CrowdSec Source Code Leak","url":"https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure","source":"Hacker News","score":132,"comments_count":40,"comments_url":"https://news.ycombinator.com/item?id=49742355","published_at":"2026-09-17T15:34:01","author":"eccgecko","text":null,"summary":"CrowdSec就源代码泄露事件发布声明，说明泄露范围及应对措施。值得关注的是开源安全项目的供应链风险及事件响应透明度。"},{"id":"hn-49742714","title":"Whoisinspace.com/","url":"https://whoisinspace.com","source":"Hacker News","score":125,"comments_count":77,"comments_url":"https://news.ycombinator.com/item?id=49742714","published_at":"2026-09-17T15:59:37","author":"Egg-Man","text":null,"summary":"该网站提供在太空中的人员信息查询服务，可能整合了实时航天任务数据，对航天爱好者和研究人员具有参考价值。"},{"id":"hn-49742021","title":"Artificial intelligence now beats some of the best human forecasters","url":"https://www.economist.com/science-and-technology/2026/09/16/artificial-intelligence-now-beats-some-of-the-best-human-forecasters","source":"Hacker News","score":112,"comments_count":95,"comments_url":"https://news.ycombinator.com/item?id=49742021","published_at":"2026-09-17T15:13:30","author":"ddp26","text":null,"summary":"《经济学人》报道人工智能在预测任务上已超越部分顶尖人类预测者，标志着AI在复杂判断领域取得重要突破。"},{"id":"hn-49743527","title":"Towards Self-Driving Codebases","url":"https://blog.detail.dev/posts/towards-self-driving-codebases/","source":"Hacker News","score":101,"comments_count":83,"comments_url":"https://news.ycombinator.com/item?id=49743527","published_at":"2026-09-17T16:58:31","author":"wilhelmklopp","text":null,"summary":"文章探讨了代码库向自主驾驶方向发展的趋势，即利用AI实现代码的自动生成、维护和优化，对软件开发模式有深远影响。"},{"id":"hn-49719751","title":"Lucasart's Afterlife","url":"https://togameforlife.wordpress.com/2023/12/09/on-lucasarts-afterlife/","source":"Hacker News","score":98,"comments_count":45,"comments_url":"https://news.ycombinator.com/item?id=49719751","published_at":"2026-09-15T22:30:30","author":"Bondi_Blue","text":null,"summary":"回顾了卢卡斯艺术公司（LucasArts）的兴衰与遗产，对游戏历史和经典作品感兴趣的读者值得一读。"},{"id":"hn-49742976","title":"Ask HN: How to recover Google auth after phone stolen?","url":null,"source":"Hacker News","score":95,"comments_count":99,"comments_url":"https://news.ycombinator.com/item?id=49742976","published_at":"2026-09-17T16:17:28","author":"keymasta","text":"$c","summary":"一位用户询问手机被盗后如何恢复Google账户认证，反映了自动化客服系统在紧急情况下的局限性，引发对账户安全与人工支持的讨论。"}],"locale":"en"}],"$Ld"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["Generated by"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","Powered by DeepSeek"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
-10:T47e,<p>A/I is Autistici/Inventati, nothing to do with algorithms.</p>
-<p>Why this matters: to quote senior advisor and journalist <a href="https://systemli.social/@anneroth" rel="ugc">Anne Roth</a>:</p>
-<blockquote>
-<p>20,000 mail accounts.
-20,000 blogs.
-5,000 mailing lists.
-1,500 websites.</p>
-<p>In Europe.</p>
-<p>Run by volunteers of <a href="https://systemli.social/@cavallette@mastodon.bida.im" rel="ugc">@cavallette</a>, perfectly legal, and decidedly antifascist, feminist, queer.</p>
-<p>Destroyed and shut down by Trump's administration, extra legally.</p>
-</blockquote>
-<p>This is one of the most devastating cases of politically motivated debanking I have come across.</p>
-<p>Triggered <a href="https://lobste.rs/c/dv0zqn" rel="ugc">by my own comment</a>, I thought this might be a good starting point for a discussion about how to secure platforms not only technically, but also socially and financially.</p>
-<p>Mods: this is my first submission, feel free to tell me how to improve. I had a hard time choosing a tag, but I think this may be relevant to the community.</p>
-<p><a href="https://lobste.rs/s/wxnibb/i_shuts_down">Comments</a></p>c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-45c051325c2d","title":"The end of verygoodsoftwarenotvirus.ru","url":"https://blog.verygoodsoftwarenotvirus.dev/posts/2026/09/12/the-end-of-verygoodsoftwarenotvirus-dot-ru/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-16T16:58:43","author":"blog.verygoodsoftwarenotvirus.dev by verygoodsoftwarenotvirus","text":"<p><a href=\"https://lobste.rs/s/ihw0hq/end_verygoodsoftwarenotvirus_ru\">Comments</a></p>","summary":"知名软件博客verygoodsoftwarenotvirus.ru宣布停止运营，作者分享了关闭原因，引发对独立技术写作可持续性的讨论。"},{"id":"rss-d1885933ff25","title":"A/I Shuts Down","url":"https://keepitfree.ai/announcements/a/i-shuts-down-stay-human/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-16T06:05:38","author":"keepitfree.ai via kolja","text":"$10","summary":"隐私倡导组织Autistici/Inventati（A/I）宣布关停，其曾为约2万邮箱、2万博客等提供匿名服务，此举对欧洲隐私保护运动影响重大。"},{"id":"rss-f5497e00478d","title":"Introducing GNOME 51","url":"https://release.gnome.org/51/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-16T18:05:43","author":"release.gnome.org via uncenter","text":"<p><a href=\"https://lobste.rs/s/gs10ad/introducing_gnome_51\">Comments</a></p>","summary":"GNOME 51桌面环境正式发布，带来新特性和改进，是Linux桌面用户值得关注的重要更新。"},{"id":"rss-66cb7ffeac3e","title":"Forgery of C2PA on a Pixel 10","url":"https://www.hackerfactor.com/blog/index.php?/archives/1102-C2PA-and-Pixel-Glitter-Milk.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-16T13:24:31","author":"hackerfactor.com via lvig","text":"<p><a href=\"https://lobste.rs/s/tgrvxh/forgery_c2pa_on_pixel_10\">Comments</a></p>","summary":"文章演示了如何在Pixel 10上伪造C2PA内容凭证，暴露了该内容溯源技术的安全漏洞，对数字媒体认证的可靠性提出警告。"},{"id":"rss-5da53767c72a","title":"How to get a DOI for your blog posts","url":"https://shkspr.mobi/blog/2026/09/how-to-get-a-doi-for-your-blog-posts/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-16T15:59:17","author":"shkspr.mobi via eBPF","text":"<p><a href=\"https://lobste.rs/s/lvld5b/how_get_doi_for_your_blog_posts\">Comments</a></p>","summary":"教程介绍如何为个人博客文章申请DOI（数字对象标识符），使博客内容更易于被学术引用和长期归档，对独立研究者很有用。"}],"locale":"en"}]
-f:null
+a:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-ce432dbe0335","title":"I Don't Like LLMs","url":"https://martinfowler.com/articles/2026-dont-like-llms.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-17T15:25:24","author":"martinfowler.com via cameron","text":"<p><a href=\"https://lobste.rs/s/pkj7mf/i_don_t_like_llms\">Comments</a></p>","summary":"Martin Fowler撰文阐述他不喜欢大型语言模型（LLM）的理由，从软件工程角度提出批判性观点，值得技术从业者反思。"},{"id":"rss-e6b97dc034f0","title":"The Golden Spike, and Resurrecting the Vale(n) Programming Language","url":"https://verdagon.dev/blog/golden-spike-reviving-vale-valen","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-17T15:10:44","author":"verdagon.dev by Verdagon","text":"<p><a href=\"https://lobste.rs/s/fjnkn4/golden_spike_resurrecting_vale_n\">Comments</a></p>","summary":"文章讲述了Vale编程语言的复兴历程，以及“Golden Spike”里程碑的意义，对编程语言设计和编译器开发者有启发。"},{"id":"rss-9ad085a67dd3","title":"I expected better from Google","url":"https://www.minitap.ai/blog/i-expected-better-from-google","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-17T10:01:13","author":"minitap.ai via FedericoSchonborn","text":"<p><a href=\"https://lobste.rs/s/11uiiv/i_expected_better_from_google\">Comments</a></p>","summary":"作者对Google的某些行为表示失望，可能涉及产品、隐私或开发者关系问题，引发对科技巨头期望的讨论。"},{"id":"rss-4a741746b55b","title":"Be alert: targeted attacks on prominent Rustaceans","url":"https://blog.rust-lang.org/2026/09/17/targeted-attacks/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-17T18:10:52","author":"blog.rust-lang.org via itamarst","text":"<p><a href=\"https://lobste.rs/s/uz30ed/be_alert_targeted_attacks_on_prominent\">Comments</a></p>","summary":"Rust官方博客警告针对知名Rust社区成员的定向攻击，提醒开源社区注意安全，对Rust开发者有重要警示作用。"},{"id":"rss-66f93bcae6f7","title":"Everybody's Lost Their Minds","url":"https://www.netmeister.org/blog/everybodys-lost-their-minds.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-17T15:06:08","author":"netmeister.org via j11g","text":"<p><a href=\"https://lobste.rs/s/rok1za/everybody_s_lost_their_minds\">Comments</a></p>","summary":"文章标题为“所有人都疯了”，可能讨论当前技术或社会现象中的非理性趋势，提供批判性视角。"}],"locale":"en"}]
+10:null
