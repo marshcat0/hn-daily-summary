@@ -5,113 +5,108 @@
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
 c:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
 d:"$Sreact.suspense"
-5:T1892,# 今日 Design 领域热门文章分析总结
+5:T1689,# 今日 Design 热门文章分析总结
 
-> 数据来源：Sidebar.io（今日 15 篇文章均来自该来源，整体讨论热度较低，Score 与 Comments 均为 0，说明这些内容更多是设计工具与设计思考类的新鲜分享，尚未形成大规模社区讨论）
-
-
-## 一、AI 与设计/开发的交汇
-
-这一组文章聚焦 AI 如何改变设计、开发与产品工作流，是今日数量最多的子主题。
-
-**1. The fear of AI**
-探讨人们对 AI 的恐惧是否与实际数据相符，以及恐惧真正应该指向何处。在 AI 焦虑蔓延的当下，提供了一种理性校准情绪的角度。
-- 原文：https://voiceinthemachine.com/2026/09/21/the-fear-of-ai/
-
-**2. Code as the source of truth**
-讨论在 AI 工具辅助下，"代码即真相来源"这一理念为何更加成立。对设计师与开发者协作模式有启发。
-- 原文：https://www.tonyward.dev/articles/code-as-the-source-of-truth
-
-**3. The 3 roles of context for AI agents**
-NN/g 出品，指出 AI agent 高级用户会管理三类上下文：全局（跨任务）、局部（任务特定）、环境（如邮件等原始流）。是 AI 产品设计的重要参考框架。
-- 原文：https://www.nngroup.com/articles/3-agent-context-roles/
-
-**4. Audit your agent files**
-Addy Osmani 的实用指南，教你审计编码 agent 到底还需要哪些文件。对构建 AI 辅助开发流程的团队很有价值。
-- 原文：https://addyosmani.com/blog/audit-your-agent-files/
-
-**5. Petdex**
-开源动画宠物，专为编码 agent 设计，可浏览、预览动画并一键安装。是 AI 工具"人性化/趣味化"设计的一个有趣案例。
-- 原文：https://petdex.dev/
-
-**6. Scenarios for our economic future**
-Anthropic 经济团队对 2030 年 AI 对经济影响的建模。虽偏宏观，但对产品与设计战略有间接参考意义。
-- 原文：https://www.anthropic.com/institute/econ-scenarios
-
-**7. Natural General Intelligence**
-提出"自然模型"的构想——学习地球本身的状态与动态。是 AI 与自然系统结合的前沿思考。
-- 原文：https://naturalgeneralintelligence.ai/
+> 数据来源：Sidebar.io（15篇），主题覆盖 UI/UX 设计、产品设计与视觉设计。今日内容呈现出明显的 **"AI × 设计"** 交汇趋势，同时保留了视觉设计、色彩工具等经典话题。
 
 
-## 二、前端/视觉设计工具与资源
+## 一、AI 与设计实践（6篇）
 
-这一组是可直接上手的实用工具与库，对 UI/UX 设计师和前端开发者最"即插即用"。
+这一组是今日最核心的议题：AI 工具如何改变设计流程、编码代理（coding agent）的上下文管理，以及设计师对 AI 的复杂情绪。
 
-**8. Category colors**
-基于浏览器的分类色板优化器，帮助设计师生成更合理的分类配色方案。数据可视化与图表设计的实用工具。
-- 原文：https://categorycolors.com/
+**1. Skip the tools, make the outcomes**
+Luke Wroblewski 提出：工具的普及让我们养成了"先选工具再想目标"的错误本能，而在 AI 时代应该反过来——先定义结果，再让工具服务于结果。对产品设计师极具启发。
+🔗 https://www.lukew.com/ff/entry.asp?2163
 
-**9. loading.dev**
-轻量级 React 加载指示器库，提供大量精美 loading 动画。对提升产品微交互体验有直接帮助。
-- 原文：https://loading.dev/
+**2. The 3 roles of context for AI agents**
+NN/g 的权威研究，将 AI 代理的上下文分为三类：全局（跨任务）、局部（任务特定）、环境（邮件等原始流）。这是设计 AI 产品时必须理解的框架。
+🔗 https://www.nngroup.com/articles/3-agent-context-roles/
 
-**10. Image to ASCII converter**
-在浏览器本地将图片转为 ASCII 艺术，无需上传、无需注册，支持导出 TXT、PNG、SVG、Markdown。隐私友好且有趣。
-- 原文：https://imagetoascii.art/
+**3. Audit your agent files**
+Addy Osmani 的实用指南，教你审计编码代理真正需要哪些文件/上下文，避免臃肿。适合把 AI 代理纳入工作流的设计师与开发者。
+🔗 https://addyosmani.com/blog/audit-your-agent-files/
 
-**11. Filling in the last row of a responsive grid**
-讲解如何为带边框的 CSS 网格填充最后一行的"填充单元格"。是响应式布局中一个常见但易被忽视的细节问题。
-- 原文：https://twilson.net/writing/filling-responsive-grid
+**4. Code as the source of truth**
+Tony Ward 论证：在 AI 工具加持下，"代码即真相"这一理念终于变得顺理成章。触及设计交接（design handoff）与单一数据源的老问题。
+🔗 https://www.tonyward.dev/articles/code-as-the-source-of-truth
 
+**5. The fear of AI**
+一篇反思性文章：当数据与恐惧不匹配时，恐惧该指向哪里？对设计行业普遍存在的 AI 焦虑提供了理性视角。
+🔗 https://voiceinthemachine.com/2026/09/21/the-fear-of-ai/
 
-## 三、产品思维与设计哲学
-
-这一组偏向方法论与价值观，适合做产品、做设计的人静心阅读。
-
-**12. I gave my website a boss fight**
-作者用 Claude、4096 种颜色和"一对出奇难搞的腿"给自己的网站做了一个 Boss 战。是创意网页设计与 AI 辅助开发的趣味结合。
-- 原文：https://www.paulbakaus.com/i-gave-my-website-a-boss-fight/
-
-**13. Caring vs. knowing**
-关于如何可持续地 DIY 的思考。"关心"与"知道"的区别，对独立创作者与设计师的心态建设有启发。
-- 原文：https://blog.exe.dev/caring-vs-knowing
-
-**14. I am often wrong**
-作者分享应对几乎所有问题和产品的六个步骤，核心是承认自己经常犯错。是产品经理与设计师的谦逊方法论。
-- 原文：https://borischerny.com/management,/product/2026/09/19/I-am-often-wrong.html
-
-**15. The Enshittification Resistant Software**
-提出一套"抗恶化软件"的自我认证流程，带有某种官方背书意味。回应了当下平台质量普遍下滑的痛点。
-- 原文：https://er-certification.statichost.page/index.html
+**6. I don't want the details**
+Michael Heap 探讨"合理的解释"如何成为拒绝改变的最省事借口——对设计评审与产品迭代中的惰性很有共鸣。
+🔗 https://michaelheap.com/i-dont-want-the-details/
 
 
-## 四、今日最值得阅读的 3-5 篇文章推荐
+## 二、创意交互与视觉实验（4篇）
+
+**7. I gave my website a boss fight**
+Paul Bakaus 把网站变成一个可玩的"Boss 战"，用 Claude、4096 色和一双"异常难搞的腿"完成。是创意编码（creative coding）与 AI 协作的绝佳案例。
+🔗 https://www.paulbakaus.com/i-gave-my-website-a-boss-fight/
+
+**8. Isometric NYC**
+纽约市的巨型等距像素艺术地图，作者坦承这是"逼一逼最新编码代理极限"的借口。视觉震撼 + 技术实验双料作品。
+🔗 https://cannoneyed.com/isometric-nyc/
+
+**9. IMG_0001**
+一个爬遍 YouTube、找出 500 万条原始未剪辑视频的机器人。对研究真实用户生成内容（UGC）与"反精致化"视觉趋势很有意思。
+🔗 https://walzr.com/IMG_0001/
+
+**10. Anatomy of a $100 bill**
+100 美元纸币的 3D 导览，拆解 15 组设计与防伪特征。是信息设计、印刷设计与安全设计的教科书级案例。
+🔗 https://www.realworth.io/anatomy-of-a-100-dollar-bill
+
+
+## 三、设计工具与资源（5篇）
+
+**11. Category colors**
+浏览器端的分类色板优化器，解决数据可视化中"类别配色难以区分"的经典难题。数据设计师必备。
+🔗 https://categorycolors.com/
+
+**12. loading.dev**
+面向 React 的轻量级加载指示器库，包含大量精美的 loading 动画。UI 工程师可直接取用。
+🔗 https://loading.dev/
+
+**13. Image to ASCII converter**
+本地浏览器内完成图片转 ASCII 艺术，无需上传、无需注册，支持导出 TXT/PNG/SVG/Markdown。隐私友好 + 复古美学。
+🔗 https://imagetoascii.art/
+
+**14. Petdex**
+开源编码代理动画宠物——浏览、预览、一条命令安装。把"游戏化"带入开发者工具的有趣尝试。
+🔗 https://petdex.dev/
+
+**15. Caring vs. knowing**
+关于如何可持续地 DIY 的思考。"在乎"与"知道"的区别，对独立创作者与自建工具的人很有共鸣。
+🔗 https://blog.exe.dev/caring-vs-knowing
+
+
+## 四、今日最值得阅读的 3 篇推荐
 
 **🥇 1. The 3 roles of context for AI agents（NN/g）**
-理由：出自权威可用性机构 NN/g，提出了一个清晰且可操作的 AI agent 上下文分类框架（全局/局部/环境）。无论你是设计 AI 产品还是使用 AI 工具，这个心智模型都能直接提升效率。
-- 链接：https://www.nngroup.com/articles/3-agent-context-roles/
+理由：来自 Nielsen Norman Group 的权威框架，直接定义了 AI 代理产品设计的核心概念。任何正在设计 AI 功能的人都应精读。
+🔗 https://www.nngroup.com/articles/3-agent-context-roles/
 
-**🥈 2. Category colors**
-理由：即开即用的分类配色优化器，解决了数据可视化与图表设计中"颜色区分度不够"的老大难问题。设计师收藏即用，投入产出比极高。
-- 链接：https://categorycolors.com/
+**🥈 2. Skip the tools, make the outcomes（Luke Wroblewski）**
+理由：Luke 是产品设计领域的标杆人物，这篇短文一针见血地指出 AI 时代设计师最容易犯的思维错误——把工具当目标。
+🔗 https://www.lukew.com/ff/entry.asp?2163
 
-**🥉 3. I gave my website a boss fight**
-理由：今日最具创意与趣味性的一篇。展示了 AI 辅助下网页设计可以做到多么好玩，适合寻找灵感、打破常规的设计师阅读。
-- 链接：https://www.paulbakaus.com/i-gave-my-website-a-boss-fight/
+**🥉 3. I gave my website a boss fight（Paul Bakaus）**
+理由：兼具创意、技术与趣味。展示了 AI 辅助下个人创意项目的可能性边界，是"设计 + 代码 + AI"融合的最佳示范。
+🔗 https://www.paulbakaus.com/i-gave-my-website-a-boss-fight/
 
-**4. Audit your agent files（Addy Osmani）**
-理由：来自知名开发者 Addy Osmani 的实操指南，帮助团队清理和优化 AI agent 配置，是 AI 辅助开发流程中容易被忽视但很关键的一环。
-- 链接：https://addyosmani.com/blog/audit-your-agent-files/
-
-**5. Filling in the last row of a responsive grid**
-理由：一个具体、常见、但很少有人系统讲解的 CSS 布局问题。对追求细节完美的前端与 UI 设计师来说，是能立刻用上的实用技巧。
-- 链接：https://twilson.net/writing/filling-responsive-grid
+**备选：Anatomy of a $100 bill**
+理由：如果你想暂时跳出 AI 话题，回归纯粹的视觉与信息设计之美，这是今日最精致的作品。
+🔗 https://www.realworth.io/anatomy-of-a-100-dollar-bill
 
 
-## 总结
+## 总结洞察
 
-今日 Design 主题呈现三条主线：**AI 与设计/开发的深度融合**（7 篇）、**即插即用的前端与视觉工具**（4 篇）、**产品思维与设计哲学**（4 篇）。整体讨论热度不高（全部 Score/Comments 为 0），说明这些内容更偏向"新鲜分享"而非"社区热议"。如果你时间有限，建议优先阅读 NN/g 的 AI 上下文框架和 Category colors 配色工具——前者提升认知，后者立即可用。0:{"buildId":"vL3V3oMH07gzN0jvAOQcY","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-09-25","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":15},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"design","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Design"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"UI/UX design, product design, and visual design"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[15," ","篇文章"," • ","2026-09-25"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Design","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",15,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Sidebar.io",{"sourceName":"Sidebar.io","articles":[{"id":"rss-987a6adcaed0","title":"The fear of AI","url":"https://voiceinthemachine.com/2026/09/21/the-fear-of-ai/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-24T07:28:31","author":"unknown","text":"<p>When numbers do not match the fear, and where fear should be aimed.</p>\n<br /><br />","summary":"文章探讨了人们对AI的恐惧，指出当数据与恐惧不匹配时，恐惧应该指向何处。值得关注的是它提供了对AI恐惧情绪的理性分析视角。"},{"id":"rss-1865d7a85d46","title":"I gave my website a boss fight","url":"https://www.paulbakaus.com/i-gave-my-website-a-boss-fight/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-24T07:27:24","author":"unknown","text":"<p>Building a little piece of it involved Claude, 4,096 colors, and a surprisingly difficult pair of legs.</p>\n<br /><br />","summary":"作者分享了自己为网站添加'Boss战'功能的经历，涉及Claude、4096种颜色和一对出奇困难的腿。这是一个有趣的创意开发案例，展示了如何将游戏元素融入网站。"},{"id":"rss-4397ff83ad89","title":"Category colors","url":"https://categorycolors.com/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-24T07:26:37","author":"unknown","text":"<p>A browser-based optimizer for categorical color palettes.</p>\n<br /><br />","summary":"介绍了一个基于浏览器的分类颜色调色板优化工具。对于设计师和开发者来说，这是一个实用的配色辅助工具。"},{"id":"rss-7a730e1f54a2","title":"loading.dev","url":"https://loading.dev/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-24T07:25:50","author":"unknown","text":"<p>A lightweight library full of beautiful loading indicators for React.</p>\n<br /><br />","summary":"介绍了一个轻量级的React库，提供丰富的加载指示器。对于React开发者来说，这是一个方便易用的UI组件库。"},{"id":"rss-8bec2a7419f8","title":"Code as the source of truth","url":"https://www.tonyward.dev/articles/code-as-the-source-of-truth","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-24T07:25:17","author":"unknown","text":"<p>With AI tooling, code being the source of truth just makes sense.</p>\n<br /><br />","summary":"文章论述了在AI工具辅助下，代码作为唯一真实来源的合理性。值得关注的是它探讨了AI时代软件开发范式的转变。"},{"id":"rss-9ed11931da8b","title":"Caring vs. knowing","url":"https://blog.exe.dev/caring-vs-knowing","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-23T04:15:59","author":"unknown","text":"<p>Thoughts on how to DIY sustainably.</p>\n<br /><br />","summary":"文章分享了关于如何可持续地DIY的思考，探讨了'关心'与'知道'之间的区别。对于喜欢动手实践的人有启发意义。"},{"id":"rss-c6d5d3bdc6bd","title":"Petdex","url":"https://petdex.dev/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-23T04:15:14","author":"unknown","text":"<p>Open-source animated pets for coding agents. Browse pets, preview their animations, and install one with a single command.</p>\n<br /><br />","summary":"介绍了一个开源项目，为编码代理提供动画宠物，可以浏览、预览并一键安装。这是一个有趣且实用的开发者小工具。"},{"id":"rss-85680078c809","title":"The 3 roles of context for AI agents","url":"https://www.nngroup.com/articles/3-agent-context-roles/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-23T04:14:07","author":"unknown","text":"<p>AI-agent power users curate 3 kinds of context: global (across tasks), local (task-specific), and ambient (raw streams like email).</p>\n<br /><br />","summary":"文章介绍了AI代理的三种上下文角色：全局、局部和环境上下文。对于AI代理的高级用户来说，这是优化代理性能的重要指南。"},{"id":"rss-af625fc2c75a","title":"Image to ASCII converter","url":"https://imagetoascii.art/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-23T04:13:41","author":"unknown","text":"<p>Convert images to ASCII art locally in your browser. No upload, no signup. Copy ASCII or export TXT, PNG, SVG, and Markdown.</p>\n<br /><br />","summary":"介绍了一个在浏览器本地将图片转换为ASCII艺术的工具，无需上传或注册，支持多种导出格式。这是一个方便且注重隐私的在线工具。"},{"id":"rss-c64129db2672","title":"Audit your agent files","url":"https://addyosmani.com/blog/audit-your-agent-files/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-23T04:13:08","author":"unknown","text":"<p>A practical guide to auditing what your coding agent still needs.</p>\n<br /><br />","summary":"文章提供了一份实用指南，教你如何审计编码代理仍然需要哪些文件。对于使用编码代理的开发者来说，这是优化工作流程的实用建议。"},{"id":"rss-6211eceb810f","title":"I am often wrong","url":"https://borischerny.com/management,/product/2026/09/19/I-am-often-wrong.html","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-22T04:45:36","author":"unknown","text":"<p>Six steps for pretty much every problem, and pretty much every product.</p>\n<br /><br />","summary":"文章分享了作者面对问题和产品开发时常用的六个步骤，强调承认自己经常犯错并从中学习。值得关注的是它提供了一种谦逊而系统化的解决问题框架。"},{"id":"rss-5e20284a2ee2","title":"The Enshittification Resistant Software","url":"https://er-certification.statichost.page/index.html","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-22T04:44:32","author":"unknown","text":"<p>A self certification process with a somewhat official blessing.</p>\n<br /><br />","summary":"介绍了一种自我认证流程，旨在打造抵抗“恶化”（enshittification）的软件，并带有一定官方认可。值得关注的是它回应了用户对软件质量下降的普遍担忧。"},{"id":"rss-958c626437eb","title":"Scenarios for our economic future","url":"https://www.anthropic.com/institute/econ-scenarios","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-22T04:43:44","author":"unknown","text":"<p>The Anthropic Economics Team models the effects of AI on the economy of 2030.</p>\n<br /><br />","summary":"Anthropic经济团队模拟了AI对2030年经济的影响，提出了多种未来情景。值得关注的是它为理解AI长期经济效应提供了前瞻性分析。"},{"id":"rss-2b454645b67f","title":"Filling in the last row of a responsive grid","url":"https://twilson.net/writing/filling-responsive-grid","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-22T04:43:15","author":"unknown","text":"<p>Filler cells for CSS grids with borders.</p>\n<br /><br />","summary":"文章讲解了如何为响应式CSS网格填充最后一行，特别是处理带边框的网格。值得关注的是它解决了前端开发中常见的布局细节问题。"},{"id":"rss-e0fe0708a5e0","title":"Natural General Intelligence","url":"https://naturalgeneralintelligence.ai/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-22T04:42:54","author":"unknown","text":"<p>The case for a nature model that learns the state and dynamics of the planet itself.</p>\n<br /><br />","summary":"文章倡导构建一种“自然模型”，能够学习地球自身的状态和动态，即自然通用智能。值得关注的是它提出了AI与地球系统科学结合的新方向。"}],"locale":"zh"}]]}]]}]
+1. **AI 已从"话题"变为"基础设施"**：15 篇中有 6 篇直接讨论 AI 与设计/编码的融合，且多聚焦于"如何用好"而非"是否要用"。
+2. **上下文管理成为新设计命题**：NN/g 与 Addy Osmani 两篇都指向同一问题——如何为 AI 代理组织信息，这是 UI/UX 的新战场。
+3. **创意编码回潮**：Isometric NYC、Boss Fight、Petdex 显示设计师正用 AI 工具做更 playful、更个人化的实验。
+4. **经典设计话题仍有空间**：色彩工具、纸币设计、ASCII 转换提醒我们，扎实的视觉基本功永远有价值。0:{"buildId":"919wX3fQ0JP9taNIYPtYe","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-09-26","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":15},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"design","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Design"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"UI/UX design, product design, and visual design"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[15," ","篇文章"," • ","2026-09-26"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Design","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",15,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Sidebar.io",{"sourceName":"Sidebar.io","articles":[{"id":"rss-3739393b6ea0","title":"I don’t want the details","url":"https://michaelheap.com/i-dont-want-the-details/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-25T08:09:42","author":"unknown","text":"<p>Why reasonable explanations are one of the easiest ways to avoid changing anything.</p>\n<br /><br />","summary":"文章探讨了为何看似合理的解释往往成为人们逃避改变的最简单方式，值得关注是因为它揭示了设计决策中常见的心理陷阱。"},{"id":"rss-980be5dae05f","title":"Anatomy of a $100 bill","url":"https://www.realworth.io/anatomy-of-a-100-dollar-bill","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-25T08:09:04","author":"unknown","text":"<p>A 3D tour of the U.S. $100 bill, plus 15 design and security feature groups explained.</p>\n<br /><br />","summary":"通过3D导览和15组设计及安全功能解析，深入剖析100美元纸币的构造，值得关注是因为它展示了日常物品中隐藏的精密设计。"},{"id":"rss-90e5457dc6bf","title":"IMG_0001","url":"https://walzr.com/IMG_0001/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-25T08:08:31","author":"unknown","text":"<p>A bot that crawled YouTube and found 5 million of raw, unedited videos.</p>\n<br /><br />","summary":"一个机器人爬取YouTube并发现了500万个未经编辑的原始视频，值得关注是因为它呈现了互联网上真实、未加工内容的巨大体量。"},{"id":"rss-9de03a3b52f0","title":"Skip the tools, make the outcomes","url":"https://www.lukew.com/ff/entry.asp?2163","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-25T08:07:33","author":"unknown","text":"<p>The pervasiveness of tools may have implanted the wrong instinct in our heads in a world of AI.</p>\n<br /><br />","summary":"文章指出在AI时代，对工具的过度依赖可能让我们形成了错误的直觉，值得关注是因为它反思了设计流程中工具与成果的关系。"},{"id":"rss-05e5ff57a66a","title":"Isometric NYC","url":"https://cannoneyed.com/isometric-nyc/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-25T08:06:41","author":"unknown","text":"<p>A giant isometric pixel-art map of New York City. And an excuse to push hard on the limits of the latest and greatest coding agents.</p>\n<br /><br />","summary":"一幅巨大的等距像素艺术纽约市地图，同时也是对最新编码代理能力极限的挑战，值得关注是因为它结合了创意设计与AI编码的前沿探索。"},{"id":"rss-987a6adcaed0","title":"The fear of AI","url":"https://voiceinthemachine.com/2026/09/21/the-fear-of-ai/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-24T07:28:31","author":"unknown","text":"<p>When numbers do not match the fear, and where fear should be aimed.</p>\n<br /><br />","summary":"文章讨论了当数据与恐惧不匹配时，恐惧应指向何处，值得关注是因为它理性审视了社会对AI的普遍焦虑。"},{"id":"rss-1865d7a85d46","title":"I gave my website a boss fight","url":"https://www.paulbakaus.com/i-gave-my-website-a-boss-fight/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-24T07:27:24","author":"unknown","text":"<p>Building a little piece of it involved Claude, 4,096 colors, and a surprisingly difficult pair of legs.</p>\n<br /><br />","summary":"作者为网站添加了一个Boss战，其中涉及Claude、4096种颜色和一双出奇难画的腿，值得关注是因为它展示了AI辅助下的趣味交互设计。"},{"id":"rss-4397ff83ad89","title":"Category colors","url":"https://categorycolors.com/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-24T07:26:37","author":"unknown","text":"<p>A browser-based optimizer for categorical color palettes.</p>\n<br /><br />","summary":"一个基于浏览器的分类颜色调色板优化工具，值得关注是因为它帮助设计师更高效地创建和谐的色彩方案。"},{"id":"rss-7a730e1f54a2","title":"loading.dev","url":"https://loading.dev/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-24T07:25:50","author":"unknown","text":"<p>A lightweight library full of beautiful loading indicators for React.</p>\n<br /><br />","summary":"一个轻量级的React库，提供丰富的精美加载指示器，值得关注是因为它简化了前端开发中加载状态的设计实现。"},{"id":"rss-8bec2a7419f8","title":"Code as the source of truth","url":"https://www.tonyward.dev/articles/code-as-the-source-of-truth","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-24T07:25:17","author":"unknown","text":"<p>With AI tooling, code being the source of truth just makes sense.</p>\n<br /><br />","summary":"文章主张在AI工具辅助下，代码作为唯一真实来源是合理的选择，值得关注是因为它探讨了AI时代设计与开发工作流的演变。"},{"id":"rss-9ed11931da8b","title":"Caring vs. knowing","url":"https://blog.exe.dev/caring-vs-knowing","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-23T04:15:59","author":"unknown","text":"<p>Thoughts on how to DIY sustainably.</p>\n<br /><br />","summary":"这篇文章探讨了可持续DIY的理念，强调“关心”与“知道”的区别，值得关注因为它提供了对可持续生活方式的反思。"},{"id":"rss-c6d5d3bdc6bd","title":"Petdex","url":"https://petdex.dev/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-23T04:15:14","author":"unknown","text":"<p>Open-source animated pets for coding agents. Browse pets, preview their animations, and install one with a single command.</p>\n<br /><br />","summary":"Petdex是一个开源项目，为编码代理提供动画宠物，用户可以浏览、预览并一键安装，值得关注因为它为开发环境增添了趣味性。"},{"id":"rss-85680078c809","title":"The 3 roles of context for AI agents","url":"https://www.nngroup.com/articles/3-agent-context-roles/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-23T04:14:07","author":"unknown","text":"<p>AI-agent power users curate 3 kinds of context: global (across tasks), local (task-specific), and ambient (raw streams like email).</p>\n<br /><br />","summary":"这篇文章介绍了AI代理中上下文的三种角色：全局、局部和环境上下文，值得关注因为它帮助理解如何优化AI代理的性能。"},{"id":"rss-af625fc2c75a","title":"Image to ASCII converter","url":"https://imagetoascii.art/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-23T04:13:41","author":"unknown","text":"<p>Convert images to ASCII art locally in your browser. No upload, no signup. Copy ASCII or export TXT, PNG, SVG, and Markdown.</p>\n<br /><br />","summary":"这个工具可以在浏览器中将图像转换为ASCII艺术，无需上传或注册，支持多种导出格式，值得关注因为它简单易用且保护隐私。"},{"id":"rss-c64129db2672","title":"Audit your agent files","url":"https://addyosmani.com/blog/audit-your-agent-files/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-23T04:13:08","author":"unknown","text":"<p>A practical guide to auditing what your coding agent still needs.</p>\n<br /><br />","summary":"这篇文章提供了审计编码代理所需文件的实用指南，值得关注因为它帮助开发者优化代理配置。"}],"locale":"zh"}]]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]

@@ -3,216 +3,224 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-e:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-f:"$Sreact.suspense"
-5:T2f7c,# 今日 Technology 热门文章分析总结
+f:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+5:T2cb3,# 今日 Technology 热门文章分析总结
 
-## 概览
+## 一、开源与数字主权
 
-今日技术社区（主要是 Hacker News，辅以 Lobsters）的讨论呈现几条清晰的脉络：**开源生态与平台治理**（F-Droid、GitHub、SourceHut、arXiv）、**硬件与系统底层**（Snapdragon Linux、ESP32、SIMD、智能冰箱）、**隐私与加密政策**（英国两级加密、Meta 眼镜）、以及一批**跨学科的"好奇驱动"内容**（肝脏再生、古神兽头、动画考据）。下面按子主题分组梳理全部 30 篇。
+**1. 荷兰政府基于 NixOS 构建微软替代方案**
+荷兰政府开发了一套基于 NixOS 的替代系统，旨在减少对微软的依赖。这是数字主权运动的重要里程碑，展示了公共部门如何通过开源方案实现技术自主。讨论热度极高（544 条评论），反映了社区对政府 IT 去中心化的强烈关注。
+- 原文：https://www.dawo.community/en/
+- 讨论：https://news.ycombinator.com/item?id=49841563
 
----
-
-## 一、开源生态、平台治理与软件自由
-
-### 1. F-Droid 2.0（双源收录）
-- **说明**：F-Droid 发布 2.0，是 Android 自由软件生态的重要里程碑，社区反响极为热烈（979 分、267 评论），Lobsters 同步收录。值得关注其新架构与用户体验改进方向。
-- **原文**：https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html
-- **讨论**：https://news.ycombinator.com/item?id=49831968 ｜ Lobsters: https://lobste.rs/s/opt2ma/f_droid_2_0
-
-### 2. GitHub 三周未移除恶意仿冒软件
-- **说明**：一个开发者发现 GitHub 上存在恶意仿冒其软件的仓库，三周未处理。涉及平台信任与供应链安全，对开源维护者有警示意义。
-- **原文**：https://successfulsoftware.net/2026/09/24/github-has-not-removed-malicious-imitation-software-after-3-weeks/
-- **讨论**：https://news.ycombinator.com/item?id=49832406
-
-### 3. SourceHut 账户劫持：构建日志中的 XSS（ansi2html.py）
-- **说明**：通过构建日志渲染中的 XSS 漏洞实现账户接管。对 CI/CD 与自托管平台安全是重要案例。
-- **原文**：https://blog.arusekk.pl/posts/srht-account-takeover/
-- **讨论**：https://lobste.rs/s/ky1cr0/sourcehut_account_takeover_via_build
-
-### 4. ArXiv 获得多年承诺，成为独立非营利组织
-- **说明**：学术基础设施的可持续性重大利好，ArXiv 摆脱对单一机构的依赖，对开放科学意义深远。
-- **原文**：https://blog.arxiv.org/2026/09/23/arxiv-receives-multiyear-investment/
-- **讨论**：https://news.ycombinator.com/item?id=49823664
-
-### 5. Conversations 与 Google Play 分手，为何现在免费
-- **说明**：知名开源 XMPP 客户端 Conversations 因分发政策问题脱离 Google Play 并转为免费。反映 Android 应用分发生态对独立开发者的压力。
-- **原文**：https://gultsch.de/posts/breaking-up-with-google-play/
-- **讨论**：https://lobste.rs/s/4jqfz1/breaking_up_with_google_play_why
-
-### 6. 关于现代化开源桌面的思考
-- **说明**：LWN 文章，评论数高达 493，是今日讨论最激烈的话题之一。涉及 Wayland、桌面组件碎片化、贡献者可持续性等长期难题。
-- **原文**：https://lwn.net/SubscriberLink/1095425/2d9f411252325784/
-- **讨论**：https://news.ycombinator.com/item?id=49825642
+**2. Goodbye Google**
+作者宣布离开 Google 生态，可能涉及隐私、服务变更或对科技巨头垄断的反思。值得关注的是个人用户如何逐步脱离大厂依赖的实践路径。
+- 原文：https://robert.ocallahan.org/2026/09/goodbye-google.html
+- 讨论：https://lobste.rs/s/sxlf4a/goodbye_google
 
 ---
 
-## 二、硬件、系统底层与嵌入式
+## 二、开发工具与工程实践
 
-### 7. Snapdragon X2 系列将支持 Linux
-- **说明**：高通官方宣布 Linux 支持，对 ARM 笔记本 Linux 生态是重大突破，593 分高热度。值得关注驱动成熟度与发行版适配情况。
-- **原文**：https://www.qualcomm.com/news/onq/2026/09/snapdragon-summit-agentic-ai-pcs-linux
-- **讨论**：https://news.ycombinator.com/item?id=49823582
+**3. Show HN: Whiteboard (YC W26) – 面向深思熟虑软件设计的开源 IDE**
+YC 孵化的开源桌面应用，让人类与 AI 代理在同一工作空间共同设计软件架构。回归"白板讨论"的协作感，是 AI 辅助开发工具的新方向。
+- 原文：https://github.com/devdotfast/whiteboard
+- 讨论：https://news.ycombinator.com/item?id=49833867
 
-### 8. 最新 ESP32 可运行 Linux，逼近树莓派
-- **说明**：嵌入式领域的性能跃迁，对 IoT 与低成本计算场景影响大。
-- **原文**：https://www.xda-developers.com/newest-esp32-run-linux-close-to-raspberry-pi/
-- **讨论**：https://news.ycombinator.com/item?id=49828969
+**4. Git-bug：嵌入 Git 的分布式离线优先 Bug 追踪器**
+将 bug 追踪直接嵌入 Git 仓库，无需外部服务，离线可用。对追求轻量、去中心化工作流的团队极具吸引力。
+- 原文：https://github.com/git-bug/git-bug
+- 讨论：https://news.ycombinator.com/item?id=49843174
 
-### 9. Fearless SIMD v1.0
-- **说明**：Linebender 发布 SIMD 抽象库 1.0，对 Rust 图形与高性能计算生态有直接价值。
-- **原文**：https://linebender.org/blog/fearless-simd-1-0/
-- **讨论**：https://news.ycombinator.com/item?id=49800085
+**5. Go 中的平台无关 SIMD**
+Go 官方博客介绍 SIMD 实验性支持，让 Go 开发者能编写跨平台的高性能向量化代码。对性能敏感的应用（如数据处理、科学计算）意义重大。
+- 原文：https://go.dev/blog/simd-experiment
+- 讨论：https://news.ycombinator.com/item?id=49843269
 
-### 10. 三星智能冰箱固件更新变砖，用户痛失食物
-- **说明**：IoT 设备"云依赖"风险的典型案例，272 分、280 评论，引发对智能家电可靠性与所有权的讨论。
-- **原文**：https://arstechnica.com/gadgets/2026/09/owners-mourn-spoiled-food-after-firmware-update-bricks-samsung-smart-fridges/
-- **讨论**：https://news.ycombinator.com/item?id=49829960
+**6. Typst 取得重大进展**
+Typst 作为 LaTeX 的现代替代品，在排版领域持续进步。LWN 的报道分析了其技术演进，值得关注文档工具链的开发者阅读。
+- 原文：https://lwn.net/Articles/1092993/
+- 讨论：https://news.ycombinator.com/item?id=49846640
 
-### 11. 修复 Portobello 警察局时钟
-- **说明**：一篇硬件修复/逆向工程的长文，523 分。展示工程手艺与公共设施维护的魅力。
-- **原文**：https://pointinthecloud.com/2026-04-11-211700.html
-- **讨论**：https://news.ycombinator.com/item?id=49817469
+**7. 书评：《并行编程难吗？如果难，你能做什么？》**
+对经典并发编程教材的深度书评，探讨并行编程的本质困难与应对策略。适合系统性学习并发编程的开发者。
+- 原文：https://ahelwer.ca/post/2026-09-21-concurrency-textbook/
+- 讨论：https://news.ycombinator.com/item?id=49787759
 
-### 12. 丰田将卡罗拉电动化
-- **说明**：全球最畅销车型之一的电动化，400 条评论反映市场与产业的高度关注。
-- **原文**：https://electrek.co/2026/09/23/toyota-best-selling-corolla-electric/
-- **讨论**：https://news.ycombinator.com/item?id=49823568
+**8. Plan mode is dead**
+作者认为 AI 开发工具中的"计划模式"已经过时，引发 134 条激烈讨论。反映了 AI 辅助编程工具设计理念的快速演变。
+- 原文：https://www.aymannadeem.com/artificial/intelligence,/developer/tools/2026/09/24/plan-mode-is-dead.html
+- 讨论：https://news.ycombinator.com/item?id=49840054
 
-### 13. Oracle 援引"不可抗力"为争议数据中心辩护
-- **说明**：AI 数据中心扩张与地方治理冲突的缩影，涉及法律与能源议题。
-- **原文**：https://www.bloomberg.com/news/articles/2026-09-24/oracle-cites-force-majeure-to-shield-itself-on-controversial-data-center
-- **讨论**：https://news.ycombinator.com/item?id=49830037 ｜ 补充：https://qz.com/oracle-force-majeure-new-mexico-ai-data-center-092426
+**9. Lobsters：将 vibecoding 重命名为 llms（Greasemonkey 脚本）**
+一个有趣的社区脚本，用浏览器扩展把"vibecoding"一词替换为"llms"。反映了开发者社区对 AI 编程术语的调侃与反思。
+- 原文：https://greasyfork.org/en/scripts?by=1646191
+- 讨论：https://lobste.rs/s/68n22g/lobsters_rename_vibecoding_llms
 
----
-
-## 三、隐私、加密与平台政策
-
-### 14. 英国的两级加密
-- **说明**：392 分、378 评论，围绕英国加密政策对端到端加密的实质削弱展开。对全球隐私立法有示范效应。
-- **原文**：https://macanorak.com/two-tier-encryption-in-the-uk/
-- **讨论**：https://news.ycombinator.com/item?id=49828731
-
-### 15. Meta VR 眼镜
-- **说明**：480 分、457 评论，讨论最激烈之一。涉及可穿戴摄像头的隐私争议与产品定位。
-- **原文**：https://www.meta.com/vr-glasses/
-- **讨论**：https://news.ycombinator.com/item?id=49824268
-
-### 16. 我向 Meta 的 Muse 索要文件系统，它给了我 6.8 GB
-- **说明**：一次对 AI 运行时数据暴露的实测，涉及 AI 系统的数据边界与隐私。
-- **原文**：https://mouse.dev/blog/muse-runtime-export/
-- **讨论**：https://lobste.rs/s/mdczxv/i_asked_meta_s_muse_for_its_filesystem_it
-
-### 17. AI Workers' Inquiry 2026
-- **说明**：面向 AI 时代技术劳工状况的调查项目，对行业从业者有参考价值。
-- **原文**：https://techworkersinquiry.org/ai/
-- **讨论**：https://lobste.rs/s/uxvwlo/ai_workers_inquiry_2026
+**10. What About Rails?**
+重新审视 Rails 在现代 Web 开发中的地位。在 AI 与新兴框架冲击下，经典框架的价值再评估。
+- 原文：https://jardo.dev/what-about-rails
+- 讨论：https://lobste.rs/s/rvvqos/what_about_rails
 
 ---
 
-## 四、开发工具与 AI 辅助工程
+## 三、系统与操作系统
 
-### 18. Show HN: Whiteboard（YC W26）——面向深思熟虑软件设计的开源 IDE
-- **说明**：让人类与 AI agent 在同一工作空间协作架构软件，代表"AI 原生开发工具"的新方向。
-- **原文**：https://github.com/devdotfast/whiteboard
-- **讨论**：https://news.ycombinator.com/item?id=49833867
+**11. 现在的操作系统到底是什么？**
+探讨操作系统定义的模糊化——浏览器、容器、AI 代理都在扮演 OS 角色。167 条评论显示这是极具争议的话题。
+- 原文：https://sockpuppet.org/blog/2026/09/25/what-even-is-an-os-now/
+- 讨论：https://news.ycombinator.com/item?id=49850305
 
-### 19. Contrastive Language Models
-- **说明**：语言模型方法学研究，值得关注其与对比学习结合的思路。
-- **原文**：https://contrastive-lm.notion.site/
-- **讨论**：https://news.ycombinator.com/item?id=49826221
+**12. Ask HN：谁还在维护 DOS 机器，因为业务依赖它？**
+征集仍在使用 dBase/Clipper、ISA 卡工业仪器、并口加密狗的用户故事。揭示了关键基础设施中"古老技术"的顽强生命力。
+- 讨论：https://news.ycombinator.com/item?id=49848955
 
-### 20. Show HN: 制作 Times New Bastard 这类"诅咒字体"
-- **说明**：滥用 OpenType 连字特性混排字体，客户端用 WASM 跑 Python，兼具趣味与技术巧思。
-- **原文**：https://bastardica.mitpit.com
-- **讨论**：https://news.ycombinator.com/item?id=49823738
+**13. 在 M6 Mac Mini 上用 86Box 模拟 600MHz Pentium II 与 Voodoo 3**
+复古计算爱好者用现代 Mac Mini 模拟 90 年代经典 PC 硬件。展示了模拟器技术的精度与现代硬件的强大。
+- 原文：https://nyaa.sh/reviews/mac-mini-m6-emulation
+- 讨论：https://news.ycombinator.com/item?id=49841285
 
----
+**14. Amiga 屏幕：入门指南**
+深入介绍 Amiga 计算机的显示系统。复古计算社区的经典技术文献。
+- 原文：https://www.datagubbe.se/amscr/
+- 讨论：https://news.ycombinator.com/item?id=49841309
+- Lobsters 讨论：https://lobste.rs/s/dsungs/amiga_screens_primer
 
-## 五、跨学科与人文趣味
-
-### 21. 肝脏为何如此奇特可再生？
-- **说明**：Dynomight 的科普长文，162 评论，生物学与医学交叉话题。
-- **原文**：https://dynomight.substack.com/p/liver
-- **讨论**：https://news.ycombinator.com/item?id=49832938
-
-### 22. 肌酸摄取增强抗肿瘤免疫
-- **说明**：Cell 子刊研究，对营养与免疫治疗交叉领域有潜在影响。
-- **原文**：https://www.cell.com/iscience/fulltext/S2589-0042(26)00811-4
-- **讨论**：https://news.ycombinator.com/item?id=49834825
-
-### 23. 古神头上的神秘动物
-- **说明**：考古/图像学考据，149 分，体现 HN 的博雅趣味。
-- **原文**：https://signoregalilei.com/2026/09/13/the-mystery-animal-on-an-ancient-gods-head/
-- **讨论**：https://news.ycombinator.com/item?id=49799855
-
-### 24. 为什么《What's Opera, Doc?》看起来是那样
-- **说明**：动画史与视觉风格考据，对创作者有启发。
-- **原文**：https://animationobsessive.substack.com/p/why-whats-opera-doc-looks-like-that
-- **讨论**：https://news.ycombinator.com/item?id=49817741
-
-### 25. 2DWillNeverDie
-- **说明**：一个 2D 图形/游戏美学的站点，132 分，反映对 2D 视觉传统的持续热爱。
-- **原文**：https://2dwillneverdie.com/
-- **讨论**：https://news.ycombinator.com/item?id=49801436
-
-### 26. 我奇怪的新爱好：在 Google Maps 上漫游东京
-- **说明**：数字漫游与城市观察，242 分，体现"慢科技"式的人文体验。
-- **原文**：https://ahmedhossamdev.com/writing/my-weird-new-hobby-wandering-around-tokyo/
-- **讨论**：https://news.ycombinator.com/item?id=49805344
-
-### 27. 诺基亚设计档案（2025）
-- **说明**：Aalto 大学公开的诺基亚设计档案，对工业设计与科技史研究者有价值。
-- **原文**：https://repo.aalto.fi/index.php?name=SO_b66a9391-dcf8-4399-8e87-611f84c3fc4c
-- **讨论**：https://news.ycombinator.com/item?id=49828385
-
-### 28. Enjoy Every Sandwich
-- **说明**：一篇生活哲学随笔，99 评论，是 HN 上典型的"技术人生活反思"内容。
-- **原文**：https://bradmontague.substack.com/p/enjoy-every-sandwich
-- **讨论**：https://news.ycombinator.com/item?id=49805806
-
-### 29. 加州正在追逐"长了脚的财富"
-- **说明**：土地经济学视角分析加州财富与人口流动，437 评论，争论激烈。
-- **原文**：https://blog.landeconomics.org/p/california-is-chasing-wealth-that
-- **讨论**：https://news.ycombinator.com/item?id=49836419
-
-### 30. （补充归组）F-Droid 2.0 的 Lobsters 讨论
-- 已并入第 1 条，链接：https://lobste.rs/s/opt2ma/f_droid_2_0
+**15. Casio 的电路板**
+拆解 Casio 设备电路板的技术博客，硬件爱好者的一手资料。
+- 原文：https://www.ambionix.com/blog/boards-of-casio/
+- 讨论：https://news.ycombinator.com/item?id=49842084
 
 ---
 
-## 今日最值得阅读的 5 篇推荐
+## 四、AI 与智能
 
-1. **F-Droid 2.0**
-   - 理由：今日最高热度（979 分），Android 自由软件生态的关键更新，兼顾技术、理念与社区治理，是理解开源移动生态的最佳入口。
-   - 链接：https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html ｜ 讨论：https://news.ycombinator.com/item?id=49831968
+**16. Show HN: Jev 玩《宝可梦红》**
+让 AI（Jev）玩经典 Game Boy 游戏《宝可梦红》的项目，已开源。是 AI 决策能力在复杂游戏环境中的有趣实验。
+- 原文：https://jev-pokemon.vercel.app/
+- 讨论：https://news.ycombinator.com/item?id=49845172
 
-2. **英国的两级加密**
-   - 理由：隐私立法风向标，378 条评论显示争议之大。任何关心端到端加密未来的人都应阅读。
-   - 链接：https://macanorak.com/two-tier-encryption-in-the-uk/ ｜ 讨论：https://news.ycombinator.com/item?id=49828731
-
-3. **关于现代化开源桌面的思考**
-   - 理由：493 条评论，是今日讨论最深入的工程与社区议题，直击 Linux 桌面长期的结构性困境。
-   - 链接：https://lwn.net/SubscriberLink/1095425/2d9f411252325784/ ｜ 讨论：https://news.ycombinator.com/item?id=49825642
-
-4. **SourceHut 账户劫持：构建日志中的 XSS**
-   - 理由：具体、可复现的安全案例，对所有维护 CI/CD 与自托管服务的人都有直接借鉴意义。
-   - 链接：https://blog.arusekk.pl/posts/srht-account-takeover/ ｜ 讨论：https://lobste.rs/s/ky1cr0/sourcehut_account_takeover_via_build
-
-5. **三星智能冰箱固件变砖**
-   - 理由：IoT 所有权与云依赖风险的生动教材，280 条评论涵盖消费者权益、工程伦理与产品设计反思。
-   - 链接：https://arstechnica.com/gadgets/2026/09/owners-mourn-spoiled-food-after-firmware-update-bricks-samsung-smart-fridges/ ｜ 讨论：https://news.ycombinator.com/item?id=49829960
+**17. Commodified Intelligence（商品化的智能）**
+讨论 AI 智能如何被商品化及其影响。对 AI 经济学的批判性思考。
+- 原文：https://herecomesthemoon.net/2026/09/commodified-intelligence/
+- 讨论：https://lobste.rs/s/nidcls/commodified_intelligence
 
 ---
 
-## 一句话总结
+## 五、安全与隐私
 
-今日技术社区的主线是**"自由与控制"**：从 F-Droid、开源桌面到英国加密政策、智能家电变砖，讨论反复围绕"谁掌握软件与数据的控制权"展开；与此同时，Snapdragon Linux、ESP32 与 Fearless SIMD 展示了底层硬件与系统的持续进步，而肝脏、古神兽头、动画考据等文章则延续了 HN 独特的好奇心文化。0:{"buildId":"vL3V3oMH07gzN0jvAOQcY","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-09-25","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":15},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-09-25"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+**18. 进入并攻破 Avast 杀毒软件沙箱（第二部分）**
+SafeTeam 对 CVE-2025-13032 的深度技术分析，揭示杀毒软件沙箱的攻防细节。安全研究者的必读材料。
+- 原文：https://www.safateam.com/intelligence-hub/research/technical-articles/cve-2025-13032-entering-and-breaking-the-avast-antivirus-sandbox-part-2
+- 讨论：https://news.ycombinator.com/item?id=49841115
+
+**19. 我们如何学会不再担忧并爱上校园监控**
+MIT 未来科技实验室的文章，反思校园监控的常态化。隐私与安全权衡的深度讨论。
+- 原文：https://fnl.mit.edu/how-we-learned-to-stop-worrying-and-love-campus-surveillance/
+- 讨论：https://news.ycombinator.com/item?id=49849141
+
+**20. WaveDigger：挖掘无线信号以发现其物理位置**
+开源工具，通过分析无线信号定位设备物理位置。对无线安全与信号情报研究有实用价值。
+- 原文：https://github.com/christianrowlands/wavedigger
+- 讨论：https://news.ycombinator.com/item?id=49815370
+
+---
+
+## 六、科学、思维与跨学科
+
+**21. 肝脏为何如此奇特可再生？**
+深入探讨肝脏再生机制的科普文章。生物学与医学的精彩解读，285 条评论显示其吸引力。
+- 原文：https://dynomight.substack.com/p/liver
+- 讨论：https://news.ycombinator.com/item?id=49832938
+
+**22. 修复 Portobello 警察局钟楼**
+一篇关于修复历史钟楼的硬件/机械工程博客。展现了技术人对物理世界问题的解决热情。
+- 原文：https://pointinthecloud.com/2026-04-11-211700.html
+- 讨论：https://news.ycombinator.com/item?id=49817469
+
+**23. 引力似乎是全息的，这对现实意味着什么？**
+Quanta Magazine 关于全息原理的深度报道。物理学前沿的哲学与科学探讨。
+- 原文：https://www.quantamagazine.org/gravity-seems-holographic-what-does-that-mean-for-reality-20260925/
+- 讨论：https://news.ycombinator.com/item?id=49845998
+
+**24. Alan Kay：香农给了我们处理噪声信道的方法 [视频]**
+Alan Kay 在 Kristen Nygaard 百年诞辰上的即兴演讲，关于 Claude Shannon 的音频反馈实验。计算机科学史与信息论的珍贵资料。
+- 原文：https://www.youtube.com/watch?v=Cjntrqhn8pk
+- 讨论：https://news.ycombinator.com/item?id=49848295
+
+**25. 第一性原理思维**
+关于第一性原理思考方法的文章。工程师与创业者常用的思维框架，100 条评论显示其共鸣。
+- 原文：https://sunilsadasivan.com/writing/first-principles-thinking/
+- 讨论：https://news.ycombinator.com/item?id=49844736
+
+---
+
+## 七、产品、UX 与商业
+
+**26. Ink and Switch 交互式主页**
+Ink and Switch 研究实验室的新主页，本身就是交互设计的展示。值得 UX 设计师与前端开发者体验。
+- 原文：https://www.inkandswitch.com/
+- 讨论：https://news.ycombinator.com/item?id=49842270
+
+**27. 电子游戏如何启发优秀 UX（2019）**
+经典文章重新上榜，探讨游戏设计对 UX 的启示。产品设计师的常读材料。
+- 原文：https://jenson.org/games/
+- 讨论：https://news.ycombinator.com/item?id=49777121
+
+**28. Excel 现在支持单元格内多值**
+微软 Excel 新增列表与数组功能，允许单单元格存储多个值。对数据建模与表格设计有深远影响。
+- 原文：https://techcommunity.microsoft.com/blog/microsoft365insiderblog/put-multiple-values-in-one-cell-with-lists-and-arrays-in-excel/4559395
+- 讨论：https://news.ycombinator.com/item?id=49849832
+
+**29. Factorio 你能触摸到的版本**
+Factorio 官方博客 FFF-447，介绍物理交互或触觉反馈相关的新特性。游戏工程与模拟技术的展示。
+- 原文：https://factorio.com/blog/post/fff-447
+- 讨论：https://news.ycombinator.com/item?id=49845133
+
+---
+
+## 八、其他
+
+**30. 荷兰政府替代方案（见第 1 条）** 与 **Amiga 屏幕（见第 14 条）** 已在相应分组覆盖。
+
+---
+
+## 今日最值得阅读的 5 篇文章推荐
+
+### 1. 荷兰政府基于 NixOS 构建微软替代方案
+**理由**：数字主权与开源治理的标志性事件，935 分 + 544 评论，是今日最热话题。了解公共部门如何摆脱大厂锁定。
+- https://www.dawo.community/en/
+- https://news.ycombinator.com/item?id=49841563
+
+### 2. 现在的操作系统到底是什么？
+**理由**：167 条评论的哲学级讨论，重新定义 OS 边界。对系统架构师与平台开发者极具启发。
+- https://sockpuppet.org/blog/2026/09/25/what-even-is-an-os-now/
+- https://news.ycombinator.com/item?id=49850305
+
+### 3. Show HN: Whiteboard – 面向深思熟虑软件设计的开源 IDE
+**理由**：YC 孵化、开源、人机协作设计软件架构，代表 AI 时代开发工具的新范式。
+- https://github.com/devdotfast/whiteboard
+- https://news.ycombinator.com/item?id=49833867
+
+### 4. 进入并攻破 Avast 杀毒软件沙箱（第二部分）
+**理由**：高质量安全研究，CVE 实战分析。安全工程师与漏洞研究者的必读。
+- https://www.safateam.com/intelligence-hub/research/technical-articles/cve-2025-13032-entering-and-breaking-the-avast-antivirus-sandbox-part-2
+- https://news.ycombinator.com/item?id=49841115
+
+### 5. 肝脏为何如此奇特可再生？
+**理由**：跨学科科普佳作，552 分证明其吸引力。技术人拓展生物学视野的绝佳读物。
+- https://dynomight.substack.com/p/liver
+- https://news.ycombinator.com/item?id=49832938
+
+---
+
+**总结**：今日技术热点呈现三大趋势——**数字主权与开源替代**（荷兰政府 NixOS）、**AI 辅助开发工具的快速迭代**（Whiteboard、Plan mode is dead、Jev 玩宝可梦）、以及**对基础系统的重新思考**（OS 定义、DOS 遗留系统、Amiga/复古计算）。安全研究与跨学科科普同样保持高热度。0:{"buildId":"919wX3fQ0JP9taNIYPtYe","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-09-26","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":15},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-09-26"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
 c:T1263,Hello! We’re Sid, Alex, Ketan, and Milan. We’re building Whiteboard (<a href="https:&#x2F;&#x2F;whiteboard.dev.fast&#x2F;">https:&#x2F;&#x2F;whiteboard.dev.fast&#x2F;</a>), an open-source desktop app where humans and agents can architect software together in a common workspace. Here’s our repo: <a href="https:&#x2F;&#x2F;github.com&#x2F;devdotfast&#x2F;whiteboard" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;devdotfast&#x2F;whiteboard</a>.<p>We were missing the feeling of a “whiteboard session” with another dev where you leave with a deep understanding of a system, so we built this app for ourselves. Whiteboard plugs into the tools you already use - e.g. Claude Code, Codex, etc. – and gives your agent an SDK to draw on an in-app canvas to describe its work. We began with an MVP based on HTML artifacts and started rethinking the app as we ran into limitations:<p>1. Built on top of CodeOSS: We found that in pure HTML tools it was hard to connect a spec or diagram to code. In Whiteboard, when you click on visualizations like a sequence diagram, an entity relationship diagram, or a quote from the agent’s trace, you can jump to the underlying code directly. When navigating code, you get keybindings and LSP support from VSCode out of the box. We’ve found this is especially valuable because tradeoffs are often only discovered after a first pass at implementation (re: slop)<p>2. Semantic diff viewer: we wrote a semantic, AST-aware diff viewer in Rust so you can only view the code changes which are relevant to you [1]. We’ve set up some sane defaults: large added functions are summarized as pseudocode, and things like unit tests and large documentation changes are collapsed &#x2F; hidden. This is all customizable with a WASM-based plugin system.<p>3. Decision Log: We found it difficult to reason about what set of decisions our agents made autonomously. So we built tools for agents to query and link their own traces to the Whiteboard, so you can understand how the requirements that you set were implemented, and understand what decisions your agent made autonomously.<p>Here’s a quick demo video explaining more: <a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=ChPn3ftULWE" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=ChPn3ftULWE</a><p>Folks at companies like Salesforce and Modal are using Whiteboard today as a review tool for architecture or spec-level changes – really any change where they want to be involved:<p>1. Reviewing your own coding agent’s work: because Whiteboard makes it easier to review large amounts of code, folks will typically have their AI agents create a prototype and a corresponding Whiteboard session so they can iterate on the design.<p>2. Reviewing other people’s changes: We’ve found that Whiteboard is particularly helpful when composed with tools like Greptile. For example, you can run an automated code reviewer on small changes and escalate to a Whiteboard session for the changes that require human judgement.<p>Why we built this: we’re four buddies from college who quit our jobs as tech leads right before agentic coding became industry standard. As we iterated towards an MVP for a previous idea, we struggled to maintain a comprehensible codebase while reaping all the velocity benefits of agentic coding. As more PRs were merged without our understanding, we felt a ‘cognitive debt’ begin to seep in, until it became difficult for us to even contribute to the system [2].<p>We’re releasing our desktop app under an MIT license. Please poke through and feel free to contribute! Eventually we’ll charge companies for a hosted web version that manages whiteboard session creation alongside features like trajectory storage and multiplayer reviews. Everything will always remain self-hostable.<p>Thanks for reading, and we hope you try it out! We would love to hear any feedback and to learn from your expertise.<p>Here’s are the project links again: <a href="https:&#x2F;&#x2F;github.com&#x2F;devdotfast&#x2F;whiteboard" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;devdotfast&#x2F;whiteboard</a>, and you can install (for MacOS + Linux) at <a href="https:&#x2F;&#x2F;install.dev.fast">https:&#x2F;&#x2F;install.dev.fast</a><p>[1] diffs library: <a href="https:&#x2F;&#x2F;github.com&#x2F;devdotfast&#x2F;diffr" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;devdotfast&#x2F;diffr</a>
-[2] Credit for the term ‘cognitive debt’ goes to  <a href="https:&#x2F;&#x2F;www.geoffreylitt.com&#x2F;2026&#x2F;07&#x2F;02&#x2F;understanding-is-the-new-bottleneck" rel="nofollow">https:&#x2F;&#x2F;www.geoffreylitt.com&#x2F;2026&#x2F;07&#x2F;02&#x2F;understanding-is-the...</a>6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-49831968","title":"F-Droid 2.0","url":"https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html","source":"Hacker News","score":979,"comments_count":267,"comments_url":"https://news.ycombinator.com/item?id=49831968","published_at":"2026-09-24T15:26:12","author":"daveoc64","text":null,"summary":"F-Droid 2.0 发布，标志着这款开源 Android 应用商店进入新篇章，可能带来界面、性能或分发机制的改进，值得关注 Android 自由软件生态的演进。"},{"id":"hn-49823582","title":"Linux support is coming to Snapdragon X2 series","url":"https://www.qualcomm.com/news/onq/2026/09/snapdragon-summit-agentic-ai-pcs-linux","source":"Hacker News","score":593,"comments_count":251,"comments_url":"https://news.ycombinator.com/item?id=49823582","published_at":"2026-09-23T22:38:16","author":"aaronday","text":null,"summary":"高通宣布 Snapdragon X2 系列将支持 Linux，这意味着搭载该芯片的 PC 能更好地运行开源系统，对 Linux 桌面和 ARM 笔记本用户是重大利好。"},{"id":"hn-49817469","title":"Fixing the Portobello Police Station Clock","url":"https://pointinthecloud.com/2026-04-11-211700.html","source":"Hacker News","score":523,"comments_count":113,"comments_url":"https://news.ycombinator.com/item?id=49817469","published_at":"2026-09-23T15:18:53","author":"avidly","text":null,"summary":"文章讲述修复 Portobello 警察局时钟的过程，属于有趣的硬件修复记录，适合喜欢动手改造和复古设备的读者。"},{"id":"hn-49823738","title":"Show HN: Make cursed fonts like Times New Bastard","url":"https://bastardica.mitpit.com","source":"Hacker News","score":509,"comments_count":71,"comments_url":"https://news.ycombinator.com/item?id=49823738","published_at":"2026-09-23T22:53:28","author":"MitPitt","text":"A joke tool that abuses OpenType&#x27;s ligature feature to mix fonts. It works pretty fast on client-side by loading Python in WASM.","summary":"这是一个利用 OpenType 连字特性混合字体的恶搞工具，通过 WASM 在客户端快速运行 Python，生成 Times New Bastard 等“诅咒字体”，趣味性强。"},{"id":"hn-49824268","title":"Meta VR Glasses","url":"https://www.meta.com/vr-glasses/","source":"Hacker News","score":480,"comments_count":457,"comments_url":"https://news.ycombinator.com/item?id=49824268","published_at":"2026-09-23T23:47:56","author":"polymorph1sm","text":null,"summary":"Meta 推出 VR 眼镜产品页面，可能涉及新款头显或智能眼镜，值得关注 Meta 在虚拟现实和可穿戴设备领域的最新动向。"},{"id":"hn-49828731","title":"Two-tier encryption in the UK","url":"https://macanorak.com/two-tier-encryption-in-the-uk/","source":"Hacker News","score":392,"comments_count":378,"comments_url":"https://news.ycombinator.com/item?id=49828731","published_at":"2026-09-24T10:39:19","author":"ReturnoftheHack","text":null,"summary":"文章讨论英国的两级加密政策，分析可能强制弱加密或后门对用户隐私的影响，值得关注全球加密监管趋势。"},{"id":"hn-49825642","title":"Ideas on modernizing the open-source desktop","url":"https://lwn.net/SubscriberLink/1095425/2d9f411252325784/","source":"Hacker News","score":383,"comments_count":493,"comments_url":"https://news.ycombinator.com/item?id=49825642","published_at":"2026-09-24T02:52:09","author":"signa11","text":null,"summary":"LWN 文章探讨现代化开源桌面的思路，涉及桌面环境、Wayland、Flatpak 等议题，对 Linux 桌面发展感兴趣的读者值得一读。"},{"id":"hn-49823664","title":"ArXiv receives multiyear commitments to support it as an independent nonprofit","url":"https://blog.arxiv.org/2026/09/23/arxiv-receives-multiyear-investment/","source":"Hacker News","score":305,"comments_count":38,"comments_url":"https://news.ycombinator.com/item?id=49823664","published_at":"2026-09-23T22:45:49","author":"JohnHammersley","text":null,"summary":"arXiv 获得多年期资助，将作为独立非营利组织运营，这有助于保障这个重要预印本平台的长期稳定和开放获取。"},{"id":"hn-49832938","title":"Why is the liver so weirdly regenerative?","url":"https://dynomight.substack.com/p/liver","source":"Hacker News","score":283,"comments_count":162,"comments_url":"https://news.ycombinator.com/item?id=49832938","published_at":"2026-09-24T16:23:00","author":"jbotz","text":null,"summary":"文章探讨肝脏为何具有奇特的再生能力，从生物学角度解释其机制，对医学和生命科学爱好者有启发。"},{"id":"hn-49829960","title":"Owners mourn spoiled food after firmware update bricks Samsung smart fridges","url":"https://arstechnica.com/gadgets/2026/09/owners-mourn-spoiled-food-after-firmware-update-bricks-samsung-smart-fridges/","source":"Hacker News","score":272,"comments_count":280,"comments_url":"https://news.ycombinator.com/item?id=49829960","published_at":"2026-09-24T12:58:08","author":"nonfamous","text":null,"summary":"三星智能冰箱因固件更新变砖，导致用户食物腐败，引发对物联网设备可靠性和厂商责任的关注。"},{"id":"hn-49832406","title":"GitHub has not removed malicious imitation software after 3 weeks","url":"https://successfulsoftware.net/2026/09/24/github-has-not-removed-malicious-imitation-software-after-3-weeks/","source":"Hacker News","score":244,"comments_count":104,"comments_url":"https://news.ycombinator.com/item?id=49832406","published_at":"2026-09-24T15:50:26","author":"hermitcrab","text":null,"summary":"报道GitHub在收到举报三周后仍未下架恶意仿冒软件，凸显开源平台在供应链安全与内容审核上的响应漏洞，值得开发者警惕。"},{"id":"hn-49805344","title":"My weird new hobby: Wandering around Tokyo on Google Maps","url":"https://ahmedhossamdev.com/writing/my-weird-new-hobby-wandering-around-tokyo/","source":"Hacker News","score":242,"comments_count":102,"comments_url":"https://news.ycombinator.com/item?id=49805344","published_at":"2026-09-22T17:49:46","author":"ahmedhossamdev","text":null,"summary":"作者分享用Google Maps虚拟漫游东京的奇特爱好，展示了地图街景数据在休闲探索与城市感知上的趣味应用。"},{"id":"hn-49823568","title":"Toyota is taking the Corolla electric","url":"https://electrek.co/2026/09/23/toyota-best-selling-corolla-electric/","source":"Hacker News","score":241,"comments_count":400,"comments_url":"https://news.ycombinator.com/item?id=49823568","published_at":"2026-09-23T22:37:28","author":"cisc","text":null,"summary":"丰田将旗下最畅销的卡罗拉车型电动化，标志着传统车企在主流走量车型上加速转向纯电，对电动车普及具有指标意义。"},{"id":"hn-49833867","title":"Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design","url":"https://github.com/devdotfast/whiteboard","source":"Hacker News","score":215,"comments_count":85,"comments_url":"https://news.ycombinator.com/item?id=49833867","published_at":"2026-09-24T17:21:36","author":"sidharthkmenon","text":"$c","summary":"YC W26团队推出开源IDE Whiteboard，让人与AI代理在同一工作区协作设计软件架构，探索人机协同开发的新范式。"},{"id":"hn-49828969","title":"The newest ESP32 can run Linux and it's getting close to a Raspberry Pi","url":"https://www.xda-developers.com/newest-esp32-run-linux-close-to-raspberry-pi/","source":"Hacker News","score":215,"comments_count":101,"comments_url":"https://news.ycombinator.com/item?id=49828969","published_at":"2026-09-24T11:08:39","author":"adunk","text":null,"summary":"最新ESP32芯片已能运行Linux且性能逼近树莓派，意味着低成本微控制器与单板计算机的边界正在模糊，值得嵌入式开发者关注。"},{"id":"hn-49828385","title":"Nokia Design Archive (2025)","url":"https://repo.aalto.fi/index.php?name=SO_b66a9391-dcf8-4399-8e87-611f84c3fc4c","source":"Hacker News","score":209,"comments_count":118,"comments_url":"https://news.ycombinator.com/item?id=49828385","published_at":"2026-09-24T09:49:33","author":"pillars","text":null,"summary":"阿尔托大学公开诺基亚设计档案，收录大量经典产品设计资料，为研究移动通信史与工业设计提供了珍贵的一手素材。"},{"id":"hn-49800085","title":"Fearless SIMD v1.0","url":"https://linebender.org/blog/fearless-simd-1-0/","source":"Hacker News","score":202,"comments_count":31,"comments_url":"https://news.ycombinator.com/item?id=49800085","published_at":"2026-09-22T12:23:37","author":"verdagon","text":null,"summary":"Linebender发布Fearless SIMD v1.0，为Rust生态提供更安全易用的SIMD抽象，有助于在高性能计算中兼顾安全与效率。"},{"id":"hn-49805806","title":"Enjoy Every Sandwich","url":"https://bradmontague.substack.com/p/enjoy-every-sandwich","source":"Hacker News","score":183,"comments_count":99,"comments_url":"https://news.ycombinator.com/item?id=49805806","published_at":"2026-09-22T18:19:25","author":"NaOH","text":null,"summary":"一篇关于珍惜当下、享受生活小确幸的随笔，以‘享受每一个三明治’为喻，提醒人们在技术快节奏中关注生活本身。"},{"id":"hn-49826221","title":"Contrastive Language Models","url":"https://contrastive-lm.notion.site/","source":"Hacker News","score":159,"comments_count":50,"comments_url":"https://news.ycombinator.com/item?id=49826221","published_at":"2026-09-24T04:20:59","author":"erichocean","text":null,"summary":"介绍对比式语言模型（Contrastive Language Models）的研究项目，探索通过对比学习提升语言表示质量，值得NLP研究者关注。"},{"id":"hn-49836419","title":"California is chasing wealth that has feet","url":"https://blog.landeconomics.org/p/california-is-chasing-wealth-that","source":"Hacker News","score":154,"comments_count":437,"comments_url":"https://news.ycombinator.com/item?id=49836419","published_at":"2026-09-24T20:34:32","author":"idbnstra","text":null,"summary":"从土地经济学角度分析加州面临的财富与人口外流问题，讨论高税负与监管对资本和人才流动的影响，具有政策参考价值。"},{"id":"hn-49799855","title":"The mystery animal on an ancient god's head","url":"https://signoregalilei.com/2026/09/13/the-mystery-animal-on-an-ancient-gods-head/","source":"Hacker News","score":149,"comments_count":43,"comments_url":"https://news.ycombinator.com/item?id=49799855","published_at":"2026-09-22T12:00:11","author":"surprisetalk","text":null,"summary":"探讨古代神祇头冠上神秘动物的考古学谜题，可能揭示跨文化交流或神话象征的新线索，对历史与艺术史爱好者有吸引力。"},{"id":"hn-49834825","title":"Creatine uptake enhances antitumor immunity","url":"https://www.cell.com/iscience/fulltext/S2589-0042(26)00811-4","source":"Hacker News","score":148,"comments_count":171,"comments_url":"https://news.ycombinator.com/item?id=49834825","published_at":"2026-09-24T18:24:52","author":"lormayna","text":null,"summary":"研究发现肌酸摄取能增强抗肿瘤免疫力，为癌症免疫治疗提供了廉价且易得的潜在辅助手段，值得生物医学界关注。"},{"id":"hn-49817741","title":"Why 'What's Opera, Doc?' looks like that","url":"https://animationobsessive.substack.com/p/why-whats-opera-doc-looks-like-that","source":"Hacker News","score":145,"comments_count":26,"comments_url":"https://news.ycombinator.com/item?id=49817741","published_at":"2026-09-23T15:37:47","author":"CharlesW","text":null,"summary":"解析经典动画短片《什么是歌剧，博士？》的独特视觉风格及其制作背景，对动画史和视觉艺术研究者具有参考价值。"},{"id":"hn-49830037","title":"Oracle cites 'force majeure' to shield itself on controversial data center","url":"https://www.bloomberg.com/news/articles/2026-09-24/oracle-cites-force-majeure-to-shield-itself-on-controversial-data-center","source":"Hacker News","score":138,"comments_count":129,"comments_url":"https://news.ycombinator.com/item?id=49830037","published_at":"2026-09-24T13:04:21","author":"simonpure","text":"<a href=\"https:&#x2F;&#x2F;qz.com&#x2F;oracle-force-majeure-new-mexico-ai-data-center-092426\" rel=\"nofollow\">https:&#x2F;&#x2F;qz.com&#x2F;oracle-force-majeure-new-mexico-ai-data-cente...</a>","summary":"甲骨文公司援引不可抗力条款以规避争议数据中心的责任，涉及AI基础设施扩张中的法律与伦理问题，引发科技行业关注。"},{"id":"hn-49801436","title":"2DWillNeverDie","url":"https://2dwillneverdie.com/","source":"Hacker News","score":132,"comments_count":11,"comments_url":"https://news.ycombinator.com/item?id=49801436","published_at":"2026-09-22T14:00:08","author":"surprisetalk","text":null,"summary":"一个展示2D图形与游戏开发持久魅力的网站，可能汇集相关技术资源或作品，对复古游戏和独立开发者有启发意义。"}],"locale":"zh"}],"$Ld"]}]]}]
+[2] Credit for the term ‘cognitive debt’ goes to  <a href="https:&#x2F;&#x2F;www.geoffreylitt.com&#x2F;2026&#x2F;07&#x2F;02&#x2F;understanding-is-the-new-bottleneck" rel="nofollow">https:&#x2F;&#x2F;www.geoffreylitt.com&#x2F;2026&#x2F;07&#x2F;02&#x2F;understanding-is-the...</a>d:T89a,The following explanation is taken from <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49622607">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49622607</a>:<p>Alan Kay performs an improvisational avant garde layered audio feedback loop about Claude Shannon, live online during Kristen Nygaard&#x27;s 100-year birthday celebration.<p>Alan was scheduled to talk about how encountering Simula sparked his early thoughts about objects. During setup, somebody had the live stream playing out loud near an open Zoom mic, so his own voice kept arriving back in his ears about 21 seconds late, over and over.<p>What he said was not random: &quot;Shannon gave us a way of dealing with noisy channels.&quot; And: &quot;I think about that almost every day. I realize what the fuck is going on and it&#x27;s just so amazing.&quot; Shannon&#x27;s noisy channel coding theorem is the math for exactly the kind of channel that was garbling him as he praised it.<p>Alan joked it was &quot;being rerouted to Mars and back.&quot; At the speed of light, a 21 second round trip is about 3 million km one way -- eight trips to the Moon and back, but only about a seventeenth of the way to Mars at closest approach.<p>This is an accidental Zoom performance of Alvin Lucier&#x27;s &quot;I Am Sitting in a Room&quot; (1969), where Lucier re-recorded his own voice in a room until only the room&#x27;s resonance remained. Here what remains is the network: delay, compression, dropouts.<p>Bonus noise: YouTube&#x27;s auto-transcript bleeps Alan&#x27;s enthusiasm into [ __ ]. So the full chain is: Alan&#x27;s voice, Zoom, stream, room, Zoom again times three, my screen recording, YouTube&#x27;s speech recognizer, a censored transcript.<p>The fix: &quot;Just turn off the audio at your end on Zoom.&quot;<p>I Am Sitting in a Room: <a href="https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;I_Am_Sitting_in_a_Room" rel="nofollow">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;I_Am_Sitting_in_a_Room</a><p>Alvin Lucier on &quot;I am sitting in a room&quot;: <a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=v9XJWBZBzq4" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=v9XJWBZBzq4</a>6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-49841563","title":"Dutch governments builds alternative for Microsoft based on NixOS","url":"https://www.dawo.community/en/","source":"Hacker News","score":935,"comments_count":544,"comments_url":"https://news.ycombinator.com/item?id=49841563","published_at":"2026-09-25T08:06:49","author":"fjfaase","text":null,"summary":"荷兰政府基于NixOS构建了微软软件的替代方案，旨在减少对专有软件的依赖并增强数字主权，值得关注因其对公共部门开源迁移具有示范意义。"},{"id":"hn-49832938","title":"Why is the liver so weirdly regenerative?","url":"https://dynomight.substack.com/p/liver","source":"Hacker News","score":552,"comments_count":285,"comments_url":"https://news.ycombinator.com/item?id=49832938","published_at":"2026-09-24T16:23:00","author":"jbotz","text":null,"summary":"文章探讨了肝脏为何具有如此奇特的再生能力，从生物学角度解释其机制，值得关注因为它揭示了人体器官再生的奥秘并可能启发医学应用。"},{"id":"hn-49817469","title":"Fixing the Portobello Police Station Clock","url":"https://pointinthecloud.com/2026-04-11-211700.html","source":"Hacker News","score":540,"comments_count":116,"comments_url":"https://news.ycombinator.com/item?id=49817469","published_at":"2026-09-23T15:18:53","author":"avidly","text":null,"summary":"讲述修复波托贝洛警察局时钟的过程，是一篇动手实践的技术记录，值得关注因其展示了传统机械装置的维修乐趣与技巧。"},{"id":"hn-49833867","title":"Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design","url":"https://github.com/devdotfast/whiteboard","source":"Hacker News","score":399,"comments_count":129,"comments_url":"https://news.ycombinator.com/item?id=49833867","published_at":"2026-09-24T17:21:36","author":"sidharthkmenon","text":"$c","summary":"Whiteboard是一个开源IDE，让人类和AI代理在共同工作空间中协作设计软件架构，值得关注因其探索了人机协同的软件开发新范式。"},{"id":"hn-49843269","title":"Platform-independent SIMD in Go","url":"https://go.dev/blog/simd-experiment","source":"Hacker News","score":365,"comments_count":136,"comments_url":"https://news.ycombinator.com/item?id=49843269","published_at":"2026-09-25T11:47:06","author":"yurivish","text":null,"summary":"Go语言团队实验了平台无关的SIMD编程，使开发者能更便捷地利用向量化指令提升性能，值得关注因其可能推动Go在高性能计算领域的应用。"},{"id":"hn-49843174","title":"Git-bug: Distributed, offline-first bug tracker embedded in Git","url":"https://github.com/git-bug/git-bug","source":"Hacker News","score":317,"comments_count":101,"comments_url":"https://news.ycombinator.com/item?id=49843174","published_at":"2026-09-25T11:38:31","author":"alentred","text":null,"summary":"git-bug是一个嵌入Git的分布式、离线优先的bug跟踪器，将问题跟踪数据与代码仓库一同管理，值得关注因其为开发者提供了去中心化的协作新方式。"},{"id":"hn-49845133","title":"Factorio that you can touch","url":"https://factorio.com/blog/post/fff-447","source":"Hacker News","score":316,"comments_count":106,"comments_url":"https://news.ycombinator.com/item?id=49845133","published_at":"2026-09-25T14:24:42","author":"ibobev","text":null,"summary":"Factorio游戏推出了可触摸的实体版本，让玩家能亲手操作游戏中的工厂元素，值得关注因其将虚拟建造体验带入了现实世界。"},{"id":"hn-49841285","title":"Pentium II at 600Mhz with Voodoo 3 Emulated on 86Box with M6 Mac Mini","url":"https://nyaa.sh/reviews/mac-mini-m6-emulation","source":"Hacker News","score":265,"comments_count":117,"comments_url":"https://news.ycombinator.com/item?id=49841285","published_at":"2026-09-25T07:27:45","author":"hugh4life","text":null,"summary":"在M6 Mac Mini上通过86Box模拟了600MHz的Pentium II和Voodoo 3显卡，值得关注因其展示了现代硬件上复古游戏模拟的可行性。"},{"id":"hn-49842270","title":"Ink and Switch interactive homepage","url":"https://www.inkandswitch.com/","source":"Hacker News","score":230,"comments_count":25,"comments_url":"https://news.ycombinator.com/item?id=49842270","published_at":"2026-09-25T09:50:25","author":"iFreilicht","text":null,"summary":"Ink and Switch发布了交互式主页，展示了其研究项目的动态演示，值得关注因其体现了该实验室在人机交互领域的创新表达。"},{"id":"hn-49844736","title":"First Principles Thinking","url":"https://sunilsadasivan.com/writing/first-principles-thinking/","source":"Hacker News","score":226,"comments_count":100,"comments_url":"https://news.ycombinator.com/item?id=49844736","published_at":"2026-09-25T13:55:37","author":"sunils34","text":null,"summary":"文章阐述了第一性原理思维的概念及其应用方法，值得关注因其提供了一种回归本质、打破常规的思考工具，适用于技术与商业决策。"},{"id":"hn-49845172","title":"Show HN: Jev Plays Pokémon Red","url":"https://jev-pokemon.vercel.app/","source":"Hacker News","score":163,"comments_count":71,"comments_url":"https://news.ycombinator.com/item?id=49845172","published_at":"2026-09-25T14:28:07","author":"pancomplex","text":"Hey HN! Wanted to share a fun project I&#x27;ve been hacking on. Given Jev can make decisions really fast (but not fast enough to play Doom yet sadly), I wanted to try and push it to play a more complex game than Tetris. So I went with Pokémon.<p>I&#x27;ve spent endless hours playing this game as a child so building this was a ton of fun.<p>I open sourced everything in case you want to hack on it yourself here: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;christianmat&#x2F;jev-pokemon\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;christianmat&#x2F;jev-pokemon</a><p>The game is being streamed live including the tokens and cost - hopefully we get all the badges and don&#x27;t get stuck in a cave :)","summary":"这是一个展示项目，让AI系统Jev尝试游玩《宝可梦红》，旨在挑战比俄罗斯方块更复杂的游戏决策。值得关注的是它探索了AI在复杂游戏环境中的快速决策能力。"},{"id":"hn-49787759","title":"Book review: Is parallel programming hard, and, if so, what can you do about it?","url":"https://ahelwer.ca/post/2026-09-21-concurrency-textbook/","source":"Hacker News","score":146,"comments_count":62,"comments_url":"https://news.ycombinator.com/item?id=49787759","published_at":"2026-09-21T14:30:00","author":"ahelwer","text":null,"summary":"这是一篇关于并行编程书籍的评论，探讨并行编程的难度及应对方法。值得关注的是它为开发者提供了处理并发问题的实用指导。"},{"id":"hn-49841309","title":"Amiga Screens: A Primer","url":"https://www.datagubbe.se/amscr/","source":"Hacker News","score":132,"comments_count":39,"comments_url":"https://news.ycombinator.com/item?id=49841309","published_at":"2026-09-25T07:31:12","author":"msephton","text":null,"summary":"这是一篇关于Amiga电脑屏幕技术的入门介绍。值得关注的是它回顾了经典计算平台的技术细节，对复古计算爱好者有吸引力。"},{"id":"hn-49849141","title":"How we learned to stop worrying and love campus surveillance","url":"https://fnl.mit.edu/how-we-learned-to-stop-worrying-and-love-campus-surveillance/","source":"Hacker News","score":130,"comments_count":80,"comments_url":"https://news.ycombinator.com/item?id=49849141","published_at":"2026-09-25T19:56:57","author":"cdrnsf","text":null,"summary":"这篇文章讨论了校园监控如何被社会接受并变得普遍。值得关注的是它引发了对隐私与安全平衡的反思。"},{"id":"hn-49845998","title":"Gravity seems holographic. What does that mean for reality?","url":"https://www.quantamagazine.org/gravity-seems-holographic-what-does-that-mean-for-reality-20260925/","source":"Hacker News","score":128,"comments_count":135,"comments_url":"https://news.ycombinator.com/item?id=49845998","published_at":"2026-09-25T15:31:02","author":"ibobev","text":null,"summary":"这篇文章探讨了引力可能具有全息性质及其对现实本质的意义。值得关注的是它涉及物理学前沿理论，可能改变我们对宇宙的理解。"},{"id":"hn-49848295","title":"Alan Kay: Shannon gave us a way of dealing with noisy channels [video]","url":"https://www.youtube.com/watch?v=Cjntrqhn8pk","source":"Hacker News","score":128,"comments_count":24,"comments_url":"https://news.ycombinator.com/item?id=49848295","published_at":"2026-09-25T18:37:05","author":"behoove","text":"$d","summary":"这是Alan Kay关于香农如何提供处理噪声信道方法的视频讲解。值得关注的是它从信息论奠基人角度阐述了通信的核心问题。"},{"id":"hn-49815370","title":"WaveDigger: Dig into wireless signals to discover their physical locations","url":"https://github.com/christianrowlands/wavedigger","source":"Hacker News","score":128,"comments_count":27,"comments_url":"https://news.ycombinator.com/item?id=49815370","published_at":"2026-09-23T12:57:07","author":"882542F3884314B","text":null,"summary":"WaveDigger是一个通过无线信号发现其物理位置的工具。值得关注的是它展示了无线信号定位技术的实际应用。"},{"id":"hn-49840054","title":"Plan mode is dead","url":"https://www.aymannadeem.com/artificial/intelligence,/developer/tools/2026/09/24/plan-mode-is-dead.html","source":"Hacker News","score":122,"comments_count":134,"comments_url":"https://news.ycombinator.com/item?id=49840054","published_at":"2026-09-25T03:59:11","author":"jmvldz","text":null,"summary":"这篇文章讨论了“计划模式”的消亡，可能涉及AI开发工具的变化。值得关注的是它反映了AI辅助编程工作流的演进。"},{"id":"hn-49842084","title":"Boards of Casio","url":"https://www.ambionix.com/blog/boards-of-casio/","source":"Hacker News","score":114,"comments_count":38,"comments_url":"https://news.ycombinator.com/item?id=49842084","published_at":"2026-09-25T09:26:01","author":"fidotron","text":null,"summary":"这篇文章介绍了卡西欧公司的电路板。值得关注的是它展示了经典电子产品的硬件设计。"},{"id":"hn-49849832","title":"Excel now supports multiple values in a single cell","url":"https://techcommunity.microsoft.com/blog/microsoft365insiderblog/put-multiple-values-in-one-cell-with-lists-and-arrays-in-excel/4559395","source":"Hacker News","score":113,"comments_count":83,"comments_url":"https://news.ycombinator.com/item?id=49849832","published_at":"2026-09-25T20:55:00","author":"luispa","text":"Related: <a href=\"https:&#x2F;&#x2F;techcommunity.microsoft.com&#x2F;blog&#x2F;excelblog&#x2F;excel-now-supports-multiple-values-in-a-single-cell&#x2F;4549756\" rel=\"nofollow\">https:&#x2F;&#x2F;techcommunity.microsoft.com&#x2F;blog&#x2F;excelblog&#x2F;excel-now...</a>","summary":"Excel现在支持在单个单元格中存放多个值。值得关注的是这一功能改变了传统电子表格的数据组织方式，可能提升数据处理效率。"},{"id":"hn-49841115","title":"Entering and Breaking the Avast Antivirus Sandbox Part 2","url":"https://www.safateam.com/intelligence-hub/research/technical-articles/cve-2025-13032-entering-and-breaking-the-avast-antivirus-sandbox-part-2","source":"Hacker News","score":108,"comments_count":30,"comments_url":"https://news.ycombinator.com/item?id=49841115","published_at":"2026-09-25T07:03:46","author":"safateam","text":null,"summary":"这是关于Avast杀毒软件沙箱逃逸漏洞（CVE-2025-13032）的第二部分技术分析，详细介绍了如何进入并突破沙箱。对于安全研究人员和杀毒软件开发者而言，了解此类漏洞的利用方式有助于提升产品安全性。"},{"id":"hn-49846640","title":"Typst makes big strides","url":"https://lwn.net/Articles/1092993/","source":"Hacker News","score":106,"comments_count":20,"comments_url":"https://news.ycombinator.com/item?id=49846640","published_at":"2026-09-25T16:25:08","author":"leephillips","text":null,"summary":"文章介绍了Typst排版系统近期取得的重大进展，包括功能增强和性能提升。Typst作为LaTeX的现代替代品，其快速发展值得关注，尤其对学术写作和技术文档编写者。"},{"id":"hn-49777121","title":"How video games inspire great UX (2019)","url":"https://jenson.org/games/","source":"Hacker News","score":102,"comments_count":16,"comments_url":"https://news.ycombinator.com/item?id=49777121","published_at":"2026-09-20T16:00:13","author":"andsoitis","text":null,"summary":"这篇2019年的文章探讨了电子游戏如何启发优秀的用户体验设计，分析了游戏中的交互模式对UX设计的借鉴意义。对于设计师和产品经理，理解游戏化设计原则能提升产品的用户参与度。"},{"id":"hn-49850305","title":"What even is an OS now?","url":"https://sockpuppet.org/blog/2026/09/25/what-even-is-an-os-now/","source":"Hacker News","score":93,"comments_count":167,"comments_url":"https://news.ycombinator.com/item?id=49850305","published_at":"2026-09-25T21:36:56","author":"fratellobigio","text":null,"summary":"文章探讨了现代操作系统的定义演变，讨论了容器、WebAssembly等新技术如何模糊传统OS边界。对于系统开发者和技术战略决策者，理解OS概念的变迁有助于把握技术趋势。"},{"id":"hn-49848955","title":"Ask HN: Who's still keeping a DOS machine up because the business depends on it?","url":null,"source":"Hacker News","score":90,"comments_count":75,"comments_url":"https://news.ycombinator.com/item?id=49848955","published_at":"2026-09-25T19:37:55","author":"mlaux","text":"Do you currently work with or know anyone who is still using:<p>* dBase&#x2F;Clipper&#x2F;CLARION&#x2F;Paradox&#x2F;other DOS RAD environments on period hardware to run business processes?<p>* CNC mills&#x2F;spectrometers&#x2F;microscopes&#x2F;other industrial instruments controlled by ISA cards (either bespoke or standards like GPIB)?<p>* Anything with a parallel port dongle?<p>If so, I&#x27;d be very interested in hearing your experience here, or feel free to send me an email at the address in my profile. I&#x27;m not trying to sell anything, just doing some research for an idea around keeping these going on modern hardware.","summary":"这是一个Ask HN讨论帖，询问是否还有人因为业务依赖而维护DOS机器，涉及dBase、Clipper等老旧环境及工业控制设备。对于从事遗留系统维护或现代化改造的工程师，这些经验具有参考价值。"}],"locale":"zh"}],"$Le"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
-d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-e2e34aceb1a0","title":"Breaking Up with Google Play: Why Conversations Is Now Free","url":"https://gultsch.de/posts/breaking-up-with-google-play/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-24T14:57:57","author":"gultsch.de via tusharhero","text":"<p><a href=\"https://lobste.rs/s/4jqfz1/breaking_up_with_google_play_why\">Comments</a></p>","summary":"Conversations即时通讯应用因与Google Play政策冲突而选择下架并转为免费，反映了开源软件与商业应用商店之间的紧张关系。"},{"id":"rss-5c4246387ce8","title":"I asked Meta’s Muse for its filesystem and it sent me 6.8 GB","url":"https://mouse.dev/blog/muse-runtime-export/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-24T14:55:45","author":"mouse.dev via Garbi","text":"<p><a href=\"https://lobste.rs/s/mdczxv/i_asked_meta_s_muse_for_its_filesystem_it\">Comments</a></p>","summary":"作者向Meta的Muse模型请求其文件系统，竟获得6.8GB数据，暴露了AI模型可能泄露训练数据或内部信息的严重隐私风险。"},{"id":"rss-c66f2182afb3","title":"SourceHut account takeover via build logs (XSS in ansi2html.py)","url":"https://blog.arusekk.pl/posts/srht-account-takeover/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-24T20:38:32","author":"blog.arusekk.pl via winter","text":"<p><a href=\"https://lobste.rs/s/ky1cr0/sourcehut_account_takeover_via_build\">Comments</a></p>","summary":"SourceHut因ansi2html.py中的XSS漏洞导致账户可被通过构建日志接管，提醒开发者重视CI/CD管道中的安全缺陷。"},{"id":"rss-047102783080","title":"F-Droid 2.0","url":"https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-24T18:43:01","author":"f-droid.org via dimonomid","text":"<p><a href=\"https://lobste.rs/s/opt2ma/f_droid_2_0\">Comments</a></p>","summary":"F-Droid发布2.0版本，标志着这一开源Android应用商店进入新阶段，对推动移动端软件自由和隐私保护具有重要意义。"},{"id":"rss-55bc330bdeb6","title":"AI Workers' Inquiry 2026","url":"https://techworkersinquiry.org/ai/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-24T17:41:35","author":"techworkersinquiry.org via gmem","text":"<p><a href=\"https://lobste.rs/s/uxvwlo/ai_workers_inquiry_2026\">Comments</a></p>","summary":"2026年AI工作者调查报告，可能揭示AI行业从业者的劳动条件、伦理困境与组织动向，对科技劳工议题有参考价值。"}],"locale":"zh"}]
-10:null
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+e:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-d119a8ee9980","title":"Commodified Intelligence","url":"https://herecomesthemoon.net/2026/09/commodified-intelligence/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-25T18:24:29","author":"herecomesthemoon.net by mond","text":"<p><a href=\"https://lobste.rs/s/nidcls/commodified_intelligence\">Comments</a></p>","summary":"文章讨论了智能商品化（Commodified Intelligence）的现象，可能涉及AI服务的普及和同质化。对于关注AI产业趋势的读者，理解智能商品化的影响有助于思考差异化竞争策略。"},{"id":"rss-effb109c5496","title":"What About Rails?","url":"https://jardo.dev/what-about-rails","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-25T14:44:57","author":"jardo.dev via nick4","text":"<p><a href=\"https://lobste.rs/s/rvvqos/what_about_rails\">Comments</a></p>","summary":"文章重新审视Ruby on Rails框架在现代Web开发中的地位，讨论其优缺点及适用场景。对于全栈开发者，了解Rails的现状有助于技术选型。"},{"id":"rss-62396f9df35b","title":"Goodbye Google","url":"https://robert.ocallahan.org/2026/09/goodbye-google.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-25T05:51:12","author":"robert.ocallahan.org via classichasclass","text":"<p><a href=\"https://lobste.rs/s/sxlf4a/goodbye_google\">Comments</a></p>","summary":"作者撰文宣布告别Google，可能涉及对Google产品、隐私政策或商业行为的不满。对于关注科技巨头垄断和数字隐私的读者，这篇文章提供了个人视角的反思。"},{"id":"rss-ded2f8262788","title":"Lobsters: Rename vibecoding to llms (Greasemonkey script)","url":"https://greasyfork.org/en/scripts?by=1646191","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-25T05:33:53","author":"greasyfork.org by joshka","text":"<p><a href=\"https://lobste.rs/s/68n22g/lobsters_rename_vibecoding_llms\">Comments</a></p>","summary":"这是一个Greasemonkey脚本，用于在Lobsters网站上把“vibecoding”一词重命名为“llms”。对于社区用户，这反映了对术语准确性的讨论和幽默态度。"},{"id":"rss-05d5bd739e77","title":"Amiga screens: a primer","url":"https://www.datagubbe.se/amscr/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-09-25T13:01:42","author":"datagubbe.se via classichasclass","text":"<p><a href=\"https://lobste.rs/s/dsungs/amiga_screens_primer\">Comments</a></p>","summary":"文章介绍了Amiga计算机的屏幕显示系统基础知识，包括图形模式和硬件特性。对于复古计算爱好者和计算机历史研究者，这是一份有价值的技术资料。"}],"locale":"zh"}]
+11:null
