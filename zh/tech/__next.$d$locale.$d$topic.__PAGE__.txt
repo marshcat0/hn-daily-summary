@@ -5,206 +5,210 @@
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
 d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
 e:"$Sreact.suspense"
-5:T2e76,# 今日 Technology 热门文章分析总结
+5:T2a8f,# 今日 Technology 热门文章分析总结
 
+## 一、AI 与大模型
 
-## 一、AI 与机器学习
+**1. Beam: Reflection's 501B open-weight model**
+Reflection 发布了 5010 亿参数的开源权重模型 Beam，是当前开源模型规模的新里程碑，值得关注其对开源 AI 生态的影响。
+- 原文：https://reflection.ai/blog/introducing-beam
+- 讨论：https://news.ycombinator.com/item?id=49969183
 
-### 1. Kolibri: A Sovereign Open-Weight Model
-**说明：** Aleph Alpha 发布了一个名为 Kolibri 的主权开放权重模型，引发广泛讨论（326条评论）。在开源大模型竞争日趋激烈的背景下，"主权AI"概念值得关注——它强调国家对AI基础设施的自主控制权。
-- 原文：https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/
-- 讨论：https://news.ycombinator.com/item?id=49942706
-- 技术报告：https://aleph-alpha.com/downloads/tech-report.pdf
-- 附加论文：https://tej.as/blog/aleph-alpha-kolibri
+**2. Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates**
+AI agent（Opus 5.5）自主发现两种室温磁性半导体候选材料，展示了 AI 在材料科学领域的实际科研能力，是 AI for Science 的重要案例。
+- 原文：https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors
+- 讨论：https://news.ycombinator.com/item?id=49970667
 
-### 2. Agents don't need memory, they need documentation
-**说明：** 一篇关于AI Agent架构设计的观点文章，认为当前业界过度关注"记忆"机制，而实际上Agent更需要的是良好的文档系统。这一观点对AI Agent开发者有重要参考价值。
-- 原文：https://liao.gg/blog/agents-dont-need-memory
-- 讨论：https://news.ycombinator.com/item?id=49945933
+**3. Apple and a hacker's future**
+Stratechery 分析 Apple 与黑客/安全研究生态的未来关系，涉及平台安全政策与开发者自由的张力。
+- 原文：https://stratechery.com/2026/apple-and-a-hackers-future/
+- 讨论：https://news.ycombinator.com/item?id=49962857
 
-### 3. What Meta got right with Muse
-**说明：** 分析Meta在Muse项目上的正确决策，探讨Meta在AI领域的战略布局。
-- 原文：https://metedata.substack.com/p/what-meta-got-right-with-muse
-- 讨论：https://news.ycombinator.com/item?id=49946526
+---
 
-### 4. We're going to need default hard budget caps on pretty much everything
-**说明：** Simon Willison 撰文讨论AI服务成本控制问题，主张对各种服务设置默认硬性预算上限。在AI API调用成本失控的背景下，这是一个非常实际的问题。（该文在Hacker News和Lobsters均有收录）
-- 原文：https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/
-- HN讨论：https://news.ycombinator.com/item?id=49949235
-- Lobsters讨论：https://lobste.rs/s/xkwswd/we_re_going_need_default_hard_budget_caps
+## 二、隐私、安全与数据泄露
 
-### 5. Turn off Apple Intelligence on macOS 27 and get its disk space back
-**说明：** 一个GitHub项目，帮助用户关闭macOS 27上的Apple Intelligence功能并回收磁盘空间。反映了用户对Apple AI功能占用大量存储空间的不满。
-- 原文：https://github.com/omlahore/RemoveMacAI
-- 讨论：https://news.ycombinator.com/item?id=49957116
+**4. Denmark data breach exposes 8.8M people's personal data**
+丹麦 CPR 登记系统遭未授权访问，880 万公民个人数据泄露，是国家级身份数据库的重大安全事件。
+- 原文：https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger
+- 讨论：https://news.ycombinator.com/item?id=49962012
 
+**5. Pixel 11 doesn't yet meet the GrapheneOS security standards and may be skipped**
+GrapheneOS 表示 Pixel 11 尚未达到其安全标准，可能跳过该机型支持，反映硬件安全与定制 ROM 生态的博弈。
+- 原文：https://discuss.grapheneos.org/d/41564-pixel-11-doesnt-yet-meet-the-grapheneos-security-standards-and-may-be-skipped
+- 讨论：https://news.ycombinator.com/item?id=49964303
 
-## 二、编程语言与开发工具
+**6. Norway Eyes Partial Ban of Smart Glasses**
+挪威考虑部分禁止智能眼镜，涉及隐私、监控与公共场所拍摄的监管讨论。
+- 原文：https://www.barrons.com/news/norway-eyes-partial-ban-of-smart-glasses-e65dc239
+- 讨论：https://news.ycombinator.com/item?id=49968402
 
-### 6. Why don't more developers "use the platform"?
-**说明：** Nolan Lawson 探讨为何开发者不愿直接使用Web平台原生能力，而倾向于依赖框架和抽象层。这是一个经典的Web开发辩论话题。（Hacker News和Lobsters均有收录）
-- 原文：https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/
-- HN讨论：https://news.ycombinator.com/item?id=49950554
-- Lobsters讨论：https://lobste.rs/s/srduzv/why_don_t_more_developers_use_platform
+**7. Texas city demands $2M for public records on Flock usage**
+德州某市要求 200 万美元才提供 Flock（车牌识别监控）使用相关的公共记录，引发政府透明度与监控技术争议。
+- 原文：https://arstechnica.com/tech-policy/2026/10/texas-city-demands-2m-for-public-records-on-flock-usage/
+- 讨论：https://news.ycombinator.com/item?id=49971523
 
-### 7. C++ Insights – See your source code with the eyes of a Compiler
-**说明：** 一个将C++源代码以编译器视角展示的工具，帮助开发者理解编译器如何处理模板展开、lambda等特性。
-- 原文：https://github.com/andreasfertig/cppinsights
-- 讨论：https://news.ycombinator.com/item?id=49928361
+---
 
-### 8. Emitting metadata early makes building/checking Rust up to twice as fast
-**说明：** 通过提前输出元数据，使Rust的构建和检查速度提升最多两倍。对Rust开发者来说是一个重要的性能优化。
-- 原文：https://github.com/PowderworksCode/headstart
-- 讨论：https://news.ycombinator.com/item?id=49951218
+## 三、基础设施、数据中心与能源
 
-### 9. Rust's derive often implies inline
-**说明：** 一篇TIL（Today I Learned）文章，揭示Rust的derive宏通常隐含inline属性。对Rust性能调优有参考意义。
-- 原文：https://yossarian.net/til/post/rust-s-derive-often-implies-inline/
-- 讨论：https://lobste.rs/s/dldhpw/rust_s_derive_often_implies_inline
-
-### 10. A browser-native classic Visual Basic VB6 IDE
-**说明：** 一个在浏览器中运行的经典VB6 IDE实现，唤起对经典开发工具的怀旧情怀，也展示了Web技术的可能性。
-- 原文：https://wieslawsoltes.github.io/VB6/
-- 讨论：https://news.ycombinator.com/item?id=49956681
-
-### 11. grubby: static site generator for git repos written in Ruby
-**说明：** 一个用Ruby编写的、面向git仓库的静态站点生成器。
-- 原文：https://git.btxx.org/grubby
-- 讨论：https://lobste.rs/s/xpyahx/grubby_static_site_generator_for_git
-
-### 12. ncdu: NCurses Disk Usage (an updated fork)
-**说明：** ncdu（NCurses磁盘用量分析工具）的更新分支版本，系统管理员的实用工具。
-- 原文：https://github.com/rcalixte/ncdu
-- 讨论：https://lobste.rs/s/dsoh2w/ncdu_ncurses_disk_usage_updated_fork
-
-
-## 三、基础设施与云平台
-
-### 13. FTL: A new operating system for clouds
-**说明：** 一个面向云环境的新操作系统FTL，旨在重新思考云基础设施的底层架构。
-- 原文：https://ftl-os.org/
-- GitHub：https://github.com/nuta/ftl
-- 讨论：https://news.ycombinator.com/item?id=49944912
-
-### 14. We want you to build the next Git platform on Cloudflare
-**说明：** Cloudflare 发文邀请开发者在其平台上构建下一代Git平台，展示了Cloudflare向开发者基础设施领域扩张的野心。
-- 原文：https://blog.cloudflare.com/next-git-platform-on-cloudflare/
-- 讨论：https://news.ycombinator.com/item?id=49947051
-
-### 15. Improper redaction reveals Google Data Center water and electricity usage
-**说明：** 因脱敏处理不当，Google数据中心的用水和用电数据被泄露。引发了对数据中心资源消耗透明度的讨论（390条评论，讨论热烈）。
+**8. Improper redaction reveals Google Data Center water and electricity usage**
+因脱敏不当，Google 数据中心的水电消耗数据被曝光，涉及 AI 算力扩张的能源与环境成本。
 - 原文：https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/
 - 讨论：https://news.ycombinator.com/item?id=49957068
 
+**9. Web Search API**
+Cloudflare 推出 Web Search API，为开发者提供搜索能力集成，可能影响搜索与 AI 应用开发格局。
+- 原文：https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/
+- 讨论：https://news.ycombinator.com/item?id=49963171
 
-## 四、硬件与底层技术
+**10. Qualcomm licenses patents on Huawei's LogicFolding chip tech**
+高通与华为签署专利许可协议，涉及 LogicFolding 芯片技术，反映全球芯片专利格局的变化。
+- 原文：https://www.bloomberg.com/news/articles/2026-10-05/qualcomm-licenses-patents-on-huawei-s-logicfolding-chip-tech
+- 讨论：https://news.ycombinator.com/item?id=49961861
+- 存档：https://archive.ph/Axpbl
 
-### 16. The work by Valve's Timur Kristóf on improving old AMD GPUs on Linux
-**说明：** Valve工程师Timur Kristóf在改善Linux上老旧AMD GPU支持方面的工作。对Linux游戏和开源图形驱动社区意义重大。
-- 原文：https://www.phoronix.com/news/XDC-2026-Valve-Timur-AMDGPU
-- 讨论：https://news.ycombinator.com/item?id=49946895
+---
 
-### 17. Surely you have ultra-wideband radios on your bins too?
-**说明：** 一篇关于使用超宽带（UWB）无线电技术追踪垃圾桶是否已推出的趣味技术文章，展示了UWB技术的日常应用可能性。
-- 原文：https://sjg.io/writing/binrange-have-you-actually-put-the-bins-out/
-- 讨论：https://news.ycombinator.com/item?id=49947472
+## 四、编程语言与软件工程
 
+**11. Mold Linker Version 3.0.0 Release – Rewritten in Rust**
+Mold 链接器 3.0.0 用 Rust 重写，是高性能系统工具与 Rust 生态的重要进展。
+- 原文：https://github.com/rui314/mold/releases/tag/v3.0.0
+- 讨论：https://news.ycombinator.com/item?id=49963385
 
-## 五、科技文化与人物
+**12. Making a GTK application in Haskell, part 1**
+用 Haskell 构建 GTK 应用的教程，适合函数式编程与桌面开发爱好者。
+- 原文：https://floreal.tech/blog/2026/making-a-gtk-app-in-haskell-part-1/
+- 讨论：https://news.ycombinator.com/item?id=49965308
 
-### 18. Tell HN: Bob Cringely has died
-**说明：** 科技记者Bob Cringely（真名Mark Stevens）去世，他是Apple早期员工，以PBS纪录片《Triumph of the Nerds》闻名。这是今日Hacker News最高分文章（831分），科技社区纷纷悼念。
-- 讨论：https://news.ycombinator.com/item?id=49949438
+**13. Type Safe Generic Data Structures in C (2025)**
+在 C 中实现类型安全的泛型数据结构，展示 C 语言高级技巧与宏编程。
+- 原文：https://danielchasehooper.com/posts/typechecked-generic-c-data-structures/
+- 讨论：https://news.ycombinator.com/item?id=49943479
 
-### 19. Treachery in the Rodin Museum 3D scan verdict
-**说明：** 关于罗丹博物馆3D扫描争议的裁决，涉及文化遗产数字化中的法律与伦理问题。
-- 原文：https://cosmowenman.substack.com/p/rodin-museum-3d-scan-verdict
-- 讨论：https://news.ycombinator.com/item?id=49946355
+**14. cp: -r or -R?**
+探讨 Unix `cp` 命令中 `-r` 与 `-R` 的差异与历史，是经典命令行工具的细节讨论。
+- 原文：https://movq.de/blog/postings/2026-09-30/0/POSTING-en.html
+- 讨论：https://news.ycombinator.com/item?id=49910465
 
-### 20. So you think you could be an electrician?
-**说明：** Asterisk Magazine 的文章，探讨电工这一职业的技术门槛和现实挑战。引发了关于技术工种与知识工作者之间关系的讨论（403条评论）。
-- 原文：https://asteriskmag.com/issues/15/so-you-think-you-could-be-an-electrician
-- 讨论：https://news.ycombinator.com/item?id=49910462
+**15. Differences Between `Foldl` and `Foldr`**
+Haskell 官方博客讲解 `foldl` 与 `foldr` 的区别，函数式编程核心概念。
+- 原文：https://blog.haskell.org/foldl-and-foldr/
+- 讨论：https://news.ycombinator.com/item?id=49917900
 
-### 21. Reasons I didn't become an EMT, ranked
-**说明：** 一篇个人随笔，以排名形式列出作者没有成为急救医疗技术员的原因。虽非纯技术文章，但在HN社区引发共鸣。
-- 原文：https://ben.stolovitz.com/posts/reasons-not-emt-ranked/
-- 讨论：https://news.ycombinator.com/item?id=49947631
+**16. Competitive Programmer's Handbook (2018) [pdf]**
+经典竞赛编程手册，适合算法学习与面试准备。
+- 原文：https://cses.fi/book/book.pdf
+- 讨论：https://news.ycombinator.com/item?id=49944049
 
-### 22. Woking Electrical Control Room (2016)
-**说明：** 对Woking电气控制室的城市探险摄影记录，展示了工业遗产的美学价值。
-- 原文：http://www.darbiansphotography.com/woking-electrical-control-room-urbex
-- 讨论：https://news.ycombinator.com/item?id=49938399
+**17. Gleam doesn't compile to Erlang source anymore**
+Gleam 不再编译为 Erlang 源码，改变其编译策略，影响 BEAM 生态开发者。
+- 原文：https://gleam.run/news/gleam-doesnt-compile-to-erlang-source-anymore/
+- 讨论：https://lobste.rs/s/2svplr/gleam_doesn_t_compile_erlang_source
 
+**18. Async Rust: Where does the scheduler live?**
+深入探讨 Async Rust 调度器的位置与实现，适合 Rust 异步编程进阶读者。
+- 原文：https://herecomesthemoon.net/2026/10/async-rust-where-does-the-scheduler-live/
+- 讨论：https://lobste.rs/s/okk4bg/async_rust_where_does_scheduler_live
 
-## 六、游戏与娱乐
+**19. Flirt is now Open-Source**
+Flirt 项目开源，具体内容涉及 OCaml/工具链生态（由 buenzli 发布）。
+- 原文：https://blog.buenzli.dev/flirt-is-open-source/
+- 讨论：https://lobste.rs/s/9iztqv/flirt_is_now_open_source
 
-### 23. City building games have a Soul Problem pt.2
-**说明：** 探讨城市建设类游戏缺乏"灵魂"的问题（第二部分），分析现代城市建造游戏为何难以重现经典作品的魅力。
-- 原文：https://www.radical-elements.com/minor-epiphanies/city-building-games-have-a-soul-problem-pt2
-- 讨论：https://news.ycombinator.com/item?id=49945323
+**20. Friendship ended with Deno, now Node is my best friend**
+开发者从 Deno 回归 Node.js 的实践反思，涉及运行时生态与兼容性权衡。
+- 原文：https://dbushell.com/2026/10/03/deno-to-node/
+- 讨论：https://lobste.rs/s/a9kwzv/friendship_ended_with_deno_now_node_is_my
 
-### 24. We're working on a new RuneScape MMO
-**说明：** Jagex宣布正在开发新的RuneScape MMO，引发老玩家关注。
-- 原文：https://play.runescape.com/4
-- 讨论：https://news.ycombinator.com/item?id=49949588
+**21. Another step towards elm v1**
+Elm 语言向 v1 迈出又一步，对函数式前端开发者是重要信号。
+- 原文：https://elm-lang.org/news/another-step-towards-elm-v1
+- 讨论：https://lobste.rs/s/fks4pf/another_step_towards_elm_v1
 
-### 25. Hole Punch: Sling your spaceship around gravitational fields
-**说明：** 一款利用引力场进行太空飞船弹弓效应的游戏，物理机制有趣。
-- 原文：https://notoriousbfg.com/hole-punch/
-- 讨论：https://news.ycombinator.com/item?id=49946393
+---
 
+## 五、硬件、机器人与创客
 
-## 七、趣味与创意项目
+**22. Germany's RobCo hits $1B valuation**
+德国机器人公司 RobCo 估值达 10 亿美元，成为欧洲机器人独角兽，反映工业自动化投资热度。
+- 原文：https://techfundingnews.com/europes-new-robotics-unicorn-germanys-robco-hits-1b-valuation/
+- 讨论：https://news.ycombinator.com/item?id=49963366
 
-### 26. Show HN: Glashütte Trash Clock – A 30-minute pendulum clock made from trash
-**说明：** 用废弃材料（纸板、扎带、胶带、码尺、回形针）制作的30分钟摆钟，建于德国精密制表圣地Glashütte，兼具讽刺意味和工程趣味。
+**23. Show HN: Glashütte Trash Clock – A 30-minute pendulum clock made from trash**
+用废弃物（纸板、扎带、胶带、码尺、回形针擒纵机构）制作的 30 分钟摆钟，兼具创客精神与讽刺性时间标准。
 - 原文：https://niklasroy.com/gtc/
 - 讨论：https://news.ycombinator.com/item?id=49930439
 
-### 27. A map of every lighthouse
-**说明：** 全球灯塔地图，一个精美的数据可视化项目。
-- 原文：https://mapped.earth/lighthouses/world
-- 讨论：https://news.ycombinator.com/item?id=49933461
+**24. The lamps in my house**
+作者分享家中灯具的选择与布置，偏生活化技术/设计随笔。
+- 原文：https://arslan.io/2026/10/05/the-lamps-in-my-house/
+- 讨论：https://news.ycombinator.com/item?id=49965152
 
-### 28. What is going on with ceiling fans
-**说明：** McMansion Hell 博客关于吊扇设计与建筑美学的讨论，从看似平凡的家居用品切入设计批评。
-- 原文：https://mcmansionhell.com/post/829127919552151552/what-is-going-on-with-ceiling-fans
-- 讨论：https://news.ycombinator.com/item?id=49917536
+**25. Find the flattest route between any two points in SF**
+旧金山最平坦路线查找工具，展示地理数据与路径算法的趣味应用。
+- 原文：https://flattensf.com/
+- 讨论：https://news.ycombinator.com/item?id=49971230
 
+---
 
-## 八、重复收录文章
+## 六、科学、社会与人文
 
-以下文章在多个来源中出现，已在上文覆盖：
-- **#29** "Why don't more developers use the platform?" — 同 #6（Lobsters收录）
-- **#30** "We're going to need default hard budget caps" — 同 #4（Lobsters收录）
+**26. We ported the original Doom to SQL**
+将经典游戏 Doom 移植到 SQL 运行，是极端技术挑战与数据库能力展示。
+- 原文：https://cedardb.com/blog/sqldoom/
+- 讨论：https://news.ycombinator.com/item?id=49948300
 
+**27. The technology to eradicate mosquito-borne disease exists**
+探讨消灭蚊媒疾病的技术已存在，涉及基因编辑、公共卫生与伦理。
+- 原文：https://worksinprogress.co/issue/mosquitoes-are-a-choice/
+- 讨论：https://news.ycombinator.com/item?id=49956290
 
-## 🏆 今日最值得阅读的 5 篇文章推荐
+**28. In the wake of Tippett Studios' closure, a digital archive appears online**
+Tippett 工作室关闭后，其动画素材数字档案上线，保存视觉特效历史。
+- 原文：https://filmstories.co.uk/news/tippett-studios-in-the-wake-of-its-closure-a-digital-archive-of-animated-materials-appears-online/
+- 讨论：https://news.ycombinator.com/item?id=49957812
+- 档案：https://archive.org/details/tippett-archive/
 
-### 1. Tell HN: Bob Cringely has died
-**理由：** 今日最高分文章（831分），科技社区集体悼念这位记录了PC革命历史的传奇人物。如果你看过《Triumph of the Nerds》，这篇文章和评论区值得一读。
-🔗 https://news.ycombinator.com/item?id=49949438
+**29. 2026 Nobel Prize in Physiology or Medicine: Deisseroth, Hegemann, Nagel**
+2026 诺贝尔生理学或医学奖授予光遗传学领域三位科学家，是神经科学重要里程碑。
+- 原文：https://www.nobelprize.org/prizes/medicine/2026/summary/
+- 讨论：https://news.ycombinator.com/item?id=49962572
 
-### 2. Kolibri: A Sovereign Open-Weight Model
-**理由：** 开源AI模型领域的重要发布，"主权AI"概念正在成为欧洲AI战略的核心。326条评论中有大量关于开源AI未来走向的深度讨论。
-🔗 https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/
+**30. Bill Draper has died**
+硅谷传奇投资人 Bill Draper 去世，他是风险投资先驱之一。
+- 原文：https://www.nytimes.com/2026/09/30/technology/william-draper-dead.html
+- 讨论：https://news.ycombinator.com/item?id=49953288
+- 存档：https://archive.ph/YRgDY
 
-### 3. Agents don't need memory, they need documentation
-**理由：** 对当前AI Agent开发中"记忆"热潮的反思，提出了一个反直觉但有说服力的观点。对正在构建AI Agent的开发者来说，可能改变你的架构思路。
-🔗 https://liao.gg/blog/agents-dont-need-memory
+---
 
-### 4. Why don't more developers "use the platform"?
-**理由：** Nolan Lawson 的深度思考，触及Web开发的根本矛盾——抽象层的价值与代价。294条HN评论中有来自各方的精彩辩论。
-🔗 https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/
+## 今日最值得阅读的 5 篇文章推荐
 
-### 5. We're going to need default hard budget caps on pretty much everything
-**理由：** Simon Willison 关于AI成本控制的务实建议。在AI API费用可能失控的时代，这篇文章提供了具体的工程实践思路。
-🔗 https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/0:{"buildId":"YAqUzj6llnIHmUvLG6Fsn","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-10-05","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":12},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-10-05"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-49949438","title":"Tell HN: Bob Cringely has died","url":null,"source":"Hacker News","score":831,"comments_count":179,"comments_url":"https://news.ycombinator.com/item?id=49949438","published_at":"2026-10-04T00:50:52","author":"paveworld","text":"I heard from a friend of the family that Bob passed away in his sleep early Saturday. Very sad news. Bob, who&#x27;s real name was Mark Stevens, was an early employee of Apple and was best known for his PBS documentaries, especially &quot;Triumph of the Nerds&quot;. He will be missed.","summary":"苹果早期员工、PBS纪录片《书呆子的胜利》制作人Bob Cringely（本名Mark Stevens）在睡梦中去世。他作为科技史的重要记录者，其作品深刻影响了公众对计算机革命的理解。"},{"id":"hn-49942706","title":"Kolibri: A Sovereign Open-Weight Model","url":"https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/","source":"Hacker News","score":656,"comments_count":326,"comments_url":"https://news.ycombinator.com/item?id=49942706","published_at":"2026-10-03T09:36:04","author":"bastitx","text":"tech report: <a href=\"https:&#x2F;&#x2F;aleph-alpha.com&#x2F;downloads&#x2F;tech-report.pdf\" rel=\"nofollow\">https:&#x2F;&#x2F;aleph-alpha.com&#x2F;downloads&#x2F;tech-report.pdf</a><p>additional paper: <a href=\"https:&#x2F;&#x2F;tej.as&#x2F;blog&#x2F;aleph-alpha-kolibri\" rel=\"nofollow\">https:&#x2F;&#x2F;tej.as&#x2F;blog&#x2F;aleph-alpha-kolibri</a>","summary":"Aleph Alpha发布开源权重模型Kolibri，主打“主权”概念，并附有技术报告和补充论文。该模型值得关注，因为它代表了欧洲在开源大模型领域追求技术自主的努力。"},{"id":"hn-49949235","title":"We're going to need default hard budget caps on pretty much everything","url":"https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/","source":"Hacker News","score":595,"comments_count":298,"comments_url":"https://news.ycombinator.com/item?id=49949235","published_at":"2026-10-04T00:20:16","author":"elffjs","text":null,"summary":"Simon Willison撰文主张在几乎所有系统中默认设置硬性预算上限，以防止资源过度消耗。这一观点对云服务和AI代理的失控成本问题具有重要警示意义。"},{"id":"hn-49946895","title":"The work by Valve's Timur Kristóf on improving old AMD GPUs on Linux","url":"https://www.phoronix.com/news/XDC-2026-Valve-Timur-AMDGPU","source":"Hacker News","score":464,"comments_count":96,"comments_url":"https://news.ycombinator.com/item?id=49946895","published_at":"2026-10-03T19:14:48","author":"speckx","text":null,"summary":"Valve的Timur Kristóf在XDC 2026上介绍了改进Linux上老旧AMD GPU支持的工作。这值得关注，因为它能延长旧硬件的使用寿命，并提升Linux游戏体验。"},{"id":"hn-49910462","title":"So you think you could be an electrician?","url":"https://asteriskmag.com/issues/15/so-you-think-you-could-be-an-electrician","source":"Hacker News","score":446,"comments_count":403,"comments_url":"https://news.ycombinator.com/item?id=49910462","published_at":"2026-09-30T15:43:27","author":"zdw","text":null,"summary":"Asterisk杂志的文章探讨了成为电工所需的技能和现实挑战。它值得一读，因为它揭示了技术行业之外同样需要高技能和严谨训练的蓝领职业。"},{"id":"hn-49957116","title":"Turn off Apple Intelligence on macOS 27 and get its disk space back","url":"https://github.com/omlahore/RemoveMacAI","source":"Hacker News","score":414,"comments_count":269,"comments_url":"https://news.ycombinator.com/item?id=49957116","published_at":"2026-10-04T19:42:25","author":"privacyisntdead","text":null,"summary":"GitHub项目RemoveMacAI提供方法，在macOS 27上关闭Apple Intelligence并回收其占用的磁盘空间。对于注重隐私或存储空间的用户来说，这是一个实用的解决方案。"},{"id":"hn-49946393","title":"Hole Punch: Sling your spaceship around gravitational fields","url":"https://notoriousbfg.com/hole-punch/","source":"Hacker News","score":355,"comments_count":87,"comments_url":"https://news.ycombinator.com/item?id=49946393","published_at":"2026-10-03T18:06:45","author":"trwhite","text":null,"summary":"Hole Punch是一款利用引力场进行太空飞船弹弓效应的游戏。其独特的物理机制和玩法值得关注，为太空模拟类游戏带来了新意。"},{"id":"hn-49945933","title":"Agents don't need memory, they need documentation","url":"https://liao.gg/blog/agents-dont-need-memory","source":"Hacker News","score":353,"comments_count":234,"comments_url":"https://news.ycombinator.com/item?id=49945933","published_at":"2026-10-03T17:03:37","author":"kmeh","text":null,"summary":"文章认为AI代理不需要传统记忆，而需要更好的文档支持。这一观点挑战了主流AI记忆设计思路，可能影响未来代理系统的架构方向。"},{"id":"hn-49946355","title":"Treachery in the Rodin Museum 3D scan verdict","url":"https://cosmowenman.substack.com/p/rodin-museum-3d-scan-verdict","source":"Hacker News","score":319,"comments_count":189,"comments_url":"https://news.ycombinator.com/item?id=49946355","published_at":"2026-10-03T18:01:27","author":"CosmoWenman","text":null,"summary":"文章报道了罗丹博物馆3D扫描争议的裁决结果，涉及知识产权和数字化复制问题。该案例对文化遗产的3D扫描和版权保护具有重要参考价值。"},{"id":"hn-49950554","title":"Why don't more developers “use the platform”?","url":"https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/","source":"Hacker News","score":282,"comments_count":294,"comments_url":"https://news.ycombinator.com/item?id=49950554","published_at":"2026-10-04T04:10:47","author":"vinhnx","text":null,"summary":"Nolan Lawson探讨为何开发者不更多利用Web平台原生能力，而是依赖框架。该文值得关注，因为它反思了现代Web开发中的依赖膨胀和平台潜力。"},{"id":"hn-49957068","title":"Improper redaction reveals Google Data Center water and electricity usage","url":"https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/","source":"Hacker News","score":270,"comments_count":390,"comments_url":"https://news.ycombinator.com/item?id=49957068","published_at":"2026-10-04T19:37:05","author":"sensanaty","text":null,"summary":"该文章报道了林肯市谷歌数据中心的水电消耗数据因不当脱敏处理而被意外泄露，引发公众对科技巨头资源消耗透明度的质疑。此事值得关注，因为它揭示了数据中心运营对当地公共资源的影响以及信息披露的合规问题。"},{"id":"hn-49917536","title":"What is going on with ceiling fans","url":"https://mcmansionhell.com/post/829127919552151552/what-is-going-on-with-ceiling-fans","source":"Hacker News","score":241,"comments_count":208,"comments_url":"https://news.ycombinator.com/item?id=49917536","published_at":"2026-10-01T03:52:10","author":"colinprince","text":null,"summary":"这篇文章从建筑与设计角度探讨了吊扇的审美与功能演变，分析了其为何常被忽视却仍广泛存在。值得关注的是，它提醒人们日常物品背后蕴含的设计逻辑与文化意涵。"},{"id":"hn-49947631","title":"Reasons I didn't become an EMT, ranked","url":"https://ben.stolovitz.com/posts/reasons-not-emt-ranked/","source":"Hacker News","score":228,"comments_count":111,"comments_url":"https://news.ycombinator.com/item?id=49947631","published_at":"2026-10-03T20:49:15","author":"citelao","text":null,"summary":"作者以幽默的排名形式列出了自己未成为急救医疗技术员（EMT）的种种原因，反映了这一职业的高压与挑战。文章以个人视角呈现，让读者更直观地理解急救人员的日常困境。"},{"id":"hn-49947051","title":"We want you to build the next Git platform on Cloudflare","url":"https://blog.cloudflare.com/next-git-platform-on-cloudflare/","source":"Hacker News","score":212,"comments_count":193,"comments_url":"https://news.ycombinator.com/item?id=49947051","published_at":"2026-10-03T19:33:16","author":"geoffbp","text":null,"summary":"Cloudflare 发文邀请开发者在 Cloudflare 平台上构建下一代 Git 平台，可能涉及利用其边缘计算和存储能力。这值得关注，因为它可能推动 Git 托管服务的去中心化与性能革新。"},{"id":"hn-49944912","title":"FTL: A new operating system for clouds","url":"https://ftl-os.org/","source":"Hacker News","score":198,"comments_count":75,"comments_url":"https://news.ycombinator.com/item?id=49944912","published_at":"2026-10-03T15:02:36","author":"romac","text":"<a href=\"https:&#x2F;&#x2F;github.com&#x2F;nuta&#x2F;ftl\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;nuta&#x2F;ftl</a>","summary":"FTL 是一个面向云环境的新操作系统，其 GitHub 仓库已公开，旨在为云原生场景提供更优的底层支持。值得关注的是，它可能为云计算基础设施带来新的架构思路。"},{"id":"hn-49928361","title":"C++ Insights – See your source code with the eyes of a Compiler","url":"https://github.com/andreasfertig/cppinsights","source":"Hacker News","score":172,"comments_count":36,"comments_url":"https://news.ycombinator.com/item?id=49928361","published_at":"2026-10-01T23:53:36","author":"rramadass","text":null,"summary":"C++ Insights 是一个工具，能够以编译器的视角展示 C++ 源代码的转换过程，帮助开发者理解模板展开、隐式转换等机制。对于 C++ 学习者与专家而言，这是深入理解语言内部行为的实用资源。"},{"id":"hn-49930439","title":"Show HN: Glashütte Trash Clock – A 30-minute pendulum clock made from trash","url":"https://niklasroy.com/gtc/","source":"Hacker News","score":171,"comments_count":25,"comments_url":"https://news.ycombinator.com/item?id=49930439","published_at":"2026-10-02T06:33:06","author":"r0r0","text":"This is a functional 30-minute pendulum clock entirely from discarded materials—cardboard, zip ties, tape, a yardstick, and a paperclip escapement, built in the German Eldorado of precision watchmaking: Glashütte.<p>It also acts as a reference clock for GTC, a new satirical universal time standard.","summary":"这是一个用废弃材料（纸板、扎带、胶带等）制成的30分钟摆钟，建造于德国精密制表小镇格拉苏蒂，同时作为讽刺性新时间标准 GTC 的参考钟。它展示了创意工程与幽默结合的可能性，值得关注。"},{"id":"hn-49933461","title":"A map of every lighthouse","url":"https://mapped.earth/lighthouses/world","source":"Hacker News","score":169,"comments_count":74,"comments_url":"https://news.ycombinator.com/item?id=49933461","published_at":"2026-10-02T13:45:49","author":"karakoram","text":null,"summary":"该网站提供了一张全球所有灯塔的交互式地图，用户可浏览各地灯塔的位置与信息。对于航海历史爱好者或地理迷来说，这是一个有趣且直观的资源。"},{"id":"hn-49945323","title":"City building games have a Soul Problem pt.2","url":"https://www.radical-elements.com/minor-epiphanies/city-building-games-have-a-soul-problem-pt2","source":"Hacker News","score":162,"comments_count":152,"comments_url":"https://news.ycombinator.com/item?id=49945323","published_at":"2026-10-03T15:52:07","author":"lexx","text":null,"summary":"这是关于城市建造游戏“灵魂问题”系列文章的第二部分，探讨了此类游戏在机制与创意上的同质化困境。值得关注的是，它引发了玩家与开发者对模拟建造类游戏设计方向的反思。"},{"id":"hn-49949588","title":"We're working on a new RuneScape MMO","url":"https://play.runescape.com/4","source":"Hacker News","score":149,"comments_count":90,"comments_url":"https://news.ycombinator.com/item?id=49949588","published_at":"2026-10-04T01:12:22","author":"droidjj","text":null,"summary":"Jagex 宣布正在开发一款新的 RuneScape MMO，并已上线预告页面。对于这款经典 MMORPG 的粉丝而言，新作的公布意味着可能迎来全新的冒险体验与社区复兴。"},{"id":"hn-49938399","title":"Woking Electrical Control Room (2016)","url":"http://www.darbiansphotography.com/woking-electrical-control-room-urbex","source":"Hacker News","score":149,"comments_count":30,"comments_url":"https://news.ycombinator.com/item?id=49938399","published_at":"2026-10-02T20:44:38","author":"NaOH","text":null,"summary":"这篇文章展示了沃金电力控制室的废弃探索摄影作品，记录了工业遗产的独特美学。值得关注是因为它呈现了技术基础设施在历史变迁中的视觉档案。"},{"id":"hn-49947472","title":"Surely you have ultra-wideband radios on your bins too?","url":"https://sjg.io/writing/binrange-have-you-actually-put-the-bins-out/","source":"Hacker News","score":141,"comments_count":73,"comments_url":"https://news.ycombinator.com/item?id=49947472","published_at":"2026-10-03T20:27:44","author":"simonjgreen","text":null,"summary":"作者以幽默方式探讨了超宽带（UWB）无线电在日常物品（如垃圾桶）中的普及现象。值得关注是因为它反映了UWB技术正悄然进入消费级设备，引发对隐私和实用性的思考。"},{"id":"hn-49951218","title":"Emitting metadata early makes building/checking Rust up to twice as fast","url":"https://github.com/PowderworksCode/headstart","source":"Hacker News","score":133,"comments_count":32,"comments_url":"https://news.ycombinator.com/item?id=49951218","published_at":"2026-10-04T06:26:57","author":"knuckleheads","text":null,"summary":"该项目通过提前输出元数据，使Rust编译和检查速度提升至多两倍。值得关注是因为它提供了一种简单有效的优化手段，能显著改善Rust开发者的构建体验。"},{"id":"hn-49946526","title":"What Meta got right with Muse","url":"https://metedata.substack.com/p/what-meta-got-right-with-muse","source":"Hacker News","score":128,"comments_count":178,"comments_url":"https://news.ycombinator.com/item?id=49946526","published_at":"2026-10-03T18:23:48","author":"young_mete","text":null,"summary":"文章分析了Meta在Muse项目上的正确决策，探讨其在AI或元宇宙领域的战略。值得关注是因为它提供了对Meta技术布局的深入洞察，有助于理解大型科技公司的创新方向。"},{"id":"hn-49956681","title":"A browser-native classic Visual Basic VB6 IDE","url":"https://wieslawsoltes.github.io/VB6/","source":"Hacker News","score":108,"comments_count":46,"comments_url":"https://news.ycombinator.com/item?id=49956681","published_at":"2026-10-04T18:49:17","author":"wiso","text":null,"summary":"这是一个在浏览器中运行的经典Visual Basic 6 IDE，允许用户在线编写和运行VB6代码。值得关注是因为它复活了古老的开发环境，为怀旧开发者和教育场景提供了便利。"}],"locale":"zh"}],"$Lc"]}]]}]
+**1. Improper redaction reveals Google Data Center water and electricity usage**
+AI 算力扩张的能源与水消耗是当下最热议题，本文因脱敏失误意外曝光真实数据，是理解 AI 环境成本的一手材料。
+→ https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/
+
+**2. Denmark data breach exposes 8.8M people's personal data**
+国家级身份数据库泄露，涉及 880 万人，是隐私与公共基础设施安全的标志性事件。
+→ https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger
+
+**3. Beam: Reflection's 501B open-weight model**
+5010 亿参数开源权重模型发布，直接影响开源 AI 与闭源模型的竞争格局。
+→ https://reflection.ai/blog/introducing-beam
+
+**4. We ported the original Doom to SQL**
+技术趣味性与工程深度兼具，展示 SQL 的极限玩法，适合所有工程师阅读。
+→ https://cedardb.com/blog/sqldoom/
+
+**5. Pixel 11 doesn't yet meet the GrapheneOS security standards and may be skipped**
+移动安全与硬件信任链的重要讨论，对关注隐私与定制系统的读者极具价值。
+→ https://discuss.grapheneos.org/d/41564-pixel-11-doesnt-yet-meet-the-grapheneos-security-standards-and-may-be-skipped0:{"buildId":"Mx0Zji8nMEPH3NhMkDTU5","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-10-06","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":13},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-10-06"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-49957068","title":"Improper redaction reveals Google Data Center water and electricity usage","url":"https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/","source":"Hacker News","score":519,"comments_count":680,"comments_url":"https://news.ycombinator.com/item?id=49957068","published_at":"2026-10-04T19:37:05","author":"sensanaty","text":null,"summary":"报道因不当脱敏处理意外泄露了谷歌数据中心的水电消耗数据，引发公众对科技巨头资源使用透明度的关注。"},{"id":"hn-49963171","title":"Web Search API","url":"https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/","source":"Hacker News","score":503,"comments_count":232,"comments_url":"https://news.ycombinator.com/item?id=49963171","published_at":"2026-10-05T10:47:06","author":"tosh","text":null,"summary":"Cloudflare推出Web Search API，为开发者提供搜索能力集成方案，值得关注其对搜索生态的影响。"},{"id":"hn-49962012","title":"Denmark data breach exposes 8.8M people's personal data","url":"https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger","source":"Hacker News","score":469,"comments_count":329,"comments_url":"https://news.ycombinator.com/item?id=49962012","published_at":"2026-10-05T08:09:36","author":"clan","text":null,"summary":"丹麦发生大规模数据泄露事件，880万人的个人数据遭未授权访问，凸显国家层面数据安全防护的紧迫性。"},{"id":"hn-49964303","title":"Pixel 11 doesn't yet meet the GrapheneOS security standards and may be skipped","url":"https://discuss.grapheneos.org/d/41564-pixel-11-doesnt-yet-meet-the-grapheneos-security-standards-and-may-be-skipped","source":"Hacker News","score":402,"comments_count":265,"comments_url":"https://news.ycombinator.com/item?id=49964303","published_at":"2026-10-05T13:02:25","author":"finnlab","text":null,"summary":"GrapheneOS表示Pixel 11尚未达到其安全标准，可能跳过对该设备的支持，对注重隐私安全的用户具有重要参考价值。"},{"id":"hn-49969183","title":"Beam: Reflection's 501B open-weight model","url":"https://reflection.ai/blog/introducing-beam","source":"Hacker News","score":366,"comments_count":108,"comments_url":"https://news.ycombinator.com/item?id=49969183","published_at":"2026-10-05T19:16:35","author":"Philpax","text":null,"summary":"Reflection发布5010亿参数的开源权重模型Beam，是开源AI领域的重要进展，值得关注其性能与生态影响。"},{"id":"hn-49963366","title":"Germany’s RobCo hits $1B valuation","url":"https://techfundingnews.com/europes-new-robotics-unicorn-germanys-robco-hits-1b-valuation/","source":"Hacker News","score":328,"comments_count":341,"comments_url":"https://news.ycombinator.com/item?id=49963366","published_at":"2026-10-05T11:13:51","author":"dachworker","text":null,"summary":"德国机器人公司RobCo估值达到10亿美元，成为欧洲新的机器人独角兽，反映了欧洲机器人赛道的投资热度。"},{"id":"hn-49948300","title":"We ported the original Doom to SQL","url":"https://cedardb.com/blog/sqldoom/","source":"Hacker News","score":307,"comments_count":51,"comments_url":"https://news.ycombinator.com/item?id=49948300","published_at":"2026-10-03T22:14:00","author":"Vaslo","text":null,"summary":"开发者将经典游戏Doom移植到SQL数据库中运行，是一项极具创意和技术趣味性的工程实验。"},{"id":"hn-49970667","title":"Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates","url":"https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors","source":"Hacker News","score":255,"comments_count":179,"comments_url":"https://news.ycombinator.com/item?id=49970667","published_at":"2026-10-05T21:00:21","author":"outlier99","text":null,"summary":"Opus 5.5智能体发现了两种室温磁性半导体候选材料，展示了AI在材料科学发现中的实际应用潜力。"},{"id":"hn-49956290","title":"The technology to eradicate mosquito-borne disease exists","url":"https://worksinprogress.co/issue/mosquitoes-are-a-choice/","source":"Hacker News","score":248,"comments_count":194,"comments_url":"https://news.ycombinator.com/item?id=49956290","published_at":"2026-10-04T18:06:04","author":"benbreen","text":null,"summary":"文章论证了根除蚊媒疾病的技术已经存在，呼吁将其视为可选择的政策问题，对全球公共卫生具有启发意义。"},{"id":"hn-49957812","title":"In the wake of Tippett Studios’ closure, a digital archive appears online","url":"https://filmstories.co.uk/news/tippett-studios-in-the-wake-of-its-closure-a-digital-archive-of-animated-materials-appears-online/","source":"Hacker News","score":244,"comments_count":32,"comments_url":"https://news.ycombinator.com/item?id=49957812","published_at":"2026-10-04T21:01:28","author":"rdmuser","text":"<a href=\"https:&#x2F;&#x2F;archive.org&#x2F;details&#x2F;tippett-archive&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.org&#x2F;details&#x2F;tippett-archive&#x2F;</a>","summary":"Tippett Studios关闭后，其动画素材的数字档案在互联网档案馆上线，对影视特效历史保存具有重要价值。"},{"id":"hn-49963385","title":"Mold Linker Version 3.0.0 Release – Rewritten in Rust","url":"https://github.com/rui314/mold/releases/tag/v3.0.0","source":"Hacker News","score":234,"comments_count":167,"comments_url":"https://news.ycombinator.com/item?id=49963385","published_at":"2026-10-05T11:17:18","author":"roflcopter69","text":null,"summary":"Mold链接器发布3.0.0版本，完全用Rust重写。作为高速链接器，此次重写可能带来性能与安全性提升，值得开发者关注。"},{"id":"hn-49930439","title":"Show HN: Glashütte Trash Clock – A 30-minute pendulum clock made from trash","url":"https://niklasroy.com/gtc/","source":"Hacker News","score":232,"comments_count":41,"comments_url":"https://news.ycombinator.com/item?id=49930439","published_at":"2026-10-02T06:33:06","author":"r0r0","text":"This is a functional 30-minute pendulum clock entirely from discarded materials—cardboard, zip ties, tape, a yardstick, and a paperclip escapement, built in the German Eldorado of precision watchmaking: Glashütte.<p>It also acts as a reference clock for GTC, a new satirical universal time standard.","summary":"一个用垃圾材料（纸板、扎带等）制成的30分钟摆钟，位于德国精密制表小镇Glashütte，还作为新讽刺性通用时间标准GTC的参考钟。创意与环保结合，趣味十足。"},{"id":"hn-49962857","title":"Apple and a hacker's future","url":"https://stratechery.com/2026/apple-and-a-hackers-future/","source":"Hacker News","score":228,"comments_count":199,"comments_url":"https://news.ycombinator.com/item?id=49962857","published_at":"2026-10-05T10:05:02","author":"maguay","text":null,"summary":"Stratechery分析苹果与黑客的未来，探讨苹果生态对黑客文化的影响及未来走向。对科技政策与安全领域有深度洞察。"},{"id":"hn-49961861","title":"Qualcomm licenses patents on Huawei’s LogicFolding chip tech","url":"https://www.bloomberg.com/news/articles/2026-10-05/qualcomm-licenses-patents-on-huawei-s-logicfolding-chip-tech","source":"Hacker News","score":182,"comments_count":122,"comments_url":"https://news.ycombinator.com/item?id=49961861","published_at":"2026-10-05T07:46:10","author":"0xedb","text":"<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;Axpbl\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;Axpbl</a><p><a href=\"https:&#x2F;&#x2F;www.huawei.com&#x2F;en&#x2F;news&#x2F;2026&#x2F;10&#x2F;qualcomm-broad-patent-agreement\" rel=\"nofollow\">https:&#x2F;&#x2F;www.huawei.com&#x2F;en&#x2F;news&#x2F;2026&#x2F;10&#x2F;qualcomm-broad-patent...</a>","summary":"高通与华为签署专利许可协议，涉及华为LogicFolding芯片技术。这标志着两家公司在芯片专利上的合作，可能影响行业格局。"},{"id":"hn-49965152","title":"The lamps in my house","url":"https://arslan.io/2026/10/05/the-lamps-in-my-house/","source":"Hacker News","score":153,"comments_count":74,"comments_url":"https://news.ycombinator.com/item?id=49965152","published_at":"2026-10-05T14:12:14","author":"farslan","text":null,"summary":"一篇关于作者家中灯具的博客文章，可能涉及智能家居或照明设计。从日常物品出发，引发对技术与生活的思考。"},{"id":"hn-49944049","title":"Competitive Programmer's Handbook (2018) [pdf]","url":"https://cses.fi/book/book.pdf","source":"Hacker News","score":146,"comments_count":35,"comments_url":"https://news.ycombinator.com/item?id=49944049","published_at":"2026-10-03T13:24:01","author":"vinhnx","text":null,"summary":"《竞争性编程手册》（2018）PDF，是算法竞赛的经典资源。适合学习算法与数据结构，提升编程竞赛能力。"},{"id":"hn-49965308","title":"Making a GTK application in Haskell, part 1","url":"https://floreal.tech/blog/2026/making-a-gtk-app-in-haskell-part-1/","source":"Hacker News","score":142,"comments_count":37,"comments_url":"https://news.ycombinator.com/item?id=49965308","published_at":"2026-10-05T14:23:47","author":"Vosporos","text":null,"summary":"用Haskell编写GTK应用程序的第一部分教程。展示函数式编程与GUI开发的结合，对Haskell开发者有参考价值。"},{"id":"hn-49971230","title":"Find the flattest route between any two points in SF","url":"https://flattensf.com/","source":"Hacker News","score":141,"comments_count":46,"comments_url":"https://news.ycombinator.com/item?id=49971230","published_at":"2026-10-05T21:40:50","author":"ishan0102","text":null,"summary":"一个查找旧金山任意两点间最平坦路线的工具网站。对骑行、跑步或无障碍出行有实用价值，体现数据可视化应用。"},{"id":"hn-49953288","title":"Bill Draper has died","url":"https://www.nytimes.com/2026/09/30/technology/william-draper-dead.html","source":"Hacker News","score":141,"comments_count":45,"comments_url":"https://news.ycombinator.com/item?id=49953288","published_at":"2026-10-04T12:21:35","author":"bookofjoe","text":"<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;YRgDY\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;YRgDY</a>","summary":"风险投资先驱Bill Draper去世，他是硅谷早期投资人。他的离世标志着风投界一个时代的结束，值得铭记。"},{"id":"hn-49971523","title":"Texas city demands $2M for public records on Flock usage","url":"https://arstechnica.com/tech-policy/2026/10/texas-city-demands-2m-for-public-records-on-flock-usage/","source":"Hacker News","score":139,"comments_count":23,"comments_url":"https://news.ycombinator.com/item?id=49971523","published_at":"2026-10-05T22:05:57","author":"01-_-","text":null,"summary":"得克萨斯州某城市要求支付200万美元才能提供关于Flock（可能为监控系统）使用的公共记录。涉及公共记录透明度与政府收费争议，引发对隐私与问责的关注。"},{"id":"hn-49943479","title":"Type Safe Generic Data Structures in C (2025)","url":"https://danielchasehooper.com/posts/typechecked-generic-c-data-structures/","source":"Hacker News","score":139,"comments_count":106,"comments_url":"https://news.ycombinator.com/item?id=49943479","published_at":"2026-10-03T11:57:20","author":"AlexeyBrin","text":null,"summary":"介绍如何在C语言中实现类型安全的泛型数据结构，值得关注是因为它展示了在缺乏泛型支持的C中实现类型检查的实用技巧。"},{"id":"hn-49968402","title":"Norway Eyes Partial Ban of Smart Glasses","url":"https://www.barrons.com/news/norway-eyes-partial-ban-of-smart-glasses-e65dc239","source":"Hacker News","score":139,"comments_count":84,"comments_url":"https://news.ycombinator.com/item?id=49968402","published_at":"2026-10-05T18:15:20","author":"pseudolus","text":null,"summary":"挪威考虑部分禁止智能眼镜，值得关注是因为这反映了隐私保护与新兴可穿戴技术之间的监管冲突。"},{"id":"hn-49910465","title":"cp: -r or -R?","url":"https://movq.de/blog/postings/2026-09-30/0/POSTING-en.html","source":"Hacker News","score":139,"comments_count":119,"comments_url":"https://news.ycombinator.com/item?id=49910465","published_at":"2026-09-30T15:44:02","author":"zdw","text":null,"summary":"探讨cp命令中-r和-R选项的区别，值得关注是因为这是Unix/Linux用户日常可能遇到的细节问题。"},{"id":"hn-49917900","title":"Differences Between `Foldl` and `Foldr`","url":"https://blog.haskell.org/foldl-and-foldr/","source":"Hacker News","score":137,"comments_count":29,"comments_url":"https://news.ycombinator.com/item?id=49917900","published_at":"2026-10-01T04:58:03","author":"signa11","text":null,"summary":"解释函数式编程中foldl和foldr的区别，值得关注是因为这是理解列表折叠操作和惰性求值的关键概念。"},{"id":"hn-49962572","title":"2026 Nobel Prize in Physiology or Medicine: Deisseroth, Hegemann, Nagel","url":"https://www.nobelprize.org/prizes/medicine/2026/summary/","source":"Hacker News","score":130,"comments_count":47,"comments_url":"https://news.ycombinator.com/item?id=49962572","published_at":"2026-10-05T09:33:13","author":"lode","text":"<a href=\"https:&#x2F;&#x2F;www.nobelprize.org&#x2F;prizes&#x2F;medicine&#x2F;2026&#x2F;press-release&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.nobelprize.org&#x2F;prizes&#x2F;medicine&#x2F;2026&#x2F;press-releas...</a>","summary":"2026年诺贝尔生理学或医学奖授予Deisseroth、Hegemann和Nagel，值得关注是因为他们在光遗传学领域的开创性贡献。"}],"locale":"zh"}],"$Lc"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
 a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
-c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-6cfa95a0a7d7","title":"ncdu: NCurses Disk Usage (an updated fork)","url":"https://github.com/rcalixte/ncdu","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-04T19:30:36","author":"github.com by rcalixte","text":"<p><a href=\"https://lobste.rs/s/dsoh2w/ncdu_ncurses_disk_usage_updated_fork\">Comments</a></p>","summary":"ncdu是一个基于NCurses的磁盘使用分析工具，此条目介绍了一个更新后的分支版本。值得关注是因为它提供了更现代的维护，帮助用户高效管理磁盘空间。"},{"id":"rss-4c94be8995a8","title":"Rust's derive often implies inline","url":"https://yossarian.net/til/post/rust-s-derive-often-implies-inline/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-04T01:41:57","author":"yossarian.net by yossarian","text":"<p><a href=\"https://lobste.rs/s/dldhpw/rust_s_derive_often_implies_inline\">Comments</a></p>","summary":"文章指出Rust的derive宏通常隐含了inline属性，可能影响性能优化。值得关注是因为它揭示了Rust编译器的微妙行为，帮助开发者避免性能陷阱。"},{"id":"rss-b3120c583f59","title":"Why don’t more developers \"use the platform\"?","url":"https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-03T21:35:28","author":"nolanlawson.com by nolan","text":"<p><a href=\"https://lobste.rs/s/srduzv/why_don_t_more_developers_use_platform\">Comments</a></p>","summary":"文章探讨了为什么开发者不更多使用Web平台原生功能，而非依赖框架和库。值得关注是因为它引发了对前端开发趋势和平台能力的反思。"},{"id":"rss-eeecc9cd4a78","title":"grubby: static site generator for git repos written in Ruby","url":"https://git.btxx.org/grubby","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-04T10:28:57","author":"git.btxx.org by bt","text":"<p><a href=\"https://lobste.rs/s/xpyahx/grubby_static_site_generator_for_git\">Comments</a></p>","summary":"grubby是一个用Ruby编写的静态站点生成器，专为Git仓库设计。值得关注是因为它简化了从Git仓库生成静态网站的过程，适合文档或博客发布。"},{"id":"rss-c51b595b88fd","title":"We’re going to need default hard budget caps on pretty much everything","url":"https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-04T07:58:14","author":"simonwillison.net via frontsideair","text":"<p><a href=\"https://lobste.rs/s/xkwswd/we_re_going_need_default_hard_budget_caps\">Comments</a></p>","summary":"文章主张在几乎所有系统中设置默认的硬性预算上限，以控制资源消耗。值得关注是因为它提出了应对资源滥用和成本失控的实用策略，对云服务和AI应用尤为重要。"}],"locale":"zh"}]
+c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-57f56923cefa","title":"Gleam doesn't compile to Erlang source anymore","url":"https://gleam.run/news/gleam-doesnt-compile-to-erlang-source-anymore/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-05T17:29:17","author":"gleam.run via novedevo","text":"<p><a href=\"https://lobste.rs/s/2svplr/gleam_doesn_t_compile_erlang_source\">Comments</a></p>","summary":"Gleam不再编译为Erlang源代码，值得关注是因为这标志着该语言编译策略的重大转变，可能影响其与Erlang生态的互操作性。"},{"id":"rss-3b94aeaacd16","title":"Async Rust: Where does the scheduler live?","url":"https://herecomesthemoon.net/2026/10/async-rust-where-does-the-scheduler-live/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-05T18:31:29","author":"herecomesthemoon.net by mond","text":"<p><a href=\"https://lobste.rs/s/okk4bg/async_rust_where_does_scheduler_live\">Comments</a></p>","summary":"探讨Async Rust中调度器的位置，值得关注是因为它深入分析了异步运行时的核心架构问题。"},{"id":"rss-6f062ef8e5a8","title":"Flirt is now Open-Source","url":"https://blog.buenzli.dev/flirt-is-open-source/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-05T09:34:42","author":"blog.buenzli.dev by senekor","text":"<p><a href=\"https://lobste.rs/s/9iztqv/flirt_is_now_open_source\">Comments</a></p>","summary":"Flirt项目现已开源，值得关注是因为它为OCaml社区提供了一个新的开源工具。"},{"id":"rss-5f30a4ad1d92","title":"Friendship ended with Deno, now Node is my best friend","url":"https://dbushell.com/2026/10/03/deno-to-node/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-05T10:01:55","author":"dbushell.com via FedericoSchonborn","text":"<p><a href=\"https://lobste.rs/s/a9kwzv/friendship_ended_with_deno_now_node_is_my\">Comments</a></p>","summary":"作者从Deno转回Node.js的经历分享，值得关注是因为它反映了JavaScript运行时生态的实际使用体验和权衡。"},{"id":"rss-61f25b387304","title":"Another step towards elm v1","url":"https://elm-lang.org/news/another-step-towards-elm-v1","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-05T13:20:47","author":"elm-lang.org via Jackevansevo","text":"<p><a href=\"https://lobste.rs/s/fks4pf/another_step_towards_elm_v1\">Comments</a></p>","summary":"Elm语言向v1版本迈出又一步，值得关注是因为这是长期期待的Elm 1.0发布进程中的重要进展。"}],"locale":"zh"}]
 f:null
