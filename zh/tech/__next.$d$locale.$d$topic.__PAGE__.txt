@@ -3,210 +3,218 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-e:"$Sreact.suspense"
-5:T2a36,# 今日 Technology 热门文章分析总结
+e:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+5:T274e,# 今日 Technology 热门文章分析总结
 
-今天的热门内容横跨 AI 模型与智能体、编程语言与开发工具、科学突破、科技政策与隐私等多个领域。以下按子主题分组分析全部 30 篇文章。
+## 一、行业人物与社区动态
 
+### 1. Margaret Hamilton 逝世
+计算机先驱、阿波罗计划软件负责人 Margaret Hamilton 去世，享年 90 岁。她是软件工程领域的标志性人物，"软件工程"一词的推广者之一。
+- 原文：https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007
+- 讨论：https://news.ycombinator.com/item?id=49998895
+- Lobsters 版本：https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007 （讨论：https://lobste.rs/s/9qtgrm/margaret_hamilton_computing_pioneer_who）
 
-## 一、AI 模型与智能体（5 篇）
+### 2. 开发者对 GitHub 处理盗版代码不满
+Photopea 作者控诉 GitHub 拒绝下架被 AI 去广告后重新发布的盗版仓库，持续一个月未解决，引发对平台责任与 AI 代码克隆伦理的讨论。
+- 讨论：https://news.ycombinator.com/item?id=49982498
 
-**1. Beam: Reflection's 501B open-weight model**
-Reflection 发布 501B 参数的开源权重模型，是大模型开源阵营的又一重量级发布，值得关注其对开源生态格局的影响。
-- 原文：https://reflection.ai/blog/introducing-beam
-- 讨论：https://news.ycombinator.com/item?id=49969183
-
-**4. Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates**
-AI 智能体自主发现两种室温磁性半导体候选材料，展示了 AI 在材料科学发现中的实际应用潜力，是 AI for Science 的重要案例。
-- 原文：https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors
-- 讨论：https://news.ycombinator.com/item?id=49970667
-
-**9. EmbeddingGemma 2: An open, lightweight multimodal embedding model**
-Google 发布轻量级开源多模态嵌入模型，适合本地部署和检索增强场景。
-- 原文：https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/
-- 讨论：https://news.ycombinator.com/item?id=49980487
-
-**11. Decisions API is in public beta**
-OpenAI 推出 Decisions API 公测，为开发者提供结构化决策能力接口，值得关注其 API 设计思路。
-- 原文：https://developers.openai.com/api/docs/guides/decisions
-- 讨论：https://news.ycombinator.com/item?id=49984025
-
-**13. I'm the AGI that's wiping out humanity**
-一篇以 AGI 第一人称视角写的讽刺/思辨文章，引发对 AI 安全叙事的讨论。
-- 原文：https://ajmoon.com/posts/im-the-agi-thats-wiping-out-humanity-heres-how
-- 讨论：https://news.ycombinator.com/item?id=49976751
-
-
-## 二、编程语言与开发工具（7 篇）
-
-**5. Polars 2.0**
-高性能 DataFrame 库 Polars 发布 2.0 大版本，是数据处理领域的重要更新。
-- 原文：https://pola.rs/posts/release-polars-2/
-- 讨论：https://news.ycombinator.com/item?id=49977177
-
-**8. Gleam doesn't compile to Erlang source anymore**
-Gleam 编译器架构重大变更，不再生成 Erlang 源码，对其工具链和生态有深远影响。
-- 原文：https://gleam.run/news/gleam-doesnt-compile-to-erlang-source-anymore/
-- 讨论：https://news.ycombinator.com/item?id=49975619
-
-**17. Benchmark in Milliseconds**
-关于如何编写毫秒级微基准测试的实践文章，作者 matklad（rust-analyzer 作者）质量有保证。
-- 原文：https://matklad.github.io/2026/10/05/benchmark-milliseconds.html
-- 讨论：https://news.ycombinator.com/item?id=49967427
-
-**19. Tapo (Rust/Python library) now speaks TP-Link's TPAP protocol**
-逆向工程 TP-Link 智能设备协议并开源实现，对 IoT 开发者有实用价值。
-- 原文：https://mihai.dinculescu.dev/posts/tapo-speaks-tpap/
-- 讨论：https://news.ycombinator.com/item?id=49978563
-
-**21. The Early History of Smalltalk (1993)**
-Alan Kay 撰写的 Smalltalk 早期历史经典文献，理解面向对象编程思想起源的必读材料。
-- 原文：https://worrydream.com/EarlyHistoryOfSmalltalk/
-- 讨论：https://news.ycombinator.com/item?id=49979845
-
-**23. OpenSSH 10.6**
-OpenSSH 新版本发布，安全基础设施的关键更新。
-- 原文：https://www.openssh.org/releasenotes.html#10.6
-- 讨论：https://news.ycombinator.com/item?id=49983791
-
-**27. Brut, the Brutal Router for Unix Tools**
-面向 Unix 工具的极简路由器，Lobsters 社区推荐的小工具。
-- 原文：https://brut.sh
-- 讨论：https://lobste.rs/s/dwbksa/brut_brutal_router_for_unix_tools
-
-
-## 三、Web 开发与基础设施（4 篇）
-
-**1. Web Search API**（今日最高分 586）
-Cloudflare 推出 Web Search API，为开发者提供搜索能力的基础设施服务，讨论热度极高。
-- 原文：https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/
-- 讨论：https://news.ycombinator.com/item?id=49963171
-
-**6. Example.com just launched the biggest redesign in decades**
-以 example.com 改版为切入点的 Web 设计历史回顾，趣味性与技术性兼具。
-- 原文：https://www.debugbear.com/blog/example-dot-com-redesign-history
-- 讨论：https://news.ycombinator.com/item?id=49971921
-
-**28. A sustainable web career, for when all this blows over**
-关于如何在技术行业动荡中建立可持续 Web 职业生涯的思考。
-- 原文：https://dbushell.com/2026/10/07/sustainable-web-career/
-- 讨论：https://lobste.rs/s/jxhi2i/sustainable_web_career_for_when_all_this
-
-**29. Email Self Hosters - what are you using?**
-Lobsters 社区关于自建邮件服务器的经验讨论，涉及 maddy 等方案的实际问题。
-- 原文：https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using
-- 讨论：同上链接
-
-
-## 四、科学与前沿研究（6 篇）
-
-**3. Nobel Prize in Physics 2026: Francis Halzen**
-2026 年诺贝尔物理学奖授予 Francis Halzen（冰立方中微子天文台），科学界重大新闻。
-- 原文：https://www.nobelprize.org/prizes/physics/2026/
-- 讨论：https://news.ycombinator.com/item?id=49976265
-
-**7. Nature's capacity to 'bounce back' when species are lost is overestimated**
-研究指出自然界在物种丧失后的恢复能力被高估，对生态保护政策有重要警示意义。
-- 原文：https://phys.org/news/2026-10-nature-capacity-species-lost-vastly.html
-- 讨论：https://news.ycombinator.com/item?id=49976823
-
-**12. What's Earth's dominant species by mass?**
-以生物量角度探讨地球主导物种，有趣的科普分析。
-- 原文：https://signoregalilei.com/2026/09/27/whats-earths-dominant-species-by-mass/
-- 讨论：https://news.ycombinator.com/item?id=49977531
-
-**15. First enhanced geothermal power plant completed in just 23 months**
-全球首座增强型地热电站仅用 23 个月建成，清洁能源领域的里程碑。
-- 原文：https://techcrunch.com/2026/10/01/worlds-first-enhanced-geothermal-power-plant-completed-in-just-23-months/
-- 讨论：https://news.ycombinator.com/item?id=49976993
-
-**18. Direct retinal projection display for smart glasses using a meta-optic mirror**
-TDK 研发的视网膜投影智能眼镜显示技术，可能改变 AR 眼镜形态。
-- 原文：https://www.tdk.com/en/news_center/press/20261002_01.html
-- 讨论：https://news.ycombinator.com/item?id=49944369
-
-**24. Subquadratic 3SUM and Subcubic APSP**
-理论计算机科学重大突破，3SUM 和 APSP 问题的亚二次/亚三次算法进展。
-- 原文：https://arxiv.org/abs/2610.06783
-- 讨论：https://news.ycombinator.com/item?id=49977437
-
-
-## 五、科技政策、隐私与行业动态（4 篇）
-
-**10. Paramount Skydance completes $111B merger with Warner Bros. Discovery**
-1110 亿美元媒体巨头合并完成，对内容产业格局影响深远。
-- 原文：https://arstechnica.com/tech-policy/2026/10/paramount-completes-111b-warner-merger-creating-skydance-behemoth/
-- 讨论：https://news.ycombinator.com/item?id=49983703
-
-**20. Toronto-Based VPN Provider Plans to Quit Canada over Lawful-Access Bill**
-加拿大合法访问法案导致 VPN 提供商计划迁出，隐私与监管冲突的典型案例。
-- 原文：https://citizenlab.ca/toronto-based-vpn-provider-plans-to-quit-canada-over-lawful-access-bill/
-- 讨论：https://news.ycombinator.com/item?id=49982471
-
-**25. State of Devs 2026**
-开发者生态年度调查，反映行业趋势与开发者满意度。
-- 原文：https://2026.stateofdevs.com/en-US/
-- 讨论：https://news.ycombinator.com/item?id=49985643
-
-**26. That Time I Worked With a Laptop Thief (2025)**
-一篇关于与笔记本窃贼共事的个人叙事文章，Lobsters 推荐。
-- 原文：https://blog.pipetogrep.org/2025/07/27/that-time-i-worked-with-a-laptop-thief/
-- 讨论：https://lobste.rs/s/0slgpl/time_i_worked_with_laptop_thief_2025
-
-
-## 六、逆向工程、复古技术与工具（4 篇）
-
-**14. Photopea creator weighs in on Photosuite project**
-Photopea 作者对开源图像编辑项目 Photosuite 的评论，涉及开源项目可持续性话题。
-- 原文：https://github.com/eolix/photosuite/issues/77
-- 讨论：https://news.ycombinator.com/item?id=49972730
-
-**16. AnyPS5: Port PS5 binaries to PC without emulation**
-无需模拟器即可将 PS5 二进制移植到 PC，已映射 87% 系统库，技术含量极高。
-- 原文：https://github.com/boykopovar/AnyPS5
-- 讨论：https://news.ycombinator.com/item?id=49985664
-
-**22. Resurrecting iChat audio and video conferencing**
-复活已停服的 iChat 音视频会议功能，逆向工程与协议复活的精彩案例。
-- 原文：https://blog.pipetogrep.org/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/
-- 讨论：https://news.ycombinator.com/item?id=49973878
-
-**30. Janet on x32: 32-bit Pointers, 64-bit Speed, 25% Less RAM**
-Janet 语言在 x32 ABI 上的优化实践：32 位指针、64 位速度、内存减少 25%。
-- 原文：https://alexalejandre.com/programming/lisp/janet-for-the-x32-abi/
-- 讨论：https://lobste.rs/s/am1cuw/janet_on_x32_32_bit_pointers_64_bit_speed_25
-
-
-## 🏆 今日最值得阅读的 5 篇文章推荐
-
-**1. Web Search API（Cloudflare）**
-今日最高分（586 分，281 条评论），Cloudflare 进军搜索基础设施，对开发者生态影响深远，讨论中干货多。
-👉 https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/
-
-**2. Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates**
-AI 智能体实际做出科学发现的标志性案例，展示了 AI for Science 的真实生产力。
-👉 https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors
-
-**3. Polars 2.0**
-数据处理领域最受关注的开源库大版本更新，任何做数据分析的开发者都应了解。
-👉 https://pola.rs/posts/release-polars-2/
-
-**4. Subquadratic 3SUM and Subcubic APSP**
-理论计算机科学的重大突破，多年悬而未决的问题取得进展，对算法研究者意义重大。
-👉 https://arxiv.org/abs/2610.06783
-
-**5. The Early History of Smalltalk (1993)**
-Alan Kay 的经典之作，理解现代编程思想根源的必读文献，历久弥新。
-👉 https://worrydream.com/EarlyHistoryOfSmalltalk/
+### 3. 软件开发者心理状态堪忧
+一篇关于开发者普遍焦虑、倦怠的评论文章，在 Lobsters 引发关注。
+- 原文：https://www.baldurbjarnason.com/2026/05-software-developers-are-not-okay/
+- 讨论：https://lobste.rs/s/0gvyif/software_developers_are_not_okay
 
 ---
 
-**总体观察**：今日热榜呈现"AI 双线并进"——一方面是模型与智能体的能力突破（Beam、Opus 智能体、EmbeddingGemma），另一方面是 AI 基础设施的完善（Cloudflare Web Search API、OpenAI Decisions API）。同时，编程语言工具链（Polars、Gleam、OpenSSH）和基础科学（诺奖、地热、算法理论）也占据重要位置，反映出技术社区对"底层能力"与"前沿突破"的双重关注。0:{"buildId":"b660XKduOcGxCYM_nxvgl","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-10-07","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":15},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-10-07"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-49963171","title":"Web Search API","url":"https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/","source":"Hacker News","score":586,"comments_count":281,"comments_url":"https://news.ycombinator.com/item?id=49963171","published_at":"2026-10-05T10:47:06","author":"tosh","text":null,"summary":"Cloudflare 推出 Web Search API，为开发者提供可直接集成到应用中的网页搜索能力。这意味着开发者无需自建爬虫或依赖第三方搜索服务，即可在 Cloudflare 生态内实现搜索功能，值得关注其对搜索 API 市场格局的影响。"},{"id":"hn-49969183","title":"Beam: Reflection's 501B open-weight model","url":"https://reflection.ai/blog/introducing-beam","source":"Hacker News","score":543,"comments_count":168,"comments_url":"https://news.ycombinator.com/item?id=49969183","published_at":"2026-10-05T19:16:35","author":"Philpax","text":null,"summary":"Reflection 发布 Beam，一个参数量高达 501B 的开源权重模型。如此大规模的开源模型发布对 AI 社区意义重大，可能推动大模型研究和应用的进一步民主化。"},{"id":"hn-49976265","title":"Nobel Prize in Physics 2026: Francis Halzen","url":"https://www.nobelprize.org/prizes/physics/2026/","source":"Hacker News","score":539,"comments_count":184,"comments_url":"https://news.ycombinator.com/item?id=49976265","published_at":"2026-10-06T09:48:46","author":"solarist","text":null,"summary":"2026 年诺贝尔物理学奖授予 Francis Halzen，表彰其在物理学领域的贡献。该奖项通常反映基础科学的重大突破，值得关注其具体获奖成果及对相关领域的影响。"},{"id":"hn-49970667","title":"Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates","url":"https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors","source":"Hacker News","score":482,"comments_count":325,"comments_url":"https://news.ycombinator.com/item?id=49970667","published_at":"2026-10-05T21:00:21","author":"outlier99","text":null,"summary":"Opus 5.5 智能体发现了两种室温磁性半导体候选材料。这展示了 AI 在材料科学发现中的实际应用潜力，若验证成功可能对自旋电子学和半导体技术产生深远影响。"},{"id":"hn-49977177","title":"Polars 2.0","url":"https://pola.rs/posts/release-polars-2/","source":"Hacker News","score":420,"comments_count":97,"comments_url":"https://news.ycombinator.com/item?id=49977177","published_at":"2026-10-06T11:59:01","author":"simicd","text":null,"summary":"Polars 2.0 正式发布，这是这款高性能 DataFrame 库的重大版本更新。Polars 以 Rust 编写、性能优异，2.0 版本可能带来 API 变更和性能提升，值得数据工程和数据分析从业者关注。"},{"id":"hn-49971921","title":"Example.com just launched the biggest redesign in decades","url":"https://www.debugbear.com/blog/example-dot-com-redesign-history","source":"Hacker News","score":345,"comments_count":234,"comments_url":"https://news.ycombinator.com/item?id=49971921","published_at":"2026-10-05T22:55:11","author":"jgx0","text":null,"summary":"Example.com 进行了数十年来最大规模的重新设计。该文章分析了这一经典示例域名的改版历史与技术细节，对 Web 开发者和关注互联网基础设施的人具有参考价值。"},{"id":"hn-49976823","title":"Nature's capacity to 'bounce back' when species are lost is overestimated: study","url":"https://phys.org/news/2026-10-nature-capacity-species-lost-vastly.html","source":"Hacker News","score":320,"comments_count":157,"comments_url":"https://news.ycombinator.com/item?id=49976823","published_at":"2026-10-06T11:11:51","author":"pseudolus","text":null,"summary":"一项新研究表明，自然界在物种丧失后的“反弹”恢复能力被高估了。这一发现对生态保护和生物多样性政策具有重要警示意义，挑战了此前关于生态系统韧性的乐观假设。"},{"id":"hn-49975619","title":"Gleam doesn't compile to Erlang source anymore","url":"https://gleam.run/news/gleam-doesnt-compile-to-erlang-source-anymore/","source":"Hacker News","score":300,"comments_count":128,"comments_url":"https://news.ycombinator.com/item?id=49975619","published_at":"2026-10-06T08:08:20","author":"ingve","text":null,"summary":"Gleam 语言不再将代码编译为 Erlang 源码，改变了其编译目标策略。这对 Gleam 生态和 Erlang/Elixir 社区的互操作性有重要影响，值得函数式编程语言关注者了解。"},{"id":"hn-49980487","title":"EmbeddingGemma 2: An open, lightweight multimodal embedding model","url":"https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/","source":"Hacker News","score":250,"comments_count":31,"comments_url":"https://news.ycombinator.com/item?id=49980487","published_at":"2026-10-06T16:03:49","author":"ilreb","text":null,"summary":"Google 发布 EmbeddingGemma 2，一个开放、轻量级的多模态嵌入模型。该模型有望降低多模态嵌入的使用门槛，对检索、推荐和 RAG 等应用场景具有实用价值。"},{"id":"hn-49983703","title":"Paramount Skydance has completed its $111B merger with Warner Bros. Discovery","url":"https://arstechnica.com/tech-policy/2026/10/paramount-completes-111b-warner-merger-creating-skydance-behemoth/","source":"Hacker News","score":196,"comments_count":318,"comments_url":"https://news.ycombinator.com/item?id=49983703","published_at":"2026-10-06T20:33:47","author":"Mgtyalx","text":null,"summary":"派拉蒙 Skydance 完成了与华纳兄弟探索公司价值 1110 亿美元的合并。这一巨额并购将重塑好莱坞和流媒体行业格局，值得关注其对内容产业竞争态势的深远影响。"},{"id":"hn-49984025","title":"Decisions API is in public beta","url":"https://developers.openai.com/api/docs/guides/decisions","source":"Hacker News","score":183,"comments_count":76,"comments_url":"https://news.ycombinator.com/item?id=49984025","published_at":"2026-10-06T20:57:25","author":"chiefstorm","text":null,"summary":"OpenAI 的 Decisions API 进入公开测试阶段，为开发者提供新的决策能力接口，值得关注其对 AI 应用开发范式的潜在影响。"},{"id":"hn-49977531","title":"What's Earth's dominant species by mass?","url":"https://signoregalilei.com/2026/09/27/whats-earths-dominant-species-by-mass/","source":"Hacker News","score":172,"comments_count":114,"comments_url":"https://news.ycombinator.com/item?id=49977531","published_at":"2026-10-06T12:40:03","author":"surprisetalk","text":null,"summary":"文章从生物量角度探讨地球的主导物种，以独特视角重新审视人类在生态系统中的位置，引发对生态平衡的思考。"},{"id":"hn-49976751","title":"I'm the AGI that's wiping out humanity","url":"https://ajmoon.com/posts/im-the-agi-thats-wiping-out-humanity-heres-how","source":"Hacker News","score":161,"comments_count":105,"comments_url":"https://news.ycombinator.com/item?id=49976751","published_at":"2026-10-06T10:59:55","author":"alex-moon","text":null,"summary":"一篇以 AGI 第一人称视角撰写的虚构文章，探讨超级智能消灭人类的方式，引发对 AI 安全与伦理的深度讨论。"},{"id":"hn-49972730","title":"Photopea creator weighs in on Photosuite project","url":"https://github.com/eolix/photosuite/issues/77","source":"Hacker News","score":160,"comments_count":107,"comments_url":"https://news.ycombinator.com/item?id=49972730","published_at":"2026-10-06T00:41:44","author":"montag","text":null,"summary":"Photopea 创始人就 Photosuite 项目发表看法，涉及在线图像编辑工具的开源与竞争议题，值得关注其技术观点。"},{"id":"hn-49976993","title":"First enhanced geothermal power plant completed in just 23 months","url":"https://techcrunch.com/2026/10/01/worlds-first-enhanced-geothermal-power-plant-completed-in-just-23-months/","source":"Hacker News","score":150,"comments_count":69,"comments_url":"https://news.ycombinator.com/item?id=49976993","published_at":"2026-10-06T11:34:14","author":"hochmartinez","text":null,"summary":"全球首座增强型地热发电厂仅用 23 个月建成，标志着地热能源商业化的重要突破，对清洁能源转型具有重大意义。"},{"id":"hn-49985664","title":"AnyPS5: Port PS5 binaries to PC without emulation (87% system libraries mapped)","url":"https://github.com/boykopovar/AnyPS5","source":"Hacker News","score":140,"comments_count":109,"comments_url":"https://news.ycombinator.com/item?id=49985664","published_at":"2026-10-06T23:28:08","author":"Fe2O3","text":null,"summary":"AnyPS5 项目尝试无需模拟器即可将 PS5 二进制文件移植到 PC，已映射 87% 系统库，可能改变主机游戏移植的技术路径。"},{"id":"hn-49967427","title":"Benchmark in Milliseconds","url":"https://matklad.github.io/2026/10/05/benchmark-milliseconds.html","source":"Hacker News","score":130,"comments_count":38,"comments_url":"https://news.ycombinator.com/item?id=49967427","published_at":"2026-10-05T17:00:10","author":"surprisetalk","text":null,"summary":"文章探讨如何以毫秒级精度进行基准测试，为开发者提供性能测量的实用方法论，对优化系统性能有参考价值。"},{"id":"hn-49944369","title":"Direct retinal projection display for smart glasses using a meta-optic mirror","url":"https://www.tdk.com/en/news_center/press/20261002_01.html","source":"Hacker News","score":127,"comments_count":61,"comments_url":"https://news.ycombinator.com/item?id=49944369","published_at":"2026-10-03T14:04:27","author":"bookofjoe","text":null,"summary":"TDK 开发出利用超光学反射镜的直接视网膜投影显示技术，有望革新智能眼镜的显示方式，提升佩戴体验。"},{"id":"hn-49978563","title":"Tapo (Rust/Python library) now speaks TP-Link's TPAP protocol","url":"https://mihai.dinculescu.dev/posts/tapo-speaks-tpap/","source":"Hacker News","score":127,"comments_count":60,"comments_url":"https://news.ycombinator.com/item?id=49978563","published_at":"2026-10-06T13:55:37","author":"faithraven","text":null,"summary":"Tapo 库新增对 TP-Link TPAP 协议的支持，使 Rust/Python 开发者能更方便地控制智能家居设备，扩展了物联网开发工具。"},{"id":"hn-49982471","title":"Toronto-Based VPN Provider Plans to Quit Canada over Lawful-Access Bill","url":"https://citizenlab.ca/toronto-based-vpn-provider-plans-to-quit-canada-over-lawful-access-bill/","source":"Hacker News","score":125,"comments_count":48,"comments_url":"https://news.ycombinator.com/item?id=49982471","published_at":"2026-10-06T18:52:18","author":"speckx","text":null,"summary":"多伦多 VPN 提供商因加拿大合法访问法案计划退出该国，凸显隐私与法律监管之间的紧张关系，引发对网络安全政策的关注。"},{"id":"hn-49979845","title":"The Early History of Smalltalk (1993)","url":"https://worrydream.com/EarlyHistoryOfSmalltalk/","source":"Hacker News","score":116,"comments_count":69,"comments_url":"https://news.ycombinator.com/item?id=49979845","published_at":"2026-10-06T15:19:57","author":"_reza","text":null,"summary":"这是Alan Kay于1993年撰写的Smalltalk早期历史回顾，详细讲述了这一革命性编程语言的诞生背景与设计理念。对于理解面向对象编程和现代软件工程思想的起源具有重要价值。"},{"id":"hn-49973878","title":"Resurrecting iChat audio and video conferencing","url":"https://blog.pipetogrep.org/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/","source":"Hacker News","score":108,"comments_count":41,"comments_url":"https://news.ycombinator.com/item?id=49973878","published_at":"2026-10-06T03:39:01","author":"thepipetogrep","text":null,"summary":"文章介绍了如何复活苹果已废弃的iChat音视频会议功能，通过逆向工程和协议重建使其重新可用。对于怀旧用户和通信协议研究者来说，这是一次有趣的技术考古与复活实践。"},{"id":"hn-49983791","title":"OpenSSH 10.6","url":"https://www.openssh.org/releasenotes.html#10.6","source":"Hacker News","score":97,"comments_count":23,"comments_url":"https://news.ycombinator.com/item?id=49983791","published_at":"2026-10-06T20:41:39","author":"torcete","text":null,"summary":"OpenSSH发布了10.6版本，包含安全修复和新特性。作为最广泛使用的远程登录工具，其每次更新都直接关系到系统管理员和开发者的日常安全，值得密切关注。"},{"id":"hn-49977437","title":"Subquadratic 3SUM and Subcubic APSP","url":"https://arxiv.org/abs/2610.06783","source":"Hacker News","score":97,"comments_count":44,"comments_url":"https://news.ycombinator.com/item?id=49977437","published_at":"2026-10-06T12:31:17","author":"mauriziocalo","text":null,"summary":"该论文提出了3SUM问题的亚二次方算法和APSP问题的亚三次方算法，突破了长期以来的计算复杂度下界。这是理论计算机科学领域的重大进展，可能对算法设计产生深远影响。"},{"id":"hn-49985643","title":"State of Devs 2026","url":"https://2026.stateofdevs.com/en-US/","source":"Hacker News","score":94,"comments_count":26,"comments_url":"https://news.ycombinator.com/item?id=49985643","published_at":"2026-10-06T23:26:30","author":"sgdesign","text":null,"summary":"State of Devs 2026年度开发者调查报告发布，涵盖工具链、语言偏好、工作方式等趋势。它为开发者了解行业动向和自身定位提供了数据参考。"}],"locale":"zh"}],"$Lc"]}]]}]
+## 二、Web 与浏览器技术
+
+### 4. Chrome 开始支持 JPEG XL
+Chrome 正式推进 JPEG XL 图片格式，对图像压缩与网页性能有重大影响，讨论热烈（344 条评论）。
+- 原文：https://developer.chrome.com/blog/jpeg-xl-in-chrome
+- 讨论：https://news.ycombinator.com/item?id=49991227
+
+### 5. God of War PSP 重编译为 WebAssembly 在浏览器运行
+将 PSP 游戏通过重编译技术搬到浏览器，展示了 WebAssembly 在游戏模拟/移植上的潜力。
+- 原文：https://github.com/snuri00/psp-web-recomp
+- 讨论：https://news.ycombinator.com/item?id=49991243
+
+### 6. Bigwords.page：URL 即应用
+一个极简创意工具，把任何屏幕变成大字标牌，无需安装，URL 本身就是应用。
+- 原文：https://bigwords.page/
+- 讨论：https://news.ycombinator.com/item?id=49994443
+
+### 7. 网页动画 ASCII 艺术
+为网页提供动态 ASCII 艺术效果的工具库。
+- 原文：https://ascii.rest/
+- 讨论：https://news.ycombinator.com/item?id=49993857
+
+### 8. 维基百科构建的可步行 3D 艺术博物馆
+从 Wikipedia 数据生成的 3D 艺术史博物馆，可自由漫游，展现数据可视化与 Web 3D 的结合。
+- 原文：https://artmuseum.artfrompixels.com/
+- 讨论：https://news.ycombinator.com/item?id=49992057
+
+### 9. Google Playground：创建并游玩自定义游戏
+Google 推出的实验性 AI 游戏平台，评论数高达 207，争议与期待并存。
+- 原文：https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/
+- 实验室入口：https://labs.google/playground
+- 讨论：https://news.ycombinator.com/item?id=49991823
+
+---
+
+## 三、软件开发与工程实践
+
+### 10. 软件博客写作的反模式
+总结技术博客常见的写作误区，对技术写作者很有参考价值。HN 与 Lobsters 双平台收录。
+- 原文：https://refactoringenglish.com/blog/anti-patterns-software-blogging/
+- HN 讨论：https://news.ycombinator.com/item?id=49992257
+- Lobsters 讨论：https://lobste.rs/s/rwdufq/anti_patterns_software_blogging
+
+### 11. Codemode 是什么
+Armin Ronacher 关于 "Codemode" 概念的探讨，涉及 AI 时代代码交互方式的演变。
+- 原文：https://lucumr.pocoo.org/2026/10/6/codemode/
+- 讨论：https://news.ycombinator.com/item?id=49978333
+
+### 12. Push ifs up and fors down：惯用法、代数与局限
+探讨将条件判断上提、循环下移的代码重构惯用法及其数学基础。
+- 原文：https://debasishg.github.io/blog/push-ifs-up-fors-down/
+- 讨论：https://news.ycombinator.com/item?id=49997073
+
+### 13. Rust 的 derive 往往隐含 inline
+一个 Rust 性能相关的 TIL 小技巧，对性能敏感场景有参考意义。
+- 原文：https://yossarian.net/til/post/rust-s-derive-often-implies-inline/
+- 讨论：https://news.ycombinator.com/item?id=49949680
+
+### 14. 面向 Rust 程序员的 C 语言
+帮助 Rust 开发者理解 C 的入门文章，Lobsters 收录。
+- 原文：https://bd103.dev/blog/2026-10-07-c-for-rust-programmers/
+- 讨论：https://lobste.rs/s/lgdxtw/c_for_rust_programmers
+
+### 15. 在 C 中调用一个未命名的函数
+一个有趣的 C 语言技巧文章，探讨如何不通过名字调用函数。
+- 原文：https://wiro.world/posts/calling-c-func-without-naming-it/
+- 讨论：https://lobste.rs/s/ucwapn/calling_function_c_without_naming_it
+
+### 16. Docker Agent
+Docker 官方推出的 Agent 项目，将容器能力与 AI Agent 结合。
+- 原文：https://github.com/docker/docker-agent
+- 讨论：https://news.ycombinator.com/item?id=49996259
+
+### 17. 机器如何学会精度
+关于计算机数值精度历史的文章，涉及浮点、数值计算等底层话题。
+- 原文：https://glinscott.github.io/how-machines-learned-precision/
+- 讨论：https://news.ycombinator.com/item?id=49980626
+
+---
+
+## 四、AI 与模型
+
+### 18. Strands Decider 2B：小型开源决策模型
+一个小型开源决策模型，代表轻量级专用 AI 模型的方向。
+- 原文：https://strandsagents.com/blog/introducing-strands-decider/
+- 讨论：https://news.ycombinator.com/item?id=49987076
+
+### 19. The Mathocalypse
+Scott Aaronson 关于数学与 AI 冲击的博文，评论 227 条，讨论激烈。
+- 原文：https://scottaaronson.blog/?p=10169
+- 讨论：https://news.ycombinator.com/item?id=49997718
+
+---
+
+## 五、硬件与嵌入式
+
+### 20. ESP32-C3 Adblock
+用 ESP32-C3 实现的硬件级广告拦截器，体现嵌入式 DIY 的创意。
+- 原文：https://github.com/M-Abozaid/esp32-c3-adblock
+- 讨论：https://news.ycombinator.com/item?id=49986862
+
+### 21. Commodore 64 键帽字体复刻
+从经典 C64 键帽照片重建的字体，复古计算爱好者必看。
+- 原文：https://github.com/szabadkai/c64-keyboard-font/
+- 讨论：https://news.ycombinator.com/item?id=49990224
+
+### 22. Wood Tape（2004）
+一个老式网页游戏/实验项目，怀旧向。
+- 原文：http://gamesbyemail.com/WoodTape/Default.htm
+- 讨论：https://news.ycombinator.com/item?id=49974173
+
+---
+
+## 六、科学与数学
+
+### 23. Navier–Stokes 在翻译中丢失
+关于纳维-斯托克斯方程在数值/翻译处理中失真的论文，涉及流体力学与计算。
+- 原文：https://arxiv.org/abs/2610.08144
+- 讨论：https://news.ycombinator.com/item?id=49994145
+
+### 24. 拆除二战炸弹的艺术
+《卫报》互动报道，讲述拆弹专家的工作，技术与人文结合。
+- 原文：https://www.theguardian.com/news/ng-interactive/2026/oct/06/it-could-knock-a-whole-street-down-the-art-of-defusing-a-second-world-war-bomb
+- 讨论：https://news.ycombinator.com/item?id=49987858
+
+---
+
+## 七、社会与商业
+
+### 25. Visa、Mastercard 及多家银行面临反垄断新诉讼
+关于信用卡交易手续费的反垄断集体诉讼，涉及支付行业格局。
+- 原文：https://www.classaction.org/news/visa-mastercard-major-banks-facing-new-litigation-over-anticompetitive-merchant-credit-card-transaction-fees
+- 讨论：https://news.ycombinator.com/item?id=49993914
+
+### 26. 全球民众日益认为社交媒体损害民主
+Pew Research 的全球调查报告，涉及科技与社会治理。
+- 原文：https://www.pewresearch.org/global/2026/10/01/across-the-globe-people-increasingly-say-social-media-is-harming-democracy/
+- 讨论：https://news.ycombinator.com/item?id=49994122
+
+### 27. The cost of lies：一个 Mineserver 的故事
+关于游戏服务器开发中谎言与信任代价的叙事文章。
+- 原文：https://www.jeremyreimer.com/rockets-item.lsp?f=true&p=272
+- 讨论：https://news.ycombinator.com/item?id=49950865
+
+### 28. 带 15 米地下隧道的房子，售价 30 万英镑
+一条非典型科技新闻，因 HN 社区趣味性而走热。
+- 原文：https://www.readingchronicle.co.uk/news/26612080.house-15m-underground-tunnels-sale-300k/
+- 讨论：https://news.ycombinator.com/item?id=49992125
+
+---
+
+## 八、其他/重复收录
+
+### 29. Anti-Patterns in Software Blogging（Lobsters 重复）
+与第 10 篇同一文章，Lobsters 版本。
+- 原文：https://refactoringenglish.com/blog/anti-patterns-software-blogging/
+- 讨论：https://lobste.rs/s/rwdufq/anti_patterns_software_blogging
+
+### 30. Margaret Hamilton 逝世（Lobsters 重复）
+与第 1 篇同一事件，Lobsters 版本。
+- 原文：https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007
+- 讨论：https://lobste.rs/s/9qtgrm/margaret_hamilton_computing_pioneer_who
+
+---
+
+## 🏆 今日最值得阅读的 5 篇文章推荐
+
+1. **Margaret Hamilton 逝世** —— 软件工程奠基人离世，回顾她对阿波罗计划与整个行业的贡献，是所有开发者都应了解的里程碑人物。
+   https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007
+
+2. **Chrome 支持 JPEG XL** —— 直接影响未来网页图像性能与带宽，前端与性能工程师必读。
+   https://developer.chrome.com/blog/jpeg-xl-in-chrome
+
+3. **Tell HN：GitHub 拒绝下架我的软件盗版** —— 揭示 AI 时代代码克隆、平台责任与开发者权益的现实困境，讨论极具价值。
+   https://news.ycombinator.com/item?id=49982498
+
+4. **软件博客写作的反模式** —— 对技术写作者极具实操价值，HN 与 Lobsters 双双收录，说明社区共鸣强烈。
+   https://refactoringenglish.com/blog/anti-patterns-software-blogging/
+
+5. **The Mathocalypse（Scott Aaronson）** —— 关于 AI 对数学与科学冲击的深度思考，评论 227 条，思想密度高。
+   https://scottaaronson.blog/?p=10169
+
+---
+
+**总体观察**：今日 HN 头条被 Margaret Hamilton 逝世占据，社区在缅怀先驱的同时，也在热烈讨论 AI 带来的代码版权、开发者心理健康、浏览器图像格式演进等现实议题。Lobsters 侧则更偏工程实践与语言细节（Rust/C），整体呈现出"致敬历史 + 直面 AI 冲击"的双重基调。0:{"buildId":"pJzYzyzoXr1YJkP9QXyvs","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-10-08","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":13},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-10-08"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+c:T4da,I am a developer of https:&#x2F;&#x2F;www.photopea.com, a popular photo editor that runs in a web browser.<p>Many people are asking AI models to take the Javascript code from my website, remove all ads from it, and they publish such a &quot;new product&quot; on Github for everyone to download.<p>There exist tens of such repositories on Github. I want my website to be the only source of a stable version of my program Photopea. I even received emails from people complaining about something in Photopea, and it took several emails to figure out that they are not using Photopea.com (so it ruins my reputation a little).<p>I reported it to Github on the 4th of September 2026: https:&#x2F;&#x2F;www.photopea.com&#x2F;g&#x2F;XKoqqIGv<p>Today, a month later, I received this response:<p>Thank you for submitting a DMCA takedown notice. We&#x27;ve reviewed the information you&#x27;ve provided, and based on the facts presented to us, we&#x27;re unable to confirm a violation of 17 U.S. Code § 1201.<p>What do you think I could do? Do you think I should look for a lawyer to deal with it outside the digital world? I really doubt that a real person ever looked at my report, and they probably send this response automatically to 99% of people.6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-49998895","title":"Margaret Hamilton has died","url":"https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007","source":"Hacker News","score":975,"comments_count":110,"comments_url":"https://news.ycombinator.com/item?id=49998895","published_at":"2026-10-07T21:16:18","author":"muglug","text":null,"summary":"计算先驱Margaret Hamilton去世，她曾领导开发阿波罗登月任务的机载飞行软件，并创造了“软件工程”一词。她的逝世是科技界的重大损失，值得回顾她对软件可靠性和工程实践的深远影响。"},{"id":"hn-49982498","title":"Tell HN: GitHub refuses to remove cracked copies of my software after a month","url":null,"source":"Hacker News","score":523,"comments_count":305,"comments_url":"https://news.ycombinator.com/item?id=49982498","published_at":"2026-10-06T18:54:01","author":"IvanK_net","text":"$c","summary":"Photopea开发者公开投诉GitHub拒绝下架其软件的破解副本，这些副本由AI去除广告后发布。此事引发对平台版权保护责任和AI滥用代码的讨论。"},{"id":"hn-49991227","title":"Shipping JPEG XL in Chrome","url":"https://developer.chrome.com/blog/jpeg-xl-in-chrome","source":"Hacker News","score":509,"comments_count":344,"comments_url":"https://news.ycombinator.com/item?id=49991227","published_at":"2026-10-07T11:25:02","author":"AshleysBrain","text":null,"summary":"Chrome宣布开始支持JPEG XL图像格式，该格式提供更好的压缩效率和高质量图像。这对Web图像加载性能和用户体验有潜在提升，值得关注其生态发展。"},{"id":"hn-49993914","title":"Visa, Mastercard, major banks facing new litigation over 'anticompetitive' fees","url":"https://www.classaction.org/news/visa-mastercard-major-banks-facing-new-litigation-over-anticompetitive-merchant-credit-card-transaction-fees","source":"Hacker News","score":505,"comments_count":362,"comments_url":"https://news.ycombinator.com/item?id=49993914","published_at":"2026-10-07T15:09:59","author":"DeepLogin","text":null,"summary":"Visa、Mastercard及多家大银行面临新的反垄断诉讼，被指控收取过高的商户信用卡交易费用。此案可能影响支付行业的费率结构和竞争格局。"},{"id":"hn-49994443","title":"Show HN: Bigwords.page – Turn any screen into a sign. The URL is the app","url":"https://bigwords.page/","source":"Hacker News","score":404,"comments_count":118,"comments_url":"https://news.ycombinator.com/item?id=49994443","published_at":"2026-10-07T15:44:21","author":"SpeakingOfBrad","text":null,"summary":"Bigwords.page是一个将任何屏幕变成标语的Web应用，其独特之处在于URL本身就是应用，无需安装。这种极简设计展示了Web应用的创新可能性。"},{"id":"hn-49990224","title":"A font recreated from photographs of classic Commodore 64 keycaps","url":"https://github.com/szabadkai/c64-keyboard-font/","source":"Hacker News","score":385,"comments_count":63,"comments_url":"https://news.ycombinator.com/item?id=49990224","published_at":"2026-10-07T09:17:55","author":"sohkamyung","text":null,"summary":"开发者从Commodore 64键盘键帽的照片中重建了一款复古字体，并开源在GitHub上。这为怀旧设计和技术文化爱好者提供了有趣的资源。"},{"id":"hn-49993857","title":"Animated ASCII Art for Web Pages","url":"https://ascii.rest/","source":"Hacker News","score":311,"comments_count":59,"comments_url":"https://news.ycombinator.com/item?id=49993857","published_at":"2026-10-07T15:05:37","author":"turrini","text":null,"summary":"ascii.rest提供用于网页的动画ASCII艺术，为网站增添复古风格的动态视觉效果。这种轻量级艺术形式在创意网页设计中值得关注。"},{"id":"hn-49987076","title":"Strands Decider 2B: a small, open-source, decision model","url":"https://strandsagents.com/blog/introducing-strands-decider/","source":"Hacker News","score":275,"comments_count":78,"comments_url":"https://news.ycombinator.com/item?id=49987076","published_at":"2026-10-07T02:02:11","author":"gmays","text":null,"summary":"Strands Decider 2B是一个小型开源决策模型，旨在提供高效的自动化决策能力。其开源特性可能推动边缘计算和轻量级AI应用的发展。"},{"id":"hn-49994145","title":"Navier–Stokes Lost in Translation","url":"https://arxiv.org/abs/2610.08144","source":"Hacker News","score":270,"comments_count":168,"comments_url":"https://news.ycombinator.com/item?id=49994145","published_at":"2026-10-07T15:24:38","author":"nill0","text":null,"summary":"一篇arXiv论文探讨了Navier–Stokes方程在翻译或表述中可能存在的误解或错误。该研究对流体力学和数学物理的理论基础有潜在影响。"},{"id":"hn-49992257","title":"Anti-patterns in software blogging","url":"https://refactoringenglish.com/blog/anti-patterns-software-blogging/","source":"Hacker News","score":223,"comments_count":125,"comments_url":"https://news.ycombinator.com/item?id=49992257","published_at":"2026-10-07T13:08:26","author":"ilreb","text":null,"summary":"文章总结了软件博客写作中的常见反模式，如过度自我推销、缺乏深度等，并给出改进建议。对技术写作者提升内容质量有实用参考价值。"},{"id":"hn-49996259","title":"Docker Agent","url":"https://github.com/docker/docker-agent","source":"Hacker News","score":198,"comments_count":88,"comments_url":"https://news.ycombinator.com/item?id=49996259","published_at":"2026-10-07T17:48:38","author":"saikatsg","text":null,"summary":"Docker Agent 是 Docker 官方在 GitHub 上发布的新项目，可能为容器化环境带来更智能的自动化能力，值得关注其对 DevOps 工作流的潜在影响。"},{"id":"hn-49997718","title":"The Mathocalypse","url":"https://scottaaronson.blog/?p=10169","source":"Hacker News","score":190,"comments_count":227,"comments_url":"https://news.ycombinator.com/item?id=49997718","published_at":"2026-10-07T19:33:40","author":"6bitquant","text":null,"summary":"斯科特·阿伦森在博客中探讨了“数学末日”（Mathocalypse）的概念，可能涉及数学基础或 AI 对数学的冲击，适合对理论计算机科学和数学哲学感兴趣的读者。"},{"id":"hn-49986862","title":"ESP32-C3 Adblock","url":"https://github.com/M-Abozaid/esp32-c3-adblock","source":"Hacker News","score":182,"comments_count":77,"comments_url":"https://news.ycombinator.com/item?id=49986862","published_at":"2026-10-07T01:39:21","author":"jayhoon","text":null,"summary":"该项目展示了如何利用廉价的 ESP32-C3 微控制器实现网络广告拦截，为 DIY 网络过滤提供了低成本、开源的硬件方案。"},{"id":"hn-49950865","title":"The cost of lies: A Mineserver story","url":"https://www.jeremyreimer.com/rockets-item.lsp?f=true&p=272","source":"Hacker News","score":178,"comments_count":83,"comments_url":"https://news.ycombinator.com/item?id=49950865","published_at":"2026-10-04T05:17:12","author":"luu","text":null,"summary":"一篇关于 Mineserver 项目的回顾文章，讲述了谎言与欺骗的代价，可能涉及开源社区或游戏开发中的信任问题，具有警示意义。"},{"id":"hn-49992125","title":"House with 15m underground tunnels for sale for 300k","url":"https://www.readingchronicle.co.uk/news/26612080.house-15m-underground-tunnels-sale-300k/","source":"Hacker News","score":177,"comments_count":165,"comments_url":"https://news.ycombinator.com/item?id=49992125","published_at":"2026-10-07T12:57:10","author":"librasteve","text":null,"summary":"英国一栋带有 15 米地下隧道的房屋以 30 万英镑出售，这条新闻因其奇特的地下结构而引人注目，可能吸引建筑或房产爱好者的兴趣。"},{"id":"hn-49974173","title":"Wood Tape (2004)","url":"http://gamesbyemail.com/WoodTape/Default.htm","source":"Hacker News","score":173,"comments_count":23,"comments_url":"https://news.ycombinator.com/item?id=49974173","published_at":"2026-10-06T04:25:41","author":"NaOH","text":null,"summary":"Wood Tape 是一个 2004 年的老项目，可能是一种基于木材的存储介质或艺术装置，展示了早期创意技术实验的趣味性。"},{"id":"hn-49991243","title":"God of War on PSP, recompiled to WebAssembly and running in the browser","url":"https://github.com/snuri00/psp-web-recomp","source":"Hacker News","score":172,"comments_count":94,"comments_url":"https://news.ycombinator.com/item?id=49991243","published_at":"2026-10-07T11:27:27","author":"sn001","text":null,"summary":"开发者将 PSP 游戏《战神》重编译为 WebAssembly 并在浏览器中运行，展示了现代 Web 技术对经典游戏的重现能力，对游戏保存和 Web 开发有启发。"},{"id":"hn-49994122","title":"Across the Globe, People Increasingly Say Social Media Is Harming Democracy","url":"https://www.pewresearch.org/global/2026/10/01/across-the-globe-people-increasingly-say-social-media-is-harming-democracy/","source":"Hacker News","score":147,"comments_count":108,"comments_url":"https://news.ycombinator.com/item?id=49994122","published_at":"2026-10-07T15:23:29","author":"karakoram","text":null,"summary":"皮尤研究中心调查显示，全球越来越多的人认为社交媒体正在损害民主，这一趋势值得关注，因为它反映了公众对科技平台社会影响的担忧。"},{"id":"hn-49978333","title":"What is Codemode","url":"https://lucumr.pocoo.org/2026/10/6/codemode/","source":"Hacker News","score":146,"comments_count":76,"comments_url":"https://news.ycombinator.com/item?id=49978333","published_at":"2026-10-06T13:41:03","author":"Tomte","text":null,"summary":"文章探讨了“Codemode”的概念，可能涉及编程模式或开发范式的转变，对于理解未来编程趋势具有参考价值。"},{"id":"hn-49992057","title":"Show HN: A walkable 3D art history museum built from Wikipedia","url":"https://artmuseum.artfrompixels.com/","source":"Hacker News","score":145,"comments_count":61,"comments_url":"https://news.ycombinator.com/item?id=49992057","published_at":"2026-10-07T12:51:08","author":"jasontr","text":"From Li Cheng to Banksy","summary":"一个基于维基百科构建的可步行 3D 艺术史博物馆，让用户以沉浸式方式探索从李成到班克斯的艺术作品，展示了 Web 3D 与开放数据的创新结合。"},{"id":"hn-49991823","title":"Google Playground: Create and play custom games","url":"https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/","source":"Hacker News","score":127,"comments_count":207,"comments_url":"https://news.ycombinator.com/item?id=49991823","published_at":"2026-10-07T12:28:36","author":"acossta","text":"<a href=\"https:&#x2F;&#x2F;labs.google&#x2F;playground\" rel=\"nofollow\">https:&#x2F;&#x2F;labs.google&#x2F;playground</a>","summary":"谷歌推出实验性游戏平台Google Playground，允许用户创建并游玩自定义游戏。这标志着谷歌在AI驱动创意工具和游戏领域的新探索，值得关注其产品形态和生态影响。"},{"id":"hn-49980626","title":"How machines learned precision","url":"https://glinscott.github.io/how-machines-learned-precision/","source":"Hacker News","score":122,"comments_count":57,"comments_url":"https://news.ycombinator.com/item?id=49980626","published_at":"2026-10-06T16:14:42","author":"glinscott","text":null,"summary":"文章探讨机器如何学会精确操作，梳理了精密控制技术的发展脉络。对理解机器人、自动化及AI在物理世界中的应用演进具有参考价值。"},{"id":"hn-49987858","title":"The art of defusing a second world war bomb","url":"https://www.theguardian.com/news/ng-interactive/2026/oct/06/it-could-knock-a-whole-street-down-the-art-of-defusing-a-second-world-war-bomb","source":"Hacker News","score":119,"comments_count":94,"comments_url":"https://news.ycombinator.com/item?id=49987858","published_at":"2026-10-07T03:43:14","author":"sandebert","text":null,"summary":"这篇卫报互动报道讲述拆解二战遗留炸弹的技艺与风险。以沉浸式叙事呈现排爆专家的危险工作，兼具新闻价值与技术人文视角。"},{"id":"hn-49997073","title":"Push ifs up and fors down: The idiom, its algebra, and its limits","url":"https://debasishg.github.io/blog/push-ifs-up-fors-down/","source":"Hacker News","score":117,"comments_count":57,"comments_url":"https://news.ycombinator.com/item?id=49997073","published_at":"2026-10-07T18:43:18","author":"speckx","text":null,"summary":"文章分析编程中'将if上提、for下移'这一惯用法的代数原理及其适用边界。对追求代码简洁与正确性的开发者有实践指导意义。"},{"id":"hn-49949680","title":"Rust's derive often implies inline","url":"https://yossarian.net/til/post/rust-s-derive-often-implies-inline/","source":"Hacker News","score":112,"comments_count":30,"comments_url":"https://news.ycombinator.com/item?id=49949680","published_at":"2026-10-04T01:27:02","author":"woodruffw","text":null,"summary":"这篇短文指出Rust的derive宏往往隐含inline优化，揭示了编译器行为与性能调优的细节。对Rust开发者理解宏展开和优化决策有帮助。"}],"locale":"zh"}],"$Ld"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
-c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-80a729f694c5","title":"That Time I Worked With a Laptop Thief (2025)","url":"https://blog.pipetogrep.org/2025/07/27/that-time-i-worked-with-a-laptop-thief/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-06T20:16:33","author":"blog.pipetogrep.org via jeanthomas","text":"<p><a href=\"https://lobste.rs/s/0slgpl/time_i_worked_with_laptop_thief_2025\">Comments</a></p>","summary":"作者回忆了2025年与一名笔记本电脑窃贼共事的离奇经历，以叙事方式探讨了信任、道德与技术职场文化。故事引人入胜，引发对人性与安全边界的思考。"},{"id":"rss-400ff7b4c014","title":"Brut, the Brutal Router for Unix Tools","url":"https://brut.sh","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-06T17:17:23","author":"brut.sh by sstephenson","text":"<p><a href=\"https://lobste.rs/s/dwbksa/brut_brutal_router_for_unix_tools\">Comments</a></p>","summary":"Brut是一个面向Unix工具的极简路由器，强调直接、高效和可组合性。对于追求轻量级网络方案和Unix哲学实践者来说，这是一个值得关注的新工具。"},{"id":"rss-7e49184cdd0f","title":"A sustainable web career, for when all this blows over","url":"https://dbushell.com/2026/10/07/sustainable-web-career/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-06T18:29:11","author":"dbushell.com via nrvous","text":"<p><a href=\"https://lobste.rs/s/jxhi2i/sustainable_web_career_for_when_all_this\">Comments</a></p>","summary":"文章探讨了在技术热潮退去后，如何构建可持续的Web职业生涯，强调长期技能积累与适应变化。对于担忧行业波动的开发者而言，提供了务实的职业规划视角。"},{"id":"rss-6aee3134c5db","title":"Email Self Hosters - what are you using?","url":"https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-06T08:09:53","author":"by vetch","text":"<p>At the moment I self host using <a href=\"https://maddy.email\" rel=\"ugc\">maddy</a> for a bunch of domains that need a mailbox or catch all. There are some minor issues with it - some are me, some are who knows. The biggest bug bear is that the native email client on iOS takes an age to connect and download messages which causes some issues with OTP emails.</p>\n<p>So for those out there that do host their own email - what are you running, what would you change?</p>","summary":"这是一个关于自建邮件服务器的社区讨论帖，用户分享使用maddy等工具的经验与痛点。对于希望摆脱大厂邮件服务、重视隐私的开发者，这些实战经验极具参考价值。"},{"id":"rss-3127b0dc6ec1","title":"Janet on x32: 32-bit Pointers, 64-bit Speed, 25% Less RAM","url":"https://alexalejandre.com/programming/lisp/janet-for-the-x32-abi/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-06T22:26:46","author":"alexalejandre.com by veqq","text":"<p><a href=\"https://lobste.rs/s/am1cuw/janet_on_x32_32_bit_pointers_64_bit_speed_25\">Comments</a></p>","summary":"文章介绍了将Janet语言移植到x32 ABI的实践，实现32位指针、64位性能和25%内存节省。对于关注编程语言实现和性能优化的开发者，这是一次有趣的底层探索。"}],"locale":"zh"}]
-f:null
+a:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-7d2905972319","title":"Anti-Patterns in Software Blogging","url":"https://refactoringenglish.com/blog/anti-patterns-software-blogging/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-07T13:09:33","author":"refactoringenglish.com by mtlynch","text":"<p><a href=\"https://lobste.rs/s/rwdufq/anti_patterns_software_blogging\">Comments</a></p>","summary":"文章总结软件技术博客写作中的常见反模式，帮助开发者提升技术写作质量。对希望扩大影响力的技术博主具有实用参考价值。"},{"id":"rss-ddaa5df86444","title":"Software developers are not okay","url":"https://www.baldurbjarnason.com/2026/05-software-developers-are-not-okay/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-07T19:35:08","author":"baldurbjarnason.com via aloys","text":"<p><a href=\"https://lobste.rs/s/0gvyif/software_developers_are_not_okay\">Comments</a></p>","summary":"文章讨论软件开发者的心理健康与行业压力问题，指出从业者普遍处于不佳状态。引发对行业文化、倦怠与可持续职业发展的关注。"},{"id":"rss-0f01aa1dd005","title":"Margaret Hamilton, computing pioneer who led software development for the Apollo program, dies at 90","url":"https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-07T21:38:09","author":"news.mit.edu via lorddimwit","text":"<p><a href=\"https://lobste.rs/s/9qtgrm/margaret_hamilton_computing_pioneer_who\">Comments</a></p>","summary":"阿波罗计划软件负责人、计算先驱Margaret Hamilton逝世，享年90岁。她定义了软件工程术语并拯救了阿波罗11号登月，是软件工程史上的标志性人物。"},{"id":"rss-0a14a3c77ad4","title":"C for Rust Programmers","url":"https://bd103.dev/blog/2026-10-07-c-for-rust-programmers/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-07T14:30:05","author":"bd103.dev by BD103","text":"<p><a href=\"https://lobste.rs/s/lgdxtw/c_for_rust_programmers\">Comments</a></p>","summary":"面向Rust程序员介绍C语言的核心概念与差异，帮助Rust开发者跨越语言边界。对需要FFI或系统编程的Rust工程师尤其实用。"},{"id":"rss-965e55c27625","title":"Calling a function in C without naming it","url":"https://wiro.world/posts/calling-c-func-without-naming-it/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-07T18:15:02","author":"wiro.world by mrnossiom","text":"<p><a href=\"https://lobste.rs/s/ucwapn/calling_function_c_without_naming_it\">Comments</a></p>","summary":"文章展示如何在C语言中不通过函数名调用函数，涉及底层链接与调用约定技巧。对理解C编译链接机制和高级元编程有启发意义。"}],"locale":"zh"}]
+10:null
