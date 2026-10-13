@@ -3,222 +3,212 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-e:"$Sreact.suspense"
-5:T2a78,# 今日 Technology 热门文章分析总结
+e:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+5:T305e,# 今日 Technology 热门文章分析总结
 
-## 一、编程语言与内存安全
+## 一、隐私与安全：身份验证与追踪的博弈
 
-### 1. Valen's Memory Safety: A New Kind of Borrow Checking
-**说明**：Valen 语言提出了一种新型借用检查机制（group borrowing），试图在内存安全领域探索 Rust 之外的可能性，对编程语言设计者极具参考价值。
-- 原文：https://verdagon.dev/blog/valen-group-borrowing
-- 讨论（HN）：https://news.ycombinator.com/item?id=50042362
-- 讨论（Lobsters）：https://lobste.rs/s/gmnqhj/valen_s_memory_safety_new_kind_borrow
+这一组文章聚焦于现代网络中的身份验证与用户追踪问题，讨论热度极高。
 
-### 2. The tilde in your PATH may not be your HOME
-**说明**：一个容易被忽视的 shell 陷阱——PATH 中的 `~` 并不一定展开为你的 HOME，对日常写脚本的开发者是很好的警示。
-- 原文：https://disconnect3d.pl//2026/10/02/dont-put-tilde-in-your-path/
-- 讨论：https://news.ycombinator.com/item?id=50042425
-
-### 3. D-Bus Hell
-**说明**：Lobsters 上关于 Linux 桌面 D-Bus 复杂性的吐槽文，反映了 Linux 桌面生态长期存在的痛点。
-- 原文：https://dbushell.com/2026/10/11/d-bus-hell/
-- 讨论：https://lobste.rs/s/qgybwb/d_bus_hell
-
-### 4. What's Wrong with GitHub
-**说明**：GNU 官方对 GitHub 的批评文章，涉及自由软件、代码托管集中化等议题，Lobsters 社区再次讨论。
-- 原文：https://www.gnu.org/philosophy/whats-wrong-with-github.html
-- 讨论：https://lobste.rs/s/u9ue6c/what_s_wrong_with_github
-
----
-
-## 二、AI 时代下的思考与工具
-
-### 5. I'm sorry, but you still have to think
-**说明**：在 AI 辅助编程盛行的当下，作者强调"你仍然必须思考"，是对"AI 替代思考"论调的有力反思。此文同时登上 HN 和 Lobsters。
-- 原文：https://itsallaboutthebit.com/i-am-sorry-but-you-still-have-to-think/
-- 讨论（HN）：https://news.ycombinator.com/item?id=50043689
-- 讨论（Lobsters）：https://lobste.rs/s/k2natg/i_m_sorry_you_still_have_think
-
-### 6. Build your own decision model
-**说明**：教你从零构建决策模型，是理解机器学习/决策系统底层原理的实践性文章。
-- 原文：https://nishtahir.com/build-your-own-decision-model/
-- 讨论：https://news.ycombinator.com/item?id=50037949
-
-### 7. Terence Tao: Math 2.0 [pdf]
-**说明**：数学大师陶哲轩关于"数学 2.0"的演讲幻灯片，探讨 AI 与形式化工具如何重塑数学研究，评论区讨论极为热烈（391 条）。
-- 原文：https://teorth.github.io/tao-web/slides/math-2-0-caltech-2026.pdf
-- 讨论：https://news.ycombinator.com/item?id=50043026
-
-### 8. Show HN: BetterWispr – Free, open-source dictation for Mac
-**说明**：开源的 Mac 语音听写工具，是 Show HN 中少见的实用开源项目。
-- 原文：https://betterwispr.com/
-- 讨论：https://news.ycombinator.com/item?id=50042333
-
----
-
-## 三、安全、隐私与平台治理
-
-### 9. Passkeys are a trap
-**说明**：对 passkeys（通行密钥）推广提出尖锐质疑，认为其可能将用户锁定在少数平台生态中，引发 204 条讨论。
+**1. Passkeys are a trap（通行密钥是个陷阱）**
+- 说明：作者认为 Passkeys 看似解决了密码问题，实则将用户锁定在特定平台生态中，带来新的依赖与风险。HN 上引发 543 条激烈讨论，值得关注。
 - 原文：https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them
 - 讨论：https://news.ycombinator.com/item?id=50048312
 
-### 10. Fingerprints are the new cookies
-**说明**：浏览器指纹正在取代 cookie 成为追踪主力，对隐私保护者是重要提醒。
+**2. Fingerprints are the new cookies（浏览器指纹是新的 Cookie）**
+- 说明：探讨指纹追踪如何取代 Cookie 成为主流追踪手段，以及这对隐私的深远影响。
 - 原文：https://royfish.dev/fingerprints-are-the-new-cookies
 - 讨论：https://news.ycombinator.com/item?id=50048642
 
-### 11. NYC's "Click to Cancel" rule is now in effect
-**说明**：纽约市"一键取消"订阅规则正式生效，是消费者保护领域的重要立法进展。
+**3. NYC's "Click to Cancel" rule is now in effect（纽约"点击取消"规则生效）**
+- 说明：消费者保护新规，要求订阅服务必须提供与订阅同样便捷的取消方式，对 SaaS 商业模式有直接影响。
 - 原文：https://www.nyc.gov/main/click-to-cancel
 - 讨论：https://news.ycombinator.com/item?id=50045946
 
-### 12. A Remote Employee Refused 160 Webcam Photos a Day. Her Employer Fired Her
-**说明**：远程办公监控引发的劳动争议，触及员工隐私与雇主管理权的边界。
-- 原文：https://www.inc.com/chloe-rosenberg/a-remote-employee-refused-160-webcam-photos-a-day-her-employer-fired-her/91415963
-- 讨论：https://news.ycombinator.com/item?id=50047825
+**4. Feds got warrants to use fake cell towers to hunt down Don Lemon's producer（联邦探员获准使用伪基站追踪记者制片人）**
+- 说明：涉及政府监控权力与新闻自由的敏感话题，引发 101 条讨论。
+- 原文：https://www.wired.com/story/feds-got-warrants-to-use-fake-cell-towers-to-hunt-down-don-lemons-producer/
+- 讨论：https://news.ycombinator.com/item?id=50059446
 
-### 13. Nitter: Update Oct 10th seeking funding and legal help
-**说明**：Nitter（Twitter/X 的隐私友好前端）因法律与资金压力求助，关乎开放网络与第三方客户端的存续。
-- 原文：https://nitter.net
-- 讨论：https://news.ycombinator.com/item?id=50041682
+**5. I Found a $90k Remote Code Execution Vulnerability in Google（我在 Google 发现价值 9 万美元的 RCE 漏洞）**
+- 说明：详细的安全漏洞挖掘实录，涉及 Flask session pickle 反序列化漏洞，对安全研究者极有价值。
+- 原文：https://simonkoeck.com/writeups/google-devsite-flask-session-pickle-rce
+- 讨论：https://news.ycombinator.com/item?id=50052638
 
----
+**6. (Post-Quantum) Cryptographic Right Answers（后量子密码学的正确答案）**
+- 说明：Filippo Valsorda 撰写的密码学实践指南，聚焦后量子时代的正确选型。
+- 原文：https://words.filippo.io/right-answers/
+- 讨论：https://lobste.rs/s/sozl9e/post_quantum_cryptographic_right
 
-## 四、基础设施与云服务事故
-
-### 14. 3rd Yandex Cloud Data Center Was Hit
-**说明**：Yandex Cloud 第三个数据中心遭遇事故，评论数高达 684 条，是今日讨论最激烈的事件，涉及地缘政治与云可靠性。
-- 原文：https://status.yandex.cloud/en/incidents/2136
-- 讨论：https://news.ycombinator.com/item?id=50040547
-
-### 15. Google is illegally cutting forest to build data centers
-**说明**：卫报报道 Google 在芬兰为建数据中心涉嫌非法砍伐森林，AI 时代数据中心扩张的环境代价。
-- 原文：https://www.theguardian.com/technology/2026/oct/06/google-datacentres-finland-temporary-halt-environmental-impact-assessment
-- 讨论：https://news.ycombinator.com/item?id=50048638
-
-### 16. The RAM shortage is bringing back DDR4
-**说明**：内存短缺导致 DDR4 回归，反映供应链紧张对硬件生态的连锁影响。
-- 原文：https://www.theverge.com/games/1009140/ram-shortage-intel-amd-ddr4-comeback
-- 讨论：https://news.ycombinator.com/item?id=50028647
+**7. Finding a $90,000 Remote Code Execution Vulnerability in Google（同第 5 篇，Lobsters 版本）**
+- 说明：同一漏洞文章的 Lobsters 讨论版本。
+- 原文：https://simonkoeck.com/writeups/google-devsite-flask-session-pickle-rce
+- 讨论：https://lobste.rs/s/mldt0o/finding_90_000_remote_code_execution
 
 ---
 
-## 五、开源操作系统与网络协议
+## 二、AI 与开发工具：能力扩张与争议并存
 
-### 17. LineageOS 24
-**说明**：知名开源 Android 发行版 LineageOS 发布第 24 版更新日志，是移动端开源生态的重要进展。
-- 原文：https://lineageos.org/Changelog-32/
-- 讨论：https://news.ycombinator.com/item?id=50040276
+**8. Muse Wonder**
+- 说明：Meta AI 研究博客发布的新项目，574 分位列前五，代表前沿 AI 研究动态。
+- 原文：https://research.meta.ai/blog/muse-wonder
+- 讨论：https://news.ycombinator.com/item?id=50059115
 
-### 18. IRCv3
-**说明**：IRCv3 协议主页，307 条评论显示老牌即时通讯协议在社区中依然充满活力。
-- 原文：https://ircv3.net/
-- 讨论：https://news.ycombinator.com/item?id=50041540
+**9. GLM-Legal**
+- 说明：智谱 AI 推出的法律领域大模型，垂直行业 AI 应用的典型案例。
+- 原文：https://z.ai/blog/glm-legal
+- 讨论：https://news.ycombinator.com/item?id=50058507
+
+**10. Codex CLI installs a persistent, self-updating background daemon by default（Codex CLI 默认安装持久化自更新后台守护进程）**
+- 说明：OpenAI Codex CLI 的争议行为，引发关于工具默认权限与用户知情权的讨论。
+- 原文：https://github.com/openai/codex/issues/48195
+- 讨论：https://news.ycombinator.com/item?id=50060694
+
+**11. 'AI' is Not a Tool（"AI"不是工具）**
+- 说明：Rich Hickey（Clojure 创始人）对 AI 本质的哲学思考，观点犀利，值得一读。
+- 原文：https://www.linkedin.com/pulse/ai-tool-rich-hickey-kjl8e
+- 讨论：https://lobste.rs/s/ikk8ie/ai_is_not_tool
+
+**12. Thinking will become a hobby（思考将成为一种爱好）**
+- 说明：关于 AI 时代人类思维能力退化的反思性文章，348 条评论显示争议性极强。
+- 原文：https://www.spinellis.gr/blog/20261008/?li261008
+- 讨论：https://news.ycombinator.com/item?id=50059204
+
+**13. Linus Torvalds Working On A Hefty Linux Kernel Improvement With Claude Code（Linus 用 Claude Code 做内核改进）**
+- 说明：Linus 使用 AI 编程工具改进 Linux 内核，标志着 AI 辅助开发进入核心基础设施领域。
+- 原文：https://www.phoronix.com/news/Linus-Torvalds-Claude-Code
+- 讨论：https://lobste.rs/s/iq5xtw/linus_torvalds_working_on_hefty_linux
+
+**14. OpenFatigue™ – Open is the new closed（开源疲劳：开放成为新的封闭）**
+- 说明：讽刺性网站，探讨"开源"标签被滥用、开源疲劳蔓延的现象。
+- 原文：https://openfatigue.ai/
+- 讨论：https://news.ycombinator.com/item?id=50061278
 
 ---
 
-## 六、游戏与创意项目
+## 三、编程语言与软件工程实践
 
-### 19. 2D Vehicles
-**说明**：今日 HN 榜首（608 分），关于 2D 载具设计的创意文章，视觉与交互设计爱好者不容错过。
-- 原文：https://patkerr.co.uk/2d-vehicles/
-- 讨论：https://news.ycombinator.com/item?id=49991852
+**15. A Modern Web App in C（用 C 写现代 Web 应用）**
+- 说明：挑战常规，用 C 语言构建现代 Web 应用，对底层原理感兴趣的开发者必读。
+- 原文：https://prophitt.me/writing/a-modern-web-app-in-c
+- 讨论：https://news.ycombinator.com/item?id=50058528
 
-### 20. The Lightbulb Computer
-**说明**：HN 第二热门（581 分），"灯泡计算机"这一奇思妙想的硬件项目，充满极客浪漫。
-- 原文：https://lightbulbcomputer.com/
-- 讨论：https://news.ycombinator.com/item?id=50029487
+**16. Type-safe HTML templating in Zig（Zig 中的类型安全 HTML 模板）**
+- 说明：Zig 生态中模板引擎的类型安全实践，展示 Zig 在 Web 领域的潜力。
+- 原文：https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html
+- 讨论：https://news.ycombinator.com/item?id=50051573
 
-### 21. A city-building game in which the city would prefer you didn't
-**说明**：一款"城市不希望你建它"的反套路城建游戏，创意独特，评论 189 条。
-- 原文：https://housing.over.pizza/
-- 讨论：https://news.ycombinator.com/item?id=50036864
+**17. Calculus with Julia（用 Julia 学微积分）**
+- 说明：交互式微积分教材，结合 Julia 语言的计算能力，适合教学与自学。
+- 原文：https://jverzani.github.io/CalculusWithJuliaNotes.jl/
+- 讨论：https://news.ycombinator.com/item?id=50034206
 
-### 22. Total Annihilation, rebuilt for modern computers
-**说明**：经典 RTS《横扫千军》的现代重制版，老玩家福音。
+**18. Living in the Weimar era of Ruby（生活在 Ruby 的魏玛时代）**
+- 说明：对 Ruby 语言生态现状的隐喻性反思，探讨其衰落与转型。
+- 原文：https://blog.julik.nl/2026/10/the-weimar-of-ruby
+- 讨论：https://lobste.rs/s/lfen2h/living_weimar_era_ruby
+
+**19. Doory – Open-Source Canva（Doory：开源版 Canva）**
+- 说明：开源设计工具，对标 Canva，适合关注开源替代方案的开发者。
+- 原文：https://github.com/shaongitbd/doory
+- 讨论：https://news.ycombinator.com/item?id=50049872
+
+**20. Incident with Actions, Pull Requests and Issues（GitHub Actions/PR/Issues 故障事件）**
+- 说明：GitHub 平台故障复盘，对依赖 CI/CD 的团队有参考价值。
+- 原文：https://www.githubstatus.com/incidents/93njd414rpbx
+- 讨论：https://news.ycombinator.com/item?id=50055375
+
+---
+
+## 四、硬件、逆向工程与复古计算
+
+**21. Total Annihilation, rebuilt for modern computers（《横扫千军》现代重制版）**
+- 说明：经典 RTS 游戏的重制项目，671 分显示怀旧与技术热情。
 - 原文：https://nanolathe.gg
 - 讨论：https://news.ycombinator.com/item?id=50045984
 
-### 23. So, You'd Like To Sell Your Print Issues Of The Onion?
-**说明**：The Onion 的实体刊物收藏指南，轻松有趣的文化类内容。
-- 原文：https://theonion.com/archivehunt/
-- 讨论：https://news.ycombinator.com/item?id=50047055
+**22. Turn a WiFi 7 Router into a 320Msps Software Defined Radio Receiver（把 WiFi 7 路由器改造成 320Msps SDR 接收机）**
+- 说明：硬件黑客项目，展示消费级路由器的隐藏潜力。
+- 原文：https://github.com/h0m3us3r/w1700k-sdr
+- 讨论：https://news.ycombinator.com/item?id=50055593
+
+**23. Show HN: PS2 games statically recompiled to WebAssembly（PS2 游戏静态重编译为 WebAssembly）**
+- 说明：将 PS2 游戏静态重编译到 WASM，浏览器运行复古游戏的工程壮举。
+- 原文：https://github.com/snuri00/ps2-web-recomp
+- 讨论：https://news.ycombinator.com/item?id=50052251
+
+**24. The Making Of Super Mario 64 – full Giles Goddard interview (2001)（《超级马里奥 64》制作幕后：Giles Goddard 完整访谈）**
+- 说明：经典游戏开发史的一手资料，对游戏开发者与复古爱好者有珍贵价值。
+- 原文：https://pixelatron.com/blog/the-making-of-super-mario-64-full-giles-goddard-interview-ngc/
+- 讨论：https://news.ycombinator.com/item?id=50036287
+
+**25. Citroen revives the 2CV for an electric age（雪铁龙复活 2CV 进入电动时代）**
+- 说明：经典车型电动化重生，科技与汽车文化的交汇。
+- 原文：https://www.bbc.com/news/articles/c620r33plgppo
+- 讨论：https://news.ycombinator.com/item?id=50055220
+
+**26. Hackers activate automatic defrosting in supermarket fridges across Europe（黑客激活欧洲超市冰箱自动除霜）**
+- 说明：针对物联网设备的网络攻击，导致超市冷链系统瘫痪，711 条评论显示对 IoT 安全的广泛担忧。
+- 原文：https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident
+- 讨论：https://news.ycombinator.com/item?id=50055304
+- 相关报道：https://www.reuters.com/business/retail-consumer/french-supermarket-chain-intermarche-hit-by-cyberattack-150-stories-targeted-2026-10-12/ 、https://www.bbc.com/news/articles/crq5nzxv9q4yo
 
 ---
 
-## 七、技术史与逆向工程
+## 五、科学与人文交叉
 
-### 24. How I reverse engineered a commercial spatial audio effect
-**说明**：逆向工程商业空间音频效果的实战记录，对音频开发者极具技术价值。
-- 原文：http://epestr.com/blog/reverse-engineering-a-commercial-spatial-audio-effect/
-- 讨论：https://news.ycombinator.com/item?id=50044272
+**27. Terence Tao: Math 2.0 [pdf]（陶哲轩：数学 2.0）**
+- 说明：陶哲轩关于 AI 时代数学研究范式转变的演讲幻灯片，528 条评论显示极高关注度。
+- 原文：https://teorth.github.io/tao-web/slides/math-2-0-caltech-2026.pdf
+- 讨论：https://news.ycombinator.com/item?id=50043026
 
-### 25. Whatever became of holography? (2011)
-**说明**：回顾全息技术为何未能普及，是理解技术炒作与现实差距的经典文章。
-- 原文：https://www.americanscientist.org/article/whatever-became-of-holography
-- 讨论：https://news.ycombinator.com/item?id=50049411
+**28. The baffling intelligence of a single cell (2024)（单细胞令人困惑的智能）**
+- 说明：探讨大肠杆菌趋化性背后的"智能"，生物学与信息科学的交叉思考。
+- 原文：https://jsomers.net/e-coli-chemotaxis/
+- 讨论：https://news.ycombinator.com/item?id=50041866
 
-### 26. Cartographers of North Korea (2019)
-**说明**：关于朝鲜地图绘制者的故事，兼具技术与人文色彩。
-- 原文：https://cartographers-nk.wonyoung.so/
-- 讨论：https://news.ycombinator.com/item?id=50047091
+**29. Secret of Orange Cats Revealed After 60-Year Search（橙色猫的秘密在 60 年探索后揭晓）**
+- 说明：遗传学研究的趣味突破，轻松话题中蕴含科学严谨性。
+- 原文：https://www.sciencealert.com/secret-of-orange-cats-finally-revealed-after-60-year-search
+- 讨论：https://news.ycombinator.com/item?id=50037711
 
----
-
-## 八、Web 与个人写作
-
-### 27. I guess I'm using WebP now?
-**说明**：关于 WebP 格式取舍的个人思考，前端开发者常见的现实问题。
-- 原文：https://anderegg.ca/2026/10/08/i-guess-im-using-webp-now
-- 讨论：https://news.ycombinator.com/item?id=50021989
-
-### 28. I'm still around.. I'm just not writing here
-**说明**：知名博主 Rachel by the Bay 的近况更新，反映独立技术写作的现状。
-- 原文：https://rachelbythebay.com/w/2026/10/08/idle/
-- 讨论：https://lobste.rs/s/4ehrkn/i_m_still_around_i_m_just_not_writing_here
+**30. RJ Mitte has died（RJ Mitte 去世）**
+- 说明：《绝命毒师》演员 RJ Mitte 去世，科技社区对文化人物的悼念。
+- 原文：https://news.sky.com/story/breaking-bad-star-rj-mitte-dies-aged-34-13598332
+- 讨论：https://news.ycombinator.com/item?id=50063831
 
 ---
 
-## 九、其他
+## 今日最值得阅读的 5 篇文章推荐
 
-### 29. 2D Vehicles（HN 榜首，已归入游戏创意类）
-### 30. Valen（已归入编程语言类）
+**1. Passkeys are a trap**
+- 理由：1036 分、543 条评论，今日最高热度。Passkeys 正被各大平台力推，这篇文章提出了反直觉的批判视角，值得每个关注身份验证的人阅读。
+- 链接：https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them
 
-> 注：第 26 条与第 5 条为同一文章（跨 HN 与 Lobsters），第 30 条与第 1 条为同一文章（跨 HN 与 Lobsters），已在对应分组中合并说明。
+**2. Terence Tao: Math 2.0**
+- 理由：陶哲轩亲自阐述 AI 如何改变数学研究范式，528 条评论显示其思想影响力。对理解 AI 与人类创造力关系有深刻启发。
+- 链接：https://teorth.github.io/tao-web/slides/math-2-0-caltech-2026.pdf
 
----
+**3. I Found a $90k Remote Code Execution Vulnerability in Google**
+- 理由：完整的安全漏洞挖掘实录，技术细节丰富，对安全研究者和 Web 开发者都是极佳学习材料。
+- 链接：https://simonkoeck.com/writeups/google-devsite-flask-session-pickle-rce
 
-## 🏆 今日最值得阅读的 5 篇文章推荐
+**4. Hackers activate automatic defrosting in supermarket fridges across Europe**
+- 理由：711 条评论，今日讨论最热烈的话题之一。IoT 安全从理论走向现实破坏，警示意义极强。
+- 链接：https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident
 
-### 1. Terence Tao: Math 2.0
-**理由**：陶哲轩亲自阐述 AI 与形式化方法如何改变数学研究范式，是理解"AI for Science"最前沿视角的必读材料，评论区 391 条讨论质量极高。
-🔗 https://teorth.github.io/tao-web/slides/math-2-0-caltech-2026.pdf
-
-### 2. I'm sorry, but you still have to think
-**理由**：在 AI 编程助手泛滥的今天，这篇文章提醒开发者保持独立思考，同时在 HN 与 Lobsters 双双上榜，是今日最具思想性的文章。
-🔗 https://itsallaboutthebit.com/i-am-sorry-but-you-still-have-to-think/
-
-### 3. The Lightbulb Computer
-**理由**：HN 第二热门，一个用灯泡构建计算机的疯狂项目，完美体现了极客精神与硬件之美，读起来令人愉悦。
-🔗 https://lightbulbcomputer.com/
-
-### 4. Passkeys are a trap
-**理由**：在各大平台力推 passkeys 的当下，这篇文章提出了少见的批判性视角，对安全从业者和普通用户都值得一读。
-🔗 https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them
-
-### 5. Valen's Memory Safety: A New Kind of Borrow Checking
-**理由**：Rust 之外的内存安全新思路，对编程语言爱好者是难得的技术深度内容，跨 HN 与 Lobsters 均获关注。
-🔗 https://verdagon.dev/blog/valen-group-borrowing
+**5. A Modern Web App in C**
+- 理由：用 C 写现代 Web 应用是对主流技术栈的有趣挑战，适合想深入理解 Web 底层原理的开发者。
+- 链接：https://prophitt.me/writing/a-modern-web-app-in-c
 
 ---
 
-**总结**：今日技术圈呈现出"AI 反思"与"基础设施焦虑"两大主线——一方面是对 AI 时代人类思考价值的重新审视（陶哲轩、I'm sorry but you still have to think），另一方面是数据中心事故、内存短缺、云服务中断等基础设施层面的现实挑战。此外，安全隐私（passkeys、指纹追踪）与开源生态（LineageOS、Nitter、GNU vs GitHub）依然是社区长期关注的焦点。0:{"buildId":"BiutR6OkEMfOYSoCrFlXX","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-10-12","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":8},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-10-12"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-49991852","title":"2D Vehicles","url":"https://patkerr.co.uk/2d-vehicles/","source":"Hacker News","score":608,"comments_count":115,"comments_url":"https://news.ycombinator.com/item?id=49991852","published_at":"2026-10-07T12:30:40","author":"Michelangelo11","text":null,"summary":"介绍2D车辆渲染或模拟技术的项目，可能涉及图形编程与游戏开发，值得关注其实现思路与视觉效果。"},{"id":"hn-50029487","title":"The Lightbulb Computer","url":"https://lightbulbcomputer.com/","source":"Hacker News","score":581,"comments_count":95,"comments_url":"https://news.ycombinator.com/item?id=50029487","published_at":"2026-10-10T04:12:26","author":"oskarth","text":null,"summary":"一个名为“灯泡计算机”的创意项目，可能用灯泡构建计算设备，展示复古与硬核的工程趣味。"},{"id":"hn-50040547","title":"3rd Yandex Cloud Data Center Was Hit","url":"https://status.yandex.cloud/en/incidents/2136","source":"Hacker News","score":558,"comments_count":684,"comments_url":"https://news.ycombinator.com/item?id=50040547","published_at":"2026-10-11T07:34:45","author":"defly","text":null,"summary":"报道Yandex Cloud第三个数据中心遭遇故障或攻击，影响云服务稳定性，值得关注其后续影响与恢复情况。"},{"id":"hn-50036864","title":"A city-building game in which the city would prefer you didn't","url":"https://housing.over.pizza/","source":"Hacker News","score":530,"comments_count":189,"comments_url":"https://news.ycombinator.com/item?id=50036864","published_at":"2026-10-10T20:31:50","author":"JumpCrisscross","text":null,"summary":"一款反传统的城市建设游戏，城市本身似乎不欢迎玩家，以独特视角反思城市发展，值得体验其讽刺意味。"},{"id":"hn-50037949","title":"Build your own decision model","url":"https://nishtahir.com/build-your-own-decision-model/","source":"Hacker News","score":454,"comments_count":102,"comments_url":"https://news.ycombinator.com/item?id=50037949","published_at":"2026-10-10T22:50:10","author":"softwaredoug","text":null,"summary":"教程指导读者构建自己的决策模型，适合对决策科学或机器学习感兴趣的开发者学习实践。"},{"id":"hn-50041682","title":"Nitter: Update Oct 10th seeking funding and legal help","url":"https://nitter.net","source":"Hacker News","score":423,"comments_count":227,"comments_url":"https://news.ycombinator.com/item?id=50041682","published_at":"2026-10-11T10:37:55","author":"ForHackernews","text":null,"summary":"Nitter项目更新，寻求资金和法律援助以应对运营压力，关乎开源替代前端服务的存续。"},{"id":"hn-50040276","title":"LineageOS 24","url":"https://lineageos.org/Changelog-32/","source":"Hacker News","score":414,"comments_count":168,"comments_url":"https://news.ycombinator.com/item?id=50040276","published_at":"2026-10-11T06:18:59","author":"timschumi","text":null,"summary":"LineageOS 24发布，带来新功能和设备支持，是Android自定义ROM社区的重要更新。"},{"id":"hn-50045984","title":"Total Annihilation, rebuilt for modern computers","url":"https://nanolathe.gg","source":"Hacker News","score":407,"comments_count":176,"comments_url":"https://news.ycombinator.com/item?id=50045984","published_at":"2026-10-11T18:04:47","author":"jttnr","text":null,"summary":"经典RTS游戏《横扫千军》为现代电脑重建，让老玩家重温经典，也吸引新玩家体验。"},{"id":"hn-50045946","title":"NYC's \"Click to Cancel\" rule is now in effect","url":"https://www.nyc.gov/main/click-to-cancel","source":"Hacker News","score":386,"comments_count":191,"comments_url":"https://news.ycombinator.com/item?id=50045946","published_at":"2026-10-11T18:01:16","author":"gregsadetsky","text":null,"summary":"纽约市“点击取消”规则生效，要求订阅服务提供便捷取消方式，保护消费者权益，值得关注其执行效果。"},{"id":"hn-50041540","title":"IRCv3","url":"https://ircv3.net/","source":"Hacker News","score":365,"comments_count":307,"comments_url":"https://news.ycombinator.com/item?id=50041540","published_at":"2026-10-11T10:11:27","author":"basilikum","text":null,"summary":"IRCv3项目主页，介绍IRC协议现代化扩展，对即时通讯协议发展有兴趣的读者值得一看。"},{"id":"hn-50048312","title":"Passkeys are a trap","url":"https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them","source":"Hacker News","score":356,"comments_count":204,"comments_url":"https://news.ycombinator.com/item?id=50048312","published_at":"2026-10-11T21:59:48","author":"laurex","text":null,"summary":"文章认为 Passkeys 是一种技术陷阱，分析了其在实际使用中的隐患和局限性。在无密码认证日益普及的背景下，此文提供了值得关注的批判性视角。"},{"id":"hn-50043026","title":"Terence Tao: Math 2.0 [pdf]","url":"https://teorth.github.io/tao-web/slides/math-2-0-caltech-2026.pdf","source":"Hacker News","score":343,"comments_count":391,"comments_url":"https://news.ycombinator.com/item?id=50043026","published_at":"2026-10-11T13:16:45","author":"Anon84","text":null,"summary":"数学家陶哲轩在演讲中探讨了 AI 与数学研究结合的新范式，即“数学 2.0”。该演讲对理解 AI 如何变革基础科学研究具有重要参考价值。"},{"id":"hn-50043689","title":"I'm sorry, but you still have to think","url":"https://itsallaboutthebit.com/i-am-sorry-but-you-still-have-to-think/","source":"Hacker News","score":336,"comments_count":154,"comments_url":"https://news.ycombinator.com/item?id=50043689","published_at":"2026-10-11T14:29:07","author":"drogus","text":null,"summary":"文章强调即便在 AI 工具普及的时代，人类独立思考和批判性思维仍然不可替代。对于过度依赖自动化工具的开发者而言，这是一篇及时的反思。"},{"id":"hn-50047055","title":"So, You’d Like To Sell Your Print Issues Of The Onion?","url":"https://theonion.com/archivehunt/","source":"Hacker News","score":273,"comments_count":36,"comments_url":"https://news.ycombinator.com/item?id=50047055","published_at":"2026-10-11T19:43:32","author":"mooreds","text":null,"summary":"The Onion 发起了一项征集活动，寻找读者手中的早期印刷版报纸以进行数字化存档。这反映了纸质媒体在数字时代的归档与保存挑战。"},{"id":"hn-50028647","title":"The RAM shortage is bringing back DDR4","url":"https://www.theverge.com/games/1009140/ram-shortage-intel-amd-ddr4-comeback","source":"Hacker News","score":272,"comments_count":288,"comments_url":"https://news.ycombinator.com/item?id=50028647","published_at":"2026-10-10T01:37:08","author":"1potato","text":null,"summary":"由于内存供应短缺，DDR4 内存正在重新回归市场，Intel 和 AMD 可能重新支持这一旧标准。该趋势对 PC 装机成本和硬件生态有直接影响。"},{"id":"hn-50042425","title":"The tilde in your PATH may not be your HOME","url":"https://disconnect3d.pl//2026/10/02/dont-put-tilde-in-your-path/","source":"Hacker News","score":226,"comments_count":144,"comments_url":"https://news.ycombinator.com/item?id=50042425","published_at":"2026-10-11T12:13:13","author":"arusekk","text":null,"summary":"文章指出在 PATH 环境变量中使用波浪号（~）可能不会如预期展开为用户主目录，存在安全隐患。这是一个容易被忽视的 shell 配置陷阱，值得开发者警惕。"},{"id":"hn-50048638","title":"Google is illegaly cutting forest to build data centers","url":"https://www.theguardian.com/technology/2026/oct/06/google-datacentres-finland-temporary-halt-environmental-impact-assessment","source":"Hacker News","score":225,"comments_count":51,"comments_url":"https://news.ycombinator.com/item?id=50048638","published_at":"2026-10-11T22:33:30","author":"heyimada","text":null,"summary":"报道称 Google 在芬兰为建设数据中心而非法砍伐森林，并暂停了环境影响评估。该事件引发了对科技巨头在 AI 热潮下环境责任的关注。"},{"id":"hn-50047091","title":"Cartographers of North Korea (2019)","url":"https://cartographers-nk.wonyoung.so/","source":"Hacker News","score":205,"comments_count":38,"comments_url":"https://news.ycombinator.com/item?id=50047091","published_at":"2026-10-11T19:46:40","author":"edent","text":null,"summary":"该项目通过地图和视觉化方式展现了外界对朝鲜的认知与制图努力。对于地理信息、政治边界和封闭国家研究而言，这是一个独特的数字人文作品。"},{"id":"hn-50047825","title":"A Remote Employee Refused 160 Webcam Photos a Day. Her Employer Fired Her","url":"https://www.inc.com/chloe-rosenberg/a-remote-employee-refused-160-webcam-photos-a-day-her-employer-fired-her/91415963","source":"Hacker News","score":179,"comments_count":141,"comments_url":"https://news.ycombinator.com/item?id=50047825","published_at":"2026-10-11T21:07:20","author":"bhrlady","text":null,"summary":"一名远程员工因拒绝每天提交 160 张摄像头照片而被解雇，引发了关于远程监控与员工隐私的争议。该案例凸显了远程办公中雇主监控权的边界问题。"},{"id":"hn-50042333","title":"Show HN: BetterWispr – Free, open-source dictation for Mac","url":"https://betterwispr.com/","source":"Hacker News","score":168,"comments_count":95,"comments_url":"https://news.ycombinator.com/item?id=50042333","published_at":"2026-10-11T12:01:28","author":"kartik017","text":null,"summary":"BetterWispr 是一款面向 Mac 的免费开源听写工具，旨在提供语音转文字功能。对于寻求本地化、可定制听写方案的用户来说，这是一个值得尝试的替代品。"},{"id":"hn-50048642","title":"Fingerprints are the new cookies","url":"https://royfish.dev/fingerprints-are-the-new-cookies","source":"Hacker News","score":148,"comments_count":59,"comments_url":"https://news.ycombinator.com/item?id=50048642","published_at":"2026-10-11T22:33:39","author":"royfish","text":null,"summary":"文章探讨浏览器指纹识别正在取代Cookie成为追踪用户的新手段，值得关注因为它揭示了隐私保护面临的严峻挑战。"},{"id":"hn-50042362","title":"Valen's Memory Safety: A New Kind of Borrow Checking","url":"https://verdagon.dev/blog/valen-group-borrowing","source":"Hacker News","score":145,"comments_count":80,"comments_url":"https://news.ycombinator.com/item?id=50042362","published_at":"2026-10-11T12:06:22","author":"verdagon","text":null,"summary":"介绍Valen语言中一种新型借用检查机制以实现内存安全，值得关注因为它为编程语言的内存管理提供了创新思路。"},{"id":"hn-50044272","title":"How I reverse engineered a commercial spatial audio effect","url":"http://epestr.com/blog/reverse-engineering-a-commercial-spatial-audio-effect/","source":"Hacker News","score":109,"comments_count":34,"comments_url":"https://news.ycombinator.com/item?id=50044272","published_at":"2026-10-11T15:21:58","author":"epestr","text":null,"summary":"作者分享如何逆向工程一个商业空间音频效果，值得关注因为它展示了音频处理技术的逆向分析过程。"},{"id":"hn-50049411","title":"Whatever became of holography? (2011)","url":"https://www.americanscientist.org/article/whatever-became-of-holography","source":"Hacker News","score":89,"comments_count":38,"comments_url":"https://news.ycombinator.com/item?id=50049411","published_at":"2026-10-11T23:50:34","author":"cainxinth","text":null,"summary":"回顾全息摄影技术的发展历程并探讨其现状，值得关注因为它反思了一项曾被寄予厚望的技术的兴衰。"},{"id":"hn-50021989","title":"I guess I'm using WebP now?","url":"https://anderegg.ca/2026/10/08/i-guess-im-using-webp-now","source":"Hacker News","score":88,"comments_count":90,"comments_url":"https://news.ycombinator.com/item?id=50021989","published_at":"2026-10-09T15:32:04","author":"Brajeshwar","text":null,"summary":"作者讨论自己开始使用WebP图片格式的经历，值得关注因为它反映了WebP在现代Web中的逐渐普及。"}],"locale":"en"}],"$Lc"]}]]}]
+**总结**：今日技术社区的核心议题集中在**隐私与身份验证**（Passkeys、指纹追踪）、**AI 对开发与思维的冲击**（Codex CLI、Linus 用 Claude Code、思考成为爱好）、以及**IoT 安全现实威胁**（超市冰箱攻击）。编程语言方面，Zig、C、Ruby 的讨论显示社区对底层与生态变迁的持续关注。整体来看，技术社区正在反思"便利 vs 控制"的平衡，以及 AI 时代人类角色的重新定位。0:{"buildId":"q6nvjXLpNEOknpRdWaniS","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-10-13","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":13},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-10-13"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+c:T523,<a href="https:&#x2F;&#x2F;www.reuters.com&#x2F;business&#x2F;retail-consumer&#x2F;french-supermarket-chain-intermarche-hit-by-cyberattack-150-stories-targeted-2026-10-12&#x2F;" rel="nofollow">https:&#x2F;&#x2F;www.reuters.com&#x2F;business&#x2F;retail-consumer&#x2F;french-supe...</a>, <a href="https:&#x2F;&#x2F;www.bbc.com&#x2F;news&#x2F;articles&#x2F;crq5nzxv9q4yo" rel="nofollow">https:&#x2F;&#x2F;www.bbc.com&#x2F;news&#x2F;articles&#x2F;crq5nzxv9q4yo</a>, <a href="https:&#x2F;&#x2F;www.lemonde.fr&#x2F;en&#x2F;france&#x2F;article&#x2F;2026&#x2F;10&#x2F;12&#x2F;french-supermarket-chains-say-cyberattack-forced-refrigerator-shutdown_6758510_7.html" rel="nofollow">https:&#x2F;&#x2F;www.lemonde.fr&#x2F;en&#x2F;france&#x2F;article&#x2F;2026&#x2F;10&#x2F;12&#x2F;french-s...</a><p>Related:<p><a href="https:&#x2F;&#x2F;www.claroty.com&#x2F;team82&#x2F;research&#x2F;freeze-the-controller-defrost-the-food-uncovering-vulnerabilities-in-danfoss-refrigeration-controllers" rel="nofollow">https:&#x2F;&#x2F;www.claroty.com&#x2F;team82&#x2F;research&#x2F;freeze-the-controlle...</a><p><i>I think the military commissary&#x27;s freezers were hacked</i> - <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49508506">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49508506</a> - Aug 2026 (239 comments)6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-50048312","title":"Passkeys are a trap","url":"https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them","source":"Hacker News","score":1036,"comments_count":543,"comments_url":"https://news.ycombinator.com/item?id=50048312","published_at":"2026-10-11T21:59:48","author":"laurex","text":null,"summary":"文章认为通行密钥（Passkeys）看似方便安全，实则可能将用户锁定在特定平台生态中，削弱对账户的控制权，值得关注因为它挑战了当前无密码认证的主流叙事。"},{"id":"hn-50048642","title":"Fingerprints are the new cookies","url":"https://royfish.dev/fingerprints-are-the-new-cookies","source":"Hacker News","score":706,"comments_count":351,"comments_url":"https://news.ycombinator.com/item?id=50048642","published_at":"2026-10-11T22:33:39","author":"royfish","text":null,"summary":"文章指出浏览器指纹识别正在取代Cookie成为追踪用户的新手段，且更难防范，值得关注因为它揭示了隐私保护面临的持续升级的威胁。"},{"id":"hn-50045984","title":"Total Annihilation, rebuilt for modern computers","url":"https://nanolathe.gg","source":"Hacker News","score":671,"comments_count":253,"comments_url":"https://news.ycombinator.com/item?id=50045984","published_at":"2026-10-11T18:04:47","author":"jttnr","text":null,"summary":"经典即时战略游戏《横扫千军》被重新构建以适配现代计算机，值得关注因为它展示了社区对老游戏进行现代化改造的努力和成果。"},{"id":"hn-50045946","title":"NYC's \"Click to Cancel\" rule is now in effect","url":"https://www.nyc.gov/main/click-to-cancel","source":"Hacker News","score":591,"comments_count":318,"comments_url":"https://news.ycombinator.com/item?id=50045946","published_at":"2026-10-11T18:01:16","author":"gregsadetsky","text":null,"summary":"纽约市“点击取消”规则正式生效，要求企业提供简便的订阅取消方式，值得关注因为它代表了消费者保护立法的新趋势。"},{"id":"hn-50059115","title":"Muse Wonder","url":"https://research.meta.ai/blog/muse-wonder","source":"Hacker News","score":574,"comments_count":313,"comments_url":"https://news.ycombinator.com/item?id=50059115","published_at":"2026-10-12T16:48:01","author":"meetpateltech","text":null,"summary":"Meta Research发布了名为Muse Wonder的新项目，值得关注因为它可能涉及AI或创意生成领域的前沿研究。"},{"id":"hn-50043026","title":"Terence Tao: Math 2.0 [pdf]","url":"https://teorth.github.io/tao-web/slides/math-2-0-caltech-2026.pdf","source":"Hacker News","score":529,"comments_count":528,"comments_url":"https://news.ycombinator.com/item?id=50043026","published_at":"2026-10-11T13:16:45","author":"Anon84","text":null,"summary":"数学家陶哲轩在Caltech的演讲幻灯片探讨“数学2.0”，即AI与数学研究的结合，值得关注因为它来自顶尖数学家对AI改变数学研究范式的思考。"},{"id":"hn-50055304","title":"Hackers activate automatic defrosting in supermarket fridges across Europe","url":"https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident","source":"Hacker News","score":522,"comments_count":711,"comments_url":"https://news.ycombinator.com/item?id=50055304","published_at":"2026-10-12T12:16:42","author":"Zeekaas","text":"$c","summary":"黑客攻击欧洲超市的制冷系统，远程激活自动除霜功能，导致食品变质和价格混乱，值得关注因为它暴露了物联网设备在关键基础设施中的安全漏洞。"},{"id":"hn-50060694","title":"Codex CLI installs a persistent, self-updating background daemon by default","url":"https://github.com/openai/codex/issues/48195","source":"Hacker News","score":502,"comments_count":255,"comments_url":"https://news.ycombinator.com/item?id=50060694","published_at":"2026-10-12T18:29:04","author":"whimblepop","text":null,"summary":"OpenAI的Codex CLI默认安装一个持久且自更新的后台守护进程，引发用户对隐私和系统控制的担忧，值得关注因为它涉及AI工具在用户系统中的隐蔽行为。"},{"id":"hn-50058507","title":"GLM-Legal","url":"https://z.ai/blog/glm-legal","source":"Hacker News","score":488,"comments_count":282,"comments_url":"https://news.ycombinator.com/item?id=50058507","published_at":"2026-10-12T16:11:45","author":"ilreb","text":null,"summary":"智谱AI发布GLM-Legal法律领域大模型，值得关注因为它展示了垂直领域大模型在专业服务中的应用进展。"},{"id":"hn-50058528","title":"A Modern Web App in C","url":"https://prophitt.me/writing/a-modern-web-app-in-c","source":"Hacker News","score":457,"comments_count":182,"comments_url":"https://news.ycombinator.com/item?id=50058528","published_at":"2026-10-12T16:13:10","author":"prophittcorey","text":null,"summary":"文章介绍如何用C语言构建一个现代Web应用，值得关注因为它挑战了Web开发必须依赖高级框架的常规思维。"},{"id":"hn-50055593","title":"Turn a WiFi 7 Router into a 320Msps Software Defined Radio Receiver","url":"https://github.com/h0m3us3r/w1700k-sdr","source":"Hacker News","score":300,"comments_count":82,"comments_url":"https://news.ycombinator.com/item?id=50055593","published_at":"2026-10-12T12:41:58","author":"djfergus","text":null,"summary":"该项目展示如何将WiFi 7路由器改造为320Msps的软件定义无线电接收器，为硬件爱好者和无线电研究者提供了一种低成本、高性能的SDR方案，值得关注。"},{"id":"hn-50055220","title":"Citroen revives the 2CV for an electric age","url":"https://www.bbc.com/news/articles/c620r33plgppo","source":"Hacker News","score":290,"comments_count":332,"comments_url":"https://news.ycombinator.com/item?id=50055220","published_at":"2026-10-12T12:09:09","author":"scrlk","text":null,"summary":"雪铁龙将经典车型2CV以电动形式复活，结合复古设计与现代电动技术，反映了传统汽车品牌在电动化浪潮中的创新尝试。"},{"id":"hn-50052251","title":"Show HN: PS2 games statically recompiled to WebAssembly","url":"https://github.com/snuri00/ps2-web-recomp","source":"Hacker News","score":283,"comments_count":147,"comments_url":"https://news.ycombinator.com/item?id=50052251","published_at":"2026-10-12T06:46:53","author":"deadxwarrior","text":null,"summary":"开发者将PS2游戏静态重编译为WebAssembly，使经典游戏能在浏览器中运行，展示了WebAssembly在游戏模拟和跨平台运行方面的潜力。"},{"id":"hn-50059204","title":"Thinking will become a hobby","url":"https://www.spinellis.gr/blog/20261008/?li261008","source":"Hacker News","score":259,"comments_count":348,"comments_url":"https://news.ycombinator.com/item?id=50059204","published_at":"2026-10-12T16:54:08","author":"pranitha_m","text":null,"summary":"文章探讨了在AI时代思考可能成为一种爱好，引发对人工智能与人类认知关系的反思，值得关注其对未来社会影响的讨论。"},{"id":"hn-50034206","title":"Calculus with Julia","url":"https://jverzani.github.io/CalculusWithJuliaNotes.jl/","source":"Hacker News","score":255,"comments_count":51,"comments_url":"https://news.ycombinator.com/item?id=50034206","published_at":"2026-10-10T15:59:52","author":"subset","text":null,"summary":"这是一份使用Julia语言学习微积分的开源笔记，结合编程与数学教育，为学习者和教育者提供了互动式的现代学习资源。"},{"id":"hn-50037711","title":"Secret of Orange Cats Revealed After 60-Year Search","url":"https://www.sciencealert.com/secret-of-orange-cats-finally-revealed-after-60-year-search","source":"Hacker News","score":250,"comments_count":180,"comments_url":"https://news.ycombinator.com/item?id=50037711","published_at":"2026-10-10T22:10:57","author":"bookofjoe","text":null,"summary":"科学家经过60年研究终于揭示了橘猫毛色遗传的秘密，这一发现有助于理解猫的基因遗传机制，对遗传学和宠物爱好者都有意义。"},{"id":"hn-50051573","title":"Type-safe HTML templating in Zig","url":"https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html","source":"Hacker News","score":241,"comments_count":86,"comments_url":"https://news.ycombinator.com/item?id=50051573","published_at":"2026-10-12T05:02:34","author":"lukaslalinsky","text":null,"summary":"文章介绍了如何在Zig语言中实现类型安全的HTML模板，展示了Zig在Web开发中的潜力，对关注系统编程和Web结合的开发者有参考价值。"},{"id":"hn-50036287","title":"The Making Of Super Mario 64 – full Giles Goddard interview (2001)","url":"https://pixelatron.com/blog/the-making-of-super-mario-64-full-giles-goddard-interview-ngc/","source":"Hacker News","score":237,"comments_count":88,"comments_url":"https://news.ycombinator.com/item?id=50036287","published_at":"2026-10-10T19:28:41","author":"gregsadetsky","text":null,"summary":"这是一篇2001年对Giles Goddard的完整采访，回顾了《超级马里奥64》的开发历程，为游戏历史爱好者和开发者提供了珍贵的幕后资料。"},{"id":"hn-50049872","title":"Doory – Open-Source Canva","url":"https://github.com/shaongitbd/doory","source":"Hacker News","score":214,"comments_count":73,"comments_url":"https://news.ycombinator.com/item?id=50049872","published_at":"2026-10-12T00:48:27","author":"acley","text":null,"summary":"Doory是一个开源版的Canva设计工具，为用户提供了免费、可自托管的图形设计替代方案，值得关注开源设计工具的发展。"},{"id":"hn-50061278","title":"OpenFatigue™ – Open is the new closed","url":"https://openfatigue.ai/","source":"Hacker News","score":208,"comments_count":47,"comments_url":"https://news.ycombinator.com/item?id=50061278","published_at":"2026-10-12T19:08:21","author":"ajcp","text":null,"summary":"OpenFatigue™以讽刺方式探讨开源运动中的疲劳现象，指出“开放”可能成为新的封闭，引发对开源社区可持续性的思考。"},{"id":"hn-50052638","title":"I Found a $90k Remote Code Execution Vulnerability in Google","url":"https://simonkoeck.com/writeups/google-devsite-flask-session-pickle-rce","source":"Hacker News","score":190,"comments_count":96,"comments_url":"https://news.ycombinator.com/item?id=50052638","published_at":"2026-10-12T07:28:53","author":"soeckly","text":null,"summary":"作者在Google服务中发现了一个价值9万美元的远程代码执行漏洞，涉及Flask会话反序列化问题。该漏洞影响广泛使用的Web框架，对安全研究人员和开发者具有重要参考价值。"},{"id":"hn-50063831","title":"RJ Mitte has died","url":"https://news.sky.com/story/breaking-bad-star-rj-mitte-dies-aged-34-13598332","source":"Hacker News","score":176,"comments_count":53,"comments_url":"https://news.ycombinator.com/item?id=50063831","published_at":"2026-10-12T22:15:29","author":"austinallegro","text":null,"summary":"《绝命毒师》演员RJ Mitte去世，享年34岁。作为一位患有脑瘫的演员，他在剧中饰演Walter Jr.，其表演对残障群体 representation 具有重要意义。"},{"id":"hn-50041866","title":"The baffling intelligence of a single cell (2024)","url":"https://jsomers.net/e-coli-chemotaxis/","source":"Hacker News","score":162,"comments_count":16,"comments_url":"https://news.ycombinator.com/item?id=50041866","published_at":"2026-10-11T11:02:30","author":"jsomers","text":null,"summary":"文章探讨了单细胞生物（如大肠杆菌）令人惊叹的智能行为——趋化性。这揭示了即使没有神经系统，生命也能展现出复杂的信息处理能力，对理解智能的本质有启发。"},{"id":"hn-50059446","title":"Feds got warrants to use fake cell towers to hunt down Don Lemon's producer","url":"https://www.wired.com/story/feds-got-warrants-to-use-fake-cell-towers-to-hunt-down-don-lemons-producer/","source":"Hacker News","score":162,"comments_count":101,"comments_url":"https://news.ycombinator.com/item?id=50059446","published_at":"2026-10-12T17:08:16","author":"rndsignals","text":null,"summary":"联邦调查人员获得搜查令，使用伪基站（Stingray）追踪Don Lemon制片人的位置。这引发了关于执法部门使用监控技术侵犯隐私和新闻自由的严重关切。"},{"id":"hn-50055375","title":"Incident with Actions, Pull Requests and Issues","url":"https://www.githubstatus.com/incidents/93njd414rpbx","source":"Hacker News","score":154,"comments_count":139,"comments_url":"https://news.ycombinator.com/item?id=50055375","published_at":"2026-10-12T12:23:51","author":"dkpk","text":null,"summary":"GitHub Actions、Pull Requests和Issues出现服务故障。作为全球最大的代码托管平台，其服务中断会严重影响数百万开发者的工作流程。"}],"locale":"en"}],"$Ld"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["Generated by"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","Powered by DeepSeek"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
-c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-9724761b05bd","title":"I'm sorry, but you still have to think","url":"https://itsallaboutthebit.com/i-am-sorry-but-you-still-have-to-think/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-11T18:09:49","author":"itsallaboutthebit.com via dimonomid","text":"<p><a href=\"https://lobste.rs/s/k2natg/i_m_sorry_you_still_have_think\">Comments</a></p>","summary":"文章强调即使有AI辅助工具，人类仍然需要独立思考，值得关注因为它提醒人们不要过度依赖自动化工具。"},{"id":"rss-35fc4da6ce24","title":"What's Wrong with GitHub","url":"https://www.gnu.org/philosophy/whats-wrong-with-github.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-11T09:37:56","author":"gnu.org via tusharhero","text":"<p><a href=\"https://lobste.rs/s/u9ue6c/what_s_wrong_with_github\">Comments</a></p>","summary":"GNU项目阐述GitHub作为专有平台的问题，值得关注因为它引发了对代码托管自由与伦理的讨论。"},{"id":"rss-720f9cb82f16","title":"I'm still around.. I'm just not writing here","url":"https://rachelbythebay.com/w/2026/10/08/idle/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-11T14:44:03","author":"rachelbythebay.com via jcd","text":"<p><a href=\"https://lobste.rs/s/4ehrkn/i_m_still_around_i_m_just_not_writing_here\">Comments</a></p>","summary":"作者Rachel by the Bay说明自己仍在但不再在此写作，值得关注因为它可能暗示博客迁移或写作习惯变化。"},{"id":"rss-b0199883d8eb","title":"D-Bus Hell","url":"https://dbushell.com/2026/10/11/d-bus-hell/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-11T20:36:07","author":"dbushell.com via isuffix","text":"<p><a href=\"https://lobste.rs/s/qgybwb/d_bus_hell\">Comments</a></p>","summary":"文章讨论D-Bus在Linux桌面环境中的复杂性和问题，值得关注因为它涉及Linux系统进程通信的痛点。"},{"id":"rss-be4cfb2d3063","title":"Valen's Memory Safety: A New Kind of Borrow Checking","url":"https://verdagon.dev/blog/valen-group-borrowing","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-11T12:23:01","author":"verdagon.dev by Verdagon","text":"<p><a href=\"https://lobste.rs/s/gmnqhj/valen_s_memory_safety_new_kind_borrow\">Comments</a></p>","summary":"介绍Valen语言中一种新型借用检查机制以实现内存安全，值得关注因为它为编程语言的内存管理提供了创新思路。"}],"locale":"en"}]
-f:null
+a:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-f18830de70cf","title":"Living in the Weimar era of Ruby","url":"https://blog.julik.nl/2026/10/the-weimar-of-ruby","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-12T10:59:26","author":"blog.julik.nl by julik","text":"<p><a href=\"https://lobste.rs/s/lfen2h/living_weimar_era_ruby\">Comments</a></p>","summary":"文章将当前Ruby生态比作魏玛共和国时期，探讨其面临的挑战与转型。对于关注编程语言社区发展和生态健康的人士具有思考价值。"},{"id":"rss-5e9c57ed5037","title":"Linus Torvalds Working On A Hefty Linux Kernel Improvement With Claude Code","url":"https://www.phoronix.com/news/Linus-Torvalds-Claude-Code","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-12T10:11:29","author":"phoronix.com via oceanhaiyang","text":"<p><a href=\"https://lobste.rs/s/iq5xtw/linus_torvalds_working_on_hefty_linux\">Comments</a></p>","summary":"Linus Torvalds正在使用Claude Code进行一项重大的Linux内核改进。这标志着AI辅助编程工具已进入核心系统开发领域，具有里程碑意义。"},{"id":"rss-9d05d421a957","title":"(Post-Quantum) Cryptographic Right Answers","url":"https://words.filippo.io/right-answers/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-12T13:44:38","author":"words.filippo.io via jtdowney","text":"<p><a href=\"https://lobste.rs/s/sozl9e/post_quantum_cryptographic_right\">Comments</a></p>","summary":"Filippo Valsorda发布了后量子时代的密码学最佳实践指南。随着量子计算威胁日益临近，这份指南为开发者选择正确的加密方案提供了权威参考。"},{"id":"rss-a5a2ba323937","title":"'AI' is Not a Tool","url":"https://www.linkedin.com/pulse/ai-tool-rich-hickey-kjl8e","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-12T01:18:09","author":"linkedin.com via regulator","text":"<p><a href=\"https://lobste.rs/s/ikk8ie/ai_is_not_tool\">Comments</a></p>","summary":"Rich Hickey（Clojure创始人）撰文论述'AI不是工具'。该观点挑战了当前将AI简单视为生产力工具的主流叙事，引发对AI本质的深层思考。"},{"id":"rss-0c2231acddad","title":"Finding a $90,000 Remote Code Execution Vulnerability in Google","url":"https://simonkoeck.com/writeups/google-devsite-flask-session-pickle-rce","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-12T14:40:35","author":"simonkoeck.com via hoistbypetard","text":"<p><a href=\"https://lobste.rs/s/mldt0o/finding_90_000_remote_code_execution\">Comments</a></p>","summary":"作者详细披露了在Google发现的9万美元远程代码执行漏洞的技术细节。该漏洞利用Flask会话pickle反序列化，对Web安全研究具有重要教育意义。"}],"locale":"en"}]
+10:null
