@@ -5,194 +5,203 @@
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
 d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
 e:"$Sreact.suspense"
-5:T28f5,# 今日 Technology 热门内容分析总结
+5:T36b1,# 今日 Technology 热门文章分析总结（Top 30）
 
-## 一、AI 与前沿科学突破（本日最大热点）
 
-**1. OpenAI 宣布数学、计算机科学与物理学三项新发现**
-这是今日热度最高的文章（1131 分）。OpenAI 与学术社区合作，在基础科学领域取得突破性成果，引发广泛讨论。
+## 一、终端与开发工具
+
+**1. Ghostty 1.4**（HN 1307 分 / 416 评论）
+Ghostty 终端模拟器发布 1.4 版本，以 1307 分高居今日榜首，是今日社区关注度最高的技术发布。Ghostty 由 Mitchell Hashimoto（HashiCorp 创始人）开发，近期在开发者社区热度持续攀升，1.4 版本值得关注其性能与跨平台改进。
+- 原文：https://ghostty.org/docs/install/release-notes/1-4-0
+- 讨论：https://news.ycombinator.com/item?id=50261998
+
+**9. Emacs Turns 50**（HN 439 分 / 183 评论）
+Emacs 迎来 50 周年，MIT Technology Review 撰文回顾这款传奇编辑器的历史与影响。作为自由软件运动的活化石，Emacs 的半个世纪是理解开源文化的重要切片。
+- 原文：https://www.technologyreview.com/2026/10/20/1145399/emacs-turns-50/
+- 讨论：https://news.ycombinator.com/item?id=50273171
+
+**19 / 27. AlpineBSD**（HN 185 分 / 175 评论；Lobsters 同步收录）
+一个将 Alpine Linux 用户空间与 OpenBSD 内核结合的新项目，在 HN 与 Lobsters 双平台出现，说明系统底层爱好者对其兴趣浓厚。轻量级 Linux 用户态 + 安全导向 BSD 内核的组合颇具实验价值。
+- 原文：https://wiki.alpinebsd.org
+- HN 讨论：https://news.ycombinator.com/item?id=50274251
+- Lobsters：https://lobste.rs/s/yxuvie/alpinebsd
+
+
+## 二、编程语言与工程实践
+
+**6. Python's experimental JIT to be removed**（HN 564 分 / 326 评论）
+Python 实验性 JIT 将被移除，这是今日语言生态最重要的信号之一。CPython 的性能优化路线出现重大调整，对关注 Python 性能演进、以及依赖 JIT 实验特性的开发者影响深远。
+- 原文：https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/
+- 讨论：https://news.ycombinator.com/item?id=50257419
+
+**20. StackOverflow now gets fewer than 1000 questions a month**（HN 177 分 / 177 评论）
+Stack Overflow 月提问量跌破 1000，是 AI 编程助手冲击开发者社区生态的标志性数据。这个数字背后是整个知识生产方式的结构性转变，值得所有依赖社区问答的开发者深思。
+- 原文：https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1
+- 讨论：https://news.ycombinator.com/item?id=50282454
+
+**21. Four Months of Zig**（HN 176 分 / 143 评论）
+一位开发者使用 Zig 四个月后的实践总结，是了解这门新兴系统编程语言真实使用体验的一手材料，对考虑采用 Zig 的团队有参考价值。
+- 原文：https://gracefulliberty.com/articles/four-months-of-zig/
+- 讨论：https://news.ycombinator.com/item?id=50265128
+
+**30. GOTO Considered Totally Sick (for error handling in C)**（Lobsters）
+一篇为 C 语言中 goto 做错误处理正名的文章。goto 长期背负污名，但在 C 的错误清理路径中其实是惯用且清晰的模式，属于经典编程争议话题的再讨论。
+- 原文：https://thestateofinahaze.net/blog/c-goto-considered-totally-sick/
+- 讨论：https://lobste.rs/s/exwlmn/goto_considered_totally_sick_for_error
+
+**18. Decompiling Fast Food Tycoon 2: Drawing the World**（HN 194 分 / 42 评论）
+对老游戏《快餐大亨 2》进行逆向工程的技术系列文章，聚焦渲染世界的实现。逆向工程类文章在 HN 一向受欢迎，兼具技术深度与怀旧趣味。
+- 原文：https://healeycodes.com/decompiling-fast-food-tycoon-2-drawing-the-world
+- 讨论：https://news.ycombinator.com/item?id=50223739
+
+
+## 三、安全与证书信任链
+
+**3 / 26. Apple's git still trusts the compromised eMudhra certificates**（HN 1070 分 / 381 评论；Lobsters 同步）
+Apple 的 git 仍信任已遭攻破的 eMudhra 证书，是今日安全领域最受关注的问题，HN 超千分。证书信任链的滞后清理直接影响代码供应链安全，任何使用 macOS 上 git 的开发者都应关注。
+- 原文：https://emudhra.we-have-a-problem.com/apple.html
+- HN 讨论：https://news.ycombinator.com/item?id=50271640
+- Lobsters：https://lobste.rs/s/xybmsj/apple_s_git_still_trusts_compromised
+
+**23. About the compromised eMudhra intermediate CAs**（HN 156 分 / 76 评论）
+Apple 官方支持文档对 eMudhra 中间 CA 遭攻破的说明，是上一条的官方信源补充，建议与第 3 条对照阅读。
+- 原文：https://support.apple.com/en-us/149555
+- 讨论：https://news.ycombinator.com/item?id=50271685
+
+**29. GitLab security incident: attempted exploitation of CVE-2026-97229**（Lobsters）
+Alpine Linux 官方披露 GitLab 安全事件，涉及 CVE-2026-97229 的利用尝试。对自建 GitLab 的团队是直接的操作性警报。
+- 原文：https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html
+- 讨论：https://lobste.rs/s/2zsjwt/gitlab_security_incident_attempted
+
+**5. Why is this fingerprinting script creating bioweapons?**（HN 931 分 / 198 评论）
+一篇标题极具冲击力的调查文章：某指纹识别脚本为何会生成生物武器相关内容。涉及浏览器指纹、脚本行为异常与潜在滥用，是今日最具"标题党但内容硬核"气质的安全文章。
+- 原文：https://nullpt.rs/fingerprinting-bioweapons
+- 讨论：https://news.ycombinator.com/item?id=50276998
+
+**14. Leak Exposes 41,000 Homeland Security Workers–Including Undercover ICE Agents**（HN 299 分 / 157 评论）
+WIRED 报道一起大规模数据泄露，暴露 4.1 万名美国国土安全部员工信息，包括 ICE 卧底探员。属于重大数据安全事件，也涉及隐私与新闻伦理讨论。
+- 原文：https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents/
+- 讨论：https://news.ycombinator.com/item?id=50280864
+
+**28. This is not sustainable**（Lobsters）
+关于 DDoS 防御的文章，讨论当前防御模式为何不可持续。对运维与基础设施团队有现实参考意义。
+- 原文：https://www.netmeister.org/blog/defense-ddos.html
+- 讨论：https://lobste.rs/s/cpaibp/this_is_not_sustainable
+
+
+## 四、AI 与智能体
+
+**2. Three new discoveries in mathematics, computer science, and physics**（HN 1149 分 / 695 评论）
+OpenAI 关于与学术社区共建科学理解的发布，声称在数学、计算机科学与物理领域取得三项新发现，评论数 695 为今日最高，争议与讨论极为激烈。关联讨论还涉及"指数时间假设被证伪"的 PDF，是今日学术与 AI 交叉领域最热话题。
 - 原文：https://openai.com/index/building-scientific-understanding-with-academic-communities/
 - 讨论：https://news.ycombinator.com/item?id=50251344
+- 关联讨论（ETH 被证伪 PDF）：https://news.ycombinator.com/item?id=50251661
 
-**5. 《指数时间假设是错的》论文（PDF）**
-与上条密切相关，OpenAI 发布预印本论文，声称推翻了计算复杂性理论中的核心假设 ETH。这是理论计算机科学的重大事件，热度 778 分、287 条评论。
-- 原文：https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf
-- 讨论：https://news.ycombinator.com/item?id=50251661
-
-**16. 有限单群分类在 Lean 中形式化**
-用 Lean 证明助手形式化数学史上最庞大的定理之一（有限单群分类），是形式化数学的重要里程碑。
-- 原文：https://cfsg.axiommath.ai/
-- 讨论：https://news.ycombinator.com/item?id=50261647
-
-**6. Genie 4**
-DeepMind 发布新一代世界模拟模型 Genie 4，472 条评论显示社区高度关注其生成式世界建模能力。
+**4. Genie 4**（HN 1022 分 / 581 评论）
+DeepMind 发布 Genie 4，新一代世界模拟模型。作为生成式世界模型的重要迭代，与第 2 条共同构成今日 AI 领域的双热点。
 - 原文：https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/
 - 讨论：https://news.ycombinator.com/item?id=50261319
 
-**3. Sebastian Raschka 的从零构建推理模型视频课程**
-知名 ML 教育者推出实战课程，教人从零实现推理模型，对学习 LLM 内部机制很有价值。
-- 原文：https://magazine.sebastianraschka.com/p/building-reasoning-models
-- 讨论：https://news.ycombinator.com/item?id=50245138
-
-**24. LFM3：面向专用智能的全模态模型**
-Liquid AI 发布 LFM3，主打多模态与专用化智能。
+**22. Introducing LFM3: Every Modality for Specialized Intelligence**（HN 169 分 / 66 评论）
+Liquid AI 发布 LFM3，主打"全模态"的专用智能模型。在巨头模型之外，专注小参数、专用场景的路线值得关注。
 - 原文：https://www.liquid.ai/blog/lfm3
 - 讨论：https://news.ycombinator.com/item?id=50262229
 
-**17. 当 Agent 干活时，你还需要知道什么？**
-探讨 AI Agent 承担工作后，人类工程师的核心价值与知识边界，是当下 Agent 热潮下的反思性文章。
+**17. Here be monsters: What do you still need to know when agents do the work?**（HN 198 分 / 102 评论）
+当 AI 智能体承担大部分工作后，人类还需要掌握什么？这是一篇关于智能体时代工程师能力边界的思考文章，与 Stack Overflow 提问量崩塌（第 20 条）形成呼应。
 - 原文：https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work
 - 讨论：https://news.ycombinator.com/item?id=50258868
 
 
-## 二、编程语言与运行时
+## 五、Apple 硬件生态
 
-**7 / 28. Python 实验性 JIT 将被移除**
-CPython 的实验性 JIT 项目被叫停，对 Python 性能演进方向影响重大，引发 248 条讨论。
-- 原文：https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/
-- 讨论：https://news.ycombinator.com/item?id=50257419
-- Lobsters 讨论：https://lobste.rs/s/cajuq6/python_s_experimental_jit_be_removed
+**7. MacBook Pro with PROLED XDR Display and Touch**（HN 521 分 / 902 评论）
+Apple 推出搭载 PROLED XDR 显示屏并支持触控的 MacBook Pro。902 条评论为今日最高，触控 Mac 是多年传闻的落地，争议集中在交互范式与定价上。
+- 原文：https://www.apple.com/macbook-pro/proled-xdr-display/
+- 讨论：https://news.ycombinator.com/item?id=50276940
+- 新闻稿：https://www.apple.com/newsroom/2026/10/apple-unveils-groundbreaking-macbook-pro-with-proled-xdr-display/
 
-**18. Gforth 1.0 发布**
-Gforth（Forth 语言实现）迎来 1.0 版本，是这门小众但影响深远的语言的重要节点。
-- 原文：https://gforth.org/manual/1.0/NEWS.html
-- 讨论：https://news.ycombinator.com/item?id=50256952
-
-**27. 四个月的 Zig 使用体验**
-一篇 Zig 语言的实践心得，适合关注系统编程新语言的开发者。
-- 原文：https://gracefulliberty.com/articles/four-months-of-zig/
-- 讨论：https://lobste.rs/s/qr59sa/four_months_zig
-
-**26. Rust 生态中快速且安全的 tar 解析器**
-Astral 出品的 tar codec，关注 Rust 生态中的安全解析与性能。
-- 原文：https://astral.sh/blog/tar-codec
-- 讨论：https://lobste.rs/s/q7arzy/fast_secure_tar_parser_for_rust_ecosystem
-
-
-## 三、工具、终端与开发者体验
-
-**4 / 29. Ghostty 1.4 发布**
-终端模拟器 Ghostty 发布 1.4 版本，在 HN 和 Lobsters 双平台热议，是终端工具爱好者的关注焦点。
-- 原文：https://ghostty.org/docs/install/release-notes/1-4-0
-- 讨论：https://news.ycombinator.com/item?id=50261998
-- Lobsters：https://lobste.rs/s/o6vpqb/ghostty_1_4_0
-
-**14. Nietzschian Debugger**
-一个以尼采哲学命名的调试器项目，趣味性与思辨性兼具的开发者工具。
-- 原文：https://github.com/DilawarShafiq/nietzschian-debugger
-- 讨论：https://news.ycombinator.com/item?id=50247493
-
-**30. Shitty Screenshare**
-一个轻量、极简的屏幕共享工具，名字直白，主打简单实用。
-- 原文：http://shittyscreenshare.com
-- 讨论：https://lobste.rs/s/cxxcik/shitty_screenshare
-
-**25. Show HN: Encarta 95 Web**
-将经典 Encarta 95 百科全书搬到网页上，作者自述实现方式"极其绕但能用"，是怀旧与工程创意的结合。
-- 原文：https://benwinding.github.io/encarta_95_web/#/article/Art
-- 讨论：https://news.ycombinator.com/item?id=50218975
-
-
-## 四、软件工程文化与抽象思考
-
-**10. 软件可能在变差，但过去更糟**
-一篇为当下软件质量辩护的反思文章，317 条评论激辩软件工程是否在退步。
-- 原文：https://www.bitlog.com/2026/10/27/software-may-be-getting-worse-but-it-used-to-be-horrible/
-- 讨论：https://news.ycombinator.com/item?id=50257548
-
-**13. 来自未来的人：为什么 Johnny 停不下抽象**
-探讨开发者过度抽象的倾向，是软件设计哲学的深度讨论。
-- 原文：http://muratbuffalo.blogspot.com/2026/10/the-man-from-future-why-johnny-cant.html
-- 讨论：https://news.ycombinator.com/item?id=50247928
-
-**22. 我仍在教 OpenGL ES 3.0**
-一位教师解释为何坚持教授 OpenGL ES 3.0，涉及图形学教学与技术选型的取舍。
-- 原文：https://eliasfarhan.ch/graphics/cpp/2026/01/27/why-i-teach-opengles.html
-- 讨论：https://news.ycombinator.com/item?id=50253939
-
-**23. 在 64 位 Windows 上运行 16 位 Windows**
-winevdm 项目让老式 16 位 Windows 程序在现代系统上运行，是兼容层与复古计算的佳作。
-- 原文：https://github.com/otya128/winevdm
-- 讨论：https://news.ycombinator.com/item?id=50253529
-
-
-## 五、安全与隐私
-
-**2. 美国政府隐瞒关于如何监视美国人的秘密法庭裁决**
-Wired 报道政府隐匿外国情报监视法庭裁决，涉及公民隐私与政府透明度，830 分高热度。
-- 原文：https://www.wired.com/story/the-us-government-is-hiding-a-secret-court-ruling-about-how-it-spies-on-americans/
-- 讨论：https://news.ycombinator.com/item?id=50259604
-
-**15. PHP2Shell：利用尝试与修复趋势**
-Wiz 分析 PHP2Shell 漏洞的实际利用情况与修复进展，是实用的安全态势报告。
-- 原文：https://www.wiz.io/blog/php2shell-exploitation-so-far
-- 讨论：https://news.ycombinator.com/item?id=50259343
-
-**8. Roblox 未经询问下载了我们 145GB 的模型（含成人内容）**
-Open3DLab 指控 Roblox 大规模抓取其模型资源，涉及数据抓取伦理与版权问题。
-- 原文：https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/
-- 讨论：https://news.ycombinator.com/item?id=50256985
-
-**12. Discord 将允许通过 Google 搜索公开服务器消息**
-Discord 改变可发现服务器的搜索策略，涉及隐私与内容可见性的权衡。
-- 原文：https://discord.com/blog/making-content-from-discoverable-servers-easier-to-discover
-- 讨论：https://news.ycombinator.com/item?id=50263854
-
-
-## 六、硬件与产业动态
-
-**9. 新款 iMac 搭载 M6 芯片**
-- 原文：https://www.apple.com/imac/
-- 讨论：https://news.ycombinator.com/item?id=50258538
-
-**11. 新款 14 英寸 MacBook Pro 搭载 M6**
-苹果 M6 系列新品同日发布，390 条评论显示社区对性能提升与定价的关注。
+**12. New 14-inch MacBook Pro with M6**（HN 424 分 / 604 评论）
+14 英寸 MacBook Pro 更新至 M6 芯片，与第 7 条同日发布，构成 Apple 硬件发布日。M6 的性能提升幅度是讨论焦点。
 - 原文：https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/
 - 讨论：https://news.ycombinator.com/item?id=50261352
 
-**21. 为什么 Micron 突然放弃 4F² DRAM，而对手加倍投入**
-存储芯片技术路线分歧的分析，涉及 DRAM 架构演进与产业竞争。
-- 原文：https://hothardware.com/news/why-micron-is-suddenly-ditching-4f-dram
-- 讨论：https://news.ycombinator.com/item?id=50245014
 
-**19. 3000 亿美元的"债务墙"逼近私募股权支持的公司**
-WSJ 报道私募股权支持企业的债务到期风险，与科技行业融资环境密切相关。
-- 原文：https://www.wsj.com/finance/investing/a-300-billion-debt-wall-is-looming-over-private-equity-backed-companies-d6359497
-- 讨论：https://news.ycombinator.com/item?id=50260526
+## 六、硬件、制造与嵌入式
+
+**8. The Grid, a factory-scale robot in Massachusetts that builds PCBs on demand**（HN 455 分 / 209 评论）
+马萨诸塞州工厂级 PCB 按需制造机器人"The Grid"。将 PCB 打样从数周压缩到按需生产，对硬件创业者与电子工程师是实质性利好。
+- 原文：https://www.circuithub.com/post/unveiling-the-grid
+- 讨论：https://news.ycombinator.com/item?id=50243060
+
+**16. Raspberry Pi Zero 3W and Pi 4 Model A spotted in device trees**（HN 216 分 / 141 评论）
+从 Linux 设备树中提前发现 Raspberry Pi Zero 3W 与 Pi 4 Model A 的踪迹，属于典型的"代码泄露新品"式爆料，树莓派社区关注度高。
+- 原文：https://bret.dk/raspberry-pi-zero-3-w-pi-4-model-a/
+- 讨论：https://news.ycombinator.com/item?id=50265594
+
+**11. CNC Stone Carving**（HN 426 分 / 122 评论）
+用 CNC 进行石材雕刻的实践记录，是今日少见的"动手制造"类文章，技术含量与视觉呈现兼具。
+- 原文：https://carmelitegothic.com/cnc-stone-carving/
+- 讨论：https://news.ycombinator.com/item?id=50274409
+
+**24. Formlabs Studio 1 $699 Resin Printer**（HN 143 分 / 93 评论）
+Formlabs 推出 699 美元的桌面树脂 3D 打印机，价格下探至消费级区间，对光固化 3D 打印市场格局有影响。
+- 原文：https://formlabs.com/products/form-studio-1-basic-founders-edition/
+- 讨论：https://news.ycombinator.com/item?id=50281044
+
+**13. Ink droplets in motion snag top prize in Nikon Small World contest**（HN 394 分 / 69 评论）
+2026 年尼康小世界显微摄影大赛获奖作品揭晓，冠军为运动中的墨滴。虽是科学摄影，但展示了显微成像技术的前沿，视觉冲击力强。
+- 原文：https://arstechnica.com/science/2026/10/meet-the-2026-winner-of-nikons-small-world-photomicrography-contest/
+- 讨论：https://news.ycombinator.com/item?id=50234796
 
 
-## 七、其他（趣味/非典型技术）
+## 七、开源、法律与行业动态
 
-**20. 如何在家种植可可树（2024）**
-一篇园艺指南意外登上技术社区热榜，反映 HN 社区的多元趣味。
-- 原文：https://www.cocoterra.com/guide-on-how-to-grow-chocolate-at-home/
-- 讨论：https://news.ycombinator.com/item?id=50240465
+**10. Git for the US Code**（HN 432 分 / 262 评论）
+用 Git 管理美国法典的实践与思考。将版本控制引入法律文本，是"软件工程思维跨界"的有趣案例，也涉及法律文本可追溯性的公共价值。
+- 原文：https://lexifina.com/blog/git-for-the-us-code
+- 讨论：https://news.ycombinator.com/item?id=50268380
+
+**15. US agency approves Amazon Leo's $11.5B acquisition of Globalstar**（HN 226 分 / 101 评论）
+美国监管机构批准 Amazon Leo 以 115 亿美元收购 Globalstar，卫星互联网竞争格局生变。此前 HN 已有相关讨论（2026 年 4 月，119 评论）。
+- 原文：https://www.reuters.com/business/media-telecom/us-agency-approves-amazon-leos-115-billion-acquisition-globalstar-2026-10-27/
+- 讨论：https://news.ycombinator.com/item?id=50272145
+- 前情讨论：https://news.ycombinator.com/item?id=47775183
+
+**25. A Health Update**（HN 141 分 / 17 评论）
+知名开发者博客 furbo.org 的健康状况更新。属于社区人文类内容，评论虽少但情感浓度高，是技术社区"人"的一面。
+- 原文：https://furbo.org/2026/10/28/a-health-update/
+- 讨论：https://news.ycombinator.com/item?id=50280974
 
 
 ## 今日最值得阅读的 5 篇文章推荐
 
-1. **《指数时间假设是错的》论文** —— 若属实，这是计算复杂性理论的重大突破，直接影响我们对算法可行性的根本认知。配合 OpenAI 的公告一起读效果最佳。
-   - https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf
+1. **Ghostty 1.4**（HN 1307 分，今日最高分）
+   今日社区热度第一，终端工具的重要版本更新，直接影响日常开发体验，且讨论区质量高。
+   https://ghostty.org/docs/install/release-notes/1-4-0
 
-2. **OpenAI 三项科学发现公告** —— 理解上述论文的背景与 OpenAI 的学术合作模式，是把握今日科技头条的关键。
-   - https://openai.com/index/building-scientific-understanding-with-academic-communities/
+2. **Apple's git still trusts the compromised eMudhra certificates**（HN 1070 分）
+   直接关系代码供应链安全，任何在 macOS 上用 git 的开发者都该读，并配合 Apple 官方文档（第 23 条）一起看。
+   https://emudhra.we-have-a-problem.com/apple.html
 
-3. **Python 实验性 JIT 将被移除** —— 对每一位 Python 开发者都有实际影响，理解 CPython 性能路线的转向及其背后原因。
-   - https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/
+3. **Python's experimental JIT to be removed**（HN 564 分）
+   Python 性能路线的重大转向，LWN 的深度报道质量有保证，对 Python 生态从业者必读。
+   https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/
 
-4. **软件可能在变差，但过去更糟** —— 一篇视角独特的软件质量思辨文，317 条评论的激辩本身就很值得一读，能帮你建立更历史化的技术判断。
-   - https://www.bitlog.com/2026/10/27/software-may-be-getting-worse-but-it-used-to-be-horrible/
+4. **Three new discoveries in mathematics, computer science, and physics**（HN 1149 分 / 695 评论）
+   今日讨论最激烈的话题，AI 与基础科学的交叉成果（含 ETH 被证伪的关联讨论），争议本身就有阅读价值。
+   https://openai.com/index/building-scientific-understanding-with-academic-communities/
 
-5. **当 Agent 干活时，你还需要知道什么？** —— 在 AI Agent 全面渗透开发流程的当下，这篇文章直面"工程师还剩什么价值"的核心焦虑，务实且有启发。
-   - https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work
+5. **StackOverflow now gets fewer than 1000 questions a month**（HN 177 分）
+   一个数字说清 AI 对开发者社区的结构性冲击，配合第 17 条"智能体时代还需要知道什么"一起读，能形成完整的问题意识。
+   https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1
 
----
 
-**总体观察**：今日技术热点呈现"AI 基础科学突破 + 语言运行时调整 + 隐私安全争议"三线并进的格局。OpenAI 的数学/复杂性理论成果占据绝对头条，而 Python JIT 叫停、Ghostty 1.4、苹果 M6 新品则构成开发者日常关注的实用层。值得注意的是，Lobsters 来源的 5 篇文章（26–30）均为零评论，多为新近提交、尚未发酵的内容，但质量普遍不错，值得单独关注。0:{"buildId":"UwVagBwBTJOt3C_kWcs1n","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-10-28","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":16},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-10-28"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-50251344","title":"Three new discoveries in mathematics, computer science, and physics","url":"https://openai.com/index/building-scientific-understanding-with-academic-communities/","source":"Hacker News","score":1131,"comments_count":661,"comments_url":"https://news.ycombinator.com/item?id=50251344","published_at":"2026-10-26T21:35:28","author":"jonluca","text":"Related:<p><i>The Exponential Time Hypothesis Is False [pdf]</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50251661\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50251661</a>","summary":"OpenAI宣布在数学、计算机科学和物理学领域取得三项新发现，并与学术社区合作推进科学理解。这些成果可能对相关基础理论产生重要影响，值得研究者关注。"},{"id":"hn-50259604","title":"US Government is hiding a secret court ruling about how it spies on Americans","url":"https://www.wired.com/story/the-us-government-is-hiding-a-secret-court-ruling-about-how-it-spies-on-americans/","source":"Hacker News","score":830,"comments_count":297,"comments_url":"https://news.ycombinator.com/item?id=50259604","published_at":"2026-10-27T14:06:42","author":"helterskelter2","text":null,"summary":"Wired报道美国政府隐瞒了一项关于如何监控美国人的秘密法庭裁决，涉及公民隐私与政府监控权力的关键问题。该事件引发对透明度和公民自由的关注。"},{"id":"hn-50245138","title":"Sebastian Raschka's from-scratch video course on building reasoning models","url":"https://magazine.sebastianraschka.com/p/building-reasoning-models","source":"Hacker News","score":827,"comments_count":111,"comments_url":"https://news.ycombinator.com/item?id=50245138","published_at":"2026-10-26T15:11:59","author":"sgiannopoulos","text":null,"summary":"Sebastian Raschka发布从零构建推理模型的视频课程，系统讲解推理模型的设计与实现。适合希望深入理解推理模型原理的开发者学习。"},{"id":"hn-50261998","title":"Ghostty 1.4","url":"https://ghostty.org/docs/install/release-notes/1-4-0","source":"Hacker News","score":822,"comments_count":250,"comments_url":"https://news.ycombinator.com/item?id=50261998","published_at":"2026-10-27T16:51:22","author":"deaux","text":null,"summary":"Ghostty 1.4版本发布，带来安装与发布说明的更新。作为终端模拟器项目，新版本可能包含性能改进和新功能，值得用户升级关注。"},{"id":"hn-50251661","title":"The Exponential Time Hypothesis Is False [pdf]","url":"https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf","source":"Hacker News","score":778,"comments_count":287,"comments_url":"https://news.ycombinator.com/item?id=50251661","published_at":"2026-10-26T21:59:15","author":"vok","text":"See also: <i>Announcing three new discoveries in mathematics, computer science, and physics</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50251344\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50251344</a>","summary":"一篇预印本论文声称指数时间假设（ETH）为假，若成立将颠覆计算复杂性理论的基础。该结论极具争议性，需学术界进一步验证。"},{"id":"hn-50261319","title":"Genie 4","url":"https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/","source":"Hacker News","score":775,"comments_count":472,"comments_url":"https://news.ycombinator.com/item?id=50261319","published_at":"2026-10-27T16:06:01","author":"acossta","text":null,"summary":"DeepMind发布Genie 4，新一代世界模拟模型，可能推动AI在环境模拟与交互方面的能力。该进展对游戏、机器人及AI研究有潜在影响。"},{"id":"hn-50257419","title":"Python's experimental JIT to be removed","url":"https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/","source":"Hacker News","score":460,"comments_count":248,"comments_url":"https://news.ycombinator.com/item?id=50257419","published_at":"2026-10-27T11:17:57","author":"f311a","text":null,"summary":"Python实验性JIT将被移除，反映该特性未能达到预期或维护成本过高。这一决定影响Python性能优化路线，值得开发者关注。"},{"id":"hn-50256985","title":"Roblox downloaded 145GB models from us (including adult content) without asking","url":"https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/","source":"Hacker News","score":460,"comments_count":268,"comments_url":"https://news.ycombinator.com/item?id=50256985","published_at":"2026-10-27T10:27:50","author":"choult","text":null,"summary":"Open3DLab指控Roblox未经许可下载其145GB模型（含成人内容），涉及数据抓取与版权问题。该事件引发对平台数据使用伦理的讨论。"},{"id":"hn-50258538","title":"New iMac with M6","url":"https://www.apple.com/imac/","source":"Hacker News","score":318,"comments_count":390,"comments_url":"https://news.ycombinator.com/item?id=50258538","published_at":"2026-10-27T13:02:02","author":"notfried","text":null,"summary":"苹果推出搭载M6芯片的新iMac，性能与能效预计提升。该产品更新值得关注苹果桌面产品线的用户留意。"},{"id":"hn-50257548","title":"Software may be getting worse, but it used to be horrible","url":"https://www.bitlog.com/2026/10/27/software-may-be-getting-worse-but-it-used-to-be-horrible/","source":"Hacker News","score":302,"comments_count":317,"comments_url":"https://news.ycombinator.com/item?id=50257548","published_at":"2026-10-27T11:30:35","author":"jakevoytko","text":null,"summary":"文章探讨软件质量是否在变差，指出尽管当前软件存在问题，但过去的软件更糟糕。该观点提供历史视角，有助于理性看待软件质量演变。"},{"id":"hn-50261352","title":"New 14‑inch MacBook Pro with M6","url":"https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/","source":"Hacker News","score":299,"comments_count":384,"comments_url":"https://news.ycombinator.com/item?id=50261352","published_at":"2026-10-27T16:08:32","author":"beex","text":null,"summary":"苹果发布搭载M6芯片的新款14英寸MacBook Pro，值得关注其性能提升和对高端笔记本市场的影响。"},{"id":"hn-50263854","title":"Discord will soon let anyone find public server messages through Google","url":"https://discord.com/blog/making-content-from-discoverable-servers-easier-to-discover","source":"Hacker News","score":279,"comments_count":143,"comments_url":"https://news.ycombinator.com/item?id=50263854","published_at":"2026-10-27T18:44:17","author":"DeepLogin","text":null,"summary":"Discord将允许通过Google搜索公开服务器的消息，值得关注隐私与内容可发现性之间的平衡问题。"},{"id":"hn-50247928","title":"A Man from the Future: Why Johnny Can't Stop Abstracting","url":"http://muratbuffalo.blogspot.com/2026/10/the-man-from-future-why-johnny-cant.html","source":"Hacker News","score":222,"comments_count":96,"comments_url":"https://news.ycombinator.com/item?id=50247928","published_at":"2026-10-26T17:49:55","author":"aray07","text":null,"summary":"文章探讨为何开发者难以停止抽象化，值得关注其对软件设计复杂性和工程实践的反思。"},{"id":"hn-50247493","title":"Nietzschian Debugger","url":"https://github.com/DilawarShafiq/nietzschian-debugger","source":"Hacker News","score":213,"comments_count":66,"comments_url":"https://news.ycombinator.com/item?id=50247493","published_at":"2026-10-26T17:25:30","author":"dilawargopang","text":null,"summary":"一个以尼采哲学命名的调试器项目，值得关注其将哲学概念融入开发者工具的创新尝试。"},{"id":"hn-50259343","title":"PHP2Shell: Exploitation attempts and remediation trends","url":"https://www.wiz.io/blog/php2shell-exploitation-so-far","source":"Hacker News","score":185,"comments_count":59,"comments_url":"https://news.ycombinator.com/item?id=50259343","published_at":"2026-10-27T13:52:12","author":"acossta","text":null,"summary":"分析PHP2Shell漏洞的利用尝试与修复趋势，值得关注其对企业安全防护和漏洞管理的启示。"},{"id":"hn-50261647","title":"Classification of Finite Simple Groups Formalized in Lean","url":"https://cfsg.axiommath.ai/","source":"Hacker News","score":180,"comments_count":47,"comments_url":"https://news.ycombinator.com/item?id=50261647","published_at":"2026-10-27T16:29:02","author":"pfdietz","text":null,"summary":"有限单群分类在Lean中形式化，值得关注其对数学形式化验证和AI辅助数学研究的重大意义。"},{"id":"hn-50258868","title":"Here be monsters: What do you still need to know when agents do the work?","url":"https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work","source":"Hacker News","score":161,"comments_count":87,"comments_url":"https://news.ycombinator.com/item?id=50258868","published_at":"2026-10-27T13:23:22","author":"adrq","text":null,"summary":"探讨当AI代理执行工作时人类仍需掌握哪些知识，值得关注其对未来工作方式和技能需求的思考。"},{"id":"hn-50256952","title":"Gforth 1.0","url":"https://gforth.org/manual/1.0/NEWS.html","source":"Hacker News","score":159,"comments_count":17,"comments_url":"https://news.ycombinator.com/item?id=50256952","published_at":"2026-10-27T10:23:21","author":"joshcsimmons","text":null,"summary":"Gforth发布1.0版本，值得关注这一经典Forth语言实现迎来重要里程碑。"},{"id":"hn-50260526","title":"A $300B 'Debt Wall' Is Looming over Private-Equity Backed Companies","url":"https://www.wsj.com/finance/investing/a-300-billion-debt-wall-is-looming-over-private-equity-backed-companies-d6359497","source":"Hacker News","score":159,"comments_count":60,"comments_url":"https://news.ycombinator.com/item?id=50260526","published_at":"2026-10-27T15:09:27","author":"JumpCrisscross","text":null,"summary":"报道私募股权支持企业面临3000亿美元债务墙，值得关注其对金融稳定和科技投资环境的潜在影响。"},{"id":"hn-50240465","title":"How to grow a cacao tree at home (2024)","url":"https://www.cocoterra.com/guide-on-how-to-grow-chocolate-at-home/","source":"Hacker News","score":149,"comments_count":45,"comments_url":"https://news.ycombinator.com/item?id=50240465","published_at":"2026-10-26T07:50:17","author":"felipevb","text":null,"summary":"介绍如何在家种植可可树，值得关注其作为趣味园艺指南的实用价值。"},{"id":"hn-50245014","title":"Why Micron Is Suddenly Ditching 4F² DRAM as Rivals Double Down","url":"https://hothardware.com/news/why-micron-is-suddenly-ditching-4f-dram","source":"Hacker News","score":146,"comments_count":22,"comments_url":"https://news.ycombinator.com/item?id=50245014","published_at":"2026-10-26T15:05:04","author":"rbanffy","text":null,"summary":"美光突然放弃4F² DRAM架构，而竞争对手却在加倍投入，这一战略转向可能重塑DRAM市场的技术路线与竞争格局，值得半导体行业关注。"},{"id":"hn-50253939","title":"I still teach OpenGL ES 3.0","url":"https://eliasfarhan.ch/graphics/cpp/2026/01/27/why-i-teach-opengles.html","source":"Hacker News","score":140,"comments_count":86,"comments_url":"https://news.ycombinator.com/item?id=50253939","published_at":"2026-10-27T02:15:10","author":"majorchord","text":null,"summary":"作者分享了自己仍然教授OpenGL ES 3.0的理由，在图形API快速迭代的背景下，探讨经典技术在教学中的价值与适用场景。"},{"id":"hn-50253529","title":"16-bit Windows (Windows 1.x, 2.x, 3.0, 3.1, etc.) on 64-bit Windows","url":"https://github.com/otya128/winevdm","source":"Hacker News","score":137,"comments_count":34,"comments_url":"https://news.ycombinator.com/item?id=50253529","published_at":"2026-10-27T01:15:04","author":"doener","text":null,"summary":"一个在64位Windows上运行16位Windows程序的开源项目winevdm，为复古软件兼容性和系统模拟提供了实用方案。"},{"id":"hn-50262229","title":"Introducing LFM3: Every Modality for Specialized Intelligence","url":"https://www.liquid.ai/blog/lfm3","source":"Hacker News","score":127,"comments_count":51,"comments_url":"https://news.ycombinator.com/item?id=50262229","published_at":"2026-10-27T17:04:50","author":"Philpax","text":null,"summary":"Liquid AI发布LFM3模型系列，宣称覆盖所有模态以支持专业化智能，值得关注其在多模态AI领域的技术定位与差异化。"},{"id":"hn-50218975","title":"Show HN: Encarta 95 Web","url":"https://benwinding.github.io/encarta_95_web/#/article/Art","source":"Hacker News","score":117,"comments_count":59,"comments_url":"https://news.ycombinator.com/item?id=50218975","published_at":"2026-10-24T07:18:37","author":"gitgud","text":"Encarta is super nostalgic, and I was surprised it wasn&#x27;t available to use online. So I embarked on the difficult task of making it so.<p>The way this works is the most convoluted, nonsense and brittle system ever... but it works as a statically hosted gh-pages site!<p>Please note: All the material on this site is freely available through the internet archive (see github readme)<p>Github repo -&gt; <a href=\"https:&#x2F;&#x2F;github.com&#x2F;benwinding&#x2F;encarta_95_web\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;benwinding&#x2F;encarta_95_web</a>","summary":"开发者将经典的Encarta 95百科全书做成了静态托管的网页版，以极其曲折但可行的方式实现了怀旧数字内容的在线访问。"}],"locale":"en"}],"$Lc"]}]]}]
+**总体观察**：今日榜单呈现三条主线——一是**安全信任链问题集中爆发**（eMudhra 证书、GitLab CVE、DHS 数据泄露、DDoS 防御），二是**AI 从模型发布转向科学发现与工作方式重塑**（OpenAI 三项发现、Genie 4、智能体思考、Stack Overflow 崩塌），三是**Apple 硬件发布日**占据大量讨论量。此外，终端、编辑器、系统底层等"经典开发者工具"话题热度不减，说明社区对基础工具的长期关注依然稳固。0:{"buildId":"mlkGyWEmyPcmffOTRRlb3","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-10-29","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":14},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-10-29"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-50261998","title":"Ghostty 1.4","url":"https://ghostty.org/docs/install/release-notes/1-4-0","source":"Hacker News","score":1307,"comments_count":416,"comments_url":"https://news.ycombinator.com/item?id=50261998","published_at":"2026-10-27T16:51:22","author":"deaux","text":null,"summary":"Ghostty 1.4 版本发布，这是一款终端模拟器的新更新，值得关注其功能改进和性能提升。"},{"id":"hn-50251344","title":"Three new discoveries in mathematics, computer science, and physics","url":"https://openai.com/index/building-scientific-understanding-with-academic-communities/","source":"Hacker News","score":1149,"comments_count":695,"comments_url":"https://news.ycombinator.com/item?id=50251344","published_at":"2026-10-26T21:35:28","author":"jonluca","text":"Related:<p><i>The Exponential Time Hypothesis Is False [pdf]</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50251661\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50251661</a>","summary":"OpenAI 宣布在数学、计算机科学和物理学领域的三项新发现，展示了 AI 在推动学术研究方面的潜力。"},{"id":"hn-50271640","title":"Apple's git still trusts the compromised eMudhra certificates","url":"https://emudhra.we-have-a-problem.com/apple.html","source":"Hacker News","score":1070,"comments_count":381,"comments_url":"https://news.ycombinator.com/item?id=50271640","published_at":"2026-10-28T11:03:40","author":"galadran","text":null,"summary":"文章指出苹果的 Git 仍然信任已泄露的 eMudhra 证书，引发对供应链安全和证书管理的担忧。"},{"id":"hn-50261319","title":"Genie 4","url":"https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/","source":"Hacker News","score":1022,"comments_count":581,"comments_url":"https://news.ycombinator.com/item?id=50261319","published_at":"2026-10-27T16:06:01","author":"acossta","text":null,"summary":"DeepMind 发布 Genie 4，新一代世界模拟模型，值得关注其在 AI 模拟环境方面的进展。"},{"id":"hn-50276998","title":"Why is this fingerprinting script creating bioweapons?","url":"https://nullpt.rs/fingerprinting-bioweapons","source":"Hacker News","score":931,"comments_count":198,"comments_url":"https://news.ycombinator.com/item?id=50276998","published_at":"2026-10-28T17:13:29","author":"hazebooth","text":null,"summary":"一篇关于指纹识别脚本意外创建生物武器的文章，探讨了技术误用和安全风险。"},{"id":"hn-50257419","title":"Python's experimental JIT to be removed","url":"https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/","source":"Hacker News","score":564,"comments_count":326,"comments_url":"https://news.ycombinator.com/item?id=50257419","published_at":"2026-10-27T11:17:57","author":"f311a","text":null,"summary":"Python 的实验性 JIT 编译器将被移除，反映了 Python 性能优化方向的调整。"},{"id":"hn-50276940","title":"MacBook Pro with PROLED XDR Display and Touch","url":"https://www.apple.com/macbook-pro/proled-xdr-display/","source":"Hacker News","score":521,"comments_count":902,"comments_url":"https://news.ycombinator.com/item?id=50276940","published_at":"2026-10-28T17:10:37","author":"etothet","text":"<a href=\"https:&#x2F;&#x2F;www.apple.com&#x2F;newsroom&#x2F;2026&#x2F;10&#x2F;apple-unveils-groundbreaking-macbook-pro-with-proled-xdr-display&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.apple.com&#x2F;newsroom&#x2F;2026&#x2F;10&#x2F;apple-unveils-groundb...</a>","summary":"苹果推出搭载 PROLED XDR 显示屏和触控功能的 MacBook Pro，值得关注其显示技术和交互创新。"},{"id":"hn-50243060","title":"The Grid, a factory-scale robot in Massachusetts that builds PCBs on demand","url":"https://www.circuithub.com/post/unveiling-the-grid","source":"Hacker News","score":455,"comments_count":209,"comments_url":"https://news.ycombinator.com/item?id=50243060","published_at":"2026-10-26T13:13:31","author":"seddona","text":null,"summary":"Circuithub 在马萨诸塞州推出工厂级机器人 The Grid，可按需构建 PCB，展示了制造业自动化新趋势。"},{"id":"hn-50273171","title":"Emacs Turns 50","url":"https://www.technologyreview.com/2026/10/20/1145399/emacs-turns-50/","source":"Hacker News","score":439,"comments_count":183,"comments_url":"https://news.ycombinator.com/item?id=50273171","published_at":"2026-10-28T13:25:11","author":"internet_points","text":null,"summary":"Emacs 迎来 50 周年，回顾这款经典编辑器对软件开发文化的深远影响。"},{"id":"hn-50268380","title":"Git for the US Code","url":"https://lexifina.com/blog/git-for-the-us-code","source":"Hacker News","score":432,"comments_count":262,"comments_url":"https://news.ycombinator.com/item?id=50268380","published_at":"2026-10-28T01:47:50","author":"alansaber","text":null,"summary":"文章介绍如何用 Git 管理美国法典，探讨版本控制在法律文本中的应用。"},{"id":"hn-50274409","title":"CNC Stone Carving","url":"https://carmelitegothic.com/cnc-stone-carving/","source":"Hacker News","score":426,"comments_count":122,"comments_url":"https://news.ycombinator.com/item?id=50274409","published_at":"2026-10-28T14:38:22","author":"bschne","text":null,"summary":"文章介绍用CNC数控机床进行石材雕刻的技术与工艺，展示了传统石雕与现代数控加工结合的可能性，对制造和工艺爱好者有参考价值。"},{"id":"hn-50261352","title":"New 14‑inch MacBook Pro with M6","url":"https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/","source":"Hacker News","score":424,"comments_count":604,"comments_url":"https://news.ycombinator.com/item?id=50261352","published_at":"2026-10-27T16:08:32","author":"beex","text":null,"summary":"苹果发布搭载M6芯片的新款14英寸MacBook Pro，值得关注其性能提升与产品定位变化。"},{"id":"hn-50234796","title":"Ink droplets in motion snag top prize in Nikon Small World contest","url":"https://arstechnica.com/science/2026/10/meet-the-2026-winner-of-nikons-small-world-photomicrography-contest/","source":"Hacker News","score":394,"comments_count":69,"comments_url":"https://news.ycombinator.com/item?id=50234796","published_at":"2026-10-25T18:49:48","author":"_Microft","text":null,"summary":"尼康Small World显微摄影大赛揭晓，运动中的墨滴作品夺冠，展示了微观摄影的艺术与科学魅力。"},{"id":"hn-50280864","title":"Leak Exposes 41,000 Homeland Security Workers–Including Undercover ICE Agents","url":"https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents/","source":"Hacker News","score":299,"comments_count":157,"comments_url":"https://news.ycombinator.com/item?id=50280864","published_at":"2026-10-28T21:03:24","author":"Aboutplants","text":null,"summary":"一起大规模数据泄露暴露了4.1万名美国国土安全部员工信息，包括ICE卧底探员，凸显敏感数据安全风险。"},{"id":"hn-50272145","title":"US agency approves Amazon Leo’s $11.5B acquisition of Globalstar","url":"https://www.reuters.com/business/media-telecom/us-agency-approves-amazon-leos-115-billion-acquisition-globalstar-2026-10-27/","source":"Hacker News","score":226,"comments_count":101,"comments_url":"https://news.ycombinator.com/item?id=50272145","published_at":"2026-10-28T11:54:23","author":"noptd","text":"Previously: <i>Amazon to acquire Globalstar and expand Amazon Leo satellite network</i> - <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47775183\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47775183</a> - April 2026 (119 comments)","summary":"美国监管机构批准亚马逊Leo以115亿美元收购Globalstar，将影响卫星通信与低轨网络竞争格局。"},{"id":"hn-50265594","title":"Raspberry Pi Zero 3W and Pi 4 Model A spotted in device trees","url":"https://bret.dk/raspberry-pi-zero-3-w-pi-4-model-a/","source":"Hacker News","score":216,"comments_count":141,"comments_url":"https://news.ycombinator.com/item?id=50265594","published_at":"2026-10-27T20:48:49","author":"sthlmb","text":null,"summary":"在设备树中发现Raspberry Pi Zero 3W和Pi 4 Model A的痕迹，暗示树莓派可能推出新硬件型号。"},{"id":"hn-50258868","title":"Here be monsters: What do you still need to know when agents do the work?","url":"https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work","source":"Hacker News","score":198,"comments_count":102,"comments_url":"https://news.ycombinator.com/item?id=50258868","published_at":"2026-10-27T13:23:22","author":"adrq","text":null,"summary":"文章探讨当AI代理承担更多工作时，人类还需要掌握哪些关键知识与判断力，对AI协作时代的能力建设有启发。"},{"id":"hn-50223739","title":"Decompiling Fast Food Tycoon 2: Drawing the World","url":"https://healeycodes.com/decompiling-fast-food-tycoon-2-drawing-the-world","source":"Hacker News","score":194,"comments_count":42,"comments_url":"https://news.ycombinator.com/item?id=50223739","published_at":"2026-10-24T18:17:57","author":"healeycodes","text":null,"summary":"作者分享逆向工程《快餐大亨2》并解析其世界绘制机制的过程，是游戏逆向与图形编程的趣味案例。"},{"id":"hn-50274251","title":"AlpineBSD","url":"https://wiki.alpinebsd.org","source":"Hacker News","score":185,"comments_count":175,"comments_url":"https://news.ycombinator.com/item?id=50274251","published_at":"2026-10-28T14:30:26","author":"bradley_taunt","text":null,"summary":"AlpineBSD项目将Alpine Linux与FreeBSD结合，探索轻量级容器与BSD生态的融合方案。"},{"id":"hn-50282454","title":"StackOverflow now gets fewer than 1000 questions a month","url":"https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1","source":"Hacker News","score":177,"comments_count":177,"comments_url":"https://news.ycombinator.com/item?id=50282454","published_at":"2026-10-28T23:35:02","author":"babelfish","text":null,"summary":"Stack Overflow月提问量已不足1000条，反映AI编程助手对开发者问答社区的深刻冲击。"},{"id":"hn-50265128","title":"Four Months of Zig","url":"https://gracefulliberty.com/articles/four-months-of-zig/","source":"Hacker News","score":176,"comments_count":143,"comments_url":"https://news.ycombinator.com/item?id=50265128","published_at":"2026-10-27T20:13:27","author":"ibobev","text":null,"summary":"作者分享了使用Zig编程语言四个月的体验与心得，对于关注新兴系统编程语言的开发者具有参考价值。"},{"id":"hn-50262229","title":"Introducing LFM3: Every Modality for Specialized Intelligence","url":"https://www.liquid.ai/blog/lfm3","source":"Hacker News","score":169,"comments_count":66,"comments_url":"https://news.ycombinator.com/item?id=50262229","published_at":"2026-10-27T17:04:50","author":"Philpax","text":null,"summary":"Liquid AI发布LFM3模型，宣称支持所有模态以实现专业化智能，值得关注其在多模态AI领域的技术突破。"},{"id":"hn-50271685","title":"About the compromised eMudhra intermediate CAs","url":"https://support.apple.com/en-us/149555","source":"Hacker News","score":156,"comments_count":76,"comments_url":"https://news.ycombinator.com/item?id=50271685","published_at":"2026-10-28T11:08:49","author":"birdculture","text":null,"summary":"苹果官方说明eMudhra中间CA证书被入侵的情况，涉及证书信任链安全，对依赖TLS/代码签名的用户有重要警示意义。"},{"id":"hn-50281044","title":"Formlabs Studio 1 $699 Resin Printer","url":"https://formlabs.com/products/form-studio-1-basic-founders-edition/","source":"Hacker News","score":143,"comments_count":93,"comments_url":"https://news.ycombinator.com/item?id=50281044","published_at":"2026-10-28T21:19:30","author":"mhb","text":null,"summary":"Formlabs推出售价699美元的Studio 1树脂打印机，大幅降低专业级树脂3D打印的门槛，值得硬件创客关注。"},{"id":"hn-50280974","title":"A Health Update","url":"https://furbo.org/2026/10/28/a-health-update/","source":"Hacker News","score":141,"comments_count":17,"comments_url":"https://news.ycombinator.com/item?id=50280974","published_at":"2026-10-28T21:13:21","author":"frizlab","text":null,"summary":"一篇个人健康更新博客，内容与主流技术话题关联较弱，关注度有限。"}],"locale":"en"}],"$Lc"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["Generated by"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","Powered by DeepSeek"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
 a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
-c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-c49c9b07d599","title":"A fast and secure tar parser for the Rust ecosystem","url":"https://astral.sh/blog/tar-codec","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-27T16:59:30","author":"astral.sh by yossarian","text":"<p><a href=\"https://lobste.rs/s/q7arzy/fast_secure_tar_parser_for_rust_ecosystem\">Comments</a></p>","summary":"Astral发布面向Rust生态的快速安全tar解析器，为Rust项目提供更可靠的归档文件处理基础组件。"},{"id":"rss-a9a2f4b7e155","title":"Four Months of Zig","url":"https://gracefulliberty.com/articles/four-months-of-zig/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-27T18:46:09","author":"gracefulliberty.com via Defelo","text":"<p><a href=\"https://lobste.rs/s/qr59sa/four_months_zig\">Comments</a></p>","summary":"一篇关于使用Zig语言四个月的实践总结，为考虑采用Zig的开发者提供了第一手经验与语言特性评估。"},{"id":"rss-4a5c9eb1ab9e","title":"Python's experimental JIT to be removed","url":"https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-27T06:20:38","author":"lwn.net via val","text":"<p><a href=\"https://lobste.rs/s/cajuq6/python_s_experimental_jit_be_removed\">Comments</a></p>","summary":"Python实验性JIT将被移除，这一决策反映了CPython性能优化路线的调整，对关注Python运行时发展的开发者具有参考意义。"},{"id":"rss-5ef1feb8879f","title":"Ghostty 1.4.0","url":"https://ghostty.org/docs/install/release-notes/1-4-0","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-27T22:06:07","author":"ghostty.org via BD103","text":"<p><a href=\"https://lobste.rs/s/o6vpqb/ghostty_1_4_0\">Comments</a></p>","summary":"终端模拟器Ghostty发布1.4.0版本，更新内容值得终端工具用户和开发者关注。"},{"id":"rss-c401f9ac05da","title":"Shitty Screenshare","url":"http://shittyscreenshare.com","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-27T00:12:16","author":"shittyscreenshare.com by Sean-Der","text":"<p><a href=\"https://lobste.rs/s/cxxcik/shitty_screenshare\">Comments</a></p>","summary":"一个名为Shitty Screenshare的屏幕共享工具项目，以极简或戏谑的方式切入屏幕共享场景，可能带来轻量化的替代思路。"}],"locale":"en"}]
+c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-67a436aa710a","title":"Apple's git still trusts the compromised eMudhra certificates","url":"https://emudhra.we-have-a-problem.com/apple.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-28T11:03:56","author":"emudhra.we-have-a-problem.com by galadran","text":"<p><a href=\"https://lobste.rs/s/xybmsj/apple_s_git_still_trusts_compromised\">Comments</a></p>","summary":"文章指出苹果的Git仍信任已被入侵的eMudhra证书，暴露了证书吊销机制在实际工具链中的落实问题，安全影响值得警惕。"},{"id":"rss-991502ec28b6","title":"AlpineBSD","url":"https://wiki.alpinebsd.org/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-28T10:34:55","author":"wiki.alpinebsd.org via FedericoSchonborn","text":"<p><a href=\"https://lobste.rs/s/yxuvie/alpinebsd\">Comments</a></p>","summary":"AlpineBSD项目Wiki页面，介绍基于Alpine的BSD系统方案，对关注轻量级Unix系统的用户有参考价值。"},{"id":"rss-6330d87d2121","title":"This is not sustainable","url":"https://www.netmeister.org/blog/defense-ddos.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-28T03:56:49","author":"netmeister.org via binjip978","text":"<p><a href=\"https://lobste.rs/s/cpaibp/this_is_not_sustainable\">Comments</a></p>","summary":"文章讨论DDoS防御的可持续性问题，反思当前防御模式在成本和架构上的不可持续性，对运维和安全从业者有启发。"},{"id":"rss-069f24f748a8","title":"GitLab security incident: attempted exploitation of CVE-2026-97229","url":"https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-28T23:01:26","author":"alpinelinux.org by durrendal","text":"<p><a href=\"https://lobste.rs/s/2zsjwt/gitlab_security_incident_attempted\">Comments</a></p>","summary":"Alpine Linux披露GitLab安全事件，涉及CVE-2026-97229的利用尝试，提醒自托管GitLab用户及时排查和修补。"},{"id":"rss-ee06e0806da9","title":"GOTO Considered Totally Sick (for error handling in C)","url":"https://thestateofinahaze.net/blog/c-goto-considered-totally-sick/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-10-28T16:07:18","author":"thestateofinahaze.net via eBPF","text":"<p><a href=\"https://lobste.rs/s/exwlmn/goto_considered_totally_sick_for_error\">Comments</a></p>","summary":"文章为C语言中使用goto进行错误处理的辩护，探讨其在资源清理场景下的实用优势，对C开发者有讨论价值。"}],"locale":"en"}]
 f:null
