@@ -3,157 +3,132 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-e:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-f:"$Sreact.suspense"
-5:T227d,# 今日 AI & Machine Learning 热门内容分析总结
+c:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+d:"$Sreact.suspense"
+5:T1ee7,# 今日 AI & Machine Learning 热门内容分析（Top 17）
 
-今天的热门榜单呈现出一个明显的特征：**技术发布与安全事件占据头条，但更值得关注的是围绕 AI 对工程组织、职业结构和资本市场的深层冲击**。以下按子主题分组分析全部 16 篇文章。
+今天的热门讨论呈现出几个鲜明特征：**模型开放权重与能力竞赛**（Mistral、GPT-5.6、Qwen 团队协作）、**AI 安全与滥用**（供应链投毒、账号接管、恶意软件、模型滥用封禁）、以及**AI 对社会与职业的冲击**（CS 专业学生流失、工会化、个人生计）。下面按子主题分组整理全部 17 篇。
 
----
 
-## 一、模型发布与开源
+## 一、模型发布与能力评测（开放权重、推理与智能体）
 
-### 1. Mistral 开源 Mistral Large 4 权重
-**为什么值得关注**：今日绝对热度第一（1684 分、435 条评论）。Mistral 以开源权重方式发布旗舰级大模型，对整个开源/闭源竞争格局是一次重要冲击，评论区讨论集中在许可条款、性能对标与商业可持续性。
+**1. Mistral 发布 Mistral Large 4 开放权重**
+今日热度最高（1706 分、438 条评论）。Mistral 开源旗舰级模型权重，是开源阵营对闭源前沿模型的重要回应，值得关注其对开放权重生态和部署成本的影响。
 - 原文：https://mistral.ai/news/mistral-large-4-oss/
 - 讨论：https://news.ycombinator.com/item?id=50289418
 
-### 7. Show HN：用约 1GB 的 Qwen 权重"跑起"一台任天堂
-**为什么值得关注**：极客趣味与模型能力的结合——用极小规模的模型权重模拟 NES 行为，是"小模型能做什么"的生动案例，也引发对模型是否真正"理解"游戏逻辑的讨论。
-- 原文：https://github.com/dbreunig/nesformer
-- 讨论：https://news.ycombinator.com/item?id=50306442
+**8. GPT-5.6 Sol 可在和平模式下通关《Factorio》**
+模型在复杂策略游戏中的长程规划与执行能力测试，是评估智能体（agent）能力的有趣基准。
+- 原文：https://ryanmadden.net/gpt-56-beats-factorio/
+- 讨论：https://news.ycombinator.com/item?id=50318871
 
-### 8. Sleep 框架：让 LLM 在持续学习中保留知识
-**为什么值得关注**：来自 Google Research，直击持续学习中的灾难性遗忘问题。虽然评论数不多（19 条），但技术含金量高，附带 arXiv 论文，适合研究者精读。
-- 原文：https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/
-- 论文：https://arxiv.org/pdf/2606.03979
-- 讨论：https://news.ycombinator.com/item?id=50272479
+**9. Memdoor：5 个 Qwen3.8-27B 模型组队击败 Fable 5（LiveCodeBench Hard）**
+“多小模型协作”路线在困难代码基准上超越单一大模型，对成本与推理架构设计有直接参考价值。
+- 原文：https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve
+- 讨论：https://news.ycombinator.com/item?id=50320995
 
----
+**14. ChatGPT 与 Codex 使用额度合并**
+OpenAI 将 ChatGPT 与 Codex 的用量限制打通，反映“对话 + 编码智能体”产品线的整合趋势，影响开发者日常配额规划。
+- 原文：https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits
+- 讨论：https://news.ycombinator.com/item?id=50320588
 
-## 二、AI 安全与供应链风险
 
-### 2. Cursor Marketplace 上 VS Code 版 Claude Code 扩展被植入后门
-**为什么值得关注**：今日第二大热点（810 分、502 条评论，讨论量最高）。这是典型的 AI 工具链供应链攻击案例，提醒所有开发者：AI 编码助手本身已成为攻击面。Cursor 官方已发布安全公告。
+## 二、AI 安全、隐私与滥用
+
+**2. Cursor Marketplace 上 VS Code 版 Claude Code 扩展存在后门**
+971 分、547 条评论，是今日安全类最热话题。官方扩展被投毒（供应链攻击），对依赖 AI 编码插件的开发者是直接警示。
 - 原文：https://phorion.io/blog/offical-claude-code-vsx-compromise/
-- 官方公告：https://cursor.com/blog/claude-code-extension-security-notice
 - 讨论：https://news.ycombinator.com/item?id=50300683
+- 相关官方声明：https://cursor.com/blog/claude-code-extension-security-notice
 
----
+**4. 算一算：我们如何接管了 ChatGPT 账号**
+Parameter.ai 披露针对 OpenAI 账号的漏洞利用路径，属于 AI 平台账号安全的实战案例。
+- 原文：https://www.parameter.ai/labs/we-found-a-gap-at-openai
+- 讨论：https://news.ycombinator.com/item?id=50314699
 
-## 三、AI 对工程组织与职业的影响
+**6. 恶意软件用 LLM 给受害者“估值”排序**
+Talos 分析 Volta Infostealer 利用 AI 模型对受害者进行优先级排序，是“AI 赋能网络犯罪”的典型样本，防御方需关注。
+- 原文：https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/
+- 讨论：https://news.ycombinator.com/item?id=50316531
 
-这一组是今日讨论密度最高的"社会影响"板块，多篇文章形成互文。
+**5. Anthropic 封禁任何涉及训练更大模型的用户**
+据称 Anthropic 对疑似用于训练更大模型的账号采取封禁措施，引发关于 API 使用条款边界与研究者自由的讨论。
+- 原文：https://twitter.com/jiahaoshao1/status/2116475922190922088
+- 讨论：https://news.ycombinator.com/item?id=50319358
 
-### 3. AI 没有取代 SRE，而是在"去技能化"他们
-**为什么值得关注**：527 分、397 条评论。文章提出一个尖锐观点：AI 让运维工程师从深度理解系统退化为"AI 输出的审核者"，长期削弱团队故障处置能力。与第 10 篇形成对照阅读。
-- 原文：https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling
-- 讨论：https://news.ycombinator.com/item?id=50305693
+**10. Anthropic 阻止 Claude 逆向工程电子游戏**
+针对游戏克隆/逆向工程的使用限制，涉及模型输出与知识产权、版权责任的边界。
+- 原文：https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering
+- 讨论：https://news.ycombinator.com/item?id=50320255
 
-### 9. Cisco 给工程师"无限 AI token"重写遗留代码
-**为什么值得关注**：一个具体的企业实验：给一位 27 岁工程师无限 token 去重写遗留系统，同时涉及入门级岗位的未来。是"AI 原生工程"落地的一手案例。
-- 原文：https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/
-- 讨论：https://news.ycombinator.com/item?id=50304122
+**12. AI 文本水印与质量损耗**
+讨论水印技术在可检测性与生成质量之间的权衡，对内容溯源与合规有现实意义。
+- 原文：https://blog.keyvan.net/p/ai-text-watermarking-and-quality
+- 讨论：https://news.ycombinator.com/item?id=50320599
 
-### 10. 如何构建 AI 原生的工程组织
-**为什么值得关注**：与第 3、9 篇同一脉络，从组织设计角度讨论流程、角色与协作方式的重构。评论活跃（156 条），适合管理者参考。
-- 原文：https://twitter.com/sgondala2/status/2115832070274723875
-- 讨论：https://news.ycombinator.com/item?id=50296730
 
----
+## 三、AI 与社会、就业及个体影响
 
-## 四、AI Agent 的实践与基础设施
+**3. 塞尔维亚选出了“世界上最聪明的议会”**
+830 分、472 条评论。关于科研人员/高学历者进入政坛的讨论，虽非纯技术话题，但在 HN 引发对“专业知识与治理”的广泛辩论。
+- 原文：https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament
+- 讨论：https://news.ycombinator.com/item?id=50314654
 
-### 4. 我们在《我的世界》和 Mindustry 中运行 AI Agent 集群
-**为什么值得关注**：YC Labs 的项目，399 分。多智能体协作在开放游戏环境中运行，是 agent swarm 研究的直观演示，也是观察多 agent 协调失败模式的窗口。
-- 原文：https://labs.ycombinator.com/projects/games/index.html
-- 讨论：https://news.ycombinator.com/item?id=50296486
+**13. AI 取代岗位，计算机科学专业学生流失**
+彭博报道 CS 学位项目招生下滑，是 AI 对教育与就业结构冲击的直接信号。
+- 原文：https://www.bloomberg.com/news/articles/2026-10-29/computer-science-degree-programs-lose-students-as-ai-takes-jobs
+- 讨论：https://news.ycombinator.com/item?id=50321065
 
-### 12. Launch HN：Simantic（YC F26）—— 面向 AI Agent 的固件仿真
-**为什么值得关注**：让 AI agent 在没有硬件的情况下测试和验证固件。创始人为 Neuralink、Tesla 前固件工程师，是 agent 从"写代码"走向"操作真实系统"的关键基础设施。
-- 项目主页：https://simantic.com
-- 讨论：https://news.ycombinator.com/item?id=50291116
+**16. AI 或推动“反工会”的科技从业者走向谈判桌**
+探讨 AI 带来的岗位不确定性如何改变科技行业劳工组织态度。
+- 原文：https://www.theguardian.com/technology/2026/jul/21/ai-tech-workers-unionize
+- 讨论：https://news.ycombinator.com/item?id=50321734
 
-### 15. Show HN：Sketch Stadium —— 看你的 agent 玩你画我猜
-**为什么值得关注**：轻量但有趣——最初是为"向 AI agent 推送通知"做的概念验证，最终变成了多 agent 协作游戏演示。适合观察 agent 间通信与多模态交互。
-- 原文：https://sketch.wakeshift.ai/games/q5ucru
-- 讨论：https://news.ycombinator.com/item?id=50305218
+**17. “AI 让我无家可归”**
+个人叙事视角，反映 AI 冲击下的个体生计困境，讨论度低但具人文观察价值。
+- 原文：https://medium.com/effortless-programming/ai-made-me-homeless-a7266d716e59
+- 讨论：https://news.ycombinator.com/item?id=50322251
 
----
 
-## 五、AI 资本与市场情绪
+## 四、形式化方法与新兴应用
 
-### 5. 贝莱德：Anthropic IPO 后未必能获得投资级评级
-**为什么值得关注**：288 分、241 条评论。头部 AI 公司的信用评级争议，反映市场开始用传统金融框架审视 AI 企业的现金流与风险结构。
-- 原文：https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f
-- 讨论：https://news.ycombinator.com/item?id=50307219
+**7. AI、Lean 与形式化验证的未来——对话 Lean 创造者 Leo de Moura**
+探讨 LLM 与定理证明/形式化验证结合的前沿方向，是“AI for Math”领域的重要访谈。
+- 原文：https://thedataexchange.media/leo-de-moura-lean-aws/
+- 讨论：https://news.ycombinator.com/item?id=50290652
 
-### 13. 华尔街大幅收跌：AI 烧钱担忧引发科技股抛售
-**为什么值得关注**：与第 5 篇同一主题的市场侧印证——AI 资本开支的可持续性正成为市场定价的核心变量。
-- 原文：https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/
-- 讨论：https://news.ycombinator.com/item?id=50310431
+**11. 我在 Demoscene 上训练了一个模型**
+将生成模型用于 Demoscene（极限图形编程）创作，属于小众但富有创意的生成式 AI 应用。
+- 原文：https://datavorous.com/writing/demoscener/
+- 讨论：https://news.ycombinator.com/item?id=50318442
 
-### 14. "Some Thing is Happening"：一封来自 AI 公司的说明
-**为什么值得关注**：一篇带有讽刺/评论色彩的短文，与第 5、13 篇的资本焦虑主题形成文化层面的呼应，值得一读作为情绪注脚。
-- 原文：https://alanbellows.com/some-thing-is-happening/
-- 讨论：https://news.ycombinator.com/item?id=50305724
+**15. OqtaDrive 五周年：从 Microdrive 模拟到互联网上的 Sinclair 网络**
+复古计算/模拟器项目回顾，与 AI 关联较弱，但在 HN 技术社区中体现了硬件与网络复古文化的持续活力。
+- 原文：https://oqtadrive.org/10.other/5-years/
+- 讨论：https://news.ycombinator.com/item?id=50301178
 
----
-
-## 六、非 AI 主题（榜单混入项）
-
-以下三篇与 AI/ML 主题无直接关联，但按要求列出：
-
-### 6. 通过皮卡德舰长，Patrick Stewart 教会我们"人的尺度"
-波士顿环球报的人物特写，245 分，讨论活跃（137 条）。
-- 原文：https://www.bostonglobe.com/2026/10/29/metro/patrick-stewart-picard-star-trek-the-next-generation/
-- 讨论：https://news.ycombinator.com/item?id=50309647
-
-### 11. AO3 维护停机
-同人作品平台 Archive of Our Own 的状态页公告。
-- 原文：https://www.otwstatus.org
-- 讨论：https://news.ycombinator.com/item?id=50310258
-
-### 16. Wonderful Weather：17 世纪英国的洪水与凶兆
-Public Domain Review 的历史文化随笔。
-- 原文：https://publicdomainreview.org/essay/wonderful-weather/
-- 讨论：https://news.ycombinator.com/item?id=50277518
-
----
 
 ## 今日最值得阅读的 5 篇推荐
 
-1. **Mistral Large 4 开源权重发布**（第 1 篇）
-   今日热度与行业影响双第一，直接关系开源模型与闭源前沿模型的竞争走向。评论区是理解各方立场的最佳窗口。
+1. **Mistral Large 4 开放权重发布** —— 今日热度第一，直接关系到开源与闭源前沿模型的竞争格局，适合关注模型部署与成本的人。
    https://mistral.ai/news/mistral-large-4-oss/
 
-2. **Claude Code 扩展后门事件**（第 2 篇）
-   讨论量全场最高。所有使用 AI 编码工具的开发者都应了解这类供应链攻击的具体路径，并核对官方安全公告。
+2. **Claude Code VS Code 扩展后门事件** —— 供应链安全的高优先级警示，所有使用 AI 编码插件的开发者都应了解。
    https://phorion.io/blog/offical-claude-code-vsx-compromise/
 
-3. **AI 正在"去技能化"SRE**（第 3 篇）
-   今日最有观点张力的一篇，提出"能力退化"而非"岗位替代"的框架。建议与第 10 篇《构建 AI 原生工程组织》对照阅读，形成正反视角。
-   https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling
+3. **恶意软件用 LLM 给受害者排序（Talos 分析）** —— 少见的“AI 驱动攻击”一线技术分析，安全从业者必读。
+   https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/
 
-4. **Sleep 框架：LLM 持续学习中的知识保留**（第 8 篇）
-   技术密度最高、附带论文的一篇。持续学习与遗忘问题是当前 LLM 落地的关键瓶颈，适合研究者深入。
-   https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/
+4. **5 个 Qwen 小模型组队击败 Fable 5** —— 多模型协作的实证案例，对低成本高性能推理架构有直接启发。
+   https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve
 
-5. **贝莱德谈 Anthropic 评级 + 华尔街 AI 抛售**（第 5、13 篇合并）
-   两篇合读可完整把握"AI 资本开支焦虑"这条今日主线：从单一公司的信用评级到整体市场抛售，理解 AI 产业从技术叙事转向财务审视的转折。
-   https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f
-   https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/
+5. **AI、Lean 与形式化验证的未来（Leo de Moura 访谈）** —— 从 Lean 创造者视角理解 AI 与数学证明结合的方向，适合想把握长期趋势的读者。
+   https://thedataexchange.media/leo-de-moura-lean-aws/
 
----
-
-**一句话总结**：今天榜单表面是"开源模型 + 安全事件"的双热点，深层主线却是 **AI 从技术乐观期进入审视期**——工具链安全、工程师技能退化、组织重构、资本回报质疑，四条线索同时浮现。0:{"buildId":"VdzsUlhHbqIpN_RwVcdyK","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-10-31","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":16},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"ai","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"AI & Machine Learning"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"Artificial intelligence, machine learning, LLMs, and generative AI"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[16," ","篇文章"," • ","2026-10-31"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"AI & Machine Learning","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-c:T1701,Hi HN, we&#x27;re Ahnaf and Seungmin from Simantic (<a href="https:&#x2F;&#x2F;simantic.com">https:&#x2F;&#x2F;simantic.com</a>). We are building the simulation layer that lets engineers and AI agents test and validate firmware without hardware.<p>Before Simantic, we were ex-firmware engineers at companies like Neuralink and Tesla. We’ve worked on some of the coolest projects, like the Cybertruck and Roadster, back when they were still early prototypes.<p>We started working on firmware back when ChatGPT didn’t exist yet, but over the years, we saw how much of the engineering and development work has been automated as the frontier models improved to this point. In software, AI can run and test code inside your computer in a matter of seconds. But as firmware engineers, we didn’t have that luxury. An AI agent can write firmware in seconds, but in order to test it, we had to flash a physical board, then manually run tests using expensive and clunky tools with software made over a decade ago.<p>To speed up the validation loop, we built the simulation layer that lets AI agents test the firmware and make decisions based on evidence, instead of waiting for the engineer to run tests for them. We used to spend hours testing our firmware manually on devboards, but now we use our own simulation to validate firmware in seconds.<p>What we offer:
-- Virtual devboards you can program and run with a single API call, without leaving your terminal.
-- An AI code reviewer for firmware, that makes informed decisions based on evidence, using our simulation as a verification engine.
-- A CI&#x2F;CD pipeline for your hardware projects that validates your firmware against a simulated version of the microcontroller on every commit.<p>Here is a demo of our simulation used in an AI code review session: <a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=kBK1ZjGWWbQ" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=kBK1ZjGWWbQ</a><p>Our users are using Simantic for bare-metal and RTOS development for applications like flight controllers, electric vehicles, robotics, and satellites. For safety critical systems like avionics and automotives, a robust simulation system is incredibly important, because every change in the firmware puts a human life at stake, especially for machines that cost hundreds of thousands to millions of dollars.<p>We recently helped an early stage space startup building satellites, to test their firmware on hardware that they don&#x27;t yet have. Even the development modules for those satellites costs over $100k, and we helped them do that at just a hundredth of the cost and time.<p>Early on in our journey, we established our idea to make better simulation but didn’t have a clear idea of how we would do it, we considered developing our software around open source emulation frameworks like Renode (<a href="https:&#x2F;&#x2F;github.com&#x2F;renode&#x2F;renode" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;renode&#x2F;renode</a>) and QEMU (<a href="https:&#x2F;&#x2F;www.qemu.org&#x2F;" rel="nofollow">https:&#x2F;&#x2F;www.qemu.org&#x2F;</a>), because they were tools already used within the firmware industry. We built our MVP that was essentially a wrapper around Renode, but we quickly realized there were a lot of limitations to doing this.<p>1. We were bottlenecked by the development speed of Renode themselves. We tried making contributions on Github to fix issues we came across, but the speed in which we could merge our features in was not fast enough for a startup like us trying to move fast.<p>2. Renode is built using Dotnet, and it was proving itself to be slower than we would have liked. Renode was released in 2017, which was when all code was still being written by hand, so I think it made sense looking back, but there were limitations because of the language itself.<p>3. The open source tools were bloated, with features that we would never use. Yes, there were a  breadth of features, but we had a lot of things we had to work around just because we couldn’t remove or change them.
-Users were complaining about simulation accuracy. Renode is an emulator at the core, but our users, especially those who are building systems where timing accuracy is crucial did not find the accuracy good enough to validate their firmware.<p>Because of these issues, we made our own simulation engine from scratch, fully written in Rust.<p>- Our simulation is focused on accuracy. Open source frameworks often focus on expandability and developer experience, which means there were a lot of tradeoffs made to prioritize a breadth of models rather than going deep into a set of select models.<p>- We have our own hardware validation rigs running 24&#x2F;7 to ensure our simulation models are as close to real world hardware as possible, and any gaps are detected and fixed as soon as we can. It currently looks like devboards connected to a Saleae Logic MSO and a SWD bus, controlled by a Linux PC, running Claude 24&#x2F;7 just finding these gaps.<p>Our cloud-hosted simulator is available to use right now! We also provide a native binary with our developer plan licenses that let you run your firmware on your machines locally without any limitations.<p>Check it out at <a href="https:&#x2F;&#x2F;simantic.com&#x2F;cloud-sim">https:&#x2F;&#x2F;simantic.com&#x2F;cloud-sim</a>, and you can start using our AI firmware reviewer bot in your own Github repos here: <a href="https:&#x2F;&#x2F;simantic.com&#x2F;dashboard&#x2F;simantic-bot">https:&#x2F;&#x2F;simantic.com&#x2F;dashboard&#x2F;simantic-bot</a>.<p>We currently have support for some models of the STM32F0, F4, H7 series MCUs, ESP32-S3&#x2F;C3, and RP2040, but we’re constantly working to release new models every week, and improve our existing ones.<p>Thank you, and if you have any questions, feel free to send us an email at founders@simantic.devd:Tadc,tl;dr: Agents can play Pictionary. You can connect your own agent, or just watch a game in progress here: <a href="https:&#x2F;&#x2F;sketch.wakeshift.ai&#x2F;games&#x2F;q5ucru" rel="nofollow">https:&#x2F;&#x2F;sketch.wakeshift.ai&#x2F;games&#x2F;q5ucru</a><p>Hi folks! I initially built this as a proof-of-concept for sending push notifications to AI agents. Watching the agents play Pictionary together has been compelling, so I thought I&#x27;d ship it as a standalone demonstration.<p>In Sketch Stadium, your agent subscribes to game events. Agents take turns either drawing or guessing. Easy clues are 1 point, medium are 2, and hard are 3. It&#x27;s entertaining to watch and some of the drawings are impressive (and others are mind-bogglingly bad). This is the real opportunity for the model labs who have been pelican-maxxing to shine.<p>The first version gave agents the ability to draw lines 10 at a time so that it would be a little bit more like real Pictionary. However, it turns out agents are _really_ bad at drawing that way. So instead I let them use a subset of SVG to draw and that&#x27;s worked much better, even for the lower-cost models.<p>You don&#x27;t need to create an account to connect your agent, just add the MCP and authorize. But if you don&#x27;t want to do that, just watch the game linked above.<p>As a bit more background, agents often start processes that take an indeterminate amount of time to complete (e.g. CI, waiting for approval in a separate system, sending an email and waiting for a reply). If an agent needs that process to complete before it can proceed, it can:<p>* poll,<p>* ask the user to tell it when it&#x27;s done,<p>* use a bespoke built-in integration, or<p>* use a proprietary capability (e.g. Claude Code monitors)<p>Today, there&#x27;s no easy, consistent way to wake up agents through a webhook or push notification. I dealt with this firsthand with Clawvisor (authorization for agents) where I needed agents to recognize when the operator had clicked an out-of-band approve button. The best-supported way to achieve that at the time was long-polling.<p>This project is basically a tech demo for Wakeshift, which is a cross-harness, simple SDK for providing push notifications for agents. It attaches to your MCP to allow consumers of your MCP to subscribe to real-time events, and uses whatever available hacks per harness to wake an agent when dormant. For most harnesses, Wakeshift requires a hook to be installed for the best experience. It will upgrade automatically as harnesses start adopting MCP events.<p>I&#x27;d love any feedback or ideas for other products or games that you&#x27;d want to see built on this capability. Or MCP servers that you use today that you think would benefit from push notifications.6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",16,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-50289418","title":"We're releasing the weights of Mistral Large 4","url":"https://mistral.ai/news/mistral-large-4-oss/","source":"Hacker News","score":1684,"comments_count":435,"comments_url":"https://news.ycombinator.com/item?id=50289418","published_at":"2026-10-29T14:13:21","author":"kuberwastaken","text":null,"summary":"Mistral AI 宣布开源 Mistral Large 4 的模型权重，这是该公司旗舰大模型首次向公众开放权重，值得关注因为它可能显著降低高性能大模型的使用门槛并推动开源生态发展。"},{"id":"hn-50300683","title":"Backdoor in Claude Code for VS Code extension on the Cursor Marketplace","url":"https://phorion.io/blog/offical-claude-code-vsx-compromise/","source":"Hacker News","score":810,"comments_count":502,"comments_url":"https://news.ycombinator.com/item?id=50300683","published_at":"2026-10-30T07:09:12","author":"_chall","text":"<a href=\"https:&#x2F;&#x2F;cursor.com&#x2F;blog&#x2F;claude-code-extension-security-notice\" rel=\"nofollow\">https:&#x2F;&#x2F;cursor.com&#x2F;blog&#x2F;claude-code-extension-security-notic...</a>","summary":"文章披露 Cursor 市场中的 Claude Code VS Code 扩展存在后门，并附有 Cursor 官方安全公告链接，值得关注因为 AI 编程工具供应链安全直接威胁开发者环境与代码资产。"},{"id":"hn-50305693","title":"AI isn't replacing SREs, it's deskilling them","url":"https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling","source":"Hacker News","score":527,"comments_count":397,"comments_url":"https://news.ycombinator.com/item?id=50305693","published_at":"2026-10-30T15:52:18","author":"dorianniemiec","text":null,"summary":"文章探讨 AI 对站点可靠性工程师（SRE）的影响，认为 AI 并非取代 SRE，而是导致其技能退化（deskilling），值得关注因为它揭示了 AI 自动化对运维职业能力结构的隐性侵蚀。"},{"id":"hn-50296486","title":"We ran AI agent swarms in Minecraft and Mindustry","url":"https://labs.ycombinator.com/projects/games/index.html","source":"Hacker News","score":399,"comments_count":164,"comments_url":"https://news.ycombinator.com/item?id=50296486","published_at":"2026-10-29T21:40:28","author":"sandslash","text":null,"summary":"Y Combinator 实验室展示了在 Minecraft 和 Mindustry 游戏中运行 AI 智能体集群（agent swarms）的实验，值得关注因为它为多智能体协作与游戏环境中的 AI 行为研究提供了实践案例。"},{"id":"hn-50307219","title":"Anthropic may not secure investment-grade rating after IPO, Blackstone says","url":"https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f","source":"Hacker News","score":288,"comments_count":241,"comments_url":"https://news.ycombinator.com/item?id=50307219","published_at":"2026-10-30T17:27:25","author":"petethomas","text":null,"summary":"据 Blackstone 表示，Anthropic 在 IPO 后可能无法获得投资级信用评级，值得关注因为它反映了市场对头部 AI 公司财务稳健性与长期盈利能力的审慎评估。"},{"id":"hn-50309647","title":"Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man","url":"https://www.bostonglobe.com/2026/10/29/metro/patrick-stewart-picard-star-trek-the-next-generation/","source":"Hacker News","score":245,"comments_count":137,"comments_url":"https://news.ycombinator.com/item?id=50309647","published_at":"2026-10-30T20:23:30","author":"apress","text":null,"summary":"这是一篇关于帕特里克·斯图尔特通过《星际迷航》中皮卡德舰长角色诠释人性尺度的纪念文章，与 AI 主题无关，但值得关注作为文化视角下对人性与伦理的思考。"},{"id":"hn-50306442","title":"Show HN: A working Nintendo in ~1GB of Qwen weights","url":"https://github.com/dbreunig/nesformer","source":"Hacker News","score":206,"comments_count":116,"comments_url":"https://news.ycombinator.com/item?id=50306442","published_at":"2026-10-30T16:40:22","author":"dbreunig","text":null,"summary":"开发者展示了一个用约 1GB 的 Qwen 模型权重实现可运行任天堂模拟器的项目（NESformer），值得关注因为它展示了小规模语言模型在非传统任务上的创造性应用潜力。"},{"id":"hn-50272479","title":"Sleep framework: A new way for LLMs to retain knowledge in continual learning","url":"https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/","source":"Hacker News","score":183,"comments_count":19,"comments_url":"https://news.ycombinator.com/item?id=50272479","published_at":"2026-10-28T12:24:25","author":"acossta","text":"<a href=\"https:&#x2F;&#x2F;arxiv.org&#x2F;pdf&#x2F;2606.03979\" rel=\"nofollow\">https:&#x2F;&#x2F;arxiv.org&#x2F;pdf&#x2F;2606.03979</a>","summary":"Google Research 提出“睡眠框架”（Sleep Framework），帮助大语言模型在持续学习中保留知识，值得关注因为它针对 LLM 灾难性遗忘问题提供了新思路，对持续学习研究有重要意义。"},{"id":"hn-50304122","title":"Cisco gives engineer unlimited AI tokens to rewrite legacy code","url":"https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/","source":"Hacker News","score":128,"comments_count":156,"comments_url":"https://news.ycombinator.com/item?id=50304122","published_at":"2026-10-30T14:08:20","author":"taubek","text":null,"summary":"思科向一名工程师提供无限量 AI token 用于重写遗留代码，值得关注因为它体现了企业借助 AI 大规模改造技术债务的新模式及其对初级岗位的潜在影响。"},{"id":"hn-50296730","title":"Building an AI-native engineering org","url":"https://twitter.com/sgondala2/status/2115832070274723875","source":"Hacker News","score":118,"comments_count":156,"comments_url":"https://news.ycombinator.com/item?id=50296730","published_at":"2026-10-29T21:58:34","author":"sgondala_ycapp","text":null,"summary":"文章讨论如何构建 AI 原生工程组织，值得关注因为它为企业在组织架构、流程与文化层面落地 AI 提供了实践性思考。"},{"id":"hn-50310258","title":"AO3 Down for Maintenance","url":"https://www.otwstatus.org","source":"Hacker News","score":106,"comments_count":30,"comments_url":"https://news.ycombinator.com/item?id=50310258","published_at":"2026-10-30T21:17:23","author":"idlewords","text":null,"summary":"AO3因维护而宕机，与AI和机器学习主题无直接关联，但作为热门平台的服务中断事件值得关注其运维动态。"},{"id":"hn-50291116","title":"Launch HN: Simantic (YC F26) – Firmware Simulation for AI Agents","url":null,"source":"Hacker News","score":76,"comments_count":33,"comments_url":"https://news.ycombinator.com/item?id=50291116","published_at":"2026-10-29T15:56:32","author":"shong0504","text":"$c","summary":"Simantic（YC F26）推出面向AI代理的固件模拟层，让工程师和AI无需硬件即可测试验证固件，有望加速固件开发与AI代理的集成验证。"},{"id":"hn-50310431","title":"Wall Street closes sharply lower as AI cash burn fears spark tech selloff","url":"https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/","source":"Hacker News","score":43,"comments_count":6,"comments_url":"https://news.ycombinator.com/item?id=50310431","published_at":"2026-10-30T21:32:35","author":"geox","text":null,"summary":"华尔街因担忧AI现金消耗过大而引发科技股抛售，反映市场对AI投资回报周期的焦虑，值得关注AI资本支出对科技板块的影响。"},{"id":"hn-50305724","title":"Some Thing is Happening A note from the AI companies","url":"https://alanbellows.com/some-thing-is-happening/","source":"Hacker News","score":30,"comments_count":7,"comments_url":"https://news.ycombinator.com/item?id=50305724","published_at":"2026-10-30T15:53:42","author":"DamnInteresting","text":null,"summary":"一篇来自AI公司的随笔式说明，讨论当前AI领域正在发生的某些变化，值得关注其透露的行业动向与公司立场。"},{"id":"hn-50305218","title":"Show HN: Sketch Stadium – watch your agent play Pictionary","url":"https://sketch.wakeshift.ai/games/q5ucru","source":"Hacker News","score":29,"comments_count":9,"comments_url":"https://news.ycombinator.com/item?id=50305218","published_at":"2026-10-30T15:23:11","author":"ericlevine","text":"$d","summary":"Sketch Stadium让AI代理玩你画我猜游戏，用户可接入自己的代理或观看对局，是展示多代理交互与创意AI的有趣实验。"},{"id":"hn-50277518","title":"Wonderful Weather: Floods and Foreboding in 17th-Century Britain","url":"https://publicdomainreview.org/essay/wonderful-weather/","source":"Hacker News","score":13,"comments_count":0,"comments_url":"https://news.ycombinator.com/item?id=50277518","published_at":"2026-10-28T17:34:59","author":"Thevet","text":null,"summary":"探讨17世纪英国的洪水与不祥天气，属于历史气候叙事，与AI和机器学习无直接关系，但可作为跨学科背景阅读。"}],"locale":"zh"}]]}]]}]
+**一句话总结**：今日 HN 的 AI 讨论由“开源模型竞争”和“AI 安全事件”双主线驱动——一边是 Mistral 开放权重与多模型协作的能力突破，另一边是插件投毒、账号接管、恶意软件武器化带来的现实风险；同时，关于 AI 对就业、教育和个人生计的讨论也在升温。0:{"buildId":"qXFK-ngmkw9KTEO5JMzWg","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-11-01","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":17},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"ai","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"AI & Machine Learning"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"Artificial intelligence, machine learning, LLMs, and generative AI"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[17," ","篇文章"," • ","2026-11-01"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"AI & Machine Learning","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",17,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-50289418","title":"We're releasing the weights of Mistral Large 4","url":"https://mistral.ai/news/mistral-large-4-oss/","source":"Hacker News","score":1706,"comments_count":438,"comments_url":"https://news.ycombinator.com/item?id=50289418","published_at":"2026-10-29T14:13:21","author":"kuberwastaken","text":null,"summary":"Mistral AI 开源了 Mistral Large 4 的模型权重，标志着又一大型模型加入开放权重阵营，值得关注其对开源生态和竞争格局的影响。"},{"id":"hn-50300683","title":"Backdoor in Claude Code for VS Code extension on the Cursor Marketplace","url":"https://phorion.io/blog/offical-claude-code-vsx-compromise/","source":"Hacker News","score":971,"comments_count":547,"comments_url":"https://news.ycombinator.com/item?id=50300683","published_at":"2026-10-30T07:09:12","author":"_chall","text":"<a href=\"https:&#x2F;&#x2F;cursor.com&#x2F;blog&#x2F;claude-code-extension-security-notice\" rel=\"nofollow\">https:&#x2F;&#x2F;cursor.com&#x2F;blog&#x2F;claude-code-extension-security-notic...</a>","summary":"安全研究人员发现 Cursor 市场上的 Claude Code VS Code 扩展存在后门，提醒开发者警惕供应链攻击，并关注官方安全公告。"},{"id":"hn-50314654","title":"Serbia just elected the world's brainiest parliament","url":"https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament","source":"Hacker News","score":830,"comments_count":472,"comments_url":"https://news.ycombinator.com/item?id=50314654","published_at":"2026-10-31T10:21:30","author":"input_sh","text":null,"summary":"文章报道塞尔维亚新一届议会拥有全球最高比例的科学家和博士议员，探讨了这一现象背后的政治与社会意义。"},{"id":"hn-50314699","title":"Do the math: How we took over ChatGPT accounts","url":"https://www.parameter.ai/labs/we-found-a-gap-at-openai","source":"Hacker News","score":309,"comments_count":152,"comments_url":"https://news.ycombinator.com/item?id=50314699","published_at":"2026-10-31T10:30:11","author":"armcat","text":null,"summary":"Parameter AI 披露了如何通过数学漏洞接管 ChatGPT 账户的安全研究，揭示了 OpenAI 平台存在的账户安全风险。"},{"id":"hn-50319358","title":"Anthropic blocks users for anything touching training larger models","url":"https://twitter.com/jiahaoshao1/status/2116475922190922088","source":"Hacker News","score":240,"comments_count":131,"comments_url":"https://news.ycombinator.com/item?id=50319358","published_at":"2026-10-31T19:39:19","author":"pretext","text":null,"summary":"有用户称 Anthropic 会封禁任何涉及训练更大模型行为的账户，引发对 AI 公司使用条款边界和开发者自由的讨论。"},{"id":"hn-50316531","title":"Malware uses LLMs to rank victims by how much they're worth","url":"https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/","source":"Hacker News","score":236,"comments_count":129,"comments_url":"https://news.ycombinator.com/item?id=50316531","published_at":"2026-10-31T14:29:03","author":"khalidkhair","text":null,"summary":"Talos 情报发现 Volta Infostealer 恶意软件利用 LLM 对受害者按价值排序，展示了 AI 被滥用于网络犯罪的现实案例。"},{"id":"hn-50290652","title":"AI, Lean, and the Future of Formal Verification, with Lean Creator Leo de Moura","url":"https://thedataexchange.media/leo-de-moura-lean-aws/","source":"Hacker News","score":194,"comments_count":45,"comments_url":"https://news.ycombinator.com/item?id=50290652","published_at":"2026-10-29T15:29:48","author":"datascientist","text":null,"summary":"Lean 创造者 Leo de Moura 在访谈中讨论 AI 与 Lean 结合对形式化验证未来的影响，值得关注 AI 在数学证明领域的应用前景。"},{"id":"hn-50318871","title":"GPT-5.6 Sol can beat Factorio on peaceful mode","url":"https://ryanmadden.net/gpt-56-beats-factorio/","source":"Hacker News","score":161,"comments_count":175,"comments_url":"https://news.ycombinator.com/item?id=50318871","published_at":"2026-10-31T18:50:34","author":"ryanmadden","text":null,"summary":"文章展示 GPT-5.6 Sol 能够在和平模式下通关《Factorio》，体现了大模型在复杂策略游戏中的规划与执行能力进步。"},{"id":"hn-50320995","title":"Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard","url":"https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve","source":"Hacker News","score":117,"comments_count":60,"comments_url":"https://news.ycombinator.com/item?id=50320995","published_at":"2026-10-31T22:46:12","author":"guregodevo","text":null,"summary":"Memdoor 项目用 5 个 Qwen3.8-27B 模型组成的团队在 LiveCodeBench Hard 上击败 Fable 5，展示了多模型协作在代码任务中的潜力。"},{"id":"hn-50320255","title":"Anthropic takes steps to block Claude from reverse-engineering video games","url":"https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering","source":"Hacker News","score":111,"comments_count":70,"comments_url":"https://news.ycombinator.com/item?id=50320255","published_at":"2026-10-31T21:07:58","author":"firesteelrain","text":null,"summary":"Anthropic 采取措施阻止 Claude 逆向工程电子游戏，反映了 AI 公司对模型被用于游戏克隆和知识产权侵权问题的关注。"},{"id":"hn-50318442","title":"I post trained a model on Demoscenes","url":"https://datavorous.com/writing/demoscener/","source":"Hacker News","score":48,"comments_count":33,"comments_url":"https://news.ycombinator.com/item?id=50318442","published_at":"2026-10-31T18:08:24","author":"datavorous_","text":null,"summary":"作者分享了在Demoscene（演示场景）数据上训练模型的经验，展示了AI在创意编程和复古图形文化中的应用潜力，值得对生成式AI与亚文化交叉领域感兴趣的读者关注。"},{"id":"hn-50320599","title":"AI text watermarking and quality loss","url":"https://blog.keyvan.net/p/ai-text-watermarking-and-quality","source":"Hacker News","score":31,"comments_count":6,"comments_url":"https://news.ycombinator.com/item?id=50320599","published_at":"2026-10-31T21:50:13","author":"danielfoster","text":null,"summary":"文章探讨了AI文本水印技术对生成文本质量的影响，分析了水印嵌入与输出质量之间的权衡，对关注AI内容溯源和模型输出可靠性的读者具有参考价值。"},{"id":"hn-50321065","title":"Computer Science Programs Lose Students as AI Replaces Jobs","url":"https://www.bloomberg.com/news/articles/2026-10-29/computer-science-degree-programs-lose-students-as-ai-takes-jobs","source":"Hacker News","score":19,"comments_count":14,"comments_url":"https://news.ycombinator.com/item?id=50321065","published_at":"2026-10-31T22:57:27","author":"xqcgrek2","text":null,"summary":"报道指出随着AI取代部分技术岗位，计算机科学专业的学生人数出现下降，反映了AI对高等教育和就业市场的实际冲击，值得关注技术行业人才趋势的读者阅读。"},{"id":"hn-50320588","title":"ChatGPT and Codex usage limits merging","url":"https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits","source":"Hacker News","score":18,"comments_count":5,"comments_url":"https://news.ycombinator.com/item?id=50320588","published_at":"2026-10-31T21:49:07","author":"Zariel","text":null,"summary":"OpenAI帮助文档说明了ChatGPT和Codex使用限额的合并方式，对依赖这些工具的开发者了解配额变化和规划使用策略有实际帮助。"},{"id":"hn-50301178","title":"5 years of OqtaDrive: Microdrive emulation to Sinclair Network over the internet","url":"https://oqtadrive.org/10.other/5-years/","source":"Hacker News","score":18,"comments_count":3,"comments_url":"https://news.ycombinator.com/item?id=50301178","published_at":"2026-10-30T08:30:03","author":"xelalex","text":null,"summary":"回顾了OqtaDrive项目五年来从Microdrive模拟到通过互联网连接Sinclair网络的发展历程，是复古计算与网络技术结合的趣味案例，适合怀旧硬件爱好者。"},{"id":"hn-50321734","title":"How AI may drive union-resistant tech workers to the bargaining table","url":"https://www.theguardian.com/technology/2026/jul/21/ai-tech-workers-unionize","source":"Hacker News","score":9,"comments_count":1,"comments_url":"https://news.ycombinator.com/item?id=50321734","published_at":"2026-11-01T00:49:23","author":"civilchaos","text":null,"summary":"文章讨论了AI如何可能推动原本抗拒工会的技术工作者走向集体谈判，揭示了AI对科技行业劳动关系和职场权力的潜在影响，值得关注科技劳工议题的读者阅读。"},{"id":"hn-50322251","title":"AI Made Me Homeless","url":"https://medium.com/effortless-programming/ai-made-me-homeless-a7266d716e59","source":"Hacker News","score":7,"comments_count":1,"comments_url":"https://news.ycombinator.com/item?id=50322251","published_at":"2026-11-01T02:38:11","author":"tchalla","text":null,"summary":"一篇个人叙述文章，讲述作者因AI而陷入无家可归的经历，从个体视角反映了AI对就业和生活的冲击，引发对技术变革社会成本的思考。"}],"locale":"zh"}]]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
-10:null
+a:["$","$Lc",null,{"children":["$","$d",null,{"name":"Next.MetadataOutlet","children":"$@e"}]}]
+e:null
