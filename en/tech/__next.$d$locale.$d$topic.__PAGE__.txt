@@ -3,239 +3,240 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-11:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/81795b285a12dfb2.js"],"OutletBoundary"]
-12:"$Sreact.suspense"
-5:T39f7,# 今日 Technology 热门内容分析（30 篇）
+10:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+11:"$Sreact.suspense"
+5:T3143,# 今日 Technology 热门内容分析（30 篇全覆盖）
 
-## 一、总览
-
-今日热榜呈现出几条清晰的脉络：**社区驱动的数据挖掘项目**（HackerTube / HackerBooks）以极高分数霸榜，说明 HN 社区对"用数据回看自身"这件事有强烈兴趣；**Ubuntu 与 Linux 生态的信任危机**（两篇文章合计近 1800 分）成为当天最集中的负面情绪来源；**Postgres 19 延期**与 **DuckDB 迁移**则构成了数据库工程的主线；此外还有**供应链/物联网安全**、**隐私与硬件选择**、**AI 辅助开发与测试**等子主题。Lobsters 来源的 4 篇虽然分数为 0（该站不显示分数），但内容质量不低，值得单独关注。
+今天的技术社区呈现出几个非常鲜明的主题：**HN 生态的二次创作爆发**、**开源硬件/机器人的活跃**、**苹果生态与系统底层变动**、**安全与隐私事件**，以及**编程语言与基础设施的演进**。下面按子主题分组分析。
 
 ---
 
-## 二、按子主题分组
+## 一、HN 生态的二次创作与"算法疲劳"（4 篇）
 
-### 主题 A：社区数据挖掘与"HN 考古"（2 篇）
+今天最醒目的现象是：围绕 Hacker News 本身衍生出的多个可视化/重混项目同时登上热榜，反映出社区对推荐算法和内容消费方式的反思。
 
 **1. HackerTube: YouTube built from videos recommended by HN**
-- 说明：Karpathy 风格的实验——把 2007 年以来 39,834 条 HN 评论中提到的 6,454 个视频，做成一个 YouTube 式界面。它值得关注，因为这是"用社区历史数据重建推荐系统"的典型案例，也是对算法推荐的一次反讽式回应。
-- 原文：https://karpathy.bearblog.dev/hacker-tube/
+Karpathy 启动的项目，用 6,454 个来自 39,834 条 HN 评论（自 2007 年起）的视频，套上 YouTube 式 UI。值得关注：它是今天全场最高分（2858），代表"社区记忆 + 重混"的典型范式。
+- 原文：https://karpathy.bearblog.dev/hacker-tube/ （站点：https://hackertube.org/）
 - 讨论：https://news.ycombinator.com/item?id=50319510
 
-**2. Show HN: HackerBooks – HackerTube, but for books mentioned on HN**
-- 说明：作者看到 HackerTube 后，用 Claude（Opus 5.5）几乎全自动构建了书籍版：约 16.5k 本被至少两位不同 HN 用户提及的书，每本都回链到原始评论，数据可下载。值得关注的点有两个：一是"AI 写掉几乎全部代码"的工程实践，二是它展示了 HN 集体阅读品味的可量化样本。
-- 原文：https://hackerbooks.org
-- 讨论：https://news.ycombinator.com/item?id=50326821
+**7. Show HN: Hacker Times, a New York Times-inspired version of Hacker News**
+把 HN 做成报纸版式的浏览体验，每小时更新一次。值得关注：低门槛、高趣味的界面实验。
+- 原文：https://hackertimes.ca/
+- 讨论：https://news.ycombinator.com/item?id=50346981
 
-> 分析：这两篇是今日最高分组合（2821 + 1814），且第二篇是对第一篇的直接衍生，形成了罕见的"一篇文章催生一个生态"的现象。它也提示了一个趋势：**LLM 让"把社区数据变成产品"的门槛降到了一个人一个周末的量级**。
+**14. Show HN: HackerTV – HN's most-recommended YouTube videos as 24/7 TV channels**
+作者明确表示受 HackerTube 启发，把 HN 推荐视频做成 24/7 电视频道（DEVTV、SOLDER、RETRO、ORBIT、HN Prime、Late Night ch99 等）。值得关注：作者自述"算法疲劳"，是内容策展焦虑的典型表达。
+- 原文：https://hackertv.org
+- 讨论：https://news.ycombinator.com/item?id=50346755
 
----
-
-### 主题 B：Ubuntu / Linux 的信任与安全危机（2 篇）
-
-**3. WTF Ubuntu?**
-- 说明：一篇吐槽 Ubuntu 现状的文章，595 条评论说明共鸣极强。值得关注，因为它是当日社区情绪最集中的出口，涉及发行版方向、Snap、决策透明度等长期争议。
-- 原文：https://chalmovsky.com/posts/wtf-ubuntu
-- 讨论：https://news.ycombinator.com/item?id=50337608
-
-**8. Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks**
-- 说明：CVE-2026-98432，Ubuntu LTS 内核近三周未修复的 0day 远程代码执行漏洞。值得关注，因为它把主题 3 的"情绪吐槽"升级为"可验证的安全事实"——两篇放在一起读，才构成完整叙事。
-- 原文：https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432
-- 讨论：https://news.ycombinator.com/item?id=50341462
-
-> 分析：这是今日最值得警惕的信号。**社区不满 + 实际未修补的高危漏洞**同时出现，对任何在生产环境跑 Ubuntu LTS 的团队都是直接的行动项。
+**11. Resisting Cognitive Surrender**
+一篇随笔，讨论在工具/AI 时代主动保持思考、拒绝"认知投降"。值得关注：与上面几个"让算法替我选"的项目形成有趣对照，是今天的思想主线。
+- 原文：https://knlb.dev/essays/surrender
+- 讨论：https://news.ycombinator.com/item?id=50323123
 
 ---
 
-### 主题 C：数据库与数据基础设施工程（3 篇）
+## 二、硬件、机器人与开源制造（4 篇）
 
-**4. Postgres 19 is late because so many more bugs are being found now**
-- 说明：Robert Haas 解释 Postgres 19 延期的原因——不是开发慢，而是（AI 辅助下）发现的 bug 变多了。值得关注，因为它是"AI 提高缺陷发现率反而拖慢发布节奏"这一新现象的一线证据。
-- 原文：http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html
-- 讨论：https://news.ycombinator.com/item?id=50312408
+**6. Stringman, an $800 open-source room scale gripper robot**
+800 美元的开源房间级抓取机器人。值得关注：把"房间级机械臂"拉到可负担价位，开源硬件的重要进展。
+- 原文：https://neufangled.com/
+- 讨论：https://news.ycombinator.com/item?id=50354358
 
-**20. Moving our warehouse off DuckDB**
-- 说明：PostHog 讲述把数据仓库从 DuckDB 迁出的经验与踩坑。值得关注，因为 DuckDB 是近两年最热的分析型数据库，而"什么时候该离开它"的一手复盘非常稀缺。
-- 原文：https://posthog.com/blog/moving-off-duckdb
-- 讨论：https://news.ycombinator.com/item?id=50338747
+**17. Preparing for the Flipper One Kickstarter and opening pre-orders**
+Flipper 系列新硬件 Flipper One 开启众筹预热与预订。值得关注：安全研究/极客硬件圈的标志性产品迭代。
+- 原文：https://flipper.net/pages/flipper-one （文档：https://docs.flipper.net/one）
+- 讨论：https://news.ycombinator.com/item?id=50356994
 
-**19. We halved DNS build delay and cut memory use by 85%**
-- 说明：Cloudflare 关于 DNS targeted zone builds 的性能优化复盘，构建延迟减半、内存降 85%。值得关注，因为这是典型的"大规模系统上可复用的优化方法论"。
-- 原文：https://blog.cloudflare.com/dns-targeted-zone-builds/
-- 讨论：https://news.ycombinator.com/item?id=50337558
+**16. European RISC-V Industrial Computing Initiative**
+欧洲 RISC-V 工业计算倡议。值得关注：RISC-V 从嵌入式走向工业计算，且带有明显的欧洲主权技术色彩。
+- 原文：https://erici.eu
+- 讨论：https://news.ycombinator.com/item?id=50334523
 
----
-
-### 主题 D：安全、隐私与供应链攻击（5 篇）
-
-**9. Supermarket freezers across Europe hit by second suspected cyber-attack**
-- 说明：欧洲多国超市冷柜遭第二次疑似网络攻击，涉及爱尔兰 SuperValu 等门店下架冷冻食品。值得关注，因为这是**OT/IoT 供应链攻击造成物理业务中断**的又一实例。
-- 原文：https://www.theguardian.com/world/2026/nov/02/supermarket-freezers-across-europe-hit-by-second-suspected-cyber-attack
-- 讨论：https://news.ycombinator.com/item?id=50335615
-
-**5. Ask HN: Which TV do you recommend for privacy?**
-- 说明：837 条评论的隐私电视选购讨论，核心思路是"让电视只当显示器 + Apple TV"。值得关注，因为它是消费级隐私防护的实用指南，评论区信息密度极高。
-- 原文：无（纯讨论帖）
-- 讨论：https://news.ycombinator.com/item?id=50328896
-
-**23. Self-Employed? Solopreneur? NIST Has a Cybersecurity Guide Just for You**
-- 说明：NIST 面向自由职业者/独立开发者的网络安全指南。值得关注，因为小团队/个人开发者长期缺乏权威、可操作的合规基线，这是官方补位。
-- 原文：https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you
-- 讨论：https://news.ycombinator.com/item?id=50340619
-
-**29. This background sound leaks your exact location**
-- 说明：视频演示环境背景音如何泄露精确位置。值得关注，因为它揭示了常被忽视的侧信道——音频指纹。
-- 原文：https://youtu.be/UytYrhYLOKI
-- 讨论：https://lobste.rs/s/s1btqo/this_background_sound_leaks_your_exact
-
-**26. Jailbreaking my car's navigation system just so I can change the time**
-- 说明：为改一个时间而逆向车机导航系统。值得关注，因为它是"厂商锁死 + 用户所有权"议题的生动案例，技术细节也扎实。
-- 原文：https://blog.nns.ee/2026/11/02/renault-hack/
-- 讨论：https://lobste.rs/s/qvdatp/jailbreaking_my_car_s_navigation_system
+**8. DiscImageStudio: burn visible artwork onto CDs, DVDs and Blu-ray discs**
+在光盘数据面烧录可见图案的开源工具。值得关注：复古光存储 + 硬件极客的浪漫，实用性与趣味性兼具。
+- 原文：https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio
+- 讨论：https://news.ycombinator.com/item?id=50346849
 
 ---
 
-### 主题 E：AI 辅助开发、测试与模型研究（4 篇）
+## 三、人机交互与新型输入（1 篇）
 
-**24. Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app**
-- 说明：QA Agent 自主规划、探索并"乱点"你的 Web/iOS/Android 应用来找 bug。值得关注，因为 AI 测试代理正从 demo 走向可交付产品。
-- 原文：https://momentic.ai/
-- 讨论：https://news.ycombinator.com/item?id=50339913
-
-**21. Proving and improving the Platonic Representation Hypothesis with JEPAs**
-- 说明：用 JEPA 验证并改进"柏拉图表示假说"的论文。值得关注，因为它是理解不同模态模型为何收敛到相似表示的前沿工作。
-- 原文：https://arxiv.org/abs/2610.39302
-- 讨论：https://news.ycombinator.com/item?id=50325454
-
-**6. Show HN: Subvocal – Talk to your computer without making noise**
-- 说明：YC F26 团队的智能眼镜，通过默读口型解码为文字，速度接近正常语速。值得关注，因为这是无声输入交互的一次认真尝试（评论区也会讨论准确率与隐私）。
-- 原文：无（见讨论帖内链接）
+**2. Show HN: Subvocal – Talk to your computer without making noise**
+YC F26 团队做的智能眼镜，通过默读口型解码为文本，速度接近正常语速。值得关注：无声输入是 AR/可穿戴的关键接口，且是今天讨论热度第二的项目（384 条评论）。
+- 原文：无（项目页：https://subvocal.company/ ；演示：https://www.youtube.com/watch?v=9QdX1eObVYI）
 - 讨论：https://news.ycombinator.com/item?id=50340088
 
-**2. HackerBooks**（见主题 A，同样属于"AI 写代码"案例）
+---
+
+## 四、苹果生态与系统底层（4 篇）
+
+**9. Safari introduces Adaptive Dark Mode in 27.3**
+WebKit 博客介绍 Safari 的自适应深色模式。值得关注：前端与 WebKit 开发者必读，影响网页配色策略。
+- 原文：https://webkit.org/blog/18541/introducing-adaptive-dark-mode/
+- 讨论：https://news.ycombinator.com/item?id=50358562
+
+**25. macOS 27 does not support CoreStorage volumes**
+macOS 27（"Golden Gate"）不再支持 CoreStorage 与 HFS 卷。值得关注：老数据迁移与兼容性风险，运维/老用户需警惕。
+- 原文：https://wadetregaskis.com/macos-27-golden-gate-does-not-actually-support-corestorage-or-hfs-volumes/
+- 讨论：https://news.ycombinator.com/item?id=50356944
+
+**22. I dumped Apple's word list**
+逆向分析 macOS 词表中的"粗俗词标记"。值得关注：隐私/内容审查机制的实证研究，也是 macOS 内部数据的有趣窥探。
+- 原文：https://helgesver.re/articles/macos-vulgar-word-flags
+- 讨论：https://news.ycombinator.com/item?id=50357782
+
+**10. Mac at any scale**
+关于大规模 Mac 基础设施（CI/构建农场）的实践文章。值得关注：iOS/macOS 团队做规模化 CI 的实操参考。
+- 原文：https://namespace.so/blog/mac-at-any-scale
+- 讨论：https://news.ycombinator.com/item?id=50352758
 
 ---
 
-### 主题 F：硬件、产业链与消费电子（3 篇）
+## 五、安全、隐私与法律（4 篇）
 
-**22. Intel stock collapse worsens as $3.5T chip rout spreads**
-- 说明：Intel 股价继续下跌，芯片板块 3.5 万亿美元市值蒸发蔓延。值得关注，因为它反映的是整个半导体周期的宏观转向。
-- 原文：https://finance.yahoo.com/markets/article/the-intel-stock-collapse-is-getting-worse--and-the-37-trillion-chip-rout-is-spreading-212154947.html
-- 讨论：https://news.ycombinator.com/item?id=50346153
+**20. Gitbook Breached**
+用户通过支持工单才得知 GitBook 发生安全事件，官方缺乏主动通报。值得关注：SaaS 安全事件披露流程的反面案例。
+- 原文：无（讨论内含官方事件说明）
+- 讨论：https://news.ycombinator.com/item?id=50354336
 
-**18. My Favourite Laptop**
-- 说明：一篇个人化的笔记本使用长文。值得关注，因为这类"长期使用复盘"往往比参数评测更有参考价值。
-- 原文：https://blog.jsbarretto.com/post/laptop
-- 讨论：https://news.ycombinator.com/item?id=50339815
+**5. Kalshi and its co-founders face felony charges for violating Utah gambling laws**
+预测市场 Kalshi 及联合创始人面临犹他州赌博法重罪指控，且涉及联邦政府起诉州政府的罕见局面。值得关注：预测市场与博彩监管的边界之争，法律与科技交叉热点。
+- 原文：https://arstechnica.com/tech-policy/2026/10/trump-admin-sues-utah-to-save-kalshi-from-the-states-total-ban-on-gambling/
+- 讨论：https://news.ycombinator.com/item?id=50353229
 
-**30. My favourite laptop（Lobsters 同文）**
-- 说明：与第 18 篇为同一篇文章，在 Lobsters 上被独立推荐，说明跨社区认可度高。
-- 原文：https://blog.jsbarretto.com/post/laptop
-- 讨论：https://lobste.rs/s/ezg5mx/my_favourite_laptop
+**29. Observations from Running stealmybitcoin.com**
+运营"偷我比特币"蜜罐站点的观察记录。值得关注：真实攻击者行为数据，安全研究与蜜罐实践的一手素材。
+- 原文：https://pavursec.com/blog/stealmybitcoin/
+- 讨论：https://lobste.rs/s/fgucra/observations_from_running
 
----
-
-### 主题 G：工程实践与工具（4 篇）
-
-**28. Stop Hardcoding Your Timeouts**
-- 说明：主张不要把超时值写死，而应基于实测分布动态设定。值得关注，因为超时配置是最常见也最被低估的生产事故来源之一。
-- 原文：https://alfy.blog/2026/04/23/stop-hardcoding-your-timeouts.html
-- 讨论：https://lobste.rs/s/qa0owz/stop_hardcoding_your_timeouts
-
-**14. Show HN: I've updated my Linux System Call website and API**
-- 说明：syscall.sh 更新，新增多架构、内核版本选择器与系统调用描述，并提供 API。值得关注，因为它是 Linux 底层开发/安全研究的高频查询工具。
-- 原文：https://syscall.sh/
-- 讨论：https://news.ycombinator.com/item?id=50334704
-
-**27. A Decade of Kill Bugs**
-- 说明：十年间持续消灭 bug 的复盘。值得关注，因为"长期缺陷治理"的经验分享远少于"一次性重构"的故事。
-- 原文：https://alangrow.com/blog/a-decade-of-kill-bugs
-- 讨论：https://lobste.rs/s/wgoato/decade_kill_bugs
-
-**7. If you love a website, back it up**
-- 说明：呼吁为喜爱的网站做备份。值得关注，因为链接腐烂与站点消失正在加速，这是数字 preservation 的实践倡议。
+**3. If you love a website, back it up**
+呼吁对喜爱的网站做本地备份。值得关注：数字保存（digital preservation）的实践倡议，与今天"HN 重混"主题呼应——内容易逝。
 - 原文：https://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up/
 - 讨论：https://news.ycombinator.com/item?id=50336518
 
 ---
 
-### 主题 H：科学、社会与趣味内容（5 篇）
+## 六、编程语言、系统工具与基础设施（7 篇）
 
-**11. Bones may release proteins that slow aging and extend life span**
-- 说明：骨骼可能释放延缓衰老、延长寿命的蛋白质。值得关注，因为骨骼从"结构件"变成"内分泌器官"的认知转变。
-- 原文：https://www.science.org/content/article/bones-may-release-proteins-slow-aging-and-extend-life-span
-- 讨论：https://news.ycombinator.com/item?id=50331957
+**15. Toit v2.0.0**
+面向 IoT/嵌入式的 Toit 语言发布 2.0。值得关注：嵌入式专用语言的重要版本节点。
+- 原文：https://toit.io/blog/toit-v2-0-0/
+- 讨论：https://news.ycombinator.com/item?id=50321605
 
-**12. Mystery of 60-Second Fluctuations in Power Grids Solved**
-- 说明：电网中 60 秒周期波动的成因被破解。值得关注，因为这是跨学科（流体/控制/电力）的漂亮解谜。
-- 原文：https://www.fz-juelich.de/en/news/archive/press-release/2026/mystery-of-60-second-fluctuations-in-power-grids-solved
-- 讨论：https://news.ycombinator.com/item?id=50315217
+**18. The Internals of PostgreSQL**
+PostgreSQL 内部原理的系统性教程站点。值得关注：数据库学习经典资料，评论虽少但价值密度高。
+- 原文：https://www.interdb.jp/pg/index.html
+- 讨论：https://news.ycombinator.com/item?id=50358702
 
-**10. US boy names that became girl names and vice versa**
-- 说明：美国名字性别转换的数据分析。值得关注，因为它是"用公开数据讲清楚一个文化现象"的示范。
-- 原文：https://namedaisy.com/blog/boy-names-that-became-girl-names
-- 讨论：https://news.ycombinator.com/item?id=50339397
+**26. Death comes for XSLT**
+关于 XSLT 逐渐退场的评论文章。值得关注：一门曾广泛用于 XML 转换的语言的"讣告"，引发技术生命周期思考。
+- 原文：https://dbushell.com/2026/11/03/xslt-rip/
+- 讨论：https://lobste.rs/s/chypzr/death_comes_for_xslt
 
-**13. Show HN: Warsaw in voxels – An interactive 3D map of the city centre**
-- 说明：基于 OpenStreetMap 等开放数据的华沙市中心体素 3D 地图，可切换日期、时间、天气，还能点击行人进行控制。值得关注，因为它是开放数据 + 前端 3D 的优秀个人作品。
-- 原文：https://p.migdal.pl/warsaw-vibe-voxel/
-- 讨论：https://news.ycombinator.com/item?id=50339221
+**27. The Ubuntu 26.04 Rust sudo is not compatible with standard sudo**
+Ubuntu 26.04 用 Rust 重写的 sudo 与标准 sudo 行为不兼容。值得关注：Rust 重写核心系统工具的兼容性阵痛，运维需注意。
+- 原文：https://utcc.utoronto.ca/~cks/space/blog/linux/Ubuntu2604RustSudoNotCompatible
+- 讨论：https://lobste.rs/s/e201eb/ubuntu_26_04_rust_sudo_is_not_compatible
 
-**17. Net worth for people aged 30–33 in the U.S.**
-- 说明：美国 30–33 岁人群净资产基准数据。值得关注，因为它提供了稀缺的、可对标的同龄财务分布。
-- 原文：https://www.keepingup.com/benchmarks/net-worth/age-30-33
-- 讨论：https://news.ycombinator.com/item?id=50347683
+**12. Nvidia – open-source auto-ontology**
+NVIDIA 开源的自动本体（auto-ontology）项目。值得关注：大厂在知识表示/语义层开源的新动作。
+- 原文：https://github.com/NVIDIA/auto-ontology
+- 讨论：https://news.ycombinator.com/item?id=50348962
 
----
+**19. Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app**
+自主规划、探索并"乱点"你的 Web/iOS/Android 应用以发现 bug 的 QA Agent。值得关注：AI Agent 在测试领域的落地产品化。
+- 原文：https://momentic.ai/ （演示：https://youtu.be/BFsM-Se1Fh8）
+- 讨论：https://news.ycombinator.com/item?id=50339913
 
-### 主题 I：历史、职业与社区（3 篇）
-
-**15. F/OSS Comics #13: BSD Unix, Part 3 – The Beginning of BSD Unix**
-- 说明：BSD Unix 起源的漫画连载第三部分。值得关注，因为它是轻松但准确的开源史科普。
-- 原文：https://fosscomics.com/posts/13.%20BSD%20Unix%20Part%203%20-%20The%20Beginning%20of%20BSD%20Unix/
-- 讨论：https://news.ycombinator.com/item?id=50332163
-
-**25. Sneaking into the auditorium for the Windows 2000 launch rehearsal**
-- 说明：Raymond Chen 的 Old New Thing 专栏，讲述混进 Windows 2000 发布彩排的往事。值得关注，因为它是微软内部史的稀有第一手叙述。
-- 原文：https://devblogs.microsoft.com/oldnewthing/20261102-00/?p=112818/
-- 讨论：https://news.ycombinator.com/item?id=50341028
-
-**16. Ask HN: Who is hiring? (November 2026)**
-- 说明：HN 每月招聘帖，本月 154 条评论。值得关注，因为它是观察当下技术岗位需求结构（远程/本地、栈偏好）的窗口。
-- 原文：无（纯讨论帖）
-- 讨论：https://news.ycombinator.com/item?id=50338728
+**30. A Decade of Kill Bugs**
+十年"杀虫"（kill bugs）经验总结。值得关注：一线工程经验沉淀，适合调试方法论参考。
+- 原文：https://alangrow.com/blog/a-decade-of-kill-bugs
+- 讨论：https://lobste.rs/s/wgoato/decade_kill_bugs
 
 ---
 
-## 三、今日最值得阅读的 5 篇推荐
+## 七、计算史、科学与趣味（6 篇）
 
-**1. Postgres 19 is late because so many more bugs are being found now**
-理由：今日最具"时代信号"价值的一篇。它给出了一个反直觉但重要的判断——AI 辅助缺陷发现正在改变开源项目的发布节奏，且由 Postgres 核心开发者亲述，可信度高。
-链接：http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html ｜ 讨论：https://news.ycombinator.com/item?id=50312408
+**4 & 28. Could a modern chess engine on a Pentium have defeated Kasparov in 1996?**
+Nicholas Carlini 分析：若把现代算法放回 1996 年的 Pentium 硬件，能否击败卡斯帕罗夫。值得关注：算法进步 vs 算力进步的定量拆解，今天跨平台（HN + Lobsters）双榜出现。
+- 原文：https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html
+- 讨论（HN）：https://news.ycombinator.com/item?id=50349276
+- 讨论（Lobsters）：https://lobste.rs/s/1gndxr/could_modern_chess_engine_on_pentium_have
 
-**2. WTF Ubuntu? + Ubuntu still has not released patch for Linux 0day RCE**
-理由：建议两篇连读。前者是社区情绪，后者是可验证的高危未修复漏洞（CVE-2026-98432），合起来构成对 Ubuntu LTS 用户的直接行动提示——如果你在生产环境用 Ubuntu，这是今天最该处理的事。
-链接：https://chalmovsky.com/posts/wtf-ubuntu ｜ https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432
+**13. Study estimates 75% of NFL players who died over 15-year span had CTE**
+NFL 球员 CTE（慢性创伤性脑病）研究。值得关注：虽非纯技术，但在 HN 引发对运动装备/生物力学与数据研究的讨论。
+- 原文：https://www.nbcnews.com/health/health-news/study-estimates-75-nfl-players-died-15-year-span-may-cte-rcna605975
+- 讨论：https://news.ycombinator.com/item?id=50353335
 
-**3. Moving our warehouse off DuckDB**
-理由：DuckDB 是当下最热的数据工具之一，但"何时该离开它"的一手复盘极少。PostHog 的迁移细节对正在做技术选型的团队有直接参考价值。
-链接：https://posthog.com/blog/moving-off-duckdb ｜ 讨论：https://news.ycombinator.com/item?id=50338747
+**21. Katamari Damacy but it's The Met collection**
+把大都会博物馆藏品做成"块魂"式滚球游戏。值得关注：文化数据 + 游戏化交互的优秀创意作品。
+- 原文：https://katamari.vaguespac.es/
+- 讨论：https://news.ycombinator.com/item?id=50332342
 
-**4. HackerBooks（配合 HackerTube 一起看）**
-理由：这是今日现象级内容。除了"HN 集体书单"本身的趣味性，更值得读的是作者如何用 Claude 完成数据管道与整站——它展示了个人开发者能力边界的一次实质扩张。
-链接：https://hackerbooks.org ｜ 讨论：https://news.ycombinator.com/item?id=0:{"buildId":"3LSZB8jWf0RzTnYYMexkk","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-11-03","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":16},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-11-03"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-c:T1495,Hi HN, we&#x27;re Aarush and Arnav from The Subvocal Company (YC F26) (<a href="https:&#x2F;&#x2F;subvocal.company&#x2F;">https:&#x2F;&#x2F;subvocal.company&#x2F;</a>). We’re building smart glasses that let you talk to your computer without talking out loud. You can mouth words silently and discreetly and the glasses decode them to text at the speed of speech.<p>Here&#x27;s a video of Dave from YC trying it out: <a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=9QdX1eObVYI" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=9QdX1eObVYI</a><p>(Edit: you don&#x27;t actually have to move your lips or even open your mouth for this to work! Since the RF can see inside your mouth the system can be fine tuned on &quot;internal speech&quot;. This isn&#x27;t the automatic tongue movements that occur when &quot;thinking&quot; words to yourself, but more like mouthing with your lips closed. It&#x27;s a bit weird to do, but with practice, we have been able to get it down pretty well.)<p>Arnav and I were studying CS at Georgia Tech at the beginning of the year, with no experience in silent speech or sensing. We were both AI-native builders and power users of Wispr Flow. What bugged us was not being able to use these tools in the library (or an office) or in public. At Stanford’s TreeHacks in February, we decided to build the most technically ridiculous thing we could think of. We’d read about AlterEgo, a silent speech system out of MIT’s Media Lab, and wanted to recreate it in 36 hours. We built a crude prototype, sticking EMG electrodes onto my face:<p><a href="https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1mwhv5HZMz3UTevdrgwS5O7g2jWV0K9r2&#x2F;view?usp=sharing" rel="nofollow">https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1mwhv5HZMz3UTevdrgwS5O7g2jWV...</a><p>We got it to kind of work at a letter level in a very janky way. It wasn’t good enough to win the hackathon, but convinced us to go all in. The first time I typed a sentence without anyone noticing, I felt the magic of the technology.<p>We quickly realized EMG (reading muscle electrical signals) wouldn’t work:<p>- Signal changes due to sweat<p>- Electrical interference<p>- Placement variability<p>- Most importantly, no one wants to stick electrodes onto their face!!<p>So we switched to RF and built the glasses you see now. They emit radio waves, similar to Bluetooth, that pass through your face. As they cross the tongue, lips and soft palate, they’re modulated by silent mouthing. We train foundation models on this data to decode these perturbations to text.<p>Despite prior academic research, getting this to work was a huge engineering challenge. First we built an extremely low noise RF sensing stack. Then we had to place antennas so their fields overlapped maximally with the articulators. Our first attempt on glasses failed completely, so we reverted to old habits and taped antennas on our face:<p><a href="https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1ks0dS0eZiTV9EqSFsyB_w5BBjpcBAfX-&#x2F;view?usp=sharing" rel="nofollow">https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1ks0dS0eZiTV9EqSFsyB_w5BBjpc...</a><p>Since taping antennas consistently in the same spot and angle was hard, we created this weird but effective head rig to hold them in place:<p><a href="https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1rhzNFpdDzr7oHk0isFY70dkoV4CAF1pT&#x2F;view?usp=sharing" rel="nofollow">https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1rhzNFpdDzr7oHk0isFY70dkoV4C...</a><p>This worked, but obviously wasn’t a product yet. So we worked deep in simulations to design glasses that could hold the antennas.<p>That evolved into our design now, with antennas embedded within the frames. Once we established there was a signal, the next hurdle was cross-user generalization. Everyone’s facial anatomy, and hence RF signal patterns, are vastly different. We tried algorithmic workarounds but realized the only lever was to massively scale pretraining data.<p>So that’s what we did. We set up booths in our office and paid people to read prompts wearing our glasses, to pretrain our models on. This produced a beautiful scaling curve, with errors falling quickly as we scaled our dataset and cross-user performance becoming genuinely compelling (as you see in the video above; Dave only had a short 20-sentence calibration).<p>We always heard about building things from first principles but never understood it before this. We tried tackling it top down but completely failed. Only when we broke each component (the antenna, electronics, ML) down to its fundamentals to understand and optimize it did we get it to work really well.<p>Over the next few months we’re continuing R&amp;D to turn our prototype glasses into the slick product on our website and ship in Q1 2027. We’re also scaling up our dataset to improve performance on edge cases.<p>For anyone who loves voice dictation but hates using it around people, we’ve opened preorders for our first batch of 500 units, with a $200 discount off the final price. Allocation is running out quickly, so get yours at <a href="https:&#x2F;&#x2F;subvocal.co&#x2F;preorder" rel="nofollow">https:&#x2F;&#x2F;subvocal.co&#x2F;preorder</a>!d:T508,Explore central Warsaw in voxels - slightly inspired by Minecraft, and MagicaVoxel. 
-You can change the date, time of day and weather, explore the city, or click on a pedestrian to control them (here a bit of inspiration from Dungeon Keeper).<p>Works best on desktop, but I tried to make it usable on mobile too. The initial load can take a while. It&#x27;s based on several open datasets, including:<p>- OpenStreetMap (<a href="https:&#x2F;&#x2F;www.openstreetmap.org&#x2F;#map=6&#x2F;52.02&#x2F;19.14" rel="nofollow">https:&#x2F;&#x2F;www.openstreetmap.org&#x2F;#map=6&#x2F;52.02&#x2F;19.14</a>) - buildings, streets, sidewalks, tram tracks, etc<p>- GUGiK &#x2F; Geoportal (<a href="https:&#x2F;&#x2F;www.geoportal.gov.pl&#x2F;" rel="nofollow">https:&#x2F;&#x2F;www.geoportal.gov.pl&#x2F;</a>) - LiDAR for building heights and trees, aerial imagery for colours<p>- Warsaw&#x27;s city tree database (<a href="https:&#x2F;&#x2F;mapa.um.warszawa.pl&#x2F;" rel="nofollow">https:&#x2F;&#x2F;mapa.um.warszawa.pl&#x2F;</a>) - individual tree species, used for seasonal foliage<p>Open-source (<a href="https:&#x2F;&#x2F;github.com&#x2F;stared&#x2F;warsaw-vibe-voxel" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;stared&#x2F;warsaw-vibe-voxel</a>), so feel invited to (re)use it as you wish!e:T5bc,Please state the location and include REMOTE for remote work, REMOTE (US)
-or similar if the country is restricted, and ONSITE when remote work is <i>not</i> an option.<p>Please only post if you personally are part of the hiring company—no
-recruiting firms or job boards. One post per company. If it isn&#x27;t a household name,
-explain what your company does.<p>Please only post if you are actively filling a position and are committed
-to replying to applicants.<p>Commenters: please don&#x27;t reply to job posts to complain about
-something. It&#x27;s off topic here.<p>Readers: please only email if you are personally interested in the job.<p>Searchers: try <a href="https:&#x2F;&#x2F;gethnjobs.com&#x2F;" rel="nofollow">https:&#x2F;&#x2F;gethnjobs.com&#x2F;</a>, <a href="https:&#x2F;&#x2F;hnwork.app" rel="nofollow">https:&#x2F;&#x2F;hnwork.app</a>, 
-<a href="https:&#x2F;&#x2F;dheerajck.github.io&#x2F;hnwhoishiring&#x2F;" rel="nofollow">https:&#x2F;&#x2F;dheerajck.github.io&#x2F;hnwhoishiring&#x2F;</a>, <a href="http:&#x2F;&#x2F;nchelluri.github.io&#x2F;hnjobs&#x2F;" rel="nofollow">http:&#x2F;&#x2F;nchelluri.github.io&#x2F;hnjobs&#x2F;</a>,
-<a href="https:&#x2F;&#x2F;hnjobs.emilburzo.com" rel="nofollow">https:&#x2F;&#x2F;hnjobs.emilburzo.com</a>.<p>Don&#x27;t miss this other fine thread: <i>Who wants to be hired?</i> <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50338726">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50338726</a>f:T12e7,Hey HN, we’re Wei-Wei and Jeff. We’re building Momentic, QA agents that autonomously plan, explore, and bug-bash controls and user flows in your web, iOS, Android, and (soon) desktop apps to catch bugs.<p>Here’s a demo: <a href="https:&#x2F;&#x2F;youtu.be&#x2F;BFsM-Se1Fh8" rel="nofollow">https:&#x2F;&#x2F;youtu.be&#x2F;BFsM-Se1Fh8</a><p>We’re both software engineers that spent our careers on dev tooling and infra across companies like Robinhood, Retool, WeWork, and Qualtrics. Testing was always a pain in the ass (esp Playwright and Selenium), so we built agents to do it for us.<p>Modern day software has a ton of bugs and the change failure rate is only growing faster as coding agent adoption scales. LLMs are really good at generating code, but reinforce their own assumptions, write a ton of useless tests, and are bad at visual understanding. On DeepSWE v1.1, Sonnet 5.5 hit 66.2% pass rate when banned from writing tests, versus 65.3% when allowed.<p>OSS end-to-end testing frameworks like Playwright, Selenium, or Maestro force you to hardcode implementation details like XPath, text, or aria-* attributes in your tests. Even with agents, these take a nontrivial amount of time and tokens to build and maintain.<p>In 2023, we saw Nat Friedman drive a browser with GPT-3 via natbot. We were inspired to use this technology to automate the most painful and tedious parts of software engineering: testing. We started with using LLMs to generate and maintain Playwright, but quickly realized that those primitives were fundamentally misaligned with the agentic SDLC. We think the future of QA is agents testing themselves, not writing scripts.<p>Mo is a custom agent harness for catching bugs that builds on the past 3 years of Momentic and millions of test traces from complex, real-world applications. Mo is built for recall: it finds the most real bugs, though Codex is a bit more precise at 86% vs 84%. The tradeoff is cost: Mo costs $2.67 per bug vs $0.80 for Codex, less than Claude Code and Devin.<p>- Self-organizing agent graph. Mo builds a directed acyclic graph (DAG) as it explores. Large product areas automatically fork into parallel sub-agents, each with their own browser or device for concurrent execution.<p>- Specialized agents for domain specific tasks. Planner agents reason over screenshots and video while dedicated locator agents inspect page structure to resolve plain-English interaction targets. Others include image analysis, video understanding, audio generation, and more.<p>- Parallel agents coordinate through cooperative resource leases. Agents can announce that they’re “using” or “modifying” overlapping resources or fixtures. Multiple “using” claims can coexist, but only a single “modifying” claim can be active on any particular one.<p>- Scaled infrastructure. Mo ships with a tunnel that lets users expose private sites and local apps to our hosted agents and infra. A single bug bash can spin up 100s of concurrent browsers and devices.<p>We benchmarked Mo against coding agents on 4 popular open-source apps: Gitea (58.8k stars), Metabase, Twenty (YC), and Saleor, with 1,396 human-labeled bugs. Each agent got the same brief, a fresh E2B sandbox, and no access to source code. Codex and Claude Code used hosted Browserbase browsers, while Devin used its built-in browser. For evaluators, we implemented LLM as a judge (GPT-6.1 Sol) with a human reviewer.<p>Results from a time-boxed 60-minute run:<p>- Mo: 269 bugs, 19.3% recall, 84% precision, $2.67 per bug<p>- Codex (GPT-6.1 Sol + Playwright MCP): 86 bugs, 6.2% recall, 86% precision, $0.80 per bug<p>- Claude Code (Opus 5.5 + Playwright MCP): 59 bugs, 4.2% recall, 80% precision, $4.09 per bug<p>- Devin: 27 bugs, 1.9% recall, 84% precision, $3.89 per bug<p>Mo finds more bugs the more time it has. From 30 to 60 minutes, it went from 177 to 269 bugs (+52%), while Codex gained only 16%.<p>Results: <a href="https:&#x2F;&#x2F;momentic.ai&#x2F;qa-bench">https:&#x2F;&#x2F;momentic.ai&#x2F;qa-bench</a><p>Write-up: <a href="https:&#x2F;&#x2F;momentic.ai&#x2F;blog&#x2F;qa-bench">https:&#x2F;&#x2F;momentic.ai&#x2F;blog&#x2F;qa-bench</a><p>Dataset: <a href="https:&#x2F;&#x2F;huggingface.co&#x2F;datasets&#x2F;momentic&#x2F;qa-bench" rel="nofollow">https:&#x2F;&#x2F;huggingface.co&#x2F;datasets&#x2F;momentic&#x2F;qa-bench</a><p>Harness: <a href="https:&#x2F;&#x2F;github.com&#x2F;momentic-ai&#x2F;qa-bench" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;momentic-ai&#x2F;qa-bench</a><p>We just shipped PR testing for Vercel and Cloudflare deploy previews and we’re giving every new signup $250 in Mo spend. Paid plans have higher infra capacity and included usage along with options to top up.<p>We’d love for you to try it out and give us feedback. Feel free to comment here, we’ll be around all day!6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-50319510","title":"HackerTube: YouTube built from videos recommended by HN","url":"https://karpathy.bearblog.dev/hacker-tube/","source":"Hacker News","score":2821,"comments_count":631,"comments_url":"https://news.ycombinator.com/item?id=50319510","published_at":"2026-10-31T19:56:53","author":"karpathy","text":"YouTube-style UI over 6,454 videos sourced from 39,834 HN comments since 2007.<p><a href=\"https:&#x2F;&#x2F;hackertube.org&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;hackertube.org&#x2F;</a>","summary":"该文章介绍了HackerTube，一个基于Hacker News评论推荐视频构建的YouTube风格界面，收录了自2007年以来的6454个视频。它值得关注，因为它展示了社区驱动的内容聚合方式，并提供了对HN历史推荐的独特视角。"},{"id":"hn-50326821","title":"Show HN: HackerBooks – HackerTube, but for books mentioned on HN","url":"https://hackerbooks.org","source":"Hacker News","score":1814,"comments_count":300,"comments_url":"https://news.ycombinator.com/item?id=50326821","published_at":"2026-11-01T15:58:28","author":"roansh","text":"Saw Karpathy&#x27;s HackerTube and wanted the same thing for books. So I had Claude build one (Opus 5.5).<p>It&#x27;s ~16.5k books that at least two different HN commenters brought up, from 2007 till now. Each book links back to the comments that mentioned it. Data is downloadable from the about page.<p>To be clear: Claude wrote almost all of it, including the data pipeline and the site. I mostly steered and made calls, bought the domain name, etc.<p>It counts mentions, so it&#x27;s not perfect (praising a book and trashing it both count). If your favourite book is missing or matched to the wrong thing, tell me.","summary":"该文章介绍了HackerBooks，一个类似HackerTube但专注于Hacker News上提及的书籍的项目，收录了约1.65万本被至少两位评论者提到的书。它值得关注，因为它利用AI构建了可下载的书籍推荐数据库，并链接回原始评论。"},{"id":"hn-50337608","title":"WTF Ubuntu?","url":"https://chalmovsky.com/posts/wtf-ubuntu","source":"Hacker News","score":1393,"comments_count":595,"comments_url":"https://news.ycombinator.com/item?id=50337608","published_at":"2026-11-02T14:52:00","author":"chalmovsky","text":null,"summary":"该文章讨论了Ubuntu的某些问题，可能涉及用户体验或系统设计方面的争议。它值得关注，因为它反映了对主流Linux发行版的批评和社区讨论。"},{"id":"hn-50312408","title":"Postgres 19 is late because so many more bugs are being found now","url":"http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html","source":"Hacker News","score":811,"comments_count":484,"comments_url":"https://news.ycombinator.com/item?id=50312408","published_at":"2026-10-31T01:38:56","author":"soheilpro","text":null,"summary":"该文章解释了Postgres 19延迟发布的原因，即现在发现了更多bug，部分归因于AI辅助测试。它值得关注，因为它揭示了AI对软件开发流程的影响以及开源数据库的发布动态。"},{"id":"hn-50328896","title":"Ask HN: Which TV do you recommend for privacy?","url":null,"source":"Hacker News","score":693,"comments_count":837,"comments_url":"https://news.ycombinator.com/item?id=50328896","published_at":"2026-11-01T19:35:27","author":"LecroJS","text":"I haven’t owned a TV in years and would like one that respects my privacy. Are there any TV’s which do this well? I am looking for something in the 60”to 80”range and would like a 4k display with at least 60hz display. I don’t mind paying a premium.<p>I have heard good things about Apple TV as a better alternative to most smart TV native apps. Would some TV’s pair better with this than others for privacy? I don’t want the TV doing anything other than being the display for Apple TV.<p>I am curious what success others have had.","summary":"该文章是一个Ask HN帖子，用户寻求关于隐私保护的电视推荐，要求60-80英寸、4K、60Hz以上，并愿意支付溢价。它值得关注，因为它反映了消费者对智能电视隐私问题的日益关注。"},{"id":"hn-50340088","title":"Show HN: Subvocal – Talk to your computer without making noise","url":null,"source":"Hacker News","score":606,"comments_count":319,"comments_url":"https://news.ycombinator.com/item?id=50340088","published_at":"2026-11-02T17:16:17","author":"aarushyadav","text":"$c","summary":"该文章介绍了Subvocal，一家YC支持的初创公司，正在开发智能眼镜，允许用户无声地通过口型与计算机交流。它值得关注，因为它展示了新型人机交互技术，可能改变无声沟通方式。"},{"id":"hn-50336518","title":"If you love a website, back it up","url":"https://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up/","source":"Hacker News","score":450,"comments_count":100,"comments_url":"https://news.ycombinator.com/item?id=50336518","published_at":"2026-11-02T13:25:35","author":"ingve","text":null,"summary":"该文章强调了备份喜爱网站的重要性，可能讨论了网站消失的风险和备份方法。它值得关注，因为它提醒人们数字内容的脆弱性和保存网络资源的必要性。"},{"id":"hn-50341462","title":"Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks","url":"https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432","source":"Hacker News","score":391,"comments_count":112,"comments_url":"https://news.ycombinator.com/item?id=50341462","published_at":"2026-11-02T18:39:38","author":"majorchord","text":null,"summary":"该文章报道了Ubuntu在近三周内仍未发布针对Linux零日远程代码执行漏洞的补丁。它值得关注，因为它涉及关键安全漏洞的响应延迟，可能影响大量用户。"},{"id":"hn-50335615","title":"Supermarket freezers across Europe hit by second suspected cyber-attack","url":"https://www.theguardian.com/world/2026/nov/02/supermarket-freezers-across-europe-hit-by-second-suspected-cyber-attack","source":"Hacker News","score":378,"comments_count":421,"comments_url":"https://news.ycombinator.com/item?id=50335615","published_at":"2026-11-02T11:50:13","author":"fergie","text":"<a href=\"https:&#x2F;&#x2F;www.bbc.com&#x2F;news&#x2F;articles&#x2F;cq1kd1nee80eo\" rel=\"nofollow\">https:&#x2F;&#x2F;www.bbc.com&#x2F;news&#x2F;articles&#x2F;cq1kd1nee80eo</a><p><a href=\"https:&#x2F;&#x2F;www.irishtimes.com&#x2F;technology&#x2F;data-security&#x2F;2026&#x2F;11&#x2F;02&#x2F;supervalu-removes-frozen-and-chilled-food-from-13-stores-after-cyber-attack-on-fridges&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.irishtimes.com&#x2F;technology&#x2F;data-security&#x2F;2026&#x2F;11&#x2F;...</a>","summary":"该文章报道了欧洲多地超市冰柜遭到第二次疑似网络攻击，可能影响供应链。它值得关注，因为它凸显了关键基础设施面临的网络安全威胁及其现实影响。"},{"id":"hn-50339397","title":"US boy names that became girl names and vice versa","url":"https://namedaisy.com/blog/boy-names-that-became-girl-names","source":"Hacker News","score":333,"comments_count":332,"comments_url":"https://news.ycombinator.com/item?id=50339397","published_at":"2026-11-02T16:34:36","author":"xoobdev","text":null,"summary":"该文章探讨了美国男孩名字和女孩名字之间的相互转变现象，可能分析了命名趋势和社会文化因素。它值得关注，因为它提供了对语言和文化变迁的有趣洞察。"},{"id":"hn-50331957","title":"Bones may release proteins that slow aging and extend life span","url":"https://www.science.org/content/article/bones-may-release-proteins-slow-aging-and-extend-life-span","source":"Hacker News","score":324,"comments_count":130,"comments_url":"https://news.ycombinator.com/item?id=50331957","published_at":"2026-11-02T01:31:07","author":"EA-3167","text":null,"summary":"文章探讨骨骼可能释放延缓衰老和延长寿命的蛋白质，这一发现可能为抗衰老研究开辟新方向，值得关注。"},{"id":"hn-50315217","title":"Mystery of 60-Second Fluctuations in Power Grids Solved","url":"https://www.fz-juelich.de/en/news/archive/press-release/2026/mystery-of-60-second-fluctuations-in-power-grids-solved","source":"Hacker News","score":257,"comments_count":110,"comments_url":"https://news.ycombinator.com/item?id=50315217","published_at":"2026-10-31T11:53:47","author":"_Microft","text":null,"summary":"文章揭示了电网中60秒波动的谜团，这一发现有助于提升电网稳定性和能源管理效率。"},{"id":"hn-50339221","title":"Show HN: Warsaw in voxels – An interactive 3D map of the city centre","url":"https://p.migdal.pl/warsaw-vibe-voxel/","source":"Hacker News","score":231,"comments_count":37,"comments_url":"https://news.ycombinator.com/item?id=50339221","published_at":"2026-11-02T16:25:26","author":"stared","text":"$d","summary":"这是一个展示华沙市中心的交互式3D体素地图，灵感来自Minecraft和MagicaVoxel，可切换日期、时间和天气，适合对城市可视化和游戏化交互感兴趣的读者。"},{"id":"hn-50334704","title":"Show HN: I've updated my Linux System Call website and API","url":"https://syscall.sh/","source":"Hacker News","score":215,"comments_count":52,"comments_url":"https://news.ycombinator.com/item?id=50334704","published_at":"2026-11-02T09:29:16","author":"guitmz","text":"I first released those in back in 2020 and now I finally added more architectures, Kernel selector, syscall descriptions and a few other niceties. It should work a bit better on mobile devices too but I am no CSS expert.<p>The API is at <a href=\"https:&#x2F;&#x2F;api.syscall.sh\" rel=\"nofollow\">https:&#x2F;&#x2F;api.syscall.sh</a>","summary":"作者更新了Linux系统调用网站和API，新增更多架构、内核选择器和系统调用描述，并改善了移动端体验，对Linux开发者很有价值。"},{"id":"hn-50332163","title":"F/OSS Comics #13: BSD Unix, Part 3 – The Beginning of BSD Unix","url":"https://fosscomics.com/posts/13.%20BSD%20Unix%20Part%203%20-%20The%20Beginning%20of%20BSD%20Unix/","source":"Hacker News","score":211,"comments_count":29,"comments_url":"https://news.ycombinator.com/item?id=50332163","published_at":"2026-11-02T01:59:38","author":"joonehur","text":null,"summary":"这是F/OSS Comics系列的第13期，以漫画形式讲述BSD Unix的起源，适合对Unix历史和开源文化感兴趣的读者。"},{"id":"hn-50338728","title":"Ask HN: Who is hiring? (November 2026)","url":null,"source":"Hacker News","score":188,"comments_count":154,"comments_url":"https://news.ycombinator.com/item?id=50338728","published_at":"2026-11-02T16:01:37","author":"whoishiring","text":"$e","summary":"这是Hacker News的“谁在招聘”月度帖子（2026年11月），为求职者和招聘公司提供直接交流的平台，值得关注招聘动态的读者查看。"},{"id":"hn-50347683","title":"Net worth for people aged 30–33 in the U.S.","url":"https://www.keepingup.com/benchmarks/net-worth/age-30-33","source":"Hacker News","score":177,"comments_count":66,"comments_url":"https://news.ycombinator.com/item?id=50347683","published_at":"2026-11-03T03:28:26","author":"jpmulhausen","text":null,"summary":"文章提供了美国30-33岁人群的净资产基准数据，有助于读者了解该年龄段的财务健康状况并进行比较。"},{"id":"hn-50339815","title":"My Favourite Laptop","url":"https://blog.jsbarretto.com/post/laptop","source":"Hacker News","score":176,"comments_count":134,"comments_url":"https://news.ycombinator.com/item?id=50339815","published_at":"2026-11-02T16:59:57","author":"ibobev","text":null,"summary":"作者分享了自己最喜欢的笔记本电脑及其使用体验，对需要选购笔记本的读者具有参考价值。"},{"id":"hn-50337558","title":"We halved DNS build delay and cut memory use by 85%","url":"https://blog.cloudflare.com/dns-targeted-zone-builds/","source":"Hacker News","score":169,"comments_count":66,"comments_url":"https://news.ycombinator.com/item?id=50337558","published_at":"2026-11-02T14:47:28","author":"wondersky","text":null,"summary":"Cloudflare博客介绍了如何将DNS构建延迟减半并将内存使用降低85%，这一优化对提升DNS性能和降低成本具有重要意义。"},{"id":"hn-50338747","title":"Moving our warehouse off DuckDB","url":"https://posthog.com/blog/moving-off-duckdb","source":"Hacker News","score":165,"comments_count":114,"comments_url":"https://news.ycombinator.com/item?id=50338747","published_at":"2026-11-02T16:02:26","author":"emschwartz","text":null,"summary":"PostHog博客分享了将数据仓库从DuckDB迁移的经验，讨论了迁移原因和挑战，对面临类似技术选型的团队有借鉴意义。"},{"id":"hn-50325454","title":"Proving and improving the Platonic Representation Hypothesis with JEPAs","url":"https://arxiv.org/abs/2610.39302","source":"Hacker News","score":164,"comments_count":84,"comments_url":"https://news.ycombinator.com/item?id=50325454","published_at":"2026-11-01T13:24:49","author":"Anon84","text":null,"summary":"该论文通过JEPA（联合嵌入预测架构）验证并改进柏拉图表示假说，探讨不同模型是否趋向学习统一的现实表示。对理解自监督学习和表示学习的理论基础具有重要意义。"},{"id":"hn-50346153","title":"Intel stock collapse worsens as $3.5T chip rout spreads","url":"https://finance.yahoo.com/markets/article/the-intel-stock-collapse-is-getting-worse--and-the-37-trillion-chip-rout-is-spreading-212154947.html","source":"Hacker News","score":149,"comments_count":98,"comments_url":"https://news.ycombinator.com/item?id=50346153","published_at":"2026-11-03T00:08:53","author":"entryleveljobsc","text":null,"summary":"英特尔股价持续暴跌，3.5万亿美元芯片板块抛售潮蔓延，反映半导体行业面临严峻市场压力。值得关注其对整个科技产业链和投资情绪的连锁影响。"},{"id":"hn-50340619","title":"Self-Employed? Solopreneur? NIST Has a Cybersecurity Guide Just for You","url":"https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you","source":"Hacker News","score":148,"comments_count":45,"comments_url":"https://news.ycombinator.com/item?id=50340619","published_at":"2026-11-02T17:47:40","author":"tomrod","text":null,"summary":"美国NIST针对自由职业者和独立创业者发布专门的网络安全指南，帮助这一日益庞大的群体应对安全风险。实用性强，填补了小规模经营者安全指导的空白。"},{"id":"hn-50339913","title":"Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app","url":"https://momentic.ai/","source":"Hacker News","score":134,"comments_count":89,"comments_url":"https://news.ycombinator.com/item?id=50339913","published_at":"2026-11-02T17:05:25","author":"wuweiweiwu","text":"$f","summary":"YC孵化的Momentic推出自主QA智能体，可自动规划、探索并测试Web、iOS、Android应用以发现缺陷。展示了AI智能体在软件测试自动化领域的落地进展。"},{"id":"hn-50341028","title":"Sneaking into the auditorium for the Windows 2000 launch rehearsal","url":"https://devblogs.microsoft.com/oldnewthing/20261102-00/?p=112818/","source":"Hacker News","score":118,"comments_count":43,"comments_url":"https://news.ycombinator.com/item?id=50341028","published_at":"2026-11-02T18:12:48","author":"ibobev","text":null,"summary":"微软资深工程师回忆Windows 2000发布彩排时混入礼堂的趣事，属于Old New Thing系列的历史轶事。对Windows发展史爱好者具有怀旧和趣味价值。"}],"locale":"en"}],"$L10"]}]]}]
+**23. Japan's Jimi 'Mundane' Halloween Costumes of 2026**
+日本"地味"（朴素）万圣节装扮合集。值得关注：轻量文化观察，社区调剂型内容。
+- 原文：https://spoon-tamago.com/japan-jimi-mundane-halloween-costumes-2026/
+- 讨论：https://news.ycombinator.com/item?id=50333131
+
+**24. Why Don't We Live in an Art Nouveau World?**
+探讨为何我们没有生活在"新艺术运动"式的世界里。值得关注：设计史与技术/社会形态关系的思辨长文。
+- 原文：https://asteriskmag.com/issues/16/why-don-t-we-life-in-an-art-nouveau-world
+- 讨论：https://news.ycombinator.com/item?id=50333332
+
+（注：第 1、7、14 已在第一节；第 2 在第三节；第 5、20、29、3 在第五节；其余均已归类，30 篇全部覆盖。）
+
+---
+
+## 今日最值得阅读的 5 篇文章
+
+1. **HackerTube（#1）** — 今日最高分，Karpathy 用 19 年 HN 评论数据构建的"社区记忆 YouTube"，是理解社区策展与重混文化的标杆项目。
+   https://karpathy.bearblog.dev/hacker-tube/
+
+2. **Could a modern chess engine on a Pentium have defeated Kasparov in 1996?（#4/#28）** — 用可复现的定量方法拆解"算法 vs 算力"的进步，跨两平台上榜，技术深度与可读性俱佳。
+   https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html
+
+3. **Subvocal（#2）** — 无声口型输入眼镜，AR/可穿戴交互的前沿产品，384 条讨论中信息量大，值得看评论区的技术质疑。
+   https://news.ycombinator.com/item?id=50340088
+
+4. **The Internals of PostgreSQL（#18）** — 评论少但"含金量"高，数据库工程师系统学习 PG 内部机制的经典资料，值得收藏。
+   https://www.interdb.jp/pg/index.html
+
+5. **Resisting Cognitive Surrender（#11）** — 与今天"算法替我选内容"的项目群形成思想对照，是理解当下技术消费心态的一篇好随笔。
+   https://knlb.dev/essays/surrender
+
+---
+
+**一句话总结**：今天的 Technology 热榜由"HN 自我重混"（HackerTube/HackerTV/Hacker Times）领跑，硬件开源（Stringman、Flipper One、RISC-V）与系统底层变动（Rust sudo 兼容性、macOS 27 弃用 CoreStorage）构成硬核主线，安全事件（GitBook 泄露）与法律争议（Kalshi）提供现实张力，而"抵抗认知投降"则是贯穿全天的隐性主题。0:{"buildId":"zFIGweSH9-mlzrVd5Q0Yb","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-11-04","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":16},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-11-04"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+c:T1495,Hi HN, we&#x27;re Aarush and Arnav from The Subvocal Company (YC F26) (<a href="https:&#x2F;&#x2F;subvocal.company&#x2F;">https:&#x2F;&#x2F;subvocal.company&#x2F;</a>). We’re building smart glasses that let you talk to your computer without talking out loud. You can mouth words silently and discreetly and the glasses decode them to text at the speed of speech.<p>Here&#x27;s a video of Dave from YC trying it out: <a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=9QdX1eObVYI" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=9QdX1eObVYI</a><p>(Edit: you don&#x27;t actually have to move your lips or even open your mouth for this to work! Since the RF can see inside your mouth the system can be fine tuned on &quot;internal speech&quot;. This isn&#x27;t the automatic tongue movements that occur when &quot;thinking&quot; words to yourself, but more like mouthing with your lips closed. It&#x27;s a bit weird to do, but with practice, we have been able to get it down pretty well.)<p>Arnav and I were studying CS at Georgia Tech at the beginning of the year, with no experience in silent speech or sensing. We were both AI-native builders and power users of Wispr Flow. What bugged us was not being able to use these tools in the library (or an office) or in public. At Stanford’s TreeHacks in February, we decided to build the most technically ridiculous thing we could think of. We’d read about AlterEgo, a silent speech system out of MIT’s Media Lab, and wanted to recreate it in 36 hours. We built a crude prototype, sticking EMG electrodes onto my face:<p><a href="https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1mwhv5HZMz3UTevdrgwS5O7g2jWV0K9r2&#x2F;view?usp=sharing" rel="nofollow">https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1mwhv5HZMz3UTevdrgwS5O7g2jWV...</a><p>We got it to kind of work at a letter level in a very janky way. It wasn’t good enough to win the hackathon, but convinced us to go all in. The first time I typed a sentence without anyone noticing, I felt the magic of the technology.<p>We quickly realized EMG (reading muscle electrical signals) wouldn’t work:<p>- Signal changes due to sweat<p>- Electrical interference<p>- Placement variability<p>- Most importantly, no one wants to stick electrodes onto their face!!<p>So we switched to RF and built the glasses you see now. They emit radio waves, similar to Bluetooth, that pass through your face. As they cross the tongue, lips and soft palate, they’re modulated by silent mouthing. We train foundation models on this data to decode these perturbations to text.<p>Despite prior academic research, getting this to work was a huge engineering challenge. First we built an extremely low noise RF sensing stack. Then we had to place antennas so their fields overlapped maximally with the articulators. Our first attempt on glasses failed completely, so we reverted to old habits and taped antennas on our face:<p><a href="https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1ks0dS0eZiTV9EqSFsyB_w5BBjpcBAfX-&#x2F;view?usp=sharing" rel="nofollow">https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1ks0dS0eZiTV9EqSFsyB_w5BBjpc...</a><p>Since taping antennas consistently in the same spot and angle was hard, we created this weird but effective head rig to hold them in place:<p><a href="https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1rhzNFpdDzr7oHk0isFY70dkoV4CAF1pT&#x2F;view?usp=sharing" rel="nofollow">https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1rhzNFpdDzr7oHk0isFY70dkoV4C...</a><p>This worked, but obviously wasn’t a product yet. So we worked deep in simulations to design glasses that could hold the antennas.<p>That evolved into our design now, with antennas embedded within the frames. Once we established there was a signal, the next hurdle was cross-user generalization. Everyone’s facial anatomy, and hence RF signal patterns, are vastly different. We tried algorithmic workarounds but realized the only lever was to massively scale pretraining data.<p>So that’s what we did. We set up booths in our office and paid people to read prompts wearing our glasses, to pretrain our models on. This produced a beautiful scaling curve, with errors falling quickly as we scaled our dataset and cross-user performance becoming genuinely compelling (as you see in the video above; Dave only had a short 20-sentence calibration).<p>We always heard about building things from first principles but never understood it before this. We tried tackling it top down but completely failed. Only when we broke each component (the antenna, electronics, ML) down to its fundamentals to understand and optimize it did we get it to work really well.<p>Over the next few months we’re continuing R&amp;D to turn our prototype glasses into the slick product on our website and ship in Q1 2027. We’re also scaling up our dataset to improve performance on edge cases.<p>For anyone who loves voice dictation but hates using it around people, we’ve opened preorders for our first batch of 500 units, with a $200 discount off the final price. Allocation is running out quickly, so get yours at <a href="https:&#x2F;&#x2F;subvocal.co&#x2F;preorder" rel="nofollow">https:&#x2F;&#x2F;subvocal.co&#x2F;preorder</a>!d:T12e7,Hey HN, we’re Wei-Wei and Jeff. We’re building Momentic, QA agents that autonomously plan, explore, and bug-bash controls and user flows in your web, iOS, Android, and (soon) desktop apps to catch bugs.<p>Here’s a demo: <a href="https:&#x2F;&#x2F;youtu.be&#x2F;BFsM-Se1Fh8" rel="nofollow">https:&#x2F;&#x2F;youtu.be&#x2F;BFsM-Se1Fh8</a><p>We’re both software engineers that spent our careers on dev tooling and infra across companies like Robinhood, Retool, WeWork, and Qualtrics. Testing was always a pain in the ass (esp Playwright and Selenium), so we built agents to do it for us.<p>Modern day software has a ton of bugs and the change failure rate is only growing faster as coding agent adoption scales. LLMs are really good at generating code, but reinforce their own assumptions, write a ton of useless tests, and are bad at visual understanding. On DeepSWE v1.1, Sonnet 5.5 hit 66.2% pass rate when banned from writing tests, versus 65.3% when allowed.<p>OSS end-to-end testing frameworks like Playwright, Selenium, or Maestro force you to hardcode implementation details like XPath, text, or aria-* attributes in your tests. Even with agents, these take a nontrivial amount of time and tokens to build and maintain.<p>In 2023, we saw Nat Friedman drive a browser with GPT-3 via natbot. We were inspired to use this technology to automate the most painful and tedious parts of software engineering: testing. We started with using LLMs to generate and maintain Playwright, but quickly realized that those primitives were fundamentally misaligned with the agentic SDLC. We think the future of QA is agents testing themselves, not writing scripts.<p>Mo is a custom agent harness for catching bugs that builds on the past 3 years of Momentic and millions of test traces from complex, real-world applications. Mo is built for recall: it finds the most real bugs, though Codex is a bit more precise at 86% vs 84%. The tradeoff is cost: Mo costs $2.67 per bug vs $0.80 for Codex, less than Claude Code and Devin.<p>- Self-organizing agent graph. Mo builds a directed acyclic graph (DAG) as it explores. Large product areas automatically fork into parallel sub-agents, each with their own browser or device for concurrent execution.<p>- Specialized agents for domain specific tasks. Planner agents reason over screenshots and video while dedicated locator agents inspect page structure to resolve plain-English interaction targets. Others include image analysis, video understanding, audio generation, and more.<p>- Parallel agents coordinate through cooperative resource leases. Agents can announce that they’re “using” or “modifying” overlapping resources or fixtures. Multiple “using” claims can coexist, but only a single “modifying” claim can be active on any particular one.<p>- Scaled infrastructure. Mo ships with a tunnel that lets users expose private sites and local apps to our hosted agents and infra. A single bug bash can spin up 100s of concurrent browsers and devices.<p>We benchmarked Mo against coding agents on 4 popular open-source apps: Gitea (58.8k stars), Metabase, Twenty (YC), and Saleor, with 1,396 human-labeled bugs. Each agent got the same brief, a fresh E2B sandbox, and no access to source code. Codex and Claude Code used hosted Browserbase browsers, while Devin used its built-in browser. For evaluators, we implemented LLM as a judge (GPT-6.1 Sol) with a human reviewer.<p>Results from a time-boxed 60-minute run:<p>- Mo: 269 bugs, 19.3% recall, 84% precision, $2.67 per bug<p>- Codex (GPT-6.1 Sol + Playwright MCP): 86 bugs, 6.2% recall, 86% precision, $0.80 per bug<p>- Claude Code (Opus 5.5 + Playwright MCP): 59 bugs, 4.2% recall, 80% precision, $4.09 per bug<p>- Devin: 27 bugs, 1.9% recall, 84% precision, $3.89 per bug<p>Mo finds more bugs the more time it has. From 30 to 60 minutes, it went from 177 to 269 bugs (+52%), while Codex gained only 16%.<p>Results: <a href="https:&#x2F;&#x2F;momentic.ai&#x2F;qa-bench">https:&#x2F;&#x2F;momentic.ai&#x2F;qa-bench</a><p>Write-up: <a href="https:&#x2F;&#x2F;momentic.ai&#x2F;blog&#x2F;qa-bench">https:&#x2F;&#x2F;momentic.ai&#x2F;blog&#x2F;qa-bench</a><p>Dataset: <a href="https:&#x2F;&#x2F;huggingface.co&#x2F;datasets&#x2F;momentic&#x2F;qa-bench" rel="nofollow">https:&#x2F;&#x2F;huggingface.co&#x2F;datasets&#x2F;momentic&#x2F;qa-bench</a><p>Harness: <a href="https:&#x2F;&#x2F;github.com&#x2F;momentic-ai&#x2F;qa-bench" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;momentic-ai&#x2F;qa-bench</a><p>We just shipped PR testing for Vercel and Cloudflare deploy previews and we’re giving every new signup $250 in Mo spend. Paid plans have higher infra capacity and included usage along with options to top up.<p>We’d love for you to try it out and give us feedback. Feel free to comment here, we’ll be around all day!e:T9e8,We opened a ticket with support about Gitbook availability issues and got this in reply. We have yet to see any official customer communication or breach notification. Apologies for the formatting, did the best I could as it&#x27;s a mobile paste.<p>Update:<p>GitBook security incident update
+ Hey &lt;$name&gt;,
+ The GitBook app, the GitBook API, and published docs are available again. A few services may still be degraded as we finish restoring everything to full performance.<p>*What happened*
+ GitBook has been the target of a sophisticated, highly targeted attack using AI agents. 
+ At 19:00 CET, November 2, the attacker gained unauthorized access to some of our infrastructure credentials. We detected the attack immediately and acted swiftly to block further impact. 
+ To make sure our infrastructure was fully secure, we then took the GitBook app and authenticated docs sites offline. We kept publicly published content live for as long as possible, using cached data.<p>*What we did immediately*
+* Blocked the attacker and closed the vulnerabilities involved
+* Replaced every credential and secret across our infrastructure
+* Brought services back only once we were confident they were secure
+* Invalidated every customer’s API tokens on our platform<p>*Your data*
+ Our investigation shows that the attacker may have accessed the following:
+* Git Sync secrets.
+* GitBook API tokens.
+* Third-party API tokens used to connect external tools to GitBook.
+* Questions asked to GitBook Assistant by your site visitors.<p>At this stage, we have found no evidence that any of your content in GitBook was modified.<p>*What you need to do now*
+* Rotate any existing GitBook API tokens. We revoked all personal API tokens during the incident.
+* Rotate any third-party API tokens or secrets you use to connect other tools to GitBook.
+* If you have published integrations that use secrets, rotate those secrets.
+* If you use the GitBook MCP server, re-authenticate it.
+ Please contact your GitBook organization’s admin to assist with this process.<p>*What we are doing next*
+* Monitoring the situation in case of further attacks.
+* Introducing further security measures to our platform.
+* Writing a full post mortem that will be published soon with more detailed information about the incident.
+* If you have any further questions, please reach out to your account manager or our support team. You can also check status.gitbook.com for updates<p>Thank you for your patience, and we apologize again for the disruption
+ The GitBook team6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-50319510","title":"HackerTube: YouTube built from videos recommended by HN","url":"https://karpathy.bearblog.dev/hacker-tube/","source":"Hacker News","score":2858,"comments_count":633,"comments_url":"https://news.ycombinator.com/item?id=50319510","published_at":"2026-10-31T19:56:53","author":"karpathy","text":"YouTube-style UI over 6,454 videos sourced from 39,834 HN comments since 2007.<p><a href=\"https:&#x2F;&#x2F;hackertube.org&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;hackertube.org&#x2F;</a>","summary":"该项目将2007年以来Hacker News评论中推荐的6454个视频整合成YouTube风格的界面，名为HackerTube，值得关注因为它展示了社区驱动的视频推荐如何形成独特的浏览体验。"},{"id":"hn-50340088","title":"Show HN: Subvocal – Talk to your computer without making noise","url":null,"source":"Hacker News","score":813,"comments_count":384,"comments_url":"https://news.ycombinator.com/item?id=50340088","published_at":"2026-11-02T17:16:17","author":"aarushyadav","text":"$c","summary":"YC孵化的Subvocal公司正在开发智能眼镜，让用户无需出声即可通过默读口型与计算机交流，值得关注因为这是一种全新的无声人机交互方式。"},{"id":"hn-50336518","title":"If you love a website, back it up","url":"https://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up/","source":"Hacker News","score":652,"comments_count":151,"comments_url":"https://news.ycombinator.com/item?id=50336518","published_at":"2026-11-02T13:25:35","author":"ingve","text":null,"summary":"这篇文章呼吁用户备份自己喜爱的网站，值得关注因为它提醒人们互联网内容可能消失，备份是保护数字资源的重要措施。"},{"id":"hn-50349276","title":"Could a modern chess engine on a Pentium have defeated Kasparov in 1996?","url":"https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html","source":"Hacker News","score":464,"comments_count":226,"comments_url":"https://news.ycombinator.com/item?id=50349276","published_at":"2026-11-03T07:56:21","author":"markusw","text":null,"summary":"文章探讨现代国际象棋引擎在1996年的Pentium硬件上能否击败卡斯帕罗夫，值得关注因为它分析了算法进步与硬件限制之间的关系。"},{"id":"hn-50353229","title":"Kalshi and its co-founders face felony charges for violating Utah gambling laws","url":"https://arstechnica.com/tech-policy/2026/10/trump-admin-sues-utah-to-save-kalshi-from-the-states-total-ban-on-gambling/","source":"Hacker News","score":458,"comments_count":448,"comments_url":"https://news.ycombinator.com/item?id=50353229","published_at":"2026-11-03T15:29:15","author":"rbanffy","text":null,"summary":"预测市场平台Kalshi及其联合创始人因违反犹他州赌博法面临重罪指控，值得关注因为它涉及预测市场与州级赌博法规的冲突。"},{"id":"hn-50354358","title":"Stringman, an $800 open-source room scale gripper robot","url":"https://neufangled.com/","source":"Hacker News","score":454,"comments_count":159,"comments_url":"https://news.ycombinator.com/item?id=50354358","published_at":"2026-11-03T16:47:29","author":"nharada","text":null,"summary":"Stringman是一款售价800美元的开源房间尺度抓取机器人，值得关注因为它以低成本实现了开源机器人技术，可能推动家庭机器人应用。"},{"id":"hn-50346981","title":"Show HN: Hacker Times, a New York Times-inspired version of Hacker News","url":"https://hackertimes.ca/","source":"Hacker News","score":452,"comments_count":145,"comments_url":"https://news.ycombinator.com/item?id=50346981","published_at":"2026-11-03T01:53:34","author":"polpenn","text":"I thought it would be fun to browse HN as if it were a newspaper. The site updates once an hour. Enjoy!","summary":"Hacker Times是一个以《纽约时报》风格呈现Hacker News的网站，每小时更新一次，值得关注因为它为HN浏览提供了新颖的报纸式体验。"},{"id":"hn-50346849","title":"DiscImageStudio: burn visible artwork onto CDs, DVDs and Blu-ray discs","url":"https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio","source":"Hacker News","score":345,"comments_count":77,"comments_url":"https://news.ycombinator.com/item?id=50346849","published_at":"2026-11-03T01:33:43","author":"bpierre","text":null,"summary":"DiscImageStudio是一个开源工具，可在CD、DVD和蓝光光盘上刻录可见图案，值得关注因为它为光盘艺术创作提供了实用方案。"},{"id":"hn-50358562","title":"Safari introduces Adaptive Dark Mode in 27.3","url":"https://webkit.org/blog/18541/introducing-adaptive-dark-mode/","source":"Hacker News","score":343,"comments_count":196,"comments_url":"https://news.ycombinator.com/item?id=50358562","published_at":"2026-11-03T21:39:05","author":"paddingtone","text":null,"summary":"Safari 27.3引入了自适应深色模式，值得关注因为它能根据环境自动调整显示，提升用户阅读体验。"},{"id":"hn-50352758","title":"Mac at any scale","url":"https://namespace.so/blog/mac-at-any-scale","source":"Hacker News","score":336,"comments_count":195,"comments_url":"https://news.ycombinator.com/item?id=50352758","published_at":"2026-11-03T14:53:42","author":"anner_","text":null,"summary":"这篇文章讨论如何在任意规模上运行Mac基础设施，值得关注因为它为需要大规模Mac环境的开发者提供了技术思路。"},{"id":"hn-50323123","title":"Resisting Cognitive Surrender","url":"https://knlb.dev/essays/surrender","source":"Hacker News","score":307,"comments_count":157,"comments_url":"https://news.ycombinator.com/item?id=50323123","published_at":"2026-11-01T06:13:30","author":"knlb","text":null,"summary":"文章探讨了在AI时代抵抗认知投降的重要性，即不应盲目依赖AI而放弃独立思考，值得关注因为它提醒技术使用者保持批判性思维。"},{"id":"hn-50348962","title":"Nvidia – open-source auto-ontology","url":"https://github.com/NVIDIA/auto-ontology","source":"Hacker News","score":266,"comments_count":129,"comments_url":"https://news.ycombinator.com/item?id=50348962","published_at":"2026-11-03T07:04:50","author":"campervans","text":null,"summary":"英伟达开源了自动本体（auto-ontology）项目，可能涉及知识图谱或语义建模的自动化工具，值得关注因为英伟达在AI基础设施领域的开源动向具有行业影响力。"},{"id":"hn-50353335","title":"Study estimates 75% of NFL players who died over 15-year span had CTE","url":"https://www.nbcnews.com/health/health-news/study-estimates-75-nfl-players-died-15-year-span-may-cte-rcna605975","source":"Hacker News","score":256,"comments_count":217,"comments_url":"https://news.ycombinator.com/item?id=50353335","published_at":"2026-11-03T15:38:04","author":"gmays","text":null,"summary":"一项研究估计在15年跨度内去世的NFL球员中约75%患有CTE（慢性创伤性脑病），值得关注因为它揭示了美式橄榄球运动与脑部损伤之间的严重关联。"},{"id":"hn-50346755","title":"Show HN: HackerTV – HN's most-recommended Youtube videos as 24/7 TV channels","url":"https://hackertv.org","source":"Hacker News","score":236,"comments_count":47,"comments_url":"https://news.ycombinator.com/item?id=50346755","published_at":"2026-11-03T01:18:09","author":"dsalzman","text":"I saw HackerTube (<a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50319510\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50319510</a>) a few days ago, the YouTube videos HN keeps\nrecommending, pulled from 19 years of comments. It made me want to flip\nthrough them instead of picking, so I built a TV for it. I have Algo fatigue.<p>Each topic area is a channel (DEVTV, SOLDER, RETRO, ORBIT, ...), plus HN Prime\n(the top 400), a music channel, and Late Night on ch 99, which only broadcasts\n11pm-5am your local time and shows color bars otherwise.<p>Similar to HackerTube it was built with Claude Code in a few hours.<p>All credit for the data goes to HackerTube. Happy to hear channel ideas.","summary":"开发者推出HackerTV，将HN社区19年来评论中反复推荐的YouTube视频整理为24/7轮播电视频道，值得关注因为它以新颖方式盘活了HN的历史社区智慧。"},{"id":"hn-50321605","title":"Toit v2.0.0","url":"https://toit.io/blog/toit-v2-0-0/","source":"Hacker News","score":223,"comments_count":69,"comments_url":"https://news.ycombinator.com/item?id=50321605","published_at":"2026-11-01T00:25:04","author":"floitsch","text":null,"summary":"Toit语言发布v2.0.0版本，Toit是面向物联网设备的嵌入式编程语言和平台，值得关注因为它为IoT开发提供了更高效的开发体验。"},{"id":"hn-50334523","title":"European RISC-V Industrial Computing Initiative","url":"https://erici.eu","source":"Hacker News","score":199,"comments_count":126,"comments_url":"https://news.ycombinator.com/item?id=50334523","published_at":"2026-11-02T08:58:33","author":"ymz5","text":null,"summary":"欧洲发起RISC-V工业计算倡议（ERICI），旨在推动RISC-V架构在欧洲工业计算领域的应用，值得关注因为它反映了欧洲在开放指令集架构上的战略布局。"},{"id":"hn-50356994","title":"Preparing for the Flipper One Kickstarter and opening pre-orders","url":"https://flipper.net/pages/flipper-one","source":"Hacker News","score":191,"comments_count":84,"comments_url":"https://news.ycombinator.com/item?id=50356994","published_at":"2026-11-03T19:32:13","author":"user_7832","text":"<a href=\"https:&#x2F;&#x2F;docs.flipper.net&#x2F;one\" rel=\"nofollow\">https:&#x2F;&#x2F;docs.flipper.net&#x2F;one</a>","summary":"Flipper Devices宣布为Flipper One Kickstarter众筹做准备并开放预购，Flipper是知名的开源硬件多功能工具，值得关注因为新一代产品备受硬件黑客社区期待。"},{"id":"hn-50358702","title":"The Internals of PostgreSQL","url":"https://www.interdb.jp/pg/index.html","source":"Hacker News","score":177,"comments_count":11,"comments_url":"https://news.ycombinator.com/item?id=50358702","published_at":"2026-11-03T21:51:06","author":"ibobev","text":null,"summary":"《The Internals of PostgreSQL》深入剖析PostgreSQL数据库的内部实现原理，值得关注因为它是学习这款流行开源数据库架构的优质免费资源。"},{"id":"hn-50339913","title":"Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app","url":"https://momentic.ai/","source":"Hacker News","score":159,"comments_count":124,"comments_url":"https://news.ycombinator.com/item?id=50339913","published_at":"2026-11-02T17:05:25","author":"wuweiweiwu","text":"$d","summary":"YC W24孵化的Momentic推出QA智能体，能自主规划、探索并测试Web、iOS、Android应用以发现bug，值得关注因为它展示了AI代理在软件测试自动化中的实际应用。"},{"id":"hn-50354336","title":"Gitbook Breached","url":null,"source":"Hacker News","score":148,"comments_count":35,"comments_url":"https://news.ycombinator.com/item?id=50354336","published_at":"2026-11-03T16:45:49","author":"punchmesan","text":"$e","summary":"有用户反映GitBook发生安全事件，但官方尚未发布正式的客户通知或泄露通报，值得关注因为它涉及知名文档平台的数据安全透明度问题。"},{"id":"hn-50332342","title":"Katamari Damacy but it's The Met collection","url":"https://katamari.vaguespac.es/","source":"Hacker News","score":147,"comments_count":48,"comments_url":"https://news.ycombinator.com/item?id=50332342","published_at":"2026-11-02T02:21:07","author":"thebigship","text":null,"summary":"一个将《块魂》玩法与大都会艺术博物馆藏品结合的创意网页项目，展示了如何用游戏化方式探索艺术收藏，值得关注其交互设计与文化传播的潜力。"},{"id":"hn-50357782","title":"I dumped Apple’s word list","url":"https://helgesver.re/articles/macos-vulgar-word-flags","source":"Hacker News","score":142,"comments_count":80,"comments_url":"https://news.ycombinator.com/item?id=50357782","published_at":"2026-11-03T20:33:23","author":"speckx","text":null,"summary":"作者逆向分析了macOS系统词表中的粗俗词汇标记机制，揭示了苹果如何过滤不当内容，对了解系统隐私与内容审核实现有参考价值。"},{"id":"hn-50333131","title":"Japan's Jimi 'Mundane' Halloween Costumes of 2026","url":"https://spoon-tamago.com/japan-jimi-mundane-halloween-costumes-2026/","source":"Hacker News","score":141,"comments_count":23,"comments_url":"https://news.ycombinator.com/item?id=50333131","published_at":"2026-11-02T04:31:20","author":"zdw","text":null,"summary":"介绍2026年日本流行的'地味'（朴素日常）万圣节装扮趋势，反映了日本社会文化中对过度消费和夸张表达的反思，值得关注其社会现象意义。"},{"id":"hn-50333332","title":"Why Don't We Live in an Art Nouveau World?","url":"https://asteriskmag.com/issues/16/why-don-t-we-life-in-an-art-nouveau-world","source":"Hacker News","score":129,"comments_count":117,"comments_url":"https://news.ycombinator.com/item?id=50333332","published_at":"2026-11-02T05:05:11","author":"shcallaway","text":null,"summary":"探讨为何新艺术运动风格未能成为现代世界的主流设计语言，从历史、经济和技术角度分析风格演化的深层原因，对设计史与建筑文化爱好者有启发。"},{"id":"hn-50356944","title":"macOS 27 does not support CoreStorage volumes","url":"https://wadetregaskis.com/macos-27-golden-gate-does-not-actually-support-corestorage-or-hfs-volumes/","source":"Hacker News","score":124,"comments_count":82,"comments_url":"https://news.ycombinator.com/item?id=50356944","published_at":"2026-11-03T19:27:53","author":"colejohnson66","text":null,"summary":"报道macOS 27不再支持CoreStorage和HFS卷，意味着旧格式存储设备将无法直接挂载，提醒用户和IT管理员提前迁移数据，是重要的系统兼容性变化。"}],"locale":"en"}],"$Lf"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["Generated by"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","Powered by DeepSeek"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]
-10:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-161d0c1cc4df","title":"Jailbreaking my car's navigation system just so I can change the time","url":"https://blog.nns.ee/2026/11/02/renault-hack/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-02T16:30:58","author":"blog.nns.ee by xx","text":"<p><a href=\"https://lobste.rs/s/qvdatp/jailbreaking_my_car_s_navigation_system\">Comments</a></p>","summary":"作者为修改车载导航系统的时间设置而对其越狱破解，展示了汽车软件封闭生态带来的用户困扰。引发对车联网设备可维修性和用户控制权的讨论。"},{"id":"rss-bdbb6d9363aa","title":"A Decade of Kill Bugs","url":"https://alangrow.com/blog/a-decade-of-kill-bugs","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-02T21:23:24","author":"alangrow.com by acg","text":"<p><a href=\"https://lobste.rs/s/wgoato/decade_kill_bugs\">Comments</a></p>","summary":"作者回顾十年来消灭软件缺陷的经验与心得，总结长期维护和调试中的实践教训。对开发者提升代码质量和缺陷管理能力有参考价值。"},{"id":"rss-5310efb9558a","title":"Stop Hardcoding Your Timeouts","url":"https://alfy.blog/2026/04/23/stop-hardcoding-your-timeouts.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-02T19:22:32","author":"alfy.blog via bahlo","text":"<p><a href=\"https://lobste.rs/s/qa0owz/stop_hardcoding_your_timeouts\">Comments</a></p>","summary":"文章主张不要硬编码超时时间，应改用自适应或可配置的超时策略。对提升分布式系统和网络应用的健壮性具有实用指导意义。"},{"id":"rss-aac2018df18a","title":"This background sound leaks your exact location","url":"https://youtu.be/UytYrhYLOKI","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-02T19:42:32","author":"youtu.be via fanf","text":"<p><a href=\"https://lobste.rs/s/s1btqo/this_background_sound_leaks_your_exact\">Comments</a></p>","summary":"视频揭示背景环境声音可能泄露精确地理位置，展示声学侧信道攻击的隐私风险。提醒人们关注非传统数据源带来的定位追踪威胁。"},{"id":"rss-2f230d5a3bf6","title":"My favourite laptop","url":"https://blog.jsbarretto.com/post/laptop","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-02T19:48:40","author":"blog.jsbarretto.com via bahlo","text":"<p><a href=\"https://lobste.rs/s/ezg5mx/my_favourite_laptop\">Comments</a></p>","summary":"作者分享自己最喜爱的笔记本电脑及使用体验，属于个人技术设备评测类文章。对关注笔记本选购和使用感受的读者有参考价值。"}],"locale":"en"}]
-13:null
+a:["$","$L10",null,{"children":["$","$11",null,{"name":"Next.MetadataOutlet","children":"$@12"}]}]
+f:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-eae9d89a5f71","title":"Death comes for XSLT","url":"https://dbushell.com/2026/11/03/xslt-rip/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-03T15:19:50","author":"dbushell.com via nytpu","text":"<p><a href=\"https://lobste.rs/s/chypzr/death_comes_for_xslt\">Comments</a></p>","summary":"讨论XSLT技术逐渐走向消亡的现状与原因，反思这项曾经重要的XML转换语言为何被现代技术栈边缘化，对Web开发者有技术史参考价值。"},{"id":"rss-3eb4a19c9629","title":"The Ubuntu 26.04 Rust sudo is not compatible with standard sudo","url":"https://utcc.utoronto.ca/~cks/space/blog/linux/Ubuntu2604RustSudoNotCompatible","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-03T15:23:21","author":"utcc.utoronto.ca via twp","text":"<p><a href=\"https://lobste.rs/s/e201eb/ubuntu_26_04_rust_sudo_is_not_compatible\">Comments</a></p>","summary":"指出Ubuntu 26.04中用Rust重写的sudo与标准sudo存在不兼容行为，可能影响依赖特定sudo行为的脚本和工具，对Linux系统管理员是重要的升级警示。"},{"id":"rss-dc922b9368af","title":"Could a modern chess engine on a Pentium have defeated Kasparov in 1996?","url":"https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-03T15:44:27","author":"nicholas.carlini.com via fanf","text":"<p><a href=\"https://lobste.rs/s/1gndxr/could_modern_chess_engine_on_pentium_have\">Comments</a></p>","summary":"通过实验分析现代国际象棋引擎在1996年Pentium硬件上能否击败卡斯帕罗夫，探讨算法进步与硬件算力对棋力提升的相对贡献，对象棋AI和计算史爱好者有趣。"},{"id":"rss-2d2d82b000f1","title":"Observations from Running stealmybitcoin.com","url":"https://pavursec.com/blog/stealmybitcoin/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-03T23:45:21","author":"pavursec.com via wezm","text":"<p><a href=\"https://lobste.rs/s/fgucra/observations_from_running\">Comments</a></p>","summary":"分享运行stealmybitcoin.com网站（一个故意暴露私钥的比特币钱包实验）的观察结果，揭示攻击者如何迅速盗取资金，对加密货币安全研究有教育意义。"},{"id":"rss-bdbb6d9363aa","title":"A Decade of Kill Bugs","url":"https://alangrow.com/blog/a-decade-of-kill-bugs","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-02T21:23:24","author":"alangrow.com by acg","text":"<p><a href=\"https://lobste.rs/s/wgoato/decade_kill_bugs\">Comments</a></p>","summary":"回顾作者十年来修复软件bug的经验与心得，总结常见缺陷模式和维护技巧，对软件工程师提升代码质量和调试能力有实践参考价值。"}],"locale":"en"}]
+12:null
