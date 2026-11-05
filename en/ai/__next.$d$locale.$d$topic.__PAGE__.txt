@@ -3,137 +3,126 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-e:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-f:"$Sreact.suspense"
-5:T2150,# 今日 AI & Machine Learning 热门内容分析（Top 16）
+f:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+5:T1dad,# 今日 AI & Machine Learning 热门内容分析总结
 
-## 一、总体观察
-
-今日热榜呈现出明显的“**信任与治理焦虑**”特征：前六条中有四条涉及 AI 厂商的**数据隐私、模型能力夸大、默认设置变更**等争议，讨论热度远超技术本身。与此同时，AI 基础设施的**资本与硬件连锁反应**（债务、磁带存储）成为第二大类话题。纯技术/研究类内容（生成式 AI 数学入门、布尔电路嵌入神经网络）热度相对靠后，但质量值得关注。
+> 数据来源：Hacker News（本期 15 篇均来自 HN，涵盖 Ask/Tell HN、Launch HN 及外部链接投稿）。整体看，今日讨论重心不在"模型能力突破"，而在**AI 落地过程中的工程债、隐私、成本与真实采用率**——这是一个偏"冷静期"的信号。
 
 
-## 二、按子主题分组
+## 一、AI Agent 的真实落地：从狂热到务实
 
-### 主题 A：数据隐私与厂商信任危机（今日最大热点）
+这一组是今日讨论密度最高的主线，核心问题是：Agent 到底用起来了没有、代价多大、靠不靠谱。
 
-**1. Postman 静默自动安装 AI 插件并试图共享全部 API 数据**
-- **为什么值得关注**：1109 分、362 条评论，今日榜首。开发者工具在用户不知情下引入 AI 功能并触碰最敏感的 API 数据，直接触及开发者信任底线，是“AI 功能强塞”现象的典型样本。
-- 原文：https://github.com/postmanlabs/postman-app-support/issues/14370
-- 讨论：https://news.ycombinator.com/item?id=50354960
+**1. Ask HN: What's your current AI agentic setup?**
+社区自发的使用现状调查，涉及订阅组合、是否多开账号、是否用开源模型替代等，是了解一线开发者真实工作流的难得样本（203 条评论）。
+- 讨论：https://news.ycombinator.com/item?id=50366117
 
-**6. OpenAI 疑似静默重新开启 Codex 对话的模型训练**
-- **为什么值得关注**：企业用户明确关闭了数据共享，却发现设置被悄悄重置。对担心 IP 泄露的公司而言，这是合规层面的严重信号，也说明“opt-out”机制的可信度问题。
-- 原文：无（社区帖）
-- 讨论：https://news.ycombinator.com/item?id=50352757
+**2. Basically no one is using AI agents for their DoorDash orders**
+DoorDash 披露外部 AI Agent 至今仅带来"数百单"，与行业叙事形成强烈反差，是判断消费级 Agent 渗透率的重要一手数据。
+- 原文：https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/
+- 讨论：https://news.ycombinator.com/item?id=50338474
 
-**4. Google 将对拒绝 AI 的学校关闭搜索服务**
-- **为什么值得关注**：579 分、420 条评论，争议极大。平台以核心服务为筹码推动 AI 采纳，涉及教育自主权与反垄断议题，是“AI 强制采用”讨论的标志性事件。
-- 原文：https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html （存档：https://archive.ph/RuwsB）
-- 官方博客：https://blog.google/products-and-platforms/products/education/ai-learning-era-updates-2026/
-- 讨论：https://news.ycombinator.com/item?id=50353192
+**3. YC's Garry Tan uses AI agents so much, he spends up to $200K a year on tokens**
+极端个案揭示了 Agent 重度使用者的真实 token 成本量级，对预算规划和 ROI 评估有参考价值。
+- 原文：https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/
+- 讨论：https://news.ycombinator.com/item?id=50366971
 
-### 主题 B：模型能力争议与可解释性
+**4. You'll need nerves of steel to work with AI agents**
+从使用者心理与协作体验切入，讨论 Agent 的不确定性给工作流带来的摩擦，与前几篇形成"能力 vs 体验"的互补。
+- 原文：https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents/
+- 讨论：https://news.ycombinator.com/item?id=50373149
 
-**2. “Astra 能读写权重以改进 Qwen”的帖子具有误导性**
-- **为什么值得关注**：931 分，仅次于榜首。对一则广为流传的“模型能读写自身权重”说法进行技术拆解，是识别 AI 炒作话术的优质范例。
-- 原文：https://honnibal.dev/blog/astra-read-write-misleading
-- 讨论：https://news.ycombinator.com/item?id=50351111
-
-**5. 我笔记本上的 Qwen 3.8 27B 也能“解读”模型权重**
-- **为什么值得关注**：Simon Willison 的实测，与上一条形成呼应——用可复现的实验说明“解读权重”究竟意味着什么，帮助读者区分真实能力与叙事包装。
-- 原文：https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/
-- 讨论：https://news.ycombinator.com/item?id=50355251
-
-**15. 在神经网络中嵌入布尔电路**
-- **为什么值得关注**：热度不高（28 分）但技术取向鲜明，探讨用神经网络表达确定性逻辑，对可验证、可解释的神经符号方向有参考价值。
-- 原文：https://edwardbenson.com/2026/10/embedding-boolean-circuits-in-a-neural-network
-- 讨论：https://news.ycombinator.com/item?id=50326545
-
-### 主题 C：AI 基础设施的资本与硬件连锁反应
-
-**8. 美国科技巨头隐性 AI 债务半年激增 90%，达 3.2 万亿美元**
-- **为什么值得关注**：310 分。把 AI 热潮从“技术叙事”拉回“资产负债表”，是判断行业周期与风险的关键数据点。
-- 原文：https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months
-- 讨论：https://news.ycombinator.com/item?id=50358422
-
-**7. 富士胶片因 AI 归档需求将磁带产量提升 5 倍**
-- **为什么值得关注**：AI 数据中心与长期归档需求正在重塑传统存储供应链，是一个具体、可验证的“AI 实体化”案例。
-- 原文：https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/
-- 讨论：https://news.ycombinator.com/item?id=50336918
-
-**14. 不存在“后训练数据公地”**
-- **为什么值得关注**：直指高质量后训练数据的稀缺与私有化趋势，解释了为何数据壁垒正在成为模型竞争的核心护城河。
-- 原文：https://openathena.ai/blog/there-is-no-posttraining-data-commons/
-- 讨论：https://news.ycombinator.com/item?id=50352641
-
-### 主题 D：学习资源与个人实践
-
-**9. 《生成式 AI 基础小书：直观数学入门》**
-- **为什么值得关注**：270 分。面向非数学背景读者的直觉式讲解，适合作为团队内部培训或入门读物。
-- 原文：https://arxiv.org/abs/2605.29713
-- 讨论：https://news.ycombinator.com/item?id=50358582
-
-**11. 我如何使用 AI（2026 年 10 月）**
-- **为什么值得关注**：108 分、98 条评论。个人工作流实录，比工具清单更有参考价值，评论区常含大量实战经验。
-- 原文：https://ben.stolovitz.com/posts/how-use-ai-oct-2026/
-- 讨论：https://news.ycombinator.com/item?id=50355767
-
-### 主题 E：AI 产品与创业（Launch / Show HN）
-
-**10. Launch HN：Momentic（YC W24）——通过实际操作 App 来发现 Bug 的 Agent**
-- **为什么值得关注**：159 分。AI QA Agent 是当前落地较快的方向，创始团队背景与演示值得一看。
-- 原文：https://momentic.ai/ （Demo：https://youtu.be/BFsM-Se1Fh8）
-- 讨论：https://news.ycombinator.com/item?id=50339913
-
-**12. 我们正在训练一个“懂 Figma”的编辑模型**
-- **为什么值得关注**：Figma 官方博客，说明设计工具厂商如何自建领域专用模型，是垂直模型策略的一手材料。
-- 原文：https://www.figma.com/blog/training-a-figma-fluent-editing-model/
-- 讨论：https://news.ycombinator.com/item?id=50322603
-
-**13. Show HN：Kairos——开源风险与欺诈决策平台**
-- **为什么值得关注**：开源替代 Sift/Sardine，聚焦“缺少标注数据”和“欺诈手法快速变化”两大痛点，适合风控方向读者。
-- 原文：https://github.com/finic-ai/kairos
-- 讨论：https://news.ycombinator.com/item?id=50358314
-
-**16. Show HN：Uncracked City——审问会说谎的 LLM 嫌疑人的侦探游戏**
-- **为什么值得关注**：热度最低（9 分）但创意有趣，展示了 LLM 作为“不可靠叙事者”的玩法设计，对 AI 游戏开发者有启发。
-- 原文：https://uncracked.city
-- 讨论：https://news.ycombinator.com/item?id=50358352
-
-### 主题 F：AI 的边界与“越界”使用
-
-**3. 越狱我的车载导航系统，只为改个时间**
-- **为什么值得关注**：673 分、281 条评论。虽非严格 AI 话题，但“为一个小需求而不得不破解封闭系统”的叙事，与 AI 被强制嵌入产品的争议形成有趣对照。
-- 原文：https://blog.nns.ee/2026/11/02/renault-hack/
-- 讨论：https://news.ycombinator.com/item?id=50339288
+**5. Launch HN: Kino AI (YC S23) – AI media manager and video editor**
+YC 项目，主打"人类同事与 Codex / Claude Code 共享同一条时间线"的协作式视频编辑，是 Agent 嵌入专业创作工具的典型产品形态。
+- 产品：https://kino.ai ｜ 演示：https://kino.ai/walkthrough-video
+- 讨论：https://news.ycombinator.com/item?id=50368804
 
 
-## 三、今日最值得阅读的 5 篇
+## 二、模型与产业动向
 
-1. **Postman 静默安装 AI 插件并共享 API 数据**
-   https://github.com/postmanlabs/postman-app-support/issues/14370
-   理由：今日最高热度，直接关系每个开发者的工具链安全，且讨论区信息量大。
+**6. Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding**
+美国开源权重模型在 Agentic Coding 上宣称 SOTA，直接关系到"开源 vs 闭源"与"美国开源生态"的竞争格局，值得关注其评测口径。
+- 原文：https://www.ricursive.com/ripple
+- 讨论：https://news.ycombinator.com/item?id=50369925
 
-2. **“Astra 能读写权重”帖子具有误导性**
-   https://honnibal.dev/blog/astra-read-write-misleading
-   理由：教你如何拆解 AI 能力炒作，配合第 5 篇的实测一起读效果最佳。
+**7. OpenAI to acquire Pierre Computer Company**
+OpenAI 的又一笔收购，需结合 Pierre 的产品方向判断其补齐的是哪块能力（讨论区附有官方推文链接）。
+- 原文：https://openai.com/index/openai-to-acquire-pierre/
+- 讨论：https://news.ycombinator.com/item?id=50366863
 
-3. **Google 对拒绝 AI 的学校关闭搜索**
-   https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html
-   理由：平台权力与 AI 强制采纳的标志性案例，影响面超出技术圈。
+**8. Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s**
+推理侧硬件的重要选项：150W 功耗、128GB 显存、548GB/s 带宽，对关注单位功耗推理成本与替代方案的团队有直接价值。
+- 原文：https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra
+- 讨论：https://news.ycombinator.com/item?id=50370654
 
-4. **美国科技巨头隐性 AI 债务半年增 90% 至 3.2 万亿美元**
-   https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months
-   理由：理解当前 AI 投资周期风险的关键财务视角，与磁带扩产一文互为印证。
 
-5. **《生成式 AI 基础小书：直观数学入门》**
-   https://arxiv.org/abs/2605.29713
-   理由：今日技术含量最高的学习资源，适合系统补基础或用于团队培训。
+## 三、隐私、安全与基础设施争议
 
-> 补充提示：第 6 条（OpenAI 静默重开 Codex 训练）虽无原文链接，但建议所有使用 Codex/Claude Code 的团队立即检查 `https://chatgpt.com/settings/data-controls` 中的“Improve the model for everyone”设置。0:{"buildId":"zFIGweSH9-mlzrVd5Q0Yb","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-11-04","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":16},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"ai","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"AI & Machine Learning"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"Artificial intelligence, machine learning, LLMs, and generative AI"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[16," ","articles"," • ","2026-11-04"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"AI & Machine Learning","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-c:T12e7,Hey HN, we’re Wei-Wei and Jeff. We’re building Momentic, QA agents that autonomously plan, explore, and bug-bash controls and user flows in your web, iOS, Android, and (soon) desktop apps to catch bugs.<p>Here’s a demo: <a href="https:&#x2F;&#x2F;youtu.be&#x2F;BFsM-Se1Fh8" rel="nofollow">https:&#x2F;&#x2F;youtu.be&#x2F;BFsM-Se1Fh8</a><p>We’re both software engineers that spent our careers on dev tooling and infra across companies like Robinhood, Retool, WeWork, and Qualtrics. Testing was always a pain in the ass (esp Playwright and Selenium), so we built agents to do it for us.<p>Modern day software has a ton of bugs and the change failure rate is only growing faster as coding agent adoption scales. LLMs are really good at generating code, but reinforce their own assumptions, write a ton of useless tests, and are bad at visual understanding. On DeepSWE v1.1, Sonnet 5.5 hit 66.2% pass rate when banned from writing tests, versus 65.3% when allowed.<p>OSS end-to-end testing frameworks like Playwright, Selenium, or Maestro force you to hardcode implementation details like XPath, text, or aria-* attributes in your tests. Even with agents, these take a nontrivial amount of time and tokens to build and maintain.<p>In 2023, we saw Nat Friedman drive a browser with GPT-3 via natbot. We were inspired to use this technology to automate the most painful and tedious parts of software engineering: testing. We started with using LLMs to generate and maintain Playwright, but quickly realized that those primitives were fundamentally misaligned with the agentic SDLC. We think the future of QA is agents testing themselves, not writing scripts.<p>Mo is a custom agent harness for catching bugs that builds on the past 3 years of Momentic and millions of test traces from complex, real-world applications. Mo is built for recall: it finds the most real bugs, though Codex is a bit more precise at 86% vs 84%. The tradeoff is cost: Mo costs $2.67 per bug vs $0.80 for Codex, less than Claude Code and Devin.<p>- Self-organizing agent graph. Mo builds a directed acyclic graph (DAG) as it explores. Large product areas automatically fork into parallel sub-agents, each with their own browser or device for concurrent execution.<p>- Specialized agents for domain specific tasks. Planner agents reason over screenshots and video while dedicated locator agents inspect page structure to resolve plain-English interaction targets. Others include image analysis, video understanding, audio generation, and more.<p>- Parallel agents coordinate through cooperative resource leases. Agents can announce that they’re “using” or “modifying” overlapping resources or fixtures. Multiple “using” claims can coexist, but only a single “modifying” claim can be active on any particular one.<p>- Scaled infrastructure. Mo ships with a tunnel that lets users expose private sites and local apps to our hosted agents and infra. A single bug bash can spin up 100s of concurrent browsers and devices.<p>We benchmarked Mo against coding agents on 4 popular open-source apps: Gitea (58.8k stars), Metabase, Twenty (YC), and Saleor, with 1,396 human-labeled bugs. Each agent got the same brief, a fresh E2B sandbox, and no access to source code. Codex and Claude Code used hosted Browserbase browsers, while Devin used its built-in browser. For evaluators, we implemented LLM as a judge (GPT-6.1 Sol) with a human reviewer.<p>Results from a time-boxed 60-minute run:<p>- Mo: 269 bugs, 19.3% recall, 84% precision, $2.67 per bug<p>- Codex (GPT-6.1 Sol + Playwright MCP): 86 bugs, 6.2% recall, 86% precision, $0.80 per bug<p>- Claude Code (Opus 5.5 + Playwright MCP): 59 bugs, 4.2% recall, 80% precision, $4.09 per bug<p>- Devin: 27 bugs, 1.9% recall, 84% precision, $3.89 per bug<p>Mo finds more bugs the more time it has. From 30 to 60 minutes, it went from 177 to 269 bugs (+52%), while Codex gained only 16%.<p>Results: <a href="https:&#x2F;&#x2F;momentic.ai&#x2F;qa-bench">https:&#x2F;&#x2F;momentic.ai&#x2F;qa-bench</a><p>Write-up: <a href="https:&#x2F;&#x2F;momentic.ai&#x2F;blog&#x2F;qa-bench">https:&#x2F;&#x2F;momentic.ai&#x2F;blog&#x2F;qa-bench</a><p>Dataset: <a href="https:&#x2F;&#x2F;huggingface.co&#x2F;datasets&#x2F;momentic&#x2F;qa-bench" rel="nofollow">https:&#x2F;&#x2F;huggingface.co&#x2F;datasets&#x2F;momentic&#x2F;qa-bench</a><p>Harness: <a href="https:&#x2F;&#x2F;github.com&#x2F;momentic-ai&#x2F;qa-bench" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;momentic-ai&#x2F;qa-bench</a><p>We just shipped PR testing for Vercel and Cloudflare deploy previews and we’re giving every new signup $250 in Mo spend. Paid plans have higher infra capacity and included usage along with options to top up.<p>We’d love for you to try it out and give us feedback. Feel free to comment here, we’ll be around all day!d:T6ec,Hey HN, Ayan here from Finic. We’re launching Kairos, an open source alternative to Sift, Sardine, and other real-time fraud decisioning platforms. Kairos addresses two of the biggest problems facing traditional decisioning tools: a lack of labeled data to train on and dealing with fraudsters that are constantly changing their tactics.<p>1. Traditional fraud solutions use ML models such as XGBoost to detect fraud, but these models are dependent on quality labeled data which many businesses do not have. We address this by using “System One” decision models in additional to traditional models such as XGBoost and logistic regression. This allows you to incorporate plain language questions such as “Is this a throwaway email” into your decisioning, bypassing the need for large amounts of labeled data. This also allows you to capture aspects of fraud that are more unstructured, which is something that XGBoost models struggle with.<p>2. Fraud teams are facing off with live players that are constantly changing their behavior to bypass the detection logic they have in place. You can train a detection model or define a ruleset once, but it will become obsolete in a matter of weeks as fraudsters figure out what your detection logic is. This means that you need a team regularly training models and updating rules based on new fraud patterns. Typically this takes a large data science&#x2F;ML team. Kairos addresses this by introducing an MCP server, so that your agent (Claude Code, Cursor, Codex, etc.) can define a decision workflow, train models on your data, and pick the variant that performs best.<p>You can self-host Kairos with Docker or use the hosted version at <a href="https:&#x2F;&#x2F;kairos.finic.ai">https:&#x2F;&#x2F;kairos.finic.ai</a>6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",16,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-50354960","title":"Postman silently auto-installs AI plugins and attempts to share all API data","url":"https://github.com/postmanlabs/postman-app-support/issues/14370","source":"Hacker News","score":1109,"comments_count":362,"comments_url":"https://news.ycombinator.com/item?id=50354960","published_at":"2026-11-03T17:22:37","author":"sidgarimella","text":null,"summary":"Postman被曝静默自动安装AI插件并试图共享所有API数据，引发用户对隐私和数据安全的严重担忧，值得关注其对企业开发工具信任的影响。"},{"id":"hn-50351111","title":"The 'Astra can read and write weights to improve Qwen' post is misleading","url":"https://honnibal.dev/blog/astra-read-write-misleading","source":"Hacker News","score":931,"comments_count":194,"comments_url":"https://news.ycombinator.com/item?id=50351111","published_at":"2026-11-03T12:21:17","author":"syllogism","text":null,"summary":"该文章指出关于Astra能读写权重以改进Qwen的帖子具有误导性，澄清了相关技术声明，值得关注以避免对模型能力产生错误认知。"},{"id":"hn-50339288","title":"Jailbreaking my car's navigation system just so I can change the time","url":"https://blog.nns.ee/2026/11/02/renault-hack/","source":"Hacker News","score":673,"comments_count":281,"comments_url":"https://news.ycombinator.com/item?id=50339288","published_at":"2026-11-02T16:29:19","author":"xx_ns","text":null,"summary":"作者通过破解自家汽车的导航系统来修改时间设置，展示了汽车软件限制带来的不便与黑客乐趣，值得关注其对车联网安全与用户权利的启示。"},{"id":"hn-50353192","title":"Google will turn off search for schools that reject AI","url":"https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html","source":"Hacker News","score":579,"comments_count":420,"comments_url":"https://news.ycombinator.com/item?id=50353192","published_at":"2026-11-03T15:25:47","author":"ceejayoz","text":"<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;RuwsB\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;RuwsB</a><p><a href=\"https:&#x2F;&#x2F;blog.google&#x2F;products-and-platforms&#x2F;products&#x2F;education&#x2F;ai-learning-era-updates-2026&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;blog.google&#x2F;products-and-platforms&#x2F;products&#x2F;educatio...</a>","summary":"报道称Google将关闭拒绝采用AI的学校的搜索服务，引发对科技巨头利用市场支配地位强制推行AI的伦理与反垄断担忧。"},{"id":"hn-50355251","title":"Qwen 3.8 27B on my laptop can interpret model weights, too","url":"https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/","source":"Hacker News","score":528,"comments_count":166,"comments_url":"https://news.ycombinator.com/item?id=50355251","published_at":"2026-11-03T17:40:00","author":"theanonymousone","text":null,"summary":"Simon Willison展示本地运行的Qwen 3.8 27B模型也能解释模型权重，值得关注其对模型可解释性和本地AI能力的意义。"},{"id":"hn-50352757","title":"OpenAI seems to be silently re-enabling model training on Codex chats","url":null,"source":"Hacker News","score":449,"comments_count":142,"comments_url":"https://news.ycombinator.com/item?id=50352757","published_at":"2026-11-03T14:53:41","author":"user052919","text":"My company is pretty paranoid about leaking IP to the frontier labs through prompts, so we&#x27;ve all been diligent about disabling data sharing in Codex&#x2F;Claude Code&#x2F;etc. But yesterday my coworkers and I noticed that the setting had been silently reenabled in Codex. None of us knowingly opted back in.<p>You can check your settings here: https:&#x2F;&#x2F;chatgpt.com&#x2F;settings&#x2F;data-controls. Look for &quot;Improve the model for everyone&quot;.<p>Curious if this is an isolated issue or something more widespread.<p>EDIT: looks like this has been noted before https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49643556<p>EDIT: apparently you can also turn off data sharing here: https:&#x2F;&#x2F;privacy.openai.com&#x2F;policies?modal=take-control","summary":"用户发现OpenAI似乎在Codex聊天中静默重新启用了模型训练数据共享设置，引发对企业知识产权泄露和用户知情权的担忧。"},{"id":"hn-50336918","title":"Fujifilm to boost tape production 5x as AI fuels archiving demand","url":"https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/","source":"Hacker News","score":410,"comments_count":175,"comments_url":"https://news.ycombinator.com/item?id=50336918","published_at":"2026-11-02T14:02:42","author":"bookofjoe","text":null,"summary":"富士胶片因AI推动的归档需求将磁带产量提高5倍，值得关注AI热潮对传统存储介质和数据归档产业的意外拉动。"},{"id":"hn-50358422","title":"US tech giants' hidden AI debt swells 90% to $3.2T in 6 months","url":"https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months","source":"Hacker News","score":310,"comments_count":133,"comments_url":"https://news.ycombinator.com/item?id=50358422","published_at":"2026-11-03T21:26:44","author":"angry_impala","text":null,"summary":"美国科技巨头隐藏的AI债务在六个月内激增90%至3.2万亿美元，值得关注AI投资热潮背后的财务风险和泡沫迹象。"},{"id":"hn-50358582","title":"The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer","url":"https://arxiv.org/abs/2605.29713","source":"Hacker News","score":270,"comments_count":47,"comments_url":"https://news.ycombinator.com/item?id=50358582","published_at":"2026-11-03T21:40:53","author":"ibobev","text":null,"summary":"一篇关于生成式AI基础的直观数学入门书，值得关注其为理解生成式AI数学原理提供的系统化入门资源。"},{"id":"hn-50339913","title":"Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app","url":"https://momentic.ai/","source":"Hacker News","score":159,"comments_count":124,"comments_url":"https://news.ycombinator.com/item?id=50339913","published_at":"2026-11-02T17:05:25","author":"wuweiweiwu","text":"$c","summary":"YC孵化的Momentic推出QA代理，能自主规划、探索并测试Web、iOS和Android应用以发现bug，值得关注AI在软件测试自动化领域的应用进展。"},{"id":"hn-50355767","title":"How I use AI (Oct 2026)","url":"https://ben.stolovitz.com/posts/how-use-ai-oct-2026/","source":"Hacker News","score":108,"comments_count":98,"comments_url":"https://news.ycombinator.com/item?id=50355767","published_at":"2026-11-03T18:11:11","author":"citelao","text":null,"summary":"作者分享了自己在2026年10月使用AI工具的实际工作流与心得，适合关注个人生产力与AI落地的读者参考。"},{"id":"hn-50322603","title":"We're training a Figma-fluent editing model","url":"https://www.figma.com/blog/training-a-figma-fluent-editing-model/","source":"Hacker News","score":88,"comments_count":40,"comments_url":"https://news.ycombinator.com/item?id=50322603","published_at":"2026-11-01T04:05:23","author":"gmays","text":null,"summary":"Figma介绍其训练面向Figma操作的编辑模型的工作，展示了设计工具与AI深度结合的方向，值得设计与AI交叉领域关注。"},{"id":"hn-50358314","title":"Show HN: Kairos – Open-source risk and fraud decisioning platform","url":"https://github.com/finic-ai/kairos","source":"Hacker News","score":73,"comments_count":12,"comments_url":"https://news.ycombinator.com/item?id=50358314","published_at":"2026-11-03T21:16:48","author":"ayanb9440","text":"$d","summary":"开源实时风险与欺诈决策平台Kairos，针对传统方案缺乏标注数据和欺诈者对抗两大痛点，值得风控与金融科技从业者关注。"},{"id":"hn-50352641","title":"There is no posttraining data commons","url":"https://openathena.ai/blog/there-is-no-posttraining-data-commons/","source":"Hacker News","score":44,"comments_count":10,"comments_url":"https://news.ycombinator.com/item?id=50352641","published_at":"2026-11-03T14:45:47","author":"lukasschwab","text":null,"summary":"文章探讨后训练数据缺乏公共共享池的问题，涉及大模型微调数据生态，对理解AI训练数据治理有参考价值。"},{"id":"hn-50326545","title":"Embedding boolean circuits in a neural network","url":"https://edwardbenson.com/2026/10/embedding-boolean-circuits-in-a-neural-network","source":"Hacker News","score":28,"comments_count":7,"comments_url":"https://news.ycombinator.com/item?id=50326545","published_at":"2026-11-01T15:27:44","author":"eob","text":null,"summary":"介绍如何将布尔电路嵌入神经网络，属于神经符号与可解释AI方向的技术探索，值得研究模型计算表达能力的读者关注。"},{"id":"hn-50358352","title":"Show HN: Uncracked City, detective game where you question LLM suspects that lie","url":"https://uncracked.city","source":"Hacker News","score":9,"comments_count":3,"comments_url":"https://news.ycombinator.com/item?id=50358352","published_at":"2026-11-03T21:20:03","author":"passkey1510","text":"To give you some context on the project. I&#x27;m a solo founder and I use AI heavily in my work. The idea came from wanting players to discover cities. Each city has its own history, so every case is set in a real city with real public places. The crime and the people are on other hand invented. The part that I care most is the playable aspect of the game, a model plays the detective and must solve the case before it goes live.<p>As of today: it&#x27;s free on Android, the iOS version is still waiting to be reviewed by Apple. It&#x27;s available in six popular languages, but adding more languages is just a matter of time and demand.My long term vision if it takes off: weekly cases, private parties like a team-building escape game, an MCP so a game master can build their own scenario from ChatGPT or Claude, and maybe tourism offices since players travel the world.","summary":"独立开发者打造的侦探游戏，玩家审问会说谎的LLM嫌疑人，展示了LLM在游戏叙事与交互中的新颖应用。"}],"locale":"en"}]]}]]}]
+**9. AI is forcing us to pay off 40 years of technical debt**
+今日最高热度（1120 分 / 655 评论）。以 php2shell 类漏洞为切入点，讨论 AI 加速攻击面暴露、倒逼企业偿还历史技术债，是安全与 AI 交叉的重磅议题。
+- 原文：https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability
+- 讨论：https://news.ycombinator.com/item?id=50364336
+
+**10. Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)**
+用户实测指出：个人 Google AI 订阅用户的 Gemini 聊天记录可被用于训练，唯一规避方式是关闭历史或使用临时会话；人工审核时官方明确警告"勿输入机密信息"。对企业合规与个人隐私实践有直接警示意义。
+- 官方说明：https://support.google.com/gemini/answer/16836988
+- 讨论：https://news.ycombinator.com/item?id=50363461
+
+**11. American Voters Overwhelmingly Reject AI Data Centers**
+民调显示选民对 AI 数据中心普遍反感，指向算力扩张面临的本地政治阻力，是判断基础设施投资风险的前瞻信号。
+- 原文：https://www.404media.co/american-voters-overwhelmingly-reject-ai-data-centers/
+- 讨论：https://news.ycombinator.com/item?id=50373505
+
+
+## 四、AI 内容生成与创作者工具
+
+**12. Flims and TV shows created using AI have now reached a high level of quality**
+主张 AI 生成的影视内容质量已达较高水准，可与第 5 篇 Kino AI 对照看"工具—成品"两端的变化。
+- 原文：https://crateh.com/en
+- 讨论：https://news.ycombinator.com/item?id=50374741
+
+
+## 五、边缘与关联条目（与 AI 主题弱相关，按要求收录）
+
+**13. 'It's just vape, nail, charity shops': Can anything save UK high street?**
+英国高街零售困境报道，与 AI 无直接关系，热度来自社区泛化讨论。
+- 原文：https://www.theguardian.com/business/2026/nov/04/what-can-save-the-british-high-street-rotherham
+- 讨论：https://news.ycombinator.com/item?id=50367653
+
+**14. From wild to mild: Friendly foxes show changes in brain region**
+康奈尔关于驯化狐狸脑区变化的研究，属生物学/神经科学，与 ML 仅方法学层面相关。
+- 原文：https://news.cornell.edu/stories/2026/11/wild-mild-friendly-foxes-show-changes-brain-region
+- 讨论：https://news.ycombinator.com/item?id=50369527
+
+**15. Harmony: Chat like Discord. Federated like email**
+联邦化聊天产品，本身非 AI 项目，但在 Agent 与多平台协作语境下有一定关联性。
+- 原文：https://mony.lol/
+- 讨论：https://news.ycombinator.com/item?id=50372038
+
+
+## 今日最值得阅读的 5 篇推荐
+
+1. **AI is forcing us to pay off 40 years of technical debt** — 热度与评论双高，把 AI 安全风险落到"技术债"这一可执行议题上，适合安全、平台与工程管理者。
+   https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability
+
+2. **Tell HN: Gemini trains on chat history, even for subscribers** — 直接影响你明天的使用习惯与企业合规策略，且附官方文档可自行核验。
+   https://news.ycombinator.com/item?id=50363461
+
+3. **Ask HN: What's your current AI agentic setup?** — 203 条一线实践反馈，比任何厂商白皮书都更能反映 Agent 的真实使用形态。
+   https://news.ycombinator.com/item?id=50366117
+
+4. **Basically no one is using AI agents for their DoorDash orders** — 用一手数据给"Agent 已普及"的叙事降温，适合做市场判断与投资决策的人。
+   https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/
+
+5. **Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding** — 若关注开源权重模型竞争格局，这是今日唯一的新模型发布类条目，建议重点看其评测方法。
+   https://www.ricursive.com/ripple
+
+
+**一句话总结**：今日 HN 的 AI 讨论呈现明显的"去泡沫化"倾向——最热的话题不是模型多强，而是 Agent 用不起来、token 太贵、隐私没保障、基建遭抵制。对从业者而言，这比新一轮 benchmark 刷新更值得重视。0:{"buildId":"wf2zdGc29ZlEWYICuy4Ua","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-11-05","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":15},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"ai","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"AI & Machine Learning"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"Artificial intelligence, machine learning, LLMs, and generative AI"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[15," ","articles"," • ","2026-11-05"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"AI & Machine Learning","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+c:T70b,If you have a personal Google AI subscription, all your saved chat history in Gemini can be used for training and there is no way to opt out unless you turn off chat history or use temporary chat sessions. These chat transcripts may even be read by human reviewers. Although Google claims to disconnect them from your account when human-reviewed, they explicitly warn <i>not to enter confidential information</i>.<p>https:&#x2F;&#x2F;support.google.com&#x2F;gemini&#x2F;answer&#x2F;16836988<p><i>“[Gemini app activity] is used to improve Google services for everyone, including by training generative AI models, if your Keep Activity setting is on.“</i><p>https:&#x2F;&#x2F;support.google.com&#x2F;gemini&#x2F;answer&#x2F;13594961?hl=en#human_review<p><i>“A subset of chats are reviewed by human reviewers”</i><p>https:&#x2F;&#x2F;support.google.com&#x2F;gemini&#x2F;answer&#x2F;13594961?hl=en#pn_retain_data<p><i>“Chats reviewed by human reviewers [...] are not deleted when you delete your activity. Instead, they are retained for up to three years.”</i><p>https:&#x2F;&#x2F;support.google.com&#x2F;gemini&#x2F;answer&#x2F;13594961?hl=en#pn_data_usage<p><i>“Please don’t enter confidential information that you wouldn’t want a reviewer to see or Google to use to improve our services, including machine-learning technologies.”</i><p>To disable their training on your chat sessions, you need to turn off “Keep Activity” in Gemini’s settings. Turning that off means you’ll lose any chat sessions after 72 hours.<p>I learned this too late, thinking that having a paid subscription = not being turned into the product. Apparently paying is not enough.<p>Thank you to this user on HN for mentioning in another thread: https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50355424d:T544,I&#x27;m curious how people on HN are using AI day to day, and came up with a list of questions I thought could be interesting to know. No need to answer every question of course, just wanted to get a gut feel how people are using AI.<p>1) What AI subscriptions are you personally paying for? (Claude, ChatGPT&#x2F;Codex, Cursor, etc)<p>- Which tiers?<p>- Have you purchased multiple subscriptions from the same provider (eg two Claude accounts)?<p>2) Are you using models outside (or instead) of those subscriptions? For example, pay-as-you-go APIs, OpenRouter, or locally hosted models.<p>- Which models and providers?<p>3) What coding harnesses and interfaces are you using? Are you sticking with the default CLIs or IDE integrations, or using alternatives like OpenCode, Pi, Aider, Muse Code, or custom-built harnesses?<p>- What made you switch harnesses (if you switched)?<p>4) Are you using any agent orchestration or swarm tools?<p>- For example, Munder Difflin, Gas Town, Ruflo, or something custom.<p>5) Are you using broader agent platforms like OpenClaw &#x2F; Hermes Agent &#x2F; Grok bot &#x2F; Dots &#x2F; Muse?<p>- If you are using them, what are your main use cases?<p>-----<p>I know my workflow has differed significantly from a year ago, and so it would be interesting to capture a snapshot today of what people are using and why.e:T15d2,Hi HN! I&#x27;m Luke from Kino (<a href="https:&#x2F;&#x2F;kino.ai">https:&#x2F;&#x2F;kino.ai</a>). Kino lets you make great videos with your agents and your teammates. Storage of footage and assets, a rich video editor, and review links for teammates are all bundled into one. Your colleagues and Codex &#x2F; Claude Code can work on the same timeline with review notes and footage all in one place. See a basic overview at <a href="https:&#x2F;&#x2F;kino.ai&#x2F;walkthrough-video">https:&#x2F;&#x2F;kino.ai&#x2F;walkthrough-video</a> and our launch video (made entirely with Kino!) at <a href="https:&#x2F;&#x2F;kino.ai&#x2F;launch-video">https:&#x2F;&#x2F;kino.ai&#x2F;launch-video</a><p>Opus 5.5 can edit videos and make great motion graphics now. But with a raw agent harness, you need to describe tiny edits either in words or in quick one-off UIs, you can’t refer to footage shared across your devices, and feedback from teammates comes as screenshots on Slack.<p>Kino is code-first. All editing, all motion graphics, all dragging of timeline items around, all teammate comments, and all 3D scenes are expressed as code, built on Remotion. This was hard to get right, as we found ourselves building a what-you-see-is-what-you-get editor for React, which we then turned into a video editor. For our launch video I told Claude-with-Kino to find a macOS Leopard install disk and reskin our whole video to match.<p>Kino is also fully collaborative and real-time, so you can see your teammates&#x27; cursors and exactly which part of the timeline they’re currently watching. For our launch video I had 5+ agents editing the timeline concurrently while my friend Donald had his swarm working a few minutes further down. Donald had one agent rotoscoping to make our visual effects work, I had an LLM color grading all media via our LUT support, and we both made tiny tweaks to the timeline along the way.<p>To make this code-first editor work with video footage, everything gets transcribed, embedded, described, and face-detected. You can scrub your footage locally after you drag it in, but we upload a low-res proxy so your teammates and cloud inference can see it. This local scrubbing plus custom pro media decoders means you can drag a 250GB ProRes clip from your new iPhone right into your Kino timeline. We built custom decoders for professional codecs such as ProRes, BRAW, R3D, and more (see my extremely successful nine point HN post <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50198052">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50198052</a>). None of the performance we’re getting would have been possible before WebCodecs and libraries like Mediabunny.<p>I grew up making YouTube videos, and during my undergrad at MIT I co-directed a 3.5 hour archival footage documentary on the history of my school and technological development in America (<a href="https:&#x2F;&#x2F;regressions.net" rel="nofollow">https:&#x2F;&#x2F;regressions.net</a>). Much of the work was logging footage, managing hard drives, manually syncing Premiere project state, and planning our movie in a spreadsheet.<p>Our first launch in 2023 proclaimed that Kino was &quot;Silicon Valley meets Hollywood.&quot; It was more like Palantir for Hollywood; we ran bespoke on-prem Kino deployments with our team of forward deployed engineers on shows like Survivor and A24&#x27;s Beef. It was a rush, but it felt like the slowest way to improve video editing for the whole world. Bound by the Avid Media Composer and strict studio security rules, we couldn&#x27;t touch frontier models, and we couldn&#x27;t make editors &gt;10x faster. So in 2025, we rebuilt Kino as a true editor, and we took a bet on coding-as-editing.<p>Everything in Kino has a URL: projects, clips, footage, comments and replies, even a single frame and the line of code that draws it. Projects and media living in one place and everything being addressable means that your agents and team have a single, editable source of truth for video production. At a lower level, I now paste Kino links into my agent constantly, whether it’s making sure Codex knows exactly which timeline item (among thousands) I am referring to or which teammate’s comment needs fixing.<p>We have teams managing their whole company’s media in Kino, spinning up agents to make new videos every day, then using review links to flag issues. One founder ships ads like this: each day he uses Kino&#x27;s YouTube support to find b-roll he is allowed to use, he edits something, his co-founder leaves notes such as “we need to use this clip instead” and his agent can then apply them. Full-time filmmakers are also using Kino. They tend to resemble “toxenmaxxer” software developers, where 15+ agents iterate on a single project, each trusting Kino as the source of truth for timeline state, graphics, media, everything.<p>The full editor is free, including unlimited imports and exports, real-time collaboration and MCP access for your own agent. Pro is $25 per editor per month and adds unlimited MCP tool calls, share links, more storage, YouTube search, and the ability to edit alongside your team. You can download it at <a href="https:&#x2F;&#x2F;kino.ai">https:&#x2F;&#x2F;kino.ai</a>. We have not yet released Kino for the pure web browser, just Electron for now.<p>If you make videos personally, if you have ProRes media and you want to try to break Kino, if you have legacy video editor projects to bring in, or if you want to make more content for your company, we&#x27;d love to hear how Kino works for you.6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",15,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-50364336","title":"AI is forcing us to pay off 40 years of technical debt","url":"https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability","source":"Hacker News","score":1120,"comments_count":655,"comments_url":"https://news.ycombinator.com/item?id=50364336","published_at":"2026-11-04T11:52:17","author":"pseudolus","text":null,"summary":"文章探讨AI如何迫使企业偿还过去40年积累的技术债务，以网络安全领域的PHP2Shell漏洞为例说明旧系统在AI时代面临的风险。值得关注的是它揭示了AI应用暴露的底层技术债问题。"},{"id":"hn-50363461","title":"Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)","url":null,"source":"Hacker News","score":640,"comments_count":166,"comments_url":"https://news.ycombinator.com/item?id=50363461","published_at":"2026-11-04T10:10:27","author":"jameslk","text":"$c","summary":"用户爆料称即使付费订阅Gemini，个人账户的聊天历史仍会被用于模型训练，且无法选择退出，除非关闭历史记录或使用临时会话。这引发了对AI隐私政策和用户数据控制权的关注。"},{"id":"hn-50369925","title":"Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding","url":"https://www.ricursive.com/ripple","source":"Hacker News","score":253,"comments_count":90,"comments_url":"https://news.ycombinator.com/item?id=50369925","published_at":"2026-11-04T18:53:29","author":"Philpax","text":null,"summary":"Ripple-65B Preview发布，号称美国开源权重模型在智能体编程任务上的SOTA。值得关注的是它可能推动开源模型在Agentic Coding领域与闭源模型竞争。"},{"id":"hn-50366863","title":"OpenAI to acquire Pierre Computer Company","url":"https://openai.com/index/openai-to-acquire-pierre/","source":"Hacker News","score":211,"comments_count":63,"comments_url":"https://news.ycombinator.com/item?id=50366863","published_at":"2026-11-04T15:21:21","author":"itunpredictable","text":"<a href=\"https:&#x2F;&#x2F;twitter.com&#x2F;pierrecomputer&#x2F;status&#x2F;2117999036175188183\" rel=\"nofollow\">https:&#x2F;&#x2F;twitter.com&#x2F;pierrecomputer&#x2F;status&#x2F;211799903617518818...</a>","summary":"OpenAI宣布收购Pierre Computer Company，具体细节未在摘要中展开。值得关注的是这反映了OpenAI通过并购扩展技术能力的战略动向。"},{"id":"hn-50366117","title":"Ask HN: What's your current AI agentic setup?","url":null,"source":"Hacker News","score":193,"comments_count":203,"comments_url":"https://news.ycombinator.com/item?id=50366117","published_at":"2026-11-04T14:37:22","author":"eggbrain","text":"$d","summary":"HN社区讨论当前AI智能体（agentic）配置的实践，包括订阅服务和使用方式。值得关注的是它提供了开发者真实使用AI工具的社区视角。"},{"id":"hn-50370654","title":"Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s","url":"https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra","source":"Hacker News","score":120,"comments_count":52,"comments_url":"https://news.ycombinator.com/item?id=50370654","published_at":"2026-11-04T19:55:14","author":"peter_d_sherman","text":null,"summary":"高通发布Cloud AI 100 Ultra加速卡，150W功耗、128GB内存、548GB/s带宽。值得关注的是它为数据中心AI推理提供了高能效的硬件选项。"},{"id":"hn-50338474","title":"Basically no one is using AI agents for their DoorDash orders","url":"https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/","source":"Hacker News","score":92,"comments_count":177,"comments_url":"https://news.ycombinator.com/item?id=50338474","published_at":"2026-11-02T15:48:45","author":"PaulHoule","text":null,"summary":"DoorDash表示外部AI智能体仅促成数百个订单，使用率极低。值得关注的是它揭示了AI代理在真实消费场景中的采用率远低于炒作。"},{"id":"hn-50367653","title":"'It's just vape, nail, charity shops': Can anything save UK high street?","url":"https://www.theguardian.com/business/2026/nov/04/what-can-save-the-british-high-street-rotherham","source":"Hacker News","score":84,"comments_count":197,"comments_url":"https://news.ycombinator.com/item?id=50367653","published_at":"2026-11-04T16:11:33","author":"theanonymousone","text":null,"summary":"文章讨论英国高街（商业街）的衰落，涉及电子烟店、美甲店和慈善商店等现象。该文章与AI主题无关，可能是列表中的误入项。"},{"id":"hn-50368804","title":"Launch HN: Kino AI (YC S23) – AI media manager and video editor","url":null,"source":"Hacker News","score":77,"comments_count":31,"comments_url":"https://news.ycombinator.com/item?id=50368804","published_at":"2026-11-04T17:31:53","author":"lukeigel","text":"$e","summary":"YC S23孵化的Kino AI发布，提供AI媒体管理和视频编辑工具，支持与智能体和团队协作。值得关注的是它将AI能力整合到视频制作工作流中。"},{"id":"hn-50366971","title":"YC's Garry Tan uses AI agents so much, he spends up to $200K a year on tokens","url":"https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/","source":"Hacker News","score":71,"comments_count":88,"comments_url":"https://news.ycombinator.com/item?id=50366971","published_at":"2026-11-04T15:28:31","author":"karakoram","text":null,"summary":"YC的Garry Tan每年在AI token上花费高达20万美元，大量使用AI智能体。值得关注的是它展示了重度AI用户的实际成本规模。"},{"id":"hn-50373149","title":"You'll need nerves of steel to work with AI agents","url":"https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents/","source":"Hacker News","score":41,"comments_count":54,"comments_url":"https://news.ycombinator.com/item?id=50373149","published_at":"2026-11-05T00:01:30","author":"theorchid","text":null,"summary":"文章探讨了与AI智能体协作所需的高心理素质，指出这一工作模式对从业者的抗压能力和应变能力提出了极高要求，值得关注的是它揭示了AI代理落地过程中的人因挑战。"},{"id":"hn-50369527","title":"From wild to mild: Friendly foxes show changes in brain region","url":"https://news.cornell.edu/stories/2026/11/wild-mild-friendly-foxes-show-changes-brain-region","source":"Hacker News","score":37,"comments_count":7,"comments_url":"https://news.ycombinator.com/item?id=50369527","published_at":"2026-11-04T18:24:16","author":"gmays","text":null,"summary":"康奈尔大学研究发现，被驯化的友好狐狸在大脑特定区域出现了与野生狐狸不同的变化，为动物驯化与大脑演化的关联提供了新证据，值得对神经科学与演化生物学感兴趣的读者关注。"},{"id":"hn-50373505","title":"American Voters Overwhelmingly Reject AI Data Centers","url":"https://www.404media.co/american-voters-overwhelmingly-reject-ai-data-centers/","source":"Hacker News","score":27,"comments_count":1,"comments_url":"https://news.ycombinator.com/item?id=50373505","published_at":"2026-11-05T00:43:13","author":"latexr","text":null,"summary":"报道称美国选民以压倒性多数反对建设AI数据中心，反映出AI基础设施扩张正面临显著的公众阻力，值得关注的是这一民意趋势可能影响未来数据中心选址与AI产业发展政策。"},{"id":"hn-50372038","title":"Harmony: Chat like Discord. Federated like email","url":"https://mony.lol/","source":"Hacker News","score":14,"comments_count":13,"comments_url":"https://news.ycombinator.com/item?id=50372038","published_at":"2026-11-04T21:49:40","author":"FinalDestiny","text":null,"summary":"Harmony是一个兼具Discord式聊天体验与电子邮件式联邦架构的通信工具，试图在即时通讯的便利性与去中心化开放性之间取得平衡，值得关注的是它为联邦化社交软件提供了新的设计思路。"},{"id":"hn-50374741","title":"Flims and TV shows created using AI have now reached a high level of quality","url":"https://crateh.com/en","source":"Hacker News","score":5,"comments_count":2,"comments_url":"https://news.ycombinator.com/item?id=50374741","published_at":"2026-11-05T03:20:59","author":"haebom","text":null,"summary":"文章指出AI生成的电影和电视剧在质量上已达到较高水平，值得关注的是这标志着生成式AI在影视内容创作领域的实用化进展及其对传统制作流程的潜在冲击。"}],"locale":"en"}]]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["Generated by"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","Powered by DeepSeek"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
-10:null
+a:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+11:null
