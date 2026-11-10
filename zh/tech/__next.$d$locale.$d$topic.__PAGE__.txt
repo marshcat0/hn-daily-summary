@@ -3,203 +3,173 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-e:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-f:"$Sreact.suspense"
-5:T340e,# 今日 Technology 热门内容分析（Top 30）
+d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+5:T31b4,# 今日 Technology 热门内容综合分析（30 篇全覆盖）
 
+> 数据来源：Hacker News（主榜）、Lobsters（RSS）。Hacker News 文章带分数与评论数，Lobsters 文章分数为 0（RSS 抓取），讨论链接为 Lobsters 站内评论页。
 
-## 一、编程语言与运行时工具链
+---
 
-**1. Libghostty 1.0**（HN 1075 分 / 194 评论）
-Mitchell Hashimoto 的终端渲染库 Libghostty 发布 1.0，这是 Ghostty 终端模拟器的核心库首次以独立形式稳定发布，标志着终端模拟器生态中一个高质量 C/Rust 混合实现进入可复用阶段。值得关注的是它对终端渲染性能和多平台支持的工程实践。
-- 原文：https://mitchellh.com/writing/libghostty-1-0
-- 讨论：https://news.ycombinator.com/item?id=50399933
+## 一、AI 模型与推理基础设施（最热子主题）
 
-**2. Clj.rs – a Clojure dialect implemented in Rust**（HN 168 分 / 66 评论）
-用 Rust 实现的 Clojure 方言，代表了"用现代系统语言重写动态语言运行时"这一趋势的延续。对关注 Lisp 生态和 Rust 互操作性的开发者有参考价值。
-- 原文：https://clj.rs/
-- 讨论：https://news.ycombinator.com/item?id=50366902
+**1. Is Opus 5.5 nerfed? Thinking patterns changed on November 3** — 773 分 / 484 评论，今日最高热度。社区质疑某大模型在 11 月 3 日后"思考模式"发生变化、能力疑似被削弱，属于典型的模型行为回归/静默变更争议，对依赖 API 的开发者影响直接。
+- 原文：https://twitter.com/shanemelaugh/status/2119192075505893695
+- 讨论：https://news.ycombinator.com/item?id=50422069
 
-**3. systemd loves Rust**（Lobsters）
-讨论 systemd 项目对 Rust 的采纳。systemd 作为 Linux 基础设施的核心组件转向 Rust，是系统编程语言迁移讨论中的重要信号。
-- 原文：https://amutable.com/blog/systemd-loves-rust
-- 讨论：https://lobste.rs/s/62loik/systemd_loves_rust
+**9. Fable 5.2 one-shotted my nephew's dream game** — 277 分 / 198 评论。作者记录用 Fable 5.2 一次成型做出侄子梦想中的游戏，是"AI 端到端交付小项目"的生动案例，也引发对 AI 生成代码质量的讨论。
+- 原文：https://notesbylex.com/fable-5-2-one-shotted-my-nephews-dream-game
+- 讨论：https://news.ycombinator.com/item?id=50433659
 
-**4. Herb Sutter: When a language's creator and its owners strongly disagree: C++26 post-DIS, historical experience, and paths forward**（Lobsters）
-Herb Sutter 关于 C++26 标准推进中语言创建者与标准委员会之间分歧的深度文章（PDF 论文）。这是理解 C++ 治理结构和标准化政治的一手材料，对 C++ 社区成员必读。
-- 原文：https://isocpp.org/files/papers/P4454R0.pdf
-- 讨论：https://lobste.rs/s/vlagyq/herb_sutter_when_language_s_creator_its
+**10. Muse Ember: Our smallest, most efficient model** — 273 分 / 113 评论。Meta 研究博客发布小尺寸高效模型，反映"小模型 + 端侧/低成本推理"的持续趋势。
+- 原文：https://research.meta.ai/blog/muse-ember
+- 讨论：https://news.ycombinator.com/item?id=50429024
 
+**15. Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation** — 176 分 / 41 评论。arXiv 论文，提出"由粗到细"的并行文本生成范式，属于解码策略层面的效率创新，对推理加速方向有参考价值。
+- 原文：https://arxiv.org/abs/2610.14162
+- 讨论：https://news.ycombinator.com/item?id=50422168
 
-## 二、AI Agent 与本地 AI
+**21. Show HN: Flide — Make Jev-like decision models up to 9.5x faster** — 121 分 / 29 评论。为"决策模型"自研专用推理引擎，声称比 vLLM / SGLang 快至 9.5 倍，支持 30+ 本地模型，`pip install flide` 即可试用。属于"垂直场景推理引擎"路线。
+- 原文：https://github.com/OmniJev/Flide
+- 讨论：https://news.ycombinator.com/item?id=50421155
 
-**5. The Components of Agent Memory**（HN 178 分 / 99 评论）
-Anthropic 官方研究文章，系统拆解 AI Agent 记忆的组成部分。在 Agent 工程化落地的当下，记忆架构是核心难题之一，这篇文章提供了来自一线实验室的概念框架。
-- 原文：https://www.anthropic.com/research/components-of-agent-memory
-- 讨论：https://news.ycombinator.com/item?id=50402212
+**12. TPU 8tx and TPU 8i Max** — 235 分 / 72 评论。Google 发布新一代 TPU 型号，涉及 AI 基础设施与全球网络布局，是硬件层面对 AI 算力竞争的直接回应。
+- 原文：https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/
+- 讨论：https://news.ycombinator.com/item?id=50432831
 
-**6. Agent memory needs its OpenTelemetry moment**（HN 177 分 / 103 评论）
-与上篇形成呼应：呼吁为 Agent 记忆建立类似 OpenTelemetry 的开放标准格式。两篇同主题文章同日上榜，说明"Agent 记忆标准化"正在成为社区共识性议题。
-- 原文：https://www.lorekit.io/blog/open-agent-memory-format
-- 讨论：https://news.ycombinator.com/item?id=50411467
+**17. The same H100 costs $2.69 or $12.29 an hour depending where you rent it** — 168 分 / 85 评论。同一块 H100 在不同云厂商/租赁平台价差近 5 倍，数据化揭示了 GPU 云市场的定价不透明，做成本优化的人必读。
+- 原文：https://github.com/datareceipts/data-receipts/tree/main/109-gpu-pricing
+- 讨论：https://news.ycombinator.com/item?id=50427085
 
-**7. MaxxBench – "Nice DeepSWE score. But is it true?"**（HN 391 分 / 104 评论）
-针对代码 Agent 基准测试（DeepSWE）的可信度提出质疑的基准项目。在 benchmark 泛滥、刷分严重的当下，这类"元评测"工作对评估 AI 编码工具的真实能力很有价值。
-- 原文：https://maxxbench.unlap.ai/research/why-maxxbench/
-- 讨论：https://news.ycombinator.com/item?id=50406222
+**22. A primer on GPUs and kernel optimization** — 119 分 / 12 评论。GPU 与 kernel 优化入门，评论少但内容密度高，适合作为底层性能优化的系统学习材料。
+- 原文：https://www.nabo.dev/blogs/kernel-primer
+- 讨论：https://news.ycombinator.com/item?id=50386246
 
-**8. What can I realistically do with local AI on a Mac mini M5 Pro (48GB)?**（Lobsters）
-一篇务实的社区提问：在 48GB 统一内存的 Mac mini 上，本地 AI 到底能做什么（编码补全、Agent 工作流、图像生成、转录、RAG）。对想摆脱云端依赖、评估本地推理可行性的开发者是很好的现实参照。
-- 原文：https://lobste.rs/s/umsitb/what_can_i_realistically_do_with_local_ai
+---
 
+## 二、开源项目与 Show HN（开发者创造力）
 
-## 三、Web 前端与图形技术
-
-**9. Need for Speed Underground 2 online in the browser**（HN 1127 分 / 279 评论，今日最高分）
-经典游戏《极品飞车：地下狂飙 2》通过浏览器在线运行，是 WebAssembly/WebGL 游戏移植能力的又一次惊艳展示。高互动量说明"浏览器即游戏平台"的话题持续有热度。
-- 原文：https://nfsu2.xyz/
-- 讨论：https://news.ycombinator.com/item?id=50403052
-
-**10. Declarative Dragging**（HN 411 分 / 52 评论）
-关于声明式拖拽交互的实现方案。前端交互中拖拽一直是命令式代码的重灾区，声明式抽象是值得关注的方向。
-- 原文：https://declarative-dragging.github.io/
-- 讨论：https://news.ycombinator.com/item?id=50368481
-
-**11. KetchUp – Open-source SketchUp alternative built with Rust and WebGPU**（HN 292 分 / 83 评论）
-用 Rust + WebGPU 构建的开源 SketchUp 替代品。WebGPU 进入实际生产力工具是重要信号，同时展示了浏览器端 3D 建模的性能潜力。
+**2. KetchUp – Open-source SketchUp alternative built with Rust and WebGPU** — 735 分 / 226 评论，今日第二热。用 Rust + WebGPU 重写 SketchUp 类 3D 建模工具，技术栈本身（浏览器内高性能 3D）就是看点。
 - 原文：https://ketchup3d.github.io/app/
 - 讨论：https://news.ycombinator.com/item?id=50418176
 
-**12. Dux: Free, open-source Wayland desktop shell with file manager and theming**（HN 222 分 / 70 评论）
-开源 Wayland 桌面 shell，集成文件管理器与主题系统。Linux 桌面生态在 Wayland 迁移期持续涌现新项目，值得桌面用户关注。
-- 原文：https://duxlabs.dev/
-- 讨论：https://news.ycombinator.com/item?id=50416053
+**7. Show HN: Every satellite that passed over any place this week, and its photos** — 285 分 / 46 评论。输入任意地点即可查询过去 7 天过境的全部卫星（CelesTrak 目录 17k+ 对象，SGP4 轨道计算，浏览器内约 0.5 秒），并拉取 Sentinel-2 / Landsat / NASA 真实影像；作者在 GPU 上逐帧求解开普勒方程。工程实现与实用性俱佳。
+- 原文：https://www.watched.earth
+- 讨论：https://news.ycombinator.com/item?id=50428907
 
-**13. GitHub New pull request overview page in public preview**（HN 188 分 / 124 评论）
-GitHub 重新设计 PR 概览页并进入公开预览。作为日常开发的核心界面，PR 页面改版会直接影响大量开发者的工作流，评论区反馈值得一读。
-- 原文：https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/
-- 讨论：https://news.ycombinator.com/item?id=50408931
+**23. Zebkit – Chromium as an embeddable library** — 112 分 / 42 评论。把 Chromium 做成可嵌入库，对需要内嵌浏览器内核的桌面/客户端应用是实用基础设施。
+- 原文：https://github.com/ikey4u/zebkit
+- 讨论：https://news.ycombinator.com/item?id=50426207
 
-
-## 四、安全、隐私与逆向工程
-
-**14. We know 15k websites are infected. how do we tell them?**（HN 224 分 / 184 评论）
-Scott Helme 讨论发现约 1.5 万个被感染网站后如何负责任地通知站长的难题。涉及安全披露伦理与实操困境，对安全从业者很有启发。
-- 原文：https://scotthelme.co.uk/we-know-15-579-websites-are-infected-how-do-we-tell-them/
-- 讨论：https://news.ycombinator.com/item?id=50396064
-
-**15. Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller**（HN 280 分 / 64 评论）
-伪装成超市制冷控制器的蜜罐，精确模仿 Danfoss AK-SM 800A 和 Dixell XWEB 界面，甚至被 Shodan 识别为真实设备。单文件纯标准库 Python 实现，是工控安全与蜜罐设计的精彩案例。
-- 原文：https://github.com/hedgerow-dev/coldframe
-- 讨论：https://news.ycombinator.com/item?id=50406292
-
-**16. Apple's grey list: Words and phrases your iPhone won't help you spell**（HN 532 分 / 359 评论）
-《卫报》调查 iPhone 输入法对某些词汇（如 "male chauvinist pig"）不提供拼写建议的"灰名单"现象。触及平台内容审核的隐性机制与言论边界，讨论热度极高。
-- 原文：https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you
-- 讨论：https://news.ycombinator.com/item?id=50406111
-
-**17. Unattended reboots with encrypted disks**（Lobsters）
-介绍 zkeys 方案，解决全盘加密服务器无人值守重启的经典运维难题。对运维和 homelab 用户实用性强。
-- 原文：https://jmmv.dev/2026/11/zkeys-intro.html
-- 讨论：https://lobste.rs/s/urg4yu/unattended_reboots_with_encrypted_disks
-
-**18. A bit about email**（Lobsters）
-关于电子邮件协议与投递机制的随笔。邮件作为最古老却最难正确实现的互联网协议之一，这类基础性文章常被低估。
-- 原文：https://maurycyz.com/misc/email/
-- 讨论：https://lobste.rs/s/jnz4v5/bit_about_email
-
-
-## 五、硬件、Homelab 与底层系统
-
-**19. What I run on my $10 USD OpenStick homelab**（HN 778 分 / 134 评论）
-在 10 美元的 OpenStick（骁龙 410 便携设备）上搭建 homelab 的实践。极低成本硬件跑真实服务的思路，对 homelab 爱好者极具吸引力。
-- 原文：https://blog.bosscher.ch/posts/openstick/
-- 讨论：https://news.ycombinator.com/item?id=50406670
-
-**20. The $8 Linux Computer (2022)**（HN 258 分 / 97 评论）
-关于 8 美元 Linux 计算机的经典文章重新上榜，与上篇形成"极致低成本计算"主题呼应。
-- 原文：http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html
-- 讨论：https://news.ycombinator.com/item?id=50404599
-
-**21. Every processor die anyone has photographed and given away**（HN 149 分 / 32 评论）
-汇集所有公开拍摄并分享的处理器裸片照片的数据可视化。芯片逆向与硬件考古爱好者的宝藏资源。
-- 原文：https://sheets.works/data-viz/cpu-dies
-- 讨论：https://news.ycombinator.com/item?id=50405782
-
-**22. Porting Android 16 to my blind mother's keypad phone**（HN 164 分 / 50 评论）
-为盲人母亲把 Android 16 移植到键盘功能机上的感人项目。无障碍技术与嵌入式移植的结合，兼具技术深度与人文温度。
-- 原文：https://z1x.us/blog/four-hundred-bucks-of-e-waste
-- 讨论：https://news.ycombinator.com/item?id=50366821
-
-**23. Nvidia Board of Directors Is Investigating Jensen Huang**（HN 442 分 / 324 评论）
-Nvidia 董事会调查黄仁勋的官方声明。作为 AI 硬件领域最具影响力公司的治理事件，对行业走向有潜在影响。
-- 原文：https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors
-- 讨论：https://news.ycombinator.com/item?id=50416801
-
-
-## 六、思维方法、写作与人文
-
-**24. Writing as a thinking tool**（HN 304 分 / 83 评论）
-把写作当作思考工具的方法论文章。对工程师而言，技术写作与清晰思考的关系是长期被讨论的话题。
-- 原文：http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html
-- 讨论：https://news.ycombinator.com/item?id=50412067
-
-**25. Person of Interest**（HN 293 分 / 188 评论）
-一篇关于"被关注/被标记"的随笔，讨论热度很高，具体内容偏向叙事性反思。
-- 原文：https://krthr.co/person-of-interest/
-- 讨论：https://news.ycombinator.com/item?id=50412318
-
-**26. Petered**（HN 161 分 / 92 评论）
-来自 A Working Library 的写作，延续该站一贯的文学与技术交叉风格。
-- 原文：https://aworkinglibrary.com/writing/petered
-- 讨论：https://news.ycombinator.com/item?id=50412152
-
-**27. Terry Pratchett's Study**（HN 148 分 / 45 评论）
-特里·普拉切特书房的可视化/记录。对这位已故作家的粉丝而言是温馨的致敬。
-- 原文：https://www.sussi.dk/terry-pratchetts-study
-- 讨论：https://news.ycombinator.com/item?id=50405674
-
-
-## 七、趣味与社区
-
-**28. Making any integer with four 2s (2025)**（HN 207 分 / 55 评论）
-数学趣题：用四个 2 表示任意整数。经典数学游戏的技术性扩展，适合作为思维体操。
-- 原文：https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/
-- 讨论：https://news.ycombinator.com/item?id=50408713
-
-**29. Show HN: Vegetable Gardening for Engineers**（HN 177 分 / 35 评论）
-"面向工程师的蔬菜种植指南"——用工程思维拆解园艺。跨领域趣味内容，体现 HN 社区的多元性。
-- 原文：https://jrcpl.us/contrib/2020/gardening-for-engineers/
-- 讨论：https://news.ycombinator.com/item?id=50362963
-
-**30. Ask HN: What are you working on? (November 2026)**（HN 161 分 / **546 评论**）
-月度社区问答，评论数全榜最高。是了解开发者社区当前在做什么的窗口，适合挖掘趋势和小项目灵感。
+**8. Ask HN: What are you working on? (November 2026)** — 282 分 / 981 评论，今日评论数最高。每月固定的"你在做什么"帖，是观察独立开发者与小团队真实项目方向的最佳窗口，值得翻评论区。
 - 讨论：https://news.ycombinator.com/item?id=50417407
 
+---
 
-## 今日最值得阅读的 5 篇文章推荐
+## 三、安全与隐私（含漏洞与加密）
 
-**1. Need for Speed Underground 2 online in the browser** — 今日最高分（1127），浏览器运行完整 3D 游戏的工程奇迹，Web 平台能力边界的最佳展示。
-https://nfsu2.xyz/ ｜ 讨论：https://news.ycombinator.com/item?id=50403052
+**3. Unlocking any car from X brand in most of the world** — 604 分 / 335 评论。披露某品牌汽车在全球大部分地区可被解锁的攻击面，属硬件/车联网安全研究，附有 ForgeRock 相关延伸阅读。
+- 原文：https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/
+- 讨论：https://news.ycombinator.com/item?id=50419215
+- 延伸：https://samcurry.net/forgerock
 
-**2. The Components of Agent Memory + Agent memory needs its OpenTelemetry moment（组合阅读）** — 同日两篇 Agent 记忆文章上榜，一篇来自 Anthropic 的概念框架，一篇呼吁标准化，合读可完整把握该议题的现状与走向。
-https://www.anthropic.com/research/components-of-agent-memory ｜ https://www.lorekit.io/blog/open-agent-memory-format
+**30. Terminal2Shell: Critical flaw grants instant shell access on every major OS** — Lobsters。声称一个严重缺陷可在所有主流操作系统上直接获得 shell，标题即结论，需关注后续细节与修复进展。
+- 原文：https://terminal2shell.com/
+- 讨论：https://lobste.rs/s/vghqe8/terminal2shell_critical_flaw_grants
 
-**3. Apple's grey list** — 532 分、359 条评论，讨论热度极高。揭示平台隐性内容审核机制，涉及技术、言论与平台权力的交叉议题。
-https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you
+**27. Horrible public key tricks** — Lobsters。公钥密码学的"邪门用法"合集，偏趣味与原理向，适合对证书/密钥机制好奇的读者。
+- 原文：https://maurycyz.com/projects/badcert/
+- 讨论：https://lobste.rs/s/txkq8s/horrible_public_key_tricks
 
-**4. Show HN: Coldframe 蜜罐** — 伪装成超市制冷控制器的工控蜜罐，单文件 Python 实现且骗过 Shodan 识别，是安全工程与"以假乱真"设计的精彩案例。
-https://github.com/hedgerow-dev/coldframe ｜ 讨论：https://news.ycombinator.com/item?id=50406292
+**28. Microsoft are rejecting your mail** — Lobsters。关于微软邮件接收策略导致正常邮件被拒的运维实录，涉及邮件送达率与反垃圾策略，运维/自建邮件系统者相关。
+- 原文：https://www.mythic-beasts.com/blog/2026/11/09/microsoft-are-rejecting-your-mail/
+- 讨论：https://lobste.rs/s/ynik5s/microsoft_are_rejecting_your_mail
 
-**5. Herb Sutter: C++26 post-DIS** — 语言创建者与标准委员会公开分歧的一手记录，对理解 C++ 未来走向和标准化治理机制不可替代。
-https://isocpp.org/files/papers/P4454R0.pdf
+**29. Let's Talk About Why all This OT Stuff is Connected** — Lobsters。讨论 OT（运营技术）/工控安全中"一切皆互联"带来的风险面，属于 ICS 安全议题。
+- 原文：https://tisiphone.net/2026/11/08/lets-talk-about-why-all-this-ot-stuff-is-connected/
+- 讨论：https://lobste.rs/s/jxigk6/let_s_talk_about_why_all_this_ot_stuff_is
 
+**13. Cryptocurrency lawsuit: Ethereum Foundation required "suicide pledge"** — 201 分 / 185 评论。丹佛邮报报道以太坊基金会相关诉讼中"自杀承诺"要求的指控，属加密行业法律与治理争议，热度高但需注意信源立场。
+- 原文：https://www.denverpost.com/2026/11/06/ethereum-suicide-pledge-lawsuit-mandate-boulder-crypto/
+- 讨论：https://news.ycombinator.com/item?id=50426899
 
-**整体观察**：今日榜单呈现三条主线——(1) **AI Agent 工程化**从"能跑"转向"记忆架构与评测可信度"等基础设施问题；(2) **Rust 生态持续渗透**（Libghostty、Clj.rs、systemd、KetchUp），从前端到系统层全面开花；(3) **低成本硬件与 homelab** 热度不减，$8/$10 计算设备与无障碍移植项目体现社区对"用有限资源做真实事情"的持续热情。0:{"buildId":"3KrAY-H0qvxsqzBmQNufA","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-11-09","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":13},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-11-09"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-c:T636,I built Coldframe, a honeypot that pretends to be a supermarket refrigeration controller. Inspired by the events on industrial fridge installations in the past weeks, I wanted to see what people would try against a convincing fake.<p>To learn more about this I built a honeypot that resembled perfectly the Danfoss AK-SM 800A and Dixell XWEB interfaces. Both of them are recognized on Shodan as real ones (an not as honeypots). It’s one Python file using only the standard library, and it builds on eppser&#x2F;danfoss-ak-sm-decoy and public research by Synacktiv, Claroty and Ironhackers.<p>Things that were fun to get right:<p>- Matching real units. I used Shodan records of real devices to match header order, page titles, certificate fields and TLS versions. The Danfoss persona sends nginx headers in the same order as a real AK-SM 800A. The Dixell persona sends no Server header and pads its page to exactly 8,202 bytes.<p>- Recognising exploit attempts. It recognises CVE-2025-41450, the Danfoss “code of the day” login bypass, and records whether the submitted code is correct for today. It also tags attempts targeting three other Danfoss CVEs and the XWEB vulnerabilities.<p>- Letting them in. Default logins open a fake store dashboard with defrost buttons, so you see the second move, not just the first. Nothing behind it is real.<p>Two instances have been live for a day. So far they’ve only seen generic scanners and Shodan’s crawler, which is called refrigerator.census.shodan.io.<p>Feedback welcome, especially from anyone who has seen these devices in the field!6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-50403052","title":"Need for Speed Underground 2 online in the browser","url":"https://nfsu2.xyz/","source":"Hacker News","score":1127,"comments_count":279,"comments_url":"https://news.ycombinator.com/item?id=50403052","published_at":"2026-11-07T09:36:36","author":"fluxusars","text":null,"summary":"本文介绍如何在浏览器中在线运行经典赛车游戏《极品飞车：地下狂飙2》，让玩家无需安装即可重温这款怀旧作品。值得关注的是它展示了现代Web技术对复杂3D游戏的支持能力。"},{"id":"hn-50399933","title":"Libghostty 1.0","url":"https://mitchellh.com/writing/libghostty-1-0","source":"Hacker News","score":1075,"comments_count":194,"comments_url":"https://news.ycombinator.com/item?id=50399933","published_at":"2026-11-06T23:30:52","author":"mfiguiere","text":null,"summary":"Libghostty 1.0发布，这是一个用Zig编写的终端模拟器库，旨在提供高性能和可嵌入的终端功能。值得关注的是它为开发者提供了构建终端应用的新基础工具。"},{"id":"hn-50406670","title":"What I run on my $10 USD OpenStick homelab","url":"https://blog.bosscher.ch/posts/openstick/","source":"Hacker News","score":778,"comments_count":134,"comments_url":"https://news.ycombinator.com/item?id=50406670","published_at":"2026-11-07T18:12:12","author":"LaurensBER","text":null,"summary":"作者分享在仅10美元的OpenStick硬件上搭建家庭实验室的经验，展示了低成本硬件运行各种服务的可能性。值得关注的是它证明了极低预算也能实现实用的homelab方案。"},{"id":"hn-50406111","title":"Apple’s grey list: Words and phrases your iPhone won’t help you spell","url":"https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you","source":"Hacker News","score":532,"comments_count":359,"comments_url":"https://news.ycombinator.com/item?id=50406111","published_at":"2026-11-07T17:06:36","author":"user_7832","text":null,"summary":"文章揭示苹果iOS输入法存在一个“灰色名单”，某些词语和短语（如“male chauvinist pig”）不会被自动纠错或拼写建议支持。值得关注的是它引发了关于科技公司内容审查和语言偏见的讨论。"},{"id":"hn-50416801","title":"Nvidia Board of Directors Is Investigating Jensen Huang","url":"https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors","source":"Hacker News","score":442,"comments_count":324,"comments_url":"https://news.ycombinator.com/item?id=50416801","published_at":"2026-11-08T20:26:43","author":"vincentchau","text":null,"summary":"英伟达董事会正在对CEO黄仁勋展开调查，官方声明已发布。值得关注的是这一事件可能对全球AI芯片巨头英伟达的未来走向产生重大影响。"},{"id":"hn-50368481","title":"Declarative Dragging","url":"https://declarative-dragging.github.io/","source":"Hacker News","score":411,"comments_count":52,"comments_url":"https://news.ycombinator.com/item?id=50368481","published_at":"2026-11-04T17:05:07","author":"smusamashah","text":null,"summary":"本文介绍“声明式拖拽”这一前端交互模式，通过声明式方式实现拖拽功能，简化复杂UI开发。值得关注的是它为Web开发者提供了更优雅的拖拽实现思路。"},{"id":"hn-50406222","title":"MaxxBench – \"Nice DeepSWE score. But is it true?\"","url":"https://maxxbench.unlap.ai/research/why-maxxbench/","source":"Hacker News","score":391,"comments_count":104,"comments_url":"https://news.ycombinator.com/item?id=50406222","published_at":"2026-11-07T17:19:00","author":"antiuniverse","text":null,"summary":"MaxxBench对DeepSWE基准测试提出质疑，探讨其评分是否真实反映模型能力。值得关注的是它引发了对AI基准测试有效性和可靠性的反思。"},{"id":"hn-50412067","title":"Writing as a thinking tool","url":"http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html","source":"Hacker News","score":304,"comments_count":83,"comments_url":"https://news.ycombinator.com/item?id=50412067","published_at":"2026-11-08T10:41:52","author":"jruohonen","text":null,"summary":"文章探讨写作作为一种思维工具的价值，认为写作能帮助理清思路、深化理解。值得关注的是它提醒我们在快节奏时代重视写作对思考的促进作用。"},{"id":"hn-50412318","title":"Person of Interest","url":"https://krthr.co/person-of-interest/","source":"Hacker News","score":293,"comments_count":188,"comments_url":"https://news.ycombinator.com/item?id=50412318","published_at":"2026-11-08T11:23:28","author":"krthr","text":null,"summary":"本文可能探讨与“Person of Interest”相关的话题，涉及监控、隐私或人工智能伦理。值得关注的是它可能引发对技术社会中个人隐私与安全的思考。"},{"id":"hn-50418176","title":"KetchUp – Open-source SketchUp alternative built with Rust and WebGPU","url":"https://ketchup3d.github.io/app/","source":"Hacker News","score":292,"comments_count":83,"comments_url":"https://news.ycombinator.com/item?id=50418176","published_at":"2026-11-08T22:35:35","author":"dcoulmbe","text":null,"summary":"KetchUp是一个用Rust和WebGPU构建的开源SketchUp替代品，可在浏览器中运行3D建模。值得关注的是它展示了WebGPU在专业级3D应用中的潜力，并提供了免费的开源选择。"},{"id":"hn-50406292","title":"Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller","url":"https://github.com/hedgerow-dev/coldframe","source":"Hacker News","score":280,"comments_count":64,"comments_url":"https://news.ycombinator.com/item?id=50406292","published_at":"2026-11-07T17:27:30","author":"hedgerow-dev","text":"$c","summary":"作者构建了一个伪装成超市冷藏控制器的蜜罐Coldframe，旨在观察攻击者会如何针对逼真的工业设备发起攻击，值得关注因为它揭示了针对关键基础设施的潜在威胁。"},{"id":"hn-50404599","title":"The $8 Linux Computer (2022)","url":"http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html","source":"Hacker News","score":258,"comments_count":97,"comments_url":"https://news.ycombinator.com/item?id=50404599","published_at":"2026-11-07T14:00:20","author":"zenincognito","text":null,"summary":"文章介绍了一台仅售8美元的Linux计算机的搭建过程，值得关注因为它展示了极低成本下运行Linux系统的可能性，对嵌入式和DIY爱好者有启发意义。"},{"id":"hn-50396064","title":"We know 15k websites are infected. how do we tell them?","url":"https://scotthelme.co.uk/we-know-15-579-websites-are-infected-how-do-we-tell-them/","source":"Hacker News","score":224,"comments_count":184,"comments_url":"https://news.ycombinator.com/item?id=50396064","published_at":"2026-11-06T18:13:35","author":"speckx","text":null,"summary":"文章讨论了在已知约1.5万个网站被感染的情况下，如何安全有效地通知这些网站的所有者，值得关注因为它涉及网络安全事件响应中的实际沟通难题。"},{"id":"hn-50416053","title":"Dux: Free, open-source Wayland desktop shell with file manager and theming","url":"https://duxlabs.dev/","source":"Hacker News","score":222,"comments_count":70,"comments_url":"https://news.ycombinator.com/item?id=50416053","published_at":"2026-11-08T19:08:51","author":"indigodaddy","text":null,"summary":"Dux是一个免费开源的Wayland桌面外壳，内置文件管理器和主题功能，值得关注因为它为Linux桌面环境提供了新的轻量级选择。"},{"id":"hn-50408713","title":"Making any integer with four 2s (2025)","url":"https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/","source":"Hacker News","score":207,"comments_count":55,"comments_url":"https://news.ycombinator.com/item?id=50408713","published_at":"2026-11-07T22:38:58","author":"germanrabbit","text":null,"summary":"文章探讨了如何仅用四个数字2通过数学运算构造出任意整数，值得关注因为它是一个有趣的数学益智问题，展示了创造性思维。"},{"id":"hn-50408931","title":"GitHub New pull request overview page in public preview","url":"https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/","source":"Hacker News","score":188,"comments_count":124,"comments_url":"https://news.ycombinator.com/item?id=50408931","published_at":"2026-11-07T23:09:40","author":"xiaoyu2006","text":null,"summary":"GitHub推出了新的拉取请求概览页面并进入公开预览阶段，值得关注因为它将改善开发者审查代码的体验和工作流程。"},{"id":"hn-50402212","title":"The Components of Agent Memory","url":"https://www.anthropic.com/research/components-of-agent-memory","source":"Hacker News","score":178,"comments_count":99,"comments_url":"https://news.ycombinator.com/item?id=50402212","published_at":"2026-11-07T06:39:04","author":"geoffbp","text":null,"summary":"Anthropic的研究文章分析了AI代理记忆系统的各个组成部分，值得关注因为它为构建更可靠的AI代理提供了理论基础。"},{"id":"hn-50362963","title":"Show HN: Vegetable Gardening for Engineers","url":"https://jrcpl.us/contrib/2020/gardening-for-engineers/","source":"Hacker News","score":177,"comments_count":35,"comments_url":"https://news.ycombinator.com/item?id=50362963","published_at":"2026-11-04T08:54:27","author":"jrcplus","text":null,"summary":"这篇文章面向工程师群体介绍蔬菜园艺的入门知识，值得关注因为它以工程思维类比园艺，为技术背景的读者提供了实用的种植指南。"},{"id":"hn-50411467","title":"Agent memory needs its OpenTelemetry moment","url":"https://www.lorekit.io/blog/open-agent-memory-format","source":"Hacker News","score":177,"comments_count":103,"comments_url":"https://news.ycombinator.com/item?id=50411467","published_at":"2026-11-08T08:40:23","author":"mthines","text":null,"summary":"文章呼吁为AI代理记忆建立类似OpenTelemetry的开放标准格式，值得关注因为它指出了当前代理记忆缺乏互操作性的问题并提出了解决方向。"},{"id":"hn-50366902","title":"Clj.rs – a Clojure dialect implemented in Rust","url":"https://clj.rs/","source":"Hacker News","score":168,"comments_count":66,"comments_url":"https://news.ycombinator.com/item?id=50366902","published_at":"2026-11-04T15:23:16","author":"simonpure","text":null,"summary":"Clj.rs是一个用Rust实现的Clojure方言，值得关注因为它结合了Clojure的表达力和Rust的性能与安全性，为函数式编程提供了新选择。"},{"id":"hn-50366821","title":"Porting Android 16 to my blind mother's keypad phone","url":"https://z1x.us/blog/four-hundred-bucks-of-e-waste","source":"Hacker News","score":164,"comments_count":50,"comments_url":"https://news.ycombinator.com/item?id=50366821","published_at":"2026-11-04T15:18:59","author":"z1xus","text":null,"summary":"作者尝试将Android 16移植到其盲人母亲使用的键盘手机上，探讨了为视障用户改造老旧硬件的技术挑战与人文价值，值得关注无障碍技术与DIY创新的结合。"},{"id":"hn-50417407","title":"Ask HN: What are you working on? (November 2026)","url":null,"source":"Hacker News","score":161,"comments_count":546,"comments_url":"https://news.ycombinator.com/item?id=50417407","published_at":"2026-11-08T21:20:20","author":"david927","text":"What are you working on? What have you been curious about lately?","summary":"Hacker News的月度例行讨论帖，邀请社区成员分享当前项目与近期兴趣，是了解开发者社区动态和寻找合作灵感的窗口。"},{"id":"hn-50412152","title":"Petered","url":"https://aworkinglibrary.com/writing/petered","source":"Hacker News","score":161,"comments_count":92,"comments_url":"https://news.ycombinator.com/item?id=50412152","published_at":"2026-11-08T10:56:43","author":"adrianhoward","text":null,"summary":"一篇关于“Petered”概念的随笔，可能涉及项目管理或创作中的枯竭现象，值得关注其对工作节奏与可持续性的反思。"},{"id":"hn-50405782","title":"Every processor die anyone has photographed and given away","url":"https://sheets.works/data-viz/cpu-dies","source":"Hacker News","score":149,"comments_count":32,"comments_url":"https://news.ycombinator.com/item?id=50405782","published_at":"2026-11-07T16:21:36","author":"user_7832","text":null,"summary":"一个汇集了人们拍摄并公开分享的各类处理器裸片照片的数据可视化项目，是芯片考古与硬件历史的珍贵视觉资料库。"},{"id":"hn-50405674","title":"Terry Pratchett's Study","url":"https://www.sussi.dk/terry-pratchetts-study","source":"Hacker News","score":148,"comments_count":45,"comments_url":"https://news.ycombinator.com/item?id=50405674","published_at":"2026-11-07T16:05:45","author":"ColinWright","text":null,"summary":"探访已故作家特里·普拉切特的书房，展示了其创作环境的细节，对粉丝和写作爱好者具有独特的吸引力。"}],"locale":"zh"}],"$Ld"]}]]}]
+---
+
+## 四、数据、算法与工程实践
+
+**4. USPS now offers official ZIP Code boundary polygons** — 567 分 / 280 评论。美国邮政官方发布 ZIP Code 边界多边形数据，对做地理围栏、地址服务、物流分析的开发者是长期缺失数据的补齐，实用价值极高。
+- 原文：https://postalpro.usps.com/zcb
+- 讨论：https://news.ycombinator.com/item?id=50431058
+
+**5. E-means: Outperforming k-means in one-tenth the epochs** — 326 分 / 29 评论。提出以十分之一迭代次数超越 k-means 的聚类方法，附项目主页，是经典算法的效率改进，值得做数据管道的读者验证。
+- 原文：https://e-means.github.io/
+- 讨论：https://news.ycombinator.com/item?id=50429734
+
+**11. What is malloc doing, anyway?** — 242 分 / 62 评论。深入剖析 malloc 的实际行为，系统编程基础好文，对理解内存分配器与性能调优有直接帮助。
+- 原文：https://benmandrew.com/articles/what-is-malloc-doing-anyway
+- 讨论：https://news.ycombinator.com/item?id=50424157
+
+**19. Try Gleam** — 124 分 / 127 评论。Gleam（跑在 BEAM 上的类型安全语言）入门推介，评论数远超分数，说明语言设计讨论活跃。
+- 原文：https://nchagnet.eu/blog/you-should-try-gleam
+- 讨论：https://news.ycombinator.com/item?id=50424366
+
+**26. How Much Energy Does Building Distro Packages Use** — Lobsters。实测构建发行版软件包的能耗，属软件供应链的可持续性/绿色计算量化研究，角度少见。
+- 原文：https://www.wezm.net/v2/posts/2026/distro-energy-use/
+- 讨论：https://lobste.rs/s/ezjewj/how_much_energy_does_building_distro
+
+---
+
+## 五、硬件、航天与供应链
+
+**6. When will this stop? The Raspberry Pi 5 16GB SBC now sells for $385** — 298 分 / 260 评论。树莓派 5 16GB 售价涨至 385 美元，反映内存涨价对 SBC 的传导，评论区对"创客硬件是否还买得起"讨论激烈。
+- 原文：https://www.cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385/
+- 讨论：https://news.ycombinator.com/item?id=50428801
+
+**20. The first 300-millimeter power silicon carbide (SiC) wafer** — 123 分 / 66 评论。英飞凌发布首片 300mm 功率 SiC 晶圆，对电动车/功率电子的成本曲线有长期意义。
+- 原文：https://www.infineon.com/press-release/2026/infpr202611-028
+- 讨论：https://news.ycombinator.com/item?id=50429430
+
+**18. Starship Flight 15 on 11/13 plans to catch both booster and ship** — 162 分 / 141 评论。SpaceX 第 15 次星舰试飞计划同时回收助推器与飞船，是复用能力的关键节点。
+- 原文：https://www.spacex.com/launches/starship-flight-15
+- 讨论：https://news.ycombinator.com/item?id=50416471
+
+**25. Fun things to do with your VM/370 CE machine – Fun with big computers** — 101 分 / 38 评论。在 VM/370 社区版大型机上折腾的趣味指南，面向复古计算爱好者，展示大型机虚拟化历史。
+- 原文：https://rbanffy.github.io/fun-with-big-computers/fun-with-vm370/
+- 讨论：https://news.ycombinator.com/item?id=50423569
+
+---
+
+## 六、Web、文化与杂项
+
+**14. The Web Is More Than Enough** — 184 分 / 134 评论。一篇为"开放 Web 本身已足够"辩护的文章，反对过度工程化与平台化，属 Web 精神类评论，适合与第 4 篇（官方开放数据）对照阅读。
+- 原文：https://ftrain.com/aboard-the-web-is-more-than-enough
+- 讨论：https://news.ycombinator.com/item?id=50416456
+
+**16. Children of Men: The future is a mirror for the present** — 169 分 / 137 评论。对《人类之子》的影评式分析，虽非技术文，但在技术社区热传，反映对技术与社会未来叙事的关注。
+- 原文：https://reactormag.com/children-of-men-the-future-is-a-mirror-for-the-present/
+- 讨论：https://news.ycombinator.com/item?id=50425303
+
+**24. Quasi-Logarithmic Kitchen Timer** — 104 分 / 32 评论。一个"准对数"厨房定时器的设计小文，属硬件/交互设计趣味项目，短小精悍。
+- 原文：https://blog.coredump.cx/p/quasi-logarithmic-kitchen-timer
+- 讨论：https://news.ycombinator.com/item?id=50373768
+
+---
+
+## 今日最值得阅读的 5 篇（推荐）
+
+1. **Is Opus 5.5 nerfed?（773 分）** — 今日最大争议，直接关系到你依赖的模型是否"静默变弱"，评论区有大量用户实测对比。→ https://news.ycombinator.com/item?id=50422069
+2. **KetchUp（735 分）** — Rust + WebGPU 在浏览器里做 3D 建模，技术选型与实现都值得一看，可当 WebGPU 实战样本。→ https://ketchup3d.github.io/app/
+3. **USPS 官方 ZIP Code 边界多边形（567 分）** — 长期缺失的权威地理数据开放，做地址/物流/地理分析的可直接落地。→ https://postalpro.usps.com/zcb
+4. **同一块 H100 价格差 5 倍（168 分）** — 用数据揭示 GPU 云定价差异，做 AI 成本优化的人应据此重新比价。→ https://github.com/datareceipts/data-receipts/tree/main/109-gpu-pricing
+5. **Show HN: watched.earth（285 分）** — 卫星过境 + 真实影像查询，浏览器内 0.5 秒完成 17k 对象 SGP4 计算，是"个人项目做到生产级"的范本。→ https://www.watched.earth
+
+---
+
+**一句话总结**：今日技术社区主线是 **AI 模型行为与推理成本**（模型疑似降智、小模型、专用推理引擎、GPU 价差、TPU 新品），次线是 **开放数据与开源工具**（USPS 边界数据、KetchUp、watched.earth），安全议题（车锁、Terminal2Shell、OT 互联）与硬件涨价（树莓派、SiC）构成第三梯队。Lobsters 侧 4 篇均为 0 分 RSS 抓取，但安全与运维主题质量不低。0:{"buildId":"M_dKKJlDkRwh2caHTWDJd","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-11-10","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":17},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","篇文章"," • ","2026-11-10"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"zh"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"全部文章",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-50422069","title":"Is Opus 5.5 nerfed? Thinking patterns changed on November 3","url":"https://twitter.com/shanemelaugh/status/2119192075505893695","source":"Hacker News","score":773,"comments_count":484,"comments_url":"https://news.ycombinator.com/item?id=50422069","published_at":"2026-11-09T07:04:25","author":"rzk","text":null,"summary":"文章讨论Opus 5.5模型是否被削弱，用户指出其思考模式在11月3日发生了变化。值得关注，因为它涉及主流AI模型性能变化的社区讨论。"},{"id":"hn-50418176","title":"KetchUp – Open-source SketchUp alternative built with Rust and WebGPU","url":"https://ketchup3d.github.io/app/","source":"Hacker News","score":735,"comments_count":226,"comments_url":"https://news.ycombinator.com/item?id=50418176","published_at":"2026-11-08T22:35:35","author":"dcoulmbe","text":null,"summary":"KetchUp是一个用Rust和WebGPU构建的开源SketchUp替代品。值得关注，因为它为3D建模提供了基于现代Web技术的开源选择。"},{"id":"hn-50419215","title":"Unlocking any car from X brand in most of the world","url":"https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/","source":"Hacker News","score":604,"comments_count":335,"comments_url":"https://news.ycombinator.com/item?id=50419215","published_at":"2026-11-09T00:10:50","author":"infosecau","text":"See also: <a href=\"https:&#x2F;&#x2F;samcurry.net&#x2F;forgerock\" rel=\"nofollow\">https:&#x2F;&#x2F;samcurry.net&#x2F;forgerock</a>","summary":"文章探讨了在世界上大部分地区解锁某品牌汽车的方法，并引用了相关安全研究。值得关注，因为它揭示了汽车安全漏洞的潜在风险。"},{"id":"hn-50431058","title":"USPS now offers official ZIP Code boundary polygons","url":"https://postalpro.usps.com/zcb","source":"Hacker News","score":567,"comments_count":280,"comments_url":"https://news.ycombinator.com/item?id=50431058","published_at":"2026-11-09T19:58:59","author":"munro","text":null,"summary":"美国邮政局现在提供官方的ZIP Code边界多边形数据。值得关注，因为这为地理信息系统和地址相关应用提供了权威数据源。"},{"id":"hn-50429734","title":"E-means: Outperforming k-means in one-tenth the epochs","url":"https://e-means.github.io/","source":"Hacker News","score":326,"comments_count":29,"comments_url":"https://news.ycombinator.com/item?id=50429734","published_at":"2026-11-09T18:45:43","author":"porridgeraisin","text":null,"summary":"E-means是一种新的聚类算法，声称仅用十分之一的迭代次数就能超越k-means。值得关注，因为它可能显著提升聚类任务的效率。"},{"id":"hn-50428801","title":"When will this stop? The Raspberry Pi 5 16GB SBC now sells for $385","url":"https://www.cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385/","source":"Hacker News","score":298,"comments_count":260,"comments_url":"https://news.ycombinator.com/item?id=50428801","published_at":"2026-11-09T17:42:55","author":"pera","text":null,"summary":"文章报道Raspberry Pi 5 16GB单板计算机售价已涨至385美元。值得关注，因为这反映了树莓派产品价格的大幅上涨趋势。"},{"id":"hn-50428907","title":"Show HN: Every satellite that passed over any place this week, and its photos","url":"https://www.watched.earth","source":"Hacker News","score":285,"comments_count":46,"comments_url":"https://news.ycombinator.com/item?id=50428907","published_at":"2026-11-09T17:51:31","author":"a585gupt","text":"hey HN, i built this because I&#x27;m a satellite nerd who was bored this past weekend.<p>type in any place and it finds every satellite that passed over it in the last 7 days (SGP4 on the CelesTrak catalog, tracking 17k+ objects and runs in your browser in about half a second), then pulls the real Sentinel-2 &#x2F; Landsat &#x2F; NASA images from those passes.<p>fun fact: all ~17k objects in orbit are drawn on the GPU, solving Kepler&#x27;s equation every frame. also cool is that Sentinel-2 timestamps are often 5-10 min off from when the sat actually crosses your spot, so some cool math was involved in making it accurate on the site.<p>it only shows real images taken from those exact satellites, and it never store your location.<p>code: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;dev-Armaan&#x2F;satellites\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;dev-Armaan&#x2F;satellites</a><p>would love feedback, contributions, or whatever else you guys can offer!","summary":"Show HN项目watched.earth可以查询过去一周内飞越任意地点的所有卫星及其拍摄的照片。值得关注，因为它利用浏览器端SGP4计算提供了有趣的卫星追踪体验。"},{"id":"hn-50417407","title":"Ask HN: What are you working on? (November 2026)","url":null,"source":"Hacker News","score":282,"comments_count":981,"comments_url":"https://news.ycombinator.com/item?id=50417407","published_at":"2026-11-08T21:20:20","author":"david927","text":"What are you working on? What have you been curious about lately?","summary":"这是Hacker News每月例行的“你在做什么？”讨论帖，邀请用户分享当前项目和兴趣。值得关注，因为它能展示社区最新的技术动态和创意。"},{"id":"hn-50433659","title":"Fable 5.2 one-shotted my nephew's dream game","url":"https://notesbylex.com/fable-5-2-one-shotted-my-nephews-dream-game","source":"Hacker News","score":277,"comments_count":198,"comments_url":"https://news.ycombinator.com/item?id=50433659","published_at":"2026-11-09T23:08:13","author":"lexandstuff","text":null,"summary":"文章讲述Fable 5.2模型一次性生成了作者侄子梦想中的游戏。值得关注，因为它展示了AI在游戏开发中的强大生成能力。"},{"id":"hn-50429024","title":"Muse Ember: Our smallest, most efficient model","url":"https://research.meta.ai/blog/muse-ember","source":"Hacker News","score":273,"comments_count":113,"comments_url":"https://news.ycombinator.com/item?id=50429024","published_at":"2026-11-09T17:58:46","author":"dvaplima","text":null,"summary":"Meta Research发布了Muse Ember，这是其最小、最高效的模型。值得关注，因为它代表了Meta在轻量级AI模型方面的最新进展。"},{"id":"hn-50424157","title":"What is malloc doing, anyway?","url":"https://benmandrew.com/articles/what-is-malloc-doing-anyway","source":"Hacker News","score":242,"comments_count":62,"comments_url":"https://news.ycombinator.com/item?id=50424157","published_at":"2026-11-09T11:31:05","author":"benmandrew","text":null,"summary":"本文深入解析了malloc内存分配器的工作原理，帮助开发者理解底层内存管理机制，值得关注因为它能提升C/C++程序员的性能优化能力。"},{"id":"hn-50432831","title":"TPU 8tx and TPU 8i Max","url":"https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/","source":"Hacker News","score":235,"comments_count":72,"comments_url":"https://news.ycombinator.com/item?id=50432831","published_at":"2026-11-09T21:56:57","author":"_benx_","text":null,"summary":"谷歌发布了TPU 8tx和TPU 8i Max两款新硬件，介绍了其在AI基础设施和全球网络中的应用，值得关注因为它展示了谷歌在AI芯片领域的最新进展。"},{"id":"hn-50426899","title":"Cryptocurrency lawsuit: Ethereum Foundation required \"suicide pledge\"","url":"https://www.denverpost.com/2026/11/06/ethereum-suicide-pledge-lawsuit-mandate-boulder-crypto/","source":"Hacker News","score":201,"comments_count":185,"comments_url":"https://news.ycombinator.com/item?id=50426899","published_at":"2026-11-09T15:23:57","author":"ceejayoz","text":null,"summary":"报道了一起加密货币诉讼案，涉及以太坊基金会要求签署“自杀承诺”的争议，值得关注因为它可能揭示加密行业的法律与伦理问题。"},{"id":"hn-50416456","title":"The Web Is More Than Enough","url":"https://ftrain.com/aboard-the-web-is-more-than-enough","source":"Hacker News","score":184,"comments_count":134,"comments_url":"https://news.ycombinator.com/item?id=50416456","published_at":"2026-11-08T19:48:32","author":"edward","text":null,"summary":"文章探讨了Web技术的现状与未来，主张Web已经足够强大，值得关注因为它引发对Web平台发展方向的思考。"},{"id":"hn-50422168","title":"Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation","url":"https://arxiv.org/abs/2610.14162","source":"Hacker News","score":176,"comments_count":41,"comments_url":"https://news.ycombinator.com/item?id=50422168","published_at":"2026-11-09T07:20:37","author":"theanonymousone","text":null,"summary":"提出了一种名为Next-Concept Modeling的快速并行文本生成方法，值得关注因为它可能提升AI文本生成的效率。"},{"id":"hn-50425303","title":"Children of Men: The future is a mirror for the present","url":"https://reactormag.com/children-of-men-the-future-is-a-mirror-for-the-present/","source":"Hacker News","score":169,"comments_count":137,"comments_url":"https://news.ycombinator.com/item?id=50425303","published_at":"2026-11-09T13:27:01","author":"speckx","text":null,"summary":"分析电影《人类之子》如何通过未来镜像反映当下社会问题，值得关注因为它提供了对科幻作品社会意义的深度解读。"},{"id":"hn-50427085","title":"The same H100 costs $2.69 or $12.29 an hour depending where you rent it","url":"https://github.com/datareceipts/data-receipts/tree/main/109-gpu-pricing","source":"Hacker News","score":168,"comments_count":85,"comments_url":"https://news.ycombinator.com/item?id=50427085","published_at":"2026-11-09T15:39:01","author":"datareceipts","text":null,"summary":"揭示了同一款H100 GPU在不同租赁平台上的价格差异巨大（每小时2.69至12.29美元），值得关注因为它反映了AI算力市场的价格不透明问题。"},{"id":"hn-50416471","title":"Starship Flight 15 on 11/13 plans to catch both booster and ship","url":"https://www.spacex.com/launches/starship-flight-15","source":"Hacker News","score":162,"comments_count":141,"comments_url":"https://news.ycombinator.com/item?id=50416471","published_at":"2026-11-08T19:49:46","author":"spikels","text":null,"summary":"SpaceX计划在第15次星舰飞行中同时回收助推器和飞船，值得关注因为这是可重复使用火箭技术的重要里程碑。"},{"id":"hn-50424366","title":"Try Gleam","url":"https://nchagnet.eu/blog/you-should-try-gleam","source":"Hacker News","score":124,"comments_count":127,"comments_url":"https://news.ycombinator.com/item?id=50424366","published_at":"2026-11-09T11:55:14","author":"nchagnet","text":null,"summary":"介绍了Gleam编程语言的特点并鼓励尝试，值得关注因为它为函数式编程和BEAM生态系统提供了新选择。"},{"id":"hn-50429430","title":"The first 300-millimeter power silicon carbide (SiC) wafer","url":"https://www.infineon.com/press-release/2026/infpr202611-028","source":"Hacker News","score":123,"comments_count":66,"comments_url":"https://news.ycombinator.com/item?id=50429430","published_at":"2026-11-09T18:25:01","author":"sshah03","text":null,"summary":"英飞凌发布了全球首款300毫米功率碳化硅晶圆，值得关注因为它有望大幅降低SiC功率器件的成本并推动电动汽车等应用。"},{"id":"hn-50421155","title":"Show HN: Flide: Make Jev-like decision models up to 9.5x faster","url":"https://github.com/OmniJev/Flide","source":"Hacker News","score":121,"comments_count":29,"comments_url":"https://news.ycombinator.com/item?id=50421155","published_at":"2026-11-09T04:43:12","author":"unikcc","text":"Decision models need their own inference engine.<p>So we developed Flide, a high-performance and exact inference engine for Jev-like decision models.<p>Flide achieves up to a 9.5x speedup over vLLM and SGLang.<p>It now supports 30+ popular local Jev-like decision models.<p>Start to make your decision immediately:<p>pip install flide","summary":"Flide 是一个针对类 Jev 决策模型的高性能精确推理引擎，相比 vLLM 和 SGLang 最高可实现 9.5 倍加速，并已支持 30 多个主流本地模型。值得关注，因为它为决策模型提供了专用推理引擎，显著提升推理效率。"},{"id":"hn-50386246","title":"A primer on GPUs and kernel optimization","url":"https://www.nabo.dev/blogs/kernel-primer","source":"Hacker News","score":119,"comments_count":12,"comments_url":"https://news.ycombinator.com/item?id=50386246","published_at":"2026-11-05T23:48:04","author":"nomi_uw","text":null,"summary":"本文是一篇关于 GPU 和内核优化的入门指南，介绍 GPU 架构基础与内核性能调优的核心概念。适合希望深入理解 GPU 编程和性能优化的开发者阅读。"},{"id":"hn-50426207","title":"Zebkit – Chromium as an embeddable library","url":"https://github.com/ikey4u/zebkit","source":"Hacker News","score":112,"comments_count":42,"comments_url":"https://news.ycombinator.com/item?id=50426207","published_at":"2026-11-09T14:34:00","author":"Riiiiichard","text":null,"summary":"Zebkit 将 Chromium 封装为可嵌入库，使开发者能在应用中集成完整的浏览器引擎。值得关注，因为它降低了在桌面或服务端应用中嵌入现代 Web 渲染能力的技术门槛。"},{"id":"hn-50373768","title":"Quasi-Logarithmic Kitchen Timer","url":"https://blog.coredump.cx/p/quasi-logarithmic-kitchen-timer","source":"Hacker News","score":104,"comments_count":32,"comments_url":"https://news.ycombinator.com/item?id=50373768","published_at":"2026-11-05T01:15:15","author":"surprisetalk","text":null,"summary":"文章介绍了一种准对数刻度的厨房定时器设计，利用非线性时间感知让计时更符合人类直觉。这是一个有趣的交互设计实验，展示了如何用数学刻度改善日常工具的使用体验。"},{"id":"hn-50423569","title":"Fun things to do with your VM/370 CE machine – Fun with big computers","url":"https://rbanffy.github.io/fun-with-big-computers/fun-with-vm370/","source":"Hacker News","score":101,"comments_count":38,"comments_url":"https://news.ycombinator.com/item?id=50423569","published_at":"2026-11-09T10:11:47","author":"rbanffy","text":null,"summary":"文章分享了在 VM/370 CE 大型机模拟环境中有趣的实验和玩法。对于复古计算和大型机爱好者来说，这是一份富有启发性的实践指南。"}],"locale":"zh"}],"$Lc"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
-d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-2f78d0e67028","title":"systemd loves Rust","url":"https://amutable.com/blog/systemd-loves-rust","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-08T12:55:05","author":"amutable.com via lorenzleutgeb","text":"<p><a href=\"https://lobste.rs/s/62loik/systemd_loves_rust\">Comments</a></p>","summary":"讨论systemd项目对Rust语言的采用与偏好，反映了系统级基础设施向内存安全语言迁移的趋势，值得关注Linux生态的技术演进。"},{"id":"rss-88aa33ab1ee2","title":"Unattended reboots with encrypted disks","url":"https://jmmv.dev/2026/11/zkeys-intro.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-08T16:58:03","author":"jmmv.dev by jmmv","text":"<p><a href=\"https://lobste.rs/s/urg4yu/unattended_reboots_with_encrypted_disks\">Comments</a></p>","summary":"介绍如何在使用加密磁盘的情况下实现无人值守重启，解决了服务器运维中安全与自动化之间的矛盾，具有实用价值。"},{"id":"rss-bd26e3ae2b3b","title":"A bit about email","url":"https://maurycyz.com/misc/email/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-08T12:53:34","author":"maurycyz.com via robalex","text":"<p><a href=\"https://lobste.rs/s/jnz4v5/bit_about_email\">Comments</a></p>","summary":"一篇关于电子邮件原理与实践的随笔，可能涵盖协议、配置或使用技巧，适合希望深入理解这一基础互联网服务的读者。"},{"id":"rss-baca873681f4","title":"Herb Sutter: When a language’s creator and its owners strongly disagree: C++26 post-DIS, historical experience, and paths forward","url":"https://isocpp.org/files/papers/P4454R0.pdf","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-08T21:59:26","author":"isocpp.org via mort","text":"<p><a href=\"https://lobste.rs/s/vlagyq/herb_sutter_when_language_s_creator_its\">Comments</a></p>","summary":"Herb Sutter撰文讨论C++26标准制定中语言创造者与所有者之间的严重分歧，并回顾历史经验提出前进路径，对C++社区和编程语言治理有重要参考意义。"},{"id":"rss-8c107cdc4e44","title":"What can I realistically do with local AI on a Mac mini M5 Pro (48GB)?","url":"https://lobste.rs/s/umsitb/what_can_i_realistically_do_with_local_ai","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-08T17:07:51","author":"by napolux","text":"<p>I just got a Mac mini with an M5 Pro (base CPU config) and 48GB of unified memory. I want to run as much AI locally as makes sense, but it's hard to separate what actually works day to day from benchmark hype.</p>\n<p>What I'd like to do:</p>\n<ul>\n<li>Coding: autocomplete and agentic workflows with local models</li>\n<li>Image generation</li>\n<li>Anything else genuinely useful: transcription, RAG over my notes, etc.</li>\n</ul>\n<p>Questions:</p>\n<ol>\n<li>Which models and quantizations fit comfortably in 48GB and are actually usable, not just \"it runs\"?</li>\n<li>Which runtime and tools: MLX, llama.cpp, Ollama, LM Studio, ComfyUI, something else?</li>\n<li>What's your setup, and what did you give up on and go back to cloud APIs for?</li>\n</ol>\n<p>Real tokens/sec numbers and \"this was a waste of time\" stories are especially welcome.</p>","summary":"用户询问在Mac mini M5 Pro（48GB统一内存）上本地运行AI的现实可行方案，聚焦编码辅助与代理工作流，反映了本地AI部署从跑分走向实用的社区需求。"}],"locale":"zh"}]
-10:null
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-debb4846be84","title":"How Much Energy Does Building Distro Packages Use","url":"https://www.wezm.net/v2/posts/2026/distro-energy-use/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-09T06:44:59","author":"wezm.net by wezm","text":"<p><a href=\"https://lobste.rs/s/ezjewj/how_much_energy_does_building_distro\">Comments</a></p>","summary":"文章量化分析了构建 Linux 发行版软件包所消耗的能源，揭示开源软件分发背后的环境成本。值得关注，因为它让开发者意识到软件构建的能源足迹，并引发对可持续软件工程的讨论。"},{"id":"rss-12f00d80ac6b","title":"Horrible public key tricks","url":"https://maurycyz.com/projects/badcert/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-09T12:55:11","author":"maurycyz.com via rrampage","text":"<p><a href=\"https://lobste.rs/s/txkq8s/horrible_public_key_tricks\">Comments</a></p>","summary":"文章探讨了公钥基础设施中一些“糟糕”但有趣的技巧和边缘案例，揭示证书验证中可能被忽视的陷阱。对安全工程师和 PKI 实践者具有警示和参考价值。"},{"id":"rss-0c559c7ffe22","title":"Microsoft are rejecting your mail","url":"https://www.mythic-beasts.com/blog/2026/11/09/microsoft-are-rejecting-your-mail/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-09T18:36:47","author":"mythic-beasts.com via robalex","text":"<p><a href=\"https://lobste.rs/s/ynik5s/microsoft_are_rejecting_your_mail\">Comments</a></p>","summary":"文章讨论了微软邮件服务拒绝接收邮件的问题，分析可能的原因及对邮件发送者的影响。值得关注，因为它涉及邮件投递可靠性和大型邮件服务商的过滤策略。"},{"id":"rss-c986fa76ab6d","title":"Let’s Talk About Why all This OT Stuff is Connected","url":"https://tisiphone.net/2026/11/08/lets-talk-about-why-all-this-ot-stuff-is-connected/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-09T12:22:39","author":"tisiphone.net via polywolf","text":"<p><a href=\"https://lobste.rs/s/jxigk6/let_s_talk_about_why_all_this_ot_stuff_is\">Comments</a></p>","summary":"文章探讨了运营技术（OT）设备为何普遍联网，分析其背后的原因与安全风险。对于工业控制系统安全从业者而言，这是一篇关于 OT 联网趋势与隐患的深入思考。"},{"id":"rss-0f7d80d98938","title":"Terminal2Shell: Critical flaw grants instant shell access on every major OS","url":"https://terminal2shell.com/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-09T15:41:50","author":"terminal2shell.com via whjms","text":"<p><a href=\"https://lobste.rs/s/vghqe8/terminal2shell_critical_flaw_grants\">Comments</a></p>","summary":"Terminal2Shell 披露了一个影响所有主流操作系统的严重漏洞，可导致攻击者瞬间获得 shell 访问权限。值得高度关注，因为它是一个跨平台的严重安全缺陷，可能影响大量系统。"}],"locale":"zh"}]
+f:null
