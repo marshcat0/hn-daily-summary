@@ -5,113 +5,101 @@
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
 c:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
 d:"$Sreact.suspense"
-5:T1811,# 今日 Design 领域热门文章分析（15 篇）
+5:T1805,# Design 领域热门内容分析（2026年11月）
 
-> 说明：今日 15 篇文章全部来自 Sidebar.io 一个来源，评分与评论数均为 0，因此无法做跨平台热度对比。以下按主题分组综合梳理。
+> 说明：今日 15 篇文章全部来自 Sidebar.io 聚合源（该源本身汇集了设计/产品领域多个博客与 Newsletter 的内容），因此"多来源综合"主要体现在文章原始出处（个人博客、Anthropic Research、UX Collective、Substack 等）的多样性上。所有文章当前评分与评论数均为 0，说明这是聚合推送而非社区热议榜单，分析以内容价值为主。
 
 
-## 一、AI 与设计实践：设计师如何与 AI 共处（5 篇）
+## 一、AI 与设计/开发工作流（6 篇）
 
-这是今日最集中的主题，核心争论是"AI 时代设计师的价值在哪里"。
+这是今日最集中的主题，核心张力是"AI 该做什么、人该做什么"。
 
-**1. Please use AI**
-主张在创作中主动使用 AI。标题本身即立场，适合作为"拥抱工具"一派的入口阅读。
+**1. Don't make a human do what AI is amazing at**
+作者 Johnny Nunemaker 分享用自建机器人 Nunebot 自动完成应用维护中的琐碎工作。值得关注：一个具体、可复制的"AI 做苦力、人做判断"的实践样本。
+🔗 https://www.johnnunemaker.com/dont-make-a-human-do-what-ai-is-amazing-at/
+
+**4. The components of agent memory**
+Anthropic 官方研究文章，讨论 Claude 如何决定"什么值得记住"——在知道下一步之前就要做记忆取舍。值得关注：这是 Agent 产品设计的底层能力拆解，对设计 AI 产品交互有直接参考价值。
+🔗 https://www.anthropic.com/research/components-of-agent-memory
+
+**6. Please use AI**
+Shawn Smucker 的立场性短文，呼吁创作者在创作过程中使用 AI。值得关注：代表了创作社群中"拥抱派"的声音，可作为对立观点样本阅读。
 🔗 https://shawnsmucker.substack.com/p/please-use-ai
 
-**7. Otherwise you're just a machine**
-UX Collective 文章，观点与上篇形成互补：AI 越来越会做设计，设计师也必须进化，否则人就沦为机器。值得关注的是它对"设计师能力升级"的具体论述。
+**12. Otherwise you're just a machine**
+UX Collective 文章，论点尖锐：AI 越来越会做设计，设计师也必须进化，否则"你只是一台机器"。值得关注：直击设计师职业焦虑的核心命题。
 🔗 https://uxdesign.cc/otherwise-youre-just-a-machine-a9d3b21179b5
 
-**8. What does design system AI readiness mean, anyway?**
-讨论设计系统的"AI 就绪度"。作者提出一个反直觉观点：关键不在于产出机器可读的资产，而在于人在回路（human-in-the-loop）中的位置。对做设计系统的人很有启发。
+**13. What does design system AI readiness mean, anyway?**
+Sean Voisen 质疑"设计系统 AI 就绪"的流行说法，认为重点不在机器可读的产物，而在"人留在回路中的位置"。值得关注：对当下设计系统领域最热 buzzword 的冷静祛魅。
 🔗 https://seanvoisen.com/writing/design-system-ai-readiness/
 
-**11. Everyone is building AI agents. Who's designing the stop button?**
-今日最具批判性的一篇。AI 是非确定性的，但产品不能是——最困难的设计决策恰恰发生在"自主性结束的地方"。涉及 AI 产品的可控性、中断与信任设计。
-🔗 https://uxdesign.cc/your-ai-is-non-deterministic-but-your-product-cant-be-3ec2a0cf870c
-
-**14. Attention is all you need**
-Long Now 出品的"来自未来的报告"，谈 AI、注意力与文明的维护。视角宏大，偏思辨而非实操，适合作为设计伦理与长期主义的背景阅读。
-🔗 https://longnow.org/ideas/attention-ai-pace-layers/
-
-
-## 二、字体与排版设计（2 篇）
-
-**12. A sans serif built on oversized round shapes**
-Superior Type 的新字体 Heaven：一种建立在"超出空间的大圆形状"上的粗野主义 grotesque。对品牌与视觉设计从业者是很好的字形案例。
-🔗 https://the-brandidentity.com/typeface/superior-types-heaven-is-a-sans-serif-built-on-oversized-round-shapes
-
-**13. Tokenizer Mono**
-极客趣味十足：一款等宽字体，打字时高亮 LLM token。实现方式尤其值得关注——不用 JavaScript，纯靠 OpenType 替换规则和颜色表完成。是"字体即界面逻辑"的精彩示范。
-🔗 https://george.mand.is/2026/11/the-tokenizer-font/
-
-
-## 三、前端交互与 Web 体验（4 篇）
-
-**3. Blossom carousel**
-轮播组件的新思路：用拖拽增强原生滚动，而不是替换它。对注重可访问性与性能的前端设计师有参考价值。
-🔗 https://blossom-carousel.com/
-
-**9. edge-aura**
-零依赖 Canvas 2D 引擎（附轻量 React 适配器），在屏幕边缘生成有机光晕。适合研究氛围感视觉与轻量动效实现。
-🔗 https://edge-aura.js.org/
-
-**10. Site Seeing**
-Ahmad Shadeed 的文章，讲如何观察网页在强制异常视口尺寸下的表现。响应式设计与布局健壮性的实用方法。
-🔗 https://ishadeed.com/article/beyond-the-viewport/
-
-**15. A-Frame**
-WebVR 框架，用 HTML 与实体组件构建虚拟现实体验，兼容 Vive、Rift、桌面与移动端。虽是成熟项目，但在空间设计回潮的当下仍值得重看。
-🔗 https://aframe.io/
-
-
-## 四、产品策略与产品思维（2 篇）
-
-**4. What product strategy does**
-Dave 的研究文章，聚焦产品战略的实质：维护与重建关键关系。适合产品设计师理解"设计之外"的战略层。
-🔗 https://www.davesresearch.com/product-strategy/?utm_source=tldrproduct
-
-**5. Customer or product?**
-一个互动小工具：把你家人使用的 App 排序，看看你"看不见的价格"。以轻量交互揭示产品商业模式，是"用设计讲清复杂问题"的好案例。
-🔗 https://customerorproduct.org/
-
-
-## 五、写作工具与设计奖项（2 篇）
-
-**2. TK**
-Medium 推出的新写作方式，"写得越多，它变得越好"。属于写作工具/编辑器体验方向，值得关注其交互设计思路。
+**7. TK（Medium 新写作工具）**
+Medium 推出的新写作方式，"写得越多，它越好"。值得关注：主流内容平台将 AI 写作辅助产品化的动向，属于工具层信号。
 🔗 https://tk.xyz/
 
-**6. Vote in Readymag Websites of the Year 2026**
-Readymag 年度网站奖投票，展示用该工具做出的创意网站短名单。是浏览优秀网页设计作品集的好机会。
+
+## 二、设计系统与产品策略（3 篇）
+
+**5. There's no better name for design systems**
+Karolina Szczur 讨论跨职能沟通中如何谈论设计系统，主张这是"翻译"而非"改名"。值得关注：设计系统落地难的根源往往在沟通而非技术，此文给出组织视角。
+🔗 https://karolinaszczur.com/journal/translation-not-rebranding/
+
+**9. What product strategy does**
+Dave 的文章聚焦产品战略的真正职能：维护和重建关键关系。值得关注：把"战略"从文档和框架拉回到人际与组织现实。
+🔗 https://www.davesresearch.com/product-strategy/?utm_source=tldrproduct
+
+**3. A family tree of software job titles**
+梳理软件行业职位名称的演变谱系。值得关注：对理解"产品设计师""设计工程师"等头衔漂移有历史纵深感，也侧面反映设计职能在工程组织中的位置变化。
+🔗 https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/
+
+
+## 三、前端交互与视觉实现（3 篇）
+
+**8. Blossom carousel**
+一个轮播组件，思路是"增强原生滚动"（加入拖拽）而非替换它。值得关注：符合渐进增强理念的交互实现范式，对追求可访问性的前端设计有参考价值。
+🔗 https://blossom-carousel.com/
+
+**14. edge-aura**
+零依赖 Canvas 2D 引擎（附轻量 React 适配器），在屏幕边缘渲染有机光晕效果。值得关注：小而美的视觉润色工具，展示了"氛围感 UI"的低成本实现路径。
+🔗 https://edge-aura.js.org/
+
+**15. Site Seeing（Beyond the Viewport）**
+Ahmad Shadeed 的文章，演示网页在强制异常视口尺寸下的行为。值得关注：响应式设计压力测试的实用方法论，来自 CSS 领域高信誉作者。
+🔗 https://ishadeed.com/article/beyond-the-viewport/
+
+
+## 四、体验设计与批判性项目（3 篇）
+
+**2. 1 in 8 billion**
+互动体验项目：让你成为此刻出生的某个婴儿，在 172 个国家和地区的真实统计数据中度过一生。值得关注：数据叙事 + 共情设计的优秀案例，是"用设计让人理解宏观现实"的范本。
+🔗 https://1in8b.life/en/
+
+**10. Customer or product?**
+一个小工具，帮你梳理家庭使用的应用并揭示"看不见的价格"。值得关注：把隐私/商业模式议题做成可交互体验，属于批判性设计的轻量实践。
+🔗 https://customerorproduct.org/
+
+**11. Readymag Websites of the Year 2026 投票**
+Readymag 年度网站奖短名单公布并开放投票。值得关注：了解当下视觉设计工具生态与创意网页风向的窗口。
 🔗 https://bit.ly/side-mag5
 
 
-## 今日最值得阅读的 3–5 篇推荐
+## 今日最值得阅读的 3 篇推荐
 
-1. **#11 Everyone is building AI agents. Who's designing the stop button?**
-   理由：今日最具原创性的设计议题——AI 自主性的边界与"停止"交互，直接关系到 AI 产品的可信度设计。
-   🔗 https://uxdesign.cc/your-ai-is-non-deterministic-but-your-product-cant-be-3ec2a0cf870c
+1. **The components of agent memory**（Anthropic）
+   理由：今日唯一的一手研究内容，直接关系到 AI 产品的交互与信息架构设计，长期价值最高。
+   🔗 https://www.anthropic.com/research/components-of-agent-memory
 
-2. **#8 What does design system AI readiness mean, anyway?**
-   理由：给"设计系统 + AI"这个热词提供了清醒的落地视角，强调人在回路，适合团队内部讨论引用。
-   🔗 https://seanvoisen.com/writing/design-system-ai-readiness/
-
-3. **#13 Tokenizer Mono**
-   理由：纯 OpenType 实现 token 高亮，是字体技术与开发者体验结合的巧妙案例，技术与设计双向可读。
-   🔗 https://george.mand.is/2026/11/the-tokenizer-font/
-
-4. **#7 Otherwise you're just a machine**
-   理由：与 #1 形成观点对读，帮助设计师理清"用 AI"与"被 AI 替代"之间的能力路径。
+2. **Otherwise you're just a machine**（UX Collective）
+   理由：把"设计师 vs AI"的焦虑转化为具体的能力要求，适合作为团队讨论的引子。
    🔗 https://uxdesign.cc/otherwise-youre-just-a-machine-a9d3b21179b5
 
-5. **#10 Site Seeing**
-   理由：少见的"布局健壮性"实操文，响应式设计者可直接上手验证自己的页面。
-   🔗 https://ishadeed.com/article/beyond-the-viewport/
+3. **What does design system AI readiness mean, anyway?**（Sean Voisen）
+   理由：对热门概念做结构性反思，观点清晰且可操作，是设计系统从业者本周必读。
+   🔗 https://seanvoisen.com/writing/design-system-ai-readiness/
 
-
-**总体观察**：今日 Design 内容明显被"AI 与设计师关系"主导（5/15），且讨论已从"要不要用 AI"转向"AI 产品的可控性设计"和"设计系统的 AI 就绪度"等更深层问题；字体类内容（2 篇）质量突出，均带有技术巧思；交互与前端类偏工具与实现细节。由于全部来自单一来源且无社区讨论数据，建议对高分推荐篇目自行到 Hacker News / Reddit 检索二次讨论。0:{"buildId":"73Bv33Ys7JvpanYUvPHi_","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-11-11","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":19},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"design","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Design"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"UI/UX design, product design, and visual design"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[15," ","articles"," • ","2026-11-11"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Design","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",15,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Sidebar.io",{"sourceName":"Sidebar.io","articles":[{"id":"rss-901e56bd88de","title":"Please use AI","url":"https://shawnsmucker.substack.com/p/please-use-ai","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-10T07:34:44","author":"unknown","text":"<p>Be sure to use AI when making.</p>\n<br /><br />","summary":"文章简短呼吁在创作过程中使用AI工具，反映了AI辅助设计日益普及的趋势，值得关注AI如何改变创意工作流程。"},{"id":"rss-06b84e724fa9","title":"TK","url":"https://tk.xyz/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-10T07:33:00","author":"unknown","text":"<p>A new way to write from Medium. The more you write, the better it gets.</p>\n<br /><br />","summary":"介绍TK这一来自Medium的全新写作方式，强调写得越多体验越好，值得关注写作工具如何通过使用反馈持续优化。"},{"id":"rss-82913199001b","title":"Blossom carousel","url":"https://blossom-carousel.com/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-10T07:32:33","author":"unknown","text":"<p>Enhance native scrolling with dragging instead of replacing it.</p>\n<br /><br />","summary":"Blossom轮播组件在保留原生滚动的基础上增加拖拽交互，而非替换原生行为，值得前端开发者关注这种渐进增强的设计思路。"},{"id":"rss-c4fc49c56090","title":"What product strategy does","url":"https://www.davesresearch.com/product-strategy/?utm_source=tldrproduct","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-10T07:32:00","author":"unknown","text":"<p>On maintaining and rebuilding critical relationships.</p>\n<br /><br />","summary":"探讨产品战略在维护和重建关键关系方面的作用，提醒产品从业者战略不仅是规划，更是关系管理。"},{"id":"rss-f5ede041d79f","title":"Customer or product?","url":"https://customerorproduct.org/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-10T07:31:09","author":"unknown","text":"<p>Sort the apps your family uses and see the price you can’t see.</p>\n<br /><br />","summary":"通过整理家庭使用的应用来揭示隐藏的价格成本，帮助用户看清客户与产品之间的真实关系，值得关注数字消费透明度。"},{"id":"rss-b828c9ac9e33","title":"Vote in Readymag Websites of the Year 2026","url":"https://bit.ly/side-mag5","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-09T05:05:00","author":"unknown","text":"<p>The award spotlights inventive projects made with Readymag, a design tool for creating outstanding websites. Explore the shortlist and vote.</p>\n<br /><br />","summary":"Readymag年度网站评选2026开放投票，展示用该设计工具创作的创新项目，值得关注网页设计领域的前沿作品与趋势。"},{"id":"rss-c0f906c56d17","title":"Otherwise you’re just a machine","url":"https://uxdesign.cc/otherwise-youre-just-a-machine-a9d3b21179b5","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-09T05:04:00","author":"unknown","text":"<p>AI is getting better at design. Designers should too.</p>\n<br /><br />","summary":"文章指出AI在设计领域越来越强，设计师也必须提升自身能力，否则就只是机器，值得设计从业者反思AI时代的核心竞争力。"},{"id":"rss-4407b9bb32b3","title":"What does design system AI readiness mean, anyway?","url":"https://seanvoisen.com/writing/design-system-ai-readiness/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-09T05:03:00","author":"unknown","text":"<p>Maybe it’s less about machine-legible artifacts and more about where humans stay in the loop.</p>\n<br /><br />","summary":"探讨设计系统的AI就绪度，认为关键不在于机器可读的产物，而在于人类如何保持在回路中，值得关注AI与设计系统结合的实际落地方式。"},{"id":"rss-8e6ddc370496","title":"edge-aura","url":"https://edge-aura.js.org/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-09T05:02:00","author":"unknown","text":"<p>An organic glow that hugs the edge of your screen. Zero-dependency Canvas 2D engine with a thin React adapter.</p>\n<br /><br />","summary":"edge-aura是一个零依赖的Canvas 2D引擎，能在屏幕边缘产生有机光晕效果，并提供轻量React适配器，值得关注其轻量化的视觉增强方案。"},{"id":"rss-ff3c74162f2f","title":"Site Seeing","url":"https://ishadeed.com/article/beyond-the-viewport/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-09T05:01:00","author":"unknown","text":"<p>See how a web page will behave in different contexts that force unusual viewport sizes.</p>\n<br /><br />","summary":"文章展示网页在强制非常规视口尺寸下的行为表现，帮助开发者理解响应式设计在极端场景下的表现，值得前端开发者参考。"},{"id":"rss-9857ff58f93d","title":"Everyone is building AI agents. Who’s designing the stop button?","url":"https://uxdesign.cc/your-ai-is-non-deterministic-but-your-product-cant-be-3ec2a0cf870c","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-06T04:21:29","author":"unknown","text":"<p>Here’s why the hardest design decisions happen where that autonomy ends.</p>\n<br /><br />","summary":"文章探讨了AI代理设计中“停止按钮”的重要性，指出最困难的设计决策发生在自主性边界处。值得关注，因为它揭示了AI产品设计中安全与控制的关键挑战。"},{"id":"rss-1202a95245c5","title":"A sans serif built on oversized round shapes","url":"https://the-brandidentity.com/typeface/superior-types-heaven-is-a-sans-serif-built-on-oversized-round-shapes","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-06T04:20:55","author":"unknown","text":"<p>Superior Type’s Heaven is a brutalist grotesque built on round shapes that are too big for their space.</p>\n<br /><br />","summary":"文章介绍了一款名为Heaven的无衬线字体，基于超大圆形形状构建，具有粗野主义风格。值得关注，因为它展示了字体设计中的创新视觉语言。"},{"id":"rss-0eed16ef3b90","title":"Tokenizer Mono","url":"https://george.mand.is/2026/11/the-tokenizer-font/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-06T04:20:10","author":"unknown","text":"<p>A monospace font that highlights LLM tokens as you type. No JavaScript, just OpenType substitution rules and a color table.</p>\n<br /><br />","summary":"文章介绍了一款等宽字体Tokenizer Mono，能在输入时高亮显示LLM令牌，仅使用OpenType替换规则和颜色表实现，无需JavaScript。值得关注，因为它以纯字体技术实现了智能文本标注。"},{"id":"rss-8086f9fa3948","title":"Attention is all you need","url":"https://longnow.org/ideas/attention-ai-pace-layers/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-06T04:19:24","author":"unknown","text":"<p>A report from the future on AI, attention, and the maintenance of civilization</p>\n<br /><br />","summary":"文章是一份来自未来的关于AI、注意力与文明维护的报告。值得关注，因为它从长远视角思考AI对人类社会注意力的影响。"},{"id":"rss-c14fa39b5768","title":"A-Frame","url":"https://aframe.io/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-06T04:18:55","author":"unknown","text":"<p>A web framework for building virtual reality experiences. Make WebVR with HTML and Entity-Component. Works on Vive, Rift, desktop, mobile.</p>\n<br /><br />","summary":"文章介绍了A-Frame，一个用于构建虚拟现实体验的Web框架，支持HTML和实体组件，可在多种设备上运行。值得关注，因为它降低了WebVR开发的门槛。"}],"locale":"en"}]]}]]}]
+> 补充观察：今日内容呈现两条主线——**AI 重新划分人机分工**（工作流、记忆、设计系统就绪度）与**设计作为理解世界的媒介**（1in8b、Customer or product）。前者是行业焦虑与技术演进，后者提醒设计不可替代的价值恰在于共情与叙事。0:{"buildId":"V6lq1Tn8u3sn9d5lYXUmz","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-11-12","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":14},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"design","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Design"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"UI/UX design, product design, and visual design"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[15," ","articles"," • ","2026-11-12"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Design","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",15,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Sidebar.io",{"sourceName":"Sidebar.io","articles":[{"id":"rss-c8b82a86da47","title":"Don’t make a human do what AI is amazing at","url":"https://www.johnnunemaker.com/dont-make-a-human-do-what-ai-is-amazing-at/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-11T06:35:14","author":"unknown","text":"<p>How Nunebot makes my apps a little better every day without me doing the tedious parts.</p>\n<br /><br />","summary":"文章介绍如何利用Nunebot让AI处理应用开发中的繁琐任务，从而让人类专注于更有价值的工作。值得关注的是它展示了AI与人类协作提升效率的实用模式。"},{"id":"rss-f2ae3e016bc9","title":"1 in 8 billion","url":"https://1in8b.life/en/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-11T06:33:56","author":"unknown","text":"<p>Become one of the babies being born right now and live their whole life inside the real statistics of 172 countries and territories.</p>\n<br /><br />","summary":"这是一个互动体验项目，让用户成为此刻出生的婴儿，基于172个国家和地区的真实统计数据体验其一生。值得关注的是它以数据可视化方式呈现全球人口命运差异。"},{"id":"rss-4e98356d6186","title":"A family tree of software job titles","url":"https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-11T06:33:29","author":"unknown","text":"<p>If you’ve been in this industry for any length of time you’ll have seen titles come and go, and you might have wondered where they all came from.</p>\n<br /><br />","summary":"文章梳理了软件行业各种职位头衔的起源与演变，帮助从业者理解职称变迁背后的行业逻辑。值得关注的是它为技术从业者提供了职业发展脉络的参考。"},{"id":"rss-76d9c4d69596","title":"The components of agent memory","url":"https://www.anthropic.com/research/components-of-agent-memory","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-11T06:32:11","author":"unknown","text":"<p>For Claude to learn from experience, it has to decide what’s worth remembering before it knows what’s next.</p>\n<br /><br />","summary":"Anthropic研究探讨AI代理记忆的组成部分，分析Claude如何决定哪些经验值得记住。值得关注的是它揭示了AI从经验中学习的关键机制。"},{"id":"rss-a237f7b6c35c","title":"There’s no better name for design systems","url":"https://karolinaszczur.com/journal/translation-not-rebranding/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-11T06:31:39","author":"unknown","text":"<p>How to talk about design systems across functions.</p>\n<br /><br />","summary":"文章讨论如何跨职能沟通设计系统，并论证“设计系统”这一名称的合理性。值得关注的是它为设计系统团队提供了有效的沟通框架。"},{"id":"rss-901e56bd88de","title":"Please use AI","url":"https://shawnsmucker.substack.com/p/please-use-ai","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-10T07:34:44","author":"unknown","text":"<p>Be sure to use AI when making.</p>\n<br /><br />","summary":"文章呼吁在创作过程中积极使用AI工具。值得关注的是它反映了AI辅助创作日益普及的趋势。"},{"id":"rss-06b84e724fa9","title":"TK","url":"https://tk.xyz/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-10T07:33:00","author":"unknown","text":"<p>A new way to write from Medium. The more you write, the better it gets.</p>\n<br /><br />","summary":"TK是Medium推出的新型写作工具，号称写得越多效果越好。值得关注的是它可能改变内容创作者的写作体验。"},{"id":"rss-82913199001b","title":"Blossom carousel","url":"https://blossom-carousel.com/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-10T07:32:33","author":"unknown","text":"<p>Enhance native scrolling with dragging instead of replacing it.</p>\n<br /><br />","summary":"Blossom Carousel是一个轮播组件，通过拖拽增强原生滚动而非替换它。值得关注的是它提供了更自然的交互方式。"},{"id":"rss-c4fc49c56090","title":"What product strategy does","url":"https://www.davesresearch.com/product-strategy/?utm_source=tldrproduct","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-10T07:32:00","author":"unknown","text":"<p>On maintaining and rebuilding critical relationships.</p>\n<br /><br />","summary":"文章阐述产品战略的作用，重点讨论如何维护和重建关键关系。值得关注的是它从关系管理角度解读产品战略。"},{"id":"rss-f5ede041d79f","title":"Customer or product?","url":"https://customerorproduct.org/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-10T07:31:09","author":"unknown","text":"<p>Sort the apps your family uses and see the price you can’t see.</p>\n<br /><br />","summary":"该项目让用户分类家庭使用的应用，并揭示隐藏的成本代价。值得关注的是它引发人们对免费应用背后商业模式的思考。"},{"id":"rss-b828c9ac9e33","title":"Vote in Readymag Websites of the Year 2026","url":"https://bit.ly/side-mag5","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-09T05:05:00","author":"unknown","text":"<p>The award spotlights inventive projects made with Readymag, a design tool for creating outstanding websites. Explore the shortlist and vote.</p>\n<br /><br />","summary":"介绍Readymag年度网站奖投票活动，该奖项聚焦用Readymag设计工具创作的创新项目，值得关注以了解前沿网页设计趋势。"},{"id":"rss-c0f906c56d17","title":"Otherwise you’re just a machine","url":"https://uxdesign.cc/otherwise-youre-just-a-machine-a9d3b21179b5","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-09T05:04:00","author":"unknown","text":"<p>AI is getting better at design. Designers should too.</p>\n<br /><br />","summary":"探讨AI在设计领域日益精进背景下设计师应如何提升自身能力，值得关注以思考人类设计师的独特价值。"},{"id":"rss-4407b9bb32b3","title":"What does design system AI readiness mean, anyway?","url":"https://seanvoisen.com/writing/design-system-ai-readiness/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-09T05:03:00","author":"unknown","text":"<p>Maybe it’s less about machine-legible artifacts and more about where humans stay in the loop.</p>\n<br /><br />","summary":"分析设计系统的AI就绪度含义，指出重点可能不在机器可读的产物，而在于人类如何保持参与，值得关注以理解AI与设计系统的结合。"},{"id":"rss-8e6ddc370496","title":"edge-aura","url":"https://edge-aura.js.org/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-09T05:02:00","author":"unknown","text":"<p>An organic glow that hugs the edge of your screen. Zero-dependency Canvas 2D engine with a thin React adapter.</p>\n<br /><br />","summary":"介绍一个零依赖的Canvas 2D引擎edge-aura，能在屏幕边缘产生有机光晕效果，并提供轻量React适配器，值得关注用于前端视觉增强。"},{"id":"rss-ff3c74162f2f","title":"Site Seeing","url":"https://ishadeed.com/article/beyond-the-viewport/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-09T05:01:00","author":"unknown","text":"<p>See how a web page will behave in different contexts that force unusual viewport sizes.</p>\n<br /><br />","summary":"讲解如何查看网页在强制异常视口尺寸下的表现，值得关注以提升响应式设计的测试与适配能力。"}],"locale":"en"}]]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["Generated by"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","Powered by DeepSeek"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
