@@ -1,0 +1,436 @@
+1:"$Sreact.fragment"
+2:I[33453,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"Header"]
+3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
+4:I[4561,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],""]
+5:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
+e:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
+14:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+15:"$Sreact.suspense"
+6:T2356,# 今日 AI & Machine Learning 热门内容综合分析
+
+> 说明：本次 15 篇文章全部来自 Hacker News，Reddit 与 RSS 订阅源今日未提供条目。整体来看，讨论热度高度集中在 **AI 生成代码的治理与安全** 和 **AI Agent 的实际工程应用** 两条主线上；同时有若干篇与 AI 无直接关系的高分文章（航天发射失败、Tor 安全、邮件客户端等），下文会如实归类并说明其与主题的关联度。
+
+
+## 一、AI 生成代码的治理、安全与开源伦理（今日最热）
+
+这是今日讨论量最大、争议最强的子主题，核心问题是：AI 写出来的代码，责任与权属如何界定？
+
+**1. All AI-generated code should be Open Source**
+- 说明：作者主张所有 AI 生成的代码都应开源，理由是 AI 训练数据本身来自公共代码库，产出物理应回流公共领域。该文以 1116 分、599 条评论成为今日绝对头条，评论区围绕许可证兼容性、商业机密、责任归属展开激烈辩论。
+- 原文：https://jakub.jankiewicz.org/blog/ai-code-open-source/
+- 讨论：https://news.ycombinator.com/item?id=50507303
+
+**2. Lovable apps expose passport details and more than 200K private messages**
+- 说明：对 "vibe coding" 平台 Lovable 生成应用的实测研究，发现大量应用存在严重数据暴露问题，包括护照信息和超过 20 万条私信。这是对"AI 快速生成应用"安全性的直接警示，与第 1 篇形成"开源 vs 安全"的呼应，976 分说明社区高度关注。
+- 原文：https://www.crissyfield.de/research/lovable-en/
+- 讨论：https://news.ycombinator.com/item?id=50499017
+
+**12. Tell HN: HN is being scraped for emails to scam**
+- 说明：用户提醒 Hacker News 的公开邮箱（如 Who's for Hire 板块）正被爬取用于钓鱼诈骗，作者本人已收到伪造的 AWS 付款邮件。虽非 AI 主题，但与"AI 爬虫/Agent 大规模抓取公开数据"的现实风险直接相关，值得与第 2 篇并读。
+- 原文：无（纯讨论帖）
+- 讨论：https://news.ycombinator.com/item?id=50513451
+
+
+## 二、AI Agent 与 Coding Agent 的工程实践
+
+这一组展示了 LLM 编程助手从"写代码"走向"改造物理世界"和"设计硬件"的边界拓展。
+
+**3. Claude Code and Codex reverse engineered my 1994 Jeep's ECU over a $3 Arduino [视频]**
+- 说明：用 Claude Code 与 Codex 配合一块 3 美元的 Arduino，逆向工程 1994 年吉普车的发动机控制单元。这是今日最具传播力的"Agent 实战"案例，直观展示了 AI 编程工具在嵌入式与逆向工程场景的能力边界。
+- 原文：https://www.youtube.com/watch?v=WPj3aQ-xxpI
+- 讨论：https://news.ycombinator.com/item?id=50463399
+
+**13. Agentic AI Designs an Analog Synthesizer**
+- 说明：记录 Agentic AI 参与设计一台模拟合成器的过程（来自 cpldcpu 的技术博客）。热度不高但内容硬核，是"AI Agent 进入硬件设计流程"的早期样本，适合关注 Agent 落地的人跟踪。
+- 原文：https://cpldcpu.github.io/2026/11/14/touchsynth/
+- 讨论：https://news.ycombinator.com/item?id=50512933
+
+**8. WebGL Flight Simulator with seed generated terrain**
+- 说明：基于种子生成地形的 WebGL 飞行模拟器，浏览器内可直接体验。属于"程序化生成 + 前端图形"的创意项目，与生成式 AI 的"生成"思路同源但非模型驱动，可作为技术趣味条目阅读。
+- 原文：https://baron.by.dai.studio/
+- 讨论：https://news.ycombinator.com/item?id=50510296
+
+
+## 三、LLM 基础原理与推理效率
+
+面向想深入理解模型内部机制与部署成本的读者，今日有一篇高质量科普和一篇工程优化文章。
+
+**4. Understanding Positional Embeddings in Modern LLMs**
+- 说明：Sebastian Raschka 撰写的现代 LLM 位置编码解析，系统梳理从绝对位置编码到 RoPE 等方案的演进。作者是该领域最受信任的科普者之一，217 分说明技术读者认可度高，是今日最值得收藏的原理类文章。
+- 原文：https://magazine.sebastianraschka.com/p/understanding-positional-embeddings
+- 讨论：https://news.ycombinator.com/item?id=50506376
+
+**15. The efficient frontier of LLM inference**
+- 说明：Baseten 工程博客，讨论 LLM 推理的效率前沿，重点涉及量化（quantization）等手段在延迟、吞吐与精度之间的权衡。分数仅 4 分、暂无评论，但内容对做推理部署的工程师有直接参考价值，属于"低热度高实用"类型。
+- 原文：https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference/#quantization
+- 讨论：https://news.ycombinator.com/item?id=50512233
+
+**6. Qwen4-Max**
+- 说明：Qwen 官方博客发布 Qwen4-Max，是今日唯一的一手模型发布信息，代表国产大模型旗舰系列的最新迭代。对关注开源/闭源模型竞争格局的读者是必读条目，185 分表明社区反应积极。
+- 原文：https://qwen.ai/blog?id=qwen4-max
+- 讨论：https://news.ycombinator.com/item?id=50513215
+
+
+## 四、安全与隐私（与 AI 主题间接相关）
+
+**10. Tor Project Issues Rapid-Response DoS-Defense Fix Amid Sustained DDoS Attack**
+- 说明：Tor 项目在持续 DDoS 攻击下发布 0.4.9.17 安全版本，加入快速响应的 DoS 防御修复。与 AI 无直接关系，但涉及隐私基础设施韧性，对关注 AI 数据隐私与匿名网络的读者有参考意义。
+- 原文：https://forum.torproject.org/t/security-release-0-4-9-17/22454
+- 讨论：https://news.ycombinator.com/item?id=50512441
+
+**11. Keylogger Detection and Containment [PDF]**
+- 说明：一篇关于键盘记录器检测与遏制的学位论文（PDF），属于终端安全方向。热度很低（20 分），但与第 12 篇的账号安全提醒形成"攻防"互补，安全从业者可作资料留存。
+- 原文：https://www.cs.vu.nl/~ast/Theses/ortolani-thesis.pdf
+- 讨论：https://news.ycombinator.com/item?id=50492012
+
+
+## 五、非 AI 高分条目（如实收录）
+
+**5. A short explainer on how El Niño works [视频]**
+- 说明：厄尔尼诺现象科普短视频，与 AI 无关，但因通俗易懂获得 194 分。仅作完整性收录。
+- 原文：https://www.youtube.com/watch?v=7_JF3etiAv8
+- 讨论：https://news.ycombinator.com/item?id=50509308
+
+**7. Vulcan rocket fails during return-to-flight launch, 40 Amazon satellites lost**
+- 说明：ULA Vulcan 火箭复飞任务失败，40 颗亚马逊卫星损毁（Space.com 报道）。
+- 原文：https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch
+- 讨论：https://news.ycombinator.com/item?id=50510442
+
+**9. Boeing-Lockheed rocket fails mid-flight, destroys payload of Amazon satellites**
+- 说明：与第 7 篇为同一事件的路透社报道，视角偏商业与保险层面，可与前一篇对照阅读。
+- 原文：https://www.reuters.com/business/aerospace-defense/us-rocket-fails-after-launch-payload-amazon-internet-satellites-destroyed-2026-11-15/
+- 讨论：https://news.ycombinator.com/item?id=50511072
+
+**14. Parcel: A desktop mail client for Linux, built with Zig**
+- 说明：用 Zig 编写的 Linux 桌面邮件客户端，属于系统编程与工具类项目，与 AI 无关，热度低（7 分）。
+- 原文：https://tangled.org/rockorager.dev/parcel
+- 讨论：https://news.ycombinator.com/item?id=50512218
+
+
+## 今日最值得阅读的 5 篇文章
+
+1. **All AI-generated code should be Open Source**（https://jakub.jankiewicz.org/blog/ai-code-open-source/）
+   今日最高分且争议最大，599 条评论本身就是一场关于 AI 代码权属、许可证与商业模式的公开辩论，是理解行业分歧的最佳入口。
+
+2. **Lovable apps expose passport details and more than 200K private messages**（https://www.crissyfield.de/research/lovable-en/）
+   用真实数据揭示"AI 生成应用"的安全代价，与第 1 篇的开源主张构成"理想 vs 现实"的对照，任何使用 vibe coding 平台的人都应阅读。
+
+3. **Understanding Positional Embeddings in Modern LLMs**（https://magazine.sebastianraschka.com/p/understanding-positional-embeddings）
+   今日质量最高的原理科普，系统性强、可信度高，适合作为长期参考资料收藏。
+
+4. **Claude Code and Codex reverse engineered my 1994 Jeep's ECU**（https://www.youtube.com/watch?v=WPj3aQ-xxpI）
+   最具观赏性的 Agent 实战案例，直观展示编程 Agent 在嵌入式逆向工程中的真实能力与局限。
+
+5. **Qwen4-Max**（https://qwen.ai/blog?id=qwen4-max）
+   今日唯一的一手模型发布，是跟踪大模型竞争格局不可跳过的一条，建议结合 HN 讨论区看社区反馈。
+
+
+**一句话总结**：今日 AI 社区的重心不在"模型又强了多少"，而在"AI 写出的东西该归谁、该多安全"——开源主张与 Lovable 数据泄露事件构成同一枚硬币的两面，而 Claude Code 逆向汽车 ECU 则展示了 Agent 能力边界的快速外扩。0:{"buildId":"4-LO106632X0Pl0G37eRe","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-11-16","locale":"zh"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":15},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"locale":"zh"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg","children":[["$","h2",null,{"className":"text-sm font-medium text-gray-500 dark:text-gray-400 mb-2","children":"历史存档"}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L4","2026-11-16",{"href":"/zh/archive/2026-11-16","className":"px-3 py-1 rounded text-sm bg-hn-orange text-white","children":"2026-11-16"}],["$","$L4","2026-02-03",{"href":"/zh/archive/2026-02-03","className":"px-3 py-1 rounded text-sm bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600","children":"2026-02-03"}]]}]]}],["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":["历史存档",": ","2026-11-16"]}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"历史技术摘要"}]]}],["$","div",null,{"className":"space-y-12","children":[["$","section","ai",{"id":"ai","children":[["$","div",null,{"className":"flex items-center gap-3 mb-6","children":[["$","h2",null,{"className":"text-2xl font-bold text-gray-900 dark:text-white","children":"AI & Machine Learning"}],["$","span",null,{"className":"text-sm text-gray-500 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded","children":[15," ","篇文章"]}]]}],["$","div",null,{"className":"space-y-6","children":[["$","$L5",null,{"summary":"$6","topicName":"AI & Machine Learning","locale":"zh"}],"$L7"]}]]}],"$L8","$L9"]}]]}],"$La"]}],["$Lb","$Lc"],"$Ld"]}],"loading":null,"isPartial":false}
+f:T44a,I know that many folks here post their personal emails in the Who&#x27;s for Hire monthly pages and other places, and want to remind you that this public site gets views from folks with ill intent (or their bots&#x2F;agents) as well. I use unique emails for every site, so I immediately knew that the late AWS payments email sent to my HN email were fake. There were other tells, but I want to remind everyone to be vigilant! HN is public but even social media sites where you supposedly can make your page private I&#x27;ve had some of those emails suddenly have spam sent to as well. Please be safe everyone!<p>My favorite tells that an email is a scam:
+- Before opening a surprising&#x2F;suspicious email, hover over the sender name to see the domain the sender came from (don&#x27;t open the email if it&#x27;s strange).
+- _If_ you already opened the email, before clicking any links in the email, hover over them to see the domain that the link sends you to.<p>There are dozens more tips but a full article would be required, and these two will prevent you from falling for nearly all of them.7:["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Le","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-50507303","title":"All AI-generated code should be Open Source","url":"https://jakub.jankiewicz.org/blog/ai-code-open-source/","source":"Hacker News","score":1116,"comments_count":599,"comments_url":"https://news.ycombinator.com/item?id=50507303","published_at":"2026-11-15T14:46:58","author":"jcubic","text":null,"summary":"文章主张所有AI生成的代码都应开源，探讨了AI编程对软件许可和知识产权的影响，值得关注因为它触及AI时代代码归属与开放性的核心争议。"},{"id":"hn-50499017","title":"Lovable apps expose passport details and more than 200K private messages","url":"https://www.crissyfield.de/research/lovable-en/","source":"Hacker News","score":976,"comments_count":372,"comments_url":"https://news.ycombinator.com/item?id=50499017","published_at":"2026-11-14T17:43:10","author":"armcat","text":null,"summary":"报道Lovable应用泄露护照信息和超过20万条私密消息的安全事件，值得关注因为它暴露了低代码/无代码平台可能带来的严重隐私风险。"},{"id":"hn-50463399","title":"Claude Code and Codex reverse engineered my 1994 Jeep's ECU over a $3 Arduino [video]","url":"https://www.youtube.com/watch?v=WPj3aQ-xxpI","source":"Hacker News","score":372,"comments_count":190,"comments_url":"https://news.ycombinator.com/item?id=50463399","published_at":"2026-11-12T05:29:24","author":"envoked","text":null,"summary":"展示如何用Claude Code和Codex配合仅3美元的Arduino逆向工程1994年Jeep的ECU，值得关注因为它体现了AI编程工具在硬件逆向工程中的实用潜力。"},{"id":"hn-50506376","title":"Understanding Positional Embeddings in Modern LLMs","url":"https://magazine.sebastianraschka.com/p/understanding-positional-embeddings","source":"Hacker News","score":217,"comments_count":27,"comments_url":"https://news.ycombinator.com/item?id=50506376","published_at":"2026-11-15T12:14:06","author":"vismit2000","text":null,"summary":"Sebastian Raschka撰文解释现代大语言模型中的位置嵌入原理，值得关注因为位置嵌入是理解LLM长上下文和架构设计的关键技术基础。"},{"id":"hn-50509308","title":"A short explainer on how El Niño works [video]","url":"https://www.youtube.com/watch?v=7_JF3etiAv8","source":"Hacker News","score":194,"comments_count":86,"comments_url":"https://news.ycombinator.com/item?id=50509308","published_at":"2026-11-15T18:23:21","author":"nharada","text":null,"summary":"一段短视频科普厄尔尼诺现象的形成机制，值得关注因为它以简明方式解释了这一影响全球气候的重要自然现象。"},{"id":"hn-50513215","title":"Qwen4-Max","url":"https://qwen.ai/blog?id=qwen4-max","source":"Hacker News","score":185,"comments_count":50,"comments_url":"https://news.ycombinator.com/item?id=50513215","published_at":"2026-11-16T02:14:44","author":"ilreb","text":null,"summary":"阿里发布Qwen4-Max模型，值得关注因为它代表国产大模型的最新进展，可能影响开源与闭源模型竞争格局。"},{"id":"hn-50510442","title":"Vulcan rocket fails during return-to-flight launch, 40 Amazon satellites lost","url":"https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch","source":"Hacker News","score":140,"comments_count":86,"comments_url":"https://news.ycombinator.com/item?id=50510442","published_at":"2026-11-15T20:37:28","author":"jonbaer","text":null,"summary":"ULA的Vulcan火箭在复飞任务中失败，导致40颗亚马逊卫星丢失，值得关注因为它影响亚马逊Kuiper互联网星座部署和商业航天竞争格局。"},{"id":"hn-50510296","title":"WebGL Flight Simulator with seed generated terrain","url":"https://baron.by.dai.studio/","source":"Hacker News","score":103,"comments_count":16,"comments_url":"https://news.ycombinator.com/item?id=50510296","published_at":"2026-11-15T20:20:05","author":"ranger_danger","text":null,"summary":"一个基于WebGL的飞行模拟器，使用种子生成地形，值得关注因为它展示了浏览器端图形技术与程序化内容生成的结合。"},{"id":"hn-50511072","title":"Boeing-Lockheed rocket fails mid-flight, destroys payload of Amazon satellites","url":"https://www.reuters.com/business/aerospace-defense/us-rocket-fails-after-launch-payload-amazon-internet-satellites-destroyed-2026-11-15/","source":"Hacker News","score":80,"comments_count":49,"comments_url":"https://news.ycombinator.com/item?id=50511072","published_at":"2026-11-15T21:38:11","author":"rexbee","text":null,"summary":"波音-洛克希德合资火箭飞行中失败并摧毁亚马逊卫星载荷，值得关注因为它与Vulcan失败事件共同凸显商业航天发射的高风险。"},{"id":"hn-50512441","title":"Tor Project Issues Rapid-Response DoS-Defense Fix Amid Sustained DDoS Attack","url":"https://forum.torproject.org/t/security-release-0-4-9-17/22454","source":"Hacker News","score":70,"comments_count":14,"comments_url":"https://news.ycombinator.com/item?id=50512441","published_at":"2026-11-16T00:21:54","author":"aillia","text":null,"summary":"Tor项目在持续DDoS攻击下发布快速响应的DoS防御修复，值得关注因为它关系到匿名网络服务的可用性和安全性。"},{"id":"hn-50492012","title":"Keylogger Detection and Containment [pdf]","url":"https://www.cs.vu.nl/~ast/Theses/ortolani-thesis.pdf","source":"Hacker News","score":20,"comments_count":2,"comments_url":"https://news.ycombinator.com/item?id=50492012","published_at":"2026-11-14T00:10:15","author":"movsx","text":null,"summary":"这篇论文探讨了键盘记录器的检测与遏制方法，对于网络安全和恶意软件防御具有参考价值。"},{"id":"hn-50513451","title":"Tell HN: HN is being scraped for emails to scam","url":null,"source":"Hacker News","score":16,"comments_count":4,"comments_url":"https://news.ycombinator.com/item?id=50513451","published_at":"2026-11-16T02:53:30","author":"eks391","text":"$f","summary":"提醒Hacker News用户该站公开邮箱正被爬取用于诈骗，值得关注以防范个人信息泄露风险。"},{"id":"hn-50512933","title":"Agentic AI Designs an Analog Synthesizer","url":"https://cpldcpu.github.io/2026/11/14/touchsynth/","source":"Hacker News","score":9,"comments_count":1,"comments_url":"https://news.ycombinator.com/item?id=50512933","published_at":"2026-11-16T01:28:10","author":"oidar","text":null,"summary":"介绍智能体AI设计模拟合成器的过程，展示了AI在创意硬件设计领域的应用潜力。"},{"id":"hn-50512218","title":"Parcel: A desktop mail client for Linux, built with Zig","url":"https://tangled.org/rockorager.dev/parcel","source":"Hacker News","score":7,"comments_count":1,"comments_url":"https://news.ycombinator.com/item?id=50512218","published_at":"2026-11-15T23:54:39","author":"nerdypepper","text":null,"summary":"介绍一款用Zig语言构建的Linux桌面邮件客户端Parcel，值得关注其技术选型与性能表现。"},{"id":"hn-50512233","title":"The efficient frontier of LLM inference","url":"https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference/#quantization","source":"Hacker News","score":4,"comments_count":0,"comments_url":"https://news.ycombinator.com/item?id=50512233","published_at":"2026-11-15T23:55:50","author":"gmays","text":null,"summary":"分析LLM推理的效率前沿，包括量化等技术优化方向，对降低大模型部署成本有参考意义。"}],"locale":"zh"}]]}]
+10:T1709,# Design 领域热门文章分析（今日 15 篇）
+
+> 说明：今日 15 篇文章全部来自 Sidebar.io 一个来源（Score 与 Comments 均为 0，讨论链接缺失），因此下文以"子主题分组 + 价值判断"的方式组织分析。整体来看，今日内容呈现出三条主线：**AI 对设计流程与设计职业的冲击**、**界面/交互设计的理论与历史**、以及**视觉文化与创意表达**。
+
+
+## 一、AI 与设计的碰撞（今日最核心议题）
+
+**1. Slop is moving up the stack**
+- 说明：作者观察到 AI Agent 生成的代码比一年前干净得多，"slop（低质垃圾产出）"正在从代码层上移到设计层。这是理解当下设计质量危机的关键视角，值得每个做产品设计的人读。
+- 原文：https://gabeorlanski.github.io/posts/slop-moves-up/
+
+**2. By taking away**
+- 说明：一个很好的隐喻——过去软件像绘画，一层层叠加；有了 Agent 之后更像雕塑，难点在于"看出该保留什么"。对设计决策方法论有启发。
+- 原文：https://haydenbleasel.com/taking-away
+
+**3. Glue work is still harmful in the age of AI**
+- 说明：虽偏工程管理，但直接关系到设计团队中"胶水工作"（协调、补位等不被奖励的劳动）的价值认定。作者主张：只能靠工程师无偿牺牲维持的流程就该被淘汰。
+- 原文：https://www.seangoedecke.com/glue-work-is-still-harmful-in-the-age-of-ai/
+
+**4. Building interfaces that understand what we want to do**
+- 说明：介绍 Chrome 正在构建的 Decisions API——在本机免费、私密地运行决策模型，让界面"理解用户意图"。这是 AI 原生交互设计的重要风向标。
+- 原文：https://agustinbarrientos.com/writing/senior-eye/interfaces-that-understand-what-we-want
+
+**5. Send and sign agreements from Claude with Lumin**
+- 说明：Lumin 连接器让用户在 Claude 对话内直接起草并发送电子签名协议，是"AI 聊天界面即工作流"的产品设计案例。
+- 原文：https://bit.ly/side-lum1
+
+
+## 二、界面与交互设计的理论与历史
+
+**6. Where the disabled button got its rule**
+- 说明：追溯 Apple 1980 年人机界面指南中关于"灰显命令"的规定，解释今天禁用按钮设计规则的来源。设计史爱好者必读。
+- 原文：https://www.hipuku.dev/writing/where-the-disabled-button-got-its-rule
+
+**7. Design is a search problem**
+- 说明：把设计重新定义为"在黑暗房间里摸黑找黑猫"的搜索过程，提供了一个反直觉但实用的设计认知框架。
+- 原文：https://mattstromawn.com/writing/design-is-a-search-problem/
+
+**8. If X, then Y**
+- 说明：短文，谈预测未来的困难——在当下这个节点几乎不可能。适合作为设计决策中"不确定性"的反思读物。
+- 原文：https://cdevroe.com/2026/11/05/if-x-then-y/
+
+
+## 三、视觉文化与创意表达
+
+**9. Iconden**
+- 说明：社区投稿的 iPhone 应用图标画廊，可浏览、追踪改版、提交在产图标。对做 App 视觉设计的人是实用灵感库。
+- 原文：https://iconden.com/
+
+**10. Airline Logos**
+- 说明：从汉莎的鹤到美联航的郁金香，讲述 12 个喷气机时代航空公司标志背后的故事。品牌视觉设计的好素材。
+- 原文：https://www.logohistories.com/p/airline-logos
+
+**11. I made a film in Excel**
+- 说明：用 Excel 做了一部电影——"从无到有"创作冲动的极致体现，是创意工具边界的有趣探索。
+- 原文：https://www.youtube.com/watch?v=sz_vI8V_k1E
+
+**12. Below the surface**
+- 说明：阿姆斯特丹南北地铁线的考古研究项目，让阿姆斯特尔河在历史叙事中"发声"。信息设计与文化叙事的优秀范例。
+- 原文：https://belowthesurface.amsterdam/en/vondsten
+
+**13. Bodega cats of New York**
+- 说明：记录纽约杂货店猫及其熟人的摄影与故事项目，是社区叙事型视觉项目的参考。
+- 原文：https://bodegacatsofnewyork.com/
+
+
+## 四、其他（工具/社区/游戏）
+
+**14. Guess the Year**
+- 说明：类似 GeoGuessr 的历史版——读事件、标年份，每轮最高 5000 分。游戏化交互设计的小案例。
+- 原文：https://chronologygame.com/guess-the-year
+
+**15. State of JavaScript 2026**
+- 说明：State of JS 调查开放填写。虽偏开发，但前端技术趋势直接影响 UI 设计的技术选型与可行性。
+- 原文：https://survey.devographics.com/en-US/survey/state-of-js/2026
+
+
+## 今日最值得阅读的 5 篇推荐
+
+| 排名 | 文章 | 推荐理由 |
+|---|---|---|
+| 1 | **Slop is moving up the stack** | 直击 AI 时代设计质量下滑的核心问题，"slop 上移"是个会被反复引用的概念。 |
+| 2 | **By taking away** | "绘画 vs 雕塑"的隐喻精准概括了 Agent 时代设计工作的本质变化。 |
+| 3 | **Building interfaces that understand what we want to do** | Chrome Decisions API 是 AI 原生交互的一手风向标，前瞻性强。 |
+| 4 | **Where the disabled button got its rule** | 从 1980 年 Apple 规则讲起，把一条日常设计规则讲透，兼具趣味与实用。 |
+| 5 | **Design is a search problem** | 提供可操作的设计认知框架，适合作为团队讨论的思维工具。 |
+
+**链接汇总**：① https://gabeorlanski.github.io/posts/slop-moves-up/ ② https://haydenbleasel.com/taking-away ③ https://agustinbarrientos.com/writing/senior-eye/interfaces-that-understand-what-we-want ④ https://www.hipuku.dev/writing/where-the-disabled-button-got-its-rule ⑤ https://mattstromawn.com/writing/design-is-a-search-problem/
+
+---
+
+**一句话总结**：今日 Design 内容的主旋律是"AI 正在重塑设计的生产方式与质量标准"——从 slop 上移、雕塑式删减，到能理解意图的界面 API，同时穿插了扎实的设计史与视觉文化内容，整体质量偏思辨型而非工具型。8:["$","section","design",{"id":"design","children":[["$","div",null,{"className":"flex items-center gap-3 mb-6","children":[["$","h2",null,{"className":"text-2xl font-bold text-gray-900 dark:text-white","children":"Design"}],["$","span",null,{"className":"text-sm text-gray-500 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded","children":[15," ","篇文章"]}]]}],["$","div",null,{"className":"space-y-6","children":[["$","$L5",null,{"summary":"$10","topicName":"Design","locale":"zh"}],"$L11"]}]]}]
+12:T263d,# 今日 Technology 热门内容分析总结
+
+## 一、航天与硬件产业
+
+**1. SpaceX 成功用发射塔捕获星舰，Flight 15 收官**
+SpaceX 在 Flight 15 任务中实现发射塔捕获星舰，是本日热度最高的文章（1660 分、1239 条评论），标志着可重复使用重型运载技术的又一里程碑。
+- 原文：https://www.spacex.com/launches/starship-flight-15
+- 讨论：https://news.ycombinator.com/item?id=50500963
+
+**2. 法院驳回 DRAM 价格操纵案撤诉动议**
+三星、SK 海力士、美光被指控串谋操纵 DRAM 价格，案件将继续审理，对内存市场与消费者价格有潜在影响。
+- 原文：https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal
+- 讨论：https://news.ycombinator.com/item?id=50502988
+
+**3. Lutnick 推动放宽与其家族生意重叠的芯片规则**
+纽约时报调查报道，涉及政策制定中的利益冲突问题，值得关注监管与产业政策的互动。
+- 原文：https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html
+- 讨论：https://news.ycombinator.com/item?id=50506180
+
+**4. MacBook Pro 的 OLED PWM 问题**
+讨论 OLED 屏幕 PWM 调光对敏感用户造成的使用体验问题——"更好的屏幕反而更难用"，是硬件选购的重要参考。
+- 原文：https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/
+- 讨论：https://news.ycombinator.com/item?id=50506719
+
+**5. Jensen Huang 可能回归 Nvidia 出任 CEO**
+路透社报道黄仁勋与盟友讨论回归 Nvidia CEO 一职，牵动 AI 芯片龙头的人事与战略走向。
+- 原文：https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/
+- 讨论：https://news.ycombinator.com/item?id=50511982
+
+**6. Nvidia 的下一步是什么？**
+Steve Blank 对 Nvidia 未来战略的分析，与上一条人事传闻形成互补阅读。
+- 原文：https://steveblank.com/2026/11/15/whats-next-for-nvidia/
+- 讨论：https://news.ycombinator.com/item?id=50512235
+
+---
+
+## 二、安全与隐私
+
+**7. Microsoft 365 宕机导致 15 名酒店客人氯气中毒**
+基础设施故障引发真实世界安全事故的典型案例，凸显关键系统依赖的风险。
+- 原文：https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html
+- 讨论：https://news.ycombinator.com/item?id=50509411
+
+**8. 旧 Bitly 链接正被劫持**
+短链接长期有效性带来的安全隐患，涉及品牌与用户信任问题。
+- 原文：https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/
+- 讨论：https://news.ycombinator.com/item?id=50511395
+
+**9. uBlock Origin 存在由网站驱动的元素选择器引发的通用 XSS**
+主流广告拦截扩展的严重漏洞，影响面广，建议用户关注修复版本。
+- 原文：https://iter.ca/post/ubo-uxss/
+- 讨论：https://news.ycombinator.com/item?id=50513160
+
+**10. 所有 AI 生成的代码都应当开源**
+关于 AI 生成代码版权与开源伦理的立场文章，适合引发讨论。
+- 原文：https://jakub.jankiewicz.org/blog/ai-code-open-source/
+- 讨论：https://lobste.rs/s/ek4fkg/all_ai_generated_code_should_be_open
+
+---
+
+## 三、编程语言与软件工程
+
+**11. Clice v1.0 发布：迈向现代 C++**
+C++ 工具链/语言服务器方向的新版本发布，C++ 开发者值得关注。
+- 原文：https://ykiko.me/en/articles/2105384023094834022/
+- 讨论：https://news.ycombinator.com/item?id=50508715
+
+**12. Rust 的 datetime 库（Jiff）**
+BurntSushi 出品的时间日期库，作者信誉与技术质量俱佳，Rust 生态重要补充。
+- 原文：https://burntsushi.net/jiff/
+- 讨论：https://lobste.rs/s/dxxvek/datetime_library_for_rust
+
+**13. 40 个大型 C 项目的内存管理调查**
+系统性梳理 C 项目内存管理实践，对系统程序员有很高参考价值。
+- 原文：https://theconsensus.dev/p/2026/11/08/c-memory-management-survey.html
+- 讨论：https://lobste.rs/s/vdxevp/memory_management_40_major_c_projects
+
+**14. Turbo Pascal 比这些东西还小（2011）**
+经典文章回顾，关于软件体积与工程美学的思考，今日仍具启发。
+- 原文：https://prog21.dadgum.com/116.html
+- 讨论：https://news.ycombinator.com/item?id=50506894
+
+**15. 500 行以内：一个 3D 建模器**
+AOSA "500 Lines or Less" 系列的经典教学项目，适合学习图形编程。
+- 原文：https://aosabook.org/en/500L/a-3d-modeller.html
+- 讨论：https://news.ycombinator.com/item?id=50483431
+
+**16. beer.drv.drv.drv**
+关于 Nix 派生（derivation）层层嵌套的技术趣文，Nix 用户会心一笑。
+- 原文：https://fzakaria.com/2026/11/14/beer-drv-drv-drv
+- 讨论：https://lobste.rs/s/md0vco/beer_drv_drv_drv
+
+**17. 街头斗殴型计算机科学家的书单**
+Nick Black 整理的硬核计算机科学阅读清单，适合系统性进阶。
+- 原文：https://nick-black.com/dankwiki/index.php?title=Book_list_for_streetfighting_computer_scientists
+- 讨论：https://news.ycombinator.com/item?id=50504718
+
+---
+
+## 四、开发工具与自托管
+
+**18. Protomaps：自托管地图瓦片已变得便宜又简单**
+自托管地图方案的成本与易用性进展，对独立开发者很有吸引力。
+- 原文：https://bruceroettgers.eu/blog/protomaps/
+- 讨论：https://news.ycombinator.com/item?id=50509837
+
+**19. Emacs 就是我的浏览器**
+用 Emacs 完成浏览器工作的极客实践，体现可扩展编辑器的边界探索。
+- 原文：https://joshblais.com/blog/emacs-as-my-browser/
+- 讨论：https://news.ycombinator.com/item?id=50507553
+
+**20. 手写体，作为一种字体**
+将个人手写转化为字体的项目，兼具工具性与设计趣味。
+- 原文：https://ductus.sorenblank.com
+- 讨论：https://news.ycombinator.com/item?id=50509972
+
+---
+
+## 五、AI 与大模型
+
+**21. 数千段对话在一个语言模型内部是什么样子**
+对 Qwen 对话状态空间的观察分析，帮助理解模型内部表征。
+- 原文：https://operator0x.com/field-notes/qwen-conversation-state-space/
+- 讨论：https://news.ycombinator.com/item?id=50481321
+
+---
+
+## 六、复古计算与游戏
+
+**22. 我最喜欢的现代 NES 游戏**
+现代同人/独立 NES 游戏推荐，复古游戏社区的热门话题（HN 与 Lobsters 双榜）。
+- 原文：https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/
+- 讨论：https://news.ycombinator.com/item?id=50503465
+- Lobsters 讨论：https://lobste.rs/s/w9j7xs/25_my_favourite_modern_nes_games
+
+**23. 用 Odin 语言写的 NES 模拟器**
+小众语言 Odin 的实战项目，兼具模拟器与语言学习价值。
+- 原文：https://lucypero.com/lucynes.html
+- 讨论：https://news.ycombinator.com/item?id=50506588
+
+---
+
+## 七、科学、数学与档案
+
+**24. 为什么部分阿波罗任务携带榴弹发射器？（2019）**
+Space StackExchange 上的经典问答，航天史冷知识。
+- 原文：https://space.stackexchange.com/questions/37775
+- 讨论：https://news.ycombinator.com/item?id=50505271
+
+**25. 乌鸦的决策速度比人类更快**
+认知科学研究，跨物种决策机制的有趣发现。
+- 原文：https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html
+- 讨论：https://news.ycombinator.com/item?id=50509023
+
+**26. 半圆填充（Semicircle Packing）**
+几何填充问题的可视化写作，数学爱好者会喜欢。
+- 原文：https://rorz.io/writing/semicircle-packing
+- 讨论：https://news.ycombinator.com/item?id=50484234
+
+**27. 化学如何演变为生物的演化故事**
+Quanta Magazine 的生命起源综述，科学传播佳作。
+- 原文：https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112/
+- 讨论：https://news.ycombinator.com/item?id=50482222
+
+**28. 保存 Salon 三十年的新闻业**
+Internet Archive 的媒体保存工作，数字档案价值的典型案例。
+- 原文：https://blog.archive.org/2026/11/12/preserving-30-years-of-salon-journalism/
+- 讨论：https://news.ycombinator.com/item?id=50511806
+
+---
+
+## 八、数据与社会
+
+**29. 众议院议员的股票交易能跑赢市场吗？8,900 笔交易的检验**
+用数据检验政客交易表现，公共监督与量化分析结合。
+- 原文：https://arkanumdata.com/research/house-trades
+- 讨论：https://news.ycombinator.com/item?id=50510005
+
+---
+
+## 今日最值得阅读的 5 篇文章推荐
+
+1. **SpaceX 发射塔捕获星舰**
+   今日绝对头条，航天工程重大节点，讨论区同样精彩。
+   https://www.spacex.com/launches/starship-flight-15
+
+2. **uBlock Origin 通用 XSS 漏洞**
+   涉及数千万用户的安全问题，建议尽快了解并检查版本。
+   https://iter.ca/post/ubo-uxss/
+
+3. **40 个大型 C 项目的内存管理调查**
+   少见的系统性工程调研，对系统级开发者价值极高。
+   https://theconsensus.dev/p/2026/11/08/c-memory-management-survey.html
+
+4. **MacBook Pro 的 OLED PWM 问题**
+   实用硬件选购参考，提醒"参数更好"不等于"体验更好"。
+   https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/
+
+5. **Jiff：Rust 的 datetime 库**
+   BurntSushi 的新作品，Rust 生态与时间处理领域都值得关注。
+   https://burntsushi.net/jiff/
+
+---
+
+**整体观察**：今日榜单呈现三条主线——航天与芯片产业的重大动态（SpaceX、DRAM 诉讼、Nvidia 人事）、安全事件的密集出现（M365 宕机、Bitly 劫持、uBlock 漏洞），以及编程社区对底层工程与复古技术的持续热情（C 内存调查、NES 模拟器、Turbo Pascal 回顾）。9:["$","section","tech",{"id":"tech","children":[["$","div",null,{"className":"flex items-center gap-3 mb-6","children":[["$","h2",null,{"className":"text-2xl font-bold text-gray-900 dark:text-white","children":"Technology"}],["$","span",null,{"className":"text-sm text-gray-500 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded","children":[30," ","篇文章"]}]]}],["$","div",null,{"className":"space-y-6","children":[["$","$L5",null,{"summary":"$12","topicName":"Technology","locale":"zh"}],"$L13"]}]]}]
+a:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["由"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","由 DeepSeek 提供支持"]}]}]}]
+b:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
+c:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
+d:["$","$L14",null,{"children":["$","$15",null,{"name":"Next.MetadataOutlet","children":"$@16"}]}]
+11:["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Le","Sidebar.io",{"sourceName":"Sidebar.io","articles":[{"id":"rss-66e967551a9c","title":"Send and sign agreements from Claude with Lumin","url":"https://bit.ly/side-lum1","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-16T05:05:00","author":"unknown","text":"<p>Need to send an agreement? Draft it in Claude and send it for eSignature with the free Lumin connector, all without leaving the chat.</p>\n<br /><br />","summary":"介绍Lumin免费连接器，可在Claude聊天中直接起草并发送协议进行电子签名，无需离开对话，值得关注因为它简化了协议签署流程。"},{"id":"rss-ea776e3b2bc8","title":"Slop is moving up the stack","url":"https://gabeorlanski.github.io/posts/slop-moves-up/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-16T05:04:00","author":"unknown","text":"<p>Agents write cleaner lines of code than a year ago. The slop moved into design... What's next?</p>\n<br /><br />","summary":"讨论AI代理生成的代码质量提升后，低质内容（slop）转移到了设计领域，并引发对下一个受影响领域的思考，值得关注因为它揭示了AI对设计行业的影响趋势。"},{"id":"rss-1ced99c45258","title":"Iconden","url":"https://iconden.com/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-16T05:03:00","author":"unknown","text":"<p>A community-submitted gallery of iPhone app icons. Browse, track redesigns, and submit icons you’ve spotted in prod.</p>\n<br /><br />","summary":"一个社区提交的iPhone应用图标画廊，可浏览、追踪重新设计并提交在生产环境中发现的图标，值得关注因为它为设计师提供了图标灵感来源。"},{"id":"rss-0941be1d2638","title":"Guess the Year","url":"https://chronologygame.com/guess-the-year","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-16T05:02:00","author":"unknown","text":"<p>Like GeoGuessr, but for history: read the event, pin its year, score up to 5,000 a round.</p>\n<br /><br />","summary":"类似GeoGuessr的历史游戏，阅读事件并猜测其年份，每轮最高得5000分，值得关注因为它以趣味方式测试历史知识。"},{"id":"rss-991b68801c85","title":"Glue work is still harmful in the age of AI","url":"https://www.seangoedecke.com/glue-work-is-still-harmful-in-the-age-of-ai/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-16T05:01:00","author":"unknown","text":"<p>Processes that can only be sustained by the unrewarded sacrifice of engineers ought to die.</p>\n<br /><br />","summary":"文章主张那些只能靠工程师无偿牺牲来维持的流程应当被淘汰，值得关注因为它探讨了AI时代下“胶水工作”的危害。"},{"id":"rss-2bbe026f880d","title":"Building interfaces that understand what we want to do","url":"https://agustinbarrientos.com/writing/senior-eye/interfaces-that-understand-what-we-want","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-13T05:05:00","author":"unknown","text":"<p>Chrome is building a Decisions API that runs a decision model on your computer, for free and privately.</p>\n<br /><br />","summary":"介绍Chrome正在构建的Decisions API，可在本地免费且私密地运行决策模型，值得关注因为它可能让界面更智能地理解用户意图。"},{"id":"rss-b48453a7c321","title":"Below the surface","url":"https://belowthesurface.amsterdam/en/vondsten","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-13T05:04:00","author":"unknown","text":"<p>The archaeological research project of the North/South metro line lends the River Amstel a voice in the historical portrayal of Amsterdam.</p>\n<br /><br />","summary":"阿姆斯特丹南北地铁线的考古研究项目，让阿姆斯特尔河在历史叙事中发声，值得关注因为它以创新方式呈现城市历史。"},{"id":"rss-e6cd675ee043","title":"If X, then Y","url":"https://cdevroe.com/2026/11/05/if-x-then-y/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-13T05:03:00","author":"unknown","text":"<p>It was never easy to predict the future, but at the moment it feels near impossible.</p>\n<br /><br />","summary":"文章感慨预测未来本就困难，如今更近乎不可能，值得关注因为它引发对不确定性的共鸣与思考。"},{"id":"rss-520754771249","title":"Bodega cats of New York","url":"https://bodegacatsofnewyork.com/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-13T05:02:00","author":"unknown","text":"<p>Photographs and stories of the cats who live in New York’s bodegas, and the people who know them by name.</p>\n<br /><br />","summary":"记录纽约杂货店猫的照片和故事，以及认识它们的人们，值得关注因为它以温情视角展现城市生活。"},{"id":"rss-ffb5496c827f","title":"Where the disabled button got its rule","url":"https://www.hipuku.dev/writing/where-the-disabled-button-got-its-rule","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-13T05:01:00","author":"unknown","text":"<p>What Apple’s 1980 rules said about greyed-out commands.</p>\n<br /><br />","summary":"探讨苹果1980年规则中关于灰色禁用命令的规定，追溯禁用按钮规则的起源，值得关注因为它揭示了UI设计规范的历史渊源。"},{"id":"rss-a5403f430b60","title":"Design is a search problem","url":"https://mattstromawn.com/writing/design-is-a-search-problem/","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-12T11:26:27","author":"unknown","text":"<p>Most of what we call ‘design’ is groping around a dark room looking for a black cat.</p>\n<br /><br />","summary":"文章将设计过程类比为在黑暗房间中摸索寻找黑猫，探讨设计本质是一种搜索问题。值得关注的是它提供了一个理解设计思维的新视角。"},{"id":"rss-9c30988987f4","title":"Airline Logos","url":"https://www.logohistories.com/p/airline-logos","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-12T11:24:14","author":"unknown","text":"<p>From Lufthansa’s crane to United’s tulip, the stories behind twelve airline logos designed for the jet age.</p>\n<br /><br />","summary":"文章讲述了十二个喷气机时代航空公司标志背后的故事，从汉莎航空的鹤到联合航空的郁金香。值得关注的是它揭示了这些经典标志的设计历史与寓意。"},{"id":"rss-7a7440d7f7bb","title":"I made a film in Excel","url":"https://www.youtube.com/watch?v=sz_vI8V_k1E","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-12T11:23:46","author":"unknown","text":"<p>A testament to the inescapable pull of making something out of nothing.</p>\n<br /><br />","summary":"作者用Excel制作了一部电影，展现了从无到有创造事物的不可抗拒的吸引力。值得关注的是它体现了创意工具边界的突破与创作热情。"},{"id":"rss-c69b3931dfd0","title":"State of JavaScript 2026","url":"https://survey.devographics.com/en-US/survey/state-of-js/2026","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-12T11:21:55","author":"unknown","text":"<p>Take the State of JavaScript survey: a programming language that grew up much, much bigger than anybody ever anticipated.</p>\n<br /><br />","summary":"介绍State of JavaScript 2026调查，该语言的发展规模远超所有人预期。值得关注的是它提供了JavaScript生态的最新趋势与开发者反馈。"},{"id":"rss-a183c13f005a","title":"By taking away","url":"https://haydenbleasel.com/taking-away","source":"Sidebar.io","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-12T11:20:24","author":"unknown","text":"<p>Software used to be made like a painting, one layer at a time. With agents, it’s closer to sculpture, and the hard part is seeing what to keep.</p>\n<br /><br />","summary":"文章对比了软件制作方式的演变：过去像绘画般逐层构建，如今借助智能体更像雕塑，难点在于判断保留什么。值得关注的是它探讨了AI辅助开发对设计思维的影响。"}],"locale":"zh"}]]}]
+13:["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Le","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-50500963","title":"SpaceX catches the Starship to end Flight 15","url":"https://www.spacex.com/launches/starship-flight-15","source":"Hacker News","score":1660,"comments_count":1239,"comments_url":"https://news.ycombinator.com/item?id=50500963","published_at":"2026-11-14T21:22:24","author":"ls612","text":"<a href=\"https:&#x2F;&#x2F;x.com&#x2F;SpaceX&#x2F;status&#x2F;2121316300702056595\" rel=\"nofollow\">https:&#x2F;&#x2F;x.com&#x2F;SpaceX&#x2F;status&#x2F;2121316300702056595</a><p><a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;jHlpfNSpBmw?t=3233\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;jHlpfNSpBmw?t=3233</a>","summary":"SpaceX在星舰第15次飞行测试中成功用发射塔捕获了星舰，标志着可重复使用火箭技术的重大突破，值得关注。"},{"id":"hn-50502988","title":"Court denies motion to dismiss DRAM price fixing case","url":"https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal","source":"Hacker News","score":497,"comments_count":219,"comments_url":"https://news.ycombinator.com/item?id=50502988","published_at":"2026-11-15T01:18:36","author":"ybathaee","text":null,"summary":"法院驳回了关于DRAM价格操纵案撤诉的动议，意味着三星、SK海力士和美光将面临进一步的反垄断诉讼，可能影响内存市场格局。"},{"id":"hn-50506180","title":"Lutnick Pushed to Weaken Chip Rules That Overlap with His Family Business","url":"https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html","source":"Hacker News","score":479,"comments_count":219,"comments_url":"https://news.ycombinator.com/item?id=50506180","published_at":"2026-11-15T11:40:51","author":"JumpCrisscross","text":"<a href=\"https:&#x2F;&#x2F;wallhop.io&#x2F;https:&#x2F;&#x2F;www.nytimes.com&#x2F;2026&#x2F;11&#x2F;15&#x2F;us&#x2F;politics&#x2F;trump-lutnick-ai-chips-cantor-fitzgerald.html\" rel=\"nofollow\">https:&#x2F;&#x2F;wallhop.io&#x2F;https:&#x2F;&#x2F;www.nytimes.com&#x2F;2026&#x2F;11&#x2F;15&#x2F;us&#x2F;pol...</a>","summary":"报道称美国商务部长卢特尼克推动放宽芯片出口规则，而其家族企业可能从中受益，引发利益冲突担忧，涉及政策公正性。"},{"id":"hn-50509411","title":"Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests","url":"https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html","source":"Hacker News","score":442,"comments_count":192,"comments_url":"https://news.ycombinator.com/item?id=50509411","published_at":"2026-11-15T18:36:10","author":"DeepLogin","text":null,"summary":"微软365服务中断导致德国一家酒店氯气中毒事件，15名客人受伤，凸显关键基础设施依赖云服务的潜在风险。"},{"id":"hn-50506719","title":"The MacBook Pro's OLED PWM problem","url":"https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/","source":"Hacker News","score":435,"comments_count":245,"comments_url":"https://news.ycombinator.com/item?id=50506719","published_at":"2026-11-15T13:15:22","author":"MacAnorak","text":null,"summary":"文章探讨MacBook Pro的OLED屏幕PWM调光问题，指出更好的显示技术可能因频闪导致部分用户不适，引发对健康影响的关注。"},{"id":"hn-50505271","title":"Why did some Apollo missions carry a grenade launcher? (2019)","url":"https://space.stackexchange.com/questions/37775","source":"Hacker News","score":235,"comments_count":147,"comments_url":"https://news.ycombinator.com/item?id=50505271","published_at":"2026-11-15T09:06:43","author":"Skyfall106","text":null,"summary":"回顾阿波罗任务为何携带榴弹发射器，揭示冷战时期宇航员在月球表面可能遭遇的生存挑战与应急设计，具有历史趣味。"},{"id":"hn-50509837","title":"Protomaps: Self-hosting map tiles has gotten cheap and easy","url":"https://bruceroettgers.eu/blog/protomaps/","source":"Hacker News","score":219,"comments_count":47,"comments_url":"https://news.ycombinator.com/item?id=50509837","published_at":"2026-11-15T19:26:22","author":"bcye","text":null,"summary":"介绍Protomaps项目，展示自托管地图瓦片已变得廉价且简单，为开发者提供替代商业地图服务的可行方案。"},{"id":"hn-50506894","title":"Things That Turbo Pascal Is Smaller Than (2011)","url":"https://prog21.dadgum.com/116.html","source":"Hacker News","score":214,"comments_count":112,"comments_url":"https://news.ycombinator.com/item?id=50506894","published_at":"2026-11-15T13:44:16","author":"ksec","text":null,"summary":"以幽默方式列举比Turbo Pascal编译器还小的现代事物，回顾早期软件的高效设计，引发对当代软件膨胀的反思。"},{"id":"hn-50511395","title":"Old Bitly links are being hijacked","url":"https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/","source":"Hacker News","score":213,"comments_count":114,"comments_url":"https://news.ycombinator.com/item?id=50511395","published_at":"2026-11-15T22:11:43","author":"hspeiser","text":null,"summary":"报道旧Bitly短链接被劫持的事件，包括汉堡王推文中的链接被篡改，提醒短链接服务的长期安全风险。"},{"id":"hn-50503465","title":"My favourite modern NES games","url":"https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/","source":"Hacker News","score":202,"comments_count":40,"comments_url":"https://news.ycombinator.com/item?id=50503465","published_at":"2026-11-15T02:41:25","author":"jordigh","text":null,"summary":"作者分享自己最喜欢的现代NES游戏，展示复古游戏社区持续创作新内容的活力，适合怀旧游戏爱好者。"},{"id":"hn-50509023","title":"Crows make decisions faster than we can","url":"https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html","source":"Hacker News","score":189,"comments_count":141,"comments_url":"https://news.ycombinator.com/item?id=50509023","published_at":"2026-11-15T17:53:31","author":"gumby","text":null,"summary":"文章探讨乌鸦能比人类更快做出决策的科学研究，揭示鸟类大脑的高效机制，值得关注因为它挑战了我们对动物认知和决策速度的理解。"},{"id":"hn-50507553","title":"Emacs Is My Browser","url":"https://joshblais.com/blog/emacs-as-my-browser/","source":"Hacker News","score":189,"comments_count":109,"comments_url":"https://news.ycombinator.com/item?id=50507553","published_at":"2026-11-15T15:21:21","author":"nyc111","text":null,"summary":"作者分享如何将Emacs配置成完整的网页浏览器，展示这款老牌编辑器的极致可扩展性，值得关注因为它体现了Emacs社区“一切皆可Emacs”的极客精神。"},{"id":"hn-50509972","title":"Handwriting, as a Font","url":"https://ductus.sorenblank.com","source":"Hacker News","score":175,"comments_count":41,"comments_url":"https://news.ycombinator.com/item?id=50509972","published_at":"2026-11-15T19:42:13","author":"coinfused","text":null,"summary":"介绍一个将手写笔迹转化为字体的项目，让用户可以用自己的手写风格生成数字字体，值得关注因为它结合了传统书写与数字排版的有趣创意。"},{"id":"hn-50511982","title":"Jensen Huang might return to Nvidia as CEO","url":"https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/","source":"Hacker News","score":152,"comments_count":147,"comments_url":"https://news.ycombinator.com/item?id=50511982","published_at":"2026-11-15T23:24:53","author":"YakubYilmaz","text":null,"summary":"报道英伟达CEO黄仁勋可能与盟友讨论回归英伟达担任CEO的消息，值得关注因为它涉及全球最重要芯片公司的领导层变动。"},{"id":"hn-50513160","title":"Universal XSS in uBlock Origin from website-driven element picker","url":"https://iter.ca/post/ubo-uxss/","source":"Hacker News","score":135,"comments_count":26,"comments_url":"https://news.ycombinator.com/item?id=50513160","published_at":"2026-11-16T02:04:48","author":"zaik","text":null,"summary":"披露uBlock Origin广告拦截器存在由网站驱动的元素选择器引发的通用XSS漏洞，值得关注因为它影响大量用户的安全，并引发对浏览器扩展安全模型的讨论。"},{"id":"hn-50512235","title":"What's Next for Nvidia?","url":"https://steveblank.com/2026/11/15/whats-next-for-nvidia/","source":"Hacker News","score":131,"comments_count":150,"comments_url":"https://news.ycombinator.com/item?id=50512235","published_at":"2026-11-15T23:55:55","author":"zdw","text":null,"summary":"Steve Blank撰文分析英伟达的未来发展方向，探讨其在AI芯片领域的机遇与挑战，值得关注因为它提供了对半导体行业龙头战略的深度思考。"},{"id":"hn-50504718","title":"Book list for streetfighting computer scientists","url":"https://nick-black.com/dankwiki/index.php?title=Book_list_for_streetfighting_computer_scientists","source":"Hacker News","score":128,"comments_count":43,"comments_url":"https://news.ycombinator.com/item?id=50504718","published_at":"2026-11-15T07:08:50","author":"num42","text":null,"summary":"整理了一份面向“街头实战型”计算机科学家的书单，涵盖系统、网络、安全等实用领域，值得关注因为它为工程师提供了提升实战能力的阅读指南。"},{"id":"hn-50481321","title":"What thousands of conversations look like inside a language model","url":"https://operator0x.com/field-notes/qwen-conversation-state-space/","source":"Hacker News","score":117,"comments_count":29,"comments_url":"https://news.ycombinator.com/item?id=50481321","published_at":"2026-11-13T10:26:01","author":"josip208","text":null,"summary":"通过可视化方式展示语言模型内部数千次对话的状态空间，帮助理解模型如何处理对话，值得关注因为它为LLM的可解释性提供了直观视角。"},{"id":"hn-50508715","title":"Clice v1.0 Released: Welcome to Modern C++","url":"https://ykiko.me/en/articles/2105384023094834022/","source":"Hacker News","score":114,"comments_count":70,"comments_url":"https://news.ycombinator.com/item?id=50508715","published_at":"2026-11-15T17:22:32","author":"molenzwiebel","text":null,"summary":"宣布Clice v1.0发布，这是一个面向现代C++的工具，值得关注因为它可能改善C++开发者的工作流程和代码质量。"},{"id":"hn-50506588","title":"A NES emulator written in Odin","url":"https://lucypero.com/lucynes.html","source":"Hacker News","score":111,"comments_count":42,"comments_url":"https://news.ycombinator.com/item?id=50506588","published_at":"2026-11-15T12:51:47","author":"frostbyte7","text":null,"summary":"介绍一个用Odin语言编写的NES模拟器，展示Odin在系统编程和模拟器开发中的能力，值得关注因为它为复古游戏和编程语言爱好者提供了有趣案例。"},{"id":"hn-50510005","title":"Do House members' stock trades beat the market? A test of 8,900 trades","url":"https://arkanumdata.com/research/house-trades","source":"Hacker News","score":109,"comments_count":117,"comments_url":"https://news.ycombinator.com/item?id=50510005","published_at":"2026-11-15T19:46:02","author":"Bluestein","text":null,"summary":"该文章基于8,900笔交易数据，检验美国众议院议员的股票交易是否跑赢市场，值得关注是因为它用实证方法探讨了政客交易是否具有信息优势这一公众关切的话题。"},{"id":"hn-50511806","title":"Preserving 30 years of Salon journalism","url":"https://blog.archive.org/2026/11/12/preserving-30-years-of-salon-journalism/","source":"Hacker News","score":104,"comments_count":31,"comments_url":"https://news.ycombinator.com/item?id=50511806","published_at":"2026-11-15T23:00:11","author":"CharlesW","text":null,"summary":"互联网档案馆发文介绍如何保存Salon新闻网站30年的新闻内容，值得关注是因为它展示了数字新闻长期存档面临的挑战与解决方案。"},{"id":"hn-50484234","title":"Semicircle Packing","url":"https://rorz.io/writing/semicircle-packing","source":"Hacker News","score":102,"comments_count":11,"comments_url":"https://news.ycombinator.com/item?id=50484234","published_at":"2026-11-13T14:42:57","author":"sarreph","text":null,"summary":"文章探讨半圆填充（Semicircle Packing）这一几何包装问题，值得关注是因为它涉及数学优化与算法设计，对计算几何爱好者有参考价值。"},{"id":"hn-50482222","title":"The Evolving Story of How Chemistry Became Biology","url":"https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112/","source":"Hacker News","score":101,"comments_count":26,"comments_url":"https://news.ycombinator.com/item?id=50482222","published_at":"2026-11-13T11:55:19","author":"pseudolus","text":null,"summary":"Quanta Magazine讲述化学如何演变为生物学的故事，值得关注是因为它从跨学科视角梳理了生命起源与化学演化的重要科学脉络。"},{"id":"hn-50483431","title":"500 Lines or Less A 3D Modeller","url":"https://aosabook.org/en/500L/a-3d-modeller.html","source":"Hacker News","score":98,"comments_count":19,"comments_url":"https://news.ycombinator.com/item?id=50483431","published_at":"2026-11-13T13:47:42","author":"myth_drannon","text":null,"summary":"这是《500 Lines or Less》一书中的3D建模器章节，用约500行代码实现一个3D建模工具，值得关注是因为它以精简代码展示了图形学核心概念的教学实践。"}],"locale":"zh"}],"$L17"]}]
+16:null
+17:["$","$Le","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-5f54d7f228d5","title":"A datetime library for Rust","url":"https://burntsushi.net/jiff/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-15T22:39:34","author":"burntsushi.net via refi64","text":"<p><a href=\"https://lobste.rs/s/dxxvek/datetime_library_for_rust\">Comments</a></p>","summary":"介绍Rust语言的datetime库Jiff，值得关注是因为Rust生态中长期缺乏成熟的日期时间处理方案，该库由知名开发者BurntSushi打造。"},{"id":"rss-4a8b00e86cf6","title":"Memory management in 40 major C projects, a survey","url":"https://theconsensus.dev/p/2026/11/08/c-memory-management-survey.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-15T12:50:03","author":"theconsensus.dev by eatonphil","text":"<p><a href=\"https://lobste.rs/s/vdxevp/memory_management_40_major_c_projects\">Comments</a></p>","summary":"对40个主流C项目的内存管理实践进行调查研究，值得关注是因为它总结了大型C代码库在内存管理上的常见模式与经验教训。"},{"id":"rss-9ab22b504a3e","title":"All AI-generated code should be Open Source","url":"https://jakub.jankiewicz.org/blog/ai-code-open-source/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-15T16:04:01","author":"jakub.jankiewicz.org via Yogthos","text":"<p><a href=\"https://lobste.rs/s/ek4fkg/all_ai_generated_code_should_be_open\">Comments</a></p>","summary":"文章主张所有AI生成的代码都应开源，值得关注是因为它触及AI辅助编程时代代码版权与开放性的重要伦理和政策议题。"},{"id":"rss-e342c9bf1c22","title":"25 of my favourite modern NES games","url":"https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-15T02:40:40","author":"jordi.inversethought.com by JordiGH","text":"<p><a href=\"https://lobste.rs/s/w9j7xs/25_my_favourite_modern_nes_games\">Comments</a></p>","summary":"作者列举25款自己喜爱的现代NES游戏，值得关注是因为它展示了复古游戏平台上仍活跃的独立开发与创作生态。"},{"id":"rss-06553de0ebc6","title":"beer.drv.drv.drv","url":"https://fzakaria.com/2026/11/14/beer-drv-drv-drv","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-16T00:47:28","author":"fzakaria.com by fzakaria","text":"<p><a href=\"https://lobste.rs/s/md0vco/beer_drv_drv_drv\">Comments</a></p>","summary":"文章标题为beer.drv.drv.drv，探讨Nix/Guix派生（derivation）的嵌套结构，值得关注是因为它以趣味方式揭示了函数式包管理系统中派生依赖的深层机制。"}],"locale":"zh"}]
