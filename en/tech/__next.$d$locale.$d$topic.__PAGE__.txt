@@ -3,221 +3,213 @@
 3:I[37119,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"TopicNav"]
 4:I[67477,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SummarySection"]
 b:I[82166,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js"],"SourceCard"]
-d:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
-e:"$Sreact.suspense"
-5:T2b17,# 今日 Technology 热门内容分析总结
+e:I[51858,["/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","/hn-daily-summary/_next/static/chunks/dd09ff477e32861e.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+5:T2d6a,# 今日 Technology 热门内容分析总结
 
-今天的技术社区呈现出明显的"**安全危机 + AI 竞赛 + 开源教育**"三线并进格局。以下是按子主题分组的综合分析。
+今天的技术社区呈现出**安全漏洞、基础设施与隐私政策、以及底层性能工程**三大主线。Nginx 的高危 RCE 漏洞以压倒性热度登顶，而围绕数据安全（银行数据泄露、英国加密令）、系统性能（百万级 Web 服务器、SQLite 存储）和开源生态（Codeberg 宕机、PHP/PostgreSQL 新版本）的讨论同样密集。下面按子主题分组梳理全部 30 篇文章。
 
 ---
 
-## 一、安全漏洞集中爆发（今日最大主线）
+## 一、安全漏洞与隐私政策（今日最大焦点）
 
-今天堪称"漏洞日"，多个高危 RCE 同时曝光，覆盖 Web 服务器、Java 生态、虚拟化层和 Ruby 语言。
-
-**1. Nginx 未认证远程代码执行**
-Nginx HTTP/2 模块出现未认证 RCE，影响面极广（几乎所有反向代理部署）。涉及 CVE-2026-123633 和 CVE-2026-123007。**值得关注**：Nginx 是全球最广泛部署的 Web 服务器之一，此类漏洞属于"基础设施级"风险。
+**1. Nginx 未授权远程代码执行漏洞**
+今日热度冠军（1489 分），Wiz 披露了 nginx HTTP/2 相关的多个 RCE 漏洞（CVE-2026-123633、CVE-2026-123007）。Nginx 作为全球最广泛部署的反向代理/Web 服务器，任何未授权 RCE 都意味着海量暴露面，运维人员需立即关注。
 - 原文：https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities
 - 讨论：https://news.ycombinator.com/item?id=50547374
 
-**2. Java4Shell：OpenJDK 处理 Base64 时的 RCE**
-被戏称为"Java 版 Log4Shell"，在 Base64 解码路径触发 RCE。**值得关注**：Java 在企业后端无处不在，命名本身暗示其严重性。
-- 原文：https://calif.io/java4shell/
-- 讨论：https://news.ycombinator.com/item?id=50538240
+**2. java4shell：有人在 2026 年 9 月报告了 JDK 漏洞**
+OpenJDK 的一个 PR 引发"Java 版 Log4Shell"式的担忧，涉及 Java 生态的广泛影响，值得开发者跟进修复进展。
+- 原文：https://github.com/openjdk/jdk/pull/32781
+- 讨论：https://news.ycombinator.com/item?id=50558906
 
-**3. nginx2root 漏洞技术分析**
-对上述 Nginx RCE 的深入技术拆解，从漏洞到 root 提权的完整链条。
-- 原文：https://xint.io/blog/nginx2root-remote-code-execution
-- 讨论：https://lobste.rs/s/wj2svg/nginx2root
+**3. 英国政府被迫承认向 Apple 发出秘密加密令**
+涉及政府强制要求科技公司削弱端到端加密的争议，是数字隐私与政府监管博弈的重要案例。
+- 原文：https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/
+- 讨论：https://news.ycombinator.com/item?id=50562113
 
-**4. Java4Shell 反而是"使用 Java 的理由"**
-一篇反向视角的评论文章，认为 Java 生态的快速响应机制恰恰证明其成熟度。**值得关注**：提供与主流恐慌情绪相反的理性观点。
-- 原文：https://mccue.dev/pages/11-18-26-java4shell
-- 讨论：https://lobste.rs/s/a1uff5/java4shell_is_reason_use_java
+**4. Visa、Mastercard 与 JPMorgan 客户数据被黑客泄露**
+金融支付巨头的数据泄露事件，直接关系到普通用户的资金与隐私安全。
+- 原文：https://www.wsj.com/finance/banking/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers-3b5a0f87
+- 讨论：https://news.ycombinator.com/item?id=50568082
 
-**5. KVM x86 模拟 INIT 时未重置 MMU 上下文（CVE-2026-99312）**
-虚拟化层漏洞，影响云主机隔离性。
-- 原文：https://www.cve.org/CVERecord?id=CVE-2026-99312
-- 讨论：https://news.ycombinator.com/item?id=50548004
-
-**6. Ruby Regexp 与字符串大小写转换多个漏洞**
-Ruby 官方安全公告，涉及正则和字符串处理路径。
-- 原文：https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/
-- 讨论：https://news.ycombinator.com/item?id=50554038
-
-**7. PHP 即将发布关键安全版本（2026-11-18）**
-PHP 官方预警，建议所有运维立即关注。
-- 原文：https://www.php.net/index.php#2026-11-18-1
-- 讨论：https://lobste.rs/s/zr0hkw/upcoming_critical_php_security_release
-
-> **小结**：今天的安全新闻密度极高，建议所有运维/后端工程师优先处理 Nginx 与 Java 相关补丁。
+**5. 从 MyQ 车库门开启器提取 AES 密钥，以解决离线重启问题**
+一个典型的"逆向工程解决实际痛点"的硬核案例，展示智能家居设备封闭生态带来的困扰及破解思路。
+- 原文：https://kusha.me/blog/stop_myq_homebridge_819lmb_rebooting/
+- 讨论：https://news.ycombinator.com/item?id=50525260
 
 ---
 
-## 二、DNS、隐私与网络治理
+## 二、基础设施、性能与系统底层
 
-**8. Quad9 退出法国：煤矿中的金丝雀**
-Cloudflare 撰文分析 Quad9 因法国 DNS 封锁政策而撤出，警示"DNS 层内容审查"的危险先例。
-- 原文：https://blog.cloudflare.com/quad9-withdrawal-from-france/
-- 讨论：https://news.ycombinator.com/item?id=50538994
+**6. 单台 VM 上跑 1500 万个 Web 服务器 —— smoltcp、DPDK、AF_XDP**
+极致的网络性能工程实践，展示如何用内核旁路技术（DPDK/AF_XDP）把单机网络吞吐推到极限，系统编程爱好者必读。（HN 和 Lobsters 双平台上榜，见第 30 条）
+- 原文：https://kapteko.com/15-million-webservers/
+- 讨论：https://news.ycombinator.com/item?id=50556533
 
-**9. DNS 解析器不是打击盗版的正确场所**
-观点文章，认为把 DNS 当作版权执法工具在技术上和伦理上都不成立。**值得关注**：与上条形成互补，构成完整论点。
-- 原文：https://techstackups.com/articles/quad9-leaves-france-dns-blocking/
-- 讨论：https://news.ycombinator.com/item?id=50545958
+**7. 基于 SQLite 的分布式高性能 Blob 存储**
+Zerodha 工程团队分享如何用 SQLite 构建分布式对象存储，是"简单技术栈做大事"的代表性架构案例。
+- 原文：https://zerodha.tech/blog/high-performance-distributed-blob-storage/
+- 讨论：https://news.ycombinator.com/item?id=50557537
 
-**10. IRS 登录强制要求 ID.me 条款**
-美国税务系统登录被要求接受 ID.me 身份验证条款，引发隐私与数字身份垄断担忧。
-- 原文：https://consumerrights.wiki/w/ID.me_terms_required_for_IRS_sign-in
-- 讨论：https://news.ycombinator.com/item?id=50540437
+**8. 别买内存，压缩吧**
+在内存价格高企背景下，讨论用压缩换取内存的工程权衡，实用且应景。
+- 原文：https://curiousbits.nl/blog/do-not-buy-ram-compress/
+- 讨论：https://news.ycombinator.com/item?id=50557661
 
-**11. Windows 11 收集你使用哪些编码 Agent 和开发工具的数据**
-开发者工具遥测问题曝光，涉及 AI 编码助手的隐私边界。**值得关注**：AI 工具普及后的新型隐私风险。
-- 原文：https://xusheng.dev/posts/windows-coding-agent-telemetry/
-- 讨论：https://lobste.rs/s/cwxmdw/windows_11_collects_data_on_which_coding
+**9. SSD 价格可能在 2027 年下半年开始下跌**
+关于存储硬件价格周期的市场分析，对采购与硬件规划有参考价值。
+- 原文：https://www.drivevault.io/blog/when-will-hard-drive-prices-come-down.html
+- 讨论：https://news.ycombinator.com/item?id=50557716
+
+**10. 用重力实现不可阻断的通信**
+Science 子刊论文，探讨基于引力/物理原理的通信方式，属于前沿、带有科幻色彩的研究。
+- 原文：https://www.science.org/doi/10.1126/sciadv.aee0802
+- 讨论：https://news.ycombinator.com/item?id=50559179
 
 ---
 
-## 三、AI 模型与推理效率竞赛
+## 三、编程语言与开发工具
 
-**12. 微软 Ignite 2026 发布七款新模型（可扩展性价比）**
-微软一次性推出七个模型，主打性价比与规模化。**值得关注**：大厂 AI 军备竞赛进入"批量发布"阶段。
+**11. PHP 8.6 新特性**
+PHP 官方发布说明，PHP 开发者了解语言演进的第一手资料。
+- 原文：https://www.php.net/releases/8.6/en.php
+- 讨论：https://news.ycombinator.com/item?id=50557870
+
+**12. PostgreSQL 19 发布**
+主流开源数据库的大版本更新，后端与数据工程师需关注升级要点。
+- 原文：https://www.postgresql.org/about/news/postgresql-19-released-3449/
+- 讨论：https://lobste.rs/s/pqyuhk/postgresql_19_released
+
+**13. Mutex 毒化（poisoning）并非适合所有人**
+Rust 生态中关于 `Mutex` 中毒机制设计的深入讨论，语言设计权衡的典型案例。
+- 原文：https://bertptrs.nl/2026/11/16/mutex-poisoning-is-not-for-everyone.html
+- 讨论：https://lobste.rs/s/uzn2t6/mutex_poisoning_is_not_for_everyone
+
+**14. 为可理解性而设计（Design for Understandability）**
+关于软件设计哲学的文章，强调代码与系统的可理解性优先于炫技，适合所有工程师。
+- 原文：https://jschuster.org/blog/2026/11/19/design-for-understandability/
+- 讨论：https://lobste.rs/s/qsrnot/design_for_understandability
+
+**15. Show HN：Mastra Factory —— 我们用来构建 Mastra 的开源软件工厂**
+团队分享用 AI/自动化"软件工厂"维护自身开源框架的实践，反映 AI 辅助软件工程的趋势。
+- 原文：无（Show HN 帖）
+- 讨论：https://news.ycombinator.com/item?id=50548660
+
+---
+
+## 四、AI 与平台生态
+
+**16. Microsoft Ignite 2026：七款新模型，主打可扩展的性价比**
+微软发布新一批 AI 模型，聚焦价格性能比，是本周 AI 大厂竞争的重要动向。
 - 原文：https://microsoft.ai/news/microsoft-ignite-2026/
 - 讨论：https://news.ycombinator.com/item?id=50548021
 
-**13. 基于能量的推理器（Energy-Based Reasoners）：推理效率提升 385 倍**
-学术项目，声称推理效率提升 385 倍。**值得关注**：若属实，将显著改变推理成本结构。
-- 原文：https://energy-based-reasoners.github.io/
-- 讨论：https://news.ycombinator.com/item?id=50543989
+**17. 欧盟委员会如何向 4 万多名员工推广 Matrix**
+开源去中心化通信协议在超大规模政府组织中的落地案例，对开源替代方案与组织级部署有很强参考价值。
+- 原文：https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/
+- 讨论：https://news.ycombinator.com/item?id=50558533
 
-**14. 腾讯 Hy4 Flash**
-腾讯发布新模型，加入开源/开放权重竞争。
-- 原文：https://hy.tencent.ai/research/hy4-flash
-- 讨论：https://news.ycombinator.com/item?id=50538184
+**18. Codeberg.org 无法访问**
+开源代码托管平台 Codeberg 宕机事件，引发对开源基础设施可靠性与集中化风险的讨论。
+- 原文：https://social.anoxinon.de/@codebergstatus/117636437840688845
+- 讨论：https://news.ycombinator.com/item?id=50544261
 
-**15. Nvidia 停止披露新加坡销售，营收达 1040 亿美元**
-营收创新高但停止披露新加坡数据，引发对 AI 芯片流向与出口管制的猜测。**值得关注**：财务透明度与地缘政治交织。
-- 原文：https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf
-- 讨论：https://news.ycombinator.com/item?id=50534631
-
----
-
-## 四、开源教育、社区与开发者文化
-
-**16. 卡内基梅隆大学将计算机课程免费上架 YouTube**
-CMU 把 CS 课程免费公开，HN 榜首（2354 分）。**值得关注**：顶级 CS 教育资源民主化的标志性事件。
-- 原文：https://www.cs.cmu.edu/learn/
-- 讨论：https://news.ycombinator.com/item?id=50522980
-
-**17. 我们需要在乎事情的聪明人**
-一篇关于工程文化与责任感的观点文，引发广泛共鸣。
-- 原文：https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/
-- 讨论：https://news.ycombinator.com/item?id=50554045
-
-**18. 软件公司正在扼杀个人计算？**
-批评现代软件商业模式（订阅、云锁定）侵蚀个人计算自由。**值得关注**：与下方 ExitPath 形成主题呼应。
-- 原文：https://lateblt.livejournal.com/526188.html
-- 讨论：https://news.ycombinator.com/item?id=50554010
-
-**19. Codeberg 域名突然消失，站点无法访问**
-开源代码托管平台 Codeberg 域名一度消失（后恢复）。**值得关注**：开源基础设施单点脆弱性的现实案例。
-- 原文：https://social.anoxinon.de/@Codeberg/117636454915265360
-- 讨论：https://lobste.rs/s/spmgsd/codeberg_s_domain_suddenly_disappeared
-
-**20. 我的 Emacs 31 贡献**
-开发者分享对 Emacs 31 的贡献，体现老牌工具社区的活力。
-- 原文：https://xenodium.com/my-emacs-31-contributions
-- 讨论：https://news.ycombinator.com/item?id=50517929
-
-**21. Show HN: ExitPath —— 逃离 Slack、Notion、Microsoft 365 的开源方案**
-开源数据迁移/退出工具。**值得关注**：直接回应"数据锁定"焦虑，实用性强。
-- 原文：https://exitpath-ruddy.vercel.app/
-- 讨论：https://news.ycombinator.com/item?id=50547980
+**19. 任天堂从 GitHub 下架 Picofly 固件**
+硬件破解与平台方版权执法之间的持续博弈，涉及开源固件与法律边界。
+- 原文：https://www.youtube.com/watch?v=-TLCGUpoD6c
+- 讨论：https://news.ycombinator.com/item?id=50547048
 
 ---
 
-## 五、硬件、历史与极客趣味
+## 五、趣味工程与生活方式技术
 
-**22. x86 CPU 简史：从 4004 到 486**
-系统梳理 x86 架构演进，适合所有底层开发者。
-- 原文：https://pikuma.com/blog/history-of-x86-4004-to-486
-- 讨论：https://news.ycombinator.com/item?id=50546967
+**20. 车库门垃圾信息（Garage Door Spam）**
+一则关于车库门信号被干扰/滥用的有趣技术观察，贴近日常生活的无线安全话题。
+- 原文：https://blog.harrison.page/garage-door-spam/
+- 讨论：https://news.ycombinator.com/item?id=50519231
 
-**23. Show HN: 拆解旅行者 1 号，直到一颗内存芯片**
-交互式网站，可拆解旅行者号核电池、数据计算机，恰逢旅行者 1 号到达距地球一光日。**值得关注**：教育与工程美学的典范。
-- 原文：https://rshekhar.com/voyager/
-- 讨论：https://news.ycombinator.com/item?id=50548161
-
-**24. F-22 下一代微型数据传输 cartridge（mDTC）**
-美国政府采购公告，军事硬件细节引发极客兴趣。
-- 原文：https://sam.gov/workspace/contract/opp/8948e8601e964c6aba9c801eee16b1be/view
-- 讨论：https://news.ycombinator.com/item?id=50547583
-
-**25. 完美的 SimCity**
-对经典游戏 SimCity 设计哲学的深度回顾。
-- 原文：https://www.jeffquast.com/post/a-perfect-simcity/
-- 讨论：https://news.ycombinator.com/item?id=50504373
-
-**26. Show HN: Type Fighter 2**
-街机风格打字练习游戏，免费、本地进度、无账号。**值得关注**：轻量有趣的开发者小工具。
-- 原文：https://typefighter2.com/
-- 讨论：https://news.ycombinator.com/item?id=50544821
-
----
-
-## 六、社会与科技交叉议题
-
-**27. 学校手机禁令逐渐提升考试成绩的新证据**
-NYT 报道，禁令与成绩改善相关。**值得关注**：讨论热度极高（643 条评论），涉及教育与科技平衡。
-- 原文：https://www.nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html
-- 讨论：https://news.ycombinator.com/item?id=50530163
-
-**28. 高度机密的美国国家安全通信网络宕机**
-CNN 报道国家级通信网络中断。**值得关注**：基础设施可靠性议题，评论数达 751 条。
-- 原文：https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down
-- 讨论：https://news.ycombinator.com/item?id=50532849
-
-**29. 深入德意志银行（Inside Deutsche Bank）**
-对德意志银行内部运作/技术架构的剖析。
+**21. 德意志银行内部（Inside Deutsche Bank）**
+一个揭秘大型金融机构内部运作的网站，引发对企业文化与组织透明度的讨论。
 - 原文：https://www.inside-db.com/
 - 讨论：https://news.ycombinator.com/item?id=50547620
 
-**30. 剑桥词典 2026 年度词汇："human"**
-在 AI 时代，"human"（人类）被选为年度词。**值得关注**：象征性极强，折射 AI 时代的身份焦虑。
-- 原文：https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026
-- 讨论：https://news.ycombinator.com/item?id=50546914
+**22. 用病毒注射使三名胰腺癌患者病情得到控制**
+医学技术突破，虽非纯软件话题，但作为科技新闻具有重大意义。
+- 原文：https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/
+- 讨论：https://news.ycombinator.com/item?id=50563066
+
+**23. 在浏览器中用一张 A4 纸制作 8 页可折叠小志（zine）**
+有趣的 Web 工具创意，展示浏览器端排版与折纸计算的巧妙结合。
+- 原文：https://krthr.co/paper-folds-and-whats-new-in-fanzines-app/
+- 讨论：https://news.ycombinator.com/item?id=50559719
+
+**24. Show HN：Cornhole News —— 受 Hacker News 启发的美国中西部新闻站**
+一个社区驱动的新闻聚合小项目，展示 HN 模式的可复制性。
+- 原文：https://cornholenews.news
+- 讨论：https://news.ycombinator.com/item?id=50561515
+
+**25. F-22 下一代微型数据传输卡带（mDTC）**
+来自美国政府合同平台的军工技术采购信息，硬核且小众。
+- 原文：https://sam.gov/workspace/contract/opp/8948e8601e964c6aba9c801eee16b1be/view
+- 讨论：https://news.ycombinator.com/item?id=50547583
+
+**26. 如何用 CAD 做几乎任何东西（MIT OCW 课程）**
+MIT 免费公开课，实用技能学习资源，适合动手型工程师。
+- 原文：https://ocw.mit.edu/courses/res-16-002-how-to-cad-almost-anything-january-iap-2024/
+- 讨论：https://news.ycombinator.com/item?id=50528119
+
+**27. 生存并重建社会所需的一切（The Last Book）**
+一个"文明重建手册"式的知识保存项目，兼具浪漫与实用色彩。
+- 原文：https://lastbook.org/
+- 讨论：https://news.ycombinator.com/item?id=50560822
+
+**28. 建筑制冷正在超越供暖成为主要能源需求（IEA）**
+能源与气候技术趋势报告，对数据中心冷却、城市规划等领域有间接启示。
+- 原文：https://maccus.fr/en/cooling-overtaking-heating/
+- 讨论：https://news.ycombinator.com/item?id=50560955
+
+**29. 我们需要在乎事情的聪明人（We Need Smart People Who Give a Shit）**
+一篇关于工程师职业态度与责任感的观点文章，引发行业文化共鸣。
+- 原文：https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/
+- 讨论：https://lobste.rs/s/rzuasm/we_need_smart_people_who_give_shit
+
+**30. 单 VM 跑 1500 万 Web 服务器（Lobsters 镜像讨论）**
+与第 6 条同一文章，在 Lobsters 社区同样上榜，说明底层性能工程话题跨社区热度高。
+- 原文：https://kapteko.com/15-million-webservers/
+- 讨论：https://lobste.rs/s/elmy67/15_million_web_servers_on_one_vm_smoltcp
 
 ---
 
-## 今日最值得阅读的 5 篇文章推荐
+## 今日最值得阅读的 5 篇推荐
 
-**1. Nginx 未认证 RCE（Wiz 分析）**
-理由：影响面最广、最紧急。所有运维和后端工程师应第一时间阅读并评估补丁。
-🔗 https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities
+1. **Nginx 未授权 RCE 漏洞**（必读，安全优先级最高）
+   全球部署量最大的 Web 服务器出现未授权 RCE，任何运维/后端人员都应立即评估影响并打补丁。
+   https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities
 
-**2. Java4Shell 原文 + 反向评论（组合阅读）**
-理由：一个讲"威胁"，一个讲"为什么这反而是 Java 的优势"，正反两读能建立更完整的工程判断。
-🔗 https://calif.io/java4shell/ ｜ 🔗 https://mccue.dev/pages/11-18-26-java4shell
+2. **单 VM 跑 1500 万 Web 服务器（smoltcp/DPDK/AF_XDP）**
+   系统性能工程的极致示范，理解内核旁路与用户态网络栈的最佳实战读物。
+   https://kapteko.com/15-million-webservers/
 
-**3. 卡内基梅隆免费 CS 课程上 YouTube**
-理由：HN 今日最高分，对学习者价值巨大，是教育资源民主化的里程碑。
-🔗 https://www.cs.cmu.edu/learn/
+3. **欧盟委员会向 4 万员工推广 Matrix**
+   罕见的超大规模开源通信系统落地案例，对评估开源替代方案与组织级部署极具参考价值。
+   https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/
 
-**4. Quad9 退出法国（Cloudflare）+ DNS 不应成为反盗版战场**
-理由：两篇互补，完整呈现"DNS 层审查"的技术与政策风险，对关注网络治理者必读。
-🔗 https://blog.cloudflare.com/quad9-withdrawal-from-france/ ｜ 🔗 https://techstackups.com/articles/quad9-leaves-france-dns-blocking/
+4. **基于 SQLite 的分布式高性能 Blob 存储**
+   "用简单技术解决复杂问题"的架构范本，适合后端与存储方向工程师精读。
+   https://zerodha.tech/blog/high-performance-distributed-blob-storage/
 
-**5. 拆解旅行者 1 号（交互式）**
-理由：今日最具"工程浪漫"的作品，兼具教育性与美感，恰逢旅行者 1 号到达一光日，值得沉浸体验。
-🔗 https://rshekhar.com/voyager/
+5. **为可理解性而设计**
+   一篇超越具体技术的设计哲学文章，提醒工程师可理解性才是长期可维护性的核心，适合所有人。
+   https://jschuster.org/blog/2026/11/19/design-for-understandability/
 
 ---
 
-**一句话总结**：今天请优先打补丁（Nginx / Java / PHP / Ruby），然后去 CMU 免费学课、去拆旅行者号——安全与浪漫，今日技术圈两者皆有。0:{"buildId":"yVNfn3RH2-xzueXxKfzuX","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-11-19","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":18},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-11-19"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
-6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-50522980","title":"Carnegie Mellon is putting computer science courses on YouTube for free","url":"https://www.cs.cmu.edu/learn/","source":"Hacker News","score":2354,"comments_count":328,"comments_url":"https://news.ycombinator.com/item?id=50522980","published_at":"2026-11-16T20:43:36","author":"pcompeau","text":null,"summary":"卡内基梅隆大学将其计算机科学课程免费发布到YouTube上，这值得关注，因为它降低了高质量计算机科学教育的门槛，使全球学习者都能受益。"},{"id":"hn-50530163","title":"New Evidence Shows School Phone Bans Are Gradually Improving Test Scores","url":"https://www.nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html","source":"Hacker News","score":1290,"comments_count":643,"comments_url":"https://news.ycombinator.com/item?id=50530163","published_at":"2026-11-17T11:45:51","author":"donohoe","text":null,"summary":"新证据表明学校实施手机禁令后，学生考试成绩逐渐提高，这值得关注，因为它为教育政策制定者提供了关于手机管理对学生学业表现影响的实证依据。"},{"id":"hn-50547374","title":"Unauthenticated remote code execution in Nginx","url":"https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities","source":"Hacker News","score":1246,"comments_count":541,"comments_url":"https://news.ycombinator.com/item?id=50547374","published_at":"2026-11-18T15:19:55","author":"speedping","text":"<a href=\"https:&#x2F;&#x2F;www.cve.org&#x2F;CVERecord?id=CVE-2026-123633\" rel=\"nofollow\">https:&#x2F;&#x2F;www.cve.org&#x2F;CVERecord?id=CVE-2026-123633</a><p><a href=\"https:&#x2F;&#x2F;www.cve.org&#x2F;CVERecord?id=CVE-2026-123007\" rel=\"nofollow\">https:&#x2F;&#x2F;www.cve.org&#x2F;CVERecord?id=CVE-2026-123007</a>","summary":"Nginx中存在未经身份验证的远程代码执行漏洞，这值得关注，因为它可能影响大量使用Nginx的服务器，构成严重安全风险。"},{"id":"hn-50538240","title":"Java4Shell: RCE in OpenJDK when processing Base64","url":"https://calif.io/java4shell/","source":"Hacker News","score":1159,"comments_count":323,"comments_url":"https://news.ycombinator.com/item?id=50538240","published_at":"2026-11-17T21:11:28","author":"werrett","text":null,"summary":"OpenJDK在处理Base64时存在远程代码执行漏洞（Java4Shell），这值得关注，因为它可能影响广泛的Java应用，需要及时修复。"},{"id":"hn-50538994","title":"Quad9's withdrawal from France: A canary in the coal mine","url":"https://blog.cloudflare.com/quad9-withdrawal-from-france/","source":"Hacker News","score":888,"comments_count":432,"comments_url":"https://news.ycombinator.com/item?id=50538994","published_at":"2026-11-17T22:13:34","author":"subset","text":null,"summary":"Quad9退出法国市场被视为煤矿中的金丝雀，这值得关注，因为它揭示了DNS解析器在内容封锁政策下面临的压力和潜在影响。"},{"id":"hn-50532849","title":"Highly classified US national security communications network goes down","url":"https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down","source":"Hacker News","score":666,"comments_count":751,"comments_url":"https://news.ycombinator.com/item?id=50532849","published_at":"2026-11-17T15:38:28","author":"monkeydust","text":"<a href=\"https:&#x2F;&#x2F;www.reuters.com&#x2F;technology&#x2F;highly-classified-us-national-security-communications-network-is-down-cnn-2026-11-17&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.reuters.com&#x2F;technology&#x2F;highly-classified-us-nati...</a>","summary":"美国高度机密的国安通信网络宕机，这值得关注，因为它可能影响国家安全通信的可靠性和安全性。"},{"id":"hn-50534631","title":"Nvidia stopped disclosing Singapore sales as revenues hit $104B","url":"https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf","source":"Hacker News","score":659,"comments_count":295,"comments_url":"https://news.ycombinator.com/item?id=50534631","published_at":"2026-11-17T17:12:06","author":"louiereederson","text":null,"summary":"英伟达在营收达到1040亿美元时停止披露新加坡销售数据，这值得关注，因为它可能引发对收入来源透明度和潜在出口管制规避的质疑。"},{"id":"hn-50545958","title":"DNS resolvers are the wrong place to fight piracy","url":"https://techstackups.com/articles/quad9-leaves-france-dns-blocking/","source":"Hacker News","score":638,"comments_count":245,"comments_url":"https://news.ycombinator.com/item?id=50545958","published_at":"2026-11-18T13:18:02","author":"ritzaco","text":null,"summary":"文章认为DNS解析器不是打击盗版的正确场所，这值得关注，因为它讨论了利用DNS封锁打击盗版的争议和局限性。"},{"id":"hn-50547620","title":"Inside Deutsche Bank","url":"https://www.inside-db.com/","source":"Hacker News","score":605,"comments_count":202,"comments_url":"https://news.ycombinator.com/item?id=50547620","published_at":"2026-11-18T15:38:33","author":"gyre007","text":null,"summary":"深入介绍德意志银行内部情况的网站，这值得关注，因为它可能揭示该银行的运营、文化或相关调查信息。"},{"id":"hn-50540437","title":"ID.me terms required for IRS sign-in","url":"https://consumerrights.wiki/w/ID.me_terms_required_for_IRS_sign-in","source":"Hacker News","score":496,"comments_count":260,"comments_url":"https://news.ycombinator.com/item?id=50540437","published_at":"2026-11-18T00:51:45","author":"DeepLogin","text":null,"summary":"美国国税局登录要求接受ID.me条款，这值得关注，因为它涉及隐私、身份验证和政府服务数字化的争议。"},{"id":"hn-50548021","title":"Seven new models at scalable price-performance","url":"https://microsoft.ai/news/microsoft-ignite-2026/","source":"Hacker News","score":489,"comments_count":331,"comments_url":"https://news.ycombinator.com/item?id=50548021","published_at":"2026-11-18T16:08:24","author":"gmays","text":null,"summary":"微软在Ignite 2026大会上发布了七款新模型，主打可扩展的性价比，值得关注其对企业AI部署成本与性能平衡的影响。"},{"id":"hn-50554045","title":"We need smart people who give a shit","url":"https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/","source":"Hacker News","score":362,"comments_count":190,"comments_url":"https://news.ycombinator.com/item?id=50554045","published_at":"2026-11-18T23:53:49","author":"ExMachina73","text":null,"summary":"文章呼吁科技行业需要真正关心产品与用户的聪明人，而非只追求指标，引发对工程文化与责任感的讨论。"},{"id":"hn-50543989","title":"Energy-Based Reasoners: 385x more efficient inference","url":"https://energy-based-reasoners.github.io/","source":"Hacker News","score":306,"comments_count":53,"comments_url":"https://news.ycombinator.com/item?id=50543989","published_at":"2026-11-18T09:29:32","author":"frenchmajesty","text":null,"summary":"介绍基于能量的推理器（Energy-Based Reasoners），声称推理效率提升385倍，值得关注其能否推动更节能的AI推理方案。"},{"id":"hn-50546914","title":"The Cambridge Dictionary has named ‘human’ as the Word of the Year 2026","url":"https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026","source":"Hacker News","score":254,"comments_count":175,"comments_url":"https://news.ycombinator.com/item?id=50546914","published_at":"2026-11-18T14:43:52","author":"DeepLogin","text":null,"summary":"剑桥词典将“human”选为2026年度词汇，反映了AI时代对人类独特性的重新审视与公共讨论。"},{"id":"hn-50504373","title":"A Perfect SimCity","url":"https://www.jeffquast.com/post/a-perfect-simcity/","source":"Hacker News","score":227,"comments_count":123,"comments_url":"https://news.ycombinator.com/item?id=50504373","published_at":"2026-11-15T05:54:22","author":"mariuz","text":null,"summary":"一篇关于如何打造“完美”《模拟城市》体验的深度文章，吸引经典游戏爱好者与城市模拟设计研究者。"},{"id":"hn-50547980","title":"Show HN: ExitPath – Open-source ways out of Slack, Notion and Microsoft 365","url":"https://exitpath-ruddy.vercel.app/","source":"Hacker News","score":188,"comments_count":54,"comments_url":"https://news.ycombinator.com/item?id=50547980","published_at":"2026-11-18T16:04:43","author":"zerocool0101","text":null,"summary":"开源项目ExitPath提供从Slack、Notion和Microsoft 365迁移出去的方案，值得关注数据可移植性与用户对平台锁定的反抗。"},{"id":"hn-50548004","title":"KVM: x86: Unconditionally reset MMU context when emulating INIT (CVE-2026-99312)","url":"https://www.cve.org/CVERecord?id=CVE-2026-99312","source":"Hacker News","score":181,"comments_count":118,"comments_url":"https://news.ycombinator.com/item?id=50548004","published_at":"2026-11-18T16:06:21","author":"Kozmik1","text":null,"summary":"KVM x86模拟INIT时无条件重置MMU上下文的补丁，对应CVE-2026-99312，值得虚拟化安全与运维人员关注。"},{"id":"hn-50548161","title":"Show HN: Take Voyager 1 apart, down to a single memory chip","url":"https://rshekhar.com/voyager/","source":"Hacker News","score":175,"comments_count":45,"comments_url":"https://news.ycombinator.com/item?id=50548161","published_at":"2026-11-18T16:18:51","author":"raj-shekhar","text":"Voyager 1 reached one light-day from Earth today.<p>On the site you can:<p>- see where both Voyagers are right now<p>- open a nuclear battery to its 24 plutonium spheres<p>- go into the data computer, down to a single memory chip<p>- see how the Golden Record&#x27;s cover explains how to play it<p>- watch how Voyager 1 was fixed by radio<p>- see which dish on Earth is listening to them, live<p>I also made a 4-minute film from it: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=kpzsRo-c1_A\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=kpzsRo-c1_A</a>","summary":"交互式网站让用户拆解旅行者1号探测器直至单个内存芯片，借其到达距地球一光日之际，生动展示航天工程细节。"},{"id":"hn-50538184","title":"Tencent Hy4 Flash","url":"https://hy.tencent.ai/research/hy4-flash","source":"Hacker News","score":168,"comments_count":26,"comments_url":"https://news.ycombinator.com/item?id=50538184","published_at":"2026-11-17T21:06:08","author":"lyra1337","text":null,"summary":"腾讯发布Hy4 Flash模型，值得关注其性能定位及对国内大模型竞争格局的影响。"},{"id":"hn-50546967","title":"The x86 CPU: From 4004 to 486","url":"https://pikuma.com/blog/history-of-x86-4004-to-486","source":"Hacker News","score":158,"comments_count":50,"comments_url":"https://news.ycombinator.com/item?id=50546967","published_at":"2026-11-18T14:47:53","author":"ibobev","text":null,"summary":"回顾x86 CPU从4004到486的演进历史，适合对计算机体系结构与微处理器发展感兴趣的读者。"},{"id":"hn-50554038","title":"Multiple vulnerabilities in Regexp and String case conversion","url":"https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/","source":"Hacker News","score":155,"comments_count":48,"comments_url":"https://news.ycombinator.com/item?id=50554038","published_at":"2026-11-18T23:52:50","author":"runesoerensen","text":null,"summary":"Ruby 官方披露 Regexp 与 String 大小写转换中的多个安全漏洞，Ruby 开发者需尽快评估并升级以规避风险。"},{"id":"hn-50547583","title":"F-22 Next-Generation micro–Data Transfer Cartridge (mDTC)","url":"https://sam.gov/workspace/contract/opp/8948e8601e964c6aba9c801eee16b1be/view","source":"Hacker News","score":152,"comments_count":104,"comments_url":"https://news.ycombinator.com/item?id=50547583","published_at":"2026-11-18T15:35:44","author":"birdboat00","text":null,"summary":"美国政府采购平台出现 F-22 下一代微型数据传输卡盒（mDTC）相关合同机会，涉及军用数据链硬件，值得国防与嵌入式领域关注。"},{"id":"hn-50554010","title":"Software companies are trying to kill home computing?","url":"https://lateblt.livejournal.com/526188.html","source":"Hacker News","score":143,"comments_count":96,"comments_url":"https://news.ycombinator.com/item?id=50554010","published_at":"2026-11-18T23:49:18","author":"sammatilda","text":"<a href=\"https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20261118235158&#x2F;https:&#x2F;&#x2F;lateblt.livejournal.com&#x2F;526188.html\" rel=\"nofollow\">https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20261118235158&#x2F;https:&#x2F;&#x2F;lateblt.l...</a>","summary":"一篇博客文章质疑软件公司是否在扼杀个人计算，引发对订阅制、平台锁定与用户控制权等趋势的讨论。"},{"id":"hn-50544821","title":"Show HN: Type Fighter 2","url":"https://typefighter2.com/","source":"Hacker News","score":132,"comments_count":57,"comments_url":"https://news.ycombinator.com/item?id=50544821","published_at":"2026-11-18T11:11:53","author":"torumitch","text":"Type Fighter II is an arcade inspired game for people learning to touch type.<p>Free, no account, and progress stays local. You can try on mobile, best with a physical keyboard.","summary":"Show HN 项目 Type Fighter 2 是一款街机风格打字练习游戏，免费、无需账号且进度本地保存，适合想练盲打的用户尝试。"},{"id":"hn-50517929","title":"My Emacs 31 contributions","url":"https://xenodium.com/my-emacs-31-contributions","source":"Hacker News","score":119,"comments_count":21,"comments_url":"https://news.ycombinator.com/item?id=50517929","published_at":"2026-11-16T14:26:10","author":"xenodium","text":null,"summary":"作者分享自己为 Emacs 31 所做的贡献，对 Emacs 用户和开源贡献者了解新版开发动态有参考价值。"}],"locale":"en"}],"$Lc"]}]]}]
+**总体观察**：今日技术社区的重心明显偏向"安全与可靠性"——从 Nginx 高危漏洞到金融数据泄露、政府加密令，安全议题占据头部热度；同时底层性能工程（1500 万 Web 服务器、SQLite 存储）与开源基础设施（Matrix、Codeberg、PostgreSQL 19）也保持强劲讨论。值得注意的是，HN 与 Lobsters 在系统底层话题上出现明显重叠（第 6/30 条），说明高质量工程内容能跨社区传播。0:{"buildId":"gO0C2amneRgF_Kxq23Kcb","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{"currentDate":"2026-11-20","locale":"en"}],["$","$L3",null,{"topics":[{"id":"ai","name":"AI & Machine Learning","description":"Artificial intelligence, machine learning, LLMs, and generative AI","article_count":19},{"id":"design","name":"Design","description":"UI/UX design, product design, and visual design","article_count":15},{"id":"tech","name":"Technology","description":"General technology news, programming, and software engineering","article_count":30}],"currentTopicId":"tech","locale":"en"}],["$","main",null,{"className":"max-w-6xl mx-auto px-4 py-8","children":[["$","div",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-bold text-gray-900 dark:text-white mb-2","children":"Technology"}],["$","p",null,{"className":"text-gray-500 dark:text-gray-400","children":"General technology news, programming, and software engineering"}],["$","p",null,{"className":"text-sm text-gray-400 mt-2","children":[30," ","articles"," • ","2026-11-20"]}]]}],["$","div",null,{"className":"space-y-8","children":[["$","$L4",null,{"summary":"$5","topicName":"Technology","locale":"en"}],"$L6"]}]]}],"$L7"]}],["$L8","$L9"],"$La"]}],"loading":null,"isPartial":false}
+c:T88c,Hi HN, we&#x27;re Shane, Sam, and Abhi.<p>Almost two years ago, we shared Mastra, our open-source TypeScript agent framework, on Show HN: <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=43103073">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=43103073</a>. It got a few hundred upvotes; a couple of weeks later our downloads had doubled, and we were off to the races.<p>Today we&#x27;re sharing Mastra Factory, the open-source software factory we built to help maintain Mastra itself.<p>At Mastra, we now average nearly 4M downloads per week, and with Factory our team now merges hundreds of PRs a week across the mastra-ai GitHub org. Last week, Factory opened and merged 238 PRs, alongside 630 merged PRs from humans.<p>There&#x27;s a lot of debate about what a software factory is. For us Factory is a configurable agentic kanban board that&#x27;s @-taggable in Slack.<p>Under the hood, it uses Mastra’s durable agents for long-running sessions, our conversational memory system, a markdown based wiki with source citations to incorporate company knowledge, signals that subscribe to PR comments wired up into sessions, and a customizable cloud sandbox with our coding harness (working on supporting Claude Code, Codex etc).<p>When we started out, we modeled Factory around our existing workflow-oriented process (triage, plan, build, review, shipped). Three months later, we find ourselves mostly driving it through Slack vs a web UI.<p>We’ve seen more senior engineers kick off sessions in parallel (“triage the 20 oldest issues and let’s evaluate…”). We’re using bug and vuln scanners now, and we’ve closed our repo to outside contributors, asking folks to write detailed issue repros instead.<p>You can get started with `npm create factory`.<p>It’s fully open-source, so you can run it entirely on your infra (we also offer a hosted version). Comment here, we would love to know what you think!<p><a href="https:&#x2F;&#x2F;factory.mastra.ai">https:&#x2F;&#x2F;factory.mastra.ai</a><p><a href="https:&#x2F;&#x2F;github.com&#x2F;mastra-ai&#x2F;template-factory" rel="nofollow">https:&#x2F;&#x2F;github.com&#x2F;mastra-ai&#x2F;template-factory</a>6:["$","section",null,{"children":[["$","h2",null,{"className":"text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2","children":[["$","span",null,{"children":"📰"}],"All Articles",["$","span",null,{"className":"text-sm font-normal text-gray-500","children":["(",30,")"]}]]}],["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-4","children":[["$","$Lb","Hacker News",{"sourceName":"Hacker News","articles":[{"id":"hn-50547374","title":"Unauthenticated remote code execution in Nginx","url":"https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities","source":"Hacker News","score":1489,"comments_count":639,"comments_url":"https://news.ycombinator.com/item?id=50547374","published_at":"2026-11-18T15:19:55","author":"speedping","text":"<a href=\"https:&#x2F;&#x2F;www.cve.org&#x2F;CVERecord?id=CVE-2026-123633\" rel=\"nofollow\">https:&#x2F;&#x2F;www.cve.org&#x2F;CVERecord?id=CVE-2026-123633</a><p><a href=\"https:&#x2F;&#x2F;www.cve.org&#x2F;CVERecord?id=CVE-2026-123007\" rel=\"nofollow\">https:&#x2F;&#x2F;www.cve.org&#x2F;CVERecord?id=CVE-2026-123007</a>","summary":"文章披露了Nginx中一个未经身份验证的远程代码执行漏洞（涉及CVE-2026-123633等），属于严重安全风险，值得所有使用Nginx的运维和开发人员立即关注并排查。"},{"id":"hn-50519231","title":"Garage Door Spam","url":"https://blog.harrison.page/garage-door-spam/","source":"Hacker News","score":800,"comments_count":335,"comments_url":"https://news.ycombinator.com/item?id=50519231","published_at":"2026-11-16T16:13:36","author":"harrisonpage","text":null,"summary":"文章讨论车库门遥控信号被垃圾信息干扰或滥用的现象，揭示了日常无线设备面临的安全隐患，对物联网安全有警示意义。"},{"id":"hn-50547620","title":"Inside Deutsche Bank","url":"https://www.inside-db.com/","source":"Hacker News","score":775,"comments_count":258,"comments_url":"https://news.ycombinator.com/item?id=50547620","published_at":"2026-11-18T15:38:33","author":"gyre007","text":null,"summary":"该网站深入剖析德意志银行的内部运作或相关事件，为了解这家全球系统重要性金融机构提供了独特视角。"},{"id":"hn-50563066","title":"Pancreatic cancer halted by virus injection in three patients","url":"https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/","source":"Hacker News","score":689,"comments_count":108,"comments_url":"https://news.ycombinator.com/item?id=50563066","published_at":"2026-11-19T17:25:33","author":"cybermango","text":"<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;2Et0x\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;2Et0x</a>","summary":"报道称通过病毒注射使三名胰腺癌患者的病情得到控制，展示了溶瘤病毒疗法在难治癌症中的潜在突破，值得医学界和患者关注。"},{"id":"hn-50558533","title":"How the European Commission rolled out Matrix to more than 40k staff","url":"https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/","source":"Hacker News","score":680,"comments_count":331,"comments_url":"https://news.ycombinator.com/item?id=50558533","published_at":"2026-11-19T10:58:29","author":"liotier","text":null,"summary":"介绍欧盟委员会如何向超过4万名员工推广部署Matrix开源通信平台，为大型组织迁移到去中心化通信工具提供了实践案例。"},{"id":"hn-50548021","title":"Seven new models at scalable price-performance","url":"https://microsoft.ai/news/microsoft-ignite-2026/","source":"Hacker News","score":595,"comments_count":376,"comments_url":"https://news.ycombinator.com/item?id=50548021","published_at":"2026-11-18T16:08:24","author":"gmays","text":null,"summary":"微软发布七款新模型，主打可扩展的性价比，反映了AI模型在成本与性能平衡上的竞争趋势，值得开发者和企业关注。"},{"id":"hn-50562113","title":"UK government forced to admit it issued Apple a secret encryption order","url":"https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/","source":"Hacker News","score":576,"comments_count":260,"comments_url":"https://news.ycombinator.com/item?id=50562113","published_at":"2026-11-19T16:21:03","author":"Terretta","text":null,"summary":"英国政府被迫承认曾向苹果发出秘密加密命令，涉及政府与科技公司在加密后门上的博弈，对隐私权和数字安全有重大影响。"},{"id":"hn-50558906","title":"Someone reported java4shell bug in September 2026","url":"https://github.com/openjdk/jdk/pull/32781","source":"Hacker News","score":396,"comments_count":106,"comments_url":"https://news.ycombinator.com/item?id=50558906","published_at":"2026-11-19T11:47:03","author":"notmine1337","text":null,"summary":"有人在2026年9月报告了Java4Shell漏洞，相关PR在OpenJDK仓库中，提醒Java生态用户关注这一潜在严重安全威胁。"},{"id":"hn-50556533","title":"15M web servers on one VM – smoltcp, DPDK, AF_XDP","url":"https://kapteko.com/15-million-webservers/","source":"Hacker News","score":389,"comments_count":41,"comments_url":"https://news.ycombinator.com/item?id=50556533","published_at":"2026-11-19T05:56:36","author":"fessguid","text":null,"summary":"文章展示如何在一台虚拟机上运行1500万个Web服务器，利用smoltcp、DPDK和AF_XDP实现极致网络性能，对高性能网络编程有参考价值。"},{"id":"hn-50560822","title":"Everything you need to survive and rebuild society","url":"https://lastbook.org/","source":"Hacker News","score":381,"comments_count":194,"comments_url":"https://news.ycombinator.com/item?id=50560822","published_at":"2026-11-19T14:47:18","author":"tejohnso","text":null,"summary":"介绍一个名为“最后一本书”的项目，旨在提供生存与重建社会所需的全方位知识，适合对灾难准备和文明延续感兴趣的人阅读。"},{"id":"hn-50544261","title":"Codeberg.org Not Reachable","url":"https://social.anoxinon.de/@codebergstatus/117636437840688845","source":"Hacker News","score":321,"comments_count":315,"comments_url":"https://news.ycombinator.com/item?id=50544261","published_at":"2026-11-18T10:02:17","author":"hans_castorp","text":null,"summary":"报道了开源代码托管平台Codeberg.org出现无法访问的故障，引发对开源基础设施可靠性和单点故障风险的关注。"},{"id":"hn-50557716","title":"SSD prices may begin to decline in the latter half of 2027","url":"https://www.drivevault.io/blog/when-will-hard-drive-prices-come-down.html","source":"Hacker News","score":302,"comments_count":229,"comments_url":"https://news.ycombinator.com/item?id=50557716","published_at":"2026-11-19T09:05:34","author":"illidan1000","text":null,"summary":"分析了SSD价格可能在2027年下半年开始下降的预测，对关注存储硬件成本和采购计划的用户具有参考价值。"},{"id":"hn-50557870","title":"What's New in PHP 8.6","url":"https://www.php.net/releases/8.6/en.php","source":"Hacker News","score":283,"comments_count":129,"comments_url":"https://news.ycombinator.com/item?id=50557870","published_at":"2026-11-19T09:27:15","author":"netol","text":null,"summary":"介绍了PHP 8.6的新特性和改进，值得PHP开发者关注以了解语言演进和升级方向。"},{"id":"hn-50557537","title":"Distributed, high-performance blob storage on SQLite","url":"https://zerodha.tech/blog/high-performance-distributed-blob-storage/","source":"Hacker News","score":276,"comments_count":71,"comments_url":"https://news.ycombinator.com/item?id=50557537","published_at":"2026-11-19T08:39:45","author":"ghostfoxgod","text":null,"summary":"分享了基于SQLite构建分布式高性能二进制大对象存储的实践经验，展示了用轻量级数据库实现可扩展存储的创新思路。"},{"id":"hn-50547048","title":"Nintendo takes Picofly firmware down from GitHub [video]","url":"https://www.youtube.com/watch?v=-TLCGUpoD6c","source":"Hacker News","score":273,"comments_count":108,"comments_url":"https://news.ycombinator.com/item?id=50547048","published_at":"2026-11-18T14:56:04","author":"cowlevel","text":null,"summary":"报道了任天堂从GitHub下架Picofly固件的事件，涉及主机破解与知识产权执法，值得关注硬件改装社区和平台政策。"},{"id":"hn-50557661","title":"Do not buy RAM, compress","url":"https://curiousbits.nl/blog/do-not-buy-ram-compress/","source":"Hacker News","score":272,"comments_count":219,"comments_url":"https://news.ycombinator.com/item?id=50557661","published_at":"2026-11-19T08:56:47","author":"Ecno92","text":null,"summary":"探讨了通过数据压缩来减少内存占用的方法，为不想购买更多RAM的用户提供了实用的替代方案。"},{"id":"hn-50559719","title":"Making 8-page foldable zines from a single A4 sheet in the browser","url":"https://krthr.co/paper-folds-and-whats-new-in-fanzines-app/","source":"Hacker News","score":267,"comments_count":60,"comments_url":"https://news.ycombinator.com/item?id=50559719","published_at":"2026-11-19T13:18:11","author":"krthr","text":null,"summary":"介绍了一个在浏览器中从单张A4纸制作8页折纸小志的工具，展示了Web应用在创意印刷和DIY领域的趣味应用。"},{"id":"hn-50561515","title":"Show HN: Cornhole News – A Hacker News inspired site for news across the Midwest","url":"https://cornholenews.news","source":"Hacker News","score":203,"comments_count":95,"comments_url":"https://news.ycombinator.com/item?id=50561515","published_at":"2026-11-19T15:38:32","author":"cornholemedia","text":null,"summary":"展示了一个受Hacker News启发、面向美国中西部新闻的聚合网站，体现了HN风格社区模式向本地新闻领域的延伸。"},{"id":"hn-50547583","title":"F-22 Next-Generation micro–Data Transfer Cartridge (mDTC)","url":"https://sam.gov/workspace/contract/opp/8948e8601e964c6aba9c801eee16b1be/view","source":"Hacker News","score":197,"comments_count":133,"comments_url":"https://news.ycombinator.com/item?id=50547583","published_at":"2026-11-18T15:35:44","author":"birdboat00","text":null,"summary":"披露了F-22战斗机下一代微型数据传输 cartridge 的采购合同信息，涉及军事航空数据存储与传输技术，值得国防科技关注者留意。"},{"id":"hn-50528119","title":"How to CAD Almost Anything","url":"https://ocw.mit.edu/courses/res-16-002-how-to-cad-almost-anything-january-iap-2024/","source":"Hacker News","score":186,"comments_count":56,"comments_url":"https://news.ycombinator.com/item?id=50528119","published_at":"2026-11-17T06:29:57","author":"o4c","text":null,"summary":"分享了MIT开放课程“如何CAD几乎任何东西”，为学习计算机辅助设计提供了高质量的免费教学资源。"},{"id":"hn-50525260","title":"Dumping an AES key from a MyQ garage opener to stop rebooting when offline","url":"https://kusha.me/blog/stop_myq_homebridge_819lmb_rebooting/","source":"Hacker News","score":160,"comments_count":70,"comments_url":"https://news.ycombinator.com/item?id=50525260","published_at":"2026-11-16T23:47:26","author":"kusha","text":null,"summary":"文章介绍如何从MyQ车库开门器中提取AES密钥，以解决离线时设备不断重启的问题。值得关注的是它展示了智能家居设备逆向工程与本地化控制的实用技巧。"},{"id":"hn-50559179","title":"Unblockable communication with gravity","url":"https://www.science.org/doi/10.1126/sciadv.aee0802","source":"Hacker News","score":159,"comments_count":61,"comments_url":"https://news.ycombinator.com/item?id=50559179","published_at":"2026-11-19T12:22:00","author":"rbanffy","text":null,"summary":"该研究探讨利用引力实现不可屏蔽的通信方式。值得关注的是它可能为极端环境下的通信提供全新物理层思路。"},{"id":"hn-50560955","title":"Cooling buildings is overtaking heating them as an energy need, IEA says","url":"https://maccus.fr/en/cooling-overtaking-heating/","source":"Hacker News","score":156,"comments_count":110,"comments_url":"https://news.ycombinator.com/item?id=50560955","published_at":"2026-11-19T14:57:14","author":"robtherobber","text":null,"summary":"国际能源署指出建筑制冷能耗正在超过供暖需求。值得关注的是这反映了全球能源需求结构的重大转变及气候影响。"},{"id":"hn-50568082","title":"Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers","url":"https://www.wsj.com/finance/banking/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers-3b5a0f87","source":"Hacker News","score":151,"comments_count":40,"comments_url":"https://news.ycombinator.com/item?id=50568082","published_at":"2026-11-19T23:32:11","author":"mikhael","text":null,"summary":"报道称Visa、万事达和摩根大通的客户数据遭黑客泄露。值得关注的是这涉及全球支付巨头的大规模数据安全事件。"},{"id":"hn-50548660","title":"Show HN: Mastra Factory, the open-source software factory we use to build Mastra","url":null,"source":"Hacker News","score":142,"comments_count":42,"comments_url":"https://news.ycombinator.com/item?id=50548660","published_at":"2026-11-18T16:53:42","author":"codekarate","text":"$c","summary":"Mastra团队开源了其用于构建Mastra的软件工厂Mastra Factory。值得关注的是它提供了一套可复用的开源智能体开发流水线。"}],"locale":"en"}],"$Ld"]}]]}]
 7:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-700 mt-12","children":["$","div",null,{"className":"max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400","children":["$","p",null,{"children":["Generated by"," ",["$","a",null,{"href":"https://github.com/marshcat0/hn-daily-summary","className":"text-hn-orange hover:underline","children":"HN Daily Summary"}]," ","• ","Powered by DeepSeek"]}]}]}]
 8:["$","script","script-0",{"src":"/hn-daily-summary/_next/static/chunks/f74a6859e1c4d5e3.js","async":true}]
 9:["$","script","script-1",{"src":"/hn-daily-summary/_next/static/chunks/25c5b00973e9e951.js","async":true}]
-a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
-c:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-e967319922ae","title":"Codeberg's domain suddenly disappeared from their account, site is unreachable","url":"https://social.anoxinon.de/@Codeberg/117636454915265360","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-18T08:51:09","author":"social.anoxinon.de via mort","text":"<p><del>Note: codeberg's servers are up, it's just the domain that's gone. It works perfectly after adding the following line to <code>/etc/hosts</code>:</del></p>\n<pre><code>217.197.84.140 codeberg.org\n</code></pre>\n<p>Update: it's now up again, and the above workaround is not necessary.</p>\n<p><a href=\"https://lobste.rs/s/spmgsd/codeberg_s_domain_suddenly_disappeared\">Comments</a></p>","summary":"代码托管平台 Codeberg 的域名突然从账户中消失导致站点无法访问，后已恢复；事件凸显域名管理单点故障风险。"},{"id":"rss-c09861cd5dff","title":"nginx2root","url":"https://xint.io/blog/nginx2root-remote-code-execution","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-18T15:28:56","author":"xint.io via MountainRose","text":"<p><a href=\"https://lobste.rs/s/wj2svg/nginx2root\">Comments</a></p>","summary":"文章披露 nginx2root 远程代码执行漏洞的细节，使用 nginx 的运维人员应关注并检查自身配置是否受影响。"},{"id":"rss-00612cbf7cf5","title":"Java4Shell is a reason to use Java","url":"https://mccue.dev/pages/11-18-26-java4shell","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-18T14:21:42","author":"mccue.dev by emccue","text":"<p><a href=\"https://lobste.rs/s/a1uff5/java4shell_is_reason_use_java\">Comments</a></p>","summary":"文章以 Java4Shell 为切入点论证 Java 仍值得使用，为围绕 Java 安全性与生态的争论提供了不同视角。"},{"id":"rss-c0e8354bcb1c","title":"Upcoming Critical PHP Security Release (18 Nov 2026)","url":"https://www.php.net/index.php#2026-11-18-1","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-18T19:44:06","author":"php.net via luke8086","text":"<p><a href=\"https://lobste.rs/s/zr0hkw/upcoming_critical_php_security_release\">Comments</a></p>","summary":"PHP 官方预告将于 2026 年 11 月 18 日发布关键安全更新，PHP 站点管理员应提前安排升级。"},{"id":"rss-e8625df84075","title":"Windows 11 collects data on which coding agents and dev tools you use","url":"https://xusheng.dev/posts/windows-coding-agent-telemetry/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-18T11:57:46","author":"xusheng.dev via viccuad","text":"<p><a href=\"https://lobste.rs/s/cwxmdw/windows_11_collects_data_on_which_coding\">Comments</a></p>","summary":"文章指出 Windows 11 会收集用户使用哪些编码代理和开发工具的数据，引发开发者对遥测与隐私的担忧。"}],"locale":"en"}]
-f:null
+a:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+d:["$","$Lb","Lobsters",{"sourceName":"Lobsters","articles":[{"id":"rss-a6cfd47506a1","title":"Design for Understandability","url":"https://jschuster.org/blog/2026/11/19/design-for-understandability/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-19T13:07:34","author":"jschuster.org by jschuster","text":"<p><a href=\"https://lobste.rs/s/qsrnot/design_for_understandability\">Comments</a></p>","summary":"文章讨论如何设计易于理解的软件系统。值得关注的是它强调可理解性作为核心设计原则，对提升代码可维护性有启发。"},{"id":"rss-e554b24fbdd9","title":"PostgreSQL 19 Released","url":"https://www.postgresql.org/about/news/postgresql-19-released-3449/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-19T15:12:08","author":"postgresql.org via bio","text":"<p><a href=\"https://lobste.rs/s/pqyuhk/postgresql_19_released\">Comments</a></p>","summary":"PostgreSQL 19正式发布。值得关注的是作为主流开源数据库的重要版本更新，可能带来性能与功能改进。"},{"id":"rss-9ea894160c64","title":"We Need Smart People Who Give a Shit","url":"https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-19T13:28:49","author":"violetpixel.com via Jackevansevo","text":"<p><a href=\"https://lobste.rs/s/rzuasm/we_need_smart_people_who_give_shit\">Comments</a></p>","summary":"文章呼吁需要真正关心工作的聪明人。值得关注的是它探讨了技术行业中责任心与热情的重要性。"},{"id":"rss-9e7447837715","title":"Mutex poisoning is not for everyone","url":"https://bertptrs.nl/2026/11/16/mutex-poisoning-is-not-for-everyone.html","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-19T13:01:49","author":"bertptrs.nl via polywolf","text":"<p><a href=\"https://lobste.rs/s/uzn2t6/mutex_poisoning_is_not_for_everyone\">Comments</a></p>","summary":"文章分析Rust中互斥锁中毒机制并非适合所有场景。值得关注的是它帮助开发者理解该特性的适用边界与替代方案。"},{"id":"rss-8a06c685ca5f","title":"15 million web servers on one VM - smoltcp, DPDK, AF_XDP","url":"https://kapteko.com/15-million-webservers/","source":"Lobsters","score":0,"comments_count":0,"comments_url":null,"published_at":"2026-11-19T13:38:19","author":"kapteko.com via rrampage","text":"<p><a href=\"https://lobste.rs/s/elmy67/15_million_web_servers_on_one_vm_smoltcp\">Comments</a></p>","summary":"文章展示如何利用smoltcp、DPDK和AF_XDP在单台虚拟机上运行1500万个Web服务器。值得关注的是它体现了高性能网络栈的极致优化能力。"}],"locale":"en"}]
+10:null
